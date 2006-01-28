@@ -1,0 +1,4 @@
+Wiki software successfully installed.
+
+Please see [http://meta.wikipedia.org/wiki/MediaWiki_i18n documentation on customizing the interface]
+and the [http://meta.wikipedia.org/wiki/MediaWiki_User%27s_Guide User's Guide] for usage and configuration help.
