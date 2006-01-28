@@ -1,3 +1,6 @@
+==Welcome==
+See the [http://biopython.open-bio.org/news News page] as well.
+
 Wiki software successfully installed.
 
 Please see [http://meta.wikipedia.org/wiki/MediaWiki_i18n documentation on customizing the interface]
