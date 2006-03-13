@@ -22,6 +22,6 @@ Foundation, who generously provide web and CVS space for the project.
 ### Current Release
 
 The latest release is Biopython 1.41, released on 28 Oct 2005. Get it
-from our \[Download\] page.
+from our [Download](Download "wikilink") page.
 
 See the [News page](http://biopython.open-bio.org/news) as well.
