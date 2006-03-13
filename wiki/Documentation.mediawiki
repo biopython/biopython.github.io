@@ -1,31 +1,21 @@
-Documentation
+==== Documentation ====
 
-* Installation instructions cover the installation of Python itself, the Biopython dependencies, and Biopython itself.
-      HTML | PDF
-* The Biopython Tutorial and Cookbook contains the main bulk of Biopython documentation. It provides information to get you started with Biopython, in addition to specific documentation on a number of modules.
-      HTML | PDF
-* Documentation for the Biopython interfaces to BioSQL cover installing Python database adaptors and basic usage of BioSQL.
-      HTML | PDF
-* Documentation for the cluster module in Biopython. This describes the underlying C library and the Python interface.
-      PDF
-* Cookbook-style documentation
-**Converting GenBank (and other formats) to Fasta.
-            HTML | PDF
-**Writing Tests for Biopython.
-            HTML | PDF
-**Logistic Regression supervised learning.
-            HTML | PDF
-**The Biopython Structural Bioinformatics FAQ.
-            PDF
-**Working with restriction enzymes.
-            HTML
+:* Installation instructions cover the installation of Python itself, the Biopython dependencies, and Biopython itself. HTML | PDF
+:* The Biopython Tutorial and Cookbook contains the main bulk of Biopython documentation. It provides information to get you started with Biopython, in addition to specific documentation on a number of modules. HTML | PDF
+:* Documentation for the Biopython interfaces to BioSQL cover installing Python database adaptors and basic usage of BioSQL. HTML | PDF
+:* Documentation for the cluster module in Biopython. This describes the underlying C library and the Python interface. PDF
+:* Cookbook-style documentation:
+:**Converting GenBank (and other formats) to Fasta. HTML | PDF
+:**Writing Tests for Biopython. HTML | PDF
+:**Logistic Regression supervised learning. HTML | PDF
+:**The Biopython Structural Bioinformatics FAQ. PDF
+:**Working with restriction enzymes. HTML
 
-API Documentation
+==== API Documentation ====
 
-    * Documentation for Biopython modules is generated directly from source code comments using Epydoc.
-      HTML
+:* Documentation for Biopython modules is generated directly from source code comments using Epydoc. HTML
 
-Online Course Notes
+==== Online Course Notes ====
 
     * Andrew Dalke taught an introduction to programming for Bioinformatics in Python class at the National Bioinformatics Network in South Africa.
       http://www.dalkescientific.com/writings/NBN/

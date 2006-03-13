@@ -4,57 +4,41 @@ permalink: wiki/Documentation
 layout: wiki
 ---
 
-Documentation
+#### Documentation
 
--   Installation instructions cover the installation of Python itself,
-    the Biopython dependencies, and Biopython itself.
+:\* Installation instructions cover the installation of Python itself,
+the Biopython dependencies, and Biopython itself. HTML | PDF
 
-`     HTML | PDF`
+:\* The Biopython Tutorial and Cookbook contains the main bulk of
+Biopython documentation. It provides information to get you started with
+Biopython, in addition to specific documentation on a number of modules.
+HTML | PDF
 
--   The Biopython Tutorial and Cookbook contains the main bulk of
-    Biopython documentation. It provides information to get you started
-    with Biopython, in addition to specific documentation on a number
-    of modules.
+:\* Documentation for the Biopython interfaces to BioSQL cover
+installing Python database adaptors and basic usage of BioSQL. HTML |
+PDF
 
-`     HTML | PDF`
+:\* Documentation for the cluster module in Biopython. This describes
+the underlying C library and the Python interface. PDF
 
--   Documentation for the Biopython interfaces to BioSQL cover
-    installing Python database adaptors and basic usage of BioSQL.
+:\* Cookbook-style documentation:
 
-`     HTML | PDF`
+:\*\*Converting GenBank (and other formats) to Fasta. HTML | PDF
 
--   Documentation for the cluster module in Biopython. This describes
-    the underlying C library and the Python interface.
+:\*\*Writing Tests for Biopython. HTML | PDF
 
-`     PDF`
+:\*\*Logistic Regression supervised learning. HTML | PDF
 
--   Cookbook-style documentation
-    -   Converting GenBank (and other formats) to Fasta.
+:\*\*The Biopython Structural Bioinformatics FAQ. PDF
 
-`           HTML | PDF`
+:\*\*Working with restriction enzymes. HTML
 
--   -   Writing Tests for Biopython.
+#### API Documentation
 
-`           HTML | PDF`
+:\* Documentation for Biopython modules is generated directly from
+source code comments using Epydoc. HTML
 
--   -   Logistic Regression supervised learning.
-
-`           HTML | PDF`
-
--   -   The Biopython Structural Bioinformatics FAQ.
-
-`           PDF`
-
--   -   Working with restriction enzymes.
-
-`           HTML`
-
-API Documentation
-
-`   * Documentation for Biopython modules is generated directly from source code comments using Epydoc.`  
-`     HTML`
-
-Online Course Notes
+#### Online Course Notes
 
 `   * Andrew Dalke taught an introduction to programming for Bioinformatics in Python class at the National Bioinformatics Network in South Africa.`  
 `     `[`http://www.dalkescientific.com/writings/NBN/`](http://www.dalkescientific.com/writings/NBN/)  
