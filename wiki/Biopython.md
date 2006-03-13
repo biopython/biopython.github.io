@@ -4,14 +4,26 @@ permalink: wiki/Biopython
 layout: wiki
 ---
 
-Welcome
--------
+BioPython
+---------
 
 See the [News page](http://biopython.open-bio.org/news) as well.
 
-Wiki software successfully installed.
+About the biopython project
+---------------------------
 
-Please see [documentation on customizing the
-interface](http://meta.wikipedia.org/wiki/MediaWiki_i18n) and the
-[User's Guide](http://meta.wikipedia.org/wiki/MediaWiki_User%27s_Guide)
-for usage and configuration help.
+The Biopython Project is an international association of developers of
+freely available Python tools for computational molecular biology.
+
+It is a distributed collaborative effort to develop Python libraries and
+applications which address the needs of current and future work in
+bioinformatics. The source code is made available under the Biopython
+License, which is extremely liberal and compatible with almost every
+license in the world. We work along with the Open Bioinformatics
+Foundation, who generously provide web and CVS space for the project.
+
+Current Release
+---------------
+
+The latest release is Biopython 1.41, released on 28 Oct 2005. Get it
+from our \[Download\] page.
