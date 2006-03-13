@@ -7,31 +7,57 @@ layout: wiki
 #### Documentation
 
 :\* Installation instructions cover the installation of Python itself,
-the Biopython dependencies, and Biopython itself. HTML | PDF
+the Biopython dependencies, and Biopython itself.
+
+::HTML | PDF
 
 :\* The Biopython Tutorial and Cookbook contains the main bulk of
 Biopython documentation. It provides information to get you started with
 Biopython, in addition to specific documentation on a number of modules.
-HTML | PDF
+
+::HTML | PDF
 
 :\* Documentation for the Biopython interfaces to BioSQL cover
-installing Python database adaptors and basic usage of BioSQL. HTML |
-PDF
+installing Python database adaptors and basic usage of BioSQL.
+
+::HTML | PDF
 
 :\* Documentation for the cluster module in Biopython. This describes
-the underlying C library and the Python interface. PDF
+the underlying C library and the Python interface.
+
+::PDF
 
 :\* Cookbook-style documentation:
 
-:\*\*Converting GenBank (and other formats) to Fasta. HTML | PDF
+:\*\*Converting GenBank (and other formats) to Fasta.
 
-:\*\*Writing Tests for Biopython. HTML | PDF
+  
+  
+HTML | PDF
 
-:\*\*Logistic Regression supervised learning. HTML | PDF
+:\*\*Writing Tests for Biopython.
 
-:\*\*The Biopython Structural Bioinformatics FAQ. PDF
+  
+  
+HTML | PDF
 
-:\*\*Working with restriction enzymes. HTML
+:\*\*Logistic Regression supervised learning.
+
+  
+  
+HTML | PDF
+
+:\*\*The Biopython Structural Bioinformatics FAQ.
+
+  
+  
+PDF
+
+:\*\*Working with restriction enzymes.
+
+  
+  
+HTML
 
 #### API Documentation
 
@@ -40,38 +66,70 @@ source code comments using Epydoc. HTML
 
 #### Online Course Notes
 
-`   * Andrew Dalke taught an introduction to programming for Bioinformatics in Python class at the National Bioinformatics Network in South Africa.`  
-`     `[`http://www.dalkescientific.com/writings/NBN/`](http://www.dalkescientific.com/writings/NBN/)  
-`   * Katja Schuerer and Catherine Letondal teach a Bioinformatics course in Python at the Pasteur Institute.`  
-`     `[`http://www.pasteur.fr/recherche/unites/sis/formation/python/`](http://www.pasteur.fr/recherche/unites/sis/formation/python/)  
-`   * Ravinder Singh and Scott Kelley teach a Bioinformatics course using Biopython at the University of Colorado.`  
-`     `[`http://mcdb.colorado.edu/courses/6440/index.html`](http://mcdb.colorado.edu/courses/6440/index.html)  
-`   * Katja Schuerer, Catherine Letondal and Eric Deveaud have an online course that covers getting started in programming with Python. It's aimed at biologists that want to learn programming.`  
-`     `[`http://www.pasteur.fr/formation/infobio/python/`](http://www.pasteur.fr/formation/infobio/python/)
+:\* Andrew Dalke taught an introduction to programming for
+Bioinformatics in Python class at the National Bioinformatics Network in
+South Africa. <http://www.dalkescientific.com/writings/NBN/>
 
-Papers
+:\* Katja Schuerer and Catherine Letondal teach a Bioinformatics course
+in Python at the Pasteur Institute.
+<http://www.pasteur.fr/recherche/unites/sis/formation/python/>
 
-`   * Thomas wrote an applications note for Bioinformatics about the Biopython PDB parser and related code dealing with crystal structures.`  
-`     Abstract and links to full text`  
-`   * Brad and Jeff wrote a paper for the ACM SIG-BIO newsletter back in August of 2000.`  
-`     HTML | PDF`
+:\* Ravinder Singh and Scott Kelley teach a Bioinformatics course using
+Biopython at the University of Colorado.
+<http://mcdb.colorado.edu/courses/6440/index.html>
 
-Presentations
+:\* Katja Schuerer, Catherine Letondal and Eric Deveaud have an online
+course that covers getting started in programming with Python. It's
+aimed at biologists that want to learn programming.
+<http://www.pasteur.fr/formation/infobio/python/>
 
-`   * March 2004 presentation at Exelixis about Biopython. Includes code examples with Biopython libraries and Martel.`  
-`     PDF | tarball with LaTeX source`  
-`   * BOSC 2003 presentation about Biopython and using it for Laboratory Analysis Pipelines.`  
-`     PDF | tarball with LaTeX source`  
-`   * General talk about scripting with Biopython based example of a primer design program.`  
-`     PDF | tarball with LaTeX source`  
-`   * Talk about Python and Biopython with an emphasis on teaching the design goals of Biopython.`  
-`     PDF | tarball with LaTex source`
+#### Papers
 
-Documentation for Developers
+:\*Thomas wrote an applications note for Bioinformatics about the
+Biopython PDB parser and related code dealing with crystal structures.
+Abstract and links to full text
 
-`   * Details about the biopython.org website.`  
-`     HTML`  
-`   * How to contribute code to Biopython.`  
-`     HTML`  
-`   * Instructions for building releases of Biopython.`  
-`     HTML`
+:\* Brad and Jeff wrote a paper for the ACM SIG-BIO newsletter back in
+August of 2000. HTML | PDF
+
+#### Presentations
+
+:\* March 2004 presentation at Exelixis about Biopython. Includes code
+examples with Biopython libraries and Martel.
+
+::PDF | tarball with LaTeX source
+
+:\* BOSC 2003 presentation about Biopython and using it for Laboratory
+Analysis Pipelines.
+
+::PDF | tarball with LaTeX source
+
+:\* General talk about scripting with Biopython based example of a
+primer design program.
+
+::PDF | tarball with LaTeX source
+
+:\* Talk about Python and Biopython with an emphasis on teaching the
+design goals of Biopython.
+
+  
+  
+PDF | tarball with LaTex source
+
+#### Documentation for Developers
+
+:\* Details about the biopython.org website.
+
+::HTML
+
+:\* How to contribute code to Biopython.
+
+::HTML
+
+:\* Instructions for building releases of Biopython.
+
+  
+  
+HTML
+
+
