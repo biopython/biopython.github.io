@@ -4,8 +4,7 @@ permalink: wiki/Biopython
 layout: wiki
 ---
 
-BioPython
----------
+### BioPython
 
 About the biopython project
 ---------------------------
