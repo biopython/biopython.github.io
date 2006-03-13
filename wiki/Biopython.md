@@ -19,7 +19,7 @@ License, which is extremely liberal and compatible with almost every
 license in the world. We work along with the Open Bioinformatics
 Foundation, who generously provide web and CVS space for the project.
 
-### Current Release
+### Download Current Release
 
 The latest release is Biopython 1.41, released on 28 Oct 2005. Get it
 from our [Download](Download "wikilink") page.
