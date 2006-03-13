@@ -7,8 +7,6 @@ layout: wiki
 BioPython
 ---------
 
-See the [News page](http://biopython.open-bio.org/news) as well.
-
 About the biopython project
 ---------------------------
 
@@ -27,3 +25,5 @@ Current Release
 
 The latest release is Biopython 1.41, released on 28 Oct 2005. Get it
 from our \[Download\] page.
+
+See the [News page](http://biopython.open-bio.org/news) as well.
