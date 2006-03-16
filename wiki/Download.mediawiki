@@ -39,38 +39,38 @@
 
 = Old Releases =
 
-    * biopython-1.40b.tar.gz 3,437 Kb
-    * biopython-1.40b.zip 3,267 Kb
-    * biopython-1.40b.win32-py2.3.exe 1,019 Kb
-    * biopython-1.40b.win32-py2.4.exe 1,023 Kb
-    * biopython-1.30.tar.gz 3,186 Kb
-    * biopython-1.24.tar.gz 3,081 Kb
-    * biopython-1.24.zip 3,623 Kb
-    * biopython-1.24.win32-py2.2.exe 892 Kb
-    * biopython-1.24.win32-py2.3.exe 894 Kb
-    * biopython-1.23.tar.gz 2,241 Kb
-    * biopython-1.23.zip 2,719 Kb
-    * biopython-1.23.win32-py2.2.exe 833 Kb
-    * biopython-1.23.win32-py2.3.exe 842 Kb
-    * biopython-1.22.tar.gz 2,214 Kb
-    * biopython-1.22.zip 2,691 Kb
-    * biopython-1.21.tar.gz 2,214 Kb
-    * biopython-1.21.zip 2,897 Kb
-    * biopython-1.21.win32-py2.2.exe 770 Kb
-    * biopython-1.21.win32-py2.3.exe 832 Kb
-    * biopython-1.20.tar.gz 2,101 Kb
-    * biopython-1.20.zip 2,602 Kb
-    * biopython-1.10.tar.gz 1,811 Kb
-    * biopython-1.10.zip 2,300 Kb
-    * biopython-1.10.win32-py2.2.exe 1,199 Kb
-    * biopython-1.00a4.tar.gz 1,739Kb
-    * biopython-1.00a4.zip 2,121Kb
-    * biopython-1.00a4.win32-py2.0.exe 835Kb
-    * biopython-1.00a4.win32-py2.1.exe 837Kb
-    * biopython-1.00a4.win32-py2.2.exe 838Kb
-    * MacBiopython-1.00a4.sit 2.2Mb
-    * biopython-1.00a3.tar.gz 1,816Kb
-    * biopython-1.00a3.zip 2,165Kb
-    * biopython-1.00a3.win32-py2.0.exe 583Kb
-    * biopython-1.00a3.win32-py2.1.exe 585Kb
-    * Macbiopython-1.00a3.sit.bin 1926Kb
+* biopython-1.40b.tar.gz 3,437 Kb
+* biopython-1.40b.zip 3,267 Kb
+* biopython-1.40b.win32-py2.3.exe 1,019 Kb
+* biopython-1.40b.win32-py2.4.exe 1,023 Kb
+* biopython-1.30.tar.gz 3,186 Kb
+* biopython-1.24.tar.gz 3,081 Kb
+* biopython-1.24.zip 3,623 Kb
+* biopython-1.24.win32-py2.2.exe 892 Kb
+* biopython-1.24.win32-py2.3.exe 894 Kb
+* biopython-1.23.tar.gz 2,241 Kb
+* biopython-1.23.zip 2,719 Kb
+* biopython-1.23.win32-py2.2.exe 833 Kb
+* biopython-1.23.win32-py2.3.exe 842 Kb
+* biopython-1.22.tar.gz 2,214 Kb
+* biopython-1.22.zip 2,691 Kb
+* biopython-1.21.tar.gz 2,214 Kb
+* biopython-1.21.zip 2,897 Kb
+* biopython-1.21.win32-py2.2.exe 770 Kb
+* biopython-1.21.win32-py2.3.exe 832 Kb
+* biopython-1.20.tar.gz 2,101 Kb
+* biopython-1.20.zip 2,602 Kb
+* biopython-1.10.tar.gz 1,811 Kb
+* biopython-1.10.zip 2,300 Kb
+* biopython-1.10.win32-py2.2.exe 1,199 Kb
+* biopython-1.00a4.tar.gz 1,739Kb
+* biopython-1.00a4.zip 2,121Kb
+* biopython-1.00a4.win32-py2.0.exe 835Kb
+* biopython-1.00a4.win32-py2.1.exe 837Kb
+* biopython-1.00a4.win32-py2.2.exe 838Kb
+* MacBiopython-1.00a4.sit 2.2Mb
+* biopython-1.00a3.tar.gz 1,816Kb
+* biopython-1.00a3.zip 2,165Kb
+* biopython-1.00a3.win32-py2.0.exe 583Kb
+* biopython-1.00a3.win32-py2.1.exe 585Kb
+* Macbiopython-1.00a3.sit.bin 1926Kb
