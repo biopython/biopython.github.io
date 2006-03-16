@@ -39,8 +39,8 @@ Biopython-corba
 
 ### Files
 
-`   * Source tarball -- biopython-corba-0.3.0.tar.gz 344Kb`  
-`   * Source Zip File -- biopython-corba-0.3.0.zip 378Kb`
+-   Source tarball -- biopython-corba-0.3.0.tar.gz 344Kb
+-   Source Zip File -- biopython-corba-0.3.0.zip 378Kb
 
 ### Required Software
 
