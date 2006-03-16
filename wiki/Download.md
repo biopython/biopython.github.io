@@ -9,8 +9,9 @@ Current Release -- 1.41 -- 28 Oct 2005
 
 ### Installation Instructions
 
-`   * HTML Installation Instructions`  
-`   * PDF Installation Instructions`
+`   `[`HTML` `Installation`
+`Instructions`](Installation.html "wikilink")  
+`   `[`PDF` `Installation` `Instructions`](Installation.pdf "wikilink")
 
 ### Files
 
