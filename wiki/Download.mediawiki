@@ -3,7 +3,7 @@
 === Installation Instructions ===
 
 * [[Installation.html|HTML Installation Instructions]]
-* [[Installation.pdf|PDF Installation Instructions]]
+* [[media:Installation.pdf|PDF Installation Instructions]]
 
 === Files ===
 
