@@ -23,10 +23,11 @@ Current Release -- 1.41 -- 28 Oct 2005
 
 ### Required Software
 
-`   * Python 2.3 or above`  
-`   * A C compiler -- you need a C compiler supported by distutils. gcc will work fine on UNIX-like platforms`  
-`   * mxTextTools`  
-`   * Numerical Python`
+-   Python 2.3 or above
+-   A C compiler -- you need a C compiler supported by distutils. gcc
+    will work fine on UNIX-like platforms
+-   mxTextTools
+-   Numerical Python (version 24.2 recommended)
 
 ### Optional Software
 
