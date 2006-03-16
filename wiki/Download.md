@@ -31,8 +31,8 @@ Current Release -- 1.41 -- 28 Oct 2005
 
 ### Optional Software
 
-`   * ReportLab -- for pdf graphics code`  
-`   * MySQLdb`
+-   ReportLab -- for pdf graphics code
+-   MySQLdb
 
 Biopython-corba
 ===============

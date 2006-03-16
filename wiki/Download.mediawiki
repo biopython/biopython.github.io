@@ -21,8 +21,8 @@
 
 === Optional Software ===
 
-    * ReportLab -- for pdf graphics code
-    * MySQLdb
+* ReportLab -- for pdf graphics code
+* MySQLdb
 
 = Biopython-corba =
 
