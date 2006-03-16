@@ -23,11 +23,13 @@ Current Release -- 1.41 -- 28 Oct 2005
 
 ### Required Software
 
--   Python 2.3 or above
--   A C compiler -- you need a C compiler supported by distutils. gcc
-    will work fine on UNIX-like platforms
--   mxTextTools
--   Numerical Python (version 24.2 recommended)
+-   [Python 2.3 or above](http://www.python.org)
+-   [A C compiler -- you need a C compiler supported by distutils. gcc
+    will work fine on UNIX-like
+    platforms](http://www.python.org/doc/current/inst/inst.html)
+-   [mxTextTools](http://www.lemburg.com/files/python/mxTextTools.html)
+-   [Numerical Python (version
+    24.2 recommended)](http://sourceforge.net/projects/numpy)
 
 ### Optional Software
 
