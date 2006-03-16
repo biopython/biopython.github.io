@@ -21,8 +21,8 @@
 
 === Optional Software ===
 
-* ReportLab -- for pdf graphics code
-* MySQLdb
+* [http://www.reportlab.org/downloads.html ReportLab -- for pdf graphics code]
+* [http://sourceforge.net/projects/mysql-python MySQLdb]
 
 = Biopython-corba =
 
