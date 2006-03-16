@@ -33,9 +33,9 @@
 
 === Required Software ===
 
-* omniORBpy
-* Fnorb
-* orbit-python
+* [http://omniorb.sourceforge.net omniORBpy]
+* [http://fnorb.sourceforge.net Fnorb]
+* [http://sourceforge.net/projects/orbit-python orbit-python]
 
 = Old Releases =
 
