@@ -1,4 +1,4 @@
-{| border="1"
+{| border="1" width="100%"
 | Name                    || Sebastian Bassi
 |-
 | E-mail 	          || [mailto:sbassi@genesdigitales.com sbassi@genesdigitales.com]
