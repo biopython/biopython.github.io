@@ -17,18 +17,24 @@ Website](http://www.biopython.org/mailman/listinfo/biopython-announce/)
 
 ### Discussion List
 
-biopython@biopython.org
+<biopython@biopython.org>
 
 Unmoderated list for use, comments, help, and other things related to
-Biopython. List Website | Web Archive
+Biopython.
+
+[List Website](http://www.biopython.org/mailman/listinfo/biopython/) |
+[Web Archive](http://www.biopython.org/pipermail/biopython/)
 
 ### Development List
 
-biopython-dev@biopython.org
+<biopython-dev@biopython.org>
 
-Unmoderated list for Biopython developers and interested people. List
-Website | Web Archive
+Unmoderated list for Biopython developers and interested people.
+
+[List Website](http://www.biopython.org/mailman/listinfo/biopython-dev/)
+| [Web Archive](http://www.biopython.org/pipermail/biopython-dev/)
 
 ### Searching
 
-Search the mailing list archives.
+[Search the mailing list
+archives.](http://search.open-bio.org/cgi-bin/mail-search.cgi)
