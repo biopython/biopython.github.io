@@ -91,3 +91,60 @@
 |-
 | Relevant URL            || http://www.dalkescientific.com/
 |}
+
+
+{| border="1" width="100%"
+| Name                    || Michiel de Hoon
+|-
+| E-mail                  || See my web page
+|-
+| Affiliation             || Columbia University
+|-
+| Location                || New York
+|-
+| Uses Python for         || Systems Biology; Plotting
+|-
+| Work/Research Interests || Microbiology
+|-
+| Biopython Contributions || Bio.Cluster; Windows installer; self-proclaimed Biopython portability whip
+|-
+| Relevant URL            || http://bonsai.ims.u-tokyo.ac.jp/~mdehoon
+|}
+
+
+{| border="1" width="100%"
+| Name                    || Iddo Friedberg
+|-
+| E-mail                  || idoerg "at" burnham.org
+|-
+| Affiliation             || The Burnham Institute
+|-
+| Location                || La-Jolla, CA, USA
+|-
+| Uses Python for         || Maintaining World Domination
+|-
+| Work/Research Interests || Structural Bioinformatics
+|-
+| Biopython Contributions || SubsMat, FSSP, bits of Align, bits of the Manual, and a lot of silly questions to the lists
+|-
+| Relevant URL            || http://ffas.burnham.org/~iddo
+|}
+
+
+{| border="1" width="100%"
+| Name                    || Christian Gunning
+|-
+| E-mail                  || bioboy at uga dot edu
+|-
+| Affiliation             || human, mountain
+|-
+| Location                || Athens, GA
+|-
+| Uses Python for         || strings, as glue; also on laundry and dirty dishes
+|-
+| Work/Research Interests || arabidopsis; Biological Sequence Analysis, Durbin et al.; Primer3; www.swig.org; R programming language and rpy.sourceforge.net
+|-
+| Biopython Contributions ||
+|-
+| Relevant URL            || http://www.botany.uga.edu/courses/bioinformatics/current/index.html
+|}
