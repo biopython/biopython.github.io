@@ -16,6 +16,7 @@
 | Relevant URL            || http://www.bioinformatica.info
 |}
 
+
 {| border="1"
 | Name                    || Jeffrey Chang
 |-
@@ -33,6 +34,7 @@
 |-
 | Relevant URL            || http://www.jeffchang.com/
 |}
+
 
 {| border="1"
 | Name                    || Brad Chapman
