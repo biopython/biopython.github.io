@@ -54,7 +54,7 @@
 
 
 {| border="1" width="100%"
-| Name 	pyzerg
+| Name           || pyzerg
 |-
 | Author         || Leighton Pritchard
 |-

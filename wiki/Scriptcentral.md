@@ -39,12 +39,12 @@ layout: wiki
 | URL         | <http://pymmlib.sourceforge.net/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | Description | The Python Macromolecular Library (mmLib) is a software toolkit and library of routines for the analysis and manipulation of macromolecular structural models, implemented in the Python programming language. It is accessed via a layered, object-oriented application programming interface, and provides a range of useful software components for parsing mmCIF, PDB, and MTZ files, a library of atomic elements and monomers, an object-oriented data structure describing biological macromolecules, and an OpenGL molecular viewer. |
 
-|             |
-|-------------|
-| Name pyzerg |
-| Author      |
-| URL         |
-| Description |
+|             |                                                                                            |
+|-------------|--------------------------------------------------------------------------------------------|
+| Name        | pyzerg                                                                                     |
+| Author      | Leighton Pritchard                                                                         |
+| URL         | <http://bioinf.scri.sari.ac.uk/lp/pyzerg.shtml>                                            |
+| Description | A Python wrapper for the Zerg BLAST parser, a very fast BLAST parser library written in C. |
 
 |             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
