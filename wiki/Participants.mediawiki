@@ -17,7 +17,7 @@
 |}
 
 
-{| border="1"
+{| border="1" width="100%"
 | Name                    || Jeffrey Chang
 |-
 | E-mail                  || [mailto:jchang@smi.stanford.edu jchang@smi.stanford.edu]
@@ -36,7 +36,7 @@
 |}
 
 
-{| border="1"
+{| border="1" width="100%"
 | Name                    || Brad Chapman
 |-
 | E-mail                  || [mailto:chapmanb@uga.edu chapmanb@uga.edu]
@@ -55,7 +55,7 @@
 |}
 
 
-{| border="1"
+{| border="1" width="100%"
 | Name                    || Peter Cock
 |-
 | E-mail                  || See my web page
@@ -71,4 +71,23 @@
 | Biopython Contributions || GenBank parser support
 |-
 | Relevant URL            || http://www2.warwick.ac.uk/fac/sci/moac/currentstudents/peter_cock/python/
+|}
+
+
+{| border="1" width="100%"
+| Name                    || Andrew Dalke
+|-
+| E-mail                  || [mailto:dalke@dalkescientific.com dalke@dalkescientific.com]
+|-
+| Affiliation             || Dalke Scientific Software, LLC
+|-
+| Location                || Santa Fe, NM
+|-
+| Uses Python for         || Just about anything
+|-
+| Work/Research Interests || Large-scale usable systems for scientists
+|-
+| Biopython Contributions || Co-Founder, Seq, Martel, indexing, EUtils, patterns, parsing, ...
+|-
+| Relevant URL            || http://www.dalkescientific.com/
 |}

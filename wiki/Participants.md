@@ -48,4 +48,15 @@ layout: wiki
 | Biopython Contributions | GenBank parser support                                                      |
 | Relevant URL            | <http://www2.warwick.ac.uk/fac/sci/moac/currentstudents/peter_cock/python/> |
 
+|                         |                                                                   |
+|-------------------------|-------------------------------------------------------------------|
+| Name                    | Andrew Dalke                                                      |
+| E-mail                  | <dalke@dalkescientific.com>                                       |
+| Affiliation             | Dalke Scientific Software, LLC                                    |
+| Location                | Santa Fe, NM                                                      |
+| Uses Python for         | Just about anything                                               |
+| Work/Research Interests | Large-scale usable systems for scientists                         |
+| Biopython Contributions | Co-Founder, Seq, Martel, indexing, EUtils, patterns, parsing, ... |
+| Relevant URL            | <http://www.dalkescientific.com/>                                 |
+
 
