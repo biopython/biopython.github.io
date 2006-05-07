@@ -1,0 +1,140 @@
+---
+title: Scriptcentral
+permalink: wiki/Scriptcentral
+layout: wiki
+---
+
+|             |                                                                                                                                                                                    |
+|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name        | LIBSVM                                                                                                                                                                             |
+| Author      | Chih-Chung Chang and Chih-Jen Lin                                                                                                                                                  |
+| URL         | <http://www.csie.ntu.edu.tw/~cjlin/libsvm/>                                                                                                                                        |
+| Description | LIBSVM is an integrated software for support vector classification, regression and distribution estimation. It includes a python interface and excellent documentation about SVMs. |
+
+|             |                                                                                                                                                                                    |
+|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name        | PyML                                                                                                                                                                               |
+| Author      | Asa Ben-Hur                                                                                                                                                                        |
+| URL         | <http://cmgm.stanford.edu/~asab/pyml/pyml.html>                                                                                                                                    |
+| Description | PyML is a flexible Python framework for using various classification methods including Support Vector Machines (SVM). It provides tools for model selection and feature selection. |
+
+|             |                                                                                                                                                                                       |
+|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name        | PyMOL                                                                                                                                                                                 |
+| Author      | Warren DeLano                                                                                                                                                                         |
+| URL         | <http://pymol.sourceforge.net/>                                                                                                                                                       |
+| Description | PyMOL is an open-source molecular modeling program written in the Python language. A number of Python scripts are available which link PyMOL to standard structure analysis programs. |
+
+|             |                                                                                                                                                  |
+|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name        | GenomeDiagram                                                                                                                                    |
+| Author      | Leighton Pritchard                                                                                                                               |
+| URL         | <http://bioinf.scri.sari.ac.uk/lp/genomediagram.shtml>                                                                                           |
+| Description | A genomic and biological sequence schematic drawing package. Creates publication-quality genome schematics in several vector and bitmap formats. |
+
+|             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name        | Python Macromolecular Library (mmLib)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Author      | Jay Painter                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| URL         | <http://pymmlib.sourceforge.net/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Description | The Python Macromolecular Library (mmLib) is a software toolkit and library of routines for the analysis and manipulation of macromolecular structural models, implemented in the Python programming language. It is accessed via a layered, object-oriented application programming interface, and provides a range of useful software components for parsing mmCIF, PDB, and MTZ files, a library of atomic elements and monomers, an object-oriented data structure describing biological macromolecules, and an OpenGL molecular viewer. |
+
+|             |
+|-------------|
+| Name pyzerg |
+| Author      |
+| URL         |
+| Description |
+
+|             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name        | Pise Biopython client                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Author      | Catherine Letondal                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| URL         | <http://www.pasteur.fr/recherche/unites/sis/Pise/#pisepython>                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Description | This package runs remote analyses on a Pise Web server. There are currently about 300 programs available, including EMBOSS and Phylip, several phylogeny, sequence comparison, 3D structure, pattern discovery, gene prediction and DNA, protein or RNA analyses programs. The package automatically chain programs to extract results as file, string or filehandle for Biopython modules. It also accepts Biopython sequences and alignment class as input data. |
+
+|                |
+|----------------|
+| Name Pycluster |
+| Author         |
+| URL            |
+| Description    |
+
+|             |                                                                                                                                                                          |
+|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name        | UPDB                                                                                                                                                                     |
+| Author      | Andrew Dalke                                                                                                                                                             |
+| URL         | <ftp://ftp.ks.uiuc.edu/pub/group/dalke/UPDB-0.5.tar.gz>                                                                                                                  |
+| Description | A Python script that reads the PDB format documentation and generates code for a given language to parse and/or generate column delimited record format used by the PDB. |
+
+|             |                                                           |
+|-------------|-----------------------------------------------------------|
+| Name        | Dinu Gherman's alignment code                             |
+| Author      | Dinu Gherman                                              |
+| URL         | <http://starship.python.net/crew/gherman/potpurri/align/> |
+| Description | Code for pairwise sequence alignments.                    |
+
+|             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name        | Open Infrastructure for Outcomes (OIO)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Author      | Andrew P. Ho                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| URL         | <http://www.TxOutcome.Org/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Description | OIO is a free (as in GPL) web-based research and clinical data system that provides user-extensible plug-and-play components and data mining tools. We use it at Harbor-UCLA for health/treatment outcomes data. Forms/metadata can be exported+imported as XML and exchanged via the online OIO Library at www.TxOutcome.Org. It is written in Zope/Python and uses the PostgreSQL database backend. It has not been used to manage gene sequence/annotation data to my knowledge but it would be trivial to extend it for those functions. |
+
+|             |                                                             |
+|-------------|-------------------------------------------------------------|
+| Name        | Arne Mueller's BLAST parser                                 |
+| Author      | Arne Mueller                                                |
+| URL         | <http://www.sbg.bio.ic.ac.uk/~mueller/>                     |
+| Description | A parser for BLAST and PSI-BLAST written in and for python. |
+
+|             |                                                                    |
+|-------------|--------------------------------------------------------------------|
+| Name        | The Nilges group's python scripts                                  |
+| Author      | Michael Nilges and the structural bioinformatics research group    |
+| URL         | <http://www.pasteur.fr/recherche/unites/Binfs/>                    |
+| Description | Python code for structural bioinformatics and data transformation. |
+
+|             |                                                                                                                                                                                             |
+|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name        | PySAT                                                                                                                                                                                       |
+| Author      | Chenna Ramu                                                                                                                                                                                 |
+| URL         | <http://www.embl-heidelberg.de/~chenna/PySAT/>                                                                                                                                              |
+| Description | Python Sequence Analysis Tools consists of modules to parse and iterate through various flat file databases (EMBL, GENBANK, SWISSPROT, PDBFINDER, ENZYME etc.) and does a few other things. |
+
+|             |                                                                                                                                                                                                                                                                                                                                                                     |
+|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name        | PyPhy                                                                                                                                                                                                                                                                                                                                                               |
+| Author      | Thomas Sicheritz-Ponten                                                                                                                                                                                                                                                                                                                                             |
+| URL         | <http://www.cbs.dtu.dk/staff/thomas/pyphy/>                                                                                                                                                                                                                                                                                                                         |
+| Description | PyPhy is a set of python scripts and modules for automatic, large-scale reconstructions of phylogenetic relationships of complete microbial genomes. PyPhy consists of AutoTree which automatically generates phylogenetic trees for each amino acid sequence in a FASTA file, and Xphylome which generates and visualizes the Phylome Maps for a microbial genome. |
+
+|             |                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name        | Scripps Molecular Graphics Labs Python Software                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Author      | Michel Sanner                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| URL         | <http://www.scripps.edu/~sanner/python/index.html>                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Description | This site contains code dealing with structural bioinformatics and molecular visualization. This includes MolKit, which reads molecules from a number of file formats; PyBabel, which builds up molecular structures; MSLib, which wraps up a molecular surface calculation library; Python Molecular Viewer (PMV), which provides a complete viewer; AutoDockTools, which provides a GUI to set up ligand to protein docking experiments; and many more. |
+
+|             |                                                                                                                                                                                                                                                                                           |
+|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name        | Konrad Hinsen's Python Page                                                                                                                                                                                                                                                               |
+| Author      | Konrad Hinsen                                                                                                                                                                                                                                                                             |
+| URL         | <http://starship.python.net/crew/hinsen/>                                                                                                                                                                                                                                                 |
+| Description | Contains the Molecular Modeling Toolkit, an open source program library for molecular simulation applications. Additionally, Konrad has ScientificPython, which collects a number of modules that are useful in scientific computing, including code for statistics, basic geometry, etc. |
+
+|             |                                                                                                                                                                                                                                                   |
+|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name        | Paul Magwene's Python Page                                                                                                                                                                                                                        |
+| Author      | Paul Magwene                                                                                                                                                                                                                                      |
+| URL         | <http://kim.bio.upenn.edu/~pmagwene/programming.html>                                                                                                                                                                                             |
+| Description | This collects Paul's modules for doing different tasks (and also has links and a nice essay about why he likes python). A particularly interesting module is disipyl, which provides an object oriented interface to the Dislin plotting library. |
+
+|             |                                                                                                                                                                                                                                            |
+|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name        | Noah Hoffman's Python Page                                                                                                                                                                                                                 |
+| Author      | Noah Hoffman and Wolfgang Resch                                                                                                                                                                                                            |
+| URL         | <http://www.unc.edu/~nghoffma/software.html>                                                                                                                                                                                               |
+| Description | A collection of python modules and scripts originally intended to process large collections of HIV sequences. Now contains general utilities for sequence analysis, manipulation, classification, and formatting. Plus other useful stuff. |
+
+
