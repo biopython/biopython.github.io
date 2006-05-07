@@ -1,14 +1,7 @@
-{| 
-| 1 || 2
-|- 
-| 3 || 4
-|}
-
-
-{|
+{| border="1"
 | Name                    || Sebastian Bassi
 |-
-| E-mail 	          || sbassi@genesdigitales.com
+| E-mail 	          || [mailto:sbassi@genesdigitales.com sbassi@genesdigitales.com]
 |-
 | Affiliation 	          || Universidad Nacional de Quilmes
 |-
