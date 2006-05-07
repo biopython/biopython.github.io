@@ -1,0 +1,2 @@
+==Some examples==
+Demonstrate links to wikipedia [[wp:DNA|DNA]] and BioPerl [[bp:BLAST|BLAST]] and wikiomics [[wikiomics:BLAST|BLAST]].
