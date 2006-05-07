@@ -43,7 +43,7 @@ layout: wiki
 |-------------|--------------------------------------------------------------------------------------------|
 | Name        | pyzerg                                                                                     |
 | Author      | Leighton Pritchard                                                                         |
-| URL         | <http://bioinf.scri.sari.ac.uk/lp/pyzerg.shtml>                                            |
+| URL         | <http://bioinf.scri.ac.uk/lp/programs.html>                                                |
 | Description | A Python wrapper for the Zerg BLAST parser, a very fast BLAST parser library written in C. |
 
 |             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
