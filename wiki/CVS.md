@@ -37,4 +37,5 @@ anonymous CVS server. Directions are available at:
 
 Write CVS access is available for Biopython developers. This is normally
 given on a case by case basis, and the best place to discuss getting
-write access is on the Biopython Development mailing list.
+write access is on the [Biopython Development mailing
+list](mailto:biopython-dev@biopython.org).

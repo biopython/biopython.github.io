@@ -22,4 +22,4 @@ You can also access a read-only version of the CVS sources using our anonymous C
 
 === Write CVS Access ===
 
-Write CVS access is available for Biopython developers. This is normally given on a case by case basis, and the best place to discuss getting write access is on the Biopython Development mailing list.
+Write CVS access is available for Biopython developers. This is normally given on a case by case basis, and the best place to discuss getting write access is on the [mailto:biopython-dev@biopython.org Biopython Development mailing list].
