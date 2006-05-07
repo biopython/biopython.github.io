@@ -53,12 +53,12 @@ layout: wiki
 | URL         | <http://www.pasteur.fr/recherche/unites/sis/Pise/#pisepython>                                                                                                                                                                                                                                                                                                                                                                                                      |
 | Description | This package runs remote analyses on a Pise Web server. There are currently about 300 programs available, including EMBOSS and Phylip, several phylogeny, sequence comparison, 3D structure, pattern discovery, gene prediction and DNA, protein or RNA analyses programs. The package automatically chain programs to extract results as file, string or filehandle for Biopython modules. It also accepts Biopython sequences and alignment class as input data. |
 
-|                |
-|----------------|
-| Name Pycluster |
-| Author         |
-| URL            |
-| Description    |
+|             |                                                                                                                                                      |
+|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name        | Pycluster                                                                                                                                            |
+| Author      | Michiel de Hoon                                                                                                                                      |
+| URL         | <http://bonsai.ims.u-tokyo.ac.jp/~mdehoon/software/cluster/>                                                                                         |
+| Description | This is a Python C extension module for clustering gene expression data. The exact same package is available as part of Biopython (see Bio.Cluster). |
 
 |             |                                                                                                                                                                          |
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -76,7 +76,7 @@
 
 
 {| border="1" width="100%"
-| Name 	Pycluster
+| Name           || Pycluster
 |-
 | Author         || Michiel de Hoon
 |-
