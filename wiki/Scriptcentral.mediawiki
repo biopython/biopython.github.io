@@ -36,7 +36,7 @@
 |-
 | Author         || Leighton Pritchard
 |-
-| URL            || http://bioinf.scri.sari.ac.uk/lp/genomediagram.shtml
+| URL            ||  http://bioinf.scri.ac.uk/lp/programs.html
 |-
 | Description    || A genomic and biological sequence schematic drawing package. Creates publication-quality genome schematics in several vector and bitmap formats.
 |}
