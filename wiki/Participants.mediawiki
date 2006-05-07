@@ -148,3 +148,97 @@
 |-
 | Relevant URL            || http://www.botany.uga.edu/courses/bioinformatics/current/index.html
 |}
+
+
+{| border="1" width="100%"
+| Name                    || Thomas Hamelryck
+|-
+| E-mail                  || thamelry - binf ku dk
+|-
+| Affiliation             || University of Copenhagen
+|-
+| Location                || Copenhagen, Denmark
+|-
+| Uses Python for         || Annoying FORTRAN programmers
+|-
+| Work/Research Interests || Structural bioinformatics
+|-
+| Biopython Contributions || Bio.PDB, KDTree, SVDSuperimposer
+|-
+| Relevant URL            || http://www.binf.ku.dk/users/thamelry
+|}
+
+
+{| border="1" width="100%"
+| Name                    || Michael Hoffman
+|-
+| E-mail                  || grouse at alumni period utexas period net
+|-
+| Affiliation             || The University of Texas at Austin
+|-
+| Location                || Austin, TX, USA
+|-
+| Uses Python for         || Biopython!
+|-
+| Work/Research Interests || RNA, Genome annotations
+|-
+| Biopython Contributions || Bio.GFF, Bio.DocSQL
+|-
+| Relevant URL            || http://spice.cc.utexas.edu/~grouse/
+|}
+
+
+{| border="1" width="100%"
+| Name                    || Frank Kauff
+|-
+| E-mail                  || fkauff at duke edu
+|-
+| Affiliation             || Duke University
+|-
+| Location                || Durham, NC, USA
+|-
+| Uses Python for         || Phylogenetics and everything else
+|-
+| Work/Research Interests || Phylogenetics and all that's related
+|-
+| Biopython Contributions || Phd (with C. Cox), Ace
+|-
+| Relevant URL            || http://www.lutzonilab.net/member/frankkauff.shtml
+|}
+
+
+{| border="1" width="100%"
+| Name                    || Bartek Wilczyński
+|-
+| E-mail                  || bartek_AT_rezolwenta.eu.org
+|-
+| Affiliation             || Institute of Mathematics, Polish Academy of Science
+|-
+| Location                || Warsaw, Poland
+|-
+| Uses Python for         || most of his computations
+|-
+| Work/Research Interests || mathematical models of gene regulation
+|-
+| Biopython Contributions || Bio.AlignAce
+|-
+| Relevant URL            || http://bartek.rezolwenta.eu.org
+|}
+
+{| border="1" width="100%"
+| Name                    || Harry Zuzan
+|-
+| E-mail                  || [mailto:iliketobicycle@yahoo.ca iliketobicycle@yahoo.ca]
+|-
+| Affiliation             || Genome Quebec
+|-
+| Location                || Montreal
+|-
+| Uses Python for         || you name it
+|- 
+| Work/Research Interests || Statistics applied to molecular biology and genetics
+|-
+| Biopython Contributions || Affy package for Affymetrix data
+|-
+| Relevant URL            || http://www.oligopython.org
+|}
