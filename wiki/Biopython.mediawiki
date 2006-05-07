@@ -1,9 +1,9 @@
-= BioPython =
+= Biopython =
 
 
 
 
-=== About the BioPython project ===
+=== About the Biopython project ===
 
 
 The Biopython Project is an international association of developers of freely available [http://www.python.org Python] tools for computational molecular biology.
