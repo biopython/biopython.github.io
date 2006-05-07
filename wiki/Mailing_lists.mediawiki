@@ -2,7 +2,8 @@
 [mailto:biopython-announce@biopython.org biopython-announce@biopython.org]
 
 Low volume moderated list, providing announcements of major Biopython releases and upgrades.
-List Website | Web Archive
+
+[http://www.biopython.org/mailman/listinfo/biopython-announce/ List Website] | [http://www.biopython.org/pipermail/biopython-announce/ Web Archive]
 
 === Discussion List ===
 biopython@biopython.org

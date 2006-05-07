@@ -9,7 +9,11 @@ layout: wiki
 <biopython-announce@biopython.org>
 
 Low volume moderated list, providing announcements of major Biopython
-releases and upgrades. List Website | Web Archive
+releases and upgrades.
+
+[List
+Website](http://www.biopython.org/mailman/listinfo/biopython-announce/)
+| [Web Archive](http://www.biopython.org/pipermail/biopython-announce/)
 
 ### Discussion List
 
