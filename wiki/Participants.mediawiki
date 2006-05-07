@@ -225,6 +225,7 @@
 | Relevant URL            || http://bartek.rezolwenta.eu.org
 |}
 
+
 {| border="1" width="100%"
 | Name                    || Harry Zuzan
 |-
