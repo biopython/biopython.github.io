@@ -88,7 +88,9 @@ HTML
 -   Katja Schuerer, Catherine Letondal and Eric Deveaud have an online
     course that covers getting started in programming with Python. It's
     aimed at biologists that want to learn programming.
-    :<http://www.pasteur.fr/formation/infobio/python/>
+
+  
+<http://www.pasteur.fr/formation/infobio/python/>
 
 #### Papers
 
