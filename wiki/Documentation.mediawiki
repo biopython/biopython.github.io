@@ -58,7 +58,6 @@
 
 * Details about the biopython.org website.
 :[[website|HTML]]
-:[[website HTML]]
 * How to contribute code to Biopython.
 :HTML
 * Instructions for building releases of Biopython.
