@@ -42,7 +42,7 @@ Biopython follows the coding conventions laid out by Guido in his [http://www.py
 * _single_leading_underscores to indicate internal functions or classes that shouldn't be called directly be a user.
 * Tabs are bad. Most people in the Python community now dislike tabs and instead prefer using 4 spaces for indentation. Most editors can help you take care of this (Emacs python-mode uses the 4 space rule, for instance). Tools/scripts/reindent.py in the Python distribution will help get rid of tabs in files. 
 
-Epydoc is being used to generate automatic documentation of the source code so it definitely is useful to put helpful comments in your code so that they will be reflected in the API documentation (in addition to all the normal reasons to document code).
+[http://epydoc.sourceforge.net/ Epydoc] is being used to generate automatic documentation of the source code so it definitely is useful to put helpful comments in your code so that they will be reflected in the API documentation (in addition to all the normal reasons to document code).
 
 We don't do anything fancy to try and format the comments in the code -- they are displayed by epydoc exactly as written in the source. This isn't fancy, but it's effective and easier then trying to deal with the myriad of different ways to try and structure source code comments.
 

@@ -96,10 +96,11 @@ The important highlights are:
     for instance). Tools/scripts/reindent.py in the Python distribution
     will help get rid of tabs in files.
 
-Epydoc is being used to generate automatic documentation of the source
-code so it definitely is useful to put helpful comments in your code so
-that they will be reflected in the API documentation (in addition to all
-the normal reasons to document code).
+[Epydoc](http://epydoc.sourceforge.net/) is being used to generate
+automatic documentation of the source code so it definitely is useful to
+put helpful comments in your code so that they will be reflected in the
+API documentation (in addition to all the normal reasons to document
+code).
 
 We don't do anything fancy to try and format the comments in the code --
 they are displayed by epydoc exactly as written in the source. This
