@@ -149,6 +149,6 @@ PDF | tarball with LaTex source
 -   Instructions for building releases of Biopython.
 
   
-HTML
+[HTML](Building_a_release "wikilink")
 
 

@@ -61,4 +61,4 @@
 * How to contribute code to Biopython.
 :[[Contributing|HTML]]
 * Instructions for building releases of Biopython.
-:HTML
+:[[Building a release|HTML]]
