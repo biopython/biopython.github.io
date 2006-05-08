@@ -1,0 +1,47 @@
+Build Biopython in 21 easy steps!!
+
+   1. make sure I have the latest code
+          * drevil:~biopython> cvs update -P -d 
+   2. Bump version number of Martel (sync with Biopython version?) so that any changes will be installed on new downloads
+   3. make sure README still up to date
+   4. add info to NEWS
+          * > cvs log -b -N -d'>2002-12-18' 
+   5. make sure CONTRIB still current
+   6. make sure setup.py still up to date
+          * update version 
+   7. do last check to make sure things are checked in
+          * make clean
+          * cvs update -P -d 
+   8. do last regression test
+          * drevil:~biopython/Tests> python run_test.py --no-gui 
+   9. check out clean version somewhere else
+          * drevil:~tmp1/> cvs -d :ext:jchang@pub.open-bio.org:/home/repository/biopython checkout -r biopython-100a1 biopython 
+  10. make documentation PDF, text and HTML in Doc
+  11. make MANIFEST
+          * make sure MANIFEST.in up to date.
+          * make clean
+          * python setup.py sdist --manifest-only 
+  12. make sure the regression tests run here
+          * drevil:~tmp1/biopython/Tests/> python run_tests.py --no-gui 
+  13. make the source distribution
+          * drevil:~tmp1/biopython> python setup.py sdist --formats=gztar,zip 
+  14. untar the file somewhere else
+          * drevil:~tmp2> gzcat ../tmp1/biopython/dist/biopython-1.00a1.tar.gz | tar xvf -
+          * Check to make sure it includes Martel 
+  15. make sure I can build and test it
+          * drevil:~tmp2/biopython-1.00a1/> python setup.py build
+          * drevil:~tmp2/biopython-1.00a1/> python setup.py test
+          * drevil:~tmp2/biopython-1.00a1/> python setup.py install --root . 
+  16. add CVS tag
+          * drevil:~biopython> cvs tag biopython-100a1 
+  17. Update API documentation using Epydoc
+          * Go to the /usr/local/lib/python2.4/site-packages (or equivalent) directory. Running epydoc in your CVS tree works, but can miss some packages due to import errors.
+          * epydoc -o api -u http://biopython.org -n Biopython --docformat plaintext Bio BioSQL Martel
+          * Move the generated api directory to replace /home/websites/biopython.org/docs/api. 
+  18. ftp the .tar.gz, .zip files to biopython
+  19. update the web site
+          * add to Download page (BioWebsite/download.py)
+          * Post news on news.open-bio.org
+          * make sure links work 
+  20. clean up the tmp directories I made
+  21. send email to biopython@biopython.org, biopython-announce@biopython.org
