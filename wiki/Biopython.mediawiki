@@ -1,3 +1,5 @@
+[[Image:Example.jpg]]
+
 === About the Biopython project ===
 
 
