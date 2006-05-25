@@ -15,6 +15,9 @@ system, for this purpose. For more information on CVS, check out:
 
 [<http://www.cvshome.org/>](http://www.cvshome.org/)
 
+You can also [track CVS changes](Tracking_CVS_commits "wikilink") via
+[RSS](wp:RSS_(file_format) "wikilink").
+
 ### Viewing CVS Sources
 
 Our current development CVS sources are available for viewing via
