@@ -26,13 +26,15 @@ layout: wiki
     installing Python database adaptors and basic usage of BioSQL.
 
   
-HTML | PDF
+[HTML](http://biopython.open-bio.org/static/DIST/python_biosql_basic.html)
+|
+[PDF](http://biopython.open-bio.org/static/DIST/python_biosql_basic.pdf)
 
 -   Documentation for the cluster module in Biopython. This describes
     the underlying C library and the Python interface.
 
   
-PDF
+[PDF](http://biopython.open-bio.org/static/DIST/cluster.pdf)
 
 -   Cookbook-style documentation:
 
