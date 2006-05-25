@@ -10,8 +10,8 @@ layout: wiki
     the Biopython dependencies, and Biopython itself.
 
   
-[HTML](http://biopython.open-bio.org/static/DIST/Installation.html) |
-[PDF](http://biopython.open-bio.org/static/DIST/Installation.pdf)
+[HTML](http://biopython.open-bio.org/static/DIST/docs/Installation.html)
+| [PDF](http://biopython.open-bio.org/static/DIST/docs/Installation.pdf)
 
 -   The Biopython Tutorial and Cookbook contains the main bulk of
     Biopython documentation. It provides information to get you started
@@ -19,50 +19,52 @@ layout: wiki
     of modules.
 
   
-[HTML](http://biopython.open-bio.org/static/DIST/Tutorial.html) |
-[PDF](http://biopython.open-bio.org/static/DIST/Tutorial.pdf)
+[HTML](http://biopython.open-bio.org/static/DIST/docs/Tutorial.html) |
+[PDF](http://biopython.open-bio.org/static/DIST/docs/Tutorial.pdf)
 
 -   Documentation for the Biopython interfaces to BioSQL cover
     installing Python database adaptors and basic usage of BioSQL.
 
   
-[HTML](http://biopython.open-bio.org/static/DIST/python_biosql_basic.html)
+[HTML](http://biopython.open-bio.org/static/DIST/docs/python_biosql_basic.html)
 |
-[PDF](http://biopython.open-bio.org/static/DIST/python_biosql_basic.pdf)
+[PDF](http://biopython.open-bio.org/static/DIST/docs/python_biosql_basic.pdf)
 
 -   Documentation for the cluster module in Biopython. This describes
     the underlying C library and the Python interface.
 
   
-[PDF](http://biopython.open-bio.org/static/DIST/cluster.pdf)
+[PDF](http://biopython.open-bio.org/static/DIST/docs/cluster.pdf)
 
 -   Cookbook-style documentation:
 
 :\*Converting GenBank (and other formats) to Fasta.
 
-::[HTML](http://biopython.open-bio.org/static/DIST/genbank_to_fasta.html)
-| [PDF](http://biopython.open-bio.org/static/DIST/genbank_to_fasta.pdf)
+::[HTML](http://biopython.open-bio.org/static/DIST/docs/genbank_to_fasta.html)
+|
+[PDF](http://biopython.open-bio.org/static/DIST/docs/genbank_to_fasta.pdf)
 
 :\*Writing Tests for Biopython.
 
-::[HTML](http://biopython.open-bio.org/static/DIST/biopython_test.html)
-| [PDF](http://biopython.open-bio.org/static/DIST/biopython_test.pdf)
+::[HTML](http://biopython.open-bio.org/static/DIST/docs/biopython_test.html)
+|
+[PDF](http://biopython.open-bio.org/static/DIST/docs/biopython_test.pdf)
 
 :\*Logistic Regression supervised learning.
 
-::[HTML](http://biopython.open-bio.org/static/DIST/LogisticRegression.html)
+::[HTML](http://biopython.open-bio.org/static/DIST/docs/LogisticRegression.html)
 |
-[PDF](http://biopython.open-bio.org/static/DIST/LogisticRegression.html)
+[PDF](http://biopython.open-bio.org/static/DIST/docs/LogisticRegression.html)
 
 :\*The Biopython Structural Bioinformatics FAQ.
 
-::[PDF](http://biopython.open-bio.org/static/DIST/biopdb_faq.pdf)
+::[PDF](http://biopython.open-bio.org/static/DIST/docs/biopdb_faq.pdf)
 
 :\*Working with restriction enzymes.
 
   
   
-[HTML](http://biopython.open-bio.org/static/DIST/Restriction.html)
+[HTML](http://biopython.open-bio.org/static/DIST/docs/Restriction.html)
 
 #### API Documentation
 
