@@ -56,7 +56,7 @@ layout: wiki
 
 :\*The Biopython Structural Bioinformatics FAQ.
 
-::[PDF](http://biopython.open-bio.org/static/DIST/biopdb_faq.PDF)
+::[PDF](http://biopython.open-bio.org/static/DIST/biopdb_faq.pdf)
 
 :\*Working with restriction enzymes.
 

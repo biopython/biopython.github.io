@@ -16,7 +16,7 @@
 :*Logistic Regression supervised learning. 
 ::[http://biopython.open-bio.org/static/DIST/LogisticRegression.html HTML] | [http://biopython.open-bio.org/static/DIST/LogisticRegression.html PDF]
 :*The Biopython Structural Bioinformatics FAQ. 
-::[http://biopython.open-bio.org/static/DIST/biopdb_faq.PDF PDF]
+::[http://biopython.open-bio.org/static/DIST/biopdb_faq.pdf PDF]
 :*Working with restriction enzymes. 
 ::[http://biopython.open-bio.org/static/DIST/Restriction.html HTML]
 
