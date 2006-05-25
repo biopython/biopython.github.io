@@ -14,7 +14,7 @@
 :*Writing Tests for Biopython. 
 ::[http://biopython.open-bio.org/static/DIST/docs/cookbook/biopython_test.html HTML] | [http://biopython.open-bio.org/static/DIST/docs/cookbook/biopython_test.pdf PDF]
 :*Logistic Regression supervised learning. 
-::[http://biopython.open-bio.org/static/DIST/docs/cookbook/LogisticRegression.html HTML] | [http://biopython.open-bio.org/static/DIST/docs/cookbook/LogisticRegression.html PDF]
+::[http://biopython.open-bio.org/static/DIST/docs/cookbook/LogisticRegression.html HTML] | [http://biopython.open-bio.org/static/DIST/docs/cookbook/LogisticRegression.pdf PDF]
 :*The Biopython Structural Bioinformatics FAQ. 
 ::[http://biopython.open-bio.org/static/DIST/docs/cookbook/biopdb_faq.pdf PDF]
 :*Working with restriction enzymes. 
