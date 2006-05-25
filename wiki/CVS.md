@@ -30,8 +30,7 @@ The main repository is the biopython directory. You can download these
 sources by clicking the Download tarball link at the bottom of the page.
 
 An hourly updated CVS checkout of Biopython is available at
-
-[`http://biopython.open-bio.org/SRC/biopython`](http://biopython.open-bio.org/SRC/biopython)
+<http://biopython.open-bio.org/SRC/biopython>
 
 ### Anonymous CVS Access
 
