@@ -12,7 +12,6 @@ base at the same time.
 
 We use CVS (Concurrent Versions System), the most common version control
 system, for this purpose. For more information on CVS, check out:
-
 [<http://www.cvshome.org/>](http://www.cvshome.org/)
 
 An hourly updated CVS checkout of Biopython is available at
