@@ -88,6 +88,6 @@ Old Releases
 -   biopython-1.00a3.zip 2,165Kb
 -   biopython-1.00a3.win32-py2.0.exe 583Kb
 -   biopython-1.00a3.win32-py2.1.exe 585Kb
--   [Macbiopython-1.00a3.sit.bin](http://biopython.open-bio.org/static/DIST/Macbiopython-1.00a3.sit.bin)
-    1926Kb
+-   \[static/DIST/Macbiopython-1.00a3.sit.bin
+    Macbiopython-1.00a3.sit.bin\] 1926Kb
 
