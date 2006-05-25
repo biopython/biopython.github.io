@@ -14,12 +14,13 @@ Current Release -- 1.41 -- 28 Oct 2005
 
 ### Files
 
--   Source Tarball -- biopython-1.41.tar.gz 3,718 Kb
--   Source Zip File -- biopython-1.41.zip 4,240 Kb
+-   Source Tarball -- biopython-1.41.tar.gz biopython-1.41.tar.gz 3,718
+    Kb
+-   Source Zip File -- biopython-1.41.zip biopython-1.41.zip 4,240 Kb
 -   Windows Installer for Python 2.3 -- biopython-1.41.win32-py2.3.exe
-    1,038 Kb
+    biopython-1.41.win32-py2.3.exe 1,038 Kb
 -   Windows Installer for Python 2.4 -- biopython-1.41.win32-py2.4.exe
-    1,042 Kb
+    biopython-1.41.win32-py2.4.exe\] 1,042 Kb
 
 ### Required Software
 
