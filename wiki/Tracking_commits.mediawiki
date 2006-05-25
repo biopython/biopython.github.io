@@ -1,6 +1,6 @@
 ==Tracking CVS commits==
 
-You can track code development in Biopython by [[wp:RSS (file format)|RSS feeds]] or the Biopython-dev [[Mailing lists|Mailing list]].
+You can track code development in Biopython by [[wp:RSS (file format)|RSS feeds]] or the biopython-dev [[Mailing lists|Mailing list]].
 
 {| border="1" width="800px"
 |- style="background-color:#ccccff; text-align:center"
