@@ -10,7 +10,8 @@ layout: wiki
     the Biopython dependencies, and Biopython itself.
 
   
-HTML | PDF
+[HTML](http://biopython.open-bio.org/static/DIST/Installation.html) |
+[PDF](http://biopython.open-bio.org/static/DIST/Installation.pdf)
 
 -   The Biopython Tutorial and Cookbook contains the main bulk of
     Biopython documentation. It provides information to get you started
