@@ -116,7 +116,8 @@ text](http://bioinformatics.oupjournals.org/cgi/content/abstract/19/17/2308)
     August of 2000.
 
   
-HTML | PDF
+[HTML](http://biopython.open-bio.org/static/DIST/docs/acm/ACMbiopy.html)
+| [PDF](http://biopython.open-bio.org/static/DIST/docs/acm/ACMbiopy.pdf)
 
 #### Presentations
 
