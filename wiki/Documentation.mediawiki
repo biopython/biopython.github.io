@@ -22,8 +22,8 @@
 
 ==== API Documentation ====
 
-* Documentation for Biopython modules is generated directly from source code comments using Epydoc.
-:HTML
+* Documentation for Biopython modules is generated directly from source code comments using [http://epydoc.sourceforge.net/ Epydoc].
+:[http://biopython.open-bio.org/static/DIST/docs/api/public/trees.html HTML]
 
 ==== Online Course Notes ====
 
