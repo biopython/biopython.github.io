@@ -45,8 +45,8 @@ layout: wiki
 
 :\*Writing Tests for Biopython.
 
-::[HTML](http://biopython.open-bio.org/static/DIST/python_test.html) |
-[PDF](http://biopython.open-bio.org/static/DIST/python_test.pdf)
+::[HTML](http://biopython.open-bio.org/static/DIST/biopython_test.html)
+| [PDF](http://biopython.open-bio.org/static/DIST/biopython_test.pdf)
 
 :\*Logistic Regression supervised learning.
 
