@@ -10,15 +10,15 @@
 :[http://biopython.open-bio.org/static/DIST/cluster.pdf PDF]
 * Cookbook-style documentation:
 :*Converting GenBank (and other formats) to Fasta. 
-::HTML | PDF
+::[http://biopython.open-bio.org/static/DIST/genbank_to_fasta.html HTML] | [http://biopython.open-bio.org/static/DIST/genbank_to_fasta.pdf PDF]
 :*Writing Tests for Biopython. 
-::HTML | PDF
+::[http://biopython.open-bio.org/static/DIST/python_biosql_basic.html HTML] | [http://biopython.open-bio.org/static/DIST/python_biosql_basic.pdf PDF]
 :*Logistic Regression supervised learning. 
-::HTML | PDF
+::[http://biopython.open-bio.org/static/DIST/LogisticRegression.html HTML] | [http://biopython.open-bio.org/static/DIST/LogisticRegression.html PDF]
 :*The Biopython Structural Bioinformatics FAQ. 
-::PDF
+::[http://biopython.open-bio.org/static/DIST/biopdf_faq.PDF PDF]
 :*Working with restriction enzymes. 
-::HTML
+::[http://biopython.open-bio.org/static/DIST/Restriction.html HTML]
 
 ==== API Documentation ====
 

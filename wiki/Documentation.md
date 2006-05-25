@@ -40,25 +40,30 @@ layout: wiki
 
 :\*Converting GenBank (and other formats) to Fasta.
 
-::HTML | PDF
+::[HTML](http://biopython.open-bio.org/static/DIST/genbank_to_fasta.html)
+| [PDF](http://biopython.open-bio.org/static/DIST/genbank_to_fasta.pdf)
 
 :\*Writing Tests for Biopython.
 
-::HTML | PDF
+::[HTML](http://biopython.open-bio.org/static/DIST/python_biosql_basic.html)
+|
+[PDF](http://biopython.open-bio.org/static/DIST/python_biosql_basic.pdf)
 
 :\*Logistic Regression supervised learning.
 
-::HTML | PDF
+::[HTML](http://biopython.open-bio.org/static/DIST/LogisticRegression.html)
+|
+[PDF](http://biopython.open-bio.org/static/DIST/LogisticRegression.html)
 
 :\*The Biopython Structural Bioinformatics FAQ.
 
-::PDF
+::[PDF](http://biopython.open-bio.org/static/DIST/biopdf_faq.PDF)
 
 :\*Working with restriction enzymes.
 
   
   
-HTML
+[HTML](http://biopython.open-bio.org/static/DIST/Restriction.html)
 
 #### API Documentation
 
