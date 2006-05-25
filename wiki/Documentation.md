@@ -133,19 +133,25 @@ source](http://biopython.open-bio.org/static/DIST/docs/presentations/biopython_e
     Analysis Pipelines.
 
   
-PDF | tarball with LaTeX source
+[PDF](http://biopython.open-bio.org/static/DIST/docs/presentations/bosc_biopython.pdf)
+| [tarball with LaTeX
+source](http://biopython.open-bio.org/static/DIST/docs/presentations/bosc_biopython.tar.gz)
 
 -   General talk about scripting with Biopython based example of a
     primer design program.
 
   
-PDF | tarball with LaTeX source
+[PDF](http://biopython.open-bio.org/static/DIST/docs/presentations/scripting.pdf)
+| [tarball with LaTeX
+source](http://biopython.open-bio.org/static/DIST/docs/presentations/scripting.tar.gz)
 
 -   Talk about Python and Biopython with an emphasis on teaching the
     design goals of Biopython.
 
   
-PDF | tarball with LaTex source
+[PDF](http://biopython.open-bio.org/static/DIST/docs/presentations/biopython.pdf)
+| [tarball with LaTeX
+source](http://biopython.open-bio.org/static/DIST/docs/presentations/biopy_group.tar.gz)
 
 #### Documentation for Developers
 
