@@ -1,0 +1,26 @@
+Our News/blog server is available at [http://bioperl.org/news/ bioperl.org/news/].
+
+There is also a (currently separate) news server for all the [[OBF]] projects at [http://news.open-bio.org news.open-bio.org].   The [[Project:RSS feeds|RSS feeds]] and [[tracking CVS commits]] pages have more information.
+
+
+{| border="1" width="800px" 
+|- style="background-color:#ccccff; text-align:center"
+!  BioPerl News
+|-
+| [http://bioperl.org/news/feed RSS feed]
+|-
+| <rss>http://bioperl.org/news/feed|date|charset=utf-8|max=10</rss>
+|- style="background-color:#ccccff; text-align:center"
+! Recent [[Mailing lists|Mailing list]] posts
+|-
+| [http://rss.gmane.org/gmane.comp.lang.perl.bio.general RSS feed]
+|-
+| <rss>http://rss.gmane.org/gmane.comp.lang.perl.bio.general|short|date|max=15</rss>
+|- style="background-color:#ccccff; text-align:center"
+! OBF News
+|-
+| [http://news.open-bio.org/index.rdf RSS feed]
+|-
+| <rss>http://news.open-bio.org/index.rdf|max=10</rss>
+|-
+|}
