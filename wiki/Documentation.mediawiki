@@ -12,7 +12,7 @@
 :*Converting GenBank (and other formats) to Fasta. 
 ::[http://biopython.open-bio.org/static/DIST/genbank_to_fasta.html HTML] | [http://biopython.open-bio.org/static/DIST/genbank_to_fasta.pdf PDF]
 :*Writing Tests for Biopython. 
-::[http://biopython.open-bio.org/static/DIST/python_biosql_basic.html HTML] | [http://biopython.open-bio.org/static/DIST/python_biosql_basic.pdf PDF]
+::[http://biopython.open-bio.org/static/DIST/python_test.html HTML] | [http://biopython.open-bio.org/static/DIST/python_biosql_basic.pdf PDF]
 :*Logistic Regression supervised learning. 
 ::[http://biopython.open-bio.org/static/DIST/LogisticRegression.html HTML] | [http://biopython.open-bio.org/static/DIST/LogisticRegression.html PDF]
 :*The Biopython Structural Bioinformatics FAQ. 
