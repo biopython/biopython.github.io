@@ -125,7 +125,9 @@ text](http://bioinformatics.oupjournals.org/cgi/content/abstract/19/17/2308)
     examples with Biopython libraries and Martel.
 
   
-PDF | tarball with LaTeX source
+[PDF](http://biopython.open-bio.org/static/DIST/docs/presentations/biopython_exelixis.pdf)
+| [tarball with LaTeX
+source](http://biopython.open-bio.org/static/DIST/docs/presentations/biopython_exelixis.tar.gz)
 
 -   BOSC 2003 presentation about Biopython and using it for Laboratory
     Analysis Pipelines.

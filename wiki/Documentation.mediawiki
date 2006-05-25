@@ -46,7 +46,7 @@
 ==== Presentations ====
 
 * March 2004 presentation at Exelixis about Biopython. Includes code examples with Biopython libraries and Martel.
-:PDF | tarball with LaTeX source
+:[http://biopython.open-bio.org/static/DIST/docs/presentations/biopython_exelixis.pdf PDF] | [http://biopython.open-bio.org/static/DIST/docs/presentations/biopython_exelixis.tar.gz tarball with LaTeX source]
 * BOSC 2003 presentation about Biopython and using it for Laboratory Analysis Pipelines.
 :PDF | tarball with LaTeX source
 * General talk about scripting with Biopython based example of a primer design program.
