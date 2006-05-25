@@ -8,7 +8,7 @@ Our News/blog server is available at
 [biopython.org/news/](http://biopython.open-bio.org/news/).
 
 There is also a (currently separate) news server for all the
-[OBF](OBF "wikilink") projects at
+[OBF](http://www.bioperl.org/wiki/OBF) projects at
 [news.open-bio.org](http://news.open-bio.org).
 
 | Biopython News                                                                             |
