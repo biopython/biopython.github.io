@@ -3,7 +3,7 @@
 * Installation instructions cover the installation of Python itself, the Biopython dependencies, and Biopython itself. 
 :[http://biopython.open-bio.org/static/DIST/Installation.html HTML] | [http://biopython.open-bio.org/static/DIST/Installation.pdf PDF]
 * The Biopython Tutorial and Cookbook contains the main bulk of Biopython documentation. It provides information to get you started with Biopython, in addition to specific documentation on a number of modules. 
-:HTML | PDF
+:[http://biopython.open-bio.org/static/DIST/Tutorial.html HTML] | [http://biopython.open-bio.org/static/DIST/Tutorial.pdf PDF]
 * Documentation for the Biopython interfaces to BioSQL cover installing Python database adaptors and basic usage of BioSQL. 
 :HTML | PDF
 * Documentation for the cluster module in Biopython. This describes the underlying C library and the Python interface. 
