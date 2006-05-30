@@ -1,29 +1,29 @@
 ==== Documentation ====
 
 * Installation instructions cover the installation of Python itself, the Biopython dependencies, and Biopython itself. 
-:[http://biopython.open-bio.org/static/DIST/docs/install/Installation.html HTML] | [http://biopython.open-bio.org/static/DIST/docs/install/Installation.pdf PDF]
+:[http://biopython.open-bio.org/DIST/docs/install/Installation.html HTML] | [http://biopython.open-bio.org//DIST/docs/install/Installation.pdf PDF]
 * The Biopython Tutorial and Cookbook contains the main bulk of Biopython documentation. It provides information to get you started with Biopython, in addition to specific documentation on a number of modules. 
-:[http://biopython.open-bio.org/static/DIST/docs/tutorial/Tutorial.html HTML] | [http://biopython.open-bio.org/static/DIST/docs/tutorial/Tutorial.pdf PDF]
+:[http://biopython.open-bio.org/DIST/docs/tutorial/Tutorial.html HTML] | [http://biopython.open-bio.org/DIST/docs/tutorial/Tutorial.pdf PDF]
 * Documentation for the Biopython interfaces to BioSQL cover installing Python database adaptors and basic usage of BioSQL. 
-:[http://biopython.open-bio.org/static/DIST/docs/biosql/python_biosql_basic.html HTML] | [http://biopython.open-bio.org/static/DIST/docs/biosql/python_biosql_basic.pdf PDF]
+:[http://biopython.open-bio.org/DIST/docs/biosql/python_biosql_basic.html HTML] | [http://biopython.open-bio.org/DIST/docs/biosql/python_biosql_basic.pdf PDF]
 * Documentation for the cluster module in Biopython. This describes the underlying C library and the Python interface. 
-:[http://biopython.open-bio.org/static/DIST/docs/cluster/cluster.pdf PDF]
+:[http://biopython.open-bio.org/DIST/docs/cluster/cluster.pdf PDF]
 * Cookbook-style documentation:
 :*Converting GenBank (and other formats) to Fasta. 
-::[http://biopython.open-bio.org/static/DIST/docs/cookbook/genbank_to_fasta.html HTML] | [http://biopython.open-bio.org/static/DIST/docs/cookbook/genbank_to_fasta.pdf PDF]
+::[http://biopython.open-bio.org/DIST/docs/cookbook/genbank_to_fasta.html HTML] | [http://biopython.open-bio.org/DIST/docs/cookbook/genbank_to_fasta.pdf PDF]
 :*Writing Tests for Biopython. 
-::[http://biopython.open-bio.org/static/DIST/docs/cookbook/biopython_test.html HTML] | [http://biopython.open-bio.org/static/DIST/docs/cookbook/biopython_test.pdf PDF]
+::[http://biopython.open-bio.org/DIST/docs/cookbook/biopython_test.html HTML] | [http://biopython.open-bio.org/DIST/docs/cookbook/biopython_test.pdf PDF]
 :*Logistic Regression supervised learning. 
-::[http://biopython.open-bio.org/static/DIST/docs/cookbook/LogisticRegression.html HTML] | [http://biopython.open-bio.org/static/DIST/docs/cookbook/LogisticRegression.pdf PDF]
+::[http://biopython.open-bio.org/DIST/docs/cookbook/LogisticRegression.html HTML] | [http://biopython.open-bio.org/DIST/docs/cookbook/LogisticRegression.pdf PDF]
 :*The Biopython Structural Bioinformatics FAQ. 
-::[http://biopython.open-bio.org/static/DIST/docs/cookbook/biopdb_faq.pdf PDF]
+::[http://biopython.open-bio.org/DIST/docs/cookbook/biopdb_faq.pdf PDF]
 :*Working with restriction enzymes. 
-::[http://biopython.open-bio.org/static/DIST/docs/cookbook/Restriction.html HTML]
+::[http://biopython.open-bio.org/DIST/docs/cookbook/Restriction.html HTML]
 
 ==== API Documentation ====
 
 * Documentation for Biopython modules is generated directly from source code comments using [http://epydoc.sourceforge.net/ Epydoc].
-:[http://biopython.open-bio.org/static/DIST/docs/api/public/trees.html HTML]
+:[http://biopython.open-bio.org/DIST/docs/api/public/trees.html HTML]
 
 ==== Online Course Notes ====
 
@@ -41,18 +41,18 @@
 *Thomas wrote an applications note for Bioinformatics about the Biopython PDB parser and related code dealing with crystal structures.
 :[http://bioinformatics.oupjournals.org/cgi/content/abstract/19/17/2308 Abstract and links to full text]
 *Brad and Jeff wrote a paper for the ACM SIG-BIO newsletter back in August of 2000.
-:[http://biopython.open-bio.org/static/DIST/docs/acm/ACMbiopy.html HTML] | [http://biopython.open-bio.org/static/DIST/docs/acm/ACMbiopy.pdf PDF]
+:[http://biopython.open-bio.org/DIST/docs/acm/ACMbiopy.html HTML] | [http://biopython.open-bio.org/DIST/docs/acm/ACMbiopy.pdf PDF]
 
 ==== Presentations ====
 
 * March 2004 presentation at Exelixis about Biopython. Includes code examples with Biopython libraries and Martel.
-:[http://biopython.open-bio.org/static/DIST/docs/presentations/biopython_exelixis.pdf PDF] | [http://biopython.open-bio.org/static/DIST/docs/presentations/biopython_exelixis.tar.gz tarball with LaTeX source]
+:[http://biopython.open-bio.org/DIST/docs/presentations/biopython_exelixis.pdf PDF] | [http://biopython.open-bio.org/DIST/docs/presentations/biopython_exelixis.tar.gz tarball with LaTeX source]
 * BOSC 2003 presentation about Biopython and using it for Laboratory Analysis Pipelines.
-:[http://biopython.open-bio.org/static/DIST/docs/presentations/bosc_biopython.pdf PDF] | [http://biopython.open-bio.org/static/DIST/docs/presentations/bosc_biopython.tar.gz tarball with LaTeX source]
+:[http://biopython.open-bio.org/DIST/docs/presentations/bosc_biopython.pdf PDF] | [http://biopython.open-bio.org/DIST/docs/presentations/bosc_biopython.tar.gz tarball with LaTeX source]
 * General talk about scripting with Biopython based example of a primer design program.
-:[http://biopython.open-bio.org/static/DIST/docs/presentations/scripting.pdf PDF] | [http://biopython.open-bio.org/static/DIST/docs/presentations/scripting.tar.gz tarball with LaTeX source]
+:[http://biopython.open-bio.org/DIST/docs/presentations/scripting.pdf PDF] | [http://biopython.open-bio.org/DIST/docs/presentations/scripting.tar.gz tarball with LaTeX source]
 * Talk about Python and Biopython with an emphasis on teaching the design goals of Biopython.
-:[http://biopython.open-bio.org/static/DIST/docs/presentations/biopython.pdf PDF] | [http://biopython.open-bio.org/static/DIST/docs/presentations/biopy_group.tar.gz tarball with LaTeX source]
+:[http://biopython.open-bio.org/DIST/docs/presentations/biopython.pdf PDF] | [http://biopython.open-bio.org/DIST/docs/presentations/biopy_group.tar.gz tarball with LaTeX source]
 
 ==== Documentation for Developers ====
 
