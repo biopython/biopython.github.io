@@ -51,10 +51,10 @@ Biopython-corba
 ### Files
 
 -   Source tarball --
-    [biopython-corba-0.3.0.tar.gz](http://biopython.open-bio.org/static/DIST/biopython-corba-0.3.0.tar.gz)
+    [biopython-corba-0.3.0.tar.gz](http://biopython.open-bio.org/DIST/biopython-corba-0.3.0.tar.gz)
     344Kb
 -   Source Zip File --
-    [biopython-corba-0.3.0.zip](http://biopython.open-bio.org/static/DIST/biopython-corba-0.3.0.zip)
+    [biopython-corba-0.3.0.zip](http://biopython.open-bio.org/DIST/biopython-corba-0.3.0.zip)
     378Kb
 
 ### Required Software
@@ -66,74 +66,74 @@ Biopython-corba
 Old Releases
 ============
 
--   [biopython-1.40b.tar.gz](http://biopython.open-bio.org/static/DIST/biopython-1.40b.tar.gz)
+-   [biopython-1.40b.tar.gz](http://biopython.open-bio.org/DIST/biopython-1.40b.tar.gz)
     3,437 Kb
--   [biopython-1.40b.zip](http://biopython.open-bio.org/static/DIST/biopython-1.40b.zip)
+-   [biopython-1.40b.zip](http://biopython.open-bio.org/DIST/biopython-1.40b.zip)
     3,267 Kb
--   [biopython-1.40b.win32-py2.3.exe](http://biopython.open-bio.org/static/DIST/biopython-1.40b.win32-py2.3.exe)
+-   [biopython-1.40b.win32-py2.3.exe](http://biopython.open-bio.org/DIST/biopython-1.40b.win32-py2.3.exe)
     1,019 Kb
--   [biopython-1.40b.win32-py2.4.exe](http://biopython.open-bio.org/static/DIST/biopython-1.40b.win32-py2.4.exe)
+-   [biopython-1.40b.win32-py2.4.exe](http://biopython.open-bio.org/DIST/biopython-1.40b.win32-py2.4.exe)
     1,023 Kb
--   [biopython-1.30.tar.gz](http://biopython.open-bio.org/static/DIST/biopython-1.30.tar.gz)
+-   [biopython-1.30.tar.gz](http://biopython.open-bio.org/DIST/biopython-1.30.tar.gz)
     3,186 Kb
--   [biopython-1.24.tar.gz](http://biopython.open-bio.org/static/DIST/biopython-1.24.tar.gz)
+-   [biopython-1.24.tar.gz](http://biopython.open-bio.org/DIST/biopython-1.24.tar.gz)
     3,081 Kb
--   [biopython-1.24.zip](http://biopython.open-bio.org/static/DIST/biopython-1.24.zip)
+-   [biopython-1.24.zip](http://biopython.open-bio.org/DIST/biopython-1.24.zip)
     3,623 Kb
--   [biopython-1.24.win32-py2.2.exe](http://biopython.open-bio.org/static/DIST/biopython-1.24.win32-py2.2.exe)
+-   [biopython-1.24.win32-py2.2.exe](http://biopython.open-bio.org/DIST/biopython-1.24.win32-py2.2.exe)
     892 Kb
--   [biopython-1.24.win32-py2.3.exe](http://biopython.open-bio.org/static/DIST/biopython-1.24.win32-py2.3.exe)
+-   [biopython-1.24.win32-py2.3.exe](http://biopython.open-bio.org/DIST/biopython-1.24.win32-py2.3.exe)
     894 Kb
--   [biopython-1.23.tar.gz](http://biopython.open-bio.org/static/DIST/biopython-1.23.tar.gz)
+-   [biopython-1.23.tar.gz](http://biopython.open-bio.org/DIST/biopython-1.23.tar.gz)
     2,241 Kb
--   [biopython-1.23.zip](http://biopython.open-bio.org/static/DIST/biopython-1.23.zip)
+-   [biopython-1.23.zip](http://biopython.open-bio.org/DIST/biopython-1.23.zip)
     2,719 Kb
--   [biopython-1.23.win32-py2.2.exe](http://biopython.open-bio.org/static/DIST/biopython-1.23.win32-py2.2.exe)
+-   [biopython-1.23.win32-py2.2.exe](http://biopython.open-bio.org/DIST/biopython-1.23.win32-py2.2.exe)
     833 Kb
--   [biopython-1.23.win32-py2.3.exe](http://biopython.open-bio.org/static/DIST/biopython-1.23.win32-py2.3.exe)
+-   [biopython-1.23.win32-py2.3.exe](http://biopython.open-bio.org/DIST/biopython-1.23.win32-py2.3.exe)
     842 Kb
--   [biopython-1.22.tar.gz](http://biopython.open-bio.org/static/DIST/biopython-1.22.tar.gz)
+-   [biopython-1.22.tar.gz](http://biopython.open-bio.org/DIST/biopython-1.22.tar.gz)
     2,214 Kb
--   [biopython-1.22.zip](http://biopython.open-bio.org/static/DIST/biopython-1.22.zip)
+-   [biopython-1.22.zip](http://biopython.open-bio.org/DIST/biopython-1.22.zip)
     2,691 Kb
--   [biopython-1.21.tar.gz](http://biopython.open-bio.org/static/DIST/biopython-1.21.tar.gz)
+-   [biopython-1.21.tar.gz](http://biopython.open-bio.org/DIST/biopython-1.21.tar.gz)
     2,214 Kb
--   [biopython-1.21.zip](http://biopython.open-bio.org/static/DIST/biopython-1.21.zip)
+-   [biopython-1.21.zip](http://biopython.open-bio.org/DIST/biopython-1.21.zip)
     2,897 Kb
--   [biopython-1.21.win32-py2.2.exe](http://biopython.open-bio.org/static/DIST/biopython-1.21.win32-py2.2.exe)
+-   [biopython-1.21.win32-py2.2.exe](http://biopython.open-bio.org/DIST/biopython-1.21.win32-py2.2.exe)
     770 Kb
--   [biopython-1.21.win32-py2.3.exe](http://biopython.open-bio.org/static/DIST/biopython-1.21.win32-py2.3.exe)
+-   [biopython-1.21.win32-py2.3.exe](http://biopython.open-bio.org/DIST/biopython-1.21.win32-py2.3.exe)
     832 Kb
--   [biopython-1.20.tar.gz](http://biopython.open-bio.org/static/DIST/biopython-1.20.tar.gz)
+-   [biopython-1.20.tar.gz](http://biopython.open-bio.org/DIST/biopython-1.20.tar.gz)
     2,101 Kb
--   [biopython-1.20.zip](http://biopython.open-bio.org/static/DIST/biopython-1.20.zip)
+-   [biopython-1.20.zip](http://biopython.open-bio.org/DIST/biopython-1.20.zip)
     2,602 Kb
--   [biopython-1.10.tar.gz](http://biopython.open-bio.org/static/DIST/biopython-1.10.tar.gz)
+-   [biopython-1.10.tar.gz](http://biopython.open-bio.org/DIST/biopython-1.10.tar.gz)
     1,811 Kb
--   [biopython-1.10.zip](http://biopython.open-bio.org/static/DIST/biopython-1.10.zip)
+-   [biopython-1.10.zip](http://biopython.open-bio.org/DIST/biopython-1.10.zip)
     2,300 Kb
--   [biopython-1.10.win32-py2.2.exe](http://biopython.open-bio.org/static/DIST/biopython-1.10.win32-py2.2.exe)
+-   [biopython-1.10.win32-py2.2.exe](http://biopython.open-bio.org/DIST/biopython-1.10.win32-py2.2.exe)
     1,199 Kb
--   [biopython-1.00a4.tar.gz](http://biopython.open-bio.org/static/DIST/biopython-1.00a4.tar.gz)
+-   [biopython-1.00a4.tar.gz](http://biopython.open-bio.org/DIST/biopython-1.00a4.tar.gz)
     1,739Kb
--   [biopython-1.00a4.zip](http://biopython.open-bio.org/static/DIST/biopython-1.00a4.zip)
+-   [biopython-1.00a4.zip](http://biopython.open-bio.org/DIST/biopython-1.00a4.zip)
     2,121Kb
--   [biopython-1.00a4.win32-py2.0.exe](http://biopython.open-bio.org/static/DIST/biopython-1.00a4.win32-py2.0.exe)
+-   [biopython-1.00a4.win32-py2.0.exe](http://biopython.open-bio.org/DIST/biopython-1.00a4.win32-py2.0.exe)
     835Kb
--   [biopython-1.00a4.win32-py2.1.exe](http://biopython.open-bio.org/static/DIST/biopython-1.00a4.win32-py2.1.exe)
+-   [biopython-1.00a4.win32-py2.1.exe](http://biopython.open-bio.org/DIST/biopython-1.00a4.win32-py2.1.exe)
     837Kb
--   [biopython-1.00a4.win32-py2.2.exe](http://biopython.open-bio.org/static/DIST/biopython-1.00a4.win32-py2.2.exe)
+-   [biopython-1.00a4.win32-py2.2.exe](http://biopython.open-bio.org/DIST/biopython-1.00a4.win32-py2.2.exe)
     838Kb
--   [MacBiopython-1.00a4.sit](http://biopython.open-bio.org/static/DIST/MacBiopython-1.00a4.sit)
+-   [MacBiopython-1.00a4.sit](http://biopython.open-bio.org/DIST/MacBiopython-1.00a4.sit)
     2.2Mb
--   [biopython-1.00a3.tar.gz](http://biopython.open-bio.org/static/DIST/biopython-1.00a3.tar.gz)
+-   [biopython-1.00a3.tar.gz](http://biopython.open-bio.org/DIST/biopython-1.00a3.tar.gz)
     1,816Kb
--   [biopython-1.00a3.zip](http://biopython.open-bio.org/static/DIST/biopython-1.00a3.zip)
+-   [biopython-1.00a3.zip](http://biopython.open-bio.org/DIST/biopython-1.00a3.zip)
     2,165Kb
--   [biopython-1.00a3.win32-py2.0.exe](http://biopython.open-bio.org/static/DIST/biopython-1.00a3.win32-py2.0.exe)
+-   [biopython-1.00a3.win32-py2.0.exe](http://biopython.open-bio.org/DIST/biopython-1.00a3.win32-py2.0.exe)
     583Kb
--   [biopython-1.00a3.win32-py2.1.exe](http://biopython.open-bio.org/static/DIST/biopython-1.00a3.win32-py2.1.exe)
+-   [biopython-1.00a3.win32-py2.1.exe](http://biopython.open-bio.org/DIST/biopython-1.00a3.win32-py2.1.exe)
     585Kb
--   [Macbiopython-1.00a3.sit.bin](http://biopython.open-bio.org/static/DIST/Macbiopython-1.00a3.sit.bin)
+-   [Macbiopython-1.00a3.sit.bin](http://biopython.open-bio.org/DIST/Macbiopython-1.00a3.sit.bin)
     1926Kb
 
