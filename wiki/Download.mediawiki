@@ -2,8 +2,8 @@
 
 === Installation Instructions ===
 
-* [http://biopython.open-bio.org/static/DIST/Installation.html HTML Installation Instructions]
-* [http://biopython.open-bio.org/static/DIST/Installation.pdf PDF Installation Instructions]
+* [http://biopython.open-bio.org/DIST/docs/install/Installation.html HTML Installation Instructions]
+* [http://biopython.open-bio.org/DIST/docs/install/Installation.pdf PDF Installation Instructions]
 
 === Files ===
 

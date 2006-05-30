@@ -10,9 +10,9 @@ Current Release -- 1.41 -- 28 Oct 2005
 ### Installation Instructions
 
 -   [HTML Installation
-    Instructions](http://biopython.open-bio.org/static/DIST/Installation.html)
+    Instructions](http://biopython.open-bio.org/DIST/docs/install/Installation.html)
 -   [PDF Installation
-    Instructions](http://biopython.open-bio.org/static/DIST/Installation.pdf)
+    Instructions](http://biopython.open-bio.org/DIST/docs/install/Installation.pdf)
 
 ### Files
 
