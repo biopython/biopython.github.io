@@ -46,13 +46,13 @@
 ==== Presentations ====
 
 * March 2004 presentation at Exelixis about Biopython. Includes code examples with Biopython libraries and Martel.
-:[http://biopython.open-bio.org/DIST/docs/presentations/biopython_exelixis.pdf PDF] | [http://biopython.open-bio.org/DIST/docs/presentations/biopython_exelixis.tar.gz tarball with LaTeX source]
+:[http://biopython.org/DIST/docs/presentations/biopython_exelixis.pdf PDF] | [http://biopython.org/DIST/docs/presentations/biopython_exelixis.tar.gz tarball with LaTeX source]
 * BOSC 2003 presentation about Biopython and using it for Laboratory Analysis Pipelines.
-:[http://biopython.open-bio.org/DIST/docs/presentations/bosc_biopython.pdf PDF] | [http://biopython.open-bio.org/DIST/docs/presentations/bosc_biopython.tar.gz tarball with LaTeX source]
+:[http://biopython.org/DIST/docs/presentations/bosc_biopython.pdf PDF] | [http://biopython.org/DIST/docs/presentations/bosc_biopython.tar.gz tarball with LaTeX source]
 * General talk about scripting with Biopython based example of a primer design program.
-:[http://biopython.open-bio.org/DIST/docs/presentations/scripting.pdf PDF] | [http://biopython.open-bio.org/DIST/docs/presentations/scripting.tar.gz tarball with LaTeX source]
+:[http://biopython.org/DIST/docs/presentations/scripting.pdf PDF] | [http://biopython.org/DIST/docs/presentations/scripting.tar.gz tarball with LaTeX source]
 * Talk about Python and Biopython with an emphasis on teaching the design goals of Biopython.
-:[http://biopython.open-bio.org/DIST/docs/presentations/biopython.pdf PDF] | [http://biopython.open-bio.org/DIST/docs/presentations/biopy_group.tar.gz tarball with LaTeX source]
+:[http://biopython.org/DIST/docs/presentations/biopython.pdf PDF] | [http://biopython.org/DIST/docs/presentations/biopy_group.tar.gz tarball with LaTeX source]
 
 ==== Documentation for Developers ====
 

@@ -121,33 +121,33 @@ text](http://bioinformatics.oupjournals.org/cgi/content/abstract/19/17/2308)
     examples with Biopython libraries and Martel.
 
   
-[PDF](http://biopython.open-bio.org/DIST/docs/presentations/biopython_exelixis.pdf)
+[PDF](http://biopython.org/DIST/docs/presentations/biopython_exelixis.pdf)
 | [tarball with LaTeX
-source](http://biopython.open-bio.org/DIST/docs/presentations/biopython_exelixis.tar.gz)
+source](http://biopython.org/DIST/docs/presentations/biopython_exelixis.tar.gz)
 
 -   BOSC 2003 presentation about Biopython and using it for Laboratory
     Analysis Pipelines.
 
   
-[PDF](http://biopython.open-bio.org/DIST/docs/presentations/bosc_biopython.pdf)
-| [tarball with LaTeX
-source](http://biopython.open-bio.org/DIST/docs/presentations/bosc_biopython.tar.gz)
+[PDF](http://biopython.org/DIST/docs/presentations/bosc_biopython.pdf) |
+[tarball with LaTeX
+source](http://biopython.org/DIST/docs/presentations/bosc_biopython.tar.gz)
 
 -   General talk about scripting with Biopython based example of a
     primer design program.
 
   
-[PDF](http://biopython.open-bio.org/DIST/docs/presentations/scripting.pdf)
-| [tarball with LaTeX
-source](http://biopython.open-bio.org/DIST/docs/presentations/scripting.tar.gz)
+[PDF](http://biopython.org/DIST/docs/presentations/scripting.pdf) |
+[tarball with LaTeX
+source](http://biopython.org/DIST/docs/presentations/scripting.tar.gz)
 
 -   Talk about Python and Biopython with an emphasis on teaching the
     design goals of Biopython.
 
   
-[PDF](http://biopython.open-bio.org/DIST/docs/presentations/biopython.pdf)
-| [tarball with LaTeX
-source](http://biopython.open-bio.org/DIST/docs/presentations/biopy_group.tar.gz)
+[PDF](http://biopython.org/DIST/docs/presentations/biopython.pdf) |
+[tarball with LaTeX
+source](http://biopython.org/DIST/docs/presentations/biopy_group.tar.gz)
 
 #### Documentation for Developers
 
