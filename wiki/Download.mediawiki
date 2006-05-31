@@ -2,15 +2,15 @@
 
 === Installation Instructions ===
 
-* [http://biopython.open-bio.org/DIST/docs/install/Installation.html HTML Installation Instructions]
-* [http://biopython.open-bio.org/DIST/docs/install/Installation.pdf PDF Installation Instructions]
+* [http://biopython.org/DIST/docs/install/Installation.html HTML Installation Instructions]
+* [http://biopython.org/DIST/docs/install/Installation.pdf PDF Installation Instructions]
 
 === Files ===
 
-* Source Tarball -- [http://biopython.open-bio.org/DIST/biopython-1.41.tar.gz biopython-1.41.tar.gz] 3,718 Kb
-* Source Zip File -- [http://biopython.open-bio.org/DIST/biopython-1.41.zip biopython-1.41.zip] 4,240 Kb
-* Windows Installer for Python 2.3 -- [http://biopython.open-bio.org/DIST/biopython-1.41.win32-py2.3.exe biopython-1.41.win32-py2.3.exe] 1,038 Kb
-* Windows Installer for Python 2.4 -- [http://biopython.open-bio.org/DIST/biopython-1.41.win32-py2.4.exe biopython-1.41.win32-py2.4.exe] 1,042 Kb
+* Source Tarball -- [http://biopython.org/DIST/biopython-1.41.tar.gz biopython-1.41.tar.gz] 3,718 Kb
+* Source Zip File -- [http://biopython.org/DIST/biopython-1.41.zip biopython-1.41.zip] 4,240 Kb
+* Windows Installer for Python 2.3 -- [http://biopython.org/DIST/biopython-1.41.win32-py2.3.exe biopython-1.41.win32-py2.3.exe] 1,038 Kb
+* Windows Installer for Python 2.4 -- [http://biopython.org/DIST/biopython-1.41.win32-py2.4.exe biopython-1.41.win32-py2.4.exe] 1,042 Kb
 
 === Required Software ===
 
