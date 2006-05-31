@@ -13,10 +13,10 @@ molecular biology.
 It is a distributed collaborative effort to develop Python libraries and
 applications which address the needs of current and future work in
 bioinformatics. The source code is made available under the [Biopython
-License](http://www.biopython.org/LICENSE), which is extremely liberal
-and compatible with almost every license in the world. We work along
-with the [Open Bioinformatics Foundation](http://open-bio.org), who
-generously provide web and CVS space for the project.
+License](http://www.biopython.org/DIST/LICENSE), which is extremely
+liberal and compatible with almost every license in the world. We work
+along with the [Open Bioinformatics Foundation](http://open-bio.org),
+who generously provide web and CVS space for the project.
 
 ### Download Current Release
 
