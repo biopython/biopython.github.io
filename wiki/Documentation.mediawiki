@@ -41,7 +41,7 @@
 *Thomas wrote an applications note for Bioinformatics about the Biopython PDB parser and related code dealing with crystal structures.
 :[http://bioinformatics.oupjournals.org/cgi/content/abstract/19/17/2308 Abstract and links to full text]
 *Brad and Jeff wrote a paper for the ACM SIG-BIO newsletter back in August of 2000.
-:[http://biopython.open-bio.org/DIST/docs/acm/ACMbiopy.html HTML] | [http://biopython.open-bio.org/DIST/docs/acm/ACMbiopy.pdf PDF]
+:[http://biopython.org/DIST/docs/acm/ACMbiopy.html HTML] | [http://biopython.org/DIST/docs/acm/ACMbiopy.pdf PDF]
 
 ==== Presentations ====
 
