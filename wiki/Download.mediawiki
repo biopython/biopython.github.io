@@ -28,8 +28,8 @@
 
 === Files ===
 
-* Source tarball -- [http://biopython.open-bio.org/DIST/biopython-corba-0.3.0.tar.gz biopython-corba-0.3.0.tar.gz] 344Kb
-* Source Zip File -- [http://biopython.open-bio.org/DIST/biopython-corba-0.3.0.zip biopython-corba-0.3.0.zip] 378Kb
+* Source tarball -- [http://biopython.org/DIST/biopython-corba-0.3.0.tar.gz biopython-corba-0.3.0.tar.gz] 344Kb
+* Source Zip File -- [http://biopython.org/DIST/biopython-corba-0.3.0.zip biopython-corba-0.3.0.zip] 378Kb
 
 === Required Software ===
 
