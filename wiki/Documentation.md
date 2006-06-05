@@ -151,19 +151,8 @@ source](http://biopython.org/DIST/docs/presentations/biopy_group.tar.gz)
 
 #### Documentation for Developers
 
--   Details about the biopython.org website.
-
-  
-[HTML](website "wikilink")
-
--   How to contribute code to Biopython.
-
-  
-[HTML](Contributing "wikilink")
-
--   Instructions for building releases of Biopython.
-
-  
-[HTML](Building_a_release "wikilink")
-
+-   Details about the biopython.org [website](website "wikilink").
+-   How to [contribute code](Contributing "wikilink") to Biopython.
+-   Instructions for [building a release](building_a_release "wikilink")
+    of Biopython.
 
