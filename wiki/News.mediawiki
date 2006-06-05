@@ -1,15 +1,15 @@
-Our News/blog server is available at [http://biopython.open-bio.org/news/ biopython.org/news/].
+Our News/blog server is available at [http://biopython.org/news/ biopython.org/news/].
 
-There is also a (currently separate) news server for all the [http://www.bioperl.org/wiki/OBF OBF] projects at [http://news.open-bio.org news.open-bio.org].
+There is also a (currently separate) news server for all the [[obf:OBF|OBF]] projects at [http://news.open-bio.org news.open-bio.org].
 
 
 {| border="1" width="800px" 
 |- style="background-color:#ccccff; text-align:center"
 !  Biopython News
 |-
-| [http://biopython.open-bio.org/news/feed RSS feed]
+| [http://biopython.org/news/feed RSS feed]
 |-
-| <rss>http://biopython.open-bio.org/news/feed|date|charset=utf-8|max=10</rss>
+| <rss>http://biopython.org/news/feed|date|charset=utf-8|max=10</rss>
 |- style="background-color:#ccccff; text-align:center"
 ! Recent [[Mailing lists|Mailing list]] posts
 |-
