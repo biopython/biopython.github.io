@@ -100,13 +100,15 @@ layout: wiki
 
 #### Papers
 
--   Thomas wrote an applications note for Bioinformatics about the
-    Biopython PDB parser and related code dealing with
-    crystal structures.
+-   Thomas wrote an applications note<cite>Hamelryck</cite> for
+    Bioinformatics about the Biopython PDB parser and related code
+    dealing with crystal structures.
 
-  
-[Abstract and links to full
-text](http://bioinformatics.oupjournals.org/cgi/content/abstract/19/17/2308)
+<biblio>
+
+1.  Hamelryck pmid=14630660
+
+</biblio>
 
 -   Brad and Jeff wrote a paper for the ACM SIG-BIO newsletter back in
     August of 2000.
