@@ -44,6 +44,9 @@ Current Release -- 1.41 -- 28 Oct 2005
 -   [ReportLab -- for pdf graphics
     code](http://www.reportlab.org/downloads.html)
 -   [MySQLdb](http://sourceforge.net/projects/mysql-python)
+-   [flex: The Fast Lexical Analyzer](http://flex.sourceforge.net/) --
+    for building Bio.PDB.mmCIF.MMCIFlex
+-   [Wise2](http://www.ebi.ac.uk/Wise2/) -- for command line tool dnal
 
 Biopython-corba
 ===============

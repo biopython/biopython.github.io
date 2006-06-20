@@ -23,6 +23,8 @@
 
 * [http://www.reportlab.org/downloads.html ReportLab -- for pdf graphics code]
 * [http://sourceforge.net/projects/mysql-python MySQLdb]
+* [http://flex.sourceforge.net/ flex: The Fast Lexical Analyzer] -- for building Bio.PDB.mmCIF.MMCIFlex
+* [http://www.ebi.ac.uk/Wise2/ Wise2] -- for command line tool dnal
 
 = Biopython-corba =
 
