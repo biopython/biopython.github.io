@@ -1,7 +1,7 @@
 ---
 title: User:Cjfields
 permalink: wiki/User:Cjfields
-layout: wiki
+redirect_to: /wiki/bp:Christopher_Fields
 ---
 
-My [BioPerl page](http://www.bioperl.org/wiki/User:Cjfields):
+You should automatically be redirected to [bp:Christopher Fields](/wiki/bp:Christopher_Fields)
