@@ -1,1 +1,1 @@
-My page on [[bp:User:Jason|bioperl site]].
+#REDIRECT [[bp:Jason Stajich]]

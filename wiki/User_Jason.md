@@ -1,7 +1,7 @@
 ---
 title: User:Jason
 permalink: wiki/User:Jason
-layout: wiki
+redirect_to: /wiki/bp:Jason_Stajich
 ---
 
-My page on [bioperl site](bp:User:Jason "wikilink").
+You should automatically be redirected to [bp:Jason Stajich](/wiki/bp:Jason_Stajich)
