@@ -27,7 +27,10 @@ any changes will be installed on new downloads
 
 7. do last check to make sure things are checked in
 
-`   > make clean`  
+`   > rm -r build`  
+`   > rm Martel/*.pyc`  
+`   > rm Test/*.pyc`  
+`   > make clean -C doc`  
 `   > cvs update -P -d `
 
 8. do last regression test
