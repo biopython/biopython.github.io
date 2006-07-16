@@ -4,8 +4,8 @@ permalink: wiki/Download
 layout: wiki
 ---
 
-Current Release -- 1.41 -- 28 Oct 2005
-======================================
+Current Release -- 1.42 -- 16 July 2006
+=======================================
 
 ### Installation Instructions
 
@@ -17,17 +17,17 @@ Current Release -- 1.41 -- 28 Oct 2005
 ### Files
 
 -   Source Tarball --
-    [biopython-1.41.tar.gz](http://biopython.org/DIST/biopython-1.41.tar.gz)
-    3,718 Kb
+    [biopython-1.42.tar.gz](http://biopython.org/DIST/biopython-1.42.tar.gz)
+    3,841 Kb
 -   Source Zip File --
-    [biopython-1.41.zip](http://biopython.org/DIST/biopython-1.41.zip)
-    4,240 Kb
+    [biopython-1.42.zip](http://biopython.org/DIST/biopython-1.42.zip)
+    4,399 Kb
 -   Windows Installer for Python 2.3 --
-    [biopython-1.41.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.41.win32-py2.3.exe)
-    1,038 Kb
+    [biopython-1.42.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.42.win32-py2.3.exe)
+    1,026 Kb
 -   Windows Installer for Python 2.4 --
-    [biopython-1.41.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.41.win32-py2.4.exe)
-    1,042 Kb
+    [biopython-1.42.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.42.win32-py2.4.exe)
+    1,030 Kb
 
 ### Required Software
 
