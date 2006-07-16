@@ -45,8 +45,8 @@ any changes will be installed on new downloads
 
 11. make MANIFEST. First, make sure MANIFEST.in up to date.
 
-`   make clean`  
-`   python setup.py sdist --manifest-only `
+`   > make clean -C doc`  
+`   > python setup.py sdist --manifest-only `
 
 12. make sure the regression tests run here
 

@@ -31,8 +31,8 @@ Build Biopython in 21 easy steps!!
 10. make documentation PDF, text and HTML in Doc
 
 11. make MANIFEST. First, make sure MANIFEST.in up to date.
-    make clean
-    python setup.py sdist --manifest-only 
+    > make clean -C doc
+    > python setup.py sdist --manifest-only 
 
 12. make sure the regression tests run here
     drevil:~tmp1/biopython/Tests/> python run_tests.py --no-gui 
