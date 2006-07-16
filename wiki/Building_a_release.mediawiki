@@ -18,7 +18,7 @@ Build Biopython in 21 easy steps!!
 7. do last check to make sure things are checked in
     > rm -r build
     > rm Martel/*.pyc
-    > rm Test/*.pyc
+    > rm Tests/*.pyc
     > make clean -C doc
     > cvs update -P -d 
 
