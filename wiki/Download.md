@@ -69,6 +69,14 @@ Biopython-corba
 Old Releases
 ============
 
+-   [biopython-1.41.tar.gz](http://biopython.org/DIST/biopython-1.41.tar.gz)
+    3,719 Kb
+-   [biopython-1.41.zip](http://biopython.org/DIST/biopython-1.41.zip)
+    4,241 Kb
+-   [biopython-1.41.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.41.win32-py2.3.exe)
+    1,038 Kb
+-   [biopython-1.41.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.41.win32-py2.4.exe)
+    1,042 Kb
 -   [biopython-1.40b.tar.gz](http://biopython.org/DIST/biopython-1.40b.tar.gz)
     3,437 Kb
 -   [biopython-1.40b.zip](http://biopython.org/DIST/biopython-1.40b.zip)

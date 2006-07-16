@@ -41,6 +41,10 @@
 
 = Old Releases =
 
+* [http://biopython.org/DIST/biopython-1.41.tar.gz biopython-1.41.tar.gz] 3,719 Kb
+* [http://biopython.org/DIST/biopython-1.41.zip biopython-1.41.zip] 4,241 Kb
+* [http://biopython.org/DIST/biopython-1.41.win32-py2.3.exe biopython-1.41.win32-py2.3.exe] 1,038 Kb
+* [http://biopython.org/DIST/biopython-1.41.win32-py2.4.exe biopython-1.41.win32-py2.4.exe] 1,042 Kb
 * [http://biopython.org/DIST/biopython-1.40b.tar.gz biopython-1.40b.tar.gz] 3,437 Kb
 * [http://biopython.org/DIST/biopython-1.40b.zip biopython-1.40b.zip] 3,267 Kb
 * [http://biopython.org/DIST/biopython-1.40b.win32-py2.3.exe biopython-1.40b.win32-py2.3.exe] 1,019 Kb
