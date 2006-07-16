@@ -81,7 +81,7 @@ any changes will be installed on new downloads
 `   epydoc -o api -u `[`http://biopython.org`](http://biopython.org)` -n Biopython --docformat plaintext Bio BioSQL Martel`
 
 -   Move the generated api directory to
-    replace /home/websites/biopython.org/docs/api.
+    replace /home/websites/biopython.org/html/static/DIST/docs.
 
 18. ftp the .tar.gz, .zip files to biopython
 
