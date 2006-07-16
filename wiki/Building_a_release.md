@@ -87,7 +87,7 @@ any changes will be installed on new downloads
 
 19. update the web site
 
--   add to Download page (BioWebsite/download.py)
+-   add to Download page (through the wiki)
 -   Post news on news.open-bio.org
 -   make sure links work
 

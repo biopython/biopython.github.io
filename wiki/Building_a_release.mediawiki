@@ -60,7 +60,7 @@ Build Biopython in 21 easy steps!!
 18. ftp the .tar.gz, .zip files to biopython
 
 19. update the web site
-* add to Download page (BioWebsite/download.py)
+* add to Download page (through the wiki)
 * Post news on news.open-bio.org
 * make sure links work 
 
