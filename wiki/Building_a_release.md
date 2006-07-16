@@ -35,7 +35,7 @@ any changes will be installed on new downloads
 
 8. do last regression test
 
-`   drevil:~biopython/Tests> python run_test.py --no-gui `
+`   drevil:~biopython/Tests> python run_tests.py --no-gui `
 
 9. check out clean version somewhere else
 

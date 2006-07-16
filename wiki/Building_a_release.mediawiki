@@ -23,7 +23,7 @@ Build Biopython in 21 easy steps!!
     > cvs update -P -d 
 
 8. do last regression test
-    drevil:~biopython/Tests> python run_test.py --no-gui 
+    drevil:~biopython/Tests> python run_tests.py --no-gui 
 
 9. check out clean version somewhere else
     drevil:~tmp1/> cvs -d :ext:jchang@pub.open-bio.org:/home/repository/biopython checkout -r biopython-100a1 biopython 
