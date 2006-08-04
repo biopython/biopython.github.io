@@ -1,3 +1,5 @@
+To avoid spam, you can post a message only if you are subscribed to the mailing list.
+
 ===  Announcement List ===
 [mailto:biopython-announce@biopython.org biopython-announce@biopython.org]
 
