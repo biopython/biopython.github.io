@@ -73,9 +73,12 @@ Before you submit it, please check that:
     bug reports.
 
 If all these terms seem acceptable, please send a description of your
-code to biopython-dev@biopython.org. Don't send the code directly to
-biopython-dev; it tends to get lost there. If you have a patch for
-existing Biopython code, please use Bugzilla (see "Bugs") to submit it.
+code to biopython-dev@biopython.org. Be sure to subscribe to
+biopython-dev before sending a message, otherwise your message will be
+discarded by the mail server (this was done to avoid spam on the mailing
+list). Don't send the code directly to biopython-dev; it tends to get
+lost there. If you have a patch for existing Biopython code, please use
+Bugzilla (see "Bugs") to submit it.
 
 ### Coding conventions
 
