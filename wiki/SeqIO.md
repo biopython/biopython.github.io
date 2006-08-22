@@ -7,15 +7,15 @@ layout: wiki
 This page is for the documentation for a proposed new Sequence
 Input/Output interface for BioPython.
 
-We would like to recreate the simplicity of BioPerl's SeqIO introduced
-in this [HowTo](http://www.bioperl.org/wiki/HOWTO:SeqIO), and in the
-long term its [impressive list of supported file
-formats](http://www.bioperl.org/wiki/Sequence_formats).
-
 The code is available on [Bug
 2059](http://bugzilla.open-bio.org/show_bug.cgi?id=2059) and is being
 discussed on the [Development mailing
 list](http://biopython.org/wiki/Mailing_lists).
+
+We would like to recreate the simplicity of [BioPerl's
+SeqIO](http://www.bioperl.org/wiki/HOWTO:SeqIO), and in the long term
+its [impressive list of supported file
+formats](http://www.bioperl.org/wiki/Sequence_formats).
 
 As currently implemented, the BioPython code covers multiple alignment
 file formats as well. Alignment specific handling may be required in the
