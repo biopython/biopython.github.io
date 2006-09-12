@@ -79,7 +79,7 @@ layout: wiki
 | Uses Python for         | Maintaining World Domination                                                                |
 | Work/Research Interests | Structural Bioinformatics                                                                   |
 | Biopython Contributions | SubsMat, FSSP, bits of Align, bits of the Manual, and a lot of silly questions to the lists |
-| Relevant URL            | <http://ffas.burnham.org/~iddo>                                                             |
+| Relevant URL            | <http://iddo-friedberg.org>                                                                 |
 
 |                         |                                                                                                                                 |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------|
