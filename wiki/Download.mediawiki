@@ -80,3 +80,7 @@
 * [http://biopython.org/DIST/biopython-1.00a3.win32-py2.0.exe biopython-1.00a3.win32-py2.0.exe] 583Kb
 * [http://biopython.org/DIST/biopython-1.00a3.win32-py2.1.exe biopython-1.00a3.win32-py2.1.exe] 585Kb
 * [http://biopython.org/DIST/Macbiopython-1.00a3.sit.bin Macbiopython-1.00a3.sit.bin] 1926Kb
+
+= Packages =
+
+[http://packages.ubuntulinux.org/dapper/source/python-biopython] Biopython 1.41 packages for Ubuntu (Dapper)
