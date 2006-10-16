@@ -28,6 +28,9 @@ Current Release -- 1.42 -- 16 July 2006
 -   Windows Installer for Python 2.4 --
     [biopython-1.42.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.42.win32-py2.4.exe)
     1,074 Kb
+-   Windows Installer for Python 2.4 --
+    [biopython-1.42.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.42.win32-py2.5.exe)
+    1,022 Kb
 
 ### Required Software
 
