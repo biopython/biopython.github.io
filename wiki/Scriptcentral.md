@@ -4,6 +4,13 @@ permalink: wiki/Scriptcentral
 layout: wiki
 ---
 
+|             |                                                                                                                                                                                      |
+|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name        | MDMR                                                                                                                                                                                 |
+| Author      | Matthew Zapala, Ondrej Libiger and Nicholas Schork                                                                                                                                   |
+| URL         | <http://polymorphism.ucsd.edu/~cabney/MatrixRegression.py.txt>                                                                                                                       |
+| Description | MDMR is a Multivariate Distance Matrix Regression program that performs linear regression on a distance matrix of data and associates multiple independent variables to that matrix. |
+
 |             |                                                                                                                                                                                    |
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Name        | LIBSVM                                                                                                                                                                             |
