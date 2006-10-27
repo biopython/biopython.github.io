@@ -16,6 +16,50 @@ In some cases, this does lead to some apparent duplication.  For example, Bio.Se
 
 Peter
 
+== File Formats ==
+
+At the moment (unlike BioPerl::SeqIO) multiple alignment file formats are treated much like any the other sequence file, but with the constraint that all the (gapped) sequences must be the same length.
+
+{| border="1" cellpadding="4" cellspacing="0"
+|+ Table 1: Bio.SeqIO supported file formats
+|-
+! Format name
+! Reads
+! Writes
+! Notes
+|-
+| fasta   
+| Yes
+| Yes
+|
+|-  
+| genbank 
+| Yes
+| No
+| Uses Bio.GenBank
+|-
+| clustal
+| Yes
+| No
+|
+|-
+| nexus
+| Yes
+| No
+| Also known as PUAP format.  Uses Bio.Nexus
+|-
+| phylip
+| Yes
+| Yes
+| Truncates names at 10 characters.
+|-
+| stockholm
+| Yes
+| Yes
+| Also known as PFAM format.
+|-
+|}
+
 == Helper Functions ==
 
 There are four helper functions which all take a filename, and optional format.  Each sequence is returned as a SeqRecord object.

@@ -40,6 +40,23 @@ phylogenetic trees in a Nexus file.
 
 Peter
 
+File Formats
+------------
+
+At the moment (unlike BioPerl::SeqIO) multiple alignment file formats
+are treated much like any the other sequence file, but with the
+constraint that all the (gapped) sequences must be the same length.
+
+| Format name | Reads | Writes | Notes                                     |
+|-------------|-------|--------|-------------------------------------------|
+| fasta       | Yes   | Yes    |                                           |
+| genbank     | Yes   | No     | Uses Bio.GenBank                          |
+| clustal     | Yes   | No     |                                           |
+| nexus       | Yes   | No     | Also known as PUAP format. Uses Bio.Nexus |
+| phylip      | Yes   | Yes    | Truncates names at 10 characters.         |
+| stockholm   | Yes   | Yes    | Also known as PFAM format.                |
+||
+
 Helper Functions
 ----------------
 
