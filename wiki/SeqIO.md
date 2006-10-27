@@ -111,7 +111,7 @@ To add support for reading a new file format, you just have to implement
 an iterator that expects a just file handle and returns SeqRecord
 objects. You may do this using:
 
--   A generator function (using the yeild keyword)
+-   A generator function (using the yield keyword)
 -   Your own iterator class (consider subclassing something from
     Bio.SeqIO.Interfaces for this)
 -   Build a list of SeqRecords and then turn it into a list iterator
