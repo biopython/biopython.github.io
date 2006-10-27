@@ -4,12 +4,13 @@ permalink: wiki/SeqIO
 layout: wiki
 ---
 
-This page is for the documentation for a proposed new Sequence
-Input/Output interface for BioPython.
+This page is for the documentation for a new Sequence Input/Output
+interface for BioPython.
 
-The code is available on [Bug
-2059](http://bugzilla.open-bio.org/show_bug.cgi?id=2059) and is being
-discussed on the [Development mailing
+Some code has now been checked in under Bio.SeqIO, other bits are
+available on [Bug
+2059](http://bugzilla.open-bio.org/show_bug.cgi?id=2059). Details are
+currently being discussed on the [Development mailing
 list](http://biopython.org/wiki/Mailing_lists).
 
 We would like to recreate the simplicity of [BioPerl's
@@ -52,6 +53,14 @@ save much memory by using the SequenceIterator in this case, but it is
 provided so that you shouldn't need to re-write your code if you change
 the input file format.
 
+For writing records to a file there is a single helper function:
+
+-   Sequences2File, takes records and filename
+
+For sequential files, it may be possible to write the records to file
+one by one. You will have to use the appropriate format writer object
+directly for that.
+
 Examples using the Helper Functions
 -----------------------------------
 
@@ -61,3 +70,21 @@ SequenceIterator
 ----------------
 
 ...
+
+Adding new file formats
+-----------------------
+
+To add support for reading a new file format, you just have to implement
+an iterator that expects a just file handle and returns SeqRecord
+objects. You may do this using:
+
+-   A generator function (using the yeild keyword)
+-   Your own iterator class (consider subclassing something from
+    Bio.SeqIO.Interfaces for this)
+-   Build a list of SeqRecords and then turn it into a list iterator
+    using the iter() function.
+
+You may accept additional *optional* arguments (alphabet for example).
+
+The the new format must be added to the relevant mappings in
+Bio/SeqIO/\_\_iter\_\_.py plus any standard file extensions.
