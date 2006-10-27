@@ -4,14 +4,19 @@ permalink: wiki/SeqIO
 layout: wiki
 ---
 
-This page is for the documentation for a new Sequence Input/Output
-interface for BioPython.
+The page describes Bio.SeqIO, a new Sequence Input/Output interface for
+BioPython.
 
-Some code has now been checked in under Bio.SeqIO, other bits are
-available on [Bug
-2059](http://bugzilla.open-bio.org/show_bug.cgi?id=2059). Details are
-currently being discussed on the [Development mailing
+Some code has now been checked into CVS, and other bits are available on
+[Bug 2059](http://bugzilla.open-bio.org/show_bug.cgi?id=2059). Details
+are currently being discussed on the [Development mailing
 list](http://biopython.org/wiki/Mailing_lists).
+
+If all goes well, the code will be available in the next release,
+probably BioPython 1.43.
+
+Aims
+----
 
 We would like to recreate the simplicity of [BioPerl's
 SeqIO](http://www.bioperl.org/wiki/HOWTO:SeqIO), and in the long term
@@ -24,6 +29,14 @@ future should the BioPython alignment object become capable of holding
 more than just sequence level annotation. See also BioPerl's list of
 [multiple alignment
 formats](http://www.bioperl.org/wiki/Multiple_alignment_formats).
+
+Bio.SeqIO provides a simple uniform interface to assorted file formats,
+but will *only* return sequences as SeqRecord objects.
+
+In some cases, this does lead to some apparent duplication. For example,
+Bio.SeqIO and Bio.Nexus will both read sequences from Nexus files.
+However, Bio.Nexus can also do much more, for example reading any
+phylogenetic trees in a Nexus file.
 
 Peter
 
@@ -64,12 +77,15 @@ directly for that.
 Examples using the Helper Functions
 -----------------------------------
 
-To do...
+Suppose you have a fasta file, example.fasta, which you wish to load:
 
-SequenceIterator
-----------------
+`from Bio.SeqIO import File2SequenceIterator`  
+`for record in File2SequenceIterator("example.fasta") :`  
+`    print record.id`  
+`    print record.seq`
 
-...
+In this example, BioPython has guessed the file format from the
+extension.
 
 Adding new file formats
 -----------------------
