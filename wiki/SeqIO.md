@@ -43,10 +43,6 @@ Peter
 File Formats
 ------------
 
-At the moment (unlike BioPerl::SeqIO) multiple alignment file formats
-are treated much like any the other sequence file, but with the
-constraint that all the (gapped) sequences must be the same length.
-
 | Format name | Reads | Writes | Notes                                     |
 |-------------|-------|--------|-------------------------------------------|
 | fasta       | Yes   | Yes    |                                           |
@@ -56,6 +52,10 @@ constraint that all the (gapped) sequences must be the same length.
 | phylip      | Yes   | Yes    | Truncates names at 10 characters.         |
 | stockholm   | Yes   | Yes    | Also known as PFAM format.                |
 ||
+
+At the moment (unlike BioPerl) multiple alignment file formats are
+treated much like any the other sequence file, but with the constraint
+that all the (gapped) sequences must be the same length.
 
 Helper Functions
 ----------------

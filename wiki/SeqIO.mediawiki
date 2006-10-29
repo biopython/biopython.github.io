@@ -18,8 +18,6 @@ Peter
 
 == File Formats ==
 
-At the moment (unlike BioPerl::SeqIO) multiple alignment file formats are treated much like any the other sequence file, but with the constraint that all the (gapped) sequences must be the same length.
-
 {| border="1" cellpadding="4" cellspacing="0"
 |+ Table 1: Bio.SeqIO supported file formats
 |-
@@ -59,6 +57,8 @@ At the moment (unlike BioPerl::SeqIO) multiple alignment file formats are treate
 | Also known as PFAM format.
 |-
 |}
+
+At the moment (unlike BioPerl) multiple alignment file formats are treated much like any the other sequence file, but with the constraint that all the (gapped) sequences must be the same length.
 
 == Helper Functions ==
 
