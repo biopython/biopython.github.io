@@ -51,7 +51,7 @@ constraint that all the (gapped) sequences must be the same length.
 |-------------|-------|--------|-------------------------------------------|
 | fasta       | Yes   | Yes    |                                           |
 | genbank     | Yes   | No     | Uses Bio.GenBank                          |
-| clustal     | Yes   | No     |                                           |
+| clustal     | Yes   | Yes    | Currently uses Bio.Clustalw for writing   |
 | nexus       | Yes   | No     | Also known as PUAP format. Uses Bio.Nexus |
 | phylip      | Yes   | Yes    | Truncates names at 10 characters.         |
 | stockholm   | Yes   | Yes    | Also known as PFAM format.                |

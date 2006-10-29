@@ -40,8 +40,8 @@ At the moment (unlike BioPerl::SeqIO) multiple alignment file formats are treate
 |-
 | clustal
 | Yes
-| No
-|
+| Yes
+| Currently uses Bio.Clustalw for writing
 |-
 | nexus
 | Yes
