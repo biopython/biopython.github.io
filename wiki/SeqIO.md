@@ -119,5 +119,5 @@ objects. You may do this using:
 
 You may accept additional *optional* arguments (alphabet for example).
 
-The the new format must be added to the relevant mappings in
+The new format must be added to the relevant mappings in
 Bio/SeqIO/\_\_iter\_\_.py plus any standard file extensions.

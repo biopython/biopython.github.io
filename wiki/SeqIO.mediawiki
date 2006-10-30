@@ -100,4 +100,4 @@ To add support for reading a new file format, you just have to implement an iter
 
 You may accept additional ''optional'' arguments (alphabet for example).
 
-The the new format must be added to the relevant mappings in Bio/SeqIO/__iter__.py plus any standard file extensions.
+The new format must be added to the relevant mappings in Bio/SeqIO/__iter__.py plus any standard file extensions.
