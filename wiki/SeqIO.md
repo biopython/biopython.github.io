@@ -94,7 +94,7 @@ directly for that.
 Examples using the Helper Functions
 -----------------------------------
 
-Suppose you have a fasta file, example.fasta, which you wish to load:
+Suppose you have a fasta file, "example.fasta", which you wish to load:
 
 `from Bio.SeqIO import File2SequenceIterator`  
 `for record in File2SequenceIterator("example.fasta") :`  
@@ -102,7 +102,21 @@ Suppose you have a fasta file, example.fasta, which you wish to load:
 `    print record.seq`
 
 In this example, BioPython has guessed the file format from the
-extension.
+extension. Just to be on the safe side, you can make this explicit:
+
+`from Bio.SeqIO import File2SequenceIterator`  
+`for record in File2SequenceIterator("example.fasta", format="fasta") :`  
+`    print record.id`  
+`    print record.seq`
+
+In some cases you may not have a recognised file extension - perhaps you
+have your data in "my\_seqs.txt". To read this file, you would *have* to
+tell BioPython the file format:
+
+`from Bio.SeqIO import File2SequenceIterator`  
+`for record in File2SequenceIterator("my_seqs.txt", format="fasta") :`  
+`    print record.id`  
+`    print record.seq`
 
 Adding new file formats
 -----------------------
