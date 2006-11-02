@@ -64,20 +64,24 @@ At the moment (unlike BioPerl) sequence alignment file formats are treated much 
 
 There are four helper functions which all take a filename, and optional format.  Each sequence is returned as a SeqRecord object.
 
-* File2SequenceIterator, returns a iterator (low memory, forward access only)
-* File2SequenceList, returns a list of sequences (high memory, random access)
-* File2SequenceDict, returns a dictionary of sequences (high memory, random access by ID)
-* File2Alignment, returns an alignment object (for use with multiple sequence alignment file formats)
+* '''File2SequenceIterator''', returns a iterator (low memory, forward access only)
+* '''File2SequenceList''', returns a list of sequences (high memory, random access)
+* '''File2SequenceDict''', returns a dictionary of sequences (high memory, random access by ID)
+* '''File2Alignment''', returns an alignment object (for use with multiple sequence alignment file formats)
 
 For sequential file formats (like Fasta, GenBank, EMBL etc) the file can be read record by record, and thus the iterator interface can save a significant amount of memory (RAM) which allows you to deal with very large files.
 
-For interlaced file formats (like Clustal/Clustalw or annotated Stockholm files) the entire file must be read in one go.  You may not save much memory by using the SequenceIterator in this case, but it is provided so that you shouldn't need to re-write your code if you change the input file format.
+For interlaced file formats (like Clustal/Clustalw or annotated Stockholm files) BioPython has to read the entire file in one go.  This means using'File2SequenceIterator rather than File2SequenceList will not actually save you much memory.
+
+The function File2Alignment is intended for use with alignment file formats (like Clustal, Stockholm, Nexus) but can be used with any sequence file provided that all the sequences are the same length (e.g. an alignment stored in fasta format).
 
 For writing records to a file there is a single helper function:
 
-* Sequences2File, takes records and filename
+* '''Sequences2File''', takes records and filename
 
-For sequential files, it may be possible to write the records to file one by one.  You will have to use the appropriate format writer object directly for that.
+Note that if you are writing to an alignment file format, all your sequences must be the same length.
+
+For sequential files (like fasta), it may be possible to write the records to file one by one.  You will have to use the appropriate format writer object directly for that, or supply your records as an iterator.
 
 == Examples using the Helper Functions ==
 
