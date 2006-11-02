@@ -53,9 +53,10 @@ File Formats
 | stockholm   | Yes   | Yes    | Also known as PFAM format.                |
 ||
 
-At the moment (unlike BioPerl) multiple alignment file formats are
-treated much like any the other sequence file, but with the constraint
-that all the (gapped) sequences must be the same length.
+At the moment (unlike BioPerl) sequence alignment file formats are
+treated much like any other sequence file. However, when writing your
+data to an alignment file format, note all the (gapped) sequences must
+be the same length.
 
 Helper Functions
 ----------------
