@@ -111,12 +111,22 @@ Specifying the file format is a good habit to get into.  In some cases you may n
 
 == Adding new file formats ==
 
-To add support for reading a new file format, you just have to implement an iterator that expects a just file handle and returns SeqRecord objects.  You may do this using:
+This section of the document is aimed at developers who want to contribute support for a new file format to BioPython.
 
-* A generator function (using the yield keyword)
-* Your own iterator class (consider subclassing something from Bio.SeqIO.Interfaces for this)
-* Build a list of SeqRecords and then turn it into a list iterator using the iter() function.
+'''Note:''' The details are still subject to change
 
-You may accept additional ''optional'' arguments (alphabet for example).
+To add support for reading a new file format, you must implement an iterator that expects a just file handle and returns SeqRecord objects.  You may do this using:
 
-The new format must be added to the relevant mappings in Bio/SeqIO/__iter__.py plus any standard file extensions.
+* An iterator class subclassing something from Bio.SeqIO.Interfaces
+* A generator function (using the yield keyword; suitable for simple formats)
+* An ordinary function which returns an iterator.  For example, you could build a list of SeqRecords and then turn it into an iterator using the iter() function.
+
+You may accept additional ''optional'' arguments (an alphabet for example).  However there ''must'' be one and only one required argument (the input file handle).
+
+What you use as the SeqRecord's id, name and description will depend on the file format.  Ideally you would use the accesion number for the id.
+
+When storing any annotations in the record's annotations dictionary follow the defacto standard laid down by the GenBank parser... I should try and document this more.
+
+To add support for writing a new file format you should write a sub class of one of the writer objects in Bio.SeqIO.Interfaces
+
+Then, the new format must be added to the relevant mappings in Bio/SeqIO/__iter__.py so that the helper functions are aware of it.  In addtion, if there are standard non-ambiguous file extensions used by this file format, they should also be defined in Bio/SeqIO/__iter__.py
