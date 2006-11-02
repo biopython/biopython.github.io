@@ -81,21 +81,28 @@ For sequential files, it may be possible to write the records to file one by one
 
 == Examples using the Helper Functions ==
 
-Suppose you have a fasta file, "example.fasta", which you wish to load:
+Suppose you have a fasta file, "example.fasta", which you wish to load.  The simplest way to load this would be as follows:
 
  from Bio.SeqIO import File2SequenceIterator
  for record in File2SequenceIterator("example.fasta") :
      print record.id
      print record.seq
 
-In this example, BioPython has guessed the file format from the extension.  Just to be on the safe side, you can make this explicit:
+In the above example, BioPython is able to guess the file format from the extension.  Just to be on the safe side, you can (and probably should) explicitly specify the file format:
 
  from Bio.SeqIO import File2SequenceIterator
  for record in File2SequenceIterator("example.fasta", format="fasta") :
      print record.id
      print record.seq
 
-In some cases you may not have a recognised file extension - perhaps you have your data in "my_seqs.txt".  To read this file, you would ''have'' to tell BioPython the file format:
+Or,
+
+ from Bio.SeqIO import File2SequenceIterator
+ for record in File2SequenceIterator("example.gbk", format="genbank") :
+     print record.id
+     print record.seq
+
+Specifying the file format is a good habit to get into.  In some cases you may not have a recognised file extension - perhaps you have your data in fasta format but in a file called "my_seqs.txt".  To read this file, you would ''have'' to tell BioPython the file format:
 
  from Bio.SeqIO import File2SequenceIterator
  for record in File2SequenceIterator("my_seqs.txt", format="fasta") :
