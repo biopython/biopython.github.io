@@ -43,15 +43,15 @@ Peter
 File Formats
 ------------
 
-| Format name | Reads | Writes | Notes                                          |
-|-------------|-------|--------|------------------------------------------------|
-| fasta       | Yes   | Yes    |                                                |
-| genbank     | Yes   | No     | Uses Bio.GenBank                               |
-| clustal     | Yes   | Yes    | Currently uses Bio.Clustalw for writing        |
-| swiss       | Soon  | No     | Swiss-Prot aka UniProt, will use Bio.SwissProt |
-| nexus       | Yes   | No     | Also known as PUAP format. Uses Bio.Nexus      |
-| phylip      | Yes   | Yes    | Truncates names at 10 characters.              |
-| stockholm   | Yes   | Yes    | Also known as PFAM format.                     |
+| Format name | Reads | Writes | Notes                                      |
+|-------------|-------|--------|--------------------------------------------|
+| fasta       | Yes   | Yes    |                                            |
+| genbank     | Yes   | No     | Uses Bio.GenBank                           |
+| clustal     | Yes   | Yes    | Currently uses Bio.Clustalw for writing    |
+| swiss       | Yes   | No     | Swiss-Prot aka UniProt. Uses Bio.SwissProt |
+| nexus       | Yes   | No     | Also known as PUAP format. Uses Bio.Nexus  |
+| phylip      | Yes   | Yes    | Truncates names at 10 characters.          |
+| stockholm   | Yes   | Yes    | Also known as PFAM format.                 |
 ||
 
 At the moment (unlike BioPerl) sequence alignment file formats are

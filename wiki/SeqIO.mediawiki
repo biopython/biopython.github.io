@@ -42,9 +42,9 @@ Peter
 | Currently uses Bio.Clustalw for writing
 |-
 | swiss
-| Soon
+| Yes
 | No
-| Swiss-Prot aka UniProt, will use Bio.SwissProt
+| Swiss-Prot aka UniProt. Uses Bio.SwissProt
 |-
 | nexus
 | Yes
