@@ -65,13 +65,13 @@ Helper Functions
 There are four helper functions which all take a filename, and optional
 format. Each sequence is returned as a SeqRecord object.
 
--   **File2SequenceIterator**, returns a iterator (low memory, forward
+-   **FileToSequenceIterator**, returns a iterator (low memory, forward
     access only)
--   **File2SequenceList**, returns a list of sequences (high memory,
+-   **FileToSequenceList**, returns a list of sequences (high memory,
     random access)
--   **File2SequenceDict**, returns a dictionary of sequences (high
+-   **FileToSequenceDict**, returns a dictionary of sequences (high
     memory, random access by ID)
--   **File2Alignment**, returns an alignment object (for use with
+-   **FileToAlignment**, returns an alignment object (for use with
     multiple sequence alignment file formats)
 
 For sequential file formats (like Fasta, GenBank, EMBL etc) the file can
@@ -81,17 +81,17 @@ large files.
 
 For interlaced file formats (like Clustal/Clustalw or annotated
 Stockholm files) BioPython has to read the entire file in one go. This
-means using'File2SequenceIterator rather than File2SequenceList will not
-actually save you much memory.
+means using'FileToSequenceIterator rather than FileToSequenceList will
+not actually save you much memory.
 
-The function File2Alignment is intended for use with alignment file
+The function FileToAlignment is intended for use with alignment file
 formats (like Clustal, Stockholm, Nexus) but can be used with any
 sequence file provided that all the sequences are the same length (e.g.
 an alignment stored in fasta format).
 
 For writing records to a file there is a single helper function:
 
--   **Sequences2File**, takes records and filename
+-   **SequencesToFile**, takes records and filename
 
 Note that if you are writing to an alignment file format, all your
 sequences must be the same length.
@@ -106,8 +106,8 @@ Examples using the Helper Functions
 Suppose you have a fasta file, "example.fasta", which you wish to load.
 The simplest way to load this would be as follows:
 
-`from Bio.SeqIO import File2SequenceIterator`  
-`for record in File2SequenceIterator("example.fasta") :`  
+`from Bio.SeqIO import FileToSequenceIterator`  
+`for record in FileToSequenceIterator(filename="example.fasta") :`  
 `    print record.id`  
 `    print record.seq`
 
@@ -115,15 +115,15 @@ In the above example, BioPython is able to guess the file format from
 the extension. Just to be on the safe side, you can (and probably
 should) explicitly specify the file format:
 
-`from Bio.SeqIO import File2SequenceIterator`  
-`for record in File2SequenceIterator("example.fasta", format="fasta") :`  
+`from Bio.SeqIO import FileToSequenceIterator`  
+`for record in FileToSequenceIterator(filename="example.fasta", format="fasta") :`  
 `    print record.id`  
 `    print record.seq`
 
 Or,
 
-`from Bio.SeqIO import File2SequenceIterator`  
-`for record in File2SequenceIterator("example.gbk", format="genbank") :`  
+`from Bio.SeqIO import FileToSequenceIterator`  
+`for record in FileToSequenceIterator(filename="example.gbk", format="genbank") :`  
 `    print record.id`  
 `    print record.seq`
 
@@ -132,10 +132,20 @@ you may not have a recognised file extension - perhaps you have your
 data in fasta format but in a file called "my\_seqs.txt". To read this
 file, you would *have* to tell BioPython the file format:
 
-`from Bio.SeqIO import File2SequenceIterator`  
-`for record in File2SequenceIterator("my_seqs.txt", format="fasta") :`  
+`from Bio.SeqIO import FileToSequenceIterator`  
+`for record in FileToSequenceIterator(filename="my_seqs.txt", format="fasta") :`  
 `    print record.id`  
 `    print record.seq`
+
+You can also supply a file handle instead of a filename:
+
+`from Bio.SeqIO import FileToSequenceIterator`  
+`for record in FileToSequenceIterator(handle=open("my_seqs.txt","rU"), format="fasta") :`  
+`    print record.id`  
+`    print record.seq`
+
+(Note - supporting both handles and filenames is currently open to
+discussion)
 
 Adding new file formats
 -----------------------
