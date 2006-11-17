@@ -156,3 +156,11 @@ Packages
 
 [1](http://packages.ubuntulinux.org/dapper/source/python-biopython)
 Biopython 1.41 packages for Ubuntu (Dapper)
+
+Ubuntu Edgy doesn't seem to have working AMD64 packages. Fiesty
+biopython 1.42 packages backported for Edgy here:
+
+[2](http://students.ee.sun.ac.za/~nmarais/files/python-biopython-doc_1.42-2_all.deb)
+[3](http://students.ee.sun.ac.za/~nmarais/files/python-biopython-martel_1.42-2_all.deb)
+[4](http://students.ee.sun.ac.za/~nmarais/files/python-biopython-sql_1.42-2_all.deb)
+[5](http://students.ee.sun.ac.za/~nmarais/files/python-biopython_1.42-2_amd64.deb)
