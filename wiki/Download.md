@@ -39,8 +39,9 @@ Current Release -- 1.42 -- 16 July 2006
     will work fine on UNIX-like
     platforms](http://www.python.org/doc/current/inst/inst.html)
 -   [mxTextTools](http://www.lemburg.com/files/python/mxTextTools.html)
--   [Numerical Python (version
-    24.2 recommended)](http://sourceforge.net/projects/numpy)
+-   [Numerical Python](http://numpy.scipy.org/#older_array) Note that
+    BioPython has not (yet) switched to the 'new' numpy library. You
+    need the 'old' Numeric library, version 24.2 is recommended.
 
 ### Optional Software
 
