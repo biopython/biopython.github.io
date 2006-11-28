@@ -41,7 +41,14 @@ Current Release -- 1.42 -- 16 July 2006
 -   [mxTextTools](http://www.lemburg.com/files/python/mxTextTools.html)
 -   [Numerical Python](http://numpy.scipy.org/#older_array) Note that
     BioPython has not (yet) switched to the 'new' numpy library. You
-    need the 'old' Numeric library, version 24.2 is recommended.
+    need the 'old' Numeric library, version 24.2 is recommended. Windows
+    installers for Python 2.4 and older are available from the
+    [Numerical Python](http://numpy.scipy.org/#older_array) website. A
+    Windows installer for Numerical Python 24.2 for Python 2.5 is
+    available here:
+
+[Numeric-24.2.win32-py2.5.exe](http://biopython.org/DIST/Numeric-24.2.win32-py2.5.exe)
+446 Kb
 
 ### Optional Software
 
