@@ -148,3 +148,7 @@ When storing any annotations in the record's annotations dictionary follow the d
 To add support for writing a new file format you should write a sub class of one of the writer objects in Bio.SeqIO.Interfaces
 
 Then, the new format must be added to the relevant mappings in Bio/SeqIO/__iter__.py so that the helper functions are aware of it.  In addtion, if there are standard non-ambiguous file extensions used by this file format, they should also be defined in Bio/SeqIO/__iter__.py
+
+== Bio.SeqIO.FASTA ==
+
+There is some "old" code living in the module Bio.SeqIO.FASTA such as FastaReader.  My plan would be to make this as depreciated once the "new" SeqIO code (described above) is stable.

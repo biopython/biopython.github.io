@@ -185,3 +185,10 @@ Bio/SeqIO/\_\_iter\_\_.py so that the helper functions are aware of it.
 In addtion, if there are standard non-ambiguous file extensions used by
 this file format, they should also be defined in
 Bio/SeqIO/\_\_iter\_\_.py
+
+Bio.SeqIO.FASTA
+---------------
+
+There is some "old" code living in the module Bio.SeqIO.FASTA such as
+FastaReader. My plan would be to make this as depreciated once the "new"
+SeqIO code (described above) is stable.
