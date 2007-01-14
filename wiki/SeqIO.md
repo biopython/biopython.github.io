@@ -43,6 +43,12 @@ Peter
 File Formats
 ------------
 
+This table lists the file formats that Bio.SeqIO will read and write.
+The format name is a simple lowercase string. Where possible we use the
+same name as [BioPerl's
+SeqIO](http://www.bioperl.org/wiki/HOWTO:SeqIO#Formats) and
+[EMBOSS](http://emboss.sourceforge.net/docs/themes/SequenceFormats.html).
+
 | Format name | Reads | Writes | Notes                                      |
 |-------------|-------|--------|--------------------------------------------|
 | fasta       | Yes   | Yes    |                                            |
