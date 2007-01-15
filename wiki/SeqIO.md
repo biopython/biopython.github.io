@@ -7,9 +7,11 @@ layout: wiki
 The page describes Bio.SeqIO, a new Sequence Input/Output interface for
 BioPython.
 
-Some code has now been checked into CVS, and other bits are available on
-[Bug 2059](http://bugzilla.open-bio.org/show_bug.cgi?id=2059). Details
-are currently being discussed on the [Development mailing
+Some code has now been checked into
+[CVS](http://cvs.biopython.org/cgi-bin/viewcvs/viewcvs.cgi/biopython/Bio/SeqIO/?cvsroot=biopython#dirlist),
+and other bits are available on [Bug
+2059](http://bugzilla.open-bio.org/show_bug.cgi?id=2059). Details are
+currently being discussed on the [Development mailing
 list](http://biopython.org/wiki/Mailing_lists).
 
 If all goes well, the code will be available in the next release,
@@ -20,32 +22,33 @@ Aims
 
 We would like to recreate the simplicity of [BioPerl's
 SeqIO](http://www.bioperl.org/wiki/HOWTO:SeqIO), and in the long term
-its [impressive list of supported file
-formats](http://www.bioperl.org/wiki/Sequence_formats).
-
-As currently implemented, the BioPython code covers multiple alignment
-file formats as well. Alignment specific handling may be required in the
-future should the BioPython alignment object become capable of holding
-more than just sequence level annotation. See also BioPerl's list of
-[multiple alignment
+its impressive list of supported [sequence file
+formats](http://www.bioperl.org/wiki/Sequence_formats) and [multiple
+alignment
 formats](http://www.bioperl.org/wiki/Multiple_alignment_formats).
 
-Bio.SeqIO provides a simple uniform interface to assorted file formats,
-but will *only* return sequences as SeqRecord objects.
+Bio.SeqIO provides a simple uniform interface to assorted file formats
+(including multiple sequence alignments), but will *only* return
+sequences as SeqRecord objects (which can be turned into alignment
+objects).
 
-In some cases, this does lead to some apparent duplication. For example,
-Bio.SeqIO and Bio.Nexus will both read sequences from Nexus files.
-However, Bio.Nexus can also do much more, for example reading any
-phylogenetic trees in a Nexus file.
+Note that the inclusion of Bio.SeqIO does lead to some duplication or
+choice in how to deal with some file formats. For example, Bio.SeqIO and
+Bio.Nexus will both read sequences from Nexus files - but Bio.Nexus can
+also do much more, for example reading any phylogenetic trees in a Nexus
+file.
+
+My vision is that for manipulating sequence data you should try
+Bio.SeqIO as your first choice (and hopefully only choice).
 
 Peter
 
 File Formats
 ------------
 
-This table lists the file formats that Bio.SeqIO will read and write.
-The format name is a simple lowercase string. Where possible we use the
-same name as [BioPerl's
+This table lists the file formats that Bio.SeqIO can read and write. The
+format name is a simple lowercase string. Where possible we use the same
+name as [BioPerl's
 SeqIO](http://www.bioperl.org/wiki/HOWTO:SeqIO#Formats) and
 [EMBOSS](http://emboss.sourceforge.net/docs/themes/SequenceFormats.html).
 
@@ -61,43 +64,77 @@ SeqIO](http://www.bioperl.org/wiki/HOWTO:SeqIO#Formats) and
 ||
 
 At the moment (unlike BioPerl) sequence alignment file formats are
-treated much like any other sequence file. However, when writing your
-data to an alignment file format, note all the (gapped) sequences must
-be the same length.
+treated much like any other sequence file. You can convert a set of
+records from any file format into an alignment - provided they are all
+the same length.
 
-Helper Functions
-----------------
+Note that when writing your data to an alignment file format, all the
+(gapped) sequences should be the same length.
 
-There are four helper functions which all take a filename, and optional
-format. Each sequence is returned as a SeqRecord object.
+Sequence Input
+--------------
 
--   **FileToSequenceIterator**, returns a iterator (low memory, forward
-    access only)
--   **FileToSequenceList**, returns a list of sequences (high memory,
-    random access)
--   **FileToSequenceDict**, returns a dictionary of sequences (high
-    memory, random access by ID)
--   **FileToAlignment**, returns an alignment object (for use with
-    multiple sequence alignment file formats)
+The main function is **SequenceIterator(handle, format)** which takes a
+file handle and format name, and returns a SeqRecord iterator. This lets
+you do things like:
 
-For sequential file formats (like Fasta, GenBank, EMBL etc) the file can
-be read record by record, and thus the iterator interface can save a
-significant amount of memory (RAM) which allows you to deal with very
-large files.
+`from Bio.SeqIO import FileToSequenceIterator`  
+`handle = open("example.fasta", "rU")`  
+`for record in SequenceIterator(handle, "fasta") :`  
+`    print record.id`
 
-For interlaced file formats (like Clustal/Clustalw or annotated
-Stockholm files) BioPython has to read the entire file in one go. This
-means using'FileToSequenceIterator rather than FileToSequenceList will
-not actually save you much memory.
+If you had a different type of file, for example a SwissProt file, the
+only difference is you specify "swiss" instead of "fasta":
 
-The function FileToAlignment is intended for use with alignment file
-formats (like Clustal, Stockholm, Nexus) but can be used with any
-sequence file provided that all the sequences are the same length (e.g.
-an alignment stored in fasta format).
+`from Bio.SeqIO import FileToSequenceIterator`  
+`handle = open("P18522.txt", "rU")`  
+`for record in SequenceIterator(handle, "swiss") :`  
+`    print record`
 
-For writing records to a file there is a single helper function:
+Iterators are great for when you only need the records one by one, in
+the order found in the file. For some tasks you may need to have random
+access to the records in any order. In this situation, use the built in
+python **list** function to turn the iterator into a list:
 
--   **SequencesToFile**, takes records and filename
+`from Bio.SeqIO import FileToSequenceIterator`  
+`handle = open("example.fasta", "rU")`  
+`records = list(SequenceIterator(handle, "fasta"))`  
+`print records[0] #first record`  
+`print records[-1] #last record`
+
+Another common task is to index your records by some identifier. For
+this we have a function **SequencesToDict** to turn a SeqRecord iterator
+(or list) into a dictionary:
+
+`from Bio.SeqIO import FileToSequenceIterator`  
+`handle = open("example.fasta", "rU")`  
+`record_dict = SequencesToDict(SequenceIterator(handle, "fasta"))`  
+`print record_dict["gi:12345678"] # use any record ID`
+
+The function **SequencesToDict** will use the record ID as the
+dictionary key by default, but you can specify any mapping you like with
+its optional argument.
+
+Finally the function **SequencesToAlignment** can be used to turn a
+SeqRecord iterator (or list) into an alignment object - provided all the
+sequences are the same length:
+
+`from Bio.SeqIO import FileToSequenceIterator`  
+`handle = open("example.aln", "rU")`  
+`alignment = SequencesToAlignment(SequenceIterator(handle, "clustal"))`  
+`for column in range(alignment.get_alignment_length()) :`  
+`    print  "%s column %i" % (alignment.get_column(column),column))`
+
+In all the above examples, the input file format was explicitly
+specified. This is always a good idea, however if you leave out the
+format the code will try and guess based on the filename extension.
+'This feature may change...'
+
+Sequence Output
+---------------
+
+For writing records to a file use the function **WriteSequences**, which
+takes a SeqRecord iterator (or list), output handle and format string.
 
 Note that if you are writing to an alignment file format, all your
 sequences must be the same length.
@@ -105,53 +142,6 @@ sequences must be the same length.
 For sequential files (like fasta), it may be possible to write the
 records to file one by one. You will have to use the appropriate format
 writer object directly for that, or supply your records as an iterator.
-
-Examples using the Helper Functions
------------------------------------
-
-Suppose you have a fasta file, "example.fasta", which you wish to load.
-The simplest way to load this would be as follows:
-
-`from Bio.SeqIO import FileToSequenceIterator`  
-`for record in FileToSequenceIterator(filename="example.fasta") :`  
-`    print record.id`  
-`    print record.seq`
-
-In the above example, BioPython is able to guess the file format from
-the extension. Just to be on the safe side, you can (and probably
-should) explicitly specify the file format:
-
-`from Bio.SeqIO import FileToSequenceIterator`  
-`for record in FileToSequenceIterator(filename="example.fasta", format="fasta") :`  
-`    print record.id`  
-`    print record.seq`
-
-Or,
-
-`from Bio.SeqIO import FileToSequenceIterator`  
-`for record in FileToSequenceIterator(filename="example.gbk", format="genbank") :`  
-`    print record.id`  
-`    print record.seq`
-
-Specifying the file format is a good habit to get into. In some cases
-you may not have a recognised file extension - perhaps you have your
-data in fasta format but in a file called "my\_seqs.txt". To read this
-file, you would *have* to tell BioPython the file format:
-
-`from Bio.SeqIO import FileToSequenceIterator`  
-`for record in FileToSequenceIterator(filename="my_seqs.txt", format="fasta") :`  
-`    print record.id`  
-`    print record.seq`
-
-You can also supply a file handle instead of a filename:
-
-`from Bio.SeqIO import FileToSequenceIterator`  
-`for record in FileToSequenceIterator(handle=open("my_seqs.txt","rU"), format="fasta") :`  
-`    print record.id`  
-`    print record.seq`
-
-(Note - supporting both handles and filenames is currently open to
-discussion)
 
 Adding new file formats
 -----------------------
@@ -196,5 +186,5 @@ Bio.SeqIO.FASTA
 ---------------
 
 There is some "old" code living in the module Bio.SeqIO.FASTA such as
-FastaReader. My plan would be to make this as depreciated once the "new"
-SeqIO code (described above) is stable.
+FastaReader. My plan is to mark this as depreciated once the "new" SeqIO
+code (described above) is stable.
