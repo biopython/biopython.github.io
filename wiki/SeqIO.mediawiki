@@ -134,13 +134,13 @@ To add support for reading a new file format, you must implement an iterator tha
 
 You may accept additional ''optional'' arguments (an alphabet for example).  However there ''must'' be one and only one required argument (the input file handle).
 
-What you use as the SeqRecord's id, name and description will depend on the file format.  Ideally you would use the accesion number for the id.
+What you use as the SeqRecord's id, name and description will depend on the file format.  Ideally you would use the accesion number for the id.  This id should also be unique for each record (unless the records in the file are in themselves ambiguous).
 
 When storing any annotations in the record's annotations dictionary follow the defacto standard laid down by the GenBank parser... I should try and document this more.
 
 To add support for writing a new file format you should write a sub class of one of the writer objects in Bio.SeqIO.Interfaces
 
-Then, the new format must be added to the relevant mappings in Bio/SeqIO/__iter__.py so that the helper functions are aware of it.  In addtion, if there are standard non-ambiguous file extensions used by this file format, they should also be defined in Bio/SeqIO/__iter__.py
+Then, the new format must be added to the relevant mappings in Bio/SeqIO/__iter__.py so that the '''SequenceIterator''' and '''WriteSequences''' functions are aware of it.  In addition, if there are standard non-ambiguous file extensions used by this file format, they should also be defined in Bio/SeqIO/__iter__.py
 
 == Bio.SeqIO.FASTA ==
 
