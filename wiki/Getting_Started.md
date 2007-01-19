@@ -57,19 +57,15 @@ Produces:
 Beginners
 ---------
 
--   Learn how to program in [Perl](Perl "wikilink"), see several
-    [Tutorials](Tutorials "wikilink")
-    -   [Genome Informatics](http://stein.cshl.org/genome_informatics/)
-    -   [PerlMonks
-        Tutorials](http://www.perlmonks.org/index.pl?node=Tutorials)
-    -   [Perl.com
-        tutorials](http://www.perl.com/cs/user/query/q/6?id_topic=74)
-    -   [Picking up Perl](http://www.ebb.org/PickingUpPerl/)
-    -   [Learn Perl](http://learn.perl.org/)
--   Read the
--   Browse the [Bioperl Tutorial](Bptutorial "wikilink")
--   Examine the [Class Diagram](Class_Diagram "wikilink") if you'd like
-    to know more about the relationships between the modules.
+-   Learn how to program in [Python](http://www.python.org)
+    -   [A Byte of
+        Python](http://swaroopch.info/text/Byte_of_Python:Main_Page)
+    -   [Dive Into Python](http://www.diveintopython.org/toc/index.html)
+-   Browse the [Biopython
+    Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
+-   Examine the [Class
+    Diagram](http://biopython.org/DIST/docs/api/public/trees.html) if
+    you'd like to know more about the relationships between the modules.
 
 Further reading
 ---------------
