@@ -1,4 +1,5 @@
 ==== Documentation ====
+New to BioPython? Check out the [[Getting_Started|Getting Started]] page, or follow one of the links below.
 
 * Installation instructions cover the installation of Python itself, the Biopython dependencies, and Biopython itself. 
 :[http://biopython.org/DIST/docs/install/Installation.html HTML] | [http://biopython.org/DIST/docs/install/Installation.pdf PDF]
