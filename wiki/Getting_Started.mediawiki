@@ -51,5 +51,4 @@ protein record: Seq('HVD', HasStopCodon(IUPACProtein(), '*'))
 
 ==Further reading==
 
-* Read the other [[HOWTOs]]
 * Use the Wiki Search tools to find more information on specific topics.
