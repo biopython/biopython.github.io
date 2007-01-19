@@ -13,12 +13,13 @@ This page modeled after the one for bioperl
 Download
 --------
 
-See [Getting BioPerl](Getting_BioPerl "wikilink")
+See [Getting BioPython](Download "wikilink")
 
 Installation
 ------------
 
-See [Installing BioPerl](Installing_BioPerl "wikilink")
+See [Installing
+BioPython](http://biopython.org/DIST/docs/install/Installation.html)
 
 Quick example
 -------------

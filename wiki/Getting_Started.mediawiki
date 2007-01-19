@@ -2,11 +2,11 @@
 
 ==Download==
 
-See [[Getting BioPerl]]
+See [[Download|Getting BioPython]]
 
 ==Installation==
 
-See [[Installing BioPerl]]
+See [http://biopython.org/DIST/docs/install/Installation.html Installing BioPython]
 
 ==Quick example==
 
