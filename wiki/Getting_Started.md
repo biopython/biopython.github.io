@@ -4,9 +4,6 @@ permalink: wiki/Getting_Started
 layout: wiki
 ---
 
---[Jblucks](User%3AJblucks "wikilink") 16:36, 19 January 2007 (EST):
-This page modeled after the one for bioperl
-
 Download
 --------
 
