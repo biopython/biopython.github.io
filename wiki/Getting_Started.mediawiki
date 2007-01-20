@@ -44,6 +44,7 @@ protein record: Seq('HVD', HasStopCodon(IUPACProtein(), '*'))
 * Learn how to program in [http://www.python.org Python]
 ** [http://swaroopch.info/text/Byte_of_Python:Main_Page A Byte of Python]
 ** [http://www.diveintopython.org/toc/index.html Dive Into Python]
+** [http://rgruet.free.fr/PQR25/PQR2.5.html Python Quick Reference]
 * Browse the [http://biopython.org/DIST/docs/tutorial/Tutorial.html Biopython Tutorial]
 * Examine the [http://biopython.org/DIST/docs/api/public/trees.html Class Diagram] if you'd like to know more about the relationships between the modules.
 

@@ -55,6 +55,8 @@ Beginners
     -   [A Byte of
         Python](http://swaroopch.info/text/Byte_of_Python:Main_Page)
     -   [Dive Into Python](http://www.diveintopython.org/toc/index.html)
+    -   [Python Quick
+        Reference](http://rgruet.free.fr/PQR25/PQR2.5.html)
 -   Browse the [Biopython
     Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
 -   Examine the [Class
