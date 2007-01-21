@@ -79,38 +79,46 @@ The main function is **SequenceIterator(handle, format)** which takes a
 file handle and format name, and returns a SeqRecord iterator. This lets
 you do things like:
 
-`from Bio.SeqIO import FileToSequenceIterator`  
-`handle = open("example.fasta", "rU")`  
-`for record in SequenceIterator(handle, "fasta") :`  
-`    print record.id`
+``` python
+from Bio.SeqIO import FileToSequenceIterator
+handle = open("example.fasta", "rU")
+for record in SequenceIterator(handle, "fasta") :
+    print record.id
+```
 
 If you had a different type of file, for example a SwissProt file, the
 only difference is you specify "swiss" instead of "fasta":
 
-`from Bio.SeqIO import FileToSequenceIterator`  
-`handle = open("P18522.txt", "rU")`  
-`for record in SequenceIterator(handle, "swiss") :`  
-`    print record`
+``` python
+from Bio.SeqIO import FileToSequenceIterator
+handle = open("P18522.txt", "rU")
+for record in SequenceIterator(handle, "swiss") :
+    print record
+```
 
 Iterators are great for when you only need the records one by one, in
 the order found in the file. For some tasks you may need to have random
 access to the records in any order. In this situation, use the built in
 python **list** function to turn the iterator into a list:
 
-`from Bio.SeqIO import FileToSequenceIterator`  
-`handle = open("example.fasta", "rU")`  
-`records = list(SequenceIterator(handle, "fasta"))`  
-`print records[0] #first record`  
-`print records[-1] #last record`
+``` python
+from Bio.SeqIO import FileToSequenceIterator
+handle = open("example.fasta", "rU")
+records = list(SequenceIterator(handle, "fasta"))
+print records[0] #first record
+print records[-1] #last record
+```
 
 Another common task is to index your records by some identifier. For
 this we have a function **SequencesToDict** to turn a SeqRecord iterator
 (or list) into a dictionary:
 
-`from Bio.SeqIO import FileToSequenceIterator`  
-`handle = open("example.fasta", "rU")`  
-`record_dict = SequencesToDict(SequenceIterator(handle, "fasta"))`  
-`print record_dict["gi:12345678"] # use any record ID`
+``` python
+from Bio.SeqIO import FileToSequenceIterator
+handle = open("example.fasta", "rU")
+record_dict = SequencesToDict(SequenceIterator(handle, "fasta"))
+print record_dict["gi:12345678"] # use any record ID
+```
 
 The function **SequencesToDict** will use the record ID as the
 dictionary key by default, but you can specify any mapping you like with
@@ -120,11 +128,13 @@ Finally the function **SequencesToAlignment** can be used to turn a
 SeqRecord iterator (or list) into an alignment object - provided all the
 sequences are the same length:
 
-`from Bio.SeqIO import FileToSequenceIterator`  
-`handle = open("example.aln", "rU")`  
-`alignment = SequencesToAlignment(SequenceIterator(handle, "clustal"))`  
-`for column in range(alignment.get_alignment_length()) :`  
-`    print  "%s column %i" % (alignment.get_column(column),column))`
+``` python
+from Bio.SeqIO import FileToSequenceIterator
+handle = open("example.aln", "rU")
+alignment = SequencesToAlignment(SequenceIterator(handle, "clustal"))
+for column in range(alignment.get_alignment_length()) :
+    print  "%s column %i" % (alignment.get_column(column),column))
+```
 
 In all the above examples, the input file format was explicitly
 specified. This is always a good idea, however if you leave out the
