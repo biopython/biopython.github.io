@@ -75,9 +75,9 @@ Note that when writing your data to an alignment file format, all the
 Sequence Input
 --------------
 
-The main function is **SequenceIterator(handle, format)** which takes a
-file handle and format name, and returns a SeqRecord iterator. This lets
-you do things like:
+The main function is **SequenceIterator** which takes a file handle and
+format name, and returns a [SeqRecord](SeqRecord "wikilink") iterator.
+This lets you do things like:
 
 ``` python
 from Bio.SeqIO import SequenceIterator
@@ -93,7 +93,7 @@ only difference is you specify "swiss" instead of "fasta":
 from Bio.SeqIO import SequenceIterator
 handle = open("P18522.txt", "rU")
 for record in SequenceIterator(handle, "swiss") :
-    print record
+    print record.id
 ```
 
 Iterators are great for when you only need the records one by one, in
@@ -105,8 +105,8 @@ python **list** function to turn the iterator into a list:
 from Bio.SeqIO import SequenceIterator
 handle = open("example.fasta", "rU")
 records = list(SequenceIterator(handle, "fasta"))
-print records[0] #first record
-print records[-1] #last record
+print records[0].id  #first record
+print records[-1].id #last record
 ```
 
 Another common task is to index your records by some identifier. For
@@ -117,7 +117,7 @@ this we have a function **SequencesToDict** to turn a SeqRecord iterator
 from Bio.SeqIO import SequenceIterator, SequencesToDict
 handle = open("example.fasta", "rU")
 record_dict = SequencesToDict(SequenceIterator(handle, "fasta"))
-print record_dict["gi:12345678"] # use any record ID
+print record_dict["gi:12345678"] #use any record ID
 ```
 
 The function **SequencesToDict** will use the record ID as the
