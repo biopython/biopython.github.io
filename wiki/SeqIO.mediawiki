@@ -124,11 +124,68 @@ In all the above examples, the input file format was explicitly specified.  This
 
 == Sequence Output ==
 
-For writing records to a file use the function '''WriteSequences''', which takes a SeqRecord iterator (or list), output handle and format string.
+For writing records to a file use the function '''WriteSequences''', which takes a SeqRecord iterator (or list), output handle and format string:
+
+<source lang=python>
+from Bio.SeqIO import WriteSequences
+sequences = ... # add code here
+output_handle = open("example.fasta", "w")
+WriteSequences(sequences, output_handle, "fasta")
+output_handle.close()
+</source>
+
+There are more examples in the following section on converting between file formats.
 
 Note that if you are writing to an alignment file format, all your sequences must be the same length.
 
-For sequential files (like fasta), it may be possible to write the records to file one by one.  You will have to use the appropriate format writer object directly for that, or supply your records as an iterator.
+For sequential files (like fasta), it may be possible to write the records to the file one by one... but you may need to access the appropriate format writer object directly.
+
+== File Format Conversion ==
+
+Suppose you have a GenBank file which you want to turn into a Fasta file.  For example, lets consider the file 'cor6_6.gb' (included in the BioPython unit tests under the GenBank directory) which contains six records.
+
+You could read the file like this:
+
+<source lang=python>
+from Bio.SeqIO import SequenceIterator
+input_handle = open("cor6_6.gb", "rU")
+for record in SequenceIterator(input_handle, "genbank") :
+    print record
+</source>
+
+Instead, lets pass the SeqRecord iterator directly to the '''WriteSequences''' function:
+
+<source lang=python>
+from Bio.SeqIO import SequenceIterator, WriteSequences
+input_handle = open("cor6_6.gb", "rU")
+sequences = SequenceIterator(input_handle, "genbank")
+output_handle = open("cor6_6.fasta", "w")
+WriteSequences(sequences, output_handle, "fasta")
+output_handle.close()
+</source>
+
+Or more concisely, just:
+
+<source lang=python>
+from Bio.SeqIO import SequenceIterator, WriteSequences
+WriteSequences(SequenceIterator(open("cor6_6.gb", "rU"), "genbank"), \
+               open("cor6_6.fasta", "w"), "fasta")
+</source>
+
+In this example the GenBank file started like this:
+
+ LOCUS       ATCOR66M      513 bp    mRNA            PLN       02-MAR-1992
+ DEFINITION  A.thaliana cor6.6 mRNA.
+ ACCESSION   X55053
+ ...
+
+The resulting Fasta file looks like this:
+
+ >X55053.1 A.thaliana cor6.6 mRNA.
+ AACAAAACACACATCAAAAACGATTTTACAAGAAAAAAATA...
+ ...
+
+By changing the format strings, that code could be used to convert between any supported file formats.
 
 == Adding new file formats ==
 
