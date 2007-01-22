@@ -187,13 +187,13 @@
 
 
 {| border="1" width="100%"
-| Name           || Konrad Hinsen's Python Page
+| Name           || Konrad Hinsen's Python Page - MMTK and ScientificPython
 |-
 | Author         || Konrad Hinsen
 |-
 | URL            || http://starship.python.net/crew/hinsen/
 |-
-| Description    || Contains the Molecular Modeling Toolkit, an open source program library for molecular simulation applications. Additionally, Konrad has ScientificPython, which collects a number of modules that are useful in scientific computing, including code for statistics, basic geometry, etc.
+| Description    || Contains the Molecular Modeling Toolkit (MMTK), an open source program library for molecular simulation applications. Additionally, Konrad has ScientificPython, which collects a number of modules that are useful in scientific computing, including code for statistics, basic geometry, etc.
 |}
 
 
