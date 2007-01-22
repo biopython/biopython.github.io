@@ -29,8 +29,8 @@ formats](http://www.bioperl.org/wiki/Multiple_alignment_formats).
 
 Bio.SeqIO provides a simple uniform interface to assorted file formats
 (including multiple sequence alignments), but will *only* return
-sequences as SeqRecord objects (which can be turned into alignment
-objects).
+sequences as [SeqRecord](SeqRecord "wikilink") objects (which can be
+turned into alignment objects).
 
 Note that the inclusion of Bio.SeqIO does lead to some duplication or
 choice in how to deal with some file formats. For example, Bio.SeqIO and

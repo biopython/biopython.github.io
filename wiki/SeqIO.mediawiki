@@ -8,7 +8,7 @@ If all goes well, the code will be available in the next release, probably BioPy
 
 We would like to recreate the simplicity of [http://www.bioperl.org/wiki/HOWTO:SeqIO BioPerl's SeqIO], and in the long term its impressive list of supported [http://www.bioperl.org/wiki/Sequence_formats sequence file formats] and [http://www.bioperl.org/wiki/Multiple_alignment_formats multiple alignment formats].
 
-Bio.SeqIO provides a simple uniform interface to assorted file formats (including multiple sequence alignments), but will ''only'' return sequences as SeqRecord objects (which can be turned into alignment objects).  
+Bio.SeqIO provides a simple uniform interface to assorted file formats (including multiple sequence alignments), but will ''only'' return sequences as [[SeqRecord]] objects (which can be turned into alignment objects).  
 
 Note that the inclusion of Bio.SeqIO does lead to some duplication or choice in how to deal with some file formats.  For example, Bio.SeqIO and Bio.Nexus will both read sequences from Nexus files - but Bio.Nexus can also do much more, for example reading any phylogenetic trees in a Nexus file.
 
