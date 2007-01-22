@@ -133,7 +133,7 @@ from Bio.SeqIO import SequenceIterator, SequencesToAlignment
 handle = open("example.aln", "rU")
 alignment = SequencesToAlignment(SequenceIterator(handle, "clustal"))
 for column in range(alignment.get_alignment_length()) :
-    print  "%s column %i" % (alignment.get_column(column),column))
+    print  "%s column %i" % (alignment.get_column(column),column)
 ```
 
 In all the above examples, the input file format was explicitly

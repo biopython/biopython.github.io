@@ -117,7 +117,7 @@ from Bio.SeqIO import SequenceIterator, SequencesToAlignment
 handle = open("example.aln", "rU")
 alignment = SequencesToAlignment(SequenceIterator(handle, "clustal"))
 for column in range(alignment.get_alignment_length()) :
-    print  "%s column %i" % (alignment.get_column(column),column))
+    print  "%s column %i" % (alignment.get_column(column),column)
 </source>
 
 In all the above examples, the input file format was explicitly specified.  This is always a good idea, however if you leave out the format the code will try and guess based on the filename extension. 'This feature may change...'
