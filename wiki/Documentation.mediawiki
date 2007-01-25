@@ -16,7 +16,7 @@ New to BioPython? Check out the [[Getting_Started|Getting Started]] page, or fol
 ::[http://biopython.org/DIST/docs/cookbook/biopython_test.html HTML] | [http://biopython.org/DIST/docs/cookbook/biopython_test.pdf PDF]
 :*Logistic Regression supervised learning. 
 ::[http://biopython.org/DIST/docs/cookbook/LogisticRegression.html HTML] | [http://biopython.org/DIST/docs/cookbook/LogisticRegression.pdf PDF]
-:*The Biopython Structural Bioinformatics FAQ. 
+:*The Biopython Structural Bioinformatics FAQ (i.e. how to use the Bio.PDB module). 
 ::[http://biopython.org/DIST/docs/cookbook/biopdb_faq.pdf PDF]
 :*Working with restriction enzymes. 
 ::[http://biopython.org/DIST/docs/cookbook/Restriction.html HTML]

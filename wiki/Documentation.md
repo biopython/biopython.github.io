@@ -56,7 +56,8 @@ below.
 ::[HTML](http://biopython.org/DIST/docs/cookbook/LogisticRegression.html)
 | [PDF](http://biopython.org/DIST/docs/cookbook/LogisticRegression.pdf)
 
-:\*The Biopython Structural Bioinformatics FAQ.
+:\*The Biopython Structural Bioinformatics FAQ (i.e. how to use the
+Bio.PDB module).
 
 ::[PDF](http://biopython.org/DIST/docs/cookbook/biopdb_faq.pdf)
 
