@@ -253,8 +253,8 @@ instead:
 from Bio.SeqIO import SequenceIterator, WriteSequences
 
 short_sequences = [record for \
-    record in SequenceIterator(open("cor6_6.gb", "rU"), "genbank") \
-    if len(record.seq) < 300]
+        record in SequenceIterator(open("cor6_6.gb", "rU"), "genbank") \
+        if len(record.seq) < 300]
 
 print "Found %i short sequences" % (len(short_sequences))
 
@@ -265,6 +265,36 @@ output_handle.close()
 
 I'm not convinced this is actually any easier to understand, but it is
 shorter.
+
+However, if you are using Python 2.4 or later, and you are dealing with
+very *large* files you could benefit from using a **generator
+expression** instead. This avoids creating the entire list of desired
+records in memory:
+
+``` python
+from Bio.SeqIO import SequenceIterator, WriteSequences
+
+input_seq_iterator = SequenceIterator(open("cor6_6.gb", "rU"), "genbank")
+short_seq_iterator = (record for record in input_iterator \
+                      if len(record.seq) < 300)
+
+output_handle = open("short_seqs.fasta", "w")
+WriteSequences(short_seq_iterator, output_handle, "fasta")
+output_handle.close()
+```
+
+Remember that for sequential file formats like Fasta or GenBank, the
+**WriteSequences** will accept a **SeqRecord** iterator. The advantage
+of the code above is that only one record will be in memory at any one
+time.
+
+However, as explained in the output section, for non-sequential file
+formats like Clustal the **WriteSequences** is forced to automatically
+turn the iterator into a list, so this advantage is lost.
+
+If this is all confusing, *don't panic* and just ignore the fancy stuff.
+For moderately sized datasets having too many records in memory at once
+(e.g. in lists) is probably not going to be a problem.
 
 Adding new file formats
 -----------------------
