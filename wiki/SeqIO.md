@@ -238,7 +238,8 @@ for record in SequenceIterator(open("cor6_6.gb", "rU"), "genbank")
     if len(record.seq) < 300 :
         # Add this record to our list
         short_sequences.append(record)
-print "Found %i short sequences" % (len(short_sequences))
+
+print "Found %i short sequences" % len(short_sequences)
 
 output_handle = open("short_seqs.fasta", "w")
 WriteSequences(short_sequences, output_handle, "fasta")
@@ -252,11 +253,12 @@ instead:
 ``` python
 from Bio.SeqIO import SequenceIterator, WriteSequences
 
+#Build a list of short sequences:
 short_sequences = [record for \
         record in SequenceIterator(open("cor6_6.gb", "rU"), "genbank") \
         if len(record.seq) < 300]
 
-print "Found %i short sequences" % (len(short_sequences))
+print "Found %i short sequences" % len(short_sequences)
 
 output_handle = open("short_seqs.fasta", "w")
 WriteSequences(short_sequences, output_handle, "fasta")
@@ -267,9 +269,9 @@ I'm not convinced this is actually any easier to understand, but it is
 shorter.
 
 However, if you are using Python 2.4 or later, and you are dealing with
-very *large* files you could benefit from using a **generator
-expression** instead. This avoids creating the entire list of desired
-records in memory:
+very large files with thousands of records, you could benefit from using
+a **generator expression** instead. This avoids creating the entire list
+of desired records in memory:
 
 ``` python
 from Bio.SeqIO import SequenceIterator, WriteSequences
