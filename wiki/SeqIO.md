@@ -221,6 +221,9 @@ The resulting Fasta file looks like this:
 By changing the format strings, that code could be used to convert
 between any supported file formats.
 
+Input/Output Example - Filtering by sequence length
+---------------------------------------------------
+
 While you may simply want to convert a file (as shown above), a more
 realistic example is to manipulate or filter the data in some way.
 
