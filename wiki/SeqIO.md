@@ -182,13 +182,15 @@ for record in SequenceIterator(input_handle, "genbank") :
     print record
 ```
 
-Instead, lets pass the SeqRecord iterator directly to the
+Instead, let's pass the SeqRecord iterator directly to the
 **WriteSequences** function:
 
 ``` python
 from Bio.SeqIO import SequenceIterator, WriteSequences
+
 input_handle = open("cor6_6.gb", "rU")
 sequences = SequenceIterator(input_handle, "genbank")
+
 output_handle = open("cor6_6.fasta", "w")
 WriteSequences(sequences, output_handle, "fasta")
 output_handle.close()
@@ -218,6 +220,27 @@ The resulting Fasta file looks like this:
 
 By changing the format strings, that code could be used to convert
 between any supported file formats.
+
+While you may simply want to convert a file (as shown above), a more
+realistic example is to manipulate or filter the data in some way.
+
+For example, let's save all the "short" sequences of less than 300
+nucleotides to a Fasta file:
+
+``` python
+from Bio.SeqIO import SequenceIterator, WriteSequences
+
+short_sequences = [] # Setup an empty list
+for record in SequenceIterator(open("cor6_6.gb", "rU"), "genbank")
+    if len(record.seq) < 300 :
+        # Add this record to our list
+        short_sequences.append(record)
+print "Found %i short sequences" % (len(short_sequences))
+
+output_handle = open("short_seqs.fasta", "w")
+WriteSequences(short_sequences, output_handle, "fasta")
+output_handle.close()
+```
 
 Adding new file formats
 -----------------------
