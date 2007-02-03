@@ -211,6 +211,24 @@ WriteSequences(short_sequences, output_handle, "fasta")
 output_handle.close()
 </source>
 
+If you know about '''list comprehensions''' which were introduced in Python 2.0, then you could have written the above example like this instead:
+
+<source lang=python>
+from Bio.SeqIO import SequenceIterator, WriteSequences
+
+short_sequences = [record for \
+    record in SequenceIterator(open("cor6_6.gb", "rU"), "genbank") \
+    if len(record.seq) < 300]
+
+print "Found %i short sequences" % (len(short_sequences))
+
+output_handle = open("short_seqs.fasta", "w")
+WriteSequences(short_sequences, output_handle, "fasta")
+output_handle.close()
+</source>
+
+I'm not convinced this is actually any easier to understand, but it is shorter.
+
 == Adding new file formats ==
 
 This section of the document is aimed at developers who want to contribute support for a new file format to BioPython.
