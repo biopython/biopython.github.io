@@ -37,6 +37,11 @@ This table lists the file formats that Bio.SeqIO can read and write.  The format
 | Yes
 | No
 | Uses Bio.GenBank
+|-  
+| embl
+| Yes
+| No
+| New! Also uses Bio.GenBank
 |-
 | clustal
 | Yes

@@ -57,6 +57,7 @@ SeqIO](http://www.bioperl.org/wiki/HOWTO:SeqIO#Formats) and
 |-------------|-------|--------|--------------------------------------------|
 | fasta       | Yes   | Yes    |                                            |
 | genbank     | Yes   | No     | Uses Bio.GenBank                           |
+| embl        | Yes   | No     | New! Also uses Bio.GenBank                 |
 | clustal     | Yes   | Yes    | Currently uses Bio.Clustalw for writing    |
 | swiss       | Yes   | No     | Swiss-Prot aka UniProt. Uses Bio.SwissProt |
 | nexus       | Yes   | No     | Also known as PUAP format. Uses Bio.Nexus  |
