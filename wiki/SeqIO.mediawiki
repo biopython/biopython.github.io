@@ -56,7 +56,7 @@ This table lists the file formats that Bio.SeqIO can read and write.  The format
 | nexus
 | Yes
 | No
-| Also known as PUAP format.  Uses Bio.Nexus
+| Also known as PAUP format.  Uses Bio.Nexus
 |-
 | phylip
 | Yes

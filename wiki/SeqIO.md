@@ -60,7 +60,7 @@ SeqIO](http://www.bioperl.org/wiki/HOWTO:SeqIO#Formats) and
 | embl        | Yes   | No     | New! Also uses Bio.GenBank                 |
 | clustal     | Yes   | Yes    | Currently uses Bio.Clustalw for writing    |
 | swiss       | Yes   | No     | Swiss-Prot aka UniProt. Uses Bio.SwissProt |
-| nexus       | Yes   | No     | Also known as PUAP format. Uses Bio.Nexus  |
+| nexus       | Yes   | No     | Also known as PAUP format. Uses Bio.Nexus  |
 | phylip      | Yes   | Yes    | Truncates names at 10 characters.          |
 | stockholm   | Yes   | Yes    | Also known as PFAM format.                 |
 ||
