@@ -260,10 +260,11 @@ instead:
 ``` python
 from Bio.SeqIO import SequenceIterator, WriteSequences
 
+input_seq_iterator = SequenceIterator(open("cor6_6.gb", "rU"), "genbank")
+
 #Build a list of short sequences:
-short_sequences = [record for \
-        record in SequenceIterator(open("cor6_6.gb", "rU"), "genbank") \
-        if len(record.seq) < 300]
+short_sequences = [record for record in input_seq_iterator \
+                   if len(record.seq) < 300]
 
 print "Found %i short sequences" % len(short_sequences)
 
@@ -284,7 +285,7 @@ of desired records in memory:
 from Bio.SeqIO import SequenceIterator, WriteSequences
 
 input_seq_iterator = SequenceIterator(open("cor6_6.gb", "rU"), "genbank")
-short_seq_iterator = (record for record in input_iterator \
+short_seq_iterator = (record for record in input_seq_iterator \
                       if len(record.seq) < 300)
 
 output_handle = open("short_seqs.fasta", "w")
