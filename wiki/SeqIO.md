@@ -361,6 +361,13 @@ See:
 
 <http://pbil.univ-lyon1.fr/help/formats.html>
 
+### MEME format
+
+Bio.MEME has a parser for this file format, which at first glance looks
+like it could be treated like an alignment format.
+
+<http://meme.sdsc.edu>
+
 ### BLAST results
 
 Pairwise alignments from the BLAST suite could be turned into two
