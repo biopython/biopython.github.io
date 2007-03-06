@@ -353,6 +353,14 @@ Possible additional formats
 There are existing parsers in BioPython for the following file formats,
 which could be integrated into Bio.SeqIO if appropriate.
 
+### NBRF / PIR format
+
+Bio.NBRF has a Martel parser for this file format, which is similar to
+the FASTA format. It would need addition work to return SeqRecords. It
+might be easier to extend to reuse the Bio.SeqIO fasta code instead.
+
+<http://www.psc.edu/general/software/packages/seq-intro/nbrffile.html>
+
 ### MASE alignment format
 
 Bio.IntelliGenetics seems to use Martel parse MASE format files into its
