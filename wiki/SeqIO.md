@@ -342,8 +342,8 @@ To add support for writing a new file format you should write a sub
 class of one of the writer objects in Bio.SeqIO.Interfaces
 
 Then, the new format must be added to the relevant mappings in
-Bio/SeqIO/\_\_init\_\_.py so that the **SequenceIterator** and
-**WriteSequences** functions are aware of it. In addition, if there are
+Bio/SeqIO/\_\_init\_\_.py so that the **Bio.SeqIO.parse** and
+**Bio.SeqIO.write** functions are aware of it. In addition, if there are
 standard non-ambiguous file extensions used by this file format, they
 should also be defined in Bio/SeqIO/\_\_init\_\_.py
 
