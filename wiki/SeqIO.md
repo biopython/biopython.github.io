@@ -144,14 +144,15 @@ and/or the file contents.
 Sequence Output
 ---------------
 
-For writing records to a file use the function **WriteSequences**, which
-takes a SeqRecord iterator (or list), output handle and format string:
+For writing records to a file use the function **Bio.SeqIO.write**,
+which takes a SeqRecord iterator (or list), output handle and format
+string:
 
 ``` python
-from Bio.SeqIO import WriteSequences
+from Bio import SeqIO
 sequences = ... # add code here
 output_handle = open("example.fasta", "w")
-WriteSequences(sequences, output_handle, "fasta")
+SeqIO.write(sequences, output_handle, "fasta")
 output_handle.close()
 ```
 
@@ -168,9 +169,9 @@ little memory is required. See the example below filtering a set of
 records.
 
 On the other hand, for interlaced or non-sequential file formats like
-Clustal, the **WriteSequences** function will be forced to automatically
-convert an iterator into a list. This will destroy any potential memory
-saving from using an generator/iterator approach.
+Clustal, the **write** function will be forced to automatically convert
+an iterator into a list. This will destroy any potential memory saving
+from using an generator/iterator approach.
 
 File Format Conversion
 ----------------------
