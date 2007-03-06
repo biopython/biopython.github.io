@@ -281,6 +281,24 @@ To add support for writing a new file format you should write a sub class of one
 
 Then, the new format must be added to the relevant mappings in Bio/SeqIO/__init__.py so that the '''SequenceIterator''' and '''WriteSequences''' functions are aware of it.  In addition, if there are standard non-ambiguous file extensions used by this file format, they should also be defined in Bio/SeqIO/__init__.py
 
+== Possible additional formats ==
+
+There are existing parsers in BioPython for the following file formats, which could be integrated into Bio.SeqIO if appropriate.
+
+=== MASE alignment format ===
+
+Bio.IntelliGenetics seems to use Martel parse MASE format files into its own record object.  It could be extended to return SeqRecord objects.  See:
+
+http://pbil.univ-lyon1.fr/help/formats.html
+
+=== BLAST results ===
+
+Pairwise alignments from the BLAST suite could be turned into two SeqRecord objects with gapped sequences.  Is this useful?
+
+=== COMPASS pairwise alignment format ===
+
+Bio.Compass can parse the pairwise alignments from COMPASS.  The output is similar to BLAST in many ways.  Again, is getting the results as SeqRecord objects useful?
+
 == Bio.SeqIO.FASTA ==
 
 There is some "old" code living in the module Bio.SeqIO.FASTA such as FastaReader.  My plan is to mark this as depreciated once the "new" SeqIO code (described above) is stable.

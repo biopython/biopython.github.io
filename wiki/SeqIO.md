@@ -347,6 +347,31 @@ Bio/SeqIO/\_\_init\_\_.py so that the **SequenceIterator** and
 standard non-ambiguous file extensions used by this file format, they
 should also be defined in Bio/SeqIO/\_\_init\_\_.py
 
+Possible additional formats
+---------------------------
+
+There are existing parsers in BioPython for the following file formats,
+which could be integrated into Bio.SeqIO if appropriate.
+
+### MASE alignment format
+
+Bio.IntelliGenetics seems to use Martel parse MASE format files into its
+own record object. It could be extended to return SeqRecord objects.
+See:
+
+<http://pbil.univ-lyon1.fr/help/formats.html>
+
+### BLAST results
+
+Pairwise alignments from the BLAST suite could be turned into two
+SeqRecord objects with gapped sequences. Is this useful?
+
+### COMPASS pairwise alignment format
+
+Bio.Compass can parse the pairwise alignments from COMPASS. The output
+is similar to BLAST in many ways. Again, is getting the results as
+SeqRecord objects useful?
+
 Bio.SeqIO.FASTA
 ---------------
 
