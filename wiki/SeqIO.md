@@ -184,9 +184,9 @@ records.
 You could read the file like this:
 
 ``` python
-from Bio.SeqIO import SequenceIterator
+from Bio import SeqIO
 input_handle = open("cor6_6.gb", "rU")
-for record in SequenceIterator(input_handle, "genbank") :
+for record in SeqIO.parse(input_handle, "genbank") :
     print record
 ```
 
@@ -194,22 +194,22 @@ Instead, let's pass the SeqRecord iterator directly to the
 **WriteSequences** function:
 
 ``` python
-from Bio.SeqIO import SequenceIterator, WriteSequences
+from Bio import SeqIO
 
 input_handle = open("cor6_6.gb", "rU")
-sequences = SequenceIterator(input_handle, "genbank")
+sequences = SeqIO.parse(input_handle, "genbank")
 
 output_handle = open("cor6_6.fasta", "w")
-WriteSequences(sequences, output_handle, "fasta")
+SeqIO.write(sequences, output_handle, "fasta")
 output_handle.close()
 ```
 
 Or more concisely, just:
 
 ``` python
-from Bio.SeqIO import SequenceIterator, WriteSequences
-WriteSequences(SequenceIterator(open("cor6_6.gb", "rU"), "genbank"), \
-               open("cor6_6.fasta", "w"), "fasta")
+from Bio import SeqIO
+SeqIO.write(SeqIO.parse(open("cor6_6.gb", "rU"), "genbank"), \
+            open("cor6_6.fasta", "w"), "fasta")
 ```
 
 In this example the GenBank file started like this:

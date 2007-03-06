@@ -154,31 +154,31 @@ Suppose you have a GenBank file which you want to turn into a Fasta file.  For e
 You could read the file like this:
 
 <source lang=python>
-from Bio.SeqIO import SequenceIterator
+from Bio import SeqIO
 input_handle = open("cor6_6.gb", "rU")
-for record in SequenceIterator(input_handle, "genbank") :
+for record in SeqIO.parse(input_handle, "genbank") :
     print record
 </source>
 
 Instead, let's pass the SeqRecord iterator directly to the '''WriteSequences''' function:
 
 <source lang=python>
-from Bio.SeqIO import SequenceIterator, WriteSequences
+from Bio import SeqIO
 
 input_handle = open("cor6_6.gb", "rU")
-sequences = SequenceIterator(input_handle, "genbank")
+sequences = SeqIO.parse(input_handle, "genbank")
 
 output_handle = open("cor6_6.fasta", "w")
-WriteSequences(sequences, output_handle, "fasta")
+SeqIO.write(sequences, output_handle, "fasta")
 output_handle.close()
 </source>
 
 Or more concisely, just:
 
 <source lang=python>
-from Bio.SeqIO import SequenceIterator, WriteSequences
-WriteSequences(SequenceIterator(open("cor6_6.gb", "rU"), "genbank"), \
-               open("cor6_6.fasta", "w"), "fasta")
+from Bio import SeqIO
+SeqIO.write(SeqIO.parse(open("cor6_6.gb", "rU"), "genbank"), \
+            open("cor6_6.fasta", "w"), "fasta")
 </source>
 
 In this example the GenBank file started like this:
