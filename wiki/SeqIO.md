@@ -239,10 +239,10 @@ For example, let's save all the "short" sequences of less than 300
 nucleotides to a Fasta file:
 
 ``` python
-from Bio.SeqIO import SequenceIterator, WriteSequences
+from Bio import SeqIO
 
 short_sequences = [] # Setup an empty list
-for record in SequenceIterator(open("cor6_6.gb", "rU"), "genbank")
+for record in SeqIO.parse(open("cor6_6.gb", "rU"), "genbank")
     if len(record.seq) < 300 :
         # Add this record to our list
         short_sequences.append(record)
@@ -250,7 +250,7 @@ for record in SequenceIterator(open("cor6_6.gb", "rU"), "genbank")
 print "Found %i short sequences" % len(short_sequences)
 
 output_handle = open("short_seqs.fasta", "w")
-WriteSequences(short_sequences, output_handle, "fasta")
+SeqIO.write(short_sequences, output_handle, "fasta")
 output_handle.close()
 ```
 
@@ -259,9 +259,9 @@ Python 2.0, then you could have written the above example like this
 instead:
 
 ``` python
-from Bio.SeqIO import SequenceIterator, WriteSequences
+from Bio import SeqIO
 
-input_seq_iterator = SequenceIterator(open("cor6_6.gb", "rU"), "genbank")
+input_seq_iterator = SeqIO.parse(open("cor6_6.gb", "rU"), "genbank")
 
 #Build a list of short sequences:
 short_sequences = [record for record in input_seq_iterator \
@@ -270,7 +270,7 @@ short_sequences = [record for record in input_seq_iterator \
 print "Found %i short sequences" % len(short_sequences)
 
 output_handle = open("short_seqs.fasta", "w")
-WriteSequences(short_sequences, output_handle, "fasta")
+SeqIO.write(short_sequences, output_handle, "fasta")
 output_handle.close()
 ```
 
@@ -283,25 +283,24 @@ a **generator expression** instead. This avoids creating the entire list
 of desired records in memory:
 
 ``` python
-from Bio.SeqIO import SequenceIterator, WriteSequences
+from Bio import SeqIO
 
-input_seq_iterator = SequenceIterator(open("cor6_6.gb", "rU"), "genbank")
+input_seq_iterator = SeqIO.parse(open("cor6_6.gb", "rU"), "genbank")
 short_seq_iterator = (record for record in input_seq_iterator \
                       if len(record.seq) < 300)
 
 output_handle = open("short_seqs.fasta", "w")
-WriteSequences(short_seq_iterator, output_handle, "fasta")
+SeqIO.write(short_seq_iterator, output_handle, "fasta")
 output_handle.close()
 ```
 
-Remember that for sequential file formats like Fasta or GenBank, the
-**WriteSequences** will accept a **SeqRecord** iterator. The advantage
-of the code above is that only one record will be in memory at any one
-time.
+Remember that for sequential file formats like Fasta or GenBank,
+**write** will accept a **SeqRecord** iterator. The advantage of the
+code above is that only one record will be in memory at any one time.
 
 However, as explained in the output section, for non-sequential file
-formats like Clustal the **WriteSequences** is forced to automatically
-turn the iterator into a list, so this advantage is lost.
+formats like Clustal **write** is forced to automatically turn the
+iterator into a list, so this advantage is lost.
 
 If this is all confusing, *don't panic* and just ignore the fancy stuff.
 For moderately sized datasets having too many records in memory at once
