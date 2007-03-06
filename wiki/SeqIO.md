@@ -362,6 +362,12 @@ might be easier to extend to reuse the Bio.SeqIO fasta code instead.
 <http://www.bioperl.org/wiki/PIR_sequence_format>
 <http://www.psc.edu/general/software/packages/seq-intro/nbrffile.html>
 
+### KEGG format
+
+Can Bio.KEGG parse these files?
+
+<http://www.bioperl.org/wiki/KEGG_sequence_format>
+
 ### PHD sequencing files from PHRED
 
 Bio.Sequencing.PHD has a Martel parser for this file format, also used
