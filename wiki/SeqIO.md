@@ -181,7 +181,7 @@ file. For example, lets consider the file 'cor6\_6.gb' (included in the
 BioPython unit tests under the GenBank directory) which contains six
 records.
 
-You could read the file like this:
+You could read the file like this, using the **parse** function:
 
 ``` python
 from Bio import SeqIO
@@ -190,8 +190,8 @@ for record in SeqIO.parse(input_handle, "genbank") :
     print record
 ```
 
-Instead, let's pass the SeqRecord iterator directly to the
-**WriteSequences** function:
+Now, let's pass the SeqRecord iterator directly to the **write**
+function:
 
 ``` python
 from Bio import SeqIO
