@@ -298,9 +298,9 @@ If this is all confusing, *don't panic* and just ignore the fancy stuff.
 For moderately sized datasets having too many records in memory at once
 (e.g. in lists) is probably not going to be a problem.
 
-Bio.SeqIO.FASTA
----------------
+Old Bio.SeqIO code
+------------------
 
 There is some "old" code living in the Bio.SeqIO.generic and
-Bio.SeqIO.FASTA modules such as FastaReader. My plan is to mark this as
-depreciated once the "new" SeqIO code (described above) is stable.
+Bio.SeqIO.FASTA modules, such as the FastaReader class. These files will
+be marked as depreciated once the "new" SeqIO code is released.
