@@ -169,11 +169,10 @@ File Format Conversion
 ----------------------
 
 Suppose you have a GenBank file which you want to turn into a Fasta
-file. For example, lets consider the file 'cor6\_6.gb' which is included
-in the BioPython unit tests under the GenBank directory. You can
-download the file [from
-CVS](http://cvs.biopython.org/cgi-bin/viewcvs/viewcvs.cgi/*checkout*/biopython/Tests/GenBank/cor6_6.gb?rev=HEAD&cvsroot=biopython&content-type=text/plain)
-too.
+file. For example, lets consider the file
+'[cor6\_6.gb](http://cvs.biopython.org/cgi-bin/viewcvs/viewcvs.cgi/*checkout*/biopython/Tests/GenBank/cor6_6.gb?rev=HEAD&cvsroot=biopython&content-type=text/plain)'
+which is included in the BioPython unit tests under the GenBank
+directory.
 
 You could read the file like this, using the **parse** function:
 
