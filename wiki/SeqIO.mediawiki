@@ -147,7 +147,7 @@ On the other hand, for interlaced or non-sequential file formats like Clustal, t
 
 == File Format Conversion ==
 
-Suppose you have a GenBank file which you want to turn into a Fasta file.  For example, lets consider the file 'cor6_6.gb' (included in the BioPython unit tests under the GenBank directory)
+Suppose you have a GenBank file which you want to turn into a Fasta file.  For example, lets consider the file 'cor6_6.gb' which is included in the BioPython unit tests under the GenBank directory.  You can download the file [http://cvs.biopython.org/cgi-bin/viewcvs/viewcvs.cgi/*checkout*/biopython/Tests/GenBank/cor6_6.gb?rev=HEAD&cvsroot=biopython&content-type=text/plain from CVS] too.
 
 You could read the file like this, using the '''parse''' function:
 
