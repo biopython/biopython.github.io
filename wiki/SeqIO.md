@@ -170,8 +170,7 @@ File Format Conversion
 
 Suppose you have a GenBank file which you want to turn into a Fasta
 file. For example, lets consider the file 'cor6\_6.gb' (included in the
-BioPython unit tests under the GenBank directory) which contains six
-records.
+BioPython unit tests under the GenBank directory)
 
 You could read the file like this, using the **parse** function:
 
@@ -182,8 +181,9 @@ for record in SeqIO.parse(input_handle, "genbank") :
     print record
 ```
 
-Now, let's pass the SeqRecord iterator directly to the **write**
-function:
+Notice that this file contains six records. Now, let's pass the
+SeqRecord iterator to the **write** function, to turn this GenBank file
+into a Fasta file:
 
 ``` python
 from Bio import SeqIO
