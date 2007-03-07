@@ -103,28 +103,28 @@ print records[-1].id #last record
 ```
 
 Another common task is to index your records by some identifier. For
-this we have a function **SequencesToDict** to turn a SeqRecord iterator
-(or list) into a dictionary:
+this we have a function **Bio.SeqIO.to\_dict** to turn a SeqRecord
+iterator (or list) into a dictionary:
 
 ``` python
 from Bio import SeqIO
 handle = open("example.fasta", "rU")
-record_dict = SeqIO.SequencesToDict(SeqIO.parse(handle, "fasta"))
+record_dict = SeqIO.to_dict(SeqIO.parse(handle, "fasta"))
 print record_dict["gi:12345678"] #use any record ID
 ```
 
-The function **SequencesToDict** will use the record ID as the
-dictionary key by default, but you can specify any mapping you like with
-its optional argument.
+The function **to\_dict** will use the record ID as the dictionary key
+by default, but you can specify any mapping you like with its optional
+argument.
 
-Finally the function **SequencesToAlignment** can be used to turn a
+Finally the function **Bio.SeqIO.to\_alignment** can be used to turn a
 SeqRecord iterator (or list) into an alignment object - provided all the
 sequences are the same length:
 
 ``` python
 from Bio import SeqIO
 handle = open("example.aln", "rU")
-alignment = SeqIO.SequencesToAlignment(SeqIO.parse(handle, "clustal"))
+alignment = SeqIO.to_alignment(SeqIO.parse(handle, "clustal"))
 for column in range(alignment.get_alignment_length()) :
     print  "%s column %i" % (alignment.get_column(column),column)
 ```
