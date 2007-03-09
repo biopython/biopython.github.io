@@ -65,8 +65,11 @@ If the supplied records cannot be written to this file format, raise a
 ValueError exception. Where appropriate, please use the following
 wording:
 
-ValueError("Must have at least one sequence") ValueError("Sequences must
-all be the same length")
+``` python
+raise ValueError("Must have at least one sequence")
+raise ValueError("Sequences must all be the same length")
+...
+```
 
 ToDo - Defined standard exceptions in Bio.SeqIO itself?
 
