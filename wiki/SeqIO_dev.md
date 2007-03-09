@@ -18,8 +18,8 @@ list](http://biopython.org/wiki/Mailing_lists).
 If all goes well, the code will be available in the next release,
 probably BioPython 1.43.
 
-Adding new file formats
------------------------
+Reading new file formats
+------------------------
 
 **Note:** The details are still subject to change
 
@@ -47,12 +47,28 @@ When storing any annotations in the record's annotations dictionary
 follow the defacto standard laid down by the GenBank parser... I should
 try and document this more.
 
+If the supplied file seems to be invalid, raise a SyntaxError exception.
+
+Writing new file formats
+------------------------
+
+**Note:** The details are still subject to change
+
 To add support for writing a new file format you should write a sub
 class of one of the writer objects in Bio.SeqIO.Interfaces
 
 Then, the new format must be added to the relevant dictionary mappings
 in Bio/SeqIO/\_\_init\_\_.py so that the **Bio.SeqIO.parse** and
 **Bio.SeqIO.write** functions are aware of it.
+
+If the supplied records cannot be written to this file format, raise a
+ValueError exception. Where appropriate, please use the following
+wording:
+
+ValueError("Must have at least one sequence") ValueError("Sequences must
+all be the same length")
+
+ToDo - Defined standard exceptions in Bio.SeqIO itself?
 
 Possible additional formats
 ---------------------------
