@@ -68,6 +68,7 @@ wording:
 ``` python
 raise ValueError("Must have at least one sequence")
 raise ValueError("Sequences must all be the same length")
+raise ValueError("Duplicate record identifier: %s" % ...)
 ...
 ```
 

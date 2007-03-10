@@ -35,6 +35,7 @@ If the supplied records cannot be written to this file format, raise a ValueErro
 <source lang=python>
 raise ValueError("Must have at least one sequence")
 raise ValueError("Sequences must all be the same length")
+raise ValueError("Duplicate record identifier: %s" % ...)
 ...
 </source>
 
