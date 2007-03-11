@@ -113,7 +113,7 @@ record_dict = SeqIO.to_dict(SeqIO.parse(handle, "fasta"))
 print record_dict["gi:12345678"] #use any record ID
 </source>
 
-The function '''to_dict''' will use the record ID as the dictionary key by default, but you can specify any mapping you like with its optional argument.
+The function '''to_dict''' will use the record ID as the dictionary key by default, but you can specify any mapping you like with its optional argument, '''key_function''.
 
 Finally the function '''Bio.SeqIO.to_alignment''' can be used to turn a SeqRecord iterator (or list) into an alignment object - provided all the sequences are the same length:
 
