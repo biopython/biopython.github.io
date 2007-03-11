@@ -44,5 +44,5 @@ Write CVS access is available for Biopython developers. This is normally
 given on a case by case basis, and the best place to discuss getting
 write access is on the [Biopython Development mailing
 list](mailto:biopython-dev@biopython.org). Once you have access, the
-instructions [BioPerl's CVS wiki
+instructions on [BioPerl's CVS wiki
 page](http://www.bioperl.org/wiki/Using_CVS) are very helpful.
