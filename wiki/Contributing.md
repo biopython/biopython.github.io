@@ -23,8 +23,8 @@ involving coding and not. Some things that you can help on include:
 
 -   **Support for More Programs:** There are many different
     bioinformatics programs being developed. Identify one that does not
-    currently have support in Biopython and add support for it. Use
-    Bio.BLAST as a model.
+    currently have support in Biopython and add support for it. Have a
+    look at [SeqIO](SeqIO "wikilink") pages first.
 -   **Support for Databases:** Identify a biological database that does
     not currently have support in Biopython and add support for it. Use
     Bio.GenBank as a model.
