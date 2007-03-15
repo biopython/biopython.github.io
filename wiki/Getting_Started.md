@@ -48,6 +48,12 @@ Produces:
     protein translation is HVD
     protein record: Seq('HVD', HasStopCodon(IUPACProtein(), '*'))
 
+Reading and writing Sequence Files
+----------------------------------
+
+If you are using Biopython 1.43 or later, try out the new
+[SeqIO](SeqIO "wikilink") module.
+
 Beginners
 ---------
 
