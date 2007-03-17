@@ -17,20 +17,20 @@ Current Release -- 1.43 -- 17 March 2007
 ### Files
 
 -   Source Tarball --
-    [biopython-1.42.tar.gz](http://biopython.org/DIST/biopython-1.42.tar.gz)
-    3,841 Kb
+    [biopython-1.43.tar.gz](http://biopython.org/DIST/biopython-1.43.tar.gz)
+    3,778 Kb
 -   Source Zip File --
-    [biopython-1.42.zip](http://biopython.org/DIST/biopython-1.42.zip)
-    4,399 Kb
+    [biopython-1.43.zip](http://biopython.org/DIST/biopython-1.43.zip)
+    4,271 Kb
 -   Windows Installer for Python 2.3 --
-    [biopython-1.42.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.42.win32-py2.3.exe)
-    1,070 Kb
+    [biopython-1.43.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.43.win32-py2.3.exe)
+    1,104 Kb
 -   Windows Installer for Python 2.4 --
-    [biopython-1.42.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.42.win32-py2.4.exe)
-    1,074 Kb
+    [biopython-1.43.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.43.win32-py2.4.exe)
+    1,108 Kb
 -   Windows Installer for Python 2.5 --
-    [biopython-1.42.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.42.win32-py2.5.exe)
-    1,075 Kb
+    [biopython-1.43.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.43.win32-py2.5.exe)
+    1,109 Kb
 
 ### Required Software
 
