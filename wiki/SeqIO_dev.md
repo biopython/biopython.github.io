@@ -8,15 +8,12 @@ This page is aimed at any developers or coders interesting in
 understanding or extending the new Sequence Input/Output interface for
 BioPython, [SeqIO](SeqIO "wikilink").
 
-Some code has now been checked into
-[CVS](http://cvs.biopython.org/cgi-bin/viewcvs/viewcvs.cgi/biopython/Bio/SeqIO/?cvsroot=biopython#dirlist),
-and other bits are available on [Bug
-2059](http://bugzilla.open-bio.org/show_bug.cgi?id=2059). Details are
-currently being discussed on the [Development mailing
-list](http://biopython.org/wiki/Mailing_lists).
+The code has now been checked into
+[CVS](http://cvs.biopython.org/cgi-bin/viewcvs/viewcvs.cgi/biopython/Bio/SeqIO/?cvsroot=biopython#dirlist).
+Related [Bug 2059](http://bugzilla.open-bio.org/show_bug.cgi?id=2059)
+has been resolved.
 
-If all goes well, the code will be available in the next release,
-probably BioPython 1.43.
+The code is already available in BioPython 1.43.
 
 Reading new file formats
 ------------------------
