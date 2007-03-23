@@ -208,6 +208,25 @@
 
 
 {| border="1" width="100%"
+| Name                    || [[User%3AGotgenes|Chris Lasher]]
+|-
+| E-mail                  || [mailto:chris.lasher@gmail.com chris.lasher@gmail.com]
+|-
+| Affiliation             || [https://www.vbi.vt.edu/ Virginia Bioinformatics Institute]
+|-
+| Location                || Blacksburg, VA
+|-
+| Uses Python for         || Putting the joy back in programming
+|-
+| Work/Research Interests || Bacterial genomics
+|-
+| Biopython Contributions || Subversion migration
+|-
+| Relevant URL            || http://gotgenes.com/
+|}
+
+
+{| border="1" width="100%"
 | Name                    || Bartek Wilczyński
 |-
 | E-mail                  || bartek_AT_rezolwenta.eu.org
