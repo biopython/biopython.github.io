@@ -1,3 +1,42 @@
-This page will outline and detail the information required for end-users, developers, and undertakers of the task of migrating Biopython from [[CVS]] to Subversion.
+This page will outline and detail the information required for end-users, developers, and undertakers of the task of migrating Biopython from [[CVS]] to [[Subversion]].
 
-Content to be created.
+== Biopython Users ==
+
+Content for users to be created.
+
+=== Installing Subversion ===
+
+==== Microsoft Windows ====
+Download and install either [http://tortoisesvn.tigris.org/ TortoiseSVN] (I have used this and recommend it -- ChrisLasher) or [http://www.rapidsvn.org/ RapidSVN] (ChrisVillareal has used this and recommends it).
+
+==== Mac OS X ====
+Download and install Subversion via [http://fink.sourceforge.net/ Fink] or the [http://subversion.tigris.org/project_packages.html#binary-packages binary package].
+
+==== Linux ====
+Some distributions come with the Subversion packages by default, or they may have already been installed by your system administrator. Verify whether you have Subversion installed using `which`
+<code><pre>
+user@compy$ which svn
+/usr/bin/svn
+user@compy$ 
+</pre></code>
+
+In the above example, Subversion is installed and its executable is located within <code>/usr/bin/</code>.
+
+<code><pre>
+user@compy$ which svn
+user@compy$ 
+</pre></code>
+
+On the other hand, in the above example, <code>which svn</code> returns nothing. This indicates Subversion is not likely installed. You or your system administrator will need to use the appropriate package manager to download and install the packages for Subversion. For example, on Ubuntu, users would execute the following:
+
+<code><pre>
+user@compy$ sudo apt-get update && sudo apt-get install subversion
+</pre></code>
+
+== Biopython Developers ==
+
+Content for Biopython developers.
+
+== Biopython Migration Strategy ==
+
+Content for migration strategy.
