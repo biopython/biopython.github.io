@@ -19,9 +19,10 @@ Content for users to be created.
 #### Microsoft Windows
 
 Download and install either
-[TortoiseSVN](http://tortoisesvn.tigris.org/) (I have used this and
-recommend it -- ChrisLasher) or [RapidSVN](http://www.rapidsvn.org/)
-(ChrisVillareal has used this and recommends it).
+[TortoiseSVN](http://tortoisesvn.tigris.org/) or
+[RapidSVN](http://www.rapidsvn.org/). There is also a binary available
+for a command line based Subversion client; see the [Subversion
+website](http://subversion.tigris.org/project_packages.html#binary-packages).
 
 #### Mac OS X
 

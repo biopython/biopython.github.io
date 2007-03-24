@@ -7,7 +7,7 @@ Content for users to be created.
 === Installing Subversion ===
 
 ==== Microsoft Windows ====
-Download and install either [http://tortoisesvn.tigris.org/ TortoiseSVN] (I have used this and recommend it -- ChrisLasher) or [http://www.rapidsvn.org/ RapidSVN] (ChrisVillareal has used this and recommends it).
+Download and install either [http://tortoisesvn.tigris.org/ TortoiseSVN] or [http://www.rapidsvn.org/ RapidSVN]. There is also a binary available for a command line based Subversion client; see the [http://subversion.tigris.org/project_packages.html#binary-packages Subversion website].
 
 ==== Mac OS X ====
 Download and install Subversion via [http://fink.sourceforge.net/ Fink] or the [http://subversion.tigris.org/project_packages.html#binary-packages binary package].
