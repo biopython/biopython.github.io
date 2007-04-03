@@ -244,7 +244,7 @@ nucleotides to a Fasta file:
 from Bio import SeqIO
 
 short_sequences = [] # Setup an empty list
-for record in SeqIO.parse(open("cor6_6.gb", "rU"), "genbank")
+for record in SeqIO.parse(open("cor6_6.gb", "rU"), "genbank") :
     if len(record.seq) < 300 :
         # Add this record to our list
         short_sequences.append(record)
