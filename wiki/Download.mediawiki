@@ -20,6 +20,13 @@
 * [http://www.lemburg.com/files/python/mxTextTools.html mxTextTools]
 * [http://numpy.scipy.org/#older_array Numerical Python] Note that BioPython has not (yet) switched to the 'new' numpy library.  You need the 'old' Numeric library, version 24.2 is recommended. Windows installers for Python 2.4 and older are available from the [http://numpy.scipy.org/#older_array Numerical Python] website. A Windows installer for Numeric 24.2 for Python 2.5 is available here: [http://biopython.org/DIST/Numeric-24.2.win32-py2.5.exe Numeric-24.2.win32-py2.5.exe] 446 Kb
 
+In Ubuntu Linux (6.10, Edgy Eft), these packages must be installed before installing BioPython: 
+
+* python-egenics-mxtexttools
+* python-numeric
+* python-dev
+* build-essential
+
 === Optional Software ===
 
 * [http://www.reportlab.org/downloads.html ReportLab -- for pdf graphics code]

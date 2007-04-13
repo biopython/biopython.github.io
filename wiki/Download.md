@@ -48,6 +48,14 @@ Current Release -- 1.43 -- 17 March 2007
     [Numeric-24.2.win32-py2.5.exe](http://biopython.org/DIST/Numeric-24.2.win32-py2.5.exe)
     446 Kb
 
+In Ubuntu Linux (6.10, Edgy Eft), these packages must be installed
+before installing BioPython:
+
+-   python-egenics-mxtexttools
+-   python-numeric
+-   python-dev
+-   build-essential
+
 ### Optional Software
 
 -   [ReportLab -- for pdf graphics
