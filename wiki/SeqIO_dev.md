@@ -83,9 +83,10 @@ Bio.NBRF has a Martel parser for this file format, which is similar to
 the FASTA format. It would need addition work to return SeqRecords. It
 might be easier to extend to reuse the Bio.SeqIO fasta code instead.
 
-<http://www.bioperl.org/wiki/PIR_sequence_format>
-
-<http://www.psc.edu/general/software/packages/seq-intro/nbrffile.html>
+-   BioPerl description of [PIR sequence
+    format](bp:PIR_sequence_format "wikilink")
+-   [PSC
+    documentation](http://www.psc.edu/general/software/packages/seq-intro/nbrffile.html)
 
 ### KEGG format
 
