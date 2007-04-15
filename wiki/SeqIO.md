@@ -45,16 +45,16 @@ name as [BioPerl's
 SeqIO](http://www.bioperl.org/wiki/HOWTO:SeqIO#Formats) and
 [EMBOSS](http://emboss.sourceforge.net/docs/themes/SequenceFormats.html).
 
-| Format name | Reads | Writes | Notes                                      |
-|-------------|-------|--------|--------------------------------------------|
-| fasta       | Yes   | Yes    |                                            |
-| genbank     | Yes   | No     | Uses Bio.GenBank                           |
-| embl        | Yes   | No     | New! Also uses Bio.GenBank                 |
-| clustal     | Yes   | Yes    | Currently uses Bio.Clustalw for writing    |
-| swiss       | Yes   | No     | Swiss-Prot aka UniProt. Uses Bio.SwissProt |
-| nexus       | Yes   | No     | Also known as PAUP format. Uses Bio.Nexus  |
-| phylip      | Yes   | Yes    | Truncates names at 10 characters.          |
-| stockholm   | Yes   | Yes    | Also known as PFAM format.                 |
+| Format name | Reads | Writes | Notes                                       |
+|-------------|-------|--------|---------------------------------------------|
+| fasta       | Yes   | Yes    | Resulting sequences have a generic alphabet |
+| genbank     | Yes   | No     | Uses Bio.GenBank                            |
+| embl        | Yes   | No     | New! Also uses Bio.GenBank                  |
+| clustal     | Yes   | Yes    | Currently uses Bio.Clustalw for writing     |
+| swiss       | Yes   | No     | Swiss-Prot aka UniProt. Uses Bio.SwissProt  |
+| nexus       | Yes   | No     | Also known as PAUP format. Uses Bio.Nexus   |
+| phylip      | Yes   | Yes    | Truncates names at 10 characters.           |
+| stockholm   | Yes   | Yes    | Also known as PFAM format.                  |
 ||
 
 At the moment (unlike BioPerl) sequence alignment file formats are

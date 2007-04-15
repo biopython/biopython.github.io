@@ -29,7 +29,7 @@ This table lists the file formats that Bio.SeqIO can read and write.  The format
 | fasta   
 | Yes
 | Yes
-|
+| Resulting sequences have a generic alphabet
 |-  
 | genbank 
 | Yes
