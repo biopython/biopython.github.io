@@ -261,4 +261,4 @@ If this is all confusing, ''don't panic'' and just ignore the fancy stuff.  For 
 
 == Old Bio.SeqIO code ==
 
-There is some "old" code living in the Bio.SeqIO.generic and Bio.SeqIO.FASTA modules, such as the FastaReader class.  These files will be marked as depreciated once the "new" SeqIO code is released.
+There is some "old" code living in the Bio.SeqIO.generic and Bio.SeqIO.FASTA modules, such as the FastaReader class.  These files were marked as deprecated after the release of the "new" SeqIO code in Biopython 1.43, and may be removed in a future release.
