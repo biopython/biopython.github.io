@@ -83,6 +83,38 @@ Biopython-corba
 -   [Fnorb](http://fnorb.sourceforge.net)
 -   [orbit-python](http://sourceforge.net/projects/orbit-python)
 
+Packages
+========
+
+Ubuntu
+------
+
+Biopython 1.41 packages for Ubuntu (Dapper):
+
+-   [python-biopython](http://packages.ubuntulinux.org/dapper/source/python-biopython)
+
+Ubuntu Edgy doesn't seem to have working AMD64 packages. Fiesty
+biopython 1.42 AMD64 packages backported for Edgy here:
+
+-   [python-biopython-doc\_1.42-2\_all.deb](http://students.ee.sun.ac.za/~nmarais/files/python-biopython-doc_1.42-2_all.deb)
+-   [python-biopython-martel\_1.42-2\_all.deb](http://students.ee.sun.ac.za/~nmarais/files/python-biopython-martel_1.42-2_all.deb)
+-   [python-biopython-sql\_1.42-2\_all.deb](http://students.ee.sun.ac.za/~nmarais/files/python-biopython-sql_1.42-2_all.deb)
+-   [python-biopython\_1.42-2\_amd64.deb](http://students.ee.sun.ac.za/~nmarais/files/python-biopython_1.42-2_amd64.deb)
+
+Fedora
+------
+
+[Fedora Core
+5](http://download.fedora.redhat.com/pub/fedora/linux/extras/5/i386/repoview/python-biopython.html),
+[Fedora Core
+6](http://download.fedora.redhat.com/pub/fedora/linux/extras/6/i386/repoview/python-biopython.html)
+and
+[rawhide](http://download.fedora.redhat.com/pub/fedora/linux/extras/development/i386/repoview/python-biopython.html)
+(soon-to-be Fedora 7) have official packages for biopython 1.43 called
+python-biopython, it can be installed using yum:
+
+`yum install python-biopython`
+
 Old Releases
 ============
 
@@ -175,34 +207,3 @@ Old Releases
 -   [Macbiopython-1.00a3.sit.bin](http://biopython.org/DIST/Macbiopython-1.00a3.sit.bin)
     1926Kb
 
-Packages
-========
-
-Ubuntu
-------
-
-Biopython 1.41 packages for Ubuntu (Dapper):
-
--   [python-biopython](http://packages.ubuntulinux.org/dapper/source/python-biopython)
-
-Ubuntu Edgy doesn't seem to have working AMD64 packages. Fiesty
-biopython 1.42 AMD64 packages backported for Edgy here:
-
--   [python-biopython-doc\_1.42-2\_all.deb](http://students.ee.sun.ac.za/~nmarais/files/python-biopython-doc_1.42-2_all.deb)
--   [python-biopython-martel\_1.42-2\_all.deb](http://students.ee.sun.ac.za/~nmarais/files/python-biopython-martel_1.42-2_all.deb)
--   [python-biopython-sql\_1.42-2\_all.deb](http://students.ee.sun.ac.za/~nmarais/files/python-biopython-sql_1.42-2_all.deb)
--   [python-biopython\_1.42-2\_amd64.deb](http://students.ee.sun.ac.za/~nmarais/files/python-biopython_1.42-2_amd64.deb)
-
-Fedora
-------
-
-[Fedora Core
-5](http://download.fedora.redhat.com/pub/fedora/linux/extras/5/i386/repoview/python-biopython.html),
-[Fedora Core
-6](http://download.fedora.redhat.com/pub/fedora/linux/extras/6/i386/repoview/python-biopython.html)
-and
-[rawhide](http://download.fedora.redhat.com/pub/fedora/linux/extras/development/i386/repoview/python-biopython.html)
-(soon-to-be Fedora 7) have official packages for biopython 1.43 called
-python-biopython, it can be installed using yum:
-
-`yum install python-biopython`

@@ -47,6 +47,26 @@ In Ubuntu Linux (6.10, Edgy Eft), these packages must be installed before instal
 * [http://fnorb.sourceforge.net Fnorb]
 * [http://sourceforge.net/projects/orbit-python orbit-python]
 
+= Packages =
+
+== Ubuntu ==
+
+Biopython 1.41 packages for Ubuntu (Dapper):
+*[http://packages.ubuntulinux.org/dapper/source/python-biopython python-biopython]
+
+Ubuntu Edgy doesn't seem to have working AMD64 packages. Fiesty biopython 1.42 AMD64 packages backported for Edgy here:
+
+*[http://students.ee.sun.ac.za/~nmarais/files/python-biopython-doc_1.42-2_all.deb python-biopython-doc_1.42-2_all.deb]
+*[http://students.ee.sun.ac.za/~nmarais/files/python-biopython-martel_1.42-2_all.deb python-biopython-martel_1.42-2_all.deb]
+*[http://students.ee.sun.ac.za/~nmarais/files/python-biopython-sql_1.42-2_all.deb python-biopython-sql_1.42-2_all.deb]
+*[http://students.ee.sun.ac.za/~nmarais/files/python-biopython_1.42-2_amd64.deb python-biopython_1.42-2_amd64.deb]
+
+== Fedora ==
+
+[http://download.fedora.redhat.com/pub/fedora/linux/extras/5/i386/repoview/python-biopython.html Fedora Core 5], [http://download.fedora.redhat.com/pub/fedora/linux/extras/6/i386/repoview/python-biopython.html Fedora Core 6] and [http://download.fedora.redhat.com/pub/fedora/linux/extras/development/i386/repoview/python-biopython.html rawhide] (soon-to-be Fedora 7) have official packages for biopython 1.43 called python-biopython, it can be installed using yum:
+
+ yum install python-biopython
+
 = Old Releases =
 
 * [http://biopython.org/DIST/biopython-1.42.tar.gz biopython-1.42.tar.gz] 3,841 Kb
@@ -93,23 +113,3 @@ In Ubuntu Linux (6.10, Edgy Eft), these packages must be installed before instal
 * [http://biopython.org/DIST/biopython-1.00a3.win32-py2.0.exe biopython-1.00a3.win32-py2.0.exe] 583Kb
 * [http://biopython.org/DIST/biopython-1.00a3.win32-py2.1.exe biopython-1.00a3.win32-py2.1.exe] 585Kb
 * [http://biopython.org/DIST/Macbiopython-1.00a3.sit.bin Macbiopython-1.00a3.sit.bin] 1926Kb
-
-= Packages =
-
-== Ubuntu ==
-
-Biopython 1.41 packages for Ubuntu (Dapper):
-*[http://packages.ubuntulinux.org/dapper/source/python-biopython python-biopython]
-
-Ubuntu Edgy doesn't seem to have working AMD64 packages. Fiesty biopython 1.42 AMD64 packages backported for Edgy here:
-
-*[http://students.ee.sun.ac.za/~nmarais/files/python-biopython-doc_1.42-2_all.deb python-biopython-doc_1.42-2_all.deb]
-*[http://students.ee.sun.ac.za/~nmarais/files/python-biopython-martel_1.42-2_all.deb python-biopython-martel_1.42-2_all.deb]
-*[http://students.ee.sun.ac.za/~nmarais/files/python-biopython-sql_1.42-2_all.deb python-biopython-sql_1.42-2_all.deb]
-*[http://students.ee.sun.ac.za/~nmarais/files/python-biopython_1.42-2_amd64.deb python-biopython_1.42-2_amd64.deb]
-
-== Fedora ==
-
-[http://download.fedora.redhat.com/pub/fedora/linux/extras/5/i386/repoview/python-biopython.html Fedora Core 5], [http://download.fedora.redhat.com/pub/fedora/linux/extras/6/i386/repoview/python-biopython.html Fedora Core 6] and [http://download.fedora.redhat.com/pub/fedora/linux/extras/development/i386/repoview/python-biopython.html rawhide] (soon-to-be Fedora 7) have official packages for biopython 1.43 called python-biopython, it can be installed using yum:
-
- yum install python-biopython
