@@ -202,7 +202,7 @@ Fedora
 6](http://download.fedora.redhat.com/pub/fedora/linux/extras/6/i386/repoview/python-biopython.html)
 and
 [rawhide](http://download.fedora.redhat.com/pub/fedora/linux/extras/development/i386/repoview/python-biopython.html)
-(soon-to-be Fedora 7) have official packages for biopython called
+(soon-to-be Fedora 7) have official packages for biopython 1.43 called
 python-biopython, it can be installed using yum:
 
 `yum install python-biopython`
