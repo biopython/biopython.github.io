@@ -45,7 +45,7 @@ layout: wiki
 | Location                | Coventry, England, UK                                                       |
 | Uses Python for         | Bioinformatics, controlling R with rpy, ...                                 |
 | Work/Research Interests | Bacterial signalling                                                        |
-| Biopython Contributions | GenBank parser support                                                      |
+| Biopython Contributions | Sequence parsing including Bio.SeqIO, and the EMBL and GenBank parsers      |
 | Relevant URL            | <http://www2.warwick.ac.uk/fac/sci/moac/currentstudents/peter_cock/python/> |
 
 |                         |                                                                   |
