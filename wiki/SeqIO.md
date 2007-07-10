@@ -84,6 +84,10 @@ function **open**. The argument 'rU' means open for **r**eading using
 **u**niversal readline mode - this means you don't have to worry if the
 file uses Unix, Mac or DOS/Windows style newline characters.
 
+Note that you do have to specify the file format explicitly, unlike in
+BioPerl's SeqIO which will try and guess using the file name extension
+and/or the file contents.
+
 If you had a different type of file, for example a Clustalw alignment
 file such as
 '[opuntia.aln](http://cvs.biopython.org/cgi-bin/viewcvs/viewcvs.cgi/*checkout*/biopython/Tests/Clustalw/opuntia.aln?rev=HEAD&cvsroot=biopython&content-type=text/plain)'
@@ -137,9 +141,8 @@ for column in range(alignment.get_alignment_length()) :
     print  "%s column %i" % (alignment.get_column(column),column)
 ```
 
-Note that you do have to specify the file format explicitly, unlike in
-BioPerl's SeqIO which will try and guess using the file name extension
-and/or the file contents.
+In the future it may be possible to do this directly via the Alignment
+object
 
 Sequence Output
 ---------------
