@@ -15,6 +15,15 @@ Installation
 See [Installing
 BioPython](http://biopython.org/DIST/docs/install/Installation.html)
 
+Tutorial
+--------
+
+The Biopython Tutorial and Cookbook
+([HTML](http://biopython.org/DIST/docs/tutorial/Tutorial.html),
+[PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)) contains
+the bulk of our documentation. See
+[Documentation](Documentation "wikilink") for more links.
+
 Quick example
 -------------
 
