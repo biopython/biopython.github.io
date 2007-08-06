@@ -96,7 +96,8 @@ will have to install Biopython from source.
 ### Ubuntu
 
 You should be able to install Biopython and its dependencies using the
-synaptic GUI tool, or at the command line using:
+Synaptic GUI tool (on the main menu under System / Administration /
+Synaptic Package Manager), or at the command line using:
 
 `sudo apt-get install python-biopython`
 

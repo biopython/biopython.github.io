@@ -53,7 +53,7 @@ For those of you using Linux, the easiest way to install Biopython is through yo
 
 === Ubuntu ===
 
-You should be able to install Biopython and its dependencies using the synaptic GUI tool, or at the command line using:
+You should be able to install Biopython and its dependencies using the Synaptic GUI tool (on the main menu under System / Administration / Synaptic Package Manager), or at the command line using:
 
  sudo apt-get install python-biopython
 
