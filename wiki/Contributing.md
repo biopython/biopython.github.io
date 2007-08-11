@@ -51,8 +51,7 @@ involving coding and not. Some things that you can help on include:
 -   **Documentation:** The tutorial is not complete and can use
     some work. New users can be especially helpful here, as you learn
     new packages. Our API documentation could also do with some work,
-    see [PEP 257](http://www.python.org/dev/peps/pep-0257/) for
-    docstring conventions.
+    see coding conventions below.
 -   **News Postings:** The news items on the biopython.org front page
     must be kept up to date. If you keep up with the mailing lists
     (which are low volume), we need someone to help summarize important
