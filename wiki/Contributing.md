@@ -23,8 +23,10 @@ involving coding and not. Some things that you can help on include:
 
 -   **Support for More Programs:** There are many different
     bioinformatics programs being developed. Identify one that does not
-    currently have support in Biopython and add support for it. Have a
-    look at [SeqIO](SeqIO "wikilink") pages first.
+    currently have support in Biopython and add support for it.
+-   **Support for More File Formats:** We can read and write lots of
+    different file formats, but there are always more. For sequences
+    (and alignments) look at the [SeqIO](SeqIO "wikilink") pages first.
 -   **Support for Databases:** Identify a biological database that does
     not currently have support in Biopython and add support for it. Use
     Bio.GenBank as a model.
@@ -48,7 +50,9 @@ involving coding and not. Some things that you can help on include:
     Biopython is tested, there are still some holes.
 -   **Documentation:** The tutorial is not complete and can use
     some work. New users can be especially helpful here, as you learn
-    new packages.
+    new packages. Our API documentation could also do with some work,
+    see [PEP 257](http://www.python.org/dev/peps/pep-0257/) for
+    docstring conventions.
 -   **News Postings:** The news items on the biopython.org front page
     must be kept up to date. If you keep up with the mailing lists
     (which are low volume), we need someone to help summarize important
