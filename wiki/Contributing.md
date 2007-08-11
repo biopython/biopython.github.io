@@ -86,8 +86,11 @@ Bugzilla (see "Bugs") to submit it.
 ### Coding conventions
 
 Biopython follows the coding conventions laid out by Guido in his
-[Python Style Guide](http://www.python.org/doc/essays/styleguide.html).
-The important highlights are:
+[Python Style Guide](http://www.python.org/doc/essays/styleguide.html)
+(now covered by [PEP 8 Style Guide for Python
+Code](http://www.python.org/dev/peps/pep-0008/) and [PEP 257 Docstring
+Conventions](http://www.python.org/dev/peps/pep-0257/)). The important
+highlights are:
 
 -   Classes should be in AllFirstLetterUppercase style.
 -   Functions should be in lowercase\_separated\_by\_underscores style.

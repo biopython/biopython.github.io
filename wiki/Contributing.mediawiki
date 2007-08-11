@@ -35,7 +35,7 @@ If all these terms seem acceptable, please send a description of your code to bi
 
 === Coding conventions ===
 
-Biopython follows the coding conventions laid out by Guido in his [http://www.python.org/doc/essays/styleguide.html Python Style Guide]. The important highlights are:
+Biopython follows the coding conventions laid out by Guido in his [http://www.python.org/doc/essays/styleguide.html Python Style Guide] (now covered by [http://www.python.org/dev/peps/pep-0008/ PEP 8 Style Guide for Python Code] and [http://www.python.org/dev/peps/pep-0257/ PEP 257 Docstring Conventions]). The important highlights are:
 
 * Classes should be in AllFirstLetterUppercase style.
 * Functions should be in lowercase_separated_by_underscores style.
