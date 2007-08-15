@@ -192,6 +192,7 @@ from Bio import SeqIO
 input_handle = open("cor6_6.gb", "rU")
 for record in SeqIO.parse(input_handle, "genbank") :
     print record
+input_handle.close()
 ```
 
 Notice that this file contains six records. Now, let's pass the
@@ -202,14 +203,16 @@ into a Fasta file:
 from Bio import SeqIO
 
 input_handle = open("cor6_6.gb", "rU")
-sequences = SeqIO.parse(input_handle, "genbank")
-
 output_handle = open("cor6_6.fasta", "w")
+
+sequences = SeqIO.parse(input_handle, "genbank")
 SeqIO.write(sequences, output_handle, "fasta")
+
 output_handle.close()
+input_handle.close()
 ```
 
-Or more concisely, just:
+Or more concisely, without explicitly closing the handles, just:
 
 ``` python
 from Bio import SeqIO
