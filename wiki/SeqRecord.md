@@ -66,25 +66,21 @@ Lets look a little more closely... and use python's **dir()** function
 to find out more about the SeqRecord object and what it does:
 
 ``` python
-dir(record)
+>>> dir(record)
+[..., 'annotations', 'dbxrefs', 'description', 'features', 'id', 'name', 'seq']
 ```
 
-If you din't already know, the **dir()** function returns a list of all
+If you didn't already know, the **dir()** function returns a list of all
 the methods and properties of an object (as strings). Those starting
 underscores in their name are "special" and we'll be ignoring them in
-this discussion. For a SeqRecord, you'll be shown the following:
-
-`[..., 'annotations', 'dbxrefs', 'description', 'features', 'id', 'name', 'seq']`
-
-We'll start with the **seq** property:
+this discussion. We'll start with the **seq** property:
 
 ``` python
-print record.seq
+>>> print record.seq
+Seq('CATTGTTGAGATCACATAATAATTGATCGAGTTAATCTGGAGGATCTGTTTACTTTGGTC ...', IUPACAmbiguousDNA())
+>>> print record.seq.__class__
+Bio.Seq.Seq
 ```
-
-That should give:
-
-`Seq('CATTGTTGAGATCACATAATAATTGATCGAGTTAATCTGGAGGATCTGTTTACTTTGGTC ...', IUPACAmbiguousDNA())`
 
 This is a [Seq](Seq "wikilink") object, another important object type in
 Biopython, and worth of its own page on the wiki documentation.
@@ -92,14 +88,13 @@ Biopython, and worth of its own page on the wiki documentation.
 The next three properties are all simple strings:
 
 ``` python
-print record.id
-print record.name
-print record.description
+>>> print record.id
+Z78439.1
+>>> print record.name
+Z78439
+>>> print record.description
+P.barbatum 5.8S rRNA gene and ITS1 and ITS2 DNA.
 ```
-
-`Z78439.1`  
-`Z78439`  
-`P.barbatum 5.8S rRNA gene and ITS1 and ITS2 DNA.`
 
 Have a look at the raw GenBank file to see where these came from.
 
@@ -107,20 +102,73 @@ Next, we'll check the **dxrefs** property, which holds any database
 cross references:
 
 ``` python
-print record.dbxrefs
+>>> print record.dbxrefs
+[]
+>>> print record.dbxrefs.__class__
+<type 'list'>
 ```
 
-`[]`
+An empty list? Disappointing...
 
 How about the **annotations** property? This is a python dictionary...
 
 ``` python
-print record.annotations
-print record.annotations["source"]
+>>> print record.annotations
+{'source': 'Paphiopedilum barbatum', 'taxonomy': ...}
+>>> print record.annotations.__class__
+<type 'dict'>
+>>> print record.annotations["source"]
+Paphiopedilum barbatum
 ```
 
-`{'source': 'Paphiopedilum barbatum', 'taxonomy': ...}`  
-`Paphiopedilum barbatum`
-
 In this case, most of the values in the dictionary are simple strings,
-but this isn't always the case.
+but this isn't always the case - have a look at the references entry for
+this example - its a list of Reference objects:
+
+``` python
+>>> print record.annotations["references"].__class__
+<type 'list'>
+>>> for ref in record.annotations["references"] : print ref
+authors: Cox,A.V., Pridgeon,A.M., Albert,V.A. and Chase,M.W.
+title: Phylogenetics of the slipper orchids (Cypripedioideae: Orchidaceae): nuclear rDNA ITS sequences
+journal: Unpublished
+medline id:
+pubmed id:
+comment:
+
+location: [0:592]
+authors: Cox,A.V.
+title: Direct Submission
+journal: Submitted (19-AUG-1996) Cox A.V., Royal Botanic Gardens, Kew, Richmond, Surrey TW9 3AB, UK
+medline id:
+pubmed id:
+comment:
+```
+
+That brings us finally to **features** which is another list property,
+an it contains SeqFeature objects:
+
+``` python
+>>> print record.features.__class__
+<type 'list'>
+>>> print len(record.features)
+5
+>>> for f in record.features : print f
+type: source
+location: [0:592]
+ref: None:None
+strand: 1
+qualifiers:
+        Key: db_xref, Value: ['taxon:53070']
+        Key: mol_type, Value: ['genomic DNA']
+        Key: organism, Value: ['Paphiopedilum barbatum']
+
+...
+
+type: misc_feature
+location: [550:592]
+ref: None:None
+strand: 1
+qualifiers:
+        Key: note, Value: ['internal transcribed spacer 2']
+```
