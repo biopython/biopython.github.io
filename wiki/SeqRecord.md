@@ -128,21 +128,11 @@ this example - its a list of Reference objects:
 ``` python
 >>> print record.annotations["references"].__class__
 <type 'list'>
->>> for ref in record.annotations["references"] : print ref
-authors: Cox,A.V., Pridgeon,A.M., Albert,V.A. and Chase,M.W.
-title: Phylogenetics of the slipper orchids (Cypripedioideae: Orchidaceae): nuclear rDNA ITS sequences
-journal: Unpublished
-medline id:
-pubmed id:
-comment:
-
-location: [0:592]
-authors: Cox,A.V.
-title: Direct Submission
-journal: Submitted (19-AUG-1996) Cox A.V., Royal Botanic Gardens, Kew, Richmond, Surrey TW9 3AB, UK
-medline id:
-pubmed id:
-comment:
+>>> print len(record.annotations["references"])
+2
+>>> for ref in record.annotations["references"] : print ref.authors
+Cox,A.V., Pridgeon,A.M., Albert,V.A. and Chase,M.W.
+Cox,A.V.
 ```
 
 That brings us finally to **features** which is another list property,
