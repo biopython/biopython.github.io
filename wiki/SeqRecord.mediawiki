@@ -1,3 +1,68 @@
-This page will describe the SeqRecord object used in BioPython to hold a sequence (as a Seq object) with identifiers (ID and name), description and optionally annotation and sub-features.
+This page will describe the SeqRecord object used in BioPython to hold a sequence (as a [[Seq]] object) with identifiers (ID and name), description and optionally annotation and sub-features.
 
 Most of the sequence file format parsers in BioPython can return SeqRecord objects  (and may offer a format specific record object too).  The new [[SeqIO]] system will only return SeqRecord objects.
+
+Lets look in closer detail at the well annotated SeqRecord objects Biopython creates from a GenBank file, such as [[http://biopython.org/DIST/docs/tutorial/examples/ls_orchid.gbk ls_orchid.gbk]].  This file contains 94 records:
+
+<source lang=python>
+from Bio import SeqIO
+for index, record in enumerate(SeqIO.parse(open("ls_orchid.gbk"), "genbank")) :
+    print "index %i, ID = %s, length %i, with %i features" \
+          % (index, record.id, len(record.seq), len(record.features))
+</source>
+
+And this is some of the output. Remember python likes to count from zero, so for the 94 records in this file they have been labelled 0 to 93:
+
+ index 0, ID = Z78533.1, length 740, with 5 features
+ index 1, ID = Z78532.1, length 753, with 5 features
+ index 2, ID = Z78531.1, length 748, with 5 features
+ ...
+ index 92, ID = Z78440.1, length 744, with 5 features
+ index 93, ID = Z78439.1, length 592, with 5 features
+
+Lets look in a little more detail at the final record:
+
+<source lang=python>
+print record
+</source>
+
+That should give you a hint of the sort of information held in this object:
+
+ ID: Z78439.1
+ Name: Z78439
+ Desription: P.barbatum 5.8S rRNA gene and ITS1 and ITS2 DNA.
+ /source=Paphiopedilum barbatum
+ /taxonomy=['Eukaryota', 'Viridiplantae', 'Streptophyta', 'Embryophyta', ..., 'Paphiopedilum']
+ /keywords=['5.8S ribosomal RNA', '5.8S rRNA gene', 'internal transcribed spacer', 'ITS1', 'ITS2']
+ /references=[<Bio.SeqFeature.Reference ...>, <Bio.SeqFeature.Reference ...>]
+ /data_file_division=PLN
+ /date=30-NOV-2006
+ /organism=Paphiopedilum barbatum
+ /gi=2765564
+ Seq('CATTGTTGAGATCACATAATAATTGATCGAGTTAATCTGGAGGATCTGTTTACTTTGGTC ...', IUPACAmbiguousDNA())
+
+Lets look a little more closely... we'll start with the '''seq''' property:
+
+<source lang=python>
+print record.seq
+</source>
+
+That should give:
+
+ Seq('CATTGTTGAGATCACATAATAATTGATCGAGTTAATCTGGAGGATCTGTTTACTTTGGTC ...', IUPACAmbiguousDNA())
+
+This is a [[Seq]] object, another important object type in Biopython, and worth of its own page on the wiki documentation.
+
+The next three properties are all simple strings:
+
+<source lang=python>
+print record.id
+print record.name
+print record.description
+</source>
+
+ Z78439.1
+ Z78439
+ P.barbatum 5.8S rRNA gene and ITS1 and ITS2 DNA.
+
+Have a look at the raw GenBank file to see where these came from.
