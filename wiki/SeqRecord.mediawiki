@@ -108,7 +108,7 @@ Cox,A.V., Pridgeon,A.M., Albert,V.A. and Chase,M.W.
 Cox,A.V.
 </source>
 
-That brings us finally to '''features''' which is another list property, an it contains SeqFeature objects:
+That brings us finally to '''features''' which is another list property, and it contains SeqFeature objects:
 
 <source lang=python>
 >>> print record.features.__class__

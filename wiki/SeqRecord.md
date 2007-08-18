@@ -136,7 +136,7 @@ Cox,A.V.
 ```
 
 That brings us finally to **features** which is another list property,
-an it contains SeqFeature objects:
+and it contains SeqFeature objects:
 
 ``` python
 >>> print record.features.__class__
