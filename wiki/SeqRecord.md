@@ -153,22 +153,6 @@ an it contains SeqFeature objects:
 <type 'list'>
 >>> print len(record.features)
 5
->>> for f in record.features : print f
-type: source
-location: [0:592]
-ref: None:None
-strand: 1
-qualifiers:
-        Key: db_xref, Value: ['taxon:53070']
-        Key: mol_type, Value: ['genomic DNA']
-        Key: organism, Value: ['Paphiopedilum barbatum']
-
-...
-
-type: misc_feature
-location: [550:592]
-ref: None:None
-strand: 1
-qualifiers:
-        Key: note, Value: ['internal transcribed spacer 2']
 ```
+
+SeqFeature objects are complicated enough to warrent their own page...
