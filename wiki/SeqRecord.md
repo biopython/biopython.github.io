@@ -13,6 +13,9 @@ SeqRecord objects (and may offer a format specific record object too).
 The new [SeqIO](SeqIO "wikilink") system will only return SeqRecord
 objects.
 
+Extracting information from a SeqRecord
+---------------------------------------
+
 Lets look in closer detail at the well annotated SeqRecord objects
 Biopython creates from a GenBank file, such as
 [http://biopython.org/DIST/docs/tutorial/examples/ls\_orchid.gbk
@@ -59,8 +62,21 @@ object:
 `/gi=2765564`  
 `Seq('CATTGTTGAGATCACATAATAATTGATCGAGTTAATCTGGAGGATCTGTTTACTTTGGTC ...', IUPACAmbiguousDNA())`
 
-Lets look a little more closely... we'll start with the **seq**
-property:
+Lets look a little more closely... and use python's **dir()** function
+to find out more about the SeqRecord object and what it does:
+
+``` python
+dir(record)
+```
+
+If you din't already know, the **dir()** function returns a list of all
+the methods and properties of an object (as strings). Those starting
+underscores in their name are "special" and we'll be ignoring them in
+this discussion. For a SeqRecord, you'll be shown the following:
+
+`[..., 'annotations', 'dbxrefs', 'description', 'features', 'id', 'name', 'seq']`
+
+We'll start with the **seq** property:
 
 ``` python
 print record.seq
@@ -86,3 +102,25 @@ print record.description
 `P.barbatum 5.8S rRNA gene and ITS1 and ITS2 DNA.`
 
 Have a look at the raw GenBank file to see where these came from.
+
+Next, we'll check the **dxrefs** property, which holds any database
+cross references:
+
+``` python
+print record.dbxrefs
+```
+
+`[]`
+
+How about the **annotations** property? This is a python dictionary...
+
+``` python
+print record.annotations
+print record.annotations["source"]
+```
+
+`{'source': 'Paphiopedilum barbatum', 'taxonomy': ...}`  
+`Paphiopedilum barbatum`
+
+In this case, most of the values in the dictionary are simple strings,
+but this isn't always the case.

@@ -2,6 +2,8 @@ This page will describe the SeqRecord object used in BioPython to hold a sequenc
 
 Most of the sequence file format parsers in BioPython can return SeqRecord objects  (and may offer a format specific record object too).  The new [[SeqIO]] system will only return SeqRecord objects.
 
+== Extracting information from a SeqRecord ==
+
 Lets look in closer detail at the well annotated SeqRecord objects Biopython creates from a GenBank file, such as [[http://biopython.org/DIST/docs/tutorial/examples/ls_orchid.gbk ls_orchid.gbk]].  This file contains 94 records:
 
 <source lang=python>
@@ -41,7 +43,17 @@ That should give you a hint of the sort of information held in this object:
  /gi=2765564
  Seq('CATTGTTGAGATCACATAATAATTGATCGAGTTAATCTGGAGGATCTGTTTACTTTGGTC ...', IUPACAmbiguousDNA())
 
-Lets look a little more closely... we'll start with the '''seq''' property:
+Lets look a little more closely... and use python's '''dir()''' function to find out more about the SeqRecord object and what it does:
+
+<source lang=python>
+dir(record)
+</source>
+
+If you din't already know, the '''dir()''' function returns a list of all the methods and properties of an object (as strings). Those starting underscores in their name are "special" and we'll be ignoring them in this discussion. For a SeqRecord, you'll be shown the following:
+
+ [..., 'annotations', 'dbxrefs', 'description', 'features', 'id', 'name', 'seq']
+
+We'll start with the '''seq''' property:
 
 <source lang=python>
 print record.seq
@@ -66,3 +78,23 @@ print record.description
  P.barbatum 5.8S rRNA gene and ITS1 and ITS2 DNA.
 
 Have a look at the raw GenBank file to see where these came from.
+
+Next, we'll check the '''dxrefs''' property, which holds any database cross references:
+
+<source lang=python>
+print record.dbxrefs
+</source>
+
+ []
+
+How about the '''annotations''' property? This is a python dictionary...
+
+<source lang=python>
+print record.annotations
+print record.annotations["source"]
+</source>
+
+ {'source': 'Paphiopedilum barbatum', 'taxonomy': ...}
+ Paphiopedilum barbatum
+
+In this case, most of the values in the dictionary are simple strings, but this isn't always the case.
