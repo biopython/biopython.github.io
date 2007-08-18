@@ -348,7 +348,7 @@ directly as it only works on **Seq** objects or strings.
 from Bio import SeqIO
 from Bio.SeqUtils.CheckSum import seguid
 seguid_dict = SeqIO.to_dict(SeqIO.parse(open("ls_orchid.gbk"), "genbank"),
-                        lambda rec : seguid(rec.seq))
+                            lambda rec : seguid(rec.seq))
 record = seguid_dict["MN/s0q9zDoCVEEc+k/IFwCNF2pY"]
 print record.id
 print record.description
