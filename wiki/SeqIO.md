@@ -321,7 +321,8 @@ For moderately sized datasets having too many records in memory at once
 In this example, we'll use **Bio.SeqIO** with the
 **Bio.SeqUtils.CheckSum** module (added to CVS after the release of
 Biopython 1.43). First of all, we'll just print out the checksum for
-each sequence in a file:
+each sequence in the GenBank file
+[ls\_orchid.gbk](http://biopython.org/DIST/docs/tutorial/examples/ls_orchid.gbk):
 
 ``` python
 from Bio import SeqIO
