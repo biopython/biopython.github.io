@@ -7,7 +7,7 @@ layout: wiki
 This page describes Bio.SeqIO, a new Sequence Input/Output interface for
 BioPython 1.43 and later.
 
-See also the [SeqIO developement page](SeqIO_dev "wikilink")
+See also the [SeqIO development page](SeqIO_dev "wikilink")
 
 Aims
 ----
