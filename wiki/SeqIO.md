@@ -181,6 +181,33 @@ Clustal, the **write** function will be forced to automatically convert
 an iterator into a list. This will destroy any potential memory saving
 from using an generator/iterator approach.
 
+Another example, this time with sequences. This script will read a
+Genbank file with a whole mitochondrial genome, then will select 500
+random portions of variable sizes from it and will create records
+sequences based on that random portions. All theses sequences will be
+written into a fasta file:
+
+``` python
+from Bio import SeqIO, SeqRecord
+import random
+handle = open("MTtabaco.gbk")
+mitorecord=SeqIO.parse(handle, "genbank").next()
+mitofrags=[]
+total=500
+i=1
+limit=len(mitorecord.seq)
+while i<=total:
+    inicut=random.randint(1,limit)
+    mitofrag=mitorecord.seq[inicut:inicut+random.randint(200,900)]
+    newmito=SeqRecord.SeqRecord(mitofrag,'fragment '+str(i),'','')
+    mitofrags.append(newmito)
+    i=i+1
+
+output_handle = open("mitofrags.fasta", "w")
+SeqIO.write(mitofrags, output_handle, "fasta")
+output_handle.close()
+```
+
 File Format Conversion
 ----------------------
 
