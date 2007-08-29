@@ -303,31 +303,45 @@ Giving this output:
 
 === Random subsequences ===
 
-This script will read a Genbank file with a whole mitochondrial genome, create 500 records containing random fragments of this genome, and save them as a fasta file.  These subsequences are created using a random starting points and a fixed length of 200:
+This script will read a Genbank file with a whole mitochondrial genome (e.g. the tabaco mitochondria, ''Nicotiana tabacum mitochondrion'' [http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=nucleotide&val=NC_006581 NC_006581]), create 500 records containing random fragments of this genome, and save them as a fasta file.  These subsequences are created using a random starting points and a fixed length of 200.
 
 <source lang=python>
 from Bio import SeqIO
 from Bio.SeqRecord import SeqRecord
 from random import randint
 
-handle = open("MTtabaco.gbk")
+handle = open("NC_006581.gbk")
 #There should be one and only one record, the entire genome:
 mito_record = SeqIO.parse(handle, "genbank").next()
 handle.close()
 
-mitofrags=[]
-limit=len(mitorecord.seq)
+mito_frags=[]
+limit=len(mito_record.seq)
 for i in range(0, 500) :
     start=randint(0,limit-200)
     end=start+200
     mito_frag=mito_record.seq[start:end]
-    new_mito=SeqRecord(mitofrag,'fragment_%i' % (i+1),'','')
+    new_mito=SeqRecord(mito_frag,'fragment_%i' % (i+1),'','')
     mito_frags.append(new_mito)
 
-output_handle = open("mitofrags.fasta", "w")
+output_handle = open("/tmp/mitofrags.fasta", "w")
 SeqIO.write(mito_frags, output_handle, "fasta")
 output_handle.close()
 </source>
+
+That should give something like this as the output file,
+
+ >fragment_1 
+ TGGGCCTCATATTTATCCTATATACCATGTTCGTATGGTGGCGCGATGTTCTACGTGAAT
+ CCACGTTCGAAGGACATCATACCAAAGTCGTACAATTAGGACCTCGATATGGTTTTATTC
+ TGTTTATCGTATCGGAGGTTATGTTCTTTTTTGCTCTTTTTCGGGCTTCTTCTCATTCTT
+ CTTTGGCACCTACGGTAGAG
+ ...
+ >fragment_500 
+ ACCCAGTGCCGCTACCCACTTCTACTAAGGCTGAGCTTAATAGGAGCAAGAGACTTGGAG
+ GCAACAACCAGAATGAAATATTATTTAATCGTGGAAATGCCATGTCAGGCGCACCTATCA
+ GAATCGGAACAGACCAATTACCAGATCCACCTATCATCGCCGGCATAACCATAAAAAAGA
+ TCATTAAAAAAGCGTGAGCC
 
 == Old Bio.SeqIO code ==
 
