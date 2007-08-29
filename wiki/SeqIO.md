@@ -200,9 +200,9 @@ for record in SeqIO.parse(input_handle, "genbank") :
 input_handle.close()
 ```
 
-Notice that this file contains six records. Now, let's pass the
-SeqRecord iterator to the **write** function, to turn this GenBank file
-into a Fasta file:
+Notice that this file contains six records. Now instead of printing the
+records, let's pass the SeqRecord iterator to the **write** function, to
+turn this GenBank file into a Fasta file:
 
 ``` python
 from Bio import SeqIO
@@ -238,6 +238,9 @@ The resulting Fasta file looks like this:
 `>X55053.1 A.thaliana cor6.6 mRNA.`  
 `AACAAAACACACATCAAAAACGATTTTACAAGAAAAAAATA...`  
 `...`
+
+Note that all the Fasta file can store is the identifier, description
+and sequence.
 
 By changing the format strings, that code could be used to convert
 between any supported file formats.
