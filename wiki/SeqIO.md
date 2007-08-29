@@ -368,8 +368,8 @@ Giving this output:
 
 This script will read a Genbank file with a whole mitochondrial genome,
 create 500 records containing random fragments of this genome, and save
-them as a fasta file. These subsequences are created using random
-starting points and lengths:
+them as a fasta file. These subsequences are created using a random
+starting points and a fixed length of 200:
 
 ``` python
 from Bio import SeqIO
@@ -385,7 +385,7 @@ mitofrags=[]
 limit=len(mitorecord.seq)
 for i in range(0, 500) :
     start=randint(0,limit-200)
-    end=randint(start+200,limit)
+    end=start+200
     mito_frag=mito_record.seq[start:end]
     new_mito=SeqRecord(mitofrag,'fragment_%i' % (i+1),'','')
     mito_frags.append(new_mito)
