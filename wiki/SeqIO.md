@@ -411,10 +411,19 @@ That should give something like this as the output file,
 `GAATCGGAACAGACCAATTACCAGATCCACCTATCATCGCCGGCATAACCATAAAAAAGA`  
 `TCATTAAAAAAGCGTGAGCC`
 
+Help!
+-----
+
+If you are having problems Bio.SeqIO, please join the discussion mailing
+list (see [mailing lists](mailing_lists "wikilink")).
+
+If you think you've found a bug, please report it on
+[bugzilla](http://bugzilla.open-bio.org/)).
+
 Old Bio.SeqIO code
 ------------------
 
 There is some "old" code living in the Bio.SeqIO.generic and
 Bio.SeqIO.FASTA modules, such as the FastaReader class. These files were
-marked as deprecated after the release of the "new" SeqIO code in
+marked as deprecated after the release of the "new" Bio.SeqIO code in
 Biopython 1.43, and may be removed in a future release.
