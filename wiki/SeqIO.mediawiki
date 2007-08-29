@@ -308,18 +308,19 @@ This script will read a Genbank file with a whole mitochondrial genome, create 5
 <source lang=python>
 from Bio import SeqIO
 from Bio.SeqRecord import SeqRecord
-import random
+from random import randint
 
 handle = open("MTtabaco.gbk")
 #There should be one and only one record, the entire genome:
-mito_record=SeqIO.parse(handle, "genbank").next()
+mito_record = SeqIO.parse(handle, "genbank").next()
 handle.close()
 
 mitofrags=[]
 limit=len(mitorecord.seq)
 for i in range(0, 500) :
-    inicut=random.randint(1,limit)
-    mito_frag=mito_record.seq[inicut:inicut+random.randint(200,900)]
+    start=randint(0,limit-200)
+    end=randint(start+200,limit)
+    mito_frag=mito_record.seq[start:end]
     new_mito=SeqRecord(mitofrag,'fragment_%i' % (i+1),'','')
     mito_frags.append(new_mito)
 
