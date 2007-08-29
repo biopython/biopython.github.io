@@ -181,33 +181,6 @@ Clustal, the **write** function will be forced to automatically convert
 an iterator into a list. This will destroy any potential memory saving
 from using an generator/iterator approach.
 
-Another example, this time with sequences. This script will read a
-Genbank file with a whole mitochondrial genome, then will select 500
-random portions of variable sizes from it and will create records
-sequences based on that random portions. All theses sequences will be
-written into a fasta file:
-
-``` python
-from Bio import SeqIO, SeqRecord
-import random
-handle = open("MTtabaco.gbk")
-mitorecord=SeqIO.parse(handle, "genbank").next()
-mitofrags=[]
-total=500
-i=1
-limit=len(mitorecord.seq)
-while i<=total:
-    inicut=random.randint(1,limit)
-    mitofrag=mitorecord.seq[inicut:inicut+random.randint(200,900)]
-    newmito=SeqRecord.SeqRecord(mitofrag,'fragment '+str(i),'','')
-    mitofrags.append(newmito)
-    i=i+1
-
-output_handle = open("mitofrags.fasta", "w")
-SeqIO.write(mitofrags, output_handle, "fasta")
-output_handle.close()
-```
-
 File Format Conversion
 ----------------------
 
@@ -391,7 +364,35 @@ Giving this output:
 `Z78439.1 `  
 `P.barbatum 5.8S rRNA gene and ITS1 and ITS2 DNA.`
 
-Nice?
+### Random subsequences
+
+This script will read a Genbank file with a whole mitochondrial genome,
+create 500 records containing random fragments of this genome, and save
+them as a fasta file. These subsequences are created using random
+starting points and lengths:
+
+``` python
+from Bio import SeqIO
+from Bio.SeqRecord import SeqRecord
+import random
+
+handle = open("MTtabaco.gbk")
+#There should be one and only one record, the entire genome:
+mito_record=SeqIO.parse(handle, "genbank").next()
+handle.close()
+
+mitofrags=[]
+limit=len(mitorecord.seq)
+for i in range(0, 500) :
+    inicut=random.randint(1,limit)
+    mito_frag=mito_record.seq[inicut:inicut+random.randint(200,900)]
+    new_mito=SeqRecord(mitofrag,'fragment_%i' % (i+1),'','')
+    mito_frags.append(new_mito)
+
+output_handle = open("mitofrags.fasta", "w")
+SeqIO.write(mito_frags, output_handle, "fasta")
+output_handle.close()
+```
 
 Old Bio.SeqIO code
 ------------------
