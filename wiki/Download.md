@@ -35,9 +35,11 @@ Current Release -- 1.43 -- 17 March 2007
 ### Required Software
 
 -   [Python 2.3 or above](http://www.python.org)
--   [A C compiler -- you need a C compiler supported by distutils. gcc
-    will work fine on UNIX-like
-    platforms](http://www.python.org/doc/current/inst/inst.html)
+-   [A C compiler (if compiling
+    from source)](http://www.python.org/doc/current/inst/inst.html) You
+    need a C compiler supported by distutils, gcc will work fine on
+    UNIX-like platforms. This is not needed on Windows if using the
+    install programs provided above.
 -   [mxTextTools](http://www.lemburg.com/files/python/mxTextTools.html)
 -   [Numerical Python](http://numpy.scipy.org/#older_array) Note that
     BioPython has not (yet) switched to the 'new' numpy library. You
