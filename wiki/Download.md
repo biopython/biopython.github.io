@@ -60,8 +60,8 @@ requirements:
 
 ### Optional Software
 
--   [ReportLab -- for pdf graphics
-    code](http://www.reportlab.org/downloads.html)
+-   [ReportLab](http://www.reportlab.org/downloads.html) -- for pdf
+    graphics code
 -   [MySQLdb](http://sourceforge.net/projects/mysql-python)
 -   [flex: The Fast Lexical Analyzer](http://flex.sourceforge.net/) --
     for building Bio.PDB.mmCIF.MMCIFlex
