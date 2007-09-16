@@ -41,12 +41,6 @@ below.
 
 -   Cookbook-style documentation:
 
-:\*Converting GenBank (and other formats) to Fasta (predates the new
-[SeqIO](SeqIO "wikilink") module).
-
-::[HTML](http://biopython.org/DIST/docs/cookbook/genbank_to_fasta.html)
-| [PDF](http://biopython.org/DIST/docs/cookbook/genbank_to_fasta.pdf)
-
 :\*Writing Tests for Biopython.
 
 ::[HTML](http://biopython.org/DIST/docs/cookbook/biopython_test.html) |

@@ -10,8 +10,6 @@ New to BioPython? Check out the [[Getting_Started|Getting Started]] page, or fol
 * Documentation for the cluster module in Biopython. This describes the underlying C library and the Python interface. 
 :[http://biopython.org/DIST/docs/cluster/cluster.pdf PDF]
 * Cookbook-style documentation:
-:*Converting GenBank (and other formats) to Fasta (predates the new [[SeqIO]] module). 
-::[http://biopython.org/DIST/docs/cookbook/genbank_to_fasta.html HTML] | [http://biopython.org/DIST/docs/cookbook/genbank_to_fasta.pdf PDF]
 :*Writing Tests for Biopython. 
 ::[http://biopython.org/DIST/docs/cookbook/biopython_test.html HTML] | [http://biopython.org/DIST/docs/cookbook/biopython_test.pdf PDF]
 :*Logistic Regression supervised learning. 
