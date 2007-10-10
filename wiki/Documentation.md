@@ -26,6 +26,11 @@ below.
 [HTML](http://biopython.org/DIST/docs/tutorial/Tutorial.html) |
 [PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)
 
+-   Wiki documentation on Bio.SeqIO
+
+  
+[HTML](SeqIO "wikilink")
+
 -   Documentation for the Biopython interfaces to BioSQL cover
     installing Python database adaptors and basic usage of BioSQL.
 
