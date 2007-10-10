@@ -119,6 +119,11 @@ Bio.PDB module).
 
 #### Presentations
 
+-   BOSC 2007 presentation "Biopython Project Update"
+
+  
+PDF pending...
+
 -   March 2004 presentation at Exelixis about Biopython. Includes code
     examples with Biopython libraries and Martel.
 
