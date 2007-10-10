@@ -11,8 +11,8 @@ development page](SeqIO_dev "wikilink").
 Please note that the
 [http://biopython.org/DIST/docs/tutorial/Tutorial.html Biopython
 Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html_Biopython_Tutorial "wikilink")
-also covers Bio.SeqIO, and is also well worth reading in addition to
-this WIKI page.
+also covers Bio.SeqIO, and is well worth reading in addition to this
+WIKI page.
 
 Aims
 ----
