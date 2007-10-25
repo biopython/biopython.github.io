@@ -1,5 +1,7 @@
 = Current Release -- 1.43 -- 17 March 2007 =
 
+See also [http://biopython.open-bio.org/SRC/biopython/NEWS What's new].
+
 === Installation Instructions ===
 
 * [http://biopython.org/DIST/docs/install/Installation.html HTML Installation Instructions]
