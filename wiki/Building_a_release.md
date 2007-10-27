@@ -34,8 +34,10 @@ new downloads. Make sure to commit the modified Martel to CVS.
 `   > make clean -C doc`  
 `   > cvs update -P -d `
 
-8. do last regression test
+8. build Biopython and do last regression test
 
+`   drevil:~biopython> python setup.py build `  
+`   drevil:~biopython> python setup.py install `  
 `   drevil:~biopython/Tests> python run_tests.py --no-gui `
 
 9. check out clean version somewhere else
