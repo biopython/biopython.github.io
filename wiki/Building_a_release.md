@@ -10,8 +10,9 @@ Build Biopython in 21 easy steps!!
 
 `   drevil:~biopython> cvs update -P -d `
 
-2. bump version number of Martel (sync with Biopython version?) so that
-any changes will be installed on new downloads
+2. bump version number of Martel (sync with Biopython version?) by
+editing Martel/\_\_init\_\_.py so that any changes will be installed on
+new downloads
 
 3. make sure README still up to date
 
