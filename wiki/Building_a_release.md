@@ -12,7 +12,7 @@ Build Biopython in 21 easy steps!!
 
 2. bump version number of Martel (sync with Biopython version?) by
 editing Martel/\_\_init\_\_.py so that any changes will be installed on
-new downloads
+new downloads. Make sure to commit the modified Martel to CVS.
 
 3. make sure README still up to date
 
