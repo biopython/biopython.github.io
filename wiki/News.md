@@ -11,8 +11,8 @@ There is also a (currently separate) news server for all the
 [OBF](obf:OBF "wikilink") projects at
 [news.open-bio.org](http://news.open-bio.org).
 
-The latest release is Biopython 1.43, released on 17 March 2007. Get it
-from our [Download](Download "wikilink") page.
+The latest release is Biopython 1.44, released on 28 October 2007. Get
+it from our [Download](Download "wikilink") page.
 
 See the [What's new](http://biopython.open-bio.org/SRC/biopython/NEWS).
 
