@@ -160,6 +160,16 @@ dependencies).
 Old Releases
 ============
 
+-   [biopython-1.43.tar.gz](http://biopython.org/DIST/biopython-1.43.tar.gz)
+    3,778 Kb
+-   [biopython-1.43.zip](http://biopython.org/DIST/biopython-1.43.zip)
+    4,271 Kb
+-   [biopython-1.43.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.43.win32-py2.3.exe)
+    1,104 Kb
+-   [biopython-1.43.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.43.win32-py2.4.exe)
+    1,108 Kb
+-   [biopython-1.43.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.43.win32-py2.5.exe)
+    1,109 Kb
 -   [biopython-1.42.tar.gz](http://biopython.org/DIST/biopython-1.42.tar.gz)
     3,841 Kb
 -   [biopython-1.42.zip](http://biopython.org/DIST/biopython-1.42.zip)
