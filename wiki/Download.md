@@ -4,8 +4,8 @@ permalink: wiki/Download
 layout: wiki
 ---
 
-Current Release -- 1.43 -- 17 March 2007
-========================================
+Current Release -- 1.44 -- 28 October 2007
+==========================================
 
 See also [What's new](http://biopython.open-bio.org/SRC/biopython/NEWS).
 
@@ -19,11 +19,11 @@ See also [What's new](http://biopython.open-bio.org/SRC/biopython/NEWS).
 ### Files
 
 -   Source Tarball --
-    [biopython-1.43.tar.gz](http://biopython.org/DIST/biopython-1.43.tar.gz)
-    3,778 Kb
+    [biopython-1.44.tar.gz](http://biopython.org/DIST/biopython-1.44.tar.gz)
+    3,750 Kb
 -   Source Zip File --
-    [biopython-1.43.zip](http://biopython.org/DIST/biopython-1.43.zip)
-    4,271 Kb
+    [biopython-1.44.zip](http://biopython.org/DIST/biopython-1.44.zip)
+    4,243 Kb
 -   Windows Installer for Python 2.3 --
     [biopython-1.43.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.43.win32-py2.3.exe)
     1,104 Kb
