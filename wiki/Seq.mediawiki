@@ -1,3 +1,5 @@
 In Biopython, sequences are usually held as a Seq object, which holds the sequence string and an associated alphabet.
 
+There is a whole chapter in the [http://biopython.org/DIST/docs/tutorial/Tutorial.html Tutorial] on the Seq object.
+
 If you need to store additional information like a sequence identifer or name, or even more details like a description or annotation, then we use a [[SeqRecord]] object instead. These are the sequence record used by the [[SeqIO]] module for reading and writing sequence files.
