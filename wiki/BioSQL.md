@@ -105,4 +105,27 @@ NCBI Taxonomy
 
 Before you start trying to load sequences into the database, it is a
 good idea to load the NCBI taxonomy database using the
-scripts/load\_ncbi\_taxonomy.pl script in the BioSQL package. *To do...*
+scripts/load\_ncbi\_taxonomy.pl script in the BioSQL package.
+
+The script should be able to download the files it needs from the [NCBI
+taxonomy FTP site](ftp://ftp.ncbi.nih.gov/pub/taxonomy/) automatically:
+
+`cd ~/repository/biosql-schema/scripts`  
+`./load_ncbi_taxonomy.pl --dbname bioseqdb --driver mysql --dbuser root --download true`
+
+There is about 10MB to fetch, so it can take a little while (and doesn't
+give any feedback while this happens). If you are worried, open a file
+browser window and check to see it is downloading a file called
+taxdump.tar.gz to the taxdata subdirectory.
+
+You should see this output at the command prompt - be warned that some
+of these steps do take a while:
+
+`Loading NCBI taxon database in taxdata:`  
+`        ... retrieving all taxon nodes in the database`  
+`        ... reading in taxon nodes from nodes.dmp`  
+`        ... insert / update / delete taxon nodes`  
+`        ... (committing nodes)`  
+`        ... rebuilding nested set left/right values`
+
+etc
