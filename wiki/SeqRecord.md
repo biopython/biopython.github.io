@@ -30,8 +30,7 @@ for index, record in enumerate(SeqIO.parse(open("ls_orchid.gbk"), "genbank")) :
 ```
 
 And this is some of the output. Remember python likes to count from
-zero, so for the 94 records in this file they have been labelled 0 to
-93:
+zero, so the 94 records in this file have been labelled 0 to 93:
 
 `index 0, ID = Z78533.1, length 740, with 5 features`  
 `index 1, ID = Z78532.1, length 753, with 5 features`  
