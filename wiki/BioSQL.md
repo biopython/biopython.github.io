@@ -145,7 +145,27 @@ was over ten minutes.
 Loading Sequences into the database
 ===================================
 
-Another excuse to use the [SeqIO](SeqIO "wikilink") module!
+When loading sequences into a BioSQL database with Biopython we have to
+provide annotated [SeqRecord](SeqRecord "wikilink") objects. This gives
+us another excuse to use the [SeqIO](SeqIO "wikilink") module! A quick
+recap on reading in sequences as SeqRecords, based on one of the
+examples in the Biopython Tutorial:
+
+``` python
+from Bio import GenBank
+from Bio import SeqIO
+handle = GenBank.download_many(['6273291', '6273290', '6273289'])
+for seq_record in SeqIO.parse(handle, "genbank") :
+    print seq_record.id, seq_record.description[:50] + "..."
+    print "Sequence length %i," % len(seq_record.seq),
+    print "from: %s" % seq_record.annotations['source']
+handle.close()
+```
+
+Now, instead of printing things on screen, lets add these three records
+to our new (empty) database:
+
+*Todo..*
 
 Extracting Sequences from the database
 ======================================
