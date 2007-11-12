@@ -22,6 +22,9 @@ installing Python database adaptors and basic usage of BioSQL:
 I hope to use this wiki page to update the above documentation in
 future.
 
+NOTE - At the time of writing, there are a few problems with BioSQL and
+Biopython 1.44 which are being tackled...
+
 Installation
 ============
 
@@ -141,6 +144,30 @@ left/right values*):
 
 This might be a good point for a tea break - I didn't time this but it
 was over ten minutes.
+
+Running the unit test
+---------------------
+
+Because there are so many ways you could have setup your BioSQL
+database, you have to tell the unit test a few bits of information. You
+need to find the Biopythin file under Tests/test\_BioSQL.py and fill in
+the following fields - based on the setup described above:
+
+`DBDRIVER = 'MySQLdb'`  
+`DBTYPE = 'mysql'`
+
+and a little lower down,
+
+`DBHOST = 'localhost'`  
+`DBUSER = 'root'`  
+`DBPASSWD = ''`  
+`TESTDB = 'biosql_test'`
+
+You can then run the unit test as normal, e.g.
+
+`python runtests test_BioSQL`
+
+Right now there are a few rough edges and the test will fail :(
 
 Loading Sequences into the database
 ===================================
