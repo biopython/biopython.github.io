@@ -49,8 +49,8 @@ Ubuntu Linux machine try this:
 
 You may find perl is already installed.
 
-Setting up the BioSQL Schema
-----------------------------
+Downloading the BioSQL Schema
+-----------------------------
 
 One the software is installed, your next task is to setup a database and
 import the BioSQL scheme (i.e. setup the relevant tables within the
@@ -62,7 +62,7 @@ latest schema like this (password is 'cvs').
 `cd repository`  
 `cvs -d :pserver:cvs@code.open-bio.org:/home/repository/biopython checkout biosql`  
 `cvs -d :pserver:cvs@code.open-bio.org:/home/repository/biosql checkout biosql-schema`  
-`cd biosql-schema`
+`cd biosql-schema/sql`
 
 If you don't want to use CVS, then download the files via the [View CVS
 web
@@ -70,7 +70,32 @@ interface](http://cvs.open-bio.org/cgi-bin/viewcvs/viewcvs.cgi/?cvsroot=biosql).
 Click the Download tarball link to get a tar.gz file containing the
 current CVS, and then unzip that.
 
-And then ...
+Creating the empty database
+---------------------------
+
+Assuming you are using MySQL, the following command line should create a
+new database on your own computer called *bioseqdb*, belonging to the
+*root* user account:
+
+`mysqladmin -u root create bioseqdb`
+
+We can then tell MySQL to load the BioSQL scheme we downloaded above
+(file ~/repository/biosql-schema/sql/biosqldb-mysql.sql if you
+downloaded the files where we suggested).
+
+`cd ~/repository/biosql-schema/sql`  
+`mysql -u root bioseqdb < biosqldb-mysql.sql`
+
+On Linux you can check this did something via the MySQL Administration
+GUI which we suggested installing earlier. This should be available via
+the main program menu, but you can also invoke it from the command line:
+
+`mysql-admin`
+
+Select *localhost* as the Server Hostman (i.e. your local machine) and
+*root* as the username, then click connect. Once the main window
+appears, if you click on "Catalogs" on the left, you should see a new
+entry for *bioseqdb*.
 
 NCBI Taxonomy
 -------------
