@@ -171,8 +171,8 @@ The expected output is:
 `AF191663.1 Opuntia bradtiana rpl16 gene; chloroplast gene for...`  
 `Sequence length 899, 3 features, from: chloroplast Opuntia bradtianaa`
 
-Now, instead of printing things on screen, let's add these three records
-to a new (empty) *orchid* database:
+instea Now, instead of printing things on screen, let's add these three
+records to a new (empty) *orchid* database:
 
 ``` python
 from BioSQL import BioSeqDatabase
@@ -197,6 +197,8 @@ The *db.load()* function should have returned the number of records
 loaded (three in this example), and again have a look in the database
 and you should see three new rows in several tables (including the
 *bioentry* and *biosequence* tables).
+
+Next, we'll try and load these three records back from the database.
 
 Extracting Sequences from the database
 ======================================
