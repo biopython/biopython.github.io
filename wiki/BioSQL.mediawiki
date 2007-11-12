@@ -156,4 +156,26 @@ Next, we'll try and load these three records back from the database.
 
 = Extracting Sequences from the database =
 
-Todo...
+This continues from the previous example, where we loaded three records into an ''orchids'' database:
+
+<source lang=python>
+from BioSQL import BioSeqDatabase
+server = BioSeqDatabase.open_database(driver="MySQLdb", user="root",
+                     passwd = "", host = "localhost", db="bioseqdb")
+db = server["orchids"]
+for identifiers in ['6273291', '6273290', '6273289'] :
+    seq_record = db.lookup(gi=identifiers)
+    print seq_record.id, seq_record.description[:50] + "..."
+    print "Sequence length %i," % len(seq_record.seq)
+</source>
+
+Giving:
+
+ AF191665.1 Opuntia marenae rpl16 gene; chloroplast gene for c...
+ Sequence length 902
+ AF191664.1 Opuntia clavata rpl16 gene; chloroplast gene for c...
+ Sequence length 899
+ AF191663.1 Opuntia bradtiana rpl16 gene; chloroplast gene for...
+ Sequence length 899
+
+Todo - sort out the annotation.
