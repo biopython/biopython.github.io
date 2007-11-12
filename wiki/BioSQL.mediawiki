@@ -6,7 +6,7 @@ Existing documentation for the Biopython interfaces to BioSQL cover installing P
 
 I hope to use this wiki page to update the above documentation in future.
 
-=== Installation ===
+= Installation =
 
 This is fairly complicated - partly because there are some many options. For example, you can use a range of different SQL database packages (we'll focus on MySQL), you can have the database on your own computer (the assumption here) or on a separate server.  Also the details will vary depending on your operating system.
 
@@ -80,3 +80,11 @@ You should see this output at the command prompt - be warned that some of these 
  Done.
 
 This might be a good point for a tea break - I didn't time this but it was over ten minutes.
+
+= Loading Sequences into the database =
+
+Another excuse to use the [[SeqIO]] module!
+
+= Extracting Sequences from the database =
+
+Todo...

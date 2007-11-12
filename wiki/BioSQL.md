@@ -22,7 +22,8 @@ installing Python database adaptors and basic usage of BioSQL:
 I hope to use this wiki page to update the above documentation in
 future.
 
-### Installation
+Installation
+============
 
 This is fairly complicated - partly because there are some many options.
 For example, you can use a range of different SQL database packages
@@ -140,3 +141,13 @@ left/right values*):
 
 This might be a good point for a tea break - I didn't time this but it
 was over ten minutes.
+
+Loading Sequences into the database
+===================================
+
+Another excuse to use the [SeqIO](SeqIO "wikilink") module!
+
+Extracting Sequences from the database
+======================================
+
+Todo...
