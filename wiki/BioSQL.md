@@ -67,8 +67,11 @@ latest schema like this (password is 'cvs').
 If you don't want to use CVS, then download the files via the [View CVS
 web
 interface](http://cvs.open-bio.org/cgi-bin/viewcvs/viewcvs.cgi/?cvsroot=biosql).
-Click the Download tarball link to get a tar.gz file containing the
-current CVS, and then unzip that.
+Click the Download tarball link to get a tar.gz file containing the all
+the current CVS file, and then unzip that. Or, navigate to the relevant
+file for your database and download just that, e.g.
+[biosql-schema/sql/biosqldb-mysql.sql](http://cvs.open-bio.org/cgi-bin/viewcvs/viewcvs.cgi/biosql-schema/sql/biosqldb-mysql.sql?cvsroot=biosql)
+for MySQL.
 
 Creating the empty database
 ---------------------------
