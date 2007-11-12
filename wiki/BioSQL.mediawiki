@@ -10,6 +10,8 @@ I hope to use this wiki page to update the above documentation in future.
 
 This is fairly complicated - partly because there are some many options. For example, you can use a range of different SQL database packages (we'll focus on MySQL), you can have the database on your own computer (the assumption here) or on a separate server.  Also the details will vary depending on your operating system.
 
+This text is based in part on the [http://code.open-bio.org/cgi/viewcvs.cgi/*checkout*/biosql-schema/INSTALL?rev=HEAD&cvsroot=biosql&content-type=text/plain BioSQL scheme INSTALL instructions], which also covers alternatives to MySQL.
+
 == Installing Required Software ==
 
 You will need to install some database software plus the associated python library so that Biopython can "talk" to the database.  In this example we'll talk about the most common choice, MySQL.  How you do this will also depend on your operating system, for example on a Debian or Ubuntu Linux machine try this:

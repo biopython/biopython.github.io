@@ -30,6 +30,10 @@ For example, you can use a range of different SQL database packages
 (the assumption here) or on a separate server. Also the details will
 vary depending on your operating system.
 
+This text is based in part on the [BioSQL scheme INSTALL
+instructions](http://code.open-bio.org/cgi/viewcvs.cgi/*checkout*/biosql-schema/INSTALL?rev=HEAD&cvsroot=biosql&content-type=text/plain),
+which also covers alternatives to MySQL.
+
 Installing Required Software
 ----------------------------
 
