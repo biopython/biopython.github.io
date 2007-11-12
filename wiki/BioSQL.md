@@ -148,7 +148,7 @@ Loading Sequences into the database
 When loading sequences into a BioSQL database with Biopython we have to
 provide annotated [SeqRecord](SeqRecord "wikilink") objects. This gives
 us another excuse to use the [SeqIO](SeqIO "wikilink") module! A quick
-recap on reading in sequences as SeqRecords, based on one of the
+recap on reading in sequences as SeqRecords, based on one of the orchid
 examples in the Biopython Tutorial:
 
 ``` python
@@ -162,10 +162,32 @@ for seq_record in SeqIO.parse(handle, "genbank") :
 handle.close()
 ```
 
-Now, instead of printing things on screen, lets add these three records
-to our new (empty) database:
+Now, instead of printing things on screen, let's add these three records
+to a new (empty) *orchid* database:
 
-*Todo..*
+``` python
+from BioSQL import BioSeqDatabase
+server = BioSeqDatabase.open_database(driver="MySQLdb", user="root",
+                     passwd = "", host = "localhost", db="bioseqdb")
+db = server.new_database("orchids")
+...
+```
+
+If you launch the MySQL Administrator GUI once again, you'll see a new
+row in the *biodatabase* table for our new orchid database.
+
+``` python
+...
+from Bio import GenBank
+from Bio import SeqIO
+handle = GenBank.download_many(['6273291', '6273290', '6273289'])
+db.load(SeqIO.parse(handle, "genbank"))
+```
+
+The *db.load()* function should have returned the number of records
+loaded (three in this example), and again have a look in the database
+and you should see three new rows in several tables (including the
+*bioentry* and *biosequence* tables).
 
 Extracting Sequences from the database
 ======================================

@@ -83,7 +83,7 @@ This might be a good point for a tea break - I didn't time this but it was over 
 
 = Loading Sequences into the database =
 
-When loading sequences into a BioSQL database with Biopython we have to provide annotated [[SeqRecord]] objects.  This gives us another excuse to use the [[SeqIO]] module! A quick recap on reading in sequences as SeqRecords, based on one of the examples in the Biopython Tutorial:
+When loading sequences into a BioSQL database with Biopython we have to provide annotated [[SeqRecord]] objects.  This gives us another excuse to use the [[SeqIO]] module! A quick recap on reading in sequences as SeqRecords, based on one of the orchid examples in the Biopython Tutorial:
 
 <source lang=python>
 from Bio import GenBank
@@ -96,9 +96,27 @@ for seq_record in SeqIO.parse(handle, "genbank") :
 handle.close()
 </source>
 
-Now, instead of printing things on screen, lets add these three records to our new (empty) database:
+Now, instead of printing things on screen, let's add these three records to a new (empty) ''orchid'' database:
 
-''Todo..''
+<source lang=python>
+from BioSQL import BioSeqDatabase
+server = BioSeqDatabase.open_database(driver="MySQLdb", user="root",
+                     passwd = "", host = "localhost", db="bioseqdb")
+db = server.new_database("orchids")
+...
+</source>
+
+If you launch the MySQL Administrator GUI once again, you'll see a new row in the ''biodatabase'' table for our new orchid database.
+
+<source lang=python>
+...
+from Bio import GenBank
+from Bio import SeqIO
+handle = GenBank.download_many(['6273291', '6273290', '6273289'])
+db.load(SeqIO.parse(handle, "genbank"))
+</source>
+
+The ''db.load()'' function should have returned the number of records loaded (three in this example), and again have a look in the database and you should see three new rows in several tables (including the ''bioentry'' and ''biosequence'' tables).
 
 = Extracting Sequences from the database =
 
