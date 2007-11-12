@@ -65,7 +65,7 @@ The script should be able to download the files it needs from the [ftp://ftp.ncb
 
 There is about 10MB to fetch, so it can take a little while (and doesn't give any feedback while this happens).  If you are worried, open a file browser window and check to see it is downloading a file called taxdump.tar.gz to the taxdata subdirectory.
 
-You should see this output at the command prompt - be warned that some of these steps do take a while:
+You should see this output at the command prompt - be warned that some of these steps do take a while (especially '''rebuilding nested set left/right values'''):
 
  Loading NCBI taxon database in taxdata:
          ... retrieving all taxon nodes in the database
@@ -73,5 +73,8 @@ You should see this output at the command prompt - be warned that some of these 
          ... insert / update / delete taxon nodes
          ... (committing nodes)
          ... rebuilding nested set left/right values
+         ... reading in taxon names from names.dmp
+         ... deleting old taxon names
+         ... inserting new taxon names
 
 etc
