@@ -52,7 +52,7 @@ On Linux you can check this did something via the MySQL Administration GUI which
 
  mysql-admin
 
-Select ''localhost'' as the Server Hostman (i.e. your local machine) and ''root'' as the username, then click connect.  Once the main window appears, if you click on "Catalogs" on the left, you should see a new entry for ''bioseqdb''.
+Select ''localhost'' as the Server Hostname (i.e. your local machine) and ''root'' as the username, then click connect.  Once the main window appears, if you click on "Catalogs" on the left, you should see a new entry for ''bioseqdb''.
 
 == NCBI Taxonomy ==
 

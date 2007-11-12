@@ -99,7 +99,7 @@ the main program menu, but you can also invoke it from the command line:
 
 `mysql-admin`
 
-Select *localhost* as the Server Hostman (i.e. your local machine) and
+Select *localhost* as the Server Hostname (i.e. your local machine) and
 *root* as the username, then click connect. Once the main window
 appears, if you click on "Catalogs" on the left, you should see a new
 entry for *bioseqdb*.
