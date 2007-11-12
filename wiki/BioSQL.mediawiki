@@ -96,6 +96,15 @@ for seq_record in SeqIO.parse(handle, "genbank") :
 handle.close()
 </source>
 
+The expected output is:
+
+ AF191665.1 Opuntia marenae rpl16 gene; chloroplast gene for c...
+ Sequence length 902, 3 features, from: chloroplast Opuntia marenae
+ AF191664.1 Opuntia clavata rpl16 gene; chloroplast gene for c...
+ Sequence length 899, 3 features, from: chloroplast Grusonia clavata
+ AF191663.1 Opuntia bradtiana rpl16 gene; chloroplast gene for...
+ Sequence length 899, 3 features, from: chloroplast Opuntia bradtianaa
+
 Now, instead of printing things on screen, let's add these three records to a new (empty) ''orchid'' database:
 
 <source lang=python>
