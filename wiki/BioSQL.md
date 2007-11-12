@@ -226,7 +226,7 @@ loaded (three in this example), and again have a look in the database
 and you should see three new rows in several tables (including the
 *bioentry* and *biosequence* tables).
 
-The call *server.adaptor.commit()* is a word arround for [bug
+The call *server.adaptor.commit()* is a work around for [bug
 2395](http://bugzilla.open-bio.org/show_bug.cgi?id=2395).
 
 Next, we'll try and load these three records back from the database.
