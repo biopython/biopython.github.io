@@ -2,16 +2,41 @@
 
 Existing documentation for the Biopython interfaces to BioSQL cover installing Python database adaptors and basic usage of BioSQL:
 
-[http://biopython.org/DIST/docs/biosql/python_biosql_basic.html HTML] | [http://biopython.org/DIST/docs/biosql/python_biosql_basic.pdf PDF]
+[http://biopython.org/DIST/docs/biosql/python_biosql_basic.html HTML] |  [http://biopython.org/DIST/docs/biosql/python_biosql_basic.pdf PDF]
 
 I hope to use this wiki page to update the above documentation in future.
 
-== Installation ==
+=== Installation ===
 
-This is fairly complicated.  First of all, you will need to install the relevent database client/server software and associated python interface library.  In this example we'll talk about the most common choice, MySQL, and assume you'll be running your own database server on the same machine (rather than for example using a networked database server shared between a group).  How you do this will also depend on your operating system, for example on a Debian or Ubuntu Linux machine try this:
+This is fairly complicated - partly because there are some many options. For example, you can use a range of different SQL database packages (we'll focus on MySQL), you can have the database on your own computer (the assumption here) or on a separate server.  Also the details will vary depending on your operating system.
 
-sudo apt-get install mysql-common mysql-server mysql-admin python-mysqldb
+== Installing Required Software ==
 
-One the software is installed, your next task is to setup a database and import the BioSQL scheme (i.e. setup the relevant tables within the database). ''To do...''
+You will need to install some database software plus the associated python library so that Biopython can "talk" to the database.  In this example we'll talk about the most common choice, MySQL.  How you do this will also depend on your operating system, for example on a Debian or Ubuntu Linux machine try this:
+
+ sudo apt-get install mysql-common mysql-server mysql-admin python-mysqldb
+
+It will also be important to have perl (to run some of the setup scripts) and cvs (to get some BioSQL files).  Again, on a Debian or Ubuntu Linux machine try this:
+
+ sudo apt-get install perl
+
+You may find perl is already installed.
+
+== Setting up the BioSQL Schema ==
+
+One the software is installed, your next task is to setup a database and import the BioSQL scheme (i.e. setup the relevant tables within the database).  If you have CVS installed, then on Linux you can download the latest schema like this (password is 'cvs').
+
+ cd ~
+ mkdir repository
+ cd repository
+ cvs -d :pserver:cvs@code.open-bio.org:/home/repository/biopython checkout biosql
+ cvs -d :pserver:cvs@code.open-bio.org:/home/repository/biosql checkout biosql-schema
+ cd biosql-schema
+
+If you don't want to use CVS, then download the files via the [http://cvs.open-bio.org/cgi-bin/viewcvs/viewcvs.cgi/?cvsroot=biosql View CVS web interface]. Click the Download tarball link to get a tar.gz file containing the current CVS, and then unzip that.
+
+And then ...
+
+== NCBI Taxonomy ==
 
 Before you start trying to load sequences into the database, it is a good idea to load the NCBI taxonomy database using the scripts/load_ncbi_taxonomy.pl script in the BioSQL package. ''To do...''
