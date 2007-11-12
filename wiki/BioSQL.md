@@ -123,8 +123,8 @@ browser window and check to see it is downloading a file called
 taxdump.tar.gz to the taxdata subdirectory.
 
 You should see this output at the command prompt - be warned that some
-of these steps do take a while (especially **rebuilding nested set
-left/right values**):
+of these steps do take a while (especially *rebuilding nested set
+left/right values*):
 
 `Loading NCBI taxon database in taxdata:`  
 `        ... retrieving all taxon nodes in the database`  
@@ -134,6 +134,9 @@ left/right values**):
 `        ... rebuilding nested set left/right values`  
 `        ... reading in taxon names from names.dmp`  
 `        ... deleting old taxon names`  
-`        ... inserting new taxon names`
+`        ... inserting new taxon names`  
+`        ... cleaning up`  
+`Done.`
 
-etc
+This might be a good point for a tea break - I didn't time this but it
+was over ten minutes.
