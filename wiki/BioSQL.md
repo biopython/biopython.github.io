@@ -149,15 +149,19 @@ database, you have to tell the unit test a few bits of information. You
 need to find Biopython's BioSQL test script under Tests/test\_BioSQL.py
 and fill in the following fields - based on the setup described above:
 
-`DBDRIVER = 'MySQLdb'`  
-`DBTYPE = 'mysql'`
+``` python
+DBDRIVER = 'MySQLdb'
+DBTYPE = 'mysql'
+```
 
 and a little lower down,
 
-`DBHOST = 'localhost'`  
-`DBUSER = 'root'`  
-`DBPASSWD = ''`  
-`TESTDB = 'biosql_test'`
+``` python
+DBHOST = 'localhost'
+DBUSER = 'root'
+DBPASSWD = ''
+TESTDB = 'biosql_test'
+```
 
 You can then run the unit test as normal, e.g.
 
