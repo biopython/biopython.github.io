@@ -201,7 +201,7 @@ records to a new (empty) *orchid* database:
 from BioSQL import BioSeqDatabase
 server = BioSeqDatabase.open_database(driver="MySQLdb", user="root",
                      passwd = "", host = "localhost", db="bioseqdb")
-db = server.new_database("orchids")
+db = server.new_database("orchids", description="Just for testing")
 server.adaptor.commit()
 ...
 ```
