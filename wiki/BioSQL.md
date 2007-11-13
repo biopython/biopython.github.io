@@ -146,8 +146,8 @@ Running the unit test
 
 Because there are so many ways you could have setup your BioSQL
 database, you have to tell the unit test a few bits of information. You
-need to find the Biopythin file under Tests/test\_BioSQL.py and fill in
-the following fields - based on the setup described above:
+need to find Biopython's BioSQL test script under Tests/test\_BioSQL.py
+and fill in the following fields - based on the setup described above:
 
 `DBDRIVER = 'MySQLdb'`  
 `DBTYPE = 'mysql'`

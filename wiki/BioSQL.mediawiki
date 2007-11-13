@@ -81,7 +81,7 @@ This might be a good point for a tea break - I didn't time this but it was over 
 
 == Running the unit test ==
 
-Because there are so many ways you could have setup your BioSQL database, you have to tell the unit test a few bits of information.  You need to find the Biopythin file under Tests/test_BioSQL.py and fill in the following fields - based on the setup described above:
+Because there are so many ways you could have setup your BioSQL database, you have to tell the unit test a few bits of information.  You need to find Biopython's BioSQL test script under Tests/test_BioSQL.py and fill in the following fields - based on the setup described above:
 
  DBDRIVER = 'MySQLdb'
  DBTYPE = 'mysql'
