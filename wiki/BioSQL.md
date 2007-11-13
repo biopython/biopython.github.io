@@ -333,3 +333,31 @@ Giving:
 `Sequence length 899`
 
 Todo - sort out the annotation.
+
+Deleting a (sub) database
+=========================
+
+As mentioned above, BioSQL lets us define named "sub" databases within
+the single SQL database (which we called *bioseqdb*). In the previous
+example, we created a sub-database for some orchid sequences. The
+following code will delete the *orchid* database (and all the records in
+it):
+
+``` python
+from BioSQL import BioSeqDatabase
+server = BioSeqDatabase.open_database(driver="MySQLdb", user="root",
+                     passwd = "", host = "localhost", db="bioseqdb")
+server.remove_database("orchids")
+server.adaptor.commit()
+```
+
+Again, the call *server.adaptor.commit()* is a work around for [bug
+2395](http://bugzilla.open-bio.org/show_bug.cgi?id=2395).
+
+There should now be one less row in the *biodatabase* table, check this
+at the command line:
+
+`mysql --user=root bioseqdb -e "select * from biodatabase;"`
+
+You can also check that the three orchid sequences have gone from the
+other tables.
