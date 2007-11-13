@@ -165,8 +165,8 @@ You can then run the unit test as normal, e.g.
 
 Right now there are a few rough edges and the test will fail :(
 
-Loading Sequences into the database
-===================================
+Loading Sequences into a database
+=================================
 
 When loading sequences into a BioSQL database with Biopython we have to
 provide annotated [SeqRecord](SeqRecord "wikilink") objects. This gives
@@ -209,12 +209,22 @@ server.adaptor.commit()
 The call *server.adaptor.commit()* is a work around for [bug
 2395](http://bugzilla.open-bio.org/show_bug.cgi?id=2395).
 
-You can check this has done something at the command line:
+There should be a single row in the *biodatabase* table for our new
+orchid database. You can check this at the command line:
 
 `mysql --user=root bioseqdb -e "select * from biodatabase;"`
 
-There should be a single row in the *biodatabase* table for our new
-orchid database.
+Which should give something like this (asuming you haven't done any
+other testing yet):
+
+`+----------------+---------+-----------+------------------+`  
+`| biodatabase_id | name    | authority | description      |`  
+`+----------------+---------+-----------+------------------+`  
+`|              1 | orchids | NULL      | Just for testing |`  
+`+----------------+---------+-----------+------------------+`
+
+Now that we have setup an *orchids* database within our *biosqldb* MySQL
+database, lets add some sequences to it:
 
 ``` python
 ...
