@@ -375,4 +375,4 @@ And if there are, assuming you are the only person using this database,
 you might try killing them off using the thread id given by the above
 command:
 
-`mysql --user=root bioseqdb -e "KIll 123;"`
+`mysql --user=root bioseqdb -e "KILL 123;"`
