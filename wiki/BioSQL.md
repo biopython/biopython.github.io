@@ -332,7 +332,8 @@ Giving:
 `AF191663.1 Opuntia bradtiana rpl16 gene; chloroplast gene for...`  
 `Sequence length 899`
 
-Todo - sort out the annotation.
+Todo - sort out the annotation, e.g. [bug
+2396](http://bugzilla.open-bio.org/show_bug.cgi?id=2396).
 
 Deleting a (sub) database
 =========================
