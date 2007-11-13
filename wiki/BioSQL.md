@@ -263,7 +263,8 @@ for seq_record in SeqIO.parse(handle, "genbank") :
 handle.close()
 ```
 
-The expected output is:
+The expected output is below, note we have three records with a total of
+nine features:
 
 `AF191665.1 Opuntia marenae rpl16 gene; chloroplast gene for c...`  
 `Sequence length 902, 3 features, from: chloroplast Opuntia marenae`  
@@ -292,11 +293,16 @@ Again, the call *server.adaptor.commit()* is a work around for [bug
 
 The *db.load()* function should have returned the number of records
 loaded (three in this example), and again have a look in the database
-and you should see three new rows in several tables (including the
-*bioentry* and *biosequence* tables):
+and you should see new rows in several tables.
+
+The *bioentry* and *biosequence* tables should have three new rows:
 
 `mysql --user=root bioseqdb -e "select * from bioentry;"`  
 `mysql --user=root bioseqdb -e "select * from biosequence;"`
+
+The should also be nine new features:
+
+`mysql --user=root bioseqdb -e "select * from seqfeature;"`
 
 Next, we'll try and load these three records back from the database.
 
