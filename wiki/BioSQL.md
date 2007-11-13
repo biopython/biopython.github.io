@@ -100,6 +100,45 @@ downloaded the files where we suggested).
 You can have a quick play using the mysql command line tool, for
 example:
 
+`mysql --user=root bioseqdb -e "show tables"`
+
+giving:
+
+`+----------------------------+`  
+`| Tables_in_bioseqdb         |`  
+`+----------------------------+`  
+`| biodatabase                |`  
+`| bioentry                   |`  
+`| bioentry_dbxref            |`  
+`| bioentry_path              |`  
+`| bioentry_qualifier_value   |`  
+`| bioentry_reference         |`  
+`| bioentry_relationship      |`  
+`| biosequence                |`  
+`| comment                    |`  
+`| dbxref                     |`  
+`| dbxref_qualifier_value     |`  
+`| location                   |`  
+`| location_qualifier_value   |`  
+`| ontology                   |`  
+`| reference                  |`  
+`| seqfeature                 |`  
+`| seqfeature_dbxref          |`  
+`| seqfeature_path            |`  
+`| seqfeature_qualifier_value |`  
+`| seqfeature_relationship    |`  
+`| taxon                      |`  
+`| taxon_name                 |`  
+`| term                       |`  
+`| term_dbxref                |`  
+`| term_path                  |`  
+`| term_relationship          |`  
+`| term_relationship_term     |`  
+`| term_synonym               |`  
+`+----------------------------+`
+
+Or, to look inside a table:
+
 `mysql --user=root bioseqdb -e "select * from bioentry;"`
 
 This should return no rows as the table is empty.
