@@ -18,11 +18,11 @@ This text is based in part on the [http://code.open-bio.org/cgi/viewcvs.cgi/*che
 
 You will need to install some database software plus the associated python library so that Biopython can "talk" to the database.  In this example we'll talk about the most common choice, MySQL.  How you do this will also depend on your operating system, for example on a Debian or Ubuntu Linux machine try this:
 
- sudo apt-get install mysql-common mysql-server mysql-admin python-mysqldb
+ sudo apt-get install mysql-common mysql-server python-mysqldb
 
 It will also be important to have perl (to run some of the setup scripts) and cvs (to get some BioSQL files).  Again, on a Debian or Ubuntu Linux machine try this:
 
- sudo apt-get install perl
+ sudo apt-get install perl cvs
 
 You may find perl is already installed.
 
@@ -50,11 +50,11 @@ We can then tell MySQL to load the BioSQL scheme we downloaded above (file ~/rep
  cd ~/repository/biosql-schema/sql
  mysql -u root bioseqdb < biosqldb-mysql.sql
 
-On Linux you can check this did something via the MySQL Administration GUI which we suggested installing earlier.  This should be available via the main program menu, but you can also invoke it from the command line:
+You can have a quick play using the mysql command line tool, for example:
 
- mysql-admin
+ mysql --user=root bioseqdb -e "select * from bioentry;"
 
-Select ''localhost'' as the Server Hostname (i.e. your local machine) and ''root'' as the username, then click connect.  Once the main window appears, if you click on "Catalogs" on the left, you should see a new entry for ''bioseqdb''.
+This should return no rows as the table is empty.
 
 == NCBI Taxonomy ==
 
@@ -134,10 +134,17 @@ from BioSQL import BioSeqDatabase
 server = BioSeqDatabase.open_database(driver="MySQLdb", user="root",
                      passwd = "", host = "localhost", db="bioseqdb")
 db = server.new_database("orchids")
+server.adaptor.commit()
 ...
 </source>
 
-If you launch the MySQL Administrator GUI once again, you'll see a new row in the ''biodatabase'' table for our new orchid database.
+The call ''server.adaptor.commit()'' is a work around for [http://bugzilla.open-bio.org/show_bug.cgi?id=2395 bug 2395].
+
+You can check this has done something at the command line:
+
+ mysql --user=root bioseqdb -e "select * from biodatabase;"
+
+There should be a single row in the ''biodatabase'' table for our new orchid database.
 
 <source lang=python>
 ...
@@ -148,9 +155,12 @@ db.load(SeqIO.parse(handle, "genbank"))
 server.adaptor.commit()
 </source>
 
-The ''db.load()'' function should have returned the number of records loaded (three in this example), and again have a look in the database and you should see three new rows in several tables (including the ''bioentry'' and ''biosequence'' tables).
+Again, the call ''server.adaptor.commit()'' is a work around for [http://bugzilla.open-bio.org/show_bug.cgi?id=2395 bug 2395].
 
-The call ''server.adaptor.commit()'' is a work around for [http://bugzilla.open-bio.org/show_bug.cgi?id=2395 bug 2395].
+The ''db.load()'' function should have returned the number of records loaded (three in this example), and again have a look in the database and you should see three new rows in several tables (including the ''bioentry'' and ''biosequence'' tables):
+
+ mysql --user=root bioseqdb -e "select * from bioentry;"
+ mysql --user=root bioseqdb -e "select * from biosequence;"
 
 Next, we'll try and load these three records back from the database.
 
