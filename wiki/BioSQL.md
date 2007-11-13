@@ -13,13 +13,12 @@ with featues using Biopython - and get more or less the same thing as if
 you had loaded the GenBank file directly using
 [SeqIO](SeqIO "wikilink").
 
-Existing documentation for the Biopython interfaces to BioSQL cover
-installing Python database adaptors and basic usage of BioSQL:
-
-[HTML](http://biopython.org/DIST/docs/biosql/python_biosql_basic.html) |
-[PDF](http://biopython.org/DIST/docs/biosql/python_biosql_basic.pdf)
-
-I hope to use this wiki page to update the above documentation in
+We have some existing documentation
+([HTML](http://biopython.org/DIST/docs/biosql/python_biosql_basic.html),
+[PDF](http://biopython.org/DIST/docs/biosql/python_biosql_basic.pdf))
+for the Biopython interfaces to BioSQL, covering installing Python
+database adaptors and basic usage of BioSQL. This is a little old, and I
+am hoping to use this wiki page to update the above documentation in
 future.
 
 NOTE - At the time of writing, there are a few problems with BioSQL and
@@ -28,11 +27,12 @@ Biopython 1.44 which are being tackled...
 Installation
 ============
 
-This is fairly complicated - partly because there are some many options.
+This is fairly complicated - partly because there are so many options.
 For example, you can use a range of different SQL database packages
 (we'll focus on MySQL), you can have the database on your own computer
-(the assumption here) or on a separate server. Also the details will
-vary depending on your operating system.
+(the assumption here) or on a separate server, and of course there are
+usernames and passwords associated with database. And finally the
+details will also vary depending on your operating system.
 
 This text is based in part on the [BioSQL scheme INSTALL
 instructions](http://code.open-bio.org/cgi/viewcvs.cgi/*checkout*/biosql-schema/INSTALL?rev=HEAD&cvsroot=biosql&content-type=text/plain),
