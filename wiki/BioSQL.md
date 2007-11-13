@@ -208,6 +208,41 @@ You can then run the unit test as normal, e.g.
 
 Right now there are a few rough edges and the test will fail :(
 
+Creating a (sub) database
+=========================
+
+BioSQL lets us defined names "sub" databases within the single SQL
+database (which we called *bioseqdb* earlier). For this example, lets
+create a one for some orchid sequences:
+
+``` python
+from BioSQL import BioSeqDatabase
+server = BioSeqDatabase.open_database(driver="MySQLdb", user="root",
+                     passwd = "", host = "localhost", db="bioseqdb")
+db = server.new_database("orchids", description="Just for testing")
+server.adaptor.commit()
+```
+
+The call *server.adaptor.commit()* is a work around for [bug
+2395](http://bugzilla.open-bio.org/show_bug.cgi?id=2395).
+
+There should now be a single row in the *biodatabase* table for our new
+orchid database. You can check this at the command line:
+
+`mysql --user=root bioseqdb -e "select * from biodatabase;"`
+
+Which should give something like this (asuming you haven't done any
+other testing yet):
+
+`+----------------+---------+-----------+------------------+`  
+`| biodatabase_id | name    | authority | description      |`  
+`+----------------+---------+-----------+------------------+`  
+`|              1 | orchids | NULL      | Just for testing |`  
+`+----------------+---------+-----------+------------------+`
+
+Now that we have setup an *orchids* database within our *biosqldb* MySQL
+database, lets add some sequences to it.
+
 Loading Sequences into a database
 =================================
 
@@ -237,42 +272,16 @@ The expected output is:
 `AF191663.1 Opuntia bradtiana rpl16 gene; chloroplast gene for...`  
 `Sequence length 899, 3 features, from: chloroplast Opuntia bradtianaa`
 
-instea Now, instead of printing things on screen, let's add these three
-records to a new (empty) *orchid* database:
+Now, instead of printing things on screen, let's add these three records
+to a new (empty) *orchid* database:
 
 ``` python
+from Bio import GenBank
+from Bio import SeqIO
 from BioSQL import BioSeqDatabase
 server = BioSeqDatabase.open_database(driver="MySQLdb", user="root",
                      passwd = "", host = "localhost", db="bioseqdb")
-db = server.new_database("orchids", description="Just for testing")
-server.adaptor.commit()
-...
-```
-
-The call *server.adaptor.commit()* is a work around for [bug
-2395](http://bugzilla.open-bio.org/show_bug.cgi?id=2395).
-
-There should be a single row in the *biodatabase* table for our new
-orchid database. You can check this at the command line:
-
-`mysql --user=root bioseqdb -e "select * from biodatabase;"`
-
-Which should give something like this (asuming you haven't done any
-other testing yet):
-
-`+----------------+---------+-----------+------------------+`  
-`| biodatabase_id | name    | authority | description      |`  
-`+----------------+---------+-----------+------------------+`  
-`|              1 | orchids | NULL      | Just for testing |`  
-`+----------------+---------+-----------+------------------+`
-
-Now that we have setup an *orchids* database within our *biosqldb* MySQL
-database, lets add some sequences to it:
-
-``` python
-...
-from Bio import GenBank
-from Bio import SeqIO
+db = server["orchids"]
 handle = GenBank.download_many(['6273291', '6273290', '6273289'])
 db.load(SeqIO.parse(handle, "genbank"))
 server.adaptor.commit()
