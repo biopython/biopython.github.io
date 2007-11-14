@@ -272,10 +272,12 @@ You can also check that the three orchid sequences have gone from the other tabl
 
 = MySQL Tips and Tricks =
 
-If you are getting timeout errors, check to see if there SQL server has any orphaned threads.
+If you are getting timeout errors, check to see if your SQL server has any orphaned threads.
 
  mysql --user=root bioseqdb -e "SHOW INNODB STATUS\G" | grep "thread id"
 
 And if there are, assuming you are the only person using this database, you might try killing them off using the thread id given by the above command:
 
  mysql --user=root bioseqdb -e "KILL 123;"
+
+Use at your own risk!

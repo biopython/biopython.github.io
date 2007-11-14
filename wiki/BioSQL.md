@@ -366,7 +366,7 @@ other tables.
 MySQL Tips and Tricks
 =====================
 
-If you are getting timeout errors, check to see if there SQL server has
+If you are getting timeout errors, check to see if your SQL server has
 any orphaned threads.
 
 `mysql --user=root bioseqdb -e "SHOW INNODB STATUS\G" | grep "thread id"`
@@ -376,3 +376,5 @@ you might try killing them off using the thread id given by the above
 command:
 
 `mysql --user=root bioseqdb -e "KILL 123;"`
+
+Use at your own risk!
