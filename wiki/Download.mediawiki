@@ -31,10 +31,12 @@ For Ubuntu Linux, install the following packages to cover these requirements:
 
 === Optional Software ===
 
-* [http://www.reportlab.org/downloads.html ReportLab] -- for pdf graphics code
-* [http://sourceforge.net/projects/mysql-python MySQLdb]
+* [http://www.reportlab.org/downloads.html ReportLab] -- used for pdf graphics code
+* [http://sourceforge.net/projects/mysql-python MySQLdb] -- used for [[BioSQL]]
 * [http://flex.sourceforge.net/ flex: The Fast Lexical Analyzer] -- for building Bio.PDB.mmCIF.MMCIFlex
 * [http://www.ebi.ac.uk/Wise2/ Wise2] -- for command line tool dnal
+* [http://www.ncbi.nlm.nih.gov/blast/download.shtml NCBI Standalone BLAST] -- for running BLAST on your local machine
+* [ftp://ftp.ebi.ac.uk/pub/software/unix/clustalw/ Clustalw] -- command line tool for building sequence alignments
 
 = Biopython-corba =
 

@@ -65,12 +65,18 @@ requirements:
 
 ### Optional Software
 
--   [ReportLab](http://www.reportlab.org/downloads.html) -- for pdf
+-   [ReportLab](http://www.reportlab.org/downloads.html) -- used for pdf
     graphics code
--   [MySQLdb](http://sourceforge.net/projects/mysql-python)
+-   [MySQLdb](http://sourceforge.net/projects/mysql-python) -- used for
+    [BioSQL](BioSQL "wikilink")
 -   [flex: The Fast Lexical Analyzer](http://flex.sourceforge.net/) --
     for building Bio.PDB.mmCIF.MMCIFlex
 -   [Wise2](http://www.ebi.ac.uk/Wise2/) -- for command line tool dnal
+-   [NCBI Standalone
+    BLAST](http://www.ncbi.nlm.nih.gov/blast/download.shtml) -- for
+    running BLAST on your local machine
+-   [Clustalw](ftp://ftp.ebi.ac.uk/pub/software/unix/clustalw/) --
+    command line tool for building sequence alignments
 
 Biopython-corba
 ===============
