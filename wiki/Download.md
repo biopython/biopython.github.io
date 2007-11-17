@@ -42,7 +42,10 @@ See also [What's new](http://biopython.open-bio.org/SRC/biopython/NEWS).
     need a C compiler supported by distutils, gcc will work fine on
     UNIX-like platforms. This is not needed on Windows if using the
     install programs provided above.
--   [mxTextTools](http://www.lemburg.com/files/python/mxTextTools.html)
+-   [mxTextTools
+    2.0](http://www.egenix.com/www2002/python/eGenix-mx-Extensions-v2.x.html/)
+    There are a few niggles with mxTextTools 3.0, so ideally install the
+    older mxTextTools 2.0.
 -   [Numerical Python](http://numpy.scipy.org/#older_array) Note that
     BioPython has not (yet) switched to the 'new' numpy library. You
     need the 'old' Numeric library, version 24.2 is recommended. Windows
