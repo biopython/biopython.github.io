@@ -22,7 +22,7 @@ It will also be important to have perl (to run some of the setup scripts) and cv
 
 You may find perl is already installed.
 
-== Downloading the BioSQL Schema ==
+== Downloading the BioSQL Schema & Scripts ==
 
 One the software is installed, your next task is to setup a database and import the BioSQL scheme (i.e. setup the relevant tables within the database).  If you have CVS installed, then on Linux you can download the latest schema like this (password is 'cvs').
 
@@ -33,7 +33,9 @@ One the software is installed, your next task is to setup a database and import 
  cvs -d :pserver:cvs@code.open-bio.org:/home/repository/biosql checkout biosql-schema
  cd biosql-schema/sql
 
-If you don't want to use CVS, then download the files via the [http://cvs.open-bio.org/cgi-bin/viewcvs/viewcvs.cgi/?cvsroot=biosql View CVS web interface]. Click the Download tarball link to get a tar.gz file containing the all the current CVS file, and then unzip that. Or, navigate to the relevant file for your database and download just that, e.g. [http://cvs.open-bio.org/cgi-bin/viewcvs/viewcvs.cgi/biosql-schema/sql/biosqldb-mysql.sql?cvsroot=biosql biosql-schema/sql/biosqldb-mysql.sql] for MySQL.
+If you don't want to use CVS, then download the files via the [http://cvs.open-bio.org/cgi-bin/viewcvs/viewcvs.cgi/?cvsroot=biosql View CVS web interface]. Click the Download tarball link to get a tar.gz file containing all the current CVS file, and then unzip that.
+
+Or, navigate to the relevant file for your database and download just that, e.g. [http://cvs.open-bio.org/cgi-bin/viewcvs/viewcvs.cgi/biosql-schema/sql/biosqldb-mysql.sql?cvsroot=biosql biosql-schema/sql/biosqldb-mysql.sql] for MySQL.  You will also want the NCBI Taxonomy loading perl script, [http://cvs.open-bio.org/cgi-bin/viewcvs/viewcvs.cgi/biosql-schema/scripts/load_ncbi_taxonomy.pl?cvsroot=biosql scripts/load_ncbi_taxonomy.pl].
 
 == Creating the empty database ==
 

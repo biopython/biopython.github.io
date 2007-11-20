@@ -57,8 +57,8 @@ Ubuntu Linux machine try this:
 
 You may find perl is already installed.
 
-Downloading the BioSQL Schema
------------------------------
+Downloading the BioSQL Schema & Scripts
+---------------------------------------
 
 One the software is installed, your next task is to setup a database and
 import the BioSQL scheme (i.e. setup the relevant tables within the
@@ -75,11 +75,14 @@ latest schema like this (password is 'cvs').
 If you don't want to use CVS, then download the files via the [View CVS
 web
 interface](http://cvs.open-bio.org/cgi-bin/viewcvs/viewcvs.cgi/?cvsroot=biosql).
-Click the Download tarball link to get a tar.gz file containing the all
-the current CVS file, and then unzip that. Or, navigate to the relevant
-file for your database and download just that, e.g.
+Click the Download tarball link to get a tar.gz file containing all the
+current CVS file, and then unzip that.
+
+Or, navigate to the relevant file for your database and download just
+that, e.g.
 [biosql-schema/sql/biosqldb-mysql.sql](http://cvs.open-bio.org/cgi-bin/viewcvs/viewcvs.cgi/biosql-schema/sql/biosqldb-mysql.sql?cvsroot=biosql)
-for MySQL.
+for MySQL. You will also want the NCBI Taxonomy loading perl script,
+[scripts/load\_ncbi\_taxonomy.pl](http://cvs.open-bio.org/cgi-bin/viewcvs/viewcvs.cgi/biosql-schema/scripts/load_ncbi_taxonomy.pl?cvsroot=biosql).
 
 Creating the empty database
 ---------------------------
