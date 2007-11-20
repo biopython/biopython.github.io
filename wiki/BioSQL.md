@@ -217,7 +217,7 @@ normal, e.g.
 Creating a (sub) database
 =========================
 
-BioSQL lets us defined names "sub" databases within the single SQL
+BioSQL lets us define named "sub" databases within the single SQL
 database (which we called *bioseqdb* earlier). For this example, lets
 create a one for some orchid sequences:
 
