@@ -184,9 +184,13 @@ Running the unit test
 ---------------------
 
 Because there are so many ways you could have setup your BioSQL
-database, you have to tell the unit test a few bits of information. You
-need to find Biopython's BioSQL test script under Tests/test\_BioSQL.py
-and fill in the following fields - based on the setup described above:
+database, you my have to tell the unit test a few bits of information.
+If you have followed these instructions, then the unit test should just
+work (using CVS, what will be the next release after Biopython 1.44).
+
+If you have done things differently (e.g. PostgreSQL instead of MySQL,
+or using a different database username and password), then you need to
+edit the script Tests/setup\_BioSQL.py and fill in the following fields:
 
 ``` python
 DBDRIVER = 'MySQLdb'
@@ -202,11 +206,10 @@ DBPASSWD = ''
 TESTDB = 'biosql_test'
 ```
 
-You can then run the unit test as normal, e.g.
+Change these to match your setup. You can then run the unit test as
+normal, e.g.
 
-`python runtests test_BioSQL`
-
-Right now there are a few rough edges and the test will fail :(
+`python run_tests.py test_BioSQL`
 
 Creating a (sub) database
 =========================
