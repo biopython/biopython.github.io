@@ -22,7 +22,7 @@ am hoping to use this wiki page to update the above documentation in
 future.
 
 NOTE - At the time of writing, there are a few problems with BioSQL and
-Biopython 1.44 which are being tackled...
+Biopython 1.44 which are being fixed in CVS.
 
 Installation
 ============
