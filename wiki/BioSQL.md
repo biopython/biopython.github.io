@@ -78,8 +78,8 @@ interface](http://cvs.open-bio.org/cgi-bin/viewcvs/viewcvs.cgi/?cvsroot=biosql).
 Click the Download tarball link to get a tar.gz file containing all the
 current CVS file, and then unzip that.
 
-Or, navigate to the relevant file for your database and download just
-that, e.g.
+Or, navigate to the relevant schema file for your database and download
+just that, e.g.
 [biosql-schema/sql/biosqldb-mysql.sql](http://cvs.open-bio.org/cgi-bin/viewcvs/viewcvs.cgi/biosql-schema/sql/biosqldb-mysql.sql?cvsroot=biosql)
 for MySQL. You will also want the NCBI Taxonomy loading perl script,
 [scripts/load\_ncbi\_taxonomy.pl](http://cvs.open-bio.org/cgi-bin/viewcvs/viewcvs.cgi/biosql-schema/scripts/load_ncbi_taxonomy.pl?cvsroot=biosql).
