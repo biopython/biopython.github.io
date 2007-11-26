@@ -7,10 +7,10 @@ layout: wiki
 [BioSQL](http://www.biosql.org/wiki/Main_Page) is a joint effort between
 the [OBF](http://open-bio.org/) projects (BioPerl, BioJava etc) to
 support a shared database schema for storing sequence data. In theory,
-you could load a GenBank file into the database with BioPerl, then
-extract this from the database as a [SeqRecord](SeqRecord "wikilink")
-with featues using Biopython - and get more or less the same thing as if
-you had loaded the GenBank file directly using
+you could load a GenBank file into the database with BioPerl, then using
+Biopython extract this from the database as a record object with featues
+- and get more or less the same thing as if you had loaded the GenBank
+file directly as a [SeqRecord](SeqRecord "wikilink") using
 [SeqIO](SeqIO "wikilink").
 
 We have some existing documentation
@@ -340,6 +340,13 @@ Giving:
 
 Todo - sort out the annotation, e.g. [bug
 2396](http://bugzilla.open-bio.org/show_bug.cgi?id=2396).
+
+The objects you get back from BioSQL act like a
+[SeqRecord](SeqRecord "wikilink") object with a [Seq](Seq "wikilink")
+object as the sequence, but they are not exactly the same. You actually
+get their BioSQL database equivalent, a **DBSeqRecord** object with a
+**DBSeq** object for the sequence. These will only load the sequence and
+annotation from the database on demand.
 
 Deleting a (sub) database
 =========================
