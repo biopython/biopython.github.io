@@ -349,7 +349,7 @@ That should give something like this as the output file,
 
 If you are having problems Bio.SeqIO, please join the discussion mailing list (see [[mailing lists]]).
 
-If you think you've found a bug, please report it on [http://bugzilla.open-bio.org/ bugzilla]).
+If you think you've found a bug, please report it on [http://bugzilla.open-bio.org/ bugzilla].
 
 == Old Bio.SeqIO code ==
 
