@@ -270,7 +270,7 @@ If this is all confusing, ''don't panic'' and just ignore the fancy stuff.  For 
 
 === Using the SEGUID checksum ===
 
-In this example, we'll use  '''Bio.SeqIO''' with the '''Bio.SeqUtils.CheckSum''' module (added to CVS after the release of Biopython 1.43). First of all, we'll just print out the checksum for each sequence in the GenBank file [http://biopython.org/DIST/docs/tutorial/examples/ls_orchid.gbk ls_orchid.gbk]:
+In this example, we'll use  '''Bio.SeqIO''' with the '''Bio.SeqUtils.CheckSum''' module (in Biopython 1.44 or later). First of all, we'll just print out the checksum for each sequence in the GenBank file [http://biopython.org/DIST/docs/tutorial/examples/ls_orchid.gbk ls_orchid.gbk]:
 
 <source lang=python>
 from Bio import SeqIO
