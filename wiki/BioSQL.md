@@ -183,8 +183,8 @@ left/right values*):
 This might be a good point for a tea break - I didn't time this but it
 was over ten minutes.
 
-Running the unit test
----------------------
+Running the unit tests
+----------------------
 
 Because there are so many ways you could have setup your BioSQL
 database, you my have to tell the unit test a few bits of information.
@@ -209,10 +209,10 @@ DBPASSWD = ''
 TESTDB = 'biosql_test'
 ```
 
-Change these to match your setup. You can then run the unit test as
-normal, e.g.
+Change these to match your setup. You can then run the BioSQL unit tests
+as normal, e.g.
 
-`python run_tests.py test_BioSQL`
+`python run_tests.py test_BioSQL test_BioSQL_SeqIO`
 
 Creating a (sub) database
 =========================
