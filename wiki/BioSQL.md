@@ -370,8 +370,8 @@ server.remove_database("orchids")
 server.adaptor.commit()
 ```
 
-Again, the call *server.adaptor.commit()* is a work around for [bug
-2395](http://bugzilla.open-bio.org/show_bug.cgi?id=2395).
+Again, you must explicitly finialise the SQL transaction with
+*server.adaptor.commit()* to make this change.
 
 There should now be one less row in the *biodatabase* table, check this
 at the command line:
