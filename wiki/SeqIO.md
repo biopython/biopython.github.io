@@ -187,7 +187,7 @@ File Format Conversion
 
 Suppose you have a GenBank file which you want to turn into a Fasta
 file. For example, lets consider the file
-'[cor6\_6.gb](http://cvs.biopython.org/cgi-bin/viewcvs/viewcvs.cgi/*checkout*/biopython/Tests/GenBank/cor6_6.gb?rev=HEAD&cvsroot=biopython&content-type=text/plain)'
+'[cor6\_6.gb](http://biopython.open-bio.org/SRC/biopython/Tests/GenBank/cor6_6.gb)'
 which is included in the BioPython unit tests under the GenBank
 directory.
 
