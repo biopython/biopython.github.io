@@ -211,7 +211,7 @@ db.load(SeqIO.parse(handle, "genbank"))
 server.adaptor.commit()
 </source>
 
-Again, the call ''server.adaptor.commit()'' is a work around for [http://bugzilla.open-bio.org/show_bug.cgi?id=2395 bug 2395].
+Again, you must explicitly call ''server.adaptor.commit()'' to record the SQL transaction which is otherwise left pending.
 
 The ''db.load()'' function should have returned the number of records loaded (three in this example), and again have a look in the database and you should see new rows in several tables.
 
