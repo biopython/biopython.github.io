@@ -96,7 +96,7 @@ Python](http://www.python.org/dev/peps/pep-0020/)).
 
 If you had a different type of file, for example a Clustalw alignment
 file such as
-'[opuntia.aln](http://cvs.biopython.org/cgi-bin/viewcvs/viewcvs.cgi/*checkout*/biopython/Tests/Clustalw/opuntia.aln?rev=HEAD&cvsroot=biopython&content-type=text/plain)'
+'[opuntia.aln](http://biopython.open-bio.org/SRC/biopython/Tests/Clustalw/opuntia.aln)'
 which contains seven sequences, the only difference is you specify
 "clustal" instead of "fasta":
 

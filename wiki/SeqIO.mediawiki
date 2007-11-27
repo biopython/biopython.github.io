@@ -87,7 +87,7 @@ In the above example, we opened the file using the built-in python function '''o
 
 Note that you ''must'' specify the file format explicitly, unlike [http://www.bioperl.org/wiki/HOWTO:SeqIO BioPerl's SeqIO] which can try to guess using the file name extension and/or the file contents.  See ''Explicit is better than implicit'' ([http://www.python.org/dev/peps/pep-0020/ The Zen of Python]).
 
-If you had a different type of file, for example a Clustalw alignment file such as '[http://cvs.biopython.org/cgi-bin/viewcvs/viewcvs.cgi/*checkout*/biopython/Tests/Clustalw/opuntia.aln?rev=HEAD&cvsroot=biopython&content-type=text/plain opuntia.aln]' which contains seven sequences, the only difference is you specify "clustal" instead of "fasta":
+If you had a different type of file, for example a Clustalw alignment file such as '[http://biopython.open-bio.org/SRC/biopython/Tests/Clustalw/opuntia.aln opuntia.aln]' which contains seven sequences, the only difference is you specify "clustal" instead of "fasta":
 
 <source lang=python>
 from Bio import SeqIO
