@@ -179,7 +179,7 @@ first_record = SeqIO.parse(open("example.fasta", "rU"), "fasta").next()
 Sequence Output
 ---------------
 
-For writing records to a file use the function **Bio.SeqIO.write**,
+For writing records to a file use the function **Bio.SeqIO.write()**,
 which takes a SeqRecord iterator (or list), output handle and format
 string:
 
@@ -204,9 +204,9 @@ little memory is required. See the example below filtering a set of
 records.
 
 On the other hand, for interlaced or non-sequential file formats like
-Clustal, the **write** function will be forced to automatically convert
-an iterator into a list. This will destroy any potential memory saving
-from using an generator/iterator approach.
+Clustal, the **Bio.SeqIO.write()** function will be forced to
+automatically convert an iterator into a list. This will destroy any
+potential memory saving from using an generator/iterator approach.
 
 File Format Conversion
 ----------------------

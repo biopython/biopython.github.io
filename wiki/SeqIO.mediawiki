@@ -150,7 +150,7 @@ first_record = SeqIO.parse(open("example.fasta", "rU"), "fasta").next()
 
 == Sequence Output ==
 
-For writing records to a file use the function '''Bio.SeqIO.write''', which takes a SeqRecord iterator (or list), output handle and format string:
+For writing records to a file use the function '''Bio.SeqIO.write()''', which takes a SeqRecord iterator (or list), output handle and format string:
 
 <source lang=python>
 from Bio import SeqIO
@@ -166,7 +166,7 @@ Note that if you are writing to an alignment file format, all your sequences mus
 
 If you supply the sequences as a '''SeqRecord''' iterator, then for sequential file formats like Fasta or GenBank, the records can be written one by one. Because only one record is created at a time, very little memory is required.  See the example below filtering a set of records.
 
-On the other hand, for interlaced or non-sequential file formats like Clustal, the '''write''' function will be forced to automatically convert an iterator into a list.  This will destroy any potential memory saving from using an generator/iterator approach.
+On the other hand, for interlaced or non-sequential file formats like Clustal, the '''Bio.SeqIO.write()''' function will be forced to automatically convert an iterator into a list.  This will destroy any potential memory saving from using an generator/iterator approach.
 
 == File Format Conversion ==
 
