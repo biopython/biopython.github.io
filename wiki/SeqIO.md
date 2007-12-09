@@ -341,8 +341,9 @@ output_handle.close()
 ```
 
 Remember that for sequential file formats like Fasta or GenBank,
-**write** will accept a **SeqRecord** iterator. The advantage of the
-code above is that only one record will be in memory at any one time.
+**Bio.SeqIO.write()** will accept a **SeqRecord** iterator. The
+advantage of the code above is that only one record will be in memory at
+any one time.
 
 However, as explained in the output section, for non-sequential file
 formats like Clustal **write** is forced to automatically turn the
