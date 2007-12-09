@@ -121,7 +121,7 @@ print records[-1].id #last record
 ```
 
 Another common task is to index your records by some identifier. For
-this we have a function **Bio.SeqIO.to\_dict** to turn a SeqRecord
+this we have a function **Bio.SeqIO.to\_dict()** to turn a SeqRecord
 iterator (or list) into a dictionary:
 
 ``` python
@@ -131,11 +131,11 @@ record_dict = SeqIO.to_dict(SeqIO.parse(handle, "fasta"))
 print record_dict["gi:12345678"] #use any record ID
 ```
 
-The function **to\_dict** will use the record ID as the dictionary key
+The function **to\_dict()** will use the record ID as the dictionary key
 by default, but you can specify any mapping you like with its optional
 argument, **key\_function**.
 
-Finally the function **Bio.SeqIO.to\_alignment** can be used to turn a
+Finally the function **Bio.SeqIO.to\_alignment()** can be used to turn a
 SeqRecord iterator (or list) into an alignment object - provided all the
 sequences are the same length:
 
@@ -148,7 +148,28 @@ for column in range(alignment.get_alignment_length()) :
 ```
 
 In the future it may be possible to do this directly via the Alignment
-object
+object.
+
+We plan to introduce another function in Biopython 1.45,
+**Bio.SeqIO.read()**, which like **Bio.SeqIO.parse()** will expect a
+handle and format. It is for use when the handle contains one and only
+one record, which is returned as a single
+[SeqRecord](SeqRecord "wikilink") object. If there are no records, or
+more than one, then an exception is raised.
+
+``` python
+from Bio import SeqIO
+record = SeqIO.read(open("single.fasta"), "fasta")
+```
+
+For the related situation where you just want the first record (and are
+happy to ignore any subsequent records), you can use the iterator's
+**.next()** method:
+
+``` python
+from Bio import SeqIO
+first_record = SeqIO.parse(open("example.fasta", "rU"), "fasta").next()
+```
 
 Sequence Output
 ---------------
