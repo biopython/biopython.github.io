@@ -160,7 +160,7 @@ We plan to introduce another function in Biopython 1.45,
 handle and format. It is for use when the handle contains one and only
 one record, which is returned as a single
 [SeqRecord](SeqRecord "wikilink") object. If there are no records, or
-more than one, then an exception is raised.
+more than one, then an exception is raised:
 
 ``` python
 from Bio import SeqIO
