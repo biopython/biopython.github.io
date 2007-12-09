@@ -81,6 +81,7 @@ from Bio import SeqIO
 handle = open("example.fasta", "rU")
 for record in SeqIO.parse(handle, "fasta") :
     print record.id
+handle.close()
 ```
 
 In the above example, we opened the file using the built-in python
@@ -105,6 +106,7 @@ from Bio import SeqIO
 handle = open("opuntia.aln", "rU")
 for record in SeqIO.parse(handle, "clustal") :
     print record.id
+handle.close()
 ```
 
 Iterators are great for when you only need the records one by one, in
@@ -116,6 +118,7 @@ python **list** function to turn the iterator into a list:
 from Bio import SeqIO
 handle = open("example.fasta", "rU")
 records = list(SeqIO.parse(handle, "fasta"))
+handle.close()
 print records[0].id  #first record
 print records[-1].id #last record
 ```
@@ -128,6 +131,7 @@ iterator (or list) into a dictionary:
 from Bio import SeqIO
 handle = open("example.fasta", "rU")
 record_dict = SeqIO.to_dict(SeqIO.parse(handle, "fasta"))
+handle.close()
 print record_dict["gi:12345678"] #use any record ID
 ```
 
@@ -143,6 +147,7 @@ sequences are the same length:
 from Bio import SeqIO
 handle = open("opuntia.aln", "rU")
 alignment = SeqIO.to_alignment(SeqIO.parse(handle, "clustal"))
+handle.close()
 for column in range(alignment.get_alignment_length()) :
     print  "%s column %i" % (alignment.get_column(column),column)
 ```
