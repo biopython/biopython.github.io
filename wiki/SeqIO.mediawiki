@@ -172,7 +172,7 @@ On the other hand, for interlaced or non-sequential file formats like Clustal, t
 
 Suppose you have a GenBank file which you want to turn into a Fasta file.  For example, lets consider the file '[http://biopython.open-bio.org/SRC/biopython/Tests/GenBank/cor6_6.gb cor6_6.gb]' which is included in the BioPython unit tests under the GenBank directory.
 
-You could read the file like this, using the '''parse''' function:
+You could read the file like this, using the '''Bio.SeqIO.parse()''' function:
 
 <source lang=python>
 from Bio import SeqIO
@@ -182,7 +182,7 @@ for record in SeqIO.parse(input_handle, "genbank") :
 input_handle.close()
 </source>
 
-Notice that this file contains six records.  Now instead of printing the records, let's pass the SeqRecord iterator to the '''write''' function, to turn this GenBank file into a Fasta file:
+Notice that this file contains six records.  Now instead of printing the records, let's pass the SeqRecord iterator to the '''Bio.SeqIO.write()''' function, to turn this GenBank file into a Fasta file:
 
 <source lang=python>
 from Bio import SeqIO

@@ -217,7 +217,8 @@ file. For example, lets consider the file
 which is included in the BioPython unit tests under the GenBank
 directory.
 
-You could read the file like this, using the **parse** function:
+You could read the file like this, using the **Bio.SeqIO.parse()**
+function:
 
 ``` python
 from Bio import SeqIO
@@ -228,8 +229,8 @@ input_handle.close()
 ```
 
 Notice that this file contains six records. Now instead of printing the
-records, let's pass the SeqRecord iterator to the **write** function, to
-turn this GenBank file into a Fasta file:
+records, let's pass the SeqRecord iterator to the **Bio.SeqIO.write()**
+function, to turn this GenBank file into a Fasta file:
 
 ``` python
 from Bio import SeqIO
