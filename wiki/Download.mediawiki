@@ -79,6 +79,14 @@ Ubuntu Edgy doesn't seem to have working AMD64 packages. Fiesty biopython 1.42 A
 
  yum install python-biopython
 
+=== Gentoo Linux ===
+
+Gentoo's portage tree contains an ebuild (sci-biology/biopython) which builds from source.  To install it, open a terminal as root and run:
+
+ emerge -va biopython 
+
+[http://www.gentoo-portage.com/sci-biology/biopython Here] is a link to Biopython at [http://www.gentoo-portage.com Gentoo-Portage] which shows the latest versions in Gentoo's Portage tree.
+
 = Ports =
 
 ===FreeBSD===

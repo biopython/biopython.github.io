@@ -141,6 +141,17 @@ python-biopython, it can be installed using yum:
 
 `yum install python-biopython`
 
+### Gentoo Linux
+
+Gentoo's portage tree contains an ebuild (sci-biology/biopython) which
+builds from source. To install it, open a terminal as root and run:
+
+`emerge -va biopython `
+
+[Here](http://www.gentoo-portage.com/sci-biology/biopython) is a link to
+Biopython at [Gentoo-Portage](http://www.gentoo-portage.com) which shows
+the latest versions in Gentoo's Portage tree.
+
 Ports
 =====
 
