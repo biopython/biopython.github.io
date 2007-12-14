@@ -4,7 +4,7 @@ Most of the sequence file format parsers in BioPython can return SeqRecord objec
 
 == Extracting information from a SeqRecord ==
 
-Lets look in closer detail at the well annotated SeqRecord objects Biopython creates from a GenBank file, such as [[http://biopython.org/DIST/docs/tutorial/examples/ls_orchid.gbk ls_orchid.gbk]].  This file contains 94 records:
+Lets look in closer detail at the well annotated SeqRecord objects Biopython creates from a GenBank file, such as [http://biopython.org/DIST/docs/tutorial/examples/ls_orchid.gbk ls_orchid.gbk], which we'll load using the [[SeqIO]] module.  This file contains 94 records:
 
 <source lang=python>
 from Bio import SeqIO
