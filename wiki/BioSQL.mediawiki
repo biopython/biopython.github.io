@@ -22,6 +22,8 @@ It will also be important to have perl (to run some of the setup scripts) and cv
 
 You may find perl is already installed.
 
+For Windows users, see [[BioSQL/Windows]].
+
 == Downloading the BioSQL Schema & Scripts ==
 
 One the software is installed, your next task is to setup a database and import the BioSQL scheme (i.e. setup the relevant tables within the database).  If you have CVS installed, then on Linux you can download the latest schema like this (password is 'cvs').
