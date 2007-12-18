@@ -17,7 +17,7 @@ Executing this:
 from Bio.Seq import Seq,translate
 
 #create a sequence object of some DNA
-my_seq = Seq.Seq('CATGTAGATAG')
+my_seq = Seq('CATGTAGATAG')
 
 #print out some details about it
 print 'seq is %i bases long' % len(my_seq)
