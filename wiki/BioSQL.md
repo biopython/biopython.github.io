@@ -70,7 +70,6 @@ latest schema like this (password is 'cvs').
 `cd ~`  
 `mkdir repository`  
 `cd repository`  
-`cvs -d :pserver:cvs@code.open-bio.org:/home/repository/biopython checkout biosql`  
 `cvs -d :pserver:cvs@code.open-bio.org:/home/repository/biosql checkout biosql-schema`  
 `cd biosql-schema/sql`
 
