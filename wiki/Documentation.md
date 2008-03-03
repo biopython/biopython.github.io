@@ -31,6 +31,11 @@ below.
   
 [HTML](SeqIO "wikilink")
 
+-   Wiki documentation on the Biopython BioSQL interface
+
+  
+[HTML](BioSQL "wikilink")
+
 -   Documentation for the Biopython interfaces to BioSQL cover
     installing Python database adaptors and basic usage of BioSQL.
 
