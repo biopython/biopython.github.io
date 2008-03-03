@@ -275,6 +275,10 @@ There should now be one less row in the ''biodatabase'' table, check this at the
 
 You can also check that the three orchid sequences have gone from the other tables.
 
+= How is the data stored =
+
+If you need or want to go direct to the data, bypassing the Biopython methods to retrieve records, then it would help to know more about how the underlying tables are used.  For this, we refer you to the BioSQL documentation, starting with their page on [http://www.biosql.org/wiki/Annotation_Mapping Annotation Mapping].
+
 = MySQL Tips and Tricks =
 
 If you are getting timeout errors, check to see if your SQL server has any orphaned threads.
