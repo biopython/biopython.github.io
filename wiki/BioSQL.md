@@ -61,17 +61,17 @@ For Windows users, see [BioSQL/Windows](BioSQL/Windows "wikilink").
 Downloading the BioSQL Schema & Scripts
 ---------------------------------------
 
-One the software is installed, your next task is to setup a database and
-import the BioSQL schema (i.e. setup the relevant tables within the
+Once the software is installed, your next task is to setup a database
+and import the BioSQL schema (i.e. setup the relevant tables within the
 database). See [BioSQL downloads](http://www.biosql.org/wiki/Downloads)
 -- you'll need to unzip the archive.
 
 Alternatively to get the very latest BioSQL, check out their SVN
 repository. Or, navigate to the relevant schema file for your database
 and download just that, e.g.
-[1](http://code.open-bio.org/svnweb/index.cgi/biosql/view/biosql-schema/trunk/sql/biosqldb-mysql.sql)
+[biosqldb-mysql.sql](http://code.open-bio.org/svnweb/index.cgi/biosql/view/biosql-schema/trunk/sql/biosqldb-mysql.sql)
 for MySQL. You will also want the NCBI Taxonomy loading perl script,
-[2](http://code.open-bio.org/svnweb/index.cgi/biosql/view/biosql-schema/trunk/scripts/load_ncbi_taxonomy.pl).
+[load\_ncbi\_taxonomy.pl](http://code.open-bio.org/svnweb/index.cgi/biosql/view/biosql-schema/trunk/scripts/load_ncbi_taxonomy.pl).
 
 Creating the empty database
 ---------------------------
