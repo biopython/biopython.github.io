@@ -227,8 +227,8 @@ from BioSQL import BioSeqDatabase
 server = BioSeqDatabase.open_database(driver="MySQLdb", user="root",
                      passwd = "", host = "localhost", db="bioseqdb")
 db = server["orchids"]
-for identifiers in ['6273291', '6273290', '6273289'] :
-    seq_record = db.lookup(gi=identifiers)
+for identifier in ['6273291', '6273290', '6273289'] :
+    seq_record = db.lookup(gi=identifier)
     print seq_record.id, seq_record.description[:50] + "..."
     print "Sequence length %i," % len(seq_record.seq)
 </source>
