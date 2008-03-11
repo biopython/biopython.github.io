@@ -35,7 +35,7 @@ usernames and passwords associated with database. And finally the
 details will also vary depending on your operating system.
 
 This text is based in part on the [BioSQL scheme INSTALL
-instructions](http://code.open-bio.org/cgi/viewcvs.cgi/*checkout*/biosql-schema/INSTALL?rev=HEAD&cvsroot=biosql&content-type=text/plain),
+instructions](http://code.open-bio.org/svnweb/index.cgi/biosql/view/biosql-schema/trunk/INSTALL),
 which also covers alternatives to MySQL.
 
 Installing Required Software
@@ -50,10 +50,9 @@ Ubuntu Linux machine try this:
 `sudo apt-get install mysql-common mysql-server python-mysqldb`
 
 It will also be important to have perl (to run some of the setup
-scripts) and cvs (to get some BioSQL files). Again, on a Debian or
-Ubuntu Linux machine try this:
+scripts). Again, on a Debian or Ubuntu Linux machine try this:
 
-`sudo apt-get install perl cvs`
+`sudo apt-get install perl`
 
 You may find perl is already installed.
 
@@ -63,27 +62,16 @@ Downloading the BioSQL Schema & Scripts
 ---------------------------------------
 
 One the software is installed, your next task is to setup a database and
-import the BioSQL scheme (i.e. setup the relevant tables within the
-database). If you have CVS installed, then on Linux you can download the
-latest schema like this (password is 'cvs').
+import the BioSQL schema (i.e. setup the relevant tables within the
+database). See [BioSQL downloads](http://www.biosql.org/wiki/Downloads)
+-- you'll need to unzip the archive.
 
-`cd ~`  
-`mkdir repository`  
-`cd repository`  
-`cvs -d :pserver:cvs@code.open-bio.org:/home/repository/biosql checkout biosql-schema`  
-`cd biosql-schema/sql`
-
-If you don't want to use CVS, then download the files via the [View CVS
-web
-interface](http://cvs.open-bio.org/cgi-bin/viewcvs/viewcvs.cgi/?cvsroot=biosql).
-Click the Download tarball link to get a tar.gz file containing all the
-current CVS file, and then unzip that.
-
-Or, navigate to the relevant schema file for your database and download
-just that, e.g.
-[biosql-schema/sql/biosqldb-mysql.sql](http://cvs.open-bio.org/cgi-bin/viewcvs/viewcvs.cgi/biosql-schema/sql/biosqldb-mysql.sql?cvsroot=biosql)
+Alternatively to get the very latest BioSQL, check out their SVN
+repository. Or, navigate to the relevant schema file for your database
+and download just that, e.g.
+[1](http://code.open-bio.org/svnweb/index.cgi/biosql/view/biosql-schema/trunk/sql/biosqldb-mysql.sql)
 for MySQL. You will also want the NCBI Taxonomy loading perl script,
-[scripts/load\_ncbi\_taxonomy.pl](http://cvs.open-bio.org/cgi-bin/viewcvs/viewcvs.cgi/biosql-schema/scripts/load_ncbi_taxonomy.pl?cvsroot=biosql).
+[2](http://code.open-bio.org/svnweb/index.cgi/biosql/view/biosql-schema/trunk/scripts/load_ncbi_taxonomy.pl).
 
 Creating the empty database
 ---------------------------
@@ -94,11 +82,10 @@ new database on your own computer called *bioseqdb*, belonging to the
 
 `mysqladmin -u root create bioseqdb`
 
-We can then tell MySQL to load the BioSQL scheme we downloaded above
-(file ~/repository/biosql-schema/sql/biosqldb-mysql.sql if you
-downloaded the files where we suggested).
+We can then tell MySQL to load the BioSQL scheme we downloaded above.
+Change to the scripts subdirectory from the unzipped BioSQL download,
+then:
 
-`cd ~/repository/biosql-schema/sql`  
 `mysql -u root bioseqdb < biosqldb-mysql.sql`
 
 You can have a quick play using the mysql command line tool, for
@@ -155,9 +142,10 @@ good idea to load the NCBI taxonomy database using the
 scripts/load\_ncbi\_taxonomy.pl script in the BioSQL package.
 
 The script should be able to download the files it needs from the [NCBI
-taxonomy FTP site](ftp://ftp.ncbi.nih.gov/pub/taxonomy/) automatically:
+taxonomy FTP site](ftp://ftp.ncbi.nih.gov/pub/taxonomy/) automatically.
+Change to the scripts subdirectory from the unzipped BioSQL download,
+then:
 
-`cd ~/repository/biosql-schema/scripts`  
 `./load_ncbi_taxonomy.pl --dbname bioseqdb --driver mysql --dbuser root --download true`
 
 There is about 10MB to fetch, so it can take a little while (and doesn't

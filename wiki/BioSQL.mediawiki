@@ -8,7 +8,7 @@ NOTE - At the time of writing, there are a few problems with BioSQL and Biopytho
 
 This is fairly complicated - partly because there are so many options. For example, you can use a range of different SQL database packages (we'll focus on MySQL), you can have the database on your own computer (the assumption here) or on a separate server, and of course there are usernames and passwords associated with database.  And finally the details will also vary depending on your operating system.
 
-This text is based in part on the [http://code.open-bio.org/cgi/viewcvs.cgi/*checkout*/biosql-schema/INSTALL?rev=HEAD&cvsroot=biosql&content-type=text/plain BioSQL scheme INSTALL instructions], which also covers alternatives to MySQL.
+This text is based in part on the [http://code.open-bio.org/svnweb/index.cgi/biosql/view/biosql-schema/trunk/INSTALL BioSQL scheme INSTALL instructions], which also covers alternatives to MySQL.
 
 == Installing Required Software ==
 
@@ -16,9 +16,9 @@ You will need to install some database software plus the associated python libra
 
  sudo apt-get install mysql-common mysql-server python-mysqldb
 
-It will also be important to have perl (to run some of the setup scripts) and cvs (to get some BioSQL files).  Again, on a Debian or Ubuntu Linux machine try this:
+It will also be important to have perl (to run some of the setup scripts).  Again, on a Debian or Ubuntu Linux machine try this:
 
- sudo apt-get install perl cvs
+ sudo apt-get install perl
 
 You may find perl is already installed.
 
@@ -26,17 +26,10 @@ For Windows users, see [[BioSQL/Windows]].
 
 == Downloading the BioSQL Schema & Scripts ==
 
-One the software is installed, your next task is to setup a database and import the BioSQL scheme (i.e. setup the relevant tables within the database).  If you have CVS installed, then on Linux you can download the latest schema like this (password is 'cvs').
+One the software is installed, your next task is to setup a database and import the BioSQL schema (i.e. setup the relevant tables within the database).  See [http://www.biosql.org/wiki/Downloads BioSQL downloads] -- you'll need to unzip the archive.
 
- cd ~
- mkdir repository
- cd repository
- cvs -d :pserver:cvs@code.open-bio.org:/home/repository/biosql checkout biosql-schema
- cd biosql-schema/sql
-
-If you don't want to use CVS, then download the files via the [http://cvs.open-bio.org/cgi-bin/viewcvs/viewcvs.cgi/?cvsroot=biosql View CVS web interface]. Click the Download tarball link to get a tar.gz file containing all the current CVS file, and then unzip that.
-
-Or, navigate to the relevant schema file for your database and download just that, e.g. [http://cvs.open-bio.org/cgi-bin/viewcvs/viewcvs.cgi/biosql-schema/sql/biosqldb-mysql.sql?cvsroot=biosql biosql-schema/sql/biosqldb-mysql.sql] for MySQL.  You will also want the NCBI Taxonomy loading perl script, [http://cvs.open-bio.org/cgi-bin/viewcvs/viewcvs.cgi/biosql-schema/scripts/load_ncbi_taxonomy.pl?cvsroot=biosql scripts/load_ncbi_taxonomy.pl].
+Alternatively to get the very latest BioSQL, check out their SVN repository.  
+Or, navigate to the relevant schema file for your database and download just that, e.g. [http://code.open-bio.org/svnweb/index.cgi/biosql/view/biosql-schema/trunk/sql/biosqldb-mysql.sql] for MySQL.  You will also want the NCBI Taxonomy loading perl script, [http://code.open-bio.org/svnweb/index.cgi/biosql/view/biosql-schema/trunk/scripts/load_ncbi_taxonomy.pl].
 
 == Creating the empty database ==
 
@@ -44,9 +37,8 @@ Assuming you are using MySQL, the following command line should create a new dat
 
  mysqladmin -u root create bioseqdb
 
-We can then tell MySQL to load the BioSQL scheme we downloaded above (file ~/repository/biosql-schema/sql/biosqldb-mysql.sql if you downloaded the files where we suggested).
+We can then tell MySQL to load the BioSQL scheme we downloaded above.  Change to the scripts subdirectory from the unzipped BioSQL download, then:
 
- cd ~/repository/biosql-schema/sql
  mysql -u root bioseqdb < biosqldb-mysql.sql
 
 You can have a quick play using the mysql command line tool, for example:
@@ -98,9 +90,8 @@ This should return no rows as the table is empty.
 
 Before you start trying to load sequences into the database, it is a good idea to load the NCBI taxonomy database using the scripts/load_ncbi_taxonomy.pl script in the BioSQL package.
 
-The script should be able to download the files it needs from the [ftp://ftp.ncbi.nih.gov/pub/taxonomy/ NCBI taxonomy FTP site] automatically:
+The script should be able to download the files it needs from the [ftp://ftp.ncbi.nih.gov/pub/taxonomy/ NCBI taxonomy FTP site] automatically.  Change to the scripts subdirectory from the unzipped BioSQL download, then:
 
- cd ~/repository/biosql-schema/scripts
  ./load_ncbi_taxonomy.pl --dbname bioseqdb --driver mysql --dbuser root --download true
 
 There is about 10MB to fetch, so it can take a little while (and doesn't give any feedback while this happens).  If you are worried, open a file browser window and check to see it is downloading a file called taxdump.tar.gz to the taxdata subdirectory.
