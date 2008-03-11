@@ -15,9 +15,6 @@ Download and install MySQL 5.1 from
 Download and install MySQLdb (the python interface) from
 <http://sourceforge.net/projects/mysql-python>
 
-Get the schema from
-<http://cvs.open-bio.org/cgi-bin/viewcvs/viewcvs.cgi/biosql-schema/sql/biosqldb-mysql.sql?cvsroot=biosql>
-
 Create a new database, and load the schema etc as described on
 [BioSQL](BioSQL "wikilink")
 
