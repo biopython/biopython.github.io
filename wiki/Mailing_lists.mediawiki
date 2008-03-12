@@ -22,4 +22,6 @@ Unmoderated list for Biopython developers and interested people.
 [http://lists.open-bio.org/mailman/listinfo/biopython-dev/ List Website] | [http://lists.open-bio.org/pipermail/biopython-dev/ Web Archive]
 
 === Searching ===
-[http://search.open-bio.org/cgi-bin/mail-search.cgi Search the mailing list archives.]
+[http://search.open-bio.org/cgi-bin/mail-search.cgi Search the mailing list archives.] (currently down)
+
+[http://www.google.com/search?q=site:biopython.org+inurl:pipermail&hl=en&safe=off&as_qdr=all Search the mailing lists archive with Google] (not very useful)

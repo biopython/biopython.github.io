@@ -42,3 +42,8 @@ Website](http://lists.open-bio.org/mailman/listinfo/biopython-dev/) |
 
 [Search the mailing list
 archives.](http://search.open-bio.org/cgi-bin/mail-search.cgi)
+(currently down)
+
+[Search the mailing lists archive with
+Google](http://www.google.com/search?q=site:biopython.org+inurl:pipermail&hl=en&safe=off&as_qdr=all)
+(not very useful)
