@@ -8,7 +8,7 @@ NOTE - At the time of writing, there are a few problems with BioSQL and Biopytho
 
 This is fairly complicated - partly because there are so many options. For example, you can use a range of different SQL database packages (we'll focus on MySQL), you can have the database on your own computer (the assumption here) or on a separate server, and of course there are usernames and passwords associated with database.  And finally the details will also vary depending on your operating system.
 
-This text is based in part on the [http://code.open-bio.org/svnweb/index.cgi/biosql/view/biosql-schema/trunk/INSTALL BioSQL scheme INSTALL instructions], which also covers alternatives to MySQL.
+This text is based in part on the [http://code.open-bio.org/svnweb/index.cgi/biosql/view/biosql-schema/trunk/INSTALL BioSQL schema INSTALL instructions], which also covers alternatives to MySQL.
 
 == Installing Required Software ==
 
