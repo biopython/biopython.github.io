@@ -172,6 +172,13 @@ left/right values*):
 This might be a good point for a tea break - I didn't time this but it
 was over ten minutes.
 
+One the initial tables have been populated, re-running the script is
+much faster. You can run this script again to update the taxonomy
+tables, which the NCBI do add to regularly. You may want to setup a
+scheduled job to do this automatically (say once a fortnight). It is a
+particularly good idea to do update the taxonomy *before* adding any new
+sequences to the database.
+
 Running the unit tests
 ----------------------
 

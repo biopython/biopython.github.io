@@ -112,6 +112,8 @@ You should see this output at the command prompt - be warned that some of these 
 
 This might be a good point for a tea break - I didn't time this but it was over ten minutes.
 
+One the initial tables have been populated, re-running the script is much faster.  You can run this script again to update the taxonomy tables, which the NCBI do add to regularly.  You may want to setup a scheduled job to do this automatically (say once a fortnight).  It is a particularly good idea to do update the taxonomy ''before'' adding any new sequences to the database.
+
 == Running the unit tests ==
 
 Because there are so many ways you could have setup your BioSQL database, you my have to tell the unit test a few bits of information.  If you have followed these instructions, then the unit test should just work (using CVS, what will be the next release after Biopython 1.44).
