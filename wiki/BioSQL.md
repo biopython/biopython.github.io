@@ -183,7 +183,7 @@ Running the unit tests
 ----------------------
 
 Because there are so many ways you could have setup your BioSQL
-database, you my have to tell the unit test a few bits of information.
+database, you may have to tell the unit test a few bits of information.
 If you have followed these instructions, then the unit test should just
 work (using CVS, what will be the next release after Biopython 1.44).
 

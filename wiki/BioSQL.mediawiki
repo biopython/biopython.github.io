@@ -116,7 +116,7 @@ One the initial tables have been populated, re-running the script is much faster
 
 == Running the unit tests ==
 
-Because there are so many ways you could have setup your BioSQL database, you my have to tell the unit test a few bits of information.  If you have followed these instructions, then the unit test should just work (using CVS, what will be the next release after Biopython 1.44).
+Because there are so many ways you could have setup your BioSQL database, you may have to tell the unit test a few bits of information.  If you have followed these instructions, then the unit test should just work (using CVS, what will be the next release after Biopython 1.44).
 
 If you have done things differently (e.g. PostgreSQL instead of MySQL, or using a different database username and password), then you need to edit the script Tests/setup_BioSQL.py and fill in the following fields:
 
