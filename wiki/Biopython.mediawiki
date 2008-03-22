@@ -8,6 +8,6 @@ It is a distributed collaborative effort to develop Python libraries and applica
 === Download Current Release ===
 
 
-The latest release is Biopython 1.44, released on 28 October 2007. Get it from our  [[Download]] page.
+The latest release is Biopython 1.45, released on 22 March 2008. Get it from our  [[Download]] page.
 
 See the [[News|News page]] as well.
