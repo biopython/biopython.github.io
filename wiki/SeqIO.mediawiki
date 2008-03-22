@@ -134,7 +134,7 @@ for column in range(alignment.get_alignment_length()) :
 
 In the future it may be possible to do this directly via the Alignment object.
 
-We plan to introduce another function in Biopython 1.45, '''Bio.SeqIO.read()''', which like '''Bio.SeqIO.parse()''' will expect a handle and format.  It is for use when the handle contains one and only one record, which is returned as a single [[SeqRecord]] object.  If there are no records, or more than one, then an exception is raised:
+Biopython 1.45 introduced another function, '''Bio.SeqIO.read()''', which like '''Bio.SeqIO.parse()''' will expect a handle and format.  It is for use when the handle contains one and only one record, which is returned as a single [[SeqRecord]] object.  If there are no records, or more than one, then an exception is raised:
 
 <source lang=python>
 from Bio import SeqIO
