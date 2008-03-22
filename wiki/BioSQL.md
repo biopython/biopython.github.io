@@ -21,8 +21,8 @@ database adaptors and basic usage of BioSQL. This is a little old, and I
 am hoping to use this wiki page to update the above documentation in
 future.
 
-NOTE - At the time of writing, there are a few problems with BioSQL and
-Biopython 1.44 which are being fixed in CVS.
+The following text applies to Biopython 1.45 or later (and won't work
+with Biopython 1.44).
 
 Installation
 ============
