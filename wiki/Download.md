@@ -19,19 +19,19 @@ See also [What's new](http://biopython.open-bio.org/SRC/biopython/NEWS).
 ### Files
 
 -   Source Tarball --
-    [biopython-1.44.tar.gz](http://biopython.org/DIST/biopython-1.45.tar.gz)
+    [biopython-1.45.tar.gz](http://biopython.org/DIST/biopython-1.45.tar.gz)
     3,886 Kb
 -   Source Zip File --
-    [biopython-1.44.zip](http://biopython.org/DIST/biopython-1.45.zip)
+    [biopython-1.45.zip](http://biopython.org/DIST/biopython-1.45.zip)
     4,395 Kb
 -   Windows Installer for Python 2.3 --
-    [biopython-1.45.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.44.win32-py2.3.exe)
+    [biopython-1.45.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.45.win32-py2.3.exe)
     1,113 Kb
 -   Windows Installer for Python 2.4 --
-    [biopython-1.45.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.44.win32-py2.4.exe)
+    [biopython-1.45.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.45.win32-py2.4.exe)
     1,141 Kb
 -   Windows Installer for Python 2.5 --
-    [biopython-1.45.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.44.win32-py2.5.exe)
+    [biopython-1.45.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.45.win32-py2.5.exe)
     1,142 Kb
 
 ### Required Software
