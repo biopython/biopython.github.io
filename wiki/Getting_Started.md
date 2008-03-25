@@ -74,8 +74,7 @@ Beginners
         Reference](http://rgruet.free.fr/PQR25/PQR2.5.html)
 -   Browse the [Biopython
     Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
--   Examine the [Class
-    Diagram](http://biopython.org/DIST/docs/api/public/trees.html) if
+-   Examine the [Class Diagram](http://biopython.org/DIST/docs/api) if
     you'd like to know more about the relationships between the modules.
 
 Further reading
