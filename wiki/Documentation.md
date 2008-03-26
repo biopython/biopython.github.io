@@ -127,6 +127,14 @@ Bio.PDB module).
 [HTML](http://biopython.org/DIST/docs/acm/ACMbiopy.html) |
 [PDF](http://biopython.org/DIST/docs/acm/ACMbiopy.pdf)
 
+-   Python for Bioinformatics PLOS tutorial featuring Biopython.
+
+<biblio>
+
+1.  Bassi pmid=18052533
+
+</biblio>
+
 #### Presentations
 
 -   BOSC 2007 presentation "Biopython Project Update"

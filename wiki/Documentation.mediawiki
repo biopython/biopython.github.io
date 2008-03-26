@@ -47,6 +47,10 @@ New to BioPython? Check out the [[Getting_Started|Getting Started]] page, or fol
 </biblio>
 *Brad and Jeff wrote a paper for the ACM SIG-BIO newsletter back in August of 2000.
 :[http://biopython.org/DIST/docs/acm/ACMbiopy.html HTML] | [http://biopython.org/DIST/docs/acm/ACMbiopy.pdf PDF]
+*Python for Bioinformatics PLOS tutorial featuring Biopython.
+<biblio>
+#Bassi pmid=18052533
+</biblio>
 
 ==== Presentations ====
 
