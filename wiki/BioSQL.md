@@ -165,6 +165,8 @@ then:
 
 `./load_ncbi_taxonomy.pl --dbname bioseqdb --driver mysql --dbuser root --download true`
 
+For PostgreSQL you need to substitute *Pg* for *mysql*.
+
 There is about 10MB to fetch, so it can take a little while (and doesn't
 give any feedback while this happens). If you are worried, open a file
 browser window and check to see it is downloading a file called
