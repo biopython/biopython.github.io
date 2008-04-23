@@ -248,8 +248,7 @@ db = server.new_database("orchids", description="Just for testing")
 server.adaptor.commit()
 ```
 
-PostgreSQL
-----------
+### PostgreSQL
 
 ``` python
 from BioSQL import BioSeqDatabase
@@ -269,7 +268,13 @@ Python](http://www.python.org/dev/peps/pep-0020/)) and [bug
 There should now be a single row in the *biodatabase* table for our new
 orchid database. You can check this at the command line:
 
+### MySQL
+
 `mysql --user=root bioseqdb -e "select * from biodatabase;"`
+
+### PostgreSQL
+
+`psql -c "SELECT * FROM biodatabase;" bioseqdb`
 
 Which should give something like this (assuming you haven't done any
 other testing yet):

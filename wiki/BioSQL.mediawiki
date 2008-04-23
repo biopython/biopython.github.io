@@ -172,7 +172,7 @@ db = server.new_database("orchids", description="Just for testing")
 server.adaptor.commit()
 </source>
 
-== PostgreSQL ==
+=== PostgreSQL ===
 
 <source lang=python>
 from BioSQL import BioSeqDatabase
@@ -187,7 +187,13 @@ The call ''server.adaptor.commit()'' tells the database to save the changes so f
 There should now be a single row in the ''biodatabase'' table for
 our new orchid database.  You can check this at the command line:
 
+=== MySQL ===
+
  mysql --user=root bioseqdb -e "select * from biodatabase;"
+
+=== PostgreSQL ===
+
+ psql -c "SELECT * FROM biodatabase;" bioseqdb
 
 Which should give something like this (assuming you haven't done any other testing yet):
 
