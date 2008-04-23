@@ -238,8 +238,7 @@ BioSQL lets us define named "sub" databases within the single SQL
 database (which we called *bioseqdb* earlier). For this example, lets
 create a one for some orchid sequences:
 
-MySQL
------
+### MySQL
 
 ``` python
 from BioSQL import BioSeqDatabase
