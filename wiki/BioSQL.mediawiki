@@ -33,7 +33,9 @@ Or, navigate to the relevant schema file for your database and download just tha
 
 == Creating the empty database ==
 
-Assuming you are using MySQL, the following command line should create a new database on your own computer called ''bioseqdb'', belonging to the ''root'' user account:
+=== MySQL ===
+
+The following command line should create a new database on your own computer called ''bioseqdb'', belonging to the ''root'' user account:
 
  mysqladmin -u root create bioseqdb
 
@@ -85,6 +87,20 @@ Or, to look inside a table:
  mysql --user=root bioseqdb -e "select * from bioentry;"
 
 This should return no rows as the table is empty.
+
+=== PostgreSQL ===
+
+First you need to set up user permissions, if you are not sure how to do this, try:
+
+  su - postgres
+  createuser <your user name>
+
+Then, assuming you are logged-in as <your user name> and Postgres is running on the local machine, you should be able to do the following:
+
+ createdb biosqldb
+ psql biosqldb < biosqldb-pg.sql
+
+Run ''psql'' and type enter ''\d <ENTER>'' to see all the entities created.
 
 == NCBI Taxonomy ==
 
