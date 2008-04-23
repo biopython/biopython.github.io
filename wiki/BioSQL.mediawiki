@@ -156,6 +156,8 @@ Change these to match your setup.  You can then run the BioSQL unit tests as nor
 
  python run_tests.py test_BioSQL test_BioSQL_SeqIO
 
+The driver for PostgreSQL is ''psycopg''
+
 = Creating a (sub) database =
 
 BioSQL lets us define named "sub" databases within the single SQL database (which we called ''bioseqdb'' earlier).  For this example, lets create a one for some orchid sequences:

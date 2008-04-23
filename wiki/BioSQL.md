@@ -229,6 +229,8 @@ as normal, e.g.
 
 `python run_tests.py test_BioSQL test_BioSQL_SeqIO`
 
+The driver for PostgreSQL is *psycopg*
+
 Creating a (sub) database
 =========================
 
