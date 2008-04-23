@@ -238,10 +238,23 @@ BioSQL lets us define named "sub" databases within the single SQL
 database (which we called *bioseqdb* earlier). For this example, lets
 create a one for some orchid sequences:
 
+MySQL
+-----
+
 ``` python
 from BioSQL import BioSeqDatabase
 server = BioSeqDatabase.open_database(driver="MySQLdb", user="root",
                      passwd = "", host = "localhost", db="bioseqdb")
+db = server.new_database("orchids", description="Just for testing")
+server.adaptor.commit()
+```
+
+PostgreSQL
+----------
+
+``` python
+from BioSQL import BioSeqDatabase
+server = BioSeqDatabase.open_database(driver="psycopg", user="root", db="bioseqdb")
 db = server.new_database("orchids", description="Just for testing")
 server.adaptor.commit()
 ```
