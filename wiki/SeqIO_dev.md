@@ -55,8 +55,8 @@ To add support for writing a new file format you should write a sub
 class of one of the writer objects in Bio.SeqIO.Interfaces
 
 Then, the new format must be added to the relevant dictionary mappings
-in Bio/SeqIO/\_\_init\_\_.py so that the **Bio.SeqIO.parse** and
-**Bio.SeqIO.write** functions are aware of it.
+in Bio/SeqIO/\_\_init\_\_.py so that the **Bio.SeqIO.write()** function
+is aware of your code.
 
 If the supplied records cannot be written to this file format, raise a
 ValueError exception. Where appropriate, please use the following
