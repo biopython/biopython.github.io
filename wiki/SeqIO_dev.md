@@ -46,6 +46,10 @@ try and document this more.
 
 If the supplied file seems to be invalid, raise a ValueError exception.
 
+Finally, the new format must be added to the relevant dictionary mapping
+in Bio/SeqIO/\_\_init\_\_.py so that the **Bio.SeqIO.parse()** and
+**Bio.SeqIO.read()** functions are aware of it.
+
 Writing new file formats
 ------------------------
 

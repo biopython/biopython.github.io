@@ -22,6 +22,8 @@ When storing any annotations in the record's annotations dictionary follow the d
 
 If the supplied file seems to be invalid, raise a ValueError exception.
 
+Finally, the new format must be added to the relevant dictionary mapping in Bio/SeqIO/__init__.py so that the '''Bio.SeqIO.parse()''' and '''Bio.SeqIO.read()''' functions are aware of it.
+
 == Writing new file formats ==
 
 '''Note:''' The details are still subject to change
