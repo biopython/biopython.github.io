@@ -44,7 +44,7 @@ When storing any annotations in the record's annotations dictionary
 follow the defacto standard laid down by the GenBank parser... I should
 try and document this more.
 
-If the supplied file seems to be invalid, raise a SyntaxError exception.
+If the supplied file seems to be invalid, raise a ValueError exception.
 
 Writing new file formats
 ------------------------
