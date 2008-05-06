@@ -331,10 +331,8 @@ from Bio import SeqIO
 from Bio.SeqRecord import SeqRecord
 from random import randint
 
-handle = open("NC_006581.gbk")
 #There should be one and only one record, the entire genome:
-mito_record = SeqIO.parse(handle, "genbank").next()
-handle.close()
+mito_record = SeqIO.read(open("NC_006581.gbk"), "genbank")
 
 mito_frags=[]
 limit=len(mito_record.seq)
@@ -342,10 +340,10 @@ for i in range(0, 500) :
     start=randint(0,limit-200)
     end=start+200
     mito_frag=mito_record.seq[start:end]
-    new_mito=SeqRecord(mito_frag,'fragment_%i' % (i+1),'','')
-    mito_frags.append(new_mito)
+    record=SeqRecord(mito_frag,'fragment_%i' % (i+1),'','')
+    mito_frags.append(record)
 
-output_handle = open("/tmp/mitofrags.fasta", "w")
+output_handle = open("mitofrags.fasta", "w")
 SeqIO.write(mito_frags, output_handle, "fasta")
 output_handle.close()
 </source>
