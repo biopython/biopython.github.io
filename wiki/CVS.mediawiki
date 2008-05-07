@@ -29,4 +29,4 @@ Write CVS access is available for Biopython developers. This is normally given o
 
 === Migration to Subversion ===
 
-Most of the other [http://open-bio.org Open Bioinformatics Foundation] projects have already migrated from CVS to [[SVN|Subversion (SVN)]].  Biopython will also be moving over shortly.
+Most of the other [http://open-bio.org Open Bioinformatics Foundation] projects have already migrated from CVS to [[SVN|Subversion (SVN)]].  Biopython will also be [[Subversion_migration|moving from CVS to SVN]] shortly.

@@ -51,4 +51,5 @@ page](http://www.bioperl.org/wiki/Using_CVS) are very helpful.
 
 Most of the other [Open Bioinformatics Foundation](http://open-bio.org)
 projects have already migrated from CVS to [Subversion
-(SVN)](SVN "wikilink"). Biopython will also be moving over shortly.
+(SVN)](SVN "wikilink"). Biopython will also be [moving from CVS to
+SVN](Subversion_migration "wikilink") shortly.
