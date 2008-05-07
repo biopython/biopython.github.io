@@ -26,3 +26,7 @@ You can also access a read-only version of the CVS sources using our anonymous C
 === Write CVS Access ===
 
 Write CVS access is available for Biopython developers. This is normally given on a case by case basis, and the best place to discuss getting write access is on the [mailto:biopython-dev@biopython.org Biopython Development mailing list].  Once you have access, the instructions on [http://www.bioperl.org/wiki/Using_CVS BioPerl's CVS wiki page] are very helpful.
+
+=== Migration to Subversion ===
+
+Most of the other [http://open-bio.org Open Bioinformatics Foundation] projects have already migrated from CVS to [[SVN|Subversion (SVN)]].  Biopython will also be moving over shortly.

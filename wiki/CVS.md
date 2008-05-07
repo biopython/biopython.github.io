@@ -46,3 +46,9 @@ write access is on the [Biopython Development mailing
 list](mailto:biopython-dev@biopython.org). Once you have access, the
 instructions on [BioPerl's CVS wiki
 page](http://www.bioperl.org/wiki/Using_CVS) are very helpful.
+
+### Migration to Subversion
+
+Most of the other [Open Bioinformatics Foundation](http://open-bio.org)
+projects have already migrated from CVS to [Subversion
+(SVN)](SVN "wikilink"). Biopython will also be moving over shortly.
