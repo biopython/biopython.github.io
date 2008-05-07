@@ -11,5 +11,5 @@ now migrated from CVS to Subversion (SVN). Biopython will also be moving
 over shortly.
 
 Over on the BioPerl wiki, they have [SVN usage
-instructions](http://bioperl.org/wiki/Using_Subversion) which will
-generally apply to Biopython after the migration.
+instructions](bp:Using_Subversion "wikilink") which will generally apply
+to Biopython after the migration.
