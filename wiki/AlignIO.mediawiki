@@ -59,7 +59,7 @@ As in [[SeqIO|Bio.SeqIO]], there are two functions for alignment input.  These a
 
 Both these functions have two required arguments, a file handle and a file format.  As with [[SeqIO|Bio.SeqIO]], Biopython insists that you explicitly give the expected file format, rather than attempting to guess this based on the filename or contents.  The file format is specified as a lower case string, see the table above.
 
-As an example, we'll look at a PFAM ''seed alignment'' for the Fibrinogen gamma chain [http://pfam.sanger.ac.uk/family?acc=PF09395 PF09395 Fib_gamma].  At the time of writing, this contained 14 sequences with an alignment length of 42 amino acids, and is shown below in the PFAM or Stockholm format:
+As an example, we'll look at a PFAM ''seed alignment'' for the Fibrinogen gamma chain [http://pfam.sanger.ac.uk/family?acc=PF09395 PF09395 Fib_gamma].  At the time of writing, this contained 14 sequences with an alignment length of 77 amino acids, and is shown below in the PFAM or Stockholm format:
 <pre>
 # STOCKHOLM 1.0
 #=GS Q7ZVG7_BRARE/37-110  AC Q7ZVG7.1
@@ -107,7 +107,34 @@ FIBG_XENLA/38-114            RFGEYCPTTCGISDFLNRYQENVDTDLQYLENLLTQISNSTSGTTIIVEHL
 
 You will notice that there is plenty of annotation information here, including accession numbers for each sequence and also some PDB database cross-references and secondary structure information for the human and chick fibrinogen proteins.
 
-This file contains a single alignment, so we can use the '''Bio.AlignIO.read()''' function to load it in Biopython.
+This file contains a single alignment, so we can use the '''Bio.AlignIO.read()''' function to load it in Biopython.  Let's assume you have downloaded this alignment from Sanger, or have copy and pasted the text above, and saved this as a file called '''PF09395_seed.sth''' on your computer.  Then in python:
+
+<source lang=python>
+from Bio import AlignIO
+alignment = AlignIO.read(open("PF09395_seed.sth"), "stockholm")
+print "Alignment length %i" % alignment.get_alignment_length()
+for record in alignment :
+    print record.seq, record.id
+</source>
+
+That should give:
+
+<pre>
+GFGTYCPTTCGVADYLQRYKPDMDKKLDDMEQDLEEIANLTRGAQDKVVYLK---DSEAQAQKQSPDTYIKKSSNML Q7ZVG7_BRARE/37-110
+RFGSYCPTTCGIADFLSTYQATVDKDLQTLEDILSQAENKTMEAKELVKAIQVSYLPEDPARPNRVELATKDSKKMM Q6X871_SCAAQ/1-77
+RFGSYCPTTCGIADFLSTYQTGVXNDLRTLEDLLSGIENKTSEAKELIKSIQVSYNPNEPPKPNTIVSATKDSKKMM O02676_CROCR/1-77
+RFGSYCPTTCGIADFLSTYQGSIDKDLQTLEDILNQVENKTXEASELIKSIQVSYNPDEPPRPNMIEGATQKSKKML Q6X869_TENEC/1-77
+RFGSYCPTTCGIADFLSTYQTKVDKDLQSLEDILHQVENKTSEVKQLIKAIQLTYNPDESSKPNMIDAATLKSRKML FIBG_HUMAN/40-116
+RFGSYCPTTCGIADFLSTYQTXVDKDLQVLEDILNQAENKTSEAKELIKAIQVRYKPDEPTKPGGIDSATRESKKML O02689_TAPIN/1-77
+RFGSYCPTMCGIAGFLSTYQNTVEKDLQNLEGILHQVENKTSEARELIKAIQISYNPEDLSKPDRIQSATKESKKML O02688_PIG/1-77
+RFGSYCPTTCGVADFLSNYQTSVDKDLQNLEGILYQVENKTSEARELVKAIQISYNPDEPSKPNNIESATKNSKRMM O02672_9CETA/1-77
+RFGSYCPTTCGIADFLSNYQTSVDKDLQDFEDILHRAENQTSEAEQLIQAIRTSYNPDEPPKTGRIDAATRESKKMM O02682_EQUPR/1-77
+RFGSYCPTTCGIADFLSTYQTKVDEDLQNLEDILYRVENRTSEAKELIKAIQVDYNPGEPPKQSVTEGATQNAKKMV Q6X870_CYNVO/1-77
+RFGSYCPTTCGISDFLNSYQTDVDTDLQTLENILQRAENRTTEAKELIKAIQVYYNPDQPPKPGMIEGATQKSKKMV FIBG_RAT/40-116
+RFGSYCPTTCGIADFLNKYQTTIDQDLRHMEETLRDIDNKTAESTLLIQKIQIGQTPDPRPQ-NVIGDVTQKSRKMI Q6X866_DROAU/1-76
+RFGSYCPTTCGIADFFNKYRLTTDGELLEIEGLLQQATNSTGSIEYLIQHIKTIYPSEKQTLPQSIEQLTQKSKKII O93568_CHICK/40-116
+RFGEYCPTTCGISDFLNRYQENVDTDLQYLENLLTQISNSTSGTTIIVEHLIDSGKKPATSPQTAIDPMTQKSKTCW FIBG_XENLA/38-114
+</pre>
 
 == Alignment Output ==
 
