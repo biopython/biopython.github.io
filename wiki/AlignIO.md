@@ -60,3 +60,40 @@ Bio.SeqIO](SeqIO#File_Formats "wikilink"). The most common example of
 this is storing multiple alignments in the simple fasta format. However,
 storing more than one alignment in a single such file is ambiguous - see
 the section below on alignment input.
+
+Alignment Input
+---------------
+
+As in [Bio.SeqIO](SeqIO "wikilink"), there are two functions for
+alignment input. These are **Bio.AlignIO.read()** for when the file
+contains one and only one alignment, and the more general
+**Bio.AlignIO.parse()** when the file may contain multiple separate
+alignments.
+
+Alignment Output
+----------------
+
+As in [Bio.SeqIO](SeqIO "wikilink"), there is a single output function
+**Bio.AlignIO.write()**.
+
+File Format Conversion
+----------------------
+
+Suppose you have a file containing PHYLIP alignment(s) that you want to
+convert into the PFAM/Stockholm format:
+
+``` python
+from Bio import AlignIO
+
+input_handle = open("example.phy", "rU")
+output_handle = open("example.sth", "w")
+
+alignments = AlignIO.parse(input_handle, "phylip")
+AlignIO.write(alignments, output_handle, "stockholm")
+
+output_handle.close()
+input_handle.close()
+```
+
+By changing the format strings, that code could be used to convert
+between any supported file formats.
