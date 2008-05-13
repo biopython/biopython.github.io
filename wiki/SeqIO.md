@@ -32,7 +32,7 @@ formats](bp:Sequence_formats_sequence_file_formats "wikilink") and
 formats](bp:Multiple_alignment_formats_multiple_alignment_formats "wikilink").
 
 Note that the inclusion of Bio.SeqIO (and
-[Bio.AlignIO](Bio.AlignIO "wikilink")) in Biopython does lead to some
+[Bio.AlignIO](AlignIO "wikilink")) in Biopython does lead to some
 duplication or choice in how to deal with some file formats. For
 example, Bio.Nexus will also read sequences from Nexus files - but
 Bio.Nexus can also do much more, for example reading any phylogenetic
