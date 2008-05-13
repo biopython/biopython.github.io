@@ -94,9 +94,9 @@ function **open**. The argument 'rU' means open for **r**eading using
 file uses Unix, Mac or DOS/Windows style newline characters.
 
 Note that you *must* specify the file format explicitly, unlike
-[BioPerl's SeqIO](http://www.bioperl.org/wiki/HOWTO:SeqIO) which can try
-to guess using the file name extension and/or the file contents. See
-*Explicit is better than implicit* ([The Zen of
+[BioPerl's SeqIO](bp:HOWTO:SeqIO "wikilink") which can try to guess
+using the file name extension and/or the file contents. See *Explicit is
+better than implicit* ([The Zen of
 Python](http://www.python.org/dev/peps/pep-0020/)).
 
 If you had a different type of file, for example a Clustalw alignment
@@ -157,7 +157,8 @@ for column in range(alignment.get_alignment_length()) :
 ```
 
 In the future it may be possible to do this directly via the Alignment
-object.
+object. See also the [Bio.AlignIO](AlignIO "wikilink") module for
+working directly with Alignment objects.
 
 Biopython 1.45 introduced another function, **Bio.SeqIO.read()**, which
 like **Bio.SeqIO.parse()** will expect a handle and format. It is for

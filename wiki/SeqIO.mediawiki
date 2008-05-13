@@ -86,7 +86,7 @@ handle.close()
 
 In the above example, we opened the file using the built-in python function '''open'''.  The argument 'rU' means open for '''r'''eading using '''u'''niversal readline mode - this means you don't have to worry if the file uses Unix, Mac or DOS/Windows style newline characters.
 
-Note that you ''must'' specify the file format explicitly, unlike [http://www.bioperl.org/wiki/HOWTO:SeqIO BioPerl's SeqIO] which can try to guess using the file name extension and/or the file contents.  See ''Explicit is better than implicit'' ([http://www.python.org/dev/peps/pep-0020/ The Zen of Python]).
+Note that you ''must'' specify the file format explicitly, unlike [[bp:HOWTO:SeqIO|BioPerl's SeqIO]] which can try to guess using the file name extension and/or the file contents.  See ''Explicit is better than implicit'' ([http://www.python.org/dev/peps/pep-0020/ The Zen of Python]).
 
 If you had a different type of file, for example a Clustalw alignment file such as '[http://biopython.open-bio.org/SRC/biopython/Tests/Clustalw/opuntia.aln opuntia.aln]' which contains seven sequences, the only difference is you specify "clustal" instead of "fasta":
 
@@ -132,7 +132,7 @@ for column in range(alignment.get_alignment_length()) :
     print  "%s column %i" % (alignment.get_column(column),column)
 </source>
 
-In the future it may be possible to do this directly via the Alignment object.
+In the future it may be possible to do this directly via the Alignment object.  See also the [[AlignIO|Bio.AlignIO]] module for working directly with Alignment objects.
 
 Biopython 1.45 introduced another function, '''Bio.SeqIO.read()''', which like '''Bio.SeqIO.parse()''' will expect a handle and format.  It is for use when the handle contains one and only one record, which is returned as a single [[SeqRecord]] object.  If there are no records, or more than one, then an exception is raised:
 
