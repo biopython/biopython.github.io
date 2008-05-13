@@ -65,13 +65,13 @@ SeqIO](http://www.bioperl.org/wiki/HOWTO:SeqIO#Formats) and
 | stockholm   | Yes   | Yes    | Also known as PFAM format.                  |
 ||
 
-At the moment (unlike BioPerl) sequence alignment file formats are
-treated much like any other sequence file. You can convert a set of
-records from any file format into an alignment - provided they are all
-the same length.
-
-Note that when writing your data to an alignment file format, all the
-(gapped) sequences should be the same length.
+With Bio.SeqIO you can treat sequence alignment file formats just like
+any other sequence file, but the new [Bio.AlignIO](AlignIO "wikilink")
+module is designed to work with such alignment files directly. You can
+also convert a set of [SeqRecord](SeqRecord "wikilink") objects from any
+file format into an alignment - provided they are all the same length.
+Note that when using Bio.SeqIO to write sequences to an alignment file
+format, all the (gapped) sequences should be the same length.
 
 Sequence Input
 --------------
