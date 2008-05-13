@@ -16,23 +16,27 @@ in addition to this WIKI page.
 Aims
 ----
 
-We would like to recreate the simplicity of [BioPerl's
-SeqIO](http://www.bioperl.org/wiki/HOWTO:SeqIO), and in the long term
-its impressive list of supported [sequence file
-formats](http://www.bioperl.org/wiki/Sequence_formats) and [multiple
-alignment
-formats](http://www.bioperl.org/wiki/Multiple_alignment_formats).
+Bio.SeqIO provides a simple uniform interface to input and output
+assorted sequence file formats (including multiple sequence alignments),
+but will *only* deal with sequences as [SeqRecord](SeqRecord "wikilink")
+objects. I am also working on a sister interface
+[Bio.AlignIO](AlignIO "wikilink") for working directly with sequence
+alignment files as Alignment objects.
 
-Bio.SeqIO provides a simple uniform interface to assorted file formats
-(including multiple sequence alignments), but will *only* return
-sequences as [SeqRecord](SeqRecord "wikilink") objects (which can be
-turned into alignment objects).
+The design was partly inspired by the simplicity of [bp:HOWTO:SeqIO
+BioPerl's SeqIO](bp:HOWTO:SeqIO_BioPerl's_SeqIO "wikilink"). In the long
+term we hope to match BioPerl's impressive list of supported
+[bp:Sequence\_formats sequence file
+formats](bp:Sequence_formats_sequence_file_formats "wikilink") and
+[bp:Multiple\_alignment\_formats multiple alignment
+formats](bp:Multiple_alignment_formats_multiple_alignment_formats "wikilink").
 
-Note that the inclusion of Bio.SeqIO does lead to some duplication or
-choice in how to deal with some file formats. For example, Bio.SeqIO and
-Bio.Nexus will both read sequences from Nexus files - but Bio.Nexus can
-also do much more, for example reading any phylogenetic trees in a Nexus
-file.
+Note that the inclusion of Bio.SeqIO (and
+[Bio.AlignIO](Bio.AlignIO "wikilink")) in Biopython does lead to some
+duplication or choice in how to deal with some file formats. For
+example, Bio.Nexus will also read sequences from Nexus files - but
+Bio.Nexus can also do much more, for example reading any phylogenetic
+trees in a Nexus file.
 
 My vision is that for manipulating sequence data you should try
 Bio.SeqIO as your first choice. Unless you have some very specific
