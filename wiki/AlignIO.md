@@ -35,3 +35,28 @@ the sequences themselves, in which case try using
 you have some very specific requirements, I hope this should suffice.
 
 Peter
+
+File Formats
+------------
+
+This table lists the file formats that Bio.SeqIO can read and write. The
+format name is a simple lowercase string. Where possible we use the same
+name as [BioPerl's
+SeqIO](http://www.bioperl.org/wiki/HOWTO:SeqIO#Formats) and
+[EMBOSS](http://emboss.sourceforge.net/docs/themes/SequenceFormats.html).
+
+| Format name | Reads | Writes | Notes                                                                                                                                                                                              |
+|-------------|-------|--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| fasta       | Yes   | Yes    | This refers to the input file format introduced for Bill Pearson's FASTA tool, where each record starts with a "&gt;" line. Note that storing more than one alignment in this format is ambiguous. |
+| clustal     | Yes   | Yes    | See also Bio.Clustalw for calling the command line tool.                                                                                                                                           |
+| nexus       | Yes   | No     | Also known as PAUP format. Uses Bio.Nexus                                                                                                                                                          |
+| phylip      | Yes   | Yes    | Truncates names at 10 characters.                                                                                                                                                                  |
+| stockholm   | Yes   | Yes    | Also known as PFAM format.                                                                                                                                                                         |
+||
+
+In addition, you can store the (gapped) sequences from an alignment in
+any of the [file formats supported by
+Bio.SeqIO](SeqIO#File_Formats "wikilink"). The most common example of
+this is storing multiple alignments in the simple fasta format. However,
+storing more than one alignment in a single such file is ambiguous - see
+the section below on alignment input.
