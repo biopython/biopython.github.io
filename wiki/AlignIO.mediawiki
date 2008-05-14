@@ -34,6 +34,11 @@ This table lists the file formats that Bio.SeqIO can read and write.  The format
 | Yes
 | See also Bio.Clustalw for calling the command line tool.
 |-
+| emboss
+| Yes
+| Soon...
+| The EMBOSS simple/pairs alignment format.
+|-
 | nexus
 | Yes
 | No
