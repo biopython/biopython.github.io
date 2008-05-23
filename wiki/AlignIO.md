@@ -45,14 +45,15 @@ name as [BioPerl's
 SeqIO](http://www.bioperl.org/wiki/HOWTO:SeqIO#Formats) and
 [EMBOSS](http://emboss.sourceforge.net/docs/themes/SequenceFormats.html).
 
-| Format name | Reads | Writes  | Notes                                                                                                                                                                                              |
-|-------------|-------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| fasta       | Yes   | Yes     | This refers to the input file format introduced for Bill Pearson's FASTA tool, where each record starts with a "&gt;" line. Note that storing more than one alignment in this format is ambiguous. |
-| clustal     | Yes   | Yes     | See also Bio.Clustalw for calling the command line tool.                                                                                                                                           |
-| emboss      | Yes   | Soon... | The EMBOSS simple/pairs alignment format.                                                                                                                                                          |
-| nexus       | Yes   | No      | Also known as PAUP format. Uses Bio.Nexus                                                                                                                                                          |
-| phylip      | Yes   | Yes     | Truncates names at 10 characters.                                                                                                                                                                  |
-| stockholm   | Yes   | Yes     | Also known as PFAM format.                                                                                                                                                                         |
+| Format name | Reads | Writes  | Notes                                                                                                                                                                                                    |
+|-------------|-------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| fasta       | Yes   | Yes     | This refers to the input file format introduced for Bill Pearson's FASTA tool, where each record starts with a "&gt;" line. Note that storing more than one alignment in this format is ambiguous.       |
+| fasta-m10   | Yes   | No      | This refers to the pairwise output from Bill Pearson's FASTA tools, specifically the machine readable version when the -m 10 command line is used. The default free format text output is not supported. |
+| clustal     | Yes   | Yes     | See also Bio.Clustalw for calling the command line tool.                                                                                                                                                 |
+| emboss      | Yes   | Soon... | The EMBOSS simple/pairs alignment format.                                                                                                                                                                |
+| nexus       | Yes   | No      | Also known as PAUP format. Uses Bio.Nexus internally.                                                                                                                                                    |
+| phylip      | Yes   | Yes     | The PHYLIP format truncates names at 10 characters.                                                                                                                                                      |
+| stockholm   | Yes   | Yes     | Also known as PFAM format, this supports rich annotation.                                                                                                                                                |
 ||
 
 In addition, you can store the (gapped) sequences from an alignment in
