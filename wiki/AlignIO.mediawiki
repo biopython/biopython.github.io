@@ -149,7 +149,7 @@ RFGEYCPTTCGISDFLNRYQENVDTDLQYLENLLTQISNSTSGTTIIVEHLIDSGKKPATSPQTAIDPMTQKSKTCW FI
 
 == Alignment Output ==
 
-As in [[SeqIO|Bio.SeqIO]], there is a single output function '''Bio.AlignIO.write()'''.
+As in [[SeqIO|Bio.SeqIO]], there is a single output function '''Bio.AlignIO.write()'''.  This takes three arguments: some alignments, a file handle to write to, and the format to use.
 
 == File Format Conversion ==
 

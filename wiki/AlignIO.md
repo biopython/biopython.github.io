@@ -168,7 +168,8 @@ Alignment Output
 ----------------
 
 As in [Bio.SeqIO](SeqIO "wikilink"), there is a single output function
-**Bio.AlignIO.write()**.
+**Bio.AlignIO.write()**. This takes three arguments: some alignments, a
+file handle to write to, and the format to use.
 
 File Format Conversion
 ----------------------
