@@ -6,8 +6,11 @@ layout: wiki
 
 This page describes Bio.AlignIO, a new multiple sequence Alignment
 Input/Output interface for BioPython which is currently only in our
-source code repository. It should be included in the next release of
-Biopython.
+[source code
+repository](http://cvs.biopython.org/cgi-bin/viewcvs/viewcvs.cgi/biopython/Bio/AlignIO/?cvsroot=biopython).
+In addition to the built in API documentation, there is also a new
+chapter in the Tutorial (again, in the repository only so far). This
+should all be included in the next release of Biopython.
 
 Aims
 ----
