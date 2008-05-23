@@ -24,16 +24,6 @@ This table lists the file formats that Bio.SeqIO can read and write.  The format
 ! Writes
 ! Notes
 |-
-| fasta   
-| Yes
-| Yes
-| This refers to the input file format introduced for Bill Pearson's FASTA tool, where each record starts with a ">" line.  Note that storing more than one alignment in this format is ambiguous.
-|-
-| fasta-m10
-| Yes
-| No
-| This refers to the pairwise output from Bill Pearson's FASTA tools, specifically the machine readable version when the -m 10 command line is used.  The default free format text output is not supported.
-|-
 | clustal
 | Yes
 | Yes
@@ -43,6 +33,16 @@ This table lists the file formats that Bio.SeqIO can read and write.  The format
 | Yes
 | Soon...
 | The EMBOSS simple/pairs alignment format.
+|-
+| fasta   
+| Yes
+| Yes
+| This refers to the input file format introduced for Bill Pearson's FASTA tool, where each record starts with a ">" line.  Note that storing more than one alignment in this format is ambiguous.
+|-
+| fasta-m10
+| Yes
+| No
+| This refers to the pairwise output from Bill Pearson's FASTA tools, specifically the machine readable version when the -m 10 command line is used.  The default free format text output is not supported.
 |-
 | nexus
 | Yes
