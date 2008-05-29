@@ -403,7 +403,7 @@ Giving this output:
 ### Random subsequences
 
 This script will read a Genbank file with a whole mitochondrial genome
-(e.g. the tabaco mitochondria, *Nicotiana tabacum mitochondrion*
+(e.g. the tobacco mitochondrion, *Nicotiana tabacum mitochondrion*
 [NC\_006581](http://www.ncbi.nlm.nih.gov/entrez/viewer.fcgi?db=nucleotide&val=NC_006581)),
 create 500 records containing random fragments of this genome, and save
 them as a fasta file. These subsequences are created using a random
