@@ -362,7 +362,7 @@ That should give something like this as the output file,
 
 == Help! ==
 
-If you are having problems Bio.SeqIO, please join the discussion mailing list (see [[mailing lists]]).
+If you are having problems with Bio.SeqIO, please join the discussion mailing list (see [[mailing lists]]).
 
 If you think you've found a bug, please report it on [http://bugzilla.open-bio.org/ bugzilla].
 
