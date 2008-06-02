@@ -25,8 +25,9 @@ involving coding and not. Some things that you can help on include:
     bioinformatics programs being developed. Identify one that does not
     currently have support in Biopython and add support for it.
 -   **Support for More File Formats:** We can read and write lots of
-    different file formats, but there are always more. For sequences
-    (and alignments) look at the [SeqIO](SeqIO "wikilink") pages first.
+    different file formats, but there are always more. For sequences and
+    alignments look at the [SeqIO](SeqIO "wikilink") and
+    [AlignIO](AlignIO "wikilink") pages first.
 -   **Support for Databases:** Identify a biological database that does
     not currently have support in Biopython and add support for it. Use
     Bio.GenBank as a model.
@@ -42,9 +43,6 @@ involving coding and not. Some things that you can help on include:
     need to periodically verify that the parsers are still working. For
     example, the GenBank parser needs to be checked to make sure it
     handles each new dump of GenBank.
--   **Make Martel Parsers:** The Bio.expressions package for
-    auto-detecting and parsing formats is looking pretty sparse. Find a
-    database format that is not handled here and add support for it.
 -   **Regression Tests:** Biopython uses a regression testing framework
     to make sure code is working. Although most of the functionality in
     Biopython is tested, there are still some holes.
