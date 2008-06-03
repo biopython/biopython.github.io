@@ -191,19 +191,19 @@
 {| border="1" width="100%"
 | Name                    || Frank Kauff
 |-
-| E-mail                  || fkauff at duke edu
+| E-mail                  || fkauff at biologie uni-kl de
 |-
-| Affiliation             || Duke University
+| Affiliation             || University of Kaiserslautern
 |-
-| Location                || Durham, NC, USA
+| Location                || Kaiserslautern, Germany
 |-
 | Uses Python for         || Phylogenetics and everything else
 |-
-| Work/Research Interests || Phylogenetics and all that's related
+| Work/Research Interests || Phylogenetics and all that's related, Fungi, Lichens, Cyanobacteria
 |-
-| Biopython Contributions || Phd (with C. Cox), Ace
+| Biopython Contributions || Phd, Ace, Nexus (mostly with C. Cox)
 |-
-| Relevant URL            || http://www.lutzonilab.net/member/frankkauff.shtml
+| Relevant URL            || http://www.uni-kl.de/wcms/ag-kauff.html
 |}
 
 

@@ -114,16 +114,16 @@ layout: wiki
 | Biopython Contributions | Bio.GFF, Bio.DocSQL                       |
 | Relevant URL            | <http://spice.cc.utexas.edu/~grouse/>     |
 
-|                         |                                                     |
-|-------------------------|-----------------------------------------------------|
-| Name                    | Frank Kauff                                         |
-| E-mail                  | fkauff at duke edu                                  |
-| Affiliation             | Duke University                                     |
-| Location                | Durham, NC, USA                                     |
-| Uses Python for         | Phylogenetics and everything else                   |
-| Work/Research Interests | Phylogenetics and all that's related                |
-| Biopython Contributions | Phd (with C. Cox), Ace                              |
-| Relevant URL            | <http://www.lutzonilab.net/member/frankkauff.shtml> |
+|                         |                                                                     |
+|-------------------------|---------------------------------------------------------------------|
+| Name                    | Frank Kauff                                                         |
+| E-mail                  | fkauff at biologie uni-kl de                                        |
+| Affiliation             | University of Kaiserslautern                                        |
+| Location                | Kaiserslautern, Germany                                             |
+| Uses Python for         | Phylogenetics and everything else                                   |
+| Work/Research Interests | Phylogenetics and all that's related, Fungi, Lichens, Cyanobacteria |
+| Biopython Contributions | Phd, Ace, Nexus (mostly with C. Cox)                                |
+| Relevant URL            | <http://www.uni-kl.de/wcms/ag-kauff.html>                           |
 
 |                         |                                                              |
 |-------------------------|--------------------------------------------------------------|
