@@ -97,12 +97,6 @@ documentation](http://www.psc.edu/general/software/packages/seq-intro/nbrffile.h
 Can Bio.KEGG parse files in [KEGG
 format](bp:KEGG_sequence_format "wikilink")?
 
-### PHD sequencing files from PHRED
-
-Bio.Sequencing.PHD has a Martel parser for [PHD
-format](bp:PHD_sequence_format "wikilink"), also used by the tools PHRAP
-and CONSED.
-
 ### MASE alignment format
 
 Bio.IntelliGenetics seems to use Martel parse MASE format files into its
