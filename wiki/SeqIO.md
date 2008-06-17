@@ -47,22 +47,24 @@ Peter
 File Formats
 ------------
 
-This table lists the file formats that Bio.SeqIO can read and write. The
-format name is a simple lowercase string. Where possible we use the same
-name as [BioPerl's
-SeqIO](http://www.bioperl.org/wiki/HOWTO:SeqIO#Formats) and
+This table lists the file formats that Bio.SeqIO can read and write,
+with the Biopython version where this was first supported. The format
+name is a simple lowercase string. Where possible we use the same name
+as [BioPerl's SeqIO](http://www.bioperl.org/wiki/HOWTO:SeqIO#Formats)
+and
 [EMBOSS](http://emboss.sourceforge.net/docs/themes/SequenceFormats.html).
 
-| Format name | Reads | Writes | Notes                                       |
-|-------------|-------|--------|---------------------------------------------|
-| fasta       | Yes   | Yes    | Resulting sequences have a generic alphabet |
-| genbank     | Yes   | No     | Uses Bio.GenBank                            |
-| embl        | Yes   | No     | New! Also uses Bio.GenBank                  |
-| clustal     | Yes   | Yes    | Currently uses Bio.Clustalw for writing     |
-| swiss       | Yes   | No     | Swiss-Prot aka UniProt. Uses Bio.SwissProt  |
-| nexus       | Yes   | No     | Also known as PAUP format. Uses Bio.Nexus   |
-| phylip      | Yes   | Yes    | Truncates names at 10 characters.           |
-| stockholm   | Yes   | Yes    | Also known as PFAM format.                  |
+| Format name | Reads | Writes | Notes                                                                                      |
+|-------------|-------|--------|--------------------------------------------------------------------------------------------|
+| fasta       | 1.43  | 1.43   | Resulting sequences have a generic alphabet.                                               |
+| genbank     | 1.43  | No     | Uses Bio.GenBank internally.                                                               |
+| embl        | 1.43  | No     | Uses Bio.GenBank internally.                                                               |
+| clustal     | 1.43  | 1.43   | An alignment format. See also the Bio.Clustalw module.                                     |
+| swiss       | 1.43  | No     | Swiss-Prot aka UniProt. Uses Bio.SwissProt internally.                                     |
+| nexus       | 1.43  | No     | An alignment format, also known as PAUP format. Uses Bio.Nexus internally.                 |
+| phylip      | 1.43  | 1.43   | An alignment format. Truncates names at 10 characters.                                     |
+| stockholm   | 1.43  | 1.43   | An alignment format, also known as PFAM format.                                            |
+| phd         | CVS   | No     | Output from PHRED, used by PHRAP and CONSED for input. Uses Bio.Sequencing.Phd internally. |
 ||
 
 With Bio.SeqIO you can treat sequence alignment file formats just like

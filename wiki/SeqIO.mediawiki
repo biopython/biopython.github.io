@@ -16,7 +16,7 @@ Peter
 
 == File Formats ==
 
-This table lists the file formats that Bio.SeqIO can read and write.  The format name is a simple lowercase string. Where possible we use the same name as [http://www.bioperl.org/wiki/HOWTO:SeqIO#Formats BioPerl's SeqIO] and [http://emboss.sourceforge.net/docs/themes/SequenceFormats.html EMBOSS].
+This table lists the file formats that Bio.SeqIO can read and write, with the Biopython version where this was first supported.  The format name is a simple lowercase string. Where possible we use the same name as [http://www.bioperl.org/wiki/HOWTO:SeqIO#Formats BioPerl's SeqIO] and [http://emboss.sourceforge.net/docs/themes/SequenceFormats.html EMBOSS].
 
 {| border="1" cellpadding="4" cellspacing="0"
 |+ Table 1: Bio.SeqIO supported file formats
@@ -27,44 +27,49 @@ This table lists the file formats that Bio.SeqIO can read and write.  The format
 ! Notes
 |-
 | fasta   
-| Yes
-| Yes
-| Resulting sequences have a generic alphabet
+| 1.43
+| 1.43
+| Resulting sequences have a generic alphabet.
 |-  
 | genbank 
-| Yes
+| 1.43
 | No
-| Uses Bio.GenBank
+| Uses Bio.GenBank internally.
 |-  
 | embl
-| Yes
+| 1.43
 | No
-| New! Also uses Bio.GenBank
+| Uses Bio.GenBank internally.
 |-
 | clustal
-| Yes
-| Yes
-| Currently uses Bio.Clustalw for writing
+| 1.43
+| 1.43
+| An alignment format.  See also the Bio.Clustalw module.
 |-
 | swiss
-| Yes
+| 1.43
 | No
-| Swiss-Prot aka UniProt. Uses Bio.SwissProt
+| Swiss-Prot aka UniProt. Uses Bio.SwissProt internally.
 |-
 | nexus
-| Yes
+| 1.43
 | No
-| Also known as PAUP format.  Uses Bio.Nexus
+| An alignment format, also known as PAUP format.  Uses Bio.Nexus internally.
 |-
 | phylip
-| Yes
-| Yes
-| Truncates names at 10 characters.
+| 1.43
+| 1.43
+| An alignment format.  Truncates names at 10 characters.
 |-
 | stockholm
-| Yes
-| Yes
-| Also known as PFAM format.
+| 1.43
+| 1.43
+| An alignment format, also known as PFAM format.
+|-
+| phd
+| CVS
+| No
+| Output from PHRED,  used by PHRAP and CONSED for input.  Uses Bio.Sequencing.Phd internally.
 |-
 |}
 
