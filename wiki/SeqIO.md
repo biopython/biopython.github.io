@@ -56,6 +56,7 @@ and
 
 | Format name | Reads | Writes | Notes                                                                                      |
 |-------------|-------|--------|--------------------------------------------------------------------------------------------|
+| ace         | CVS   | No     | Read the contig sequences from an ACE assembly file. Uses Bio.Sequencing.Ace internally    |
 | fasta       | 1.43  | 1.43   | Resulting sequences have a generic alphabet.                                               |
 | genbank     | 1.43  | No     | Uses Bio.GenBank internally.                                                               |
 | embl        | 1.43  | No     | Uses Bio.GenBank internally.                                                               |

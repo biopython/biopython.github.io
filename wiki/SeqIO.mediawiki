@@ -26,6 +26,11 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 ! Writes
 ! Notes
 |-
+| ace
+| CVS
+| No
+| Read the contig sequences from an ACE assembly file.  Uses Bio.Sequencing.Ace internally
+|-  
 | fasta   
 | 1.43
 | 1.43
