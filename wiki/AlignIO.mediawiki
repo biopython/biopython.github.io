@@ -14,7 +14,9 @@ Peter
 
 == File Formats ==
 
-This table lists the file formats that Bio.AlignIO can read and write.  The format name is a simple lowercase string. Where possible we use the same name as [http://www.bioperl.org/wiki/HOWTO:SeqIO#Formats BioPerl's SeqIO] and [http://emboss.sourceforge.net/docs/themes/SequenceFormats.html EMBOSS].
+This table lists the file formats that Bio.AlignIO can read and write, with the Biopython version where this was first supported. 
+
+The format name is a simple lowercase string, matching the names used in [[SeqIO|Bio.SeqIO]]. Where possible we use the same name as [[bp:HOWTO:SeqIO#Formats|BioPerl's SeqIO]] and [http://emboss.sourceforge.net/docs/themes/SequenceFormats.html EMBOSS].
 
 {| border="1" cellpadding="4" cellspacing="0"
 |+ Table 1: Bio.AlignIO supported file formats
@@ -25,38 +27,38 @@ This table lists the file formats that Bio.AlignIO can read and write.  The form
 ! Notes
 |-
 | clustal
-| Yes
-| Yes
+| 1.46
+| 1.46
 | See also Bio.Clustalw for calling the command line tool.
 |-
 | emboss
-| Yes
-| Soon...
+| 1.46
+| Soon?
 | The EMBOSS simple/pairs alignment format.
 |-
 | fasta   
-| Yes
-| Yes
+| 1.46
+| 1.46
 | This refers to the input file format introduced for Bill Pearson's FASTA tool, where each record starts with a ">" line.  Note that storing more than one alignment in this format is ambiguous.
 |-
 | fasta-m10
-| Yes
+| 1.46
 | No
 | This refers to the pairwise output from Bill Pearson's FASTA tools, specifically the machine readable version when the -m 10 command line is used.  The default free format text output is not supported.
 |-
 | nexus
-| Yes
+| 1.46
 | No
 | Also known as PAUP format.  Uses Bio.Nexus internally.
 |-
 | phylip
-| Yes
-| Yes
-| The PHYLIP format truncates names at 10 characters.
+| 1.46
+| 1.46
+| This is a strict interpretation of the PHYLIP format which truncates names at 10 characters.
 |-
 | stockholm
-| Yes
-| Yes
+| 1.46
+| 1.46
 | Also known as PFAM format, this supports rich annotation.
 |-
 |}
