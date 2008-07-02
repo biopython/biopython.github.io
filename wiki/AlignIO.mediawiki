@@ -10,7 +10,7 @@ Similarly, Bio.AlignIO deals with files containing one or more sequence alignmen
 
 Note that the inclusion of Bio.AlignIO does lead to some duplication or choice in how to deal with some file formats. For example, Bio.AlignIO and Bio.Clustalw will both read sequences from Clustal files - but Bio.Clustalw also includes a command line wrapper to call the program.
 
-My vision is that for reading or writing sequence alignments you should try Bio.AlignIO as your first choice.  In some cases you may only care about the sequences themselves, in which case try using [[Bio.SeqIO]] on the alignment file directly.  Unless you have some very specific requirements, I hope this should suffice.
+My vision is that for reading or writing sequence alignments you should try Bio.AlignIO as your first choice.  In some cases you may only care about the sequences themselves, in which case try using [[SeqIO|Bio.SeqIO]] on the alignment file directly.  Unless you have some very specific requirements, I hope this should suffice.
 
 Peter
 

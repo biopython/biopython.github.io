@@ -34,8 +34,8 @@ Bio.Clustalw also includes a command line wrapper to call the program.
 My vision is that for reading or writing sequence alignments you should
 try Bio.AlignIO as your first choice. In some cases you may only care
 about the sequences themselves, in which case try using
-[Bio.SeqIO](Bio.SeqIO "wikilink") on the alignment file directly. Unless
-you have some very specific requirements, I hope this should suffice.
+[Bio.SeqIO](SeqIO "wikilink") on the alignment file directly. Unless you
+have some very specific requirements, I hope this should suffice.
 
 Peter
 
