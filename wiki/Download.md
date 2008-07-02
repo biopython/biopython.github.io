@@ -7,6 +7,10 @@ layout: wiki
 Current Release -- 1.46 -- 29 June 2008
 =======================================
 
+**ERRATA: Please note there is a problem with sequence translation in
+Biopython 1.46, due to the mis-selection of the Codon Table by name. We
+hope to have a revised release out soon to rectify this.**
+
 See also [What's new](http://biopython.open-bio.org/SRC/biopython/NEWS).
 
 ### Installation Instructions
