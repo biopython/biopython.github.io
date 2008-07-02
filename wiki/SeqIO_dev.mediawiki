@@ -53,6 +53,8 @@ Bio.NBRF has a Martel parser for [[bp:PIR sequence format|PIR sequence format]],
 
 There is also [http://www.psc.edu/general/software/packages/seq-intro/nbrffile.html PSC documentation].
 
+Code to implement this attached to [http://bugzilla.open-bio.org/show_bug.cgi?id=2535 Bug 2535].
+
 === KEGG format ===
 
 Can Bio.KEGG parse files in [[bp:KEGG sequence format|KEGG format]]?

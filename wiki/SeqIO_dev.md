@@ -92,6 +92,9 @@ reuse the Bio.SeqIO fasta code instead.
 There is also [PSC
 documentation](http://www.psc.edu/general/software/packages/seq-intro/nbrffile.html).
 
+Code to implement this attached to [Bug
+2535](http://bugzilla.open-bio.org/show_bug.cgi?id=2535).
+
 ### KEGG format
 
 Can Bio.KEGG parse files in [KEGG
