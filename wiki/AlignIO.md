@@ -176,6 +176,9 @@ As in [Bio.SeqIO](SeqIO "wikilink"), there is a single output function
 **Bio.AlignIO.write()**. This takes three arguments: some alignments, a
 file handle to write to, and the format to use.
 
+This wiki section needs to be filled out, so in the short term please
+refer to the Bio.AlignIO chapter in the Tutorial.
+
 File Format Conversion
 ----------------------
 
