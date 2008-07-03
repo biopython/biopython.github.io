@@ -55,7 +55,7 @@ New to BioPython? Check out the [[Getting_Started|Getting Started]] page, or fol
 ==== Presentations ====
 
 * BOSC 2007 presentation "Biopython Project Update"
-:PDF pending...
+:PDF pending... | [http://www.slideshare.net/bosc/biopython Flash version]
 * March 2004 presentation at Exelixis about Biopython. Includes code examples with Biopython libraries and Martel.
 :[http://biopython.org/DIST/docs/presentations/biopython_exelixis.pdf PDF] | [http://biopython.org/DIST/docs/presentations/biopython_exelixis.tar.gz tarball with LaTeX source]
 * BOSC 2003 presentation about Biopython and using it for Laboratory Analysis Pipelines.
