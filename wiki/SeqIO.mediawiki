@@ -30,6 +30,16 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 | CVS
 | No
 | Read the contig sequences from an ACE assembly file.  Uses Bio.Sequencing.Ace internally
+|-
+| clustal
+| 1.43
+| 1.43
+| The alignment format of the Clustal X and Clustal W tools.  See also the Bio.Clustalw module.
+|-  
+| embl
+| 1.43
+| No
+| The EMBL flat file format.  Uses Bio.GenBank internally.
 |-  
 | fasta   
 | 1.43
@@ -39,27 +49,22 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 | genbank 
 | 1.43
 | No
-| Uses Bio.GenBank internally.
-|-  
-| embl
-| 1.43
-| No
-| Uses Bio.GenBank internally.
+| The GenBank or GenPept flat file format.  Uses Bio.GenBank internally.
 |-
-| clustal
-| 1.43
-| 1.43
-| An alignment format.  See also the Bio.Clustalw module.
-|-
-| swiss
-| 1.43
+| ig
+| CVS
 | No
-| Swiss-Prot aka UniProt. Uses Bio.SwissProt internally.
+| The refers to the IntelliGenetics file format, apparently the same as the [[bp:Mase_multiple_alignment_format|MASE alignment format]].
 |-
 | nexus
 | 1.43
 | No
 | An alignment format, also known as PAUP format.  Uses Bio.Nexus internally.
+|-
+| phd
+| 1.46
+| No
+| Output from PHRED,  used by PHRAP and CONSED for input.  Uses Bio.Sequencing.Phd internally.
 |-
 | phylip
 | 1.43
@@ -71,10 +76,10 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 | 1.43
 | An alignment format, also known as PFAM format.
 |-
-| phd
-| CVS
+| swiss
+| 1.43
 | No
-| Output from PHRED,  used by PHRAP and CONSED for input.  Uses Bio.Sequencing.Phd internally.
+| Swiss-Prot aka UniProt. Uses Bio.SwissProt internally.
 |-
 |}
 

@@ -54,18 +54,19 @@ as [BioPerl's SeqIO](http://www.bioperl.org/wiki/HOWTO:SeqIO#Formats)
 and
 [EMBOSS](http://emboss.sourceforge.net/docs/themes/SequenceFormats.html).
 
-| Format name | Reads | Writes | Notes                                                                                      |
-|-------------|-------|--------|--------------------------------------------------------------------------------------------|
-| ace         | CVS   | No     | Read the contig sequences from an ACE assembly file. Uses Bio.Sequencing.Ace internally    |
-| fasta       | 1.43  | 1.43   | Resulting sequences have a generic alphabet.                                               |
-| genbank     | 1.43  | No     | Uses Bio.GenBank internally.                                                               |
-| embl        | 1.43  | No     | Uses Bio.GenBank internally.                                                               |
-| clustal     | 1.43  | 1.43   | An alignment format. See also the Bio.Clustalw module.                                     |
-| swiss       | 1.43  | No     | Swiss-Prot aka UniProt. Uses Bio.SwissProt internally.                                     |
-| nexus       | 1.43  | No     | An alignment format, also known as PAUP format. Uses Bio.Nexus internally.                 |
-| phylip      | 1.43  | 1.43   | An alignment format. Truncates names at 10 characters.                                     |
-| stockholm   | 1.43  | 1.43   | An alignment format, also known as PFAM format.                                            |
-| phd         | CVS   | No     | Output from PHRED, used by PHRAP and CONSED for input. Uses Bio.Sequencing.Phd internally. |
+| Format name | Reads | Writes | Notes                                                                                                                                            |
+|-------------|-------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| ace         | CVS   | No     | Read the contig sequences from an ACE assembly file. Uses Bio.Sequencing.Ace internally                                                          |
+| clustal     | 1.43  | 1.43   | The alignment format of the Clustal X and Clustal W tools. See also the Bio.Clustalw module.                                                     |
+| embl        | 1.43  | No     | The EMBL flat file format. Uses Bio.GenBank internally.                                                                                          |
+| fasta       | 1.43  | 1.43   | Resulting sequences have a generic alphabet.                                                                                                     |
+| genbank     | 1.43  | No     | The GenBank or GenPept flat file format. Uses Bio.GenBank internally.                                                                            |
+| ig          | CVS   | No     | The refers to the IntelliGenetics file format, apparently the same as the [MASE alignment format](bp:Mase_multiple_alignment_format "wikilink"). |
+| nexus       | 1.43  | No     | An alignment format, also known as PAUP format. Uses Bio.Nexus internally.                                                                       |
+| phd         | 1.46  | No     | Output from PHRED, used by PHRAP and CONSED for input. Uses Bio.Sequencing.Phd internally.                                                       |
+| phylip      | 1.43  | 1.43   | An alignment format. Truncates names at 10 characters.                                                                                           |
+| stockholm   | 1.43  | 1.43   | An alignment format, also known as PFAM format.                                                                                                  |
+| swiss       | 1.43  | No     | Swiss-Prot aka UniProt. Uses Bio.SwissProt internally.                                                                                           |
 ||
 
 With Bio.SeqIO you can treat sequence alignment file formats just like
