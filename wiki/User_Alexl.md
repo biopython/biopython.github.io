@@ -5,4 +5,4 @@ layout: wiki
 ---
 
 Maintainer of Fedora package for biopython, see my Fedora user page:
-<https://fedoraproject.org/wiki/User:Alexlan>
+<http://fedoraproject.org/wiki/User:Alexlan>
