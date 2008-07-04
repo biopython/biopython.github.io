@@ -39,7 +39,7 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 | embl
 | 1.43
 | No
-| The EMBL flat file format.  Uses Bio.GenBank internally.
+| The [[bp:EMBL_sequence_format|EMBL flat file format]].  Uses Bio.GenBank internally.
 |-  
 | fasta   
 | 1.43
@@ -49,7 +49,7 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 | genbank 
 | 1.43
 | No
-| The GenBank or GenPept flat file format.  Uses Bio.GenBank internally.
+| The [[bp:GenBank_sequence_format|GenBank or GenPept flat file format]].  Uses Bio.GenBank internally.
 |-
 | ig
 | CVS
