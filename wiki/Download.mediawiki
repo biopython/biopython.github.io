@@ -77,9 +77,11 @@ Ubuntu Edgy doesn't seem to have working AMD64 packages. Fiesty biopython 1.42 A
 
 === Fedora ===
 
-[http://download.fedora.redhat.com/pub/fedora/linux/extras/5/i386/repoview/python-biopython.html Fedora Core 5], [http://download.fedora.redhat.com/pub/fedora/linux/extras/6/i386/repoview/python-biopython.html Fedora Core 6] and [http://download.fedora.redhat.com/pub/fedora/linux/extras/development/i386/repoview/python-biopython.html rawhide] (soon-to-be Fedora 7) have official packages for biopython 1.43 called python-biopython, it can be installed using yum:
+Biopython is an official Fedora package (since Fedora 5).  The package is named [http://admin.fedoraproject.org/pkgdb/packages/name/python-biopython python-biopython], and can be installed using yum:
 
  yum install python-biopython
+
+or via one of the GUI package management systems such as pirut and PackageKit (available in F-9 and later).  biopython 1.45 is the latest available (as of 2008-06-04).
 
 === Gentoo Linux ===
 

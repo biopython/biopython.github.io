@@ -136,16 +136,16 @@ biopython 1.42 AMD64 packages backported for Edgy here:
 
 ### Fedora
 
-[Fedora Core
-5](http://download.fedora.redhat.com/pub/fedora/linux/extras/5/i386/repoview/python-biopython.html),
-[Fedora Core
-6](http://download.fedora.redhat.com/pub/fedora/linux/extras/6/i386/repoview/python-biopython.html)
-and
-[rawhide](http://download.fedora.redhat.com/pub/fedora/linux/extras/development/i386/repoview/python-biopython.html)
-(soon-to-be Fedora 7) have official packages for biopython 1.43 called
-python-biopython, it can be installed using yum:
+Biopython is an official Fedora package (since Fedora 5). The package is
+named
+[python-biopython](http://admin.fedoraproject.org/pkgdb/packages/name/python-biopython),
+and can be installed using yum:
 
 `yum install python-biopython`
+
+or via one of the GUI package management systems such as pirut and
+PackageKit (available in F-9 and later). biopython 1.45 is the latest
+available (as of 2008-06-04).
 
 ### Gentoo Linux
 
