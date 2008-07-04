@@ -46,22 +46,22 @@ The format name is a simple lowercase string, matching the names used in [[SeqIO
 | fasta-m10
 | 1.46
 | No
-| This refers to the pairwise output from Bill Pearson's FASTA tools, specifically the machine readable version when the -m 10 command line is used.  The default free format text output is not supported.
+| This refers to the pairwise alignment output from Bill Pearson's FASTA tools, specifically the machine readable version when the -m 10 command line is used.  The default free format text output is not supported.
 |-
 | nexus
 | 1.46
-| No
-| Also known as PAUP format.  Uses Bio.Nexus internally.
+| Soon?
+| Also known as PAUP format.  Uses Bio.Nexus internally.  See enhancement [http://bugzilla.open-bio.org/show_bug.cgi?id=2227 Bug 2227] for writing these files.
 |-
 | phylip
 | 1.46
 | 1.46
-| This is a strict interpretation of the PHYLIP format which truncates names at 10 characters.
+| Our implementation is a strict interpretation of the PHYLIP format which truncates names at 10 characters.
 |-
 | stockholm
 | 1.46
 | 1.46
-| Also known as PFAM format, this supports rich annotation.
+| Also known as PFAM format, this file format supports rich annotation.
 |-
 |}
 
