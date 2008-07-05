@@ -4,14 +4,8 @@ permalink: wiki/Download
 layout: wiki
 ---
 
-Current Release -- 1.46 -- 29 June 2008
-=======================================
-
-**ERRATA: Please note there is a problem with sequence translation in
-Biopython 1.46, due to the mis-selection of the Codon Table by name. We
-hope to have a revised release out soon to rectify this, and suggest
-waiting for Biopython 1.47 unless you wish to test other parts of the
-code.**
+Current Release -- 1.47 -- 5 July 2008
+======================================
 
 See also [What's new](http://biopython.open-bio.org/SRC/biopython/NEWS).
 
@@ -25,19 +19,19 @@ See also [What's new](http://biopython.open-bio.org/SRC/biopython/NEWS).
 ### Files
 
 -   Source Tarball --
-    [biopython-1.46.tar.gz](http://biopython.org/DIST/biopython-1.46.tar.gz)
+    [biopython-1.47.tar.gz](http://biopython.org/DIST/biopython-1.47.tar.gz)
     4,018 Kb
 -   Source Zip File --
-    [biopython-1.46.zip](http://biopython.org/DIST/biopython-1.46.zip)
+    [biopython-1.47.zip](http://biopython.org/DIST/biopython-1.47.zip)
     4,528 Kb
 -   Windows Installer for Python 2.3 --
-    [biopython-1.46.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.46.win32-py2.3.exe)
+    [biopython-1.47.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.47.win32-py2.3.exe)
     1,207 Kb
 -   Windows Installer for Python 2.4 --
-    [biopython-1.46.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.46.win32-py2.4.exe)
+    [biopython-1.47.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.47.win32-py2.4.exe)
     1,236 Kb
 -   Windows Installer for Python 2.5 --
-    [biopython-1.46.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.46.win32-py2.5.exe)
+    [biopython-1.47.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.47.win32-py2.5.exe)
     1,236 Kb
 
 ### Required Software
