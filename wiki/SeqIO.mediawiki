@@ -29,7 +29,7 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 | ace
 | 1.47
 | No
-| Read the contig sequences from an ACE assembly file.  Uses Bio.Sequencing.Ace internally
+| Reads the contig sequences from an ACE assembly file.  Uses Bio.Sequencing.Ace internally
 |-
 | clustal
 | 1.43
@@ -54,7 +54,7 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 | ig
 | 1.47
 | No
-| The refers to the IntelliGenetics file format, apparently the same as the [[bp:Mase_multiple_alignment_format|MASE alignment format]].
+| This refers to the IntelliGenetics file format, apparently the same as the [[bp:Mase_multiple_alignment_format|MASE alignment format]].
 |-
 | nexus
 | 1.43
@@ -79,7 +79,7 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 | swiss
 | 1.43
 | No
-| Swiss-Prot aka UniProt. Uses Bio.SwissProt internally.
+| Swiss-Prot aka UniProt format. Uses Bio.SwissProt internally.
 |-
 |}
 
