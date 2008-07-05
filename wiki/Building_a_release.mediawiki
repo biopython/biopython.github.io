@@ -43,7 +43,7 @@ Build Biopython in 21 easy steps!!
     drevil:~tmp1/biopython> python setup.py sdist --formats=gztar,zip 
 
 14. untar the file somewhere else
-    drevil:~tmp2> gzcat ../tmp1/biopython/dist/biopython-1.00a1.tar.gz | tar xvf -
+    drevil:~tmp2> tar -xzvf ../tmp1/biopython/dist/biopython-1.00a1.tar.gz
 * Check to make sure it includes Martel 
 
 15. make sure I can build and test it

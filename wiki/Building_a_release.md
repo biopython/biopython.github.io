@@ -61,7 +61,7 @@ new downloads. Make sure to commit the modified Martel to CVS.
 
 14. untar the file somewhere else
 
-`   drevil:~tmp2> gzcat ../tmp1/biopython/dist/biopython-1.00a1.tar.gz | tar xvf -`
+`   drevil:~tmp2> tar -xzvf ../tmp1/biopython/dist/biopython-1.00a1.tar.gz`
 
 -   Check to make sure it includes Martel
 
