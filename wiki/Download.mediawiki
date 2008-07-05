@@ -11,11 +11,11 @@ See also [http://biopython.open-bio.org/SRC/biopython/NEWS What's new].
 
 === Files ===
 
-* Source Tarball -- [http://biopython.org/DIST/biopython-1.46.tar.gz biopython-1.46.tar.gz] 3,926 Kb  ('''see errata''')
-* Source Zip File -- [http://biopython.org/DIST/biopython-1.46.zip biopython-1.46.zip] 4,426 Kb ('''see errata''')
-* Windows Installer for Python 2.3 -- [http://biopython.org/DIST/biopython-1.46.win32-py2.3.exe biopython-1.46.win32-py2.3.exe] 1,206 Kb ('''see errata''')
-* Windows Installer for Python 2.4 -- [http://biopython.org/DIST/biopython-1.46.win32-py2.4.exe biopython-1.46.win32-py2.4.exe] 1,235 Kb ('''see errata''')
-* Windows Installer for Python 2.5 -- [http://biopython.org/DIST/biopython-1.46.win32-py2.5.exe biopython-1.46.win32-py2.5.exe] 1,235 Kb ('''see errata''')
+* Source Tarball -- [http://biopython.org/DIST/biopython-1.46.tar.gz biopython-1.46.tar.gz] 4,018 Kb
+* Source Zip File -- [http://biopython.org/DIST/biopython-1.46.zip biopython-1.46.zip] 4,528 Kb
+* Windows Installer for Python 2.3 -- [http://biopython.org/DIST/biopython-1.46.win32-py2.3.exe biopython-1.46.win32-py2.3.exe] 1,207 Kb
+* Windows Installer for Python 2.4 -- [http://biopython.org/DIST/biopython-1.46.win32-py2.4.exe biopython-1.46.win32-py2.4.exe] 1,236 Kb
+* Windows Installer for Python 2.5 -- [http://biopython.org/DIST/biopython-1.46.win32-py2.5.exe biopython-1.46.win32-py2.5.exe] 1,236 Kb
 
 === Required Software ===
 
