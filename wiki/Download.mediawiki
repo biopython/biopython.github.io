@@ -106,6 +106,11 @@ Due to the great architecture of the ports system, this simple commands will aut
 
 = Old Releases =
 
+* [http://biopython.org/DIST/biopython-1.46.tar.gz biopython-1.46.tar.gz] 3,926 Kb
+* [http://biopython.org/DIST/biopython-1.46.zip biopython-1.46.zip] 4,426 Kb
+* [http://biopython.org/DIST/biopython-1.46.win32-py2.3.exe biopython-1.46.win32-py2.3.exe] 1,206 Kb
+* [http://biopython.org/DIST/biopython-1.46.win32-py2.4.exe biopython-1.46.win32-py2.4.exe] 1,235 Kb
+* [http://biopython.org/DIST/biopython-1.46.win32-py2.5.exe biopython-1.46.win32-py2.5.exe] 1,235 Kb
 * [http://biopython.org/DIST/biopython-1.45.tar.gz biopython-1.45.tar.gz] 3,886 Kb
 * [http://biopython.org/DIST/biopython-1.45.zip biopython-1.45.zip] 4,395 Kb
 * [http://biopython.org/DIST/biopython-1.45.win32-py2.3.exe biopython-1.45.win32-py2.3.exe] 1,113 Kb
