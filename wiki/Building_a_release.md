@@ -42,7 +42,7 @@ new downloads. Make sure to commit the modified Martel to CVS.
 
 9. check out clean version somewhere else
 
-`   drevil:~tmp1/> cvs -d :ext:jchang@pub.open-bio.org:/home/repository/biopython checkout -r biopython-100a1 biopython `
+`   drevil:~tmp1/> cvs -d :ext:jchang@pub.open-bio.org:/home/repository/biopython checkout biopython `
 
 10. make documentation PDF, text and HTML in Doc
 
