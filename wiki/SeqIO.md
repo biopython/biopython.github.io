@@ -56,12 +56,12 @@ and
 
 | Format name | Reads | Writes | Notes                                                                                                                                            |
 |-------------|-------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| ace         | CVS   | No     | Read the contig sequences from an ACE assembly file. Uses Bio.Sequencing.Ace internally                                                          |
+| ace         | 1.47  | No     | Read the contig sequences from an ACE assembly file. Uses Bio.Sequencing.Ace internally                                                          |
 | clustal     | 1.43  | 1.43   | The alignment format of the Clustal X and Clustal W tools. See also the Bio.Clustalw module.                                                     |
 | embl        | 1.43  | No     | The [EMBL flat file format](bp:EMBL_sequence_format "wikilink"). Uses Bio.GenBank internally.                                                    |
 | fasta       | 1.43  | 1.43   | Resulting sequences have a generic alphabet.                                                                                                     |
 | genbank     | 1.43  | No     | The [GenBank or GenPept flat file format](bp:GenBank_sequence_format "wikilink"). Uses Bio.GenBank internally.                                   |
-| ig          | CVS   | No     | The refers to the IntelliGenetics file format, apparently the same as the [MASE alignment format](bp:Mase_multiple_alignment_format "wikilink"). |
+| ig          | 1.47  | No     | The refers to the IntelliGenetics file format, apparently the same as the [MASE alignment format](bp:Mase_multiple_alignment_format "wikilink"). |
 | nexus       | 1.43  | No     | An alignment format, also known as PAUP format. Uses Bio.Nexus internally.                                                                       |
 | phd         | 1.46  | No     | Output from PHRED, used by PHRAP and CONSED for input. Uses Bio.Sequencing.Phd internally.                                                       |
 | phylip      | 1.43  | 1.43   | An alignment format. Truncates names at 10 characters.                                                                                           |

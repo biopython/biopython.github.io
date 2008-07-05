@@ -27,7 +27,7 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 ! Notes
 |-
 | ace
-| CVS
+| 1.47
 | No
 | Read the contig sequences from an ACE assembly file.  Uses Bio.Sequencing.Ace internally
 |-
@@ -52,7 +52,7 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 | The [[bp:GenBank_sequence_format|GenBank or GenPept flat file format]].  Uses Bio.GenBank internally.
 |-
 | ig
-| CVS
+| 1.47
 | No
 | The refers to the IntelliGenetics file format, apparently the same as the [[bp:Mase_multiple_alignment_format|MASE alignment format]].
 |-
