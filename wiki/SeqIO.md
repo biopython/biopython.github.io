@@ -48,8 +48,7 @@ File Formats
 This table lists the file formats that Bio.SeqIO can read and write,
 with the Biopython version where this was first supported. The format
 name is a simple lowercase string. Where possible we use the same name
-as [BioPerl's SeqIO](http://www.bioperl.org/wiki/HOWTO:SeqIO#Formats)
-and
+as [BioPerl's SeqIO](bp:HOWTO:SeqIO#Formats "wikilink") and
 [EMBOSS](http://emboss.sourceforge.net/docs/themes/SequenceFormats.html).
 
 | Format name | Reads | Writes | Notes                                                                                                                                             |
