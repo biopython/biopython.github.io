@@ -4,7 +4,7 @@ There is a whole chapter in the [http://biopython.org/DIST/docs/tutorial/Tutoria
 
 == Aims ==
 
-Bio.SeqIO provides a simple uniform interface to input and output assorted sequence file formats (including multiple sequence alignments), but will ''only'' deal with sequences as [[SeqRecord]] objects.  I am also working on a sister interface [[AlignIO|Bio.AlignIO]] for working directly with sequence alignment files as Alignment objects.
+Bio.SeqIO provides a simple uniform interface to input and output assorted sequence file formats (including multiple sequence alignments), but will ''only'' deal with sequences as [[SeqRecord]] objects.  There is a sister interface [[AlignIO|Bio.AlignIO]] for working directly with sequence alignment files as Alignment objects.
 
 The design was partly inspired by the simplicity of [[bp:HOWTO:SeqIO|BioPerl's SeqIO]].  In the long term we hope to match BioPerl's impressive list of supported [[bp:Sequence_formats|sequence file formats]] and [[bp:Multiple_alignment_formats|multiple alignment formats]].
 

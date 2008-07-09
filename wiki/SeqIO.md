@@ -19,9 +19,8 @@ Aims
 Bio.SeqIO provides a simple uniform interface to input and output
 assorted sequence file formats (including multiple sequence alignments),
 but will *only* deal with sequences as [SeqRecord](SeqRecord "wikilink")
-objects. I am also working on a sister interface
-[Bio.AlignIO](AlignIO "wikilink") for working directly with sequence
-alignment files as Alignment objects.
+objects. There is a sister interface [Bio.AlignIO](AlignIO "wikilink")
+for working directly with sequence alignment files as Alignment objects.
 
 The design was partly inspired by the simplicity of [BioPerl's
 SeqIO](bp:HOWTO:SeqIO "wikilink"). In the long term we hope to match
