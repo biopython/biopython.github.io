@@ -4,6 +4,8 @@ permalink: wiki/Participants
 layout: wiki
 ---
 
+Note: People are listed here alphabetically by surname.
+
 |                         |                                                       |
 |-------------------------|-------------------------------------------------------|
 | Name                    | Sebastian Bassi                                       |
@@ -37,16 +39,16 @@ layout: wiki
 | Biopython Contributions | Docs, GenBank, BioSQL, BioCORBA                 |
 | Relevant URL            | <http://www.bioinformatics.org/bradstuff>       |
 
-|                         |                                                                             |
-|-------------------------|-----------------------------------------------------------------------------|
-| Name                    | Peter Cock                                                                  |
-| E-mail                  | See my web page                                                             |
-| Affiliation             | MOAC Doctoral Training Centre, University of Warwick                        |
-| Location                | Coventry, England, UK                                                       |
-| Uses Python for         | Bioinformatics, controlling R with rpy, ...                                 |
-| Work/Research Interests | Bacterial signalling                                                        |
-| Biopython Contributions | Sequence parsing including Bio.SeqIO, and the EMBL and GenBank parsers      |
-| Relevant URL            | <http://www2.warwick.ac.uk/fac/sci/moac/currentstudents/peter_cock/python/> |
+|                         |                                                                                                                               |
+|-------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| Name                    | Peter Cock                                                                                                                    |
+| E-mail                  | See my web page                                                                                                               |
+| Affiliation             | MOAC Doctoral Training Centre, University of Warwick                                                                          |
+| Location                | Coventry, England, UK                                                                                                         |
+| Uses Python for         | Bioinformatics, controlling R with rpy, ...                                                                                   |
+| Work/Research Interests | Bacterial signalling                                                                                                          |
+| Biopython Contributions | Sequence parsing including [Bio.SeqIO](SeqIO "wikilink"), [Bio.AlignIO](AlignIO "wikilink"), and the EMBL and GenBank parsers |
+| Relevant URL            | <http://www.warwick.ac.uk/go/peter_cock/python/>                                                                              |
 
 |                         |                                                                   |
 |-------------------------|-------------------------------------------------------------------|

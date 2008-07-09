@@ -1,3 +1,5 @@
+Note: People are listed here alphabetically by surname.
+
 {| border="1" width="100%"
 | Name                    || Sebastian Bassi
 |-
@@ -68,9 +70,9 @@
 |-
 | Work/Research Interests || Bacterial signalling
 |-
-| Biopython Contributions || Sequence parsing including Bio.SeqIO, and the EMBL and GenBank parsers
+| Biopython Contributions || Sequence parsing including [[SeqIO|Bio.SeqIO]], [[AlignIO|Bio.AlignIO]], and the EMBL and GenBank parsers
 |-
-| Relevant URL            || http://www2.warwick.ac.uk/fac/sci/moac/currentstudents/peter_cock/python/
+| Relevant URL            || http://www.warwick.ac.uk/go/peter_cock/python/
 |}
 
 
