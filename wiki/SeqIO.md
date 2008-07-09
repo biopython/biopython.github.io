@@ -23,13 +23,11 @@ objects. I am also working on a sister interface
 [Bio.AlignIO](AlignIO "wikilink") for working directly with sequence
 alignment files as Alignment objects.
 
-The design was partly inspired by the simplicity of [bp:HOWTO:SeqIO
-BioPerl's SeqIO](bp:HOWTO:SeqIO_BioPerl's_SeqIO "wikilink"). In the long
-term we hope to match BioPerl's impressive list of supported
-[bp:Sequence\_formats sequence file
-formats](bp:Sequence_formats_sequence_file_formats "wikilink") and
-[bp:Multiple\_alignment\_formats multiple alignment
-formats](bp:Multiple_alignment_formats_multiple_alignment_formats "wikilink").
+The design was partly inspired by the simplicity of [BioPerl's
+SeqIO](bp:HOWTO:SeqIO "wikilink"). In the long term we hope to match
+BioPerl's impressive list of supported [sequence file
+formats](bp:Sequence_formats "wikilink") and [multiple alignment
+formats](bp:Multiple_alignment_formats "wikilink").
 
 Note that the inclusion of Bio.SeqIO (and
 [Bio.AlignIO](AlignIO "wikilink")) in Biopython does lead to some
