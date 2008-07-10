@@ -63,6 +63,7 @@ as [BioPerl's SeqIO](bp:HOWTO:SeqIO#Formats "wikilink") and
 | phylip      | 1.43  | 1.43   | An alignment format. Truncates names at 10 characters.                                                                                            |
 | stockholm   | 1.43  | 1.43   | An alignment format, also known as PFAM format.                                                                                                   |
 | swiss       | 1.43  | No     | Swiss-Prot aka UniProt format. Uses Bio.SwissProt internally.                                                                                     |
+| tab         | CVS   | CVS    | Simple two column tab separated sequence files, where each line holds a record's identifier and sequence.                                         |
 ||
 
 With Bio.SeqIO you can treat sequence alignment file formats just like

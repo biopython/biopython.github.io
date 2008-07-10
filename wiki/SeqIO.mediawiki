@@ -81,6 +81,11 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 | No
 | Swiss-Prot aka UniProt format. Uses Bio.SwissProt internally.
 |-
+| tab
+| CVS
+| CVS
+| Simple two column tab separated sequence files, where each line holds a record's identifier and sequence.
+|-
 |}
 
 With Bio.SeqIO you can treat sequence alignment file formats just like any other sequence file, but the new [[AlignIO|Bio.AlignIO]] module is designed to work with such alignment files directly.  You can also convert a set of [[SeqRecord]] objects from any file format into an alignment - provided they are all the same length.  Note that when using Bio.SeqIO to write sequences to an alignment file format, all the (gapped) sequences should be the same length.
