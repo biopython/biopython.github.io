@@ -37,7 +37,7 @@ about the sequences themselves, in which case try using
 [Bio.SeqIO](SeqIO "wikilink") on the alignment file directly. Unless you
 have some very specific requirements, I hope this should suffice.
 
-Peter
+[Peter](User%3APeter "wikilink")
 
 File Formats
 ------------
