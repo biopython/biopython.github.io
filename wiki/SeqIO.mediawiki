@@ -12,7 +12,7 @@ Note that the inclusion of Bio.SeqIO (and [[AlignIO|Bio.AlignIO]]) in Biopython 
 
 My vision is that for manipulating sequence data you should try Bio.SeqIO as your first choice.  Unless you have some very specific requirements, I hope this should suffice.
 
-Peter
+[[User%3APeter|Peter]]
 
 == File Formats ==
 
