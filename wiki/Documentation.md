@@ -26,15 +26,15 @@ below.
 [HTML](http://biopython.org/DIST/docs/tutorial/Tutorial.html) |
 [PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)
 
--   Wiki documentation on Bio.SeqIO
+-   Wiki documentation,
 
-  
-[HTML](SeqIO "wikilink")
+:\* [Seq](Seq "wikilink") and [SeqRecord](SeqRecord "wikilink") objects
 
--   Wiki documentation on the Biopython BioSQL interface
+:\* [Bio.SeqIO](SeqIO "wikilink") - sequence input/output
 
-  
-[HTML](BioSQL "wikilink")
+:\* [Bio.AlignIO](AlignIO "wikilink") - alignment input/output
+
+:\* Biopython's [BioSQL interface](BioSQL "wikilink")
 
 -   Documentation for the Biopython interfaces to BioSQL cover
     installing Python database adaptors and basic usage of BioSQL.

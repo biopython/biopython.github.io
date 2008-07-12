@@ -5,10 +5,11 @@ New to BioPython? Check out the [[Getting_Started|Getting Started]] page, or fol
 :[http://biopython.org/DIST/docs/install/Installation.html HTML] | [http://biopython.org/DIST/docs/install/Installation.pdf PDF]
 * The '''Biopython Tutorial and Cookbook''' contains the main bulk of Biopython documentation. It provides information to get you started with Biopython, in addition to specific documentation on a number of modules. 
 :[http://biopython.org/DIST/docs/tutorial/Tutorial.html HTML] | [http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF]
-* Wiki documentation on Bio.SeqIO
-: [[SeqIO|HTML]]
-* Wiki documentation on the Biopython BioSQL interface
-: [[BioSQL|HTML]]
+* Wiki documentation,
+:* [[Seq]] and [[SeqRecord]] objects
+:* [[SeqIO|Bio.SeqIO]] - sequence input/output
+:* [[AlignIO|Bio.AlignIO]] - alignment input/output
+:* Biopython's [[BioSQL|BioSQL interface]]
 * Documentation for the Biopython interfaces to BioSQL cover installing Python database adaptors and basic usage of BioSQL. 
 :[http://biopython.org/DIST/docs/biosql/python_biosql_basic.html HTML] | [http://biopython.org/DIST/docs/biosql/python_biosql_basic.pdf PDF]
 * Documentation for the cluster module in Biopython. This describes the underlying C library and the Python interface. 
@@ -22,6 +23,7 @@ New to BioPython? Check out the [[Getting_Started|Getting Started]] page, or fol
 ::[http://biopython.org/DIST/docs/cookbook/biopdb_faq.pdf PDF]
 :*Working with restriction enzymes. 
 ::[http://biopython.org/DIST/docs/cookbook/Restriction.html HTML]
+
 
 ==== API Documentation ====
 
