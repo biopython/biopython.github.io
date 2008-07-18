@@ -96,6 +96,25 @@ Biopython-corba
 -   [Fnorb](http://fnorb.sourceforge.net)
 -   [orbit-python](http://sourceforge.net/projects/orbit-python)
 
+Easy Install
+============
+
+If you have
+[easy\_install](http://peak.telecommunity.com/DevCenter/EasyInstall)
+installed on your computer, you can download and install the latest
+biopython distribution by simply executing this command:
+
+`easy_install -f `[`http://biopython.org/DIST/`](http://biopython.org/DIST/)` biopython`
+
+You will have to have administrator's rights to do this. Eventually, on
+a Gnu/Linux system, you could use one of the followings:
+
+`sudo easy_install -f `[`http://biopython.org/DIST/`](http://biopython.org/DIST/)` biopython`
+
+or
+
+`su -; easy_install -f `[`http://biopython.org/DIST/`](http://biopython.org/DIST/)` biopython`
+
 Packages
 ========
 
