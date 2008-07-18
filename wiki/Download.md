@@ -12,9 +12,10 @@ See also [What's new](http://biopython.open-bio.org/SRC/biopython/NEWS).
 ### Installation Instructions
 
 Please check the sections below for quick installation instructions on a
-Linux or BSD system. On a windows system, you can download an .exe
-installer from this web page too. If you have trouble try the full
-installation instructions:
+Linux or BSD system.
+
+On a windows system, you can download an .exe installer from this web
+page too. If you have trouble try the full installation instructions:
 
 -   [HTML Full Installation
     Instructions](http://biopython.org/DIST/docs/install/Installation.html)
