@@ -41,12 +41,12 @@ The format name is a simple lowercase string, matching the names used in [[SeqIO
 | fasta   
 | 1.46
 | 1.46
-| This refers to the input file format introduced for Bill Pearson's FASTA tool, where each record starts with a ">" line.  Note that storing more than one alignment in this format is ambiguous.
+| This refers to the ''input'' file format introduced for Bill Pearson's FASTA tool, where each record starts with a ">" line.  Note that storing more than one alignment in this format is ambiguous.
 |-
 | fasta-m10
 | 1.46
 | No
-| This refers to the pairwise alignment output from Bill Pearson's FASTA tools, specifically the machine readable version when the -m 10 command line is used.  The default free format text output is not supported.
+| This refers to the pairwise alignment ''output'' from Bill Pearson's FASTA tools, specifically the machine readable version when the -m 10 command line is used.  The default free format text output is not supported.
 |-
 | ig
 | 1.47
@@ -55,8 +55,8 @@ The format name is a simple lowercase string, matching the names used in [[SeqIO
 |-
 | nexus
 | 1.46
-| Soon?
-| Also known as PAUP format.  Uses Bio.Nexus internally.  See enhancement [http://bugzilla.open-bio.org/show_bug.cgi?id=2227 Bug 2227] for writing these files.
+| CVS
+| Also known as PAUP format.  Uses Bio.Nexus internally.
 |-
 | phylip
 | 1.46
