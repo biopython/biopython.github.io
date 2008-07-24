@@ -305,9 +305,8 @@ SeqIO.write(short_sequences, output_handle, "fasta")
 output_handle.close()
 ```
 
-If you know about **list comprehensions** which were introduced in
-Python 2.0, then you could have written the above example like this
-instead:
+If you know about **list comprehensions** then you could have written
+the above example like this instead:
 
 ``` python
 from Bio import SeqIO
