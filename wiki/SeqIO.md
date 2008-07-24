@@ -58,7 +58,7 @@ as [BioPerl's SeqIO](bp:HOWTO:SeqIO#Formats "wikilink") and
 | fasta       | 1.43  | 1.43   | Resulting sequences have a generic alphabet.                                                                                                      |
 | genbank     | 1.43  | No     | The [GenBank or GenPept flat file format](bp:GenBank_sequence_format "wikilink"). Uses Bio.GenBank internally.                                    |
 | ig          | 1.47  | No     | This refers to the IntelliGenetics file format, apparently the same as the [MASE alignment format](bp:Mase_multiple_alignment_format "wikilink"). |
-| nexus       | 1.43  | No     | An alignment format, also known as PAUP format. Uses Bio.Nexus internally.                                                                        |
+| nexus       | 1.43  | CVS    | An alignment format, also known as PAUP format. Uses Bio.Nexus internally.                                                                        |
 | phd         | 1.46  | No     | Output from PHRED, used by PHRAP and CONSED for input. Uses Bio.Sequencing.Phd internally.                                                        |
 | phylip      | 1.43  | 1.43   | An alignment format. Truncates names at 10 characters.                                                                                            |
 | stockholm   | 1.43  | 1.43   | An alignment format, also known as PFAM format.                                                                                                   |

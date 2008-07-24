@@ -58,7 +58,7 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 |-
 | nexus
 | 1.43
-| No
+| CVS
 | An alignment format, also known as PAUP format.  Uses Bio.Nexus internally.
 |-
 | phd
