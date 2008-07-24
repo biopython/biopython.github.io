@@ -458,7 +458,7 @@ If you think you've found a bug, please report it on
 Old Bio.SeqIO code
 ------------------
 
-There is some "old" code living in the Bio.SeqIO.generic and
+There was some old code living in the Bio.SeqIO.generic and
 Bio.SeqIO.FASTA modules, such as the FastaReader class. These files were
 marked as deprecated after the release of the "new" Bio.SeqIO code in
-Biopython 1.43, and may be removed in a future release.
+Biopython 1.43, and were removed in Biopython 1.47.
