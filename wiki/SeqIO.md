@@ -50,20 +50,20 @@ name is a simple lowercase string. Where possible we use the same name
 as [BioPerl's SeqIO](bp:HOWTO:SeqIO#Formats "wikilink") and
 [EMBOSS](http://emboss.sourceforge.net/docs/themes/SequenceFormats.html).
 
-| Format name | Reads | Writes | Notes                                                                                                                                             |
-|-------------|-------|--------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| ace         | 1.47  | No     | Reads the contig sequences from an ACE assembly file. Uses Bio.Sequencing.Ace internally                                                          |
-| clustal     | 1.43  | 1.43   | The alignment format of the Clustal X and Clustal W tools. See also the Bio.Clustalw module.                                                      |
-| embl        | 1.43  | No     | The [EMBL flat file format](bp:EMBL_sequence_format "wikilink"). Uses Bio.GenBank internally.                                                     |
-| fasta       | 1.43  | 1.43   | Resulting sequences have a generic alphabet.                                                                                                      |
-| genbank     | 1.43  | No     | The [GenBank or GenPept flat file format](bp:GenBank_sequence_format "wikilink"). Uses Bio.GenBank internally.                                    |
-| ig          | 1.47  | No     | This refers to the IntelliGenetics file format, apparently the same as the [MASE alignment format](bp:Mase_multiple_alignment_format "wikilink"). |
-| nexus       | 1.43  | CVS    | An alignment format, also known as PAUP format. Uses Bio.Nexus internally.                                                                        |
-| phd         | 1.46  | No     | Output from PHRED, used by PHRAP and CONSED for input. Uses Bio.Sequencing.Phd internally.                                                        |
-| phylip      | 1.43  | 1.43   | An alignment format. Truncates names at 10 characters.                                                                                            |
-| stockholm   | 1.43  | 1.43   | An alignment format, also known as PFAM format.                                                                                                   |
-| swiss       | 1.43  | No     | Swiss-Prot aka UniProt format. Uses Bio.SwissProt internally.                                                                                     |
-| tab         | CVS   | CVS    | Simple two column tab separated sequence files, where each line holds a record's identifier and sequence.                                         |
+| Format name | Reads | Writes | Notes                                                                                                                                                                                                                                   |
+|-------------|-------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ace         | 1.47  | No     | Reads the contig sequences from an ACE assembly file. Uses Bio.Sequencing.Ace internally                                                                                                                                                |
+| clustal     | 1.43  | 1.43   | The alignment format of the Clustal X and Clustal W tools. See also the Bio.Clustalw module.                                                                                                                                            |
+| embl        | 1.43  | No     | The [EMBL flat file format](bp:EMBL_sequence_format "wikilink"). Uses Bio.GenBank internally.                                                                                                                                           |
+| fasta       | 1.43  | 1.43   | Resulting sequences have a generic alphabet.                                                                                                                                                                                            |
+| genbank     | 1.43  | No     | The [GenBank or GenPept flat file format](bp:GenBank_sequence_format "wikilink"). Uses Bio.GenBank internally.                                                                                                                          |
+| ig          | 1.47  | No     | This refers to the IntelliGenetics file format, apparently the same as the [MASE alignment format](bp:Mase_multiple_alignment_format "wikilink").                                                                                       |
+| nexus       | 1.43  | CVS    | An alignment format, also known as PAUP format. Uses Bio.Nexus internally.                                                                                                                                                              |
+| phd         | 1.46  | No     | Output from PHRED, used by PHRAP and CONSED for input. Uses Bio.Sequencing.Phd internally.                                                                                                                                              |
+| phylip      | 1.43  | 1.43   | An alignment format. Truncates names at 10 characters.                                                                                                                                                                                  |
+| stockholm   | 1.43  | 1.43   | An alignment format, also known as PFAM format.                                                                                                                                                                                         |
+| swiss       | 1.43  | No     | Swiss-Prot aka UniProt format. Uses Bio.SwissProt internally.                                                                                                                                                                           |
+| tab         | CVS   | CVS    | Simple two column tab separated sequence files, where each line holds a record's identifier and sequence. For example, this is used as by Aligent's eArray software when saving microarray probes in a minimal tab delimited text file. |
 ||
 
 With Bio.SeqIO you can treat sequence alignment file formats just like

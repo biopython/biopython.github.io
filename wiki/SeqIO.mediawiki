@@ -84,7 +84,7 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 | tab
 | CVS
 | CVS
-| Simple two column tab separated sequence files, where each line holds a record's identifier and sequence.
+| Simple two column tab separated sequence files, where each line holds a record's identifier and sequence. For example, this is used as by Aligent's eArray software when saving microarray probes in a minimal tab delimited text file.
 |-
 |}
 
