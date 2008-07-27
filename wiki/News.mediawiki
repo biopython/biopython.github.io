@@ -1,3 +1,8 @@
-[http://news.open-bio.org/news/category/obf-projects/biopython/ Biopython News] is posted on the [[obf:OBF|Open Bioinformatics Foundation]] shared [http://news.open-bio.org/news/ news server].
+[http://news.open-bio.org/news/category/obf-projects/biopython/ Biopython News] is posted on the [[obf:OBF|Open Bioinformatics Foundation]] shared [http://news.open-bio.org/news/ news server].  Here are the latest headlines:
 
-Our latest release is Biopython 1.47, released on 5 July 2008 and available from the [[Download]] page.  See [http://biopython.open-bio.org/SRC/biopython/NEWS what's new].
+<rss>http://news.open-bio.org/news/category/obf-projects/biopython/feed/|charset=utf-8|short|data|max=4|date</rss>
+
+If you use news-reader software you can subscribe to Biopython news using the [http://news.open-bio.org/news/category/obf-projects/biopython/feed/rdf RDF],
+[http://news.open-bio.org/news/category/obf-projects/biopython/feed/rss RSS],
+[http://news.open-bio.org/news/category/obf-projects/biopython/feed/rss2 RSS2] or
+[http://news.open-bio.org/news/category/obf-projects/biopython/feed/atom Atom] feed.
