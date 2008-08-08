@@ -86,24 +86,6 @@ which could be integrated into Bio.SeqIO or Bio.AlignIO if appropriate.
 Can Bio.KEGG parse files in [KEGG
 format](bp:KEGG_sequence_format "wikilink")?
 
-### IntelliGenetics / MASE alignment format
-
-Bio.IntelliGenetics seems to use Martel parse MASE format like files
-into its own record object. It could be extended to return SeqRecord
-objects. There are already sample input files in Biopython for the unit
-tests, but these are clearly not multiple sequence alignments. See also
-this EMBOSS example:
-
-<http://emboss.sourceforge.net/docs/themes/seqformats/ig>
-
-And these pages about MASE files:
-
-<http://pbil.univ-lyon1.fr/help/formats.html>
-<http://www.bioperl.org/wiki/Mase_multiple_alignment_format>
-
-Biopython-dev mailing list discussion:
-<http://lists.open-bio.org/pipermail/biopython-dev/2008-July/003933.html>
-
 ### MEME format
 
 Bio.MEME has a parser for this file format, which at first glance looks
