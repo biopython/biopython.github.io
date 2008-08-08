@@ -47,14 +47,6 @@ ToDo - Defined standard exceptions in Bio.SeqIO itself?
 
 There are existing parsers in BioPython for the following file formats, which could be integrated into Bio.SeqIO or Bio.AlignIO if appropriate.
 
-=== NBRF / PIR format ===
-
-Bio.NBRF has a Martel parser for [[bp:PIR sequence format|PIR sequence format]], which is similar to the [[bp:FASTA sequence format|FASTA format]].  It would need addition work to return SeqRecords.  It might be easier to extend to reuse the Bio.SeqIO fasta code instead.
-
-There is also [http://www.psc.edu/general/software/packages/seq-intro/nbrffile.html PSC documentation].
-
-Code to implement this attached to [http://bugzilla.open-bio.org/show_bug.cgi?id=2535 Bug 2535].
-
 === KEGG format ===
 
 Can Bio.KEGG parse files in [[bp:KEGG sequence format|KEGG format]]?

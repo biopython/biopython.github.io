@@ -81,20 +81,6 @@ Possible additional formats
 There are existing parsers in BioPython for the following file formats,
 which could be integrated into Bio.SeqIO or Bio.AlignIO if appropriate.
 
-### NBRF / PIR format
-
-Bio.NBRF has a Martel parser for [PIR sequence
-format](bp:PIR_sequence_format "wikilink"), which is similar to the
-[FASTA format](bp:FASTA_sequence_format "wikilink"). It would need
-addition work to return SeqRecords. It might be easier to extend to
-reuse the Bio.SeqIO fasta code instead.
-
-There is also [PSC
-documentation](http://www.psc.edu/general/software/packages/seq-intro/nbrffile.html).
-
-Code to implement this attached to [Bug
-2535](http://bugzilla.open-bio.org/show_bug.cgi?id=2535).
-
 ### KEGG format
 
 Can Bio.KEGG parse files in [KEGG
