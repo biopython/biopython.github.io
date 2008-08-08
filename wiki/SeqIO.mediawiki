@@ -71,6 +71,11 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 | 1.43
 | An alignment format.  Truncates names at 10 characters.
 |-
+| pir
+| CVS
+| No
+| A "FASTA link" format introduced by the National Biomedical Research Foundation (NBRF) for the Protein Information Resource (PIR) database, now part of UniProt.
+|-
 | stockholm
 | 1.43
 | 1.43
