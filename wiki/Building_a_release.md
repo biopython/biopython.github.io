@@ -14,11 +14,12 @@ Build Biopython in 21 easy steps!!
 editing Martel/\_\_init\_\_.py so that any changes will be installed on
 new downloads. Make sure to commit the modified Martel to CVS.
 
-3. make sure README still up to date
+3. make sure the README file is still up to date
 
-4. add info to NEWS
+4. add any important info to NEWS or DEPRECATED - you can get a log of
+recent CVS changes like this (adjust the date accordingly):
 
-`   > cvs log -b -N -d'>2002-12-18' `
+`   > cvs log -b -N -d'2008-06-30'`
 
 5. make sure CONTRIB still current
 
