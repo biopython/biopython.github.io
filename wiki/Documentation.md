@@ -137,6 +137,12 @@ Bio.PDB module).
 
 #### Presentations
 
+-   BOSC 2008 presentation "Biopython Project Update"
+
+  
+[Flash
+version](http://www.slideshare.net/bosc_2008/antao-biopython-bosc2008/)
+
 -   BOSC 2007 presentation "Biopython Project Update"
 
   
