@@ -85,12 +85,12 @@ recent CVS changes like this (adjust the date accordingly):
 `   epydoc -o api -u `[`http://biopython.org`](http://biopython.org)` -n Biopython --docformat plaintext Bio BioSQL Martel`
 
 -   Move the generated api directory to replace
-    /home/websites/biopython.org/html/static/DIST/docs/api/
-    on portal.open-bio.org.
+    /home/websites/biopython.org/html/static/DIST/docs/api/ on
+    biopython.org (aka portal.open-bio.org).
 
 18. scp or ftp the .tar.gz, .zip and Windows installer files to the
 Biopython website, folder /home/websites/biopython.org/html/static/DIST/
-on portal.open-bio.org.
+on biopython.org (aka portal.open-bio.org).
 
 19. update the [website](website "wikilink"):
 
