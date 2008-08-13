@@ -83,18 +83,25 @@ new downloads. Make sure to commit the modified Martel to CVS.
 
 `   epydoc -o api -u `[`http://biopython.org`](http://biopython.org)` -n Biopython --docformat plaintext Bio BioSQL Martel`
 
--   Move the generated api directory to
-    replace /home/websites/biopython.org/html/static/DIST/docs/api.
+-   Move the generated api directory to replace
+    /home/websites/biopython.org/html/static/DIST/docs/api/
+    on portal.open-bio.org.
 
-18. ftp the .tar.gz, .zip files to biopython
+18. scp or ftp the .tar.gz, .zip and Windows installer files to the
+Biopython website, folder /home/websites/biopython.org/html/static/DIST/
+on portal.open-bio.org.
 
-19. update the web site
+19. update the [website](website "wikilink"):
 
--   add to Download page (through the wiki)
--   Post news on news.open-bio.org
+-   add to [main page](Main_Page "wikilink") and [downloads
+    page](Download "wikilink") (through the wiki)
+-   post the announcement on
+    [news.open-bio.org](http://news.open-bio.org) (which will update the
+    [news page](News "wikilink") via the news feed)
 -   make sure links work
 
 20. clean up the tmp directories I made
 
-21. send email to biopython@biopython.org,
-biopython-announce@biopython.org
+21. send email to biopython@biopython.org and
+biopython-announce@biopython.org (see [mailing
+lists](Mailing_lists "wikilink"))

@@ -57,15 +57,15 @@ Build Biopython in 21 easy steps!!
 17. Update API documentation using Epydoc.
 * Go to the /usr/local/lib/python2.4/site-packages (or equivalent) directory. Running epydoc in your CVS tree works, but can miss some packages due to import errors.
     epydoc -o api -u http://biopython.org -n Biopython --docformat plaintext Bio BioSQL Martel
-* Move the generated api directory to replace /home/websites/biopython.org/html/static/DIST/docs/api. 
+* Move the generated api directory to replace /home/websites/biopython.org/html/static/DIST/docs/api/ on portal.open-bio.org.
 
-18. ftp the .tar.gz, .zip files to biopython
+18. scp or ftp the .tar.gz, .zip and Windows installer files to the Biopython website, folder /home/websites/biopython.org/html/static/DIST/ on portal.open-bio.org.
 
-19. update the web site
-* add to Download page (through the wiki)
-* Post news on news.open-bio.org
+19. update the [[website]]:
+* add to [[Main_Page|main page]] and [[Download|downloads page]] (through the wiki)
+* post the announcement on [http://news.open-bio.org news.open-bio.org] (which will update the [[News|news page]] via the news feed)
 * make sure links work 
 
 20. clean up the tmp directories I made
 
-21. send email to biopython@biopython.org, biopython-announce@biopython.org
+21. send email to biopython@biopython.org and biopython-announce@biopython.org (see [[Mailing_lists|mailing lists]])
