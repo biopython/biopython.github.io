@@ -234,9 +234,9 @@ The driver for PostgreSQL is *psycopg*
 Creating a (sub) database
 =========================
 
-BioSQL lets us define named "sub" databases within the single SQL
-database (which we called *bioseqdb* earlier). For this example, lets
-create a one for some orchid sequences:
+BioSQL lets us define named "sub" databases or "namespaces" within the
+single SQL database (which we called *bioseqdb* earlier). For this
+example, lets create a one for some orchid sequences:
 
 ### MySQL
 
