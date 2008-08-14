@@ -238,8 +238,6 @@ BioSQL lets us define named "sub" databases or "namespaces" within the
 single SQL database (which we called *bioseqdb* earlier). For this
 example, lets create a one for some orchid sequences:
 
-### MySQL
-
 ``` python
 from BioSQL import BioSeqDatabase
 server = BioSeqDatabase.open_database(driver="MySQLdb", user="root",
@@ -248,14 +246,8 @@ db = server.new_database("orchids", description="Just for testing")
 server.adaptor.commit()
 ```
 
-### PostgreSQL
-
-``` python
-from BioSQL import BioSeqDatabase
-server = BioSeqDatabase.open_database(driver="psycopg", user="root", db="bioseqdb")
-db = server.new_database("orchids", description="Just for testing")
-server.adaptor.commit()
-```
+(If you are using PostgreSQL rather than MySQL, just change the driver
+argument to "psycopg" instead)
 
 The call *server.adaptor.commit()* tells the database to save the
 changes so far (commit the SQL transaction). It is up to you to decide
@@ -266,13 +258,13 @@ Python](http://www.python.org/dev/peps/pep-0020/)) and [bug
 2395](http://bugzilla.open-bio.org/show_bug.cgi?id=2395).
 
 There should now be a single row in the *biodatabase* table for our new
-orchid database. You can check this at the command line:
+orchid namespace. You can check this at the command line:
 
-### MySQL
+MySQL:
 
 `mysql --user=root bioseqdb -e "select * from biodatabase;"`
 
-### PostgreSQL
+PostgreSQL:
 
 `psql -c "SELECT * FROM biodatabase;" bioseqdb`
 
@@ -285,8 +277,8 @@ other testing yet):
 `|              1 | orchids | NULL      | Just for testing |`  
 `+----------------+---------+-----------+------------------+`
 
-Now that we have setup an *orchids* database within our *biosqldb* MySQL
-database, lets add some sequences to it.
+Now that we have setup an *orchids* namespace within our *biosqldb*
+MySQL database, lets add some sequences to it.
 
 Loading Sequences into a database
 =================================
