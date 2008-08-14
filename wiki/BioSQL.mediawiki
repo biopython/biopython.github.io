@@ -250,7 +250,7 @@ Next, we'll try and load these three records back from the database.
 
 = Extracting Sequences from the database =
 
-This continues from the previous example, where we loaded three records into an ''orchids'' database:
+This continues from the previous example, where we loaded three records into an ''orchids'' database (namespace):
 
 <source lang=python>
 from BioSQL import BioSeqDatabase
