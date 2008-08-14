@@ -247,7 +247,8 @@ server.adaptor.commit()
 ```
 
 (If you are using PostgreSQL rather than MySQL, just change the driver
-argument to "psycopg" instead)
+argument to "psycopg" instead. The same applies to the other examples in
+this document)
 
 The call *server.adaptor.commit()* tells the database to save the
 changes so far (commit the SQL transaction). It is up to you to decide
