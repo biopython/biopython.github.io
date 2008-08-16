@@ -4,16 +4,25 @@ permalink: wiki/Getting_Started
 layout: wiki
 ---
 
-Download
---------
+Download and Installation
+-------------------------
 
-See [Getting BioPython](Download "wikilink")
+See our [downloads page](Download "wikilink") for details including the
+prerequisites. For Windows we provide click-and-run installers. Most
+Linux distributions will include an optional Biopython package.
+Otherwise you typically install from source by downloading and
+uncompressing the archive, then running the command:
 
-Installation
-------------
+`sudo python setup.py install`
 
-See [Installing
-BioPython](http://biopython.org/DIST/docs/install/Installation.html)
+You can check your installation has worked at the python prompt:
+
+``` python
+>>> import Bio
+```
+
+If that gives no error, you should be done. If you get something like
+"ImportError: No module named Bio" something has gone wrong.
 
 Tutorial
 --------

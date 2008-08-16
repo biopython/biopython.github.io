@@ -1,10 +1,17 @@
-==Download==
+==Download and Installation==
 
-See [[Download|Getting BioPython]]
+See our [[Download|downloads page]] for details including the prerequisites.  For Windows we provide click-and-run installers.  Most Linux distributions will include an optional Biopython package.
+Otherwise you typically install from source by downloading and uncompressing the archive, then running the command:
 
-==Installation==
+ sudo python setup.py install
 
-See [http://biopython.org/DIST/docs/install/Installation.html Installing BioPython]
+You can check your installation has worked at the python prompt:
+
+<source lang=python>
+>>> import Bio
+</source>
+
+If that gives no error, you should be done.  If you get something like "ImportError: No module named Bio" something has gone wrong.
 
 ==Tutorial==
 
