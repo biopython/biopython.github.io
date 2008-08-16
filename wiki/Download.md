@@ -84,24 +84,6 @@ requirements:
 -   [Clustalw](ftp://ftp.ebi.ac.uk/pub/software/unix/clustalw/) --
     command line tool for building sequence alignments
 
-Biopython-corba
-===============
-
-### Files
-
--   Source tarball --
-    [biopython-corba-0.3.0.tar.gz](http://biopython.org/DIST/biopython-corba-0.3.0.tar.gz)
-    344Kb
--   Source Zip File --
-    [biopython-corba-0.3.0.zip](http://biopython.org/DIST/biopython-corba-0.3.0.zip)
-    378Kb
-
-### Required Software
-
--   [omniORBpy](http://omniorb.sourceforge.net)
--   [Fnorb](http://fnorb.sourceforge.net)
--   [orbit-python](http://sourceforge.net/projects/orbit-python)
-
 Easy Install
 ============
 
