@@ -9,19 +9,6 @@ Current Release -- 1.47 -- 5 July 2008
 
 See also [What's new](http://biopython.open-bio.org/SRC/biopython/NEWS).
 
-### Installation Instructions
-
-Please check the sections below for quick installation instructions on a
-Linux or BSD system.
-
-On a windows system, you can download an .exe installer from this web
-page too. If you have trouble try the full installation instructions:
-
--   [HTML Full Installation
-    Instructions](http://biopython.org/DIST/docs/install/Installation.html)
--   [PDF Full Installation
-    Instructions](http://biopython.org/DIST/docs/install/Installation.pdf)
-
 ### Files
 
 -   Source Tarball --
@@ -39,6 +26,38 @@ page too. If you have trouble try the full installation instructions:
 -   Windows Installer for Python 2.5 --
     [biopython-1.47.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.47.win32-py2.5.exe)
     1,236 Kb
+
+### Installation Instructions
+
+For Windows we provide click-and-run installers (specific to your
+version of python), but you will first need to install some prerequisite
+software (listed below).
+
+Most Linux distributions will include an optional Biopython package
+(described below), and will take care of any prerequisite software
+automatically.
+
+Otherwise you typically install from source by downloading and
+uncompressing the archive, then running the command:
+
+`sudo python setup.py install`
+
+You can check your installation worked at the python prompt:
+
+``` python
+>>> import Bio
+```
+
+If that gives no error, you *should* be done. If you get something like
+"ImportError: No module named Bio" something has gone wrong.
+
+If you have trouble, or want to run the test suite, see the full
+installation instructions:
+
+-   [HTML Full Installation
+    Instructions](http://biopython.org/DIST/docs/install/Installation.html)
+-   [PDF Full Installation
+    Instructions](http://biopython.org/DIST/docs/install/Installation.pdf)
 
 ### Required Software
 

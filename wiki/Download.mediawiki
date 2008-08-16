@@ -2,16 +2,6 @@
 
 See also [http://biopython.open-bio.org/SRC/biopython/NEWS What's new].
 
-=== Installation Instructions ===
-
-Please check the sections below for quick installation instructions on a Linux or BSD system.
-
-On a windows system, you can download an .exe installer from this web page too.
-If you have trouble try the full installation instructions:
-
-* [http://biopython.org/DIST/docs/install/Installation.html HTML Full Installation Instructions]
-* [http://biopython.org/DIST/docs/install/Installation.pdf PDF Full Installation Instructions]
-
 === Files ===
 
 * Source Tarball -- [http://biopython.org/DIST/biopython-1.47.tar.gz biopython-1.47.tar.gz] 4,018 Kb
@@ -19,6 +9,29 @@ If you have trouble try the full installation instructions:
 * Windows Installer for Python 2.3 -- [http://biopython.org/DIST/biopython-1.47.win32-py2.3.exe biopython-1.47.win32-py2.3.exe] 1,207 Kb
 * Windows Installer for Python 2.4 -- [http://biopython.org/DIST/biopython-1.47.win32-py2.4.exe biopython-1.47.win32-py2.4.exe] 1,236 Kb
 * Windows Installer for Python 2.5 -- [http://biopython.org/DIST/biopython-1.47.win32-py2.5.exe biopython-1.47.win32-py2.5.exe] 1,236 Kb
+
+=== Installation Instructions ===
+
+For Windows we provide click-and-run installers (specific to your version of python), but you will first need to install some prerequisite software (listed below).
+
+Most Linux distributions will include an optional Biopython package (described below), and will take care of any prerequisite software automatically.    
+
+Otherwise you typically install from source by downloading and uncompressing the archive, then running the command:
+
+ sudo python setup.py install
+
+You can check your installation worked at the python prompt:
+
+<source lang=python>
+>>> import Bio
+</source>
+
+If that gives no error, you ''should'' be done.  If you get something like "ImportError: No module named Bio" something has gone wrong.
+
+If you have trouble, or want to run the test suite, see the full installation instructions:
+
+* [http://biopython.org/DIST/docs/install/Installation.html HTML Full Installation Instructions]
+* [http://biopython.org/DIST/docs/install/Installation.pdf PDF Full Installation Instructions]
 
 === Required Software ===
 
