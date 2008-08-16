@@ -36,7 +36,7 @@ the bulk of our documentation. See
 Quick example
 -------------
 
-Executing this:
+Try executing this in python:
 
 ``` python
 from Bio.Seq import Seq,translate
@@ -58,7 +58,7 @@ print 'protein translation is %s' % my_protein.tostring()
 print 'protein record:', my_protein
 ```
 
-Produces:
+You should get the following output:
 
     seq is 11 bases long
     reverse complement is CTATCTACATG

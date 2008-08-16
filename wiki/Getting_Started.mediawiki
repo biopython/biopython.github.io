@@ -19,7 +19,7 @@ The Biopython Tutorial and Cookbook ([http://biopython.org/DIST/docs/tutorial/Tu
 
 ==Quick example==
 
-Executing this:
+Try executing this in python:
 <source lang=python>
 from Bio.Seq import Seq,translate
 
@@ -41,7 +41,7 @@ print 'protein record:', my_protein
 
 </source>
 
-Produces:
+You should get the following output:
 <pre>
 seq is 11 bases long
 reverse complement is CTATCTACATG
