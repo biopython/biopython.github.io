@@ -20,14 +20,6 @@ Otherwise you typically install from source by downloading and uncompressing the
 
  sudo python setup.py install
 
-You can check your installation worked at the python prompt:
-
-<source lang=python>
->>> import Bio
-</source>
-
-If that gives no error, you ''should'' be done.  If you get something like "ImportError: No module named Bio" something has gone wrong.
-
 If you have trouble, or want to run the test suite, see the full installation instructions:
 
 * [http://biopython.org/DIST/docs/install/Installation.html HTML Full Installation Instructions]

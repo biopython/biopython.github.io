@@ -42,15 +42,6 @@ uncompressing the archive, then running the command:
 
 `sudo python setup.py install`
 
-You can check your installation worked at the python prompt:
-
-``` python
->>> import Bio
-```
-
-If that gives no error, you *should* be done. If you get something like
-"ImportError: No module named Bio" something has gone wrong.
-
 If you have trouble, or want to run the test suite, see the full
 installation instructions:
 
