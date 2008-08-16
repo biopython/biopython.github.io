@@ -113,19 +113,13 @@ Synaptic Package Manager), or at the command line using:
 
 `sudo apt-get install python-biopython`
 
-However, this will probably not be the latest release.
+However, this will probably not be the latest release (see [listing
+here](http://packages.ubuntu.com/python-biopython)). If you want the
+latest version of Biopython, you will need to install it from source.
+However, you should be able to automatically install the build
+dependencies with the following command:
 
-Biopython 1.41 packages for Ubuntu (Dapper):
-
--   [python-biopython](http://packages.ubuntulinux.org/dapper/source/python-biopython)
-
-Ubuntu Edgy doesn't seem to have working AMD64 packages. Fiesty
-biopython 1.42 AMD64 packages backported for Edgy here:
-
--   [python-biopython-doc\_1.42-2\_all.deb](http://students.ee.sun.ac.za/~nmarais/files/python-biopython-doc_1.42-2_all.deb)
--   [python-biopython-martel\_1.42-2\_all.deb](http://students.ee.sun.ac.za/~nmarais/files/python-biopython-martel_1.42-2_all.deb)
--   [python-biopython-sql\_1.42-2\_all.deb](http://students.ee.sun.ac.za/~nmarais/files/python-biopython-sql_1.42-2_all.deb)
--   [python-biopython\_1.42-2\_amd64.deb](http://students.ee.sun.ac.za/~nmarais/files/python-biopython_1.42-2_amd64.deb)
+`sudo apt-get build-dep python-biopython`
 
 ### Fedora
 
@@ -137,7 +131,7 @@ and can be installed using yum:
 `yum install python-biopython`
 
 or via one of the GUI package management systems such as pirut and
-PackageKit (available in F-9 and later). biopython 1.45 is the latest
+PackageKit (available in F-9 and later). Biopython 1.45 is the latest
 available (as of 2008-06-04).
 
 ### Gentoo Linux
