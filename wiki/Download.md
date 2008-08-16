@@ -57,14 +57,6 @@ page too. If you have trouble try the full installation instructions:
     [Numeric-24.2.win32-py2.5.exe](http://biopython.org/DIST/Numeric-24.2.win32-py2.5.exe)
     446 Kb
 
-For Ubuntu Linux, install the following packages to cover these
-requirements:
-
--   python-egenix-mxtexttools
--   python-numeric
--   python-dev
--   build-essential
-
 ### Optional Software
 
 -   [ReportLab](http://www.reportlab.org/downloads.html) -- used for pdf

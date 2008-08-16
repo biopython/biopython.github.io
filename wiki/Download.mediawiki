@@ -26,13 +26,6 @@ If you have trouble try the full installation instructions:
 * [http://www.python.org/doc/current/inst/inst.html A C compiler (if compiling from source)] You need a C compiler supported by distutils, gcc will work fine on UNIX-like platforms.  This is not needed on Windows if using the install programs provided above.
 * [http://numpy.scipy.org/#older_array Numerical Python] Note that BioPython has not (yet) switched to the 'new' numpy library.  You need the 'old' Numeric library, version 24.2 is recommended. Windows installers for Python 2.4 and older are available from the [http://numpy.scipy.org/#older_array Numerical Python] website. A Windows installer for Numeric 24.2 for Python 2.5 is available here: [http://biopython.org/DIST/Numeric-24.2.win32-py2.5.exe Numeric-24.2.win32-py2.5.exe] 446 Kb
 
-For Ubuntu Linux, install the following packages to cover these requirements:
-
-* python-egenix-mxtexttools
-* python-numeric
-* python-dev
-* build-essential
-
 === Optional Software ===
 
 * [http://www.reportlab.org/downloads.html ReportLab] -- used for pdf graphics code
