@@ -110,16 +110,6 @@ Bio.PDB module).
 
 #### Papers
 
--   Thomas wrote an applications note<cite>Hamelryck</cite> for
-    Bioinformatics about the Biopython PDB parser and related code
-    dealing with crystal structures.
-
-<biblio>
-
-1.  Hamelryck pmid=14630660
-
-</biblio>
-
 -   Brad and Jeff wrote a paper for the ACM SIG-BIO newsletter back in
     August of 2000.
 
@@ -127,7 +117,23 @@ Bio.PDB module).
 [HTML](http://biopython.org/DIST/docs/acm/ACMbiopy.html) |
 [PDF](http://biopython.org/DIST/docs/acm/ACMbiopy.pdf)
 
--   Python for Bioinformatics PLOS tutorial featuring Biopython.
+-   The Bio.PDB module is described in this Bioinformatics article:
+
+<biblio>
+
+1.  Hamelryck pmid=14630660
+
+</biblio>
+
+-   The Bio.Cluster module is described in a Bioinformatics article:
+
+<biblio>
+
+1.  de-Hoon pmid=14871861
+
+</biblio>
+
+-   Python for Bioinformatics PLOS tutorial featuring Biopython:
 
 <biblio>
 

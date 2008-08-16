@@ -43,13 +43,17 @@ New to BioPython? Check out the [[Getting_Started|Getting Started]] page, or fol
 
 ==== Papers ====
 
-*Thomas wrote an applications note<cite>Hamelryck</cite> for Bioinformatics about the Biopython PDB parser and related code dealing with crystal structures.
+*Brad and Jeff wrote a paper for the ACM SIG-BIO newsletter back in August of 2000.
+:[http://biopython.org/DIST/docs/acm/ACMbiopy.html HTML] | [http://biopython.org/DIST/docs/acm/ACMbiopy.pdf PDF]
+*The Bio.PDB module is described in this Bioinformatics article:
 <biblio>
 #Hamelryck pmid=14630660
 </biblio>
-*Brad and Jeff wrote a paper for the ACM SIG-BIO newsletter back in August of 2000.
-:[http://biopython.org/DIST/docs/acm/ACMbiopy.html HTML] | [http://biopython.org/DIST/docs/acm/ACMbiopy.pdf PDF]
-*Python for Bioinformatics PLOS tutorial featuring Biopython.
+*The Bio.Cluster module is described in a Bioinformatics article:
+<biblio>
+#de-Hoon pmid=14871861
+</biblio>
+*Python for Bioinformatics PLOS tutorial featuring Biopython:
 <biblio>
 #Bassi pmid=18052533
 </biblio>
