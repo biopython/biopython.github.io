@@ -8,10 +8,8 @@ layout: wiki
 
 The Biopython source code is kept under a version control system which
 allows multiple users from around the world to work on the same code
-base at the same time.
-
-We use CVS (Concurrent Versions System), the most common version control
-system, for this purpose.
+base at the same time. We currently use CVS (Concurrent Versions System)
+for this purpose.
 
 An hourly updated CVS checkout of Biopython is available at
 <http://biopython.open-bio.org/SRC/biopython>
