@@ -291,9 +291,9 @@ recap on reading in sequences as SeqRecords, based on one of the orchid
 examples in the Biopython Tutorial:
 
 ``` python
-from Bio import GenBank
+from Bio import Entrez
 from Bio import SeqIO
-handle = GenBank.download_many(['6273291', '6273290', '6273289'])
+handle = Entrez.efetch(db="nuccore", id="6273291,6273290,6273289", rettype="genbank")
 for seq_record in SeqIO.parse(handle, "genbank") :
     print seq_record.id, seq_record.description[:50] + "..."
     print "Sequence length %i," % len(seq_record.seq),
@@ -315,13 +315,13 @@ Now, instead of printing things on screen, let's add these three records
 to a new (empty) *orchid* database:
 
 ``` python
-from Bio import GenBank
+from Bio import Entrez
 from Bio import SeqIO
 from BioSQL import BioSeqDatabase
 server = BioSeqDatabase.open_database(driver="MySQLdb", user="root",
                      passwd = "", host = "localhost", db="bioseqdb")
 db = server["orchids"]
-handle = GenBank.download_many(['6273291', '6273290', '6273289'])
+handle = Entrez.efetch(db="nuccore", id="6273291,6273290,6273289", rettype="genbank")
 db.load(SeqIO.parse(handle, "genbank"))
 server.adaptor.commit()
 ```
