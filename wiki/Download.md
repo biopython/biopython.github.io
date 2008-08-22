@@ -75,7 +75,7 @@ list](Mailing_lists "wikilink") and ask for help there.
 -   [ReportLab](http://www.reportlab.org/downloads.html) -- used for pdf
     graphics code
 -   [MySQLdb](http://sourceforge.net/projects/mysql-python) -- used for
-    [BioSQL](BioSQL "wikilink")
+    [BioSQL](BioSQL "wikilink") with a MySQL database
 -   [mxTextTools
     2.0](http://www.egenix.com/www2002/python/eGenix-mx-Extensions-v2.x.html/)
     This is used in some of the older parsers. There are a few niggles
