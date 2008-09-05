@@ -48,8 +48,8 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 |-  
 | genbank 
 | 1.43
-| CVS...
-| The [[bp:GenBank_sequence_format|GenBank or GenPept flat file format]].  Uses Bio.GenBank internally for parsing.  Support for writing GenBank files is currently ''in progress'' (see [http://bugzilla.open-bio.org/show_bug.cgi?id=2294 Bug 2294])
+| 1.48...
+| The [[bp:GenBank_sequence_format|GenBank or GenPept flat file format]].  Uses Bio.GenBank internally for parsing.  Support for writing GenBank files is currently ''in progress'', with only basic functionality in Biopython 1.48 (see [http://bugzilla.open-bio.org/show_bug.cgi?id=2294 Bug 2294])
 |-
 | ig
 | 1.47
@@ -58,7 +58,7 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 |-
 | nexus
 | 1.43
-| CVS
+| 1.48
 | An alignment format, also known as PAUP format.  Uses Bio.Nexus internally.
 |-
 | phd
@@ -72,7 +72,7 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 | An alignment format.  Truncates names at 10 characters.
 |-
 | pir
-| CVS
+| 1.48
 | No
 | A "FASTA like" format introduced by the National Biomedical Research Foundation (NBRF) for the Protein Information Resource (PIR) database, now part of UniProt.
 |-
@@ -87,8 +87,8 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 | Swiss-Prot aka UniProt format. Uses Bio.SwissProt internally.
 |-
 | tab
-| CVS
-| CVS
+| 1.48
+| 1.48
 | Simple two column tab separated sequence files, where each line holds a record's identifier and sequence. For example, this is used as by Aligent's eArray software when saving microarray probes in a minimal tab delimited text file.
 |-
 |}
