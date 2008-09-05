@@ -55,7 +55,7 @@ The format name is a simple lowercase string, matching the names used in [[SeqIO
 |-
 | nexus
 | 1.46
-| CVS
+| 1.48
 | Also known as PAUP format.  Uses Bio.Nexus internally.
 |-
 | phylip
