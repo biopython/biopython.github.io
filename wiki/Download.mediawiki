@@ -1,14 +1,14 @@
-= Current Release -- 1.48 -- 5 September 2008 =
+= Current Release -- 1.47 -- 5 July 2008 =
 
 See also [http://biopython.open-bio.org/SRC/biopython/NEWS What's new].
 
 === Files ===
 
-* Source Tarball -- [http://biopython.org/DIST/biopython-1.48.tar.gz biopython-1.48.tar.gz] 3,979 Kb
-* Source Zip File -- [http://biopython.org/DIST/biopython-1.48.zip biopython-1.48.zip] 4,552 Kb
-* Windows Installer for Python 2.3 -- [http://biopython.org/DIST/biopython-1.47.win32-py2.3.exe biopython-1.47.win32-py2.3.exe] 1,207 Kb (update pending)
-* Windows Installer for Python 2.4 -- [http://biopython.org/DIST/biopython-1.47.win32-py2.4.exe biopython-1.47.win32-py2.4.exe] 1,236 Kb (update pending)
-* Windows Installer for Python 2.5 -- [http://biopython.org/DIST/biopython-1.47.win32-py2.5.exe biopython-1.47.win32-py2.5.exe] 1,236 Kb (update pending)
+* Source Tarball -- [http://biopython.org/DIST/biopython-1.47.tar.gz biopython-1.47.tar.gz] 4,018 Kb
+* Source Zip File -- [http://biopython.org/DIST/biopython-1.47.zip biopython-1.47.zip] 4,528 Kb
+* Windows Installer for Python 2.3 -- [http://biopython.org/DIST/biopython-1.47.win32-py2.3.exe biopython-1.47.win32-py2.3.exe] 1,207 Kb
+* Windows Installer for Python 2.4 -- [http://biopython.org/DIST/biopython-1.47.win32-py2.4.exe biopython-1.47.win32-py2.4.exe] 1,236 Kb
+* Windows Installer for Python 2.5 -- [http://biopython.org/DIST/biopython-1.47.win32-py2.5.exe biopython-1.47.win32-py2.5.exe] 1,236 Kb
 
 === Installation Instructions ===
 
@@ -101,11 +101,6 @@ Due to the great architecture of the ports system, this simple commands will aut
 
 = Old Releases =
 
-* [http://biopython.org/DIST/biopython-1.47.tar.gz biopython-1.47.tar.gz] 4,018 Kb
-* [http://biopython.org/DIST/biopython-1.47.zip biopython-1.47.zip] 4,528 Kb
-* [http://biopython.org/DIST/biopython-1.47.win32-py2.3.exe biopython-1.47.win32-py2.3.exe] 1,207 Kb
-* [http://biopython.org/DIST/biopython-1.47.win32-py2.4.exe biopython-1.47.win32-py2.4.exe] 1,236 Kb
-* [http://biopython.org/DIST/biopython-1.47.win32-py2.5.exe biopython-1.47.win32-py2.5.exe] 1,236 Kb
 * [http://biopython.org/DIST/biopython-1.46.tar.gz biopython-1.46.tar.gz] 3,926 Kb
 * [http://biopython.org/DIST/biopython-1.46.zip biopython-1.46.zip] 4,426 Kb
 * [http://biopython.org/DIST/biopython-1.46.win32-py2.3.exe biopython-1.46.win32-py2.3.exe] 1,206 Kb
