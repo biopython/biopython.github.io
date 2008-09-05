@@ -49,7 +49,7 @@ recent CVS changes like this (adjust the date accordingly):
 
 11. make MANIFEST. First, make sure MANIFEST.in up to date.
 
-`   > make clean -C doc`  
+`   > make clean -C Doc`  
 `   > python setup.py sdist --manifest-only `
 
 12. make sure the regression tests run here
