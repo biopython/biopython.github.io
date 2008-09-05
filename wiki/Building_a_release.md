@@ -19,7 +19,7 @@ new downloads. Make sure to commit the modified Martel to CVS.
 4. add any important info to NEWS or DEPRECATED - you can get a log of
 recent CVS changes like this (adjust the date accordingly):
 
-`   > cvs log -b -N -d'2008-06-30'`
+`   > cvs log -b -N -d'>2008-07-05'`
 
 5. make sure CONTRIB still current
 
