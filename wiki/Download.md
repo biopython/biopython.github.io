@@ -4,28 +4,28 @@ permalink: wiki/Download
 layout: wiki
 ---
 
-Current Release -- 1.47 -- 5 July 2008
-======================================
+Current Release -- 1.48 -- 8 September 2008
+===========================================
 
 See also [What's new](http://biopython.open-bio.org/SRC/biopython/NEWS).
 
 ### Files
 
 -   Source Tarball --
-    [biopython-1.47.tar.gz](http://biopython.org/DIST/biopython-1.47.tar.gz)
-    4,018 Kb
+    [biopython-1.48.tar.gz](http://biopython.org/DIST/biopython-1.48.tar.gz)
+    4,051 Kb
 -   Source Zip File --
-    [biopython-1.47.zip](http://biopython.org/DIST/biopython-1.47.zip)
-    4,528 Kb
+    [biopython-1.48.zip](http://biopython.org/DIST/biopython-1.48.zip)
+    4,542 Kb
 -   Windows Installer for Python 2.3 --
     [biopython-1.47.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.47.win32-py2.3.exe)
-    1,207 Kb
+    1,207 Kb (update pending)
 -   Windows Installer for Python 2.4 --
     [biopython-1.47.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.47.win32-py2.4.exe)
-    1,236 Kb
+    1,236 Kb (update pending)
 -   Windows Installer for Python 2.5 --
     [biopython-1.47.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.47.win32-py2.5.exe)
-    1,236 Kb
+    1,236 Kb (update pending)
 
 ### Installation Instructions
 
@@ -78,8 +78,9 @@ list](Mailing_lists "wikilink") and ask for help there.
     [BioSQL](BioSQL "wikilink") with a MySQL database
 -   [mxTextTools
     2.0](http://www.egenix.com/www2002/python/eGenix-mx-Extensions-v2.x.html/)
-    This is used in some of the older parsers. There are a few niggles
-    with mxTextTools 3.0, so ideally install the older mxTextTools 2.0.
+    This is used in some of the older parsers, and you probably won't
+    need it. There are a few niggles with mxTextTools 3.0, so ideally
+    install the older mxTextTools 2.0.
 -   [flex: The Fast Lexical Analyzer](http://flex.sourceforge.net/) --
     for building Bio.PDB.mmCIF.MMCIFlex
 -   [Wise2](http://www.ebi.ac.uk/Wise2/) -- for command line tool dnal
@@ -186,6 +187,16 @@ dependencies).
 Old Releases
 ============
 
+-   [biopython-1.47.tar.gz](http://biopython.org/DIST/biopython-1.47.tar.gz)
+    4,018 Kb
+-   [biopython-1.47.zip](http://biopython.org/DIST/biopython-1.47.zip)
+    4,528 Kb
+-   [biopython-1.47.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.47.win32-py2.3.exe)
+    1,207 Kb
+-   [biopython-1.47.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.47.win32-py2.4.exe)
+    1,236 Kb
+-   [biopython-1.47.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.47.win32-py2.5.exe)
+    1,236 Kb
 -   [biopython-1.46.tar.gz](http://biopython.org/DIST/biopython-1.46.tar.gz)
     3,926 Kb
 -   [biopython-1.46.zip](http://biopython.org/DIST/biopython-1.46.zip)
