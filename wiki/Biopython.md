@@ -20,7 +20,7 @@ who generously provide web and CVS space for the project.
 
 ### Download Current Release
 
-The latest release is Biopython 1.47, released on 5 July 2008. Get it
-from our [Download](Download "wikilink") page.
+The latest release is Biopython 1.48, released on 8 September 2008. Get
+it from our [Download](Download "wikilink") page.
 
 See the [News page](News "wikilink") as well.
