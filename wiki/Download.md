@@ -18,14 +18,14 @@ See also [What's new](http://biopython.open-bio.org/SRC/biopython/NEWS).
     [biopython-1.48.zip](http://biopython.org/DIST/biopython-1.48.zip)
     4,542 Kb
 -   Windows Installer for Python 2.3 --
-    [biopython-1.47.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.47.win32-py2.3.exe)
-    1,207 Kb (update pending)
+    [biopython-1.48.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.48.win32-py2.3.exe)
+    1,226 Kb
 -   Windows Installer for Python 2.4 --
-    [biopython-1.47.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.47.win32-py2.4.exe)
-    1,236 Kb (update pending)
+    [biopython-1.48.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.48.win32-py2.4.exe)
+    1,254 Kb
 -   Windows Installer for Python 2.5 --
-    [biopython-1.47.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.47.win32-py2.5.exe)
-    1,236 Kb (update pending)
+    [biopython-1.48.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.48.win32-py2.5.exe)
+    1,254 Kb
 
 ### Installation Instructions
 
