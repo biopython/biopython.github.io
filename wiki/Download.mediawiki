@@ -35,12 +35,17 @@ If you are still stuck, sign up to the [[Mailing_lists|Biopython mailing list]] 
 
 === Optional Software ===
 
+For compiling Biopython:
+* [http://flex.sourceforge.net/ flex: The Fast Lexical Analyzer] -- for building Bio.PDB.mmCIF.MMCIFlex which is used to parse macromolecular Crystallographic Information Files (mmCIF)
+
+Some parts of Biopython use the following additional python libraries:
 * [http://www.reportlab.org/downloads.html ReportLab] -- used for pdf graphics code
 * [http://sourceforge.net/projects/mysql-python MySQLdb] -- used for [[BioSQL]] with a MySQL database
 * [http://www.egenix.com/www2002/python/eGenix-mx-Extensions-v2.x.html/ mxTextTools 2.0] This is used in some of the older parsers, and you probably won't need it.  There are a few niggles with mxTextTools 3.0, so ideally install the older mxTextTools 2.0.
-* [http://flex.sourceforge.net/ flex: The Fast Lexical Analyzer] -- for building Bio.PDB.mmCIF.MMCIFlex
+
+In addition Biopython includes wrapper code for calling a number of third party command line tools including:
 * [http://www.ebi.ac.uk/Wise2/ Wise2] -- for command line tool dnal
-* [http://www.ncbi.nlm.nih.gov/blast/download.shtml NCBI Standalone BLAST] -- for running BLAST on your local machine
+* [http://www.ncbi.nlm.nih.gov/blast/download.shtml NCBI Standalone BLAST] -- command line tool for running BLAST on your local machine
 * [ftp://ftp.ebi.ac.uk/pub/software/unix/clustalw/ Clustalw] -- command line tool for building sequence alignments
 * [http://cmpg.unibe.ch/software/simcoal/ SIMCOAL] and [http://www.rubic.rdg.ac.uk/~mab/software.html FDist] -- command line tools for population genetics
 

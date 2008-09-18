@@ -72,6 +72,14 @@ list](Mailing_lists "wikilink") and ask for help there.
 
 ### Optional Software
 
+For compiling Biopython:
+
+-   [flex: The Fast Lexical Analyzer](http://flex.sourceforge.net/) --
+    for building Bio.PDB.mmCIF.MMCIFlex which is used to parse
+    macromolecular Crystallographic Information Files (mmCIF)
+
+Some parts of Biopython use the following additional python libraries:
+
 -   [ReportLab](http://www.reportlab.org/downloads.html) -- used for pdf
     graphics code
 -   [MySQLdb](http://sourceforge.net/projects/mysql-python) -- used for
@@ -81,12 +89,14 @@ list](Mailing_lists "wikilink") and ask for help there.
     This is used in some of the older parsers, and you probably won't
     need it. There are a few niggles with mxTextTools 3.0, so ideally
     install the older mxTextTools 2.0.
--   [flex: The Fast Lexical Analyzer](http://flex.sourceforge.net/) --
-    for building Bio.PDB.mmCIF.MMCIFlex
+
+In addition Biopython includes wrapper code for calling a number of
+third party command line tools including:
+
 -   [Wise2](http://www.ebi.ac.uk/Wise2/) -- for command line tool dnal
 -   [NCBI Standalone
-    BLAST](http://www.ncbi.nlm.nih.gov/blast/download.shtml) -- for
-    running BLAST on your local machine
+    BLAST](http://www.ncbi.nlm.nih.gov/blast/download.shtml) -- command
+    line tool for running BLAST on your local machine
 -   [Clustalw](ftp://ftp.ebi.ac.uk/pub/software/unix/clustalw/) --
     command line tool for building sequence alignments
 -   [SIMCOAL](http://cmpg.unibe.ch/software/simcoal/) and
