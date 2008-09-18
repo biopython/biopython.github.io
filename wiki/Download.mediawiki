@@ -42,6 +42,7 @@ If you are still stuck, sign up to the [[Mailing_lists|Biopython mailing list]] 
 * [http://www.ebi.ac.uk/Wise2/ Wise2] -- for command line tool dnal
 * [http://www.ncbi.nlm.nih.gov/blast/download.shtml NCBI Standalone BLAST] -- for running BLAST on your local machine
 * [ftp://ftp.ebi.ac.uk/pub/software/unix/clustalw/ Clustalw] -- command line tool for building sequence alignments
+* [http://cmpg.unibe.ch/software/simcoal/ SIMCOAL] -- command line tool for population genetics
 
 = Easy Install = 
 

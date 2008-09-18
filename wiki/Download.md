@@ -89,6 +89,8 @@ list](Mailing_lists "wikilink") and ask for help there.
     running BLAST on your local machine
 -   [Clustalw](ftp://ftp.ebi.ac.uk/pub/software/unix/clustalw/) --
     command line tool for building sequence alignments
+-   [SIMCOAL](http://cmpg.unibe.ch/software/simcoal/) -- command line
+    tool for population genetics
 
 Easy Install
 ============
