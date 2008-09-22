@@ -147,7 +147,7 @@ Bio.PDB module).
 
   
 [PDF](http://biopython.org/DIST/docs/presentations/Biopython_BOSC_2008.pdf)
-|[Flash
+| [Flash
 version](http://www.slideshare.net/bosc_2008/antao-biopython-bosc2008/)
 
 -   BOSC 2007 presentation "Biopython Project Update"
