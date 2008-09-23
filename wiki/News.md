@@ -20,3 +20,7 @@ using the
 or
 [Atom](http://news.open-bio.org/news/category/obf-projects/biopython/feed/atom)
 feed.
+
+See also the latest version of [the NEWS
+file](http://biopython.open-bio.org/SRC/biopython/NEWS) included with
+each release.

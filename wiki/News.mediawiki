@@ -6,3 +6,5 @@ If you use news-reader software you can subscribe to Biopython news using the [h
 [http://news.open-bio.org/news/category/obf-projects/biopython/feed/rss RSS],
 [http://news.open-bio.org/news/category/obf-projects/biopython/feed/rss2 RSS2] or
 [http://news.open-bio.org/news/category/obf-projects/biopython/feed/atom Atom] feed.
+
+See also the latest version of [http://biopython.open-bio.org/SRC/biopython/NEWS the NEWS file] included with each release.
