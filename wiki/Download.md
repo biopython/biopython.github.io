@@ -99,7 +99,7 @@ third party command line tools including:
     line tool for running BLAST on your local machine
 -   [Clustalw](ftp://ftp.ebi.ac.uk/pub/software/unix/clustalw/) --
     command line tool for building sequence alignments
--   [SIMCOAL](http://cmpg.unibe.ch/software/simcoal/) and
+-   [SIMCOAL2](http://cmpg.unibe.ch/software/simcoal2/) and
     [FDist](http://www.rubic.rdg.ac.uk/~mab/software.html) -- command
     line tools for population genetics
 
