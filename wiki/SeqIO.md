@@ -9,7 +9,8 @@ BioPython 1.43 and later. For implementation details, see the [SeqIO
 development page](SeqIO_dev "wikilink").
 
 There is a whole chapter in the
-[Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html) on
+[Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
+([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)) on
 Bio.SeqIO, and although there is some overlap it is well worth reading
 in addition to this WIKI page.
 
@@ -451,8 +452,10 @@ That should give something like this as the output file,
 Sometimes you won't want to write your SeqRecord object(s) to a file,
 but to a string. For example, you might be preparing output for display
 as part of a webpage. If you want to write multiple records to a single
-string, use StringIO to create a string-based handle. The Biopython
-Tutorial has an example of this.
+string, use StringIO to create a string-based handle. The
+[Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
+([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)) has an
+example of this in the SeqIO chapter.
 
 For the special case where you want a single record as a string in a
 given file format, Biopython 1.48 added a new format method:
