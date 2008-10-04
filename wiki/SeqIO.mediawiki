@@ -308,20 +308,6 @@ Remember that for sequential file formats like Fasta or GenBank, '''Bio.SeqIO.wr
 
 However, as explained in the output section, for non-sequential file formats like Clustal '''write''' is forced to automatically turn the iterator into a list, so this advantage is lost.
 
-Here is yet another way to write out the short sequences and count how many there are, without ever reading them all into memory:
-
-<source lang=python>
-from Bio import SeqIO
-
-with open('short_seqs.fasta', 'w') as handle:
- for n, record in enumerate(SeqIO.parse(open('cor6_6.gb'), 'genbank')):
-   if len(record.seq) < 300:
-    handle.write('%s\n' % record.format('fasta'))
-
-print "Found %s short sequences" % (n + 1) 
-</source>
-
-
 If this is all confusing, ''don't panic'' and just ignore the fancy stuff.  For moderately sized datasets having too many records in memory at once (e.g. in lists) is probably not going to be a problem.
 
 === Using the SEGUID checksum ===
