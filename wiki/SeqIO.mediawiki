@@ -385,6 +385,20 @@ That should give something like this as the output file,
  GAATCGGAACAGACCAATTACCAGATCCACCTATCATCGCCGGCATAACCATAAAAAAGA
  TCATTAAAAAAGCGTGAGCC
 
+=== Writing to a string ===
+
+Sometimes you won't want to write your SeqRecord object(s) to a file, but to a string.  For example, you might be preparing output for display as part of a webpage.  If you want to write multiple records to a single string, use StringIO to create a string-based handle.  The Biopython Tutorial has an example of this.
+
+For the special case where you want a single record as a string in a given file format, Biopython 1.48 added a new format method:
+
+<source lang=python>
+from Bio import SeqIO
+for record in SeqIO.parse(open("ls_orchid.gbk"), "genbank") :
+    print record.format("fasta")
+</source>
+
+The format method will take any output format supported by Bio.SeqIO where the file format can be used for a single record (e.g. "fasta", "tab" or "genbank").
+
 == Help! ==
 
 If you are having problems with Bio.SeqIO, please join the discussion mailing list (see [[mailing lists]]).
