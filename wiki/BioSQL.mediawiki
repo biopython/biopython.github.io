@@ -134,9 +134,7 @@ One the initial tables have been populated, re-running the script is much faster
 
 == Running the unit tests ==
 
-Because there are so many ways you could have setup your BioSQL database, you may have to tell the unit test a few bits of information.  If you have followed these instructions, then the unit test should just work (using Biopython 1.45 or later).
-
-If you have done things differently (e.g. PostgreSQL instead of MySQL, or using a different database username and password), then you need to edit the script Tests/setup_BioSQL.py and fill in the following fields:
+Because there are so many ways you could have setup your BioSQL database, you have to tell the unit test a few bits of information by editing the file Tests/setup_BioSQL.py and filling in the following fields:
 
 <source lang=python>
 DBDRIVER = 'MySQLdb'
@@ -156,7 +154,12 @@ Change these to match your setup.  You can then run the BioSQL unit tests as nor
 
  python run_tests.py test_BioSQL test_BioSQL_SeqIO
 
-The driver for PostgreSQL is ''psycopg''
+For PostgreSQL, use:
+
+<source lang=python>
+DBDRIVER = 'psycopg'
+DBTYPE = 'pg'
+</source>
 
 = Creating a (sub) database =
 
