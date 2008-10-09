@@ -7,13 +7,11 @@ layout: wiki
 Download and Installation
 -------------------------
 
-See our [downloads page](Download "wikilink") for details including the
-prerequisites. For Windows we provide click-and-run installers. Most
-Linux distributions will include an optional Biopython package.
-Otherwise you typically install from source by downloading and
-uncompressing the archive, then running the command:
-
-`sudo python setup.py install`
+For Windows we provide click-and-run installers. Most Linux
+distributions will include an optional Biopython package (although this
+may be out of date). Otherwise you typically download and uncompress the
+archive, and install from source. See our [downloads
+page](Download "wikilink") for details including the prerequisites.
 
 You can check your installation has worked at the python prompt:
 
