@@ -147,7 +147,7 @@ Then, assuming you are logged-in as <your user name> and Postgres is
 running on the local machine, you should be able to do the following:
 
 `createdb biosqldb`  
-`psql biosqldb < biosqldb-pg.sql`
+`psql bioseqdb < biosqldb-pg.sql`
 
 Run *psql* and type enter *\\d <ENTER>* to see all the entities created.
 
@@ -165,7 +165,8 @@ then:
 
 `./load_ncbi_taxonomy.pl --dbname bioseqdb --driver mysql --dbuser root --download true`
 
-For PostgreSQL you need to substitute *Pg* for *mysql*.
+For PostgreSQL you need to have the perl DBD-Pg module installed and
+substitute *Pg* for *mysql* in the above command.
 
 There is about 10MB to fetch, so it can take a little while (and doesn't
 give any feedback while this happens). If you are worried, open a file
