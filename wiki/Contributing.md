@@ -27,10 +27,11 @@ involving coding and not. Some things that you can help on include:
 -   **Support for More File Formats:** We can read and write lots of
     different file formats, but there are always more. For sequences and
     alignments look at the [SeqIO](SeqIO "wikilink") and
-    [AlignIO](AlignIO "wikilink") pages first.
+    [AlignIO](AlignIO "wikilink") pages first. Note that HTML parsers
+    for specific websites are discouraged as these require long
+    term maintenance.
 -   **Support for Databases:** Identify a biological database that does
-    not currently have support in Biopython and add support for it. Use
-    Bio.GenBank as a model.
+    not currently have support in Biopython and add support for it.
 -   **Add New Data Type:** You can add code that works with a new type
     of data. This is a tough area, though. Creating a new robust and
     useful data type is difficult, and we may be hesitant to add

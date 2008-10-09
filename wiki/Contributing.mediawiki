@@ -9,8 +9,8 @@ The best contributions are the code that you have already been using in your dai
 Otherwise, there are still many ways to contribute to Biopython, both involving coding and not. Some things that you can help on include:
 
 * '''Support for More Programs:''' There are many different bioinformatics programs being developed. Identify one that does not currently have support in Biopython and add support for it. 
-* '''Support for More File Formats:''' We can read and write lots of different file formats, but there are always more. For sequences and alignments look at the [[SeqIO]] and [[AlignIO]] pages first.
-* '''Support for Databases:''' Identify a biological database that does not currently have support in Biopython and add support for it. Use Bio.GenBank as a model.
+* '''Support for More File Formats:''' We can read and write lots of different file formats, but there are always more. For sequences and alignments look at the [[SeqIO]] and [[AlignIO]] pages first.  Note that HTML parsers for specific websites are discouraged as these require long term maintenance.
+* '''Support for Databases:''' Identify a biological database that does not currently have support in Biopython and add support for it.
 * '''Add New Data Type:''' You can add code that works with a new type of data. This is a tough area, though. Creating a new robust and useful data type is difficult, and we may be hesitant to add something unless it's already tried and tested.
 * '''Add New Algorithm:''' You can add a new well-known algorithm that might be useful for other biologists.
 * '''Parser Verification:''' As Biopython supports more and more databases, the difficulty in maintaining the format parsers increases. These formats are changing very quickly. Thus, we need to periodically verify that the parsers are still working. For example, the GenBank parser needs to be checked to make sure it handles each new dump of GenBank.
