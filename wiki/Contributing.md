@@ -113,9 +113,9 @@ highlights are:
 
 [Epydoc](http://epydoc.sourceforge.net/) is being used to generate
 automatic documentation of the source code so it definitely is useful to
-put helpful comments in your code so that they will be reflected in the
-API documentation (in addition to all the normal reasons to document
-code).
+put helpful comments in your code so that they will be reflected in [the
+API documentation](http://biopython.org/DIST/docs/api) (in addition to
+all the normal reasons to document code).
 
 We don't do anything fancy to try and format the comments in the code --
 they are displayed by epydoc exactly as written in the source. This
