@@ -1,5 +1,5 @@
 I'm one of the many [[Participants|Biopython participants]], having first started using the code back in 2004 or there abouts.
 
-My main contributions are the [[SeqIO|Bio.SeqIO]] and [[AlignIO|Bio.AlignIO]] modules and some of the underlying parsers.  I've also worked on [[BioSQL|Biopython's BioSQL interface]].
+My main contributions are the [[SeqIO|Bio.SeqIO]] and [[AlignIO|Bio.AlignIO]] modules and some of the underlying parsers.  I've also worked on [[BioSQL|Biopython's BioSQL interface]], and the tutorial and other [[Documentation]].
 
 There are some nice examples on my [http://www.warwick.ac.uk/go/peter_cock/python/ python pages].

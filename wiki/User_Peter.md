@@ -10,7 +10,8 @@ having first started using the code back in 2004 or there abouts.
 My main contributions are the [Bio.SeqIO](SeqIO "wikilink") and
 [Bio.AlignIO](AlignIO "wikilink") modules and some of the underlying
 parsers. I've also worked on [Biopython's BioSQL
-interface](BioSQL "wikilink").
+interface](BioSQL "wikilink"), and the tutorial and other
+[Documentation](Documentation "wikilink").
 
 There are some nice examples on my [python
 pages](http://www.warwick.ac.uk/go/peter_cock/python/).
