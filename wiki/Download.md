@@ -55,7 +55,8 @@ list](Mailing_lists "wikilink") and ask for help there.
 
 ### Required Software
 
--   [Python 2.3 or above](http://www.python.org)
+-   [Python 2.3, 2.4 or 2.5](http://www.python.org) (support for Python
+    2.6 is in progress)
 -   [A C compiler (if compiling
     from source)](http://www.python.org/doc/current/inst/inst.html) You
     need a C compiler supported by distutils, gcc will work fine on
