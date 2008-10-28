@@ -210,3 +210,8 @@ input_handle.close()
 
 By changing the format strings, that code could be used to convert
 between any supported file formats.
+
+**Note**: There is a bug in Biopython 1.47 preventing to output into
+"fasta" format (Bug\#
+[2557](http://bugzilla.open-bio.org/show_bug.cgi?id=2557)). Upgrade to
+1.48 or later if you have this problem.
