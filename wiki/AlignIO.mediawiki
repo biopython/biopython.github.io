@@ -160,7 +160,7 @@ RFGEYCPTTCGISDFLNRYQENVDTDLQYLENLLTQISNSTSGTTIIVEHLIDSGKKPATSPQTAIDPMTQKSKTCW FI
 
 As in [[SeqIO|Bio.SeqIO]], there is a single output function '''Bio.AlignIO.write()'''.  This takes three arguments: some alignments, a file handle to write to, and the format to use.
 
-As of Biopython 1.48, the alignment object acquired a '''format()''' to give a string containing the alignment in the specified file format, e.g.
+As of Biopython 1.48, the alignment object acquired a '''format()''' method to give a string containing the alignment in the specified file format, e.g.
 
 <source lang=python>
 AlignIO.read(open("PF09395_seed.sth"), "stockholm")
