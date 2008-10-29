@@ -65,9 +65,9 @@ The format name is a simple lowercase string, matching the names used in
 In addition, you can store the (gapped) sequences from an alignment in
 any of the [file formats supported by
 Bio.SeqIO](SeqIO#File_Formats "wikilink"). The most common example of
-this is storing multiple alignments in the simple fasta format. However,
-storing more than one alignment in a single such file is ambiguous - see
-the section below on alignment input.
+this is storing alignments in the simple fasta format. However, storing
+more than one alignment in a single such file is ambiguous - and this is
+not recommended.
 
 Alignment Input
 ---------------
