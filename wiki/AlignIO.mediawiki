@@ -46,7 +46,7 @@ The format name is a simple lowercase string, matching the names used in [[SeqIO
 | fasta-m10
 | 1.46
 | No
-| This refers to the pairwise alignment ''output'' from Bill Pearson's FASTA tools, specifically the machine readable version when the -m 10 command line is used.  The default free format text output is not supported.
+| This refers to the pairwise alignment ''output'' from Bill Pearson's FASTA tools, specifically the machine readable version when the -m 10 command line option is used.  The default free format text output is not supported.
 |-
 | ig
 | 1.47
