@@ -35,13 +35,13 @@ The format name is a simple lowercase string, matching the names used in [[SeqIO
 |-
 | emboss
 | 1.46
-| Soon?
+| No
 | The EMBOSS simple/pairs alignment format.
 |-
 | fasta   
 | 1.46
-| 1.46
-| This refers to the ''input'' file format introduced for Bill Pearson's FASTA tool, where each record starts with a ">" line.  Note that storing more than one alignment in this format is ambiguous.
+| 1.48
+| This refers to the ''input'' file format introduced for Bill Pearson's FASTA tool, where each record starts with a ">" line.  Note that storing more than one alignment in this format is ambiguous.  Writing FASTA files with AlignIO failed prior to release 1.48 (Bug [http://bugzilla.open-bio.org/show_bug.cgi?id=2557 2557]).
 |-
 | fasta-m10
 | 1.46
@@ -56,7 +56,7 @@ The format name is a simple lowercase string, matching the names used in [[SeqIO
 | nexus
 | 1.46
 | 1.48
-| Also known as PAUP format.  Uses Bio.Nexus internally.
+| Also known as PAUP format.  Uses Bio.Nexus internally.  Only one alignment per file is supported.
 |-
 | phylip
 | 1.46
@@ -187,5 +187,3 @@ input_handle.close()
 </source>
 
 By changing the format strings, that code could be used to convert between any supported file formats.
-
-'''Note''': There is a bug in Biopython 1.47 preventing to output into "fasta" format (Bug# [http://bugzilla.open-bio.org/show_bug.cgi?id=2557 2557]). Upgrade to 1.48 or later if you have this problem.
