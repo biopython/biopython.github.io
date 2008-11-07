@@ -17,13 +17,13 @@ See also [What's new](http://biopython.open-bio.org/SRC/biopython/NEWS).
 -   Source Zip File --
     [biopython-1.49b.zip](http://biopython.org/DIST/biopython-1.49b.zip)
     4,780 Kb
--   Windows Installer for Python 2.3 --
+-   Windows Installer for Python 2.3 and NumPy 1.1 --
     [biopython-1.49b.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.49b.win32-py2.3.exe)
     1,109 Kb
--   Windows Installer for Python 2.4 --
+-   Windows Installer for Python 2.4 and NumPy 1.1 --
     [biopython-1.49b.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.49b.win32-py2.4.exe)
     1,113 Kb
--   Windows Installer for Python 2.5 --
+-   Windows Installer for Python 2.5 and NumPy 1.1 --
     [biopython-1.49b.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.49b.win32-py2.5.exe)
     1,114 Kb
 
@@ -71,7 +71,8 @@ list](Mailing_lists "wikilink") and ask for help there.
     UNIX-like platforms. This is not needed on Windows if using the
     install programs provided above.
 -   [NumPy (Numerical Python)](http://numpy.scipy.org/). Note that until
-    BioPython 1.49b, Biopython used the older Numeric library.
+    BioPython 1.49b, Biopython used the older Numeric library. We have
+    tested NumPy 1.0, 1.1 and 1.2 with Biopython.
 
 ### Optional Software
 
