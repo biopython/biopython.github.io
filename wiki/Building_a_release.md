@@ -32,7 +32,7 @@ recent CVS changes like this (adjust the date accordingly):
 `   > rm -r build`  
 `   > rm Martel/*.pyc`  
 `   > rm Tests/*.pyc`  
-`   > make clean -C doc`  
+`   > make clean -C Doc`  
 `   > cvs update -P -d `
 
 8. build Biopython and do last regression test
@@ -45,11 +45,12 @@ recent CVS changes like this (adjust the date accordingly):
 
 `   drevil:~tmp1/> cvs -d :ext:jchang@pub.open-bio.org:/home/repository/biopython checkout biopython `
 
-10. make documentation PDF, text and HTML in Doc
+10. make documentation PDF and HTML files in Doc
+
+`   > make clean -C Doc`
 
 11. make MANIFEST. First, make sure MANIFEST.in up to date.
 
-`   > make clean -C Doc`  
 `   > python setup.py sdist --manifest-only `
 
 12. make sure the regression tests run here
