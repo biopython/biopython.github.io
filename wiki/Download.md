@@ -4,46 +4,55 @@ permalink: wiki/Download
 layout: wiki
 ---
 
-Current Release -- 1.48 -- 8 September 2008
-===========================================
+Current Release -- 1.49 beta -- 7 November 2008
+===============================================
 
 See also [What's new](http://biopython.open-bio.org/SRC/biopython/NEWS).
 
 ### Files
 
 -   Source Tarball --
-    [biopython-1.48.tar.gz](http://biopython.org/DIST/biopython-1.48.tar.gz)
-    4,051 Kb
+    [biopython-1.49b.tar.gz](http://biopython.org/DIST/biopython-1.49b.tar.gz)
+    4,331 Kb
 -   Source Zip File --
-    [biopython-1.48.zip](http://biopython.org/DIST/biopython-1.48.zip)
-    4,542 Kb
+    [biopython-1.49b.zip](http://biopython.org/DIST/biopython-1.49b.zip)
+    4,780 Kb
 -   Windows Installer for Python 2.3 --
-    [biopython-1.48.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.48.win32-py2.3.exe)
-    1,226 Kb
+    [biopython-1.49b.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.49b.win32-py2.3.exe)
+    1,109 Kb
 -   Windows Installer for Python 2.4 --
-    [biopython-1.48.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.48.win32-py2.4.exe)
-    1,254 Kb
+    [biopython-1.49b.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.49b.win32-py2.4.exe)
+    1,113 Kb
 -   Windows Installer for Python 2.5 --
-    [biopython-1.48.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.48.win32-py2.5.exe)
-    1,254 Kb
+    [biopython-1.49b.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.49b.win32-py2.5.exe)
+    1,114 Kb
+
+**NOTE** : This is a *beta* release, for testing purposes. There are
+been some significant changes since Biopython 1.48 such as the move from
+Numeric to NumPy, so it would be unwise to install this on a production
+machine without doing extensive testing. Please report any issues on the
+mailing list or [bugzilla](http://bugzilla.open-bio.org/).
 
 ### Installation Instructions
 
 For Windows we provide click-and-run installers (specific to your
 version of python), but you will first need to install some prerequisite
-software (listed below).
+software (listed below). Unfortunately, NumPy is not yet available for
+Python 2.6 on Windows, so we don't yet provide a Biopython installer for
+Python 2.6.
 
 Most Linux distributions will include an optional Biopython package
 (described below), and will take care of any prerequisite software
 automatically.
 
 Otherwise you typically install from source by downloading and
-uncompressing the archive, then running the command:
+uncompressing the archive, then running the commands:
 
+`sudo python setup.py build`  
+`sudo python setup.py test`  
 `sudo python setup.py install`
 
-If you have trouble, or want to run the test suite, see the full
-installation instructions:
+If you have trouble, see the full installation instructions:
 
 -   [HTML Full Installation
     Instructions](http://biopython.org/DIST/docs/install/Installation.html)
@@ -55,21 +64,14 @@ list](Mailing_lists "wikilink") and ask for help there.
 
 ### Required Software
 
--   [Python 2.3, 2.4 or 2.5](http://www.python.org) (support for Python
-    2.6 is in progress)
+-   [Python 2.3, 2.4, 2.5 or 2.6](http://www.python.org)
 -   [A C compiler (if compiling
     from source)](http://www.python.org/doc/current/inst/inst.html) You
     need a C compiler supported by distutils, gcc will work fine on
     UNIX-like platforms. This is not needed on Windows if using the
     install programs provided above.
--   [Numerical Python](http://numpy.scipy.org/#older_array) Note that
-    BioPython has not (yet) switched to the 'new' numpy library. You
-    need the 'old' Numeric library, version 24.2 is recommended. Windows
-    installers for Python 2.4 and older are available from the
-    [Numerical Python](http://numpy.scipy.org/#older_array) website. A
-    Windows installer for Numeric 24.2 for Python 2.5 is available here:
-    [Numeric-24.2.win32-py2.5.exe](http://biopython.org/DIST/Numeric-24.2.win32-py2.5.exe)
-    446 Kb
+-   [NumPy (Numerical Python)](http://numpy.scipy.org/). Note that until
+    BioPython 1.49b, Biopython used the older Numeric library.
 
 ### Optional Software
 
@@ -85,11 +87,6 @@ Some parts of Biopython use the following additional python libraries:
     graphics code
 -   [MySQLdb](http://sourceforge.net/projects/mysql-python) -- used for
     [BioSQL](BioSQL "wikilink") with a MySQL database
--   [mxTextTools
-    2.0](http://www.egenix.com/www2002/python/eGenix-mx-Extensions-v2.x.html/)
-    This is used in some of the older parsers, and you probably won't
-    need it. There are a few niggles with mxTextTools 3.0, so ideally
-    install the older mxTextTools 2.0.
 
 In addition Biopython includes wrapper code for calling a number of
 third party command line tools including:
@@ -149,6 +146,10 @@ dependencies with the following command:
 
 `sudo apt-get build-dep python-biopython`
 
+Note: You may need to additionally install the NumPy package by hand, as
+an out of date repository will still expect Biopython to use Numeric
+instead.
+
 ### Fedora
 
 Biopython is an official Fedora package (since Fedora 5). The package is
@@ -201,6 +202,29 @@ dependencies).
 Old Releases
 ============
 
+Please note that Biopython 1.48 and older require the Numeric library,
+not its replacement NumPy. Windows installers for Python 2.4 and older
+are available from the [Numerical
+Python](http://numpy.scipy.org/#older_array) website. A Windows
+installer for Numeric 24.2 for Python 2.5 is available here:
+[Numeric-24.2.win32-py2.5.exe](http://biopython.org/DIST/Numeric-24.2.win32-py2.5.exe)
+446 Kb
+
+Please note that Biopython 1.48 and older used [mxTextTools
+2.0](http://www.egenix.com/www2002/python/eGenix-mx-Extensions-v2.x.html/)
+in some of the parsers. There were a few niggles with mxTextTools 3.0,
+so ideally install the older mxTextTools 2.0.
+
+-   [biopython-1.48.tar.gz](http://biopython.org/DIST/biopython-1.48.tar.gz)
+    4,051 Kb
+-   [biopython-1.48.zip](http://biopython.org/DIST/biopython-1.48.zip)
+    4,542 Kb
+-   [biopython-1.48.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.48.win32-py2.3.exe)
+    1,226 Kb
+-   [biopython-1.48.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.48.win32-py2.4.exe)
+    1,254 Kb
+-   [biopython-1.48.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.48.win32-py2.5.exe)
+    1,254 Kb
 -   [biopython-1.47.tar.gz](http://biopython.org/DIST/biopython-1.47.tar.gz)
     4,018 Kb
 -   [biopython-1.47.zip](http://biopython.org/DIST/biopython-1.47.zip)
