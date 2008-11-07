@@ -19,7 +19,7 @@ new downloads. Make sure to commit the modified Martel to CVS.
 4. add any important info to NEWS or DEPRECATED - you can get a log of
 recent CVS changes like this (adjust the date accordingly):
 
-`   > cvs log -b -N -S -d'>2008-07-05'`
+`   > cvs log -b -N -S -d'>2008-09-08'`
 
 5. make sure CONTRIB still current
 
@@ -39,7 +39,7 @@ recent CVS changes like this (adjust the date accordingly):
 
 `   drevil:~biopython> python setup.py build `  
 `   drevil:~biopython> python setup.py install `  
-`   drevil:~biopython/Tests> python run_tests.py --no-gui `
+`   drevil:~biopython/Tests> python run_tests.py`
 
 9. check out clean version somewhere else
 

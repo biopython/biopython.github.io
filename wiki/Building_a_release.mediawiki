@@ -8,7 +8,7 @@ Build Biopython in 21 easy steps!!
 3. make sure the README file is still up to date
 
 4. add any important info to NEWS or DEPRECATED - you can get a log of recent CVS changes like this (adjust the date accordingly):
-    > cvs log -b -N -S -d'>2008-07-05'
+    > cvs log -b -N -S -d'>2008-09-08'
 
 5. make sure CONTRIB still current
 
@@ -25,7 +25,7 @@ Build Biopython in 21 easy steps!!
 8. build Biopython and do last regression test
     drevil:~biopython> python setup.py build 
     drevil:~biopython> python setup.py install 
-    drevil:~biopython/Tests> python run_tests.py --no-gui 
+    drevil:~biopython/Tests> python run_tests.py
 
 9. check out clean version somewhere else
     drevil:~tmp1/> cvs -d :ext:jchang@pub.open-bio.org:/home/repository/biopython checkout biopython 
