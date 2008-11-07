@@ -30,14 +30,14 @@ Build Biopython in 21 easy steps!!
 9. check out clean version somewhere else
     drevil:~tmp1/> cvs -d :ext:jchang@pub.open-bio.org:/home/repository/biopython checkout biopython 
 
-10. make documentation PDF and HTML files in Doc
+10. make documentation PDF, text and HTML files in Doc
     > make clean -C Doc
 
 11. make MANIFEST. First, make sure MANIFEST.in up to date.
     > python setup.py sdist --manifest-only 
 
 12. make sure the regression tests run here
-    drevil:~tmp1/biopython/Tests/> python run_tests.py --no-gui 
+    drevil:~tmp1/biopython/Tests/> python run_tests.py
 
 13. make the source distribution
     drevil:~tmp1/biopython> python setup.py sdist --formats=gztar,zip 

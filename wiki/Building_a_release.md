@@ -45,7 +45,7 @@ recent CVS changes like this (adjust the date accordingly):
 
 `   drevil:~tmp1/> cvs -d :ext:jchang@pub.open-bio.org:/home/repository/biopython checkout biopython `
 
-10. make documentation PDF and HTML files in Doc
+10. make documentation PDF, text and HTML files in Doc
 
 `   > make clean -C Doc`
 
@@ -55,7 +55,7 @@ recent CVS changes like this (adjust the date accordingly):
 
 12. make sure the regression tests run here
 
-`   drevil:~tmp1/biopython/Tests/> python run_tests.py --no-gui `
+`   drevil:~tmp1/biopython/Tests/> python run_tests.py`
 
 13. make the source distribution
 
