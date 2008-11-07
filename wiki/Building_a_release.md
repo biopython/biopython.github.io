@@ -66,6 +66,7 @@ recent CVS changes like this (adjust the date accordingly):
 `   drevil:~tmp2> tar -xzvf ../tmp1/biopython/dist/biopython-1.00a1.tar.gz`
 
 -   Check to make sure it includes Martel
+-   Check to make sure it includes the HTML and PDF files under Doc
 
 15. make sure I can build and test it
 

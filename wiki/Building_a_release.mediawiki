@@ -44,7 +44,8 @@ Build Biopython in 21 easy steps!!
 
 14. untar the file somewhere else
     drevil:~tmp2> tar -xzvf ../tmp1/biopython/dist/biopython-1.00a1.tar.gz
-* Check to make sure it includes Martel 
+* Check to make sure it includes Martel
+* Check to make sure it includes the HTML and PDF files under Doc
 
 15. make sure I can build and test it
     drevil:~tmp2/biopython-1.00a1/> python setup.py build
