@@ -102,6 +102,7 @@ on biopython.org (aka portal.open-bio.org).
     [news.open-bio.org](http://news.open-bio.org) (which will update the
     [news page](News "wikilink") via the news feed)
 -   make sure links work
+-   add the new version to [Bugzilla](http://bugzilla.open-bio.org/)
 
 20. clean up the tmp directories I made
 
