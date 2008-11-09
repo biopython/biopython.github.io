@@ -26,6 +26,8 @@ See also [What's new](http://biopython.open-bio.org/SRC/biopython/NEWS).
 -   Windows Installer for Python 2.5 and NumPy 1.1 --
     [biopython-1.49b.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.49b.win32-py2.5.exe)
     1,114 Kb
+-   Windows Installer for Python 2.6 -- not available as NumPy isn't yet
+    available on Python 2.6 on Windows.
 
 **NOTE** : This is a *beta* release, for testing purposes. There are
 been some significant changes since Biopython 1.48 such as the move from
