@@ -56,11 +56,6 @@ below.
 ::[HTML](http://biopython.org/DIST/docs/cookbook/biopython_test.html) |
 [PDF](http://biopython.org/DIST/docs/cookbook/biopython_test.pdf)
 
-:\*Logistic Regression supervised learning.
-
-::[HTML](http://biopython.org/DIST/docs/cookbook/LogisticRegression.html)
-| [PDF](http://biopython.org/DIST/docs/cookbook/LogisticRegression.pdf)
-
 :\*The Biopython Structural Bioinformatics FAQ (i.e. how to use the
 Bio.PDB module).
 
