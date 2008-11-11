@@ -36,7 +36,7 @@ If you are still stuck, sign up to the [[Mailing_lists|Biopython mailing list]] 
 
 * [http://www.python.org Python 2.3, 2.4, 2.5 or 2.6]
 * [http://www.python.org/doc/current/inst/inst.html A C compiler (if compiling from source)] You need a C compiler supported by distutils, gcc will work fine on UNIX-like platforms.  This is not needed on Windows if using the install programs provided above.
-* [http://numpy.scipy.org/ NumPy (Numerical Python)]. Note that until BioPython 1.49b, Biopython used the older Numeric library.  We have tested NumPy 1.0, 1.1 and 1.2 with Biopython.
+* [http://numpy.scipy.org/ NumPy (Numerical Python)]. Note that until BioPython 1.49b, Biopython used the older Numeric library.  We have tested NumPy 1.0, 1.1 and 1.2 with Biopython.  Note NumPy 1.2 requires at least Python 2.4.
 
 === Optional Software ===
 
