@@ -12,10 +12,10 @@ See also [What's new](http://biopython.open-bio.org/SRC/biopython/NEWS).
 ### Files
 
 -   Source Tarball --
-    [biopython-1.49.tar.gz](http://biopython.org/DIST/biopython-1.49b.tar.gz)
+    [biopython-1.49.tar.gz](http://biopython.org/DIST/biopython-1.49.tar.gz)
     4,052 Kb
 -   Source Zip File --
-    [biopython-1.49.zip](http://biopython.org/DIST/biopython-1.49b.zip)
+    [biopython-1.49.zip](http://biopython.org/DIST/biopython-1.49.zip)
     4,498 Kb
 -   Windows Installer for Python 2.3 and NumPy 1.1 --
     [biopython-1.49b.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.49.win32-py2.3.exe)
