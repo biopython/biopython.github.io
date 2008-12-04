@@ -154,14 +154,20 @@ Run *psql* and type enter *\\d <ENTER>* to see all the entities created.
 NCBI Taxonomy
 -------------
 
-Before you start trying to load sequences into the database, it is a
-good idea to load the NCBI taxonomy database using the
-scripts/load\_ncbi\_taxonomy.pl script in the BioSQL package.
+The BioSQL package includes a perl script under
+scripts/load\_ncbi\_taxonomy.pl to download and update the taxonomy
+tables. The script should be able to download the files it needs from
+the [NCBI taxonomy FTP site](ftp://ftp.ncbi.nih.gov/pub/taxonomy/)
+automatically.
 
-The script should be able to download the files it needs from the [NCBI
-taxonomy FTP site](ftp://ftp.ncbi.nih.gov/pub/taxonomy/) automatically.
-Change to the scripts subdirectory from the unzipped BioSQL download,
-then:
+Prior to Biopython 1.49, if you wanted to work with the NCBI taxonomy
+database it was good idea to pre-load the NCBI taxonomy before you start
+trying to load sequences into the database. This isn't so important with
+Biopython 1.49 onwards, where you can instead opt to have the
+information needed downloaded as needed from Entrez.
+
+To update the NCBI taxonomy, change to the scripts subdirectory from the
+unzipped BioSQL download, then:
 
 `./load_ncbi_taxonomy.pl --dbname bioseqdb --driver mysql --dbuser root --download true`
 
@@ -195,9 +201,16 @@ was over ten minutes.
 One the initial tables have been populated, re-running the script is
 much faster. You can run this script again to update the taxonomy
 tables, which the NCBI do add to regularly. You may want to setup a
-scheduled job to do this automatically (say once a fortnight). It is a
-particularly good idea to do update the taxonomy *before* adding any new
-sequences to the database.
+scheduled job to do this automatically (say once a fortnight).
+
+P.S. It is a particularly good idea to do update the taxonomy if you
+will be working with the left/right values in the taxon table (see also
+[BioSQL enhancement request
+2493](http://bugzilla.open-bio.org/show_bug.cgi?id=2493)). Biopython
+ignores these optional fields when loading or retrieving sequences -
+instead using just the parent link. See
+<http://www.oreillynet.com/pub/a/network/2002/11/27/bioconf.html> for
+more about how this alternative tree representation works.
 
 Running the unit tests
 ----------------------
