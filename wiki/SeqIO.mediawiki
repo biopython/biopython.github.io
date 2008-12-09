@@ -44,7 +44,7 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 | fasta   
 | 1.43
 | 1.43
-| Resulting sequences have a generic alphabet.
+| This refers to the input file format introduced for Bill Pearson's FASTA tool, where each record starts with a ">" line.  Resulting sequences have a generic alphabet by default.
 |-  
 | genbank 
 | 1.43
