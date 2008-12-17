@@ -304,7 +304,7 @@ You can also check that the three orchid sequences have gone from the other tabl
 
 = How is the data stored =
 
-If you need or want to go direct to the data, bypassing the Biopython methods to retrieve records, then it would help to know more about how the underlying tables are used.  For this, we refer you to the BioSQL documentation, starting with their page on [http://www.biosql.org/wiki/Annotation_Mapping Annotation Mapping].
+If you need or want to go direct to the data, bypassing the Biopython methods to retrieve records, then it would help to know more about how the underlying tables are used.  For this, we refer you to the BioSQL documentation, starting with their [http://www.biosql.org/wiki/Schema_Overview Schema Overview] and the page on [http://www.biosql.org/wiki/Annotation_Mapping Annotation Mapping].
 
 = MySQL Tips and Tricks =
 

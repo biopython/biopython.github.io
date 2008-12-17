@@ -426,8 +426,9 @@ How is the data stored
 If you need or want to go direct to the data, bypassing the Biopython
 methods to retrieve records, then it would help to know more about how
 the underlying tables are used. For this, we refer you to the BioSQL
-documentation, starting with their page on [Annotation
-Mapping](http://www.biosql.org/wiki/Annotation_Mapping).
+documentation, starting with their [Schema
+Overview](http://www.biosql.org/wiki/Schema_Overview) and the page on
+[Annotation Mapping](http://www.biosql.org/wiki/Annotation_Mapping).
 
 MySQL Tips and Tricks
 =====================
