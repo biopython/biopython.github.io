@@ -104,6 +104,8 @@ third party command line tools including:
 -   [SIMCOAL2](http://cmpg.unibe.ch/software/simcoal2/) and
     [FDist](http://www.rubic.rdg.ac.uk/~mab/software.html) -- command
     line tools for population genetics
+-   [EMBOSS](http://emboss.sourceforge.net/) -- lots of useful command
+    line tools.
 
 Easy Install
 ============

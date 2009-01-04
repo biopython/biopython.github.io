@@ -52,6 +52,7 @@ In addition Biopython includes wrapper code for calling a number of third party 
 * [http://www.ncbi.nlm.nih.gov/blast/download.shtml NCBI Standalone BLAST] -- command line tool for running BLAST on your local machine
 * [ftp://ftp.ebi.ac.uk/pub/software/unix/clustalw/ Clustalw] -- command line tool for building sequence alignments
 * [http://cmpg.unibe.ch/software/simcoal2/ SIMCOAL2] and [http://www.rubic.rdg.ac.uk/~mab/software.html FDist] -- command line tools for population genetics
+* [http://emboss.sourceforge.net/ EMBOSS] -- lots of useful command line tools.
 
 = Easy Install = 
 
