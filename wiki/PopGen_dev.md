@@ -36,3 +36,12 @@ click on the 'Fork' button (something like
 working on your separated branch. When you will have changes that you
 will consider functional, tell us and we will integrate in the ufficial
 popgen branch (mine?)
+
+wishing list
+------------
+
+-   support for a binary format - like HDF5 or this one:
+    [snpfile](http://lists.open-bio.org/pipermail/biopython/2008-December/004830.html)
+-   support for database: it is frequent to carry analysis on a big
+    scale, so it is not unfrequent to use databases to store data
+-   
