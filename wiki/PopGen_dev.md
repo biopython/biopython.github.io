@@ -10,7 +10,7 @@ Development page for the PopGen module.
 abstract
 --------
 
-The popgen module will contain modules to handle population genetics
+The \[popgen\] module will contain modules to handle population genetics
 data.
 
 use cases
