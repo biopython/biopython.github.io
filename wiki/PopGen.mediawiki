@@ -1,4 +1,3 @@
-Ufficial page for the PopGen module
+This page will hold documentation for the Bio.PopGen module included with Biopython.  For the moment, refer to the PopGen Chapter in the [http://biopython.org/DIST/docs/tutorial/Tutorial.html Tutorial] ([http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF]).
 
-
-development discussion: [[PopGen_dev]]
+Any notes (or discussion) about possible future developments should be restricted to the [[PopGen_dev|PopGen development]] page.
