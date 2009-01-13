@@ -1,7 +1,7 @@
 =Development page for the PopGen module.=
 
 ==abstract==
-The [[popgen]] module will contain modules to handle population genetics data.
+The [[PopGen]] module will contain modules to handle population genetics data.
 
 ==use cases==
 Some use cases are hosted (temporarily) here:
