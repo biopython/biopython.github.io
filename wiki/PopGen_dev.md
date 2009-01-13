@@ -10,8 +10,8 @@ Development page for the PopGen module.
 abstract
 --------
 
-The \[popgen\] module will contain modules to handle population genetics
-data.
+The [popgen](popgen "wikilink") module will contain modules to handle
+population genetics data.
 
 use cases
 ---------
@@ -44,4 +44,4 @@ wishing list
     [snpfile](http://lists.open-bio.org/pipermail/biopython/2008-December/004830.html)
 -   support for database: it is frequent to carry analysis on a big
     scale, so it is not unfrequent to use databases to store data
--   
+

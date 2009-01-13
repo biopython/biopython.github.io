@@ -1,7 +1,7 @@
 =Development page for the PopGen module.=
 
 ==abstract==
-The [popgen] module will contain modules to handle population genetics data.
+The [[popgen]] module will contain modules to handle population genetics data.
 
 ==use cases==
 Some use cases are hosted (temporarily) here:
@@ -18,4 +18,3 @@ When you will have changes that you will consider functional, tell us and we wil
 ==wishing list==
 * support for a binary format - like HDF5 or this one: [http://lists.open-bio.org/pipermail/biopython/2008-December/004830.html snpfile]
 * support for database: it is frequent to carry analysis on a big scale, so it is not unfrequent to use databases to store data
-*
