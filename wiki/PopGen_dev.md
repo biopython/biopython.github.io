@@ -58,11 +58,9 @@ Some of the development code is informally hosted on github:
 How to contribute
 -----------------
 
-Your contribution is most welcome, please have a look at the
-[Contributing General Biopython contribution
-guidelines](Contributing_General_Biopython_contribution_guidelines "wikilink").
-Join us on the biopython-devel mailing list and tell us about your
-ideas!
+Your contribution is most welcome, please have a look at the [General
+Biopython contribution guidelines](Contributing "wikilink"). Join us on
+the biopython-devel mailing list and tell us about your ideas!
 
 Informal development versions can be found, for now, on github where you
 can create a free account, and then click on the 'Fork' button

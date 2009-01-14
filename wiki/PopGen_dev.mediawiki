@@ -29,8 +29,7 @@ Some of the development code is informally hosted on github:
 * http://github.com/dalloliogm/biopython---popgen/commits/master
 
 ==How to contribute==
-
-Your contribution is most welcome, please have a look at the [[Contributing General Biopython contribution guidelines]]. Join us on the biopython-devel mailing list and tell us about your ideas!
+Your contribution is most welcome, please have a look at the [[Contributing|General Biopython contribution guidelines]]. Join us on the biopython-devel mailing list and tell us about your ideas!
 
 Informal development versions can be found, for now, on github where you can create a free account, and then click on the 'Fork' button (something like http://github.com/dalloliogm/biopython---popgen/fork) and then start working on your separated branch.
 
