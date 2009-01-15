@@ -51,10 +51,9 @@ involving coding and not. Some things that you can help on include:
     some work. New users can be especially helpful here, as you learn
     new packages. Our API documentation could also do with some work,
     see coding conventions below.
--   **News Postings:** The news items on the biopython.org front page
-    must be kept up to date. If you keep up with the mailing lists
-    (which are low volume), we need someone to help summarize important
-    posts and events as news items.
+-   **News Postings:** If you keep up with the mailing lists (which are
+    fairly low volume), we need someone to help summarize important
+    posts and events as [news items](News "wikilink").
 
 ### Submitting Code
 
