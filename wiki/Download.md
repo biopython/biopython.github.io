@@ -50,8 +50,8 @@ automatically.
 Otherwise you typically install from source by downloading and
 uncompressing the archive, then running the commands:
 
-`sudo python setup.py build`  
-`sudo python setup.py test`  
+`python setup.py build`  
+`python setup.py test`  
 `sudo python setup.py install`
 
 If you have trouble, see the full installation instructions:
