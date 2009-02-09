@@ -131,8 +131,8 @@ print records[-1].id #last record
 ```
 
 Another common task is to index your records by some identifier. For
-this we have a function **Bio.SeqIO.to\_dict()** to turn a SeqRecord
-iterator (or list) into a dictionary:
+this we have a function **Bio.SeqIO.to\_dict()** to turn a
+[SeqRecord](SeqRecord "wikilink") iterator (or list) into a dictionary:
 
 ``` python
 from Bio import SeqIO
@@ -382,10 +382,11 @@ You should get this output:
 `Z78439.1 H+JfaShya/4yyAj7IbMqgNkxdxQ`
 
 Now lets use the checksum function and **Bio.SeqIO.to\_dict()** to build
-a **SeqRecord** dictionary using the SEGUID as the keys. The trick here
-is to use the python lambda syntax to create a temporary function to get
-the SEGUID for each SeqRecord - we can't use the **seguid** function
-directly as it only works on **Seq** objects or strings.
+a [SeqRecord](SeqRecord "wikilink") dictionary using the SEGUID as the
+keys. The trick here is to use the python lambda syntax to create a
+temporary function to get the SEGUID for each SeqRecord - we can't use
+the **seguid** function directly as it only works on
+[Seq](Seq "wikilink") objects or strings.
 
 ``` python
 from Bio import SeqIO
@@ -449,13 +450,14 @@ That should give something like this as the output file,
 
 ### Writing to a string
 
-Sometimes you won't want to write your SeqRecord object(s) to a file,
-but to a string. For example, you might be preparing output for display
-as part of a webpage. If you want to write multiple records to a single
-string, use StringIO to create a string-based handle. The
+Sometimes you won't want to write your [SeqRecord](SeqRecord "wikilink")
+object(s) to a file, but to a string. For example, you might be
+preparing output for display as part of a webpage. If you want to write
+multiple records to a single string, use **StringIO** to create a
+string-based handle. The
 [Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
 ([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)) has an
-example of this in the SeqIO chapter.
+example of this in the **SeqIO** chapter.
 
 For the special case where you want a single record as a string in a
 given file format, Biopython 1.48 added a new format method:
@@ -466,15 +468,15 @@ for record in SeqIO.parse(open("ls_orchid.gbk"), "genbank") :
     print record.format("fasta")
 ```
 
-The format method will take any output format supported by Bio.SeqIO
+The format method will take any output format supported by **Bio.SeqIO**
 where the file format can be used for a single record (e.g. "fasta",
 "tab" or "genbank").
 
 Help!
 -----
 
-If you are having problems with Bio.SeqIO, please join the discussion
-mailing list (see [mailing lists](mailing_lists "wikilink")).
+If you are having problems with **Bio.SeqIO**, please join the
+discussion mailing list (see [mailing lists](mailing_lists "wikilink")).
 
 If you think you've found a bug, please report it on
 [bugzilla](http://bugzilla.open-bio.org/).
@@ -482,7 +484,8 @@ If you think you've found a bug, please report it on
 Old Bio.SeqIO code
 ------------------
 
-There was some old code living in the Bio.SeqIO.generic and
-Bio.SeqIO.FASTA modules, such as the FastaReader class. These files were
-marked as deprecated after the release of the "new" Bio.SeqIO code in
-Biopython 1.43, and were removed in Biopython 1.47.
+There was some old code living in the **Bio.SeqIO.generic** and
+**Bio.SeqIO.FASTA** modules, such as the **FastaReader** class. These
+files were marked as deprecated after the release of the "new"
+**Bio.SeqIO** code in Biopython 1.43, and were removed in Biopython
+1.47.
