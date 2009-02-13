@@ -61,16 +61,16 @@ Note: People are listed here alphabetically by surname.
 | Biopython Contributions | Co-Founder, Seq, Martel, indexing, EUtils, patterns, parsing, ... |
 | Relevant URL            | <http://www.dalkescientific.com/>                                 |
 
-|                         |                                                                            |
-|-------------------------|----------------------------------------------------------------------------|
-| Name                    | Michiel de Hoon                                                            |
-| E-mail                  | See my web page                                                            |
-| Affiliation             | Columbia University                                                        |
-| Location                | New York                                                                   |
-| Uses Python for         | Systems Biology; Plotting                                                  |
-| Work/Research Interests | Microbiology                                                               |
-| Biopython Contributions | Bio.Cluster; Windows installer; self-proclaimed Biopython portability whip |
-| Relevant URL            | <http://bonsai.ims.u-tokyo.ac.jp/~mdehoon>                                 |
+|                         |                                                          |
+|-------------------------|----------------------------------------------------------|
+| Name                    | Michiel de Hoon                                          |
+| E-mail                  | See my web page                                          |
+| Affiliation             | RIKEN Omics Science Center                               |
+| Location                | Yokohama                                                 |
+| Uses Python for         | High-throughput data analysis & Scientific visualization |
+| Work/Research Interests | RNA Genomics                                             |
+| Biopython Contributions | Bio.Cluster; Bio.Entrez; Windows installer               |
+| Relevant URL            | <http://bonsai.ims.u-tokyo.ac.jp/~mdehoon>               |
 
 |                         |                                                                                             |
 |-------------------------|---------------------------------------------------------------------------------------------|

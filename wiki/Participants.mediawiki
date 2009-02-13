@@ -100,15 +100,15 @@ Note: People are listed here alphabetically by surname.
 |-
 | E-mail                  || See my web page
 |-
-| Affiliation             || Columbia University
+| Affiliation             || RIKEN Omics Science Center
 |-
-| Location                || New York
+| Location                || Yokohama
 |-
-| Uses Python for         || Systems Biology; Plotting
+| Uses Python for         || High-throughput data analysis & Scientific visualization
 |-
-| Work/Research Interests || Microbiology
+| Work/Research Interests || RNA Genomics
 |-
-| Biopython Contributions || Bio.Cluster; Windows installer; self-proclaimed Biopython portability whip
+| Biopython Contributions || Bio.Cluster; Bio.Entrez; Windows installer
 |-
 | Relevant URL            || http://bonsai.ims.u-tokyo.ac.jp/~mdehoon
 |}
