@@ -15,8 +15,8 @@ New to BioPython? Check out the [[Getting_Started|Getting Started]] page, or fol
 * Documentation for the cluster module in Biopython. This describes the underlying C library and the Python interface. 
 :[http://biopython.org/DIST/docs/cluster/cluster.pdf PDF]
 * Cookbook-style documentation:
-:*Writing Tests for Biopython. 
-::[http://biopython.org/DIST/docs/cookbook/biopython_test.html HTML] | [http://biopython.org/DIST/docs/cookbook/biopython_test.pdf PDF]
+:*Writing Tests for Biopython: See chapter 13 in the current developer's version of the Biopython Tutorial and Cookbook:
+::[http://biopython.org/DIST/docs/tutorial/Tutorial.proposal.html HTML]
 :*The Biopython Structural Bioinformatics FAQ (i.e. how to use the Bio.PDB module). 
 ::[http://biopython.org/DIST/docs/cookbook/biopdb_faq.pdf PDF]
 :*Working with restriction enzymes. 
