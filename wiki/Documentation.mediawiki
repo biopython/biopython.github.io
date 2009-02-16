@@ -74,4 +74,5 @@ New to BioPython? Check out the [[Getting_Started|Getting Started]] page, or fol
 
 * Details about the biopython.org [[website]].
 * How to [[Contributing|contribute code]] to Biopython.
+* [[Deprecation policy]]
 * Instructions for [[building a release]] of Biopython.
