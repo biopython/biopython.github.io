@@ -28,16 +28,13 @@ Note: People are listed here alphabetically by surname.
 | Biopython Contributions | Co-Founder                           |
 | Relevant URL            | <http://www.jeffchang.com/>          |
 
-|                         |                                                 |
-|-------------------------|-------------------------------------------------|
-| Name                    | Brad Chapman                                    |
-| E-mail                  | <chapmanb@uga.edu>                              |
-| Affiliation             | University of Georgia                           |
-| Location                | Athens, GA                                      |
-| Uses Python for         | Impressing my friends and family                |
-| Work/Research Interests | Evolution by whole genome duplication in plants |
-| Biopython Contributions | Docs, GenBank, BioSQL, BioCORBA                 |
-| Relevant URL            | <http://www.bioinformatics.org/bradstuff>       |
+|                         |                                |
+|-------------------------|--------------------------------|
+| Name                    | Brad Chapman                   |
+| Affiliation             | Massachusetts General Hospital |
+| Location                | Boston, MA                     |
+| Biopython Contributions | Docs, GenBank, BioSQL          |
+| Relevant URL            | <http://bcbio.wordpress.com/>  |
 
 |                         |                                                                                                                                                     |
 |-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|

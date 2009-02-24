@@ -41,19 +41,13 @@ Note: People are listed here alphabetically by surname.
 {| border="1" width="100%"
 | Name                    || Brad Chapman
 |-
-| E-mail                  || [mailto:chapmanb@uga.edu chapmanb@uga.edu]
+| Affiliation             || Massachusetts General Hospital
 |-
-| Affiliation             || University of Georgia
+| Location                || Boston, MA
 |-
-| Location                || Athens, GA
+| Biopython Contributions || Docs, GenBank, BioSQL
 |-
-| Uses Python for         || Impressing my friends and family
-|-
-| Work/Research Interests || Evolution by whole genome duplication in plants
-|-
-| Biopython Contributions || Docs, GenBank, BioSQL, BioCORBA
-|-
-| Relevant URL            || http://www.bioinformatics.org/bradstuff
+| Relevant URL            || http://bcbio.wordpress.com/
 |}
 
 
