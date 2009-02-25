@@ -45,7 +45,7 @@ Note: People are listed here alphabetically by surname.
 |-
 | Location                || Boston, MA
 |-
-| Biopython Contributions || Docs, GenBank, BioSQL
+| Biopython Contributions || Docs, GenBank, [[BioSQL]]
 |-
 | Relevant URL            || http://bcbio.wordpress.com/
 |}
@@ -58,13 +58,13 @@ Note: People are listed here alphabetically by surname.
 |-
 | Affiliation             || Plant Pathology, SCRI; previously MOAC Doctoral Training Centre, University of Warwick
 |-
-| Location                || Coventry, England, UK
+| Location                || Dundee, Scotland, UK
 |-
 | Uses Python for         || Bioinformatics, controlling R with rpy, ...
 |-
 | Work/Research Interests || Bacterial signalling, genomics
 |-
-| Biopython Contributions || Sequence parsing including [[SeqIO|Bio.SeqIO]], [[AlignIO|Bio.AlignIO]], and the EMBL and GenBank parsers -- plus documentation
+| Biopython Contributions || Sequence parsing including [[SeqIO|Bio.SeqIO]], [[AlignIO|Bio.AlignIO]], our [[BioSQL|BioSQL interface]], and documentation
 |-
 | Relevant URL            || http://www.scri.ac.uk/staff/petercock and http://www.warwick.ac.uk/go/peter_cock/python/
 |}
