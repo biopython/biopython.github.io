@@ -112,7 +112,13 @@ Publications from 2003
 1.  BowersEtAl2003 pmid=12660784
 2.  HamelryckAndManderick2003 pmid=14630660
 
-// This describes the Bio.PDB module </biblio>
+// This describes the Bio.PDB module
+
+1.  DeHoonEtAl2003 De Hoon, MJL, Chapman, BA, Friedberg, I.
+    *Bioinformatics and computational biology with biopython.* Genome
+    Informatics (2003) 14, 298-299
+
+</biblio>
 
 Publications from 2002
 ======================
