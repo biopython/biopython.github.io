@@ -65,9 +65,13 @@ Publications from 2007
     <pmid:17237072>.
     [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=17237072)
     [HubMed](http://www.hubmed.org/display.cgi?uids=17237072)
-7.  KauffEtAl2007 pmid=17562476
-8.  RatteiEtAl2007 pmid=17916241
-9.  WhissonEtAl2007 pmid=17914356
+7.  HackneyEtAl2007 pmid=17355990
+
+// Describes the Bio.MEME module
+
+1.  KauffEtAl2007 pmid=17562476
+2.  RatteiEtAl2007 pmid=17916241
+3.  WhissonEtAl2007 pmid=17914356
 
 </biblio>
 
