@@ -74,6 +74,10 @@ Publications from 2006
 
 <biblio>
 
+1.  BenitaEtAl2006 pmid=16822774
+
+// This describes some of the Bio.SeqUtils module
+
 1.  CasbonEtAl2006 pmid=16403221
 2.  FerreiraEtAl2006 pmid=17073300
 3.  HegedusAndRiordan2006 Hegedűs T and Riordan JR. *Search for proteins
