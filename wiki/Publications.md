@@ -202,7 +202,11 @@ Publications from 2002
 
 1.  LenhardAndWasserman2002 pmid=12176838
 2.  Mangalam2002 pmid=12230038
-3.  StajichEtAl2002 pmid=12368254
+3.  StajichEtAl2002 Stajich JE, *et al*. *The Bioperl toolkit: Perl
+    modules for the life sciences.* Genome Res 2002 Oct; 12(10) 1611-8.
+    <doi:10.1101/gr.361602> <pmid:12368254>.
+    [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=12368254)
+    [HubMed](http://www.hubmed.org/display.cgi?uids=12368254)
 4.  Stein2002 pmid=12000935
 
 </biblio>
