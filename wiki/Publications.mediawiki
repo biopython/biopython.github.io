@@ -9,6 +9,7 @@ This is a list of papers citing or using Biopython, by year sorted alphabeticall
 From 2008,
 <biblio>
 #AntaoEtAl2008 pmid=18662398
+#MunteanuEtAl2008 pmid=18606172
 #WhitworthAndCock2008 pmid=18227240
 </biblio>
 
@@ -27,6 +28,7 @@ From 2007,
 
 From 2006,
 <biblio>
+#CasbonEtAl2006 pmid=16403221
 #PritchardEtAl2006 pmid=16377612
 </biblio>
 
@@ -43,4 +45,12 @@ From 2004,
 From 2003,
 <biblio>
 #BowersEtAl2003 pmid=12660784
+#HamelryckAndManderick2003 pmid=14630660
+</biblio>
+
+----
+
+From 2002,
+<biblio>
+#Mangalam2002 pmid=12230038
 </biblio>

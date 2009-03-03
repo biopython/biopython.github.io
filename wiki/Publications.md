@@ -19,7 +19,8 @@ confirmed by an author.
 From 2008, <biblio>
 
 1.  AntaoEtAl2008 pmid=18662398
-2.  WhitworthAndCock2008 pmid=18227240
+2.  MunteanuEtAl2008 pmid=18606172
+3.  WhitworthAndCock2008 pmid=18227240
 
 </biblio>
 
@@ -39,7 +40,8 @@ From 2007, <biblio>
 
 From 2006, <biblio>
 
-1.  PritchardEtAl2006 pmid=16377612
+1.  CasbonEtAl2006 pmid=16403221
+2.  PritchardEtAl2006 pmid=16377612
 
 </biblio>
 
@@ -57,5 +59,14 @@ From 2004, <biblio>
 From 2003, <biblio>
 
 1.  BowersEtAl2003 pmid=12660784
+2.  HamelryckAndManderick2003 pmid=14630660
+
+</biblio>
+
+------------------------------------------------------------------------
+
+From 2002, <biblio>
+
+1.  Mangalam2002 pmid=12230038
 
 </biblio>
