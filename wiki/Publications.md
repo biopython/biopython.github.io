@@ -30,20 +30,21 @@ Publications from 2008
 <biblio>
 
 1.  AntaoEtAl2008 pmid=18662398
-2.  Faircloth2008 Faircloth BC. *MSATCOMMANDER: detection of
+2.  DiellaEtAl2008 pmid=17962309
+3.  Faircloth2008 Faircloth BC. *MSATCOMMANDER: detection of
     microsatellite repeat arrays and automated, locus-specific
     primer design.* Molecular Ecology Resources 2008; 8(1) 92-94.
     [<doi:10.1111/j.1471-8286.2007.01884.x>](http://dx/doi.org/10.1111/j.1471-8286.2007.01884.x)
-3.  GeraciEtAl2008 pmid=18477631
-4.  MunteanuEtAl2008 Munteanu CR, González-Díaz H, and Magalhães AL.
+4.  GeraciEtAl2008 pmid=18477631
+5.  MunteanuEtAl2008 Munteanu CR, González-Díaz H, and Magalhães AL.
     Enzymes/non-enzymes classification model complexity based on
     composition, sequence, 3D and topological indices. J Theor Biol 2008
     Sep 21; 254(2) 476-82. <doi:10.1016/j.jtbi.2008.06.003>
     <pmid:18606172>.
     [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=18606172)
     [HubMed](http://www.hubmed.org/display.cgi?uids=18606172)
-5.  ParkEtAl2008 pmid=18448467
-6.  WhitworthAndCock2008 pmid=18227240
+6.  ParkEtAl2008 pmid=18448467
+7.  WhitworthAndCock2008 pmid=18227240
 
 </biblio>
 
