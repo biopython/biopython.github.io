@@ -218,7 +218,8 @@ Publications from 2001
     Nucleic Acids Res 2001 Mar 15; 29(6) 1272-7. <pmid:11238992>.
     [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=11238992)
     [HubMed](http://www.hubmed.org/display.cgi?uids=11238992)
-3.  Woodwark2001 pmid=18629243
+3.  Ramu2001 pmid=11524384
+4.  Woodwark2001 pmid=18629243
 
 </biblio>
 
