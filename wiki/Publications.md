@@ -30,9 +30,9 @@ From 2009,
 From 2008, <biblio>
 
 1.  AntaoEtAl2008 pmid=18662398
-2.  Faircloth2008 Faircloth BC. MSATCOMMANDER: detection of
+2.  Faircloth2008 Faircloth BC. *MSATCOMMANDER: detection of
     microsatellite repeat arrays and automated, locus-specific
-    primer design. Molecular Ecology Resources 2008; 8(1) 92-94.
+    primer design.* Molecular Ecology Resources 2008; 8(1) 92-94.
     [<doi:10.1111/j.1471-8286.2007.01884.x>](http://dx/doi.org/10.1111/j.1471-8286.2007.01884.x)
 3.  MunteanuEtAl2008 Munteanu CR, González-Díaz H, and Magalhães AL.
     Enzymes/non-enzymes classification model complexity based on
@@ -104,5 +104,25 @@ From 2003, <biblio>
 From 2002, <biblio>
 
 1.  Mangalam2002 pmid=12230038
+
+</biblio>
+
+------------------------------------------------------------------------
+
+From 2001, <biblio>
+
+1.  Woodwark2001 pmid=18629243
+
+</biblio>
+
+------------------------------------------------------------------------
+
+From 2000,
+
+<biblio>
+
+1.  ChapmanAndChang2000 Chapman BA and Chang JT. *Biopython: Python
+    tools for computational biology.* ACM SIGBIO Newsletter 2000;
+    20, 15-19.
 
 </biblio>
