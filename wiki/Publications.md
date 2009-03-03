@@ -16,6 +16,16 @@ confirmed by an author.
 
 ------------------------------------------------------------------------
 
+From 2009,
+
+<biblio>
+
+1.  HoldenEtAl2009 pmid=19076238
+
+</biblio>
+
+------------------------------------------------------------------------
+
 From 2008, <biblio>
 
 1.  AntaoEtAl2008 pmid=18662398
@@ -51,6 +61,7 @@ From 2006, <biblio>
 1.  CasbonEtAl2006 pmid=16403221
 2.  PritchardEtAl2006 pmid=16377612
 3.  StajichAndLapp2006 pmid=16899494
+4.  TothEtAl2006 pmid=16704357
 
 </biblio>
 
