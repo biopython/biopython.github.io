@@ -45,8 +45,9 @@ Publications from 2008
     [HubMed](http://www.hubmed.org/display.cgi?uids=18606172)
 6.  ParkEtAl2008 pmid=18448467
 7.  PontyEtAl2008 pmid=18556754
-8.  SongEtAl200 pmid=18467349
-9.  WhitworthAndCock2008 pmid=18227240
+8.  RamanEtAl2008 pmid=19099550
+9.  SongEtAl2008 pmid=18467349
+10. WhitworthAndCock2008 pmid=18227240
 
 </biblio>
 
