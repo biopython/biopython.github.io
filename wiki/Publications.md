@@ -55,7 +55,8 @@ From 2007, <biblio>
 4.  CockAndWhitworth2007a pmid=17479344
 5.  CockAndWhitworth2007b pmid=17709334
 6.  KauffEtAl2007 pmid=17562476
-7.  WhissonEtAl2007 pmid=17914356
+7.  RatteiEtAl2007 pmid=17916241
+8.  WhissonEtAl2007 pmid=17914356
 
 </biblio>
 
@@ -65,8 +66,11 @@ From 2006, <biblio>
 
 1.  CasbonEtAl2006 pmid=16403221
 2.  PritchardEtAl2006 pmid=16377612
-3.  StajichAndLapp2006 pmid=16899494
-4.  TothEtAl2006 pmid=16704357
+
+// This describes GenomeDiagram, now part of the Bio.Graphics module
+
+1.  StajichAndLapp2006 pmid=16899494
+2.  TothEtAl2006 pmid=16704357
 
 </biblio>
 
@@ -88,7 +92,7 @@ From 2004, <biblio>
 2.  ChapmanEtAl2004 pmid=14734308
 3.  DeHoonEtAl2004 pmid=14871861
 
-</biblio>
+// This describes the Bio.Cluster module </biblio>
 
 ------------------------------------------------------------------------
 
@@ -97,7 +101,7 @@ From 2003, <biblio>
 1.  BowersEtAl2003 pmid=12660784
 2.  HamelryckAndManderick2003 pmid=14630660
 
-</biblio>
+// This describes the Bio.PDB module </biblio>
 
 ------------------------------------------------------------------------
 
