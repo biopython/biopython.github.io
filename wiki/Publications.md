@@ -106,8 +106,9 @@ Publications from 2005
     <pmid:15894622>.
     [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=15894622)
     [HubMed](http://www.hubmed.org/display.cgi?uids=15894622)
-2.  TothEtAl2006 pmid=16704357
-3.  WhissonEtAl2005 pmid=15749054
+2.  HerskovicAndBernstam2005 pmid=16779053
+3.  TothEtAl2006 pmid=16704357
+4.  WhissonEtAl2005 pmid=15749054
 
 </biblio>
 
