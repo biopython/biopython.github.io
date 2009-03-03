@@ -184,7 +184,8 @@ Publications from 2003
     *Bioinformatics and computational biology with biopython.* Genome
     Informatics 2003; 14, 298-299.
 2.  HornerAndPesole2003 pmid=12651718
-3.  WroeEtAl2003 pmid=12603063
+3.  LindingEtAl2003 pmid=12824398
+4.  WroeEtAl2003 pmid=12603063
 
 </biblio>
 
