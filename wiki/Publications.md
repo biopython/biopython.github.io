@@ -36,21 +36,22 @@ Publications from 2008
     primer design.* Molecular Ecology Resources 2008; 8(1) 92-94.
     [<doi:10.1111/j.1471-8286.2007.01884.x>](http://dx/doi.org/10.1111/j.1471-8286.2007.01884.x)
 4.  FeldhahnEtAl2008 pmid=18440979
-5.  GeraciEtAl2008 pmid=18477631
-6.  MunteanuEtAl2008 Munteanu CR, González-Díaz H, and Magalhães AL.
+5.  F pmid=18559108
+6.  GeraciEtAl2008 pmid=18477631
+7.  MunteanuEtAl2008 Munteanu CR, González-Díaz H, and Magalhães AL.
     Enzymes/non-enzymes classification model complexity based on
     composition, sequence, 3D and topological indices. J Theor Biol 2008
     Sep 21; 254(2) 476-82. <doi:10.1016/j.jtbi.2008.06.003>
     <pmid:18606172>.
     [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=18606172)
     [HubMed](http://www.hubmed.org/display.cgi?uids=18606172)
-7.  ParkEtAl2008 pmid=18448467
-8.  PontyEtAl2008 pmid=18556754
-9.  RamanEtAl2008 pmid=19099550
-10. SongEtAl2008 pmid=18467349
-11. SoutheyEtAl2008 pmid=19169350
-12. WaltersEtAl2008 pmid=18262514
-13. WhitworthAndCock2008 pmid=18227240
+8.  ParkEtAl2008 pmid=18448467
+9.  PontyEtAl2008 pmid=18556754
+10. RamanEtAl2008 pmid=19099550
+11. SongEtAl2008 pmid=18467349
+12. SoutheyEtAl2008 pmid=19169350
+13. WaltersEtAl2008 pmid=18262514
+14. WhitworthAndCock2008 pmid=18227240
 
 </biblio>
 
