@@ -94,7 +94,8 @@ Publications from 2006
 
 // This describes the Bio.CAPS module.
 
-1.  TothEtAl2006 pmid=16704357
+1.  TernesEtAl2006 pmid=16339149
+2.  TothEtAl2006 pmid=16704357
 
 </biblio>
 
