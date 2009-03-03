@@ -66,13 +66,14 @@ Publications from 2007
     [HubMed](http://www.hubmed.org/display.cgi?uids=17933849)
 5.  CockAndWhitworth2007a pmid=17479344
 6.  CockAndWhitworth2007b pmid=17709334
-7.  GrunbergEtAl2997 Grünberg R, Nilges M, and Leckner J. *Biskit--a
+7.  GentleEtAl2007 pmid=17329230
+8.  GrunbergEtAl2997 Grünberg R, Nilges M, and Leckner J. *Biskit--a
     software platform for structural bioinformatics.* Bioinformatics
     2007 Mar 15; 23(6) 769-70. <doi:10.1093/bioinformatics/btl655>
     <pmid:17237072>.
     [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=17237072)
     [HubMed](http://www.hubmed.org/display.cgi?uids=17237072)
-8.  HackneyEtAl2007 pmid=17355990
+9.  HackneyEtAl2007 pmid=17355990
 
 // Describes the Bio.MEME module
 
