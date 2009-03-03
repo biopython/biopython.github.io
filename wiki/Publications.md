@@ -36,7 +36,7 @@ Publications from 2008
     primer design.* Molecular Ecology Resources 2008; 8(1) 92-94.
     [<doi:10.1111/j.1471-8286.2007.01884.x>](http://dx/doi.org/10.1111/j.1471-8286.2007.01884.x)
 4.  FeldhahnEtAl2008 pmid=18440979
-5.  F pmid=18559108
+5.  FrelingerEtAl2008 pmid=18559108
 6.  GeraciEtAl2008 pmid=18477631
 7.  MunteanuEtAl2008 Munteanu CR, González-Díaz H, and Magalhães AL.
     Enzymes/non-enzymes classification model complexity based on
