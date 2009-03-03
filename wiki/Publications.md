@@ -81,7 +81,13 @@ Publications from 2005
 
 <biblio>
 
-1.  ArmstrongEtAl2005 pmid=15894622
+1.  ArmstrongEtAl2005 Armstrong MR, *et al*. *An ancestral oomycete
+    locus contains late blight avirulence gene Avr3a, encoding a protein
+    that is recognized in the host cytoplasm.* Proc Natl Acad Sci U S A
+    2005 May 24; 102(21) 7766-71. <doi:10.1073/pnas.0500113102>
+    <pmid:15894622>.
+    [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=15894622)
+    [HubMed](http://www.hubmed.org/display.cgi?uids=15894622)
 2.  TothEtAl2006 pmid=16704357
 3.  WhissonEtAl2005 pmid=15749054
 
