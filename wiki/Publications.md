@@ -118,6 +118,7 @@ Publications from 2003
 1.  DeHoonEtAl2003 De Hoon, MJL, Chapman, BA, Friedberg, I.
     *Bioinformatics and computational biology with biopython.* Genome
     Informatics 2003; 14, 298-299.
+2.  HornerAndPesole2003 pmid=12651718
 
 </biblio>
 
