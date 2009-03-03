@@ -54,10 +54,19 @@ From 2006, <biblio>
 
 ------------------------------------------------------------------------
 
+From 2005, <biblio>
+
+1.  WhissonEtAl2005 pmid=15749054
+
+</biblio>
+
+------------------------------------------------------------------------
+
 From 2004, <biblio>
 
-1.  ChapmanEtAl2004 pmid=14734308
-2.  DeHoonEtAl2004 pmid=14871861
+1.  BellEtAl2004 pmid=15263089
+2.  ChapmanEtAl2004 pmid=14734308
+3.  DeHoonEtAl2004 pmid=14871861
 
 </biblio>
 
