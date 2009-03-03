@@ -38,6 +38,7 @@ This is a list of papers citing or using Biopython, by year sorted alphabeticall
 <biblio>
 #CasbonEtAl2006 pmid=16403221
 #FerreiraEtAl2006 pmid=17073300
+#HegedusAndRiordan2006 Hegedűs T and Riordan JR. ''Search for proteins with similarity to the CFTR R domain using an optimized RDBMS solution, mBioSQL.'' Central European Journal of Biology 2006; 1(1) 29-42. [http://dx.doi.org/10.2478/s11535-006-0003-9 doi:10.2478/s11535-006-0003-9]
 #PritchardEtAl2006 pmid=16377612
 // This describes GenomeDiagram, now part of the Bio.Graphics module
 #StajichAndLapp2006 pmid=16899494
