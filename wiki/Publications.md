@@ -14,12 +14,24 @@ alphabetically by author. Regrettably, in some cases the manuscripts
 themselves do not directly mention Biopython, but this has been
 confirmed by an author.
 
+------------------------------------------------------------------------
+
+From 2008, <biblio>
+
+1.  AntaoEtAl2008 pmid=18662398
+2.  WhitworthAndCock2008 pmid=18227240
+
+</biblio>
+
+------------------------------------------------------------------------
+
 From 2007, <biblio>
 
-1.  Bassi2007 pmid=18052533
-2.  CockAndWhitworth2007a pmid=17479344
-3.  CockAndWhitworth2007b pmid=17709334
-4.  KauffEtAl2007 pmid=17562476
+1.  AntaoEtAl2007 pmid=17488756
+2.  Bassi2007 pmid=18052533
+3.  CockAndWhitworth2007a pmid=17479344
+4.  CockAndWhitworth2007b pmid=17709334
+5.  KauffEtAl2007 pmid=17562476
 
 </biblio>
 

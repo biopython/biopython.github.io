@@ -4,8 +4,19 @@ There is a separate shorter listing of [[Documentation#Papers|Biopython papers y
 
 This is a list of papers citing or using Biopython, by year sorted alphabetically by author.  Regrettably, in some cases the manuscripts themselves do not directly mention Biopython, but this has been confirmed by an author.
 
+----
+
+From 2008,
+<biblio>
+#AntaoEtAl2008 pmid=18662398
+#WhitworthAndCock2008 pmid=18227240
+</biblio>
+
+----
+
 From 2007,
 <biblio>
+#AntaoEtAl2007 pmid=17488756
 #Bassi2007 pmid=18052533
 #CockAndWhitworth2007a pmid=17479344
 #CockAndWhitworth2007b pmid=17709334
