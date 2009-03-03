@@ -37,6 +37,7 @@ This is a list of papers citing or using Biopython, by year sorted alphabeticall
 
 <biblio>
 #CasbonEtAl2006 pmid=16403221
+#FerreiraEtAl2006 pmid=17073300
 #PritchardEtAl2006 pmid=16377612
 // This describes GenomeDiagram, now part of the Bio.Graphics module
 #StajichAndLapp2006 pmid=16899494

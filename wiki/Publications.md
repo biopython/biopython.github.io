@@ -67,7 +67,8 @@ Publications from 2006
 <biblio>
 
 1.  CasbonEtAl2006 pmid=16403221
-2.  PritchardEtAl2006 pmid=16377612
+2.  FerreiraEtAl2006 pmid=17073300
+3.  PritchardEtAl2006 pmid=16377612
 
 // This describes GenomeDiagram, now part of the Bio.Graphics module
 
