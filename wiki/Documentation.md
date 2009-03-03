@@ -106,36 +106,19 @@ out of date)
 
 #### Papers
 
--   Brad and Jeff wrote a paper for the ACM SIG-BIO newsletter back in
-    August of 2000.
+Brad and Jeff wrote a paper for the ACM SIG-BIO newsletter back in
+August of 2000.
 
   
 [HTML](http://biopython.org/DIST/docs/acm/ACMbiopy.html) |
 [PDF](http://biopython.org/DIST/docs/acm/ACMbiopy.pdf)
 
--   The Bio.PDB module is described in this Bioinformatics article:
-
-<biblio>
-
-1.  Hamelryck pmid=14630660
-
-</biblio>
-
--   The Bio.Cluster module is described in a Bioinformatics article:
-
-<biblio>
-
-1.  de-Hoon pmid=14871861
-
-</biblio>
-
--   Python for Bioinformatics PLOS tutorial featuring Biopython:
-
-<biblio>
-
-1.  Bassi pmid=18052533
-
-</biblio>
+The Bio.PDB module is described in this Bioinformatics article: <biblio>
+HamelryckAndManderick2003 pmid=14630660 </biblio> The Bio.Cluster module
+is described in a Bioinformatics article: <biblio> DeHoonEtAl2004
+pmid=14871861 </biblio> GenomeDiagram which has now been integrated in
+Biopython is described in a Bioinformatics article: <biblio>
+PritchardEtAl2006 pmid=16377612 </biblio>
 
 #### Presentations
 
