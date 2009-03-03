@@ -30,6 +30,7 @@ From 2006,
 <biblio>
 #CasbonEtAl2006 pmid=16403221
 #PritchardEtAl2006 pmid=16377612
+#StajichAndLapp2006 pmid=16899494
 </biblio>
 
 ----

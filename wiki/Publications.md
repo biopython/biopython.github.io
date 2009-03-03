@@ -48,6 +48,7 @@ From 2006, <biblio>
 
 1.  CasbonEtAl2006 pmid=16403221
 2.  PritchardEtAl2006 pmid=16377612
+3.  StajichAndLapp2006 pmid=16899494
 
 </biblio>
 
