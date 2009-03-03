@@ -21,6 +21,7 @@ From 2009,
 <biblio>
 
 1.  HoldenEtAl2009 pmid=19076238
+2.  DailyEtAl2009 pmid=19229311
 
 </biblio>
 
@@ -29,14 +30,18 @@ From 2009,
 From 2008, <biblio>
 
 1.  AntaoEtAl2008 pmid=18662398
-2.  MunteanuEtAl2008 Munteanu CR, González-Díaz H, and Magalhães AL.
+2.  Faircloth2008 Faircloth BC. MSATCOMMANDER: detection of
+    microsatellite repeat arrays and automated, locus-specific
+    primer design. Molecular Ecology Resources 2008; 8(1) 92-94.
+    [<doi:10.1111/j.1471-8286.2007.01884.x>](http://dx/doi.org/10.1111/j.1471-8286.2007.01884.x)
+3.  MunteanuEtAl2008 Munteanu CR, González-Díaz H, and Magalhães AL.
     Enzymes/non-enzymes classification model complexity based on
     composition, sequence, 3D and topological indices. J Theor Biol 2008
     Sep 21; 254(2) 476-82. <doi:10.1016/j.jtbi.2008.06.003>
     <pmid:18606172>.
     [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=18606172)
     [HubMed](http://www.hubmed.org/display.cgi?uids=18606172)
-3.  WhitworthAndCock2008 pmid=18227240
+4.  WhitworthAndCock2008 pmid=18227240
 
 </biblio>
 
