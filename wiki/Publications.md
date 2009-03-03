@@ -166,8 +166,9 @@ Publications from 2004
 
 // This describes the Bio.Cluster module
 
-1.  King2004 pmid=15561592
-2.  SwartEtAl2004 pmid=15005802
+1.  GentlemanEtAl2004 pmid=15461798
+2.  King2004 pmid=15561592
+3.  SwartEtAl2004 pmid=15005802
 
 </biblio>
 
