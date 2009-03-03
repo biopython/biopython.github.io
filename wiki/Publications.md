@@ -179,7 +179,8 @@ Publications from 2003
 <biblio>
 
 1.  BowersEtAl2003 pmid=12660784
-2.  HamelryckAndManderick2003 pmid=14630660
+2.  ErnstEtAl2003 pmid=12538250
+3.  HamelryckAndManderick2003 pmid=14630660
 
 // This describes the Bio.PDB module
 
