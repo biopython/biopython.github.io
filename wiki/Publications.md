@@ -73,7 +73,11 @@ Publications from 2006
 // This describes GenomeDiagram, now part of the Bio.Graphics module
 
 1.  StajichAndLapp2006 pmid=16899494
-2.  TothEtAl2006 pmid=16704357
+2.  TaylorAndProvart2006 pmid=16686952
+
+// This describes the Bio.CAPS module.
+
+1.  TothEtAl2006 pmid=16704357
 
 </biblio>
 
