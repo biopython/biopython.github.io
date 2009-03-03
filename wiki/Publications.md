@@ -58,15 +58,21 @@ Publications from 2007
 1.  AntaoEtAl2007 pmid=17488756
 2.  AvrovaEtAl2007 pmid=17322195
 3.  Bassi2007 pmid=18052533
-4.  CockAndWhitworth2007a pmid=17479344
-5.  CockAndWhitworth2007b pmid=17709334
-6.  GrunbergEtAl2997 Grünberg R, Nilges M, and Leckner J. *Biskit--a
+4.  DominguesEtAl2007 Domingues FS, Rahnenführer J, and Lengauer T.
+    *Conformational analysis of alternative protein structures.*
+    Bioinformatics 2007 Dec 1; 23(23) 3131-8.
+    <doi:10.1093/bioinformatics/btm499> <pmid:17933849>.
+    [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=17933849)
+    [HubMed](http://www.hubmed.org/display.cgi?uids=17933849)
+5.  CockAndWhitworth2007a pmid=17479344
+6.  CockAndWhitworth2007b pmid=17709334
+7.  GrunbergEtAl2997 Grünberg R, Nilges M, and Leckner J. *Biskit--a
     software platform for structural bioinformatics.* Bioinformatics
     2007 Mar 15; 23(6) 769-70. <doi:10.1093/bioinformatics/btl655>
     <pmid:17237072>.
     [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=17237072)
     [HubMed](http://www.hubmed.org/display.cgi?uids=17237072)
-7.  HackneyEtAl2007 pmid=17355990
+8.  HackneyEtAl2007 pmid=17355990
 
 // Describes the Bio.MEME module
 
