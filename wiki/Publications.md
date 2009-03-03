@@ -42,7 +42,8 @@ Publications from 2008
     <pmid:18606172>.
     [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=18606172)
     [HubMed](http://www.hubmed.org/display.cgi?uids=18606172)
-5.  WhitworthAndCock2008 pmid=18227240
+5.  ParkEtAl2008 pmid=18448467
+6.  WhitworthAndCock2008 pmid=18227240
 
 </biblio>
 
