@@ -113,7 +113,11 @@ Publications from 2004
 2.  ChapmanEtAl2004 pmid=14734308
 3.  DeHoonEtAl2004 pmid=14871861
 
-// This describes the Bio.Cluster module </biblio>
+// This describes the Bio.Cluster module
+
+1.  King2004 pmid=15561592
+
+</biblio>
 
 Publications from 2003
 ======================
