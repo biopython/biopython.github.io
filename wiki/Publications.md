@@ -35,10 +35,12 @@ From 2008, <biblio>
 From 2007, <biblio>
 
 1.  AntaoEtAl2007 pmid=17488756
-2.  Bassi2007 pmid=18052533
-3.  CockAndWhitworth2007a pmid=17479344
-4.  CockAndWhitworth2007b pmid=17709334
-5.  KauffEtAl2007 pmid=17562476
+2.  AvrovaEtAl2007 pmid=17322195
+3.  Bassi2007 pmid=18052533
+4.  CockAndWhitworth2007a pmid=17479344
+5.  CockAndWhitworth2007b pmid=17709334
+6.  KauffEtAl2007 pmid=17562476
+7.  WhissonEtAl2007 pmid=17914356
 
 </biblio>
 
@@ -56,7 +58,9 @@ From 2006, <biblio>
 
 From 2005, <biblio>
 
-1.  WhissonEtAl2005 pmid=15749054
+1.  ArmstrongEtAl2005 pmid=15894622
+2.  TothEtAl2006 pmid=16704357
+3.  WhissonEtAl2005 pmid=15749054
 
 </biblio>
 

@@ -18,10 +18,12 @@ From 2008,
 From 2007,
 <biblio>
 #AntaoEtAl2007 pmid=17488756
+#AvrovaEtAl2007 pmid=17322195
 #Bassi2007 pmid=18052533
 #CockAndWhitworth2007a pmid=17479344
 #CockAndWhitworth2007b pmid=17709334
 #KauffEtAl2007 pmid=17562476
+#WhissonEtAl2007 pmid=17914356
 </biblio>
 
 ----
@@ -37,6 +39,8 @@ From 2006,
 
 From 2005,
 <biblio>
+#ArmstrongEtAl2005 pmid=15894622
+#TothEtAl2006 pmid=16704357
 #WhissonEtAl2005 pmid=15749054
 </biblio>
 
