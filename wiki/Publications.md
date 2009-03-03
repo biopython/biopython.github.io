@@ -66,7 +66,15 @@ Publications from 2007
     [HubMed](http://www.hubmed.org/display.cgi?uids=17933849)
 5.  CockAndWhitworth2007a pmid=17479344
 6.  CockAndWhitworth2007b pmid=17709334
-7.  GentleEtAl2007 pmid=17329230
+7.  GentleEtAl2007 Gentle IE, Perry AJ, Alcock FH, Likić VA, Dolezal P,
+    Ng ET, Purcell AW, McConnville M, Naderer T, Chanez AL, Charrière F,
+    Aschinger C, Schneider A, Tokatlidis K, and Lithgow T. *Conserved
+    motifs reveal details of ancestry and structure in the small TIM
+    chaperones of the mitochondrial intermembrane space.* Mol Biol Evol
+    2007 May; 24(5) 1149-60. <doi:10.1093/molbev/msm031>
+    <pmid:17329230>.
+    [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=17329230)
+    [HubMed](http://www.hubmed.org/display.cgi?uids=17329230)
 8.  GrunbergEtAl2997 Grünberg R, Nilges M, and Leckner J. *Biskit--a
     software platform for structural bioinformatics.* Bioinformatics
     2007 Mar 15; 23(6) 769-70. <doi:10.1093/bioinformatics/btl655>
