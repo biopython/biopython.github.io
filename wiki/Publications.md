@@ -127,6 +127,7 @@ Publications from 2006
 
 1.  TernesEtAl2006 pmid=16339149
 2.  TothEtAl2006 pmid=16704357
+3.  ZapalaEtAl2006 pmid=17146048
 
 </biblio>
 

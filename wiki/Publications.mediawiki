@@ -67,6 +67,7 @@ This is a list of papers citing or using Biopython, by year sorted alphabeticall
 // This describes the Bio.CAPS module.
 #TernesEtAl2006 pmid=16339149
 #TothEtAl2006 pmid=16704357
+#ZapalaEtAl2006 pmid=17146048
 </biblio>
 
 = Publications from 2005 =
