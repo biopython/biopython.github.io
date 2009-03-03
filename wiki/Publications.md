@@ -135,26 +135,27 @@ Publications from 2005
 
 <biblio>
 
-1.  ArmstrongEtAl2005 Armstrong MR, *et al*. *An ancestral oomycete
+1.  BoomsmaAndHamelryck2005 pmid=15985178
+2.  ArmstrongEtAl2005 Armstrong MR, *et al*. *An ancestral oomycete
     locus contains late blight avirulence gene Avr3a, encoding a protein
     that is recognized in the host cytoplasm.* Proc Natl Acad Sci U S A
     2005 May 24; 102(21) 7766-71. <doi:10.1073/pnas.0500113102>
     <pmid:15894622>.
     [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=15894622)
     [HubMed](http://www.hubmed.org/display.cgi?uids=15894622)
-2.  CurkEtAl2005 pmid=15308546
-3.  FriedbergEtAl2005 pmid=15980462
-4.  HerskovicAndBernstam2005 pmid=16779053
-5.  Hamelryck2005 pmid=15688434
-6.  TothEtAl2006 pmid=16704357
-7.  TrisslEtAl2005 Trissl S, Rother K, Müller H, Steinke T, Koch I,
+3.  CurkEtAl2005 pmid=15308546
+4.  FriedbergEtAl2005 pmid=15980462
+5.  HerskovicAndBernstam2005 pmid=16779053
+6.  Hamelryck2005 pmid=15688434
+7.  TothEtAl2006 pmid=16704357
+8.  TrisslEtAl2005 Trissl S, Rother K, Müller H, Steinke T, Koch I,
     Preissner R, Frömmel C, and Leser U. *Columba: an integrated
     database of proteins, structures, and annotations.* BMC
     Bioinformatics 2005 Mar 31; 6 81. <doi:10.1186/1471-2105-6-81>
     <pmid:15801979>.
     [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=15801979)
     [HubMed](http://www.hubmed.org/display.cgi?uids=15801979)
-8.  WhissonEtAl2005 pmid=15749054
+9.  WhissonEtAl2005 pmid=15749054
 
 </biblio>
 
