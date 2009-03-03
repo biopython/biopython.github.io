@@ -38,6 +38,7 @@ This is a list of papers citing or using Biopython, by year sorted alphabeticall
 #HackneyEtAl2007 pmid=17355990
 // Describes the Bio.MEME module
 #KauffEtAl2007 pmid=17562476
+#PicardiEtAl2007 pmid=17175530
 #RatteiEtAl2007 pmid=17916241
 #WhissonEtAl2007 pmid=17914356
 </biblio>

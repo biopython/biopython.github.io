@@ -77,8 +77,9 @@ Publications from 2007
 // Describes the Bio.MEME module
 
 1.  KauffEtAl2007 pmid=17562476
-2.  RatteiEtAl2007 pmid=17916241
-3.  WhissonEtAl2007 pmid=17914356
+2.  PicardiEtAl2007 pmid=17175530
+3.  RatteiEtAl2007 pmid=17916241
+4.  WhissonEtAl2007 pmid=17914356
 
 </biblio>
 
