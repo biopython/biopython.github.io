@@ -57,9 +57,15 @@ Publications from 2007
 3.  Bassi2007 pmid=18052533
 4.  CockAndWhitworth2007a pmid=17479344
 5.  CockAndWhitworth2007b pmid=17709334
-6.  KauffEtAl2007 pmid=17562476
-7.  RatteiEtAl2007 pmid=17916241
-8.  WhissonEtAl2007 pmid=17914356
+6.  GrunbergEtAl2997 Grünberg R, Nilges M, and Leckner J. *Biskit--a
+    software platform for structural bioinformatics.* Bioinformatics
+    2007 Mar 15; 23(6) 769-70. <doi:10.1093/bioinformatics/btl655>
+    <pmid:17237072>.
+    [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=17237072)
+    [HubMed](http://www.hubmed.org/display.cgi?uids=17237072)
+7.  KauffEtAl2007 pmid=17562476
+8.  RatteiEtAl2007 pmid=17916241
+9.  WhissonEtAl2007 pmid=17914356
 
 </biblio>
 
