@@ -184,6 +184,7 @@ Publications from 2002
 
 1.  Mangalam2002 pmid=12230038
 2.  StajichEtAl2002 pmid=12368254
+3.  Stein2002 pmid=12000935
 
 </biblio>
 

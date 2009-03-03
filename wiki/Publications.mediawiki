@@ -100,6 +100,7 @@ This is a list of papers citing or using Biopython, by year sorted alphabeticall
 <biblio>
 #Mangalam2002 pmid=12230038
 #StajichEtAl2002 pmid=12368254
+#Stein2002 pmid=12000935
 </biblio>
 
 = Publications from 2001 =
