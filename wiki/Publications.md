@@ -100,7 +100,8 @@ Publications from 2006
     solution, mBioSQL.* Central European Journal of Biology 2006; 1(1)
     29-42.
     [<doi:10.2478/s11535-006-0003-9>](http://dx.doi.org/10.2478/s11535-006-0003-9)
-5.  PritchardEtAl2006 pmid=16377612
+5.  MattinglyEtAl2006 pmid=16675512
+6.  PritchardEtAl2006 pmid=16377612
 
 // This describes GenomeDiagram, now part of the Bio.Graphics module
 
