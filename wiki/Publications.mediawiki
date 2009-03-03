@@ -4,18 +4,15 @@ There is a separate shorter listing of [[Documentation#Papers|Biopython papers y
 
 This is a list of papers citing or using Biopython, by year sorted alphabetically by author.  Regrettably, in some cases the manuscripts themselves do not directly mention Biopython, but this has been confirmed by an author.
 
-----
-
-From 2009,
+= Publications from 2009 =
 
 <biblio>
 #HoldenEtAl2009 pmid=19076238
 #DailyEtAl2009 pmid=19229311
 </biblio>
 
-----
+= Publications from 2008 =
 
-From 2008,
 <biblio>
 #AntaoEtAl2008 pmid=18662398
 #Faircloth2008 Faircloth BC. ''MSATCOMMANDER: detection of microsatellite repeat arrays and automated, locus-specific primer design.'' Molecular Ecology Resources 2008; 8(1) 92-94. [http://dx/doi.org/10.1111/j.1471-8286.2007.01884.x doi:10.1111/j.1471-8286.2007.01884.x]
@@ -23,9 +20,8 @@ From 2008,
 #WhitworthAndCock2008 pmid=18227240
 </biblio>
 
-----
+= Publications from 2007 =
 
-From 2007,
 <biblio>
 #AntaoEtAl2007 pmid=17488756
 #AvrovaEtAl2007 pmid=17322195
@@ -37,9 +33,8 @@ From 2007,
 #WhissonEtAl2007 pmid=17914356
 </biblio>
 
-----
+= Publications from 2006 =
 
-From 2006,
 <biblio>
 #CasbonEtAl2006 pmid=16403221
 #PritchardEtAl2006 pmid=16377612
@@ -48,18 +43,16 @@ From 2006,
 #TothEtAl2006 pmid=16704357
 </biblio>
 
-----
+= Publications from 2005 =
 
-From 2005,
 <biblio>
 #ArmstrongEtAl2005 pmid=15894622
 #TothEtAl2006 pmid=16704357
 #WhissonEtAl2005 pmid=15749054
 </biblio>
 
-----
+= Publications from 2004 =
 
-From 2004,
 <biblio>
 #BellEtAl2004 pmid=15263089
 #ChapmanEtAl2004 pmid=14734308
@@ -67,32 +60,27 @@ From 2004,
 // This describes the Bio.Cluster module
 </biblio>
 
-----
+= Publications from 2003 =
 
-From 2003,
 <biblio>
 #BowersEtAl2003 pmid=12660784
 #HamelryckAndManderick2003 pmid=14630660
 // This describes the Bio.PDB module
 </biblio>
 
-----
+= Publications from 2002 =
 
-From 2002,
 <biblio>
 #Mangalam2002 pmid=12230038
 </biblio>
 
-----
+= Publications from 2001 =
 
-From 2001,
 <biblio>
 #Woodwark2001 pmid=18629243
 </biblio>
 
-----
-
-From 2000,
+= Publications from 2000 =
 
 <biblio>
 #ChapmanAndChang2000 Chapman BA and Chang JT. ''Biopython: Python tools for computational biology.'' ACM SIGBIO Newsletter 2000; 20, 15-19. 

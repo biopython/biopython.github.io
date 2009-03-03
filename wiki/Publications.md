@@ -14,9 +14,8 @@ alphabetically by author. Regrettably, in some cases the manuscripts
 themselves do not directly mention Biopython, but this has been
 confirmed by an author.
 
-------------------------------------------------------------------------
-
-From 2009,
+Publications from 2009
+======================
 
 <biblio>
 
@@ -25,9 +24,10 @@ From 2009,
 
 </biblio>
 
-------------------------------------------------------------------------
+Publications from 2008
+======================
 
-From 2008, <biblio>
+<biblio>
 
 1.  AntaoEtAl2008 pmid=18662398
 2.  Faircloth2008 Faircloth BC. *MSATCOMMANDER: detection of
@@ -45,9 +45,10 @@ From 2008, <biblio>
 
 </biblio>
 
-------------------------------------------------------------------------
+Publications from 2007
+======================
 
-From 2007, <biblio>
+<biblio>
 
 1.  AntaoEtAl2007 pmid=17488756
 2.  AvrovaEtAl2007 pmid=17322195
@@ -60,9 +61,10 @@ From 2007, <biblio>
 
 </biblio>
 
-------------------------------------------------------------------------
+Publications from 2006
+======================
 
-From 2006, <biblio>
+<biblio>
 
 1.  CasbonEtAl2006 pmid=16403221
 2.  PritchardEtAl2006 pmid=16377612
@@ -74,9 +76,10 @@ From 2006, <biblio>
 
 </biblio>
 
-------------------------------------------------------------------------
+Publications from 2005
+======================
 
-From 2005, <biblio>
+<biblio>
 
 1.  ArmstrongEtAl2005 pmid=15894622
 2.  TothEtAl2006 pmid=16704357
@@ -84,9 +87,10 @@ From 2005, <biblio>
 
 </biblio>
 
-------------------------------------------------------------------------
+Publications from 2004
+======================
 
-From 2004, <biblio>
+<biblio>
 
 1.  BellEtAl2004 pmid=15263089
 2.  ChapmanEtAl2004 pmid=14734308
@@ -94,34 +98,36 @@ From 2004, <biblio>
 
 // This describes the Bio.Cluster module </biblio>
 
-------------------------------------------------------------------------
+Publications from 2003
+======================
 
-From 2003, <biblio>
+<biblio>
 
 1.  BowersEtAl2003 pmid=12660784
 2.  HamelryckAndManderick2003 pmid=14630660
 
 // This describes the Bio.PDB module </biblio>
 
-------------------------------------------------------------------------
+Publications from 2002
+======================
 
-From 2002, <biblio>
+<biblio>
 
 1.  Mangalam2002 pmid=12230038
 
 </biblio>
 
-------------------------------------------------------------------------
+Publications from 2001
+======================
 
-From 2001, <biblio>
+<biblio>
 
 1.  Woodwark2001 pmid=18629243
 
 </biblio>
 
-------------------------------------------------------------------------
-
-From 2000,
+Publications from 2000
+======================
 
 <biblio>
 
