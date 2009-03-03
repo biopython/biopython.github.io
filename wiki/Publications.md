@@ -105,16 +105,17 @@ Publications from 2006
 
 // This describes some of the Bio.SeqUtils module
 
-1.  CasbonEtAl2006 pmid=16403221
-2.  FerreiraEtAl2006 pmid=17073300
-3.  FriedbergEtAl2006 pmid=16845030
-4.  HegedusAndRiordan2006 Hegedűs T and Riordan JR. *Search for proteins
+1.  BonisEtAl2006 pmid=16882651
+2.  CasbonEtAl2006 pmid=16403221
+3.  FerreiraEtAl2006 pmid=17073300
+4.  FriedbergEtAl2006 pmid=16845030
+5.  HegedusAndRiordan2006 Hegedűs T and Riordan JR. *Search for proteins
     with similarity to the CFTR R domain using an optimized RDBMS
     solution, mBioSQL.* Central European Journal of Biology 2006; 1(1)
     29-42.
     [<doi:10.2478/s11535-006-0003-9>](http://dx.doi.org/10.2478/s11535-006-0003-9)
-5.  MattinglyEtAl2006 pmid=16675512
-6.  PritchardEtAl2006 pmid=16377612
+6.  MattinglyEtAl2006 pmid=16675512
+7.  PritchardEtAl2006 pmid=16377612
 
 // This describes GenomeDiagram, now part of the Bio.Graphics module
 

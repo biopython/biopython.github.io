@@ -53,6 +53,7 @@ This is a list of papers citing or using Biopython, by year sorted alphabeticall
 <biblio>
 #BenitaEtAl2006 pmid=16822774
 // This describes some of the Bio.SeqUtils module
+#BonisEtAl2006 pmid=16882651
 #CasbonEtAl2006 pmid=16403221
 #FerreiraEtAl2006 pmid=17073300
 #FriedbergEtAl2006 pmid=16845030
