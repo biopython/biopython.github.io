@@ -10,9 +10,9 @@ There is a separate shorter listing of [Biopython papers you may wish to
 cite](Documentation#Papers "wikilink").
 
 This is a list of papers citing or using Biopython, by year sorted
-alphabetically by author. Regrettably, in some cases the manuscripts
-themselves do not directly mention Biopython, but this has been
-confirmed by an author.
+alphabetically by author. In many cases these citations are just via the
+website. Regrettably, in some cases the manuscripts themselves do not
+directly mention Biopython, but this has been confirmed by an author.
 
 Publications from 2009
 ======================
