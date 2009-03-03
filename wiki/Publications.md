@@ -47,7 +47,8 @@ Publications from 2008
 7.  PontyEtAl2008 pmid=18556754
 8.  RamanEtAl2008 pmid=19099550
 9.  SongEtAl2008 pmid=18467349
-10. WhitworthAndCock2008 pmid=18227240
+10. WaltersEtAl2008 pmid=18262514
+11. WhitworthAndCock2008 pmid=18227240
 
 </biblio>
 

@@ -23,6 +23,7 @@ This is a list of papers citing or using Biopython, by year sorted alphabeticall
 #PontyEtAl2008 pmid=18556754
 #RamanEtAl2008 pmid=19099550
 #SongEtAl2008 pmid=18467349
+#WaltersEtAl2008 pmid=18262514
 #WhitworthAndCock2008 pmid=18227240
 </biblio>
 
