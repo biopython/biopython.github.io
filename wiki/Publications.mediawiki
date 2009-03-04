@@ -179,3 +179,11 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 #ChapmanAndChang2000 Chapman BA and Chang JT. ''Biopython: Python tools for computational biology.'' ACM SIGBIO Newsletter 2000; 20, 15-19.
 #RamuEtAl2000 Ramu C, Gemünd C, and Gibson TJ. ''Object-oriented parsing of biological databases with Python''. Bioinformatics 2000 Jul; 16(7) 628-38. pmid:11038333. [http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=11038333 PubMed] [http://www.hubmed.org/display.cgi?uids=11038333 HubMed]
 </biblio>
+
+= Publications from 1999 =
+
+<biblio>
+#Sanner1999 pmid=10660911
+</biblio>
+
+The Biopython project started in 1999.

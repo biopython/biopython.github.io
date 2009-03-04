@@ -350,3 +350,14 @@ Publications from 2000
     [HubMed](http://www.hubmed.org/display.cgi?uids=11038333)
 
 </biblio>
+
+Publications from 1999
+======================
+
+<biblio>
+
+1.  Sanner1999 pmid=10660911
+
+</biblio>
+
+The Biopython project started in 1999.
