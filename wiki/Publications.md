@@ -170,7 +170,8 @@ Publications from 2007
 2.  MaEtAl2007 pmid=17524416
 3.  PicardiEtAl2007 pmid=17175530
 4.  RatteiEtAl2007 pmid=17916241
-5.  WhissonEtAl2007 pmid=17914356
+5.  TagamiEtAl2007 pmid=18056073
+6.  WhissonEtAl2007 pmid=17914356
 
 </biblio>
 
