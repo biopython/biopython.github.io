@@ -375,7 +375,10 @@ Publications from 2000
 1.  ChapmanAndChang2000 Chapman BA and Chang JT. *Biopython: Python
     tools for computational biology.* ACM SIGBIO Newsletter 2000;
     20, 15-19.
-2.  RamuEtAl2000 Ramu C, Gemünd C, and Gibson TJ. *Object-oriented
+
+// This serves as the official project announcement.
+
+1.  RamuEtAl2000 Ramu C, Gemünd C, and Gibson TJ. *Object-oriented
     parsing of biological databases with Python*. Bioinformatics 2000
     Jul; 16(7) 628-38. <pmid:11038333>.
     [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=11038333)
