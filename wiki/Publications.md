@@ -107,7 +107,11 @@ superimposition.
 // Used [Bio.SeqIO](SeqIO "wikilink"), [Bio.AlignIO](AlignIO "wikilink")
 and Bio.Blast
 
-1.  Wiwanitkit2008 pmid=18445954
+1.  Wiwanitkit2008a pmid=18445954
+
+// Used Biopython for working with ExPASy
+
+1.  Wiwanitkit2008b pmid=18064407
 
 // Used Biopython for working with ExPASy </biblio>
 
