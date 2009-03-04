@@ -106,19 +106,31 @@ out of date)
 
 #### Papers
 
-Brad and Jeff wrote a paper for the ACM SIG-BIO newsletter back in
-August of 2000.
+We have a separate list of [publications citing or using
+Biopython](Publications "wikilink"), the following are key papers you
+may wish to cite:
 
-  
-[HTML](http://biopython.org/DIST/docs/acm/ACMbiopy.html) |
-[PDF](http://biopython.org/DIST/docs/acm/ACMbiopy.pdf)
+<biblio>
 
-The Bio.PDB module is described in this Bioinformatics article: <biblio>
-HamelryckAndManderick2003 pmid=14630660 </biblio> The Bio.Cluster module
-is described in a Bioinformatics article: <biblio> DeHoonEtAl2004
-pmid=14871861 </biblio> GenomeDiagram which has now been integrated in
-Biopython is described in a Bioinformatics article: <biblio>
-PritchardEtAl2006 pmid=16377612 </biblio>
+1.  ChapmanAndChang2000 Chapman BA and Chang JT. *Biopython: Python
+    tools for computational biology.* ACM SIGBIO Newsletter 2000 Aug;
+    20, 15-19. [HTML](http://biopython.org/DIST/docs/acm/ACMbiopy.html)
+    | [PDF](http://biopython.org/DIST/docs/acm/ACMbiopy.pdf)
+
+// This serves as the official project announcement.
+
+1.  HamelryckAndManderick2003 pmid=14630660
+
+// The Bio.PDB module is described here.
+
+1.  DeHoonEtAl2004 pmid=14871861
+
+// The Bio.Cluster module is described here.
+
+1.  PritchardEtAl2006 pmid=16377612
+
+// This describes GenomeDiagram, which has now been integrated into
+Biopython. </biblio>
 
 #### Presentations
 

@@ -40,19 +40,17 @@ New to BioPython? Check out the [[Getting_Started|Getting Started]] page, or fol
 
 ==== Papers ====
 
-Brad and Jeff wrote a paper for the ACM SIG-BIO newsletter back in August of 2000.
-:[http://biopython.org/DIST/docs/acm/ACMbiopy.html HTML] | [http://biopython.org/DIST/docs/acm/ACMbiopy.pdf PDF]
-The Bio.PDB module is described in this Bioinformatics article:
+We have a separate list of [[Publications|publications citing or using Biopython]], the following are key papers you may wish to cite:
+
 <biblio>
-HamelryckAndManderick2003 pmid=14630660
-</biblio>
-The Bio.Cluster module is described in a Bioinformatics article:
-<biblio>
-DeHoonEtAl2004 pmid=14871861
-</biblio>
-GenomeDiagram which has now been integrated in Biopython is described in a Bioinformatics article:
-<biblio>
-PritchardEtAl2006 pmid=16377612
+#ChapmanAndChang2000 Chapman BA and Chang JT. ''Biopython: Python tools for computational biology.'' ACM SIGBIO Newsletter 2000 Aug; 20, 15-19. [http://biopython.org/DIST/docs/acm/ACMbiopy.html HTML] | [http://biopython.org/DIST/docs/acm/ACMbiopy.pdf PDF]
+// This serves as the official project announcement.
+#HamelryckAndManderick2003 pmid=14630660
+// The Bio.PDB module is described here.
+#DeHoonEtAl2004 pmid=14871861
+// The Bio.Cluster module is described here.
+#PritchardEtAl2006 pmid=16377612
+// This describes GenomeDiagram, which has now been integrated into Biopython.
 </biblio>
 
 ==== Presentations ====
