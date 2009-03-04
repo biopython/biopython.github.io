@@ -181,7 +181,8 @@ Publications from 2007
 3.  PicardiEtAl2007 pmid=17175530
 4.  RatteiEtAl2007 pmid=17916241
 5.  TagamiEtAl2007 pmid=18056073
-6.  WhissonEtAl2007 pmid=17914356
+6.  WatanabeEtAl2007 pmid=17651697
+7.  WhissonEtAl2007 pmid=17914356
 
 </biblio>
 
