@@ -29,6 +29,10 @@ GenomeDiagram
 
 // Used Bio.SVDSuperimposer (and probably Bio.PDB as well)
 
+1.  TorranceEtAl2009 pmid=19038265
+
+// Used Biopython for the k-means algorithm
+
 1.  Wiwanitkit2009a pmid=19007941
 
 // Used Biopython to work with ExPASy
