@@ -205,11 +205,12 @@ Publications from 2006
     [<doi:10.2478/s11535-006-0003-9>](http://dx.doi.org/10.2478/s11535-006-0003-9)
 5.  LeeEtAl2006 pmid=16326071
 6.  MattinglyEtAl2006 pmid=16675512
-7.  NilsenEtAl2006 Nilsen *et al*. *Construction of a dense SNP map for
+7.  Munos2006 pmid=16915233
+8.  NilsenEtAl2006 Nilsen *et al*. *Construction of a dense SNP map for
     bovine chromosome 6 to assist the assembly of the bovine genome
     sequence*. Animal Genetics 2008; 39(2) 97-104
     [<doi:10.1111/j.1365-2052.2007.01686.x>](http://dx.doi.org/10.1111/j.1365-2052.2007.01686.x)
-8.  PritchardEtAl2006 pmid=16377612
+9.  PritchardEtAl2006 pmid=16377612
 
 // This describes GenomeDiagram, now part of the Bio.Graphics module
 
