@@ -7,18 +7,18 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 = Publications from 2009 =
 
 <biblio>
-#HoldenEtAl2009 pmid=19076238
-// Used [[SeqIO|Bio.SeqIO]], [[BioSQL]] and GenomeDiagram
+#CoxEtAl2009 pmid=19073919
+// Used Bio.Blast, Bio.Fasta, & Bio.Nexus
 #DailyEtAl2009 pmid=19229311
 // Used Bio.SVDSuperimposer (and probably Bio.PDB as well)
+#HoldenEtAl2009 pmid=19076238
+// Used [[SeqIO|Bio.SeqIO]], [[BioSQL]] and GenomeDiagram
 #TorranceEtAl2009 pmid=19038265
 //  Used Biopython for the k-means algorithm
 #Wiwanitkit2009a pmid=19007941
 // Used Biopython to work with ExPASy
 #Wiwanitkit2009b pmid=17936280
 // Used Biopython to work with ExPASy
-#CoxEtAl2009 pmid=19073919
-// Used Bio.Blast, Bio.Fasta, & Bio.Nexus
 </biblio>
 
 = Publications from 2008 =

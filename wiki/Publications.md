@@ -20,14 +20,18 @@ Publications from 2009
 
 <biblio>
 
-1.  HoldenEtAl2009 pmid=19076238
+1.  CoxEtAl2009 pmid=19073919
 
-// Used [Bio.SeqIO](SeqIO "wikilink"), [BioSQL](BioSQL "wikilink") and
-GenomeDiagram
+// Used Bio.Blast, Bio.Fasta, & Bio.Nexus
 
 1.  DailyEtAl2009 pmid=19229311
 
 // Used Bio.SVDSuperimposer (and probably Bio.PDB as well)
+
+1.  HoldenEtAl2009 pmid=19076238
+
+// Used [Bio.SeqIO](SeqIO "wikilink"), [BioSQL](BioSQL "wikilink") and
+GenomeDiagram
 
 1.  TorranceEtAl2009 pmid=19038265
 
@@ -39,11 +43,7 @@ GenomeDiagram
 
 1.  Wiwanitkit2009b pmid=17936280
 
-// Used Biopython to work with ExPASy
-
-1.  CoxEtAl2009 pmid=19073919
-
-// Used Bio.Blast, Bio.Fasta, & Bio.Nexus </biblio>
+// Used Biopython to work with ExPASy </biblio>
 
 Publications from 2008
 ======================
