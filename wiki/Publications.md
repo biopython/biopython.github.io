@@ -29,7 +29,11 @@ GenomeDiagram
 
 // Used Bio.SVDSuperimposer (and probably Bio.PDB as well)
 
-1.  Wiwanitkit2009 pmid=19007941
+1.  Wiwanitkit2009a pmid=19007941
+
+// Used Biopython to work with ExPASy
+
+1.  Wiwanitkit2009b pmid=17936280
 
 // Used Biopython to work with ExPASy </biblio>
 

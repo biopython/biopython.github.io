@@ -11,7 +11,9 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 // Used [[SeqIO|Bio.SeqIO]], [[BioSQL]] and GenomeDiagram
 #DailyEtAl2009 pmid=19229311
 // Used Bio.SVDSuperimposer (and probably Bio.PDB as well)
-#Wiwanitkit2009 pmid=19007941
+#Wiwanitkit2009a pmid=19007941
+// Used Biopython to work with ExPASy
+#Wiwanitkit2009b pmid=17936280
 // Used Biopython to work with ExPASy
 </biblio>
 
