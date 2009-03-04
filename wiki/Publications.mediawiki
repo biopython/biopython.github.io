@@ -116,6 +116,7 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 #FriedbergEtAl2005 pmid=15980462
 #HerskovicAndBernstam2005 pmid=16779053
 #Hamelryck2005 pmid=15688434
+#NeerincxAndLeunissen2005 pmid=15975226
 #OlsenEtAl2005 pmid=15466433
 #TothEtAl2006 pmid=16704357
 #TrisslEtAl2005 Trissl S, Rother K, Müller H, Steinke T, Koch I, Preissner R, Frömmel C, and Leser U. ''Columba: an integrated database of proteins, structures, and annotations.'' BMC Bioinformatics 2005 Mar 31; 6 81. doi:10.1186/1471-2105-6-81 pmid:15801979. [http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=15801979 PubMed] [http://www.hubmed.org/display.cgi?uids=15801979 HubMed]

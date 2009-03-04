@@ -232,16 +232,17 @@ Publications from 2005
 5.  FriedbergEtAl2005 pmid=15980462
 6.  HerskovicAndBernstam2005 pmid=16779053
 7.  Hamelryck2005 pmid=15688434
-8.  OlsenEtAl2005 pmid=15466433
-9.  TothEtAl2006 pmid=16704357
-10. TrisslEtAl2005 Trissl S, Rother K, Müller H, Steinke T, Koch I,
+8.  NeerincxAndLeunissen2005 pmid=15975226
+9.  OlsenEtAl2005 pmid=15466433
+10. TothEtAl2006 pmid=16704357
+11. TrisslEtAl2005 Trissl S, Rother K, Müller H, Steinke T, Koch I,
     Preissner R, Frömmel C, and Leser U. *Columba: an integrated
     database of proteins, structures, and annotations.* BMC
     Bioinformatics 2005 Mar 31; 6 81. <doi:10.1186/1471-2105-6-81>
     <pmid:15801979>.
     [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=15801979)
     [HubMed](http://www.hubmed.org/display.cgi?uids=15801979)
-11. WhissonEtAl2005 pmid=15749054
+12. WhissonEtAl2005 pmid=15749054
 
 </biblio>
 
