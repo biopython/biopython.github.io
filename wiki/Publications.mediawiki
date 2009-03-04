@@ -32,6 +32,8 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 // Used PyCluster / Bio.Cluster
 #GeraciEtAl2008 pmid=18477631
 // Used PyCluster / Bio.Cluster and other unspecified parts of Biopython
+#HigaAndTozzi2008 pmid=18949708
+// Used Bio.PDB
 #KimAndLee2008 pmid=18566765
 #KoczykAndBerezovsky2008 pmid=18502776
 // Used Bio.PDB
