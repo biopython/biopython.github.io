@@ -109,6 +109,7 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 #TernesEtAl2006 pmid=16339149
 #TothEtAl2006 pmid=16704357
 #ZapalaEtAl2006 pmid=17146048
+#ZotenkoEtAl2006 pmid=16762072
 </biblio>
 
 = Publications from 2005 =
