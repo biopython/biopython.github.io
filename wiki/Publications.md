@@ -139,15 +139,21 @@ Publications from 2007
 1.  AntaoEtAl2007 pmid=17488756
 2.  AvrovaEtAl2007 pmid=17322195
 3.  Bassi2007 pmid=18052533
-4.  DominguesEtAl2007 Domingues FS, Rahnenführer J, and Lengauer T.
+4.  BernauerEtAl2007 Bernauer J, Azé J, Janin J, and Poupon A. *A new
+    protein-protein docking scoring function based on interface residue
+    properties*. Bioinformatics 2007 Mar 1; 23(5) 555-62.
+    <doi:10.1093/bioinformatics/btl654> <pmid:17237048>.
+    [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=17237048)
+    [HubMed](http://www.hubmed.org/display.cgi?uids=17237048)
+5.  DominguesEtAl2007 Domingues FS, Rahnenführer J, and Lengauer T.
     *Conformational analysis of alternative protein structures.*
     Bioinformatics 2007 Dec 1; 23(23) 3131-8.
     <doi:10.1093/bioinformatics/btm499> <pmid:17933849>.
     [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=17933849)
     [HubMed](http://www.hubmed.org/display.cgi?uids=17933849)
-5.  CockAndWhitworth2007a pmid=17479344
-6.  CockAndWhitworth2007b pmid=17709334
-7.  GentleEtAl2007 Gentle IE, Perry AJ, Alcock FH, Likić VA, Dolezal P,
+6.  CockAndWhitworth2007a pmid=17479344
+7.  CockAndWhitworth2007b pmid=17709334
+8.  GentleEtAl2007 Gentle IE, Perry AJ, Alcock FH, Likić VA, Dolezal P,
     Ng ET, Purcell AW, McConnville M, Naderer T, Chanez AL, Charrière F,
     Aschinger C, Schneider A, Tokatlidis K, and Lithgow T. *Conserved
     motifs reveal details of ancestry and structure in the small TIM
@@ -156,13 +162,13 @@ Publications from 2007
     <pmid:17329230>.
     [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=17329230)
     [HubMed](http://www.hubmed.org/display.cgi?uids=17329230)
-8.  GrunbergEtAl2997 Grünberg R, Nilges M, and Leckner J. *Biskit--a
+9.  GrunbergEtAl2997 Grünberg R, Nilges M, and Leckner J. *Biskit--a
     software platform for structural bioinformatics.* Bioinformatics
     2007 Mar 15; 23(6) 769-70. <doi:10.1093/bioinformatics/btl655>
     <pmid:17237072>.
     [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=17237072)
     [HubMed](http://www.hubmed.org/display.cgi?uids=17237072)
-9.  HackneyEtAl2007 pmid=17355990
+10. HackneyEtAl2007 pmid=17355990
 
 // Describes the Bio.MEME module
 

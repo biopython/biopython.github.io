@@ -67,6 +67,7 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 #AntaoEtAl2007 pmid=17488756
 #AvrovaEtAl2007 pmid=17322195
 #Bassi2007 pmid=18052533
+#BernauerEtAl2007 Bernauer J, Azé J, Janin J, and Poupon A. ''A new protein-protein docking scoring function based on interface residue properties''. Bioinformatics 2007 Mar 1; 23(5) 555-62. doi:10.1093/bioinformatics/btl654 pmid:17237048. [http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=17237048 PubMed] [http://www.hubmed.org/display.cgi?uids=17237048 HubMed]
 #DominguesEtAl2007 Domingues FS, Rahnenführer J, and Lengauer T. ''Conformational analysis of alternative protein structures.'' Bioinformatics 2007 Dec 1; 23(23) 3131-8. doi:10.1093/bioinformatics/btm499 pmid:17933849. [http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=17933849 PubMed] [http://www.hubmed.org/display.cgi?uids=17933849 HubMed]
 #CockAndWhitworth2007a pmid=17479344
 #CockAndWhitworth2007b pmid=17709334
