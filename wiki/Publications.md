@@ -105,7 +105,11 @@ superimposition.
 1.  WhitworthAndCock2008 pmid=18227240
 
 // Used [Bio.SeqIO](SeqIO "wikilink"), [Bio.AlignIO](AlignIO "wikilink")
-and Bio.Blast </biblio>
+and Bio.Blast
+
+1.  Wiwanitkit2008 pmid=18445954
+
+// Used Biopython for working with ExPASy </biblio>
 
 Publications from 2007
 ======================

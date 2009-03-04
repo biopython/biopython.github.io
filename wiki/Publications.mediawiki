@@ -48,6 +48,8 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 // Used Biopython for sequence manipulation
 #WhitworthAndCock2008 pmid=18227240
 // Used [[SeqIO|Bio.SeqIO]], [[AlignIO|Bio.AlignIO]] and Bio.Blast
+#Wiwanitkit2008 pmid=18445954
+// Used Biopython for working with ExPASy
 </biblio>
 
 = Publications from 2007 =
