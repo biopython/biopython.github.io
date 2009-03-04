@@ -309,13 +309,14 @@ Publications from 2002
 
 1.  LenhardAndWasserman2002 pmid=12176838
 2.  Mangalam2002 pmid=12230038
-3.  RaychaudhuriEtAl2002 Raychaudhuri S, Schütze H, and Altman RB.
+3.  RaychaudhuriEtAl2002a pmid=11779846
+4.  RaychaudhuriEtAl2002b Raychaudhuri S, Schütze H, and Altman RB.
     *Using text analysis to identify functionally coherent gene groups*.
     Genome Res 2002 Oct; 12(10) 1582-90. <doi:10.1101/gr.116402>
     <pmid:12368251>.
     [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=12368251)
     [HubMed](http://www.hubmed.org/display.cgi?uids=12368251)
-4.  StajichEtAl2002 Stajich JE, *et al*. *The Bioperl toolkit: Perl
+5.  StajichEtAl2002 Stajich JE, *et al*. *The Bioperl toolkit: Perl
     modules for the life sciences.* Genome Res 2002 Oct; 12(10) 1611-8.
     <doi:10.1101/gr.361602> <pmid:12368254>.
     [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=12368254)
