@@ -2,7 +2,7 @@ This is a work in progress...
 
 There is a separate shorter listing of [[Documentation#Papers|Biopython papers you may wish to cite]].
 
-This is a list of papers citing or using Biopython, by year sorted alphabetically by author.  In many cases these citations are just via the website.  Regrettably, in some cases the manuscripts themselves do not directly mention Biopython, but this has been confirmed by an author.
+This is a list of papers citing, referencing or using Biopython, by year sorted alphabetically by author.  In many cases these citations are just via the website.  Regrettably, in some cases the manuscripts themselves do not directly mention Biopython, but this has been confirmed explicitly by an author.
 
 = Publications from 2009 =
 
@@ -117,6 +117,8 @@ This is a list of papers citing or using Biopython, by year sorted alphabeticall
 <biblio>
 #BowersEtAl2003 pmid=12660784
 #ErnstEtAl2003 pmid=12538250
+#GotoEtAl2003 Goto, N, Nakao, NC, Kawashima, S, Katayama, T, Kanehisa, T. ''BioRuby: Open-Source Bioinformatics Library.'' Genome Informatics 2003; 14, 629-630.
+// This paper describes [www.bioruby.org BioRuby]
 #HamelryckAndManderick2003 pmid=14630660
 // This describes the Bio.PDB module
 #DeHoonEtAl2003 De Hoon, MJL, Chapman, BA, Friedberg, I. ''Bioinformatics and computational biology with biopython.'' Genome Informatics 2003; 14, 298-299.
@@ -131,6 +133,7 @@ This is a list of papers citing or using Biopython, by year sorted alphabeticall
 #LenhardAndWasserman2002 pmid=12176838
 #Mangalam2002 pmid=12230038
 #StajichEtAl2002 Stajich JE, ''et al''. ''The Bioperl toolkit: Perl modules for the life sciences.'' Genome Res 2002 Oct; 12(10) 1611-8. doi:10.1101/gr.361602 pmid:12368254. [http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=12368254 PubMed] [http://www.hubmed.org/display.cgi?uids=12368254 HubMed]
+// This paper describes [www.bioperl.org BioPerl]
 #Stein2002 pmid=12000935
 </biblio>
 
@@ -139,9 +142,11 @@ This is a list of papers citing or using Biopython, by year sorted alphabeticall
 <biblio>
 #ChangEtAl2001 pmid=11262956
 #GemundEtAl2001 Gemünd C, Ramu C, Altenberg-Greulich B, and Gibson TJ. Gene2EST: a BLAST2 server for searching expressed sequence tag (EST) databases with eukaryotic gene-sized queries. Nucleic Acids Res 2001 Mar 15; 29(6) 1272-7. pmid:11238992. [http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=11238992 PubMed] [http://www.hubmed.org/display.cgi?uids=11238992 HubMed]
+#KawagashiraEtAl2001 Kawagashira, N, ''et al''. ''Multiple Zinc Finger Motifs with Comparison of Plant and Insect.'' Genome Informatics 2001; 12, 368-369
 #Ramu2001 pmid=11524384
 #Woodwark2001 pmid=18629243
 </biblio>
+
 
 = Publications from 2000 =
 

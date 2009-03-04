@@ -9,10 +9,11 @@ This is a work in progress...
 There is a separate shorter listing of [Biopython papers you may wish to
 cite](Documentation#Papers "wikilink").
 
-This is a list of papers citing or using Biopython, by year sorted
-alphabetically by author. In many cases these citations are just via the
-website. Regrettably, in some cases the manuscripts themselves do not
-directly mention Biopython, but this has been confirmed by an author.
+This is a list of papers citing, referencing or using Biopython, by year
+sorted alphabetically by author. In many cases these citations are just
+via the website. Regrettably, in some cases the manuscripts themselves
+do not directly mention Biopython, but this has been confirmed
+explicitly by an author.
 
 Publications from 2009
 ======================
@@ -227,7 +228,13 @@ Publications from 2003
 
 1.  BowersEtAl2003 pmid=12660784
 2.  ErnstEtAl2003 pmid=12538250
-3.  HamelryckAndManderick2003 pmid=14630660
+3.  GotoEtAl2003 Goto, N, Nakao, NC, Kawashima, S, Katayama, T,
+    Kanehisa, T. *BioRuby: Open-Source Bioinformatics Library.* Genome
+    Informatics 2003; 14, 629-630.
+
+// This paper describes \[www.bioruby.org BioRuby\]
+
+1.  HamelryckAndManderick2003 pmid=14630660
 
 // This describes the Bio.PDB module
 
@@ -252,7 +259,10 @@ Publications from 2002
     <doi:10.1101/gr.361602> <pmid:12368254>.
     [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=12368254)
     [HubMed](http://www.hubmed.org/display.cgi?uids=12368254)
-4.  Stein2002 pmid=12000935
+
+// This paper describes \[www.bioperl.org BioPerl\]
+
+1.  Stein2002 pmid=12000935
 
 </biblio>
 
@@ -268,8 +278,11 @@ Publications from 2001
     Nucleic Acids Res 2001 Mar 15; 29(6) 1272-7. <pmid:11238992>.
     [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=11238992)
     [HubMed](http://www.hubmed.org/display.cgi?uids=11238992)
-3.  Ramu2001 pmid=11524384
-4.  Woodwark2001 pmid=18629243
+3.  KawagashiraEtAl2001 Kawagashira, N, *et al*. *Multiple Zinc Finger
+    Motifs with Comparison of Plant and Insect.* Genome Informatics
+    2001; 12, 368-369
+4.  Ramu2001 pmid=11524384
+5.  Woodwark2001 pmid=18629243
 
 </biblio>
 
