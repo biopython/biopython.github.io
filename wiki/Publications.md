@@ -61,7 +61,8 @@ Publications from 2008
 
 // Used Biopython for several unspecified tasks
 
-1.  FrelingerEtAl2008 pmid=18559108
+1.  FourmentAndGillings2008 pmid=18251993
+2.  FrelingerEtAl2008 pmid=18559108
 
 // Used PyCluster / Bio.Cluster
 

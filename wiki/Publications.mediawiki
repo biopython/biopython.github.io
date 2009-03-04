@@ -28,6 +28,7 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 // Used [[SeqIO|Bio.SeqIO]]
 #FeldhahnEtAl2008 pmid=18440979
 // Used Biopython for several unspecified tasks
+#FourmentAndGillings2008 pmid=18251993
 #FrelingerEtAl2008 pmid=18559108
 // Used PyCluster / Bio.Cluster
 #GeraciEtAl2008 pmid=18477631
