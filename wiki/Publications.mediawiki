@@ -36,6 +36,7 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 // Used Biopython to work with lattice structures, including superimposition.
 #RamanEtAl2008 pmid=19099550
 // Used Bio.Blast
+#SinghEtAl2008 pmid=18423188
 #SongEtAl2008 pmid=18467349
 // Used Bio.PDB
 #SoutheyEtAl2008 pmid=19169350

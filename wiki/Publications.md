@@ -84,7 +84,8 @@ superimposition.
 
 // Used Bio.Blast
 
-1.  SongEtAl2008 pmid=18467349
+1.  SinghEtAl2008 pmid=18423188
+2.  SongEtAl2008 pmid=18467349
 
 // Used Bio.PDB
 
