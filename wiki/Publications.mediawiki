@@ -146,6 +146,7 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 #DeHoonEtAl2003 De Hoon, MJL, Chapman, BA, Friedberg, I. ''Bioinformatics and computational biology with biopython.'' Genome Informatics 2003; 14, 298-299.
 #HornerAndPesole2003 pmid=12651718
 #LindingEtAl2003 pmid=12824398
+#SugawaraEtAl2003 pmid=12824432
 #WroeEtAl2003 pmid=12603063
 </biblio>
 

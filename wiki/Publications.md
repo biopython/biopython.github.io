@@ -284,7 +284,8 @@ Publications from 2003
     Informatics 2003; 14, 298-299.
 2.  HornerAndPesole2003 pmid=12651718
 3.  LindingEtAl2003 pmid=12824398
-4.  WroeEtAl2003 pmid=12603063
+4.  SugawaraEtAl2003 pmid=12824432
+5.  WroeEtAl2003 pmid=12603063
 
 </biblio>
 
