@@ -232,7 +232,7 @@ Publications from 2003
     Kanehisa, T. *BioRuby: Open-Source Bioinformatics Library.* Genome
     Informatics 2003; 14, 629-630.
 
-// This paper describes \[www.bioruby.org BioRuby\]
+// This paper describes [BioRuby](http://www.bioruby.org)
 
 1.  HamelryckAndManderick2003 pmid=14630660
 
@@ -260,7 +260,7 @@ Publications from 2002
     [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=12368254)
     [HubMed](http://www.hubmed.org/display.cgi?uids=12368254)
 
-// This paper describes \[www.bioperl.org BioPerl\]
+// This paper describes [BioPerl](http://www.bioperl.org)
 
 1.  Stein2002 pmid=12000935
 
