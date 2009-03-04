@@ -388,4 +388,4 @@ Publications from 1999
 
 </biblio>
 
-The Biopython project started in 1999.
+Note the Biopython project started in 1999.
