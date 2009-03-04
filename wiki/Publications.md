@@ -30,30 +30,72 @@ Publications from 2008
 <biblio>
 
 1.  AntaoEtAl2008 pmid=18662398
-2.  DiellaEtAl2008 pmid=17962309
-3.  Faircloth2008 Faircloth BC. *MSATCOMMANDER: detection of
+
+// Used Bio.PopGen
+
+1.  DiellaEtAl2008 pmid=17962309
+
+// Used with UniProt and PubMed
+
+1.  Faircloth2008 Faircloth BC. *MSATCOMMANDER: detection of
     microsatellite repeat arrays and automated, locus-specific
     primer design.* Molecular Ecology Resources 2008; 8(1) 92-94.
-    [<doi:10.1111/j.1471-8286.2007.01884.x>](http://dx/doi.org/10.1111/j.1471-8286.2007.01884.x)
-4.  FeldhahnEtAl2008 pmid=18440979
-5.  FrelingerEtAl2008 pmid=18559108
-6.  GeraciEtAl2008 pmid=18477631
-7.  MunteanuEtAl2008 Munteanu CR, González-Díaz H, and Magalhães AL.
+    [<doi:10.1111/j.1471-8286.2007.01884.x>](http://dx.doi.org/10.1111/j.1471-8286.2007.01884.x)
+
+// Used [Bio.SeqIO](SeqIO "wikilink")
+
+1.  FeldhahnEtAl2008 pmid=18440979
+
+// Used Biopython for several unspecified tasks
+
+1.  FrelingerEtAl2008 pmid=18559108
+
+// Used PyCluster / Bio.Cluster
+
+1.  GeraciEtAl2008 pmid=18477631
+
+// Used PyCluster / Bio.Cluster and other unspecified parts of Biopython
+
+1.  KoczykAndBerezovsky2008 pmid=18502776
+
+// Used Bio.PDB
+
+1.  MunteanuEtAl2008 Munteanu CR, González-Díaz H, and Magalhães AL.
     Enzymes/non-enzymes classification model complexity based on
     composition, sequence, 3D and topological indices. J Theor Biol 2008
     Sep 21; 254(2) 476-82. <doi:10.1016/j.jtbi.2008.06.003>
     <pmid:18606172>.
     [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=18606172)
     [HubMed](http://www.hubmed.org/display.cgi?uids=18606172)
-8.  ParkEtAl2008 pmid=18448467
-9.  PontyEtAl2008 pmid=18556754
-10. RamanEtAl2008 pmid=19099550
-11. SongEtAl2008 pmid=18467349
-12. SoutheyEtAl2008 pmid=19169350
-13. WaltersEtAl2008 pmid=18262514
-14. WhitworthAndCock2008 pmid=18227240
 
-</biblio>
+// Used Bio.PDB
+
+1.  ParkEtAl2008 pmid=18448467
+
+// Used Biopython to calculate hydropathy profiles
+
+1.  PontyEtAl2008 pmid=18556754
+
+// Used Biopython to work with lattice structures, including
+superimposition.
+
+1.  RamanEtAl2008 pmid=19099550
+
+// Used Bio.Blast
+
+1.  SongEtAl2008 pmid=18467349
+
+// Used Bio.PDB
+
+1.  SoutheyEtAl2008 pmid=19169350
+2.  WaltersEtAl2008 pmid=18262514
+
+// Used Biopython for sequence manipulation
+
+1.  WhitworthAndCock2008 pmid=18227240
+
+// Used [Bio.SeqIO](SeqIO "wikilink"), [Bio.AlignIO](AlignIO "wikilink")
+and Bio.Blast </biblio>
 
 Publications from 2007
 ======================
