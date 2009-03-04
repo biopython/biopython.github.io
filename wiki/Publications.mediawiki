@@ -158,6 +158,7 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 = Publications from 2002 =
 
 <biblio>
+#ChangEtA2002 Chang JT, Schütze H, and Altman RB. ''Creating an online dictionary of abbreviations from MEDLINE.'' J Am Med Inform Assoc 2002 Nov-Dec; 9(6) 612-20. pmid:12386112. [http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=12386112 PubMed] [http://www.hubmed.org/display.cgi?uids=12386112 HubMed]
 #LenhardAndWasserman2002 pmid=12176838
 #Mangalam2002 pmid=12230038
 #RaychaudhuriEtAl2002a pmid=11779846
