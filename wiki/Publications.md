@@ -46,7 +46,13 @@ Publications from 2008
 
 // Used Bio.PopGen
 
-1.  DiellaEtAl2008 pmid=17962309
+1.  CardonaEtAl2008 Cardona G, Rosselló F, and Valiente G. *Extended
+    Newick: it is time for a standard representation of phylogenetic
+    networks*. BMC Bioinformatics 2008 Dec 15; 9 532.
+    <doi:10.1186/1471-2105-9-532> <pmid:19077301>.
+    [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=19077301)
+    [HubMed](http://www.hubmed.org/display.cgi?uids=19077301)
+2.  DiellaEtAl2008 pmid=17962309
 
 // Used with UniProt and PubMed
 
