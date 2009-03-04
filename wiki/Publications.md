@@ -157,7 +157,8 @@ Publications from 2007
     [HubMed](http://www.hubmed.org/display.cgi?uids=17933849)
 6.  CockAndWhitworth2007a pmid=17479344
 7.  CockAndWhitworth2007b pmid=17709334
-8.  GentleEtAl2007 Gentle IE, Perry AJ, Alcock FH, Likić VA, Dolezal P,
+8.  CraddockEtAl2008 pmid=19008893
+9.  GentleEtAl2007 Gentle IE, Perry AJ, Alcock FH, Likić VA, Dolezal P,
     Ng ET, Purcell AW, McConnville M, Naderer T, Chanez AL, Charrière F,
     Aschinger C, Schneider A, Tokatlidis K, and Lithgow T. *Conserved
     motifs reveal details of ancestry and structure in the small TIM
@@ -166,13 +167,13 @@ Publications from 2007
     <pmid:17329230>.
     [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=17329230)
     [HubMed](http://www.hubmed.org/display.cgi?uids=17329230)
-9.  GrunbergEtAl2997 Grünberg R, Nilges M, and Leckner J. *Biskit--a
+10. GrunbergEtAl2997 Grünberg R, Nilges M, and Leckner J. *Biskit--a
     software platform for structural bioinformatics.* Bioinformatics
     2007 Mar 15; 23(6) 769-70. <doi:10.1093/bioinformatics/btl655>
     <pmid:17237072>.
     [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=17237072)
     [HubMed](http://www.hubmed.org/display.cgi?uids=17237072)
-10. HackneyEtAl2007 pmid=17355990
+11. HackneyEtAl2007 pmid=17355990
 
 // Describes the Bio.MEME module
 
