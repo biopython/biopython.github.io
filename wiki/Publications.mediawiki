@@ -17,6 +17,8 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 // Used Biopython to work with ExPASy
 #Wiwanitkit2009b pmid=17936280
 // Used Biopython to work with ExPASy
+#CoxEtAl2009 pmid=19073919
+// Used Bio.Blast, Bio.Fasta, & Bio.Nexus
 </biblio>
 
 = Publications from 2008 =
