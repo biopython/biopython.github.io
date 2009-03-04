@@ -21,9 +21,17 @@ Publications from 2009
 <biblio>
 
 1.  HoldenEtAl2009 pmid=19076238
-2.  DailyEtAl2009 pmid=19229311
 
-</biblio>
+// Used [Bio.SeqIO](SeqIO "wikilink"), [BioSQL](BioSQL "wikilink") and
+GenomeDiagram
+
+1.  DailyEtAl2009 pmid=19229311
+
+// Used Bio.SVDSuperimposer (and probably Bio.PDB as well)
+
+1.  Wiwanitkit2009 pmid=19007941
+
+// Used Biopython to work with ExPASy </biblio>
 
 Publications from 2008
 ======================
