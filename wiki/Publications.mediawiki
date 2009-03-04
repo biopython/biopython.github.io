@@ -32,6 +32,7 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 // Used PyCluster / Bio.Cluster
 #GeraciEtAl2008 pmid=18477631
 // Used PyCluster / Bio.Cluster and other unspecified parts of Biopython
+#KimAndLee2008 pmid=18566765
 #KoczykAndBerezovsky2008 pmid=18502776
 // Used Bio.PDB
 #MunteanuEtAl2008 Munteanu CR, González-Díaz H, and Magalhães AL.  Enzymes/non-enzymes classification model complexity based on composition, sequence, 3D and topological indices. J Theor Biol 2008 Sep 21; 254(2) 476-82. doi:10.1016/j.jtbi.2008.06.003 pmid:18606172. [http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=18606172 PubMed] [http://www.hubmed.org/display.cgi?uids=18606172 HubMed]
