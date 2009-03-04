@@ -179,10 +179,11 @@ Publications from 2007
 1.  KauffEtAl2007 pmid=17562476
 2.  MaEtAl2007 pmid=17524416
 3.  PicardiEtAl2007 pmid=17175530
-4.  RatteiEtAl2007 pmid=17916241
-5.  TagamiEtAl2007 pmid=18056073
-6.  WatanabeEtAl2007 pmid=17651697
-7.  WhissonEtAl2007 pmid=17914356
+4.  PietalEtAl2007 pmid=17400727
+5.  RatteiEtAl2007 pmid=17916241
+6.  TagamiEtAl2007 pmid=18056073
+7.  WatanabeEtAl2007 pmid=17651697
+8.  WhissonEtAl2007 pmid=17914356
 
 </biblio>
 
