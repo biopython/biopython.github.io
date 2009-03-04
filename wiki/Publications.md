@@ -347,18 +347,19 @@ Publications from 2001
 
 <biblio>
 
-1.  ChangEtAl2001 pmid=11262956
-2.  GemundEtAl2001 Gemünd C, Ramu C, Altenberg-Greulich B, and
+1.  AchardEtAl2001 pmid=11238067
+2.  ChangEtAl2001 pmid=11262956
+3.  GemundEtAl2001 Gemünd C, Ramu C, Altenberg-Greulich B, and
     Gibson TJ. Gene2EST: a BLAST2 server for searching expressed
     sequence tag (EST) databases with eukaryotic gene-sized queries.
     Nucleic Acids Res 2001 Mar 15; 29(6) 1272-7. <pmid:11238992>.
     [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=11238992)
     [HubMed](http://www.hubmed.org/display.cgi?uids=11238992)
-3.  KawagashiraEtAl2001 Kawagashira, N, *et al*. *Multiple Zinc Finger
+4.  KawagashiraEtAl2001 Kawagashira, N, *et al*. *Multiple Zinc Finger
     Motifs with Comparison of Plant and Insect.* Genome Informatics
     2001; 12, 368-369
-4.  Ramu2001 pmid=11524384
-5.  Woodwark2001 pmid=18629243
+5.  Ramu2001 pmid=11524384
+6.  Woodwark2001 pmid=18629243
 
 </biblio>
 
