@@ -96,6 +96,7 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 #HegedusAndRiordan2006 Hegedűs T and Riordan JR. ''Search for proteins with similarity to the CFTR R domain using an optimized RDBMS solution, mBioSQL.'' Central European Journal of Biology 2006; 1(1) 29-42. [http://dx.doi.org/10.2478/s11535-006-0003-9 doi:10.2478/s11535-006-0003-9]
 #LeeEtAl2006 pmid=16326071
 #MattinglyEtAl2006 pmid=16675512
+#NilsenEtAl2006 Nilsen ''et al''. ''Construction of a dense SNP map for bovine chromosome 6 to assist the assembly of the bovine genome sequence''. Animal Genetics 2008; 39(2) 97-104 [http://dx.doi.org/10.1111/j.1365-2052.2007.01686.x doi:10.1111/j.1365-2052.2007.01686.x]
 #PritchardEtAl2006 pmid=16377612
 // This describes GenomeDiagram, now part of the Bio.Graphics module
 #StajichAndLapp2006 pmid=16899494
