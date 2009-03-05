@@ -10,10 +10,14 @@ Build Biopython in 21 easy steps!!
 
 `   drevil:~biopython> cvs update -P -d `
 
-2. bump version number of Biopython and Martel (which is kept in sync
-with the Biopython version) by editing the Bio/\_\_init\_\_/py and
-Martel/\_\_init\_\_.py files. Make sure to commit the modified files to
-CVS.
+2. bump version numbers:
+
+-   Biopython version - edit Bio/\_\_init\_\_.py
+-   Biopython Tutorial - update the date/version line in the
+    Doc/Tutorial.tex file
+-   Martel version - edit Martel/\_\_init\_\_.py (kept in sync with the
+    Biopython version)
+-   Make sure to commit the modified files to CVS.
 
 3. make sure the README file is still up to date
 
