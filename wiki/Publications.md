@@ -230,19 +230,20 @@ Publications from 2006
 1.  CroceEtAl2006 pmid=16441875
 2.  FerreiraEtAl2006 pmid=17073300
 3.  FriedbergEtAl2006 pmid=16845030
-4.  HegedusAndRiordan2006 Hegedűs T and Riordan JR. *Search for proteins
+4.  GrontAndKolinski2006 pmid=16407320
+5.  HegedusAndRiordan2006 Hegedűs T and Riordan JR. *Search for proteins
     with similarity to the CFTR R domain using an optimized RDBMS
     solution, mBioSQL.* Central European Journal of Biology 2006; 1(1)
     29-42.
     [<doi:10.2478/s11535-006-0003-9>](http://dx.doi.org/10.2478/s11535-006-0003-9)
-5.  LeeEtAl2006 pmid=16326071
-6.  MattinglyEtAl2006 pmid=16675512
-7.  Munos2006 pmid=16915233
-8.  NilsenEtAl2006 Nilsen *et al*. *Construction of a dense SNP map for
+6.  LeeEtAl2006 pmid=16326071
+7.  MattinglyEtAl2006 pmid=16675512
+8.  Munos2006 pmid=16915233
+9.  NilsenEtAl2006 Nilsen *et al*. *Construction of a dense SNP map for
     bovine chromosome 6 to assist the assembly of the bovine genome
     sequence*. Animal Genetics 2008; 39(2) 97-104
     [<doi:10.1111/j.1365-2052.2007.01686.x>](http://dx.doi.org/10.1111/j.1365-2052.2007.01686.x)
-9.  PritchardEtAl2006 pmid=16377612
+10. PritchardEtAl2006 pmid=16377612
 
 // This describes GenomeDiagram, now part of the Bio.Graphics module
 
