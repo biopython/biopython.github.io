@@ -132,6 +132,7 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 #ArmstrongEtAl2005 Armstrong MR, ''et al''. ''An ancestral oomycete locus contains late blight avirulence gene Avr3a, encoding a protein that is recognized in the host cytoplasm.'' Proc Natl Acad Sci U S A 2005 May 24; 102(21) 7766-71. doi:10.1073/pnas.0500113102 pmid:15894622. [http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=15894622 PubMed] [http://www.hubmed.org/display.cgi?uids=15894622 HubMed]
 #CurkEtAl2005 pmid=15308546
 #DimmicEtAl2005 pmid=15961449
+#FederAndBujnicki2005 pmid=15720711
 #FriedbergEtAl2005 pmid=15980462
 #HerskovicAndBernstam2005 pmid=16779053
 #Hamelryck2005 pmid=15688434
