@@ -210,7 +210,12 @@ Publications from 2007
 7.  TagamiEtAl2007 pmid=18056073
 8.  WatanabeEtAl2007 pmid=17651697
 9.  WhissonEtAl2007 pmid=17914356
-10. WonEtAl2007 pmid=17888163
+10. WonEtAl2007 Won KJ, Hamelryck T, Prügel-Bennett A, and Krogh A. An
+    evolutionary method for learning HMM structure: prediction of
+    protein secondary structure. BMC Bioinformatics 2007 Sep 21; 8 357.
+    <doi:10.1186/1471-2105-8-357> <pmid:17888163>.
+    [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=17888163)
+    [HubMed](http://www.hubmed.org/display.cgi?uids=17888163)
 
 </biblio>
 
