@@ -134,6 +134,7 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 #HerskovicAndBernstam2005 pmid=16779053
 #Hamelryck2005 pmid=15688434
 #JohannessenEtAl2005 pmid=15710415
+#MajumdarEtAl2005 pmid=16095538
 #NeerincxAndLeunissen2005 pmid=15975226
 #OlsenEtAl2005 pmid=15466433
 #TothEtAl2006 pmid=16704357
