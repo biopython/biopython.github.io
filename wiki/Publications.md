@@ -84,7 +84,8 @@ Publications from 2008
 
 // Used PyCluster / Bio.Cluster and other unspecified parts of Biopython
 
-1.  HigaAndTozzi2008 pmid=18949708
+1.  GrontAndKolinski2008 pmid=18227118
+2.  HigaAndTozzi2008 pmid=18949708
 
 // Used Bio.PDB
 
