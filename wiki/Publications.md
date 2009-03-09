@@ -304,7 +304,8 @@ Publications from 2004
 
 1.  BellEtAl2004 pmid=15263089
 2.  ChapmanEtAl2004 pmid=14734308
-3.  DeHoonEtAl2004 pmid=14871861
+3.  FlanaganEtAl2004 pmid=18629137
+4.  DeHoonEtAl2004 pmid=14871861
 
 // This describes the Bio.Cluster module
 

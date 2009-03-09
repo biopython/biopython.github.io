@@ -152,6 +152,7 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 <biblio>
 #BellEtAl2004 pmid=15263089
 #ChapmanEtAl2004 pmid=14734308
+#FlanaganEtAl2004 pmid=18629137
 #DeHoonEtAl2004 pmid=14871861
 // This describes the Bio.Cluster module
 #GentlemanEtAl2004 pmid=15461798
