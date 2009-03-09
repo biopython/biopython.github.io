@@ -88,6 +88,7 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 #PicardiEtAl2007 pmid=17175530
 #PietalEtAl2007 pmid=17400727
 #RatteiEtAl2007 pmid=17916241
+#SanderEtAl2007 pmid=17397254
 #TagamiEtAl2007 pmid=18056073
 #WatanabeEtAl2007 pmid=17651697
 #WhissonEtAl2007 pmid=17914356
