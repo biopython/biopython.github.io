@@ -89,7 +89,18 @@ Publications from 2008
 // Used Bio.PDB
 
 1.  KimAndLee2008 pmid=18566765
-2.  KoczykAndBerezovsky2008 pmid=18502776
+2.  LangkildeEtAl2008 Langkilde A, Kristensen SM, Lo Leggio L, Mølgaard
+    A, Jensen JH, Houk AR, Navarro Poulsen JC, Kauppinen S, and
+    Larsen S. Short strong hydrogen bonds in proteins: a case study of
+    rhamnogalacturonan acetylesterase. Acta Crystallogr D Biol
+    Crystallogr 2008 Aug; D64(Pt 8) 851-63.
+    <doi:10.1107/S0907444908017083> <pmid:18645234>.
+    [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=18645234)
+    [HubMed](http://www.hubmed.org/display.cgi?uids=18645234)
+
+// Used Bio.PDB
+
+1.  KoczykAndBerezovsky2008 pmid=18502776
 
 // Used Bio.PDB
 

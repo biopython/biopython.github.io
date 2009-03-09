@@ -41,6 +41,8 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 #HigaAndTozzi2008 pmid=18949708
 // Used Bio.PDB
 #KimAndLee2008 pmid=18566765
+#LangkildeEtAl2008 Langkilde A, Kristensen SM, Lo Leggio L, Mølgaard A, Jensen JH, Houk AR, Navarro Poulsen JC, Kauppinen S, and Larsen S. Short strong hydrogen bonds in proteins: a case study of rhamnogalacturonan acetylesterase. Acta Crystallogr D Biol Crystallogr 2008 Aug; D64(Pt 8) 851-63. doi:10.1107/S0907444908017083 pmid:18645234. [http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=18645234 PubMed] [http://www.hubmed.org/display.cgi?uids=18645234 HubMed]
+// Used Bio.PDB
 #KoczykAndBerezovsky2008 pmid=18502776
 // Used Bio.PDB
 #MunteanuEtAl2008 Munteanu CR, González-Díaz H, and Magalhães AL.  Enzymes/non-enzymes classification model complexity based on composition, sequence, 3D and topological indices. J Theor Biol 2008 Sep 21; 254(2) 476-82. doi:10.1016/j.jtbi.2008.06.003 pmid:18606172. [http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=18606172 PubMed] [http://www.hubmed.org/display.cgi?uids=18606172 HubMed]
