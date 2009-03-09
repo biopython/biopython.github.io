@@ -260,7 +260,14 @@ Publications from 2006
 
 1.  TernesEtAl2006 pmid=16339149
 2.  TothEtAl2006 pmid=16704357
-3.  WindsorEtAl2006 pmid=16607030
+3.  WindsorEtAl2006 Windsor AJ, Schranz ME, Formanová N, Gebauer-Jung S,
+    Bishop JG, Schnabelrauch D, Kroymann J, and Mitchell-Olds T. Partial
+    shotgun sequencing of the Boechera stricta genome reveals extensive
+    microsynteny and promoter conservation with Arabidopsis. Plant
+    Physiol 2006 Apr; 140(4) 1169-82. <doi:10.1104/pp.105.073981>
+    <pmid:16607030>.
+    [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=16607030)
+    [HubMed](http://www.hubmed.org/display.cgi?uids=16607030)
 4.  Wuchty2006 pmid=16716232
 5.  ZapalaEtAl2006 pmid=17146048
 6.  ZotenkoEtAl2006 pmid=16762072
