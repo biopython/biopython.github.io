@@ -254,9 +254,10 @@ Publications from 2006
 
 1.  TernesEtAl2006 pmid=16339149
 2.  TothEtAl2006 pmid=16704357
-3.  Wuchty2006 pmid=16716232
-4.  ZapalaEtAl2006 pmid=17146048
-5.  ZotenkoEtAl2006 pmid=16762072
+3.  WindsorEtAl2006 pmid=16607030
+4.  Wuchty2006 pmid=16716232
+5.  ZapalaEtAl2006 pmid=17146048
+6.  ZotenkoEtAl2006 pmid=16762072
 
 </biblio>
 
