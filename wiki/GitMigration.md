@@ -23,8 +23,10 @@ repository.
 Below you can find rudimentary instructions on how to develop biopython
 with git.
 
-Installing git
---------------
+Prerequisites
+-------------
+
+### Installing git
 
 First, you need to have git installed on your computer.
 
@@ -43,15 +45,21 @@ systems, you can get it
 Getting a github account (Optional)
 -----------------------------------
 
--   create an account on github.com.
+Once you have git installed on your machine, you can get the code and
+start developing, However, since the code is hosted at github, you can
+use more features if you sign up for github account. This is completely
+optional but if you do sign up all other developers will be able to see
+(and review) the changes you have made.
+
+If you dan't already have a github account:
+
+-   create one here <http://github.com/plans> (the free plan is
+    absolutely enough)
 -   Upload an ssh public key by clicking on 'account' after having
-    logged in.
+    logged in
 
-It is not mandatory to use github, but it will help you understanding
-how git works, and it allows other people to follow your branches and
-your work.
-
-== Getting the source
+Getting the source
+------------------
 
 - go to the biopython repo:
 
