@@ -51,14 +51,42 @@ personal account.
 
 Now, assuming that you have git installed on your computer, execute the following commands locally on your machine:
 
-$: git clone git@github.com:<your username>/biopython.git
+ git clone git@github.com:<your username>/biopython.git
 
 Where <your username>, not surprisingly, stands for your github username.
 You have just created a local copy of the biopython repository on your machine.
 
 You may want to also link your branch with the official distribution:
 
-$: git remote add official_dist git://github.com/biopython/biopython.git
+ git remote add official_dist git://github.com/biopython/biopython.git
 
-
+You can find more info here:
 http://github.com/guides/keeping-a-git-fork-in-sync-with-the-forked-repo
+
+=== Forking without a github account ===
+
+Getting a copy of the repository without github account is even easier:
+ 
+  git clone git://github.com/biopython/biopython.git
+
+This command creates a local copy of the biopython source on your machine. However, if you want other people to see your changes without github, you need to take care of publishing your branch yourself.
+
+== Making changes == 
+
+Now you can make changes to your branch. Since your local branch is a full repository, you can commit your changes as often as you like. In fact, you should commit as often as possible, because smaller commits are much better to manage and document. Let us assume you've made changes to the file Bio/x.py. You need to add this file to your changeset:
+ git add Bio/x.py
+and now you commit:
+ git commit -m "added feature Y in Bio.x"
+
+Your commits in git are local, i.e. they affect only your working branch and not the whole biopython tree or even your fork on github. You don't need an internet connection to commit, so you can do it very often. 
+
+
+Once you think your changes are fine and should be reviewed by others, you can push your changes back to the server:
+ git push origin
+
+
+== Other information ==
+
+There is a lot of different nice guides to using git on the web:
+* http://github.com/guides/git-cheat-sheet
+* http://zrusin.blogspot.com/2007/09/git-cheat-sheet.html
