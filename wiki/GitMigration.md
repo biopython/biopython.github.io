@@ -42,8 +42,7 @@ systems, you can get it
     github
     guide\][2](http://github.com/guides/using-git-and-github-for-the-windows-for-newbies)\]
 
-Getting a github account (Optional)
------------------------------------
+### Getting a github account (Optional)
 
 Once you have git installed on your machine, you can get the code and
 start developing, However, since the code is hosted at github, you can
@@ -58,29 +57,44 @@ If you dan't already have a github account:
 -   Upload an ssh public key by clicking on 'account' after having
     logged in
 
-Getting the source
-------------------
+Obtaining the source code
+-------------------------
 
-- go to the biopython repo:
+There are two ways of getting the code tree onto your machine. They're
+not that different, in fact both will result in a diretory on your
+machine containing a full copy of the repository on your machine.
+However, if you have a github account, you can make your repository a
+public branch of the project. If you do so, other people will be able to
+easily review your code, make their own branches from it or merge it
+back to the trunk.
+
+In fact you can change this later, using the .git/config file, but to
+make it easier I'll describe the two possibilities separately.
+
+### Forking biopython using a github account
+
+If you are logged in to github, you can go to the biopython repository
+page
 
 [`http://github.com/biopython/biopython/tree/master`](http://github.com/biopython/biopython/tree/master)
 
-and you will see a button named 'Fork': click on it. It will create a
-fork of the official biopython repository your personal account. Here
-the word 'fork' is not used in the common way it is, but just to
-indicate that you are going to work on a modified version of the
-official code, and it's not even a git command.
+and click on a button named 'Fork'. Yes, it's that easy.
 
-- now, install git on your computer, and execute the following commands:
-$: git clone git@github.com:<your username>/biopython.git $: git remote
-add official\_dist <git://github.com/biopython/biopython.git>
+It will create a fork (basically a copy) of the official biopython
+repository your personal account.
 
-With the first command, you will download a copy of the repository on
-your local computer, which will be the one you will modify (technically,
-you are creating a new branch on your computer). With the second
-command, you are adding a reference to the official biopython
-repository, so in the future you will be able to easily import the
-official code and compare it with yours.
+Now, assuming that you have git installed on your computer, execute the
+following commands locally on your machine:
 
-Here it is an explanation on these two commands:
+$: git clone git@github.com:<your username>/biopython.git
+
+Where <your username>, not surprisingly, stands for your github
+username. You have just created a local copy of the biopython repository
+on your machine.
+
+You may want to also link your branch with the official distribution:
+
+$: git remote add official\_dist
+<git://github.com/biopython/biopython.git>
+
 <http://github.com/guides/keeping-a-git-fork-in-sync-with-the-forked-repo>
