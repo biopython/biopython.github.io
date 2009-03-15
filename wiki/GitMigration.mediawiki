@@ -90,3 +90,4 @@ Once you think your changes are fine and should be reviewed by others, you can p
 There is a lot of different nice guides to using git on the web:
 * http://github.com/guides/git-cheat-sheet
 * http://zrusin.blogspot.com/2007/09/git-cheat-sheet.html
+* http://www.kernel.org/pub/software/scm/git/docs/v1.4.4.4/cvs-migration.html
