@@ -39,8 +39,8 @@ systems, you can get it
 -   Mac OS X: <http://code.google.com/p/git-osx-installer/>
 -   Windows: There are two options:
     [MsysGit](http://code.google.com/p/msysgit/) or running the compiled
-    git under Cygwin. You can find more information in \[\[this github
-    guide\][1](http://github.com/guides/using-git-and-github-for-the-windows-for-newbies)\]
+    git under Cygwin. You can find more information in [this github
+    guide](http://github.com/guides/using-git-and-github-for-the-windows-for-newbies)
 
 ### Getting a github account (Optional)
 
