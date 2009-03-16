@@ -81,7 +81,7 @@ page
 and click on a button named 'Fork'. Yes, it's that easy.
 
 It will create a fork (basically a copy) of the official Biopython
-repository your personal account.
+repository under your personal account.
 
 Now, assuming that you have git installed on your computer, execute the
 following commands locally on your machine:

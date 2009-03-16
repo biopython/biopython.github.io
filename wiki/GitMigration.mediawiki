@@ -43,10 +43,9 @@ In fact you can change this later, using the .git/config file, but to make it ea
 
 If you are logged in to github, you can go to the Biopython repository page
  http://github.com/biopython/biopython/tree/master
-and click on a button named 'Fork'. Yes, it's that easy. 
+and click on a button named 'Fork'. Yes, it's that easy.
 
-It will create a fork (basically a copy) of the official Biopython repository your
-personal account. 
+It will create a fork (basically a copy) of the official Biopython repository under your personal account. 
 
 Now, assuming that you have git installed on your computer, execute the following commands locally on your machine:
 
