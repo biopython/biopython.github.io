@@ -1,0 +1,1 @@
+Biopython currently uses [[CVS]] for its version control system.  Most of the Open Bio projects moved to [[SVN]] some time ago, and this was strongly considered for Biopython too.  However, we are now [[GitMigration|evaluating moving Biopython to git instead]].
