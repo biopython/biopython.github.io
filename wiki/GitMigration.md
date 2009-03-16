@@ -37,10 +37,9 @@ systems, you can get it
     should find it in your package manager.
 -   Mac OS X: <http://code.google.com/p/git-osx-installer/>
 -   Windows: There are two options:
-    \[\[MsysGit\][1](http://code.google.com/p/msysgit/)\] or running the
-    compiled git under Cygwin. You can find more information in \[\[this
-    github
-    guide\][2](http://github.com/guides/using-git-and-github-for-the-windows-for-newbies)\]
+    [MsysGit](http://code.google.com/p/msysgit/) or running the compiled
+    git under Cygwin. You can find more information in \[\[this github
+    guide\][1](http://github.com/guides/using-git-and-github-for-the-windows-for-newbies)\]
 
 ### Getting a github account (Optional)
 

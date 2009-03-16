@@ -21,8 +21,7 @@ First, you need to have git installed on your computer.
 Git (http://git-scm.com/) is now available for  all major operating systems, you can get it 
 * Linux: Git is now packaged in all major linux distributions, you should find it in your package manager.
 * Mac OS X: http://code.google.com/p/git-osx-installer/
-* Windows: There are two options:  [[MsysGit][http://code.google.com/p/msysgit/]] or running the compiled git under Cygwin. You can find more information in [[this github guide][http://github.com/guides/using-git-and-github-for-the-windows-for-newbies]]
-
+* Windows: There are two options:  [http://code.google.com/p/msysgit/ MsysGit] or running the compiled git under Cygwin. You can find more information in [[this github guide][http://github.com/guides/using-git-and-github-for-the-windows-for-newbies]]
 
 === Getting a github account (Optional) ===
 
