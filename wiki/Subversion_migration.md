@@ -7,7 +7,8 @@ layout: wiki
 This page will outline and detail the information required for
 end-users, developers, and undertakers of the task of migrating
 Biopython from [CVS](CVS "wikilink") to [Subversion
-(SVN)](SVN "wikilink").
+(SVN)](SVN "wikilink"), although it is not looking more likely that we
+will [switch straight to Git](GitMigration "wikilink") instead.
 
 Biopython Users
 ---------------
@@ -74,5 +75,8 @@ diff, and committing changes are very similar to those under CVS.
 Biopython Migration Strategy
 ----------------------------
 
-Currently this is being dicussed on the Biopython developers [mailing
-list](Mailing_lists "wikilink").
+Currently this is being discussed on the Biopython developers [mailing
+list](Mailing_lists "wikilink"), where there is a general consensus that
+moving to a distributed version control system (DVCS) would be more
+worthwhile than simple moving from CVS to SVN. See the [git
+migration](GitMigration "wikilink") page.

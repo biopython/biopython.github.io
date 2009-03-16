@@ -1,4 +1,4 @@
-This page will outline and detail the information required for end-users, developers, and undertakers of the task of migrating Biopython from [[CVS]] to [[SVN|Subversion (SVN)]].
+This page will outline and detail the information required for end-users, developers, and undertakers of the task of migrating Biopython from [[CVS]] to [[SVN|Subversion (SVN)]], although it is not looking more likely that we will [[GitMigration|switch straight to Git]] instead.
 
 == Biopython Users ==
 
@@ -39,4 +39,4 @@ Existing developer accounts should all continue to work as before.  When working
 
 == Biopython Migration Strategy ==
 
-Currently this is being dicussed on the Biopython developers [[Mailing_lists|mailing list]].
+Currently this is being discussed on the Biopython developers [[Mailing_lists|mailing list]], where there is a general consensus that moving to a distributed version control system (DVCS) would be more worthwhile than simple moving from CVS to SVN.  See the [[GitMigration|git migration]] page.
