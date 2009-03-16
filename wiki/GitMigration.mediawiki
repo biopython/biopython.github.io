@@ -82,7 +82,7 @@ Your commits in git are local, i.e. they affect only your working branch on your
 Once you think your changes are fine and should be reviewed by others, you can push your changes back to the github server:
  git push origin
 
-If you think you changes are worth including in the main Biopython distribution, then [http://bugzilla.open-bio.org/ file an (enhancement) bug on Bugzilla], and include a link to your updated branch.  You could also attach a patch.  If the changes are accepted, one of the Biopython developers will have to check this code into our [[CVS]] repository, which will then update the main Biopython branch on github.
+If you think you changes are worth including in the main Biopython distribution, then [http://bugzilla.open-bio.org/ file an (enhancement) bug on Bugzilla], and include a link to your updated branch (i.e. your branch on github, or another public git server).  You could also attach a patch on Bugzilla.  If the changes are accepted, one of the Biopython developers will have to check this code into our [[CVS]] repository, and within the hour this should update the main Biopython branch on github.
 
 == Other information ==
 

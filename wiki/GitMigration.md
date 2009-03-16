@@ -138,10 +138,11 @@ you can push your changes back to the github server:
 If you think you changes are worth including in the main Biopython
 distribution, then [file an (enhancement) bug on
 Bugzilla](http://bugzilla.open-bio.org/), and include a link to your
-updated branch. You could also attach a patch. If the changes are
+updated branch (i.e. your branch on github, or another public git
+server). You could also attach a patch on Bugzilla. If the changes are
 accepted, one of the Biopython developers will have to check this code
-into our [CVS](CVS "wikilink") repository, which will then update the
-main Biopython branch on github.
+into our [CVS](CVS "wikilink") repository, and within the hour this
+should update the main Biopython branch on github.
 
 Other information
 -----------------
