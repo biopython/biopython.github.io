@@ -126,13 +126,22 @@ and now you commit:
 `git commit -m "added feature Y in Bio.x"`
 
 Your commits in git are local, i.e. they affect only your working branch
-and not the whole Biopython tree or even your fork on github. You don't
-need an internet connection to commit, so you can do it very often.
+on your computer, and not the whole Biopython tree or even your fork on
+github. You don't need an internet connection to commit, so you can do
+it very often.
 
 Once you think your changes are fine and should be reviewed by others,
-you can push your changes back to the server:
+you can push your changes back to the github server:
 
 `git push origin`
+
+If you think you changes are worth including in the main Biopython
+distribution, then [file an (enhancement) bug on
+Bugzilla](http://bugzilla.open-bio.org/), and include a link to your
+updated branch. You could also attach a patch. If the changes are
+accepted, one of the Biopython developers will have to check this code
+into our [CVS](CVS "wikilink") repository, which will then update the
+main Biopython branch on github.
 
 Other information
 -----------------
