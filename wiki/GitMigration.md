@@ -14,13 +14,14 @@ Currently we have a git repository hosted at github.com:
 
 <http://github.com/biopython/biopython/>
 
-This is the official branch, it's synchronized with the main CVS trunk
-every hour, so it should be up to date most of the time.
+This is the official branch, it's synchronized with the main
+[CVS](CVS "wikilink") trunk every hour, so it should be up to date most
+of the time.
 
 All developers and potential contributors are encouraged to try out this
 repository.
 
-Below you can find rudimentary instructions on how to develop biopython
+Below you can find rudimentary instructions on how to develop Biopython
 with git.
 
 Prerequisites
@@ -60,7 +61,7 @@ Obtaining the source code
 -------------------------
 
 There are two ways of getting the code tree onto your machine. They're
-not that different, in fact both will result in a diretory on your
+not that different, in fact both will result in a directory on your
 machine containing a full copy of the repository on your machine.
 However, if you have a github account, you can make your repository a
 public branch of the project. If you do so, other people will be able to
@@ -72,14 +73,14 @@ make it easier I'll describe the two possibilities separately.
 
 ### Forking biopython using a github account
 
-If you are logged in to github, you can go to the biopython repository
+If you are logged in to github, you can go to the Biopython repository
 page
 
 [`http://github.com/biopython/biopython/tree/master`](http://github.com/biopython/biopython/tree/master)
 
 and click on a button named 'Fork'. Yes, it's that easy.
 
-It will create a fork (basically a copy) of the official biopython
+It will create a fork (basically a copy) of the official Biopython
 repository your personal account.
 
 Now, assuming that you have git installed on your computer, execute the
@@ -116,7 +117,7 @@ full repository, you can commit your changes as often as you like. In
 fact, you should commit as often as possible, because smaller commits
 are much better to manage and document. Let us assume you've made
 changes to the file Bio/x.py. You need to add this file to your
-changeset:
+change-set:
 
 `git add Bio/x.py`
 
@@ -125,7 +126,7 @@ and now you commit:
 `git commit -m "added feature Y in Bio.x"`
 
 Your commits in git are local, i.e. they affect only your working branch
-and not the whole biopython tree or even your fork on github. You don't
+and not the whole Biopython tree or even your fork on github. You don't
 need an internet connection to commit, so you can do it very often.
 
 Once you think your changes are fine and should be reviewed by others,
