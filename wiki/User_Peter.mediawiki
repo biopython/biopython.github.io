@@ -1,5 +1,7 @@
 I'm one of the many [[Participants|Biopython participants]], having first started using the code back in 2004 or there abouts.
 
+We're currently exploring using [[GitMigration|git for Biopython's source code]].  My [http://github.com/peterjc personal git branches] can be found on [http://www.github.com github].
+
 My main contributions are the [[SeqIO|Bio.SeqIO]] and [[AlignIO|Bio.AlignIO]] modules and some of the underlying parsers.  I've also worked on [[BioSQL|Biopython's BioSQL interface]], and the tutorial and other [[Documentation]].
 
 There are some nice examples on my [http://www.warwick.ac.uk/go/peter_cock/python/ python pages].
