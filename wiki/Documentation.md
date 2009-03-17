@@ -34,6 +34,8 @@ below.
 
 :\* [Bio.AlignIO](AlignIO "wikilink") - alignment input/output
 
+:\* [Bio.PopGen](PopGen "wikilink") - population genetics
+
 :\* Biopython's [BioSQL interface](BioSQL "wikilink")
 
 -   Documentation for the Biopython interfaces to BioSQL cover
