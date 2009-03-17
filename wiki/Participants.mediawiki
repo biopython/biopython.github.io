@@ -1,262 +1,455 @@
 Note: People are listed here alphabetically by surname.
+This is only a partial listing, see also the [http://biopython.org/SRC/biopython/CONTRIB contributor listing] in the Biopython source code.
 
-{| border="1" width="100%"
-| Name                    || Sebastian Bassi
+= Sebastian Bassi =
+{| border="0"
 |-
+
 | E-mail 	          || [mailto:sbassi@genesdigitales.com sbassi@genesdigitales.com]
+
 |-
+
 | Affiliation 	          || Universidad Nacional de Quilmes
+
 |-
+
 | Location 	          || Balcarce, Buenos Aires, Argentina
+
 |-
+
 | Uses Python for         || Bioinformatics and data manipulation
+
 |-
+
 | Work/Research Interests || IT Manager Advanta Seeds in Balcarce Research Station
+
 |-
+
 | Biopython Contributions || LCC and primer Tm calculation function
+
 |-
+
 | Relevant URL            || http://www.bioinformatica.info
+
 |}
 
 
-{| border="1" width="100%"
-| Name                    || Jeffrey Chang
+= Jeffrey Chang =
+{| border="0"
 |-
+
 | E-mail                  || [mailto:jchang@smi.stanford.edu jchang@smi.stanford.edu]
+
 |-
+
 | Affiliation             || Postdoctoral Fellow, Duke University
+
 |-
+
 | Location                || Durham, NC
+
 |-
+
 | Uses Python for         || Eating spam
+
 |-
+
 | Work/Research Interests || Bioinformatics
+
 |-
+
 | Biopython Contributions || Co-Founder
+
 |-
+
 | Relevant URL            || http://www.jeffchang.com/
+
 |}
 
 
-{| border="1" width="100%"
-| Name                    || Brad Chapman
+= Brad Chapman =
+{| border="0"
 |-
+
 | Affiliation             || Massachusetts General Hospital
+
 |-
+
 | Location                || Boston, MA
+
 |-
+
 | Biopython Contributions || Docs, GenBank, [[BioSQL]]
+
 |-
+
 | Relevant URL            || http://bcbio.wordpress.com/
+
 |}
 
 
-{| border="1" width="100%"
-| Name                    || [[User%3APeter|Peter Cock]]
+= [[User%3APeter|Peter Cock]] =
+{| border="0"
 |-
+
 | E-mail                  || See my web page
+
 |-
+
 | Affiliation             || Plant Pathology, SCRI; previously MOAC Doctoral Training Centre, University of Warwick
+
 |-
+
 | Location                || Dundee, Scotland, UK
+
 |-
+
 | Uses Python for         || Bioinformatics, controlling R with rpy, ...
+
 |-
+
 | Work/Research Interests || Bacterial signalling, genomics
+
 |-
+
 | Biopython Contributions || Sequence parsing including [[SeqIO|Bio.SeqIO]], [[AlignIO|Bio.AlignIO]], our [[BioSQL|BioSQL interface]], and documentation
+
 |-
+
 | Relevant URL            || http://www.scri.ac.uk/staff/petercock and http://www.warwick.ac.uk/go/peter_cock/python/
+
 |-
+
 | github || http://github.com/peterjc
+
 |}
 
 
-{| border="1" width="100%"
-| Name                    || Andrew Dalke
+= Andrew Dalke =
+{| border="0"
 |-
+
 | E-mail                  || [mailto:dalke@dalkescientific.com dalke@dalkescientific.com]
+
 |-
+
 | Affiliation             || Dalke Scientific Software, LLC
+
 |-
+
 | Location                || Santa Fe, NM
+
 |-
+
 | Uses Python for         || Just about anything
+
 |-
+
 | Work/Research Interests || Large-scale usable systems for scientists
+
 |-
+
 | Biopython Contributions || Co-Founder, Seq, Martel, indexing, EUtils, patterns, parsing, ...
+
 |-
+
 | Relevant URL            || http://www.dalkescientific.com/
+
 |}
 
 
-{| border="1" width="100%"
-| Name                    || [[User%3AMdehoon|Michiel de Hoon]]
+= [[User%3AMdehoon|Michiel de Hoon]] =
+{| border="0"
 |-
+
 | E-mail                  || See my web page
+
 |-
+
 | Affiliation             || RIKEN Omics Science Center
+
 |-
+
 | Location                || Yokohama
+
 |-
+
 | Uses Python for         || High-throughput data analysis & Scientific visualization
+
 |-
+
 | Work/Research Interests || RNA Genomics
+
 |-
+
 | Biopython Contributions || Bio.Cluster; Bio.Entrez; Windows installer
+
 |-
+
 | Relevant URL            || http://bonsai.ims.u-tokyo.ac.jp/~mdehoon
+
 |}
 
 
-{| border="1" width="100%"
-| Name                    || Iddo Friedberg
+= Iddo Friedberg =
+{| border="0"
 |-
+
 | E-mail                  || idoerg "at" burnham.org
+
 |-
+
 | Affiliation             || The Burnham Institute
+
 |-
+
 | Location                || La-Jolla, CA, USA
+
 |-
+
 | Uses Python for         || Maintaining World Domination
+
 |-
+
 | Work/Research Interests || Structural Bioinformatics
+
 |-
+
 | Biopython Contributions || SubsMat, FSSP, bits of Align, bits of the Manual, and a lot of silly questions to the lists
+
 |-
+
 | Relevant URL            || http://iddo-friedberg.org
+
 |}
 
 
-{| border="1" width="100%"
-| Name                    || Christian Gunning
+= Christian Gunning =
+{| border="0"
 |-
+
 | E-mail                  || bioboy at uga dot edu
+
 |-
+
 | Affiliation             || human, mountain
+
 |-
+
 | Location                || Athens, GA
+
 |-
+
 | Uses Python for         || strings, as glue; also on laundry and dirty dishes
+
 |-
+
 | Work/Research Interests || arabidopsis; Biological Sequence Analysis, Durbin et al.; Primer3; www.swig.org; R programming language and rpy.sourceforge.net
+
 |-
+
 | Biopython Contributions ||
+
 |-
+
 | Relevant URL            || http://www.botany.uga.edu/courses/bioinformatics/current/index.html
+
 |}
 
 
-{| border="1" width="100%"
-| Name                    || Thomas Hamelryck
+= Thomas Hamelryck =
+{| border="0"
 |-
+
 | E-mail                  || thamelry - binf ku dk
+
 |-
+
 | Affiliation             || University of Copenhagen
+
 |-
+
 | Location                || Copenhagen, Denmark
+
 |-
+
 | Uses Python for         || Annoying FORTRAN programmers
+
 |-
+
 | Work/Research Interests || Structural bioinformatics
+
 |-
+
 | Biopython Contributions || Bio.PDB, KDTree, SVDSuperimposer
+
 |-
+
 | Relevant URL            || http://www.binf.ku.dk/users/thamelry
+
 |}
 
 
-{| border="1" width="100%"
-| Name                    || Michael Hoffman
+= Michael Hoffman =
+{| border="0"
 |-
+
 | E-mail                  || grouse at alumni period utexas period net
+
 |-
+
 | Affiliation             || The University of Texas at Austin
+
 |-
+
 | Location                || Austin, TX, USA
+
 |-
+
 | Uses Python for         || Biopython!
+
 |-
+
 | Work/Research Interests || RNA, Genome annotations
+
 |-
+
 | Biopython Contributions || Bio.GFF, Bio.DocSQL
+
 |-
+
 | Relevant URL            || http://spice.cc.utexas.edu/~grouse/
+
 |}
 
 
-{| border="1" width="100%"
-| Name                    || Frank Kauff
+= Frank Kauff =
+{| border="0"
 |-
+
 | E-mail                  || fkauff at biologie uni-kl de
+
 |-
+
 | Affiliation             || University of Kaiserslautern
+
 |-
+
 | Location                || Kaiserslautern, Germany
+
 |-
+
 | Uses Python for         || Phylogenetics and everything else
+
 |-
+
 | Work/Research Interests || Phylogenetics and all that's related, Fungi, Lichens, Cyanobacteria
+
 |-
+
 | Biopython Contributions || Phd, Ace, Nexus (mostly with C. Cox)
+
 |-
+
 | Relevant URL            || http://www.uni-kl.de/wcms/ag-kauff.html
+
 |}
 
 
-{| border="1" width="100%"
-| Name                    || [[User%3AGotgenes|Chris Lasher]]
+= [[User%3AGotgenes|Chris Lasher]] =
+{| border="0"
 |-
+
 | E-mail                  || [mailto:chris.lasher@gmail.com chris.lasher@gmail.com]
+
 |-
+
 | Affiliation             || [https://www.vbi.vt.edu/ Virginia Bioinformatics Institute]
+
 |-
+
 | Location                || Blacksburg, VA
+
 |-
+
 | Uses Python for         || Putting the joy back in programming
+
 |-
+
 | Work/Research Interests || Bacterial genomics
+
 |-
+
 | Biopython Contributions || Subversion migration
+
 |-
+
 | Relevant URL            || http://gotgenes.com/
+
 |}
 
 
-{| border="1" width="100%"
-| Name                    || Bartek Wilczyński
+= Bartek Wilczyński =
+{| border="0"
 |-
+
 | E-mail                  || bartek_AT_rezolwenta.eu.org
+
 |-
+
 | Affiliation             || Institute of Mathematics, Polish Academy of Science
+
 |-
+
 | Location                || Warsaw, Poland
+
 |-
+
 | Uses Python for         || most of his computations
+
 |-
+
 | Work/Research Interests || mathematical models of gene regulation
+
 |-
+
 | Biopython Contributions || Bio.AlignAce
+
 |-
+
 | Relevant URL            || http://bartek.rezolwenta.eu.org
+
 |}
 
 
-{| border="1" width="100%"
-| Name                    || Harry Zuzan
+= Harry Zuzan =
+{| border="0"
 |-
+
 | E-mail                  || [mailto:iliketobicycle@yahoo.ca iliketobicycle@yahoo.ca]
+
 |-
+
 | Affiliation             || Genome Quebec
+
 |-
+
 | Location                || Montreal
+
 |-
+
 | Uses Python for         || you name it
+
 |- 
+
 | Work/Research Interests || Statistics applied to molecular biology and genetics
+
 |-
+
 | Biopython Contributions || Affy package for Affymetrix data
+
 |-
+
 | Relevant URL            || http://www.oligopython.org
+
 |}
