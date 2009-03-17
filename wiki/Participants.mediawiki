@@ -230,11 +230,11 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 {| border="0"
 |-
 
-| E-mail                  || idoerg "at" burnham.org
+| E-mail                  || idoerg "at" gmail.com
 
 |-
 
-| Affiliation             || The Burnham Institute
+| Affiliation             || University of California San Diego
 
 |-
 
@@ -246,7 +246,7 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 
 |-
 
-| Work/Research Interests || Structural Bioinformatics
+| Work/Research Interests || Structural Bioinformatics, metagenomics
 
 |-
 
@@ -257,7 +257,6 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 | Relevant URL            || http://iddo-friedberg.org
 
 |}
-
 
 = Christian Gunning =
 {| border="0"

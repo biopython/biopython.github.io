@@ -103,11 +103,11 @@ Iddo Friedberg
 
 |                         |                                                                                             |
 |-------------------------|---------------------------------------------------------------------------------------------|
-| E-mail                  | idoerg "at" burnham.org                                                                     |
-| Affiliation             | The Burnham Institute                                                                       |
+| E-mail                  | idoerg "at" gmail.com                                                                       |
+| Affiliation             | University of California San Diego                                                          |
 | Location                | La-Jolla, CA, USA                                                                           |
 | Uses Python for         | Maintaining World Domination                                                                |
-| Work/Research Interests | Structural Bioinformatics                                                                   |
+| Work/Research Interests | Structural Bioinformatics, metagenomics                                                     |
 | Biopython Contributions | SubsMat, FSSP, bits of Align, bits of the Manual, and a lot of silly questions to the lists |
 | Relevant URL            | <http://iddo-friedberg.org>                                                                 |
 
