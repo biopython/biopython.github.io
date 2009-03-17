@@ -71,6 +71,8 @@ You may want to also link your branch with the official distribution:
 You can find more info here:
 http://github.com/guides/keeping-a-git-fork-in-sync-with-the-forked-repo
 
+To add additional contributors to your branch on GitHub, selecte 'edit' and then add them to the 'Repository Collaborators' section. You will need to know their username on GitHub.
+
 == Making changes == 
 
 Now you can make changes to your branch. Since your local branch is a full repository, you can commit your changes as often as you like. In fact, you should commit as often as possible, because smaller commits are much better to manage and document. Let us assume you've made changes to the file Bio/x.py. You need to add this file to your change-set:
