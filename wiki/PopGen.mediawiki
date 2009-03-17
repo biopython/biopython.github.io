@@ -1,3 +1,13 @@
-This page will hold documentation for the Bio.PopGen module included with Biopython.  For the moment, refer to the PopGen Chapter in the [http://biopython.org/DIST/docs/tutorial/Tutorial.html Tutorial] ([http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF]).
+== Population genetics in Biopython ==
+
+Code pertaining population genetics in Bipython can be found in the PopGen module. Most documentation can be found on the PopGen Chapter in the [http://biopython.org/DIST/docs/tutorial/Tutorial.html Tutorial] ([http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF]).
+
+Currently, most code available wraps existing functionality provided by external programs, namely [http://cmpg.unibe.ch/software/simcoal2/ SimCoal2] for coalescent simulation and [http://www.rubic.rdg.ac.uk/~mab/software.html fdist] for Fst based selection detection.
+
+== Other software ==
+
+Python programmers might want to consider [http://pypop.org PyPop] which includes intra-population frequentist statistics and [http://simupop.sourceforge.net/ simuPOP] for foward-time population genetics.
+
+== Future developments ==
 
 Any notes (or discussion) about possible future developments should be restricted to the [[PopGen_dev|PopGen development]] page.
