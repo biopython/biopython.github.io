@@ -152,6 +152,12 @@ accepted, one of the Biopython developers will have to check this code
 into our [CVS](CVS "wikilink") repository, and within the hour this
 should update the main Biopython branch on github.
 
+On GitHub itself, you can inform keepers of the main branch of your
+changes by sending a 'pull request' from the main page of your branch.
+Once the file has been committed to the main branch, it can be deleted
+by selected 'edit' and then 'delete repository' from the bottom of the
+edit page.
+
 Other information
 -----------------
 
