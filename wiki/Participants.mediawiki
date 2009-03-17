@@ -67,6 +67,8 @@ Note: People are listed here alphabetically by surname.
 | Biopython Contributions || Sequence parsing including [[SeqIO|Bio.SeqIO]], [[AlignIO|Bio.AlignIO]], our [[BioSQL|BioSQL interface]], and documentation
 |-
 | Relevant URL            || http://www.scri.ac.uk/staff/petercock and http://www.warwick.ac.uk/go/peter_cock/python/
+|-
+| github || http://github.com/peterjc
 |}
 
 

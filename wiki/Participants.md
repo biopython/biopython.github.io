@@ -46,6 +46,7 @@ Note: People are listed here alphabetically by surname.
 | Work/Research Interests | Bacterial signalling, genomics                                                                                                                            |
 | Biopython Contributions | Sequence parsing including [Bio.SeqIO](SeqIO "wikilink"), [Bio.AlignIO](AlignIO "wikilink"), our [BioSQL interface](BioSQL "wikilink"), and documentation |
 | Relevant URL            | <http://www.scri.ac.uk/staff/petercock> and <http://www.warwick.ac.uk/go/peter_cock/python/>                                                              |
+| github                  | <http://github.com/peterjc>                                                                                                                               |
 
 |                         |                                                                   |
 |-------------------------|-------------------------------------------------------------------|
