@@ -9,6 +9,19 @@ partial listing, see also the [contributor
 listing](http://biopython.org/SRC/biopython/CONTRIB) in the Biopython
 source code.
 
+Tiago Antao
+===========
+
+|                         |                                                                                                                                |
+|-------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| E-mail                  | [tiagoantao@gmail.com](mailto:tiago@gmail.com)                                                                                 |
+| Affiliation             | Liverpool School of Tropical Medicine                                                                                          |
+| Location                | Liverpool, UK                                                                                                                  |
+| Uses Python for         | Almost all programming stuff                                                                                                   |
+| Work/Research Interests | Population genetics, Infectious diseases (malaria), domain specific languages (DSLs) and declarative programming, pharmacology |
+| Biopython Contributions | Bio.PopGen                                                                                                                     |
+| Relevant URL            | <http://tiago.org>                                                                                                             |
+
 Sebastian Bassi
 ===============
 
