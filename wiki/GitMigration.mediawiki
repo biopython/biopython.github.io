@@ -71,7 +71,7 @@ You may want to also link your branch with the official distribution:
 You can find more info here:
 http://github.com/guides/keeping-a-git-fork-in-sync-with-the-forked-repo
 
-To add additional contributors to your branch on GitHub, selecte 'edit' and then add them to the 'Repository Collaborators' section. You will need to know their username on GitHub.
+To add additional contributors to your branch on GitHub, select 'edit' and then add them to the 'Repository Collaborators' section. You will need to know their username on GitHub.
 
 == Making changes == 
 
