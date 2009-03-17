@@ -163,6 +163,19 @@ Frank Kauff
 | Biopython Contributions | Subversion migration                                         |
 | Relevant URL            | <http://gotgenes.com/>                                       |
 
+[Leighton Pritchard](User%3Alpritc "wikilink")
+==============================================
+
+|                         |                                                                                                                                                                   |
+|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| E-mail                  | lpritc(squiggly symbol)scri ac uk                                                                                                                                 |
+| Affiliation             | [Scottish Crop Research Institute](http://www.scri.ac.uk/)                                                                                                        |
+| Location                | Invergowrie, Scotland                                                                                                                                             |
+| Uses Python for         | Generally when I have to explain to a computer exactly what I want it to do                                                                                       |
+| Work/Research Interests | Comparative genomics; Systems Biology; Protein sequence-structure-function relationships; Plant host-pathogen interactions and genomics (heavy on the pathogens). |
+| Biopython Contributions | GenomeDiagram, bits and bobs                                                                                                                                      |
+| Relevant URL            | <http://www.scri.ac.uk/staff/leightonpritchard>                                                                                                                   |
+
 Bartek Wilczyński
 =================
 

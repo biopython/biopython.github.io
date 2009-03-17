@@ -389,6 +389,39 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 |}
 
 
+= [[User%3Alpritc|Leighton Pritchard]] =
+{| border="0"
+|-
+
+| E-mail                  || lpritc(squiggly symbol)scri ac uk
+
+|-
+
+| Affiliation             || [http://www.scri.ac.uk/ Scottish Crop Research Institute]
+
+|-
+
+| Location                || Invergowrie, Scotland
+
+|-
+
+| Uses Python for         || Generally when I have to explain to a computer exactly what I want it to do
+
+|-
+
+| Work/Research Interests || Comparative genomics; Systems Biology; Protein sequence-structure-function relationships; Plant host-pathogen interactions and genomics (heavy on the pathogens).
+
+|-
+
+| Biopython Contributions || GenomeDiagram, bits and bobs
+
+|-
+
+| Relevant URL            || http://www.scri.ac.uk/staff/leightonpritchard
+
+|}
+
+
 = Bartek Wilczyński =
 {| border="0"
 |-
