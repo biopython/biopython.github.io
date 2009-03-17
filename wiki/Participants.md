@@ -38,7 +38,7 @@ Note: People are listed here alphabetically by surname.
 
 |                         |                                                                                                                                                           |
 |-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Name                    | Peter Cock                                                                                                                                                |
+| Name                    | [Peter Cock](User%3APeter "wikilink")                                                                                                                     |
 | E-mail                  | See my web page                                                                                                                                           |
 | Affiliation             | Plant Pathology, SCRI; previously MOAC Doctoral Training Centre, University of Warwick                                                                    |
 | Location                | Dundee, Scotland, UK                                                                                                                                      |
@@ -61,7 +61,7 @@ Note: People are listed here alphabetically by surname.
 
 |                         |                                                          |
 |-------------------------|----------------------------------------------------------|
-| Name                    | Michiel de Hoon                                          |
+| Name                    | [Michiel de Hoon](User%3AMdehoon "wikilink")             |
 | E-mail                  | See my web page                                          |
 | Affiliation             | RIKEN Omics Science Center                               |
 | Location                | Yokohama                                                 |

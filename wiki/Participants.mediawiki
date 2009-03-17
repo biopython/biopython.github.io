@@ -52,7 +52,7 @@ Note: People are listed here alphabetically by surname.
 
 
 {| border="1" width="100%"
-| Name                    || Peter Cock
+| Name                    || [[User%3APeter|Peter Cock]]
 |-
 | E-mail                  || See my web page
 |-
@@ -92,7 +92,7 @@ Note: People are listed here alphabetically by surname.
 
 
 {| border="1" width="100%"
-| Name                    || Michiel de Hoon
+| Name                    || [[User%3AMdehoon|Michiel de Hoon]]
 |-
 | E-mail                  || See my web page
 |-
