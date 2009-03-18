@@ -34,7 +34,7 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 | clustal
 | 1.43
 | 1.43
-| The alignment format of the Clustal X and Clustal W tools.  See also the Bio.Clustalw module.
+| The [[bp:ClustalW_multiple_alignment_format|alignment format of Clustal X and Clustal W]].  See also the Bio.Clustalw module.
 |-  
 | embl
 | 1.43
@@ -44,7 +44,7 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 | fasta
 | 1.43
 | 1.43
-| This refers to the input file format introduced for Bill Pearson's FASTA tool, where each record starts with a ">" line.  Resulting sequences have a generic alphabet by default.
+| This refers to the input [[bp:FASTA_sequence_format|FASTA file format]] introduced for Bill Pearson's FASTA tool, where each record starts with a ">" line.  Resulting sequences have a generic alphabet by default.
 |-  
 | fastq
 | CVS
@@ -69,12 +69,12 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 | nexus
 | 1.43
 | 1.48
-| An alignment format, also known as PAUP format.  Uses Bio.Nexus internally.
+| The [[bp:NEXUS_multiple_alignment_format|NEXUS multiple alignment]] format, also known as PAUP format.  Uses Bio.Nexus internally.
 |-
 | phd
 | 1.46
 | No
-| Output from PHRED,  used by PHRAP and CONSED for input.  Uses Bio.Sequencing.Phd internally.
+| [[bp:PHD_sequence_format|PHD files]] are output from PHRED, used by PHRAP and CONSED for input.  Uses Bio.Sequencing.Phd internally.
 |-
 | phylip
 | 1.43
@@ -84,12 +84,12 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 | pir
 | 1.48
 | No
-| A "FASTA like" format introduced by the National Biomedical Research Foundation (NBRF) for the Protein Information Resource (PIR) database, now part of UniProt.
+| A "FASTA like" format introduced by the National Biomedical Research Foundation (NBRF) for the [[bp:PIR_sequence_format|Protein Information Resource (PIR)]] database, now part of UniProt.
 |-
 | stockholm
 | 1.43
 | 1.43
-| An alignment format, also known as PFAM format.
+| The [[bp:Stockholm_multiple_alignment_format|Stockholm alignment format]] is also known as PFAM format.
 |-
 | swiss
 | 1.43
@@ -99,7 +99,7 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 | tab
 | 1.48
 | 1.48
-| Simple two column tab separated sequence files, where each line holds a record's identifier and sequence. For example, this is used as by Aligent's eArray software when saving microarray probes in a minimal tab delimited text file.
+| [[bp:Tab_sequence_format|Simple two column tab separated sequence files]], where each line holds a record's identifier and sequence. For example, this is used as by Aligent's eArray software when saving microarray probes in a minimal tab delimited text file.
 |-  
 | qual
 | CVS
