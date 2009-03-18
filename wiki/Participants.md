@@ -173,7 +173,7 @@ Frank Kauff
 | Location                | Blacksburg, VA                       |
 | Uses Python for         | Putting the joy back in programming  |
 | Work/Research Interests | Data mining                          |
-| Biopython Contributions | Antagonizer                          |
+| Biopython Contributions | Antagonist, minor bug contributions  |
 | GitHub                  | <http://github.com/gotgenes>         |
 | Relevant URL            | <http://gotgenes.com/>               |
 

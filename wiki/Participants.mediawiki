@@ -414,7 +414,7 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 
 |-
 
-| Biopython Contributions || Antagonizer
+| Biopython Contributions || Antagonist, minor bug contributions
 
 |-
 
@@ -425,7 +425,6 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 | Relevant URL            || http://gotgenes.com/
 
 |}
-
 
 = [[User%3Alpritc|Leighton Pritchard]] =
 {| border="0"
