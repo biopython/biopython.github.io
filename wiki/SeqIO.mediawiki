@@ -41,10 +41,20 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 | No
 | The [[bp:EMBL_sequence_format|EMBL flat file format]].  Uses Bio.GenBank internally.
 |-  
-| fasta   
+| fasta
 | 1.43
 | 1.43
 | This refers to the input file format introduced for Bill Pearson's FASTA tool, where each record starts with a ">" line.  Resulting sequences have a generic alphabet by default.
+|-  
+| fastq
+| CVS
+| CVS
+| [[bp:FASTQ_sequence_format|FASTQ files]] are a bit like FASTA files but also include sequencing qualities.  In Biopython, "fastq" refers to Sanger style FASTQ files which encode PHRED qualities using an ASCII offset of 33.
+|-  
+| fastq-solexa
+| CVS
+| CVS
+| FASTQ files are a bit like FASTA files but also include sequencing qualities.  In Biopython, "fastq-solexa" refers to Solexa/Illumina style FASTQ files which encode Solexa qualities using an ASCII offset of 64.
 |-  
 | genbank 
 | 1.43
@@ -84,12 +94,17 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 | swiss
 | 1.43
 | No
-| Swiss-Prot aka UniProt format. Uses Bio.SwissProt internally.
+| [[bp:Swissprot_sequence_format|Swiss-Prot]] aka UniProt format. Uses Bio.SwissProt internally.
 |-
 | tab
 | 1.48
 | 1.48
 | Simple two column tab separated sequence files, where each line holds a record's identifier and sequence. For example, this is used as by Aligent's eArray software when saving microarray probes in a minimal tab delimited text file.
+|-  
+| qual
+| CVS
+| CVS
+| [[bp:Qual_sequence_format|Qual files]] are a bit like FASTA files but instead of the sequence, record space separated integer sequencing values as PHRED quality scores.  A matched pair of FASTA and QUAL files are often used as an alternative to a single FASTQ file.
 |-
 |}
 
