@@ -398,7 +398,7 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 
 |-
 
-| Affiliation             || [https://www.vbi.vt.edu/ Virginia Bioinformatics Institute]
+| Affiliation             || [https://www.vt.edu/ Virginia Tech]
 
 |-
 
@@ -410,11 +410,15 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 
 |-
 
-| Work/Research Interests || Bacterial genomics
+| Work/Research Interests || Data mining
 
 |-
 
-| Biopython Contributions || Subversion migration
+| Biopython Contributions || Antagonizer
+
+|-
+
+| GitHub                  || http://github.com/gotgenes
 
 |-
 
