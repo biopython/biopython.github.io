@@ -40,7 +40,7 @@ This was a very quick demonstration of Biopython's [[Seq]] (sequence) object and
 
 ==Reading and writing Sequence Files==
 
-If you are using Biopython 1.43 or later, try out the new [[SeqIO]] module.
+Use the [[SeqIO]] module for reading or writing sequences as [[SeqRecord]] objects.  For multiple sequence alignment files, you can alternatively use the [[AlignIO]] module.
 
 ==Beginners==
 

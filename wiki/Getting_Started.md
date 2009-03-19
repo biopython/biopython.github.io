@@ -60,8 +60,10 @@ This was a very quick demonstration of Biopython's [Seq](Seq "wikilink")
 Reading and writing Sequence Files
 ----------------------------------
 
-If you are using Biopython 1.43 or later, try out the new
-[SeqIO](SeqIO "wikilink") module.
+Use the [SeqIO](SeqIO "wikilink") module for reading or writing
+sequences as [SeqRecord](SeqRecord "wikilink") objects. For multiple
+sequence alignment files, you can alternatively use the
+[AlignIO](AlignIO "wikilink") module.
 
 Beginners
 ---------
