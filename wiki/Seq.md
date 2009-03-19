@@ -68,3 +68,85 @@ TypeError: Incompatable alphabets ProteinAlphabet() and DNAAlphabet()
 
 Biopython will also catch things like trying to use nucleotide only
 methods like translation (see below) on a protein sequence.
+
+Nucleotide methods
+------------------
+
+If you have a nucleotide sequence (or a sequence with a generic
+alphabet) you may want to do things like take the reverse complement, or
+do a translation.
+
+### Complement and reverse complement
+
+These are very simple - the methods return a new Seq object with the
+appropriate sequence and the same alphabet:
+
+``` python
+>>> my_dna
+Seq('AGTACACTGGT', DNAAlphabet())
+>>> my_dna.complement()
+Seq('TCATGTGACCA', DNAAlphabet())
+>>> my_dna.reverse_complement()
+Seq('ACCAGTGTACT', DNAAlphabet())
+```
+
+### Transcription and back transcription
+
+If you have a DNA sequence, you may want to turn it into RNA. In
+bioinformatics we normally assume the DNA is the coding strand (not the
+template strand) so this is a simple matter of replacing all the
+thymines with uracil:
+
+``` python
+>>> my_dna
+Seq('AGTACACTGGT', DNAAlphabet())
+>>> my_dna.transcribe()
+Seq('AGUACACUGGU', RNAAlphabet())
+```
+
+Naturally, given some RNA, you might want the associated DNA - and again
+Biopython does a simple U/T substitution:
+
+``` python
+>>> my_rna = my_dna.transcribe()
+>>> my_rna
+Seq('AGUACACUGGU', RNAAlphabet())
+>>> my_rna.back_transcribe()
+Seq('AGTACACTGGT', DNAAlphabet())
+```
+
+If you actually do want the template strand, you'd have to do a reverse
+complement on top:
+
+``` python
+>>> my_rna
+Seq('AGUACACUGGU', RNAAlphabet())
+>>> my_rna.back_transcribe().reverse_complement()
+Seq('ACCAGTGTACT', DNAAlphabet())
+```
+
+The chapter in the
+[Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
+([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)) goes into
+more detail on this strand issue.
+
+### Using nucleotide methods on a protein
+
+None of this operations apply to a protein sequence and trying this will
+raise an exception:
+
+``` python
+>>> my_protein.complement()
+Traceback (most recent call last):
+...
+ValueError: Proteins do not have complements!
+```
+
+You can use them on Seq objects with a generic alphabet:
+
+``` python
+>>> my_seq.complement()
+Seq('AGTACACTGGT', Alphabet())
+>>> my_seq.complement()
+Seq('TCATGTGACCA', Alphabet())
+```
