@@ -6,15 +6,17 @@ layout: wiki
 
 This page describes the SeqRecord object used in BioPython to hold a
 sequence (as a [Seq](Seq "wikilink") object) with identifiers (ID and
-name), description and optionally annotation and sub-features. There
-more information in the
-[Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
-([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)).
+name), description and optionally annotation and sub-features.
 
 Most of the sequence file format parsers in BioPython can return
 SeqRecord objects (and may offer a format specific record object too,
 see for example Bio.SwissProt). The [SeqIO](SeqIO "wikilink") system
 will only return SeqRecord objects.
+
+There is more information in the
+[Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
+([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)), and the
+[SeqIO](SeqIO "wikilink") page is also very relevant.
 
 Extracting information from a SeqRecord
 ---------------------------------------
