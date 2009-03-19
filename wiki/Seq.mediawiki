@@ -45,6 +45,37 @@ TypeError: Incompatable alphabets ProteinAlphabet() and DNAAlphabet()
 
 Biopython will also catch things like trying to use nucleotide only methods like translation (see below) on a protein sequence.
 
+== General methods ==
+
+The Seq object has a number of methods which act just like those of a Python string, for example the find method:
+<source lang=python>
+>>> from Bio.Seq import Seq
+>>> from Bio.Alphabet import generic_dna
+>>> my_dna = Seq("AGTACACTGGT", generic_dna)
+>>> my_dna
+Seq('AGTACACTGGT', DNAAlphabet())
+>>> my_dna.find("ACT")
+5
+>>> my_dna.find("TAG")
+-1
+</source>
+
+There is a count method too:
+<source lang=python>
+>>> my_dna.count("A")
+3
+>>> my_dna.count("ACT")
+1
+</source>
+However, watch out because just like the Python string's count, this is a ''non-overlapping'' count!
+<source lang=python>
+>>> "AAAA".count("AA")
+2
+>>> Seq("AAAA", generic_dna).count("AA")
+2
+</source>
+In some biological situations, you might prefer an overlapping count which would give three for this example.
+
 == Nucleotide methods ==
 
 If you have a nucleotide sequence (or a sequence with a generic alphabet) you may want to do things like take the reverse complement, or do a translation.
@@ -53,6 +84,9 @@ If you have a nucleotide sequence (or a sequence with a generic alphabet) you ma
 
 These are very simple - the methods return a new Seq object with the appropriate sequence and the same alphabet:
 <source lang=python>
+>>> from Bio.Seq import Seq
+>>> from Bio.Alphabet import generic_dna
+>>> my_dna = Seq("AGTACACTGGT", generic_dna)
 >>> my_dna
 Seq('AGTACACTGGT', DNAAlphabet())
 >>> my_dna.complement()
