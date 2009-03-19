@@ -39,7 +39,7 @@ Try executing this in python:
 ``` python
 from Bio.Seq import Seq
 
-#create a sequence object of some DNA
+#create a sequence object
 my_seq = Seq('CATGTAGACTAG')
 
 #print out some details about it
@@ -53,6 +53,9 @@ You should get the following output:
     seq CATGTAGACTAG is 12 bases long
     reverse complement is CTAGTCTACATG
     protein translation is HVD*
+
+This was a very quick demonstration of Biopython's [Seq](Seq "wikilink")
+(sequence) object and some of its methods.
 
 Reading and writing Sequence Files
 ----------------------------------
