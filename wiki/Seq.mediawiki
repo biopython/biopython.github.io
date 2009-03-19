@@ -78,7 +78,7 @@ In some biological situations, you might prefer an overlapping count which would
 
 == Nucleotide methods ==
 
-If you have a nucleotide sequence (or a sequence with a generic alphabet) you may want to do things like take the reverse complement, or do a translation.
+If you have a nucleotide sequence (or a sequence with a generic alphabet) you may want to do things like take the reverse complement, or do a translation.  Note some of these methods described here are only available in Biopython 1.49 onwards.
 
 === Complement and reverse complement ===
 

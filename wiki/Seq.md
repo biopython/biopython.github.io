@@ -114,7 +114,8 @@ Nucleotide methods
 
 If you have a nucleotide sequence (or a sequence with a generic
 alphabet) you may want to do things like take the reverse complement, or
-do a translation.
+do a translation. Note some of these methods described here are only
+available in Biopython 1.49 onwards.
 
 ### Complement and reverse complement
 
