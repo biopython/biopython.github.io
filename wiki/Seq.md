@@ -179,6 +179,14 @@ You can of course combine these options:
 Seq('MAIVMGRWKGAR', ExtendedIUPACProtein())
 ```
 
+Consult the tutorial for more examples and arguments (e.g. specifying a
+different symbol for a stop codon), or see the built in help:
+
+``` python
+>>> help(coding_dna.translate)
+...
+```
+
 ### Using nucleotide methods on a protein
 
 None of this operations apply to a protein sequence and trying this will
