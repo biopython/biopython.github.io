@@ -93,6 +93,47 @@ Seq('ACCAGTGTACT', DNAAlphabet())
 
 The chapter in the [http://biopython.org/DIST/docs/tutorial/Tutorial.html Tutorial] ([http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF]) goes into more detail on this strand issue.
 
+=== Translation ===
+
+You can translate RNA:
+<source lang=python>
+>>> from Bio.Seq import Seq
+>>> from Bio.Alphabet import generic_rna
+>>> messenger_rna = Seq("AUGGCCAUUGUAAUGGGCCGCUGAAAGGGUGCCCGAUAG", generic_rna)
+>>> messenger_rna.translate()
+Seq('MAIVMGR*KGAR*', HasStopCodon(ExtendedIUPACProtein(), '*'))
+</source>
+
+Or DNA - which is assumed to be the coding strand:
+<source lang=python>
+>>> from Bio.Seq import Seq
+>>> from Bio.Alphabet import generic_dna
+>>> coding_dna = Seq("ATGGCCATTGTAATGGGCCGCTGAAAGGGTGCCCGATAG", generic_dna)
+>>> coding_dna.translate()
+Seq('MAIVMGR*KGAR*', HasStopCodon(ExtendedIUPACProtein(), '*'))
+</source>
+
+In either case there are several useful options - by default as you will notice the in example above translation continues through any stop codons, but this is optional:
+<source lang=python>
+>>> coding_dna.translate(to_stop=True)
+Seq('MAIVMGR', ExtendedIUPACProtein())
+</source>
+
+Then there is the translation table, for which you can give an [http://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi NCBI genetic code number or name]:
+<source lang=python>
+>>> coding_dna.translate(table=2)
+Seq('MAIVMGRWKGAR*', HasStopCodon(ExtendedIUPACProtein(), '*'))
+>>> coding_dna.translate(table="Vertebrate Mitochondrial")
+Seq('MAIVMGRWKGAR*', HasStopCodon(ExtendedIUPACProtein(), '*'))
+</source>
+
+You can of course combine these options:
+<source lang=python>
+>>> coding_dna.translate(table=2, to_stop=True)
+Seq('MAIVMGRWKGAR', ExtendedIUPACProtein())
+</source>
+
+
 === Using nucleotide methods on a protein ===
 
 None of this operations apply to a protein sequence and trying this will raise an exception:
