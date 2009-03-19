@@ -71,8 +71,8 @@ to find out more about the SeqRecord object and what it does:
 
 If you didn't already know, the **dir()** function returns a list of all
 the methods and properties of an object (as strings). Those starting
-underscores in their name are "special" and we'll be ignoring them in
-this discussion. We'll start with the **seq** property:
+with underscores in their name are "special" and we'll be ignoring them
+in this discussion. We'll start with the **seq** property:
 
 ``` python
 >>> print record.seq

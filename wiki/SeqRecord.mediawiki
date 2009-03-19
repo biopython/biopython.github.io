@@ -50,7 +50,7 @@ Lets look a little more closely... and use python's '''dir()''' function to find
 [..., 'annotations', 'dbxrefs', 'description', 'features', 'id', 'name', 'seq']
 </source>
 
-If you didn't already know, the '''dir()''' function returns a list of all the methods and properties of an object (as strings). Those starting underscores in their name are "special" and we'll be ignoring them in this discussion. We'll start with the '''seq''' property:
+If you didn't already know, the '''dir()''' function returns a list of all the methods and properties of an object (as strings). Those starting with underscores in their name are "special" and we'll be ignoring them in this discussion. We'll start with the '''seq''' property:
 
 <source lang=python>
 >>> print record.seq
