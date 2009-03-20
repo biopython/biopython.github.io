@@ -217,6 +217,13 @@ If you later want to remove the reference to the branch:
 
 ` git branch -r -d username/biopython-mods/master`
 
+Alternatively, from within GitHub you can use the fork-queue to cherry
+pick commits from other people's forked branches. See [this github blog
+post](http://github.com/blog/270-the-fork-queue) for details. While this
+defaults to applying the changes to your current branch, you would
+typically do this using a new integration branch, then fetch it to your
+local machine to test everything, before merging it to your main branch.
+
 Additional Resources
 ====================
 
