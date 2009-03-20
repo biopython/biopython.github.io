@@ -8,6 +8,8 @@ Currently, most code available wraps existing functionality provided by external
 
 Python programmers might want to consider [http://pypop.org PyPop] which includes intra-population frequentist statistics and [http://simupop.sourceforge.net/ simuPOP] for foward-time population genetics.
 
+[http://www.daimi.au.dk/~mailund/CoaSim/ CoaSim] (coalescent simulation) also exposes a Python interface.
+
 == Future developments ==
 
 Any notes (or discussion) about possible future developments should be restricted to the [[PopGen_dev|PopGen development]] page.

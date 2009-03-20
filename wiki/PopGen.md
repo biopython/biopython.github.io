@@ -26,6 +26,9 @@ which includes intra-population frequentist statistics and
 [simuPOP](http://simupop.sourceforge.net/) for foward-time population
 genetics.
 
+[CoaSim](http://www.daimi.au.dk/~mailund/CoaSim/) (coalescent
+simulation) also exposes a Python interface.
+
 Future developments
 -------------------
 
