@@ -72,13 +72,14 @@ Creating a GitHub account (Optional)
 ------------------------------------
 
 Once you have Git installed on your machine, you can obtain the code and
-start developing. Since the code is hosted at GitHub, however, you can
-take advantage of the features offered by GitHub by signing up for
-GitHub account. While, a GitHub account is completely optional and not
+start developing. Since the code is hosted at GitHub, however, you may
+wish to take advantage of the site's offered features by signing up for
+a GitHub account. While a GitHub account is completely optional and not
 required for obtaining the Biopython code or participating in
-development, by using a GitHub account you enable all other Biopython
-developers to track (and review) your changes to the code base. This
-fosters a social, collaborative environment for the Biopython community.
+development, a GitHub account will enable all other Biopython developers
+to track (and review) your changes to the code base, and will help you
+track other developers' contributions. This fosters a social,
+collaborative environment for the Biopython community.
 
 If you don't already have a GitHub account, you can create one
 [here](http://github.com/plans) (the free plan is absolutely enough).
