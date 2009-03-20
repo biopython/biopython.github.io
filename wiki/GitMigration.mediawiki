@@ -1,5 +1,3 @@
-= Migration from CVS to Git =
-
 We are currently testing the benefits of migration to git distributed version control.
 
 Currently we have a git repository hosted at github.com:
@@ -12,42 +10,42 @@ All developers and potential contributors are encouraged to try out this reposit
 
 Below you can find rudimentary instructions on how to develop Biopython with git.
 
-== Prerequisites ==
+= Prerequisites =
 
-=== Installing git ===
+== Installing git ==
 
 First, you need to have git installed on your computer. 
 
 Git (http://git-scm.com/) is now available for all major operating systems.
 
-==== Linux ====
+=== Linux ===
 
 Git is now packaged in all major Linux distributions, you should find it in your package manager.
 
-===== Ubuntu/Debian =====
+==== Ubuntu/Debian ====
 
 You can install Git from the <tt>git-core</tt> package. e.g.,
 <code>sudo apt-get install git-core</code>
 
 You'll probably also want to install the following packages: <tt>gitk git-gui git-doc</tt>
 
-==== Mac OS X ====
+=== Mac OS X ===
 
 Download the <tt>.dmg</tt> disk image from http://code.google.com/p/git-osx-installer/
 
-==== Windows ====
+=== Windows ===
 
 Two options exist for Windows: [http://code.google.com/p/msysgit/ msysGit] and running Git under [http://www.cygwin.com/ Cygwin].
 
-===== msysGit (Recommended) =====
+==== msysGit (Recommended) ====
 
 [http://code.google.com/p/msysgit/ msysGit] is a port of Git that runs natively on Windows via the MinGW library. Because Git was not originally designed to run on Windows, and since this is a port, some bugs exist, though are rarely encountered in everyday use of Git. See their website for download and installation instructions. Additionally, you can watch [http://gitcasts.com/posts/git-on-windows Scott Chacon's screencast on installing msysGit on Windows], and see [http://github.com/guides/using-git-and-github-for-the-windows-for-newbies this github guide].
 
-===== Cygwin =====
+==== Cygwin ====
 
 [http://www.cygwin.com/ Cygwin] provides a Linux-like environment for Windows. It includes access to repositories of many software packages available commonly in Linux distributions, including Git. You can find the <tt>git</tt> package under the "devel" category.
 
-=== Getting a github account (Optional) ===
+== Getting a github account (Optional) ==
 
 Once you have git installed on your machine, you can get the code and start developing,
 However, since the code is hosted at github, you can use more features if you sign up for github account. 
@@ -57,13 +55,13 @@ If you dan't already have a github account:
 * create one here http://github.com/plans (the free plan is absolutely enough)
 * Upload an ssh public key by clicking on 'account' after having logged in 
 
-== Obtaining the source code==
+= Obtaining the source code=
 
 If you want to make changes, then there are two ways of getting the code tree onto your machine. They're not that different, in fact both will result in a directory on your machine containing a full copy of the repository on your machine. However, if you have a github account, you can make your repository a public branch of the project. If you do so, other people will be able to easily review your code, make their own branches from it or merge it back to the trunk.
 
 In fact you can change this later, using the .git/config file, but to make it easier I'll describe the two possibilities separately.
 
-=== Forking without a github account ===
+== Forking without a github account ==
 
 Getting a copy of the repository without github account is very simple:
  
@@ -73,7 +71,7 @@ This command creates a local copy of the Biopython source on your machine (your 
 
 However, if you want other people to see your changes you need to take care of publishing your branch yourself.  Using github takes care of this for you.
 
-=== Forking Biopython using a github account ===
+== Forking Biopython using a github account ==
 
 If you are logged in to github, you can go to the Biopython repository page
  http://github.com/biopython/biopython/tree/master
@@ -95,7 +93,7 @@ http://github.com/guides/keeping-a-git-fork-in-sync-with-the-forked-repo
 
 To add additional contributors to your branch on GitHub, select 'edit' and then add them to the 'Repository Collaborators' section. You will need to know their username on GitHub.
 
-== Making changes == 
+= Making changes =
 
 Now you can make changes to your branch. Since your local branch is a full repository, you can commit your changes as often as you like. In fact, you should commit as often as possible, because smaller commits are much better to manage and document. Let us assume you've made changes to the file Bio/x.py. You need to add this file to your change-set:
  git add Bio/x.py
@@ -111,7 +109,7 @@ If you think you changes are worth including in the main Biopython distribution,
 
 On GitHub itself, you can inform keepers of the main branch of your changes by sending a 'pull request' from the main page of your branch. Once the file has been committed to the main branch, you may want to delete your now redundant bug fix branch on github.  Branches can be deleted by selecting 'edit' and then 'delete repository' from the bottom of the edit page.
 
-== Other information ==
+= Additional Resources =
 
 There is a lot of different nice guides to using git on the web:
 * http://github.com/guides/git-cheat-sheet
