@@ -94,10 +94,6 @@ If you dan't already have a github account:
 Obtaining the source code
 -------------------------
 
-If you don't want to make any changes, you can simply download a zipped
-up archive of the latest code from github. Very easy - and you don't
-even need to install git on your computer to do this.
-
 If you want to make changes, then there are two ways of getting the code
 tree onto your machine. They're not that different, in fact both will
 result in a directory on your machine containing a full copy of the

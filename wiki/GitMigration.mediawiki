@@ -59,8 +59,6 @@ If you dan't already have a github account:
 
 == Obtaining the source code==
 
-If you don't want to make any changes, you can simply download a zipped up archive of the latest code from github.  Very easy - and you don't even need to install git on your computer to do this.
-
 If you want to make changes, then there are two ways of getting the code tree onto your machine. They're not that different, in fact both will result in a directory on your machine containing a full copy of the repository on your machine. However, if you have a github account, you can make your repository a public branch of the project. If you do so, other people will be able to easily review your code, make their own branches from it or merge it back to the trunk.
 
 In fact you can change this later, using the .git/config file, but to make it easier I'll describe the two possibilities separately.
