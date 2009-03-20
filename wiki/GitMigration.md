@@ -213,6 +213,10 @@ Finally, get the diff of the modifications:
 
 ` git diff origin/master username/biopython-mods/master`
 
+If you later want to remove the branch:
+
+` git branch -r -d username/biopython-mods/master`
+
 Additional Resources
 ====================
 
