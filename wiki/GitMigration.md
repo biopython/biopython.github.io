@@ -192,6 +192,27 @@ delete your now redundant bug fix branch on GitHub. Branches can be
 deleted by selecting 'edit' and then 'delete repository' from the bottom
 of the edit page.
 
+Evaluating changes
+------------------
+
+This section describes the steps to evaluate and integrate changes for
+Biopython core developers, or anyone accepting changes on a branch. The
+following commands will show you a diff of modifications on another
+branch. First add a reference to the remote repository, and fetch the
+changes locally:
+
+` git remote add username/biopython-mods `[`git://github.com/username/biopython-mods.git`](git://github.com/username/biopython-mods.git)  
+` git fetch username/biopython-mods`  
+` `
+
+To double check the branch is integrated:
+
+` git branch -r`
+
+Finally, get the diff of the modifications:
+
+` git diff origin/master username/biopython-mods/master`
+
 Additional Resources
 ====================
 
