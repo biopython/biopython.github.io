@@ -46,19 +46,19 @@ If you don't already have a GitHub account, you can create one [http://github.co
 
 = Obtaining the source code=
 
-If you want to make changes, then there are two ways of getting the code tree onto your machine. They're not that different, in fact both will result in a directory on your machine containing a full copy of the repository on your machine. However, if you have a GitHub account, you can make your repository a public branch of the project. If you do so, other people will be able to easily review your code, make their own branches from it or merge it back to the trunk.
+If you want to make changes, then there are two ways of getting the source code tree onto your machine: by simply "cloning" the repository, or by "forking" the repositon GitHub. They're not that different, in fact both will result in a directory on your machine containing a full copy of the repository on your machine. However, if you have a GitHub account, you can make your repository a public branch of the project. If you do so, other people will be able to easily review your code, make their own branches from it or merge it back to the trunk.
 
 In fact you can change this later, using the .git/config file, but to make it easier I'll describe the two possibilities separately.
 
-== Forking without a GitHub account ==
+== Cloning the repository without a GitHub account ==
 
-Getting a copy of the repository without GitHub account is very simple:
+Getting a copy of the repository (called "cloning" in Git terminology) without GitHub account is very simple:
  
   git clone git://github.com/biopython/biopython.git
 
-This command creates a local copy of the Biopython source on your machine (your own personal branch of the code, with the full history to date).  You can now make local changes and commit them to this local copy.
+This command creates a local copy of the entire Biopython repository on your machine (your own personal copy of the official repository with its complete history).  You can now make local changes and commit them to this local copy.
 
-However, if you want other people to see your changes you need to take care of publishing your branch yourself.  Using GitHub takes care of this for you.
+If you want other people to see your changes, however, you need to take care of publishing your branch to a public server yourself. Alternatively, using GitHub takes care of this for you.
 
 == Forking Biopython using a GitHub account ==
 
