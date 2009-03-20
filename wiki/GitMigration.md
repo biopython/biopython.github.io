@@ -32,15 +32,49 @@ Prerequisites
 First, you need to have git installed on your computer.
 
 Git (http://git-scm.com/) is now available for all major operating
-systems, you can get it
+systems.
 
--   Linux: Git is now packaged in all major linux distributions, you
-    should find it in your package manager.
--   Mac OS X: <http://code.google.com/p/git-osx-installer/>
--   Windows: There are two options:
-    [MsysGit](http://code.google.com/p/msysgit/) or running the compiled
-    git under Cygwin. You can find more information in [this github
-    guide](http://github.com/guides/using-git-and-github-for-the-windows-for-newbies)
+#### Linux
+
+Git is now packaged in all major Linux distributions, you should find it
+in your package manager.
+
+##### Ubuntu/Debian
+
+You can install Git from the `git-core` package. e.g., `sudo` `apt-get`
+`install` `git-core`
+
+You'll probably also want to install the following packages: `gitk`
+`git-gui` `git-doc`
+
+#### Mac OS X
+
+Download the `.dmg` disk image from
+<http://code.google.com/p/git-osx-installer/>
+
+#### Windows
+
+Two options exist for Windows:
+[msysGit](http://code.google.com/p/msysgit/) and running Git under
+[Cygwin](http://www.cygwin.com/).
+
+##### msysGit (Recommended)
+
+[msysGit](http://code.google.com/p/msysgit/) is a port of Git that runs
+natively on Windows via the MinGW library. Because Git was not
+originally designed to run on Windows, and since this is a port, some
+bugs exist, though are rarely encountered in everyday use of Git. See
+their website for download and installation instructions. Additionally,
+you can watch [Scott Chacon's screencast on installing msysGit on
+Windows](http://gitcasts.com/posts/git-on-windows), and see [this github
+guide](http://github.com/guides/using-git-and-github-for-the-windows-for-newbies).
+
+##### Cygwin
+
+[Cygwin](http://www.cygwin.com/) provides a Linux-like environment for
+Windows. It includes access to repositories of many software packages
+available commonly in Linux distributions, including Git. You can find
+the `git` package under the "devel" category.
 
 ### Getting a github account (Optional)
 
