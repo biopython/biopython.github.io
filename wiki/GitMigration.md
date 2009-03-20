@@ -68,21 +68,24 @@ Windows. It includes access to repositories of many software packages
 available commonly in Linux distributions, including Git. You can find
 the `git` package under the "devel" category.
 
-Getting a GitHub account (Optional)
------------------------------------
+Creating a GitHub account (Optional)
+------------------------------------
 
-Once you have Git installed on your machine, you can get the code and
-start developing, However, since the code is hosted at GitHub, you can
-use more features if you sign up for GitHub account. This is completely
-optional but if you do sign up all other developers will be able to see
-(and review) the changes you have made.
+Once you have Git installed on your machine, you can obtain the code and
+start developing. Since the code is hosted at GitHub, however, you can
+take advantage of the features offered by GitHub by signing up for
+GitHub account. While, a GitHub account is completely optional and not
+required for obtaining the Biopython code or participating in
+development, by using a GitHub account you enable all other Biopython
+developers to track (and review) your changes to the code base. This
+fosters a social, collaborative environment for the Biopython community.
 
-If you dan't already have a GitHub account:
-
--   create one here <http://github.com/plans> (the free plan is
-    absolutely enough)
--   Upload an ssh public key by clicking on 'account' after having
-    logged in
+If you don't already have a GitHub account, you can create one
+[here](http://github.com/plans) (the free plan is absolutely enough).
+Once you have created your account, upload an SSH public key by clicking
+on '[Account](https://github.com/account/)' after logging in. For more
+information on generating and uploading an SSH public key, see [this
+GitHub guide](http://github.com/guides/providing-your-ssh-key).
 
 Obtaining the source code
 =========================
