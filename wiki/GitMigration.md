@@ -22,10 +22,9 @@ Prerequisites
 Installing Git
 --------------
 
-First, you need to have Git installed on your computer.
-
-Git (http://git-scm.com/) is now available for all major operating
-systems.
+You will need to install Git on your computer. Git (http://git-scm.com/)
+is available for all major operating systems. Please use the appropriate
+installation method as described below.
 
 ### Linux
 
