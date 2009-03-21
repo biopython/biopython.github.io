@@ -93,7 +93,7 @@ Obtaining the source code
 
 If you want to make changes, then there are two ways of getting the
 source code tree onto your machine: by simply "cloning" the repository,
-or by "forking" the repositon GitHub. They're not that different, in
+or by "forking" the repository on GitHub. They're not that different, in
 fact both will result in a directory on your machine containing a full
 copy of the repository on your machine. However, if you have a GitHub
 account, you can make your repository a public branch of the project. If
