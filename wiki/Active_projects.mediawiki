@@ -2,6 +2,14 @@ This page provides a central location to collect references to active projects. 
 
 == Current projects ==
 
+=== Population Genetics development ===
+
+Giovanni is working on expanding population genetics code in Biopython. See the [PopGen_dev|PopGen development page] for more details.
+
+=== GFF parser ===
+
+Brad is working on a Biopython GFF parser. Source code is available from [http://github.com/chapmanb/bcbb/tree/be2f4f1714b67aa8e428b747c74c81cdd0451072/gff git hub]. See blog posts on the [http://bcbio.wordpress.com/2009/03/08/initial-gff-parser-for-biopython/ initial implementation] and [http://bcbio.wordpress.com/2009/03/22/mapreduce-implementation-of-gff-parsing-for-biopython/ MapReduce implementation].
+
 == Project ideas ==
 
 Please add any ideas or proposals for new additions to Biopython. Bugs and enhancements for current code should be discussed though our bugzilla interface.

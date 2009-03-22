@@ -14,6 +14,21 @@ to date as projects are finished and integrated into Biopython.
 Current projects
 ----------------
 
+### Population Genetics development
+
+Giovanni is working on expanding population genetics code in Biopython.
+See the \[PopGen\_dev|PopGen development page\] for more details.
+
+### GFF parser
+
+Brad is working on a Biopython GFF parser. Source code is available from
+[git
+hub](http://github.com/chapmanb/bcbb/tree/be2f4f1714b67aa8e428b747c74c81cdd0451072/gff).
+See blog posts on the [initial
+implementation](http://bcbio.wordpress.com/2009/03/08/initial-gff-parser-for-biopython/)
+and [MapReduce
+implementation](http://bcbio.wordpress.com/2009/03/22/mapreduce-implementation-of-gff-parsing-for-biopython/).
+
 Project ideas
 -------------
 
