@@ -4,7 +4,7 @@ This page provides a central location to collect references to active projects. 
 
 === Population Genetics development ===
 
-Giovanni is working on expanding population genetics code in Biopython. See the [PopGen_dev|PopGen development page] for more details.
+Giovanni is working on expanding population genetics code in Biopython. See the [[PopGen_dev|PopGen development page]] for more details.
 
 === GFF parser ===
 
