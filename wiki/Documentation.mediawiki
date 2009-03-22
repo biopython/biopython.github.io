@@ -23,6 +23,14 @@ New to BioPython? Check out the [[Getting_Started|Getting Started]] page, or fol
 :*Working with restriction enzymes. 
 ::[http://biopython.org/DIST/docs/cookbook/Restriction.html HTML]
 
+==== Documentation for Developers ====
+
+* List of [[Active projects]] to get involved with.
+* How to [[Contributing|contribute code]] to Biopython.
+* [[Deprecation policy]]
+* Instructions for [[building a release]] of Biopython.
+* Details about the biopython.org [[website]].
+
 ==== API Documentation ====
 
 * Documentation for Biopython modules is generated directly from source code comments using [http://epydoc.sourceforge.net/ Epydoc].
@@ -68,10 +76,3 @@ We have a separate list of [[Publications|publications citing or using Biopython
 :[http://biopython.org/DIST/docs/presentations/scripting.pdf PDF] | [http://biopython.org/DIST/docs/presentations/scripting.tar.gz tarball with LaTeX source]
 * Talk about Python and Biopython with an emphasis on teaching the design goals of Biopython.
 :[http://biopython.org/DIST/docs/presentations/biopython.pdf PDF] | [http://biopython.org/DIST/docs/presentations/biopy_group.tar.gz tarball with LaTeX source]
-
-==== Documentation for Developers ====
-
-* Details about the biopython.org [[website]].
-* How to [[Contributing|contribute code]] to Biopython.
-* [[Deprecation policy]]
-* Instructions for [[building a release]] of Biopython.
