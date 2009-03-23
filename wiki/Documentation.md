@@ -119,17 +119,25 @@ out of date)
 #### Papers
 
 We have a separate list of [publications citing or using
-Biopython](Publications "wikilink"), the following are key papers you
-may wish to cite:
+Biopython](Publications "wikilink"). If you use Biopython in a
+scientific publication, please cite the application note
+<cite>CockEtAl2009</cite> and/or one of the other listed papers:
 
 <biblio>
+
+1.  CockEtAl2009 Cock PJ et al. *Biopython: freely available Python
+    tools for computational molecular biology and bioinformatics.*
+    Bioinformatics [http://dx.doi.org/10.1093/bioinformatics/btp163
+    doi:10.1093/bioinformatics/btp163](http://dx.doi.org/10.1093/bioinformatics/btp163_doi:10.1093/bioinformatics/btp163 "wikilink")
+
+// This application note covers the whole of Biopython
 
 1.  ChapmanAndChang2000 Chapman BA and Chang JT. *Biopython: Python
     tools for computational biology.* ACM SIGBIO Newsletter 2000 Aug;
     20, 15-19. [HTML](http://biopython.org/DIST/docs/acm/ACMbiopy.html)
     | [PDF](http://biopython.org/DIST/docs/acm/ACMbiopy.pdf)
 
-// This serves as the official project announcement.
+// This served as the official project announcement.
 
 1.  HamelryckAndManderick2003 pmid=14630660
 
