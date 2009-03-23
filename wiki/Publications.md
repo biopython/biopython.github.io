@@ -4,8 +4,6 @@ permalink: wiki/Publications
 layout: wiki
 ---
 
-This is a work in progress...
-
 There is a separate shorter listing of [Biopython papers you may wish to
 cite](Documentation#Papers "wikilink").
 
