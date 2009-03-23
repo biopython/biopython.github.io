@@ -2,7 +2,7 @@
 
 The Biopython Project is an international association of developers of freely available [http://www.python.org Python] tools for computational molecular biology.
 
-It is a distributed collaborative effort to develop Python libraries and applications which address the needs of current and future work in bioinformatics. The source code is made available under the [http://www.biopython.org/DIST/LICENSE Biopython License], which is extremely liberal and compatible with almost every license in the world. We work along with the [http://open-bio.org Open Bioinformatics Foundation], who generously provide web and CVS space for the project.
+It is a distributed collaborative effort to develop Python libraries and applications which address the needs of current and future work in bioinformatics. The source code is made available under the [http://www.biopython.org/DIST/LICENSE Biopython License], which is extremely liberal and compatible with almost every license in the world. We work along with the [http://open-bio.org Open Bioinformatics Foundation], who generously provide web and [[CVS]] space for the project.
 
 === Download Current Release ===
 
