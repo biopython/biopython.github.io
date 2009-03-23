@@ -20,6 +20,13 @@ Publications from 2009
 
 <biblio>
 
+1.  CockEtAl2009 Cock PJ et al. *Biopython: freely available Python
+    tools for computational molecular biology and bioinformatics.*
+    Bioinformatics [http://dx.doi.org/10.1093/bioinformatics/btp163
+    doi:10.1093/bioinformatics/btp163](http://dx.doi.org/10.1093/bioinformatics/btp163_doi:10.1093/bioinformatics/btp163 "wikilink")
+
+// This application note covers the whole of Biopython
+
 1.  CoxEtAl2009 pmid=19073919
 
 // Used Bio.Blast, Bio.Fasta, & Bio.Nexus
