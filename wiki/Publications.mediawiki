@@ -196,7 +196,7 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 #AchardEtAl2001 pmid=11238067
 #ChangEtAl2001 pmid=11262956
 #GemundEtAl2001 Gemünd C, Ramu C, Altenberg-Greulich B, and Gibson TJ. Gene2EST: a BLAST2 server for searching expressed sequence tag (EST) databases with eukaryotic gene-sized queries. Nucleic Acids Res 2001 Mar 15; 29(6) 1272-7. pmid:11238992. [http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=11238992 PubMed] [http://www.hubmed.org/display.cgi?uids=11238992 HubMed]
-#KawagashiraEtAl2001 Kawagashira, N, ''et al''. ''Multiple Zinc Finger Motifs with Comparison of Plant and Insect.'' Genome Informatics 2001; 12, 368-369
+#KawagashiraEtAl2001 Kawagashira N, ''et al''. ''Multiple Zinc Finger Motifs with Comparison of Plant and Insect.'' Genome Informatics 2001; 12, 368-369
 #Ramu2001 pmid=11524384
 #Woodwark2001 pmid=18629243
 </biblio>

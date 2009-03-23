@@ -405,7 +405,7 @@ Publications from 2001
     Nucleic Acids Res 2001 Mar 15; 29(6) 1272-7. <pmid:11238992>.
     [PubMed](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=pubmed&dopt=Abstract&list_uids=11238992)
     [HubMed](http://www.hubmed.org/display.cgi?uids=11238992)
-4.  KawagashiraEtAl2001 Kawagashira, N, *et al*. *Multiple Zinc Finger
+4.  KawagashiraEtAl2001 Kawagashira N, *et al*. *Multiple Zinc Finger
     Motifs with Comparison of Plant and Insect.* Genome Informatics
     2001; 12, 368-369
 5.  Ramu2001 pmid=11524384
