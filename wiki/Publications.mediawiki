@@ -1,6 +1,6 @@
 There is a separate shorter listing of [[Documentation#Papers|Biopython papers you may wish to cite]].
 
-This is a list of papers citing, referencing or using Biopython, by year sorted alphabetically by author.  In many cases these citations are just via the website.  Regrettably, in some cases the manuscripts themselves do not directly mention Biopython, but this has been confirmed explicitly by an author.
+This is a list of papers citing, referencing or using Biopython, by year sorted alphabetically by author.  In many cases these citations are just via the website, which is now discouraged with the publication of the Biopython application note <cite>CockEtAl2009</cite>.  Regrettably, in some cases the manuscripts themselves do not directly mention Biopython, but this has been confirmed explicitly by an author.
 
 = Publications from 2009 =
 
