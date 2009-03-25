@@ -122,6 +122,7 @@ Alternatively, from within GitHub you can use the fork-queue to cherry pick comm
 = Additional Resources =
 
 There is a lot of different nice guides to using Git on the web:
+* [http://www.eecs.harvard.edu/~cduan/technical/git/ Understanding Git Conceptually]
 * http://github.com/guides/git-cheat-sheet
 * http://zrusin.blogspot.com/2007/09/git-cheat-sheet.html
 * http://www.kernel.org/pub/software/scm/git/docs/v1.4.4.4/cvs-migration.html
