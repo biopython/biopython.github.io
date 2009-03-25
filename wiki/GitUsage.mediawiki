@@ -63,7 +63,7 @@ There are, roughly speaking, two ways of getting the source code tree onto your 
 
 Using branches on github is the preferred way to work on new features for Biopython, so it's useful to learn it and use it even if you think your changes are not for immediate inclusion into the main trunk of Biopython. But even if you decide not to use github, you can always change this later (using the .git/config file in your branch.) For simplicity, we describe these two possibilities separately.
 
-== Cloning the repository directly  ==
+== Cloning Biopython directly  ==
 
 Getting a copy of the repository (called "cloning" in Git terminology) without GitHub account is very simple:
 
@@ -77,7 +77,9 @@ If you want other people to see your changes, however, you need to take care of 
 
 If you are logged in to GitHub, you can go to the Biopython repository page
  http://github.com/biopython/biopython/tree/master
-and click on a button named 'Fork'. This will create a fork (basically a copy) of the official Biopython repository, publically viewable on GitHub, but listed under your personal account. It should be visible under a URL that looks like this <code>http://github.com/YOUR_USER_NAME/biopython</code>
+and click on a button named 'Fork'. This will create a fork (basically a copy) of the official Biopython repository, publically viewable on GitHub, but listed under your personal account. It should be visible under a URL that looks like this <code>http://github.com/<your username>/biopython</code>
+
+Since your branch of biopython is publicly visible, it's considered a good practice to change the description and homepage fields to something meaningful (i.e. different from the ones copied from the official repository). You can also rename your branch, names such as biopython-new_feature_name are advised for branches used for development of a particular feature.
 
 Now, assuming that you have Git installed on your computer, execute the following commands locally on your machine:
 
@@ -95,7 +97,7 @@ http://github.com/guides/keeping-a-git-fork-in-sync-with-the-forked-repo
 
 To add additional contributors to your branch on GitHub, select 'edit' and then add them to the 'Repository Collaborators' section. You will need to know their username on GitHub.
 
-= Making changes =
+== Making changes locally ==
 
 Now you can make changes to your branch. Since your local branch is a full repository, you can commit your changes as often as you like. In fact, you should commit as often as possible, because smaller commits are much better to manage and document. Let us assume you've made changes to the file Bio/x.py. You need to add this file to your change-set:
  git add Bio/x.py
@@ -104,8 +106,16 @@ and now you commit:
 
 Your commits in Git are local, i.e. they affect only your working branch on your computer, and not the whole Biopython tree or even your fork on GitHub. You don't need an internet connection to commit, so you can do it very often. 
 
-Once you think your changes are fine and should be reviewed by others, you can push your changes back to the GitHub server:
+== Pushing changes to Github ==
+
+If you are using github, and you are working on aclone of your own branch, you can very easily make your changes available for others.
+
+Once you think your changes are stable and should be reviewed by others, you can push your changes back to the GitHub server:
  git push origin
+
+<note>This will not work if you have cloned directly from the official biopython branch, since only the core developers have write access to the main trunk.</note>
+
+
 
 If you think you changes are worth including in the main Biopython distribution, then [http://bugzilla.open-bio.org/ file an (enhancement) bug on Bugzilla], and include a link to your updated branch (i.e. your branch on GitHub, or another public Git server).  You could also attach a patch on Bugzilla.  If the changes are accepted, one of the Biopython developers will have to check this code into our [[CVS]] repository, and within the hour this should update the main Biopython branch on GitHub.
 

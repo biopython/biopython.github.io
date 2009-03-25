@@ -136,8 +136,8 @@ Biopython. But even if you decide not to use github, you can always
 change this later (using the .git/config file in your branch.) For
 simplicity, we describe these two possibilities separately.
 
-Cloning the repository directly
--------------------------------
+Cloning Biopython directly
+--------------------------
 
 Getting a copy of the repository (called "cloning" in Git terminology)
 without GitHub account is very simple:
@@ -165,7 +165,14 @@ and click on a button named 'Fork'. This will create a fork (basically a
 copy) of the official Biopython repository, publically viewable on
 GitHub, but listed under your personal account. It should be visible
 under a URL that looks like this
-[`http://github.com/YOUR_USER_NAME/biopython`](http://github.com/YOUR_USER_NAME/biopython)
+[`http://github.com/`](http://github.com/)<your username>`/biopython`
+
+Since your branch of biopython is publicly visible, it's considered a
+good practice to change the description and homepage fields to something
+meaningful (i.e. different from the ones copied from the official
+repository). You can also rename your branch, names such as
+biopython-new\_feature\_name are advised for branches used for
+development of a particular feature.
 
 Now, assuming that you have Git installed on your computer, execute the
 following commands locally on your machine:
@@ -187,8 +194,8 @@ To add additional contributors to your branch on GitHub, select 'edit'
 and then add them to the 'Repository Collaborators' section. You will
 need to know their username on GitHub.
 
-Making changes
-==============
+Making changes locally
+----------------------
 
 Now you can make changes to your branch. Since your local branch is a
 full repository, you can commit your changes as often as you like. In
@@ -208,11 +215,23 @@ on your computer, and not the whole Biopython tree or even your fork on
 GitHub. You don't need an internet connection to commit, so you can do
 it very often.
 
-Once you think your changes are fine and should be reviewed by others,
+Pushing changes to Github
+-------------------------
+
+If you are using github, and you are working on aclone of your own
+branch, you can very easily make your changes available for others.
+
+Once you think your changes are stable and should be reviewed by others,
 you can push your changes back to the GitHub server:
 
 `git push origin`
 
+<note>
+This will not work if you have cloned directly from the official
+biopython branch, since only the core developers have write access to
+the main trunk.
+
+</note>
 If you think you changes are worth including in the main Biopython
 distribution, then [file an (enhancement) bug on
 Bugzilla](http://bugzilla.open-bio.org/), and include a link to your
