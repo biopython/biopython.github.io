@@ -190,9 +190,7 @@ should update the main Biopython branch on GitHub.
 On GitHub itself, you can inform keepers of the main branch of your
 changes by sending a 'pull request' from the main page of your branch.
 Once the file has been committed to the main branch, you may want to
-delete your now redundant bug fix branch on GitHub. Branches can be
-deleted by selecting 'edit' and then 'delete repository' from the bottom
-of the edit page.
+delete your now redundant bug fix branch on GitHub.
 
 Evaluating changes
 ------------------

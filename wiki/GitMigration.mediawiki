@@ -96,7 +96,7 @@ Once you think your changes are fine and should be reviewed by others, you can p
 
 If you think you changes are worth including in the main Biopython distribution, then [http://bugzilla.open-bio.org/ file an (enhancement) bug on Bugzilla], and include a link to your updated branch (i.e. your branch on GitHub, or another public Git server).  You could also attach a patch on Bugzilla.  If the changes are accepted, one of the Biopython developers will have to check this code into our [[CVS]] repository, and within the hour this should update the main Biopython branch on GitHub.
 
-On GitHub itself, you can inform keepers of the main branch of your changes by sending a 'pull request' from the main page of your branch. Once the file has been committed to the main branch, you may want to delete your now redundant bug fix branch on GitHub.  Branches can be deleted by selecting 'edit' and then 'delete repository' from the bottom of the edit page.
+On GitHub itself, you can inform keepers of the main branch of your changes by sending a 'pull request' from the main page of your branch. Once the file has been committed to the main branch, you may want to delete your now redundant bug fix branch on GitHub.
 
 == Evaluating changes ==
 
