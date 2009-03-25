@@ -16,9 +16,9 @@ Current projects
 
 ### Population Genetics development
 
-Giovanni is working on expanding population genetics code in Biopython.
-See the [PopGen development page](PopGen_dev "wikilink") for more
-details.
+Giovanni and Tiago are working on expanding population genetics code in
+Biopython. See the [PopGen development page](PopGen_dev "wikilink") for
+more details.
 
 ### GFF parser
 
