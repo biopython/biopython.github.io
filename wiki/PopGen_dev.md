@@ -80,11 +80,17 @@ If you would like to contribute, we suggest the following:
 Existing development branches
 -----------------------------
 
+While the fundamental branch to start developing is
+<http://github.com/tiagoantao/biopython-popgen-test/tree/master> (this
+is the real starting point if you want to develop new functionality), we
+would like to have a notion of who is working on what (to avoid
+overlapping and allow for coordination).
+
 Here are documented existing development branches. These branches are
 informal places where developers are creating new functionality,
 correcting bugs, etc... Feel free to add yours (or fork from existing
 ones). If you are interested in any of them contact the author directly
-or go to the mailing list
+or go to the mailing list.
 
 | Purpose                             | URL                                                               | who         |
 |-------------------------------------|-------------------------------------------------------------------|-------------|
