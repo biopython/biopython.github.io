@@ -19,7 +19,7 @@ Currently (i.e., for the near term) the following new functionality can be expec
 
 * STRUCTURE support
 * LDNe support
-
+* Marker independent statistics
 
 ==Code and contributing==
 
