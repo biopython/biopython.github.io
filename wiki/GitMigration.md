@@ -79,6 +79,6 @@ the final switch. This would include:
 -   installing git on the open-bio servers
 -   setting up a synchronization between obf-hosted branch and github
     branch
--   sending a message to the official biopython twitter account to
-    celebrate!
+-   posting an announcement on the dev-mailing list, news server, and
+    twitter account to celebrate!
 
