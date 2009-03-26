@@ -226,20 +226,37 @@ you can push your changes back to the GitHub server:
 
 `git push origin`
 
-<note>
-This will not work if you have cloned directly from the official
+''This will not work if you have cloned directly from the official
 biopython branch, since only the core developers have write access to
-the main trunk.
+the main trunk. ''
 
-</note>
+Merging upstream changes
+------------------------
+
+If you work on your branch for long enough, the main trunk will
+inevitably deverge from the version you forked from. Git makes
+integrating such upstream changes a very simple task.
+
+### Merging in github
+
+If you want to update your github branch with current changes from the
+trunk, you can use the fork-queue feature. It gives you a listing of
+changes in all branches related to yours with an estimate on how
+difficult it will be to integrate them. See [this github blog
+post](http://github.com/blog/270-the-fork-queue) for details.
+
+### Pulling remote chenges to your local copy
+
+Submitting changes for inclusion in Biopython
+---------------------------------------------
+
 If you think you changes are worth including in the main Biopython
 distribution, then [file an (enhancement) bug on
 Bugzilla](http://bugzilla.open-bio.org/), and include a link to your
 updated branch (i.e. your branch on GitHub, or another public Git
 server). You could also attach a patch on Bugzilla. If the changes are
 accepted, one of the Biopython developers will have to check this code
-into our [CVS](CVS "wikilink") repository, and within the hour this
-should update the main Biopython branch on GitHub.
+into our main repository.
 
 On GitHub itself, you can inform keepers of the main branch of your
 changes by sending a 'pull request' from the main page of your branch.
@@ -248,8 +265,17 @@ delete your now redundant bug fix branch on GitHub. Branches can be
 deleted by selecting 'edit' and then 'delete repository' from the bottom
 of the edit page.
 
+It is mandatory to merge with the current trunk of biopython before
+submitting your changes to avoid excess work on the receiving side.
+
 Evaluating changes
 ------------------
+
+Since git is a fully distributed version control system, anyone can
+integrate changes from other people, assuming that they are using
+branches derived from a common root. This is especially useful for
+people working on new features who want to accept contributions from
+other people.
 
 This section describes the steps to evaluate and integrate changes for
 Biopython core developers, or anyone accepting changes on a branch. The
