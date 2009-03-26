@@ -1,8 +1,14 @@
-These are the (draft) general guidelines for Biopython development using git
+These are (draft) general guidelines for Biopython development using git.
 
 This document is meant as an outline of the way Biopython is developed. It should include all essential technical information as well as typical procedures and usage scenarios. It should be helpful for core developers, potential code contributors, testers and everybody interested in Biopython code.
 
 <b>This version is an unofficial draft and is subject to change.</b>
+
+= Relevance =
+
+If you have found a problem with Biopython, and think you know how to fix it, then we suggest following the simple route of [http://bugzilla.open-bio.org/ filing a bug] and describe you fix.  Ideally, you would upload a patch file showing the differences between the latest version of Biopython (from our repository) and your modified version.  Working with the command line tools ''diff'' and ''patch'' is a very useful skill to have, and is almost a precursor to working with a version control system.  
+
+You shouldn't go to the trouble of creating your own git fork unless you are intending to make more than a simple one off contribution.
 
 = Technicalities =
 
