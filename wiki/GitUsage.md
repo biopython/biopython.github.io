@@ -4,14 +4,14 @@ permalink: wiki/GitUsage
 layout: wiki
 ---
 
-These are the (draft) general guidelines for biopython deveopment using
+These are the (draft) general guidelines for Biopython development using
 git
 
-This document is meant as an outline of the way biopython is developed.
+This document is meant as an outline of the way Biopython is developed.
 It should include all essential technical information as well as typical
 procedures and usage scenarios. It should be helpful for core
 developers, potential code contributors, testers and everybody
-interested in biopython code.
+interested in Biopython code.
 
 <b>This version is an unofficial draft and is subject to change.</b>
 
@@ -19,13 +19,13 @@ Technicalities
 ==============
 
 This section describes technical introduction into git usage including
-required software and integration with github. If you want to start
-contributing to biopython, you definitely need to install git and learn
-how to obtain a branch of biopython. If you want to share your changes
-easily with others, you should also signup for a github account and read
-the corresponding section of the manual. Finally, if you are engaged in
-one of the collaborations on experimental biopython modules, you should
-look also into code review and branch merging.
+required software and integration with Github. If you want to start
+contributing to Biopython, you definitely need to install git and learn
+how to obtain a branch of Biopython. If you want to share your changes
+easily with others, you should also sign up for a Github account and
+read the corresponding section of the manual. Finally, if you are
+engaged in one of the collaborations on experimental Biopython modules,
+you should look also into code review and branch merging.
 
 Installing Git
 --------------
@@ -114,7 +114,7 @@ Working with the source code
 ============================
 
 In order to start working with the Biopython source code, you need to
-obtain a local clone of our git reository. In git, this means you will
+obtain a local clone of our git repository. In git, this means you will
 in fact obtain a complete clone of our git repository along with the
 full version history. Thanks to compression, this is not much bigger
 than a single copy of the tree, but you need to accept a small overhead
@@ -129,7 +129,7 @@ repository a public branch of the project. If you do so, other people
 will be able to easily review your code, make their own branches from it
 or merge it back to the trunk.
 
-Using branches on github is the preferred way to work on new features
+Using branches on Github is the preferred way to work on new features
 for Biopython, so it's useful to learn it and use it even if you think
 your changes are not for immediate inclusion into the main trunk of
 Biopython. But even if you decide not to use github, you can always
@@ -162,12 +162,12 @@ page
 [`http://github.com/biopython/biopython/tree/master`](http://github.com/biopython/biopython/tree/master)
 
 and click on a button named 'Fork'. This will create a fork (basically a
-copy) of the official Biopython repository, publically viewable on
-GitHub, but listed under your personal account. It should be visible
-under a URL that looks like this
+copy) of the official Biopython repository, publicly viewable on GitHub,
+but listed under your personal account. It should be visible under a URL
+that looks like this
 [`http://github.com/`](http://github.com/)<your username>`/biopython`
 
-Since your branch of biopython is publicly visible, it's considered a
+Since your branch of Biopython is publicly visible, it's considered a
 good practice to change the description and homepage fields to something
 meaningful (i.e. different from the ones copied from the official
 repository). You can also rename your branch, names such as
@@ -180,7 +180,7 @@ following commands locally on your machine:
 `git clone git@github.com:`<your username>`/biopython.git`
 
 Where <your username>, not surprisingly, stands for your GitHub
-username. You have just created a local copy of the biopython repository
+username. You have just created a local copy of the Biopython repository
 on your machine.
 
 You may want to also link your branch with the official distribution:
@@ -218,7 +218,7 @@ it very often.
 Pushing changes to Github
 -------------------------
 
-If you are using github, and you are working on aclone of your own
+If you are using Github, and you are working on a clone of your own
 branch, you can very easily make your changes available for others.
 
 Once you think your changes are stable and should be reviewed by others,
@@ -227,25 +227,25 @@ you can push your changes back to the GitHub server:
 `git push origin`
 
 ''This will not work if you have cloned directly from the official
-biopython branch, since only the core developers have write access to
+Biopython branch, since only the core developers have write access to
 the main trunk. ''
 
 Merging upstream changes
 ------------------------
 
 If you work on your branch for long enough, the main trunk will
-inevitably deverge from the version you forked from. Git makes
+inevitably diverge from the version you forked from. Git makes
 integrating such upstream changes a very simple task.
 
-### Merging in github
+### Merging in Github
 
-If you want to update your github branch with current changes from the
+If you want to update your Github branch with current changes from the
 trunk, you can use the fork-queue feature. It gives you a listing of
 changes in all branches related to yours with an estimate on how
-difficult it will be to integrate them. See [this github blog
+difficult it will be to integrate them. See [this Github blog
 post](http://github.com/blog/270-the-fork-queue) for details.
 
-### Pulling remote chenges to your local copy
+### Pulling remote changes to your local copy
 
 If you want to update your local branch with the changes from the origin
 (either your own or ofiicial branch), you need to run `git` `pull`
@@ -269,7 +269,7 @@ delete your now redundant bug fix branch on GitHub. Branches can be
 deleted by selecting 'edit' and then 'delete repository' from the bottom
 of the edit page.
 
-It is mandatory to merge with the current trunk of biopython before
+It is mandatory to merge with the current trunk of Biopython before
 submitting your changes to avoid excess work on the receiving side.
 
 Evaluating changes
