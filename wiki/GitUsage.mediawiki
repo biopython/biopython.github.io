@@ -124,7 +124,7 @@ If you work on your branch for long enough, the main trunk will inevitably dever
 If you want to update your github branch with current changes from the trunk, you can use the fork-queue feature. It gives you a listing of changes in all branches related to yours with an estimate on how difficult it will be to integrate them. See [http://github.com/blog/270-the-fork-queue this github blog post] for details.
 
 === Pulling remote chenges to your local copy ===
-
+If you want to update your local branch with the changes from the origin (either your own or ofiicial branch), you need to run <code>git pull origin master</code> in a terminal window.
 
 == Submitting changes for inclusion in Biopython ==
 
