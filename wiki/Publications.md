@@ -39,6 +39,13 @@ Publications from 2009
 // Used [Bio.SeqIO](SeqIO "wikilink"), [BioSQL](BioSQL "wikilink") and
 GenomeDiagram
 
+1.  SmithEtAl2009 Smith SA, Beaulieu JM, Donoghue MJ. 2009.
+    *Mega-phylogeny approach for comparative biology: an alternative to
+    supertree and supermatrix approaches.* BMC Evolutionary Biology:
+    9:37 [BioMed Central](http://www.biomedcentral.com/1471-2148/9/37)
+
+// Used Biopython to implement a pipeline
+
 1.  TorranceEtAl2009 pmid=19038265
 
 // Used Biopython for the k-means algorithm
