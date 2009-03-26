@@ -37,7 +37,11 @@ Please add any ideas or proposals for new additions to Biopython. Bugs
 and enhancements for current code should be discussed though our
 bugzilla interface.
 
-`* Use SQLAlchemy, an object relational mapper, for BioSQL internals. This adds an additional library to Biopython, but provides ready support for additional databases like SQLite. It also would provide a raw object interface to BioSQL databases when the SeqRecord-like interface is not sufficient. Brad has some initial code for this.`
+-   Use SQLAlchemy, an object relational mapper, for BioSQL internals.
+    This adds an additional library to Biopython, but provides ready
+    support for additional databases like SQLite. It also would provide
+    a raw object interface to BioSQL databases when the SeqRecord-like
+    interface is not sufficient. Brad has some initial code for this.
 
 Enhancement list
 ----------------
