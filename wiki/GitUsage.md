@@ -317,6 +317,7 @@ There is a lot of different nice guides to using Git on the web:
 
 -   [Understanding Git
     Conceptually](http://www.eecs.harvard.edu/~cduan/technical/git/)
+-   [git ready: git tips](http://gitready.com/)
 -   <http://github.com/guides/git-cheat-sheet>
 -   <http://zrusin.blogspot.com/2007/09/git-cheat-sheet.html>
 -   <http://www.kernel.org/pub/software/scm/git/docs/v1.4.4.4/cvs-migration.html>
