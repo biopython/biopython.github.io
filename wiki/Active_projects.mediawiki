@@ -14,6 +14,8 @@ Brad is working on a Biopython GFF parser. Source code is available from [http:/
 
 Please add any ideas or proposals for new additions to Biopython. Bugs and enhancements for current code should be discussed though our bugzilla interface.
 
+ * Use SQLAlchemy, an object relational mapper, for BioSQL internals. This adds an additional library to Biopython, but provides ready support for additional databases like SQLite. It also would provide a raw object interface to BioSQL databases when the SeqRecord-like interface is not sufficient. Brad has some initial code for this.
+
 == Enhancement list ==
 
 Maintaining software involves incremental improvements for new format changes and removal of bugs. Please see our [http://bugzilla.open-bio.org/ bugzilla] page for a current list. Post to the developer mailing list if you are interested in tackling any open issues.
