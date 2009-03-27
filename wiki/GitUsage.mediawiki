@@ -165,7 +165,7 @@ Alternatively, from within GitHub you can use the fork-queue to cherry pick comm
 
 = Additional Resources =
 
-There is a lot of different nice guides to using Git on the web:
+There are a lot of different nice guides to using Git on the web:
 * [http://www.eecs.harvard.edu/~cduan/technical/git/ Understanding Git Conceptually]
 * [http://gitready.com/ git ready: git tips]
 * http://github.com/guides/git-cheat-sheet

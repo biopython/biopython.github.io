@@ -328,7 +328,7 @@ local machine to test everything, before merging it to your main branch.
 Additional Resources
 ====================
 
-There is a lot of different nice guides to using Git on the web:
+There are a lot of different nice guides to using Git on the web:
 
 -   [Understanding Git
     Conceptually](http://www.eecs.harvard.edu/~cduan/technical/git/)
