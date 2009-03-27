@@ -49,6 +49,7 @@ Use the [[SeqIO]] module for reading or writing sequences as [[SeqRecord]] objec
 ** [http://www.diveintopython.org/toc/index.html Dive Into Python]
 ** [http://rgruet.free.fr/PQR25/PQR2.5.html Python Quick Reference]
 * Browse the [http://biopython.org/DIST/docs/tutorial/Tutorial.html Biopython Tutorial]
+* Read this paper <biblio>Bassi2007 pmid=18052533</biblio>
 * Examine the [http://biopython.org/DIST/docs/api Class Diagram] if you'd like to know more about the relationships between the modules.
 
 ==Further reading==

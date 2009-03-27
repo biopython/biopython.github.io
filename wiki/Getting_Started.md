@@ -76,6 +76,7 @@ Beginners
         Reference](http://rgruet.free.fr/PQR25/PQR2.5.html)
 -   Browse the [Biopython
     Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
+-   Read this paper <biblio>Bassi2007 pmid=18052533</biblio>
 -   Examine the [Class Diagram](http://biopython.org/DIST/docs/api) if
     you'd like to know more about the relationships between the modules.
 
