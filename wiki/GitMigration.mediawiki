@@ -8,7 +8,7 @@ This page contains the information on the technicalities of the transition itsel
 
 [http://github.com/ GitHub] currently hosts the Biopython Git repository at http://github.com/biopython/biopython/
 
-This is the official repository. Currently it is synchronized with the main [[CVS]] trunk every hour, so it should be up to date most of the time.
+This would become the official repository. Currently it is synchronized with the main [[CVS]] trunk every hour, so it should be up to date most of the time.
 
 == Updates from CVS to github branch ==
 
@@ -16,8 +16,8 @@ The updates are done with the [http://cvs2svn.tigris.org/ cvs2svn] tool in the [
 
 This works by extracting commits from the cvs repo and generating input for [http://www.kernel.org/pub/software/scm/git/docs/git-fast-import.html git fast-import]. It seems to work nicely and is really fast. 
 
-The updates are performed hourly, using the following coniguration [http://bartek.rezolwenta.eu.org/biopython_git_update/]. 
-The scripts obtains the cvs repository via rsync  and performs the conversion locally. This has to be done this way at least until we get git installed on dev.open-bio.org.
+The updates are performed hourly, using the following configuration [http://bartek.rezolwenta.eu.org/biopython_git_update/]. 
+The scripts obtains the cvs repository via rsync and performs the conversion locally. This has to be done this way at least until we get git installed on dev.open-bio.org.
 
 After the conversion is done, the updated git branch is pushed to github, so that others can use it. Afterwards, the copy of the git repo is rsynced back to OBF servers for backup purposes.
 
@@ -32,14 +32,14 @@ Since we also want to accept contributions through github, it means that core de
 * make sure you have an updated version of cvs source tree
 * make sure you have a git repo with the official and contributed branch
 * make a diff between the contributed and official branch in git repo (see [[GitUsage]])
-* apply this diff to the cvs repo
+* apply this diff to the cvs repository
 * commit in cvs with appropriate message
 
 
 == Next steps ==
 
 Once we reach a consensus that git/github serves us well. We will make the final switch. This would include:
-* dropping the cvs support (updating biopython webpage)
+* dropping the cvs support (updating Biopython webpage)
 * shutting down the cvs2git update scripts 
 * installing git on the open-bio servers
 * setting up a synchronization between obf-hosted branch and github branch
