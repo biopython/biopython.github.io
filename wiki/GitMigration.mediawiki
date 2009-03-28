@@ -8,7 +8,7 @@ This page contains the information on the technicalities of the transition itsel
 
 [http://github.com/ GitHub] currently hosts the Biopython Git repository at http://github.com/biopython/biopython/
 
-This would become the official repository. Currently it is synchronized with the main [[CVS]] trunk every hour, so it should be up to date most of the time.
+This could become the official repository. Currently it is synchronized with the main [[CVS]] trunk every hour, so it should be up to date most of the time.
 
 == Updates from CVS to github branch ==
 

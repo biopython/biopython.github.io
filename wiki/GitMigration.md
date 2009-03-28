@@ -20,7 +20,7 @@ Current setup
 [GitHub](http://github.com/) currently hosts the Biopython Git
 repository at <http://github.com/biopython/biopython/>
 
-This would become the official repository. Currently it is synchronized
+This could become the official repository. Currently it is synchronized
 with the main [CVS](CVS "wikilink") trunk every hour, so it should be up
 to date most of the time.
 
