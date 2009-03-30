@@ -118,8 +118,8 @@ Biopython distribution by simply executing this command:
 
 `easy_install -f `[`http://biopython.org/DIST/`](http://biopython.org/DIST/)` biopython`
 
-You will have to have administrator's rights to do this. Eventually, on
-a Gnu/Linux system, you could use one of the followings:
+You will have to have administrator's rights to do this. On a Unix style
+system this is normally done by:
 
 `sudo easy_install -f `[`http://biopython.org/DIST/`](http://biopython.org/DIST/)` biopython`
 
