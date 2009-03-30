@@ -69,7 +69,7 @@ You will have to have administrator's rights to do this. On a Unix style system 
 
 For those of you using Linux, the easiest way to install Biopython is through your distribution's package management system.  However, unless you are running a recent release of your Linux Distribution, you may find that the Biopython packages available to be a little out of date.  You might want to see if there is a backport available, otherwise you will have to install Biopython from source.
 
-=== Ubuntu ===
+=== Ubuntu or Debian ===
 
 You should be able to install Biopython and its dependencies using the Synaptic GUI tool (on the main menu under System / Administration / Synaptic Package Manager), or at the command line using:
 
@@ -83,11 +83,11 @@ And if you want to use [[BioSQL]],
 
  sudo apt-get install python-biopython-sql
 
-However, this will probably not be the latest release (see [http://packages.ubuntu.com/python-biopython listing here]).  If you want the latest version of Biopython, you will need to install it from source.  However, you should be able to automatically install the build dependencies with the following command:
+However, this will probably not be the latest release (see [http://packages.ubuntu.com/python-biopython Ubuntu listing here], and [http://packages.debian.org/search?searchon=sourcenames&keywords=biopython Debian listing here]).  If you want the latest version of Biopython, you will need to install it from source.  However, you should be able to automatically install the build dependencies with the following command:
 
  sudo apt-get build-dep python-biopython
 
-Note: You may need to additionally install the NumPy package by hand, as an out of date repository will still expect Biopython to use Numeric instead.
+Note: You may need to additionally install the NumPy package by hand, as an out of date repository may still expect Biopython to use Numeric instead.
 
 === Fedora ===
 
