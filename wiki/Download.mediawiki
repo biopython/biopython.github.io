@@ -64,8 +64,6 @@ If you have [http://peak.telecommunity.com/DevCenter/EasyInstall easy_install] i
 You will have to have administrator's rights to do this. Eventually, on a Gnu/Linux system, you could use one of the followings:
 
  sudo easy_install -f http://biopython.org/DIST/ biopython
-or
- su -; easy_install -f http://biopython.org/DIST/ biopython
 
 = Packages =
 
