@@ -38,10 +38,18 @@ and enhancements for current code should be discussed though our
 bugzilla interface.
 
 -   Use SQLAlchemy, an object relational mapper, for BioSQL internals.
-    This adds an additional library to Biopython, but provides ready
-    support for additional databases like SQLite. It also would provide
-    a raw object interface to BioSQL databases when the SeqRecord-like
-    interface is not sufficient. Brad has some initial code for this.
+    This adds an additional external dependency to Biopython, but
+    provides ready support for additional databases like SQLite. It also
+    would provide a raw object interface to BioSQL databases when the
+    SeqRecord-like interface is not sufficient. Brad has some initial
+    code for this.
+
+<!-- -->
+
+-   Revamp the GEO SOFT parser, drawing on the ideas used in [Sean
+    Davis' GEOquery parser in
+    R/Bioconductor](http://www.bioconductor.org/packages/bioc/html/GEOquery.html).
+    See also [this page](http://www.warwick.ac.uk/go/peter_cock/r/geo/).
 
 Enhancement list
 ----------------

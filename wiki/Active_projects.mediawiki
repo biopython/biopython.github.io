@@ -14,7 +14,9 @@ Brad is working on a Biopython GFF parser. Source code is available from [http:/
 
 Please add any ideas or proposals for new additions to Biopython. Bugs and enhancements for current code should be discussed though our bugzilla interface.
 
-* Use SQLAlchemy, an object relational mapper, for BioSQL internals. This adds an additional library to Biopython, but provides ready support for additional databases like SQLite. It also would provide a raw object interface to BioSQL databases when the SeqRecord-like interface is not sufficient. Brad has some initial code for this.
+* Use SQLAlchemy, an object relational mapper, for BioSQL internals. This adds an additional external dependency to Biopython, but provides ready support for additional databases like SQLite. It also would provide a raw object interface to BioSQL databases when the SeqRecord-like interface is not sufficient. Brad has some initial code for this.
+
+* Revamp the GEO SOFT parser, drawing on the ideas used in [http://www.bioconductor.org/packages/bioc/html/GEOquery.html Sean Davis' GEOquery parser in R/Bioconductor].  See also [http://www.warwick.ac.uk/go/peter_cock/r/geo/ this page].
 
 == Enhancement list ==
 
