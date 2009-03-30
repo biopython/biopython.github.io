@@ -6,4 +6,4 @@ My main contributions are the [[SeqIO|Bio.SeqIO]] and [[AlignIO|Bio.AlignIO]] mo
 
 There are some nice examples on my [http://www.warwick.ac.uk/go/peter_cock/python/ python pages].
 
-[[Image:/DIST/docs/tutorial/images/biopython.jpg]]
+[[Image:biopython.jpg]]

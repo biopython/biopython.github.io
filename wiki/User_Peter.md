@@ -21,4 +21,4 @@ interface](BioSQL "wikilink"), and the tutorial and other
 There are some nice examples on my [python
 pages](http://www.warwick.ac.uk/go/peter_cock/python/).
 
-![](/DIST/docs/tutorial/images/biopython.jpg "/DIST/docs/tutorial/images/biopython.jpg")
+![](biopython.jpg "biopython.jpg")
