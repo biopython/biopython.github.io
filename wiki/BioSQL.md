@@ -246,6 +246,15 @@ DBDRIVER = 'psycopg'
 DBTYPE = 'pg'
 ```
 
+or:
+
+``` python
+DBDRIVER = 'psycopg2'
+DBTYPE = 'pg'
+```
+
+depending on which of the Python bindings you want to install.
+
 Creating a (sub) database
 =========================
 

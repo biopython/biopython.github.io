@@ -165,6 +165,12 @@ For PostgreSQL, use:
 DBDRIVER = 'psycopg'
 DBTYPE = 'pg'
 </source>
+or:
+<source lang=python>
+DBDRIVER = 'psycopg2'
+DBTYPE = 'pg'
+</source>
+depending on which of the Python bindings you want to install.
 
 = Creating a (sub) database =
 
