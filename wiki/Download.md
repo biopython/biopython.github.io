@@ -110,10 +110,11 @@ third party command line tools including:
 Easy Install
 ============
 
-If you have
+We don't officially sanction this option, but it has been reported to
+work fine. If you have
 [easy\_install](http://peak.telecommunity.com/DevCenter/EasyInstall)
 installed on your computer, you can download and install the latest
-biopython distribution by simply executing this command:
+Biopython distribution by simply executing this command:
 
 `easy_install -f `[`http://biopython.org/DIST/`](http://biopython.org/DIST/)` biopython`
 

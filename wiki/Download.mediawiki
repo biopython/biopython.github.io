@@ -56,7 +56,8 @@ In addition Biopython includes wrapper code for calling a number of third party 
 
 = Easy Install = 
 
-If you have [http://peak.telecommunity.com/DevCenter/EasyInstall easy_install] installed on your computer, you can download and install the latest biopython distribution by simply executing this command:
+We don't officially sanction this option, but it has been reported to work fine.
+If you have [http://peak.telecommunity.com/DevCenter/EasyInstall easy_install] installed on your computer, you can download and install the latest Biopython distribution by simply executing this command:
 
  easy_install -f http://biopython.org/DIST/ biopython
 
@@ -65,7 +66,6 @@ You will have to have administrator's rights to do this. Eventually, on a Gnu/Li
  sudo easy_install -f http://biopython.org/DIST/ biopython
 or
  su -; easy_install -f http://biopython.org/DIST/ biopython
-
 
 = Packages =
 
