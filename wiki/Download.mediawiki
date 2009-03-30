@@ -95,7 +95,7 @@ Biopython is an official Fedora package (since Fedora 5).  The package is named 
 
  yum install python-biopython
 
-or via one of the GUI package management systems such as pirut and PackageKit (available in F-9 and later).  Biopython 1.45 is the latest available (as of 2008-06-04).
+or via one of the GUI package management systems such as pirut and PackageKit (available in F-9 and later).
 
 === Gentoo Linux ===
 
