@@ -38,7 +38,7 @@ and enhancements for current code should be discussed though our
 bugzilla interface.
 
 -   Use SQLAlchemy, an object relational mapper, for BioSQL internals.
-    This adds an additional external dependency to Biopython, but
+    This would add an additional external dependency to Biopython, but
     provides ready support for additional databases like SQLite. It also
     would provide a raw object interface to BioSQL databases when the
     SeqRecord-like interface is not sufficient. Brad has some initial
