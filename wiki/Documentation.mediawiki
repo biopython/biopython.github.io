@@ -78,3 +78,7 @@ We have a separate list of [[Publications|publications citing or using Biopython
 :[http://biopython.org/DIST/docs/presentations/scripting.pdf PDF] | [http://biopython.org/DIST/docs/presentations/scripting.tar.gz tarball with LaTeX source]
 * Talk about Python and Biopython with an emphasis on teaching the design goals of Biopython.
 :[http://biopython.org/DIST/docs/presentations/biopython.pdf PDF] | [http://biopython.org/DIST/docs/presentations/biopy_group.tar.gz tarball with LaTeX source]
+
+==== Logo ====
+
+Read more about the [[Logo|Biopython logo]].
