@@ -20,5 +20,3 @@ interface](BioSQL "wikilink"), and the tutorial and other
 
 There are some nice examples on my [python
 pages](http://www.warwick.ac.uk/go/peter_cock/python/).
-
-![](biopython.jpg "biopython.jpg")
