@@ -75,6 +75,14 @@ You should be able to install Biopython and its dependencies using the Synaptic 
 
  sudo apt-get install python-biopython
 
+If you want the documentation and unit tests,
+
+ sudo apt-get install python-biopython-doc
+
+And if you want to use [[BioSQL]],
+
+ sudo apt-get install python-biopython-sql
+
 However, this will probably not be the latest release (see [http://packages.ubuntu.com/python-biopython listing here]).  If you want the latest version of Biopython, you will need to install it from source.  However, you should be able to automatically install the build dependencies with the following command:
 
  sudo apt-get build-dep python-biopython

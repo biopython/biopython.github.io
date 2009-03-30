@@ -141,6 +141,14 @@ Synaptic Package Manager), or at the command line using:
 
 `sudo apt-get install python-biopython`
 
+If you want the documentation and unit tests,
+
+`sudo apt-get install python-biopython-doc`
+
+And if you want to use [BioSQL](BioSQL "wikilink"),
+
+`sudo apt-get install python-biopython-sql`
+
 However, this will probably not be the latest release (see [listing
 here](http://packages.ubuntu.com/python-biopython)). If you want the
 latest version of Biopython, you will need to install it from source.
