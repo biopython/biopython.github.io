@@ -54,7 +54,8 @@ recent CVS changes like this (adjust the date accordingly):
 
 10. make documentation PDF, text and HTML files in Doc
 
-`   > make clean -C Doc`
+`   drevil:~biopython/Doc> make`  
+`   drevil:~biopython/Doc> make clean`
 
 11. make MANIFEST. First, make sure MANIFEST.in up to date.
 
