@@ -120,8 +120,13 @@ Due to the great architecture of the ports system, this simple commands will aut
 
 = Old Releases =
 
-Prior to the current release (Biopython 1.49), the most recent release was Biopython 1.49 beta.  This requires NumPy and not Numeric:
+Recent releases of Biopython require NumPy (and not Numeric):
 
+* [http://biopython.org/DIST/biopython-1.49.tar.gz biopython-1.49.tar.gz] 4,052 Kb
+* [http://biopython.org/DIST/biopython-1.49.zip biopython-1.49.zip] 4,498 Kb
+* [http://biopython.org/DIST/biopython-1.49.win32-py2.3.exe biopython-1.49.win32-py2.3.exe] 1,111 Kb -- Windows Installer for Python 2.3 and NumPy 1.1
+* [http://biopython.org/DIST/biopython-1.49.win32-py2.4.exe biopython-1.49.win32-py2.4.exe] 1,115 Kb -- Windows Installer for Python 2.4 and NumPy 1.1
+* [http://biopython.org/DIST/biopython-1.49.win32-py2.5.exe biopython-1.49.win32-py2.5.exe] 1,115 Kb -- Windows Installer for Python 2.5 and NumPy 1.1
 * [http://biopython.org/DIST/biopython-1.49b.tar.gz biopython-1.49b.tar.gz] 4,331 Kb
 * [http://biopython.org/DIST/biopython-1.49b.zip biopython-1.49b.zip] 4,780 Kb
 * [http://biopython.org/DIST/biopython-1.49b.win32-py2.3.exe biopython-1.49b.win32-py2.3.exe] 1,109 Kb -- Windows Installer for Python 2.3 and NumPy 1.1

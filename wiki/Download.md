@@ -214,9 +214,18 @@ dependencies).
 Old Releases
 ============
 
-Prior to the current release (Biopython 1.49), the most recent release
-was Biopython 1.49 beta. This requires NumPy and not Numeric:
+Recent releases of Biopython require NumPy (and not Numeric):
 
+-   [biopython-1.49.tar.gz](http://biopython.org/DIST/biopython-1.49.tar.gz)
+    4,052 Kb
+-   [biopython-1.49.zip](http://biopython.org/DIST/biopython-1.49.zip)
+    4,498 Kb
+-   [biopython-1.49.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.49.win32-py2.3.exe)
+    1,111 Kb -- Windows Installer for Python 2.3 and NumPy 1.1
+-   [biopython-1.49.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.49.win32-py2.4.exe)
+    1,115 Kb -- Windows Installer for Python 2.4 and NumPy 1.1
+-   [biopython-1.49.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.49.win32-py2.5.exe)
+    1,115 Kb -- Windows Installer for Python 2.5 and NumPy 1.1
 -   [biopython-1.49b.tar.gz](http://biopython.org/DIST/biopython-1.49b.tar.gz)
     4,331 Kb
 -   [biopython-1.49b.zip](http://biopython.org/DIST/biopython-1.49b.zip)
