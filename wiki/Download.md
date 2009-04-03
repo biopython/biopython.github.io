@@ -4,36 +4,35 @@ permalink: wiki/Download
 layout: wiki
 ---
 
-Current Release -- 1.49 -- 21 November 2008
-===========================================
+Current Release -- 1.50 beta -- 3 April 2009
+============================================
 
 See also [What's new](http://biopython.open-bio.org/SRC/biopython/NEWS).
 
 ### Files
 
 -   Source Tarball --
-    [biopython-1.49.tar.gz](http://biopython.org/DIST/biopython-1.49.tar.gz)
-    4,052 Kb
+    [biopython-1.50b.tar.gz](http://biopython.org/DIST/biopython-1.50b.tar.gz)
+    4,788 Kb
 -   Source Zip File --
-    [biopython-1.49.zip](http://biopython.org/DIST/biopython-1.49.zip)
-    4,498 Kb
+    [biopython-1.50b.zip](http://biopython.org/DIST/biopython-1.50b.zip)
+    5,250 Kb
 -   Windows Installer for Python 2.3 and NumPy 1.1 --
-    [biopython-1.49.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.49.win32-py2.3.exe)
-    1,111 Kb
+    [biopython-1.50b.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.50b.win32-py2.3.exe)
+    2,123 Kb
 -   Windows Installer for Python 2.4 and NumPy 1.1 --
-    [biopython-1.49.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.49.win32-py2.4.exe)
-    1,115 Kb
+    [biopython-1.50b.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.50b.win32-py2.4.exe)
+    2,125 Kb
 -   Windows Installer for Python 2.5 and NumPy 1.1 --
-    [biopython-1.49.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.49.win32-py2.5.exe)
-    1,115 Kb
--   Windows Installer for Python 2.6 -- not available as NumPy isn't yet
-    available on Python 2.6 on Windows.
+    [biopython-1.50b.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.50b.win32-py2.5.exe)
+    2,109 Kb
+-   Windows Installer for Python 2.6 -- waiting for the final release of
+    NumPy 1.3, the first release of NumPy for Python 2.6 on Windows.
 
-**NOTE** : There are been some significant changes since Biopython 1.48
-such as the move from Numeric to NumPy, so this is a slightly more risky
-update than usual. It would be unwise to install this on a production
-machine without doing extensive testing. Please report any issues on the
-mailing list or [bugzilla](http://bugzilla.open-bio.org/).
+**NOTE** : This is a *beta* release for testing. It would be unwise to
+install this on a production machine without doing extensive testing.
+Please report any issues on the mailing list or
+[bugzilla](http://bugzilla.open-bio.org/).
 
 ### Installation Instructions
 
