@@ -20,6 +20,15 @@ You can also access a read-only version of the CVS sources using our anonymous C
 
 [http://cvs.biopython.org/ http://cvs.biopython.org/]
 
+To summarize, first login (password is 'cvs'), then checkout the current code:
+
+ cvs -d :pserver:cvs@code.open-bio.org:/home/repository/biopython login
+ cvs -d :pserver:cvs@code.open-bio.org:/home/repository/biopython checkout biopython
+
+Once this is done, you can at a later date update your local copy with one line from within the biopython directory:
+
+ cvs update
+
 === Write CVS Access ===
 
 Write CVS access is available for Biopython developers. This is normally given on a case by case basis, and the best place to discuss getting write access is on the [mailto:biopython-dev@biopython.org Biopython Development mailing list].  Once you have access, the instructions on [http://www.bioperl.org/wiki/Using_CVS BioPerl's CVS wiki page] are very helpful.

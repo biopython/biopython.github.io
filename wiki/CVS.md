@@ -35,6 +35,17 @@ anonymous CVS server. Directions are available at:
 
 [<http://cvs.biopython.org/>](http://cvs.biopython.org/)
 
+To summarize, first login (password is 'cvs'), then checkout the current
+code:
+
+`cvs -d :pserver:cvs@code.open-bio.org:/home/repository/biopython login`  
+`cvs -d :pserver:cvs@code.open-bio.org:/home/repository/biopython checkout biopython`
+
+Once this is done, you can at a later date update your local copy with
+one line from within the biopython directory:
+
+`cvs update`
+
 ### Write CVS Access
 
 Write CVS access is available for Biopython developers. This is normally
