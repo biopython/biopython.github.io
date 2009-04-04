@@ -57,7 +57,7 @@ page](http://www.bioperl.org/wiki/Using_CVS) are very helpful. To
 summarize, checkout the code with this command, substituting your actual
 username:
 
-`cvs -d:ext:USERNAME@code.open-bio.org:/home/repository/biopython checkout biopython`
+`cvs -d:ext:USERNAME@dev.open-bio.org:/home/repository/biopython checkout biopython`
 
 ### Migration to Subversion
 

@@ -33,7 +33,7 @@ Once this is done, you can at a later date update your local copy with one line 
 
 Write CVS access is available for Biopython developers. This is normally given on a case by case basis, and the best place to discuss getting write access is on the [mailto:biopython-dev@biopython.org Biopython Development mailing list].  Once you have access, the instructions on [http://www.bioperl.org/wiki/Using_CVS BioPerl's CVS wiki page] are very helpful.  To summarize, checkout the code with this command, substituting your actual username:
 
- cvs -d:ext:USERNAME@code.open-bio.org:/home/repository/biopython checkout biopython
+ cvs -d:ext:USERNAME@dev.open-bio.org:/home/repository/biopython checkout biopython
 
 === Migration to Subversion ===
 
