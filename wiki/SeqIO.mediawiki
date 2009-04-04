@@ -102,8 +102,8 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 | [[bp:Tab_sequence_format|Simple two column tab separated sequence files]], where each line holds a record's identifier and sequence. For example, this is used as by Aligent's eArray software when saving microarray probes in a minimal tab delimited text file.
 |-  
 | qual
-| CVS
-| CVS
+| 1.50
+| 1.50
 | [[bp:Qual_sequence_format|Qual files]] are a bit like FASTA files but instead of the sequence, record space separated integer sequencing values as PHRED quality scores.  A matched pair of FASTA and QUAL files are often used as an alternative to a single FASTQ file.
 |-
 |}
