@@ -47,14 +47,14 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 | This refers to the input [[bp:FASTA_sequence_format|FASTA file format]] introduced for Bill Pearson's FASTA tool, where each record starts with a ">" line.  Resulting sequences have a generic alphabet by default.
 |-  
 | fastq
-| CVS
-| CVS
+| 1.50
+| 1.50
 | [[bp:FASTQ_sequence_format|FASTQ files]] are a bit like FASTA files but also include sequencing qualities.  In Biopython, "fastq" refers to Sanger style FASTQ files which encode PHRED qualities using an ASCII offset of 33.
 |-  
 | fastq-solexa
-| CVS
-| CVS
-| FASTQ files are a bit like FASTA files but also include sequencing qualities.  In Biopython, "fastq-solexa" refers to Solexa/Illumina style FASTQ files which encode Solexa qualities using an ASCII offset of 64.
+| 1.50
+| 1.50
+| [[bp:FASTQ_sequence_format|FASTQ files]] are a bit like FASTA files but also include sequencing qualities.  In Biopython, "fastq-solexa" refers to Solexa/Illumina style FASTQ files which encode Solexa qualities using an ASCII offset of 64.
 |-  
 | genbank 
 | 1.43
