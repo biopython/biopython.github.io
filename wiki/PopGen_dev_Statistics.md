@@ -72,10 +72,10 @@ population differentiation.
 
 ### Data type
 
-haployic, genotypic phase unknown, genotypic phase known, genoptypic
-dominant, frequency only.
+haplotypic, genotypic (phase unknown), genotypic (phase known),
+genoptypic dominant, frequency only.
 
-Say for expected heterozygosity frequencies are enough, for observed
+Say, for expected heterozygosity frequencies are enough, for observed
 heterozygosity genotypic (phase unknown) data is necessary.
 
 ### Single locus versus multi-loci
