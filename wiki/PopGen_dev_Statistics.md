@@ -54,8 +54,6 @@ manual](http://cmpg.unibe.ch/software/arlequin3/arlequin31.pdf)
 
 ### Marker dependent versus marker independent statistics
 
-=
-
 Some statistics require a special kind of marker. For instance Tajima D
 requires a sequence or a RFLP. Allelic range requires
 microsatellites/STRs. Other statistics are marker independent. For
