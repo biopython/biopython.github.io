@@ -32,7 +32,8 @@ See also [What's new](http://biopython.open-bio.org/SRC/biopython/NEWS).
 
 **NOTE** : This is a *beta* release for testing. It would be unwise to
 install this on a production machine without doing extensive testing.
-Please report any issues on the mailing list or
+Please report any issues on our [mailing
+lists](mailing_lists "wikilink") or
 [bugzilla](http://bugzilla.open-bio.org/).
 
 ### Installation Instructions
