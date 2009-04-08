@@ -19,15 +19,16 @@ See also [What's new](http://biopython.open-bio.org/SRC/biopython/NEWS).
     5,250 Kb
 -   Windows Installer for Python 2.3 and NumPy 1.1 --
     [biopython-1.50b.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.50b.win32-py2.3.exe)
-    2,123 Kb
+    1,226 Kb
 -   Windows Installer for Python 2.4 and NumPy 1.1 --
     [biopython-1.50b.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.50b.win32-py2.4.exe)
-    2,125 Kb
+    1,230 Kb
 -   Windows Installer for Python 2.5 and NumPy 1.1 --
     [biopython-1.50b.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.50b.win32-py2.5.exe)
-    2,109 Kb
--   Windows Installer for Python 2.6 -- waiting for the final release of
-    NumPy 1.3, the first release of NumPy for Python 2.6 on Windows.
+    1,230 Kb
+-   Windows Installer for Python 2.6 and NumPy 1.3 --
+    [biopython-1.50b.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.50b.win32-py2.6.exe)
+    1,268 Kb
 
 **NOTE** : This is a *beta* release for testing. It would be unwise to
 install this on a production machine without doing extensive testing.
