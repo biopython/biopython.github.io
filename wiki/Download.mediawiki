@@ -15,7 +15,7 @@ See also [http://biopython.open-bio.org/SRC/biopython/NEWS What's new].
 
 === Installation Instructions ===
 
-For Windows we provide click-and-run installers (specific to your version of python), but you will first need to install some prerequisite software (listed below).  Unfortunately, NumPy is not yet available for Python 2.6 on Windows, so we don't yet provide a Biopython installer for Python 2.6.
+For Windows we provide click-and-run installers (specific to your version of python), but you will first need to install some prerequisite software (listed below).
 
 Most Linux distributions will include an optional Biopython package (described below), and will take care of any prerequisite software automatically.    
 

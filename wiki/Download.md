@@ -40,9 +40,7 @@ lists](mailing_lists "wikilink") or
 
 For Windows we provide click-and-run installers (specific to your
 version of python), but you will first need to install some prerequisite
-software (listed below). Unfortunately, NumPy is not yet available for
-Python 2.6 on Windows, so we don't yet provide a Biopython installer for
-Python 2.6.
+software (listed below).
 
 Most Linux distributions will include an optional Biopython package
 (described below), and will take care of any prerequisite software
