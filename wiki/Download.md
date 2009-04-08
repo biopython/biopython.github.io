@@ -192,7 +192,7 @@ Ports
 
 ### FreeBSD
 
-The most easy way of installing BioPython in
+The most easy way of installing Biopython in
 [FreeBSD](http://www.freebsd.org/) is through the [Ports
 Collection](http://www.freebsd.org/ports/). If you're new to this
 procedure please take a look at [this
@@ -209,7 +209,7 @@ commands as root:
 </bash>
 
 Due to the great architecture of the ports system, this simple commands
-will automatically fetch and install BioPython (as well as its necessary
+will automatically fetch and install Biopython (as well as its necessary
 dependencies).
 
 Old Releases

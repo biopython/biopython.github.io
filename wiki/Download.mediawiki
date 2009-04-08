@@ -109,14 +109,14 @@ Gentoo's portage tree contains an ebuild (sci-biology/biopython) which builds fr
 
 ===FreeBSD===
 
-The most easy way of installing BioPython in [http://www.freebsd.org/ FreeBSD] is through the [http://www.freebsd.org/ports/ Ports Collection]. If you're new to this procedure please take a look at [http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/ports-using.html this document]. Supposing that you're familiar with this method and that you have an up-to-date ports tree, all you need to do is to execute the following commands as root:
+The most easy way of installing Biopython in [http://www.freebsd.org/ FreeBSD] is through the [http://www.freebsd.org/ports/ Ports Collection]. If you're new to this procedure please take a look at [http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/ports-using.html this document]. Supposing that you're familiar with this method and that you have an up-to-date ports tree, all you need to do is to execute the following commands as root:
 
 <bash>
 # cd /usr/ports/biology/py-biopython
 # make install clean
 </bash>
 
-Due to the great architecture of the ports system, this simple commands will automatically fetch and install BioPython (as well as its necessary dependencies).
+Due to the great architecture of the ports system, this simple commands will automatically fetch and install Biopython (as well as its necessary dependencies).
 
 = Old Releases =
 
