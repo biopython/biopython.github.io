@@ -4,6 +4,29 @@ Most of the sequence file format parsers in BioPython can return SeqRecord objec
 
 There is more information in the [http://biopython.org/DIST/docs/tutorial/Tutorial.html Tutorial] ([http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF]), and the [[SeqIO]] page is also very relevant.
 
+== Creating a SeqRecord object ==
+
+<source lang=python>
+from Bio.Seq import Seq
+from Bio.SeqRecord import SeqRecord
+from Bio.Alphabet import IUPAC
+record = SeqRecord(Seq("MKQHKAMIVALIVICITAVVAALVTRKDLCEVHIRTGQTEVAVF",
+                   IUPAC.protein),
+                   id="YP_025292.1", name="HokC",
+                   description="toxic membrane protein, small")
+print record
+</source>
+
+
+    ID: YP_025292.1
+    Name: HokC
+    Description: toxic membrane protein, small
+    Number of features: 0
+    Seq('MKQHKAMIVALIVICITAVVAALVTRKDLCEVHIRTGQTEVAVF', IUPACProtein())
+
+
+
+
 == Extracting information from a SeqRecord ==
 
 Lets look in closer detail at the well annotated SeqRecord objects Biopython creates from a GenBank file, such as [http://biopython.org/DIST/docs/tutorial/examples/ls_orchid.gbk ls_orchid.gbk], which we'll load using the [[SeqIO]] module.  This file contains 94 records:

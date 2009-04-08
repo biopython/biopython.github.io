@@ -18,6 +18,26 @@ There is more information in the
 ([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)), and the
 [SeqIO](SeqIO "wikilink") page is also very relevant.
 
+Creating a SeqRecord object
+---------------------------
+
+``` python
+from Bio.Seq import Seq
+from Bio.SeqRecord import SeqRecord
+from Bio.Alphabet import IUPAC
+record = SeqRecord(Seq("MKQHKAMIVALIVICITAVVAALVTRKDLCEVHIRTGQTEVAVF",
+                   IUPAC.protein),
+                   id="YP_025292.1", name="HokC",
+                   description="toxic membrane protein, small")
+print record
+```
+
+`   ID: YP_025292.1`  
+`   Name: HokC`  
+`   Description: toxic membrane protein, small`  
+`   Number of features: 0`  
+`   Seq('MKQHKAMIVALIVICITAVVAALVTRKDLCEVHIRTGQTEVAVF', IUPACProtein())`
+
 Extracting information from a SeqRecord
 ---------------------------------------
 
