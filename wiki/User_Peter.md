@@ -2,6 +2,8 @@
 title: User:Peter
 permalink: wiki/User:Peter
 layout: wiki
+tags:
+ - People
 ---
 
 I'm one of the many [Biopython participants](Participants "wikilink"),
