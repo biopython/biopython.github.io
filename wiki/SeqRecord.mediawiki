@@ -107,7 +107,7 @@ Next, we'll check the '''dxrefs''' property, which holds any database cross refe
 <type 'list'>
 </source>
 
-An empty list? Disappointing...
+An empty list? Disappointing... if we'd used a more recent GenBank file the genome sequencing project reference would show up here.
 
 How about the '''annotations''' property? This is a python dictionary...
 

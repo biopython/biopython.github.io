@@ -138,7 +138,8 @@ cross references:
 <type 'list'>
 ```
 
-An empty list? Disappointing...
+An empty list? Disappointing... if we'd used a more recent GenBank file
+the genome sequencing project reference would show up here.
 
 How about the **annotations** property? This is a python dictionary...
 
