@@ -6,6 +6,7 @@ There is more information in the [http://biopython.org/DIST/docs/tutorial/Tutori
 
 == Creating a SeqRecord object ==
 
+Most of the time you'll create SeqRecord objects by parsing a sequence file with [[SeqIO|Bio.SeqIO]].  However, it is useful to know how to create a SeqRecord directly.  For example,
 <source lang=python>
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
@@ -17,15 +18,13 @@ record = SeqRecord(Seq("MKQHKAMIVALIVICITAVVAALVTRKDLCEVHIRTGQTEVAVF",
 print record
 </source>
 
+This would give the following output:
 
     ID: YP_025292.1
     Name: HokC
     Description: toxic membrane protein, small
     Number of features: 0
     Seq('MKQHKAMIVALIVICITAVVAALVTRKDLCEVHIRTGQTEVAVF', IUPACProtein())
-
-
-
 
 == Extracting information from a SeqRecord ==
 
