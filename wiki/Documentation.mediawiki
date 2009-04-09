@@ -52,7 +52,7 @@ New to BioPython? Check out the [[Getting_Started|Getting Started]] page, or fol
 We have a separate list of [[Publications|publications citing or using Biopython]].  If you use Biopython in a scientific publication, please cite the application note <cite>CockEtAl2009</cite> and/or one of the other listed papers:
 
 <biblio>
-#CockEtAl2009 Cock PJ et al.  ''Biopython: freely available Python tools for computational molecular biology and bioinformatics.'' Bioinformatics [[http://dx.doi.org/10.1093/bioinformatics/btp163 doi:10.1093/bioinformatics/btp163]]
+#CockEtAl2009 pmid=19304878
 // This application note covers the whole of Biopython
 #ChapmanAndChang2000 Chapman BA and Chang JT. ''Biopython: Python tools for computational biology.'' ACM SIGBIO Newsletter 2000 Aug; 20, 15-19. [http://biopython.org/DIST/docs/acm/ACMbiopy.html HTML] | [http://biopython.org/DIST/docs/acm/ACMbiopy.pdf PDF]
 // This served as the official project announcement.
