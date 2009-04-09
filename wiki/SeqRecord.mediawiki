@@ -57,6 +57,7 @@ That should give you a hint of the sort of information held in this object:
  ID: Z78439.1
  Name: Z78439
  Desription: P.barbatum 5.8S rRNA gene and ITS1 and ITS2 DNA.
+ Number of features: 5
  /source=Paphiopedilum barbatum
  /taxonomy=['Eukaryota', 'Viridiplantae', 'Streptophyta', 'Embryophyta', ..., 'Paphiopedilum']
  /keywords=['5.8S ribosomal RNA', '5.8S rRNA gene', 'internal transcribed spacer', 'ITS1', 'ITS2']
@@ -71,7 +72,7 @@ Lets look a little more closely... and use python's '''dir()''' function to find
 
 <source lang=python>
 >>> dir(record)
-[..., 'annotations', 'dbxrefs', 'description', 'features', 'id', 'name', 'seq']
+[..., 'annotations', 'dbxrefs', 'description', 'features', 'format', 'id', 'letter_annotations', 'name', 'seq']
 </source>
 
 If you didn't already know, the '''dir()''' function returns a list of all the methods and properties of an object (as strings). Those starting with underscores in their name are "special" and we'll be ignoring them in this discussion. We'll start with the '''seq''' property:
@@ -132,7 +133,7 @@ Cox,A.V., Pridgeon,A.M., Albert,V.A. and Chase,M.W.
 Cox,A.V.
 </source>
 
-That brings us finally to '''features''' which is another list property, and it contains SeqFeature objects:
+Next is '''features''' which is another list property, and it contains SeqFeature objects:
 
 <source lang=python>
 >>> print record.features.__class__
@@ -141,4 +142,31 @@ That brings us finally to '''features''' which is another list property, and it 
 5
 </source>
 
-SeqFeature objects are complicated enough to warrent their own page...
+SeqFeature objects are complicated enough to warrant their own page...
+
+If you are using Biopython 1.48 or later, there will be a '''format''' method.  This lets you convert the SeqRecord into a string using one of the output formats supported by [[SeqIO|Bio.SeqIO]], for example:
+
+<source lang=python>
+>>> print record.format("fasta")
+>Z78439.1 P.barbatum 5.8S rRNA gene and ITS1 and ITS2 DNA.
+CATTGTTGAGATCACATAATAATTGATCGAGTTAATCTGGAGGATCTGTTTACTTTGGTC
+ACCCATGGGCATTTGCTGTTGAAGTGACCTAGATTTGCCATCGAGCCTCCTTGGGAGCTT
+TCTTGTTGGCGAGATCTAAACCCCTGCCCGGCGGAGTTGGGCGCCAAGTCATATGACACA
+TAATTGGTGAAGGGGGTGGTAATCCTGCCCTGACCCTCCCCAAATTATTTTTTTAACAAC
+TCTCAGCAACGGATATCTCGGCTCTTGCATCGATGAAGAACGCAGCGAAATGCGATAATG
+GTGTGAATTGCAGAATCCCGTGAACATCGAGTCTTTGAACGCAAGTTGCGCCCGAGGCCA
+TCAGGCCAAGGGCACGCCTGCCTGGGCATTGCGAGTCATATCTCTCCCTTAATGAGGCTG
+TCCATACATACTGTTCAGCCGGTGCGGATGTGAGTTTGGCCCCTTGTTCTTTGGTACGGG
+GGGTCTAAGAGCTGCATGGGCTTTGGATGGTCCTAAATACGGAAAGAGGTGGACGAACTA
+TGCTACAACAAAATTGTTGTGCAAATGCCCCGGTTGGCCGTTTAGTTGGGCC
+
+</source>
+
+If you are using Biopython 1.50 or later, there will also be a '''letter_annotations''' property.  Again this is a dictionary but for per-letter-annotation such as sequence quality scores or secondary structure predictions.  This kind of information isn't found in GenBank files, so in this case the dictionary is empty:
+
+<source lang=python>
+>>> print record.letter_annotations
+{}
+</source>
+
+Have a look at FASTQ or QUAL files to see how quality scores are represented.  Stockholm (PFAM) alignment files also often include per-letter-annotation.
