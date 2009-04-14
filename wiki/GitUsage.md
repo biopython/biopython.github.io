@@ -263,7 +263,7 @@ post](http://github.com/blog/270-the-fork-queue) for details.
 ### Pulling remote changes to your local copy
 
 If you want to update your local branch with the changes from the origin
-(either your own or ofiicial branch), you need to run `git` `pull`
+(either your own or official branch), you need to run `git` `pull`
 `origin` `master` in a terminal window.
 
 Submitting changes for inclusion in Biopython
