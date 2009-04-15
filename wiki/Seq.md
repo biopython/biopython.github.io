@@ -4,20 +4,23 @@ permalink: wiki/Seq
 layout: wiki
 ---
 
-The Bio.Seq module in Biopython provides a few sequence related classes,
-the Seq object and the MutableSeq object, plus some general purpose
-sequence functions. In addition to this wiki page, there is a whole
-chapter in the
+In Biopython, sequences are usually held as **Seq** objects, which hold
+the sequence string and an associated alphabet.
+
+This page describes the Biopython **Seq** object, defined in the Bio.Seq
+module (together with related objects like the **MutableSeq**, plus some
+general purpose sequence functions). In addition to this wiki page,
+there is a whole chapter in the
 [Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
-([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)) on this
-topic.
+([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)) on the
+**Seq** object - plus its [API
+documentation](http://biopython.org/DIST/docs/api/Bio.Seq.Seq-class.html)
+(which you can read online, or from within Python with the help
+command).
 
-In Biopython, sequences are usually held as Seq objects, which hold the
-sequence string and an associated alphabet.
-
-If you need to store additional information like a sequence identifer or
-name, or even more details like a description or annotation, then we use
-a [SeqRecord](SeqRecord "wikilink") object instead. These are the
+If you need to store additional information like a sequence identifier
+or name, or even more details like a description or annotation, then we
+use a [SeqRecord](SeqRecord "wikilink") object instead. These are the
 sequence records used by the [SeqIO](SeqIO "wikilink") module for
 reading and writing sequence files.
 
