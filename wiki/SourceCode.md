@@ -14,5 +14,6 @@ full details are available from the [CVS](CVS "wikilink") page.
 
 We are currently evaluating a transition to git on
 [github](http://www.github.com), details are available from the [git
-migration](GitMigration "wikilink") page. We are happy to hear your
-feedback on the [ mailing lists](Mailing_lists "wikilink").
+migration](GitMigration "wikilink") and [git usage](GitUsage "wikilink")
+pages. We are happy to hear your feedback on the [ mailing
+lists](Mailing_lists "wikilink").

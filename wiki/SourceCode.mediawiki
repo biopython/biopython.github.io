@@ -2,4 +2,4 @@ The source code from Biopython is freely available for your use and contribution
 
 We currently use [[CVS]] as our revision control system; full details are available from the [[CVS]] page. 
 
-We are currently evaluating a transition to git on [http://www.github.com github], details are available from the [[GitMigration|git migration]] page. We are happy to hear your feedback on the [[Mailing_lists| mailing lists]].
+We are currently evaluating a transition to git on [http://www.github.com github], details are available from the [[GitMigration|git migration]] and [[GitUsage|git usage]] pages. We are happy to hear your feedback on the [[Mailing_lists| mailing lists]].
