@@ -1,12 +1,12 @@
-This page describes the SeqRecord object used in BioPython to hold a sequence (as a [[Seq]] object) with identifiers (ID and name), description and optionally annotation and sub-features.
+This page describes the '''SeqRecord''' object used in BioPython to hold a sequence (as a [[Seq]] object) with identifiers (ID and name), description and optionally annotation and sub-features.
 
-Most of the sequence file format parsers in BioPython can return SeqRecord objects (and may offer a format specific record object too, see for example Bio.SwissProt).  The [[SeqIO]] system will only return SeqRecord objects.
+Most of the sequence file format parsers in BioPython can return '''SeqRecord''' objects (and may offer a format specific record object too, see for example Bio.SwissProt).  The [[SeqIO]] system will ''only'' return SeqRecord objects.
 
-There is more information in the [http://biopython.org/DIST/docs/tutorial/Tutorial.html Tutorial] ([http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF]), and the [[SeqIO]] page is also very relevant.
+In addition to the '''SeqRecord''' object's [http://biopython.org/DIST/docs/api/Bio.SeqRecord.SeqRecord-class.html API documentation], there is more information in the [http://biopython.org/DIST/docs/tutorial/Tutorial.html Tutorial] ([http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF]), and the [[SeqIO]] page is also very relevant.
 
 == Creating a SeqRecord object ==
 
-Most of the time you'll create SeqRecord objects by parsing a sequence file with [[SeqIO|Bio.SeqIO]].  However, it is useful to know how to create a SeqRecord directly.  For example,
+Most of the time you'll create '''SeqRecord''' objects by parsing a sequence file with [[SeqIO|Bio.SeqIO]].  However, it is useful to know how to create a '''SeqRecord''' directly.  For example,
 <source lang=python>
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
@@ -28,7 +28,7 @@ This would give the following output:
 
 == Extracting information from a SeqRecord ==
 
-Lets look in closer detail at the well annotated SeqRecord objects Biopython creates from a GenBank file, such as [http://biopython.org/DIST/docs/tutorial/examples/ls_orchid.gbk ls_orchid.gbk], which we'll load using the [[SeqIO]] module.  This file contains 94 records:
+Lets look in closer detail at the well annotated '''SeqRecord''' objects Biopython creates from a GenBank file, such as [http://biopython.org/DIST/docs/tutorial/examples/ls_orchid.gbk ls_orchid.gbk], which we'll load using the [[SeqIO]] module.  This file contains 94 records:
 
 <source lang=python>
 from Bio import SeqIO
@@ -121,7 +121,7 @@ How about the '''annotations''' property? This is a python dictionary...
 Paphiopedilum barbatum
 </source>
 
-In this case, most of the values in the dictionary are simple strings, but this isn't always the case - have a look at the references entry for this example - its a list of Reference objects:
+In this case, most of the values in the dictionary are simple strings, but this isn't always the case - have a look at the references entry for this example - its a list of '''Reference''' objects:
 
 <source lang=python>
 >>> print record.annotations["references"].__class__
@@ -144,7 +144,7 @@ Next is '''features''' which is another list property, and it contains SeqFeatur
 
 SeqFeature objects are complicated enough to warrant their own page...
 
-If you are using Biopython 1.48 or later, there will be a '''format''' method.  This lets you convert the SeqRecord into a string using one of the output formats supported by [[SeqIO|Bio.SeqIO]], for example:
+If you are using Biopython 1.48 or later, there will be a '''format''' method.  This lets you convert the '''SeqRecord''' into a string using one of the output formats supported by [[SeqIO|Bio.SeqIO]], for example:
 
 <source lang=python>
 >>> print record.format("fasta")

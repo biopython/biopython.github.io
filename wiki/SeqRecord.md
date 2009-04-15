@@ -4,16 +4,18 @@ permalink: wiki/SeqRecord
 layout: wiki
 ---
 
-This page describes the SeqRecord object used in BioPython to hold a
+This page describes the **SeqRecord** object used in BioPython to hold a
 sequence (as a [Seq](Seq "wikilink") object) with identifiers (ID and
 name), description and optionally annotation and sub-features.
 
 Most of the sequence file format parsers in BioPython can return
-SeqRecord objects (and may offer a format specific record object too,
-see for example Bio.SwissProt). The [SeqIO](SeqIO "wikilink") system
-will only return SeqRecord objects.
+**SeqRecord** objects (and may offer a format specific record object
+too, see for example Bio.SwissProt). The [SeqIO](SeqIO "wikilink")
+system will *only* return SeqRecord objects.
 
-There is more information in the
+In addition to the **SeqRecord** object's [API
+documentation](http://biopython.org/DIST/docs/api/Bio.SeqRecord.SeqRecord-class.html),
+there is more information in the
 [Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
 ([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)), and the
 [SeqIO](SeqIO "wikilink") page is also very relevant.
@@ -21,9 +23,9 @@ There is more information in the
 Creating a SeqRecord object
 ---------------------------
 
-Most of the time you'll create SeqRecord objects by parsing a sequence
-file with [Bio.SeqIO](SeqIO "wikilink"). However, it is useful to know
-how to create a SeqRecord directly. For example,
+Most of the time you'll create **SeqRecord** objects by parsing a
+sequence file with [Bio.SeqIO](SeqIO "wikilink"). However, it is useful
+to know how to create a **SeqRecord** directly. For example,
 
 ``` python
 from Bio.Seq import Seq
@@ -47,7 +49,7 @@ This would give the following output:
 Extracting information from a SeqRecord
 ---------------------------------------
 
-Lets look in closer detail at the well annotated SeqRecord objects
+Lets look in closer detail at the well annotated **SeqRecord** objects
 Biopython creates from a GenBank file, such as
 [ls\_orchid.gbk](http://biopython.org/DIST/docs/tutorial/examples/ls_orchid.gbk),
 which we'll load using the [SeqIO](SeqIO "wikilink") module. This file
@@ -155,7 +157,7 @@ Paphiopedilum barbatum
 
 In this case, most of the values in the dictionary are simple strings,
 but this isn't always the case - have a look at the references entry for
-this example - its a list of Reference objects:
+this example - its a list of **Reference** objects:
 
 ``` python
 >>> print record.annotations["references"].__class__
@@ -180,8 +182,8 @@ SeqFeature objects:
 SeqFeature objects are complicated enough to warrant their own page...
 
 If you are using Biopython 1.48 or later, there will be a **format**
-method. This lets you convert the SeqRecord into a string using one of
-the output formats supported by [Bio.SeqIO](SeqIO "wikilink"), for
+method. This lets you convert the **SeqRecord** into a string using one
+of the output formats supported by [Bio.SeqIO](SeqIO "wikilink"), for
 example:
 
 ``` python
