@@ -2,6 +2,8 @@
 title: SeqIO
 permalink: wiki/SeqIO
 layout: wiki
+tags:
+ - Wiki Documentation
 ---
 
 This page describes Bio.SeqIO, a new Sequence Input/Output interface for
