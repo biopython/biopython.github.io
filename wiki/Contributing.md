@@ -116,10 +116,11 @@ put helpful comments in your code so that they will be reflected in [the
 API documentation](http://biopython.org/DIST/docs/api) (in addition to
 all the normal reasons to document code).
 
-We don't do anything fancy to try and format the comments in the code --
-they are displayed by epydoc exactly as written in the source. This
-isn't fancy, but it's effective and easier then trying to deal with the
-myriad of different ways to try and structure source code comments.
+We generally don't do anything fancy to try and format the comments in
+the code -- by default they are displayed by epydoc exactly as written
+in the source. This isn't fancy, but it's effective and easier then
+trying to deal with the myriad of different ways to try and structure
+source code comments.
 
 However, there are a few tricks to make your documentation look it's
 best. The main ones are:
