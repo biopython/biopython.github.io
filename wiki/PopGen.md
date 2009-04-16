@@ -2,6 +2,8 @@
 title: PopGen
 permalink: wiki/PopGen
 layout: wiki
+tags:
+ - Wiki Documentation
 ---
 
 Population genetics in Biopython
