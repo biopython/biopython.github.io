@@ -2,6 +2,8 @@
 title: SeqRecord
 permalink: wiki/SeqRecord
 layout: wiki
+tags:
+ - Wiki Documentation
 ---
 
 This page describes the **SeqRecord** object used in BioPython to hold a
