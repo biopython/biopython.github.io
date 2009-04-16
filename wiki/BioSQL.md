@@ -2,6 +2,8 @@
 title: BioSQL
 permalink: wiki/BioSQL
 layout: wiki
+tags:
+ - Wiki Documentation
 ---
 
 [BioSQL](http://www.biosql.org/wiki/Main_Page) is a joint effort between
