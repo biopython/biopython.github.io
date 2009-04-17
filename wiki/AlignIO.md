@@ -12,7 +12,10 @@ Input/Output interface for BioPython 1.46 and later.
 In addition to the built in API documentation, there is a whole chapter
 in the [Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
 on Bio.AlignIO, and although there is some overlap it is well worth
-reading in addition to this WIKI page.
+reading in addition to this WIKI page. There is also the [API
+documentation](http://biopython.org/DIST/docs/api/Bio.AlignIO-module.html)
+(which you can read online, or from within Python with the help
+command).
 
 Aims
 ----

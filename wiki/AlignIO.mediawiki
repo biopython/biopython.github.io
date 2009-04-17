@@ -1,6 +1,6 @@
 This page describes Bio.AlignIO, a new multiple sequence Alignment Input/Output interface for BioPython 1.46 and later.
 
-In addition to the built in API documentation, there is a whole chapter in the [http://biopython.org/DIST/docs/tutorial/Tutorial.html Tutorial] on Bio.AlignIO, and although there is some overlap it is well worth reading in addition to this WIKI page.
+In addition to the built in API documentation, there is a whole chapter in the [http://biopython.org/DIST/docs/tutorial/Tutorial.html Tutorial] on Bio.AlignIO, and although there is some overlap it is well worth reading in addition to this WIKI page.  There is also the [http://biopython.org/DIST/docs/api/Bio.AlignIO-module.html API documentation] (which you can read online, or from within Python with the help command).
 
 == Aims ==
 
