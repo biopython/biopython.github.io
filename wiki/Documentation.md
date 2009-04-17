@@ -53,11 +53,6 @@ below.
 
 -   Cookbook-style documentation:
 
-:\*Writing Tests for Biopython: See chapter 13 in the current
-developer's version of the Biopython Tutorial and Cookbook:
-
-::[HTML](http://biopython.org/DIST/docs/tutorial/Tutorial.proposal.html)
-
 :\*The Biopython Structural Bioinformatics FAQ (i.e. how to use the
 Bio.PDB module).
 
