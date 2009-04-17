@@ -1,10 +1,12 @@
-[http://bioinfo.noble.org/plan PLAN] is a free online service for BLAST based sequence annotation provided by the Noble institute. At present the people that run PLAN limit users querie's to 1000 records. This recipe shows how to split a fasta file containing thousands of records into smaller files with filenames that include the range of records included in the file.
+[http://bioinfo.noble.org/plan PLAN] is a free online service for BLAST based sequence annotation provided by the Noble institute. At present the people that run PLAN limit users querie's to 1000 records. This recipe shows how to split a fasta file containing thousands of records into smaller files with filenames that include the range of records included in the file. 
+
 
 <source lang=python id="recipe">
 from Bio import SeqIO
 
 in_name = "huge_run.fasta"
 records = list(SeqIO.parse(open(in_name, 'r'), "fasta"))
+# How many files of exactly 1000 records can we make?
 nfiles = len(records)/1000
 
 for filenumber in range(nfiles):
@@ -17,7 +19,7 @@ for filenumber in range(nfiles):
 	out_handle.close()
 
 # That will make a bunch of files with 1000 records, but you will almost always 
-# have some "dregs" to mop up
+# have some "dregs" to mop up. e
 
 if len(records) / 1000 != 0: #checking for leftovers
 	lsplit_min = (nfiles+1)*1000
@@ -28,4 +30,25 @@ if len(records) / 1000 != 0: #checking for leftovers
 	last_handle.close()
 else:
 	continue
+</source>
+
+The basic approach is do use [[SeqIO | SeqIO.parse()]] to read the contents of a fasta file into a list, then pick out subsets to write. Perhaps the trickiest looking line is this one:
+<source lang=python>
+out_name = ("_%s-%s." % (split_min+1, split_max+1)).join(in_name.split("."))
+</source>
+
+which can be broken down
+
+<source lang=python>
+>>> insert = "_%s-%s." % (1, 1000)
+>>> insert
+'_1-1000.'
+>>> split_name = "huge_run.fasta".split(".")
+['huge_run', 'fasta']
+>>>(insert).join(split_name)
+'huge_run_1-1000.fasta'
+</source>
+
+
+
 </source>

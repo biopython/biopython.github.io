@@ -16,6 +16,7 @@ from Bio import SeqIO
 
 in_name = "huge_run.fasta"
 records = list(SeqIO.parse(open(in_name, 'r'), "fasta"))
+# How many files of exactly 1000 records can we make?
 nfiles = len(records)/1000
 
 for filenumber in range(nfiles):
@@ -28,7 +29,7 @@ for filenumber in range(nfiles):
     out_handle.close()
 
 # That will make a bunch of files with 1000 records, but you will almost always 
-# have some "dregs" to mop up
+# have some "dregs" to mop up. e
 
 if len(records) / 1000 != 0: #checking for leftovers
     lsplit_min = (nfiles+1)*1000
@@ -40,3 +41,26 @@ if len(records) / 1000 != 0: #checking for leftovers
 else:
     continue
 ```
+
+The basic approach is do use [ SeqIO.parse()](SeqIO "wikilink") to read
+the contents of a fasta file into a list, then pick out subsets to
+write. Perhaps the trickiest looking line is this one:
+
+``` python
+out_name = ("_%s-%s." % (split_min+1, split_max+1)).join(in_name.split("."))
+```
+
+which can be broken down
+
+``` python
+>>> insert = "_%s-%s." % (1, 1000)
+>>> insert
+'_1-1000.'
+>>> split_name = "huge_run.fasta".split(".")
+['huge_run', 'fasta']
+>>>(insert).join(split_name)
+'huge_run_1-1000.fasta'
+```
+
+</source>
+
