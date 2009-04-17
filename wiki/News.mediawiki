@@ -7,3 +7,5 @@ If you use news-reader software you can subscribe to Biopython news using the [h
 <rss>http://news.open-bio.org/news/category/obf-projects/biopython/feed/rdf|charset=utf-8|date|max=4</rss>
 
 See also the latest version of [http://biopython.open-bio.org/SRC/biopython/NEWS the NEWS file] included with each release.
+
+P.S. You can also follow us on [http://twitter.com/biopython twitter]!
