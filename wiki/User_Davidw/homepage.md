@@ -25,9 +25,8 @@ along with the [Open Bioinformatics Foundation](http://open-bio.org),
 who generously provide web and [CVS](CVS "wikilink") space for the
 project.
 
-This wiki holds some of the online documentation for the project and
-will be able to help you get Biopython, install it and start using the
-tools that it contains.
+This wiki will help you get Biopython, install it and start using the
+libraries and tools.
 
 ### What you can find here
 
