@@ -1,3 +1,12 @@
+{| style="width:26em; float:right; background-color: white; border: 1px solid grey; margin: 1em; padding: 1em;"
+|- 
+|<rss>http://news.open-bio.org/news/category/obf-projects/biopython/feed/|charset=utf-8|short|data|max=4|date</rss>
+|-
+| 
+|-
+|See also our [[News|news page]], and [http://twitter.com/biopython twitter].
+|}
+
 === About the Biopython project ===
 
 The Biopython Project is an international association of developers of freely available [http://www.python.org Python] tools for computational molecular biology.
@@ -7,5 +16,3 @@ It is a distributed collaborative effort to develop Python libraries and applica
 === Download Current Release ===
 
 The latest release is Biopython 1.50 beta, released on 3 April 2009. Get it from our [[Download]] page.
-
-See the [[News|News page]] as well.
