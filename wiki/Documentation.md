@@ -53,6 +53,9 @@ below.
 
 -   Cookbook-style documentation:
 
+:\*[Cookbook documentation](Category%3ACookbook "wikilink") (on the
+wiki)
+
 :\*The Biopython Structural Bioinformatics FAQ (i.e. how to use the
 Bio.PDB module).
 
