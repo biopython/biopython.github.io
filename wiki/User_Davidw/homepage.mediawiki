@@ -1,4 +1,4 @@
-(an example of a more exciting and inviting(?) front page.)
+(an example of a more inviting(?) front page.)
 
 ===Introduction=== 
 BioPython is a set of freely available tools for biological computation written in python by an international team of developers. This wiki holds some of the online documentation for the project and will be able to help you get BioPython, install it and start using the tools that it contains
