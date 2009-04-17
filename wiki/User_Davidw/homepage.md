@@ -14,8 +14,6 @@ holds some of the online documentation for the project and will be able
 to help you get BioPython, install it and start using the tools that it
 contains
 
-------------------------------------------------------------------------
-
 |                                                                                                                                                                                                                                                                                                                                                                                          |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **News from the OBF**                                                                                                                                                                                                                                                                                                                                                                    |
@@ -24,13 +22,21 @@ contains
 
 ### What the wiki has
 
--   Getting Started
-    -   Download BioPython for your system
-    -   Install Biopython
--   Contribute
-    -   license
-    -   learn about git hub
--   Documentation
-    -   Tutorial (offsite)
-    -   Cookbook
+-   [Getting Started](Getting_Started "wikilink")
+    -   [ Download BioPython for your system](Download "wikilink")
+-   [ Get help](Documentation "wikilink")
+    -   Tutorial (off site)
+        [HTML](http://biopython.org/DIST/docs/tutorial/Tutorial.html) |
+        [PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)
+    -   [ Documentation on this
+        wiki](Category%3AWiki_Documentation "wikilink")
+    -   [ Cookbook (working examples of BioPython
+        code](Category%3ACoobook "wikilink")
+    -   [ Join the mailing lists](Mailing_lists "wikilink")
+-   [ Contribute](Contributing "wikilink")
+    -   [ What's being worked on](Active_projects "wikilink")
+    -   [ Developing on Github ](GitUsage "wikilink")
+    -   [ Build BioPython](Building_a_release "wikilink")
+    -   [Read the BioPython
+        license](http://www.biopython.org/DIST/LICENSE)
 

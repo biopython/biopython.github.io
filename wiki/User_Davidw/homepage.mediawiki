@@ -3,7 +3,8 @@
 ===Introduction=== 
 BioPython is a set of freely available tools for biological computation written in python by an international team of developers. This wiki holds some of the online documentation for the project and will be able to help you get BioPython, install it and start using the tools that it contains
 
-----
+
+
 {| style="background:lightgrey; width:50%; float:right"
 |-style="font-size:140%"
 |'''News from the OBF'''
@@ -16,12 +17,15 @@ We are pleased to announce a beta release of Biopython 1.50 for public testing. 
 Just to let you all know, Biopython is now on twitter. And in case you missed the OBF announcement last month, so is the O|B|F News feed (and BioPerl). You are welcome to follow us (all) on twitter. I'd also like to remind people there are news feeds.
 |}
 === What the wiki has ===
-* Getting Started
-** Download BioPython for your system
-** Install Biopython
-* Contribute
-** license
-** learn about git hub
-* Documentation
-** Tutorial (offsite)
-** Cookbook
+*[[Getting_Started|Getting Started]]
+** [[Download | Download BioPython for your system]]
+* [[Documentation | Get help]]
+** Tutorial (off site) [http://biopython.org/DIST/docs/tutorial/Tutorial.html HTML] | [http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF]
+** [[Category%3AWiki_Documentation | Documentation on this wiki]]
+** [[Category%3ACoobook | Cookbook (working examples of BioPython code]]
+** [[Mailing_lists | Join the mailing lists]]
+* [[Contributing | Contribute]]
+** [[Active_projects | What's being worked on]]
+** [[ GitUsage | Developing on Github ]]
+** [[ Building_a_release | Build BioPython]]
+** [http://www.biopython.org/DIST/LICENSE Read the BioPython license]
