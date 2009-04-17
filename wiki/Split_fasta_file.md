@@ -39,7 +39,7 @@ for filenumber in range(nfiles):
 # That will make a bunch of files with 1000 records, but you will almost always 
 # have some "dregs" to mop up. 
 
-if len(records) / 1000 != 0: #checking for leftovers
+if len(records) % 1000 != 0: #checking for leftovers
     lsplit_min = (nfiles+1)*1000
     last_name = ("_%s-%s." % (lsplit_min, len(records)-1)).join(in_name.split("."))
     last_handle = open(last_name, 'w')

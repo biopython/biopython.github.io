@@ -1,4 +1,3 @@
-
 == Problem ==
 
 [http://bioinfo.noble.org/plan PLAN] is a free online service for BLAST based sequence annotation provided by the Noble institute. At present the people that run PLAN limit user's queries to 1000 records. This recipe shows how to split a fasta file containing thousands of records into smaller files with filenames that include the range of records included in the file. 
@@ -24,7 +23,7 @@ for filenumber in range(nfiles):
 # That will make a bunch of files with 1000 records, but you will almost always 
 # have some "dregs" to mop up. 
 
-if len(records) / 1000 != 0: #checking for leftovers
+if len(records) % 1000 != 0: #checking for leftovers
 	lsplit_min = (nfiles+1)*1000
 	last_name = ("_%s-%s." % (lsplit_min, len(records)-1)).join(in_name.split("."))
 	last_handle = open(last_name, 'w')
