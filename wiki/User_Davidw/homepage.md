@@ -24,13 +24,6 @@ This wiki holds some of the online documentation for the project and
 will be able to help you get BioPython, install it and start using the
 tools that it contains.
 
-### Download Current Release
-
-The latest release is Biopython 1.50 beta, released on 3 April 2009. Get
-it from our [Download](Download "wikilink") page.
-
-See the [News page](News "wikilink") as well.
-
 |                                                                                                                                |
 |--------------------------------------------------------------------------------------------------------------------------------|
 | <rss><http://news.open-bio.org/news/category/obf-projects/biopython/feed/%7Ccharset=utf-8%7Cshort%7Cdata%7Cmax=4%7Cdate></rss> |
