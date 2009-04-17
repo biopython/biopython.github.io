@@ -14,7 +14,10 @@ There is a whole chapter in the
 [Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
 ([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)) on
 Bio.SeqIO, and although there is some overlap it is well worth reading
-in addition to this WIKI page.
+in addition to this WIKI page. There is also the [API
+documentation](http://biopython.org/DIST/docs/api/Bio.SeqIO-module.html)
+(which you can read online, or from within Python with the help
+command).
 
 Aims
 ----
