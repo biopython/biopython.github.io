@@ -62,6 +62,3 @@ which can be broken down thus:
 >>>(insert).join(split_name)
 'huge_run_1-1000.fasta'
 ```
-
-</source>
-
