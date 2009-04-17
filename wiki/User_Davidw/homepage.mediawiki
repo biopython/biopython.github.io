@@ -8,7 +8,7 @@ It is a distributed collaborative effort to develop Python libraries and applica
 This wiki holds some of the online documentation for the project and will be able to help you get BioPython, install it and start using the tools that it contains.
 
 === What you can find here ===
-{| style="width:25%; border:3px solid lightgrey; float:right;  margin-right:3em "
+{| style="width:35%; border:3px solid lightgrey; float:right;  margin-right:3em "
 |- style="background:white"
 |<rss>http://news.open-bio.org/news/category/obf-projects/biopython/feed/|charset=utf-8|short|data|max=4|date</rss>
 |}
