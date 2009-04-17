@@ -42,7 +42,7 @@ tools that it contains.
     -   [ Documentation on this
         wiki](Category%3AWiki_Documentation "wikilink")
     -   [ Cookbook (working examples of
-        BioPython code)](Category%3ACoobook "wikilink")
+        BioPython code)](Category%3ACookbook "wikilink")
     -   [ Join the mailing lists](Mailing_lists "wikilink")
 -   [ Contribute](Contributing "wikilink")
     -   [ What's being worked on](Active_projects "wikilink")

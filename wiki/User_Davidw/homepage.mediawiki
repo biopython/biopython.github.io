@@ -18,7 +18,7 @@ This wiki holds some of the online documentation for the project and will be abl
 * [[Documentation | Get help]]
 ** Tutorial (off site) [http://biopython.org/DIST/docs/tutorial/Tutorial.html HTML] | [http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF]
 ** [[Category%3AWiki_Documentation | Documentation on this wiki]]
-** [[Category%3ACoobook | Cookbook (working examples of BioPython code)]]
+** [[Category%3ACookbook | Cookbook (working examples of BioPython code)]]
 ** [[Mailing_lists | Join the mailing lists]]
 * [[Contributing | Contribute]]
 ** [[Active_projects | What's being worked on]]
