@@ -29,7 +29,7 @@ for filenumber in range(nfiles):
     out_handle.close()
 
 # That will make a bunch of files with 1000 records, but you will almost always 
-# have some "dregs" to mop up. e
+# have some "dregs" to mop up. 
 
 if len(records) / 1000 != 0: #checking for leftovers
     lsplit_min = (nfiles+1)*1000
@@ -45,7 +45,7 @@ else:
 The basic approach is do use [ SeqIO.parse()](SeqIO "wikilink") to read
 the contents of a fasta file into a list, then pick out subsets to write
 with [ SeqIO.write()](SeqIO "wikilink") . Perhaps the trickiest looking
-line is the one that sets each new files name:
+line is the one that sets each new file's name:
 
 ``` python
 out_name = ("_%s-%s." % (split_min+1, split_max+1)).join(in_name.split("."))
