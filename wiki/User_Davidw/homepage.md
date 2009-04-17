@@ -30,7 +30,7 @@ tools that it contains.
 |--------------------------------------------------------------------------------------------------------------------------------|
 | <rss><http://news.open-bio.org/news/category/obf-projects/biopython/feed/%7Ccharset=utf-8%7Cshort%7Cdata%7Cmax=4%7Cdate></rss> |
 
--   [Getting Started](Getting_Started "wikilink")
+-   [Get Started](Getting_Started "wikilink")
     -   [ Download BioPython for your system](Download "wikilink")
     -   Install help (off-site)
         [HTML](http://biopython.org/DIST/docs/install/Installation.html)

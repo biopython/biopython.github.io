@@ -12,7 +12,7 @@ This wiki holds some of the online documentation for the project and will be abl
 |- style="background:white"
 |<rss>http://news.open-bio.org/news/category/obf-projects/biopython/feed/|charset=utf-8|short|data|max=4|date</rss>
 |}
-*[[Getting_Started|Getting Started]]
+*[[Getting_Started|Get Started]]
 ** [[Download | Download BioPython for your system]]
 ** Install help (off-site) [http://biopython.org/DIST/docs/install/Installation.html HTML] | [http://biopython.org/DIST/docs/install/Installation.pdf PDF]
 * [[Documentation | Get help]]
