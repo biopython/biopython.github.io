@@ -1,1 +1,9 @@
-In addition to documentation included in the tutorial this wiki contains some information on a few of the core functions of BioPython, all of those pages are included in this category.
+Main sources of [[documentation]]:
+
+* The [http://biopython.org/DIST/docs/tutorial/Tutorial.html Biopython Tutorial and Cookbook] ([http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF]) contains the main bulk of the Biopython documentation. It provides information to get you started with Biopython, in addition to specific documentation on a number of modules. 
+
+* You can view the [http://biopython.org/DIST/docs/api Biopython's built-in API documentation] online (created with [http://epydoc.sourceforge.net/ Epydoc]), or from within Python using the help function.
+
+* [[Category%3ACookbook|Cookbook documentation]] (on the wiki)
+
+In addition, this wiki contains some information on a few of the core functions of Biopython, all of those pages are included in this category:
