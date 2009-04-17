@@ -12,7 +12,7 @@ layout: wiki
 
 ### Introduction
 
-BioPython is a set of freely available tools for biological computation
+Biopython is a set of freely available tools for biological computation
 written in python by an international team of developers.
 
 It is a distributed collaborative effort to develop Python libraries and
@@ -25,13 +25,13 @@ who generously provide web and [CVS](CVS "wikilink") space for the
 project.
 
 This wiki holds some of the online documentation for the project and
-will be able to help you get BioPython, install it and start using the
+will be able to help you get Biopython, install it and start using the
 tools that it contains.
 
 ### What you can find here
 
 -   [Get Started](Getting_Started "wikilink")
-    -   [ Download BioPython for your system](Download "wikilink")
+    -   [ Download Biopython for your system](Download "wikilink")
     -   Install help (off-site)
         [HTML](http://biopython.org/DIST/docs/install/Installation.html)
         | [PDF](http://biopython.org/DIST/docs/install/Installation.pdf)
@@ -42,12 +42,12 @@ tools that it contains.
     -   [ Documentation on this
         wiki](Category%3AWiki_Documentation "wikilink")
     -   [ Cookbook (working examples of
-        BioPython code)](Category%3ACookbook "wikilink")
+        Biopython code)](Category%3ACookbook "wikilink")
     -   [ Join the mailing lists](Mailing_lists "wikilink")
 -   [ Contribute](Contributing "wikilink")
     -   [ What's being worked on](Active_projects "wikilink")
     -   [ Developing on Github ](GitUsage "wikilink")
-    -   [ Build BioPython](Building_a_release "wikilink")
-    -   [Read the BioPython
+    -   [ Build Biopython](Building_a_release "wikilink")
+    -   [Read the Biopython
         license](http://www.biopython.org/DIST/LICENSE)
 

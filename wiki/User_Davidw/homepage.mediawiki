@@ -4,24 +4,24 @@
 |<rss>http://news.open-bio.org/news/category/obf-projects/biopython/feed/|charset=utf-8|short|data|max=4|date</rss>
 |}
 ===Introduction=== 
-BioPython is a set of freely available tools for biological computation written in python by an international team of developers. 
+Biopython is a set of freely available tools for biological computation written in python by an international team of developers. 
 
 It is a distributed collaborative effort to develop Python libraries and applications which address the needs of current and future work in bioinformatics. The source code is made available under the [http://www.biopython.org/DIST/LICENSE Biopython License], which is extremely liberal and compatible with almost every license in the world. We work along with the [http://open-bio.org Open Bioinformatics Foundation], who generously provide web and [[CVS]] space for the project.
 
-This wiki holds some of the online documentation for the project and will be able to help you get BioPython, install it and start using the tools that it contains.
+This wiki holds some of the online documentation for the project and will be able to help you get Biopython, install it and start using the tools that it contains.
 
 === What you can find here ===
 
 *[[Getting_Started|Get Started]]
-** [[Download | Download BioPython for your system]]
+** [[Download | Download Biopython for your system]]
 ** Install help (off-site) [http://biopython.org/DIST/docs/install/Installation.html HTML] | [http://biopython.org/DIST/docs/install/Installation.pdf PDF]
 * [[Documentation | Get help]]
 ** Tutorial (off site) [http://biopython.org/DIST/docs/tutorial/Tutorial.html HTML] | [http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF]
 ** [[Category%3AWiki_Documentation | Documentation on this wiki]]
-** [[Category%3ACookbook | Cookbook (working examples of BioPython code)]]
+** [[Category%3ACookbook | Cookbook (working examples of Biopython code)]]
 ** [[Mailing_lists | Join the mailing lists]]
 * [[Contributing | Contribute]]
 ** [[Active_projects | What's being worked on]]
 ** [[ GitUsage | Developing on Github ]]
-** [[ Building_a_release | Build BioPython]]
-** [http://www.biopython.org/DIST/LICENSE Read the BioPython license]
+** [[ Building_a_release | Build Biopython]]
+** [http://www.biopython.org/DIST/LICENSE Read the Biopython license]
