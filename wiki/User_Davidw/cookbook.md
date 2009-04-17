@@ -6,7 +6,7 @@ layout: wiki
 
 [PLAN](http://bioinfo.noble.org/plan) is a free online service for BLAST
 based sequence annotation provided by the Noble institute. At present
-the people that run PLAN limit users querie's to 1000 records. This
+the people that run PLAN limit user's queries to 1000 records. This
 recipe shows how to split a fasta file containing thousands of records
 into smaller files with filenames that include the range of records
 included in the file.
@@ -43,9 +43,9 @@ else:
 ```
 
 The basic approach is do use [ SeqIO.parse()](SeqIO "wikilink") to read
-the contents of a fasta file into a list, then pick out subsets to
-write. Perhaps the trickiest looking line is the one that sets each new
-files name:
+the contents of a fasta file into a list, then pick out subsets to write
+with [ SeqIO.write()](SeqIO "wikilink") . Perhaps the trickiest looking
+line is the one that sets each new files name:
 
 ``` python
 out_name = ("_%s-%s." % (split_min+1, split_max+1)).join(in_name.split("."))
