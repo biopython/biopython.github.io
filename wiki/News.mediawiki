@@ -1,10 +1,9 @@
-[http://news.open-bio.org/news/category/obf-projects/biopython/ Biopython News] is posted on the [[obf:OBF|Open Bioinformatics Foundation]] shared [http://news.open-bio.org/news/ news server].  Here are the latest headlines:
-
-<rss>http://news.open-bio.org/news/category/obf-projects/biopython/feed/|charset=utf-8|short|data|max=4|date</rss>
-
+[http://news.open-bio.org/news/category/obf-projects/biopython/ Biopython News] is posted on the [[obf:OBF|Open Bioinformatics Foundation]] shared [http://news.open-bio.org/news/ news server].
 If you use news-reader software you can subscribe to Biopython news using the [http://news.open-bio.org/news/category/obf-projects/biopython/feed/rdf RDF],
 [http://news.open-bio.org/news/category/obf-projects/biopython/feed/rss RSS],
 [http://news.open-bio.org/news/category/obf-projects/biopython/feed/rss2 RSS2] or
 [http://news.open-bio.org/news/category/obf-projects/biopython/feed/atom Atom] feed.
+
+<rss>http://news.open-bio.org/news/category/obf-projects/biopython/feed/rdf|charset=utf-8|date|max=4</rss>
 
 See also the latest version of [http://biopython.open-bio.org/SRC/biopython/NEWS the NEWS file] included with each release.
