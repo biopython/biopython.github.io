@@ -1,5 +1,8 @@
 (an example of a more inviting(?) front page.)
-
+{| style="width:30%; background:lightgrey; float:right;  margin-right:3em "
+|- 
+|<rss>http://news.open-bio.org/news/category/obf-projects/biopython/feed/|charset=utf-8|short|data|max=4|date</rss>
+|}
 ===Introduction=== 
 BioPython is a set of freely available tools for biological computation written in python by an international team of developers. 
 
@@ -8,10 +11,7 @@ It is a distributed collaborative effort to develop Python libraries and applica
 This wiki holds some of the online documentation for the project and will be able to help you get BioPython, install it and start using the tools that it contains.
 
 === What you can find here ===
-{| style="width:35%; border:3px solid lightgrey; float:right;  margin-right:3em "
-|- style="background:white"
-|<rss>http://news.open-bio.org/news/category/obf-projects/biopython/feed/|charset=utf-8|short|data|max=4|date</rss>
-|}
+
 *[[Getting_Started|Get Started]]
 ** [[Download | Download BioPython for your system]]
 ** Install help (off-site) [http://biopython.org/DIST/docs/install/Installation.html HTML] | [http://biopython.org/DIST/docs/install/Installation.pdf PDF]
