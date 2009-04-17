@@ -194,6 +194,11 @@ source](http://biopython.org/DIST/docs/presentations/scripting.tar.gz)
 [tarball with LaTeX
 source](http://biopython.org/DIST/docs/presentations/biopy_group.tar.gz)
 
+-   Laptop session at "2009 Biología Computacional de Proteínas
+    workshop" at Quilmes National University
+    :[HTML](http://www.bioinformatica.info/biopython/) (requires Crunchy
+    to try the code online)
+
 #### Logo
 
 Read more about the [Biopython logo](Logo "wikilink").
