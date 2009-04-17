@@ -33,13 +33,12 @@ tools that it contains.
 
 -   [Get Started](Getting_Started "wikilink")
     -   [ Download Biopython for your system](Download "wikilink")
-    -   Install help (off-site)
-        [HTML](http://biopython.org/DIST/docs/install/Installation.html)
-        | [PDF](http://biopython.org/DIST/docs/install/Installation.pdf)
+    -   [Installation
+        help](http://biopython.org/DIST/docs/install/Installation.html)
+        ([PDF](http://biopython.org/DIST/docs/install/Installation.pdf))
 -   [ Get help](Documentation "wikilink")
-    -   Tutorial (off site)
-        [HTML](http://biopython.org/DIST/docs/tutorial/Tutorial.html) |
-        [PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)
+    -   [Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
+        ([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf))
     -   [ Documentation on this
         wiki](Category%3AWiki_Documentation "wikilink")
     -   [ Cookbook (working examples of
