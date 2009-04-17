@@ -1,20 +1,13 @@
-(an example of a more exciting and inviting(?) front page.
+(an example of a more exciting and inviting(?) front page.)
 
 ===Introduction=== 
 BioPython is a set of freely available tools for biological computation written in python by an international team of developers. This wiki holds some of the online documentation for the project and will be able to help you get BioPython, install it and start using the tools that it contains
 
 
 
-{| style="background:lightgrey; width:50%; float:right"
-|-style="font-size:140%"
-|'''News from the OBF'''
-
+{| style="width:50%; border:4px solid lightgrey; float:right"
 |- style="background:white"
-| '''Biopython 1.50 beta released'''
-We are pleased to announce a beta release of Biopython 1.50 for public testing. There have been some significant changes since Biopython 1.49 was released late last year. GenomeDiagram by Leighton Pritchard has been integrated into Biopython as the Bio.Graphics.GenomeDiagram module. A new module Bio.Motif has been added, which is intended to
-|- style="background:white"
-|'''Biopython on twitter''' 
-Just to let you all know, Biopython is now on twitter. And in case you missed the OBF announcement last month, so is the O|B|F News feed (and BioPerl). You are welcome to follow us (all) on twitter. I'd also like to remind people there are news feeds.
+|<rss>http://news.open-bio.org/news/category/obf-projects/biopython/feed/|charset=utf-8|short|data|max=4|date</rss>
 |}
 === What the wiki has ===
 *[[Getting_Started|Getting Started]]
@@ -22,7 +15,7 @@ Just to let you all know, Biopython is now on twitter. And in case you missed th
 * [[Documentation | Get help]]
 ** Tutorial (off site) [http://biopython.org/DIST/docs/tutorial/Tutorial.html HTML] | [http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF]
 ** [[Category%3AWiki_Documentation | Documentation on this wiki]]
-** [[Category%3ACoobook | Cookbook (working examples of BioPython code]]
+** [[Category%3ACoobook | Cookbook (working examples of BioPython code)]]
 ** [[Mailing_lists | Join the mailing lists]]
 * [[Contributing | Contribute]]
 ** [[Active_projects | What's being worked on]]
