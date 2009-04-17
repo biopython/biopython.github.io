@@ -44,13 +44,14 @@ else:
 
 The basic approach is do use [ SeqIO.parse()](SeqIO "wikilink") to read
 the contents of a fasta file into a list, then pick out subsets to
-write. Perhaps the trickiest looking line is this one:
+write. Perhaps the trickiest looking line is the one that sets each new
+files name:
 
 ``` python
 out_name = ("_%s-%s." % (split_min+1, split_max+1)).join(in_name.split("."))
 ```
 
-which can be broken down
+which can be broken down thus:
 
 ``` python
 >>> insert = "_%s-%s." % (1, 1000)
