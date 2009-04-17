@@ -1,4 +1,4 @@
-{| style="width:26em; float:right; background-color: white; border: 1px solid grey; margin: 1em; padding: 1em;"
+{| style="width:26em; float:right; background-color: white; border: 1px solid grey; margin: 0em 1em 0em 1em; padding: 1em;"
 |- 
 |<rss>http://news.open-bio.org/news/category/obf-projects/biopython/feed/|charset=utf-8|short|data|max=4|date</rss>
 |-
