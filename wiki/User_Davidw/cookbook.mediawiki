@@ -8,7 +8,7 @@ records = list(SeqIO.parse(open(in_name, 'r'), "fasta"))
 nfiles = len(records)/1000
 
 for filenumber in range(nfiles):
-	split_min = filenumber*1000 #(python lists start at 0)
+	split_min = filenumber*1000 
 	split_max = ((filenumber+1)*1000)-1
 	seqs = records[split_min:split_max]
 	out_name = ("_%s-%s." % (split_min+1, split_max+1)).join(in_name.split("."))
