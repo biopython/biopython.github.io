@@ -1,7 +1,17 @@
 (an example of a more inviting(?) front page.)
 
 ===Introduction=== 
-BioPython is a set of freely available tools for biological computation written in python by an international team of developers. This wiki holds some of the online documentation for the project and will be able to help you get BioPython, install it and start using the tools that it contains
+BioPython is a set of freely available tools for biological computation written in python by an international team of developers. 
+
+It is a distributed collaborative effort to develop Python libraries and applications which address the needs of current and future work in bioinformatics. The source code is made available under the [http://www.biopython.org/DIST/LICENSE Biopython License], which is extremely liberal and compatible with almost every license in the world. We work along with the [http://open-bio.org Open Bioinformatics Foundation], who generously provide web and [[CVS]] space for the project.
+
+This wiki holds some of the online documentation for the project and will be able to help you get BioPython, install it and start using the tools that it contains.
+
+=== Download Current Release ===
+
+The latest release is Biopython 1.50 beta, released on 3 April 2009. Get it from our [[Download]] page.
+
+See the [[News|News page]] as well.
 
 
 
@@ -9,7 +19,7 @@ BioPython is a set of freely available tools for biological computation written 
 |- style="background:white"
 |<rss>http://news.open-bio.org/news/category/obf-projects/biopython/feed/|charset=utf-8|short|data|max=4|date</rss>
 |}
-=== What the wiki has ===
+=== What you can find here ===
 *[[Getting_Started|Getting Started]]
 ** [[Download | Download BioPython for your system]]
 * [[Documentation | Get help]]
