@@ -32,6 +32,10 @@ tools that it contains.
 
 -   [Getting Started](Getting_Started "wikilink")
     -   [ Download BioPython for your system](Download "wikilink")
+    -   Install help (off-site)
+        [HTML](http://biopython.org/DIST/docs/install/Installation.html)
+        | \[<http://biopython.org/DIST/docs/install/Installation.pdf>
+        PDF
 -   [ Get help](Documentation "wikilink")
     -   Tutorial (off site)
         [HTML](http://biopython.org/DIST/docs/tutorial/Tutorial.html) |

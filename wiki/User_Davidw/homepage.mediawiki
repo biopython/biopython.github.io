@@ -14,6 +14,7 @@ This wiki holds some of the online documentation for the project and will be abl
 |}
 *[[Getting_Started|Getting Started]]
 ** [[Download | Download BioPython for your system]]
+** Install help (off-site) [http://biopython.org/DIST/docs/install/Installation.html HTML] | [http://biopython.org/DIST/docs/install/Installation.pdf PDF
 * [[Documentation | Get help]]
 ** Tutorial (off site) [http://biopython.org/DIST/docs/tutorial/Tutorial.html HTML] | [http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF]
 ** [[Category%3AWiki_Documentation | Documentation on this wiki]]
