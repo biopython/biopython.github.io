@@ -50,6 +50,11 @@ bugzilla interface.
     R/Bioconductor](http://www.bioconductor.org/packages/bioc/html/GEOquery.html).
     See also [this page](http://www.warwick.ac.uk/go/peter_cock/r/geo/).
 
+<!-- -->
+
+-   Roche 454 SFF support in Bio.SeqIO is being discussed on the
+    mailing lists.
+
 Enhancement list
 ----------------
 

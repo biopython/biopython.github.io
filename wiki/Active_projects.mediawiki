@@ -18,6 +18,8 @@ Please add any ideas or proposals for new additions to Biopython. Bugs and enhan
 
 * Revamp the GEO SOFT parser, drawing on the ideas used in [http://www.bioconductor.org/packages/bioc/html/GEOquery.html Sean Davis' GEOquery parser in R/Bioconductor].  See also [http://www.warwick.ac.uk/go/peter_cock/r/geo/ this page].
 
+* Roche 454 SFF support in Bio.SeqIO is being discussed on the mailing lists.
+
 == Enhancement list ==
 
 Maintaining software involves incremental improvements for new format changes and removal of bugs. Please see our [http://bugzilla.open-bio.org/ bugzilla] page for a current list. Post to the developer mailing list if you are interested in tackling any open issues.
