@@ -12,12 +12,18 @@ Problem
 With modern sequencing technologies it has become relatively cheap and
 easy to generate very large datasets. In fact, there are times when one
 can have too much data in one file, online resources like
-[PLAN](http://bioinfo.noble.org/plan) limit the size of users queries.
-In such cases it useful to be able to split a sequence file into a set
-of smaller files, each containing a subset of original file's sequences.
+[PLAN](http://bioinfo.noble.org/plan) or
+[TMHMM](http://www.cbs.dtu.dk/services/TMHMM/) limit the size of users
+queries. In such cases it useful to be able to split a sequence file
+into a set of smaller files, each containing a subset of original file's
+sequences.
 
 Solution
 --------
+
+There are many possible ways to solve this general problem, this recipe
+uses a generator function to avoid having all the data in memory at
+once.
 
 ``` python
 def batch_iterator(iterator, batch_size) :
@@ -45,7 +51,14 @@ def batch_iterator(iterator, batch_size) :
                 break
             batch.append(iterator.next())
         yield batch
- 
+```
+
+Here is an example using this function to divide up a large FASTQ file,
+SRR014849.fastq (from this [compressed
+file](ftp://ftp.ncbi.nlm.nih.gov/sra/static/SRX003/SRX003639/SRR014849.fastq.gz)
+at the NCBI):
+
+``` python
 from Bio import SeqIO
 record_iter = SeqIO.parse(open("SRR014849.fastq"),"fastq")
 for i, batch in enumerate(batch_iterator(record_iter, 10000)) :
@@ -56,15 +69,28 @@ for i, batch in enumerate(batch_iterator(record_iter, 10000)) :
     print "Wrote %i records to %s" % (count, filename)
 ```
 
-And the output using SRR014849.fastq from this [compressed
-file](ftp://ftp.ncbi.nlm.nih.gov/sra/static/SRX003/SRX003639/SRR014849.fastq.gz)
-at the NCBI.
+And the output:
 
 `Wrote 10000 records to group_1.fastq`  
 `Wrote 10000 records to group_2.fastq`  
 `Wrote 10000 records to group_3.fastq`  
 `Wrote 10000 records to group_4.fastq`  
 `Wrote 7348 records to group_5.fastq`
+
+You can modify this recipe to use any input and output formats supported
+by [Bio.SeqIO](SeqIO "wikilink"), for example to break up a large FASTA
+file into units of 1000 sequences:
+
+``` python
+from Bio import SeqIO
+record_iter = SeqIO.parse(open("large.fasta"),"fasta")
+for i, batch in enumerate(batch_iterator(record_iter, 1000)) :
+    filename = "group_%i.fasta" % (i+1)
+    handle = open(filename, "w")
+    count = SeqIO.write(batch, handle, "fasta")
+    handle.close()
+    print "Wrote %i records to %s" % (count, filename)
+```
 
 How it works
 ------------
