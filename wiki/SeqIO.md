@@ -229,7 +229,7 @@ File Format Conversion
 Suppose you have a GenBank file which you want to turn into a Fasta
 file. For example, lets consider the file
 '[cor6\_6.gb](http://biopython.open-bio.org/SRC/biopython/Tests/GenBank/cor6_6.gb)'
-which is included in the BioPython unit tests under the GenBank
+which is included in the Biopython unit tests under the GenBank
 directory.
 
 You could read the file like this, using the **Bio.SeqIO.parse()**
