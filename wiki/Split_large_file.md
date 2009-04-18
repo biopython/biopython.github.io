@@ -9,9 +9,9 @@ tags:
 Problem
 -------
 
-With modern sequencing technologies it has become relatively cheap easy
-to generate very large datasets. In fact, there are times when one can
-have too much data in one file, online resources like
+With modern sequencing technologies it has become relatively cheap and
+easy to generate very large datasets. In fact, there are times when one
+can have too much data in one file, online resources like
 [PLAN](http://bioinfo.noble.org/plan) limit the size of users queries.
 In such cases it useful to be able to split a sequence file into a set
 of smaller files, each containing a subset of original file's sequences.
