@@ -26,6 +26,12 @@ below.
 [HTML](http://biopython.org/DIST/docs/tutorial/Tutorial.html) |
 [PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)
 
+-   API documentation for Biopython modules is generated directly from
+    source code comments using [Epydoc](http://epydoc.sourceforge.net/).
+
+  
+[HTML](http://biopython.org/DIST/docs/api)
+
 -   Wiki documentation,
 
 :\* [Seq](Seq "wikilink") and [SeqRecord](SeqRecord "wikilink") objects
@@ -76,14 +82,6 @@ Bio.PDB module).
 -   Instructions for [building a release](building_a_release "wikilink")
     of Biopython.
 -   Details about the biopython.org [website](website "wikilink").
-
-#### API Documentation
-
--   Documentation for Biopython modules is generated directly from
-    source code comments using [Epydoc](http://epydoc.sourceforge.net/).
-
-  
-[HTML](http://biopython.org/DIST/docs/api)
 
 #### Online Course Notes
 
