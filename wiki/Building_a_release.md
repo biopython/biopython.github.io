@@ -24,11 +24,11 @@ Build Biopython in 21 easy steps!!
 4. add any important info to NEWS or DEPRECATED - you can get a log of
 recent CVS changes like this (adjust the date accordingly):
 
-`   > cvs log -b -N -S -d'>2008-09-08'`
+`   > cvs log -b -N -S -d'>2009-04-20'`
 
 5. make sure CONTRIB still current
 
-6. make sure setup.py still up to date
+6. make sure setup.py is still up to date
 
 -   Are there any new modules which should get installed?
 -   You don't need to update version in setup.py itself (this is now
@@ -61,7 +61,8 @@ recent CVS changes like this (adjust the date accordingly):
 
 `   > python setup.py sdist --manifest-only `
 
-12. make sure the regression tests run here
+12. make sure the regression tests run here (anything with C code won't
+work of course, as we haven't compiled it).
 
 `   drevil:~tmp1/biopython/Tests/> python run_tests.py`
 
