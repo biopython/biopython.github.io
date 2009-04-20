@@ -93,9 +93,9 @@ work of course, as we haven't compiled it).
     directory. Running epydoc in your CVS tree works, but can miss some
     packages due to import errors.
 
-`   epydoc -o api -u `[`http://biopython.org`](http://biopython.org)` -n Biopython --docformat plaintext Bio BioSQL Martel`
+`   epydoc -o ~/api -u `[`http://biopython.org`](http://biopython.org)` -n Biopython --docformat plaintext Bio BioSQL Martel`
 
--   Move the generated api directory to replace
+-   Move the generated ~/api directory to replace
     /home/websites/biopython.org/html/static/DIST/docs/api/ on
     biopython.org (aka portal.open-bio.org).
 
