@@ -10,7 +10,7 @@ layout: wiki
 |                                                                                                                                |
 | See also our [news page](News "wikilink"), and [twitter](http://twitter.com/biopython).                                        |
 
-### About the Biopython project
+### About the Biopython Project
 
 The Biopython Project is an international association of developers of
 freely available [Python](http://www.python.org) tools for computational
@@ -25,7 +25,15 @@ along with the [Open Bioinformatics Foundation](http://open-bio.org),
 who generously provide web and [CVS](CVS "wikilink") space for the
 project.
 
+### Using Biopython
+
+See [Getting Started](Getting_Started "wikilink") and our
+[Documentation](Documentation "wikilink"), in particular the [Biopython
+Tutorial and
+Cookbook](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
+([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)).
+
 ### Download Current Release
 
-The latest release is Biopython 1.50 beta, released on 3 April 2009. Get
-it from our [Download](Download "wikilink") page.
+The latest release is Biopython 1.50, released on 20 April 2009. Get it
+from our [Download](Download "wikilink") page.
