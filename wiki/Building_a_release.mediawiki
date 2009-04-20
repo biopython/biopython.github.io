@@ -71,7 +71,7 @@ Build Biopython in 21 easy steps!!
 
 19. update the [[website]]:
 * add to [[Main_Page|main page]] and [[Download|downloads page]] (through the wiki)
-* post the announcement on [http://news.open-bio.org news.open-bio.org] (which will update the [[News|news page]] via the news feed)
+* post the announcement on [http://news.open-bio.org news.open-bio.org] (which will update the [[News|news page]] and [http://twitter.com/Biopython twitter] via the news feed)
 * make sure links work
 * add the new version to [http://bugzilla.open-bio.org/ Bugzilla]
 

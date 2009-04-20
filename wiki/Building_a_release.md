@@ -109,7 +109,8 @@ on biopython.org (aka portal.open-bio.org).
     page](Download "wikilink") (through the wiki)
 -   post the announcement on
     [news.open-bio.org](http://news.open-bio.org) (which will update the
-    [news page](News "wikilink") via the news feed)
+    [news page](News "wikilink") and
+    [twitter](http://twitter.com/Biopython) via the news feed)
 -   make sure links work
 -   add the new version to [Bugzilla](http://bugzilla.open-bio.org/)
 
