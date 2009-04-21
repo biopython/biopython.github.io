@@ -1,5 +1,5 @@
 (an example of a more inviting(?) front page.)
-{| style="width:30%; border: 1pt #fabd23 solid; float:right;  margin-left:3em "
+{| style="width:30%; border: 1pt black solid; float:right;  margin-left:3em "
 |- 
 |<rss>http://news.open-bio.org/news/category/obf-projects/biopython/feed/|charset=utf-8|short|data|max=4|date</rss>
 |}
@@ -10,18 +10,23 @@ It is a distributed collaborative effort to develop Python libraries and applica
 
 This wiki will help you get Biopython, install it and start using the libraries and tools.
 
-=== What you can find here ===
-
-*[[Getting_Started|Get Started]]
-** [[Download | Download Biopython for your system]]
-** [http://biopython.org/DIST/docs/install/Installation.html Installation help] ([http://biopython.org/DIST/docs/install/Installation.pdf PDF])
-* [[Documentation | Get help]]
-** [http://biopython.org/DIST/docs/tutorial/Tutorial.html Tutorial] ([http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF])
-** [[Category%3AWiki_Documentation | Documentation on this wiki]]
-** [[Category%3ACookbook | Cookbook (working examples of Biopython code)]]
-** [[Mailing_lists | Join the mailing lists]]
-* [[Contributing | Contribute]]
-** [[Active_projects | What's being worked on]]
-** [[ GitUsage | Developing on Github ]]
-** [[ Building_a_release | Build Biopython]]
-** [http://www.biopython.org/DIST/LICENSE Read the Biopython license]
+{| cellpadding="4"
+|-style=" font-size:130%"
+![[Getting_Started|Get Started]]
+![[Documentation | Get help]]
+![[Contributing | Contribute]]
+|-style="vertical-align:top; text-align:left"
+!
+*[[Download | Download Biopython for your system]]
+*[http://biopython.org/DIST/docs/install/Installation.html Installation help] ([http://biopython.org/DIST/docs/install/Installation.pdf PDF])
+!
+*[http://biopython.org/DIST/docs/tutorial/Tutorial.html Tutorial] ([http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF])
+*[[Category%3AWiki_Documentation | Documentation on this wiki]]
+*[[Category%3ACookbook | Cookbook (working examples of Biopython code)]]
+*[[Mailing_lists | Join the mailing lists]]
+!
+*[[Active_projects | What's being worked on]]
+*[[ GitUsage | Developing on Github ]]
+*[[ Building_a_release | Build Biopython]]
+*[http://www.biopython.org/DIST/LICENSE Read the Biopython license]
+|}

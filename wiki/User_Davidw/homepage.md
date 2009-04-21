@@ -28,25 +28,15 @@ project.
 This wiki will help you get Biopython, install it and start using the
 libraries and tools.
 
-### What you can find here
+| [Get Started](Getting_Started "wikilink")                                                                                                          | [ Get help](Documentation "wikilink")                                                                                               | [ Contribute](Contributing "wikilink")                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| -   [ Download Biopython for your system](Download "wikilink")                                                                                     
+ -   [Installation help](http://biopython.org/DIST/docs/install/Installation.html) ([PDF](http://biopython.org/DIST/docs/install/Installation.pdf))  | -   [Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html) ([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)) 
+                                                                                                                                                      -   [ Documentation on this wiki](Category%3AWiki_Documentation "wikilink")                                                          
+                                                                                                                                                      -   [ Cookbook (working examples of Biopython code)](Category%3ACookbook "wikilink")                                                 
+                                                                                                                                                      -   [ Join the mailing lists](Mailing_lists "wikilink")                                                                              | -   [ What's being worked on](Active_projects "wikilink")               
+                                                                                                                                                                                                                                                                                            -   [ Developing on Github ](GitUsage "wikilink")                        
+                                                                                                                                                                                                                                                                                            -   [ Build Biopython](Building_a_release "wikilink")                    
+                                                                                                                                                                                                                                                                                            -   [Read the Biopython license](http://www.biopython.org/DIST/LICENSE)  |
 
--   [Get Started](Getting_Started "wikilink")
-    -   [ Download Biopython for your system](Download "wikilink")
-    -   [Installation
-        help](http://biopython.org/DIST/docs/install/Installation.html)
-        ([PDF](http://biopython.org/DIST/docs/install/Installation.pdf))
--   [ Get help](Documentation "wikilink")
-    -   [Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
-        ([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf))
-    -   [ Documentation on this
-        wiki](Category%3AWiki_Documentation "wikilink")
-    -   [ Cookbook (working examples of
-        Biopython code)](Category%3ACookbook "wikilink")
-    -   [ Join the mailing lists](Mailing_lists "wikilink")
--   [ Contribute](Contributing "wikilink")
-    -   [ What's being worked on](Active_projects "wikilink")
-    -   [ Developing on Github ](GitUsage "wikilink")
-    -   [ Build Biopython](Building_a_release "wikilink")
-    -   [Read the Biopython
-        license](http://www.biopython.org/DIST/LICENSE)
 
