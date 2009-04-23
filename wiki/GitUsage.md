@@ -330,6 +330,7 @@ Additional Resources
 
 There are a lot of different nice guides to using Git on the web:
 
+-   [Git Community Book](http://book.git-scm.com/)
 -   [Understanding Git
     Conceptually](http://www.eecs.harvard.edu/~cduan/technical/git/)
 -   [git ready: git tips](http://gitready.com/)
