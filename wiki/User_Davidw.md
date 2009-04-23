@@ -4,4 +4,6 @@ permalink: wiki/User:Davidw
 layout: wiki
 ---
 
-Hi, I didn't like my name being red, so I made a page for me.
+Hi, I'm David, I'm going to be helping with biopythons
+news/communication effort with the news blog and perhaps keeping this
+place up to date.
