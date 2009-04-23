@@ -1,0 +1,77 @@
+== Problem ==
+
+Sometimes it is useful to be able represent a contig produced as part of genome or EST assembly as an alignment (eg to search for potential SNPs in runs from mixed samples or to be able to write a contig out in a way it can be viewed more easily). For assemblies that use the ACE file format we can use Biopython's ACE handling to add reads that make a contig to a generic alignment.' 
+== Solution ==
+
+Let's represent contig in the ACE file that is used in biopython's testing framework: ~/biopython/Tests/Ace/contig1.ace as an example
+<source lang=python>
+from Bio.Sequencing import Ace
+from Bio.Align.Generic import Alignment
+from Bio.Alphabet import IUPAC, Gapped
+
+def cut_ends(read, start, end):
+  '''Slices a sequence exlude sequences in a clipping mask wile maintaining
+  the sequences length (important for alignments)'''
+  return (start-1) * '-' + read[start-1:end] + (end +1) * '-'
+
+def pad_read(read, start, conlength):
+  '''Pad out the front and the end of a a sequence so it is the same length
+  as an alignments consensus sequence and keeps aligned.
+  
+  The start argument is the position of the first base of the sequence in
+  the contig it is part of, if the start value is negative (or 0 since ACE
+  files count from 1, not 0) we need to take some sequence off the start
+  otherwise each end is padded with gaps.
+  '''
+  if start < 1:
+    seq = read[-1*start+1:]
+  else:
+    seq = (start-1) * '-' + read
+  seq = seq + (conlength-len(seq)) * '-'
+  return seq[:conlength]
+  
+
+# We will use the Ace parser to read individual contigs from file. Be aware
+# that the parser is officially 'deprecated' because, due to the nature
+# of the ace files it will often miss WA, CT, RT and WR tags (which programs
+# can put anywhere in the file. (Read the file specification here
+# http://bozeman.mbt.washington.edu/consed/distributions/README.14.0.txt)
+# if you need these tags you'll need to use  Ace.read() (and lots of RAM).
+
+ace_gen = Ace.parse(open("contig1.ace", 'r'))
+contig = ace_gen.next()
+align = Alignment(Gapped(IUPAC.ambiguous_dna, "-"))
+
+# Now we have started our alignment we can add sequences to it, 
+# we will loop through contig's reads and get QA clipping from
+# .reads[readnumber].qa and the position of each read in the contig
+# .af[readnumber].padded_start and use the functions above to cut and 
+# pad the sequences before they are added
+
+for readn in range(len(contig.reads)):
+    clipst = contig.reads[readn].qa.qual_clipping_start
+    clipe = contig.reads[readn].qa.qual_clipping_end
+    start = contig.af[readn].padded_start
+    seq = cut_ends(contig.reads[readn].rd.sequence, clipst, clipe)
+    seq = pad_read(seq, start, len(contig.sequence))
+    align.add_sequence("read%i" % (readn + 1), seq)
+</source>
+
+and when you print the alignment, or the sequences within it
+<source lang=python>
+>>>print align
+Gapped(IUPACAmbiguousDNA(), '-') alignment with 2 rows and 856 columns
+--------------------------------------------...--- read1
+------GGATTGCCCTagtaacGGCGAGTGAAGCGGCAACAGCT...--- read2
+
+>>> for read in align:
+...    print read.seq[80:159]
+tt*gtagagggaTGCTTCTGGGTAGCGACCGGTCTAAGTTCCTCGGAACAGGACGTCATAGAGGGTGAGAATCCCGTAT                                                                  
+TTTGTAGAGG*ATGCTTCTGGGTAGCGACCGGTCTAAGTTCCTCGGAACAGGACGTCATAGAGGGTGAGAATCCCGTAT
+</source>
+
+You can also now write the alignment to any format you want to using [[AlignIO]].
+
+== Discussion==
+
+The details are given in the comments above, in broad strokes the ACE contig is read in with Ace.parse(), a generic alignment is started then the reads from the contig are added to the new alignment. 
