@@ -35,11 +35,10 @@ def pad_read(read, start, conlength):
   
 
 # We will use the Ace parser to read individual contigs from file. Be aware
-# that the parser is officially 'deprecated' because, due to the nature
-# of the ace files it will often miss WA, CT, RT and WR tags (which programs
-# can put anywhere in the file. (Read the file specification here
-# http://bozeman.mbt.washington.edu/consed/distributions/README.14.0.txt)
-# if you need these tags you'll need to use  Ace.read() (and lots of RAM).
+# that using this iterator can miss WA, CT, RT and WR tags (which can be
+# anywhere in the file, e.g. the end). Read the file specification here:
+# http://bozeman.mbt.washington.edu/consed/distributions/README.14.0.txt
+# If you need these tags you'll need to use  Ace.read() (and lots of RAM).
 
 ace_gen = Ace.parse(open("contig1.ace", 'r'))
 contig = ace_gen.next()
