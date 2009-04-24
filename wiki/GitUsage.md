@@ -262,10 +262,10 @@ Merging upstream changes
 ------------------------
 
 We recommend that you don't actually make any changes to the **master**
-branch in your local repository (or any copy you keep on github).
-Instead, use named branches to do any of your own work. The advantage of
-this approach it is the trivial to pull the upstream **master** (i.e.
-the official Biopython branch) to your repository.
+branch in your local repository (or your fork on github). Instead, use
+named branches to do any of your own work. The advantage of this
+approach it is the trivial to pull the upstream **master** (i.e. the
+official Biopython branch) to your repository.
 
 Assuming you have issued this command (you only need to do this once):
 
