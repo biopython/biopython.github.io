@@ -81,27 +81,25 @@ If you want other people to see your changes, however, you publish your reposito
 
 == Forking Biopython with your GitHub account ==
 
-If you are logged in to GitHub, you can go to the Biopython repository page
+If you are logged in to GitHub, you can go to the Biopython repository page:
  http://github.com/biopython/biopython/tree/master
-and click on a button named 'Fork'. This will create a fork (basically a copy) of the official Biopython repository, publicly viewable on GitHub, but listed under your personal account. It should be visible under a URL that looks like this <code>http://github.com/<your username>/biopython</code>
+and click on a button named 'Fork'. This will create a fork (basically a copy) of the official Biopython repository, publicly viewable on GitHub, but listed under your personal account. It should be visible under a URL that looks like this:
+ http://github.com/yourusername/biopython
 
-Since your branch of Biopython is publicly visible, it's considered a good practice to change the description and homepage fields to something meaningful (i.e. different from the ones copied from the official repository). You can also rename your branch, names such as biopython-new_feature_name are advised for branches used for development of a particular feature.
+Since your new Biopython repository is publicly visible, it's considered good practice to change the description and homepage fields to something meaningful (i.e. different from the ones copied from the official repository).
 
-Now, assuming that you have Git installed on your computer, execute the following commands locally on your machine:
+Now, assuming that you have git installed on your computer, execute the following commands locally on your machine:
 
- git clone git@github.com:<your username>/biopython.git
+ git clone git@github.com:yourusername/biopython.git
 
-Where <your username>, not surprisingly, stands for your GitHub username.
+Where <yourusername>, not surprisingly, stands for your GitHub username.
 You have just created a local copy of the Biopython repository on your machine.
 
-You may want to also link your branch with the official distribution:
+You may want to also link your branch with the official distribution (see below on how to keep your copy in sync):
 
- git remote add official_dist git://github.com/biopython/biopython.git
+ git remote add upstream git://github.com/biopython/biopython.git
 
-You can find more info here:
-http://github.com/guides/keeping-a-git-fork-in-sync-with-the-forked-repo
-
-To add additional contributors to your branch on GitHub, select 'edit' and then add them to the 'Repository Collaborators' section. You will need to know their username on GitHub.
+To add additional contributors to your repository on GitHub (i.e. people you want to be able to commit to it), select 'edit' and then add them to the 'Repository Collaborators' section. You will need to know their username on GitHub.
 
 == Making changes locally ==
 
