@@ -165,8 +165,8 @@ complete history). You can now make local changes and commit them to
 this local copy (although we advise you to use named branches for this,
 and keep the master branch in sync with the official Biopython code).
 
-If you want other people to see your changes, however, you publish your
-repository to a public server yourself (e.g. on GitHub).
+If you want other people to see your changes, however, you must publish
+your repository to a public server yourself (e.g. on GitHub).
 
 Forking Biopython with your GitHub account
 ------------------------------------------
