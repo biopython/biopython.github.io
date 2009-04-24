@@ -114,7 +114,11 @@ To check which branch you are on, use:
 
  git branch
 
-Let us assume you've made changes to the file Bio/x.py. You need to add this file to your change-set:
+Let us assume you've made changes to the file Bio/x.py.  Try this:
+
+ git status
+
+So commit this change you first need to explicitly add this file to your change-set:
  git add Bio/x.py
 and now you commit:
  git commit -m "added feature Y in Bio.x"
