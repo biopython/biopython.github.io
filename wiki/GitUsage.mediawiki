@@ -75,9 +75,9 @@ Getting a copy of the repository (called "cloning" in Git terminology) without G
 
   git clone git://github.com/biopython/biopython.git
 
-This command creates a local copy of the entire Biopython repository on your machine (your own personal copy of the official repository with its complete history).  You can now make local changes and commit them to this local copy.
+This command creates a local copy of the entire Biopython repository on your machine (your own personal copy of the official repository with its complete history).  You can now make local changes and commit them to this local copy (although we advise you to use named branches for this, and keep the master branch in sync with the official Biopython code).
 
-If you want other people to see your changes, however, you need to take care of publishing your branch to a public server yourself. Alternatively, using GitHub takes care of this for you.
+If you want other people to see your changes, however, you publish your repository to a public server yourself (e.g. on GitHub).
 
 == Forking Biopython with your GitHub account ==
 
