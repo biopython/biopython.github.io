@@ -248,11 +248,11 @@ branch, you can very easily make your changes available for others.
 Once you think your changes are stable and should be reviewed by others,
 you can push your changes back to the GitHub server:
 
-`git push origin`
+`git push origin demo-branch`
 
-''This will not work if you have cloned directly from the official
-Biopython branch, since only the core developers have write access to
-the main trunk. ''
+*This will not work if you have cloned directly from the official
+Biopython branch, since only the core developers will have write access
+to the main repository.*
 
 Merging upstream changes
 ------------------------
