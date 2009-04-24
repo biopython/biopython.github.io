@@ -210,12 +210,23 @@ username on GitHub.
 Making changes locally
 ----------------------
 
-Now you can make changes to your branch. Since your local branch is a
-full repository, you can commit your changes as often as you like. In
-fact, you should commit as often as possible, because smaller commits
-are much better to manage and document. Let us assume you've made
-changes to the file Bio/x.py. You need to add this file to your
-change-set:
+Now you can make changes to your local repository - you can do this
+offline, and you can commit your changes as often as you like. In fact,
+you should commit as often as possible, because smaller commits are much
+better to manage and document.
+
+First of all, create a new branch to make some changes in, and switch to
+it:
+
+`git branch demo-branch`  
+`git checkout demo-branch`
+
+To check which branch you are on, use:
+
+`git branch`
+
+Let us assume you've made changes to the file Bio/x.py. You need to add
+this file to your change-set:
 
 `git add Bio/x.py`
 
