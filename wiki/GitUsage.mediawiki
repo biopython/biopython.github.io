@@ -166,22 +166,75 @@ It is mandatory to merge with the current trunk of Biopython before submitting y
 
 Since git is a fully distributed version control system, anyone can integrate changes from other people, assuming that they are using branches derived from a common root. This is especially useful for people working on new features who want to accept contributions from other people.
 
-This section describes the steps to evaluate and integrate changes for Biopython core developers, or anyone accepting changes on a branch. The following commands will show you a diff of modifications on another branch. First add a reference to the remote repository, and fetch the changes locally: 
+This section is going to be of particular interest for the Biopython core developers, or anyone accepting changes on a branch.
 
-  git remote add username/biopython-mods git://github.com/username/biopython-mods.git
-  git fetch username/biopython-mods
-  
-To double check the branch is integrated:
+For example, suppose Eric has some interesting changes on his public repository:
 
-  git branch -r
+ git://github.com/etal/biopython.git
 
-Finally, get the diff of the modifications:
+You must tell git about this by creating a reference to this remote repository:
 
-  git diff origin/master username/biopython-mods/master
+ $ git remote add eric git://github.com/etal/biopython.git
 
-If you later want to remove the reference to the branch:
+Now we can fetch ''all'' of Eric's public repository with one line:
 
-  git branch -r -d username/biopython-mods/master
+ $ git fetch eric
+ remote: Counting objects: 138, done.
+ remote: Compressing objects: 100% (105/105), done.
+ remote: Total 105 (delta 77), reused 0 (delta 0)
+ Receiving objects: 100% (105/105), 27.53 KiB, done.
+ Resolving deltas: 100% (77/77), completed with 24 local objects.
+ From git://github.com/etal/biopython
+  * [new branch]      bug2754    -> eric/bug2754
+  * [new branch]      master     -> eric/master
+  * [new branch]      pdbtidy    -> eric/pdbtidy
+  * [new branch]      phyloxml   -> eric/phyloxml
+
+Now we can run a diff between any of our own branches and any of Eric's branches.  You can list your own branches with:
+
+ $ git branch
+ * master
+   ...
+
+Remember the asterisk shows which branch is currently checked out.
+
+To list the remote branches you have setup:
+
+ $ git branch -r
+   eric/bug2754
+   eric/master
+   eric/pdbtidy
+   eric/phyloxml
+   upstream/master
+   origin/HEAD
+   origin/master
+   ...
+
+For example, to show the difference between your '''master''' branch and Eric's '''master''' branch:
+
+ $ git diff master eric/master
+ ...
+
+If you are both keeping your '''master''' branch in sync with the upstream Biopython repository, then his '''master''' branch won't be very interesting.  Instead, try:
+
+ $ git diff master eric/pdbtidy
+ ...
+
+You might now want to merge in (some) of Eric's changes to a new branch on your local repository.
+
+If you later want to remove the reference to this particular branch:
+
+ $ git branch -r -d eric/pdbtidy
+ Deleted remote branch eric/pdbtidy (79b5974)
+
+Or, to delete the references to all of Eric's branches:
+
+ $ git remote rm eric
+ $ git branch -r
+   upstream/master
+   origin/HEAD
+   origin/master
+   ...
 
 Alternatively, from within GitHub you can use the fork-queue to cherry pick commits from other people's forked branches.  See [http://github.com/blog/270-the-fork-queue this github blog post] for details.  While this defaults to applying the changes to your current branch, you would typically do this using a new integration branch, then fetch it to your local machine to test everything, before merging it to your main branch.
 
