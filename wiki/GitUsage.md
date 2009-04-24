@@ -282,16 +282,6 @@ the updated master branch there:
 
 `git push origin master`
 
-### Merging in Github
-
-If you want to update your Github branch with current changes from the
-trunk, you can use the fork-queue feature on the github website. It
-gives you a listing of changes in all branches related to yours with an
-estimate on how difficult it will be to integrate them. See [this Github
-blog post](http://github.com/blog/270-the-fork-queue) for details. The
-downside of this is you can't actually test the changes before making
-them.
-
 Submitting changes for inclusion in Biopython
 ---------------------------------------------
 
