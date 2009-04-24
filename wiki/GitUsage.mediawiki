@@ -124,13 +124,26 @@ Once you think your changes are stable and should be reviewed by others, you can
 
 == Merging upstream changes ==
 
-If you work on your branch for long enough, the main trunk will inevitably diverge from the version you forked from. Git makes integrating such upstream changes a very simple task.
+We recommend that you don't actually make any changes to the '''master''' branch in your local repository (or any copy you keep on github).  Instead, use named branches to do any of your own work.  The advantage of this approach it is the trivial to pull the upstream '''master''' (i.e. the official Biopython branch) to your repository.
+
+Assuming you have issued this command (you only need to do this once):
+
+ git remote add upstream git://github.com/biopython/biopython.git
+
+Then all you need to do is:
+
+ git checkout master
+ git pull upstream master
+
+Provided you never commit any change to your local '''master''' branch, this should always be a simple ''fast forward'' merge without any conflicts.
+You can then deal with merging the upstream changes into your local branches (and you can do that offline).
+
+If you have your repository hosted online (e.g. at github), then push the updated master branch there:
+
+ git push origin master
 
 === Merging in Github ===
-If you want to update your Github branch with current changes from the trunk, you can use the fork-queue feature. It gives you a listing of changes in all branches related to yours with an estimate on how difficult it will be to integrate them. See [http://github.com/blog/270-the-fork-queue this Github blog post] for details.
-
-=== Pulling remote changes to your local copy ===
-If you want to update your local branch with the changes from the origin (either your own or official branch), you need to run <code>git pull origin master</code> in a terminal window.
+If you want to update your Github branch with current changes from the trunk, you can use the fork-queue feature on the github website. It gives you a listing of changes in all branches related to yours with an estimate on how difficult it will be to integrate them. See [http://github.com/blog/270-the-fork-queue this Github blog post] for details.  The downside of this is you can't actually test the changes before making them.
 
 == Submitting changes for inclusion in Biopython ==
 
