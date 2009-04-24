@@ -278,8 +278,9 @@ Then all you need to do is:
 
 Provided you never commit any change to your local **master** branch,
 this should always be a simple *fast forward* merge without any
-conflicts. You can then deal with merging the upstream changes into your
-local branches (and you can do that offline).
+conflicts. You can then deal with merging the upstream changes from your
+local master branch into your local branches (and you can do that
+offline).
 
 If you have your repository hosted online (e.g. at github), then push
 the updated master branch there:
