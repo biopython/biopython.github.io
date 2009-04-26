@@ -29,6 +29,17 @@ implementation](http://bcbio.wordpress.com/2009/03/08/initial-gff-parser-for-bio
 and [MapReduce parallel
 version](http://bcbio.wordpress.com/2009/03/22/mapreduce-implementation-of-gff-parsing-for-biopython/).
 
+### PhyloXML driver (GSoC)
+
+Eric is working on supporting the [PhyloXML](http://www.phyloxml.org/)
+format, as a
+[project](http://socghop.appspot.com/student_project/show/google/gsoc2009/nescent/t124022798969)
+for Google Summer of Code 2009. Brad is mentoring this project. The code
+lives on a branch in
+[GitHub](http://github.com/etal/biopython/tree/phyloxml), and you can
+see a timeline and other info about ongoing development by navigating to
+the Bio/PhyloXML/ directory.
+
 Project ideas
 -------------
 
