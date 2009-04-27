@@ -6,17 +6,30 @@
 |-
 |See also our [[News|news page]], and [http://twitter.com/biopython twitter].
 |}
-
-=== About the Biopython Project ===
-
-The Biopython Project is an international association of developers of freely available [http://www.python.org Python] tools for computational molecular biology.
+===Introduction=== 
+Biopython is a set of freely available tools for biological computation written in [http://www.python.org Python] by an international team of developers. 
 
 It is a distributed collaborative effort to develop Python libraries and applications which address the needs of current and future work in bioinformatics. The source code is made available under the [http://www.biopython.org/DIST/LICENSE Biopython License], which is extremely liberal and compatible with almost every license in the world. We work along with the [http://open-bio.org Open Bioinformatics Foundation], who generously provide web and [[CVS]] space for the project.
 
-=== Using Biopython ===
+This wiki will help you download and install Biopython, and start using the libraries and tools.
 
-See [[Getting Started]] and our [[Documentation]], in particular the [http://biopython.org/DIST/docs/tutorial/Tutorial.html Biopython Tutorial and Cookbook] ([http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF]).
+{| cellpadding="6" align="center"
+|-style=" font-size:130%"
+![[Getting_Started|Get Started]]
+![[Documentation | Get help]]
+![[Contributing | Contribute]]
+|-style="vertical-align:top; text-align:left"
+!
+*[[Download | Download Biopython]]
+*[http://biopython.org/DIST/docs/install/Installation.html Installation help] ([http://biopython.org/DIST/docs/install/Installation.pdf PDF])
+!
+*[http://biopython.org/DIST/docs/tutorial/Tutorial.html Tutorial] ([http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF])
+*[[Category%3AWiki_Documentation | Documentation on this wiki]]
+*[[Category%3ACookbook | Cookbook (working examples)]]
+*[[Mailing_lists | Join the mailing lists]]
+!
+*[[Active_projects | What's being worked on]]
+*[[ GitUsage | Developing on Github ]]
+|}
 
-=== Download Current Release ===
-
-The latest release is Biopython 1.50, released on 20 April 2009. Get it from our [[Download]] page.
+The latest release is [[Download|Biopython 1.50]], released on 20 April 2009.

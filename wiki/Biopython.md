@@ -10,11 +10,11 @@ layout: wiki
 |                                                                                                                                |
 | See also our [news page](News "wikilink"), and [twitter](http://twitter.com/biopython).                                        |
 
-### About the Biopython Project
+### Introduction
 
-The Biopython Project is an international association of developers of
-freely available [Python](http://www.python.org) tools for computational
-molecular biology.
+Biopython is a set of freely available tools for biological computation
+written in [Python](http://www.python.org) by an international team of
+developers.
 
 It is a distributed collaborative effort to develop Python libraries and
 applications which address the needs of current and future work in
@@ -25,15 +25,17 @@ along with the [Open Bioinformatics Foundation](http://open-bio.org),
 who generously provide web and [CVS](CVS "wikilink") space for the
 project.
 
-### Using Biopython
+This wiki will help you download and install Biopython, and start using
+the libraries and tools.
 
-See [Getting Started](Getting_Started "wikilink") and our
-[Documentation](Documentation "wikilink"), in particular the [Biopython
-Tutorial and
-Cookbook](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
-([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)).
+| [Get Started](Getting_Started "wikilink")                                                                                                          | [ Get help](Documentation "wikilink")                                                                                               | [ Contribute](Contributing "wikilink")                    |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
+| -   [ Download Biopython](Download "wikilink")                                                                                                     
+ -   [Installation help](http://biopython.org/DIST/docs/install/Installation.html) ([PDF](http://biopython.org/DIST/docs/install/Installation.pdf))  | -   [Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html) ([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)) 
+                                                                                                                                                      -   [ Documentation on this wiki](Category%3AWiki_Documentation "wikilink")                                                          
+                                                                                                                                                      -   [ Cookbook (working examples)](Category%3ACookbook "wikilink")                                                                   
+                                                                                                                                                      -   [ Join the mailing lists](Mailing_lists "wikilink")                                                                              | -   [ What's being worked on](Active_projects "wikilink") 
+                                                                                                                                                                                                                                                                                            -   [ Developing on Github ](GitUsage "wikilink")          |
 
-### Download Current Release
-
-The latest release is Biopython 1.50, released on 20 April 2009. Get it
-from our [Download](Download "wikilink") page.
+The latest release is [Biopython 1.50](Download "wikilink"), released on
+20 April 2009.
