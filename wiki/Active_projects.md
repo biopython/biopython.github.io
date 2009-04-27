@@ -40,6 +40,13 @@ lives on a branch in
 see a timeline and other info about ongoing development by navigating to
 the Bio/PhyloXML/ directory.
 
+### Open Enhancement Bugs
+
+This [Bugzilla
+Search](http://bugzilla.open-bio.org/buglist.cgi?product=Biopython&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_severity=enhancement)
+will list all open enhancement bugs (any filed by core developers are
+fairly likely to be integrated, some are just wish list entries).
+
 Project ideas
 -------------
 

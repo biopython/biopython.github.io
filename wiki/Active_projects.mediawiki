@@ -14,6 +14,10 @@ Brad is working on a Biopython GFF parser. Source code is available from [http:/
 
 Eric is working on supporting the [http://www.phyloxml.org/ PhyloXML] format, as a [http://socghop.appspot.com/student_project/show/google/gsoc2009/nescent/t124022798969 project] for Google Summer of Code 2009. Brad is mentoring this project. The code lives on a branch in [http://github.com/etal/biopython/tree/phyloxml GitHub], and you can see a timeline and other info about ongoing development by navigating to the Bio/PhyloXML/ directory.
 
+=== Open Enhancement Bugs ===
+
+This [http://bugzilla.open-bio.org/buglist.cgi?product=Biopython&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_severity=enhancement Bugzilla Search] will list all open enhancement bugs (any filed by core developers are fairly likely to be integrated, some are just wish list entries).
+
 == Project ideas ==
 
 Please add any ideas or proposals for new additions to Biopython. Bugs and enhancements for current code should be discussed though our bugzilla interface.
