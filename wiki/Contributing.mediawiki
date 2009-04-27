@@ -2,6 +2,8 @@
 
 So you want to contribute to Biopython, huh? Great! New contributions are the lifeblood of the project. However, if done incorrectly, they can quickly suck up valuable developer time. (We have day jobs too!) This is a short guide to the recommended way to contribute code to Biopython.
 
+See also the chapter about contributing in the [http://biopython.org/DIST/docs/tutorial/Tutorial.html Tutorial] ([http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF]).
+
 === Non-code contributions ===
 
 Even if you don't feel ready or able to contribute code, you can still help out.  There always things that can be improved on the [[documentation]] (even just proof reading, or telling us if a section isn't clear enough).  We also need people on the [[mailing lists]] to help out with beginner's questions, or to participate in debates about new features.  Maybe you can propose general examples for the [[Category%3ACookbook|wiki cookbook]]?

@@ -11,6 +11,10 @@ are the lifeblood of the project. However, if done incorrectly, they can
 quickly suck up valuable developer time. (We have day jobs too!) This is
 a short guide to the recommended way to contribute code to Biopython.
 
+See also the chapter about contributing in the
+[Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
+([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)).
+
 ### Non-code contributions
 
 Even if you don't feel ready or able to contribute code, you can still
