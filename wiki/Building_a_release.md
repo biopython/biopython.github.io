@@ -15,8 +15,6 @@ Build Biopython in 21 easy steps!!
 -   Biopython version - edit Bio/\_\_init\_\_.py
 -   Biopython Tutorial - update the date/version line in the
     Doc/Tutorial.tex file
--   Martel version - edit Martel/\_\_init\_\_.py (kept in sync with the
-    Biopython version)
 -   Make sure to commit the modified files to CVS.
 
 3. make sure the README file is still up to date
@@ -37,7 +35,6 @@ recent CVS changes like this (adjust the date accordingly):
 7. do last check to make sure things are checked in
 
 `   > rm -r build`  
-`   > rm Martel/*.pyc`  
 `   > rm Tests/*.pyc`  
 `   > make clean -C Doc`  
 `   > cvs update -P -d `
@@ -74,7 +71,6 @@ work of course, as we haven't compiled it).
 
 `   drevil:~tmp2> tar -xzvf ../tmp1/biopython/dist/biopython-1.00a1.tar.gz`
 
--   Check to make sure it includes Martel
 -   Check to make sure it includes the HTML and PDF files under Doc
 
 15. make sure I can build and test it
@@ -93,7 +89,7 @@ work of course, as we haven't compiled it).
     directory. Running epydoc in your CVS tree works, but can miss some
     packages due to import errors.
 
-`   epydoc -o ~/api -u `[`http://biopython.org`](http://biopython.org)` -n Biopython --docformat plaintext Bio BioSQL Martel`
+`   epydoc -o ~/api -u `[`http://biopython.org`](http://biopython.org)` -n Biopython --docformat plaintext Bio BioSQL`
 
 -   Move the generated ~/api directory to replace
     /home/websites/biopython.org/html/static/DIST/docs/api/ on

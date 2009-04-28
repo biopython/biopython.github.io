@@ -6,7 +6,6 @@ Build Biopython in 21 easy steps!!
 2. bump version numbers:
 * Biopython version - edit  Bio/__init__.py
 * Biopython Tutorial - update the date/version line in the Doc/Tutorial.tex file
-* Martel version - edit Martel/__init__.py (kept in sync with the Biopython version)
 * Make sure to commit the modified files to CVS.
 
 3. make sure the README file is still up to date
@@ -22,7 +21,6 @@ Build Biopython in 21 easy steps!!
 
 7. do last check to make sure things are checked in
     > rm -r build
-    > rm Martel/*.pyc
     > rm Tests/*.pyc
     > make clean -C Doc
     > cvs update -P -d 
@@ -51,7 +49,6 @@ Build Biopython in 21 easy steps!!
 
 14. untar the file somewhere else
     drevil:~tmp2> tar -xzvf ../tmp1/biopython/dist/biopython-1.00a1.tar.gz
-* Check to make sure it includes Martel
 * Check to make sure it includes the HTML and PDF files under Doc
 
 15. make sure I can build and test it
@@ -64,7 +61,7 @@ Build Biopython in 21 easy steps!!
 
 17. Update API documentation using Epydoc.
 * Go to the /usr/local/lib/python2.4/site-packages (or equivalent) directory. Running epydoc in your CVS tree works, but can miss some packages due to import errors.
-    epydoc -o ~/api -u http://biopython.org -n Biopython --docformat plaintext Bio BioSQL Martel
+    epydoc -o ~/api -u http://biopython.org -n Biopython --docformat plaintext Bio BioSQL
 * Move the generated ~/api directory to replace /home/websites/biopython.org/html/static/DIST/docs/api/ on biopython.org (aka portal.open-bio.org).
 
 18. scp or ftp the .tar.gz, .zip and Windows installer files to the Biopython website, folder /home/websites/biopython.org/html/static/DIST/ on biopython.org (aka portal.open-bio.org).
