@@ -6,6 +6,9 @@ layout: wiki
 
 Build Biopython in 21 easy steps!!
 
+These instructions are for a Unix machine, with a Windows machine also
+needed to test and prepare the Windows installers.
+
 1. make sure I have the latest code
 
 `   drevil:~biopython> cvs update -P -d `
@@ -42,8 +45,22 @@ recent CVS changes like this (adjust the date accordingly):
 8. build Biopython and do last regression test
 
 `   drevil:~biopython> python setup.py build `  
-`   drevil:~biopython> python setup.py install `  
-`   drevil:~biopython/Tests> python run_tests.py`
+`   drevil:~biopython> python setup.py test`
+
+Ideally do this with a clean checkout on your Windows machine too.
+Assuming you have setup your compilers etc appropriately just do this:
+
+`   C:\python23\python setup.py build`  
+`   C:\python23\python setup.py test`
+
+`   C:\python24\python setup.py build`  
+`   C:\python24\python setup.py test`
+
+`   C:\python25\python setup.py build`  
+`   C:\python25\python setup.py test`
+
+`   C:\python26\python setup.py build`  
+`   C:\python26\python setup.py test`
 
 9. check out clean version somewhere else
 
@@ -95,23 +112,35 @@ work of course, as we haven't compiled it).
     /home/websites/biopython.org/html/static/DIST/docs/api/ on
     biopython.org (aka portal.open-bio.org).
 
-18. scp or ftp the .tar.gz, .zip and Windows installer files to the
+18. On your windows machine, build the Windows installers (either from a
+clean CVS checkout, or the an unzipped copy of the source code bundle
+made earlier). Build the installers first, if you do a
+build/test/install before hand you seem to get a bloated setup exe.
+Assuming you have setup your compilers etc appropriately just do this:
+
+`   C:\python23\python setup.py bdist_wininst`  
+`   C:\python24\python setup.py bdist_wininst`  
+`   C:\python25\python setup.py bdist_wininst`  
+`   C:\python26\python setup.py bdist_wininst`
+
+19. Remove any prior Biopython installations on your windows machine,
+and confirm the Windows installers work.
+
+20. scp or ftp the .tar.gz, .zip and Windows installer files to the
 Biopython website, folder /home/websites/biopython.org/html/static/DIST/
 on biopython.org (aka portal.open-bio.org).
 
-19. update the [website](website "wikilink"):
+21. Update the [website](website "wikilink") and announce the release:
 
 -   add to [main page](Main_Page "wikilink") and [downloads
-    page](Download "wikilink") (through the wiki)
+    page](Download "wikilink") (through the wiki), make sure the links
+    work
 -   post the announcement on
     [news.open-bio.org](http://news.open-bio.org) (which will update the
     [news page](News "wikilink") and
     [twitter](http://twitter.com/Biopython) via the news feed)
--   make sure links work
 -   add the new version to [Bugzilla](http://bugzilla.open-bio.org/)
+-   send email to biopython@biopython.org and
+    biopython-announce@biopython.org (see [mailing
+    lists](Mailing_lists "wikilink"))
 
-20. clean up the tmp directories I made
-
-21. send email to biopython@biopython.org and
-biopython-announce@biopython.org (see [mailing
-lists](Mailing_lists "wikilink"))
