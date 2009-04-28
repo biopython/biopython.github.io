@@ -4,7 +4,7 @@ permalink: wiki/Building_a_release
 layout: wiki
 ---
 
-Build Biopython in 21 easy steps!!
+Build Biopython in 22 easy steps!!
 
 These instructions are for a Unix machine, with a Windows machine also
 needed to test and prepare the Windows installers.
@@ -130,7 +130,14 @@ and confirm the Windows installers work.
 Biopython website, folder /home/websites/biopython.org/html/static/DIST/
 on biopython.org (aka portal.open-bio.org).
 
-21. Update the [website](website "wikilink") and announce the release:
+21. Upload to the python package index:
+
+`   > python setup.py register sdist upload`
+
+You need to have a login on pypi and be registered with Biopython to be
+able to upload the new version.
+
+22. Update the [website](website "wikilink") and announce the release:
 
 -   add to [main page](Main_Page "wikilink") and [downloads
     page](Download "wikilink") (through the wiki), make sure the links
