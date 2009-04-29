@@ -90,7 +90,7 @@ Since your new Biopython repository is publicly visible, it's considered good pr
 
 If you haven't done so already, setup an SSH key and [http://github.com/guides/providing-your-ssh-key upload it to github] for authentication.
 
-Now, assuming that you have git installed on your computer, execute the following commands locally on your machine:
+Now, assuming that you have git installed on your computer, execute the following commands locally on your machine.  This "url" is given on the github page for your repository (if you are logged in):
 
  git clone git@github.com:yourusername/biopython.git
 

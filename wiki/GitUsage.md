@@ -193,7 +193,8 @@ github](http://github.com/guides/providing-your-ssh-key) for
 authentication.
 
 Now, assuming that you have git installed on your computer, execute the
-following commands locally on your machine:
+following commands locally on your machine. This "url" is given on the
+github page for your repository (if you are logged in):
 
 `git clone git@github.com:yourusername/biopython.git`
 
