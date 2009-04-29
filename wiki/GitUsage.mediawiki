@@ -88,6 +88,8 @@ and click on a button named 'Fork'. This will create a fork (basically a copy) o
 
 Since your new Biopython repository is publicly visible, it's considered good practice to change the description and homepage fields to something meaningful (i.e. different from the ones copied from the official repository).
 
+If you haven't done so already, setup an SSH key and [http://github.com/guides/providing-your-ssh-key upload it to github] for authentication.
+
 Now, assuming that you have git installed on your computer, execute the following commands locally on your machine:
 
  git clone git@github.com:yourusername/biopython.git

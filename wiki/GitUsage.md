@@ -188,6 +188,10 @@ good practice to change the description and homepage fields to something
 meaningful (i.e. different from the ones copied from the official
 repository).
 
+If you haven't done so already, setup an SSH key and [upload it to
+github](http://github.com/guides/providing-your-ssh-key) for
+authentication.
+
 Now, assuming that you have git installed on your computer, execute the
 following commands locally on your machine:
 
