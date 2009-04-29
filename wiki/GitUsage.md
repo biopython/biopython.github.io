@@ -207,6 +207,13 @@ you want to be able to commit to it), select 'edit' and then add them to
 the 'Repository Collaborators' section. You will need to know their
 username on GitHub.
 
+If you haven't already done so, tell git your name and the email address
+you are using on github (so that your commits get matched up to your
+github account). For example,
+
+`git config --global user.name "David Jones"`  
+`git config --global user.email "d.jones@example.com"`
+
 Making changes locally
 ----------------------
 

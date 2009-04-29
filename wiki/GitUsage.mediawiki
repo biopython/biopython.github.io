@@ -101,6 +101,11 @@ You may want to also link your branch with the official distribution (see below 
 
 To add additional contributors to your repository on GitHub (i.e. people you want to be able to commit to it), select 'edit' and then add them to the 'Repository Collaborators' section. You will need to know their username on GitHub.
 
+If you haven't already done so, tell git your name and the email address you are using on github (so that your commits get matched up to your github account).  For example, 
+
+ git config --global user.name "David Jones"
+ git config --global user.email "d.jones@example.com"
+
 == Making changes locally ==
 
 Now you can make changes to your local repository - you can do this offline, and you can commit your changes as often as you like. In fact, you should commit as often as possible, because smaller commits are much better to manage and document.
