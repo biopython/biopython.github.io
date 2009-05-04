@@ -37,8 +37,8 @@ format, as a
 for Google Summer of Code 2009. Brad is mentoring this project. The code
 lives on a branch in
 [GitHub](http://github.com/etal/biopython/tree/phyloxml), and you can
-see a timeline and other info about ongoing development by navigating to
-the Bio/PhyloXML/ directory.
+see a timeline and other info about ongoing development
+[here](http://github.com/etal/biopython/tree/phyloxml/Bio/PhyloXML/).
 
 ### Open Enhancement Bugs
 
