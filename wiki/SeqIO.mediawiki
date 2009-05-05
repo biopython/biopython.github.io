@@ -58,8 +58,8 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 |-  
 | genbank 
 | 1.43
-| 1.48...
-| The [[bp:GenBank_sequence_format|GenBank or GenPept flat file format]].  Uses Bio.GenBank internally for parsing.  Support for writing GenBank files is currently ''in progress'', with only basic functionality in Biopython 1.48 (see [http://bugzilla.open-bio.org/show_bug.cgi?id=2294 Bug 2294])
+| 1.48 / CVS
+| The [[bp:GenBank_sequence_format|GenBank or GenPept flat file format]].  Uses Bio.GenBank internally for parsing.  Biopython 1.48 to 1.50 wrote basic GenBank files with only minimal annotation.  The next release (currently in CVS) will also record the features table (see [http://bugzilla.open-bio.org/show_bug.cgi?id=2294 Bug 2294]).
 |-
 | ig
 | 1.47
