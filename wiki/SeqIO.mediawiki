@@ -419,7 +419,3 @@ The format method will take any output format supported by '''Bio.SeqIO''' where
 If you are having problems with '''Bio.SeqIO''', please join the discussion mailing list (see [[mailing lists]]).
 
 If you think you've found a bug, please report it on [http://bugzilla.open-bio.org/ bugzilla].
-
-== Old Bio.SeqIO code ==
-
-There was some old code living in the '''Bio.SeqIO.generic''' and '''Bio.SeqIO.FASTA''' modules, such as the '''FastaReader''' class.  These files were marked as deprecated after the release of the "new" '''Bio.SeqIO''' code in Biopython 1.43, and were removed in Biopython 1.47.
