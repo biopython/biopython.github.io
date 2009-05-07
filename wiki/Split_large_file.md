@@ -112,3 +112,8 @@ containins one file's worth of sequences.
 With that function defined it's a matter of giving it an iterator (in
 this case a SeqIO.parse(...) instance and writing out the batching of
 records it produces.
+
+Note that you can get close to this functionality with the built in
+python function itertools.islice(record\_iter, batch\_size), but this
+gives an empty file at the end if the total count is an exact multiple
+of the batch size.
