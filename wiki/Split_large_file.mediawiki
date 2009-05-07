@@ -31,7 +31,8 @@ def batch_iterator(iterator, batch_size) :
                 #End of file
                 break
             batch.append(entry)
-        yield batch
+        if batch :
+            yield batch
 </source>
 
 Here is an example using this function to divide up a large FASTQ file, SRR014849.fastq (from this [ftp://ftp.ncbi.nlm.nih.gov/sra/static/SRX003/SRX003639/SRR014849.fastq.gz compressed file] at the NCBI):
