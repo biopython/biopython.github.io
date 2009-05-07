@@ -12,7 +12,7 @@ Brad is working on a Biopython GFF parser. Source code is available from [http:/
 
 === PhyloXML driver (GSoC) ===
 
-Eric is working on supporting the [http://www.phyloxml.org/ PhyloXML] format, as a [http://socghop.appspot.com/student_project/show/google/gsoc2009/nescent/t124022798969 project] for Google Summer of Code 2009. Brad is mentoring this project. The code lives on a branch in [http://github.com/etal/biopython/tree/phyloxml GitHub], and you can see a timeline and other info about ongoing development [http://github.com/etal/biopython/tree/phyloxml/Bio/PhyloXML/ here].
+Eric is working on supporting the [http://www.phyloxml.org/ PhyloXML] format, as a [http://socghop.appspot.com/student_project/show/google/gsoc2009/nescent/t124022798969 project] for Google Summer of Code 2009. Brad is mentoring this project. The code lives on a branch in [http://github.com/etal/biopython/tree/phyloxml GitHub], and you can see a timeline and other info about ongoing development [http://github.com/etal/biopython/tree/phyloxml/Bio/PhyloXML/ here]. The new module is being documented on this wiki as [[PhyloXML]].
 
 === Open Enhancement Bugs ===
 

@@ -39,6 +39,8 @@ lives on a branch in
 [GitHub](http://github.com/etal/biopython/tree/phyloxml), and you can
 see a timeline and other info about ongoing development
 [here](http://github.com/etal/biopython/tree/phyloxml/Bio/PhyloXML/).
+The new module is being documented on this wiki as
+[PhyloXML](PhyloXML "wikilink").
 
 ### Open Enhancement Bugs
 
