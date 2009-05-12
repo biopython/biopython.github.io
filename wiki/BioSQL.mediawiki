@@ -244,10 +244,10 @@ server = BioSeqDatabase.open_database(driver="MySQLdb", user="root",
 db = server["orchids"]
 handle = Entrez.efetch(db="nuccore", id="6273291,6273290,6273289", rettype="genbank")
 db.load(SeqIO.parse(handle, "genbank"))
-server.adaptor.commit()
+db.commit() #On Biopython 1.49 or older, server.adaptor.commit()
 </source>
 
-Again, you must explicitly call ''server.adaptor.commit()'' to record the SQL transaction which is otherwise left pending.
+Again, you must explicitly call ''commit'' to record the SQL transaction which is otherwise left pending.
 
 The ''db.load()'' function should have returned the number of records loaded (three in this example), and again have a look in the database and you should see new rows in several tables.
 
