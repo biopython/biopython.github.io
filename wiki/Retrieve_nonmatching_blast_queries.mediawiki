@@ -8,14 +8,22 @@ Let's presume you set up a BLAST run with the sequences in a file called "querie
 from Bio import SeqIO
 from Bio.Blast import NCBIXML
 
+
 q_dict =  SeqIO.to_dict(SeqIO.parse(open('queries.fasta', 'r'), 'fasta'))
 
-# make our 'hit list', the 'query' in the BLAST output is the record's ''description'' while
-# the key for our dictionary is the record id, we need to split the query and get the first
-# field to get the right key. 
+
 hits = []
 for record in NCBIXML.parse(open("BLAST_RESULTS.xml", 'r')):
-  hits.append(record.query.split()[0])
+  # As of BLAST 2.2.19 the xml output for multiple-query blast searches
+  # skips queries with no hits so we could just append the ID of every blast 
+  # record to our 'hit list'. It's possible that the NCBI will change this
+  # behaviour in the future so let's make the appending conditional on there
+  # being no hits (ie, and empty alignments list) recorded in the blast record
+  if len(record.alignments) > 0:
+    # The blast record's 'query' contians the sequences description as a
+    # string, We used the ID as the key in our dictonary so we'll need to split
+    # the string and get the first field to remove the right entries 
+    hits.append(record.query.split()[0])
  
 misses = set(q_dict.keys()) - set(hits)
 
