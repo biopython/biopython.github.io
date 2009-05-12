@@ -13,7 +13,8 @@ Many bioinformatics tools take different input file formats, so there is
 a common need to interconvert between sequence file formats. One useful
 option is the commandline tool [seqret from
 EMBOSS](http://emboss.sourceforge.net/apps/cvs/emboss/apps/seqret.html),
-but here we'll show how to tackle this problem with \[SeqIO|Bio.SeqIO\].
+but here we'll show how to tackle this problem with
+[Bio.SeqIO](SeqIO "wikilink").
 
 Solution
 --------
