@@ -269,18 +269,18 @@ from BioSQL import BioSeqDatabase
 server = BioSeqDatabase.open_database(driver="MySQLdb", user="root",
                      passwd = "", host = "localhost", db="bioseqdb")
 db = server.new_database("orchids", description="Just for testing")
-server.adaptor.commit()
+db.commit() #On Biopython 1.49 or older, server.adaptor.commit()
 ```
 
 (If you are using PostgreSQL rather than MySQL, just change the driver
 argument to "psycopg" instead. The same applies to the other examples in
 this document)
 
-The call *server.adaptor.commit()* tells the database to save the
-changes so far (commit the SQL transaction). It is up to you to decide
-when to commit the SQL transaction(s), and/or rollback changes, rather
-than having Biopython try and decide for you and risk getting it wrong.
-See *Explicit is better than implicit* ([The Zen of
+The *commit* call tells the database to save the changes so far (commit
+the SQL transaction). It is up to you to decide when to commit the SQL
+transaction(s), and/or rollback changes, rather than having Biopython
+try and decide for you and risk getting it wrong. See *Explicit is
+better than implicit* ([The Zen of
 Python](http://www.python.org/dev/peps/pep-0020/)) and [bug
 2395](http://bugzilla.open-bio.org/show_bug.cgi?id=2395).
 
