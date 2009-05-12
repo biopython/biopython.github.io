@@ -8,37 +8,32 @@ Let's presume you set up a BLAST run with the sequences in a file called "querie
 from Bio import SeqIO
 from Bio.Blast import NCBIXML
 
-
-q_dict =  SeqIO.to_dict(SeqIO.parse(open('queries.fasta', 'r'), 'fasta'))
-
+q_dict =  SeqIO.to_dict(SeqIO.parse(open("queries.fasta"), "fasta"))
 
 hits = []
-for record in NCBIXML.parse(open("BLAST_RESULTS.xml", 'r')):
+for record in NCBIXML.parse(open("BLAST_RESULTS.xml")):
   # As of BLAST 2.2.19 the xml output for multiple-query blast searches
   # skips queries with no hits so we could just append the ID of every blast 
   # record to our 'hit list'. It's possible that the NCBI will change this
   # behaviour in the future so let's make the appending conditional on there
   # being no hits (ie, and empty alignments list) recorded in the blast record
-  if len(record.alignments) > 0:
-    # The blast record's 'query' contians the sequences description as a
-    # string, We used the ID as the key in our dictonary so we'll need to split
-    # the string and get the first field to remove the right entries 
+  if record.alignments:
+    # The blast record's 'query' contains the sequences description as a
+    # string. We used the ID as the key in our dictionary so we'll need to
+    # split the string and get the first field to remove the right entries 
     hits.append(record.query.split()[0])
  
 misses = set(q_dict.keys()) - set(hits)
-
-orphans = []
-for record in misses:
-   orphans.append(q_dict[record])
+orphan_records = [q_dict[name] for name in misses]
 </source>
  
-We can do a litte sanity check to make sure everything worked OK:
+We can do a little sanity check to make sure everything worked OK:
 <source lang=python>
 >>> print "found %i records in query, %i have hits, making %i misses" % (len(q_dict.keys()), len(hits), len(misses))
 >>> found 11955 records in query, 2802 have hits, making 9153 misses
 </source>
 
-Good, now you have all the 'not hits' sequence in a list ('orphans') of SeqRecord objects you can annotate/analyse as you please or use [[SeqIO | SeqIO.write()]] to make a new file of just these sequences that can be put through another program. 
+Good, now you have all the 'not hits' sequence in a list ('orphan_records') of SeqRecord objects you can annotate/analyse as you please or use [[SeqIO | SeqIO.write()]] to make a new file of just these sequences that can be put through another program.
 
 == Discussion ==
 As implemented above most of the time in each run is spend populating the list of hits from the BLAST parser, would checking each record from the results file against the dictionary one at a time be a less memory intensive way to go in case of very large files?
