@@ -4,7 +4,8 @@ permalink: wiki/Concatenate_nexus
 layout: wiki
 ---
 
-### The Problem
+The Problem
+-----------
 
 It's a good idea, if possible, to make species-level phylogenetic
 inferences bases on multiple genes because a) demographic processes can
@@ -21,7 +22,8 @@ you to produced a new nexus instance combining the data from multiple
 other instances and providing the correct partitions to make sense of
 it.
 
-### The Solution
+The Solution
+------------
 
 Say we have nexus file for three genes; btCOI.nex, btCOII,nex and
 btITS.nex that we want to combine.
@@ -120,7 +122,8 @@ And now, using our new functions:
     >>> concat(l, same_taxa=False).taxlabels
     ['bt1', 'bt2', 'bt3', 'bt4']
 
-### Discussion
+Discussion
+----------
 
 The details of the Nexus class are provided in the [API
 Domcumentation](http://www.biopython.org/DIST/docs/api/Bio.Nexus.Nexus-pysrc.html)

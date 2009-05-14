@@ -1,10 +1,10 @@
-===The Problem===
+==The Problem==
 
 It's a good idea, if possible, to make species-level phylogenetic inferences bases on multiple genes because a) demographic processes can lead gene-trees to diverge from species trees and b) journal editors now this. Most of the alignment files supported  by Biopython allow you to write multiple alignments to the same file which makes this easy. However, the nexus file format (used by PAUP* and Mr Bayes) does not. In nexus files multiple alignments need to be represented as different 'character partitions' within a data matrix that contains one long sequence for each taxon.
 
 The nexus class (Bio.Nexus.Nexus) has a function, combine(), that allows you to produced a new nexus instance combining the data from multiple other instances and providing the correct partitions to make sense of it. 
 
-===The Solution===
+==The Solution==
 
 Say we have nexus file for three genes; btCOI.nex, btCOII,nex and btITS.nex that we want to combine.
 <source lang=python>
@@ -96,6 +96,6 @@ Bio.Nexus.Nexus.NexusError: btITS.nex taxa bt4 not in all matrices
 ['bt1', 'bt2', 'bt3', 'bt4']
 </pre> 
 
-===Discussion===
+==Discussion==
 
 The details of the  Nexus class are provided in the [http://www.biopython.org/DIST/docs/api/Bio.Nexus.Nexus-pysrc.html API Domcumentation]
