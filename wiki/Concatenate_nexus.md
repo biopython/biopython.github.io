@@ -2,6 +2,8 @@
 title: Concatenate nexus
 permalink: wiki/Concatenate_nexus
 layout: wiki
+tags:
+ - Cookbook
 ---
 
 The Problem
