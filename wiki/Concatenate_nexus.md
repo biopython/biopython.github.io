@@ -121,7 +121,7 @@ And now, using our new functions:
     ['bt1', 'bt2', 'bt3']
 
     # Ok, can we still munge them together if we want to?
-    >>> concat(l, same_taxa=False).taxlabels
+    >>> concat(handle, same_taxa=False).taxlabels
     ['bt1', 'bt2', 'bt3', 'bt4']
 
 Discussion
