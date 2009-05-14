@@ -349,7 +349,7 @@ server = BioSeqDatabase.open_database(driver="MySQLdb", user="root",
 db = server["orchids"]
 handle = Entrez.efetch(db="nuccore", id="6273291,6273290,6273289", rettype="genbank")
 db.load(SeqIO.parse(handle, "genbank"))
-db.commit() #On Biopython 1.49 or older, server.adaptor.commit()
+server.commit() #On Biopython 1.49 or older, server.adaptor.commit()
 ```
 
 Again, you must explicitly call *commit* to record the SQL transaction
