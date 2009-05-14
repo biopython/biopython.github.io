@@ -1,8 +1,12 @@
 ==The Problem==
+It's become increasingly common to make species-level phylogenetic inferences from multiple genes. Demographic processes can cause single gene trees to diverge from species trees so support from multiple genes for the same tree topology is considered stronger evidence than single gene inferences (of course, we still need to test that each gene is telling the same story). 
 
-It's a good idea, if possible, to make species-level phylogenetic inferences bases on multiple genes because a) demographic processes can lead gene-trees to diverge from species trees and b) journal editors now this. Most of the alignment files supported  by Biopython allow you to write multiple alignments to the same file which makes this easy. However, the nexus file format (used by PAUP* and Mr Bayes) does not. In nexus files multiple alignments need to be represented as different 'character partitions' within a data matrix that contains one long sequence for each taxon.
+This is usually handled by aligning each gene separately then creating a single "supermatrix" from the individual files.  i.e. You need a single alignment containing one row for each taxon where the rows are the concatenated pre-aligned sequences.  In NEXUS files (used by PAUP* and Mr Bayes) multiple alignments can be explicitly represented as different' character partitions' within a data matrix that contains one long
+sequence for each taxon. In this way you can create a supermatrix but still apply different transition models to each gene within in it or run PAUP*'s Partition Homogeneity Test to check for significant difference in the rate/topology of each gene tree.
 
-The nexus class (Bio.Nexus.Nexus) has a function, combine(), that allows you to produced a new nexus instance combining the data from multiple other instances and providing the correct partitions to make sense of it. 
+The Bio.Nexus module makes this relatively straight forward.
+
+
 
 ==The Solution==
 
@@ -40,7 +44,7 @@ charpartition combined = btCOI.nex: 1-12, btCOII.nex: 13-24, btCOII.nex: 25-32;
 end;
 </pre>
 
-Ahh, it was too easy. The ITS file had a taxon that wasn't in other files so it was added with lots of missing data. Sometines this might be the result you want but having a few taxa like this is also a very good way to make a Partition Homogeneity Test run for a week. Lets write a function that tests that the same taxa are represented in a set of nexus instances and provides a useful error message if not (ie, what to delete from your nexus files if you want them to combine nicely)
+Ahh, it was too easy. The ITS file had a taxon that wasn't in other files so it was added with lots of missing data. Sometimes this might be the result you want but having a few taxa like this is also a very good way to make a Partition Homogeneity Test run for a week. Lets write a function that tests that the same taxa are represented in a set of nexus instances and provides a useful error message if not (ie, what to delete from your nexus files if you want them to combine nicely)
 
 <source lang=python>
 def check_taxa(matrices):  
