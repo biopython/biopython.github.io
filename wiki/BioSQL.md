@@ -417,7 +417,7 @@ from BioSQL import BioSeqDatabase
 server = BioSeqDatabase.open_database(driver="MySQLdb", user="root",
                      passwd = "", host = "localhost", db="bioseqdb")
 server.remove_database("orchids")
-server.adaptor.commit()
+server.commit() #On Biopython 1.49 or older, server.adaptor.commit()
 ```
 
 Again, you must explicitly finialise the SQL transaction with
