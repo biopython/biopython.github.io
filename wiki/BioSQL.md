@@ -269,7 +269,7 @@ from BioSQL import BioSeqDatabase
 server = BioSeqDatabase.open_database(driver="MySQLdb", user="root",
                      passwd = "", host = "localhost", db="bioseqdb")
 db = server.new_database("orchids", description="Just for testing")
-db.commit() #On Biopython 1.49 or older, server.adaptor.commit()
+server.commit() #On Biopython 1.49 or older, server.adaptor.commit()
 ```
 
 (If you are using PostgreSQL rather than MySQL, just change the driver
