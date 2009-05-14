@@ -16,7 +16,7 @@ for record in NCBIXML.parse(open("BLAST_RESULTS.xml")):
   # skips queries with no hits so we could just append the ID of every blast 
   # record to our 'hit list'. It's possible that the NCBI will change this
   # behaviour in the future so let's make the appending conditional on there
-  # being no hits (ie, and empty alignments list) recorded in the blast record
+  # being some hits (ie, a non-empty alignments list) recorded in the blast record
   if record.alignments:
     # The blast record's 'query' contains the sequences description as a
     # string. We used the ID as the key in our dictionary so we'll need to
