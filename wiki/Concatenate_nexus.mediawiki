@@ -9,11 +9,29 @@ The Bio.Nexus module makes concatenating multiple alignments into a supermatrix 
 
 ==The Solution==
 
-Say we have NEXUS files for three genes, btCOI.nex, btCOII,nex and btITS.nex, that we want to combine.
+Say we have NEXUS files for three genes, [http://atavism.webs.com/btCOI.nex btCOI.nex],[http://atavism.webs.com/btCOII.nex btCOII.nex] and [http://atavism.webs.com/btITS.nex btITS.nex], containing alignments:
+<pre>
+#COI
+bt1 GGGGGGGGGGGG
+bt2 GGGGGGGGGGGG
+bt3 GGGGGGGGGGGG
+#COII
+bt1 AAAAAAAAAAAA
+bt2 AAAAAAAAAAAA
+bt3 AAAAAAAAAAAA
+#ITS
+bt1 -TTTTTTT
+bt2 -TTTTTTT
+bt3 -TTTTTTT
+bt4 -TTTTTTT
+</pre> 
+
+We can use the Nexus module to make a supermatrix:
+
 <source lang=python>
 from Bio.Nexus import Nexus
 # the combine function takes a list [(name, nexus instance)...], if we provide the
-# file handles in a list we can use a list comprehension to make one easily
+# file handles in a list we can use a list comprehension to such a list easily
 handles = [open('btCOI.nex', 'r'), open('btCOII.nex', 'r'), open('btITS.nex', 'r')]   
 nexi =  [(handle.name, Nexus.Nexus(handle)) for handle in file_list]
 
@@ -28,22 +46,22 @@ begin data;
 	dimensions ntax=4 nchar=32;
 	format datatype=dna missing=? gap=-;
 matrix
-bt1 ATGCGACTAGCAATGCGACTAGCAATGC--GA
-bt2 ATGCGCCTAGCAATGCGCCTAGCAATGCGGAC
-bt3 GTCCGACTAGCAGTCCGACTAGCAGTCCGAC-
-bt4 ????????????????????????GTCCGAC-
+bt1 GGGGGGGGGGGG-TTTTTTTAAAAAAAAAAAA
+bt2 GGGGGGGGGGGG-TTTTTTTAAAAAAAAAAAA
+bt3 GGGGGGGGGGGG-TTTTTTTAAAAAAAAAAAA
+bt4 ????????????-TTTTTTT????????????
 ;
 end;
 
 begin sets;
-charset btCOII.nex = 13-24;
+charset btITS.nex = 13-20;
 charset btCOI.nex = 1-12;
-charset btITS.nex = 25-32;
-charpartition combined = btCOI.nex: 1-12, btCOII.nex: 13-24, btCOII.nex: 25-32;
-end;
+charset btCOII.nex = 21-32;
+charpartition combined = btCOI.nex: 1-12, btITS.nex: 13-20, btCOII.nex: 21-32;
+end; 
 </pre>
 
-Ahh, it was too easy. The ITS file had a taxon that wasn't in other files so it was added with lots of missing data. Sometimes this might be the result you want but having a few taxa like this is also a very good way to make a Partition Homogeneity Test run for a week. Lets write a function that tests that the same taxa are represented in a set of nexus instances and provides a useful error message if not (i.e., what to delete from your NEXUS files if you want them to combine nicely)
+Ahh, it was too easy. The matrices have been combined and the character sets and partitions set up but the ITS file had a taxon (bt4) that wasn't in the other files. In these cases the combine function adds the taxon with missing data ('?') for the other character partitions. Sometimes this might be the result you want but having a few taxa like this is also a very good way to make a Partition Homogeneity Test run for a week. Lets write a function that tests that the same taxa are represented in a set of nexus instances and provides a useful error message if not (i.e., what to delete from your NEXUS files if you want them to combine nicely)
 
 <source lang=python>
 def check_taxa(matrices):  
