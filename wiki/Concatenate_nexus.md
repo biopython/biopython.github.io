@@ -90,7 +90,7 @@ That was easy! Lets look at our combined file
 Ahh, it was too easy. The matrices have been combined and the character
 sets and partitions set up but the ITS file had a taxon (bt4) that
 wasn't in the other files. In these cases the combine function adds the
-taxon with missing data ('?') for the other character partitions.
+taxon with missing data (the '?'s) for the other character partitions.
 Sometimes this might be the result you want but having a few taxa like
 this is also a very good way to make a Partition Homogeneity Test run
 for a week. Lets write a function that tests that the same taxa are

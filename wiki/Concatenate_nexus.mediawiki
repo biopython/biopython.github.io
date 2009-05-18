@@ -61,7 +61,7 @@ charpartition combined = btCOI.nex: 1-12, btITS.nex: 13-20, btCOII.nex: 21-32;
 end; 
 </pre>
 
-Ahh, it was too easy. The matrices have been combined and the character sets and partitions set up but the ITS file had a taxon (bt4) that wasn't in the other files. In these cases the combine function adds the taxon with missing data ('?') for the other character partitions. Sometimes this might be the result you want but having a few taxa like this is also a very good way to make a Partition Homogeneity Test run for a week. Lets write a function that tests that the same taxa are represented in a set of nexus instances and provides a useful error message if not (i.e., what to delete from your NEXUS files if you want them to combine nicely)
+Ahh, it was too easy. The matrices have been combined and the character sets and partitions set up but the ITS file had a taxon (bt4) that wasn't in the other files. In these cases the combine function adds the taxon with missing data (the '?'s) for the other character partitions. Sometimes this might be the result you want but having a few taxa like this is also a very good way to make a Partition Homogeneity Test run for a week. Lets write a function that tests that the same taxa are represented in a set of nexus instances and provides a useful error message if not (i.e., what to delete from your NEXUS files if you want them to combine nicely)
 
 <source lang=python>
 def check_taxa(matrices):  
