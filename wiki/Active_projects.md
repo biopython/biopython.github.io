@@ -42,6 +42,25 @@ see a timeline and other info about ongoing development
 The new module is being documented on this wiki as
 [PhyloXML](PhyloXML "wikilink").
 
+### Biogeography (GSoC)
+
+[Nick](Matzke "wikilink") is working on developing a Biogeography module
+for BioPython. This work is funded by [Google Summer of Code
+2009](http://socghop.appspot.com/program/home/google/gsoc2009) through
+NESCENT's [Phyloinformatics Summer of Code
+2009](https://www.nescent.org/wg_phyloinformatics/Phyloinformatics_Summer_of_Code_2009).
+See the project proposal at: [Biogeographical Phylogenetics for
+BioPython](http://socghop.appspot.com/student_project/show/google/gsoc2009/nescent/t124022798250).
+The mentors are [Stephen Smith](http://blackrim.org/) (primary), [Brad
+Chapman](http://bcbio.wordpress.com/), and [David
+Kidd](http://evoviz.nescent.org/). The code currently lives at the
+nmatzke branch on
+[GitHub](http://github.com/nmatzke/biopython/tree/master), and you can
+see a timeline and other info about ongoing development
+[here](http://github.com/nmatzke/biopython/tree/master). The new module
+is being documented on this wiki as
+[BioGeography](BioGeography "wikilink").
+
 ### Open Enhancement Bugs
 
 This [Bugzilla
