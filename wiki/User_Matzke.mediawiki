@@ -1,0 +1,5 @@
+Nick Matzke is working on the [https://www.nescent.org/wg_phyloinformatics/Phyloinformatics_Summer_of_Code_2009 Google/Phyloinformatics Summer of Code 2009] project "[https://www.nescent.org/wg_phyloinformatics/Phyloinformatics_Summer_of_Code_2009#Biogeographical_Phylogenetics_for_BioPython Biogeographical Phylogenetics for BioPython]."
+
+Nick is a Ph.D. candidate in the Department of Integrative Biology at University of California, Berkeley. [http://ib.berkeley.edu/people/students/person_detail.php?person=370|Departmental page] -- [http://fisher.berkeley.edu/cteg/members/matzke.html|Lab page].
+
+He has also done some other strange and interesting things.  See [http://en.wikipedia.org/wiki/Nick_Matzke|wikipedia] and [http://www.google.com/search?hl=en&rlz=1B3GGGL_enUS239US239&q=evolution+matzke&btnG=Search|google].
