@@ -174,7 +174,7 @@ this project are the species ranges and phylogeny
 -   Function: write\_history\_to\_KML – write the biogeographic history
     to a KML file for input into Google Earth
 
-===August, week 2: Beta testing
+### August, week 2: Beta testing
 
 Make the series of functions available, along with suggested input
 files; have others run on various platforms, with various levels of

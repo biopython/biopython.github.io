@@ -73,7 +73,7 @@ This can be a slow function for large trees; currently I call a java function fr
 * Function: write_history_to_shapefile -- write the biogeographic history to a shapefile
 * Function: write_history_to_KML – write the biogeographic history to a KML file for input into Google Earth
 
-===August, week 2: Beta testing
+===August, week 2: Beta testing===
 
 Make the series of functions available, along with suggested input files; have others run on various platforms, with various levels of expertise (e.g. Evolutionary Biogeography Discussion Group at U.C. Berkeley). Also get final feedback from mentors and advisors.
 
