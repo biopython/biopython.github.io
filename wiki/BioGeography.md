@@ -8,7 +8,7 @@ Introduction
 ------------
 
 BioGeography is a module under development by [Nick
-Matzke](Matzke "wikilink") for a [Google Summer of Code
+Matzke](User%3AMatzke "wikilink") for a [Google Summer of Code
 2009](http://socghop.appspot.com/program/home/google/gsoc2009) project.
 It is run through NESCENT's [Phyloinformatics Summer of Code
 2009](https://www.nescent.org/wg_phyloinformatics/Phyloinformatics_Summer_of_Code_2009).
