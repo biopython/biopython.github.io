@@ -54,12 +54,11 @@ BioPython](http://socghop.appspot.com/student_project/show/google/gsoc2009/nesce
 The mentors are [Stephen Smith](http://blackrim.org/) (primary), [Brad
 Chapman](http://bcbio.wordpress.com/), and [David
 Kidd](http://evoviz.nescent.org/). The code currently lives at the
-nmatzke branch on
-[GitHub](http://github.com/nmatzke/biopython/tree/master), and you can
+[Geography fork of the nmatzke branch on
+GitHub](http://github.com/nmatzke/biopython/tree/Geography), and you can
 see a timeline and other info about ongoing development
-[here](http://github.com/nmatzke/biopython/tree/master). The new module
-is being documented on this wiki as
-[BioGeography](BioGeography "wikilink").
+[here](BioGeography "wikilink"). The new module is being documented on
+this wiki as [BioGeography](BioGeography "wikilink").
 
 ### Roche 454 SFF parsing in Bio.SeqIO
 
