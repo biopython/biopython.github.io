@@ -61,6 +61,11 @@ see a timeline and other info about ongoing development
 is being documented on this wiki as
 [BioGeography](BioGeography "wikilink").
 
+### Roche 454 SFF parsing in Bio.SeqIO
+
+See [Bug 2837](http://bugzilla.open-bio.org/show_bug.cgi?id=2837), based
+on code from Jose Blanca.
+
 ### Open Enhancement Bugs
 
 This [Bugzilla
@@ -88,11 +93,6 @@ bugzilla interface.
     Davis' GEOquery parser in
     R/Bioconductor](http://www.bioconductor.org/packages/bioc/html/GEOquery.html).
     See also [this page](http://www.warwick.ac.uk/go/peter_cock/r/geo/).
-
-<!-- -->
-
--   Roche 454 SFF support in Bio.SeqIO is being discussed on the
-    mailing lists.
 
 Enhancement list
 ----------------

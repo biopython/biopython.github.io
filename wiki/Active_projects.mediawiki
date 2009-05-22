@@ -18,6 +18,10 @@ Eric is working on supporting the [http://www.phyloxml.org/ PhyloXML] format, as
 
 [[Matzke|Nick]] is working on developing a Biogeography module for BioPython.  This work is funded by [http://socghop.appspot.com/program/home/google/gsoc2009 Google Summer of Code 2009] through NESCENT's [https://www.nescent.org/wg_phyloinformatics/Phyloinformatics_Summer_of_Code_2009 Phyloinformatics Summer of Code 2009]. See the project proposal at: [http://socghop.appspot.com/student_project/show/google/gsoc2009/nescent/t124022798250 Biogeographical Phylogenetics for BioPython]. The mentors are [http://blackrim.org/ Stephen Smith] (primary), [http://bcbio.wordpress.com/ Brad Chapman], and [http://evoviz.nescent.org/ David Kidd].  The code currently lives at the nmatzke branch on [http://github.com/nmatzke/biopython/tree/master GitHub], and you can see a timeline and other info about ongoing development [http://github.com/nmatzke/biopython/tree/master here]. The new module is being documented on this wiki as [[BioGeography]].
 
+=== Roche 454 SFF parsing in Bio.SeqIO ===
+
+See [http://bugzilla.open-bio.org/show_bug.cgi?id=2837 Bug 2837], based on code from Jose Blanca.
+
 === Open Enhancement Bugs ===
 
 This [http://bugzilla.open-bio.org/buglist.cgi?product=Biopython&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_severity=enhancement Bugzilla Search] will list all open enhancement bugs (any filed by core developers are fairly likely to be integrated, some are just wish list entries).
@@ -29,8 +33,6 @@ Please add any ideas or proposals for new additions to Biopython. Bugs and enhan
 * Use SQLAlchemy, an object relational mapper, for BioSQL internals. This would add an additional external dependency to Biopython, but provides ready support for additional databases like SQLite. It also would provide a raw object interface to BioSQL databases when the SeqRecord-like interface is not sufficient. Brad has some initial code for this.
 
 * Revamp the GEO SOFT parser, drawing on the ideas used in [http://www.bioconductor.org/packages/bioc/html/GEOquery.html Sean Davis' GEOquery parser in R/Bioconductor].  See also [http://www.warwick.ac.uk/go/peter_cock/r/geo/ this page].
-
-* Roche 454 SFF support in Bio.SeqIO is being discussed on the mailing lists.
 
 == Enhancement list ==
 
