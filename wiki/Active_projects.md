@@ -54,7 +54,7 @@ BioPython](http://socghop.appspot.com/student_project/show/google/gsoc2009/nesce
 The mentors are [Stephen Smith](http://blackrim.org/) (primary), [Brad
 Chapman](http://bcbio.wordpress.com/), and [David
 Kidd](http://evoviz.nescent.org/). The code currently lives at the
-[Geography fork of the nmatzke branch on
+Bio/Geography directory of the [Geography fork of the nmatzke branch on
 GitHub](http://github.com/nmatzke/biopython/tree/Geography), and you can
 see a timeline and other info about ongoing development
 [here](BioGeography "wikilink"). The new module is being documented on
