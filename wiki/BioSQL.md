@@ -139,6 +139,11 @@ This should return no rows as the table is empty.
 
 ### PostgreSQL
 
+**IMPORTANT NOTE FOR POSTRESQL USERS**: Before loading the
+biosqldb-pg.sql schema into Postgres you must delete the two RULES named
+**rule\_bioentry\_i1** and **rule\_bioentry\_i2**; lines 771-791 in
+biosqldb-pg.sql BioSQL version 1.0.1
+
 First you need to set up user permissions, if you are not sure how to do
 this, try:
 
