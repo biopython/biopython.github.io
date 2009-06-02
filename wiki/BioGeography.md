@@ -63,6 +63,12 @@ falls in (via point-in-polygon algorithm); also output points that are
 unclassified, e.g. some GBIF locations were mis-typed in the source
 database, so a record will fall in the middle of the ocean.
 
+#### Code
+
+-   [Code fulfilling these tasks is uploaded
+    here](http://github.com/nmatzke/biopython/commit/4d963a65ce48b9d50327f191dedcc76abbb149be),
+    along with an example script and data files to run
+
 ### June, week 1: Functions to search GBIF and download occurrence records
 
 Note: creating functions for all possible interactions with GBIF is not
