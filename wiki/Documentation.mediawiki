@@ -3,7 +3,7 @@ New to BioPython? Check out the [[Getting_Started|Getting Started]] page, or fol
 
 * Installation instructions cover the installation of Python itself, the Biopython dependencies, and Biopython itself. 
 :[http://biopython.org/DIST/docs/install/Installation.html HTML] | [http://biopython.org/DIST/docs/install/Installation.pdf PDF]
-* The '''Biopython Tutorial and Cookbook''' contains the main bulk of Biopython documentation. It provides information to get you started with Biopython, in addition to specific documentation on a number of modules. 
+* The '''Biopython Tutorial and Cookbook''' contains the bulk of Biopython documentation. It provides information to get you started with Biopython, in addition to specific documentation on a number of modules. 
 :[http://biopython.org/DIST/docs/tutorial/Tutorial.html HTML] | [http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF]
 * API documentation for Biopython modules is generated directly from source code comments using [http://epydoc.sourceforge.net/ Epydoc].
 :[http://biopython.org/DIST/docs/api HTML]

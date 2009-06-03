@@ -17,7 +17,7 @@ below.
 [HTML](http://biopython.org/DIST/docs/install/Installation.html) |
 [PDF](http://biopython.org/DIST/docs/install/Installation.pdf)
 
--   The **Biopython Tutorial and Cookbook** contains the main bulk of
+-   The **Biopython Tutorial and Cookbook** contains the bulk of
     Biopython documentation. It provides information to get you started
     with Biopython, in addition to specific documentation on a number
     of modules.
