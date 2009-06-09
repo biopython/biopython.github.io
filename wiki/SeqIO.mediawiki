@@ -49,12 +49,17 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 | fastq
 | 1.50
 | 1.50
-| [[bp:FASTQ_sequence_format|FASTQ files]] are a bit like FASTA files but also include sequencing qualities.  In Biopython, "fastq" refers to Sanger style FASTQ files which encode PHRED qualities using an ASCII offset of 33.
+| [[bp:FASTQ_sequence_format|FASTQ files]] are a bit like FASTA files but also include sequencing qualities.  In Biopython, "fastq" refers to Sanger style FASTQ files which encode PHRED qualities using an ASCII offset of 33. See also the incompatible "fastq-solexa" and "fastq-illumina" variants.
 |-  
 | fastq-solexa
 | 1.50
 | 1.50
-| [[bp:FASTQ_sequence_format|FASTQ files]] are a bit like FASTA files but also include sequencing qualities.  In Biopython, "fastq-solexa" refers to Solexa/Illumina style FASTQ files which encode Solexa qualities using an ASCII offset of 64.
+| [[bp:FASTQ_sequence_format|FASTQ files]] are a bit like FASTA files but also include sequencing qualities.  In Biopython, "fastq-solexa" refers to (early) Solexa/Illumina style FASTQ files which encode Solexa qualities using an ASCII offset of 64. See also what we call the "fastq-illumina" format.
+|-  
+| fastq-illumina
+| CVS
+| CVS
+| [[bp:FASTQ_sequence_format|FASTQ files]] are a bit like FASTA files but also include sequencing qualities.  In Biopython, "fastq-illumina" refers to recent Solexa/Illumina style FASTQ files (from pipeline version 1.3+) which encode PHRED qualities using an ASCII offset of 64.  For ''good'' quality reads, PHRED and Solexa scores are approximately equal, so the "fastq-solexa" and "fastq-illumina" variants are almost equivalent.
 |-  
 | genbank 
 | 1.43
@@ -99,7 +104,7 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 | tab
 | 1.48
 | 1.48
-| [[bp:Tab_sequence_format|Simple two column tab separated sequence files]], where each line holds a record's identifier and sequence. For example, this is used as by Aligent's eArray software when saving microarray probes in a minimal tab delimited text file.
+| [[bp:Tab_sequence_format|Simple two column tab separated sequence files]], where each line holds a record's identifier and sequence. For example, this is used by Aligent's eArray software when saving microarray probes in a minimal tab delimited text file.
 |-  
 | qual
 | 1.50
