@@ -33,8 +33,8 @@ names for the file formats supported.
 
 Note that the inclusion of Bio.AlignIO does lead to some duplication or
 choice in how to deal with some file formats. For example, Bio.AlignIO
-and Bio.Clustalw will both read sequences from Clustal files - but
-Bio.Clustalw also includes a command line wrapper to call the program.
+and Bio.Nexus will both read alignments from NEXUS files - but Bio.NEXUS
+allows more control and the use of trees.
 
 My vision is that for reading or writing sequence alignments you should
 try Bio.AlignIO as your first choice. In some cases you may only care

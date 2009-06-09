@@ -8,7 +8,7 @@ You may already be familiar with the [[SeqIO|Bio.SeqIO]] module which deals with
 
 Similarly, Bio.AlignIO deals with files containing one or more sequence alignments represented as Alignment objects.  Bio.AlignIO uses the same set of functions for input and output as in Bio.SeqIO, and the same names for the file formats supported.
 
-Note that the inclusion of Bio.AlignIO does lead to some duplication or choice in how to deal with some file formats. For example, Bio.AlignIO and Bio.Clustalw will both read sequences from Clustal files - but Bio.Clustalw also includes a command line wrapper to call the program.
+Note that the inclusion of Bio.AlignIO does lead to some duplication or choice in how to deal with some file formats. For example, Bio.AlignIO and Bio.Nexus will both read alignments from NEXUS files - but Bio.NEXUS allows more control and the use of trees.
 
 My vision is that for reading or writing sequence alignments you should try Bio.AlignIO as your first choice.  In some cases you may only care about the sequences themselves, in which case try using [[SeqIO|Bio.SeqIO]] on the alignment file directly.  Unless you have some very specific requirements, I hope this should suffice.
 
