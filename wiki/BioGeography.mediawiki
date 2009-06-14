@@ -43,7 +43,7 @@ If the XML tree element has items encoded in the tag, e.g. key/value or whatever
 Search an element of a parsed XML string and find the number of hits, if it exists.  Recursively searches, if there are subelements.
 ====print_xmltree====
 Prints all the elements & subelements of the xmltree to screen (may require fix_ASCII to input file to succeed)
-* Deleted (turns out this was unnecessary): gettaxonconceptkey====
+====Deleted (turns out this was unnecessary): gettaxonconceptkey====
 user inputs a taxon name and gets the GBIF key back (useful for searching GBIF records and finding e.g. synonyms and daughter taxa).  The GBIF taxon concepts are accessed via the taxon web service: http://data.gbif.org/ws/rest/taxon
 
 ====Code====

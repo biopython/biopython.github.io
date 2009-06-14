@@ -133,7 +133,7 @@ it exists. Recursively searches, if there are subelements.
 Prints all the elements & subelements of the xmltree to screen (may
 require fix\_ASCII to input file to succeed)
 
--   Deleted (turns out this was unnecessary): gettaxonconceptkey====
+#### Deleted (turns out this was unnecessary): gettaxonconceptkey
 
 user inputs a taxon name and gets the GBIF key back (useful for
 searching GBIF records and finding e.g. synonyms and daughter taxa). The
