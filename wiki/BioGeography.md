@@ -140,6 +140,12 @@ searching GBIF records and finding e.g. synonyms and daughter taxa). The
 GBIF taxon concepts are accessed via the taxon web service:
 <http://data.gbif.org/ws/rest/taxon>
 
+#### Code
+
+-   [Code fulfilling these tasks is uploaded
+    here](http://github.com/nmatzke/biopython/commits/Geography), along
+    with an example script and data files to run.
+
 ### June, week 2: Functions to get GBIF records
 
 #### getGBIFrecord

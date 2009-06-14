@@ -46,6 +46,9 @@ Prints all the elements & subelements of the xmltree to screen (may require fix_
 * Deleted (turns out this was unnecessary): gettaxonconceptkey====
 user inputs a taxon name and gets the GBIF key back (useful for searching GBIF records and finding e.g. synonyms and daughter taxa).  The GBIF taxon concepts are accessed via the taxon web service: http://data.gbif.org/ws/rest/taxon
 
+====Code====
+* [http://github.com/nmatzke/biopython/commits/Geography Code fulfilling these tasks is uploaded here], along with an example script and data files to run.
+
 ===June, week 2: Functions to get GBIF records===
 ====getGBIFrecord====
 retrieves the record (for this project, just the “brief” format of the record) and saves it
