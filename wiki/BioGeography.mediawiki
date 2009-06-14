@@ -15,7 +15,7 @@ Code usage: For a few things, an entire necessary function already exists (e.g. 
 Parses polygon, point, and multipoint shapefiles into python objects (storing latitude/longitude coordinates and feature names, e.g. the region name associated with each polygon)
 ====extract_latlong====
 Parse a manually downloaded GBIF record, extracting latitude/longitude and taxon names
-* Functions: shapefile_points_in_poly, tablefile_points_in_poly====
+====shapefile_points_in_poly, tablefile_points_in_poly====
 Input geographic points, determine which region (polygon) each range falls in (via point-in-polygon algorithm); also output points that are unclassified, e.g. some GBIF locations were mis-typed in the source database, so a record will fall in the middle of the ocean.
 
 ====Code====

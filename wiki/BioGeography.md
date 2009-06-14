@@ -64,8 +64,7 @@ region name associated with each polygon)
 Parse a manually downloaded GBIF record, extracting latitude/longitude
 and taxon names
 
--   Functions: shapefile\_points\_in\_poly,
-    tablefile\_points\_in\_poly====
+#### shapefile\_points\_in\_poly, tablefile\_points\_in\_poly
 
 Input geographic points, determine which region (polygon) each range
 falls in (via point-in-polygon algorithm); also output points that are
