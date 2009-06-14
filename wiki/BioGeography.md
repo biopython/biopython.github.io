@@ -153,14 +153,31 @@ GBIF taxon concepts are accessed via the taxon web service:
 Retrieves a single specified record in DarwinCore XML format, and
 returns an xmltree for it.
 
-#### getGBIFrecords
+#### extract\_occurrence\_elements
 
-calls getGBIFrecord for a user-specified list of records (derived from
-searchGBIFrecords function call)
+Returns a list of the elements, picking elements by TaxonOccurrence;
+this should return a list of elements equal to the number of hits.
 
-#### readGBIFrecords
+#### extract\_taxonconceptkeys\_tolist
 
-calls readGBIFrecord on a list of saved records
+Searches an element in an XML tree for TaxonOccurrence gbifKeys, and the
+complete name. Searches recursively, if there are subelements. Returns
+list.
+
+#### extract\_taxonconceptkeys\_tofile
+
+Searches an element in an XML tree for TaxonOccurrence gbifKeys, and the
+complete name. Searches recursively, if there are subelements. Returns
+file at outfh.
+
+#### get\_all\_records\_by\_increment
+
+Download all of the records in stages, store in list of elements.
+Increments of e.g. 100 to not overload server. Currently stores results
+in a list of tempfiles which is returned (could return a list of handles
+I guess).
+
+#### Code
 
 ### June, week 3: Functions to read user-specified Newick files (with ages and internal node labels) and generate basic summary information.
 
