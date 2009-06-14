@@ -39,7 +39,7 @@ Work Plan
 
 ### May, week 1: Functions to read locality data and place points in geographic regions (Tasks 1-2)
 
--   Function: readshapefile
+-   Function: readshpfile
 
   
   
@@ -47,14 +47,14 @@ Parses polygon, point, and multipoint shapefiles into python objects
 (storing latitude/longitude coordinates and feature names, e.g. the
 region name associated with each polygon)
 
--   Function: readGBIFrecord
+-   Function: extract\_latlong
 
   
   
 Parse a manually downloaded GBIF record, extracting latitude/longitude
 and taxon names
 
--   Function: points2ranges
+-   Functions: shapefile\_points\_in\_poly, tablefile\_points\_in\_poly
 
   
   
@@ -67,7 +67,7 @@ database, so a record will fall in the middle of the ocean.
 
 -   [Code fulfilling these tasks is uploaded
     here](http://github.com/nmatzke/biopython/commit/4d963a65ce48b9d50327f191dedcc76abbb149be),
-    along with an example script and data files to run
+    along with an example script and data files to run.
 
 ### June, week 1: Functions to search GBIF and download occurrence records
 

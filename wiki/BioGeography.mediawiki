@@ -7,15 +7,15 @@ BioGeography is a module under development by [[User%3AMatzke|Nick Matzke]] for 
 ==Work Plan==
 
 ===May, week 1: Functions to read locality data and place points in geographic regions (Tasks 1-2)===
-* Function: readshapefile
+* Function: readshpfile
 ::Parses polygon, point, and multipoint shapefiles into python objects (storing latitude/longitude coordinates and feature names, e.g. the region name associated with each polygon)
-* Function: readGBIFrecord
+* Function: extract_latlong
 ::Parse a manually downloaded GBIF record, extracting latitude/longitude and taxon names
-* Function: points2ranges
+* Functions: shapefile_points_in_poly, tablefile_points_in_poly
 ::Input geographic points, determine which region (polygon) each range falls in (via point-in-polygon algorithm); also output points that are unclassified, e.g. some GBIF locations were mis-typed in the source database, so a record will fall in the middle of the ocean.
 
 ====Code====
-* [http://github.com/nmatzke/biopython/commit/4d963a65ce48b9d50327f191dedcc76abbb149be Code fulfilling these tasks is uploaded here], along with an example script and data files to run
+* [http://github.com/nmatzke/biopython/commit/4d963a65ce48b9d50327f191dedcc76abbb149be Code fulfilling these tasks is uploaded here], along with an example script and data files to run.
 
 ===June, week 1: Functions to search GBIF and download occurrence records===
 
