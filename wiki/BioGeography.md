@@ -37,6 +37,20 @@ these programs into files suitable for mapping, e.g. in Google Earth
 Work Plan
 ---------
 
+Note: all major functions are being placed in the file geogUtils.py for
+the moment. Also, the immediate goal is to just get everything basically
+working, so details of where to put various functions, what to call
+them, etc. are being left for later.
+
+Code usage: For a few things, an entire necessary function already
+exists (e.g. for reading a shapefile), and re-inventing the wheel seems
+pointless. In most cases the material used appears to be open source
+(e.g. previous Google Summer of Code). For a few short code snippets
+found online in various places I am less sure. In all cases I am noting
+the source and when finalizing this project I will go back and determine
+if the stuff is considered copyright, and if so email the authors for
+permission to use.
+
 ### May, week 1: Functions to read locality data and place points in geographic regions (Tasks 1-2)
 
 -   Function: readshpfile
