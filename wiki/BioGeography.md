@@ -87,15 +87,42 @@ database, so a record will fall in the middle of the ocean.
 
 Note: creating functions for all possible interactions with GBIF is not
 possible in the time available, I will just focus on searching and
-downloading basic record occurrence record data. The relevant GBIF web
-service is here: <http://data.gbif.org/ws/rest/occurrence>
+downloading basic record occurrence record data.
 
--   Function: searchGBIFrecords – user inputs parameters and a list of
-    GBIF records is returned
--   Function: gettaxonconceptkey – user inputs a taxon name and gets the
-    GBIF key back (useful for searching GBIF records and finding e.g.
-    synonyms and daughter taxa). The GBIF taxon concepts are accessed
-    via the taxon web service: <http://data.gbif.org/ws/rest/taxon>
+-   Function: access\_gbif – utility function invoked by other
+    functions, user inputs parameters and the GBIF response in
+    XML/DarwinCore format is returned. The relevant GBIF web service,
+    and the search commands etc., are here:
+    <http://data.gbif.org/ws/rest/occurrence>
+-   Function: get\_hits -- Get the actual hits that are be returned by a
+    given search, returns filename were they are saved
+-   Function: get\_xml\_hits -- Like get\_hits, but returns a parsed XML
+    tree
+-   Function: fix\_ASCII -- files downloaded from GBIF contain HTML
+    character entities & unicode characters (e.g. umlauts mostly) which
+    mess up printing results to prompt in Python, this fixes that
+-   Function: paramsdict\_to\_string -- converts user's search
+    parameters (in python dictionary format; see here for params
+    <http://data.gbif.org/ws/rest/occurrence> ) to a string for
+    submission via access\_gbif
+-   Function: xmlstring\_to\_xmltree(xmlstring) -- Take the text string
+    returned by GBIF and parse to an XML tree using ElementTree.
+    Requires the intermediate step of saving to a temporary file
+    (required to make ElementTree.parse work, apparently).
+-   Function: element\_items\_to\_dictionary -- If the XML tree element
+    has items encoded in the tag, e.g. key/value or whatever, this
+    function puts them in a python dictionary and returns them.
+-   Function: extract\_numhits -- Search an element of a parsed XML
+    string and find the number of hits, if it exists. Recursively
+    searches, if there are subelements.
+-   Function: print\_xmltree -- Prints all the elements & subelements of
+    the xmltree to screen (may require fix\_ASCII to input file
+    to succeed)
+-   Deleted (turns out this was unnecessary): gettaxonconceptkey – user
+    inputs a taxon name and gets the GBIF key back (useful for searching
+    GBIF records and finding e.g. synonyms and daughter taxa). The GBIF
+    taxon concepts are accessed via the taxon web service:
+    <http://data.gbif.org/ws/rest/taxon>
 
 ### June, week 2: Functions to get GBIF records
 
