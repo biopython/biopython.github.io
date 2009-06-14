@@ -148,10 +148,10 @@ GBIF taxon concepts are accessed via the taxon web service:
 
 ### June, week 2: Functions to get GBIF records
 
-#### getGBIFrecord
+#### get\_record
 
-retrieves the record (for this project, just the “brief” format of the
-record) and saves it
+Retrieves a single specified record in DarwinCore XML format, and
+returns an xmltree for it.
 
 #### getGBIFrecords
 
