@@ -50,6 +50,9 @@ user inputs a taxon name and gets the GBIF key back (useful for searching GBIF r
 * [http://github.com/nmatzke/biopython/commits/Geography Code fulfilling these tasks is uploaded here], along with an example script and data files to run.
 
 ===June, week 2: Functions to get GBIF records===
+
+Added functions download & parse large numbers of records, get TaxonOccurrence gbifKeys, and search with those keys.
+
 ====get_record====
 Retrieves a single specified record in DarwinCore XML format, and returns an xmltree for it.
 
@@ -66,6 +69,8 @@ Searches an element in an XML tree for TaxonOccurrence gbifKeys, and the complet
 Download all of the records in stages, store in list of elements. Increments of e.g. 100 to not overload server.  Currently stores results in a list of tempfiles which is returned (could return a list of handles I guess).
 
 ====Code====
+
+Updated functions have been pushed to Github [http://github.com/nmatzke/biopython/commit/5df9025ea5cd3458915db982c69422345e1da8d7 here]
 
 ===June, week 3: Functions to read user-specified Newick files (with ages and internal node labels) and generate basic summary information.===
 

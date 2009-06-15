@@ -148,6 +148,9 @@ GBIF taxon concepts are accessed via the taxon web service:
 
 ### June, week 2: Functions to get GBIF records
 
+Added functions download & parse large numbers of records, get
+TaxonOccurrence gbifKeys, and search with those keys.
+
 #### get\_record
 
 Retrieves a single specified record in DarwinCore XML format, and
@@ -178,6 +181,9 @@ in a list of tempfiles which is returned (could return a list of handles
 I guess).
 
 #### Code
+
+Updated functions have been pushed to Github
+[here](http://github.com/nmatzke/biopython/commit/5df9025ea5cd3458915db982c69422345e1da8d7)
 
 ### June, week 3: Functions to read user-specified Newick files (with ages and internal node labels) and generate basic summary information.
 
