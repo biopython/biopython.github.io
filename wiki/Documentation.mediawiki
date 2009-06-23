@@ -62,6 +62,8 @@ We have a separate list of [[Publications|publications citing or using Biopython
 
 ==== Presentations ====
 
+* Scottish NextGenBug meeting - Second generation sequence data and Biopython
+:[http://biopython.org/DIST/docs/presentations/Biopython_NextGenBUG_June2009.pdf PDF]
 * BOSC 2008 presentation "Biopython Project Update"
 :[http://biopython.org/DIST/docs/presentations/Biopython_BOSC_2008.pdf PDF] | [http://www.slideshare.net/bosc_2008/antao-biopython-bosc2008/ Flash version]
 * BOSC 2007 presentation "Biopython Project Update"

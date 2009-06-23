@@ -147,6 +147,12 @@ Biopython. </biblio>
 
 #### Presentations
 
+-   Scottish NextGenBug meeting - Second generation sequence data and
+    Biopython
+
+  
+[PDF](http://biopython.org/DIST/docs/presentations/Biopython_NextGenBUG_June2009.pdf)
+
 -   BOSC 2008 presentation "Biopython Project Update"
 
   
