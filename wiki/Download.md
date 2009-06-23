@@ -204,6 +204,21 @@ Old Releases
 
 Recent releases of Biopython require NumPy (and not Numeric):
 
+-   [biopython-1.50.tar.gz](http://biopython.org/DIST/biopython-1.50.tar.gz)
+    4,550 Kb -- Source Tarball
+-   [biopython-1.50.zip](http://biopython.org/DIST/biopython-1.50.zip)
+    4,988 Kb -- Source Zip File
+-   [biopython-1.50.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.50.win32-py2.3.exe)
+    1,228 Kb -- Windows Installer for Python 2.3 and NumPy 1.1
+-   [biopython-1.50.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.50.win32-py2.4.exe)
+    1,232 Kb -- Windows Installer for Python 2.4 and NumPy 1.1
+-   [biopython-1.50.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.50.win32-py2.5.exe)
+    1,232 Kb -- Windows Installer for Python 2.5 and NumPy 1.1
+-   [biopython-1.50.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.50.win32-py2.6.exe)
+    1,270 Kb -- Windows Installer for Python 2.6 and NumPy 1.3
+
+<!-- -->
+
 -   [biopython-1.50b.tar.gz](http://biopython.org/DIST/biopython-1.50b.tar.gz)
     4,788 Kb
 -   [biopython-1.50b.zip](http://biopython.org/DIST/biopython-1.50b.zip)
@@ -216,6 +231,9 @@ Recent releases of Biopython require NumPy (and not Numeric):
     1,230 Kb -- Windows Installer for Python 2.5 and NumPy 1.1
 -   [biopython-1.50b.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.50b.win32-py2.6.exe)
     1,268 Kb -- Windows Installer for Python 2.6 and NumPy 1.3
+
+<!-- -->
+
 -   [biopython-1.49.tar.gz](http://biopython.org/DIST/biopython-1.49.tar.gz)
     4,052 Kb
 -   [biopython-1.49.zip](http://biopython.org/DIST/biopython-1.49.zip)
@@ -226,6 +244,9 @@ Recent releases of Biopython require NumPy (and not Numeric):
     1,115 Kb -- Windows Installer for Python 2.4 and NumPy 1.1
 -   [biopython-1.49.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.49.win32-py2.5.exe)
     1,115 Kb -- Windows Installer for Python 2.5 and NumPy 1.1
+
+<!-- -->
+
 -   [biopython-1.49b.tar.gz](http://biopython.org/DIST/biopython-1.49b.tar.gz)
     4,331 Kb
 -   [biopython-1.49b.zip](http://biopython.org/DIST/biopython-1.49b.zip)
