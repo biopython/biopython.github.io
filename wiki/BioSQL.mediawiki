@@ -181,7 +181,7 @@ db = server.new_database("orchids", description="Just for testing")
 server.commit() #On Biopython 1.49 or older, server.adaptor.commit()
 </source>
 
-(If you are using PostgreSQL rather than MySQL, just change the driver argument to "psycopg" instead. The same applies to the other examples in this document)
+(If you are using PostgreSQL rather than MySQL, just change the driver argument to "psycopg2" instead. The same applies to the other examples in this document)
 
 The ''commit'' call tells the database to save the changes so far (commit the SQL transaction).  It is up to you to decide when to commit the SQL transaction(s), and/or rollback changes, rather than having Biopython try and decide for you and risk getting it wrong.  See ''Explicit is better than implicit'' ([http://www.python.org/dev/peps/pep-0020/ The Zen of Python]) and [http://bugzilla.open-bio.org/show_bug.cgi?id=2395 bug 2395].
 

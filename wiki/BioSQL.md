@@ -269,8 +269,8 @@ server.commit() #On Biopython 1.49 or older, server.adaptor.commit()
 ```
 
 (If you are using PostgreSQL rather than MySQL, just change the driver
-argument to "psycopg" instead. The same applies to the other examples in
-this document)
+argument to "psycopg2" instead. The same applies to the other examples
+in this document)
 
 The *commit* call tells the database to save the changes so far (commit
 the SQL transaction). It is up to you to decide when to commit the SQL
