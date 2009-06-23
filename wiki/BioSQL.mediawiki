@@ -165,15 +165,9 @@ Change these to match your setup.  You can then run the BioSQL unit tests as nor
 For PostgreSQL, use:
 
 <source lang=python>
-DBDRIVER = 'psycopg'
-DBTYPE = 'pg'
-</source>
-or:
-<source lang=python>
 DBDRIVER = 'psycopg2'
 DBTYPE = 'pg'
 </source>
-depending on which of the Python bindings you want to install.
 
 = Creating a (sub) database =
 
