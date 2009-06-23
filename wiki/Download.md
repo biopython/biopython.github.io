@@ -4,25 +4,29 @@ permalink: wiki/Download
 layout: wiki
 ---
 
-Current Release -- 1.50 -- 20 April 2009
-========================================
+Current Release - 1.51 beta - 23 June 2009
+==========================================
 
 See also [What's new](http://biopython.open-bio.org/SRC/biopython/NEWS).
 
 ### Files
 
--   [biopython-1.50.tar.gz](http://biopython.org/DIST/biopython-1.50.tar.gz)
-    4,550 Kb -- Source Tarball
--   [biopython-1.50.zip](http://biopython.org/DIST/biopython-1.50.zip)
-    4,988 Kb -- Source Zip File
--   [biopython-1.50.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.50.win32-py2.3.exe)
-    1,228 Kb -- Windows Installer for Python 2.3 and NumPy 1.1
--   [biopython-1.50.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.50.win32-py2.4.exe)
-    1,232 Kb -- Windows Installer for Python 2.4 and NumPy 1.1
--   [biopython-1.50.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.50.win32-py2.5.exe)
-    1,232 Kb -- Windows Installer for Python 2.5 and NumPy 1.1
--   [biopython-1.50.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.50.win32-py2.6.exe)
-    1,270 Kb -- Windows Installer for Python 2.6 and NumPy 1.3
+-   [biopython-1.51b.tar.gz](http://biopython.org/DIST/biopython-1.51b.tar.gz)
+    5,172 Kb -- Source Tarball
+-   [biopython-1.51b.zip](http://biopython.org/DIST/biopython-1.51b.zip)
+    5,605 Kb -- Source Zip File
+-   [biopython-1.51b.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.51b.win32-py2.4.exe)
+    1,161 Kb -- Windows Installer for Python 2.4 and NumPy 1.1
+-   [biopython-1.51b.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.51b.win32-py2.5.exe)
+    1,161 Kb -- Windows Installer for Python 2.5 and NumPy 1.1
+-   [biopython-1.51b.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.51b.win32-py2.6.exe)
+    1,199 Kb -- Windows Installer for Python 2.6 and NumPy 1.3
+
+**NOTE** : This is a *beta* release for testing. It would be unwise to
+install this on a production machine without doing extensive testing.
+Please report any issues on our [mailing
+lists](mailing_lists "wikilink") or
+[bugzilla](http://bugzilla.open-bio.org/).
 
 ### Installation Instructions
 
@@ -53,8 +57,8 @@ list](Mailing_lists "wikilink") and ask for help there.
 
 ### Required Software
 
--   [Python 2.3, 2.4, 2.5 or 2.6](http://www.python.org) (although this
-    should be the last release of Biopython to support Python 2.3)
+-   [Python 2.4, 2.5 or 2.6](http://www.python.org) (Biopython 1.50 was
+    the last release of Biopython to support Python 2.3)
 -   [A C compiler (if compiling
     from source)](http://www.python.org/doc/current/inst/inst.html) You
     need a C compiler supported by distutils, gcc will work fine on
