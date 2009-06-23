@@ -33,9 +33,6 @@ These instructions are for a Unix machine, with a Windows machine also needed to
 
 Ideally do this with a clean checkout on your Windows machine too.  Assuming you have setup your compilers etc appropriately just do this:
 
-    C:\python23\python setup.py build
-    C:\python23\python setup.py test
-
     C:\python24\python setup.py build
     C:\python24\python setup.py test
 
@@ -44,6 +41,8 @@ Ideally do this with a clean checkout on your Windows machine too.  Assuming you
 
     C:\python26\python setup.py build
     C:\python26\python setup.py test
+
+Running the tests simultaneously is risky, as two threads may both try and read/write to the same temp files.
 
 9. check out clean version somewhere else
     drevil:~tmp1/> cvs -d :ext:jchang@pub.open-bio.org:/home/repository/biopython checkout biopython 

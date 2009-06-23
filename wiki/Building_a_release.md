@@ -50,9 +50,6 @@ recent CVS changes like this (adjust the date accordingly):
 Ideally do this with a clean checkout on your Windows machine too.
 Assuming you have setup your compilers etc appropriately just do this:
 
-`   C:\python23\python setup.py build`  
-`   C:\python23\python setup.py test`
-
 `   C:\python24\python setup.py build`  
 `   C:\python24\python setup.py test`
 
@@ -61,6 +58,9 @@ Assuming you have setup your compilers etc appropriately just do this:
 
 `   C:\python26\python setup.py build`  
 `   C:\python26\python setup.py test`
+
+Running the tests simultaneously is risky, as two threads may both try
+and read/write to the same temp files.
 
 9. check out clean version somewhere else
 
