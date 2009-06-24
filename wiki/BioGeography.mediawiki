@@ -98,9 +98,8 @@ Get a square list of lists (array) listing the mrca of each pair of leaves (half
 Given a list of tips and a tree, remove all other tips and resulting redundant nodes to produce a new smaller tree.
 
 ====prune_single_desc_nodes(node)====
-Follow a tree from the bottom up, pruning any nodes with only one descendent
-	
-find_new_root(node)====
+Follow a tree from the bottom up, pruning any nodes with only one descendant
+====find_new_root(node)====
 Search up tree from root and make new root at first divergence
 
 ====make_None_list_array(xdim, ydim)====
@@ -117,8 +116,8 @@ Get the list of ancestors of a given node
 
 ====addup_PD(node, PD)====
 Adds the branchlength of the current node to the total PD measure.
-	
-print_tree_outline_format(phylo_obj)====
+
+====print_tree_outline_format(phylo_obj)====
 Prints the tree out in "outline" format (daughter clades are indented, etc.)
 
 ====print_Node(node, rank)====

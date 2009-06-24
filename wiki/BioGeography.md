@@ -227,10 +227,11 @@ redundant nodes to produce a new smaller tree.
 #### prune\_single\_desc\_nodes(node)
 
 Follow a tree from the bottom up, pruning any nodes with only one
-descendent
+descendant
 
-find\_new\_root(node)==== Search up tree from root and make new root at
-first divergence
+#### find\_new\_root(node)
+
+Search up tree from root and make new root at first divergence
 
 #### make\_None\_list\_array(xdim, ydim)
 
@@ -253,8 +254,10 @@ Get the list of ancestors of a given node
 
 Adds the branchlength of the current node to the total PD measure.
 
-print\_tree\_outline\_format(phylo\_obj)==== Prints the tree out in
-"outline" format (daughter clades are indented, etc.)
+#### print\_tree\_outline\_format(phylo\_obj)
+
+Prints the tree out in "outline" format (daughter clades are indented,
+etc.)
 
 #### print\_Node(node, rank)
 
