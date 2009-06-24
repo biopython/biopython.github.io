@@ -126,6 +126,9 @@ Prints the node in question, and recursively all daughter nodes, maintaining ran
 ====lagrange_disclaimer()====
 Just prints lagrange citation etc. in code using lagrange libraries.
 
+====Code====
+* [http://github.com/nmatzke/biopython/commits/Geography Code fulfilling these tasks is uploaded here], along with an example script and data files to run.
+
 ===June, week 4: Functions to summarize taxon diversity in regions, given a phylogeny and a list of taxa and the regions they are in.===
 
 (note: I have scripts doing all of these functions already, so the work is integrating them into a Biopython module, testing them, etc.)

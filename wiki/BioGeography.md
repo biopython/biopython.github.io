@@ -268,6 +268,12 @@ maintaining rank as it goes.
 
 Just prints lagrange citation etc. in code using lagrange libraries.
 
+#### Code
+
+-   [Code fulfilling these tasks is uploaded
+    here](http://github.com/nmatzke/biopython/commits/Geography), along
+    with an example script and data files to run.
+
 ### June, week 4: Functions to summarize taxon diversity in regions, given a phylogeny and a list of taxa and the regions they are in.
 
 (note: I have scripts doing all of these functions already, so the work
