@@ -20,7 +20,7 @@ Currently (i.e., for the near term) the following new functionality can be expec
 * STRUCTURE support
 * LDNe support
 * [[PopGen_dev_Statistics|Statistics]]
-* [[PopGen_dev_Genepop|Frequentist Statistics through Genepop]]
+* [[PopGen_dev_Genepop|Frequency statistics through Genepop]]
 
 ==Code and contributing==
 
