@@ -7,7 +7,8 @@ layout: wiki
 This module handles the parsing and generation of files in the
 [phyloXML](http://www.phyloxml.org/) format.
 
-Documentation has not been integrated into the Biopython Tutorial yet.
+This code is not yet part of Biopython, and therefore the documentation
+has not been integrated into the Biopython Tutorial yet either.
 
 Usage
 -----
