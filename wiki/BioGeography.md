@@ -273,6 +273,14 @@ Just prints lagrange citation etc. in code using lagrange libraries.
 (note: I have scripts doing all of these functions already, so the work
 is integrating them into a Biopython module, testing them, etc.)
 
+Priority for this week:
+
+Following up on suggestions to make the code more standard, with the
+priority of figuring out how I can revise the current BioPython
+phylogeny class, to resemble the better version in lagrange, so that
+there is a generic flexible phylogeny/newick parser that can be used
+generally as well as by my BioGeography package specifically.
+
 #### alphadiversity
 
 alpha diversity of a region (number of taxa in the region)
