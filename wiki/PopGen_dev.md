@@ -46,6 +46,8 @@ be expected
 -   STRUCTURE support
 -   LDNe support
 -   [Statistics](PopGen_dev_Statistics "wikilink")
+-   [Frequentist Statistics through
+    Genepop](PopGen_dev_Genepop "wikilink")
 
 Code and contributing
 ---------------------
