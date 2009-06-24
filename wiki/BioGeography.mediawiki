@@ -76,19 +76,56 @@ Updated functions have been pushed to Github [http://github.com/nmatzke/biopytho
 
 (note: I have scripts doing all of these functions already, so the work is integrating them into a Biopython module, testing them, etc.)
 
-====read_ultrametric_Newick====
-read a Newick file into a tree object (a series of node objects links to parent and daughter nodes), also reading node ages and node labels if any.
-====treelength====
-get the total branchlength above a given node
-====phylodistance====
-get the phylogenetic distance (branch length) between two nodes
-====get_distance_matrix====
-get a matrix of all of the pairwise distances between the tips of a tree.  
+====read_ultrametric_Newick(newickstr)====
+Read a Newick file into a tree object (a series of node objects links to parent and daughter nodes), also reading node ages and node labels if any. 
 
-This can be a slow function for large trees; currently I call a java function from python, this is probably the way to go.
+====list_leaves(phylo_obj)====
+Print out all of the leaves in above a node object
 
-====subset_tree====
-given a list of tips and a tree, remove all other tips and resulting redundant nodes to produce a new smaller tree (as in Phylomatic)
+====treelength(node)====
+Gets the total branchlength above a given node by recursively adding through tree.
+
+====phylodistance(node1, node2)====
+Get the phylogenetic distance (branch length) between two nodes.
+
+====get_distance_matrix(phylo_obj)====
+Get a matrix of all of the pairwise distances between the tips of a tree.
+
+====get_mrca_array(phylo_obj)====
+Get a square list of lists (array) listing the mrca of each pair of leaves (half-diagonal matrix)
+
+====subset_tree(phylo_obj, list_to_keep)====
+Given a list of tips and a tree, remove all other tips and resulting redundant nodes to produce a new smaller tree.
+
+====prune_single_desc_nodes(node)====
+Follow a tree from the bottom up, pruning any nodes with only one descendent
+	
+find_new_root(node)====
+Search up tree from root and make new root at first divergence
+
+====make_None_list_array(xdim, ydim)====
+Make a list of lists ("array") with the specified dimensions	
+
+====get_PD_to_mrca(node, mrca, PD)====
+Add up the phylogenetic distance from a node to the specified ancestor (mrca).  Find mrca with find_1st_match.
+
+====find_1st_match(list1, list2)====
+Find the first match in two ordered lists.
+
+====get_ancestors_list(node, anc_list)====
+Get the list of ancestors of a given node
+
+====addup_PD(node, PD)====
+Adds the branchlength of the current node to the total PD measure.
+	
+print_tree_outline_format(phylo_obj)====
+Prints the tree out in "outline" format (daughter clades are indented, etc.)
+
+====print_Node(node, rank)====
+Prints the node in question, and recursively all daughter nodes, maintaining rank as it goes.
+
+====lagrange_disclaimer()====
+Just prints lagrange citation etc. in code using lagrange libraries.
 
 ===June, week 4: Functions to summarize taxon diversity in regions, given a phylogeny and a list of taxa and the regions they are in.===
 

@@ -190,32 +190,80 @@ Updated functions have been pushed to Github
 (note: I have scripts doing all of these functions already, so the work
 is integrating them into a Biopython module, testing them, etc.)
 
-#### read\_ultrametric\_Newick
+#### read\_ultrametric\_Newick(newickstr)
 
-read a Newick file into a tree object (a series of node objects links to
+Read a Newick file into a tree object (a series of node objects links to
 parent and daughter nodes), also reading node ages and node labels if
 any.
 
-#### treelength
+#### list\_leaves(phylo\_obj)
 
-get the total branchlength above a given node
+Print out all of the leaves in above a node object
 
-#### phylodistance
+#### treelength(node)
 
-get the phylogenetic distance (branch length) between two nodes
+Gets the total branchlength above a given node by recursively adding
+through tree.
 
-#### get\_distance\_matrix
+#### phylodistance(node1, node2)
 
-get a matrix of all of the pairwise distances between the tips of a
+Get the phylogenetic distance (branch length) between two nodes.
+
+#### get\_distance\_matrix(phylo\_obj)
+
+Get a matrix of all of the pairwise distances between the tips of a
 tree.
 
-This can be a slow function for large trees; currently I call a java
-function from python, this is probably the way to go.
+#### get\_mrca\_array(phylo\_obj)
 
-#### subset\_tree
+Get a square list of lists (array) listing the mrca of each pair of
+leaves (half-diagonal matrix)
 
-given a list of tips and a tree, remove all other tips and resulting
-redundant nodes to produce a new smaller tree (as in Phylomatic)
+#### subset\_tree(phylo\_obj, list\_to\_keep)
+
+Given a list of tips and a tree, remove all other tips and resulting
+redundant nodes to produce a new smaller tree.
+
+#### prune\_single\_desc\_nodes(node)
+
+Follow a tree from the bottom up, pruning any nodes with only one
+descendent
+
+find\_new\_root(node)==== Search up tree from root and make new root at
+first divergence
+
+#### make\_None\_list\_array(xdim, ydim)
+
+Make a list of lists ("array") with the specified dimensions
+
+#### get\_PD\_to\_mrca(node, mrca, PD)
+
+Add up the phylogenetic distance from a node to the specified ancestor
+(mrca). Find mrca with find\_1st\_match.
+
+#### find\_1st\_match(list1, list2)
+
+Find the first match in two ordered lists.
+
+#### get\_ancestors\_list(node, anc\_list)
+
+Get the list of ancestors of a given node
+
+#### addup\_PD(node, PD)
+
+Adds the branchlength of the current node to the total PD measure.
+
+print\_tree\_outline\_format(phylo\_obj)==== Prints the tree out in
+"outline" format (daughter clades are indented, etc.)
+
+#### print\_Node(node, rank)
+
+Prints the node in question, and recursively all daughter nodes,
+maintaining rank as it goes.
+
+#### lagrange\_disclaimer()
+
+Just prints lagrange citation etc. in code using lagrange libraries.
 
 ### June, week 4: Functions to summarize taxon diversity in regions, given a phylogeny and a list of taxa and the regions they are in.
 
