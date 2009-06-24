@@ -4,8 +4,8 @@ permalink: wiki/PopGen_Genepop
 layout: wiki
 ---
 
-Genepop support
-===============
+Genepop support.
+================
 
 Genepop support is actually 2 things: The support for the file format,
 the de facto standard in frequency analysis in population genetics and
