@@ -48,7 +48,7 @@ Seq('aatacgGGATTGCCCTAGTAACGGCGAGTGAAGCGGCAACAGCTCAAATTTGAA...tac', Gapped(DNAAl
 </source>
 
 ===Treating contigs as alignments ===
-Ace files also contain information on the reads that support the consensus sequence. Its possible to treat each contig as a generic alignment using this [[AlignIO | cookbook entry]] (there has been a discussion on bringing a function like this into AlignIO [http://lists.open-bio.org/pipermail/biopython-dev/2009-June/006320.html  here], if you have thoughts with how best to do this then please share them on the list). It's also possible to get a bunch of properties for each read from two lists in the contig class, 'reads' and 'af'
+Ace files also contain information on the reads that support the consensus sequence. Its possible to treat each contig as a generic alignment using this [[Ace_contig_class | cookbook entry]] (there has been a discussion on bringing a function like this into AlignIO [http://lists.open-bio.org/pipermail/biopython-dev/2009-June/006320.html  here], if you have thoughts with how best to do this then please share them on the list). It's also possible to get a bunch of properties for each read from two lists in the contig class, 'reads' and 'af'
 
 <source lang=python>
 # using the contig we read into memory above
