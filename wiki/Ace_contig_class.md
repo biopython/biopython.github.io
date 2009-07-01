@@ -78,9 +78,9 @@ Seq('aatacgGGATTGCCCTAGTAACGGCGAGTGAAGCGGCAACAGCTCAAATTTGAA...tac', Gapped(DNAAl
 
 Ace files also contain information on the reads that support the
 consensus sequence. Its possible to treat each contig as a generic
-alignment using this [ cookbook entry](Ace_contig_class "wikilink")
-(there has been a discussion on bringing a function like this into
-AlignIO
+alignment using this [cookbook
+entry](ACE_contig_to_alignment "wikilink") (there has been a discussion
+on bringing a function like this into AlignIO
 [here](http://lists.open-bio.org/pipermail/biopython-dev/2009-June/006320.html),
 if you have thoughts with how best to do this then please share them on
 the list). It's also possible to get a bunch of properties for each read
