@@ -273,12 +273,12 @@ core used) with 7.7GB memory:
 
 | File                         | Size (uncompressed) | Read (s) | Parse (s) | Write (s) |
 |------------------------------|---------------------|----------|-----------|-----------|
-| phyloxml\_examples.xml       | 15 KB               | 0.0056   | 0.0054    | 0.0103    |
-| apaf.xml                     | 38 KB               | 0.0114   | 0.0113    | 0.0252    |
-| bcl\_2.xml                   | 105 KB              | 0.0300   | 0.0300    | 0.0455    |
-| ncbi\_taxonomy\_mollusca.xml | 1.5 MB              | 0.704    | 0.678     | 0.686     |
-| ncbi\_taxonomy\_metazoa.xml  | 33 MB               | 16.696   | 17.275    | 9.051     |
-| ncbi\_taxonomy.xml           | 31 MB (unindented)  | 100.487  | 101.503   | 27.104    |
+| phyloxml\_examples.xml       | 15 KB               | 0.0056   | 0.0053    | 0.0103    |
+| apaf.xml                     | 38 KB               | 0.0112   | 0.0112    | 0.0252    |
+| bcl\_2.xml                   | 105 KB              | 0.0293   | 0.0294    | 0.0455    |
+| ncbi\_taxonomy\_mollusca.xml | 1.5 MB              | 0.688    | 0.666     | 0.683     |
+| ncbi\_taxonomy\_metazoa.xml  | 33 MB               | 16.383   | 16.986    | 9.026     |
+| ncbi\_taxonomy.xml           | 31 MB (unindented)  | 99.715   | 100.588   | 27.166    |
 
 Summer of Code project
 ----------------------
