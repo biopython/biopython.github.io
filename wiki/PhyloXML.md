@@ -144,10 +144,46 @@ Bio.TreeIO interface? Let's discuss it at some point.*
 
 Some additional tools are located in Bio.PhyloXML.Utils.
 
--   pretty\_print -- produce a plain-text representation of the
+-   dump\_tags -- Print the XML tags as they are encountered in
+    the file. For testing and debugging, mainly.
+
+<!-- -->
+
+    >>> PhyloXML.dump_tags('phyloxml_examples.xml')
+    {http://www.phyloxml.org}phyloxml
+    {http://www.phyloxml.org}phylogeny
+    {http://www.phyloxml.org}name
+    {http://www.phyloxml.org}description
+    {http://www.phyloxml.org}clade
+    ...
+
+-   pretty\_print -- Produces a plain-text representation of the
     entire tree. Uses str() to display nodes by default; for the
     longer repr() representation, add the argument show\_all=True.
--   dump\_tags -- for debugging, mainly
+
+<!-- -->
+
+    >>> PhyloXML.pretty_print('phyloxml_examples.xml')
+    Phyloxml
+        Phylogeny example from Prof. Joe Felsenstein's book "Inferring Phylogenies"
+            Clade
+                Clade
+                    Clade A
+                    Clade B
+                Clade C
+    ...
+
+    >>> PhyloXML.pretty_print('phyloxml_examples.xml', show_all=True)
+    Phyloxml()
+        Phylogeny(description=phyloXML allows to use either a "branch_length"
+    attribute or element to indicate branch lengths., name=example from Prof. Joe
+    Felsenstein's book "Inferring Phylogenies")
+            Clade()
+                Clade(branch_length=0.06)
+                    Clade(branch_length=0.102, name=A)
+                    Clade(branch_length=0.23, name=B)
+                Clade(branch_length=0.4, name=C)
+    ...
 
 ### Performance
 

@@ -87,8 +87,41 @@ The Tree.Sequence class contains methods for converting to and from Biopython [[
 
 Some additional tools are located in Bio.PhyloXML.Utils.
 
-* pretty_print -- produce a plain-text representation of the entire tree. Uses str() to display nodes by default; for the longer repr() representation, add the argument show_all=True.
-* dump_tags -- for debugging, mainly
+* dump_tags -- Print the XML tags as they are encountered in the file. For testing and debugging, mainly.
+<pre>
+>>> PhyloXML.dump_tags('phyloxml_examples.xml')
+{http://www.phyloxml.org}phyloxml
+{http://www.phyloxml.org}phylogeny
+{http://www.phyloxml.org}name
+{http://www.phyloxml.org}description
+{http://www.phyloxml.org}clade
+...
+</pre>
+* pretty_print -- Produces a plain-text representation of the entire tree. Uses str() to display nodes by default; for the longer repr() representation, add the argument show_all=True.
+<pre>
+>>> PhyloXML.pretty_print('phyloxml_examples.xml')
+Phyloxml
+	Phylogeny example from Prof. Joe Felsenstein's book "Inferring Phylogenies"
+		Clade
+			Clade
+				Clade A
+				Clade B
+			Clade C
+...
+</pre>
+
+<pre>>>> PhyloXML.pretty_print('phyloxml_examples.xml', show_all=True)
+Phyloxml()
+	Phylogeny(description=phyloXML allows to use either a "branch_length"
+attribute or element to indicate branch lengths., name=example from Prof. Joe
+Felsenstein's book "Inferring Phylogenies")
+		Clade()
+			Clade(branch_length=0.06)
+				Clade(branch_length=0.102, name=A)
+				Clade(branch_length=0.23, name=B)
+			Clade(branch_length=0.4, name=C)
+...
+</pre>
 
 ===Performance===
 
