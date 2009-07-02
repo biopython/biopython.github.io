@@ -39,14 +39,6 @@ implementations until it succeeds. The given XML file handle is then
 parsed incrementally to instantiate an object hierarchy containing the
 relevant phylogenetic information.
 
-This parser is meant to be able to handle large files, meaning several
-thousand external nodes. (Benchmarks of relevant XML parsers for Python
-are [here](http://effbot.org/zone/celementtree.htm#benchmarks).) It has
-been tested with files of this size; for example, the complete NCBI
-taxonomy parses in about 100 seconds and consumes about 1.3 GB of
-memory. Provided enough memory is available on the system, the writer
-can also rebuild phyloXML files of this size.
-
 Usage
 -----
 
@@ -75,7 +67,7 @@ objects, and so on.
 The PhyloXML.Writer module exports one function to the top level of the
 package: write().
 
-### Using phyloXML objects
+### Using PhyloXML objects
 
 Standard Python syntactic sugar is supported wherever it's reasonable.
 
@@ -159,6 +151,14 @@ Some additional tools are located in Bio.PhyloXML.Utils.
 
 ### Performance
 
+This parser is meant to be able to handle large files, meaning several
+thousand external nodes. (Benchmarks of relevant XML parsers for Python
+are [here](http://effbot.org/zone/celementtree.htm#benchmarks).) It has
+been tested with files of this size; for example, the complete NCBI
+taxonomy parses in about 100 seconds and consumes about 1.3 GB of
+memory. Provided enough memory is available on the system, the writer
+can also rebuild phyloXML files of this size.
+
 The read() and parse() functions process a complete file in about the
 same amount of CPU time. Most of the underlying code is the same, and
 the majority of the time is spent building Clade objects. For small
@@ -168,12 +168,25 @@ twice the CPU time required by the corresponding read() call; for large
 files write() is more efficient, finishing up to 3.6 times as fast as
 read() for the largest file tested.
 
+Here are some times on a 2.00GHz Intel Xeon E5405 processor (only 1 CPU
+core used) with 7.7GB memory:
+
+| File                         | Size (uncompressed) | Read (s) | Parse (s) | Write (s) |
+|------------------------------|---------------------|----------|-----------|-----------|
+| phyloxml\_examples.xml       | 15 KB               | 0.0056   | 0.0054    | 0.0103    |
+| apaf.xml                     | 38 KB               | 0.0114   | 0.0113    | 0.0252    |
+| bcl\_2.xml                   | 105 KB              | 0.0300   | 0.0300    | 0.0455    |
+| ncbi\_taxonomy\_mollusca.xml | 1.5 MB              | 0.704    | 0.678     | 0.686     |
+| ncbi\_taxonomy\_metazoa.xml  | 33 MB               | 16.696   | 17.275    | 9.051     |
+| ncbi\_taxonomy.xml           | 31 MB (unindented)  | 100.487  | 101.503   | 27.104    |
+
 Summer of Code project
 ----------------------
 
-This module is being developed by [Eric](User%3AEricTalevich "wikilink")
-as a project for Google Summer of Code 2009, with NESCent as the
-mentoring organization and Brad as the primary mentor.
+This module is being developed by [Eric
+Talevich](User%3AEricTalevich "wikilink") as a project for Google Summer
+of Code 2009, with NESCent as the mentoring organization and Brad
+Chapman as the primary mentor.
 
 Main SoC project page: [PhyloSoC:Biopython support for parsing and
 writing
@@ -182,8 +195,8 @@ phyloXML](https://www.nescent.org/wg_phyloinformatics/PhyloSoC:Biopython_support
 Other software
 --------------
 
-[Christian Zmasek](http://monochrome-effect.net/), author of the
-phyloXML specification, has released some software that uses this
+[Christian Zmasek](http://monochrome-effect.net/), one of the authors of
+the phyloXML specification, has released some software that uses this
 format:
 
 -   [Forester](http://www.phylosoft.org/forester/) -- a collection of

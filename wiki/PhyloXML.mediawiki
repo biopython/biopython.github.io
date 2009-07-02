@@ -17,8 +17,6 @@ The XML parser used in this module is ElementTree, new to the Python standard li
 
 The module attempts to import each of these compatible ElementTree implementations until it succeeds. The given XML file handle is then parsed incrementally to instantiate an object hierarchy containing the relevant phylogenetic information.
 
-This parser is meant to be able to handle large files, meaning several thousand external nodes. (Benchmarks of relevant XML parsers for Python are [http://effbot.org/zone/celementtree.htm#benchmarks here].) It has been tested with files of this size; for example, the complete NCBI taxonomy parses in about 100 seconds and consumes about 1.3 GB of memory. Provided enough memory is available on the system, the writer can also rebuild phyloXML files of this size.
-
 ==Usage==
 
 The most useful parts of this package are available from the top level of the module:
@@ -39,7 +37,7 @@ Both functions accept either a file name or an open file handle, so phyloXML dat
 
 The PhyloXML.Writer module exports one function to the top level of the package: write().
 
-===Using phyloXML objects===
+===Using PhyloXML objects===
 
 Standard Python syntactic sugar is supported wherever it's reasonable.
 
@@ -94,17 +92,62 @@ Some additional tools are located in Bio.PhyloXML.Utils.
 
 ===Performance===
 
+This parser is meant to be able to handle large files, meaning several thousand external nodes. (Benchmarks of relevant XML parsers for Python are [http://effbot.org/zone/celementtree.htm#benchmarks here].) It has been tested with files of this size; for example, the complete NCBI taxonomy parses in about 100 seconds and consumes about 1.3 GB of memory. Provided enough memory is available on the system, the writer can also rebuild phyloXML files of this size.
+
 The read() and parse() functions process a complete file in about the same amount of CPU time. Most of the underlying code is the same, and the majority of the time is spent building Clade objects. For small files (smaller than ncbi_taxonomy_mollusca.xml), the write() function serializes the complete object back to an equivalent file in around twice the CPU time required by the corresponding read() call; for large files write() is more efficient, finishing up to 3.6 times as fast as read() for the largest file tested.
+
+Here are some times on a 2.00GHz Intel Xeon E5405 processor (only 1 CPU core used) with 7.7GB memory:
+
+{| border="1" padding="0"
+|-
+!File !! Size (uncompressed) !! Read (s) !! Parse (s) !! Write (s)
+|-
+|phyloxml_examples.xml
+|15 KB
+|0.0056
+|0.0054
+|0.0103
+|-
+|apaf.xml
+|38 KB
+|0.0114
+|0.0113
+|0.0252
+|-
+|bcl_2.xml
+|105 KB
+|0.0300
+|0.0300
+|0.0455
+|-
+|ncbi_taxonomy_mollusca.xml
+|1.5 MB
+|0.704
+|0.678
+|0.686
+|-
+|ncbi_taxonomy_metazoa.xml
+|33 MB
+|16.696
+|17.275
+|9.051
+|-
+|ncbi_taxonomy.xml
+|31 MB (unindented)
+|100.487
+|101.503
+|27.104
+|}
 
 ==Summer of Code project==
 
-This module is being developed by [[User%3AEricTalevich|Eric]] as a project for Google Summer of Code 2009, with NESCent as the mentoring organization and Brad as the primary mentor.
+This module is being developed by [[User%3AEricTalevich|Eric Talevich]] as a project for Google Summer of Code 2009, with NESCent as the mentoring organization and Brad Chapman as the primary mentor.
 
 Main SoC project page: [https://www.nescent.org/wg_phyloinformatics/PhyloSoC:Biopython_support_for_parsing_and_writing_phyloXML PhyloSoC:Biopython support for parsing and writing phyloXML]
 
 ==Other software==
 
-[http://monochrome-effect.net/ Christian Zmasek], author of the phyloXML specification, has released some software that uses this format:
+[http://monochrome-effect.net/ Christian Zmasek], one of the authors of the phyloXML specification, has released some software that uses this format:
 
 * [http://www.phylosoft.org/forester/ Forester] -- a collection of Java and Ruby libraries for working with phylogenetic data
 * [http://www.phylosoft.org/archaeopteryx/ Archaopteryx] -- Java application for the visualization of annotated phylogenetic trees (also available in applet form)
