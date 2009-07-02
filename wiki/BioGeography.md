@@ -330,6 +330,12 @@ matching tag
 
 Input a list of items, get string back
 
+#### Code
+
+-   [Code fulfilling these tasks is uploaded
+    here](http://github.com/nmatzke/biopython/commits/Geography)...no
+    example script yet.
+
 These still need to be integrated:
 
 #### alphadiversity

@@ -176,7 +176,8 @@ Burrow down into the XML tree, retrieve the first element with the matching tag
 ====element_items_to_string(items)====
 Input a list of items, get string back
 
-
+====Code====
+* [http://github.com/nmatzke/biopython/commits/Geography Code fulfilling these tasks is uploaded here]...no example script yet.
 
 These still need to be integrated:
 
