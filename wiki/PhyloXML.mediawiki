@@ -25,13 +25,53 @@ The most useful parts of this package are available from the top level of the mo
 from Bio import PhyloXML
 </source>
 
-The main structural element of these phylogenetic trees is the Clade. 
+A complete phyloXML document has a root node with the tag "phyloxml". Directly under the root is a sequence of "phylogeny" elements (phylogenetic trees), possibly followed by other arbitrary data not included in the phyloXML spec. The main structural element of these phylogenetic trees is the Clade: a tree has a clade attribute, along with other attributes, and each clade contains a series of clades (and other attributes), recursively.
+
+The child nodes and attributes of each XML node are mapped onto classes in the PhyloXML.Tree module, keeping the names the same where possible; the XML document structure is closely mirrored in the Tree.Phyloxml objects produced by the Bio.PhyloXML package.
 
 ===Parsing phyloXML files===
 
-This module provides two functions: read() returns a single object representing the entire file's data, while parse() iteratively constructs and yields the phylogenetic trees contained in the file (there may be more than one).
+This module provides two functions, read() and parse(). Both functions accept either a file name or an open file handle, so phyloXML data can be also loaded from compressed files, StringIO objects, and so on.
 
-Both functions accept either a file name or an open file handle, so phyloXML data can be also loaded from compressed files, StringIO objects, and so on.
+The read() function returns a single Tree.Phyloxml object representing the entire file's data. The phylogenetic trees are in the "phylogenies" attribute, and any other arbitrary data is stored in "other".
+
+<source lang=python>
+>>> phx = PhyloXML.read('phyloxml_examples.xml')
+>>> print phx
+Phyloxml
+>>> len(phx.phylogenies)
+13
+>>> len(phx.other)
+1
+>>> print phx.other
+[Other(tag=alignment, namespace=http://example.org/align)]
+>>> print phx.other[0].children
+[Other(tag=seq, namespace=http://www.phyloxml.org, value=acgtcgcggcccgtggaagtcctctcct),
+Other(tag=seq, namespace=http://www.phyloxml.org, value=aggtcgcggcctgtggaagtcctctcct),
+Other(tag=seq, namespace=http://www.phyloxml.org, value=taaatcgc--cccgtgg-agtccc-cct)]
+</source>
+
+If you aren't interested in the "other" data, you can use parse() to iteratively construct just the phylogenetic trees contained in the file. If there's only one tree, then the next() method on the resulting generator will return it.
+
+<source lang=python>
+>>> for tree in PhyloXML.parse('phyloxml_examples.xml'):
+...     print tree.name
+</source>
+<pre>
+example from Prof. Joe Felsenstein's book "Inferring Phylogenies"
+example from Prof. Joe Felsenstein's book "Inferring Phylogenies"
+same example, with support of type "bootstrap"
+same example, with species and sequence
+same example, with gene duplication information and sequence relationships
+similar example, with more detailed sequence data
+network, node B is connected to TWO nodes: AB and C
+...
+</pre>
+<source lang=python>
+>>> tree = PhyloXML.parse('phyloxml_examples.xml').next()
+>>> tree.name
+'example from Prof. Joe Felsenstein\'s book "Inferring Phylogenies"'
+</source>
 
 ===Writing phyloXML files===
 
