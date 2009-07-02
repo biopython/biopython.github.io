@@ -10,18 +10,16 @@ This module handles the parsing and generation of files in the
 This code is not yet part of Biopython, and therefore the documentation
 has not been integrated into the Biopython Tutorial yet either.
 
-Usage
------
-
-(Coming soon: use cases)
-
-Development
------------
+Installation
+------------
 
 The source code for this module currently lives on the [phyloxml
-branch](http://github.com/etal/biopython/tree/phyloxml) in GitHub.
+branch](http://github.com/etal/biopython/tree/phyloxml) in GitHub. If
+you're interested in testing this code before it's been merged into
+Biopython, follow the instructions there to create your own fork, or
+just clone the phyloxml branch onto your machine.
 
-### Parser
+### Requirements
 
 The XML parser used in this module is ElementTree, new to the Python
 standard library in Python 2.5. To use this module in Python 2.4, you'll
@@ -40,10 +38,32 @@ reused for these objects wherever appropriate.
 
 This parser is meant to be able to handle large files, meaning several
 thousand external nodes. (Benchmarks of relevant XML parsers for Python
-are [here](http://effbot.org/zone/celementtree.htm#benchmarks). To
-support this, the parser takes an open file handle, and the API will
-offer wrappers for loading compressed files, and perhaps pulling from a
-database or web URL, too.
+are [here](http://effbot.org/zone/celementtree.htm#benchmarks).) It has
+been tested with files of this size; for example, the complete NCBI
+taxonomy parses in about 100 seconds and consumes about 1.6 GB of
+memory. Provided enough memory is available on the system, the writer
+can also rebuild phyloXML files of this size.
+
+Usage
+-----
+
+The most useful parts of this package are available from the top level
+of the module:
+
+`from` `Bio` `import` `PhyloXML`
+
+The main structural element of these phylogenetic trees is the Clade.
+
+### Parser
+
+This module provides two functions: read() returns a single object
+representing the entire file's data, while parse() iteratively
+constructs and yields the phylogenetic trees contained in the file
+(there may be more than one).
+
+Both functions accept either a file name or an open file handle, so
+phyloXML data can be also loaded from compressed files, StringIO
+objects, and so on.
 
 ### Writer
 
@@ -52,10 +72,18 @@ presumably it will be based on ElementTree as well.
 
 ### Integration
 
-At some point this should be merged into the Biopython trunk, and it
-would be nice to have a common interface with Bio.Nexus and Newick.
+The Tree.Sequence class contains methods for converting to and from
+Biopython [SeqRecord](SeqRecord "wikilink") objects. This includes the
+molecular sequence (mol\_seq) as a [Seq](Seq "wikilink") object, and the
+protein domain architecture as list of
+[SeqFeature](SeqFeature "wikilink") objects.
+
+At some point this module should be merged into the Biopython trunk, and
+it would be nice to have a common interface with Bio.Nexus and Newick.
 Should these three modules be reorganized to extract a common Bio.TreeIO
 interface? Let's discuss it at some point.
+
+### Tricks
 
 Summer of Code project
 ----------------------
