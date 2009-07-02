@@ -65,7 +65,20 @@ objects, and so on.
 ### Writing phyloXML files
 
 The PhyloXML.Writer module exports one function to the top level of the
-package: write().
+package: write(). It accepts a Phyloxml object (the result of read() or
+to\_phyloxml()) and either a file name or a handle to an open file-like
+object. Optionally, an encoding other than UTF-8 can be specified.
+
+``` python
+>>> phx = PhyloXML.read('phyloxml_examples.xml')
+>>> print phx.other
+[Other(tag=alignment, namespace=http://example.org/align)]
+>>> phx.other = []
+>>> PhyloXML.write(phx, 'ex_no_other.xml')
+>>> phx_no = PhyloXML.read('ex_no_other.xml')
+>>> phx_no.other
+[]
+```
 
 ### Using PhyloXML objects
 

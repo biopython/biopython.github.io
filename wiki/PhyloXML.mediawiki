@@ -35,7 +35,18 @@ Both functions accept either a file name or an open file handle, so phyloXML dat
 
 ===Writing phyloXML files===
 
-The PhyloXML.Writer module exports one function to the top level of the package: write().
+The PhyloXML.Writer module exports one function to the top level of the package: write(). It accepts a Phyloxml object (the result of read() or to_phyloxml()) and either a file name or a handle to an open file-like object. Optionally, an encoding other than UTF-8 can be specified.
+
+<source lang=python>
+>>> phx = PhyloXML.read('phyloxml_examples.xml')
+>>> print phx.other
+[Other(tag=alignment, namespace=http://example.org/align)]
+>>> phx.other = []
+>>> PhyloXML.write(phx, 'ex_no_other.xml')
+>>> phx_no = PhyloXML.read('ex_no_other.xml')
+>>> phx_no.other
+[]
+</source>
 
 ===Using PhyloXML objects===
 
