@@ -287,6 +287,51 @@ phylogeny class, to resemble the better version in lagrange, so that
 there is a generic flexible phylogeny/newick parser that can be used
 generally as well as by my BioGeography package specifically.
 
+Added a bunch of tools for managing/parsing xmltree structures from
+ElementTree parsing of XML:
+
+#### find\_to\_elements\_w\_ancs(xmltree, el\_tag, anc\_el\_tag)
+
+Burrow into XML to get an element with tag el\_tag, return only those
+el\_tags underneath a particular parent element parent\_el\_tag
+
+#### create\_sub\_xmltree(element)
+
+Create a subset xmltree (to avoid going back to irrelevant parents)
+
+#### xml\_recursive\_search\_w\_anc(xmltree, element, el\_tag, anc\_el\_tag, match\_el\_list)
+
+Recursively burrows down to find whatever elements with el\_tag exist
+inside a parent\_el\_tag.
+
+#### xml\_burrow\_up(xmltree, element, anc\_el\_tag, found\_anc)
+
+Burrow up xml to find anc\_el\_tag
+
+#### xml\_burrow\_up\_cousin(xmltree, element, cousin\_el\_tag, found\_cousin)
+
+Burrow up from element of interest, until a cousin is found with
+cousin\_el\_tag
+
+#### return\_parent\_in\_xmltree(xmltree, child\_to\_search\_for)
+
+Search through an xmltree to get the parent of child\_to\_search\_for
+
+#### return\_parent\_in\_element(potential\_parent, child\_to\_search\_for, returned\_parent)
+
+Search through an XML element to return parent of child\_to\_search\_for
+
+#### find\_1st\_matching\_element(element, el\_tag, return\_element)
+
+Burrow down into the XML tree, retrieve the first element with the
+matching tag
+
+#### element\_items\_to\_string(items)
+
+Input a list of items, get string back
+
+These still need to be integrated:
+
 #### alphadiversity
 
 alpha diversity of a region (number of taxa in the region)

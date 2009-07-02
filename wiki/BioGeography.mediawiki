@@ -138,6 +138,48 @@ Priority for this week:
 Following up on suggestions to make the code more standard, with the priority of figuring out how I can revise the current BioPython phylogeny class, to resemble the better version in lagrange, so that there is a generic flexible phylogeny/newick parser that can be used generally as well as by my BioGeography package specifically.
 
 
+Added a bunch of tools for managing/parsing xmltree structures from ElementTree parsing of XML:
+
+====find_to_elements_w_ancs(xmltree, el_tag, anc_el_tag)====
+Burrow into XML to get an element with tag el_tag, return only those el_tags underneath a particular parent element parent_el_tag
+
+
+====create_sub_xmltree(element)====
+Create a subset xmltree (to avoid going back to irrelevant parents)
+
+
+====xml_recursive_search_w_anc(xmltree, element, el_tag, anc_el_tag, match_el_list)====
+Recursively burrows down to find whatever elements with el_tag exist inside a parent_el_tag.
+		
+
+====xml_burrow_up(xmltree, element, anc_el_tag, found_anc)====
+Burrow up xml to find anc_el_tag
+
+
+
+====xml_burrow_up_cousin(xmltree, element, cousin_el_tag, found_cousin)====
+Burrow up from element of interest, until a cousin is found with cousin_el_tag
+
+
+====return_parent_in_xmltree(xmltree, child_to_search_for)====
+Search through an xmltree to get the parent of child_to_search_for
+				
+
+====return_parent_in_element(potential_parent, child_to_search_for, returned_parent)====
+Search through an XML element to return parent of child_to_search_for
+
+
+====find_1st_matching_element(element, el_tag, return_element)====
+Burrow down into the XML tree, retrieve the first element with the matching tag
+
+
+====element_items_to_string(items)====
+Input a list of items, get string back
+
+
+
+These still need to be integrated:
+
 ====alphadiversity====
 alpha diversity of a region (number of taxa in the region)
 ====betadiversity====
