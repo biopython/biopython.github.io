@@ -27,6 +27,8 @@ numbers.
 
 ``` python
 
+import sys
+
 from Bio import Entrez
 
 # *Always* tell NCBI who you are

@@ -10,6 +10,8 @@ This example assumes you have a list of Entrez Gene IDs. ''Note'': they should b
 
 <source lang=python>
 
+import sys
+
 from Bio import Entrez
 
 # *Always* tell NCBI who you are
