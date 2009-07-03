@@ -83,30 +83,39 @@ So, from the above results the following can be read: there are 62 genes with 2 
 If the objective is just to get allele frequencies, then there is an easier way:
 
 <source lang=python>
-print ctrl.get_allele_frequency(0,"Locus2")
+total_alleles, count = ctrl.get_allele_frequency(0,"Locus2")
 </source>
+
+total_alleles returns the number of total alleles and count is a dictionary whose key is the allele id and the value is the frequency.
 
 <source lang=python>
 print ctrl.estimate_nm()
 </source>
+
 <source lang=python>
 print ctrl.get_avg_fst_pair_locus("Locus4")
 </source>
+
 <source lang=python>
 print ctrl.get_avg_fst_pair()
 </source>
+
 <source lang=python>
 print ctrl.get_avg_fis()
 </source>
+
 <source lang=python>
 print ctrl.test_hw(1, "excess")
 </source>
+
 <source lang=python>
 print ctrl.get_multilocus_f_stats()
 </source>
+
 <source lang=python>
 print ctrl.get_f_stats("Locus2")
 </source>
+
 <source lang=python>
 print ctrl.test_ld_all_pair("Locus1", "Locus2",
     dememorization=1000, batches=10, iterations=100)

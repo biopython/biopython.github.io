@@ -126,8 +126,11 @@ If the objective is just to get allele frequencies, then there is an
 easier way:
 
 ``` python
-print ctrl.get_allele_frequency(0,"Locus2")
+total_alleles, count = ctrl.get_allele_frequency(0,"Locus2")
 ```
+
+total\_alleles returns the number of total alleles and count is a
+dictionary whose key is the allele id and the value is the frequency.
 
 ``` python
 print ctrl.estimate_nm()
