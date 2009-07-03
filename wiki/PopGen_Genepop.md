@@ -57,9 +57,65 @@ pop_names, loci_names = ctrl.get_basic_info()
 ```
 
 Returns the list of population names and loci names available on the
-file. **Caveat:** Most existing Genepop files provide erroneous data
-regarding population names. In many cases that information might not be
-trusted. Assessing population information is, most of the times, done by
-the relative position of the population in the file, not the name. So
-the first population is the file is index 0, the second index 1, and so
+file.
+
+**Caveat:** Most existing Genepop files provide erroneous data regarding
+population names. In many cases that information might not be trusted.
+Assessing population information is, most of the times, done by the
+relative position of the population in the file, not the name. So the
+first population is the file is index 0, the second index 1, and so
 on...
+
+Lets get heterozygosity info for a certain population and a certain
+allele:
+
+``` python
+(exp_homo, obs_homo, exp_hetero, obs_hetero) = ctrl.get_heterozygosity_info(0,"Locus2")
+```
+
+Will get expected and observed homozygosity and heterozygosity for
+population 0 and Locus2 (of the file big.gen, if you are using another
+file, adjust the population position and locus name accordingly)
+
+**TODO Get number of alleles per pop and on the whole**
+
+``` python
+print ctrl.get_fis(0,"Locus2")
+```
+
+``` python
+print ctrl.get_allele_frequency(0,"Locus2")
+```
+
+``` python
+print ctrl.estimate_nm()
+```
+
+``` python
+print ctrl.get_avg_fst_pair_locus("Locus4")
+```
+
+``` python
+print ctrl.get_avg_fst_pair()
+```
+
+``` python
+print ctrl.get_avg_fis()
+```
+
+``` python
+print ctrl.test_hw(1, "excess")
+```
+
+``` python
+print ctrl.get_multilocus_f_stats()
+```
+
+``` python
+print ctrl.get_f_stats("Locus2")
+```
+
+``` python
+print ctrl.test_ld_all_pair("Locus1", "Locus2",
+    dememorization=1000, batches=10, iterations=100)
+```
