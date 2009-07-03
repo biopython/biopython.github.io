@@ -56,12 +56,36 @@ all_allele_list = ctrl.get_alleles_all_pops("Locus2")
 </source>
 
 
+We will now get the Fis of a certain locus/population plus a few other statistics:
+
 <source lang=python>
-print ctrl.get_fis(0,"Locus2")
+allele_dict, summary_fis =  ctrl.get_fis(0,"Locus2")
 </source>
+
+Lets have a detailed look the output of get_fis:
+
+<source lang=python>
+summary_fis = (62, -0.1111, -0.11269999999999999)
+
+allele_dict = {
+    3: (55, 0.8871, -0.1111),
+    20: (7, 0.1129, -0.1111)
+}
+
+</source>
+
+summary_fis holds a triple with: total number of alleles, Cockerham and Weir Fis, Robertson and Hill Fis.
+
+allele_dict holds for each allele (being each allele the key), number of repetitions of the allele, frequency and Cockerham and Weir Fis.
+
+So, from the above results the following can be read: there are 62 genes with 2 different allees (55 are of type 3, and 7 of type 20). 3 has frequency 0.89 and 20 0.11. All CW Fis are -0.111 and the RH Fis is -0.112.
+
+If the objective is just to get allele frequencies, then there is an easier way:
+
 <source lang=python>
 print ctrl.get_allele_frequency(0,"Locus2")
 </source>
+
 <source lang=python>
 print ctrl.estimate_nm()
 </source>
