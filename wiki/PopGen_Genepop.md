@@ -75,9 +75,23 @@ allele:
 
 Will get expected and observed homozygosity and heterozygosity for
 population 0 and Locus2 (of the file big.gen, if you are using another
-file, adjust the population position and locus name accordingly)
+file, adjust the population position and locus name accordingly).
 
-**TODO Get number of alleles per pop and on the whole**
+It is possible to get the list of all alleles of a certain locus in a
+certain population:
+
+``` python
+allele_list = ctrl.get_alleles(0,"Locus2")
+```
+
+The statistic allele count is simply getting len(allele\_list).
+
+It is also possible to get the list of all alleles of a certain locus
+for all populations:
+
+``` python
+all_allele_list = ctrl.get_alleles_all_pops("Locus2")
+```
 
 ``` python
 print ctrl.get_fis(0,"Locus2")
