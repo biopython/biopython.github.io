@@ -44,11 +44,11 @@ Phyloxml
 >>> len(phx.other)
 1
 >>> print phx.other
-[Other(tag=alignment, namespace=http://example.org/align)]
+[Other(tag='alignment', namespace='http://example.org/align')]
 >>> print phx.other[0].children
-[Other(tag=seq, namespace=http://www.phyloxml.org, value=acgtcgcggcccgtggaagtcctctcct),
-Other(tag=seq, namespace=http://www.phyloxml.org, value=aggtcgcggcctgtggaagtcctctcct),
-Other(tag=seq, namespace=http://www.phyloxml.org, value=taaatcgc--cccgtgg-agtccc-cct)]
+[Other(tag='seq', namespace='http://www.phyloxml.org', value='acgtcgcggcccgtggaagtcctctcct'),
+Other(tag='seq', namespace='http://www.phyloxml.org', value='aggtcgcggcctgtggaagtcctctcct'),
+Other(tag='seq', namespace='http://www.phyloxml.org', value='taaatcgc--cccgtgg-agtccc-cct')]
 </source>
 
 If you aren't interested in the "other" data, you can use parse() to iteratively construct just the phylogenetic trees contained in the file. If there's only one tree, then the next() method on the resulting generator will return it.
@@ -80,7 +80,7 @@ The PhyloXML.Writer module exports one function to the top level of the package:
 <source lang=python>
 >>> phx = PhyloXML.read('phyloxml_examples.xml')
 >>> print phx.other
-[Other(tag=alignment, namespace=http://example.org/align)]
+[Other(tag='alignment', namespace='http://example.org/align')]
 >>> phx.other = []
 >>> PhyloXML.write(phx, 'ex_no_other.xml')
 >>> phx_no = PhyloXML.read('ex_no_other.xml')
@@ -92,10 +92,10 @@ The PhyloXML.Writer module exports one function to the top level of the package:
 
 Standard Python syntactic sugar is supported wherever it's reasonable.
 
-* __str__ makes a string of the object's class name and an identifier, suitable for labeling a node in generated graph
-* __repr__ makes a string in the usual Biopython format, resembling the object constructor call
-* __iter__ is supported by Phyloxml and Clade objects, iterating over the contained phylogenies and sub-clades, respectively
-* __len__ is supported by the same objects that support iteration, with expected results
+* str() makes a string of the object's class name and an identifier, suitable for labeling a node in generated graph
+* repr() makes a string resembling the object constructor call, such that <tt>eval(repr(obj))</tt> will return <tt>obj</tt> for simpler PhyloXML objects, and at least partially rebuild more complex objects.
+* iter() is supported by Phyloxml and Clade objects, iterating over the contained phylogenies and sub-clades, respectively
+* len() is supported by the same objects that support iteration, with expected results
 
 Clade objects also support extended indexing:
 <source lang=python>
@@ -163,14 +163,14 @@ Phyloxml
 
 <pre>>>> PhyloXML.pretty_print('phyloxml_examples.xml', show_all=True)
 Phyloxml()
-	Phylogeny(description=phyloXML allows to use either a "branch_length"
-attribute or element to indicate branch lengths., name=example from Prof. Joe
-Felsenstein's book "Inferring Phylogenies")
+	Phylogeny(description='phyloXML allows to use either a "branch_length"
+attribute or element to indicate branch lengths.', name='example from Prof. Joe
+Felsenstein's book "Inferring Phylogenies"')
 		Clade()
 			Clade(branch_length=0.06)
-				Clade(branch_length=0.102, name=A)
-				Clade(branch_length=0.23, name=B)
-			Clade(branch_length=0.4, name=C)
+				Clade(branch_length=0.102, name='A')
+				Clade(branch_length=0.23, name='B')
+			Clade(branch_length=0.4, name='C')
 ...
 </pre>
 
