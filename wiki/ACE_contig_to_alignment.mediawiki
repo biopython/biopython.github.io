@@ -16,7 +16,7 @@ def cut_ends(read, start, end):
   decided are not good enough to include in the contig and replace them with gaps 
   so the other information about positions in the read is maintained
   ''' 
-  return (start-1) * '-' + read[start-1:end] + (end +1) * '-'
+  return (start-1) * '-' + read[start-1:end] + (len(read)-end) * '-'
 
 def pad_read(read, start, conlength):
   ''' Pad out either end of a read so it fits into an alignment.
@@ -31,7 +31,7 @@ def pad_read(read, start, conlength):
   else:
     seq = (start-1) * '-' + read
   seq = seq + (conlength-len(seq)) * '-'
-  return seq[:conlength]
+  return seq
   
 
 # We will use the Ace parser to read individual contigs from file. Be aware
