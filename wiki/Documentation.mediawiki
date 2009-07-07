@@ -62,8 +62,12 @@ We have a separate list of [[Publications|publications citing or using Biopython
 
 ==== Presentations ====
 
-* Scottish NextGenBug meeting - Second generation sequence data and Biopython
+* BOSC 2009 presentation "Biopython Project Update"
+:[http://biopython.org/DIST/docs/presentations/Biopython_BOSC_2009.pdf PDF] | [http://www.slideshare.net/bosc/cock-biopython-bosc2009 Flash version]
+* Scottish Bioinformatics Forum NextGenBug meeting - Second generation sequence data and Biopython
 :[http://biopython.org/DIST/docs/presentations/Biopython_NextGenBUG_June2009.pdf PDF]
+* Laptop session at "2009 Biología Computacional de Proteínas workshop" at Quilmes National University
+:[http://www.bioinformatica.info/biopython/ HTML] (requires Crunchy to try the code online)
 * BOSC 2008 presentation "Biopython Project Update"
 :[http://biopython.org/DIST/docs/presentations/Biopython_BOSC_2008.pdf PDF] | [http://www.slideshare.net/bosc_2008/antao-biopython-bosc2008/ Flash version]
 * BOSC 2007 presentation "Biopython Project Update"
@@ -72,11 +76,10 @@ We have a separate list of [[Publications|publications citing or using Biopython
 :[http://biopython.org/DIST/docs/presentations/biopython_exelixis.pdf PDF] | [http://biopython.org/DIST/docs/presentations/biopython_exelixis.tar.gz tarball with LaTeX source]
 * BOSC 2003 presentation about Biopython and using it for Laboratory Analysis Pipelines.
 :[http://biopython.org/DIST/docs/presentations/bosc_biopython.pdf PDF] | [http://biopython.org/DIST/docs/presentations/bosc_biopython.tar.gz tarball with LaTeX source]
-* General talk about scripting with Biopython based example of a primer design program.
+* General talk about scripting with Biopython based example of a primer design program (old).
 :[http://biopython.org/DIST/docs/presentations/scripting.pdf PDF] | [http://biopython.org/DIST/docs/presentations/scripting.tar.gz tarball with LaTeX source]
-* Talk about Python and Biopython with an emphasis on teaching the design goals of Biopython.
+* Talk about Python and Biopython with an emphasis on teaching the design goals of Biopython (old).
 :[http://biopython.org/DIST/docs/presentations/biopython.pdf PDF] | [http://biopython.org/DIST/docs/presentations/biopy_group.tar.gz tarball with LaTeX source]
-* Laptop session at "2009 Biología Computacional de Proteínas workshop" at Quilmes National University :[http://www.bioinformatica.info/biopython/ HTML] (requires Crunchy to try the code online)
 
 ==== Logo ====
 

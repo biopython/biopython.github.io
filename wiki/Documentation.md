@@ -147,11 +147,25 @@ Biopython. </biblio>
 
 #### Presentations
 
--   Scottish NextGenBug meeting - Second generation sequence data and
-    Biopython
+-   BOSC 2009 presentation "Biopython Project Update"
+
+  
+[PDF](http://biopython.org/DIST/docs/presentations/Biopython_BOSC_2009.pdf)
+| [Flash
+version](http://www.slideshare.net/bosc/cock-biopython-bosc2009)
+
+-   Scottish Bioinformatics Forum NextGenBug meeting - Second generation
+    sequence data and Biopython
 
   
 [PDF](http://biopython.org/DIST/docs/presentations/Biopython_NextGenBUG_June2009.pdf)
+
+-   Laptop session at "2009 Biología Computacional de Proteínas
+    workshop" at Quilmes National University
+
+  
+[HTML](http://www.bioinformatica.info/biopython/) (requires Crunchy to
+try the code online)
 
 -   BOSC 2008 presentation "Biopython Project Update"
 
@@ -183,7 +197,7 @@ source](http://biopython.org/DIST/docs/presentations/biopython_exelixis.tar.gz)
 source](http://biopython.org/DIST/docs/presentations/bosc_biopython.tar.gz)
 
 -   General talk about scripting with Biopython based example of a
-    primer design program.
+    primer design program (old).
 
   
 [PDF](http://biopython.org/DIST/docs/presentations/scripting.pdf) |
@@ -191,17 +205,12 @@ source](http://biopython.org/DIST/docs/presentations/bosc_biopython.tar.gz)
 source](http://biopython.org/DIST/docs/presentations/scripting.tar.gz)
 
 -   Talk about Python and Biopython with an emphasis on teaching the
-    design goals of Biopython.
+    design goals of Biopython (old).
 
   
 [PDF](http://biopython.org/DIST/docs/presentations/biopython.pdf) |
 [tarball with LaTeX
 source](http://biopython.org/DIST/docs/presentations/biopy_group.tar.gz)
-
--   Laptop session at "2009 Biología Computacional de Proteínas
-    workshop" at Quilmes National University
-    :[HTML](http://www.bioinformatica.info/biopython/) (requires Crunchy
-    to try the code online)
 
 #### Logo
 
