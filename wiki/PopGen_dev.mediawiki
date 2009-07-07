@@ -49,11 +49,11 @@ Here are documented existing development branches. These branches are informal p
 ! who
 |-
 | Statistics (He, Fst, Tajima D, ...)
-| http://github.com/tiagoantao/biopython-popgen-test/tree/stats
+| http://github.com/tiagoantao/biopython/tree/stats
 | Tiago Antao
 |-
 | Genepop (parser and application)
-| http://github.com/tiagoantao/biopython-popgen-test/tree/genepop
+| http://github.com/tiagoantao/biopython/tree/genepop
 | Tiago Antao
 |}
 

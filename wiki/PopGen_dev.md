@@ -95,10 +95,10 @@ correcting bugs, etc... Feel free to add yours (or fork from existing
 ones). If you are interested in any of them contact the author directly
 or go to the mailing list.
 
-| Purpose                             | URL                                                               | who         |
-|-------------------------------------|-------------------------------------------------------------------|-------------|
-| Statistics (He, Fst, Tajima D, ...) | <http://github.com/tiagoantao/biopython-popgen-test/tree/stats>   | Tiago Antao |
-| Genepop (parser and application)    | <http://github.com/tiagoantao/biopython-popgen-test/tree/genepop> | Tiago Antao |
+| Purpose                             | URL                                                   | who         |
+|-------------------------------------|-------------------------------------------------------|-------------|
+| Statistics (He, Fst, Tajima D, ...) | <http://github.com/tiagoantao/biopython/tree/stats>   | Tiago Antao |
+| Genepop (parser and application)    | <http://github.com/tiagoantao/biopython/tree/genepop> | Tiago Antao |
 
 Wish list
 ---------
