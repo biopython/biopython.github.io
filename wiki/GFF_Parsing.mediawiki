@@ -33,4 +33,3 @@ The documentation below provides a practical guide to examining, parsing and wri
 
 == Writing GFF3 ==
 
-[Category:Wiki Documentation]
