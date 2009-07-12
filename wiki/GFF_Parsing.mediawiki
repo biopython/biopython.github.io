@@ -32,3 +32,5 @@ The documentation below provides a practical guide to examining, parsing and wri
 === Iterating over portions of a file ===
 
 == Writing GFF3 ==
+
+[Category:Wiki Documentation]
