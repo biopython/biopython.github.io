@@ -8,7 +8,7 @@ Giovanni and Tiago are working on expanding population genetics code in Biopytho
 
 === GFF parser ===
 
-Brad is working on a Biopython GFF parser. Source code is available from [http://github.com/chapmanb/bcbb/tree/master/gff git hub]. Documentation is in progress at [GFF Parsing]. See blog posts on the [http://bcbio.wordpress.com/2009/03/08/initial-gff-parser-for-biopython/ initial implementation] and [http://bcbio.wordpress.com/2009/03/22/mapreduce-implementation-of-gff-parsing-for-biopython/ MapReduce parallel version].
+Brad is working on a Biopython GFF parser. Source code is available from [http://github.com/chapmanb/bcbb/tree/master/gff git hub]. Documentation is in progress at [[GFF Parsing]]. See blog posts on the [http://bcbio.wordpress.com/2009/03/08/initial-gff-parser-for-biopython/ initial implementation] and [http://bcbio.wordpress.com/2009/03/22/mapreduce-implementation-of-gff-parsing-for-biopython/ MapReduce parallel version].
 
 === PhyloXML driver (GSoC) ===
 

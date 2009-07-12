@@ -24,8 +24,8 @@ more details.
 
 Brad is working on a Biopython GFF parser. Source code is available from
 [git hub](http://github.com/chapmanb/bcbb/tree/master/gff).
-Documentation is in progress at \[GFF Parsing\]. See blog posts on the
-[initial
+Documentation is in progress at [GFF Parsing](GFF_Parsing "wikilink").
+See blog posts on the [initial
 implementation](http://bcbio.wordpress.com/2009/03/08/initial-gff-parser-for-biopython/)
 and [MapReduce parallel
 version](http://bcbio.wordpress.com/2009/03/22/mapreduce-implementation-of-gff-parsing-for-biopython/).
