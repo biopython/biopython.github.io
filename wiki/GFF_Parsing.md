@@ -187,5 +187,17 @@ in_handle.close()
 
 ### Iterating over portions of a file
 
+``` python
+from BCBio.GFF import GFFParser
+
+in_file = "your_file.gff"
+parser = GFFParser()
+
+in_handle = open(in_file)
+for rec in parser.parse_in_parts(in_handle, target_lines=1000):
+    print rec
+in_handle.close()
+```
+
 Writing GFF3
 ------------
