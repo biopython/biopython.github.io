@@ -125,6 +125,18 @@ GFF Parsing
 
 ### Basic GFF parsing
 
+``` python
+from BCBio.GFF import GFFParser
+
+in_file = "your_file.gff"
+parser = GFFParser()
+
+in_handle = open(in_file)
+for rec in parser.parse(in_handle):
+    print rec
+in_handle.close()
+```
+
 ### Providing initial sequence records
 
 ### Limiting parsed lines
