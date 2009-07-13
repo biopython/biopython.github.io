@@ -201,3 +201,18 @@ in_handle.close()
 
 Writing GFF3
 ------------
+
+``` python
+from BCBio.GFF import GFF3Writer
+from Bio import SeqIO
+
+in_file = "your_file.gb"
+out_file = "your_file.gff"
+in_handle = open(in_file)
+out_handle = open(out_file, "w")
+writer = GFF3Writer()
+writer.write(SeqIO.parse(in_handle, "genbank"), out_handle)
+
+in_handle.close()
+out_handle.close()
+```
