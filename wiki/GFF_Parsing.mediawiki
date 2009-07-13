@@ -122,6 +122,23 @@ in_handle.close()
 
 === Providing initial sequence records ===
 
+<source lang=python>
+from BCBio.GFF import GFFParser
+from Bio import SeqIO
+
+in_seq_file = "seqs.fa"
+in_seq_handle = open(in_seq_file)
+seq_dict = SeqIO.to_dict(SeqIO.parse(in_seq_handle, "fasta"))
+in_seq_handle.close()
+
+in_file = "../Tests/GFF/c_elegans_WS199_shortened_gff.txt"
+parser = GFFParser()
+in_handle = open(in_file)
+for rec in parser.parse(in_handle, base_dict=seq_dict):
+    print rec
+in_handle.close()
+</source>
+
 === Limiting parsed lines ===
 <source lang=python>
 from BCBio.GFF import GFFParser
