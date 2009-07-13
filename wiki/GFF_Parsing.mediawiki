@@ -21,6 +21,77 @@ The documentation below provides a practical guide to examining, parsing and wri
 
 == Examining your GFF file ==
 
+<source lang=python>
+import pprint
+from BCBio.GFF import GFFExaminer
+
+in_file = "your_file.gff"
+examiner = GFFExaminer()
+in_handle = open(in_file)
+pprint.pprint(examiner.parent_child_map(in_handle))
+in_handle.close()
+</source>
+
+<pre>
+{('Coding_transcript', 'gene'): [('Coding_transcript', 'mRNA')],
+ ('Coding_transcript', 'mRNA'): [('Coding_transcript', 'CDS'),
+                                 ('Coding_transcript', 'exon'),
+                                 ('Coding_transcript', 'five_prime_UTR'),
+                                 ('Coding_transcript', 'intron'),
+                                 ('Coding_transcript', 'three_prime_UTR')]}
+</pre>
+
+<source lang=python>
+import pprint
+from BCBio.GFF import GFFExaminer
+
+in_file = "your_file.gff"
+examiner = GFFExaminer()
+in_handle = open(in_file)
+pprint.pprint(examiner.available_limits(in_handle))
+in_handle.close()
+</source>
+
+<pre>
+{'gff_id': {('I',): 159,
+            ('II',): 3,
+            ('III',): 2,
+            ('IV',): 5,
+            ('V',): 2,
+            ('X',): 6},
+ 'gff_source_type': {('Allele', 'SNP'): 1,
+                     ('Coding_transcript', 'CDS'): 27,
+                     ('Coding_transcript', 'exon'): 33,
+                     ('Coding_transcript', 'five_prime_UTR'): 4,
+                     ('Coding_transcript', 'gene'): 2,
+                     ('Coding_transcript', 'intron'): 29,
+                     ('Coding_transcript', 'mRNA'): 4,
+                     ('Coding_transcript', 'three_prime_UTR'): 3,
+                     ('Expr_profile', 'experimental_result_region'): 1,
+                     ('GenePair_STS', 'PCR_product'): 8,
+                     ('Oligo_set', 'reagent'): 1,
+                     ('Orfeome', 'PCR_product'): 8,
+                     ('Promoterome', 'PCR_product'): 5,
+                     ('SAGE_tag', 'SAGE_tag'): 1,
+                     ('SAGE_tag_most_three_prime', 'SAGE_tag'): 1,
+                     ('SAGE_tag_unambiguously_mapped', 'SAGE_tag'): 12,
+                     ('history', 'CDS'): 30,
+                     ('mass_spec_genome', 'translated_nucleotide_match'): 7},
+ 'gff_type': {('CDS',): 57,
+              ('PCR_product',): 21,
+              ('SAGE_tag',): 14,
+              ('SNP',): 1,
+              ('exon',): 33,
+              ('experimental_result_region',): 1,
+              ('five_prime_UTR',): 4,
+              ('gene',): 2,
+              ('intron',): 29,
+              ('mRNA',): 4,
+              ('reagent',): 1,
+              ('three_prime_UTR',): 3,
+              ('translated_nucleotide_match',): 7}}
+</pre>
+
 == GFF Parsing ==
 
 === Basic GFF parsing ===
