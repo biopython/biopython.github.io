@@ -131,7 +131,7 @@ in_seq_handle = open(in_seq_file)
 seq_dict = SeqIO.to_dict(SeqIO.parse(in_seq_handle, "fasta"))
 in_seq_handle.close()
 
-in_file = "../Tests/GFF/c_elegans_WS199_shortened_gff.txt"
+in_file = "your_file.gff"
 parser = GFFParser()
 in_handle = open(in_file)
 for rec in parser.parse(in_handle, base_dict=seq_dict):
