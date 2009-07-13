@@ -153,6 +153,21 @@ in_handle.close()
 
 ### Limiting parsed lines
 
+``` python
+from BCBio.GFF import GFFParser
+
+in_file = "your_file.gff"
+parser = GFFParser()
+
+limit_info = dict(
+        gff_source = ["Coding_transcript"])
+
+in_handle = open(in_file)
+for rec in parser.parse(in_handle, limit_info=limit_info):
+    print rec.features[0]
+in_handle.close()
+```
+
 ### Iterating over portions of a file
 
 Writing GFF3
