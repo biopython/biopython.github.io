@@ -24,8 +24,8 @@ a property indicating its alternative positions: atom.altloc. Usually
 there are only two alternative positions labelled 'A' and 'B'. The key
 is to save a PDB with the optional "select" argument. This argument
 needs to return a True value for the atoms that have to be saved. In the
-following examples we save all not-disordered atoms and the 'A'
-positions of the disordered ones.
+following example we save all not-disordered atoms and the 'A' positions
+of the disordered ones.
 
 ``` python
 from Bio.PDB import *
