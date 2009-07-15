@@ -80,8 +80,8 @@ Please add any ideas or proposals for new additions to Biopython. Bugs
 and enhancements for current code should be discussed though our
 bugzilla interface.
 
--   Build a general tool to filter data containing ambiguous or low
-    quality characters. See these threads on the mailing lists for
+-   Build a general tool to filter sequences containing ambiguous or low
+    quality bases. See these threads on the mailing lists for
     discussion:
     <http://lists.open-bio.org/pipermail/biopython/2009-July/005355.html>,
     <http://lists.open-bio.org/pipermail/biopython/2009-July/005342.html>
