@@ -52,7 +52,7 @@ Discussion
 ----------
 
 It is trivial to change that to save 'B' altloc positions. One can even
-do more complicated selections based on other atom propertied. The key
+do more complicated selections based on other atom properties. The key
 is to generate a class that returns True or False for a given atom. One
 could also think of Remark also that the apparently simple trick to
 delete atoms with 'B' values in atom.altloc
