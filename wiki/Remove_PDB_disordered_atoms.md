@@ -54,11 +54,10 @@ Discussion
 It is trivial to change that to save 'B' altloc positions. One can even
 do more complicated selections based on other atom properties. The key
 is to generate a class that returns True or False for a given atom. One
-could also think of Remark also that the apparently simple trick to
-delete atoms with 'B' values in atom.altloc
+could also think of deleting atoms with 'B' values in atom.altloc.
 
 ``` python
-for atom in all_atoms:
+for atom in all_atoms:  # all_atoms is a list containg all atoms
    if atom.altloc=='B': del atom
 ```
 
