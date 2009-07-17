@@ -271,7 +271,7 @@ than read().
 
 Here are some times on a 2.00GHz Intel Xeon E5405 processor (only 1 CPU
 core used) with 7.7GB memory, running the standard Python 2.6.2 on
-Ubuntu 9.04, with the best of 3 runs for each function:
+Ubuntu 9.04, choosing the best of 3 runs for each function:
 
 | File                         | Ext. Nodes | Size (uncompressed) | Read (s) | Parse (s) | Write (s) |
 |------------------------------|------------|---------------------|----------|-----------|-----------|
@@ -282,10 +282,16 @@ Ubuntu 9.04, with the best of 3 runs for each function:
 | ncbi\_taxonomy\_metazoa.xml  | 73907      | 33 MB               | 18.95    | 19.38     | 12.85     |
 | ncbi\_taxonomy.xml           | 263691     | 31 MB (unindented)  | 106.98   | 107.77    | 38.91     |
 
-On 32-bit architectures, psyco might improve these times significantly,
-at the risk of increasing memory usage. (I haven't tested it.) For
-comparison, the Java-based parser used in Forester and ATV (see below)
-reads the same files about 4 times as quickly.
+On 32-bit architectures, [psyco](http://psyco.sourceforge.net/) might
+improve these times significantly, at the risk of increasing memory
+usage. (I haven't tested it.) For comparison, the Java-based parser used
+in Forester and ATV (see below) reads the same files about 4 times as
+quickly.
+
+For Python 2.4, performance depends on which ElementTree implementation
+is used. Using the original pure-Python elementtree, reading/parsing
+takes about twice as much time for all file sizes, but writing is only
+significantly slower for very large files.
 
 Summer of Code project
 ----------------------

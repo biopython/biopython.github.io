@@ -180,7 +180,7 @@ This parser is meant to be able to handle large files, meaning several thousand 
 
 The read() and parse() functions process a complete file in about the same amount of CPU time. Most of the underlying code is the same, and the majority of the time is spent building Clade objects (the most common node type). For small files (smaller than ncbi_taxonomy_mollusca.xml), the write() function serializes the complete object back to an equivalent file slightly slower than the corresponding read() call; for very large files, write() finishes faster than read().
 
-Here are some times on a 2.00GHz Intel Xeon E5405 processor (only 1 CPU core used) with 7.7GB memory, running the standard Python 2.6.2 on Ubuntu 9.04, with the best of 3 runs for each function:
+Here are some times on a 2.00GHz Intel Xeon E5405 processor (only 1 CPU core used) with 7.7GB memory, running the standard Python 2.6.2 on Ubuntu 9.04, choosing the best of 3 runs for each function:
 
 {| border="1" padding="0"
 |-
@@ -229,7 +229,9 @@ Here are some times on a 2.00GHz Intel Xeon E5405 processor (only 1 CPU core use
 |38.91
 |}
 
-On 32-bit architectures, psyco might improve these times significantly, at the risk of increasing memory usage. (I haven't tested it.) For comparison, the Java-based parser used in Forester and ATV (see below) reads the same files about 4 times as quickly.
+On 32-bit architectures, [http://psyco.sourceforge.net/ psyco] might improve these times significantly, at the risk of increasing memory usage. (I haven't tested it.) For comparison, the Java-based parser used in Forester and ATV (see below) reads the same files about 4 times as quickly.
+
+For Python 2.4, performance depends on which ElementTree implementation is used. Using the original pure-Python elementtree, reading/parsing takes about twice as much time for all file sizes, but writing is only significantly slower for very large files.
 
 ==Summer of Code project==
 
