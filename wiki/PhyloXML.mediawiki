@@ -191,45 +191,45 @@ Here are some times on a 2.00GHz Intel Xeon E5405 processor (only 1 CPU core use
 |38 KB
 |0.01
 |0.01
-|0.04
+|0.02
 |-
 |bcl_2.xml
 |
 |105 KB
+|0.03
+|0.02
 |0.04
-|0.04
-|0.06
 |-
 |ncbi_taxonomy_mollusca.xml
 |5632
 |1.5 MB
-|0.85
-|0.84
-|0.96
+|0.65
+|0.62
+|0.67
 |-
 |tol_life_on_earth_1.xml
 |57124
 |46 MB
-|12.79
-|13.09
-|13.36
+|10.55
+|10.90
+|9.26
 |-
 |ncbi_taxonomy_metazoa.xml
 |73907
 |33 MB
-|18.95
-|19.38
-|12.85
+|15.99
+|16.01
+|8.98
 |-
 |ncbi_taxonomy.xml
 |263691
 |31 MB (unindented)
-|106.98
-|107.77
-|38.91
+|97.61
+|97.87
+|26.99
 |}
 
-On 32-bit architectures, [http://psyco.sourceforge.net/ psyco] might improve these times significantly, at the risk of increasing memory usage. (I haven't tested it.) For comparison, the Java-based parser used in Forester and ATV (see below) reads the same files about 4 times as quickly.
+On 32-bit architectures, [http://psyco.sourceforge.net/ psyco] might improve these times significantly, at the risk of increasing memory usage. (I haven't tested it.) For comparison, the Java-based parser used in Forester and ATV (see below) reads the same files about 3-5 times as quickly, or up to 15x for the largest file.
 
 For Python 2.4, performance depends on which ElementTree implementation is used. Using the original pure-Python elementtree, reading/parsing takes about twice as much time for all file sizes, but writing is only significantly slower for very large files.
 

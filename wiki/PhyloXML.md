@@ -275,18 +275,18 @@ Ubuntu 9.04, choosing the best of 3 runs for each function:
 
 | File                         | Ext. Nodes | Size (uncompressed) | Read (s) | Parse (s) | Write (s) |
 |------------------------------|------------|---------------------|----------|-----------|-----------|
-| apaf.xml                     |            | 38 KB               | 0.01     | 0.01      | 0.04      |
-| bcl\_2.xml                   |            | 105 KB              | 0.04     | 0.04      | 0.06      |
-| ncbi\_taxonomy\_mollusca.xml | 5632       | 1.5 MB              | 0.85     | 0.84      | 0.96      |
-| tol\_life\_on\_earth\_1.xml  | 57124      | 46 MB               | 12.79    | 13.09     | 13.36     |
-| ncbi\_taxonomy\_metazoa.xml  | 73907      | 33 MB               | 18.95    | 19.38     | 12.85     |
-| ncbi\_taxonomy.xml           | 263691     | 31 MB (unindented)  | 106.98   | 107.77    | 38.91     |
+| apaf.xml                     |            | 38 KB               | 0.01     | 0.01      | 0.02      |
+| bcl\_2.xml                   |            | 105 KB              | 0.03     | 0.02      | 0.04      |
+| ncbi\_taxonomy\_mollusca.xml | 5632       | 1.5 MB              | 0.65     | 0.62      | 0.67      |
+| tol\_life\_on\_earth\_1.xml  | 57124      | 46 MB               | 10.55    | 10.90     | 9.26      |
+| ncbi\_taxonomy\_metazoa.xml  | 73907      | 33 MB               | 15.99    | 16.01     | 8.98      |
+| ncbi\_taxonomy.xml           | 263691     | 31 MB (unindented)  | 97.61    | 97.87     | 26.99     |
 
 On 32-bit architectures, [psyco](http://psyco.sourceforge.net/) might
 improve these times significantly, at the risk of increasing memory
 usage. (I haven't tested it.) For comparison, the Java-based parser used
-in Forester and ATV (see below) reads the same files about 4 times as
-quickly.
+in Forester and ATV (see below) reads the same files about 3-5 times as
+quickly, or up to 15x for the largest file.
 
 For Python 2.4, performance depends on which ElementTree implementation
 is used. Using the original pure-Python elementtree, reading/parsing
