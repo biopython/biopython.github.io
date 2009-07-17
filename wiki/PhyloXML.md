@@ -262,24 +262,30 @@ can also rebuild phyloXML files of this size.
 
 The read() and parse() functions process a complete file in about the
 same amount of CPU time. Most of the underlying code is the same, and
-the majority of the time is spent building Clade objects. For small
-files (smaller than ncbi\_taxonomy\_mollusca.xml), the write() function
-serializes the complete object back to an equivalent file in around
-twice the CPU time required by the corresponding read() call; for large
-files write() is more efficient, finishing up to 3.6 times as fast as
-read() for the largest file tested.
+the majority of the time is spent building Clade objects (the most
+common node type). For small files (smaller than
+ncbi\_taxonomy\_mollusca.xml), the write() function serializes the
+complete object back to an equivalent file slightly slower than the
+corresponding read() call; for very large files, write() finishes faster
+than read().
 
 Here are some times on a 2.00GHz Intel Xeon E5405 processor (only 1 CPU
-core used) with 7.7GB memory:
+core used) with 7.7GB memory, running the standard Python 2.6.2 on
+Ubuntu 9.04, with the best of 3 runs for each function:
 
-| File                         | Size (uncompressed) | Read (s) | Parse (s) | Write (s) |
-|------------------------------|---------------------|----------|-----------|-----------|
-| phyloxml\_examples.xml       | 15 KB               | 0.0056   | 0.0053    | 0.0103    |
-| apaf.xml                     | 38 KB               | 0.0112   | 0.0112    | 0.0252    |
-| bcl\_2.xml                   | 105 KB              | 0.0293   | 0.0294    | 0.0455    |
-| ncbi\_taxonomy\_mollusca.xml | 1.5 MB              | 0.688    | 0.666     | 0.683     |
-| ncbi\_taxonomy\_metazoa.xml  | 33 MB               | 16.383   | 16.986    | 9.026     |
-| ncbi\_taxonomy.xml           | 31 MB (unindented)  | 99.715   | 100.588   | 27.166    |
+| File                         | Ext. Nodes | Size (uncompressed) | Read (s) | Parse (s) | Write (s) |
+|------------------------------|------------|---------------------|----------|-----------|-----------|
+| apaf.xml                     |            | 38 KB               | 0.01     | 0.01      | 0.04      |
+| bcl\_2.xml                   |            | 105 KB              | 0.04     | 0.04      | 0.06      |
+| ncbi\_taxonomy\_mollusca.xml | 5632       | 1.5 MB              | 0.85     | 0.84      | 0.96      |
+| tol\_life\_on\_earth\_1.xml  | 57124      | 46 MB               | 12.79    | 13.09     | 13.36     |
+| ncbi\_taxonomy\_metazoa.xml  | 73907      | 33 MB               | 18.95    | 19.38     | 12.85     |
+| ncbi\_taxonomy.xml           | 263691     | 31 MB (unindented)  | 106.98   | 107.77    | 38.91     |
+
+On 32-bit architectures, psyco might improve these times significantly,
+at the risk of increasing memory usage. (I haven't tested it.) For
+comparison, the Java-based parser used in Forester and ATV (see below)
+reads the same files about 4 times as quickly.
 
 Summer of Code project
 ----------------------
