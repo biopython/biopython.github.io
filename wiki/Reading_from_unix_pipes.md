@@ -20,15 +20,15 @@ as flexible.
 Solution
 --------
 
-This example script reads a Solexa/Illumina FASTQ from stdin, converts
-the data to Sanger FASTQ (using PHRED scores) and writes it to stdout.
+This example script uses [Bio.SeqIO](SeqIO "wikilink") to read a
+Solexa/Illumina FASTQ from stdin, converts the data to Sanger FASTQ
+(using PHRED scores) and writes it to stdout.
 
 ``` python
 import sys
 from Bio import SeqIO
-
-recs = SeqIO.parse(sys.stdin, "fastq-solexa")
-SeqIO.write(recs, sys.stdout, "fastq")
+records = SeqIO.parse(sys.stdin, "fastq-solexa")
+SeqIO.write(records, sys.stdout, "fastq")
 ```
 
 Pipes are a feature of the command line that enable the stdout output of

@@ -6,14 +6,13 @@ You can also use pipes at the Windows command line, but this isn't quite as flex
 
 == Solution ==
 
-This example script reads a Solexa/Illumina FASTQ from stdin, converts the data to Sanger FASTQ (using PHRED scores) and writes it to stdout.
+This example script uses [[SeqIO|Bio.SeqIO]] to read a Solexa/Illumina FASTQ from stdin, converts the data to Sanger FASTQ (using PHRED scores) and writes it to stdout.
 
 <source lang=python>
 import sys
 from Bio import SeqIO
-
-recs = SeqIO.parse(sys.stdin, "fastq-solexa")
-SeqIO.write(recs, sys.stdout, "fastq")
+records = SeqIO.parse(sys.stdin, "fastq-solexa")
+SeqIO.write(records, sys.stdout, "fastq")
 </source>
 
 Pipes are a feature of the command line that enable the stdout output of a program or command to be directed to the stdin input of another command or program.  For example, the following shell command can be used to extract the compressed sequence and pipe it to the script (solexa2sanger_fq.py).
