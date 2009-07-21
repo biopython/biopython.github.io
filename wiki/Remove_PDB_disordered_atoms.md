@@ -20,7 +20,7 @@ simulations.
 Solution
 --------
 
-[Bio.PDB](http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc118 "wikilink")
+[Bio.PDB](http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc118)
 is proficient in dealing with disordered atoms. Each disordered atom has
 a property indicating its alternative positions: atom.altloc. Usually
 there are only two alternative positions labelled 'A' and 'B'. The key
@@ -31,6 +31,7 @@ of the disordered ones.
 
 ``` python
 from Bio.PDB import *
+
 parser=PDBParser()
 struct=parser.get_structure('my_pdb', 'my_pdb.pdb')
 io=PDBIO()
@@ -45,7 +46,6 @@ class NotDisordered(Select):
             return False
 
 io=PDBIO()
-
 io.set_structure(s)
 io.save("ordered.pdb", select=NotDisordered())
 ```
