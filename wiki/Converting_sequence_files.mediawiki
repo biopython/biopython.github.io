@@ -38,6 +38,8 @@ Note that all the Fasta file can store is the identifier, description and sequen
 
 By changing the format strings, that code could be used to convert between any supported file formats.
 
+You don't have to work with file handles - see this example using [[Reading_from_unix_pipes|stdin and stdout pipes with Bio.SeqIO]].
+
 == How it works==
 
 See the [[SeqIO|Bio.SeqIO]] page.

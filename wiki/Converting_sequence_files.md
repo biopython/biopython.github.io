@@ -61,6 +61,9 @@ and sequence.
 By changing the format strings, that code could be used to convert
 between any supported file formats.
 
+You don't have to work with file handles - see this example using [stdin
+and stdout pipes with Bio.SeqIO](Reading_from_unix_pipes "wikilink").
+
 How it works
 ------------
 
