@@ -22,7 +22,9 @@ Solution
 
 This example script uses [Bio.SeqIO](SeqIO "wikilink") to read a
 Solexa/Illumina FASTQ from stdin, converts the data to Sanger FASTQ
-(using PHRED scores) and writes it to stdout.
+(using PHRED scores) and writes it to stdout. See this more general page
+on [converting sequence files](Converting_sequence_files "wikilink") for
+some background.
 
 ``` python
 import sys

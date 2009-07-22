@@ -6,7 +6,7 @@ You can also use pipes at the Windows command line, but this isn't quite as flex
 
 == Solution ==
 
-This example script uses [[SeqIO|Bio.SeqIO]] to read a Solexa/Illumina FASTQ from stdin, converts the data to Sanger FASTQ (using PHRED scores) and writes it to stdout.
+This example script uses [[SeqIO|Bio.SeqIO]] to read a Solexa/Illumina FASTQ from stdin, converts the data to Sanger FASTQ (using PHRED scores) and writes it to stdout. See this more general page on [[Converting_sequence_files|converting sequence files]] for some background.
 
 <source lang=python>
 import sys
