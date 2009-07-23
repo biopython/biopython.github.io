@@ -4,11 +4,9 @@ permalink: wiki/Biopython
 layout: wiki
 ---
 
-|                                                                                                                                |
-|--------------------------------------------------------------------------------------------------------------------------------|
-| <rss><http://news.open-bio.org/news/category/obf-projects/biopython/feed/%7Ccharset=utf-8%7Cshort%7Cdata%7Cmax=4%7Cdate></rss> |
-|                                                                                                                                |
-| See also our [news page](News "wikilink"), and [twitter](http://twitter.com/biopython).                                        |
+|                                                                                                                                        |
+|----------------------------------------------------------------------------------------------------------------------------------------|
+| See also our [news page](http://news.open-bio.org/news/category/obf-projects/biopython/), and [twitter](http://twitter.com/biopython). |
 
 ### Introduction
 
