@@ -13,7 +13,7 @@ Installation
 ------------
 
 This module is being developed alongside phyloXML support as a Google
-Summer of Code 2009 project. To use TreeIO, see the
+Summer of Code 2009 project. To use Tree, see the
 [PhyloXML](PhyloXML "wikilink") page for instructions on installing from
 a [GitHub](GitUsage "wikilink") branch.
 

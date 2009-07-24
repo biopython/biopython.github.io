@@ -4,7 +4,7 @@ This code is not yet part of Biopython, and therefore the documentation has not 
 
 ==Installation==
 
-This module is being developed alongside phyloXML support as a Google Summer of Code 2009 project. To use TreeIO, see the [[PhyloXML]] page for instructions on installing from a [[GitUsage|GitHub]] branch.
+This module is being developed alongside phyloXML support as a Google Summer of Code 2009 project. To use Tree, see the [[PhyloXML]] page for instructions on installing from a [[GitUsage|GitHub]] branch.
 
 ==Usage==
 
