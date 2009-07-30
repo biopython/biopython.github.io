@@ -23,6 +23,11 @@ Publications from 2009
 
 // Used Bio.PDB and Bio.KDTree
 
+1.  ChiEtAl2009 pmid=19536157
+
+// General bioinformatics analysis including in silico random CLIP
+(crosslinking immunoprecipitation)
+
 1.  CockEtAl2009 pmid=19304878
 
 // This application note covers the whole of Biopython
