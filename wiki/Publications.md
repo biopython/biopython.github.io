@@ -49,6 +49,10 @@ GenomeDiagram
 
 // Used Biopython to implement a pipeline
 
+1.  TanakaEtAl2009 pmid=19272463
+
+// Used Biopython to access MEDLINE
+
 1.  TorranceEtAl2009 pmid=19038265
 
 // Used Biopython for the k-means algorithm

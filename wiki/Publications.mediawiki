@@ -19,6 +19,8 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 #MullerEtAl2009 pmid=19583843
 #SmithEtAl2009 Smith SA, Beaulieu JM, Donoghue MJ. 2009. ''Mega-phylogeny approach for comparative biology: an alternative to supertree and supermatrix approaches.'' BMC Evolutionary Biology: 9:37 [http://www.biomedcentral.com/1471-2148/9/37 BioMed Central]
 // Used Biopython to implement a pipeline
+#TanakaEtAl2009 pmid=19272463
+// Used Biopython to access MEDLINE
 #TorranceEtAl2009 pmid=19038265
 //  Used Biopython for the k-means algorithm
 #Wiwanitkit2009a pmid=19007941
