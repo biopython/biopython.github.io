@@ -47,7 +47,11 @@ Publications from 2009
 GenomeDiagram
 
 1.  MullerEtAl2009 pmid=19583843
-2.  SmithEtAl2009 Smith SA, Beaulieu JM, Donoghue MJ. 2009.
+2.  NarayananEtAl pmid=19324053
+
+// Used Bio.SVDSuperimposer (and probably Bio.PDB as well)
+
+1.  SmithEtAl2009 Smith SA, Beaulieu JM, Donoghue MJ. 2009.
     *Mega-phylogeny approach for comparative biology: an alternative to
     supertree and supermatrix approaches.* BMC Evolutionary Biology:
     9:37 [BioMed Central](http://www.biomedcentral.com/1471-2148/9/37)
