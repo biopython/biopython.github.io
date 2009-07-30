@@ -19,6 +19,10 @@ Publications from 2009
 
 <biblio>
 
+1.  BanachEtAl2009 pmid=19399224
+
+// Used Bio.PDB and Bio.KDTree
+
 1.  CockEtAl2009 pmid=19304878
 
 // This application note covers the whole of Biopython
