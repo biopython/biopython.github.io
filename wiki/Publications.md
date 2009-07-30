@@ -59,12 +59,9 @@ GenomeDiagram
 
 // Used Bio.PDB
 
-1.  SmithEtAl2009 Smith SA, Beaulieu JM, Donoghue MJ. 2009.
-    *Mega-phylogeny approach for comparative biology: an alternative to
-    supertree and supermatrix approaches.* BMC Evolutionary Biology:
-    9:37 [BioMed Central](http://www.biomedcentral.com/1471-2148/9/37)
+1.  SmithEtAl2009 pmid=19210768
 
-// Used Biopython to implement a pipeline
+// Used Biopython to implement a pipeline with BioSQL
 
 1.  TanakaEtAl2009 pmid=19272463
 

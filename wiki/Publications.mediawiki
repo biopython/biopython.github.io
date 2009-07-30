@@ -23,8 +23,8 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 // Used Bio.SVDSuperimposer (and probably Bio.PDB as well)
 #Schanda2009 Schanda P. 2009. ''Fast-pulsing longitudinal relaxation optimized techniques: Enriching the toolbox of fast biomolecular NMR spectroscopy.'' Progress in Nuclear Magnetic Resonance Spectroscopy: 'In press' [http://dx.doi.org/10.1016/j.pnmrs.2009.05.002 doi:10.1016/j.pnmrs.2009.05.002]
 // Used Bio.PDB
-#SmithEtAl2009 Smith SA, Beaulieu JM, Donoghue MJ. 2009. ''Mega-phylogeny approach for comparative biology: an alternative to supertree and supermatrix approaches.'' BMC Evolutionary Biology: 9:37 [http://www.biomedcentral.com/1471-2148/9/37 BioMed Central]
-// Used Biopython to implement a pipeline
+#SmithEtAl2009 pmid=19210768
+// Used Biopython to implement a pipeline with BioSQL
 #TanakaEtAl2009 pmid=19272463
 // Used Biopython to access MEDLINE
 #TorranceEtAl2009 pmid=19038265
