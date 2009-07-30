@@ -51,6 +51,14 @@ GenomeDiagram
 
 // Used Bio.SVDSuperimposer (and probably Bio.PDB as well)
 
+1.  Schanda2009 Schanda P. 2009. *Fast-pulsing longitudinal relaxation
+    optimized techniques: Enriching the toolbox of fast biomolecular
+    NMR spectroscopy.* Progress in Nuclear Magnetic Resonance
+    Spectroscopy: 'In press'
+    [<doi:10.1016/j.pnmrs.2009.05.002>](http://dx.doi.org/10.1016/j.pnmrs.2009.05.002)
+
+// Used Bio.PDB
+
 1.  SmithEtAl2009 Smith SA, Beaulieu JM, Donoghue MJ. 2009.
     *Mega-phylogeny approach for comparative biology: an alternative to
     supertree and supermatrix approaches.* BMC Evolutionary Biology:
