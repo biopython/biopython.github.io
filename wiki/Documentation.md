@@ -154,8 +154,8 @@ Biopython. </biblio>
 | [Flash
 version](http://www.slideshare.net/bosc/cock-biopython-bosc2009)
 
--   Scottish Bioinformatics Forum NextGenBug meeting - Second generation
-    sequence data and Biopython
+-   Scottish Bioinformatics Forum NextGenBug meeting June 2009 - Second
+    generation sequence data and Biopython
 
   
 [PDF](http://biopython.org/DIST/docs/presentations/Biopython_NextGenBUG_June2009.pdf)

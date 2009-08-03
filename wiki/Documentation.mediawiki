@@ -64,7 +64,7 @@ We have a separate list of [[Publications|publications citing or using Biopython
 
 * BOSC 2009 presentation "Biopython Project Update"
 :[http://biopython.org/DIST/docs/presentations/Biopython_BOSC_2009.pdf PDF] | [http://www.slideshare.net/bosc/cock-biopython-bosc2009 Flash version]
-* Scottish Bioinformatics Forum NextGenBug meeting - Second generation sequence data and Biopython
+* Scottish Bioinformatics Forum NextGenBug meeting June 2009 - Second generation sequence data and Biopython
 :[http://biopython.org/DIST/docs/presentations/Biopython_NextGenBUG_June2009.pdf PDF]
 * Laptop session at "2009 Biología Computacional de Proteínas workshop" at Quilmes National University
 :[http://www.bioinformatica.info/biopython/ HTML] (requires Crunchy to try the code online)
