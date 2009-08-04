@@ -215,7 +215,30 @@ coefficients.
 The method returns:
 
 estimate, a triangular matrix containing genetic distances among samples
-according to the chosen statistic
+according to the chosen statistic.
 
 distance, a triangular matrix containing distances (log or linear) among
 smamples.
+
+a and b are the parameter fits for the regression. bblow and bbhigh are
+the bootstrap confidence intervals for the b parameter (bb should be
+very close to b).
+
+Intrepreation of the triangular matrices should be done like this:
+Pythonwise, a matrix is implemented with a list of lists of numbers,
+like this
+
+``` python
+[
+   [0.1],
+   [0.2, 0.3],
+   [0.4, 0.5, 0.6]
+]
+```
+
+The above data structure corresponds to the following triangular matrix
+
+          1    2    3
+    2   0.1
+    3   0.2  0.3
+    4   0.4  0.5  0.6
