@@ -168,3 +168,9 @@ print ctrl.test_ld_all_pair("Locus1", "Locus2",
 ```
 
 ### Isolation By Distance (IBD)
+
+``` python
+estimate, distance, (a, b), (bb, bblow, bbhigh)
+ = \
+    ctrl.calc_ibd(self, is_diplo = True, stat="a", scale="Log", min_dist=0.00001)
+```
