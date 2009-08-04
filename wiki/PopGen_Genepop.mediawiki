@@ -123,8 +123,50 @@ print ctrl.test_ld_all_pair("Locus1", "Locus2",
 </source>
 
 ===Isolation By Distance (IBD)===
+
+Isolation By Distance (IBD) analysis '''requires''' a special form of Genepop files:
+
+# One individual per population
+# The name of the individual has to be its coordinates
+
+Example:
+
+<pre>
+...
+Pop
+0 15, 0201  0303 0102 0302 1011
+Pop
+0 30, 0202  0301 0102 0303 1111
+Pop
+0 45, 0102  0401 0202 0102 1010
+Pop
+0 60, 0103  0202 0101 0202 1011
+Pop
+0 75, 0203  0204 0101 0102 1010
+POP
+15 15, 0102 0202 0201 0405 0807
+...
+</pre>
+
+Note that the example file that we are using, '''cannot be used for this case'''.
+
+There is a single call for IBD analysis (note that you :
 <source lang=python>
-estimate, distance, (a, b), (bb, bblow, bbhigh)
- = \
+estimate, distance, (a, b), (bb, bblow, bbhigh) = \
     ctrl.calc_ibd(self, is_diplo = True, stat="a", scale="Log", min_dist=0.00001)
 </source>
+
+is_diplo specifies if data is diploid (True) or haploid (False).
+
+stat is either a or e (see the Genepop manual for details.
+
+scale is either Log or Linear . Log is used for 2D coordinates and Linear for 1D.
+
+Only pairwise comparisons above min_dist are used to compute regression coefficients.
+
+The method returns:
+
+estimate, a triangular matrix containing genetic distances among samples according to the chosen
+statistic
+
+distance, a triangular matrix containing distances (log or linear) among smamples.
