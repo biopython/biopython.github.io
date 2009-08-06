@@ -175,20 +175,20 @@ population:
 ctrl.test_hw(1, "excess")
 ```
 
-Interface to be corrected.
-
 The second parameter can by *probability*, *excess* or *deficiency*.
 *probability* is the standard Haldane HW test. Use *deficiency* when you
 are interested in heterozygote deficiency or excess if you are
 interested in *excess*.
 
 ``` python
-pop_test, loc_test, all_test ctrl.test_hw_global("deficiency")
+pop_test, loc_test, all_test = ctrl.test_hw_global("deficiency")
 ```
 
 Use *deficiency* when you are interested in heterozygote deficiency or
 *excess* if you are interested in excess. *probability* does not apply
 here like in test\_hw.
+
+Both pop\_test
 
 ``` python
 print ctrl.test_ld_all_pair("Locus1", "Locus2",

@@ -126,17 +126,16 @@ Lets start by testing Hardy-Weinberg equilibrium for each loci in each populatio
 ctrl.test_hw(1, "excess")
 </source>
 
-Interface to be corrected.
-
 The second parameter can by ''probability'', ''excess'' or ''deficiency''. ''probability'' is the standard Haldane HW test. Use ''deficiency'' when you are interested in heterozygote deficiency or excess if you are interested in ''excess''.
 
 
 <source lang=python>
-pop_test, loc_test, all_test ctrl.test_hw_global("deficiency")
+pop_test, loc_test, all_test = ctrl.test_hw_global("deficiency")
 </source>
 
 Use ''deficiency'' when you are interested in heterozygote deficiency or ''excess'' if you are interested in excess. ''probability'' does not apply here like in test_hw.
 
+Both pop_test
 
 
 <source lang=python>
