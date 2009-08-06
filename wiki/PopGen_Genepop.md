@@ -23,7 +23,7 @@ the system, it can be dowloaded from
 [here](http://kimura.univ-montp2.fr/~rousset/Genepop.htm).
 
 EasyController tutorial
------------------------
+=======================
 
 Before we start, lets test the installation (for this you need a genepop
 formated file):
@@ -93,6 +93,18 @@ for all populations:
 all_allele_list = ctrl.get_alleles_all_pops("Locus2")
 ```
 
+DO AND DOCUMENT:
+
+``` python
+allele_count = ctrl.get_allele_count(0, "Locus2")
+```
+
+DOCUMENT ONLY:
+
+``` python
+genotype_list = ctrl.get_genotype_count(0, "Locus2")
+```
+
 We will now get the Fis of a certain locus/population plus a few other
 statistics:
 
@@ -156,7 +168,8 @@ print ctrl.get_multilocus_f_stats()
 print ctrl.get_f_stats("Locus2")
 ```
 
-### Tests
+Tests
+-----
 
 Tests are normally computationally intensive as they are normally based
 on a Markov Chain algorithm. In some cases full enumeration approaches
@@ -195,7 +208,8 @@ print ctrl.test_ld_all_pair("Locus1", "Locus2",
     dememorization=1000, batches=10, iterations=100)
 ```
 
-### Isolation By Distance (IBD)
+Isolation By Distance (IBD)
+---------------------------
 
 Isolation By Distance (IBD) analysis **requires** a special form of
 Genepop files:
@@ -252,7 +266,7 @@ a and b are the parameter fits for the regression. bblow and bbhigh are
 the bootstrap confidence intervals for the b parameter (bb should be
 very close to b).
 
-Intrepreation of the triangular matrices should be done like this:
+Interpretation of the triangular matrices should be done like this:
 Pythonwise, a matrix is implemented with a list of lists of numbers,
 like this
 
