@@ -115,13 +115,26 @@ print ctrl.get_f_stats("Locus2")
 
 ===Tests===
 
+Tests are normally computationally intensive as they are normally based on a Markov Chain algorithm. In some cases full enumeration approaches are available but those can only be applied for locus with a very low number of alleles. '''This means that most tests will take quite some time to complete'''.
+
+For more details about Markov Chain parameters below (dememorization, batched and iterations) please consult the Genepop manual. Also consult the manual to understand when full enumeration is applicable. 
+
+
+Lets start by testing Hardy-Weinberg equilibrium for each loci in each population:
+
 <source lang=python>
-print ctrl.test_ld_all_pair("Locus1", "Locus2",
-    dememorization=1000, batches=10, iterations=100)
+ctrl.test_hw(1, "excess")
 </source>
 
 <source lang=python>
-print ctrl.test_hw(1, "excess")
+print ctrl.test_hw_global(1, "deficiency")
+</source>
+
+
+
+<source lang=python>
+print ctrl.test_ld_all_pair("Locus1", "Locus2",
+    dememorization=1000, batches=10, iterations=100)
 </source>
 
 ===Isolation By Distance (IBD)===
