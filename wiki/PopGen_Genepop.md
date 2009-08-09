@@ -19,7 +19,7 @@ as long as the required functionality is exposed in EasyController and
 its performance is deemed acceptable.
 
 In order for the controllers to be used, Genepop has to be installed in
-the system, it can be dowloaded from
+the system, it can be downloaded from
 [here](http://kimura.univ-montp2.fr/~rousset/Genepop.htm).
 
 EasyController tutorial
@@ -66,6 +66,8 @@ relative position of the population in the file, not the name. So the
 first population is the file is index 0, the second index 1, and so
 on...
 
+### Heterozygosity
+
 Lets get heterozygosity info for a certain population and a certain
 allele:
 
@@ -77,6 +79,8 @@ Will get expected and observed homozygosity and heterozygosity for
 population 0 and Locus2 (of the file big.gen, if you are using another
 file, adjust the population position and locus name accordingly).
 
+### Existing alleles
+
 It is possible to get the list of all alleles of a certain locus in a
 certain population:
 
@@ -84,7 +88,10 @@ certain population:
 allele_list = ctrl.get_alleles(0,"Locus2")
 ```
 
-The statistic allele count is simply getting len(allele\_list).
+allele\_list will be \[3, 20\] (i.e., alleles 3 and 20 are on the
+population).
+
+The number of alleles is simply getting len(allele\_list).
 
 It is also possible to get the list of all alleles of a certain locus
 for all populations:
@@ -93,16 +100,23 @@ for all populations:
 all_allele_list = ctrl.get_alleles_all_pops("Locus2")
 ```
 
-DO AND DOCUMENT:
+all\_allele\_list will be \[3, 20\].
+
+### Allele and genotype frequencies
+
+It is possible to get the frequency of alleles in a certain population
 
 ``` python
-allele_count = ctrl.get_allele_count(0, "Locus2")
+allele_data = ctrl.get_allele_frequency(0, "Locus2")
 ```
 
-DOCUMENT ONLY:
+allele\_data will be (62, {3: 0.88700000000000001, 20: 0.113}). That is
+there are 62 genes. 88.7% are 3 and 11.3% are 20.
+
+We can get similar information for genotypes (diploid data)
 
 ``` python
-genotype_list = ctrl.get_genotype_count(0, "Locus2")
+genotype_list = ctrl.get_genotype_frequency(0, "Locus2")
 ```
 
 We will now get the Fis of a certain locus/population plus a few other

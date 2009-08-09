@@ -2,9 +2,10 @@ Two interfaces are supplied: A general, more complex and more efficient one (Gen
 
 The more complex interface assumes more proficient Python developers (e.g., by the use of iterators) and for now it is not documented. But even for experienced Python developers, EasyController can be convenient as long as the required functionality is exposed in EasyController and its performance is deemed acceptable.
 
-In order for the controllers to be used, Genepop has to be installed in the system, it can be dowloaded from [http://kimura.univ-montp2.fr/~rousset/Genepop.htm here].
+In order for the controllers to be used, Genepop has to be installed in the system, it can be downloaded from [http://kimura.univ-montp2.fr/~rousset/Genepop.htm here].
 
 =EasyController tutorial=
+
 
 Before we start, lets test the installation (for this you need a genepop formated file):
 
@@ -33,6 +34,8 @@ Returns the list of population names and loci names available on the file.
 
 '''Caveat:''' Most existing Genepop files provide erroneous data regarding population names. In many cases that information might not be trusted. Assessing population information is, most of the times, done by the relative position of the population in the file, not the name. So the first population is the file is index 0, the second index 1, and so on...
 
+
+===Heterozygosity===
 Lets get heterozygosity info for a certain population and a certain allele:
 
 <source lang=python>
@@ -41,13 +44,16 @@ Lets get heterozygosity info for a certain population and a certain allele:
 
 Will get expected and observed homozygosity and heterozygosity for population 0 and Locus2 (of the file big.gen, if you are using another file, adjust the population position and locus name accordingly).
 
+===Existing alleles===
 It is possible to get the list of all alleles of a certain locus in a certain population:
 
 <source lang=python>
 allele_list = ctrl.get_alleles(0,"Locus2")
 </source>
 
-The statistic allele count is simply getting len(allele_list).
+allele_list will be [3, 20] (i.e., alleles 3 and 20 are on the population).
+
+The number of alleles is simply getting len(allele_list).
 
 
 
@@ -57,16 +63,23 @@ It is also possible to get the list of all alleles of a certain locus for all po
 all_allele_list = ctrl.get_alleles_all_pops("Locus2")
 </source>
 
+all_allele_list will be [3, 20].
 
-DO AND DOCUMENT:
+
+===Allele and genotype frequencies===
+
+It is possible to get the frequency of alleles in a certain population
+
 <source lang=python>
-allele_count = ctrl.get_allele_count(0, "Locus2")
+allele_data = ctrl.get_allele_frequency(0, "Locus2")
 </source>
 
+allele_data will be (62, {3: 0.88700000000000001, 20: 0.113}). That is there are 62 genes. 88.7% are
+3 and 11.3% are 20.
 
-DOCUMENT ONLY:
+We can get similar information for genotypes (diploid data)
 <source lang=python>
-genotype_list = ctrl.get_genotype_count(0, "Locus2")
+genotype_list = ctrl.get_genotype_frequency(0, "Locus2")
 </source>
 
 
