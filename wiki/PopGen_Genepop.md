@@ -116,11 +116,21 @@ allele_data = ctrl.get_allele_frequency(0, "Locus2")
 allele\_data will be (62, {3: 0.88700000000000001, 20: 0.113}). That is
 there are 62 genes. 88.7% are 3 and 11.3% are 20.
 
-We can get similar information for genotypes (diploid data)
+We can get similar information for genotypes (diploid data). Expected
+frequencies will also be reported:
 
 ``` python
 genotype_list = ctrl.get_genotype_frequency(0, "Locus2")
 ```
+
+genotype\_list will be: \[(3, 3, 24, 24.3443), (20, 3, 7,
+6.3114999999999997), (20, 20, 0, 0.34429999999999999)\]
+
+Lets interpret the first element: There are 24 individuals which have a
+genotype of (3, 3), whereas the expected number of individuals with that
+genotype is 24.2443.
+
+### Fis
 
 We will now get the Fis of a certain locus/population plus a few other
 statistics:
@@ -147,22 +157,16 @@ allele\_dict holds for each allele (being each allele the key), number
 of repetitions of the allele, frequency and Cockerham and Weir Fis.
 
 So, from the above results the following can be read: there are 62 genes
-with 2 different allees (55 are of type 3, and 7 of type 20). 3 has
+with 2 different alleles (55 are of type 3, and 7 of type 20). 3 has
 frequency 0.89 and 20 0.11. All CW Fis are -0.111 and the RH Fis is
 -0.112.
 
-If the objective is just to get allele frequencies, then there is an
-easier way:
+### Migration
+
+We can get an estimation of the number of migrants:
 
 ``` python
-total_alleles, count = ctrl.get_allele_frequency(0,"Locus2")
-```
-
-total\_alleles returns the number of total alleles and count is a
-dictionary whose key is the allele id and the value is the frequency.
-
-``` python
-print ctrl.estimate_nm()
+samp_size, priv_allele_freq, mig10, mig25, mig25, migcorr = ctrl.estimate_nm()
 ```
 
 ``` python
