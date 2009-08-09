@@ -249,17 +249,23 @@ For more details about Markov Chain parameters below (dememorization,
 batched and iterations) please consult the Genepop manual. Also consult
 the manual to understand when full enumeration is applicable.
 
+### Hardy-Weinberg equilibrium
+
 Lets start by testing Hardy-Weinberg equilibrium for each loci in each
 population:
 
 ``` python
-ctrl.test_hw(1, "excess")
+loci_map = ctrl.test_hw_pop(1, "excess")
 ```
 
-The second parameter can by *probability*, *excess* or *deficiency*.
+The second parameter can be *probability*, *excess* or *deficiency*.
 *probability* is the standard Haldane HW test. Use *deficiency* when you
-are interested in heterozygote deficiency or excess if you are
-interested in *excess*.
+are interested in heterozygote deficiency or *excess* if you are
+interested in excess.
+
+The output is a map where the key is the locus name. The content is a
+tuple containing P-value, Standard Error, Fis (Weir and Cockerham), Fis
+(Robertson and Hill) and steps.
 
 ``` python
 pop_test, loc_test, all_test = ctrl.test_hw_global("deficiency")
@@ -267,9 +273,18 @@ pop_test, loc_test, all_test = ctrl.test_hw_global("deficiency")
 
 Use *deficiency* when you are interested in heterozygote deficiency or
 *excess* if you are interested in excess. *probability* does not apply
-here like in test\_hw.
+here like in test\_hw\_pop.
 
-Both pop\_test
+The output is a triple:
+
+1.  pop\_test is a list with an element per population including
+    P-value, Standard error and switches.
+2.  loc\_test is the same list, but with one element per locus including
+    locus name, P-value, Standard error and switches.
+3.  all\_test are the overall results consisting of a triple P-value,
+    standard error and switches.
+
+### Linkage Disequilibrium
 
 ``` python
 print ctrl.test_ld_all_pair("Locus1", "Locus2",

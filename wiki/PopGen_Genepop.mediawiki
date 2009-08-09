@@ -188,23 +188,32 @@ Tests are normally computationally intensive as they are normally based on a Mar
 For more details about Markov Chain parameters below (dememorization, batched and iterations) please consult the Genepop manual. Also consult the manual to understand when full enumeration is applicable. 
 
 
+===Hardy-Weinberg equilibrium===
+
 Lets start by testing Hardy-Weinberg equilibrium for each loci in each population:
 
 <source lang=python>
-ctrl.test_hw(1, "excess")
+loci_map = ctrl.test_hw_pop(1, "excess")
 </source>
 
-The second parameter can by ''probability'', ''excess'' or ''deficiency''. ''probability'' is the standard Haldane HW test. Use ''deficiency'' when you are interested in heterozygote deficiency or excess if you are interested in ''excess''.
+The second parameter can be ''probability'', ''excess'' or ''deficiency''. ''probability'' is the standard Haldane HW test. Use ''deficiency'' when you are interested in heterozygote deficiency or ''excess'' if you are interested in excess.
 
+The output is a map where the key is the locus name. The content is a tuple containing P-value, Standard Error, Fis (Weir and Cockerham), Fis (Robertson and Hill) and steps.
 
 <source lang=python>
 pop_test, loc_test, all_test = ctrl.test_hw_global("deficiency")
 </source>
 
-Use ''deficiency'' when you are interested in heterozygote deficiency or ''excess'' if you are interested in excess. ''probability'' does not apply here like in test_hw.
+Use ''deficiency'' when you are interested in heterozygote deficiency or ''excess'' if you are interested in excess. ''probability'' does not apply here like in test_hw_pop.
 
-Both pop_test
+The output is a triple:
 
+# pop_test is a list with an element per population including P-value, Standard error and switches.
+# loc_test is the same list, but with one element per locus including locus name, P-value, Standard error and switches.
+# all_test are the overall results consisting of a triple P-value, standard error and switches.
+
+
+===Linkage Disequilibrium===
 
 <source lang=python>
 print ctrl.test_ld_all_pair("Locus1", "Locus2",
