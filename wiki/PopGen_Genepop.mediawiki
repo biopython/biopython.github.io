@@ -215,10 +215,14 @@ The output is a triple:
 
 ===Linkage Disequilibrium===
 
+We can test if 2 loci are in linkage disequilibrium using the log likelihood ratio statistic (G-test).
+
 <source lang=python>
-print ctrl.test_ld_all_pair("Locus1", "Locus2",
+chi2, df, pval = ctrl.test_ld_all_pair("Locus1", "Locus2",
     dememorization=1000, batches=10, iterations=100)
 </source>
+
+Returns the Chi square value, degrees of freedom and P value for the G statistic.
 
 ==Isolation By Distance (IBD)==
 
