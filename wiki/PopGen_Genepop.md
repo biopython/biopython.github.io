@@ -165,6 +165,20 @@ with 2 different alleles (55 are of type 3, and 7 of type 20). 3 has
 frequency 0.89 and 20 0.11. All CW Fis are -0.111 and the RH Fis is
 -0.112.
 
+Lets now get multilocus Fis:
+
+``` python
+pop_list = ctrl.get_avg_fis()
+```
+
+pop\_list will return an element per population. Each element is a
+quadruple containing:
+
+1.  population name (again, population names are not to be trusted)
+2.  1 - QIntra: Gene diversity between individuals
+3.  1 - QInter: Gene diversity among individuals within populations
+4.  Fis
+
 ### Migration
 
 We can get an estimation of the number of migrants:
@@ -199,12 +213,6 @@ print ctrl.get_avg_fst_pair()
 
 This will return the same data structure as above but with a multilocus
 pairwise Fst
-
-``` python
-print ctrl.get_avg_fis()
-```
-
-See also the Fis section
 
 ``` python
 print ctrl.get_multilocus_f_stats()
