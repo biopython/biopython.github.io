@@ -134,6 +134,50 @@ Lets interpret the first element: There are 24 individuals which have a
 genotype of (3, 3), whereas the expected number of individuals with that
 genotype is 24.2443.
 
+### F statistics
+
+Lets start with general multilocus F statistics:
+
+``` python
+Fis, Fst, Fit = ctrl.get_multilocus_f_stats()
+```
+
+This gets multilocus Fis, Fst and Fit.
+
+Lets get that (and a bit more) per locus:
+
+``` python
+Fis, Fst, Fit, Qintra, Qinter = ctrl.get_f_stats("Locus2")
+```
+
+This gets single locus Fis, Fst and Fit, Qintra and Qinter.
+
+There are specific sections below for Fst and Fis (where pairwise and
+population specific variants are introduced). On the Fis section Qintra
+and Qinter are explained.
+
+### Fst
+
+Lets get the pairwise Fst for a certain locus:
+
+``` python
+pair_fst = ctrl.get_avg_fst_pair_locus("Locus4")
+```
+
+Will return a map where the key is the pair composed of population1,
+population2 (the population Id). population2 is always LOWER than
+population1. Example: the pairwise Fst for Locus4 between population 0
+and population 3 is given by pair\_fst\[(3,0)\].
+
+You can also get the multilocus pairwise Fst estimate:
+
+``` python
+multilocus_fst ctrl.get_avg_fst_pair()
+```
+
+This will return the same data structure as above but with a multilocus
+pairwise Fst.
+
 ### Fis
 
 We will now get the Fis of a certain locus/population plus a few other
@@ -191,36 +235,6 @@ samp\_size is mean sample size, priv\_allele\_freq is the mean frequency
 of private alleles, mig10 is the number of migrants for Ne=10, mig25 for
 Ne=25, mig 50 for Ne=50 and migcorr is the number of migrants after
 correcting for expected size.
-
-### Fst
-
-Lets get the pairwise Fst for a certain locus:
-
-``` python
-pair_fst = ctrl.get_avg_fst_pair_locus("Locus4")
-```
-
-Will return a map where the key is the pair composed of population1,
-population2 (the population Id). population2 is always LOWER than
-population1. Example: the pairwise Fst for Locus4 between population 0
-and population 3 is given by pair\_fst\[(3,0)\].
-
-You can also get the multilocus pairwise Fst estimate:
-
-``` python
-print ctrl.get_avg_fst_pair()
-```
-
-This will return the same data structure as above but with a multilocus
-pairwise Fst
-
-``` python
-print ctrl.get_multilocus_f_stats()
-```
-
-``` python
-print ctrl.get_f_stats("Locus2")
-```
 
 Tests
 -----
