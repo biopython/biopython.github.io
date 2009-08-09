@@ -22,6 +22,10 @@ In order for the controllers to be used, Genepop has to be installed in
 the system, it can be downloaded from
 [here](http://kimura.univ-montp2.fr/~rousset/Genepop.htm).
 
+For details on the methods used for calculations, check the Genepop
+documentation, which provides pointers to all papers from where the
+calculations are derived.
+
 EasyController tutorial
 =======================
 
