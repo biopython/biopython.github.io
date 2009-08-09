@@ -120,20 +120,34 @@ So, from the above results the following can be read: there are 62 genes with 2 
 We can get an estimation of the number of migrants:
 
 <source lang=python>
-samp_size, priv_allele_freq, mig10, mig25, mig25, migcorr = ctrl.estimate_nm()
+samp_size, priv_allele_freq, mig10, mig25, mig50, migcorr = ctrl.estimate_nm()
 </source>
 
+samp_size is mean sample size, priv_allele_freq is the mean frequency of private alleles, mig10 is the number of migrants for Ne=10, mig25 for Ne=25, mig 50 for Ne=50 and migcorr is the number of migrants after correcting for expected size.
+
+===Fst===
+
+Lets get the pairwise Fst for a certain locus:
+
 <source lang=python>
-print ctrl.get_avg_fst_pair_locus("Locus4")
+pair_fst = ctrl.get_avg_fst_pair_locus("Locus4")
 </source>
+
+Will return a map where the key is the pair composed of population1, population2 (the population Id). population2 is always LOWER than population1. Example: the pairwise Fst for Locus4 between population 0 and population 3 is given by pair_fst[(3,0)].
+
+You can also get the multilocus pairwise Fst estimate:
 
 <source lang=python>
 print ctrl.get_avg_fst_pair()
 </source>
 
+This will return the same data structure as above but with a multilocus pairwise Fst
+
 <source lang=python>
 print ctrl.get_avg_fis()
 </source>
+
+See also the Fis section
 
 
 <source lang=python>
