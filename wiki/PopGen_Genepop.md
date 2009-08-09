@@ -66,6 +66,9 @@ relative position of the population in the file, not the name. So the
 first population is the file is index 0, the second index 1, and so
 on...
 
+Statistics
+----------
+
 ### Heterozygosity
 
 Lets get heterozygosity info for a certain population and a certain

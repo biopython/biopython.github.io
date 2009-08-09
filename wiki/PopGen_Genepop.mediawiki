@@ -34,6 +34,7 @@ Returns the list of population names and loci names available on the file.
 
 '''Caveat:''' Most existing Genepop files provide erroneous data regarding population names. In many cases that information might not be trusted. Assessing population information is, most of the times, done by the relative position of the population in the file, not the name. So the first population is the file is index 0, the second index 1, and so on...
 
+==Statistics==
 
 ===Heterozygosity===
 Lets get heterozygosity info for a certain population and a certain allele:
