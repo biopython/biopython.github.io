@@ -52,10 +52,31 @@ iterator of Tree objects (i.e. some subclass of the Bio.Tree.BaseTree
 Tree class, depending on the file format).
 
 ``` python
-trees = TreeIO.parse('example.xml', 'phyloxml')
-for tree in trees:
-    print tree
+>>> trees = TreeIO.parse('phyloxml_examples.xml', 'phyloxml')
+>>> for tree in trees:
+...     print tree.name
 ```
+
+    example from Prof. Joe Felsenstein's book "Inferring Phylogenies"
+    example from Prof. Joe Felsenstein's book "Inferring Phylogenies"
+    same example, with support of type "bootstrap"
+    same example, with species and sequence
+    same example, with gene duplication information and sequence relationships
+    similar example, with more detailed sequence data
+    network, node B is connected to TWO nodes: AB and C
+    ...
+
+If there's only one tree, then the next() method on the resulting
+generator will return it.
+
+``` python
+>>> tree = TreeIO.parse('phyloxml_examples.xml', 'phyloxml').next()
+>>> tree.name
+'example from Prof. Joe Felsenstein\'s book "Inferring Phylogenies"'
+```
+
+Note that this doesn't immediately reveal whether there are any
+remaining trees -- if you want to verify that, use read() instead.
 
 ### read()
 
