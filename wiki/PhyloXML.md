@@ -242,11 +242,11 @@ Ubuntu 9.04, choosing the best of 3 runs for each function:
 | File                         | Ext. Nodes | Size (uncompressed) | Read (s) | Parse (s) | Write (s) |
 |------------------------------|------------|---------------------|----------|-----------|-----------|
 | apaf.xml                     |            | 38 KB               | 0.01     | 0.01      | 0.02      |
-| bcl\_2.xml                   |            | 105 KB              | 0.03     | 0.02      | 0.04      |
-| ncbi\_taxonomy\_mollusca.xml | 5632       | 1.5 MB              | 0.65     | 0.62      | 0.67      |
-| tol\_life\_on\_earth\_1.xml  | 57124      | 46 MB               | 10.55    | 10.90     | 9.26      |
-| ncbi\_taxonomy\_metazoa.xml  | 73907      | 33 MB               | 15.99    | 16.01     | 8.98      |
-| ncbi\_taxonomy.xml           | 263691     | 31 MB (unindented)  | 97.61    | 97.87     | 26.99     |
+| bcl\_2.xml                   |            | 105 KB              | 0.02     | 0.02      | 0.04      |
+| ncbi\_taxonomy\_mollusca.xml | 5632       | 1.5 MB              | 0.51     | 0.49      | 0.80      |
+| tol\_life\_on\_earth\_1.xml  | 57124      | 46 MB               | 10.28    | 10.67     | 10.36     |
+| ncbi\_taxonomy\_metazoa.xml  | 73907      | 33 MB               | 15.76    | 16.15     | 10.69     |
+| ncbi\_taxonomy.xml           | 263691     | 31 MB (unindented)  | 109.70   | 109.14    | 32.39     |
 
 On 32-bit architectures, [psyco](http://psyco.sourceforge.net/) might
 improve these times significantly, at the risk of increasing memory

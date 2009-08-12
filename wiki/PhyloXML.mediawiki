@@ -158,37 +158,37 @@ Here are some times on a 2.00GHz Intel Xeon E5405 processor (only 1 CPU core use
 |bcl_2.xml
 |
 |105 KB
-|0.03
+|0.02
 |0.02
 |0.04
 |-
 |ncbi_taxonomy_mollusca.xml
 |5632
 |1.5 MB
-|0.65
-|0.62
-|0.67
+|0.51
+|0.49
+|0.80
 |-
 |tol_life_on_earth_1.xml
 |57124
 |46 MB
-|10.55
-|10.90
-|9.26
+|10.28
+|10.67
+|10.36
 |-
 |ncbi_taxonomy_metazoa.xml
 |73907
 |33 MB
-|15.99
-|16.01
-|8.98
+|15.76
+|16.15
+|10.69
 |-
 |ncbi_taxonomy.xml
 |263691
 |31 MB (unindented)
-|97.61
-|97.87
-|26.99
+|109.70
+|109.14
+|32.39
 |}
 
 On 32-bit architectures, [http://psyco.sourceforge.net/ psyco] might improve these times significantly, at the risk of increasing memory usage. (I haven't tested it.) For comparison, the Java-based parser used in Forester and ATV (see below) reads the same files about 3-5 times as quickly, or up to 15x for the largest file.
