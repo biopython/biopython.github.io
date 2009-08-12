@@ -10,10 +10,11 @@ the [phyloXML](http://www.phyloxml.org/) format.
 This code is not yet part of Biopython, and therefore the documentation
 has not been integrated into the Biopython Tutorial yet either.
 
-Installation
+Availability
 ------------
 
-The source code for this module currently lives on the [phyloxml
+The source code for this module currently lives on
+[Eric](User%3AEricTalevich "wikilink")'s [phyloxml
 branch](http://github.com/etal/biopython/tree/phyloxml) in GitHub. If
 you're interested in testing this code before it's been merged into
 Biopython, follow the instructions there to create your own fork, or
@@ -39,15 +40,8 @@ implementations until it succeeds. The given XML file handle is then
 parsed incrementally to instantiate an object hierarchy containing the
 relevant phylogenetic information.
 
-Usage
------
-
-To start working with phyloXML files, use the
-[TreeIO](TreeIO "wikilink") package:
-
-``` python
-from Bio import TreeIO
-```
+About the format
+----------------
 
 A complete phyloXML document has a root node with the tag "phyloxml".
 Directly under the root is a sequence of "phylogeny" elements
@@ -59,10 +53,40 @@ other attributes), recursively.
 
 The child nodes and attributes of each XML node are mapped onto classes
 in the PhyloXML.Tree module, keeping the names the same where possible;
-the XML document structure is closely mirrored in the Tree.Phyloxml
-objects produced by the Bio.PhyloXML package.
+the XML document structure is closely mirrored in the Phyloxml objects
+produced by Bio.TreeIO.PhyloXMLIO.read().
 
-### Parsing phyloXML files
+I/O functions
+-------------
+
+To start working with phyloXML files, use the
+[TreeIO](TreeIO "wikilink") package with 'phyloxml' as the format
+argument:
+
+``` python
+from Bio import TreeIO
+tree = TreeIO.read('some-trees.xml', 'phyloxml')
+# ValueError: There are multiple trees in this file; use parse() instead.
+trees = TreeIO.parse('some-trees.xml', 'phyloxml')
+TreeIO.write(trees.next(), 'first-tree.xml', 'phyloxml')
+TreeIO.write(trees, 'rest-trees.xml', 'phyloxml')
+```
+
+These functions work with Phylogeny objects (derived from BaseTree.Tree)
+from the Bio.Tree.PhyloXML module. This standard API is enough for most
+use cases.
+
+### PhyloXMLIO
+
+Within the Bio.TreeIO module, the I/O functions for the phyloXML format
+are implemented in the PhyloXMLIO sub-module. For access to some
+additional functionality beyond the basic TreeIO API, or to skip
+specifying the 'phyloxml' format argument each time, this can be
+imported directly:
+
+``` python
+from Bio.TreeIO import PhyloXMLIO
+```
 
 The read() function returns a single Bio.Tree.PhyloXML.Phyloxml object
 representing the entire file's data. The phylogenetic trees are in the
@@ -86,36 +110,13 @@ Other(tag='seq', namespace='http://www.phyloxml.org', value='taaatcgc--cccgtgg-a
 ```
 
 If you aren't interested in the "other" data, you can use parse() to
-iteratively construct just the phylogenetic trees contained in the file.
-If there's only one tree, then the next() method on the resulting
-generator will return it.
+iteratively construct just the phylogenetic trees contained in the file
+-- this is exactly the same as calling TreeIO.parse() with the
+'phyloxml' format argument.
 
-``` python
->>> for tree in TreeIO.parse('phyloxml_examples.xml', 'phyloxml'):
-...     print tree.name
-```
-
-    example from Prof. Joe Felsenstein's book "Inferring Phylogenies"
-    example from Prof. Joe Felsenstein's book "Inferring Phylogenies"
-    same example, with support of type "bootstrap"
-    same example, with species and sequence
-    same example, with gene duplication information and sequence relationships
-    similar example, with more detailed sequence data
-    network, node B is connected to TWO nodes: AB and C
-    ...
-
-``` python
->>> tree = TreeIO.parse('phyloxml_examples.xml', 'phyloxml').next()
->>> tree.name
-'example from Prof. Joe Felsenstein\'s book "Inferring Phylogenies"'
-```
-
-### Writing phyloXML files
-
-TreeIO.write() supports phyloXML in the usual way: it accepts a Phyloxml
-object (the result of read() or to\_phyloxml()) and either a file name
-or a handle to an open file-like object. Optionally, an encoding other
-than UTF-8 can be specified.
+PhyloXMLIO.write() is similar to TreeIO.write(), but also accepts a
+Phyloxml object (the result of read() or to\_phyloxml()) to serialize.
+Optionally, an encoding other than UTF-8 can be specified.
 
 ``` python
 >>> phx = TreeIO.read('phyloxml_examples.xml', 'phyloxml')
@@ -128,18 +129,10 @@ than UTF-8 can be specified.
 []
 ```
 
-If you want direct access to the phyloXML I/O functions without having
-to specify the file format each time, you can import the PhyloXMLIO
-interface directly:
-
-``` python
-from Bio.TreeIO import PhyloXMLIO
-phx = PhyloXMLIO.read('example.xml')
-```
-
-The other functions work exactly the same way. This also allows access
-to a few format-specific utilities, such as dump\_tags() for printing
-all of the XML tags as they are encountered in a phyloXML file.
+PhyloXMLIO also contains a utility called dump\_tags() for printing all
+of the XML tags as they are encountered in a phyloXML file. This can be
+helpful for debugging, or used along with grep or sort -u on the command
+line to obtain a list of the tags a phyloXML file contains.
 
     >>> PhyloXMLIO.dump_tags('phyloxml_examples.xml')
     {http://www.phyloxml.org}phyloxml
@@ -149,7 +142,8 @@ all of the XML tags as they are encountered in a phyloXML file.
     {http://www.phyloxml.org}clade
     ...
 
-### Using PhyloXML objects
+Using PhyloXML objects
+----------------------
 
 Standard Python syntactic sugar is supported wherever it's reasonable.
 
@@ -163,7 +157,7 @@ Standard Python syntactic sugar is supported wherever it's reasonable.
 -   len() is supported by the same objects that support iteration, with
     expected results
 
-Clade objects also support extended indexing:
+Clade objects also support slicing and multiple indexing:
 
 ``` python
 tree = TreeIO.parse('example.xml', 'phyloxml').next()
@@ -173,8 +167,7 @@ assert tree.clade[0,1] == tree.clade.clades[0].clades[1]
 
 Since valid Phylogeny objects always have a single clade attribute, this
 style of indexing is a handy way to reach specific nodes buried deep in
-the tree if you happen to know exactly where they are. In the future,
-slicing may be supported as well to grab a range a sub-clades at once.
+the tree if you happen to know exactly where they are.
 
 A couple of methods allow converting a selection to a new PhyloXML
 object: Phylogeny.to\_phyloxml() and Clade.to\_phylogeny(). A few use
@@ -205,7 +198,8 @@ phyloxml = best.to_phylogeny(rooted=True).to_phyloxml()
 TreeIO.write(phyloxml, 'example_best.xml', 'phyloxml')
 ```
 
-### Integrating with the rest of Biopython
+Integrating with the rest of Biopython
+--------------------------------------
 
 The classes used by this module inherit from the [Tree](Tree "wikilink")
 module's generalized BaseTree classes, and therefore have access to the
@@ -215,12 +209,14 @@ Bio.Tree.PhyloXML, and offer additional methods for converting between
 phyloXML and standard Biopython types.
 
 The PhyloXML.Sequence class contains methods for converting to and from
-Biopython [SeqRecord](SeqRecord "wikilink") objects. This includes the
-molecular sequence (mol\_seq) as a [Seq](Seq "wikilink") object, and the
-protein domain architecture as list of
-[SeqFeature](SeqFeature "wikilink") objects.
+Biopython [SeqRecord](SeqRecord "wikilink") objects -- to\_seqrecord()
+and from\_seqrecord(). This includes the molecular sequence (mol\_seq)
+as a [Seq](Seq "wikilink") object, and the protein domain architecture
+as list of [SeqFeature](SeqFeature "wikilink") objects. Likewise,
+PhyloXML.ProteinDomain objects have a to\_seqfeature() method.
 
-### Performance
+Performance
+-----------
 
 This parser is meant to be able to handle large files, meaning several
 thousand external nodes. (Benchmarks of relevant XML parsers for Python
@@ -275,8 +271,8 @@ Main SoC project page: [PhyloSoC:Biopython support for parsing and
 writing
 phyloXML](https://www.nescent.org/wg_phyloinformatics/PhyloSoC:Biopython_support_for_parsing_and_writing_phyloXML)
 
-Other software
---------------
+Related software
+----------------
 
 [Christian Zmasek](http://monochrome-effect.net/), one of the authors of
 the phyloXML specification, has released some software that uses this
