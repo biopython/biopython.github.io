@@ -133,8 +133,8 @@ Support for the [phyloXML](http://www.phyloxml.org/) format. See the
 
 ### NewickIO
 
-Wrappers around Bio.Nexus.Trees to support the Newick (a.k.a. NHX, New
-Hampshire Extended) format through the TreeIO API.
+Wrappers around Bio.Nexus.Trees to support the Newick (a.k.a. New
+Hampshire) format through the TreeIO API.
 
 ### NexusIO
 
