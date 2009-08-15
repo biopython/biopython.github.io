@@ -23,7 +23,6 @@ A complete phyloXML document has a root node with the tag "phyloxml". Directly u
 
 The child nodes and attributes of each XML node are mapped onto classes in the PhyloXML.Tree module, keeping the names the same where possible; the XML document structure is closely mirrored in the Phyloxml objects produced by Bio.TreeIO.PhyloXMLIO.read().
 
-
 For example, this XML:
 
 <pre>
@@ -79,6 +78,8 @@ _|
  |    .4
  |____________C
 </pre>
+
+The object structure is derived from [[Tree|Bio.Tree]]; see that page for more about the object representation of phylogenetic trees.
 
 ==I/O functions==
 
