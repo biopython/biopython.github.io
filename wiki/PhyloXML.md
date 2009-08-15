@@ -56,6 +56,44 @@ in the PhyloXML.Tree module, keeping the names the same where possible;
 the XML document structure is closely mirrored in the Phyloxml objects
 produced by Bio.TreeIO.PhyloXMLIO.read().
 
+For example, this XML:
+
+    <phyloxml>
+       <phylogeny rooted="true">
+          <name>An example</name>
+          <clade>
+             <clade branch_length="0.06">
+                <clade branch_length="0.102">
+                   <name>A</name>
+                </clade>
+                <clade branch_length="0.23">
+                   <name>B</name>
+                </clade>
+             </clade>
+             <clade branch_length="0.4">
+                <name>C</name>
+             </clade>
+          </clade>
+       </phylogeny>
+    </phyloxml>
+
+produces an object hierarchy like this:
+
+``` python
+Phyloxml(phylogenies=[
+            Phylogeny(name='An example',
+                      rooted='True',
+                      clade=Clade(clades=[
+                                    Clade(branch_length='0.06',
+                                          clades=[
+                                            Clade(branch_length='0.102', name='A'),
+                                            Clade(branch_length='0.23', name='B'),
+                                            ]),
+                                    Clade(branch_length='0.4', name='C'),
+                                    ]))
+    ])
+```
+
 I/O functions
 -------------
 
