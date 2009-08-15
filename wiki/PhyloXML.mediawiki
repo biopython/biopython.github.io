@@ -107,7 +107,7 @@ from Bio.TreeIO import PhyloXMLIO
 The read() function returns a single Bio.Tree.PhyloXML.Phyloxml object representing the entire file's data. The phylogenetic trees are in the "phylogenies" attribute, and any other arbitrary data is stored in "other".
 
 <source lang=python>
->>> phx = TreeIO.read('phyloxml_examples.xml', 'phyloxml')
+>>> phx = PhyloXMLIO.read('phyloxml_examples.xml')
 >>> print phx
 Phyloxml
 >>> len(phx.phylogenies)
@@ -127,12 +127,12 @@ If you aren't interested in the "other" data, you can use parse() to iteratively
 PhyloXMLIO.write() is similar to TreeIO.write(), but also accepts a Phyloxml object (the result of read() or to_phyloxml()) to serialize. Optionally, an encoding other than UTF-8 can be specified.
 
 <source lang=python>
->>> phx = TreeIO.read('phyloxml_examples.xml', 'phyloxml')
+>>> phx = PhyloXMLIO.read('phyloxml_examples.xml')
 >>> print phx.other
 [Other(tag='alignment', namespace='http://example.org/align')]
 >>> phx.other = []
->>> PhyloXML.write(phx, 'ex_no_other.xml', 'phyloxml', encoding='ascii')
->>> phx_no = TreeIO.read('ex_no_other.xml', 'phyloxml')
+>>> PhyloXMLIO.write(phx, 'ex_no_other.xml')
+>>> phx_no = PhyloXMLIO.read('ex_no_other.xml')
 >>> phx_no.other
 []
 </source>
@@ -188,11 +188,46 @@ phyloxml = best.to_phylogeny(rooted=True).to_phyloxml()
 TreeIO.write(phyloxml, 'example_best.xml', 'phyloxml')
 </source>
 
-==Integrating with the rest of Biopython==
+===Integrating with the rest of Biopython===
 
 The classes used by this module inherit from the [[Tree]] module's generalized BaseTree classes, and therefore have access to the methods defined on those base classes. Since the phyloXML specification is very detailed, these subclasses are kept in a separate module, Bio.Tree.PhyloXML, and offer additional methods for converting between phyloXML and standard Biopython types.
 
 The PhyloXML.Sequence class contains methods for converting to and from Biopython [[SeqRecord]] objects -- to_seqrecord() and from_seqrecord(). This includes the molecular sequence (mol_seq) as a [[Seq]] object, and the protein domain architecture as list of [[SeqFeature]] objects. Likewise, PhyloXML.ProteinDomain objects have a to_seqfeature() method.
+
+===Example pipeline===
+
+The code for most of the following steps is left to the reader as an exercise.
+
+1. Grab a protein sequence -- see [[SeqIO]].
+<source lang=python>
+from Bio import SeqIO
+# ...
+</source>
+
+2. Identify homologs using Blast.
+<source lang=python>
+from Bio.Blast import NBCIStandalone
+# ...
+</source>
+
+3. Build a tree, using a separate application.
+<source lang=python>
+from Bio.Align.Applications import ClustalwCommandLine
+# ...
+</source>
+
+4. Add annotation data -- now we're using [[Tree]] and [[TreeIO]].
+<source lang=python>
+from Bio.Tree import PhyloXML
+# ...
+</source>
+
+5. Save a phyloXML file.
+<source lang=python>
+from Bio import TreeIO
+TreeIO.write(tree, 'my_example.xml', 'phyloxml')
+</source>
+
 
 ==Performance==
 

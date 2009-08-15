@@ -150,7 +150,7 @@ representing the entire file's data. The phylogenetic trees are in the
 "other".
 
 ``` python
->>> phx = TreeIO.read('phyloxml_examples.xml', 'phyloxml')
+>>> phx = PhyloXMLIO.read('phyloxml_examples.xml')
 >>> print phx
 Phyloxml
 >>> len(phx.phylogenies)
@@ -175,12 +175,12 @@ Phyloxml object (the result of read() or to\_phyloxml()) to serialize.
 Optionally, an encoding other than UTF-8 can be specified.
 
 ``` python
->>> phx = TreeIO.read('phyloxml_examples.xml', 'phyloxml')
+>>> phx = PhyloXMLIO.read('phyloxml_examples.xml')
 >>> print phx.other
 [Other(tag='alignment', namespace='http://example.org/align')]
 >>> phx.other = []
->>> PhyloXML.write(phx, 'ex_no_other.xml', 'phyloxml', encoding='ascii')
->>> phx_no = TreeIO.read('ex_no_other.xml', 'phyloxml')
+>>> PhyloXMLIO.write(phx, 'ex_no_other.xml')
+>>> phx_no = PhyloXMLIO.read('ex_no_other.xml')
 >>> phx_no.other
 []
 ```
@@ -254,8 +254,7 @@ phyloxml = best.to_phylogeny(rooted=True).to_phyloxml()
 TreeIO.write(phyloxml, 'example_best.xml', 'phyloxml')
 ```
 
-Integrating with the rest of Biopython
---------------------------------------
+### Integrating with the rest of Biopython
 
 The classes used by this module inherit from the [Tree](Tree "wikilink")
 module's generalized BaseTree classes, and therefore have access to the
@@ -270,6 +269,47 @@ and from\_seqrecord(). This includes the molecular sequence (mol\_seq)
 as a [Seq](Seq "wikilink") object, and the protein domain architecture
 as list of [SeqFeature](SeqFeature "wikilink") objects. Likewise,
 PhyloXML.ProteinDomain objects have a to\_seqfeature() method.
+
+### Example pipeline
+
+The code for most of the following steps is left to the reader as an
+exercise.
+
+1. Grab a protein sequence -- see [SeqIO](SeqIO "wikilink").
+
+``` python
+from Bio import SeqIO
+# ...
+```
+
+2. Identify homologs using Blast.
+
+``` python
+from Bio.Blast import NBCIStandalone
+# ...
+```
+
+3. Build a tree, using a separate application.
+
+``` python
+from Bio.Align.Applications import ClustalwCommandLine
+# ...
+```
+
+4. Add annotation data -- now we're using [Tree](Tree "wikilink") and
+[TreeIO](TreeIO "wikilink").
+
+``` python
+from Bio.Tree import PhyloXML
+# ...
+```
+
+5. Save a phyloXML file.
+
+``` python
+from Bio import TreeIO
+TreeIO.write(tree, 'my_example.xml', 'phyloxml')
+```
 
 Performance
 -----------
