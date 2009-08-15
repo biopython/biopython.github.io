@@ -108,9 +108,9 @@ which represents a phylogeny like this:
      |    .4
      |____________C
 
-The object structure is derived from [Bio.Tree](Tree "wikilink"); see
-that page for more about the object representation of phylogenetic
-trees.
+The tree objects are derived from base classes in
+[Bio.Tree](Tree "wikilink"); see that page for more about this object
+representation.
 
 I/O functions
 -------------

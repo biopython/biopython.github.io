@@ -79,7 +79,7 @@ _|
  |____________C
 </pre>
 
-The object structure is derived from [[Tree|Bio.Tree]]; see that page for more about the object representation of phylogenetic trees.
+The tree objects are derived from base classes in [[Tree|Bio.Tree]]; see that page for more about this object representation.
 
 ==I/O functions==
 
