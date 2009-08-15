@@ -64,6 +64,22 @@ Phyloxml(phylogenies=[
     ])
 </source>
 
+which represents a phylogeny like this:
+
+<pre>
+
+         .102
+       _______A
+   .06 |
+ ______|
+ |     | .23
+ |     |______B
+_|
+ |
+ |    .4
+ |____________C
+</pre>
+
 ==I/O functions==
 
 To start working with phyloXML files, use the [[TreeIO]] package with 'phyloxml' as the format argument:
