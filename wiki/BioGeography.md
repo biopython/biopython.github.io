@@ -117,9 +117,11 @@ Save the utric\_search\_v2.xml file in your working directory (or
 download a similar file from GBIF). Here are suggested steps to parse
 the file with Bio.Geography's GbifXml module:
 
-from Bio.Geography.GbifXml import GbifXmlTree, GbifSearchResults from
-Bio.Geography.GenUtils import fix\_ASCII\_file xml\_fn =
-'utric\_search\_v2.xml'
+    from Bio.Geography.GbifXml import GbifXmlTree, GbifSearchResults
+
+    from Bio.Geography.GenUtils import fix_ASCII_file
+
+    xml_fn = 'utric_search_v2.xml'
 
 First, in order to display results to screen in python, we need to
 convert the file to plain ASCII (GBIF results contain all many of
@@ -127,7 +129,7 @@ unusual characters from different languages, and no standardization of
 slanted quotes and the like; this can cause crashes when attempting to
 print to screen in python).
 
-xml\_fn\_new = fix\_ASCII\_file(xml\_fn)
+    xml_fn_new = fix_ASCII_file(xml_fn)
 
 This creates a new file with the string "\_fixed.xml" added to the
 filename.
@@ -136,27 +138,30 @@ Next, we will parse the XML file into an ElementTree (a python object
 which contains the data from the XML file as a nested series of lists
 and dictionaries).
 
-from xml.etree import ElementTree as ET xmltree = ET.parse(xml\_fn\_new)
+    from xml.etree import ElementTree as ET
+    xmltree = ET.parse(xml_fn_new)
 
 We can then store the element tree as nn object of Class GbifXmlTree:
-gbif\_recs\_xmltree = GbifXmlTree(xmltree)
+
+    gbif_recs_xmltree = GbifXmlTree(xmltree)
 
 Then, with the xmltree stored, we parse it into individual records
 (stored in individual objects of class GbifObservationRecord), which are
 then stored as a group in an object of class GbifSearchResults.
 
-recs = GbifSearchResults(gbif\_recs\_xmltree) recs.latlongs\_to\_obj()
+    recs = GbifSearchResults(gbif_recs_xmltree)
+    recs.latlongs_to_obj()
 
 The list of individual observation records can be accessed at
 recs.obs\_recs\_list:
 
-print recs.obs\_recs\_list\[0:4\], '...'
+    print recs.obs_recs_list[0:4], '...'
 
 To get the data for the first individual record:
 
-rec = recs.obs\_recs\_list\[0\]
+    rec = recs.obs_recs_list[0]
 
-dir(rec)
+    dir(rec)
 
 rec.lat will return the latitude, rec.long the longitude, etc. Certain
 data attributes are not found in all GBIF records; if they are missing,
@@ -164,7 +169,7 @@ the field in question will contain "None".
 
 To print all of the records in a tab-delimited table format:
 
-recs.print\_records()
+    recs.print_records()
 
 ### Checking how many matching records are hosted by GBIF
 
