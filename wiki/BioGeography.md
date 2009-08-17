@@ -178,8 +178,8 @@ may wish to know how many there are in GBIF first. The user must set up
 a dictionary containing the fields and search terms as keys and items,
 respectively. I.e.,
 
-from GbifXml import GbifXmlTree, GbifSearchResults params = {'format':
-'darwin', 'scientificname': 'Utricularia'}
+    from GbifXml import GbifXmlTree, GbifSearchResults
+    params = {'format': 'darwin', 'scientificname': 'Utricularia'}
 
 "'format': 'darwin'" specifies that GBIF should return the results in
 DarwinCore format. 'scientificname' specifies the genus name to search
@@ -191,7 +191,8 @@ portal](http://data.gbif.org/tutorial/services).
 Once you have specified your search parameters, initiate a new
 GbifSearchResults object and run get\_numhits to get the number of hits:
 
-recs = GbifSearchResults() numhits = recs.get\_numhits(params)
+    recs = GbifSearchResults()
+    numhits = recs.get_numhits(params)
 
 As of August 2009, 1141 matching records existed in GBIF matching
 "Utricularia."
@@ -201,8 +202,10 @@ As of August 2009, 1141 matching records existed in GBIF matching
 Individual records can be downloaded by key. To download an individual
 record:
 
-key = 175067484 recs3 = GbifSearchResults() xmlrec =
-recs3.get\_record(key) print xmlrec
+    key = 175067484
+    recs3 = GbifSearchResults()
+    xmlrec = recs3.get_record(key)
+    print xmlrec
 
 ### Summary statistics for phylogenetic trees with TreeSum
 
@@ -216,23 +219,20 @@ the statistics directly in python.
 
 Here, we need to start with a Newick tree string:
 
-trstr2 = "(((t9:0.385832, (t8:0.445135,t4:0.41401)C:0.024032)B:0.041436,
-t6:0.392496)A:0.0291131, t2:0.497673, ((t0:0.301171,
-t7:0.482152)E:0.0268148, ((t5:0.0984167,t3:0.488578)G:0.0349662,
-t1:0.130208)F:0.0318288)D:0.0273876);"
+    trstr2 = "(((t9:0.385832, (t8:0.445135,t4:0.41401)C:0.024032)B:0.041436, t6:0.392496)A:0.0291131, t2:0.497673, ((t0:0.301171, t7:0.482152)E:0.0268148, ((t5:0.0984167,t3:0.488578)G:0.0349662, t1:0.130208)F:0.0318288)D:0.0273876);"
 
-to2 = Tree(trstr2)
+    to2 = Tree(trstr2)
 
 Then, we create a tree summary object:
 
-ts = TreeSum(to2)
+    ts = TreeSum(to2)
 
 The function test\_Tree will run the metrics (MPD = Mean Phylogenetic
 Distance, NRI = Net Relatedness Index, MNPD = Mean Nearest Neighbor
 Phylogenetic Distance, NTI = Nearest Taxon Index, PD = total
 Phylogenetic distance) and output to screen:
 
-ts.test\_Tree()
+    ts.test_Tree()
 
 By subsetting a tree to taxa only existing within a region, statistics
 can be calculated by region.
