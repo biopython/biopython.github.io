@@ -93,10 +93,8 @@ source of such data is the [Global Biodiversity Information
 Facility](http://www.gbif.org/) (GBIF). GBIF serves occurrence data
 recorded by hundreds of museums worldwide. GBIF occurrence data can be
 [searched manually](http://data.gbif.org/occurrences/), and results
-downloaded ([example on GBIF
-website](http://data.gbif.org/occurrences/search.htm?c%5B0%5D.s=0&c%5B0%5D.p=0&c%5B0%5D.o=Strix+aluco&c%5B1%5D.s=5&c%5B1%5D.p=0&c%5B1%5D.o=PL&c%5B2%5D.s=17&c%5B2%5D.p=0&c%5B2%5D.o=1&c%5B3%5D.s=17&c%5B3%5D.p=0&c%5B3%5D.o=1&c%5B4%5D.s=29&c%5B4%5D.p=0&c%5B4%5D.o=0))
-in various formats: spreadsheet, Google Earth KML, or the XML DarwinCore
-format.
+downloaded (see examples on GBIF website) in various formats:
+spreadsheet, Google Earth KML, or the XML DarwinCore format.
 
 GBIF can also be accessed via an API. Bio.Geography can process manually
 downloaded DarwinCore results, or access GBIF directly.
@@ -119,11 +117,13 @@ Save the utric\_search\_v2.xml file in your working directory (or
 download a similar file from GBIF). Here are suggested steps to parse
 the file with Bio.Geography's GbifXml module:
 
+``` python
 from Bio.Geography.GbifXml import GbifXmlTree, GbifSearchResults
 
-from Bio.Geography.GenUtils import fix\_ASCII\_file
+from Bio.Geography.GenUtils import fix_ASCII_file
 
-xml\_fn = 'utric\_search\_v2.xml'
+xml_fn = 'utric_search_v2.xml'
+```
 
 First, in order to display results to screen in python, we need to
 convert the file to plain ASCII (GBIF results contain all many of

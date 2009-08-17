@@ -18,7 +18,7 @@ BioGeography is a module under development by [[User%3AMatzke|Nick Matzke]] for 
 
 Bio.Geography is a module for gathering and processing biogeographical data.  The major motivation for the module is to assist analyses of evolutionary biogeography.  A variety of inference algorithms are available for such analyses, such as [http://www.ebc.uu.se/systzoo/research/diva/manual/dmanual.html DIVA] and [http://code.google.com/p/lagrange/ lagrange].  The inputs to such programs are typically (a) a phylogeny and (b) the areas inhabited by the species at the tips of the phylogeny.  A researcher who has gathered data on a particular group will likely have direct access to species location data, but many large-scale analyses may require gathering large amounts of occurrence data.  Automated gathering/processing of occurrence data has a variety of other applications as well, including species mapping, niche modeling, error-checking of museum records, and monitoring range changes.
 
-Occurrence data is derived mainly from museum collections.  The major source of such data is the [http://www.gbif.org/ Global Biodiversity Information Facility] (GBIF).  GBIF serves occurrence data recorded by hundreds of museums worldwide.  GBIF occurrence data can be [http://data.gbif.org/occurrences/ searched manually], and results downloaded ([http://data.gbif.org/occurrences/search.htm?c[0].s=0&c[0].p=0&c[0].o=Strix+aluco&c[1].s=5&c[1].p=0&c[1].o=PL&c[2].s=17&c[2].p=0&c[2].o=1&c[3].s=17&c[3].p=0&c[3].o=1&c[4].s=29&c[4].p=0&c[4].o=0 example on GBIF website]) in various formats: spreadsheet, Google Earth KML, or the XML DarwinCore format.  
+Occurrence data is derived mainly from museum collections.  The major source of such data is the [http://www.gbif.org/ Global Biodiversity Information Facility] (GBIF).  GBIF serves occurrence data recorded by hundreds of museums worldwide.  GBIF occurrence data can be [http://data.gbif.org/occurrences/ searched manually], and results downloaded (see examples on GBIF website) in various formats: spreadsheet, Google Earth KML, or the XML DarwinCore format.  
 
 GBIF can also be accessed via an API. Bio.Geography can process manually downloaded DarwinCore results, or access GBIF directly.
 
@@ -30,12 +30,13 @@ A manual search conducted on the GBIF website can return results in the form of 
 
 Save the utric_search_v2.xml file in your working directory (or download a similar file from GBIF).  Here are suggested steps to parse the file with Bio.Geography's GbifXml module:
 
+<source lang=python>
 from Bio.Geography.GbifXml import GbifXmlTree, GbifSearchResults
 
 from Bio.Geography.GenUtils import fix_ASCII_file
 
 xml_fn = 'utric_search_v2.xml'
-
+</source>
 
 First, in order to display results to screen in python, we need to convert the file to plain ASCII (GBIF results contain all many of unusual characters from different languages, and no standardization of slanted quotes and the like; this can cause crashes when attempting to print to screen in python).  
 
