@@ -30,13 +30,13 @@ A manual search conducted on the GBIF website can return results in the form of 
 
 Save the utric_search_v2.xml file in your working directory (or download a similar file from GBIF).  Here are suggested steps to parse the file with Bio.Geography's GbifXml module:
 
-<source lang=python>
+<nowiki>
 from Bio.Geography.GbifXml import GbifXmlTree, GbifSearchResults
 
 from Bio.Geography.GenUtils import fix_ASCII_file
 
 xml_fn = 'utric_search_v2.xml'
-</source>
+</nowiki>
 
 First, in order to display results to screen in python, we need to convert the file to plain ASCII (GBIF results contain all many of unusual characters from different languages, and no standardization of slanted quotes and the like; this can cause crashes when attempting to print to screen in python).  
 
@@ -72,9 +72,6 @@ rec.lat will return the latitude, rec.long the longitude, etc.  Certain data att
 To print all of the records in a tab-delimited table format:
 
 recs.print_records()
-
-
-
 
 ===Checking how many matching records are hosted by GBIF===
 

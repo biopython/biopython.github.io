@@ -117,13 +117,9 @@ Save the utric\_search\_v2.xml file in your working directory (or
 download a similar file from GBIF). Here are suggested steps to parse
 the file with Bio.Geography's GbifXml module:
 
-``` python
-from Bio.Geography.GbifXml import GbifXmlTree, GbifSearchResults
-
-from Bio.Geography.GenUtils import fix_ASCII_file
-
-xml_fn = 'utric_search_v2.xml'
-```
+from Bio.Geography.GbifXml import GbifXmlTree, GbifSearchResults from
+Bio.Geography.GenUtils import fix\_ASCII\_file xml\_fn =
+'utric\_search\_v2.xml'
 
 First, in order to display results to screen in python, we need to
 convert the file to plain ASCII (GBIF results contain all many of
