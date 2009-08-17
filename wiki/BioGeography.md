@@ -34,415 +34,204 @@ available for inferring historical biogeography; convert output from
 these programs into files suitable for mapping, e.g. in Google Earth
 (KML files).
 
-Work Plan
----------
+Summary of functions
+--------------------
+
+Introduction
+------------
+
+BioGeography is a module under development by [Nick
+Matzke](User%3AMatzke "wikilink") for a [Google Summer of Code
+2009](http://socghop.appspot.com/program/home/google/gsoc2009) project.
+It is run through NESCENT's [Phyloinformatics Summer of Code
+2009](https://www.nescent.org/wg_phyloinformatics/Phyloinformatics_Summer_of_Code_2009).
+See the project proposal at: [Biogeographical Phylogenetics for
+BioPython](http://socghop.appspot.com/student_project/show/google/gsoc2009/nescent/t124022798250).
+The mentors are [Stephen Smith](http://blackrim.org/) (primary), [Brad
+Chapman](http://bcbio.wordpress.com/), and [David
+Kidd](http://evoviz.nescent.org/). The source code is in the
+Bio/Geography directory of the [Geography fork of the nmatzke branch on
+GitHub](http://github.com/nmatzke/biopython/tree/Geography), and you can
+see a timeline and other info about ongoing development of the module
+[here](http://biopython.org/wiki/BioGeography). The new module is being
+documented on [the BioPython
+wiki](http://www.biopython.org/wiki/Main_Page) as
+[BioGeography](http://biopython.org/wiki/BioGeography).
+
+**Abstract:** Create a BioPython module that will enable users to
+automatically access and parse species locality records from online
+biodiversity databases; link these to user-specified phylogenies;
+calculate basic alpha- and beta-phylodiversity summary statistics,
+produce input files for input into the various inference algorithms
+available for inferring historical biogeography; convert output from
+these programs into files suitable for mapping, e.g. in Google Earth
+(KML files).
+
+Summary of functions
+--------------------
+
+Tutorial
+--------
+
+Bio.Geography is a module for gathering and processing biogeographical
+data. The major motivation for the module is to assist analyses of
+evolutionary biogeography. A variety of inference algorithms are
+available for such analyses, such as
+[DIVA](http://www.ebc.uu.se/systzoo/research/diva/manual/dmanual.html)
+and [lagrange](http://code.google.com/p/lagrange/). The inputs to such
+programs are typically (a) a phylogeny and (b) the areas inhabited by
+the species at the tips of the phylogeny. A researcher who has gathered
+data on a particular group will likely have direct access to species
+location data, but many large-scale analyses may require gathering large
+amounts of occurrence data. Automated gathering/processing of occurrence
+data has a variety of other applications as well, including species
+mapping, niche modeling, error-checking of museum records, and
+monitoring range changes.
+
+Occurrence data is derived mainly from museum collections. The major
+source of such data is the [Global Biodiversity Information
+Facility](http://www.gbif.org/) (GBIF). GBIF serves occurrence data
+recorded by hundreds of museums worldwide. GBIF occurrence data can be
+[searched manually](http://data.gbif.org/occurrences/), and results
+downloaded ([example on GBIF
+website](http://data.gbif.org/occurrences/search.htm?c%5B0%5D.s=0&c%5B0%5D.p=0&c%5B0%5D.o=Strix+aluco&c%5B1%5D.s=5&c%5B1%5D.p=0&c%5B1%5D.o=PL&c%5B2%5D.s=17&c%5B2%5D.p=0&c%5B2%5D.o=1&c%5B3%5D.s=17&c%5B3%5D.p=0&c%5B3%5D.o=1&c%5B4%5D.s=29&c%5B4%5D.p=0&c%5B4%5D.o=0))
+in various formats: spreadsheet, Google Earth KML, or the XML DarwinCore
+format.
+
+GBIF can also be accessed via an API. Bio.Geography can process manually
+downloaded DarwinCore results, or access GBIF directly.
+
+### Parsing a local (manually downloaded) GBIF DarwinCore XML file
+
+For one-off uses of GBIF, you may find it easiest to just download
+occurrence data in spreadsheet format (for analysis) or KML (for
+mapping). But for analyses of many groups, or for repeatedly updating an
+analysis as new data is added to GBIF, automation is desirable.
+
+A manual search conducted on the GBIF website can return results in the
+form of an XML file adhering to the
+[DarwinCore](http://en.wikipedia.org/wiki/Darwin_Core) data standard. An
+example file can be found in biopython's Tests/Geography directory, with
+the name *utric\_search\_v2.xml*. This file contains over 1000
+occurrence records for *Utricularia*, a genus of carnivorous plant.
+
+Save the utric\_search\_v2.xml file in your working directory (or
+download a similar file from GBIF). Here are suggested steps to parse
+the file with Bio.Geography's GbifXml module:
+
+from Bio.Geography.GbifXml import GbifXmlTree, GbifSearchResults
+
+from Bio.Geography.GenUtils import fix\_ASCII\_file
 
-Note: all major functions are being placed in the file geogUtils.py for
-the moment. Also, the immediate goal is to just get everything basically
-working, so details of where to put various functions, what to call
-them, etc. are being left for later.
+xml\_fn = 'utric\_search\_v2.xml'
 
-Code usage: For a few things, an entire necessary function already
-exists (e.g. for reading a shapefile), and re-inventing the wheel seems
-pointless. In most cases the material used appears to be open source
-(e.g. previous Google Summer of Code). For a few short code snippets
-found online in various places I am less sure. In all cases I am noting
-the source and when finalizing this project I will go back and determine
-if the stuff is considered copyright, and if so email the authors for
-permission to use.
+First, in order to display results to screen in python, we need to
+convert the file to plain ASCII (GBIF results contain all many of
+unusual characters from different languages, and no standardization of
+slanted quotes and the like; this can cause crashes when attempting to
+print to screen in python).
 
-### May, week 1: Functions to read locality data and place points in geographic regions (Tasks 1-2)
+xml\_fn\_new = fix\_ASCII\_file(xml\_fn)
 
-#### readshpfile
+This creates a new file with the string "\_fixed.xml" added to the
+filename.
 
-Parses polygon, point, and multipoint shapefiles into python objects
-(storing latitude/longitude coordinates and feature names, e.g. the
-region name associated with each polygon)
+Next, we will parse the XML file into an ElementTree (a python object
+which contains the data from the XML file as a nested series of lists
+and dictionaries).
 
-#### extract\_latlong
+from xml.etree import ElementTree as ET xmltree = ET.parse(xml\_fn\_new)
 
-Parse a manually downloaded GBIF record, extracting latitude/longitude
-and taxon names
+We can then store the element tree as nn object of Class GbifXmlTree:
+gbif\_recs\_xmltree = GbifXmlTree(xmltree)
 
-#### shapefile\_points\_in\_poly, tablefile\_points\_in\_poly
+Then, with the xmltree stored, we parse it into individual records
+(stored in individual objects of class GbifObservationRecord), which are
+then stored as a group in an object of class GbifSearchResults.
 
-Input geographic points, determine which region (polygon) each range
-falls in (via point-in-polygon algorithm); also output points that are
-unclassified, e.g. some GBIF locations were mis-typed in the source
-database, so a record will fall in the middle of the ocean.
+recs = GbifSearchResults(gbif\_recs\_xmltree) recs.latlongs\_to\_obj()
 
-#### Code
+The list of individual observation records can be accessed at
+recs.obs\_recs\_list:
 
--   [Code fulfilling these tasks is uploaded
-    here](http://github.com/nmatzke/biopython/commit/4d963a65ce48b9d50327f191dedcc76abbb149be),
-    along with an example script and data files to run.
+print recs.obs\_recs\_list\[0:4\], '...'
 
-### June, week 1: Functions to search GBIF and download occurrence records
+To get the data for the first individual record:
 
-Note: creating functions for all possible interactions with GBIF is not
-possible in the time available, I will just focus on searching and
-downloading basic record occurrence record data.
+rec = recs.obs\_recs\_list\[0\]
 
-#### access\_gbif
+dir(rec)
 
-utility function invoked by other functions, user inputs parameters and
-the GBIF response in XML/DarwinCore format is returned. The relevant
-GBIF web service, and the search commands etc., are here:
-<http://data.gbif.org/ws/rest/occurrence>
+rec.lat will return the latitude, rec.long the longitude, etc. Certain
+data attributes are not found in all GBIF records; if they are missing,
+the field in question will contain "None".
 
-#### get\_hits
+To print all of the records in a tab-delimited table format:
 
-Get the actual hits that are be returned by a given search, returns
-filename were they are saved
+recs.print\_records()
 
-#### get\_xml\_hits
+### Checking how many matching records are hosted by GBIF
 
-Like get\_hits, but returns a parsed XML tree
+Before we go through the trouble of downloading thousands of records, we
+may wish to know how many there are in GBIF first. The user must set up
+a dictionary containing the fields and search terms as keys and items,
+respectively. I.e.,
 
-#### fix\_ASCII
+from GbifXml import GbifXmlTree, GbifSearchResults params = {'format':
+'darwin', 'scientificname': 'Utricularia'}
 
-files downloaded from GBIF contain HTML character entities & unicode
-characters (e.g. umlauts mostly) which mess up printing results to
-prompt in Python, this fixes that
+"'format': 'darwin'" specifies that GBIF should return the results in
+DarwinCore format. 'scientificname' specifies the genus name to search
+on. The full list of search terms can be found on GBIF's [Occurrence
+record data service](http://data.gbif.org/tutorial/services), which is
+linked from the [Using data from the GBIF
+portal](http://data.gbif.org/tutorial/services).
 
-#### paramsdict\_to\_string
+Once you have specified your search parameters, initiate a new
+GbifSearchResults object and run get\_numhits to get the number of hits:
 
-converts user's search parameters (in python dictionary format; see here
-for params <http://data.gbif.org/ws/rest/occurrence> ) to a string for
-submission via access\_gbif
+recs = GbifSearchResults() numhits = recs.get\_numhits(params)
 
-#### xmlstring\_to\_xmltree(xmlstring)
+As of August 2009, 1141 matching records existed in GBIF matching
+"Utricularia."
 
-Take the text string returned by GBIF and parse to an XML tree using
-ElementTree. Requires the intermediate step of saving to a temporary
-file (required to make ElementTree.parse work, apparently).
+### Downloading an indvidual record
 
-#### element\_items\_to\_dictionary
+Individual records can be downloaded by key. To download an individual
+record:
 
-If the XML tree element has items encoded in the tag, e.g. key/value or
-whatever, this function puts them in a python dictionary and returns
-them.
+key = 175067484 recs3 = GbifSearchResults() xmlrec =
+recs3.get\_record(key) print xmlrec
 
-#### extract\_numhits
+### Summary statistics for phylogenetic trees with TreeSum
 
-Search an element of a parsed XML string and find the number of hits, if
-it exists. Recursively searches, if there are subelements.
+Biogeographical regions are often characterized by alpha and
+beta-diversity statistics: basically, these are indices of the number of
+species found within or between regions. Given a phylogeny for organisms
+in a region, phylogenetic alpha- and beta-diversity statistics can be
+calculated. This has been implemented in a thorough way in the phylocom
+package by Webb et al., but for some purposes it is useful to calculate
+the statistics directly in python.
 
-#### print\_xmltree
+Here, we need to start with a Newick tree string:
 
-Prints all the elements & subelements of the xmltree to screen (may
-require fix\_ASCII to input file to succeed)
+trstr2 = "(((t9:0.385832, (t8:0.445135,t4:0.41401)C:0.024032)B:0.041436,
+t6:0.392496)A:0.0291131, t2:0.497673, ((t0:0.301171,
+t7:0.482152)E:0.0268148, ((t5:0.0984167,t3:0.488578)G:0.0349662,
+t1:0.130208)F:0.0318288)D:0.0273876);"
 
-#### Deleted (turns out this was unnecessary): gettaxonconceptkey
+to2 = Tree(trstr2)
 
-user inputs a taxon name and gets the GBIF key back (useful for
-searching GBIF records and finding e.g. synonyms and daughter taxa). The
-GBIF taxon concepts are accessed via the taxon web service:
-<http://data.gbif.org/ws/rest/taxon>
+Then, we create a tree summary object:
 
-#### Code
+ts = TreeSum(to2)
 
--   [Code fulfilling these tasks is uploaded
-    here](http://github.com/nmatzke/biopython/commits/Geography), along
-    with an example script and data files to run.
+The function test\_Tree will run the metrics (MPD = Mean Phylogenetic
+Distance, NRI = Net Relatedness Index, MNPD = Mean Nearest Neighbor
+Phylogenetic Distance, NTI = Nearest Taxon Index, PD = total
+Phylogenetic distance) and output to screen:
 
-### June, week 2: Functions to get GBIF records
+ts.test\_Tree()
 
-Added functions download & parse large numbers of records, get
-TaxonOccurrence gbifKeys, and search with those keys.
-
-#### get\_record
-
-Retrieves a single specified record in DarwinCore XML format, and
-returns an xmltree for it.
-
-#### extract\_occurrence\_elements
-
-Returns a list of the elements, picking elements by TaxonOccurrence;
-this should return a list of elements equal to the number of hits.
-
-#### extract\_taxonconceptkeys\_tolist
-
-Searches an element in an XML tree for TaxonOccurrence gbifKeys, and the
-complete name. Searches recursively, if there are subelements. Returns
-list.
-
-#### extract\_taxonconceptkeys\_tofile
-
-Searches an element in an XML tree for TaxonOccurrence gbifKeys, and the
-complete name. Searches recursively, if there are subelements. Returns
-file at outfh.
-
-#### get\_all\_records\_by\_increment
-
-Download all of the records in stages, store in list of elements.
-Increments of e.g. 100 to not overload server. Currently stores results
-in a list of tempfiles which is returned (could return a list of handles
-I guess).
-
-#### Code
-
-Updated functions have been pushed to Github
-[here](http://github.com/nmatzke/biopython/commit/5df9025ea5cd3458915db982c69422345e1da8d7)
-
-### June, week 3: Functions to read user-specified Newick files (with ages and internal node labels) and generate basic summary information.
-
-(note: I have scripts doing all of these functions already, so the work
-is integrating them into a Biopython module, testing them, etc.)
-
-#### read\_ultrametric\_Newick(newickstr)
-
-Read a Newick file into a tree object (a series of node objects links to
-parent and daughter nodes), also reading node ages and node labels if
-any.
-
-#### list\_leaves(phylo\_obj)
-
-Print out all of the leaves in above a node object
-
-#### treelength(node)
-
-Gets the total branchlength above a given node by recursively adding
-through tree.
-
-#### phylodistance(node1, node2)
-
-Get the phylogenetic distance (branch length) between two nodes.
-
-#### get\_distance\_matrix(phylo\_obj)
-
-Get a matrix of all of the pairwise distances between the tips of a
-tree.
-
-#### get\_mrca\_array(phylo\_obj)
-
-Get a square list of lists (array) listing the mrca of each pair of
-leaves (half-diagonal matrix)
-
-#### subset\_tree(phylo\_obj, list\_to\_keep)
-
-Given a list of tips and a tree, remove all other tips and resulting
-redundant nodes to produce a new smaller tree.
-
-#### prune\_single\_desc\_nodes(node)
-
-Follow a tree from the bottom up, pruning any nodes with only one
-descendant
-
-#### find\_new\_root(node)
-
-Search up tree from root and make new root at first divergence
-
-#### make\_None\_list\_array(xdim, ydim)
-
-Make a list of lists ("array") with the specified dimensions
-
-#### get\_PD\_to\_mrca(node, mrca, PD)
-
-Add up the phylogenetic distance from a node to the specified ancestor
-(mrca). Find mrca with find\_1st\_match.
-
-#### find\_1st\_match(list1, list2)
-
-Find the first match in two ordered lists.
-
-#### get\_ancestors\_list(node, anc\_list)
-
-Get the list of ancestors of a given node
-
-#### addup\_PD(node, PD)
-
-Adds the branchlength of the current node to the total PD measure.
-
-#### print\_tree\_outline\_format(phylo\_obj)
-
-Prints the tree out in "outline" format (daughter clades are indented,
-etc.)
-
-#### print\_Node(node, rank)
-
-Prints the node in question, and recursively all daughter nodes,
-maintaining rank as it goes.
-
-#### lagrange\_disclaimer()
-
-Just prints lagrange citation etc. in code using lagrange libraries.
-
-#### Code
-
--   [Code fulfilling these tasks is uploaded
-    here](http://github.com/nmatzke/biopython/commits/Geography), along
-    with an example script and data files to run.
-
-### June, week 4: Functions to summarize taxon diversity in regions, given a phylogeny and a list of taxa and the regions they are in.
-
-(note: I have scripts doing all of these functions already, so the work
-is integrating them into a Biopython module, testing them, etc.)
-
-Priority for this week:
-
-Following up on suggestions to make the code more standard, with the
-priority of figuring out how I can revise the current BioPython
-phylogeny class, to resemble the better version in lagrange, so that
-there is a generic flexible phylogeny/newick parser that can be used
-generally as well as by my BioGeography package specifically.
-
-Added a bunch of tools for managing/parsing xmltree structures from
-ElementTree parsing of XML:
-
-#### find\_to\_elements\_w\_ancs(xmltree, el\_tag, anc\_el\_tag)
-
-Burrow into XML to get an element with tag el\_tag, return only those
-el\_tags underneath a particular parent element parent\_el\_tag
-
-#### create\_sub\_xmltree(element)
-
-Create a subset xmltree (to avoid going back to irrelevant parents)
-
-#### xml\_recursive\_search\_w\_anc(xmltree, element, el\_tag, anc\_el\_tag, match\_el\_list)
-
-Recursively burrows down to find whatever elements with el\_tag exist
-inside a parent\_el\_tag.
-
-#### xml\_burrow\_up(xmltree, element, anc\_el\_tag, found\_anc)
-
-Burrow up xml to find anc\_el\_tag
-
-#### xml\_burrow\_up\_cousin(xmltree, element, cousin\_el\_tag, found\_cousin)
-
-Burrow up from element of interest, until a cousin is found with
-cousin\_el\_tag
-
-#### return\_parent\_in\_xmltree(xmltree, child\_to\_search\_for)
-
-Search through an xmltree to get the parent of child\_to\_search\_for
-
-#### return\_parent\_in\_element(potential\_parent, child\_to\_search\_for, returned\_parent)
-
-Search through an XML element to return parent of child\_to\_search\_for
-
-#### find\_1st\_matching\_element(element, el\_tag, return\_element)
-
-Burrow down into the XML tree, retrieve the first element with the
-matching tag
-
-#### element\_items\_to\_string(items)
-
-Input a list of items, get string back
-
-#### Code
-
--   [Code fulfilling these tasks is uploaded
-    here](http://github.com/nmatzke/biopython/commits/Geography)...no
-    example script yet.
-
-These still need to be integrated:
-
-#### alphadiversity
-
-alpha diversity of a region (number of taxa in the region)
-
-#### betadiversity
-
-beta diversity (Sorenson’s index) between two regions
-
-#### alphaphylodistance
-
-total branchlength of a phylogeny of taxa within a region
-
-#### phylosor
-
-phylogenetic Sorenson’s index between two regions
-
-#### meanphylodistance
-
-average distance between all tips on a region’s phylogeny
-
-#### meanminphylodistance
-
-average distance to nearest neighbor for tips on a region’s phylogeny
-
-#### netrelatednessindex
-
-standardized index of mean phylodistance
-
-#### nearesttaxonindex
-
-standardized index of mean minimum phylodistance
-
-### July, week 1: lagrange input/output handling (Task 6)
-
-(note: lagrange requires a number of input files, e.g. hypothesized
-histories of connectivity; the only inputs suitable for automation in
-this project are the species ranges and phylogeny
-
-#### make\_lagrange\_species\_range\_inputs
-
-convert list of taxa/ranges to input format:
-<http://www.reelab.net/lagrange/configurator/index>
-
-#### check\_input\_lagrange\_tree
-
-checks if input phylogeny meets the requirements for lagrange, i.e. has
-ultrametric branchlengths, tips end at time 0, tip names are in the
-species/ranges input file
-
-#### parse\_lagrange\_output
-
-take the output file from lagrange and get ages and estimated regions
-for each node
-
-### July, weeks 2-3: Devise algorithm for representing estimated node histories (location of nodes in categorical regions) as latitude/longitude points, necessary for input into geographic display files.
-
--   Regarding where to put reconstructed nodes, or tips that where the
-    only location information is region. Within regions, dealing with
-    linking already geo-located tips, spatial averaging can be used as
-    currently happens with GeoPhyloBuilder. If there is only one node in
-    a region the centroid or something similar could be used (i.e. the
-    "root" of the polygon skeleton would deal even with weird
-    concave polygons).
--   If there are multiple ancestral nodes or region-only tips in a
-    region, they need to be spread out inside the polygon, or lines will
-    just be drawn on top of each other. This can be done by putting the
-    most ancient node at the root of the polygon skeleton/medial axis,
-    and then spreading out the daughter nodes along the skeleton/medial
-    axis of the polygon.
-
-#### get\_polygon\_skeleton
-
-this is a standard operation:
-<http://en.wikipedia.org/wiki/Straight_skeleton>
-
-#### assign\_node\_locations\_in\_region
-
-within a region’s polygon, given a list of nodes, their relationship,
-and ages, spread the nodes out along the middle 50% of the longest axis
-of the polygon skeleton, with the oldest node in the middle
-
-#### assign\_node\_locations\_between\_regions
-
-connect the nodes that are linked to branches that cross between regions
-(for this initial project, just the great circle lines)
-
-### July, week 4 and August, week 1: Write functions for converting the output from the above into graphical display formats, e.g. shapefiles for ArcGIS, KML files for Google Earth.
-
-#### write\_history\_to\_shapefile
-
-write the biogeographic history to a shapefile
-
-#### write\_history\_to\_KML
-
-write the biogeographic history to a KML file for input into Google
-Earth
-
-### August, week 2: Beta testing
-
-Make the series of functions available, along with suggested input
-files; have others run on various platforms, with various levels of
-expertise (e.g. Evolutionary Biogeography Discussion Group at U.C.
-Berkeley). Also get final feedback from mentors and advisors.
-
-### August, week 3: Wrapup
-
-Assemble documentation, FAQ, project results writeup for
-Phyloinformatics Summer of Code.
+By subsetting a tree to taxa only existing within a region, statistics
+can be calculated by region.
