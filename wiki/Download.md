@@ -57,7 +57,7 @@ list](Mailing_lists "wikilink") and ask for help there.
 
 -   [Python 2.4, 2.5 or 2.6](http://www.python.org) (Biopython 1.50 was
     the last release of Biopython to support Python 2.3)
--   [A C compiler (if compiling
+-   [C compiler (if compiling
     from source)](http://www.python.org/doc/current/inst/inst.html) You
     need a C compiler supported by distutils, gcc will work fine on
     UNIX-like platforms. This is not needed on Windows if using the
