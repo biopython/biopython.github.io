@@ -90,7 +90,7 @@ Note: You may need to additionally install the NumPy package by hand, as an out 
 
 === Fedora ===
 
-Biopython is an official Fedora package (since Fedora 5).  The package is named [http://admin.fedoraproject.org/pkgdb/packages/name/python-biopython python-biopython], and can be installed using yum:
+Biopython is an official Fedora package (since Fedora 5).  The package is named [https://admin.fedoraproject.org/community/?package=python-biopython#package_maintenance python-biopython], and can be installed using yum as root:
 
  yum install python-biopython
 

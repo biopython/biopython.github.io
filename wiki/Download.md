@@ -157,8 +157,8 @@ instead.
 
 Biopython is an official Fedora package (since Fedora 5). The package is
 named
-[python-biopython](http://admin.fedoraproject.org/pkgdb/packages/name/python-biopython),
-and can be installed using yum:
+[python-biopython](https://admin.fedoraproject.org/community/?package=python-biopython#package_maintenance),
+and can be installed using yum as root:
 
 `yum install python-biopython`
 
