@@ -10,14 +10,17 @@ today's world. To keep the code base clean, we aim to deprecate and
 remove such code from Biopython, while avoiding any nasty surprises for
 users who may be relying on older code.
 
-This is the (unofficial) policy for deprecating and removing code from
+This is the current policy for deprecating and removing code from
 Biopython:
 
--   First, it is a good idea to ask on the biopython and biopython-dev
-    mailing lists whether a given piece of code has any users. Please
-    keep in mind that not all users are following the biopython-dev
-    mailing list.
--   If there are no apparent users, you can add a DeprecatingWarning to
+-   First, ask on the biopython and biopython-dev [mailing
+    lists](mailing_lists "wikilink") whether a given piece of code has
+    any users. Please keep in mind that not all users are following the
+    biopython-dev mailing list.
+-   Consider declaring the module as "obsolete" for a release *before*
+    deprecation (no code changes, just note this in the DEPRECATED file
+    and the module docstrings).
+-   If there are no apparent users, you can add a DeprecationWarning to
     the code.
 
 `import warnings`  
@@ -28,11 +31,13 @@ Biopython:
 `              " developers via the mailing list.""",`  
 `              DeprecationWarning)`
 
+-   Also add an entry to the DEPRECATED file, again specifying what
+    module (if any) has replaced the old code.
 -   In principle, we require that two Biopython releases carrying the
     deprecation warning are made before the code can be
     actually removed.
 -   In addition, at least one year should pass between the first
-    Biopython release carring the deprecation warning, and the first
+    Biopython release carrying the deprecation warning, and the first
     Biopython release in which the code has been actually removed.
 
 See here for the discussion on the mailing list:
