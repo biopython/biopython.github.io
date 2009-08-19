@@ -26,13 +26,26 @@ Occurrence data is derived mainly from museum collections.  The major source of 
 
 GBIF can also be accessed via an API. Bio.Geography can process manually downloaded DarwinCore results, or access GBIF directly.
 
+===Background: organization of Bio.Geography===
+
+It is useful to understand the overall organization of classes in Bio.Geography.  There are four classes within the GbifXml module:
+
+*GbifSearchResults -- Contains the methods for conducting a GBIF search, as well as attributes storing the results in different objects, depending on their stage of processing.  
+**Also contains summary statistics on the search (e.g., number of records found).
+**The three objects which store results in different forms are GbifDarwincoreXmlString, GbifXmlTree, and a list of individual GbifObservationRecord objects.
+**Method print_records for printing all contained records to screen.
+* GbifDarwincoreXmlString -- Contains the raw text returned by GBIF.  If output to a file, this would be a standard XML file adhering to the DarwinCore standard.  Inherits from the standard python String class.
+* GbifXmlTree -- Contains the ElementTree object which results from parsing GBIF's XML results.  Also a number of methods for searching the ElementTree and finding matching elements, finding a certain element when it is contained within a certain larger element, etc.
+* GbifObservationRecord -- Contains the attributes which may be found within a certain record, e.g. taxon, genus, species, latitude, longitude, etc., as well as functions for classifying a record into a certain geographical area, printing a record to screen, etc.
+
+
 ===Parsing a local (manually downloaded) GBIF DarwinCore XML file===
 
 For one-off uses of GBIF, you may find it easiest to just download occurrence data in spreadsheet format (for analysis) or KML (for mapping).  But for analyses of many groups, or for repeatedly updating an analysis as new data is added to GBIF, automation is desirable.
 
 A manual search conducted on the GBIF website can return results in the form of an XML file adhering to the [http://en.wikipedia.org/wiki/Darwin_Core DarwinCore] data standard.  An example file can be found in biopython's Tests/Geography directory, with the name ''utric_search_v2.xml''.  This file contains over 1000 occurrence records for ''Utricularia'', a genus of carnivorous plant.
 
-Save the utric_search_v2.xml file in your working directory (or download a similar file from GBIF).  Here are suggested steps to parse the file with Bio.Geography's GbifXml module:
+Save the utric_search_v2.xml file in your working directory (or download a similar file from GBIF).  Here are suggested steps to parse the file with Bio.Geography's GbifXml module.  First, import the necessary classes and functions, and specify the filename of the input file.
 
 <pre>
 from Bio.Geography.GbifXml import GbifXmlTree, GbifSearchResults
@@ -42,8 +55,7 @@ from Bio.Geography.GeneralUtils import fix_ASCII_file
 xml_fn = 'utric_search_v2.xml'
 </pre>
 
-First, in order to display results to screen in python, we need to convert the file to plain ASCII (GBIF results contain all many of unusual characters from different languages, and no standardization of slanted quotes and the like; this can cause crashes when attempting to print to screen in python).  
-
+Second, in order to display results to screen in python, we need to convert the file to plain ASCII (GBIF results contain all many of unusual characters from different languages, and no standardization of slanted quotes and the like; this can cause crashes when attempting to print to screen in python or ipython).  
 
 <pre>
 xml_fn_new = fix_ASCII_file(xml_fn)
@@ -53,32 +65,28 @@ This creates a new file with the string "_fixed.xml" added to the filename.
 
 Next, we will parse the XML file into an ElementTree (a python object which contains the data from the XML file as a nested series of lists and dictionaries).
 
-
 <pre>
 from xml.etree import ElementTree as ET
 xmltree = ET.parse(xml_fn_new)
 </pre>
 
-We can then store the element tree as nn object of Class GbifXmlTree:
+We can then store the element tree as an object of Class GbifXmlTree:
 
 <pre>gbif_recs_xmltree = GbifXmlTree(xmltree)
 </pre>
 
 Then, with the xmltree stored, we parse it into individual records (stored in individual objects of class GbifObservationRecord), which are then stored as a group in an object of class GbifSearchResults.
 
-
 <pre>recs = GbifSearchResults(gbif_recs_xmltree)
 recs.extract_occurrences_from_gbif_xmltree(recs.gbif_recs_xmltree)
 </pre>
 
-The list of individual observation records can be accessed at recs.obs_recs_list:
-
+The list of individual observation records can be accessed at recs.obs_recs_list.  This will display the references to the first five records:
 
 <pre>recs.obs_recs_list[0:4]
 </pre>
 
 To get the data for the first individual record:
-
 
 <pre>rec = recs.obs_recs_list[0]
 

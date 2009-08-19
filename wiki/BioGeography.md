@@ -107,6 +107,34 @@ spreadsheet, Google Earth KML, or the XML DarwinCore format.
 GBIF can also be accessed via an API. Bio.Geography can process manually
 downloaded DarwinCore results, or access GBIF directly.
 
+### Background: organization of Bio.Geography
+
+It is useful to understand the overall organization of classes in
+Bio.Geography. There are four classes within the GbifXml module:
+
+-   GbifSearchResults -- Contains the methods for conducting a GBIF
+    search, as well as attributes storing the results in different
+    objects, depending on their stage of processing.
+    -   Also contains summary statistics on the search (e.g., number of
+        records found).
+    -   The three objects which store results in different forms are
+        GbifDarwincoreXmlString, GbifXmlTree, and a list of individual
+        GbifObservationRecord objects.
+    -   Method print\_records for printing all contained records
+        to screen.
+-   GbifDarwincoreXmlString -- Contains the raw text returned by GBIF.
+    If output to a file, this would be a standard XML file adhering to
+    the DarwinCore standard. Inherits from the standard python
+    String class.
+-   GbifXmlTree -- Contains the ElementTree object which results from
+    parsing GBIF's XML results. Also a number of methods for searching
+    the ElementTree and finding matching elements, finding a certain
+    element when it is contained within a certain larger element, etc.
+-   GbifObservationRecord -- Contains the attributes which may be found
+    within a certain record, e.g. taxon, genus, species, latitude,
+    longitude, etc., as well as functions for classifying a record into
+    a certain geographical area, printing a record to screen, etc.
+
 ### Parsing a local (manually downloaded) GBIF DarwinCore XML file
 
 For one-off uses of GBIF, you may find it easiest to just download
@@ -123,7 +151,9 @@ occurrence records for *Utricularia*, a genus of carnivorous plant.
 
 Save the utric\_search\_v2.xml file in your working directory (or
 download a similar file from GBIF). Here are suggested steps to parse
-the file with Bio.Geography's GbifXml module:
+the file with Bio.Geography's GbifXml module. First, import the
+necessary classes and functions, and specify the filename of the input
+file.
 
     from Bio.Geography.GbifXml import GbifXmlTree, GbifSearchResults
 
@@ -131,11 +161,11 @@ the file with Bio.Geography's GbifXml module:
 
     xml_fn = 'utric_search_v2.xml'
 
-First, in order to display results to screen in python, we need to
+Second, in order to display results to screen in python, we need to
 convert the file to plain ASCII (GBIF results contain all many of
 unusual characters from different languages, and no standardization of
 slanted quotes and the like; this can cause crashes when attempting to
-print to screen in python).
+print to screen in python or ipython).
 
     xml_fn_new = fix_ASCII_file(xml_fn)
 
@@ -149,7 +179,7 @@ and dictionaries).
     from xml.etree import ElementTree as ET
     xmltree = ET.parse(xml_fn_new)
 
-We can then store the element tree as nn object of Class GbifXmlTree:
+We can then store the element tree as an object of Class GbifXmlTree:
 
     gbif_recs_xmltree = GbifXmlTree(xmltree)
 
@@ -161,7 +191,8 @@ then stored as a group in an object of class GbifSearchResults.
     recs.extract_occurrences_from_gbif_xmltree(recs.gbif_recs_xmltree)
 
 The list of individual observation records can be accessed at
-recs.obs\_recs\_list:
+recs.obs\_recs\_list. This will display the references to the first five
+records:
 
     recs.obs_recs_list[0:4]
 
