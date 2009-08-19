@@ -30,14 +30,13 @@ GBIF can also be accessed via an API. Bio.Geography can process manually downloa
 
 It is useful to understand the overall organization of classes in Bio.Geography.  There are four classes within the GbifXml module:
 
-*GbifSearchResults -- Contains the methods for conducting a GBIF search, as well as attributes storing the results in different objects, depending on their stage of processing.  
+*'''GbifSearchResults''' -- Contains the methods for conducting a GBIF search, as well as attributes storing the results in different objects, depending on their stage of processing.  
 **Also contains summary statistics on the search (e.g., number of records found).
-**The three objects which store results in different forms are GbifDarwincoreXmlString, GbifXmlTree, and a list of individual GbifObservationRecord objects.
+**The three objects which store results in different forms are '''GbifDarwincoreXmlString''', '''GbifXmlTree''', and a list of individual '''GbifObservationRecord''' objects.
 **Method print_records for printing all contained records to screen.
-* GbifDarwincoreXmlString -- Contains the raw text returned by GBIF.  If output to a file, this would be a standard XML file adhering to the DarwinCore standard.  Inherits from the standard python String class.
-* GbifXmlTree -- Contains the ElementTree object which results from parsing GBIF's XML results.  Also a number of methods for searching the ElementTree and finding matching elements, finding a certain element when it is contained within a certain larger element, etc.
-* GbifObservationRecord -- Contains the attributes which may be found within a certain record, e.g. taxon, genus, species, latitude, longitude, etc., as well as functions for classifying a record into a certain geographical area, printing a record to screen, etc.
-
+* '''GbifDarwincoreXmlString''' -- Contains the raw text returned by GBIF.  If output to a file, this would be a standard XML file adhering to the DarwinCore standard.  Inherits from the standard python String class.
+* '''GbifXmlTree''' -- Contains the ElementTree object which results from parsing GBIF's XML results.  Also a number of methods for searching the ElementTree and finding matching elements, finding a certain element when it is contained within a certain larger element, etc.
+* '''GbifObservationRecord''' -- Contains the attributes which may be found within a certain record, e.g. taxon, genus, species, latitude, longitude, etc., as well as functions for classifying a record into a certain geographical area, printing a record to screen, etc.
 
 ===Parsing a local (manually downloaded) GBIF DarwinCore XML file===
 
