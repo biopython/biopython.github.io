@@ -123,7 +123,7 @@ the file with Bio.Geography's GbifXml module:
 
     from Bio.Geography.GbifXml import GbifXmlTree, GbifSearchResults
 
-    from Bio.Geography.GenUtils import fix_ASCII_file
+    from Bio.Geography.GeneralUtils import fix_ASCII_file
 
     xml_fn = 'utric_search_v2.xml'
 
@@ -154,12 +154,12 @@ Then, with the xmltree stored, we parse it into individual records
 then stored as a group in an object of class GbifSearchResults.
 
     recs = GbifSearchResults(gbif_recs_xmltree)
-    recs.latlongs_to_obj()
+    recs.extract_occurrences_from_gbif_xmltree(recs.gbif_recs_xmltree)
 
 The list of individual observation records can be accessed at
 recs.obs\_recs\_list:
 
-    print recs.obs_recs_list[0:4], '...'
+    recs.obs_recs_list[0:4]
 
 To get the data for the first individual record:
 
@@ -183,33 +183,53 @@ a dictionary containing the fields and search terms as keys and items,
 respectively. I.e.,
 
     from GbifXml import GbifXmlTree, GbifSearchResults
-    params = {'format': 'darwin', 'scientificname': 'Utricularia'}
+    params = {'format': 'darwin', 'scientificname': 'Genlisea*'}
 
 "'format': 'darwin'" specifies that GBIF should return the results in
-DarwinCore format. 'scientificname' specifies the genus name to search
-on. The full list of search terms can be found on GBIF's [Occurrence
-record data service](http://data.gbif.org/tutorial/services), which is
-linked from the [Using data from the GBIF
+DarwinCore format.
+
+'scientificname' specifies the genus name to search on. Adding an '\*'
+after the name will return anything that begins with "Genlisea".
+
+The full list of search terms can be found on GBIF's [Occurrence record
+data service](http://data.gbif.org/tutorial/services), which is linked
+from the [Using data from the GBIF
 portal](http://data.gbif.org/tutorial/services).
 
 Once you have specified your search parameters, initiate a new
 GbifSearchResults object and run get\_numhits to get the number of hits:
 
+    params = {'format': 'darwin', 'scientificname': 'Genlisea*'}
     recs = GbifSearchResults()
     numhits = recs.get_numhits(params)
 
-As of August 2009, 1141 matching records existed in GBIF matching
-"Utricularia."
+As of August 2009, 169 matching records existed in GBIF matching
+"Genlisea\*"
 
-### Downloading an indvidual record
+For constrast, run the same search *without* the asterisk ('\*'):
+
+    params = {'format': 'darwin', 'scientificname': 'Genlisea'}
+    numhits = recs.get_numhits(params)
+
+We only get ~10 results -- presumably records of specimens only
+identified down to genus and no further.
+
+### Downloading an individual record
 
 Individual records can be downloaded by key. To download an individual
 record:
 
-    key = 175067484
-    recs3 = GbifSearchResults()
-    xmlrec = recs3.get_record(key)
+    rec = recs.obs_recs_list[0]
+    key = rec.gbifkey
+    # (or manually)
+    # key = 175067484
+    xmlrec = recs.get_record(key)
     print xmlrec
+
+If you want to print the xmlrec ElementTree object, store xmlrec in a
+GbifXmlTree object and run print\_xmltree:
+
+    GbifXmlTree(xmlrec).print_xmltree()
 
 ### Summary statistics for phylogenetic trees with TreeSum
 
@@ -217,9 +237,10 @@ Biogeographical regions are often characterized by alpha and
 beta-diversity statistics: basically, these are indices of the number of
 species found within or between regions. Given a phylogeny for organisms
 in a region, phylogenetic alpha- and beta-diversity statistics can be
-calculated. This has been implemented in a thorough way in the phylocom
-package by Webb et al., but for some purposes it is useful to calculate
-the statistics directly in python.
+calculated. This has been implemented in a thorough way in the [phylocom
+package](http://www.phylodiversity.net/phylocom/) by Webb et al., but
+for some purposes it is useful to calculate the statistics directly in
+python.
 
 Here, we need to start with a Newick tree string:
 
@@ -240,3 +261,77 @@ Phylogenetic distance) and output to screen:
 
 By subsetting a tree to taxa only existing within a region, statistics
 can be calculated by region.
+
+### Downloading and processing large numbers of records
+
+GBIF only allows a maximum of 1000 observation records to be downloaded
+at a time (10,000 for KML records). To get more, we need to download and
+process them in stages.
+
+Again we will set up our parameters dictionary, and also an "inc"
+variable to specify the number of records to download per server
+request.
+
+    params = {'format': 'darwin', 'scientificname': 'Genlisea*'}
+    inc = 100
+    recs3 = GbifSearchResults()
+    gbif_xmltree_list = recs3.get_all_records_by_increment(params, inc)
+
+As with biopython's interactions with NCBI servers, the
+GbifSearchResults module keeps track of when the last GBIF request was
+made, and requires a 3-second wait before a new request.
+
+Each server request returns an XML string; these are parsed into
+GbifXmlTree objects, and a list of the returned GbifXmlTree objects is
+returned to gbif\_xmltree\_list. The individual records have also been
+parsed:
+
+    recs3.print_records()
+
+### Classifying records into geographical regions
+
+Biogeographical analyses will often require that you determine what
+area(s) a taxon lives in. Areas are not always obviously delineated, and
+analysts may wish to try several different possible sets of areas and
+see how this influences their analysis.
+
+Below, we set up a polygon containing the latitude/longitude coordinates
+for the Northern Hemisphere, and then set the "area" attribute for each
+matching record to "NorthernHemisphere":
+
+    ul = (-180, 90)
+    ur = (180, 90)
+    ll = (-180, 0)
+    lr = (180, 0)
+    poly = [ul, ur, ll, lr]
+    polyname = "NorthernHemisphere"
+
+    recs3.print_records()
+
+This process can be repeated for all polygons of interest until all GBIF
+records have been classified (except for GBIF records which lacked
+lat/long data in the first place, which sometimes happens).
+
+GeogUtils also contains open access libraries for processing
+shapefile/dbf files -- these are standard GIS file formats, and various
+publicly-accessible shapefiles might serve as sources for polygons.
+
+Warning: the point-in-polygon operation will fail dramatically if your
+polygon crosses the International Dateline. The best solution in this
+case is to split any polygons crossing the dateline into two polygons,
+one on each side of the line.
+
+### General notes
+
+GBIF search results often contain non-ASCII characters (e.g.
+international placenames) and other confusing items, e.g., web links in
+angle brackets, which can be misinterpreted as unmatched XML tags if a
+GBIF search result is read to ASCII and then an attempt is made to parse
+it.
+
+In general, the Geography module will handle things fine if the results
+are being processed in the background; but to print results to screen, a
+series of functions from GeneralUtils are used to convert a string to
+plain ASCII. This avoids crashes e.g. when printing data to screen.
+Therefore, these printed-to-screen results may slightly alter the
+content of the original search results.
