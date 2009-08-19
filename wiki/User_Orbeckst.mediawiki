@@ -1,0 +1,3 @@
+For my professional interests please see [http://sbcb.bioch.ox.ac.uk/oliver/home.html Oliver Beckstein's home page] at [http://sbcb.bioch.ox.ac.uk/ SBCB, Oxford].
+
+For more things (bio)python see [http://sbcb.bioch.ox.ac.uk/oliver/software/ my software] page.
