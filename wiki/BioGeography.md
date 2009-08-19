@@ -135,6 +135,9 @@ Bio.Geography. There are four classes within the GbifXml module:
     found within a certain record, e.g. taxon, genus, species, latitude,
     longitude, etc., as well as functions for classifying a record into
     a certain geographical area, printing a record to screen, etc.
+-   **TreeSum** -- Contains functions and attributes for summarizing a
+    phylogenetic tree, subsetting it, writing to screen, and calculating
+    summary statistics.
 
 ### Parsing a local (manually downloaded) GBIF DarwinCore XML file
 

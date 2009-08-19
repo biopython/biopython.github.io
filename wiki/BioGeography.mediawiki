@@ -37,6 +37,7 @@ It is useful to understand the overall organization of classes in Bio.Geography.
 * '''GbifDarwincoreXmlString''' -- Contains the raw text returned by GBIF.  If output to a file, this would be a standard XML file adhering to the DarwinCore standard.  Inherits from the standard python String class.
 * '''GbifXmlTree''' -- Contains the ElementTree object which results from parsing GBIF's XML results.  Also a number of methods for searching the ElementTree and finding matching elements, finding a certain element when it is contained within a certain larger element, etc.
 * '''GbifObservationRecord''' -- Contains the attributes which may be found within a certain record, e.g. taxon, genus, species, latitude, longitude, etc., as well as functions for classifying a record into a certain geographical area, printing a record to screen, etc.
+* '''TreeSum''' -- Contains functions and attributes for summarizing a phylogenetic tree, subsetting it, writing to screen, and calculating summary statistics.
 
 ===Parsing a local (manually downloaded) GBIF DarwinCore XML file===
 
