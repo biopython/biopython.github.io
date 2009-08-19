@@ -70,6 +70,10 @@ these programs into files suitable for mapping, e.g. in Google Earth
 Summary of functions
 --------------------
 
+Each class/function has been commented with docstrings. For latest
+commit, see:
+[<http://github.com/nmatzke/biopython/commits/Geography>](http://github.com/nmatzke/biopython/commits/Geography).
+
 Tutorial
 --------
 

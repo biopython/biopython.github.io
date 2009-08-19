@@ -14,6 +14,8 @@ BioGeography is a module under development by [[User%3AMatzke|Nick Matzke]] for 
 
 ==Summary of functions==
 
+Each class/function has been commented with docstrings.  For latest commit, see: [http://github.com/nmatzke/biopython/commits/Geography http://github.com/nmatzke/biopython/commits/Geography].
+
 ==Tutorial==
 
 Bio.Geography is a module for gathering and processing biogeographical data.  The major motivation for the module is to assist analyses of evolutionary biogeography.  A variety of inference algorithms are available for such analyses, such as [http://www.ebc.uu.se/systzoo/research/diva/manual/dmanual.html DIVA] and [http://code.google.com/p/lagrange/ lagrange].  The inputs to such programs are typically (a) a phylogeny and (b) the areas inhabited by the species at the tips of the phylogeny.  A researcher who has gathered data on a particular group will likely have direct access to species location data, but many large-scale analyses may require gathering large amounts of occurrence data.  Automated gathering/processing of occurrence data has a variety of other applications as well, including species mapping, niche modeling, error-checking of museum records, and monitoring range changes.
