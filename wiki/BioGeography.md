@@ -37,6 +37,10 @@ these programs into files suitable for mapping, e.g. in Google Earth
 Summary of functions
 --------------------
 
+All classes and functions have been documented with standard docstrings.
+Code is available at the most recent github commit here:
+<http://github.com/nmatzke/biopython/commits/Geography>
+
 Introduction
 ------------
 
