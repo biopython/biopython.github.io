@@ -1,5 +1,5 @@
 
-If one is using Biopython to work with PDB files that have been produced by molecular dynamics (MD) codes then one quickly runs into problems with missing atoms on reading. The typical error message says that atoms will be missing:
+If one is using '''Biopython''' to work with PDB files that have been produced by molecular dynamics (MD) codes then one quickly runs into problems with missing atoms on reading. The typical error message says that atoms will be missing:
  WARNING: Residue (' ', 1, ' ') redefined at line 31.
  PDBConstructionException: Blank altlocs in duplicate residue SOL (' ', 1, ' ') at line 31.
  Exception ignored.
@@ -7,7 +7,7 @@ If one is using Biopython to work with PDB files that have been produced by mole
 
 The problem is simply that these files can be large with hundreds of thousand of atoms and residues (for instance, each water molecule is a separate residue) and the PDB format has not enough space in the appropriate columns of the [http://www.wwpdb.org/documentation/format32/sect9.html#ATOM ATOM] or [http://www.wwpdb.org/documentation/format32/sect9.html#HETATM HETATM] record to accommodate atom numbers (''serial'') >99,999 and residue numbers (''resSeq'') > 9999. Thus, these numbers are simply written modulo 100,000 (''serial'') or modulo 10,000 (''resSeq''). This creates duplicate entries in the chain and the Bio.PDB.PDBParser (or rather, the StructureBuilder) complains. The effect is that not all atoms are read.
 
-The [[#Classes|code below]] derives a new class from <code>Bio.PDB.StructureBuilder.StructureBuilder</code> that simply increases the ''resSeq'' if necessary. Because it is not very carefuly it is called a <code>SloppyStructureBuilder</code>.
+The [[#Classes|code below]] derives a new class from <code>Bio.PDB.StructureBuilder.StructureBuilder</code> that simply increases the ''resSeq'' if necessary. Because it is not very careful it is called a <code>SloppyStructureBuilder</code>.
 
 There's also a new class named <code>SloppyPDBIO</code> that writes pdb files with ''serial'' and ''resSeq'' wrapped so that the resulting pdb files are [http://www.wwpdb.org/documentation/format32/v3.2.html legal PDB format].
 

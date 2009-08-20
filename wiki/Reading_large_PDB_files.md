@@ -6,10 +6,10 @@ tags:
  - Cookbook
 ---
 
-If one is using Biopython to work with PDB files that have been produced
-by molecular dynamics (MD) codes then one quickly runs into problems
-with missing atoms on reading. The typical error message says that atoms
-will be missing:
+If one is using **Biopython** to work with PDB files that have been
+produced by molecular dynamics (MD) codes then one quickly runs into
+problems with missing atoms on reading. The typical error message says
+that atoms will be missing:
 
 `WARNING: Residue (' ', 1, ' ') redefined at line 31.`  
 `PDBConstructionException: Blank altlocs in duplicate residue SOL (' ', 1, ' ') at line 31.`  
@@ -30,7 +30,7 @@ StructureBuilder) complains. The effect is that not all atoms are read.
 
 The [code below](#Classes "wikilink") derives a new class from
 `Bio.PDB.StructureBuilder.StructureBuilder` that simply increases the
-*resSeq* if necessary. Because it is not very carefuly it is called a
+*resSeq* if necessary. Because it is not very careful it is called a
 `SloppyStructureBuilder`.
 
 There's also a new class named `SloppyPDBIO` that writes pdb files with
