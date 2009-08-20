@@ -17,11 +17,18 @@ Biopython:
     lists](mailing_lists "wikilink") whether a given piece of code has
     any users. Please keep in mind that not all users are following the
     biopython-dev mailing list.
--   Consider declaring the module as "obsolete" for a release *before*
-    deprecation (no code changes, just note this in the DEPRECATED file
-    and the module docstrings).
--   If there are no apparent users, you can add a DeprecationWarning to
-    the code.
+-   Consider declaring the module as "obsolete" for a release
+    *before* deprecation. No code changes, just:
+    -   Note this in the DEPRECATED file,
+    -   Add "(OBSOLETE)" to the first line of the module docstring,
+    -   Use the module docstring to explain why the module is obsolete
+        and what should be used instead.
+-   If there are no apparent users, then actually deprecate it:
+    -   Note this in the DEPRECATED file,
+    -   Add "(DEPRECATED)" to the first line of the module docstring
+    -   Use the module docstring to explain any migration needed,
+        ideally with examples or a reference to the tutorial.
+    -   Most importantly, add a DeprecationWarning to the code:
 
 `import warnings`  
 `warnings.warn("Bio.SomeModule has been deprecated, and we intend to remove it"`  
@@ -31,8 +38,6 @@ Biopython:
 `              " developers via the mailing list.""",`  
 `              DeprecationWarning)`
 
--   Also add an entry to the DEPRECATED file, again specifying what
-    module (if any) has replaced the old code.
 -   In principle, we require that two Biopython releases carrying the
     deprecation warning are made before the code can be
     actually removed.
