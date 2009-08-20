@@ -16,7 +16,7 @@ Load a big pdb file and write it out again. How to do interesting things to the 
 
 <source lang=python>
 import Bio.PDB
-import xpdb
+import xpdb   # this is the module described below
 
 # read
 sloppyparser = Bio.PDB.PDBParser(PERMISSIVE=True,structure_builder=xpdb.SloppyStructureBuilder())
@@ -29,7 +29,6 @@ sloppyio = xpdb.SloppyPDBIO()
 sloppyio.set_structure(structure)
 sloppyio.save('new_big_fat.pdb')
 </source>
-
 
 == Classes ==
 
