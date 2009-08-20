@@ -25,6 +25,8 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 // Used Bio.PDB
 #SmithEtAl2009 pmid=19210768
 // Used Biopython to implement a pipeline with BioSQL
+#SunEtAl2009 Sun C, Wang X, Lin L. 2009. ''A Multi-level Disambiguation Framework for Gene Name Normalization.'' Acta Automatica Sinica 2009 Feb; 35(2) 193-197. [http://dx.doi.org/10.1016/S1874-1029(08)60073-7  doi:10.1016/S1874-1029(08)60073-7]
+// Used Biopython to access MEDLINE
 #TanakaEtAl2009 pmid=19272463
 // Used Biopython to access MEDLINE
 #TorranceEtAl2009 pmid=19038265

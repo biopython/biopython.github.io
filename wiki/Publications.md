@@ -63,6 +63,13 @@ GenomeDiagram
 
 // Used Biopython to implement a pipeline with BioSQL
 
+1.  SunEtAl2009 Sun C, Wang X, Lin L. 2009. *A Multi-level
+    Disambiguation Framework for Gene Name Normalization.* Acta
+    Automatica Sinica 2009 Feb; 35(2) 193-197.
+    [<doi:10.1016/S1874-1029(08)60073-7>](http://dx.doi.org/10.1016/S1874-1029(08)60073-7)
+
+// Used Biopython to access MEDLINE
+
 1.  TanakaEtAl2009 pmid=19272463
 
 // Used Biopython to access MEDLINE
