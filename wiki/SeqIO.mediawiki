@@ -78,7 +78,7 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 |-
 | phd
 | 1.46
-| No
+| CVS
 | [[bp:PHD_sequence_format|PHD files]] are output from PHRED, used by PHRAP and CONSED for input.  Uses Bio.Sequencing.Phd internally.
 |-
 | phylip
