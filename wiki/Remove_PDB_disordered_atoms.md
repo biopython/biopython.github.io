@@ -33,7 +33,7 @@ of the disordered ones.
 from Bio.PDB import *
 
 parser=PDBParser()
-struct=parser.get_structure('my_pdb', 'my_pdb.pdb')
+s=parser.get_structure('my_pdb', 'my_pdb.pdb')
 io=PDBIO()
 
 class NotDisordered(Select):

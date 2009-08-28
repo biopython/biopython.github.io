@@ -10,7 +10,7 @@ You have a PDB with disordered atoms, i.e. different atomic positions with occup
 from Bio.PDB import *
 
 parser=PDBParser()
-struct=parser.get_structure('my_pdb', 'my_pdb.pdb')
+s=parser.get_structure('my_pdb', 'my_pdb.pdb')
 io=PDBIO()
 
 class NotDisordered(Select):
