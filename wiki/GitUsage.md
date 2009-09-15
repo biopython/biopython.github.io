@@ -508,8 +508,8 @@ After you're done, you cane remove the reference to the remote repo:
 
 `git remote rm Bartek`
 
-Commiting a patch
-=================
+Committing a patch
+==================
 
 If you are committing from a patch, it's also quite easy. First make
 sure you are up to date with official branch:
@@ -528,11 +528,30 @@ to git:
 
 Then make a commit (after adding files):
 
-`git commit -a -m "commited a patch from a kind contributor adding feature X"`
+`git commit -a -m "committed a patch from a kind contributor adding feature X"`
 
 After your changes are committed, you can push to github:
 
 `git push origin`
+
+Tagging the official branch
+===========================
+
+If you want to put tag on the current biopython official branch (this is
+usually done to mark a new release), you need to follow these steps:
+
+First make sure you are up to date with official branch:
+
+`git checkout master `  
+`git pull origin`
+
+Then add the actual tag:
+
+`git tag new_release`
+
+And push it to github:
+
+`git push --tags origin master`
 
 Additional Resources
 ====================
