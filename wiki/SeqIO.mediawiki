@@ -22,93 +22,111 @@ This table lists the file formats that Bio.SeqIO can read and write, with the Bi
 |+ Table 1: Bio.SeqIO supported file formats
 |-
 ! Format name
-! Reads
-! Writes
+! Read
+! Write
+! Index
 ! Notes
 |-
 | ace
 | 1.47
 | No
+| CVS
 | Reads the contig sequences from an ACE assembly file.  Uses Bio.Sequencing.Ace internally
 |-
 | clustal
 | 1.43
 | 1.43
+| No
 | The [[bp:ClustalW_multiple_alignment_format|alignment format of Clustal X and Clustal W]].  See also the Bio.Clustalw module.
 |-  
 | embl
 | 1.43
 | No
+| CVS
 | The [[bp:EMBL_sequence_format|EMBL flat file format]].  Uses Bio.GenBank internally.
 |-  
 | fasta
 | 1.43
 | 1.43
+| CVS
 | This refers to the input [[bp:FASTA_sequence_format|FASTA file format]] introduced for Bill Pearson's FASTA tool, where each record starts with a ">" line.  Resulting sequences have a generic alphabet by default.
 |-  
 | fastq
 | 1.50
 | 1.50
-| [http://en.wikipedia.org/wiki/FASTQ_format FASTQ files] are a bit like FASTA files but also include sequencing qualities.  In Biopython, "fastq" refers to Sanger style FASTQ files which encode PHRED qualities using an ASCII offset of 33. See also the incompatible "fastq-solexa" and "fastq-illumina" variants.
+| CVS
+| [http://en.wikipedia.org/wiki/FASTQ_format FASTQ files] are a bit like FASTA files but also include sequencing qualities.  In Biopython, "fastq" (or the alias "fastq-sanger") refers to Sanger style FASTQ files which encode PHRED qualities using an ASCII offset of 33. See also the incompatible "fastq-solexa" and "fastq-illumina" variants.
 |-  
 | fastq-solexa
 | 1.50
 | 1.50
+| CVS
 | [http://en.wikipedia.org/wiki/FASTQ_format FASTQ files] are a bit like FASTA files but also include sequencing qualities.  In Biopython, "fastq-solexa" refers to (early) Solexa/Illumina style FASTQ files which encode Solexa qualities using an ASCII offset of 64. See also what we call the "fastq-illumina" format.
 |-  
 | fastq-illumina
 | 1.51
 | 1.51
+| CVS
 | [http://en.wikipedia.org/wiki/FASTQ_format FASTQ files] are a bit like FASTA files but also include sequencing qualities.  In Biopython, "fastq-illumina" refers to recent Solexa/Illumina style FASTQ files (from pipeline version 1.3+) which encode PHRED qualities using an ASCII offset of 64.  For ''good'' quality reads, PHRED and Solexa scores are approximately equal, so the "fastq-solexa" and "fastq-illumina" variants are almost equivalent.
 |-  
 | genbank 
 | 1.43
 | 1.48 / 1.51
+| CVS
 | The [[bp:GenBank_sequence_format|GenBank or GenPept flat file format]].  Uses Bio.GenBank internally for parsing.  Biopython 1.48 to 1.50 wrote basic GenBank files with only minimal annotation, while 1.51 onwards will also write the features table (see [http://bugzilla.open-bio.org/show_bug.cgi?id=2294 Bug 2294]).
 |-
 | ig
 | 1.47
 | No
+| CVS
 | This refers to the IntelliGenetics file format, apparently the same as the [[bp:Mase_multiple_alignment_format|MASE alignment format]].
 |-
 | nexus
 | 1.43
 | 1.48
+| No
 | The [[bp:NEXUS_multiple_alignment_format|NEXUS multiple alignment]] format, also known as PAUP format.  Uses Bio.Nexus internally.
 |-
 | phd
 | 1.46
+| CVS
 | CVS
 | [[bp:PHD_sequence_format|PHD files]] are output from PHRED, used by PHRAP and CONSED for input.  Uses Bio.Sequencing.Phd internally.
 |-
 | phylip
 | 1.43
 | 1.43
+| No
 | An alignment format.  Truncates names at 10 characters.
 |-
 | pir
 | 1.48
 | No
+| CVS
 | A "FASTA like" format introduced by the National Biomedical Research Foundation (NBRF) for the [[bp:PIR_sequence_format|Protein Information Resource (PIR)]] database, now part of UniProt.
 |-
 | stockholm
 | 1.43
 | 1.43
+| No
 | The [[bp:Stockholm_multiple_alignment_format|Stockholm alignment format]] is also known as PFAM format.
 |-
 | swiss
 | 1.43
 | No
+| CVS
 | [[bp:Swissprot_sequence_format|Swiss-Prot]] aka UniProt format. Uses Bio.SwissProt internally.
 |-
 | tab
 | 1.48
 | 1.48
+| CVS
 | [[bp:Tab_sequence_format|Simple two column tab separated sequence files]], where each line holds a record's identifier and sequence. For example, this is used by Aligent's eArray software when saving microarray probes in a minimal tab delimited text file.
 |-  
 | qual
 | 1.50
 | 1.50
+| CVS
 | [[bp:Qual_sequence_format|Qual files]] are a bit like FASTA files but instead of the sequence, record space separated integer sequencing values as PHRED quality scores.  A matched pair of FASTA and QUAL files are often used as an alternative to a single FASTQ file.
 |-
 |}
