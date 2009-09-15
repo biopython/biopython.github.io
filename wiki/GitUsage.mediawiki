@@ -273,6 +273,18 @@ In the following sections, we assume you have followed the recommended scenario 
 
 = Commiting from someone's git branch =
 
+Assume you want to merge changes someone has committed to a git repository which was at some point cloned from the official biopython branch. He needs to make his repository available to you (read-only) by giving you a URL. Typically this will be on github (but it may be any public git url). Let us assume that the url is (which happens to be my clone of biopython):
+ git://github.com/barwil/biopython.git
+
+First, you need to get the code from this repository:
+ git remote add Bartek  git://github.com/barwil/biopython.git
+ git fetch Bartek
+
+Then you can see what branches are there:
+ $ git branch -r
+  Bartek/master
+  Bartek/motif_docs
+  Bartek/test-branch
 
 = Commiting a patch = 
 
