@@ -170,7 +170,7 @@ print records[0].id  #first record
 print records[-1].id #last record
 </source>
 
-Another common task is to index your records by some identifier.  For this we have a function '''Bio.SeqIO.to_dict()''' to turn a [[SeqRecord]] iterator (or list) into a dictionary:
+Another common task is to index your records by some identifier.  For small files we have a function '''Bio.SeqIO.to_dict()''' to turn a [[SeqRecord]] iterator (or list) into a dictionary (in memory):
 
 <source lang=python>
 from Bio import SeqIO
@@ -181,6 +181,8 @@ print record_dict["gi:12345678"] #use any record ID
 </source>
 
 The function '''Bio.SeqIO.to_dict()''' will use the record ID as the dictionary key by default, but you can specify any mapping you like with its optional argument, '''key_function'''.
+
+For larger files, it isn't possible to hold everything in memory, so '''Bio.SeqIO.to_dict()''' is not suitable. Biopython 1.52 will include an indexing function for this situation, but you might also consider [[BioSQL]].
 
 Finally the function '''Bio.SeqIO.to_alignment()''' can be used to turn a SeqRecord iterator (or list) into an alignment object - provided all the sequences are the same length:
 
