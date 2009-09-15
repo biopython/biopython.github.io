@@ -428,4 +428,5 @@ There are a lot of different nice guides to using Git on the web:
 -   <http://www.kernel.org/pub/software/scm/git/docs/v1.4.4.4/cvs-migration.html>
 -   <http://projects.scipy.org/numpy/wiki/GitWorkflow> Numpy is also
     evaluating git
+-   <http://learn.github.com/>
 
