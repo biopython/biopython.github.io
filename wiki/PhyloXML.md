@@ -310,14 +310,21 @@ def get_seqrecs(alignments, threshold):
     for aln in alignments:
         for hsp in aln.hsps:
             if hsp.expect < threshold:
-                yield SeqRecord(Seq(hsp.sbjct),
-                                id=aln.title + ' at ' + str(hsp.query_start))
+                yield SeqRecord(Seq(hsp.sbjct), id=aln.accession)
+                break
 
 best_seqs = get_seqrecs(blast_record.alignments, 1e-50)
 SeqIO.write(best_seqs, open('euphorbia.fasta', 'w+'), 'fasta')
 ```
 
-3. Re-align the sequences using MUSCLE.
+To help with annotating to your tree later, pick a lookup key here (e.g.
+accession number) and build a dictionary mapping that key to any
+additional data you can glean from the BLAST output, such as taxonomy
+and GI numbers. In this example, we're only keeping the original
+sequence and accession number.
+
+3. Re-align the sequences using MUSCLE, and format the alignment for use
+with stand-alone Phylip.
 
 ``` python
 import sys, subprocess
@@ -329,26 +336,38 @@ child = subprocess.call(str(cline),
                         stdout=subprocess.PIPE,
                         shell=(sys.platform!="win32"))
 align = AlignIO.read(child.stdout, "fasta")
+AlignIO.write([align], open('euphorbia.phy', 'w+'), 'phylip')
 ```
 
-4. Build a tree, using Phylip via EMBOSS.
+(Note: Phylip alignments have only 9-letter sequence identifiers, which
+must be unique. For didactic purposes, let's say there are no name
+collisions and the accession numbers we used as IDs are all less than 10
+characters.)
 
-``` python
-from Bio.Emboss.Applications import # Coming soon...
-```
+Now run `phylip` `proml` with `euphorbia.phy` as the input file, and
+convert the resulting tree file `outtree` to phyloXML format using one
+of the converters listed at the bottom of this page. Call the result
+`euphorbia.xml`.
 
-5. Add annotation data -- now we're using [Tree](Tree "wikilink") and
-[TreeIO](TreeIO "wikilink").
-
-``` python
-from Bio.Tree import PhyloXML
-# ...
-```
-
-6. Save a phyloXML file.
+4. Add accession numbers and sequences to the tree -- now we're using
+[Tree](Tree "wikilink") and [TreeIO](TreeIO "wikilink").
 
 ``` python
 from Bio import TreeIO
+from Bio.Tree import PhyloXML
+
+# Make a lookup table for sequences
+lookup = dict((rec.id, str(rec.seq)) for rec in best_seqs)
+
+tree = TreeIO.read('euphorbia.xml', 'phyloxml')
+for node in tree.find(terminal=True):
+    key = node.name
+    accession = PhyloXML.Accession(key, 'NCBI')
+    mol_seq = PhyloXML.MolSeq(lookup[key], is_aligned=True)
+    sequence = PhyloXML.Sequence(type='aa', accession=accession, mol_seq=mol_seq)
+    node.sequences.append(sequence)
+
+# Save the annotated phyloXML file
 TreeIO.write(tree, 'my_example.xml', 'phyloxml')
 ```
 
