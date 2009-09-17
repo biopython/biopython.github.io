@@ -35,10 +35,10 @@ interface. Two exist:
 -   [elementtree](http://effbot.org/zone/element-index.htm)
     (or cElementTree)
 
-The Bio.[TreeIO](TreeIO "wikilink").PhyloXMLIO module attempts to import
-each of these compatible ElementTree implementations until it succeeds.
-The given XML file handle is then parsed incrementally to instantiate an
-object hierarchy containing the relevant phylogenetic information.
+The PhyloXMLIO sub-module attempts to import each of these compatible
+ElementTree implementations until it succeeds. The given XML file handle
+is then parsed incrementally to instantiate an object hierarchy
+containing the relevant phylogenetic information.
 
 To draw trees (optional), you'll also need these packages:
 

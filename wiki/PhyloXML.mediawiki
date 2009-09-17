@@ -15,7 +15,7 @@ The XML parser used in this module is ElementTree, new to the Python standard li
 * [http://codespeak.net/lxml/ lxml]
 * [http://effbot.org/zone/element-index.htm elementtree] (or cElementTree)
 
-The Bio.[[TreeIO]].PhyloXMLIO module attempts to import each of these compatible ElementTree implementations until it succeeds. The given XML file handle is then parsed incrementally to instantiate an object hierarchy containing the relevant phylogenetic information.
+The PhyloXMLIO sub-module attempts to import each of these compatible ElementTree implementations until it succeeds. The given XML file handle is then parsed incrementally to instantiate an object hierarchy containing the relevant phylogenetic information.
 
 To draw trees (optional), you'll also need these packages:
 * [http://networkx.lanl.gov/index.html NetworkX] 1.0rc1 (or 0.36 for snapshot at the end of GSoC 2009)
