@@ -22,7 +22,7 @@ just clone the phyloxml branch onto your machine.
 
 Requirements:
 
--   Biopython 1.50 or newer (older may work, but hasn't been tested)
+-   Biopython 1.51 or newer (older may work, but hasn't been tested)
 -   Python 2.4 or newer
 -   ElementTree module
 
@@ -35,10 +35,21 @@ interface. Two exist:
 -   [elementtree](http://effbot.org/zone/element-index.htm)
     (or cElementTree)
 
-The module attempts to import each of these compatible ElementTree
-implementations until it succeeds. The given XML file handle is then
-parsed incrementally to instantiate an object hierarchy containing the
-relevant phylogenetic information.
+The Bio.[TreeIO](TreeIO "wikilink").PhyloXMLIO module attempts to import
+each of these compatible ElementTree implementations until it succeeds.
+The given XML file handle is then parsed incrementally to instantiate an
+object hierarchy containing the relevant phylogenetic information.
+
+To draw trees (optional), you'll also need these packages:
+
+-   [NetworkX](http://networkx.lanl.gov/index.html) 1.0rc1 (or 0.36 for
+    snapshot at the end of GSoC 2009)
+-   [PyGraphviz](http://networkx.lanl.gov/pygraphviz/) 0.99.1
+-   [matplotlib](http://matplotlib.sourceforge.net/)
+
+The I/O and tree-manipulation functionality will work without them;
+they're imported on demand when the functions to\_networkx() and
+draw\_graphviz() are called.
 
 About the format
 ----------------
