@@ -283,31 +283,61 @@ PhyloXML.ProteinDomain objects have a to\_seqfeature() method.
 
 ### Example pipeline
 
-The code for most of the following steps is left to the reader as an
-exercise.
+See the [Biopython
+Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
+sections on sequence alignment and BLAST for explanations of the first
+few steps shown here.
 
-1. Grab a protein sequence -- see [SeqIO](SeqIO "wikilink").
+1. Search for homologs of a protein sequence using BLAST.
+
+``` python
+from Bio.Blast import NBCIStandalone, NCBIXML
+
+query_fname = 'some_euphorb.fasta'
+result_handle, error_handle = NCBIStandalone.blastall('/usr/bin/blastall', 'blastp',
+                                                      '/db/fasta/nr', query_fname)
+blast_record = NCBIXML.read(result_handle)  # This takes some time to run
+```
+
+2. Extract the best hits from the BLAST result.
 
 ``` python
 from Bio import SeqIO
-# ...
+from Bio.Seq import Seq
+from Bio.SeqRecord import SeqRecord
+
+def get_seqrecs(alignments, threshold):
+    for aln in alignments:
+        for hsp in aln.hsps:
+            if hsp.expect < threshold:
+                yield SeqRecord(Seq(hsp.sbjct),
+                                id=aln.title + ' at ' + str(hsp.query_start))
+
+best_seqs = get_seqrecs(blast_record.alignments, 1e-50)
+SeqIO.write(best_seqs, open('euphorbia.fasta', 'w+'), 'fasta')
 ```
 
-2. Identify homologs using Blast.
+3. Re-align the sequences using MUSCLE.
 
 ``` python
-from Bio.Blast import NBCIStandalone
-# ...
+import sys, subprocess
+from Bio import AlignIO
+from Bio.Align.Applications import MuscleCommandline
+
+cline = MuscleCommandline(input="euphorbia.fasta")
+child = subprocess.call(str(cline),
+                        stdout=subprocess.PIPE,
+                        shell=(sys.platform!="win32"))
+align = AlignIO.read(child.stdout, "fasta")
 ```
 
-3. Build a tree, using a separate application.
+4. Build a tree, using Phylip via EMBOSS.
 
 ``` python
-from Bio.Align.Applications import ClustalwCommandLine
-# ...
+from Bio.Emboss.Applications import # Coming soon...
 ```
 
-4. Add annotation data -- now we're using [Tree](Tree "wikilink") and
+5. Add annotation data -- now we're using [Tree](Tree "wikilink") and
 [TreeIO](TreeIO "wikilink").
 
 ``` python
@@ -315,7 +345,7 @@ from Bio.Tree import PhyloXML
 # ...
 ```
 
-5. Save a phyloXML file.
+6. Save a phyloXML file.
 
 ``` python
 from Bio import TreeIO
