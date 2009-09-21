@@ -17,7 +17,7 @@ that atoms will be missing:
 `Some atoms or residues will be missing in the data structure.`
 
 The problem is simply that these files can be large with hundreds of
-thousand of atoms and residues (for instance, each water molecule is a
+thousands of atoms and residues (for instance, each water molecule is a
 separate residue) and the PDB format has not enough space in the
 appropriate columns of the
 [ATOM](http://www.wwpdb.org/documentation/format32/sect9.html#ATOM) or
@@ -145,8 +145,8 @@ class SloppyPDBIO(Bio.PDB.PDBIO):
     - resSeq simply wrap and are printed modulo 10,000.
     - atom numbers wrap at 99,999 and are printed modulo 100,000    
     """
-    # directly copied from PDBIO.py
-    # (has to be copied because of the package layout it is not externally accessible)
+    # The format string is derived from the PDB format as used in PDBIO.py
+    # (has to be copied to the class because of the package layout it is not externally accessible)
     _ATOM_FORMAT_STRING="%s%5i %-4s%c%3s %c%4i%c   %8.3f%8.3f%8.3f%6.2f%6.2f      %4s%2s%2s\n"
 
     def _get_atom_line(self, atom, hetfield, segid, atom_number, resname, 
@@ -155,7 +155,7 @@ class SloppyPDBIO(Bio.PDB.PDBIO):
         Returns an ATOM PDB string that is guaranteed to fit into the ATOM format.
 
         - Resid (resseq) is wrapped (modulo 10,000) to fit into %4i (4I) format
-        - Atom number (atom_number) is wrapped (modulo 100,000) to fit into %4i (4I) format
+        - Atom number (atom_number) is wrapped (modulo 100,000) to fit into %5i (5I) format
         """
         if hetfield!=" ":
             record_type="HETATM"
