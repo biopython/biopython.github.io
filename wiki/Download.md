@@ -4,23 +4,23 @@ permalink: wiki/Download
 layout: wiki
 ---
 
-Current Release - 1.51 - 17 August 2009
-=======================================
+Current Release - 1.52 - 22 September 2009
+==========================================
 
 See also [What's new](http://biopython.open-bio.org/SRC/biopython/NEWS).
 
 ### Files
 
--   [biopython-1.51.tar.gz](http://biopython.org/DIST/biopython-1.51.tar.gz)
-    5,428 Kb -- Source Tarball
--   [biopython-1.51.zip](http://biopython.org/DIST/biopython-1.51.zip)
-    5,922 Kb -- Source Zip File
--   [biopython-1.51.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.51.win32-py2.4.exe)
-    1,166 Kb -- Windows Installer for Python 2.4 and NumPy 1.1
--   [biopython-1.51.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.51.win32-py2.5.exe)
-    1,167 Kb -- Windows Installer for Python 2.5 and NumPy 1.1
--   [biopython-1.51.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.51.win32-py2.6.exe)
-    1,206 Kb -- Windows Installer for Python 2.6 and NumPy 1.3
+-   [biopython-1.52.tar.gz](http://biopython.org/DIST/biopython-1.52.tar.gz)
+    5,486 Kb -- Source Tarball
+-   [biopython-1.52.zip](http://biopython.org/DIST/biopython-1.52.zip)
+    5,930 Kb -- Source Zip File
+-   [biopython-1.52.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.52.win32-py2.4.exe)
+    1,107 Kb -- Windows Installer for Python 2.4 and NumPy 1.1
+-   [biopython-1.52.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.52.win32-py2.5.exe)
+    1,108 Kb -- Windows Installer for Python 2.5 and NumPy 1.1
+-   [biopython-1.52.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.52.win32-py2.6.exe)
+    1,147 Kb -- Windows Installer for Python 2.6 and NumPy 1.3
 
 Please report any issues on our [mailing
 lists](mailing_lists "wikilink") or
