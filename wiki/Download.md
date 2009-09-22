@@ -206,6 +206,19 @@ Old Releases
 
 Recent releases of Biopython require NumPy (and not Numeric):
 
+-   [biopython-1.51.tar.gz](http://biopython.org/DIST/biopython-1.51.tar.gz)
+    5,428 Kb -- Source Tarball
+-   [biopython-1.51.zip](http://biopython.org/DIST/biopython-1.51.zip)
+    5,922 Kb -- Source Zip File
+-   [biopython-1.51.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.51.win32-py2.4.exe)
+    1,166 Kb -- Windows Installer for Python 2.4 and NumPy 1.1
+-   [biopython-1.51.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.51.win32-py2.5.exe)
+    1,167 Kb -- Windows Installer for Python 2.5 and NumPy 1.1
+-   [biopython-1.51.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.51.win32-py2.6.exe)
+    1,206 Kb -- Windows Installer for Python 2.6 and NumPy 1.3
+
+<!-- -->
+
 -   [biopython-1.51b.tar.gz](http://biopython.org/DIST/biopython-1.51b.tar.gz)
     5,172 Kb -- Source Tarball
 -   [biopython-1.51b.zip](http://biopython.org/DIST/biopython-1.51b.zip)
