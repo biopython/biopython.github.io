@@ -40,6 +40,10 @@ Publications from 2009
 
 // Used Bio.SVDSuperimposer (and probably Bio.PDB as well)
 
+1.  DonaireEtAl2009 pmid=19665162
+
+// Used Biopython for removing adaptors from 454 sequencing reads
+
 1.  GarbinoEtAl2009 pmid=19318539
 2.  HoldenEtAl2009 pmid=19076238
 
