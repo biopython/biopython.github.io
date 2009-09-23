@@ -9,11 +9,9 @@ contribution. The core developers maintain a stable trunk under revision
 control from which we will roll releases as new functionality is
 integrated and bugs are fixed.
 
-We currently use [CVS](CVS "wikilink") as our revision control system;
-full details are available from the [CVS](CVS "wikilink") page.
+Until September 2009, we used [CVS](CVS "wikilink") as our revision
+control system, but have now [migrated to git](GitMigration "wikilink").
 
-We are currently evaluating a transition to git on
-[github](http://www.github.com), details are available from the [git
-migration](GitMigration "wikilink") and [git usage](GitUsage "wikilink")
-pages. We are happy to hear your feedback on the [ mailing
+Please see our [git usage](GitUsage "wikilink") page for further
+information. We are happy to hear your feedback on the [ mailing
 lists](Mailing_lists "wikilink").
