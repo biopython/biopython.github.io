@@ -25,6 +25,8 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 #MullerEtAl2009 pmid=19583843
 #NarayananEtAl pmid=19324053
 // Used Bio.SVDSuperimposer (and probably Bio.PDB as well)
+#ParisienEtAl2009 pmid=19710185
+// Used Bio.PDB
 #Schanda2009 Schanda P. 2009. ''Fast-pulsing longitudinal relaxation optimized techniques: Enriching the toolbox of fast biomolecular NMR spectroscopy.'' Progress in Nuclear Magnetic Resonance Spectroscopy: 'In press' [http://dx.doi.org/10.1016/j.pnmrs.2009.05.002 doi:10.1016/j.pnmrs.2009.05.002]
 // Used Bio.PDB
 #SmithEtAl2009 pmid=19210768

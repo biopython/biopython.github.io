@@ -59,6 +59,10 @@ GenomeDiagram
 
 // Used Bio.SVDSuperimposer (and probably Bio.PDB as well)
 
+1.  ParisienEtAl2009 pmid=19710185
+
+// Used Bio.PDB
+
 1.  Schanda2009 Schanda P. 2009. *Fast-pulsing longitudinal relaxation
     optimized techniques: Enriching the toolbox of fast biomolecular
     NMR spectroscopy.* Progress in Nuclear Magnetic Resonance
