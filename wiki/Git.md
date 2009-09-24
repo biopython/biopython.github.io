@@ -34,32 +34,31 @@ the Download link near the top of the page.
 ### Anonymous Access
 
 Getting a copy of the repository (called "cloning" in Git terminology)
-without GitHub account is very simple using the git command line tool:
+without a GitHub account is very simple using the git command line tool:
 
 `git clone `[`git://github.com/biopython/biopython.git`](git://github.com/biopython/biopython.git)
 
 This command creates a local copy of the entire Biopython repository on
 your machine (your own personal copy of the official repository with its
-complete history). You can now make local changes and commit them to
-this local copy (although we advise you to use named branches for this,
-and keep the master branch in sync with the official Biopython code).
+complete history). You can update this local copy at the command line
+(from within the Biopython repository directory) with:
 
-If you want other people to see your changes, however, you must publish
-your repository to a public server yourself (e.g. on GitHub).
+`git pull origin`
 
-See also [GitUsage](GitUsage "wikilink").
+You can even make *local* changes and commit them to this local copy,
+see [GitUsage](GitUsage "wikilink") or the git documentation for further
+information.
 
 ### Write Access
 
 In order to make changes to the official repository, you will need a
-github account with collaborator status. Write CVS access is available
-for Biopython developers. This is normally given on a case by case
-basis, and the best place to discuss getting write access is on the
-[Biopython Development mailing
-list](mailto:biopython-dev@biopython.org).
+github account with collaborator status. Write access is available for
+Biopython developers (including all those who previously had CVS commit
+rights).
 
-Write access will of course be given to existing Biopython developers
-who had CVS commit rights.
+This is normally given on a case by case basis, and the best place to
+discuss getting write access is on the [Biopython Development mailing
+list](mailto:biopython-dev@biopython.org).
 
 Once you have access, see the instructions on
 [GitUsage](GitUsage "wikilink")
