@@ -1,3 +1,5 @@
-Until 2008, Biopython and all the other [http://open-bio.org Open Bioinformatics Foundation] projects used [[CVS]] to manage their source code repositories.  Most of the other projects have now migrated from CVS to Subversion (SVN).  Biopython is considering [[Subversion_migration|moving over to SVN]], but has now started [[GitMigration|evaluating git instead]].
+Biopython and other [http://open-bio.org Open Bioinformatics Foundation] projects originally used [[CVS]] to manage their source code repositories.
 
-Over on the BioPerl wiki, they have [[bp:Using_Subversion|SVN usage instructions]] which would generally apply to Biopython after the migration.
+Most of the other projects have now migrated from CVS to Subversion (SVN).
+
+Biopython considered [[Subversion_migration|moving over to SVN]], but instead [[GitMigration|migrated to git]].
