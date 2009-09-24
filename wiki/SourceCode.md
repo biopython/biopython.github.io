@@ -22,8 +22,7 @@ An hourly updated CVS checkout of Biopython was available at
 <http://biopython.open-bio.org/SRC/biopython> and we intend to have this
 updated from git shortly.
 
-You can [track
-changes](http://github.com/feeds/biopython/commits/biopython/master) via
+You can [track changes](Tracking_commits "wikilink") via
 [RSS](wp:RSS_(file_format) "wikilink").
 
 ### Viewing git sources

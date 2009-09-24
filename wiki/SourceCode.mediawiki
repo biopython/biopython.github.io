@@ -6,7 +6,7 @@ The Biopython source code is kept under a distributed version control system whi
 
 An hourly updated CVS checkout of Biopython was available at http://biopython.open-bio.org/SRC/biopython and we intend to have this updated from git shortly.
 
-You can [http://github.com/feeds/biopython/commits/biopython/master track changes] via [[wp:RSS (file format)|RSS]].
+You can [[Tracking_commits|track changes]] via [[wp:RSS (file format)|RSS]].
 
 === Viewing git sources ===
 
