@@ -5,7 +5,7 @@ layout: wiki
 ---
 
 We have recently migrated to git distributed version control (instead of
-[CVS](CVS "wikilink")).
+[CVS](CVS "wikilink")), as summarised [here](git "wikilink").
 
 The process of development of Biopython with git is outlined
 [here](GitUsage "wikilink").

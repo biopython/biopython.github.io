@@ -1,4 +1,4 @@
-We have recently migrated to git distributed version control (instead of [[CVS]]).
+We have recently migrated to git distributed version control (instead of [[CVS]]), as summarised [[git|here]].
 
 The process of development of Biopython with git is outlined [[GitUsage|here]].
 
