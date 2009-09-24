@@ -12,24 +12,19 @@ integrated and bugs are fixed.
 Until September 2009, we used [CVS](CVS "wikilink") as our revision
 control system, but have now [migrated to git](GitMigration "wikilink").
 
-Please see our [git usage](GitUsage "wikilink") page for further
-information. We are happy to hear your feedback on the [ mailing
-lists](Mailing_lists "wikilink").
-
 ### About git
 
-The Biopython source code is kept under a version control system which
-allows multiple users from around the world to work on the same code
-base at the same time. We currently use
+The Biopython source code is kept under a distributed version control
+system which allows multiple users from around the world to work on the
+same code base at the same time. We currently use
 [git](http://en.wikipedia.org/wiki/Git_%28software%29) (developed by
-Linus Torvalds for Linux kernel development). Prior to September 2009,
-we used to use [CVS](CVS "wikilink").
+Linus Torvalds for Linux kernel development).
 
 An hourly updated CVS checkout of Biopython was available at
 <http://biopython.open-bio.org/SRC/biopython> and we intend to have this
 updated from git shortly.
 
-You can also [track
+You can [track
 changes](http://github.com/feeds/biopython/commits/biopython/master) via
 [RSS](wp:RSS_(file_format) "wikilink").
 
