@@ -132,12 +132,14 @@ To start working with phyloXML files, use the
 argument:
 
 ``` python
-from Bio import TreeIO
-tree = TreeIO.read('some-trees.xml', 'phyloxml')
+>>> from Bio import TreeIO
+>>> tree = TreeIO.read('some-trees.xml', 'phyloxml')
 # ValueError: There are multiple trees in this file; use parse() instead.
-trees = TreeIO.parse('some-trees.xml', 'phyloxml')
-TreeIO.write(trees.next(), 'first-tree.xml', 'phyloxml')
-TreeIO.write(trees, 'rest-trees.xml', 'phyloxml')
+>>> trees = TreeIO.parse('some-trees.xml', 'phyloxml')
+>>> TreeIO.write(trees.next(), 'first-tree.xml', 'phyloxml')
+1
+>>> TreeIO.write(trees, 'rest-trees.xml', 'phyloxml')
+12
 ```
 
 These functions work with Phylogeny objects (derived from BaseTree.Tree)
@@ -192,6 +194,7 @@ Optionally, an encoding other than UTF-8 can be specified.
 [Other(tag='alignment', namespace='http://example.org/align')]
 >>> phx.other = []
 >>> PhyloXMLIO.write(phx, 'ex_no_other.xml')
+13
 >>> phx_no = PhyloXMLIO.read('ex_no_other.xml')
 >>> phx_no.other
 []

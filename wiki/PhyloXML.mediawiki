@@ -93,12 +93,14 @@ The tree objects are derived from base classes in [[Tree|Bio.Tree]]; see that pa
 To start working with phyloXML files, use the [[TreeIO]] package with 'phyloxml' as the format argument:
 
 <source lang=python>
-from Bio import TreeIO
-tree = TreeIO.read('some-trees.xml', 'phyloxml')
+>>> from Bio import TreeIO
+>>> tree = TreeIO.read('some-trees.xml', 'phyloxml')
 # ValueError: There are multiple trees in this file; use parse() instead.
-trees = TreeIO.parse('some-trees.xml', 'phyloxml')
-TreeIO.write(trees.next(), 'first-tree.xml', 'phyloxml')
-TreeIO.write(trees, 'rest-trees.xml', 'phyloxml')
+>>> trees = TreeIO.parse('some-trees.xml', 'phyloxml')
+>>> TreeIO.write(trees.next(), 'first-tree.xml', 'phyloxml')
+1
+>>> TreeIO.write(trees, 'rest-trees.xml', 'phyloxml')
+12
 </source>
 
 These functions work with Phylogeny objects (derived from BaseTree.Tree) from the Bio.Tree.PhyloXML module. This standard API is enough for most use cases.
@@ -139,6 +141,7 @@ PhyloXMLIO.write() is similar to TreeIO.write(), but also accepts a Phyloxml obj
 [Other(tag='alignment', namespace='http://example.org/align')]
 >>> phx.other = []
 >>> PhyloXMLIO.write(phx, 'ex_no_other.xml')
+13
 >>> phx_no = PhyloXMLIO.read('ex_no_other.xml')
 >>> phx_no.other
 []
@@ -155,7 +158,6 @@ PhyloXMLIO also contains a utility called dump_tags() for printing all of the XM
 {http://www.phyloxml.org}clade
 ...
 </pre>
-
 
 ==Using PhyloXML objects==
 
