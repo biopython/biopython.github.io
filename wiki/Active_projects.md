@@ -7,9 +7,10 @@ layout: wiki
 This page provides a central location to collect references to active
 projects. This is a good place to start if you are interested in
 contributing to Biopython and want to find larger projects in progress.
-For developers, use this to reference git branches or other projects
-which you will be working on for an extended period of time. Please keep
-it up to date as projects are finished and integrated into Biopython.
+For developers, use this to reference [git](git "wikilink") branches or
+other projects which you will be working on for an extended period of
+time. Please keep it up to date as projects are finished and integrated
+into Biopython.
 
 Current projects
 ----------------
