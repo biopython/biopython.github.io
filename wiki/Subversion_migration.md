@@ -4,11 +4,9 @@ permalink: wiki/Subversion_migration
 layout: wiki
 ---
 
-This page will outline and detail the information required for
-end-users, developers, and undertakers of the task of migrating
-Biopython from [CVS](CVS "wikilink") to [Subversion
-(SVN)](SVN "wikilink"), although it is now looking more likely that we
-will [switch straight to Git](GitMigration "wikilink") instead.
+This page will outlined plans for migrating Biopython from
+[CVS](CVS "wikilink") to [Subversion (SVN)](SVN "wikilink"), although in
+the end we [switched straight to Git](GitMigration "wikilink") instead.
 
 Biopython Users
 ---------------

@@ -1,4 +1,4 @@
-This page will outline and detail the information required for end-users, developers, and undertakers of the task of migrating Biopython from [[CVS]] to [[SVN|Subversion (SVN)]], although it is now looking more likely that we will [[GitMigration|switch straight to Git]] instead.
+This page will outlined plans for migrating Biopython from [[CVS]] to [[SVN|Subversion (SVN)]], although in the end we [[GitMigration|switched straight to Git]] instead.
 
 == Biopython Users ==
 
