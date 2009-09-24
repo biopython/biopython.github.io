@@ -9,9 +9,6 @@ contribution. The core developers maintain a stable trunk under revision
 control from which we will roll releases as new functionality is
 integrated and bugs are fixed.
 
-Until September 2009, we used [CVS](CVS "wikilink") as our revision
-control system, but have now [migrated to git](GitMigration "wikilink").
-
 ### About git
 
 The Biopython source code is kept under a distributed version control
@@ -75,8 +72,8 @@ Once you have access, see the instructions on
 ### Migration from CVS
 
 Most of the other [Open Bioinformatics Foundation](http://open-bio.org)
-projects migrated from CVS to [Subversion (SVN)](SVN "wikilink").
-Biopython had been considering [moving from CVS to
-SVN](Subversion_migration "wikilink") for a while, but instead [moved to
-git](GitMigration "wikilink"). [BioRuby](http://bioruby.org) also uses
-github.
+projects migrated from [CVS](CVS "wikilink") to [Subversion
+(SVN)](SVN "wikilink"). Biopython had been considering [moving from CVS
+to SVN](Subversion_migration "wikilink") for a while, but instead [moved
+to git](GitMigration "wikilink") in September 2009. Note that
+[BioRuby](http://bioruby.org) also uses github.

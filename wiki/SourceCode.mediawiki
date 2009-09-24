@@ -1,7 +1,5 @@
 The source code from Biopython is freely available for your use and contribution. The core developers maintain a stable trunk under revision control from which we will roll releases as new functionality is integrated and bugs are fixed.
 
-Until September 2009, we used [[CVS]] as our revision control system, but have now [[GitMigration|migrated to git]].
-
 === About git ===
 
 The Biopython source code is kept under a distributed version control system which allows multiple users from around the world to work on the same code base at the same time.  We currently use [http://en.wikipedia.org/wiki/Git_%28software%29 git] (developed by Linus Torvalds for Linux kernel development) hosted on [http://github.com GitHub].
@@ -42,4 +40,4 @@ Once you have access, see the instructions on [[GitUsage]]
 
 === Migration from CVS ===
 
-Most of the other [http://open-bio.org Open Bioinformatics Foundation] projects migrated from CVS to [[SVN|Subversion (SVN)]].  Biopython had been considering [[Subversion_migration|moving from CVS to SVN]] for a while, but instead [[GitMigration|moved to git]]. [http://bioruby.org BioRuby] also uses github.
+Most of the other [http://open-bio.org Open Bioinformatics Foundation] projects migrated from [[CVS]] to [[SVN|Subversion (SVN)]].  Biopython had been considering [[Subversion_migration|moving from CVS to SVN]] for a while, but instead [[GitMigration|moved to git]] in September 2009. Note that [http://bioruby.org BioRuby] also uses github.
