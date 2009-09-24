@@ -1,6 +1,3 @@
-Biopython currently uses [[CVS]] for its version control system.  Most of the Open Bio projects moved to [[SVN]] some time ago, and this was strongly considered for Biopython too.  However, eventually followed BioRuby and [[GitMigration|moved to git instead]].
-
-
 === About git ===
 
 The Biopython source code is kept under a version control system which allows multiple users from around the world to work on the same code base at the same time.  We currently use [http://en.wikipedia.org/wiki/Git_%28software%29 git] (developed by Linus Torvalds for Linux kernel development). Prior to September 2009, we used to use [[CVS]].
