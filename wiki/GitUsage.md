@@ -5,7 +5,7 @@ layout: wiki
 ---
 
 These are (draft) general guidelines for Biopython development using
-git. For now we are still using [CVS](CVS "wikilink").
+git. We're still working on the finer details etc.
 
 This document is meant as an outline of the way Biopython is developed.
 It should include all essential technical information as well as typical
