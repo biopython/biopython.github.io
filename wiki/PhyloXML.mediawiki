@@ -211,7 +211,7 @@ See the [http://biopython.org/DIST/docs/tutorial/Tutorial.html Biopython Tutoria
 <source lang=python>
 from Bio.Blast import NBCIStandalone, NCBIXML
 
-query_fname = 'some_euphorb.fasta'
+query_fname = 'egfr-kinase.fasta'
 result_handle, error_handle = NCBIStandalone.blastall('/usr/bin/blastall', 'blastp',
                                                       '/db/fasta/nr', query_fname)
 blast_record = NCBIXML.read(result_handle)  # This takes some time to run
@@ -231,7 +231,7 @@ def get_seqrecs(alignments, threshold):
                 break
 
 best_seqs = get_seqrecs(blast_record.alignments, 1e-50)
-SeqIO.write(best_seqs, open('euphorbia.fasta', 'w+'), 'fasta')
+SeqIO.write(best_seqs, open('tyr-kinases.fasta', 'w+'), 'fasta')
 </source>
 
 To help with annotating to your tree later, pick a lookup key here (e.g. accession number) and build a dictionary mapping that key to any additional data you can glean from the BLAST output, such as taxonomy and GI numbers. In this example, we're only keeping the original sequence and accession number.
@@ -242,17 +242,17 @@ import sys, subprocess
 from Bio import AlignIO
 from Bio.Align.Applications import MuscleCommandline
 
-cline = MuscleCommandline(input="euphorbia.fasta")
+cline = MuscleCommandline(input="tyr-kinases.fasta")
 child = subprocess.call(str(cline),
                         stdout=subprocess.PIPE,
                         shell=(sys.platform!="win32"))
 align = AlignIO.read(child.stdout, "fasta")
-AlignIO.write([align], open('euphorbia.phy', 'w+'), 'phylip')
+AlignIO.write([align], open('tyr-kinases.phy', 'w+'), 'phylip')
 </source>
 
 (Note: Phylip alignments have only 9-letter sequence identifiers, which must be unique. For didactic purposes, let's say there are no name collisions and the accession numbers we used as IDs are all less than 10 characters.)
 
-Now run <code>phylip proml</code> with <code>euphorbia.phy</code> as the input file, and convert the resulting tree file <code>outtree</code> to phyloXML format using one of the converters listed at the bottom of this page. Call the result <code>euphorbia.xml</code>.
+Now run <code>phylip proml</code> with <code>tyr-kinases.phy</code> as the input file, and convert the resulting tree file <code>outtree</code> to phyloXML format using one of the converters listed at the bottom of this page. Call the result <code>tyr-kinases.xml</code>.
 
 4. Add accession numbers and sequences to the tree -- now we're using [[Tree]] and [[TreeIO]].
 <source lang=python>
@@ -262,7 +262,7 @@ from Bio.Tree import PhyloXML
 # Make a lookup table for sequences
 lookup = dict((rec.id, str(rec.seq)) for rec in best_seqs)
 
-tree = TreeIO.read('euphorbia.xml', 'phyloxml')
+tree = TreeIO.read('tyr-kinases.xml', 'phyloxml')
 for node in tree.find(terminal=True):
     key = node.name
     accession = PhyloXML.Accession(key, 'NCBI')
@@ -271,7 +271,7 @@ for node in tree.find(terminal=True):
     node.sequences.append(sequence)
 
 # Save the annotated phyloXML file
-TreeIO.write(tree, 'my_example.xml', 'phyloxml')
+TreeIO.write(tree, 'tyr-kinases-pretty.xml', 'phyloxml')
 </source>
 
 ==Performance==
