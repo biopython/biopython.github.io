@@ -4,8 +4,8 @@ You can track code development in Biopython by [[wp:RSS (file format)|RSS feeds]
 |- style="background-color:#ccccff; text-align:center"
 ! Core commits
 |-
-| [http://biopython.open-bio.org/CVS2RSS/biopython.rss RSS]
+| [http://github.com/feeds/biopython/commits/biopython/master RSS]
 |-
-| <rss>http://biopython.open-bio.org/CVS2RSS/biopython.rss|date|max=20</rss> 
+| <rss>http://github.com/feeds/biopython/commits/biopython/master|date|max=20</rss> 
 |-
 |}
