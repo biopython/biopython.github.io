@@ -94,8 +94,8 @@ bugzilla interface.
     This would add an additional external dependency to Biopython, but
     provides ready support for additional databases like SQLite. It also
     would provide a raw object interface to BioSQL databases when the
-    SeqRecord-like interface is not sufficient. Brad has some initial
-    code for this.
+    SeqRecord-like interface is not sufficient. Brad and Kyle have some
+    initial code for this.
 
 <!-- -->
 
