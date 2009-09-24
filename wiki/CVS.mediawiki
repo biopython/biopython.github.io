@@ -1,3 +1,6 @@
+This page is now obsolete, we [[GitMigration|migrated from CVS to git]].
+
+
 === About CVS ===
 
 The Biopython source code is kept under a version control system which allows multiple users from around the world to work on the same code base at the same time.  We currently use CVS (Concurrent Versions System) for this purpose.

@@ -4,6 +4,9 @@ permalink: wiki/CVS
 layout: wiki
 ---
 
+This page is now obsolete, we [migrated from CVS to
+git](GitMigration "wikilink").
+
 ### About CVS
 
 The Biopython source code is kept under a version control system which
