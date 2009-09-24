@@ -22,8 +22,7 @@ bioinformatics. The source code is made available under the [Biopython
 License](http://www.biopython.org/DIST/LICENSE), which is extremely
 liberal and compatible with almost every license in the world. We work
 along with the [Open Bioinformatics Foundation](http://open-bio.org),
-who generously provide web and [CVS](CVS "wikilink") space for the
-project.
+who generously host our website, bug tracker, and mailing lists.
 
 This wiki will help you download and install Biopython, and start using
 the libraries and tools.
