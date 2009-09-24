@@ -18,7 +18,8 @@ The Biopython source code is kept under a distributed version control
 system which allows multiple users from around the world to work on the
 same code base at the same time. We currently use
 [git](http://en.wikipedia.org/wiki/Git_%28software%29) (developed by
-Linus Torvalds for Linux kernel development).
+Linus Torvalds for Linux kernel development) hosted on
+[GitHub](http://github.com).
 
 An hourly updated CVS checkout of Biopython was available at
 <http://biopython.open-bio.org/SRC/biopython> and we intend to have this
@@ -40,8 +41,9 @@ the Download link near the top of the page.
 
 ### Anonymous Access
 
-Getting a copy of the repository (called "cloning" in Git terminology)
-without a GitHub account is very simple using the git command line tool:
+Getting a copy of the repository (called "cloning" in git terminology)
+is very simple using the git command line tool, you don't need a account
+or password:
 
 `git clone `[`git://github.com/biopython/biopython.git`](git://github.com/biopython/biopython.git)
 
