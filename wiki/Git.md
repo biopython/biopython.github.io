@@ -28,15 +28,28 @@ Our current development git sources are available for viewing via
 
 [Biopython GitHub Home](http://github.com/biopython/biopython)
 
-This is main repository. You can download these sources by clicking the
-Download link near the top of the page.
+This is the main repository. You can download these sources by clicking
+the Download link near the top of the page.
 
-### Anonymous git Access
+### Anonymous Access
 
-You can also access (clone) a copy using the git command line tool. See
-[GitUsage](GitUsage "wikilink").
+Getting a copy of the repository (called "cloning" in Git terminology)
+without GitHub account is very simple using the git command line tool:
 
-### Write git Access
+`git clone `[`git://github.com/biopython/biopython.git`](git://github.com/biopython/biopython.git)
+
+This command creates a local copy of the entire Biopython repository on
+your machine (your own personal copy of the official repository with its
+complete history). You can now make local changes and commit them to
+this local copy (although we advise you to use named branches for this,
+and keep the master branch in sync with the official Biopython code).
+
+If you want other people to see your changes, however, you must publish
+your repository to a public server yourself (e.g. on GitHub).
+
+See also [GitUsage](GitUsage "wikilink").
+
+### Write Access
 
 In order to make changes to the official repository, you will need a
 github account with collaborator status. Write CVS access is available
