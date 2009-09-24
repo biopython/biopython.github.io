@@ -19,7 +19,7 @@ The PhyloXMLIO sub-module attempts to import each of these compatible ElementTre
 
 To draw trees (optional), you'll also need these packages:
 * [http://networkx.lanl.gov/index.html NetworkX] 1.0rc1 (or 0.36 for snapshot at the end of GSoC 2009)
-* [http://networkx.lanl.gov/pygraphviz/ PyGraphviz] 0.99.1
+* [http://networkx.lanl.gov/pygraphviz/ PyGraphviz] 0.99.1 or [http://dkbza.org/pydot.html pydot]
 * [http://matplotlib.sourceforge.net/ matplotlib]
 
 The I/O and tree-manipulation functionality will work without them; they're imported on demand when the functions to_networkx() and draw_graphviz() are called.

@@ -44,7 +44,8 @@ To draw trees (optional), you'll also need these packages:
 
 -   [NetworkX](http://networkx.lanl.gov/index.html) 1.0rc1 (or 0.36 for
     snapshot at the end of GSoC 2009)
--   [PyGraphviz](http://networkx.lanl.gov/pygraphviz/) 0.99.1
+-   [PyGraphviz](http://networkx.lanl.gov/pygraphviz/) 0.99.1 or
+    [pydot](http://dkbza.org/pydot.html)
 -   [matplotlib](http://matplotlib.sourceforge.net/)
 
 The I/O and tree-manipulation functionality will work without them;
