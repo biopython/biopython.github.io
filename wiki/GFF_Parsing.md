@@ -202,6 +202,23 @@ in_handle.close()
 Writing GFF3
 ------------
 
+The `GFF3Writer` takes an iterator of SeqRecord objects, and writes each
+SeqFeature as a GFF3 line:
+
+-   seqid -- SeqRecord ID
+-   source -- Feature qualifier with key "source"
+-   type -- Feature type attribute
+-   start, end -- The Feature Location
+-   score -- Feature qualifier with key "score"
+-   strand -- Feature strand attribute
+-   phase -- Feature qualifier with key "phase"
+
+The remaining qualifiers are the final key/value pairs of the attribute.
+
+A feature hierarchy is represented as sub\_features of the parent
+feature. This handles any arbitrarily deep nesting of parent and child
+features.
+
 ``` python
 from BCBio.GFF import GFF3Writer
 from Bio import SeqIO
