@@ -18,9 +18,13 @@ interested in Biopython code.
 Relevance
 =========
 
+If you just want to grab the latest (not yet officially released)
+Biopython from our repository, see out \[git|source code page\]. This
+page is about actually using git for tracking changes.
+
 If you have found a problem with Biopython, and think you know how to
 fix it, then we suggest following the simple route of [filing a
-bug](http://bugzilla.open-bio.org/) and describe you fix. Ideally, you
+bug](http://bugzilla.open-bio.org/) and describe your fix. Ideally, you
 would upload a patch file showing the differences between the latest
 version of Biopython (from our repository) and your modified version.
 Working with the command line tools *diff* and *patch* is a very useful
