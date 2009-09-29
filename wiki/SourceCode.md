@@ -20,7 +20,8 @@ Linus Torvalds for Linux kernel development) hosted on
 
 An hourly updated CVS checkout of Biopython was available at
 <http://biopython.open-bio.org/SRC/biopython> and we intend to have this
-updated from git shortly.
+updated from git shortly. In the meantime, use the download link on our
+github page (see below).
 
 You can [track changes](Tracking_commits "wikilink") via
 [RSS](wp:RSS_(file_format) "wikilink").

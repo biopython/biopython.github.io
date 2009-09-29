@@ -4,7 +4,7 @@ The source code from Biopython is freely available for your use and contribution
 
 The Biopython source code is kept under a distributed version control system which allows multiple users from around the world to work on the same code base at the same time.  We currently use [http://en.wikipedia.org/wiki/Git_%28software%29 git] (developed by Linus Torvalds for Linux kernel development) hosted on [http://github.com GitHub].
 
-An hourly updated CVS checkout of Biopython was available at http://biopython.open-bio.org/SRC/biopython and we intend to have this updated from git shortly.
+An hourly updated CVS checkout of Biopython was available at http://biopython.open-bio.org/SRC/biopython and we intend to have this updated from git shortly. In the meantime, use the download link on our github page (see below).
 
 You can [[Tracking_commits|track changes]] via [[wp:RSS (file format)|RSS]].
 
