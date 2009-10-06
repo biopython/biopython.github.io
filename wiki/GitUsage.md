@@ -419,7 +419,7 @@ typically do this using a new integration branch, then fetch it to your
 local machine to test everything, before merging it to your main branch.
 
 Commiting changes to main branch
---------------------------------
+================================
 
 This section is intended for Biopython developers, who are allowed to
 commit changes to the biopython main "official" branch. It describes the
@@ -427,7 +427,7 @@ typical activities, such as merging contributed code changes both from
 git branches and patch files.
 
 Prerequisites
-=============
+-------------
 
 Currently, the main biopython branch is hosted on github. In order to
 make changes to the main branch you need a github account and you need
@@ -463,7 +463,7 @@ scenario and you have the following entries in your .git/config file:
 `       remote = origin`
 
 Commiting from someone's git branch
-===================================
+-----------------------------------
 
 Assume you want to merge changes someone has committed to a git
 repository which was at some point cloned from the official biopython
@@ -507,7 +507,7 @@ After you're done, you cane remove the reference to the remote repo:
 `git remote rm Bartek`
 
 Committing a patch
-==================
+------------------
 
 If you are committing from a patch, it's also quite easy. First make
 sure you are up to date with official branch:
@@ -533,7 +533,7 @@ After your changes are committed, you can push to github:
 `git push origin`
 
 Tagging the official branch
-===========================
+---------------------------
 
 If you want to put tag on the current biopython official branch (this is
 usually done to mark a new release), you need to follow these steps:
