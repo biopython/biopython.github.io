@@ -450,14 +450,8 @@ recommended way (at least for the beginning) as it minimizes the risk of
 accidentally pushing changes to the official github branch.
 
 Alternatively, if you already have a working git repo (containing your
-branch and your own changes), you can add a link to the official branch:
-
-`git remote add upstream git@github.com:biopython/biopython.git`
-
-In this case, you only have a link to the official branch and no code.
-You can fetch the actual code by
-
-`git fetch upstream`
+branch and your own changes), you can add a link to the official branch
+with the git "remote command"... but we'll not cover that here.
 
 In the following sections, we assume you have followed the recommended
 scenario and you have the following entries in your .git/config file:
