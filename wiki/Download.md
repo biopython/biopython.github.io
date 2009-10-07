@@ -207,7 +207,7 @@ Old Releases
 Recent releases of Biopython require NumPy (and not Numeric):
 
 -   [biopython-1.51.tar.gz](http://biopython.org/DIST/biopython-1.51.tar.gz)
-    5,428 Kb -- Source Tarball
+    5,428 Kb -- Source Tarball (August 17, 2009)
 -   [biopython-1.51.zip](http://biopython.org/DIST/biopython-1.51.zip)
     5,922 Kb -- Source Zip File
 -   [biopython-1.51.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.51.win32-py2.4.exe)
@@ -220,7 +220,7 @@ Recent releases of Biopython require NumPy (and not Numeric):
 <!-- -->
 
 -   [biopython-1.51b.tar.gz](http://biopython.org/DIST/biopython-1.51b.tar.gz)
-    5,172 Kb -- Source Tarball
+    5,172 Kb -- Source Tarball (June 23, 2009)
 -   [biopython-1.51b.zip](http://biopython.org/DIST/biopython-1.51b.zip)
     5,605 Kb -- Source Zip File
 -   [biopython-1.51b.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.51b.win32-py2.4.exe)
@@ -233,7 +233,7 @@ Recent releases of Biopython require NumPy (and not Numeric):
 <!-- -->
 
 -   [biopython-1.50.tar.gz](http://biopython.org/DIST/biopython-1.50.tar.gz)
-    4,550 Kb -- Source Tarball
+    4,550 Kb -- Source Tarball (April 20, 2009)
 -   [biopython-1.50.zip](http://biopython.org/DIST/biopython-1.50.zip)
     4,988 Kb -- Source Zip File
 -   [biopython-1.50.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.50.win32-py2.3.exe)
@@ -248,7 +248,7 @@ Recent releases of Biopython require NumPy (and not Numeric):
 <!-- -->
 
 -   [biopython-1.50b.tar.gz](http://biopython.org/DIST/biopython-1.50b.tar.gz)
-    4,788 Kb
+    4,788 Kb (April 3, 2009)
 -   [biopython-1.50b.zip](http://biopython.org/DIST/biopython-1.50b.zip)
     5,250 Kb
 -   [biopython-1.50b.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.50b.win32-py2.3.exe)
@@ -263,7 +263,7 @@ Recent releases of Biopython require NumPy (and not Numeric):
 <!-- -->
 
 -   [biopython-1.49.tar.gz](http://biopython.org/DIST/biopython-1.49.tar.gz)
-    4,052 Kb
+    4,052 Kb (November 21, 2008)
 -   [biopython-1.49.zip](http://biopython.org/DIST/biopython-1.49.zip)
     4,498 Kb
 -   [biopython-1.49.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.49.win32-py2.3.exe)
@@ -276,7 +276,7 @@ Recent releases of Biopython require NumPy (and not Numeric):
 <!-- -->
 
 -   [biopython-1.49b.tar.gz](http://biopython.org/DIST/biopython-1.49b.tar.gz)
-    4,331 Kb
+    4,331 Kb (November 7, 2008)
 -   [biopython-1.49b.zip](http://biopython.org/DIST/biopython-1.49b.zip)
     4,780 Kb
 -   [biopython-1.49b.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.49b.win32-py2.3.exe)
@@ -300,7 +300,7 @@ in some of the parsers. There were a few niggles with mxTextTools 3.0,
 so ideally install the older mxTextTools 2.0.
 
 -   [biopython-1.48.tar.gz](http://biopython.org/DIST/biopython-1.48.tar.gz)
-    4,051 Kb
+    4,051 Kb (September 8, 2008)
 -   [biopython-1.48.zip](http://biopython.org/DIST/biopython-1.48.zip)
     4,542 Kb
 -   [biopython-1.48.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.48.win32-py2.3.exe)
@@ -310,7 +310,7 @@ so ideally install the older mxTextTools 2.0.
 -   [biopython-1.48.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.48.win32-py2.5.exe)
     1,254 Kb
 -   [biopython-1.47.tar.gz](http://biopython.org/DIST/biopython-1.47.tar.gz)
-    4,018 Kb
+    4,018 Kb (July 5, 2008)
 -   [biopython-1.47.zip](http://biopython.org/DIST/biopython-1.47.zip)
     4,528 Kb
 -   [biopython-1.47.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.47.win32-py2.3.exe)
@@ -320,7 +320,7 @@ so ideally install the older mxTextTools 2.0.
 -   [biopython-1.47.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.47.win32-py2.5.exe)
     1,236 Kb
 -   [biopython-1.46.tar.gz](http://biopython.org/DIST/biopython-1.46.tar.gz)
-    3,926 Kb
+    3,926 Kb (June 29, 2008)
 -   [biopython-1.46.zip](http://biopython.org/DIST/biopython-1.46.zip)
     4,426 Kb
 -   [biopython-1.46.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.46.win32-py2.3.exe)
@@ -330,7 +330,7 @@ so ideally install the older mxTextTools 2.0.
 -   [biopython-1.46.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.46.win32-py2.5.exe)
     1,235 Kb
 -   [biopython-1.45.tar.gz](http://biopython.org/DIST/biopython-1.45.tar.gz)
-    3,886 Kb
+    3,886 Kb (March 22, 2008)
 -   [biopython-1.45.zip](http://biopython.org/DIST/biopython-1.45.zip)
     4,395 Kb
 -   [biopython-1.45.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.45.win32-py2.3.exe)
@@ -340,7 +340,7 @@ so ideally install the older mxTextTools 2.0.
 -   [biopython-1.45.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.45.win32-py2.5.exe)
     1,142 Kb
 -   [biopython-1.44.tar.gz](http://biopython.org/DIST/biopython-1.44.tar.gz)
-    3,750 Kb
+    3,750 Kb (October 28, 2007)
 -   [biopython-1.44.zip](http://biopython.org/DIST/biopython-1.44.zip)
     4,243 Kb
 -   [biopython-1.44.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.44.win32-py2.3.exe)
@@ -350,7 +350,7 @@ so ideally install the older mxTextTools 2.0.
 -   [biopython-1.44.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.44.win32-py2.5.exe)
     1,116 Kb
 -   [biopython-1.43.tar.gz](http://biopython.org/DIST/biopython-1.43.tar.gz)
-    3,778 Kb
+    3,778 Kb (March 17, 2007)
 -   [biopython-1.43.zip](http://biopython.org/DIST/biopython-1.43.zip)
     4,271 Kb
 -   [biopython-1.43.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.43.win32-py2.3.exe)
@@ -360,7 +360,7 @@ so ideally install the older mxTextTools 2.0.
 -   [biopython-1.43.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.43.win32-py2.5.exe)
     1,109 Kb
 -   [biopython-1.42.tar.gz](http://biopython.org/DIST/biopython-1.42.tar.gz)
-    3,841 Kb
+    3,841 Kb (July 16, 2006)
 -   [biopython-1.42.zip](http://biopython.org/DIST/biopython-1.42.zip)
     4,399 Kb
 -   [biopython-1.42.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.42.win32-py2.3.exe)
@@ -370,7 +370,7 @@ so ideally install the older mxTextTools 2.0.
 -   [biopython-1.42.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.42.win32-py2.5.exe)
     1,075 Kb
 -   [biopython-1.41.tar.gz](http://biopython.org/DIST/biopython-1.41.tar.gz)
-    3,719 Kb
+    3,719 Kb (October 28, 2005)
 -   [biopython-1.41.zip](http://biopython.org/DIST/biopython-1.41.zip)
     4,241 Kb
 -   [biopython-1.41.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.41.win32-py2.3.exe)
@@ -378,7 +378,7 @@ so ideally install the older mxTextTools 2.0.
 -   [biopython-1.41.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.41.win32-py2.4.exe)
     1,042 Kb
 -   [biopython-1.40b.tar.gz](http://biopython.org/DIST/biopython-1.40b.tar.gz)
-    3,437 Kb
+    3,437 Kb (February 18, 2005)
 -   [biopython-1.40b.zip](http://biopython.org/DIST/biopython-1.40b.zip)
     3,267 Kb
 -   [biopython-1.40b.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.40b.win32-py2.3.exe)
@@ -386,9 +386,9 @@ so ideally install the older mxTextTools 2.0.
 -   [biopython-1.40b.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.40b.win32-py2.4.exe)
     1,023 Kb
 -   [biopython-1.30.tar.gz](http://biopython.org/DIST/biopython-1.30.tar.gz)
-    3,186 Kb
+    3,186 Kb (May 14, 2004)
 -   [biopython-1.24.tar.gz](http://biopython.org/DIST/biopython-1.24.tar.gz)
-    3,081 Kb
+    3,081 Kb (February 16, 2004)
 -   [biopython-1.24.zip](http://biopython.org/DIST/biopython-1.24.zip)
     3,623 Kb
 -   [biopython-1.24.win32-py2.2.exe](http://biopython.org/DIST/biopython-1.24.win32-py2.2.exe)
@@ -396,7 +396,7 @@ so ideally install the older mxTextTools 2.0.
 -   [biopython-1.24.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.24.win32-py2.3.exe)
     894 Kb
 -   [biopython-1.23.tar.gz](http://biopython.org/DIST/biopython-1.23.tar.gz)
-    2,241 Kb
+    2,241 Kb (October 18, 2003)
 -   [biopython-1.23.zip](http://biopython.org/DIST/biopython-1.23.zip)
     2,719 Kb
 -   [biopython-1.23.win32-py2.2.exe](http://biopython.org/DIST/biopython-1.23.win32-py2.2.exe)
@@ -404,7 +404,7 @@ so ideally install the older mxTextTools 2.0.
 -   [biopython-1.23.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.23.win32-py2.3.exe)
     842 Kb
 -   [biopython-1.22.tar.gz](http://biopython.org/DIST/biopython-1.22.tar.gz)
-    2,214 Kb
+    2,214 Kb (October 9, 2003)
 -   [biopython-1.22.zip](http://biopython.org/DIST/biopython-1.22.zip)
     2,691 Kb
 -   [biopython-1.21.tar.gz](http://biopython.org/DIST/biopython-1.21.tar.gz)
@@ -416,17 +416,17 @@ so ideally install the older mxTextTools 2.0.
 -   [biopython-1.21.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.21.win32-py2.3.exe)
     832 Kb
 -   [biopython-1.20.tar.gz](http://biopython.org/DIST/biopython-1.20.tar.gz)
-    2,101 Kb
+    2,101 Kb (July 28, 2003)
 -   [biopython-1.20.zip](http://biopython.org/DIST/biopython-1.20.zip)
     2,602 Kb
 -   [biopython-1.10.tar.gz](http://biopython.org/DIST/biopython-1.10.tar.gz)
-    1,811 Kb
+    1,811 Kb (December 17, 2002)
 -   [biopython-1.10.zip](http://biopython.org/DIST/biopython-1.10.zip)
     2,300 Kb
 -   [biopython-1.10.win32-py2.2.exe](http://biopython.org/DIST/biopython-1.10.win32-py2.2.exe)
     1,199 Kb
 -   [biopython-1.00a4.tar.gz](http://biopython.org/DIST/biopython-1.00a4.tar.gz)
-    1,739Kb
+    1,739Kb (December 18, 2001)
 -   [biopython-1.00a4.zip](http://biopython.org/DIST/biopython-1.00a4.zip)
     2,121Kb
 -   [biopython-1.00a4.win32-py2.0.exe](http://biopython.org/DIST/biopython-1.00a4.win32-py2.0.exe)
@@ -438,7 +438,7 @@ so ideally install the older mxTextTools 2.0.
 -   [MacBiopython-1.00a4.sit](http://biopython.org/DIST/MacBiopython-1.00a4.sit)
     2.2Mb
 -   [biopython-1.00a3.tar.gz](http://biopython.org/DIST/biopython-1.00a3.tar.gz)
-    1,816Kb
+    1,816Kb (September 3, 2001)
 -   [biopython-1.00a3.zip](http://biopython.org/DIST/biopython-1.00a3.zip)
     2,165Kb
 -   [biopython-1.00a3.win32-py2.0.exe](http://biopython.org/DIST/biopython-1.00a3.win32-py2.0.exe)

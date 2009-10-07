@@ -121,39 +121,39 @@ Due to the great architecture of the ports system, this simple commands will aut
 
 Recent releases of Biopython require NumPy (and not Numeric):
 
-* [http://biopython.org/DIST/biopython-1.51.tar.gz biopython-1.51.tar.gz] 5,428 Kb -- Source Tarball
+* [http://biopython.org/DIST/biopython-1.51.tar.gz biopython-1.51.tar.gz] 5,428 Kb -- Source Tarball (August 17, 2009)
 * [http://biopython.org/DIST/biopython-1.51.zip biopython-1.51.zip] 5,922 Kb -- Source Zip File
 * [http://biopython.org/DIST/biopython-1.51.win32-py2.4.exe biopython-1.51.win32-py2.4.exe] 1,166 Kb -- Windows Installer for Python 2.4 and NumPy 1.1
 * [http://biopython.org/DIST/biopython-1.51.win32-py2.5.exe biopython-1.51.win32-py2.5.exe] 1,167 Kb -- Windows Installer for Python 2.5 and NumPy 1.1
 * [http://biopython.org/DIST/biopython-1.51.win32-py2.6.exe biopython-1.51.win32-py2.6.exe] 1,206 Kb -- Windows Installer for Python 2.6 and NumPy 1.3
 
-* [http://biopython.org/DIST/biopython-1.51b.tar.gz biopython-1.51b.tar.gz] 5,172 Kb -- Source Tarball
+* [http://biopython.org/DIST/biopython-1.51b.tar.gz biopython-1.51b.tar.gz] 5,172 Kb -- Source Tarball (June 23, 2009)
 * [http://biopython.org/DIST/biopython-1.51b.zip biopython-1.51b.zip] 5,605 Kb -- Source Zip File
 * [http://biopython.org/DIST/biopython-1.51b.win32-py2.4.exe biopython-1.51b.win32-py2.4.exe] 1,161 Kb -- Windows Installer for Python 2.4 and NumPy 1.1
 * [http://biopython.org/DIST/biopython-1.51b.win32-py2.5.exe biopython-1.51b.win32-py2.5.exe] 1,161 Kb -- Windows Installer for Python 2.5 and NumPy 1.1
 * [http://biopython.org/DIST/biopython-1.51b.win32-py2.6.exe biopython-1.51b.win32-py2.6.exe] 1,199 Kb -- Windows Installer for Python 2.6 and NumPy 1.3
 
-* [http://biopython.org/DIST/biopython-1.50.tar.gz biopython-1.50.tar.gz] 4,550 Kb -- Source Tarball
+* [http://biopython.org/DIST/biopython-1.50.tar.gz biopython-1.50.tar.gz] 4,550 Kb -- Source Tarball (April 20, 2009)
 * [http://biopython.org/DIST/biopython-1.50.zip biopython-1.50.zip] 4,988 Kb -- Source Zip File
 * [http://biopython.org/DIST/biopython-1.50.win32-py2.3.exe biopython-1.50.win32-py2.3.exe] 1,228 Kb -- Windows Installer for Python 2.3 and NumPy 1.1
 * [http://biopython.org/DIST/biopython-1.50.win32-py2.4.exe biopython-1.50.win32-py2.4.exe] 1,232 Kb -- Windows Installer for Python 2.4 and NumPy 1.1
 * [http://biopython.org/DIST/biopython-1.50.win32-py2.5.exe biopython-1.50.win32-py2.5.exe] 1,232 Kb -- Windows Installer for Python 2.5 and NumPy 1.1
 * [http://biopython.org/DIST/biopython-1.50.win32-py2.6.exe biopython-1.50.win32-py2.6.exe] 1,270 Kb -- Windows Installer for Python 2.6 and NumPy 1.3
 
-* [http://biopython.org/DIST/biopython-1.50b.tar.gz biopython-1.50b.tar.gz] 4,788 Kb
+* [http://biopython.org/DIST/biopython-1.50b.tar.gz biopython-1.50b.tar.gz] 4,788 Kb (April 3, 2009)
 * [http://biopython.org/DIST/biopython-1.50b.zip biopython-1.50b.zip] 5,250 Kb
 * [http://biopython.org/DIST/biopython-1.50b.win32-py2.3.exe biopython-1.50b.win32-py2.3.exe] 1,226 Kb -- Windows Installer for Python 2.3 and NumPy 1.1
 * [http://biopython.org/DIST/biopython-1.50b.win32-py2.4.exe biopython-1.50b.win32-py2.4.exe] 1,230 Kb -- Windows Installer for Python 2.4 and NumPy 1.1
 * [http://biopython.org/DIST/biopython-1.50b.win32-py2.5.exe biopython-1.50b.win32-py2.5.exe] 1,230 Kb -- Windows Installer for Python 2.5 and NumPy 1.1
 * [http://biopython.org/DIST/biopython-1.50b.win32-py2.6.exe biopython-1.50b.win32-py2.6.exe] 1,268 Kb -- Windows Installer for Python 2.6 and NumPy 1.3
 
-* [http://biopython.org/DIST/biopython-1.49.tar.gz biopython-1.49.tar.gz] 4,052 Kb
+* [http://biopython.org/DIST/biopython-1.49.tar.gz biopython-1.49.tar.gz] 4,052 Kb (November 21, 2008)
 * [http://biopython.org/DIST/biopython-1.49.zip biopython-1.49.zip] 4,498 Kb
 * [http://biopython.org/DIST/biopython-1.49.win32-py2.3.exe biopython-1.49.win32-py2.3.exe] 1,111 Kb -- Windows Installer for Python 2.3 and NumPy 1.1
 * [http://biopython.org/DIST/biopython-1.49.win32-py2.4.exe biopython-1.49.win32-py2.4.exe] 1,115 Kb -- Windows Installer for Python 2.4 and NumPy 1.1
 * [http://biopython.org/DIST/biopython-1.49.win32-py2.5.exe biopython-1.49.win32-py2.5.exe] 1,115 Kb -- Windows Installer for Python 2.5 and NumPy 1.1
 
-* [http://biopython.org/DIST/biopython-1.49b.tar.gz biopython-1.49b.tar.gz] 4,331 Kb
+* [http://biopython.org/DIST/biopython-1.49b.tar.gz biopython-1.49b.tar.gz] 4,331 Kb (November 7, 2008)
 * [http://biopython.org/DIST/biopython-1.49b.zip biopython-1.49b.zip] 4,780 Kb
 * [http://biopython.org/DIST/biopython-1.49b.win32-py2.3.exe biopython-1.49b.win32-py2.3.exe] 1,109 Kb -- Windows Installer for Python 2.3 and NumPy 1.1
 * [http://biopython.org/DIST/biopython-1.49b.win32-py2.4.exe biopython-1.49b.win32-py2.4.exe] 1,113 Kb -- Windows Installer for Python 2.4 and NumPy 1.1
@@ -163,76 +163,76 @@ Please note that Biopython 1.48 and older require the Numeric library, not its r
 
 Please note that Biopython 1.48 and older used [http://www.egenix.com/www2002/python/eGenix-mx-Extensions-v2.x.html/ mxTextTools 2.0] in some of the parsers.  There were a few niggles with mxTextTools 3.0, so ideally install the older mxTextTools 2.0.
 
-* [http://biopython.org/DIST/biopython-1.48.tar.gz biopython-1.48.tar.gz] 4,051 Kb
+* [http://biopython.org/DIST/biopython-1.48.tar.gz biopython-1.48.tar.gz] 4,051 Kb (September 8, 2008)
 * [http://biopython.org/DIST/biopython-1.48.zip biopython-1.48.zip] 4,542 Kb
 * [http://biopython.org/DIST/biopython-1.48.win32-py2.3.exe biopython-1.48.win32-py2.3.exe] 1,226 Kb
 * [http://biopython.org/DIST/biopython-1.48.win32-py2.4.exe biopython-1.48.win32-py2.4.exe] 1,254 Kb
 * [http://biopython.org/DIST/biopython-1.48.win32-py2.5.exe biopython-1.48.win32-py2.5.exe] 1,254 Kb
-* [http://biopython.org/DIST/biopython-1.47.tar.gz biopython-1.47.tar.gz] 4,018 Kb
+* [http://biopython.org/DIST/biopython-1.47.tar.gz biopython-1.47.tar.gz] 4,018 Kb (July 5, 2008)
 * [http://biopython.org/DIST/biopython-1.47.zip biopython-1.47.zip] 4,528 Kb
 * [http://biopython.org/DIST/biopython-1.47.win32-py2.3.exe biopython-1.47.win32-py2.3.exe] 1,207 Kb
 * [http://biopython.org/DIST/biopython-1.47.win32-py2.4.exe biopython-1.47.win32-py2.4.exe] 1,236 Kb
 * [http://biopython.org/DIST/biopython-1.47.win32-py2.5.exe biopython-1.47.win32-py2.5.exe] 1,236 Kb
-* [http://biopython.org/DIST/biopython-1.46.tar.gz biopython-1.46.tar.gz] 3,926 Kb
+* [http://biopython.org/DIST/biopython-1.46.tar.gz biopython-1.46.tar.gz] 3,926 Kb (June 29, 2008)
 * [http://biopython.org/DIST/biopython-1.46.zip biopython-1.46.zip] 4,426 Kb
 * [http://biopython.org/DIST/biopython-1.46.win32-py2.3.exe biopython-1.46.win32-py2.3.exe] 1,206 Kb
 * [http://biopython.org/DIST/biopython-1.46.win32-py2.4.exe biopython-1.46.win32-py2.4.exe] 1,235 Kb
 * [http://biopython.org/DIST/biopython-1.46.win32-py2.5.exe biopython-1.46.win32-py2.5.exe] 1,235 Kb
-* [http://biopython.org/DIST/biopython-1.45.tar.gz biopython-1.45.tar.gz] 3,886 Kb
+* [http://biopython.org/DIST/biopython-1.45.tar.gz biopython-1.45.tar.gz] 3,886 Kb (March 22, 2008)
 * [http://biopython.org/DIST/biopython-1.45.zip biopython-1.45.zip] 4,395 Kb
 * [http://biopython.org/DIST/biopython-1.45.win32-py2.3.exe biopython-1.45.win32-py2.3.exe] 1,113 Kb
 * [http://biopython.org/DIST/biopython-1.45.win32-py2.4.exe biopython-1.45.win32-py2.4.exe] 1,141 Kb
 * [http://biopython.org/DIST/biopython-1.45.win32-py2.5.exe biopython-1.45.win32-py2.5.exe] 1,142 Kb
-* [http://biopython.org/DIST/biopython-1.44.tar.gz biopython-1.44.tar.gz] 3,750 Kb
+* [http://biopython.org/DIST/biopython-1.44.tar.gz biopython-1.44.tar.gz] 3,750 Kb (October 28, 2007)
 * [http://biopython.org/DIST/biopython-1.44.zip biopython-1.44.zip] 4,243 Kb
 * [http://biopython.org/DIST/biopython-1.44.win32-py2.3.exe biopython-1.44.win32-py2.3.exe] 1,091 Kb
 * [http://biopython.org/DIST/biopython-1.44.win32-py2.4.exe biopython-1.44.win32-py2.4.exe] 1,116 Kb
 * [http://biopython.org/DIST/biopython-1.44.win32-py2.5.exe biopython-1.44.win32-py2.5.exe] 1,116 Kb
-* [http://biopython.org/DIST/biopython-1.43.tar.gz biopython-1.43.tar.gz] 3,778 Kb
+* [http://biopython.org/DIST/biopython-1.43.tar.gz biopython-1.43.tar.gz] 3,778 Kb (March 17, 2007)
 * [http://biopython.org/DIST/biopython-1.43.zip biopython-1.43.zip] 4,271 Kb
 * [http://biopython.org/DIST/biopython-1.43.win32-py2.3.exe biopython-1.43.win32-py2.3.exe] 1,104 Kb
 * [http://biopython.org/DIST/biopython-1.43.win32-py2.4.exe biopython-1.43.win32-py2.4.exe] 1,108 Kb
 * [http://biopython.org/DIST/biopython-1.43.win32-py2.5.exe biopython-1.43.win32-py2.5.exe] 1,109 Kb
-* [http://biopython.org/DIST/biopython-1.42.tar.gz biopython-1.42.tar.gz] 3,841 Kb
+* [http://biopython.org/DIST/biopython-1.42.tar.gz biopython-1.42.tar.gz] 3,841 Kb (July 16, 2006)
 * [http://biopython.org/DIST/biopython-1.42.zip biopython-1.42.zip] 4,399 Kb
 * [http://biopython.org/DIST/biopython-1.42.win32-py2.3.exe biopython-1.42.win32-py2.3.exe] 1,070 Kb
 * [http://biopython.org/DIST/biopython-1.42.win32-py2.4.exe biopython-1.42.win32-py2.4.exe] 1,074 Kb
 * [http://biopython.org/DIST/biopython-1.42.win32-py2.5.exe biopython-1.42.win32-py2.5.exe] 1,075 Kb
-* [http://biopython.org/DIST/biopython-1.41.tar.gz biopython-1.41.tar.gz] 3,719 Kb
+* [http://biopython.org/DIST/biopython-1.41.tar.gz biopython-1.41.tar.gz] 3,719 Kb (October 28, 2005)
 * [http://biopython.org/DIST/biopython-1.41.zip biopython-1.41.zip] 4,241 Kb
 * [http://biopython.org/DIST/biopython-1.41.win32-py2.3.exe biopython-1.41.win32-py2.3.exe] 1,038 Kb
 * [http://biopython.org/DIST/biopython-1.41.win32-py2.4.exe biopython-1.41.win32-py2.4.exe] 1,042 Kb
-* [http://biopython.org/DIST/biopython-1.40b.tar.gz biopython-1.40b.tar.gz] 3,437 Kb
+* [http://biopython.org/DIST/biopython-1.40b.tar.gz biopython-1.40b.tar.gz] 3,437 Kb (February 18, 2005)
 * [http://biopython.org/DIST/biopython-1.40b.zip biopython-1.40b.zip] 3,267 Kb
 * [http://biopython.org/DIST/biopython-1.40b.win32-py2.3.exe biopython-1.40b.win32-py2.3.exe] 1,019 Kb
 * [http://biopython.org/DIST/biopython-1.40b.win32-py2.4.exe biopython-1.40b.win32-py2.4.exe] 1,023 Kb
-* [http://biopython.org/DIST/biopython-1.30.tar.gz biopython-1.30.tar.gz] 3,186 Kb
-* [http://biopython.org/DIST/biopython-1.24.tar.gz biopython-1.24.tar.gz] 3,081 Kb
+* [http://biopython.org/DIST/biopython-1.30.tar.gz biopython-1.30.tar.gz] 3,186 Kb (May 14, 2004)
+* [http://biopython.org/DIST/biopython-1.24.tar.gz biopython-1.24.tar.gz] 3,081 Kb (February 16, 2004)
 * [http://biopython.org/DIST/biopython-1.24.zip biopython-1.24.zip] 3,623 Kb
 * [http://biopython.org/DIST/biopython-1.24.win32-py2.2.exe biopython-1.24.win32-py2.2.exe] 892 Kb
 * [http://biopython.org/DIST/biopython-1.24.win32-py2.3.exe biopython-1.24.win32-py2.3.exe] 894 Kb
-* [http://biopython.org/DIST/biopython-1.23.tar.gz biopython-1.23.tar.gz] 2,241 Kb
+* [http://biopython.org/DIST/biopython-1.23.tar.gz biopython-1.23.tar.gz] 2,241 Kb (October 18, 2003)
 * [http://biopython.org/DIST/biopython-1.23.zip biopython-1.23.zip] 2,719 Kb
 * [http://biopython.org/DIST/biopython-1.23.win32-py2.2.exe biopython-1.23.win32-py2.2.exe] 833 Kb
 * [http://biopython.org/DIST/biopython-1.23.win32-py2.3.exe biopython-1.23.win32-py2.3.exe] 842 Kb
-* [http://biopython.org/DIST/biopython-1.22.tar.gz biopython-1.22.tar.gz] 2,214 Kb
+* [http://biopython.org/DIST/biopython-1.22.tar.gz biopython-1.22.tar.gz] 2,214 Kb (October 9, 2003)
 * [http://biopython.org/DIST/biopython-1.22.zip biopython-1.22.zip] 2,691 Kb
 * [http://biopython.org/DIST/biopython-1.21.tar.gz biopython-1.21.tar.gz] 2,214 Kb
 * [http://biopython.org/DIST/biopython-1.21.zip biopython-1.21.zip] 2,897 Kb
 * [http://biopython.org/DIST/biopython-1.21.win32-py2.2.exe biopython-1.21.win32-py2.2.exe] 770 Kb
 * [http://biopython.org/DIST/biopython-1.21.win32-py2.3.exe biopython-1.21.win32-py2.3.exe] 832 Kb
-* [http://biopython.org/DIST/biopython-1.20.tar.gz biopython-1.20.tar.gz] 2,101 Kb
+* [http://biopython.org/DIST/biopython-1.20.tar.gz biopython-1.20.tar.gz] 2,101 Kb (July 28, 2003)
 * [http://biopython.org/DIST/biopython-1.20.zip biopython-1.20.zip] 2,602 Kb
-* [http://biopython.org/DIST/biopython-1.10.tar.gz biopython-1.10.tar.gz] 1,811 Kb
+* [http://biopython.org/DIST/biopython-1.10.tar.gz biopython-1.10.tar.gz] 1,811 Kb (December 17, 2002)
 * [http://biopython.org/DIST/biopython-1.10.zip biopython-1.10.zip] 2,300 Kb
 * [http://biopython.org/DIST/biopython-1.10.win32-py2.2.exe biopython-1.10.win32-py2.2.exe] 1,199 Kb
-* [http://biopython.org/DIST/biopython-1.00a4.tar.gz biopython-1.00a4.tar.gz] 1,739Kb
+* [http://biopython.org/DIST/biopython-1.00a4.tar.gz biopython-1.00a4.tar.gz] 1,739Kb (December 18, 2001)
 * [http://biopython.org/DIST/biopython-1.00a4.zip biopython-1.00a4.zip] 2,121Kb
 * [http://biopython.org/DIST/biopython-1.00a4.win32-py2.0.exe biopython-1.00a4.win32-py2.0.exe] 835Kb
 * [http://biopython.org/DIST/biopython-1.00a4.win32-py2.1.exe biopython-1.00a4.win32-py2.1.exe] 837Kb
 * [http://biopython.org/DIST/biopython-1.00a4.win32-py2.2.exe biopython-1.00a4.win32-py2.2.exe] 838Kb
 * [http://biopython.org/DIST/MacBiopython-1.00a4.sit MacBiopython-1.00a4.sit] 2.2Mb
-* [http://biopython.org/DIST/biopython-1.00a3.tar.gz biopython-1.00a3.tar.gz] 1,816Kb
+* [http://biopython.org/DIST/biopython-1.00a3.tar.gz biopython-1.00a3.tar.gz] 1,816Kb (September 3, 2001)
 * [http://biopython.org/DIST/biopython-1.00a3.zip biopython-1.00a3.zip] 2,165Kb
 * [http://biopython.org/DIST/biopython-1.00a3.win32-py2.0.exe biopython-1.00a3.win32-py2.0.exe] 583Kb
 * [http://biopython.org/DIST/biopython-1.00a3.win32-py2.1.exe biopython-1.00a3.win32-py2.1.exe] 585Kb
