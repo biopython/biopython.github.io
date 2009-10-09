@@ -259,18 +259,21 @@ input_handle = open("cor6_6.gb", "rU")
 output_handle = open("cor6_6.fasta", "w")
 
 sequences = SeqIO.parse(input_handle, "genbank")
-SeqIO.write(sequences, output_handle, "fasta")
+count = SeqIO.write(sequences, output_handle, "fasta")
 
 output_handle.close()
 input_handle.close()
+
+print "Converted %i records" % count
 ```
 
-Or more concisely, without explicitly closing the handles, just:
+Or more concisely using the **Bio.SeqIO.convert()** function (in
+Biopython 1.52 or later), just:
 
 ``` python
 from Bio import SeqIO
-SeqIO.write(SeqIO.parse(open("cor6_6.gb", "rU"), "genbank"), \
-            open("cor6_6.fasta", "w"), "fasta")
+count = SeqIO.convert("cor6_6.gb", "genbank", "cor6_6.fasta", "fasta")
+print "Converted %i records" % count
 ```
 
 In this example the GenBank file started like this:
