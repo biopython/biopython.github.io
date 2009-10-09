@@ -11,8 +11,7 @@ This example script uses [[SeqIO|Bio.SeqIO]] to read a Solexa/Illumina FASTQ fro
 <source lang=python>
 import sys
 from Bio import SeqIO
-records = SeqIO.parse(sys.stdin, "fastq-solexa")
-SeqIO.write(records, sys.stdout, "fastq")
+SeqIO.convert(sys.stdin, "fastq-solexa", sys.stdout, "fastq")
 </source>
 
 Pipes are a feature of the command line that enable the stdout output of a program or command to be directed to the stdin input of another command or program.  For example, the following shell command can be used to extract the compressed sequence and pipe it to the script (solexa2sanger_fq.py).

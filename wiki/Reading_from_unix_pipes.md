@@ -29,8 +29,7 @@ some background.
 ``` python
 import sys
 from Bio import SeqIO
-records = SeqIO.parse(sys.stdin, "fastq-solexa")
-SeqIO.write(records, sys.stdout, "fastq")
+SeqIO.convert(sys.stdin, "fastq-solexa", sys.stdout, "fastq")
 ```
 
 Pipes are a feature of the command line that enable the stdout output of
