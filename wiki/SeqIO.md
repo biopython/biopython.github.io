@@ -480,13 +480,14 @@ given file format, Biopython 1.48 added a new format method:
 
 ``` python
 from Bio import SeqIO
-for record in SeqIO.parse(open("ls_orchid.gbk"), "genbank") :
-    print record.format("fasta")
+mito_record = SeqIO.read(open("NC_006581.gbk"), "genbank")
+print mito_record.format("fasta")
 ```
 
 The format method will take any output format supported by **Bio.SeqIO**
 where the file format can be used for a single record (e.g. "fasta",
-"tab" or "genbank").
+"tab" or "genbank"). Note that we don't recommend you use this for file
+output - using **Bio.SeqIO.write()** is faster and more general.
 
 Help!
 -----
