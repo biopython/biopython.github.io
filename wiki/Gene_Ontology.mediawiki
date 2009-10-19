@@ -1,0 +1,1 @@
+This page describes Biopython's support for the [http://www.geneontology.org/ Gene Ontology (GO)]. Currently this is in the discussion stages. As we implement more support, this page will evolve into documentation for using Biopython packages to work with GO and GO annotations.
