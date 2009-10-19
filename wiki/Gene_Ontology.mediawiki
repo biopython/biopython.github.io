@@ -20,7 +20,7 @@ GO is best [http://www.geneontology.org/GO.ontology.structure.shtml#go-as-a-grap
 
 === Sources of Code/Inspiration ===
 
-==== Bioperl ====
+==== BioPerl ====
 
 [http://bioperl.org/ BioPerl] has [http://doc.bioperl.org/bioperl-live/Bio/Ontology/toc.html a package providing GO support]. It is not obvious yet what each component does and it seems quite heavily engineered. Beginning GO support for Biopython will probably not reach this level of sophistication but we can borrow from the ideas of the BioPerl library.
 
