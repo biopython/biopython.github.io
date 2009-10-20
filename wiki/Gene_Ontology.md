@@ -97,18 +97,22 @@ annotation. The format is detailed at
 ### Data Structure
 
 We could use some sort of standard Biopython structure to store
-annotations in. We could use \`SeqRecord\` but this would be awkward,
+annotations in. We could use `SeqRecord` but this would be awkward,
 because it is intended to be used with a sequence. Note, however, that
-\`SeqRecord\` does contain an \`annotations\` attribute, which would be
+`SeqRecord` does contain an `annotations` attribute, which would be
 where we would like to place these GO annotations. (It's also important
-to keep in mind each gene may have multiple annotations.)
-\[\[User%3APeter Peter Cock\] points out that the QUAL parser uses a
-class called \`UnknownSeq\` since it only contains information on the
+to keep in mind each gene may have multiple annotations.) [Peter
+Cock](User%3APeter "wikilink") points out that the QUAL parser uses a
+class called `UnknownSeq` since it only contains information on the
 sequence length. We should take a look at this.
 
-One possibility is to create an \`Annotation\` class as a fully
-supported Biopython class. More input from other Biopython developers
-would help here.
+One possibility is to create an `Annotation` class as a fully supported
+Biopython class. More input from other Biopython developers would help
+here.
+
+As far as I can tell, this data structure really doesn't have to be
+anything more than a data store, with some `__repr__()`
+--[Gotgenes](User%3AGotgenes "wikilink") 05:05, 20 October 2009 (UTC)
 
 Implementation
 ==============
