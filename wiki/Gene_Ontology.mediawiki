@@ -30,7 +30,17 @@ GO is best [http://www.geneontology.org/GO.ontology.structure.shtml#go-as-a-grap
 
 == Design of GO Annotation Support ==
 
-TODO.
+GO annotations come in the form of GOA files. These are rather simple tab-delimited flat files that contain gene identifiers, GO term IDs, and more. The idea of providing support for GOA files is to provide a parser that renders the file into Python data structures, and preferably as instances of some standard Biopython.
+
+=== Parser ===
+
+The GOA files are tab-delimited and quite simple, with one line per annotation. The format is detailed at http://www.geneontology.org/GO.format.annotation.shtml.
+
+=== Data Structure ===
+
+We could use some sort of standard Biopython structure to store annotations in. We could use `SeqRecord` but this would be awkward, because it is intended to be used with a sequence. Note, however, that `SeqRecord` does contain an `annotations` attribute, which would be where we would like to place these GO annotations. (It's also important to keep in mind each gene may have multiple annotations.)  [[User%3APeter Peter Cock] points out that the QUAL parser uses a class called `UnknownSeq` since it only contains information on the sequence length. We should take a look at this.
+
+One possibility is to create an `Annotation` class as a fully supported Biopython class. More input from other Biopython developers would help here.
 
 = Implementation =
 
