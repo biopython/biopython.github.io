@@ -4,43 +4,50 @@ permalink: wiki/SourceCode
 layout: wiki
 ---
 
+### Introduction
+
 The source code from Biopython is freely available for your use and
-contribution. The core developers maintain a stable trunk under revision
-control from which we will roll releases as new functionality is
-integrated and bugs are fixed.
+contribution under our [liberal
+license](http://www.biopython.org/DIST/LICENSE).
 
-### About git
-
-The Biopython source code is kept under a distributed version control
-system which allows multiple users from around the world to work on the
-same code base at the same time. We currently use
+The [Biopython source code](http://github.com/biopython/biopython) is
+kept under a distributed version control system which allows multiple
+users from around the world to work on the same code base at the same
+time. We currently use
 [git](http://en.wikipedia.org/wiki/Git_%28software%29) (developed by
 Linus Torvalds for Linux kernel development) hosted on
 [GitHub](http://github.com).
 
-An hourly updated CVS checkout of Biopython was available at
-<http://biopython.open-bio.org/SRC/biopython> and we intend to have this
-updated from git shortly. In the meantime, use the download link on our
-github page (see below).
+Our core developers maintain a stable trunk from which we will roll
+releases as new functionality is integrated and bugs are fixed.
+
+### Viewing the source code
+
+You can [browse our latest source code on
+github](http://github.com/biopython/biopython).
+
+### Track changes
 
 You can [track changes](Tracking_commits "wikilink") via
 [RSS](wp:RSS_(file_format) "wikilink").
 
-### Viewing git sources
+### Downloading the latest source
 
-Our current development git sources are available for viewing via
-[GitHub](http://github.com/):
+You can download the latest source code by clicking the Download link
+near the top of the [Biopython GitHub
+page](http://github.com/biopython/biopython) (this will offer you a [tar
+ball](http://github.com/biopython/biopython/tarball/master) or
+[zip](http://github.com/biopython/biopython/zipball/master) file).
 
-[Biopython GitHub Home](http://github.com/biopython/biopython)
-
-This is the main repository. You can download these sources by clicking
-the Download link near the top of the page.
+An hourly updated CVS checkout of Biopython was available at
+<http://biopython.open-bio.org/SRC/biopython> and we do intend to have
+this updated from git shortly.
 
 ### Anonymous Access
 
 Getting a copy of the repository (called "cloning" in git terminology)
-is very simple using the git command line tool, you don't need a account
-or password:
+is very simple using the git command line tool, you don't need an
+account or password:
 
 `git clone `[`git://github.com/biopython/biopython.git`](git://github.com/biopython/biopython.git)
 
