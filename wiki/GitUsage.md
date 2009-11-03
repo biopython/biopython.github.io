@@ -462,6 +462,32 @@ scenario and you have the following entries in your .git/config file:
 `[branch "master"]`  
 `       remote = origin`
 
+Committing a patch
+------------------
+
+If you are committing from a patch, it's also quite easy. First make
+sure you are up to date with official branch:
+
+`git checkout master `  
+`git pull origin`
+
+Then do your changes, i.e. apply the patch:
+
+`patch -r someones_cool_feature.diff`
+
+If you see that there were some files added to the tree, please add them
+to git:
+
+`git add Bio/Tests/some_new_file`
+
+Then make a commit (after adding files):
+
+`git commit -a -m "committed a patch from a kind contributor adding feature X"`
+
+After your changes are committed, you can push to github:
+
+`git push origin`
+
 Commiting from someone's git branch
 -----------------------------------
 
@@ -505,32 +531,6 @@ with this exemplary data):
 After you're done, you cane remove the reference to the remote repo:
 
 `git remote rm Bartek`
-
-Committing a patch
-------------------
-
-If you are committing from a patch, it's also quite easy. First make
-sure you are up to date with official branch:
-
-`git checkout master `  
-`git pull origin`
-
-Then do your changes, i.e. apply the patch:
-
-`patch -r someones_cool_feature.diff`
-
-If you see that there were some files added to the tree, please add them
-to git:
-
-`git add Bio/Tests/some_new_file`
-
-Then make a commit (after adding files):
-
-`git commit -a -m "committed a patch from a kind contributor adding feature X"`
-
-After your changes are committed, you can push to github:
-
-`git push origin`
 
 Tagging the official branch
 ---------------------------

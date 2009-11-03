@@ -270,6 +270,24 @@ In the following sections, we assume you have followed the recommended scenario 
  [branch "master"]
         remote = origin
 
+== Committing a patch ==
+ 
+If you are committing from a patch, it's also quite easy. First make sure you are up to date with official branch:
+ git checkout master 
+ git pull origin
+
+Then do your changes, i.e. apply the patch:
+ patch -r someones_cool_feature.diff
+
+If you see that there were some files added to the tree, please add them to git:
+ git add Bio/Tests/some_new_file
+
+Then make a commit (after adding files):
+ git commit -a -m "committed a patch from a kind contributor adding feature X"
+
+After your changes are committed, you can push to github:
+ git push origin
+
 == Commiting from someone's git branch ==
 
 Assume you want to merge changes someone has committed to a git repository which was at some point cloned from the official biopython branch. He needs to make his repository available to you (read-only) by giving you a URL. Typically this will be on github (but it may be any public git url). Let us assume that the url is (which happens to be my clone of biopython):
@@ -297,24 +315,6 @@ And (assuming you are OK with the results of git diff and  git status), you can 
 
 After you're done, you cane remove the reference to the remote repo:
  git remote rm Bartek
-
-== Committing a patch ==
- 
-If you are committing from a patch, it's also quite easy. First make sure you are up to date with official branch:
- git checkout master 
- git pull origin
-
-Then do your changes, i.e. apply the patch:
- patch -r someones_cool_feature.diff
-
-If you see that there were some files added to the tree, please add them to git:
- git add Bio/Tests/some_new_file
-
-Then make a commit (after adding files):
- git commit -a -m "committed a patch from a kind contributor adding feature X"
-
-After your changes are committed, you can push to github:
- git push origin
 
 == Tagging the official branch ==
 
