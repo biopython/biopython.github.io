@@ -20,6 +20,8 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 #GarbinoEtAl2009 pmid=19318539
 #HoldenEtAl2009 pmid=19076238
 // Used [[SeqIO|Bio.SeqIO]], [[BioSQL]] and GenomeDiagram
+#JonesEtAl2009 pmid=19849787
+// Used Biopython for sequence manipulation
 #KorhonenEtAl2009 pmid=19773334
 // Includes a Python wrapper with examples using it with Biopthon
 #MilesEtAl2009 pmid=19640266

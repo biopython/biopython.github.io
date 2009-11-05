@@ -50,6 +50,10 @@ Publications from 2009
 // Used [Bio.SeqIO](SeqIO "wikilink"), [BioSQL](BioSQL "wikilink") and
 GenomeDiagram
 
+1.  JonesEtAl2009 pmid=19849787
+
+// Used Biopython for sequence manipulation
+
 1.  KorhonenEtAl2009 pmid=19773334
 
 // Includes a Python wrapper with examples using it with Biopthon
