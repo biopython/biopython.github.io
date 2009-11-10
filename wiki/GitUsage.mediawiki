@@ -313,7 +313,7 @@ And then you can do the actual merge:
 And (assuming you are OK with the results of git diff and  git status), you can push to the public repository on github (please don't try that with this exemplary data):
  git push origin
 
-After you're done, you cane remove the reference to the remote repo:
+After you're done, you can remove the reference to the remote repo:
  git remote rm Bartek
 
 == Tagging the official branch ==

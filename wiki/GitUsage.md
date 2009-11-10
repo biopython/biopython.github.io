@@ -528,7 +528,7 @@ with this exemplary data):
 
 `git push origin`
 
-After you're done, you cane remove the reference to the remote repo:
+After you're done, you can remove the reference to the remote repo:
 
 `git remote rm Bartek`
 
