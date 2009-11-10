@@ -19,8 +19,9 @@ Relevance
 =========
 
 If you just want to grab the latest (not yet officially released)
-Biopython from our repository, see out \[git|source code page\]. This
-page is about actually using git for tracking changes.
+Biopython from our repository, see out [source code
+page](SourceCode "wikilink"). This page is about actually using git for
+tracking changes.
 
 If you have found a problem with Biopython, and think you know how to
 fix it, then we suggest following the simple route of [filing a

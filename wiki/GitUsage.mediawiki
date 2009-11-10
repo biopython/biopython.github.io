@@ -6,7 +6,7 @@ This document is meant as an outline of the way Biopython is developed. It shoul
 
 = Relevance =
 
-If you just want to grab the latest (not yet officially released) Biopython from our repository, see out [git|source code page]. This page is about actually using git for tracking changes.
+If you just want to grab the latest (not yet officially released) Biopython from our repository, see out [[SourceCode|source code page]]. This page is about actually using git for tracking changes.
 
 If you have found a problem with Biopython, and think you know how to fix it, then we suggest following the simple route of [http://bugzilla.open-bio.org/ filing a bug] and describe your fix.  Ideally, you would upload a patch file showing the differences between the latest version of Biopython (from our repository) and your modified version.  Working with the command line tools ''diff'' and ''patch'' is a very useful skill to have, and is almost a precursor to working with a version control system.  
 
