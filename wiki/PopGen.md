@@ -9,16 +9,27 @@ tags:
 Population genetics in Biopython
 --------------------------------
 
-Code pertaining population genetics in Bipython can be found in the
-PopGen module. Most documentation can be found on the PopGen Chapter in
-the [Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
-([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)).
+Biopython makes available Population Genetics functionality in the
+Bio.PopGen module.
 
-Currently, most code available wraps existing functionality provided by
-external programs, namely
-[SimCoal2](http://cmpg.unibe.ch/software/simcoal2/) for coalescent
-simulation and [fdist](http://www.rubic.rdg.ac.uk/~mab/software.html)
-for Fst based selection detection.
+Currently 3 modules are available:
+
+1.  Access to Genepop methods (exact tests for Hardy–Weinberg
+    equilibrium, population differentiation, genotypic disequilibrium,
+    F-statistics, null allele frequencies, allele size-based statistics
+    for microsatellites and much more).
+2.  Coalescent simulation via
+    [SimCoal2](http://cmpg.unibe.ch/software/simcoal2/)
+3.  Selection detection via
+    [fdist2](http://www.rubic.rdg.ac.uk/~mab/software.html)
+
+Documentation on how to access Genepop using Bio.PopGen can be found
+[here](PopGen_Genepop "wikilink").
+
+Documentation for interacting with SimCoal2 and fdist2 can be found on
+the PopGen Chapter in the
+[Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
+([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)).
 
 Other software
 --------------
