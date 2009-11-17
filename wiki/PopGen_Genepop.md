@@ -4,10 +4,21 @@ permalink: wiki/PopGen_Genepop
 layout: wiki
 ---
 
+Introduction
+============
+
+The Genepop module allows to access Genepop functionality using a Python
+interface. This means that the vast majority of Genepop's methods (exact
+tests for Hardy–Weinberg equilibrium, population differentiation,
+genotypic disequilibrium, F-statistics, null allele frequencies, allele
+size-based statistics for microsatellites and much more) can now be
+accessed from Python. A parser to Genepop files is also available (and
+documented in the Tutorial).
+
 Two interfaces are supplied: A general, more complex and more efficient
 one (GenePopController) and a simplified, more easy to use, not complete
 and not so efficient version (EasyController). EasyController might not
-be able to handle very large files, by virtue of its interface, on the
+be able to handle very large files. by virtue of its interface. On the
 other hand it provides utility functions to compute some very simple
 statistics like allele counts, which are not directly available in the
 general interface.
@@ -18,16 +29,19 @@ even for experienced Python developers, EasyController can be convenient
 as long as the required functionality is exposed in EasyController and
 its performance is deemed acceptable.
 
-In order for the controllers to be used, Genepop has to be installed in
-the system, it can be downloaded from
-[here](http://kimura.univ-montp2.fr/~rousset/Genepop.htm).
-
 For details on the methods used for calculations, check the Genepop
 documentation, which provides pointers to all papers from where the
 calculations are derived.
 
 EasyController tutorial
 =======================
+
+Instalation
+-----------
+
+In order for the controllers to be used, Genepop has to be installed in
+the system, it can be downloaded from
+[here](http://kimura.univ-montp2.fr/~rousset/Genepop.htm).
 
 Before we start, lets test the installation (for this you need a genepop
 formated file):
