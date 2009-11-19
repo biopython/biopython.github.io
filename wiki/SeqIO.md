@@ -155,9 +155,9 @@ dictionary key by default, but you can specify any mapping you like with
 its optional argument, **key\_function**.
 
 For larger files, it isn't possible to hold everything in memory, so
-**Bio.SeqIO.to\_dict()** is not suitable. Biopython 1.52 will include an
-indexing function for this situation, but you might also consider
-[BioSQL](BioSQL "wikilink").
+**Bio.SeqIO.to\_dict()** is not suitable. Biopython 1.52 inwards
+includes the **Bio.SeqIO.index()** function for this situation, but you
+might also consider [BioSQL](BioSQL "wikilink").
 
 Finally the function **Bio.SeqIO.to\_alignment()** can be used to turn a
 SeqRecord iterator (or list) into an alignment object - provided all the

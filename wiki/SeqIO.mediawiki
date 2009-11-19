@@ -182,7 +182,7 @@ print record_dict["gi:12345678"] #use any record ID
 
 The function '''Bio.SeqIO.to_dict()''' will use the record ID as the dictionary key by default, but you can specify any mapping you like with its optional argument, '''key_function'''.
 
-For larger files, it isn't possible to hold everything in memory, so '''Bio.SeqIO.to_dict()''' is not suitable. Biopython 1.52 will include an indexing function for this situation, but you might also consider [[BioSQL]].
+For larger files, it isn't possible to hold everything in memory, so '''Bio.SeqIO.to_dict()''' is not suitable. Biopython 1.52 inwards includes the '''Bio.SeqIO.index()''' function for this situation, but you might also consider [[BioSQL]].
 
 Finally the function '''Bio.SeqIO.to_alignment()''' can be used to turn a SeqRecord iterator (or list) into an alignment object - provided all the sequences are the same length:
 
