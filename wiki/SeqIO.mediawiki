@@ -186,7 +186,7 @@ For larger files, it isn't possible to hold everything in memory, so '''Bio.SeqI
 
 <source lang=python>
 from Bio import SeqIO
-record_dict = SeqIO.index("example.fasta", "fasta"))
+record_dict = SeqIO.index("example.fasta", "fasta")
 print record_dict["gi:12345678"] #use any record ID
 </source>
 

@@ -161,7 +161,7 @@ might also consider [BioSQL](BioSQL "wikilink").
 
 ``` python
 from Bio import SeqIO
-record_dict = SeqIO.index("example.fasta", "fasta"))
+record_dict = SeqIO.index("example.fasta", "fasta")
 print record_dict["gi:12345678"] #use any record ID
 ```
 
