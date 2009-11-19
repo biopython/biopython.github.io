@@ -159,6 +159,12 @@ For larger files, it isn't possible to hold everything in memory, so
 includes the **Bio.SeqIO.index()** function for this situation, but you
 might also consider [BioSQL](BioSQL "wikilink").
 
+``` python
+from Bio import SeqIO
+record_dict = SeqIO.index("example.fasta", "fasta"))
+print record_dict["gi:12345678"] #use any record ID
+```
+
 Finally the function **Bio.SeqIO.to\_alignment()** can be used to turn a
 SeqRecord iterator (or list) into an alignment object - provided all the
 sequences are the same length:

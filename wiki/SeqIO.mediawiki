@@ -184,6 +184,12 @@ The function '''Bio.SeqIO.to_dict()''' will use the record ID as the dictionary 
 
 For larger files, it isn't possible to hold everything in memory, so '''Bio.SeqIO.to_dict()''' is not suitable. Biopython 1.52 inwards includes the '''Bio.SeqIO.index()''' function for this situation, but you might also consider [[BioSQL]].
 
+<source lang=python>
+from Bio import SeqIO
+record_dict = SeqIO.index("example.fasta", "fasta"))
+print record_dict["gi:12345678"] #use any record ID
+</source>
+
 Finally the function '''Bio.SeqIO.to_alignment()''' can be used to turn a SeqRecord iterator (or list) into an alignment object - provided all the sequences are the same length:
 
 <source lang=python>
