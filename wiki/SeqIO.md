@@ -165,23 +165,6 @@ record_dict = SeqIO.index("example.fasta", "fasta"))
 print record_dict["gi:12345678"] #use any record ID
 ```
 
-Finally the function **Bio.SeqIO.to\_alignment()** can be used to turn a
-SeqRecord iterator (or list) into an alignment object - provided all the
-sequences are the same length:
-
-``` python
-from Bio import SeqIO
-handle = open("opuntia.aln", "rU")
-alignment = SeqIO.to_alignment(SeqIO.parse(handle, "clustal"))
-handle.close()
-for column in range(alignment.get_alignment_length()) :
-    print  "%s column %i" % (alignment.get_column(column),column)
-```
-
-In the future it may be possible to do this directly via the Alignment
-object. See also the [Bio.AlignIO](AlignIO "wikilink") module for
-working directly with Alignment objects.
-
 Biopython 1.45 introduced another function, **Bio.SeqIO.read()**, which
 like **Bio.SeqIO.parse()** will expect a handle and format. It is for
 use when the handle contains one and only one record, which is returned
