@@ -18,7 +18,7 @@ You can [[Tracking_commits|track changes]] via [[wp:RSS (file format)|RSS]].
 
 You can download the latest source code by clicking the Download link near the top of the [http://github.com/biopython/biopython Biopython GitHub page] (this will offer you a [http://github.com/biopython/biopython/tarball/master tar ball] or [http://github.com/biopython/biopython/zipball/master zip] file).
 
-An hourly updated CVS checkout of Biopython was available at http://biopython.open-bio.org/SRC/biopython and we do intend to have this updated from git shortly.
+An hourly updated copy of the code is also available at http://biopython.open-bio.org/SRC/biopython (just a snapshot - no history etc).
 
 === Anonymous Access ===
 

@@ -39,9 +39,9 @@ page](http://github.com/biopython/biopython) (this will offer you a [tar
 ball](http://github.com/biopython/biopython/tarball/master) or
 [zip](http://github.com/biopython/biopython/zipball/master) file).
 
-An hourly updated CVS checkout of Biopython was available at
-<http://biopython.open-bio.org/SRC/biopython> and we do intend to have
-this updated from git shortly.
+An hourly updated copy of the code is also available at
+<http://biopython.open-bio.org/SRC/biopython> (just a snapshot - no
+history etc).
 
 ### Anonymous Access
 
