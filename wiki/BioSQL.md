@@ -154,7 +154,7 @@ Then, assuming you are logged-in as <your user name> and Postgres is
 running on the local machine, you should be able to do the following:
 
 `createdb biosqldb`  
-`psql bioseqdb < biosqldb-pg.sql`
+`psql biosqldb < biosqldb-pg.sql`
 
 Run *psql* and type enter *\\d <ENTER>* to see all the entities created.
 
