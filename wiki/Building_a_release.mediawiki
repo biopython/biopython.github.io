@@ -62,7 +62,7 @@ Running the tests simultaneously is risky, as two threads may both try and read/
     drevil:~tmp1/biopython> python setup.py sdist --formats=gztar,zip 
 
 14. untar the file somewhere else
-    drevil:~tmp2> tar -xzvf ../tmp1/biopython/dist/biopython-1.00a1.tar.gz
+    drevil:~tmp2> tar -xzvf ../tmp1/biopython/dist/biopython-1.53.tar.gz
 * Check to make sure it includes the HTML and PDF files under Doc
 
 15. make sure I can build and test it
@@ -70,8 +70,9 @@ Running the tests simultaneously is risky, as two threads may both try and read/
     drevil:~tmp2/biopython-1.00a1/> python setup.py test
     drevil:~tmp2/biopython-1.00a1/> python setup.py install --root . 
 
-16. add CVS tag
-    drevil:~biopython> cvs tag biopython-100a1 
+16. add git tag
+    drevil:~biopython> git tag biopython-153
+    drevil:~biopython> git push origin master --tags
 
 17. Update API documentation using Epydoc.
 * Go to the /usr/local/lib/python2.4/site-packages (or equivalent) directory. Running epydoc in your CVS tree works, but can miss some packages due to import errors.

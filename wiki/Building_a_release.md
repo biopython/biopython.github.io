@@ -88,7 +88,7 @@ work of course, as we haven't compiled it).
 
 14. untar the file somewhere else
 
-`   drevil:~tmp2> tar -xzvf ../tmp1/biopython/dist/biopython-1.00a1.tar.gz`
+`   drevil:~tmp2> tar -xzvf ../tmp1/biopython/dist/biopython-1.53.tar.gz`
 
 -   Check to make sure it includes the HTML and PDF files under Doc
 
@@ -98,9 +98,10 @@ work of course, as we haven't compiled it).
 `   drevil:~tmp2/biopython-1.00a1/> python setup.py test`  
 `   drevil:~tmp2/biopython-1.00a1/> python setup.py install --root . `
 
-16. add CVS tag
+16. add git tag
 
-`   drevil:~biopython> cvs tag biopython-100a1 `
+`   drevil:~biopython> git tag biopython-153`  
+`   drevil:~biopython> git push origin master --tags`
 
 17. Update API documentation using Epydoc.
 
