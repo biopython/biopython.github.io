@@ -120,7 +120,6 @@ made earlier). Build the installers first, if you do a
 build/test/install before hand you seem to get a bloated setup exe.
 Assuming you have setup your compilers etc appropriately just do this:
 
-`   C:\python23\python setup.py bdist_wininst`  
 `   C:\python24\python setup.py bdist_wininst`  
 `   C:\python25\python setup.py bdist_wininst`  
 `   C:\python26\python setup.py bdist_wininst`
