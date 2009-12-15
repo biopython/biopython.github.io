@@ -32,4 +32,4 @@ This wiki will help you download and install Biopython, and start using the libr
 *[[ GitUsage | Developing on Github ]]
 |}
 
-The latest release is [[Download|Biopython 1.52]], released on 22 September 2009.
+The latest release is [[Download|Biopython 1.53]], released on 15 December 2009.

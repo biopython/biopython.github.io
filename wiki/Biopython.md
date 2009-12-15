@@ -36,5 +36,5 @@ the libraries and tools.
                                                                                                                                                       -   [ Join the mailing lists](Mailing_lists "wikilink")                                                                              | -   [ What's being worked on](Active_projects "wikilink") 
                                                                                                                                                                                                                                                                                             -   [ Developing on Github ](GitUsage "wikilink")          |
 
-The latest release is [Biopython 1.52](Download "wikilink"), released on
-22 September 2009.
+The latest release is [Biopython 1.53](Download "wikilink"), released on
+15 December 2009.
