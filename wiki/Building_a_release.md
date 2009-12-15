@@ -115,10 +115,10 @@ work of course, as we haven't compiled it).
     biopython.org (aka portal.open-bio.org).
 
 18. On your windows machine, build the Windows installers (either from a
-clean CVS checkout, or the an unzipped copy of the source code bundle
-made earlier). Build the installers first, if you do a
-build/test/install before hand you seem to get a bloated setup exe.
-Assuming you have setup your compilers etc appropriately just do this:
+clean checkout, or the an unzipped copy of the source code bundle made
+earlier). Build the installers first, if you do a build/test/install
+before hand you seem to get a bloated setup exe. Assuming you have setup
+your compilers etc appropriately just do this:
 
 `   C:\python24\python setup.py bdist_wininst`  
 `   C:\python25\python setup.py bdist_wininst`  
