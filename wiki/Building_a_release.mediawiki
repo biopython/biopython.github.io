@@ -3,18 +3,18 @@ Build Biopython in 22 easy steps!!
 These instructions are for a Unix machine, with a Windows machine also needed to test and prepare the Windows installers.
 
 1. make sure I have the latest code
-    drevil:~biopython> cvs update -P -d 
+    drevil:~biopython> git pull origin master
 
 2. bump version numbers:
 * Biopython version - edit  Bio/__init__.py
 * Biopython Tutorial - update the date/version line in the Doc/Tutorial.tex file
-* Make sure to commit the modified files to CVS.
+* Make sure to commit the modified files to github.
 
 3. make sure the README file is still up to date
 
-4. add any important info to NEWS or DEPRECATED - you can get a log of recent CVS changes like this (adjust the date accordingly):
-    > cvs log -b -N -S -d'>2009-04-20'
-
+4. add any important info to NEWS or DEPRECATED - you can get a log of recent git changes like this (adjust the date accordingly):
+    git log --since="2009/08/30" --reverse --pretty="medium"
+    
 5. make sure CONTRIB still current
 
 6. make sure setup.py is still up to date
@@ -45,7 +45,8 @@ Ideally do this with a clean checkout on your Windows machine too.  Assuming you
 Running the tests simultaneously is risky, as two threads may both try and read/write to the same temp files.
 
 9. check out clean version somewhere else
-    drevil:~tmp1/> cvs -d :ext:jchang@pub.open-bio.org:/home/repository/biopython checkout biopython 
+    drevil:~tmp1/> git clone git://github.com/biopython/biopython.git
+    drevil:~tmp1/> cd biopython
 
 10. make documentation PDF, text and HTML files in Doc
     drevil:~biopython/Doc> make

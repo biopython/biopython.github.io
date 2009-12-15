@@ -11,21 +11,22 @@ needed to test and prepare the Windows installers.
 
 1. make sure I have the latest code
 
-`   drevil:~biopython> cvs update -P -d `
+`   drevil:~biopython> git pull origin master`
 
 2. bump version numbers:
 
 -   Biopython version - edit Bio/\_\_init\_\_.py
 -   Biopython Tutorial - update the date/version line in the
     Doc/Tutorial.tex file
--   Make sure to commit the modified files to CVS.
+-   Make sure to commit the modified files to github.
 
 3. make sure the README file is still up to date
 
 4. add any important info to NEWS or DEPRECATED - you can get a log of
-recent CVS changes like this (adjust the date accordingly):
+recent git changes like this (adjust the date accordingly):
 
-`   > cvs log -b -N -S -d'>2009-04-20'`
+`   git log --since="2009/08/30" --reverse --pretty="medium"`  
+`   `
 
 5. make sure CONTRIB still current
 
@@ -64,7 +65,8 @@ and read/write to the same temp files.
 
 9. check out clean version somewhere else
 
-`   drevil:~tmp1/> cvs -d :ext:jchang@pub.open-bio.org:/home/repository/biopython checkout biopython `
+`   drevil:~tmp1/> git clone `[`git://github.com/biopython/biopython.git`](git://github.com/biopython/biopython.git)  
+`   drevil:~tmp1/> cd biopython`
 
 10. make documentation PDF, text and HTML files in Doc
 
