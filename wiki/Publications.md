@@ -117,6 +117,10 @@ GenomeDiagram
 
 // Used Biopython to implement a pipeline with BioSQL
 
+1.  StivalaEtAl2009 pmid=19450287
+
+// PDB, SCOP and ASTRAL data
+
 1.  SunEtAl2009 Sun C, Wang X, Lin L. 2009. *A Multi-level
     Disambiguation Framework for Gene Name Normalization.* Acta
     Automatica Sinica 2009 Feb; 35(2) 193-197.
