@@ -143,7 +143,12 @@ scientific publication, please cite the application note
 1.  PritchardEtAl2006 pmid=16377612
 
 // This describes GenomeDiagram, which has now been integrated into
-Biopython. </biblio>
+Biopython.
+
+1.  CockEtAl2009b pmid=20015970
+
+// This describes the FASTQ file format as supported in Biopython,
+BioPerl, BioRuby, BioJava and EMBOSS </biblio>
 
 #### Presentations
 

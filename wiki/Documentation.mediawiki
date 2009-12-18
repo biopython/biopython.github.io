@@ -58,6 +58,8 @@ We have a separate list of [[Publications|publications citing or using Biopython
 // The Bio.Cluster module is described here.
 #PritchardEtAl2006 pmid=16377612
 // This describes GenomeDiagram, which has now been integrated into Biopython.
+#CockEtAl2009b pmid=20015970
+// This describes the FASTQ file format as supported in Biopython, BioPerl, BioRuby, BioJava and EMBOSS
 </biblio>
 
 ==== Presentations ====
