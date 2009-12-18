@@ -58,6 +58,8 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 // A Linux distribution including Biopython
 #TorranceEtAl2009 pmid=19038265
 //  Used Biopython for the k-means algorithm
+#WeilEtAl2009 pmid=19910254
+// Used Biopython for sequence manipulation
 #Wiwanitkit2009a pmid=19007941
 // Used Biopython to work with ExPASy
 #Wiwanitkit2009b pmid=17936280

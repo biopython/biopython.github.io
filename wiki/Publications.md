@@ -132,6 +132,10 @@ GenomeDiagram
 
 // Used Biopython for the k-means algorithm
 
+1.  WeilEtAl2009 pmid=19910254
+
+// Used Biopython for sequence manipulation
+
 1.  Wiwanitkit2009a pmid=19007941
 
 // Used Biopython to work with ExPASy
