@@ -23,6 +23,10 @@ Publications from 2009
 
 // Used Bio.PDB and Bio.KDTree
 
+1.  BerkholzEtAl2009 pmid=19906726
+
+// Used Bio.PDB
+
 1.  ChiEtAl2009 pmid=19536157
 
 // General bioinformatics analysis including in silico random CLIP
