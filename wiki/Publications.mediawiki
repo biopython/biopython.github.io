@@ -13,6 +13,8 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 // Used Bio.PDB
 #ChiEtAl2009 pmid=19536157
 // General bioinformatics analysis including in silico random CLIP (crosslinking immunoprecipitation)
+#BouvierEtAl2009 pmid=19910307
+// Used Bio.PDB
 #CockEtAl2009 pmid=19304878
 // This application note covers the whole of Biopython
 #CockEtAl2009b pmid=20015970
