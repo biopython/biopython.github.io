@@ -27,6 +27,8 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 #HanAndZmasek2009 pmid=19860910
 #HoldenEtAl2009 pmid=19076238
 // Used [[SeqIO|Bio.SeqIO]], [[BioSQL]] and GenomeDiagram
+#IhekwabaEtAl2009 pmid=19895694
+// Data mining
 #JankunKellyEtAl2009 pmid=19811691
 // Used Biopython for working with sequence alignments
 #JonesEtAl2009 pmid=19849787
@@ -50,6 +52,8 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 // Used Biopython to access MEDLINE
 #TanakaEtAl2009 pmid=19272463
 // Used Biopython to access MEDLINE
+#Thomson2009 pmid=19812729
+// A Linux distribution including Biopython
 #TorranceEtAl2009 pmid=19038265
 //  Used Biopython for the k-means algorithm
 #Wiwanitkit2009a pmid=19007941

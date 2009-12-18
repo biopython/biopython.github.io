@@ -64,6 +64,10 @@ BioPerl, BioRuby, BioJava and EMBOSS
 // Used [Bio.SeqIO](SeqIO "wikilink"), [BioSQL](BioSQL "wikilink") and
 GenomeDiagram
 
+1.  IhekwabaEtAl2009 pmid=19895694
+
+// Data mining
+
 1.  JankunKellyEtAl2009 pmid=19811691
 
 // Used Biopython for working with sequence alignments
@@ -115,6 +119,10 @@ GenomeDiagram
 1.  TanakaEtAl2009 pmid=19272463
 
 // Used Biopython to access MEDLINE
+
+1.  Thomson2009 pmid=19812729
+
+// A Linux distribution including Biopython
 
 1.  TorranceEtAl2009 pmid=19038265
 
