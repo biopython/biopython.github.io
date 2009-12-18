@@ -36,6 +36,11 @@ Publications from 2009
 
 // This application note covers the whole of Biopython
 
+1.  CockEtAl2009b pmid=20015970
+
+// This describes the FASTQ file format as supported in Biopython,
+BioPerl, BioRuby, BioJava and EMBOSS
+
 1.  CoxEtAl2009 pmid=19073919
 
 // Used Bio.Blast, Bio.Fasta, & Bio.Nexus
