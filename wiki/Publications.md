@@ -132,6 +132,11 @@ GenomeDiagram
 
 // Used Biopython for the k-means algorithm
 
+1.  VanDerAuweraEtAl2009 pmid=19259779
+
+// Used Biopython and Genome Diagram for plasmid map and alignment
+ﬁgures
+
 1.  WeilEtAl2009 pmid=19910254
 
 // Used Biopython for sequence manipulation

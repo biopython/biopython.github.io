@@ -57,7 +57,9 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 #Thomson2009 pmid=19812729
 // A Linux distribution including Biopython
 #TorranceEtAl2009 pmid=19038265
-//  Used Biopython for the k-means algorithm
+// Used Biopython for the k-means algorithm
+#VanDerAuweraEtAl2009 pmid=19259779
+// Used Biopython and Genome Diagram for plasmid map and alignment ﬁgures
 #WeilEtAl2009 pmid=19910254
 // Used Biopython for sequence manipulation
 #Wiwanitkit2009a pmid=19007941
