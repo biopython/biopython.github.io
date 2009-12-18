@@ -45,7 +45,8 @@ Publications from 2009
 // Used Biopython for removing adaptors from 454 sequencing reads
 
 1.  GarbinoEtAl2009 pmid=19318539
-2.  HoldenEtAl2009 pmid=19076238
+2.  HanAndZmasek2009 pmid=19860910
+3.  HoldenEtAl2009 pmid=19076238
 
 // Used [Bio.SeqIO](SeqIO "wikilink"), [BioSQL](BioSQL "wikilink") and
 GenomeDiagram
