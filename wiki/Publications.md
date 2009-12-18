@@ -68,7 +68,10 @@ GenomeDiagram
 // Includes a Python wrapper with examples using it with Biopthon
 
 1.  LundborgEtAl2009 pmid=19926726
-2.  MilesEtAl2009 pmid=19640266
+2.  MacDonaldEtAl2009 N MacDonald, D Parks, R Beiko 2009. *SeqMonitor:
+    Influenza Analysis Pipeline and Visualization.* PLoS Curr Influenza.
+    RRN1040.
+3.  MilesEtAl2009 pmid=19640266
 
 // Used Biopython to work with genotypes for microsatellite locii
 
