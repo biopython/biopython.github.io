@@ -26,6 +26,8 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 #DonaireEtAl2009 pmid=19665162
 // Used Biopython for removing adaptors from 454 sequencing reads
 #GarbinoEtAl2009 pmid=19318539
+#GouldEtAl2009 pmid=19920119
+// Used Biopython to retrieve information from SWISS-PROT and PubMed
 #HanAndZmasek2009 pmid=19860910
 #HoldenEtAl2009 pmid=19076238
 // Used [[SeqIO|Bio.SeqIO]], [[BioSQL]] and GenomeDiagram

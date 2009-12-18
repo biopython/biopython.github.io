@@ -62,8 +62,12 @@ BioPerl, BioRuby, BioJava and EMBOSS
 // Used Biopython for removing adaptors from 454 sequencing reads
 
 1.  GarbinoEtAl2009 pmid=19318539
-2.  HanAndZmasek2009 pmid=19860910
-3.  HoldenEtAl2009 pmid=19076238
+2.  GouldEtAl2009 pmid=19920119
+
+// Used Biopython to retrieve information from SWISS-PROT and PubMed
+
+1.  HanAndZmasek2009 pmid=19860910
+2.  HoldenEtAl2009 pmid=19076238
 
 // Used [Bio.SeqIO](SeqIO "wikilink"), [BioSQL](BioSQL "wikilink") and
 GenomeDiagram
