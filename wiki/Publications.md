@@ -128,6 +128,10 @@ GenomeDiagram
 
 // Used Biopython to access MEDLINE
 
+1.  SzaboEtAl2009 pmid=19778434
+
+// Used Biopython for sequence manipulation and analysis
+
 1.  TanakaEtAl2009 pmid=19272463
 
 // Used Biopython to access MEDLINE
