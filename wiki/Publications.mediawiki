@@ -27,6 +27,7 @@ This is a list of papers citing, referencing or using Biopython, by year sorted 
 // Used Biopython for sequence manipulation
 #KorhonenEtAl2009 pmid=19773334
 // Includes a Python wrapper with examples using it with Biopthon
+#LundborgEtAl2009 pmid=19926726
 #MilesEtAl2009 pmid=19640266
 // Used Biopython to work with genotypes for microsatellite locii
 #MullerEtAl2009 pmid=19583843

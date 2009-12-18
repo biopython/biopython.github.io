@@ -63,7 +63,8 @@ GenomeDiagram
 
 // Includes a Python wrapper with examples using it with Biopthon
 
-1.  MilesEtAl2009 pmid=19640266
+1.  LundborgEtAl2009 pmid=19926726
+2.  MilesEtAl2009 pmid=19640266
 
 // Used Biopython to work with genotypes for microsatellite locii
 
