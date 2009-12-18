@@ -50,6 +50,10 @@ Publications from 2009
 // Used [Bio.SeqIO](SeqIO "wikilink"), [BioSQL](BioSQL "wikilink") and
 GenomeDiagram
 
+1.  JankunKellyEtAl2009 pmid=19811691
+
+// Used Biopython for working with sequence alignments
+
 1.  JonesEtAl2009 pmid=19849787
 
 // Used Biopython for sequence manipulation
