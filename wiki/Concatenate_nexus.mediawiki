@@ -74,11 +74,11 @@ def check_taxa(matrices):
     first_only = [t for t in first_taxa if t not in matrix.taxlabels]
     new_only = [t for t in matrix.taxlabels if t not in first_taxa]
     if first_only:
-      missing = ', '.join([t for t in first_only])
+      missing = ', '.join(first_only)
       msg = '%s taxa %s not in martix %s' % (nexi[0][0], missing, name)
       raise Nexus.NexusError(msg)
     elif new_only:
-      missing = ', '.join([t for t in new_only])
+      missing = ', '.join(new_only)
       msg = '%s taxa %s not in all matrices'  % (name, missing)
       raise Nexus.NexusError(msg)
   return None # will only get here if it hasn't thrown an exception
