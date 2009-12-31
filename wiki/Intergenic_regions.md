@@ -16,7 +16,7 @@ Solution
 The following ready-to-run script reads a genbank file, which is
 probably a genomic or chromosomal one. It uses the CDS feature to
 discover the 5' and 3' ends of ORFs. Yes, ORFs are not exactly
-synonymous with genes, but this is the way i worked. Also, you may want
+synonymous with genes, but this is the way we did it. Also, you may want
 to swap the CDS feature for the 'gene' feature, if you are also
 interested in RNA coding genes. The "intergene\_length" variable is a
 threshold on the minimal length of intergenic regions to be analyzed,
