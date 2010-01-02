@@ -3,6 +3,19 @@ Protein sequences can be analysed by several tools, based on the ProtParam tools
 ==Protein Sequence Format==
 The ProteinAnalysis class takes one argument, the protein sequence as a string and builds a sequence object using the Bio.Seq module. This is done just to make sure the sequence is a protein sequence and not anything else.
 
+==Example==
+<source lang=python>
+>>>from Bio.SeqUtils.ProtParam import ProteinAnalysis
+>>>my_seq = "MAEGEITTFTALTEKFNLPPGNYKKPKLLYCSNGGHFLRILPDGTVDGTRDRSDQHIQLQLSAESVGEVYIKSTETGQYLAMDTSGLLYGSQTPSEECLFLERLEENHYNTYTSKKHAEKNWFVGLKKNGSCKRGPRTHYGQKAILFLPLPV"
+>>>analysed_seq = ProteinAnalysis(my_seq)
+>>>analysed_seq.molecular_weight()
+17102.759999999995
+>>>analysed_seq.gravy()
+-0.59736842105263199
+>>>analysed_seq.count_amino_acids()
+{'A': 6, 'C': 3, 'E': 12, 'D': 5, 'G': 14, 'F': 6, 'I': 5, 'H': 5, 'K': 12, 'M': 2, 'L': 18, 'N': 7, 'Q': 6, 'P': 8, 'S': 10, 'R': 6, 'T': 13, 'W': 1, 'V': 5, 'Y': 8}
+</source>
+
 
 ==Available Tools==
 ===count_amino_acids:===
