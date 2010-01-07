@@ -31,7 +31,7 @@ The format name is a simple lowercase string, matching the names used in [[SeqIO
 | clustal
 | 1.46
 | 1.46
-| See also Bio.Clustalw for calling the command line tool.
+| The [[bp:ClustalW_multiple_alignment_format|alignment format of Clustal X and Clustal W]].
 |-
 | emboss
 | 1.46
