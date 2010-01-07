@@ -37,7 +37,7 @@ This table lists the file formats that Bio.SeqIO can read, write and index, with
 | 1.43
 | 1.43
 | No
-| The [[bp:ClustalW_multiple_alignment_format|alignment format of Clustal X and Clustal W]].  See also the Bio.Clustalw module.
+| The [[bp:ClustalW_multiple_alignment_format|alignment format of Clustal X and Clustal W]].
 |-  
 | embl
 | 1.43
