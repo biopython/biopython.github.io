@@ -16,7 +16,7 @@ import os
 # Released under Biopython license. http://www.biopython.org/DIST/LICENSE
 # Do not remove this comment
 def get_interregions(genbank_path,intergene_length=100):
-    seq_record = SeqIO.parse(open(genbank_path), "genbank").next()
+    seq_record = SeqIO.read(open(genbank_path), "genbank")
     
     cds_list = []
     intergenic_records = []
