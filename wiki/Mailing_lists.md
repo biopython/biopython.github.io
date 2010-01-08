@@ -17,6 +17,8 @@ releases and upgrades.
 [List
 Website](http://lists.open-bio.org/mailman/listinfo/biopython-announce/)
 | [Web Archive](http://lists.open-bio.org/pipermail/biopython-announce/)
+| [Gmane web
+archive](http://dir.gmane.org/gmane.comp.python.bio.announce)
 
 ### Discussion List
 
@@ -26,7 +28,8 @@ Unmoderated list for use, comments, help, and other things related to
 Biopython.
 
 [List Website](http://lists.open-bio.org/mailman/listinfo/biopython/) |
-[Web Archive](http://lists.open-bio.org/pipermail/biopython/)
+[Web Archive](http://lists.open-bio.org/pipermail/biopython/) | [Gmane
+web archive](http://dir.gmane.org/gmane.comp.python.bio.general)
 
 ### Development List
 
@@ -36,8 +39,10 @@ Unmoderated list for Biopython developers and interested people.
 
 [List
 Website](http://lists.open-bio.org/mailman/listinfo/biopython-dev/) |
-[Web Archive](http://lists.open-bio.org/pipermail/biopython-dev/)
+[Web Archive](http://lists.open-bio.org/pipermail/biopython-dev/) |
+[Gmane web archive](http://dir.gmane.org/gmane.comp.python.bio.devel)
 
 ### Searching
 
-[Search the mailing list archives.](http://search.open-bio.org/)
+Try our [mailing list archives search](http://search.open-bio.org/), or
+search the Gmane archive using the links above.

@@ -5,21 +5,21 @@ To avoid spam, you can post a message only if you are subscribed to the mailing 
 
 Low volume moderated list, providing announcements of major Biopython releases and upgrades.
 
-[http://lists.open-bio.org/mailman/listinfo/biopython-announce/ List Website] | [http://lists.open-bio.org/pipermail/biopython-announce/ Web Archive]
+[http://lists.open-bio.org/mailman/listinfo/biopython-announce/ List Website] | [http://lists.open-bio.org/pipermail/biopython-announce/ Web Archive] | [http://dir.gmane.org/gmane.comp.python.bio.announce Gmane web archive]
 
 === Discussion List ===
 [mailto:biopython@biopython.org biopython@biopython.org]
 
 Unmoderated list for use, comments, help, and other things related to Biopython.
 
-[http://lists.open-bio.org/mailman/listinfo/biopython/ List Website] | [http://lists.open-bio.org/pipermail/biopython/ Web Archive]
+[http://lists.open-bio.org/mailman/listinfo/biopython/ List Website] | [http://lists.open-bio.org/pipermail/biopython/ Web Archive] | [http://dir.gmane.org/gmane.comp.python.bio.general Gmane web archive]
 
 === Development List ===
 [mailto:biopython-dev@biopython.org biopython-dev@biopython.org]
 
 Unmoderated list for Biopython developers and interested people.
 
-[http://lists.open-bio.org/mailman/listinfo/biopython-dev/ List Website] | [http://lists.open-bio.org/pipermail/biopython-dev/ Web Archive]
+[http://lists.open-bio.org/mailman/listinfo/biopython-dev/ List Website] | [http://lists.open-bio.org/pipermail/biopython-dev/ Web Archive] | [http://dir.gmane.org/gmane.comp.python.bio.devel Gmane web archive]
 
 === Searching ===
-[http://search.open-bio.org/ Search the mailing list archives.]
+Try our [http://search.open-bio.org/ mailing list archives search], or search the Gmane archive using the links above.
