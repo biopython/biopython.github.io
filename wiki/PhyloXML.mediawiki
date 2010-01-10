@@ -4,25 +4,7 @@ This code is not yet part of Biopython, and therefore the documentation has not 
 
 ==Availability==
 
-The source code for this module currently lives on [[User%3AEricTalevich|Eric]]'s [http://github.com/etal/biopython/tree/phyloxml phyloxml branch] in GitHub. If you're interested in testing this code before it's been merged into Biopython, follow the instructions there to create your own fork, or just clone the phyloxml branch onto your machine.
-
-Requirements:
-* Biopython 1.51 or newer (older may work, but hasn't been tested)
-* Python 2.4 or newer
-* ElementTree module
-
-The XML parser used in this module is ElementTree, new to the Python standard library in Python 2.5. To use this module in Python 2.4, you'll need to install a separate package that provides the ElementTree interface. Two exist:
-* [http://codespeak.net/lxml/ lxml]
-* [http://effbot.org/zone/element-index.htm elementtree] (or cElementTree)
-
-The PhyloXMLIO sub-module attempts to import each of these compatible ElementTree implementations until it succeeds. The given XML file handle is then parsed incrementally to instantiate an object hierarchy containing the relevant phylogenetic information.
-
-To draw trees (optional), you'll also need these packages:
-* [http://networkx.lanl.gov/index.html NetworkX] 1.0rc1 (or 0.36 for snapshot at the end of GSoC 2009)
-* [http://networkx.lanl.gov/pygraphviz/ PyGraphviz] 0.99.1 or [http://dkbza.org/pydot.html pydot]
-* [http://matplotlib.sourceforge.net/ matplotlib]
-
-The I/O and tree-manipulation functionality will work without them; they're imported on demand when the functions to_networkx() and draw_graphviz() are called.
+This module was developed to provide phyloXML support in Bio.[[Phylo]], as a Google Summer of Code 2009 project. To use PhyloXML, see the Phylo page for installation instructions.
 
 ==About the format==
 
