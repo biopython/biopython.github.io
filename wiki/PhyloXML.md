@@ -92,38 +92,37 @@ representation.
 I/O functions
 -------------
 
-To start working with phyloXML files, use the
-[TreeIO](TreeIO "wikilink") package with 'phyloxml' as the format
-argument:
+To start working with phyloXML files, use the [Phylo](Phylo "wikilink")
+package with 'phyloxml' as the format argument:
 
 ``` python
->>> from Bio import TreeIO
->>> tree = TreeIO.read('some-trees.xml', 'phyloxml')
+>>> from Bio import Phylo
+>>> tree = Phylo.read('some-trees.xml', 'phyloxml')
 # ValueError: There are multiple trees in this file; use parse() instead.
->>> trees = TreeIO.parse('some-trees.xml', 'phyloxml')
->>> TreeIO.write(trees.next(), 'first-tree.xml', 'phyloxml')
+>>> trees = Phylo.parse('some-trees.xml', 'phyloxml')
+>>> Phylo.write(trees.next(), 'first-tree.xml', 'phyloxml')
 1
->>> TreeIO.write(trees, 'rest-trees.xml', 'phyloxml')
+>>> Phylo.write(trees, 'rest-trees.xml', 'phyloxml')
 12
 ```
 
 These functions work with Phylogeny objects (derived from BaseTree.Tree)
-from the Bio.Tree.PhyloXML module. This standard API is enough for most
+from the Bio.Phylo.PhyloXML module. This standard API is enough for most
 use cases.
 
 ### PhyloXMLIO
 
-Within the Bio.TreeIO module, the I/O functions for the phyloXML format
-are implemented in the PhyloXMLIO sub-module. For access to some
-additional functionality beyond the basic TreeIO API, or to skip
+Within the Bio.Phylo.IO module, the I/O functions for the phyloXML
+format are implemented in the PhyloXMLIO sub-module. For access to some
+additional functionality beyond the basic Phylo I/O API, or to skip
 specifying the 'phyloxml' format argument each time, this can be
 imported directly:
 
 ``` python
-from Bio.TreeIO import PhyloXMLIO
+from Bio.Phylo.IO import PhyloXMLIO
 ```
 
-The read() function returns a single Bio.Tree.PhyloXML.Phyloxml object
+The read() function returns a single Bio.Phylo.PhyloXML.Phyloxml object
 representing the entire file's data. The phylogenetic trees are in the
 "phylogenies" attribute, and any other arbitrary data is stored in
 "other".
