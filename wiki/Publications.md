@@ -61,6 +61,10 @@ BioPerl, BioRuby, BioJava and EMBOSS
 
 // Used Biopython for removing adaptors from 454 sequencing reads
 
+1.  DudleyAndButte2009 pmid=20041221
+
+// A bioinformatics review citing Biopython and other project.
+
 1.  GarbinoEtAl2009 pmid=19318539
 2.  GouldEtAl2009 pmid=19920119
 
