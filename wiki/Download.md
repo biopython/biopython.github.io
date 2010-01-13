@@ -69,8 +69,7 @@ list](Mailing_lists "wikilink") and ask for help there.
     install programs provided above.
 -   [NumPy (Numerical Python)](http://numpy.scipy.org/). Note that until
     BioPython 1.49, Biopython used the older Numeric library. We have
-    tested NumPy 1.0, 1.1, 1.2, and 1.3 with Biopython. Note NumPy 1.2
-    onwards requires at least Python 2.4.
+    tested NumPy 1.0, 1.1, 1.2, and 1.3 with Biopython.
 
 ### Optional Software
 
