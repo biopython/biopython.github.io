@@ -28,8 +28,8 @@ lists](mailing_lists "wikilink") or
 
 Note we don't (yet) have official 64 bit Windows Installers - however,
 Christoph Gohlke has kindly made [Windows 64bit
-installers](http://www.lfd.uci.edu/~gohlke/pythonlibs/) for NumPy
-1.4.0rc2 and Biopython 1.53 (and other tools) available for testing.
+installers](http://www.lfd.uci.edu/~gohlke/pythonlibs/) for NumPy 1.4
+and Biopython 1.53 (and other tools) available for testing.
 
 ### Installation Instructions
 
