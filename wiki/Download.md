@@ -154,7 +154,7 @@ build dependencies with the following command:
 `sudo apt-get build-dep python-biopython`
 
 Note: You may need to additionally install the NumPy package by hand, as
-an out of date repository may still expect Biopython to use Numeric
+a very out of date repository may still expect Biopython to use Numeric
 instead.
 
 ### Fedora
