@@ -194,12 +194,7 @@ Supposing that you're familiar with this method and that you have an
 up-to-date ports tree, all you need to do is to execute the following
 commands as root:
 
-<bash>
-
-1.  cd /usr/ports/biology/py-biopython
-2.  make install clean
-
-</bash>
+<bash> cd /usr/ports/biology/py-biopython make install clean </bash>
 
 Due to the great architecture of the ports system, this simple commands
 will automatically fetch and install Biopython (as well as its necessary
