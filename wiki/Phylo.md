@@ -130,7 +130,7 @@ print tree
 
 Write a sequence of Tree objects to the given file or handle. Passing a
 single Tree object instead of a list or iterable will also work. (See,
-TreeIO is friendly.)
+Phylo is friendly.)
 
 ``` python
 tree1 = Phylo.read('example1.xml', 'phyloxml')
