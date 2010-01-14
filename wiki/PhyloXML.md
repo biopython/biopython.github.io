@@ -112,14 +112,13 @@ use cases.
 
 ### PhyloXMLIO
 
-Within the Bio.Phylo.IO module, the I/O functions for the phyloXML
-format are implemented in the PhyloXMLIO sub-module. For access to some
-additional functionality beyond the basic Phylo I/O API, or to skip
-specifying the 'phyloxml' format argument each time, this can be
-imported directly:
+Within Bio.Phylo, the I/O functions for the phyloXML format are
+implemented in the PhyloXMLIO sub-module. For access to some additional
+functionality beyond the basic Phylo I/O API, or to skip specifying the
+'phyloxml' format argument each time, this can be imported directly:
 
 ``` python
-from Bio.Phylo.IO import PhyloXMLIO
+from Bio.Phylo import PhyloXMLIO
 ```
 
 The read() function returns a single Bio.Phylo.PhyloXML.Phyloxml object
@@ -148,7 +147,7 @@ iteratively construct just the phylogenetic trees contained in the file
 -- this is exactly the same as calling TreeIO.parse() with the
 'phyloxml' format argument.
 
-PhyloXMLIO.write() is similar to TreeIO.write(), but also accepts a
+PhyloXMLIO.write() is similar to Phylo.write(), but also accepts a
 Phyloxml object (the result of read() or to\_phyloxml()) to serialize.
 Optionally, an encoding other than UTF-8 can be specified.
 
