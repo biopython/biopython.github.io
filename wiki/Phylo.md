@@ -150,7 +150,7 @@ Phylo.convert('example.nhx', 'newick', 'example2.nex', 'nexus')
 
 ### Sub-modules
 
-Within the Phylo.IO module are parsers and writers for specific file
+Within the Phylo module are parsers and writers for specific file
 formats, conforming to the basic top-level API and sometimes adding
 additional features.
 
@@ -165,10 +165,11 @@ Newick (a.k.a. New Hampshire) format through the Phylo API.
 The Nexus format actually contains several sub-formats for different
 kinds of data; to represent trees, Nexus provides a block containing
 some metadata and one or more Newick trees. (Another kind of Nexus block
-can represent alignments; this is handled in AlignIO.) So to parse a
-complete Nexus file with all block types handled, use Bio.Nexus
-directly, and to extract just the trees, use Bio.Phylo. Integration
-between Bio.Nexus and Bio.Phylo will be improved in the future.
+can represent alignments; this is handled in
+[AlignIO](AlignIO "wikilink").) So to parse a complete Nexus file with
+all block types handled, use Bio.Nexus directly, and to extract just the
+trees, use Bio.Phylo. Integration between Bio.Nexus and Bio.Phylo will
+be improved in the future.
 
 Tree and Subtree classes
 ------------------------
