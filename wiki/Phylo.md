@@ -207,11 +207,44 @@ Where a third-party package is required, that package is imported when
 the function itself is called, so these dependencies are not necessary
 to install or use the rest of the Tree module.
 
-### pretty\_print()
+### Exporting to other object representations
 
-Produces a plain-text representation of the entire tree. Uses str() to
-display nodes by default; for the longer repr() representation, add the
-argument show\_all=True.
+Although any phylogenetic tree can reasonably be represented by a
+directed acyclic graph, the Phylo module does not attempt to provide a
+generally usable graph library -- only the minimum functionality to
+represent phylogenetic trees. Instead, it provides functions for
+exporting tree objects to the standard graph representations, adjacency
+list (dict) and adjacency matrix, using third-party libraries.
+
+**to\_networkx** returns the given tree as a
+[NetworkX](http://networkx.lanl.gov/) LabeledDiGraph or LabeledGraph
+object (depending on whether the tree is rooted). You'll probably need
+to import networkx directly for subsequent operations on the graph
+object. From this point you can also try using one of networkx's drawing
+functions to display the tree, and for simple, fully labeled trees it
+may even work -- but you'll have better results with Phylo's own
+draw\_graphviz function, discussed below.
+
+``` python
+import networkx, pylab
+tree = Phylo.read('example.xml', 'phyloxml')
+net = Phylo.to_networkx(tree)
+networkx.draw(net)
+pylab.show()
+```
+
+**to\_adjacency\_matrix** produces an adjacency matrix as an instance of
+a NumPy 2-dimensional array, where cell values are branch lengths and
+rows and columns are vertices in the graph (i.e. nodes in the tree, the
+root of each clade). The returned tuple includes a list of all clade
+objects in the original tree, used for determining the indexes of cells
+in the matrix corresponding to clades or branches in the tree.
+
+### Displaying trees
+
+**pretty\_print** produces a plain-text representation of the entire
+tree. Uses str() to display nodes by default; for the longer repr()
+representation, add the argument show\_all=True.
 
 Strings are automatically truncated to ensure reasonable display.
 
@@ -236,35 +269,13 @@ Strings are automatically truncated to ensure reasonable display.
             Clade(branch_length=0.4, name='C')
     ...
 
-### Graph export
-
-Although any phylogenetic tree can reasonably be represented by a
-directed acyclic graph, the Phylo module does not attempt to provide a
-generally usable graph library. Instead, it provides two functions for
-exporting Tree objects to the excellent
-[NetworkX](http://networkx.lanl.gov/) library's graph objects and using
-that library, along with
-[matplotlib](http://matplotlib.sourceforge.net/) and/or
-[PyGraphviz](http://networkx.lanl.gov/pygraphviz/), to display trees.
-
-**to\_networkx** returns the given tree as a networkx LabeledDiGraph or
-LabeledGraph object. You'll probably need to import networkx directly
-for subsequent operations on the graph object. To display a (somewhat
-haphazard-looking) dendrogram on the screen, for interactive work, use
-matplotlib or pylab along with one of networkx's drawing functions.
-
-``` python
-import networkx, pylab
-tree = Phylo.read('example.xml', 'phyloxml')
-net = Phylo.to_networkx(tree)
-networkx.draw(net)
-pylab.show()
-```
-
 **draw\_graphviz** mimics the networkx function of the same name, with
 some tweaks to improve the display of the graph. If a file name is
 given, the graph is drawn directly to that file, and options such as
-image format (default PDF) may be used.
+image format (default PDF) may be used. Prerequisites: In addition to
+networkx, you'll need a local installation of Graphviz,
+
+[`matplotlib`](http://matplotlib.sourceforge.net/)` and either `[`PyGraphviz`](http://networkx.lanl.gov/pygraphviz/)` or `[`pydot`](http://dkbza.org/pydot.html)`.`
 
 ``` python
 tree = Phylo.read('example.xml', 'phyloxml')
