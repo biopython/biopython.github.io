@@ -4,13 +4,13 @@ This code is not yet part of Biopython, and therefore the documentation has not 
 
 ==Availability==
 
-This module was developed to provide phyloXML support in Bio.[[Phylo]], as a Google Summer of Code 2009 project. To use PhyloXML, see the Phylo page for installation instructions.
+This module was developed to provide phyloXML support in [[Phylo|Bio.Phylo]], as a Google Summer of Code 2009 project. To use PhyloXML, see the [[Phylo]] page for installation instructions.
 
 ==About the format==
 
 A complete phyloXML document has a root node with the tag "phyloxml". Directly under the root is a sequence of "phylogeny" elements (phylogenetic trees), possibly followed by other arbitrary data not included in the phyloXML spec. The main structural element of these phylogenetic trees is the Clade: a tree has a clade attribute, along with other attributes, and each clade contains a series of clades (and other attributes), recursively.
 
-The child nodes and attributes of each XML node are mapped onto classes in the PhyloXML.Tree module, keeping the names the same where possible; the XML document structure is closely mirrored in the Phyloxml objects produced by Bio.Phylo.PhyloXMLIO.read().
+The child nodes and attributes of each XML node are mapped onto classes in the PhyloXML module, keeping the names the same where possible; the XML document structure is closely mirrored in the Phyloxml objects produced by Bio.Phylo.PhyloXMLIO.read().
 
 For example, this XML:
 
@@ -68,7 +68,7 @@ _|
  |____________C
 </pre>
 
-The tree objects are derived from base classes in [[Tree|Bio.Tree]]; see that page for more about this object representation.
+The tree objects are derived from base classes in [[Phylo|Bio.Phylo]]; see that page for more about this object representation.
 
 ==I/O functions==
 
@@ -181,7 +181,7 @@ Phylo.write(phyloxml, 'example_best.xml', 'phyloxml')
 
 ===Integrating with the rest of Biopython===
 
-The classes used by this module inherit from the [[Tree]] module's generalized BaseTree classes, and therefore have access to the methods defined on those base classes. Since the phyloXML specification is very detailed, these subclasses are kept in a separate module, Bio.Tree.PhyloXML, and offer additional methods for converting between phyloXML and standard Biopython types.
+The classes used by this module inherit from the [[Phylo]] module's generalized BaseTree classes, and therefore have access to the methods defined on those base classes. Since the phyloXML specification is very detailed, these subclasses are kept in a separate module, Bio.Phylo.PhyloXML, and offer additional methods for converting between phyloXML and standard Biopython types.
 
 The PhyloXML.Sequence class contains methods for converting to and from Biopython [[SeqRecord]] objects -- to_seqrecord() and from_seqrecord(). This includes the molecular sequence (mol_seq) as a [[Seq]] object, and the protein domain architecture as list of [[SeqFeature]] objects. Likewise, PhyloXML.ProteinDomain objects have a to_seqfeature() method.
 

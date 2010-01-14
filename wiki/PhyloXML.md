@@ -14,8 +14,9 @@ Availability
 ------------
 
 This module was developed to provide phyloXML support in
-Bio.[Phylo](Phylo "wikilink"), as a Google Summer of Code 2009 project.
-To use PhyloXML, see the Phylo page for installation instructions.
+[Bio.Phylo](Phylo "wikilink"), as a Google Summer of Code 2009 project.
+To use PhyloXML, see the [Phylo](Phylo "wikilink") page for installation
+instructions.
 
 About the format
 ----------------
@@ -29,8 +30,8 @@ with other attributes, and each clade contains a series of clades (and
 other attributes), recursively.
 
 The child nodes and attributes of each XML node are mapped onto classes
-in the PhyloXML.Tree module, keeping the names the same where possible;
-the XML document structure is closely mirrored in the Phyloxml objects
+in the PhyloXML module, keeping the names the same where possible; the
+XML document structure is closely mirrored in the Phyloxml objects
 produced by Bio.Phylo.PhyloXMLIO.read().
 
 For example, this XML:
@@ -86,7 +87,7 @@ which represents a phylogeny like this:
      |____________C
 
 The tree objects are derived from base classes in
-[Bio.Tree](Tree "wikilink"); see that page for more about this object
+[Bio.Phylo](Phylo "wikilink"); see that page for more about this object
 representation.
 
 I/O functions
@@ -234,12 +235,12 @@ Phylo.write(phyloxml, 'example_best.xml', 'phyloxml')
 
 ### Integrating with the rest of Biopython
 
-The classes used by this module inherit from the [Tree](Tree "wikilink")
-module's generalized BaseTree classes, and therefore have access to the
-methods defined on those base classes. Since the phyloXML specification
-is very detailed, these subclasses are kept in a separate module,
-Bio.Tree.PhyloXML, and offer additional methods for converting between
-phyloXML and standard Biopython types.
+The classes used by this module inherit from the
+[Phylo](Phylo "wikilink") module's generalized BaseTree classes, and
+therefore have access to the methods defined on those base classes.
+Since the phyloXML specification is very detailed, these subclasses are
+kept in a separate module, Bio.Phylo.PhyloXML, and offer additional
+methods for converting between phyloXML and standard Biopython types.
 
 The PhyloXML.Sequence class contains methods for converting to and from
 Biopython [SeqRecord](SeqRecord "wikilink") objects -- to\_seqrecord()
