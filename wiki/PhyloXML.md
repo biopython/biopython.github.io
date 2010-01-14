@@ -31,7 +31,7 @@ other attributes), recursively.
 The child nodes and attributes of each XML node are mapped onto classes
 in the PhyloXML.Tree module, keeping the names the same where possible;
 the XML document structure is closely mirrored in the Phyloxml objects
-produced by Bio.TreeIO.PhyloXMLIO.read().
+produced by Bio.Phylo.PhyloXMLIO.read().
 
 For example, this XML:
 
@@ -144,8 +144,8 @@ Other(tag='seq', namespace='http://www.phyloxml.org', value='taaatcgc--cccgtgg-a
 
 If you aren't interested in the "other" data, you can use parse() to
 iteratively construct just the phylogenetic trees contained in the file
--- this is exactly the same as calling TreeIO.parse() with the
-'phyloxml' format argument.
+-- this is exactly the same as calling Phylo.parse() with the 'phyloxml'
+format argument.
 
 PhyloXMLIO.write() is similar to Phylo.write(), but also accepts a
 Phyloxml object (the result of read() or to\_phyloxml()) to serialize.
@@ -194,7 +194,7 @@ Standard Python syntactic sugar is supported wherever it's reasonable.
 Clade objects also support slicing and multiple indexing:
 
 ``` python
-tree = TreeIO.parse('example.xml', 'phyloxml').next()
+tree = Phylo.parse('example.xml', 'phyloxml').next()
 assert tree.clade[0] == tree.clade.clades[0]
 assert tree.clade[0,1] == tree.clade.clades[0].clades[1]
 ```
@@ -212,7 +212,7 @@ cases:
     characteristic, isolate it as a new PhyloXML object.
 
 ``` python
-for tree in TreeIO.parse('example.xml', 'phyloxml'):
+for tree in Phylo.parse('example.xml', 'phyloxml'):
     if tree.name == 'monitor lizards':
         return tree.to_phyloxml()
 ```
@@ -221,7 +221,7 @@ for tree in TreeIO.parse('example.xml', 'phyloxml'):
     probably a new phyloXML file).
 
 ``` python
-tree = TreeIO.parse('example.xml', 'phyloxml').next()
+tree = Phylo.parse('example.xml', 'phyloxml').next()
 best = None
 for clade in tree.clade:
     if (clade.confidences[0].type == 'bootstrap'
@@ -229,7 +229,7 @@ for clade in tree.clade:
                 or clade.confidences[0].value > best.confidences[0].value)):
         best = clade
 phyloxml = best.to_phylogeny(rooted=True).to_phyloxml()
-TreeIO.write(phyloxml, 'example_best.xml', 'phyloxml')
+Phylo.write(phyloxml, 'example_best.xml', 'phyloxml')
 ```
 
 ### Integrating with the rest of Biopython
@@ -317,16 +317,16 @@ of the converters listed at the bottom of this page. Call the result
 `tyr-kinases.xml`.
 
 4. Add accession numbers and sequences to the tree -- now we're using
-[Tree](Tree "wikilink") and [TreeIO](TreeIO "wikilink").
+Bio.[Phylo](Phylo "wikilink").
 
 ``` python
-from Bio import TreeIO
-from Bio.Tree import PhyloXML
+from Bio import Phylo
+from Bio.Phylo import PhyloXML
 
 # Make a lookup table for sequences
 lookup = dict((rec.id, str(rec.seq)) for rec in best_seqs)
 
-tree = TreeIO.read('tyr-kinases.xml', 'phyloxml')
+tree = Phylo.read('tyr-kinases.xml', 'phyloxml')
 for node in tree.find(terminal=True):
     key = node.name
     accession = PhyloXML.Accession(key, 'NCBI')
@@ -335,7 +335,7 @@ for node in tree.find(terminal=True):
     node.sequences.append(sequence)
 
 # Save the annotated phyloXML file
-TreeIO.write(tree, 'tyr-kinases-pretty.xml', 'phyloxml')
+Phylo.write(tree, 'tyr-kinases-pretty.xml', 'phyloxml')
 ```
 
 Performance
