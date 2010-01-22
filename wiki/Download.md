@@ -43,7 +43,7 @@ automatically.
 
 For Mac OS X, you recommend installing from source (see below). You will
 need to have installed Apple's XCode tools *including* the optional 10.4
-SDK.
+SDK (check the option for 10.4 support when installing Xcode tools).
 
 Otherwise you typically install from source by downloading and
 uncompressing the archive, then running the commands:

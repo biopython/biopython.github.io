@@ -22,7 +22,7 @@ For Windows we provide click-and-run installers (specific to your version of pyt
 
 Most Linux distributions will include an optional Biopython package (described below), and will take care of any prerequisite software automatically.
 
-For Mac OS X, you recommend installing from source (see below). You will need to have installed Apple's XCode tools ''including'' the optional 10.4 SDK.
+For Mac OS X, you recommend installing from source (see below). You will need to have installed Apple's XCode tools ''including'' the optional 10.4 SDK (check the option for 10.4 support when installing Xcode tools).
 
 Otherwise you typically install from source by downloading and uncompressing the archive, then running the commands:
 
