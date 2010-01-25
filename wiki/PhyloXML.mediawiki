@@ -317,9 +317,11 @@ For Python 2.4, performance depends on which ElementTree implementation is used.
 
 ==Summer of Code project==
 
-This module is being developed by [[User%3AEricTalevich|Eric Talevich]] as a project for Google Summer of Code 2009, with NESCent as the mentoring organization and Brad Chapman as the primary mentor.
+This module was being developed by [[User%3AEricTalevich|Eric Talevich]] as a project for Google Summer of Code 2009, with NESCent as the mentoring organization and Brad Chapman and Christian Zmasek as the mentors.
 
-Main SoC project page: [https://www.nescent.org/wg_phyloinformatics/PhyloSoC:Biopython_support_for_parsing_and_writing_phyloXML PhyloSoC:Biopython support for parsing and writing phyloXML]
+The main page for the project is here: [https://www.nescent.org/wg_phyloinformatics/PhyloSoC:Biopython_support_for_parsing_and_writing_phyloXML PhyloSoC:Biopython support for parsing and writing phyloXML]
+
+The [[Phylo]] module was developed afterward in order to integrate this SoC code with the rest of Biopython.
 
 ==Related software==
 

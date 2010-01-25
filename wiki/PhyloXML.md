@@ -386,14 +386,17 @@ significantly slower for very large files.
 Summer of Code project
 ----------------------
 
-This module is being developed by [Eric
+This module was being developed by [Eric
 Talevich](User%3AEricTalevich "wikilink") as a project for Google Summer
 of Code 2009, with NESCent as the mentoring organization and Brad
-Chapman as the primary mentor.
+Chapman and Christian Zmasek as the mentors.
 
-Main SoC project page: [PhyloSoC:Biopython support for parsing and
-writing
+The main page for the project is here: [PhyloSoC:Biopython support for
+parsing and writing
 phyloXML](https://www.nescent.org/wg_phyloinformatics/PhyloSoC:Biopython_support_for_parsing_and_writing_phyloXML)
+
+The [Phylo](Phylo "wikilink") module was developed afterward in order to
+integrate this SoC code with the rest of Biopython.
 
 Related software
 ----------------
