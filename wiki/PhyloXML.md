@@ -4,19 +4,12 @@ permalink: wiki/PhyloXML
 layout: wiki
 ---
 
-This module handles the parsing, generation and manipulation of files in
-the [phyloXML](http://www.phyloxml.org/) format.
+The modules Bio.Phylo.PhyloXML and Bio.Phylo.PhyloXMLIO handle the
+parsing, generation and manipulation of files in the
+[phyloXML](http://www.phyloxml.org/) format.
 
-This code is not yet part of Biopython, and therefore the documentation
-has not been integrated into the Biopython Tutorial yet either.
-
-Availability
-------------
-
-This module was developed to provide phyloXML support in
-[Bio.Phylo](Phylo "wikilink"), as a Google Summer of Code 2009 project.
-To use PhyloXML, see the [Phylo](Phylo "wikilink") page for installation
-instructions.
+To use these modules, see the [Phylo](Phylo "wikilink") page for
+installation instructions.
 
 About the format
 ----------------
@@ -386,17 +379,16 @@ significantly slower for very large files.
 Summer of Code project
 ----------------------
 
-This module was being developed by [Eric
-Talevich](User%3AEricTalevich "wikilink") as a project for Google Summer
-of Code 2009, with NESCent as the mentoring organization and Brad
-Chapman and Christian Zmasek as the mentors.
-
-The main page for the project is here: [PhyloSoC:Biopython support for
-parsing and writing
+This module was developed by [Eric
+Talevich](User%3AEricTalevich "wikilink") as a Google Summer of Code
+2009 project to provide support for phyloXML in Biopython, with NESCent
+as the mentoring organization and Brad Chapman and Christian Zmasek as
+the mentors. The main page for the project is here: [PhyloSoC:Biopython
+support for parsing and writing
 phyloXML](https://www.nescent.org/wg_phyloinformatics/PhyloSoC:Biopython_support_for_parsing_and_writing_phyloXML)
 
 The [Phylo](Phylo "wikilink") module was developed afterward in order to
-integrate this SoC code with the rest of Biopython.
+integrate this code with the rest of Biopython.
 
 Related software
 ----------------

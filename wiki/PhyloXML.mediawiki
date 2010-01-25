@@ -1,10 +1,6 @@
-This module handles the parsing, generation and manipulation of files in the [http://www.phyloxml.org/ phyloXML] format.
+The modules Bio.Phylo.PhyloXML and Bio.Phylo.PhyloXMLIO handle the parsing, generation and manipulation of files in the [http://www.phyloxml.org/ phyloXML] format.
 
-This code is not yet part of Biopython, and therefore the documentation has not been integrated into the Biopython Tutorial yet either.
-
-==Availability==
-
-This module was developed to provide phyloXML support in [[Phylo|Bio.Phylo]], as a Google Summer of Code 2009 project. To use PhyloXML, see the [[Phylo]] page for installation instructions.
+To use these modules, see the [[Phylo]] page for installation instructions.
 
 ==About the format==
 
@@ -317,11 +313,9 @@ For Python 2.4, performance depends on which ElementTree implementation is used.
 
 ==Summer of Code project==
 
-This module was being developed by [[User%3AEricTalevich|Eric Talevich]] as a project for Google Summer of Code 2009, with NESCent as the mentoring organization and Brad Chapman and Christian Zmasek as the mentors.
+This module was developed by [[User%3AEricTalevich|Eric Talevich]] as a Google Summer of Code 2009 project to provide support for phyloXML in Biopython, with NESCent as the mentoring organization and Brad Chapman and Christian Zmasek as the mentors. The main page for the project is here: [https://www.nescent.org/wg_phyloinformatics/PhyloSoC:Biopython_support_for_parsing_and_writing_phyloXML PhyloSoC:Biopython support for parsing and writing phyloXML]
 
-The main page for the project is here: [https://www.nescent.org/wg_phyloinformatics/PhyloSoC:Biopython_support_for_parsing_and_writing_phyloXML PhyloSoC:Biopython support for parsing and writing phyloXML]
-
-The [[Phylo]] module was developed afterward in order to integrate this SoC code with the rest of Biopython.
+The [[Phylo]] module was developed afterward in order to integrate this code with the rest of Biopython.
 
 ==Related software==
 
