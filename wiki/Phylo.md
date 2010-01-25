@@ -7,22 +7,21 @@ layout: wiki
 This module provides classes, functions and I/O support for working with
 phylogenetic trees.
 
-This code is not yet part of Biopython, and therefore the documentation
-has not been integrated into the Biopython Tutorial yet either.
+This code is not yet included with Biopython, and therefore the
+documentation has not been integrated into the Biopython Tutorial yet
+either.
 
 Availability
 ------------
 
-The source code for this module currently lives on
-[Eric](User%3AEricTalevich "wikilink")'s [phyloxml
-branch](http://github.com/etal/biopython/tree/phyloxml) in GitHub. If
-you're interested in testing this code before it's been merged into
-Biopython, follow the instructions there to create your own fork, or
-just clone the phyloxml branch onto your machine.
+The source code for this module is being developed on GitHub, but has
+not yet been included with a stable Biopython release. If you're
+interested in testing this code before the official release, see
+[SourceCode](SourceCode "wikilink") for instructions on getting a copy
+of the development branch.
 
 Requirements:
 
--   Biopython 1.51 or newer (older may work, but hasn't been tested)
 -   Python 2.4 or newer
 -   ElementTree module
 
@@ -38,10 +37,10 @@ The I/O and tree-manipulation functionality will work without them;
 they're imported on demand when the functions to\_networkx() and
 draw\_graphviz() are called.
 
-The XML parser used in the IO.PhyloXMLIO sub-module is ElementTree,
-added to the Python standard library in Python 2.5. To use this module
-in Python 2.4, you'll need to install a separate package that provides
-the ElementTree interface. Two exist:
+The XML parser used in the PhyloXMLIO sub-module is ElementTree, added
+to the Python standard library in Python 2.5. To use this module in
+Python 2.4, you'll need to install a separate package that provides the
+ElementTree interface. Two exist:
 
 -   [lxml](http://codespeak.net/lxml/)
 -   [elementtree](http://effbot.org/zone/element-index.htm)
