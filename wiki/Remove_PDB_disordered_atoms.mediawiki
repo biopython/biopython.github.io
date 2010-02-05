@@ -15,12 +15,8 @@ io=PDBIO()
 
 class NotDisordered(Select):
     def accept_atom(self, atom):
-        if not atom.is_disordered():
-            return True
-        elif atom.get_altloc()=='A':
-            return True
-        else:
-            return False
+        return not atom.is_disordered() or
+               atom.get_altloc()=='A'
 
 io=PDBIO()
 io.set_structure(s)
