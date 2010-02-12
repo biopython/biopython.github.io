@@ -80,7 +80,7 @@ For a full explanation of the code, see here: [http://bytesizebio.net/index.php/
 ./get_intergene mygenbankfile.gb 1
 </bash>
 
-Run on the genbank file. The intergenic sequences will appear in the file mygenbank.ign in FASTA format.
+Run on the genbank file. The intergenic sequences will appear in the file mygenbank_ign.fasta in FASTA format.
 
 
  [[category:Cookbook]]

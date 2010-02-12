@@ -103,6 +103,6 @@ Running
 <bash> ./get\_intergene mygenbankfile.gb 1 </bash>
 
 Run on the genbank file. The intergenic sequences will appear in the
-file mygenbank.ign in FASTA format.
+file mygenbank\_ign.fasta in FASTA format.
 
 [`category:Cookbook`](category:Cookbook "wikilink")
