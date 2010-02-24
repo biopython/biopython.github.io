@@ -31,18 +31,18 @@ implementation](http://bcbio.wordpress.com/2009/03/08/initial-gff-parser-for-bio
 and [MapReduce parallel
 version](http://bcbio.wordpress.com/2009/03/22/mapreduce-implementation-of-gff-parsing-for-biopython/).
 
-### PhyloXML driver (GSoC)
+### Phylo
 
-Eric is working on supporting the [PhyloXML](http://www.phyloxml.org/)
-format, as a
-[project](http://socghop.appspot.com/student_project/show/google/gsoc2009/nescent/t124022798969)
-for Google Summer of Code 2009. Brad is mentoring this project. The code
-lives on a branch in
-[GitHub](http://github.com/etal/biopython/tree/phyloxml), and you can
-see a timeline and other info about ongoing development
-[here](http://github.com/etal/biopython/tree/phyloxml/Bio/PhyloXML/).
-The new module is being documented on this wiki as
-[PhyloXML](PhyloXML "wikilink").
+[Eric](User%3AEricTalevich "wikilink") is working on a new module for
+phylogenetics, [Bio.Phylo](Phylo "wikilink"). It grew out of a Google
+Summer of Code 2009
+[project](http://socghop.appspot.com/student_project/show/google/gsoc2009/nescent/t124022798969),
+mentored by Brad, to add support for
+[phyloXML](http://www.phyloxml.org/) to Biopython; it also refactors
+part of Bio.Nexus. Most of the code has been pushed to the main
+development branch on GitHub already, but new features appear first on
+Eric's [phyloxml
+branch](http://github.com/etal/biopython/tree/phyloxml).
 
 ### Biogeography (GSoC)
 

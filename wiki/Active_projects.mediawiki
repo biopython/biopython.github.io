@@ -10,9 +10,9 @@ Giovanni and Tiago are working on expanding population genetics code in Biopytho
 
 Brad is working on a Biopython GFF parser. Source code is available from [http://github.com/chapmanb/bcbb/tree/master/gff git hub]. Documentation is in progress at [[GFF Parsing]]. See blog posts on the [http://bcbio.wordpress.com/2009/03/08/initial-gff-parser-for-biopython/ initial implementation] and [http://bcbio.wordpress.com/2009/03/22/mapreduce-implementation-of-gff-parsing-for-biopython/ MapReduce parallel version].
 
-=== PhyloXML driver (GSoC) ===
+=== Phylo ===
 
-Eric is working on supporting the [http://www.phyloxml.org/ PhyloXML] format, as a [http://socghop.appspot.com/student_project/show/google/gsoc2009/nescent/t124022798969 project] for Google Summer of Code 2009. Brad is mentoring this project. The code lives on a branch in [http://github.com/etal/biopython/tree/phyloxml GitHub], and you can see a timeline and other info about ongoing development [http://github.com/etal/biopython/tree/phyloxml/Bio/PhyloXML/ here]. The new module is being documented on this wiki as [[PhyloXML]].
+[[User%3AEricTalevich|Eric]] is working on a new module for phylogenetics, [[Phylo|Bio.Phylo]]. It grew out of a Google Summer of Code 2009 [http://socghop.appspot.com/student_project/show/google/gsoc2009/nescent/t124022798969 project], mentored by Brad, to add support for [http://www.phyloxml.org/ phyloXML] to Biopython; it also refactors part of Bio.Nexus. Most of the code has been pushed to the main development branch on GitHub already, but new features appear first on Eric's [http://github.com/etal/biopython/tree/phyloxml phyloxml branch].
 
 === Biogeography (GSoC) ===
 
