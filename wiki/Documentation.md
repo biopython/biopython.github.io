@@ -152,6 +152,12 @@ BioPerl, BioRuby, BioJava and EMBOSS </biblio>
 
 #### Presentations
 
+-   February 2010 Biopython workshop at the University of Georgia
+
+  
+[PDF](http://etal.myweb.uga.edu/biopywork.pdf) | [Flash
+version](http://www.slideshare.net/etalevich/biopython-programming-workshop-at-uga)
+
 -   BOSC 2009 presentation "Biopython Project Update"
 
   

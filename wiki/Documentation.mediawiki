@@ -64,6 +64,8 @@ We have a separate list of [[Publications|publications citing or using Biopython
 
 ==== Presentations ====
 
+* February 2010 Biopython workshop at the University of Georgia
+:[http://etal.myweb.uga.edu/biopywork.pdf PDF] | [http://www.slideshare.net/etalevich/biopython-programming-workshop-at-uga Flash version]
 * BOSC 2009 presentation "Biopython Project Update"
 :[http://biopython.org/DIST/docs/presentations/Biopython_BOSC_2009.pdf PDF] | [http://www.slideshare.net/bosc/cock-biopython-bosc2009 Flash version]
 * Scottish Bioinformatics Forum NextGenBug meeting June 2009 - Second generation sequence data and Biopython
