@@ -20,7 +20,7 @@ Brad is working on a Biopython GFF parser. Source code is available from [http:/
 
 === Roche 454 SFF parsing in Bio.SeqIO ===
 
-See [http://bugzilla.open-bio.org/show_bug.cgi?id=2837 Bug 2837], based on code from Jose Blanca.
+See [http://bugzilla.open-bio.org/show_bug.cgi?id=2837 Bug 2837], based on code from Jose Blanca. Recently merged into the trunk and should be included in Biopython 1.54 onwards.
 
 === Open Enhancement Bugs ===
 

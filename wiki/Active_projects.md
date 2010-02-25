@@ -65,7 +65,8 @@ this wiki as [BioGeography](BioGeography "wikilink").
 ### Roche 454 SFF parsing in Bio.SeqIO
 
 See [Bug 2837](http://bugzilla.open-bio.org/show_bug.cgi?id=2837), based
-on code from Jose Blanca.
+on code from Jose Blanca. Recently merged into the trunk and should be
+included in Biopython 1.54 onwards.
 
 ### Open Enhancement Bugs
 
