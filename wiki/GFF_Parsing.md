@@ -217,6 +217,12 @@ over each chromosome or set of features you are interested in.
 
 ### Iterating over portions of a file
 
+Another way to break up a large GFF file parse into sections is to limit
+the number of lines that are read at once. This is a useful workflow for
+GFF files in which you don't need all of the features at once and can do
+something useful with a few at a time. To do this, pass the
+target\_lines argument to GFF.parse:
+
 ``` python
 from BCBio import GFF
 
@@ -227,6 +233,17 @@ for rec in GFF.parse(in_handle, target_lines=1000):
     print rec
 in_handle.close()
 ```
+
+The parser will attempt to smartly break up the file at your requested
+number of lines. For instance, if 1000 lines happens to come in the
+middle of a nested coding feature (gene -&gt; transcript -&gt;
+CDS/exon/intron), the parser would continue until the entire feature
+region is read. This helps ensure that you have fully formed features
+for analysis.
+
+If your file has no nesting of features, or you just want a single line
+at once, you can set target\_lines=1 and the parser will happily give
+you back and SeqRecord object with a single SeqFeature for every line.
 
 ### Providing initial sequence records
 
