@@ -53,6 +53,12 @@ and writing GFF files in Python.
 Examining your GFF file
 -----------------------
 
+Since GFF is a very general format, it is extremely useful to start by
+getting a sense of the type of data in the file and how it is
+structured. GFFExaminer provides an interface to examine and query the
+file. To examine relationships between features, examine a dictionary
+mapping parent to child features:
+
 ``` python
 import pprint
 from BCBio.GFF import GFFExaminer
@@ -64,12 +70,35 @@ pprint.pprint(examiner.parent_child_map(in_handle))
 in_handle.close()
 ```
 
+This file contains a flexible three level description of coding
+sequences: genes have mRNA trascripts; those mRNA transcripts each
+contain common features of coding sequence, the CDS itself, exon, intron
+and 5' and 3' untranslated regions. This is a common GFF structure
+allowing representation of multiple transcripts:
+
     {('Coding_transcript', 'gene'): [('Coding_transcript', 'mRNA')],
      ('Coding_transcript', 'mRNA'): [('Coding_transcript', 'CDS'),
                                      ('Coding_transcript', 'exon'),
                                      ('Coding_transcript', 'five_prime_UTR'),
                                      ('Coding_transcript', 'intron'),
                                      ('Coding_transcript', 'three_prime_UTR')]}
+
+Another item of interest for designing your parse strategy is
+understanding the various tags used to label the features. These consist
+of:
+
+-   gff\_id -- The record identifier being described. This will often
+    refer to a chromosome or other scaffold sequence.
+-   gff\_source -- The source description from the second column of the
+    GFF file, which specifies how a feature was generated.
+-   gff\_type -- The type of the feature, pulled from the 3rd column of
+    the GFF file.
+-   gff\_source\_type -- All combinations of sources and types in
+    the file.
+
+The available\_limits function in the examiner gives you a high level
+summary of these feature attributes, along with counts for the number of
+times they appear in the file:
 
 ``` python
 import pprint

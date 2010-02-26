@@ -20,6 +20,7 @@ These differences have some consequences in how you will deal with GFF:
 The documentation below provides a practical guide to examining, parsing and writing GFF files in Python.
 
 == Examining your GFF file ==
+Since GFF is a very general format, it is extremely useful to start by getting a sense of the type of data in the file and how it is structured. GFFExaminer provides an interface to examine and query the file. To examine relationships between features, examine a dictionary mapping parent to child features:
 
 <source lang=python>
 import pprint
@@ -32,6 +33,8 @@ pprint.pprint(examiner.parent_child_map(in_handle))
 in_handle.close()
 </source>
 
+This file contains a flexible three level description of coding sequences: genes have mRNA trascripts; those mRNA transcripts each contain common features of coding sequence, the CDS itself, exon, intron and 5' and 3' untranslated regions. This is a common GFF structure allowing representation of multiple transcripts:
+
 <pre>
 {('Coding_transcript', 'gene'): [('Coding_transcript', 'mRNA')],
  ('Coding_transcript', 'mRNA'): [('Coding_transcript', 'CDS'),
@@ -40,6 +43,15 @@ in_handle.close()
                                  ('Coding_transcript', 'intron'),
                                  ('Coding_transcript', 'three_prime_UTR')]}
 </pre>
+
+Another item of interest for designing your parse strategy is understanding the various tags used to label the features. These consist of:
+
+* gff_id -- The record identifier being described. This will often refer to a chromosome or other scaffold sequence.
+* gff_source -- The source description from the second column of the GFF file, which specifies how a feature was generated.
+* gff_type -- The type of the feature, pulled from the 3rd column of the GFF file.
+* gff_source_type -- All combinations of sources and types in the file.
+
+The available_limits function in the examiner gives you a high level summary of these feature attributes, along with counts for the number of times they appear in the file:
 
 <source lang=python>
 import pprint
