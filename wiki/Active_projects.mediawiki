@@ -22,6 +22,11 @@ Brad is working on a Biopython GFF parser. Source code is available from [http:/
 
 See [http://bugzilla.open-bio.org/show_bug.cgi?id=2837 Bug 2837], based on code from Jose Blanca. Recently merged into the trunk and should be included in Biopython 1.54 onwards.
 
+=== Multiple Sequence Alignments ===
+
+Peter is working on a new alignment class for sequence alignments (not the kind in next gen sequencing), see:
+http://github.com/peterjc/biopython/commits/alignment-obj
+
 === Open Enhancement Bugs ===
 
 This [http://bugzilla.open-bio.org/buglist.cgi?product=Biopython&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_severity=enhancement Bugzilla Search] will list all open enhancement bugs (any filed by core developers are fairly likely to be integrated, some are just wish list entries).
