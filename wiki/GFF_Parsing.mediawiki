@@ -119,6 +119,7 @@ in_handle.close()
 == GFF Parsing ==
 
 === Basic GFF parsing ===
+Generally, the GFF parser works similar to other parsers in Biopython. Calling parse with a handle to a GFF file returns a set of SeqRecord objects corresponding to the various IDs referenced in the file:
 
 <source lang=python>
 from BCBio import GFF
@@ -130,6 +131,8 @@ for rec in GFF.parse(in_handle):
     print rec
 in_handle.close()
 </source>
+
+Since a GFF file is not broken down into an explicit record structure, this requires reading the entire file, parsing all of the features, and then returning those as records. This will be fine for small files, but for most real life cases you will want to restrict parsing to a set of features of interest or a section of lines at once to conserve memory.
 
 === Limiting parsed lines ===
 <source lang=python>
