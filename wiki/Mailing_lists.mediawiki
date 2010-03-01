@@ -1,11 +1,14 @@
-To avoid spam, you can post a message only if you are subscribed to the mailing list.
+=== Discussion and questions ===
 
-===  Announcement List ===
-[mailto:biopython-announce@biopython.org biopython-announce@biopython.org]
+We actively discuss Biopython and Python usage in Bioinformatics on a few dedicated mailing lists. Please join us; to avoid spam, you can post a message only if you are subscribed to the mailing list.
 
-Low volume moderated list, providing announcements of major Biopython releases and upgrades.
+A few other useful places for questions and answers:
 
-[http://lists.open-bio.org/mailman/listinfo/biopython-announce/ List Website] | [http://lists.open-bio.org/pipermail/biopython-announce/ Web Archive] | [http://dir.gmane.org/gmane.comp.python.bio.announce Gmane web archive]
+* [http://biostar.stackexchange.com/ BioStar] -- A dedicated Bioinformatics question and answer forum. Please tag your post with: biopython.
+* [http://stackoverflow.com/questions/tagged/biopython StackOverflow] -- The main Stack Overflow programming question and answer forum. Please tag your posts with: biopython.
+
+=== Searching ===
+Gmane archives of the lists, linked below, provide a nice interface to search past messages. A number of questions have been discussed and answered; before posting please search for relevant discussions which might help. 
 
 === Discussion List ===
 [mailto:biopython@biopython.org biopython@biopython.org]
@@ -21,5 +24,9 @@ Unmoderated list for Biopython developers and interested people.
 
 [http://lists.open-bio.org/mailman/listinfo/biopython-dev/ List Website] | [http://lists.open-bio.org/pipermail/biopython-dev/ Web Archive] | [http://dir.gmane.org/gmane.comp.python.bio.devel Gmane web archive]
 
-=== Searching ===
-Try our [http://search.open-bio.org/ mailing list archives search], or search the Gmane archive using the links above.
+===  Announcement List ===
+[mailto:biopython-announce@biopython.org biopython-announce@biopython.org]
+
+Low volume moderated list, providing announcements of major Biopython releases and upgrades.
+
+[http://lists.open-bio.org/mailman/listinfo/biopython-announce/ List Website] | [http://lists.open-bio.org/pipermail/biopython-announce/ Web Archive] | [http://dir.gmane.org/gmane.comp.python.bio.announce Gmane web archive]
