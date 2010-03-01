@@ -26,7 +26,7 @@ This wiki will help you download and install Biopython, and start using the libr
 *[http://biopython.org/DIST/docs/tutorial/Tutorial.html Tutorial] ([http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF])
 *[[Category%3AWiki_Documentation | Documentation on this wiki]]
 *[[Category%3ACookbook | Cookbook (working examples)]]
-*[[Mailing_lists | Join the mailing lists]]
+*[[Mailing_lists | Discuss and ask questions]]
 !
 *[[Active_projects | What's being worked on]]
 *[[ GitUsage | Developing on Github ]]
