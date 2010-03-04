@@ -1,6 +1,6 @@
 Contributed by Brad Chapman
 
-Note: This requires the propose Biopython [http://github.com/chapmanb/bcbb/tree/master/gff/ GFF module], which has not yet been integrated in Biopython. You will need to install it first to run the examples
+Note: This requires the proposed Biopython [http://github.com/chapmanb/bcbb/tree/master/gff/ GFF module], which has not yet been integrated in Biopython. You will need to install it first to run the examples
 
 == Problem ==
 
