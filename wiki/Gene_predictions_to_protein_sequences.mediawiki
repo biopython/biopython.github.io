@@ -76,4 +76,8 @@ Example files to run the scripts are available thanks to Michael Kuhn:
 * [http://github.com/chapmanb/bcbb/blob/master/biopython/glimmer.gff GFF3 GlimmerHMM file]
 * [http://github.com/chapmanb/bcbb/blob/master/biopython/ref.fa Reference file]
 
+See also:
+
+* [http://bytesizebio.net/index.php/2009/10/29/short-bioinformatics-hacks-glimmer-splitter/ Iddo's post on parsing standard Glimmer output]
+
  [[category:Cookbook]]

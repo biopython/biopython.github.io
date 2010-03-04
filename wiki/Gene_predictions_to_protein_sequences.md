@@ -118,4 +118,9 @@ Example files to run the scripts are available thanks to Michael Kuhn:
 -   [Reference
     file](http://github.com/chapmanb/bcbb/blob/master/biopython/ref.fa)
 
+See also:
+
+-   [Iddo's post on parsing standard Glimmer
+    output](http://bytesizebio.net/index.php/2009/10/29/short-bioinformatics-hacks-glimmer-splitter/)
+
 [`category:Cookbook`](category:Cookbook "wikilink")
