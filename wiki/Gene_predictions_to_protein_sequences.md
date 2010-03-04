@@ -120,6 +120,8 @@ Example files to run the scripts are available thanks to Michael Kuhn:
 
 See also:
 
+-   [The FriendFeed post that inspired this
+    entry](http://friendfeed.com/the-life-scientists/553c495e/does-anyone-know-how-to-take-gff3-file-gene)
 -   [Iddo's post on parsing standard Glimmer
     output](http://bytesizebio.net/index.php/2009/10/29/short-bioinformatics-hacks-glimmer-splitter/)
 
