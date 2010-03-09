@@ -1,3 +1,6 @@
-In 2009 we had two Google Summer of Code (GSoC) students working on Biopython under NESCent's Phyloinformatics GSoC.
+Biopython was involved with the 2009 Google Summer of Code (GSoC) in collaboration with our friends at [https://www.nescent.org/wg_phyloinformatics/Main_Page NESCent], and had two projects funded:
 
-In 2010 we hope to have more.
+* Nick Matzke worked on [https://www.nescent.org/wg_phyloinformatics/Phyloinformatics_Summer_of_Code_2009#Biogeographical_Phylogenetics_for_BioPython Biogeographical Phylogenetics].
+* Eric Talevich added support for [https://www.nescent.org/wg_phyloinformatics/Phyloinformatics_Summer_of_Code_2009#Biopython_support_for_parsing_and_writing_phyloXML parsing and writing phyloXML].
+
+== 2010 Project ideas ==
