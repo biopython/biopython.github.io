@@ -96,11 +96,22 @@ Rationale : The [R statistical language](http://www.r-project.org/) is a powerfu
 
 <!-- -->
 
-Approach : Rpy2 contains higher level interfaces to popular R libraries. For instance, the [ggplot2 interface](http://rpy.sourceforge.net/rpy2/doc-2.1/html/graphics.html#package-ggplot2) allows python users to access powerful plotting functionality in R with an intuitive API. Providing similar high level APIs for biological toolkits available in R would help expose these toolkits to a wider audience of Python programmers. Some examples of libraries for which integration would be welcomed are:  
+Approach : Rpy2 contains higher level interfaces to popular R libraries. For instance, the [ggplot2 interface](http://rpy.sourceforge.net/rpy2/doc-2.1/html/graphics.html#package-ggplot2) allows python users to access powerful plotting functionality in R with an intuitive API. Providing similar high level APIs for biological toolkits available in R would help expose these toolkits to a wider audience of Python programmers. A nice introduction to phylogenetic analysis in R is available from Rich Glor at the [Bodega Bay Marine Lab wiki](http://bodegaphylo.wikispot.org/Phylogenetics_and_Comparative_Methods_in_R). Some examples of R libraries for which integration would be welcomed are:  
 
 :\* [ape (Analysis of Phylogenetics and
 Evolution)](http://ape.mpl.ird.fr/) -- an interactive library
 environment for phylogenetic and evolutionary analyses
+
+:\* [ade4](http://pbil.univ-lyon1.fr/ADE-4/home.php?lang=eng) -- Data
+Analysis functions to analyse Ecological and Environmental data in the
+framework of Euclidean Exploratory methods
+
+:\* [geiger](http://cran.r-project.org/web/packages/geiger/index.html)
+-- Running macroevolutionary simulation, and estimating parameters
+related to diversification from comparative phylogenetic data.
+
+:\* [picante](http://picante.r-forge.r-project.org/) -- R tools for
+integrating phylogenies and ecology
 
 :\* [mefa](http://mefa.r-forge.r-project.org/) -- multivariate data
 handling for ecological and biogeographical data
@@ -113,8 +124,6 @@ Involved toolkits or projects :
 
 :\* [ape (Analysis of Phylogenetics and
 Evolution)](http://ape.mpl.ird.fr/)
-
-:\* [mefa](http://mefa.r-forge.r-project.org/)
 
 :\* [Rpy2](http://bitbucket.org/lgautier/rpy2/)
 
