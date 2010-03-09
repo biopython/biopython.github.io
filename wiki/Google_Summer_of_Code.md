@@ -92,23 +92,35 @@ Mentors : [Sergei L Kosakovsky Pond](http://www.hyphy.org/sergei/), [Brad Chapma
 
 ### Accessing R phylogenetic tools from Python
 
-Rationale :  
+Rationale : The [R statistical language](http://www.r-project.org/) is a powerful open-source environment for statistical computation and visualization. [Python](http://www.python.org/) serves as an excellent complement to R since it has a wide variety of available libraries to make data processing, analysis, and web presentation easier. The two can be smoothly interfaced using [Rpy2](http://bitbucket.org/lgautier/rpy2/), allowing programmers to leverage the best features of each language. Here we propose to build Rpy2 library components to help ease access to phylogenetic and biogeographical libraries in R.  
 
 <!-- -->
 
-Approach :  
+Approach : Rpy2 contains higher level interfaces to popular R libraries. For instance, the [ggplot2 interface](http://rpy.sourceforge.net/rpy2/doc-2.1/html/graphics.html#package-ggplot2) allows python users to access powerful plotting functionality in R with an intuitive API. Providing similar high level APIs for biological toolkits available in R would help expose these toolkits to a wider audience of Python programmers. Some examples of libraries for which integration would be welcomed are:  
 
-<!-- -->
+:\* [ape (Analysis of Phylogenetics and
+Evolution)](http://ape.mpl.ird.fr/) -- an interactive library
+environment for phylogenetic and evolutionary analyses
 
-Challenges :  
+:\* [mefa](http://mefa.r-forge.r-project.org/) -- multivariate data
+handling for ecological and biogeographical data
+
+Challenges : The student would have the opportunity to learn an available R toolkit, and then code in Python and R to make this available via an intuitive API. This will involve digging into the R code examples to discover the most useful parts for analysis, and then projecting this into a library that is intuitive to Python coders. Beyond the coding and design aspects, the student should feel comfortable writing up use case documentation to support the API and encourage its adoption.  
 
 <!-- -->
 
 Involved toolkits or projects :  
 
-<!-- -->
+:\* [ape (Analysis of Phylogenetics and
+Evolution)](http://ape.mpl.ird.fr/)
 
-Degree of difficulty and needed skills :  
+:\* [mefa](http://mefa.r-forge.r-project.org/)
+
+:\* [Rpy2](http://bitbucket.org/lgautier/rpy2/)
+
+:\* [Biopython](http://biopython.org/wiki/Main_Page)
+
+Degree of difficulty and needed skills : Moderate. The project requires familiarity with coding in Python and R, and knowledge of phylogeny or biogeography. The student has plenty of flexibility to define the project based on their biological interests.  
 
 <!-- -->
 
