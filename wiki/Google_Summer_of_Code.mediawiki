@@ -13,18 +13,18 @@ In 2010 we hope to be continue working with GSoC. If you are interested in contr
 
 ; Approach : The student would focus on soliciting use case scenarios from developers and the larger communities associated with both projects, and use these as the basis for adding glue code and documentation to both libraries. Some use cases of immediate interest as a starting point are:
 
-* Allow round-trip conversion between biopython and pycogent core objects (sequence, alignment, tree, etc.).
-* Building workflows using Codon Usage analyses in PyCogent with clustering code in Biopython.
-* Connecting Biopython acquired sequences to PyCogent's alignment, phylogenetic tree preparation and tree visualization code.
-* Integrate Biopython's [http://biopython.org/wiki/Phylo PhyloXML support], developed during GSoC 2009, with PyCogent.
-* Improve database interoperability by extending pycogent's Ensembl code to operate on additional genome databases, exporting these to Biopython objects.
+:* Allow round-trip conversion between biopython and pycogent core objects (sequence, alignment, tree, etc.).
+:* Building workflows using Codon Usage analyses in PyCogent with clustering code in Biopython.
+:* Connecting Biopython acquired sequences to PyCogent's alignment, phylogenetic tree preparation and tree visualization code.
+:* Integrate Biopython's [http://biopython.org/wiki/Phylo PhyloXML support], developed during GSoC 2009, with PyCogent.
+:* Improve database interoperability by extending pycogent's Ensembl code to operate on additional genome databases, exporting these to Biopython objects.
 
 ; Challenges : This project provides the student with a lot of freedom to create useful interoperability between two feature rich libraries. As opposed to projects which might require churning out more lines of code, the major challenge here will be defining useful APIs and interfaces for existing code. High level inventiveness and coding skill will be required for generating glue code; we feel library integration is an extremely beneficial skill. We also value clear use case based documentation to support the new interfaces.
 
 ; Involved toolkits or projects : 
 
-* [http://biopython.org/wiki/Main_Page Biopython]
-* [http://pycogent.sourceforge.net/ PyCogent]
+:* [http://biopython.org/wiki/Main_Page Biopython]
+:* [http://pycogent.sourceforge.net/ PyCogent]
 
 ; Degree of difficulty and needed skills : Medium to Hard. In addition to feeling comfortable working with existing libraries and programming in Python, this will require good communication skills to solicit and integrate feedback from existing Biopython and PyCogent users.
 
