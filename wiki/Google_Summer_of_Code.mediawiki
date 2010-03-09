@@ -3,4 +3,48 @@ Biopython was involved with the 2009 Google Summer of Code (GSoC) in collaborati
 * Nick Matzke worked on [https://www.nescent.org/wg_phyloinformatics/Phyloinformatics_Summer_of_Code_2009#Biogeographical_Phylogenetics_for_BioPython Biogeographical Phylogenetics].
 * Eric Talevich added support for [https://www.nescent.org/wg_phyloinformatics/Phyloinformatics_Summer_of_Code_2009#Biopython_support_for_parsing_and_writing_phyloXML parsing and writing phyloXML].
 
+In 2010 we hope to be continue working with GSoC
+
 == 2010 Project ideas ==
+
+=== Biopython and PyCogent interoperability ===
+
+; Rationale :
+
+; Approach :
+
+; Challenges : 
+
+; Involved toolkits or projects : 
+
+; Degree of difficulty and needed skills :
+
+; Mentors : [http://jcsmr.anu.edu.au/org/dmb/compgen/ Gavin Huttley], [http://chem.colorado.edu/index.php?option=com_content&view=article&id=263:rob-knight Rob Knight],[http://bcbio.wordpress.com Brad Chapman]
+
+=== Galaxy phylogenetics pipeline development ===
+
+; Rationale :
+
+; Approach :
+
+; Challenges : 
+
+; Involved toolkits or projects : 
+
+; Degree of difficulty and needed skills :
+
+; Mentors : [http://www.hyphy.org/sergei/ Sergei L Kosakovsky Pond], [http://bcbio.wordpress.com Brad Chapman], [http://www.bx.psu.edu/~anton/ Anton Nekrutenko]
+
+=== Accessing R phylogenetic tools from Python ===
+
+; Rationale :
+
+; Approach :
+
+; Challenges : 
+
+; Involved toolkits or projects : 
+
+; Degree of difficulty and needed skills :
+
+; Mentors : [http://dk.linkedin.com/pub/laurent-gautier/8/81/869 Laurent Gautier], [http://bcbio.wordpress.com Brad Chapman]
