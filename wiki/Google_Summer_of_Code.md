@@ -14,7 +14,9 @@ had two projects funded:
 -   Eric Talevich added support for [parsing and writing
     phyloXML](https://www.nescent.org/wg_phyloinformatics/Phyloinformatics_Summer_of_Code_2009#Biopython_support_for_parsing_and_writing_phyloXML).
 
-In 2010 we hope to be continue working with GSoC
+In 2010 we hope to be continue working with GSoC. If you are interested
+in contributing as a mentor or student, please introduce yourself on the
+[mailing list](http://biopython.org/wiki/Mailing_lists).
 
 2010 Project ideas
 ------------------
@@ -25,10 +27,7 @@ Rationale : [PyCogent](http://pycogent.sourceforge.net/) and [Biopython](http://
 
 <!-- -->
 
-Approach : The student would focus on soliciting use case scenarios from developers and the larger communities associated with both projects, and use these as the basis for  
-
-adding glue code and documentation to both libraries. Some use cases of
-immediate interest as a starting point are:
+Approach : The student would focus on soliciting use case scenarios from developers and the larger communities associated with both projects, and use these as the basis for adding glue code and documentation to both libraries. Some use cases of immediate interest as a starting point are:  
 
 -   Allow round-trip conversion between biopython and pycogent core
     objects (sequence, alignment, tree, etc.).

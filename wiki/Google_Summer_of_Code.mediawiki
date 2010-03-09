@@ -3,7 +3,7 @@ Biopython was involved with the 2009 Google Summer of Code (GSoC) in collaborati
 * Nick Matzke worked on [https://www.nescent.org/wg_phyloinformatics/Phyloinformatics_Summer_of_Code_2009#Biogeographical_Phylogenetics_for_BioPython Biogeographical Phylogenetics].
 * Eric Talevich added support for [https://www.nescent.org/wg_phyloinformatics/Phyloinformatics_Summer_of_Code_2009#Biopython_support_for_parsing_and_writing_phyloXML parsing and writing phyloXML].
 
-In 2010 we hope to be continue working with GSoC
+In 2010 we hope to be continue working with GSoC. If you are interested in contributing as a mentor or student, please introduce yourself on the [http://biopython.org/wiki/Mailing_lists mailing list].
 
 == 2010 Project ideas ==
 
@@ -11,8 +11,7 @@ In 2010 we hope to be continue working with GSoC
 
 ; Rationale : [http://pycogent.sourceforge.net/ PyCogent] and [http://biopython.org/wiki/Main_Page Biopython] are two widely used toolkits for performing computational biology and bioinformatics work in Python. The libraries have had traditionally different focuses: with Biopython focusing on sequence parsing and retrieval and PyCogent on evolutionary and phylogenetic processing. Both user communities would benefit from increased interoperability between the code bases, easing the developing of complex workflows.
 
-; Approach : The student would focus on soliciting use case scenarios from developers and the larger communities associated with both projects, and use these as the basis for
-adding glue code and documentation to both libraries. Some use cases of immediate interest as a starting point are:
+; Approach : The student would focus on soliciting use case scenarios from developers and the larger communities associated with both projects, and use these as the basis for adding glue code and documentation to both libraries. Some use cases of immediate interest as a starting point are:
 
 * Allow round-trip conversion between biopython and pycogent core objects (sequence, alignment, tree, etc.).
 * Building workflows using Codon Usage analyses in PyCogent with clustering code in Biopython.
