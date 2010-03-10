@@ -30,6 +30,7 @@ This wiki will help you download and install Biopython, and start using the libr
 !
 *[[Active_projects | What's being worked on]]
 *[[ GitUsage | Developing on Github ]]
+*[[Google Summer of Code]]
 |}
 
 The latest release is [[Download|Biopython 1.53]], released on 15 December 2009.
