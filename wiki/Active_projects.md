@@ -34,8 +34,8 @@ version](http://bcbio.wordpress.com/2009/03/22/mapreduce-implementation-of-gff-p
 ### Phylo
 
 [Eric](User%3AEricTalevich "wikilink") is working on a new module for
-phylogenetics, [Bio.Phylo](Phylo "wikilink"). It grew out of a Google
-Summer of Code 2009
+phylogenetics, [Bio.Phylo](Phylo "wikilink"). It grew out of a [Google
+Summer of Code](Google_Summer_of_Code "wikilink") 2009
 [project](http://socghop.appspot.com/student_project/show/google/gsoc2009/nescent/t124022798969),
 mentored by Brad, to add support for
 [phyloXML](http://www.phyloxml.org/) to Biopython; it also refactors
@@ -44,12 +44,13 @@ development branch on GitHub already, but new features appear first on
 Eric's [phyloxml
 branch](http://github.com/etal/biopython/tree/phyloxml).
 
-### Biogeography (GSoC)
+### Biogeography
 
 [Nick](Matzke "wikilink") is working on developing a Biogeography module
-for BioPython. This work is funded by [Google Summer of Code
-2009](http://socghop.appspot.com/program/home/google/gsoc2009) through
-NESCENT's [Phyloinformatics Summer of Code
+for BioPython. This work was funded by a [Google Summer of
+Code](Google_Summer_of_Code "wikilink") 2009
+[project](http://socghop.appspot.com/program/home/google/gsoc2009)
+through NESCENT's [Phyloinformatics Summer of Code
 2009](https://www.nescent.org/wg_phyloinformatics/Phyloinformatics_Summer_of_Code_2009).
 See the project proposal at: [Biogeographical Phylogenetics for
 BioPython](http://socghop.appspot.com/student_project/show/google/gsoc2009/nescent/t124022798250).
@@ -71,8 +72,8 @@ included in Biopython 1.54 onwards.
 ### Multiple Sequence Alignments
 
 Peter is working on a new alignment class for sequence alignments (not
-the kind in next gen sequencing), see:
-<http://github.com/peterjc/biopython/commits/alignment-obj>
+the kind in next gen sequencing), the core of which was recently merged
+into the trunk and should be included in Biopython 1.54 onwards.
 
 ### Open Enhancement Bugs
 
