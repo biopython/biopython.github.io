@@ -129,7 +129,7 @@ Evolution)](http://ape.mpl.ird.fr/)
 
 :\* [Biopython](http://biopython.org/wiki/Main_Page)
 
-Degree of difficulty and needed skills : Moderate. The project requires familiarity with coding in Python and R, and knowledge of phylogeny or biogeography. The student has plenty of flexibility to define the project based on their biological interests; there is also the possibility to venture far into data visualization once access to analysis methods is made. [GenGIS](http://kiwi.cs.dal.ca/GenGIS/Main_Page) can give ideas about what is possible.  
+Degree of difficulty and needed skills : Moderate. The project requires familiarity with coding in Python and R, and knowledge of phylogeny or biogeography. The student has plenty of flexibility to define the project based on their biological interests (e.g. [microarrays and heatmaps](http://www.warwick.ac.uk/go/peter_cock/python/heatmap/)); there is also the possibility to venture far into data visualization once access to analysis methods is made. [GenGIS](http://kiwi.cs.dal.ca/GenGIS/Main_Page) and can give ideas about what is possible.  
 
 <!-- -->
 
