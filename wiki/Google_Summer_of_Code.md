@@ -42,9 +42,9 @@ phylogenetic tree preparation and tree visualization code.
 support](http://biopython.org/wiki/Phylo), developed during GSoC 2009,
 with PyCogent.
 
-:\* Improve database interoperability by extending pycogent's Ensembl
-code to operate on additional genome databases, exporting these to
-Biopython objects.
+:\* Develop a standardised controller architecture for interrogation of
+genome databases by extending PyCogent's Ensembl code, including export
+to Biopython objects.
 
 Challenges : This project provides the student with a lot of freedom to create useful interoperability between two feature rich libraries. As opposed to projects which might require churning out more lines of code, the major challenge here will be defining useful APIs and interfaces for existing code. High level inventiveness and coding skill will be required for generating glue code; we feel library integration is an extremely beneficial skill. We also value clear use case based documentation to support the new interfaces.  
 
@@ -56,11 +56,11 @@ Involved toolkits or projects :
 
 :\* [PyCogent](http://pycogent.sourceforge.net/)
 
-Degree of difficulty and needed skills : Medium to Hard. In addition to feeling comfortable working with existing libraries and programming in Python, this will require good communication skills to solicit and integrate feedback from existing Biopython and PyCogent users.  
+Degree of difficulty and needed skills : Medium to Hard. At a minimum, the student will need to be highly competent in Python and become familiar with core objects in PyCogent and Biopython. Sub-projects will require additional expertise, for instance: familiarity with concepts in phylogenetics and genome biology; understanding SQL dialects.  
 
 <!-- -->
 
-Mentors : [Gavin Huttley](http://jcsmr.anu.edu.au/org/dmb/compgen/), [Rob Knight](http://chem.colorado.edu/index.php?option=com_content&view=article&id=263:rob-knight),[Brad Chapman](http://bcbio.wordpress.com)  
+Mentors : [Gavin Huttley](http://jcsmr.anu.edu.au/org/dmb/compgen/), [Rob Knight](http://chem.colorado.edu/index.php?option=com_content&view=article&id=263:rob-knight), [Brad Chapman](http://bcbio.wordpress.com), [Eric Talevich](http://eric.talevich.com/)  
 
 ### Galaxy phylogenetics pipeline development
 
