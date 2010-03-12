@@ -140,4 +140,44 @@ Degree of difficulty and needed skills : Moderate. The project requires familiar
 
 Mentors : [Laurent Gautier](http://dk.linkedin.com/pub/laurent-gautier/8/81/869), [Brad Chapman](http://bcbio.wordpress.com), [Peter Cock](http://www.scri.ac.uk/staff/petercock)  
 
+### PDB-Tidy: command-line tools for manipulating PDB files
+
+Rationale : The [Protein Data Bank](http://www.rcsb.org/pdb/home/home.do) is an important data repository for protein structures, but the tools currently available for working with data in the PDB file format are usually specialized for a single specific task (e.g. visualization, homology modelling). Structural biologists would benefit from a command-line toolkit that makes structure data as easy to manipulate as sequence data already is.  
+
+<!-- -->
+
+Approach : Use Bio.PDB to build a set of simple command-line tools for tidying up PDB files. For example:  
+
+:\* Renumber residues starting from 1 (or N)
+
+:\* Select one or more chains and write them to a new PDB file
+
+:\* Check for collisions between atoms, implausible bond angles, etc.
+
+:\* Extract a SeqRecord from a PDB structure, and use SeqIO to write a
+new file in any supported format for sequence data
+
+:\* Incorporate predicted secondary-structure information into a PDB
+file (so that PyMol etc. can use it)
+
+:\* Extend and improve Bio.PDB as appropriate to support this effort
+
+Challenges : Many PDB files contain some inconsistent or surprising features -- some sensible assumptions, like continuous numbering of residues, do not hold in all cases. So, awareness of these issues, defensive coding, and extensive testing will be necesssary.  
+
+<!-- -->
+
+Involved toolkits or projects :  
+
+:\* Biopython: Bio.PDB, and other modules as needed
+
+:\* Protein Data Bank
+
+:\* For gathering ideas: MolProbity, PyMol, etc.
+
+Degree of difficulty and needed skills : Moderate. Knowledge of the types of information in a PDB file, and what they're used for, is valuable here. It is also good to be aware of functionality that is already available in other popular software, and aim for interoperability in those cases rather than duplicating major features.  
+
+<!-- -->
+
+Mentors : [Eric Talevich](User%3AEricTalevich "wikilink")  
+
 
