@@ -70,4 +70,4 @@ In 2010 we hope to be continue working with GSoC. If you are interested in contr
 
 ; Degree of difficulty and needed skills : Moderate. The project requires familiarity with coding in Python and R, and knowledge of phylogeny or biogeography. The student has plenty of flexibility to define the project based on their biological interests; there is also the possibility to venture far into data visualization once access to analysis methods is made. [http://kiwi.cs.dal.ca/GenGIS/Main_Page GenGIS] can give ideas about what is possible.
 
-; Mentors : [http://dk.linkedin.com/pub/laurent-gautier/8/81/869 Laurent Gautier], [http://bcbio.wordpress.com Brad Chapman]
+; Mentors : [http://dk.linkedin.com/pub/laurent-gautier/8/81/869 Laurent Gautier], [http://bcbio.wordpress.com Brad Chapman], [http://www.scri.ac.uk/staff/petercock Peter Cock]
