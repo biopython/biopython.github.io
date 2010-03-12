@@ -18,6 +18,11 @@ In 2010 we hope to be continue working with GSoC. If you are interested
 in contributing as a mentor or student, please introduce yourself on the
 [mailing list](http://biopython.org/wiki/Mailing_lists).
 
+Please read the [GSoC page at the Open Bioinformatics
+Foundation](http://www.open-bio.org/wiki/Google_Summer_of_Code) and the
+main [Google Summer of Code](http://code.google.com/soc) page for more
+details about the program.
+
 2010 Project ideas
 ------------------
 
