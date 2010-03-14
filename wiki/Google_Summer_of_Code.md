@@ -43,7 +43,7 @@ clustering code in Biopython.
 :\* Connecting Biopython acquired sequences to PyCogent's alignment,
 phylogenetic tree preparation and tree visualization code.
 
-:\* Integrate Biopython's [PhyloXML
+:\* Integrate Biopython's [phyloXML
 support](http://biopython.org/wiki/Phylo), developed during GSoC 2009,
 with PyCogent.
 
@@ -65,7 +65,7 @@ Degree of difficulty and needed skills : Medium to Hard. At a minimum, the stude
 
 <!-- -->
 
-Mentors : [Gavin Huttley](http://jcsmr.anu.edu.au/org/dmb/compgen/), [Rob Knight](http://chem.colorado.edu/index.php?option=com_content&view=article&id=263:rob-knight), [Brad Chapman](http://bcbio.wordpress.com), [Eric Talevich](http://eric.talevich.com/)  
+Mentors : [Gavin Huttley](http://jcsmr.anu.edu.au/org/dmb/compgen/), [Rob Knight](http://chem.colorado.edu/index.php?option=com_content&view=article&id=263:rob-knight), [Brad Chapman](http://bcbio.wordpress.com), [Eric Talevich](User%3AEricTalevich "wikilink")  
 
 ### Galaxy phylogenetics pipeline development
 

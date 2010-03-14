@@ -18,7 +18,7 @@ Please read the [http://www.open-bio.org/wiki/Google_Summer_of_Code GSoC page at
 :* Allow round-trip conversion between biopython and pycogent core objects (sequence, alignment, tree, etc.).
 :* Building workflows using Codon Usage analyses in PyCogent with clustering code in Biopython.
 :* Connecting Biopython acquired sequences to PyCogent's alignment, phylogenetic tree preparation and tree visualization code.
-:* Integrate Biopython's [http://biopython.org/wiki/Phylo PhyloXML support], developed during GSoC 2009, with PyCogent.
+:* Integrate Biopython's [http://biopython.org/wiki/Phylo phyloXML support], developed during GSoC 2009, with PyCogent.
 :* Develop a standardised controller architecture for interrogation of genome databases by extending PyCogent's Ensembl code, including export to Biopython objects.
 
 ; Challenges : This project provides the student with a lot of freedom to create useful interoperability between two feature rich libraries. As opposed to projects which might require churning out more lines of code, the major challenge here will be defining useful APIs and interfaces for existing code. High level inventiveness and coding skill will be required for generating glue code; we feel library integration is an extremely beneficial skill. We also value clear use case based documentation to support the new interfaces.
@@ -30,7 +30,7 @@ Please read the [http://www.open-bio.org/wiki/Google_Summer_of_Code GSoC page at
 
 ; Degree of difficulty and needed skills : Medium to Hard. At a minimum, the student will need to be highly competent in Python and become familiar with core objects in PyCogent and Biopython. Sub-projects will require additional expertise, for instance: familiarity with concepts in phylogenetics and genome biology; understanding SQL dialects.
 
-; Mentors : [http://jcsmr.anu.edu.au/org/dmb/compgen/ Gavin Huttley], [http://chem.colorado.edu/index.php?option=com_content&view=article&id=263:rob-knight Rob Knight], [http://bcbio.wordpress.com Brad Chapman], [http://eric.talevich.com/ Eric Talevich]
+; Mentors : [http://jcsmr.anu.edu.au/org/dmb/compgen/ Gavin Huttley], [http://chem.colorado.edu/index.php?option=com_content&view=article&id=263:rob-knight Rob Knight], [http://bcbio.wordpress.com Brad Chapman], [[User%3AEricTalevich|Eric Talevich]]
 
 === Galaxy phylogenetics pipeline development ===
 
