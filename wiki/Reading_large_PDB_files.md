@@ -179,3 +179,11 @@ sloppyparser = Bio.PDB.PDBParser(PERMISSIVE=True,structure_builder=SloppyStructu
 def get_structure(pdbfile,pdbid='system'):
     return sloppyparser.get_structure(pdbid,pdbfile)
 ```
+
+See Also
+--------
+
+The SloppyStructureBuilder() was used as the basis for a small python
+module
+[edPDB](http://sbcb.bioch.ox.ac.uk/oliver/software/GromacsWrapper/html/edpdb.html)
+to edit PDB files in preparation for MD simulations.
