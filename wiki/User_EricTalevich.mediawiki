@@ -1,5 +1,10 @@
 I've been using Biopython in my [http://esbg.bmb.uga.edu/ lab] at the University of Georgia since January 2009. I take an interest in the evolution and structure of regulatory proteins, mainly.
 
-For Google Summer of Code 2009, I wrote the [[Phylo]] module to initially support the [[PhyloXML]] format, and later generalized it to support multiple formats (inspired by SeqIO and AlignIO). I'm planning to extend these modules to support more formats and common operations as research demands.
+For Google Summer of Code 2009, I wrote the [[Phylo]] module to initially support the [[PhyloXML]] format, and later generalized it to support multiple formats (inspired by SeqIO and AlignIO). I'm planning to extend these modules to support more formats and basic operations as research demands.
 
-I'm on [http://github.com/etal GitHub], too.
+'''See also'''
+
+* [http://github.com/etal GitHub]
+* [http://etal.myweb.uga.edu/ UGA personal page]
+* [http://eric.talevich.com/ Homepage] (ill-maintained)
+* [http://etalog.blogspot.com/ Blog]

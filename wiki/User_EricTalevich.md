@@ -12,6 +12,12 @@ For Google Summer of Code 2009, I wrote the [Phylo](Phylo "wikilink")
 module to initially support the [PhyloXML](PhyloXML "wikilink") format,
 and later generalized it to support multiple formats (inspired by SeqIO
 and AlignIO). I'm planning to extend these modules to support more
-formats and common operations as research demands.
+formats and basic operations as research demands.
 
-I'm on [GitHub](http://github.com/etal), too.
+**See also**
+
+-   [GitHub](http://github.com/etal)
+-   [UGA personal page](http://etal.myweb.uga.edu/)
+-   [Homepage](http://eric.talevich.com/) (ill-maintained)
+-   [Blog](http://etalog.blogspot.com/)
+
