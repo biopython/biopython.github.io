@@ -98,4 +98,4 @@ Please read the [http://www.open-bio.org/wiki/Google_Summer_of_Code GSoC page at
 
 ; Degree of difficulty and needed skills : Moderate. Knowledge of the types of information in a PDB file, and what they're used for, is valuable here. It is also good to be aware of functionality that is already available in other popular software, and aim for interoperability in those cases rather than duplicating major features.
 
-; Mentors : [[User%3AEricTalevich|Eric Talevich]]
+; Mentors : [[User%3AEricTalevich|Eric Talevich]] (co-mentors welcome)
