@@ -150,19 +150,18 @@ Approach : Use Bio.PDB to build a set of simple command-line tools for tidying u
 
 :\* Renumber residues starting from 1 (or N)
 
-:\* Select one or more chains and write them to a new PDB file
+:\* Select a portion of the structure -- models, chains, etc. -- and
+write it to a new file (PDB, FASTA, PIR, and other formats)
 
-:\* Check for collisions between atoms, implausible bond angles, etc.
+:\* Perform some basic, well-established measures of model
+quality/validity
 
-:\* Extract a SeqRecord from a PDB structure, and use SeqIO to write a
-new file in any supported format for sequence data
-
-:\* Incorporate predicted secondary-structure information into a PDB
-file (so that PyMol etc. can use it)
+:\* Provide "glue" for integrating with other widely used
+structural-biology software
 
 :\* Extend and improve Bio.PDB as appropriate to support this effort
 
-Challenges : Many PDB files contain some inconsistent or surprising features -- some sensible assumptions, like continuous numbering of residues, do not hold in all cases. So, awareness of these issues, defensive coding, and extensive testing will be necesssary.  
+Challenges : Many PDB files contain some inconsistent or surprising features -- some sensible assumptions, like continuous numbering of residues, do not hold in all cases. So, awareness of these issues, defensive coding, and extensive testing will be necesssary. Also, some discretion in the specific features implemented will be necessary: the features should generally supplement each other, and be conceptually cohesive. Your application should include a detailed project plan describing and justifying each feature you plan to implement.  
 
 <!-- -->
 
@@ -170,9 +169,10 @@ Involved toolkits or projects :
 
 :\* Biopython: Bio.PDB, and other modules as needed
 
-:\* Protein Data Bank
+:\* [Protein Data Bank](http://www.rcsb.org/pdb/home/home.do)
 
-:\* For gathering ideas: MolProbity, PyMol, etc.
+:\* Other relevant software: PyMol, Modeller, MolProbity; perhaps
+AutoDock, VMD, AMBER...
 
 Degree of difficulty and needed skills : Moderate. Knowledge of the types of information in a PDB file, and what they're used for, is valuable here. It is also good to be aware of functionality that is already available in other popular software, and aim for interoperability in those cases rather than duplicating major features.  
 
