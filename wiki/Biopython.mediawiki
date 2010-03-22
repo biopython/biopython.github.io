@@ -8,7 +8,7 @@
 |}
 ===Introduction=== 
 Biopython is a set of freely available tools for biological computation written in [http://www.python.org Python] by an international team of developers. 
-
+ 
 It is a distributed collaborative effort to develop Python libraries and applications which address the needs of current and future work in bioinformatics. The source code is made available under the [http://www.biopython.org/DIST/LICENSE Biopython License], which is extremely liberal and compatible with almost every license in the world. We work along with the [http://open-bio.org Open Bioinformatics Foundation], who generously host our website, bug tracker, and mailing lists.
 
 This wiki will help you download and install Biopython, and start using the libraries and tools.
