@@ -156,8 +156,11 @@ write it to a new file (PDB, FASTA, PIR, and other formats)
 :\* Perform some basic, well-established measures of model
 quality/validity
 
-:\* Provide "glue" for integrating with other widely used
-structural-biology software
+:\* Draw a Ramachandran plot (using ReportLab)
+
+:\* Provide "glue" for integrating with some external, widely used
+structural-biology software (e.g. Modeller, Autodock, MolProbity,
+PyMol...)
 
 :\* Extend and improve Bio.PDB as appropriate to support this effort
 
@@ -171,10 +174,9 @@ Involved toolkits or projects :
 
 :\* [Protein Data Bank](http://www.rcsb.org/pdb/home/home.do)
 
-:\* Other relevant software: PyMol, Modeller, MolProbity; perhaps
-AutoDock, VMD, AMBER...
+:\* See RCSB's [list of software tools](http://sw-tools.pdb.org/)
 
-Degree of difficulty and needed skills : Moderate. Knowledge of the types of information in a PDB file, and what they're used for, is valuable here. It is also good to be aware of functionality that is already available in other popular software, and aim for interoperability in those cases rather than duplicating major features.  
+Degree of difficulty and needed skills : Moderate. Knowledge of the types of information in a PDB file, and what they're used for, is valuable here. It is also good to be aware of functionality that is already available in other popular software, and aim for interoperability in those cases rather than duplicating major features. Applications related to this idea should focus on a specific goal beyond the manipulation PDB files -- in what sort of research will this be useful?  
 
 <!-- -->
 
