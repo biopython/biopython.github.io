@@ -84,7 +84,7 @@ Please read the [http://www.open-bio.org/wiki/Google_Summer_of_Code GSoC page at
 :* Renumber residues starting from 1 (or N)
 :* Select a portion of the structure -- models, chains, etc. -- and write it to a new file (PDB, FASTA, PIR, and other formats)
 :* Perform some basic, well-established measures of model quality/validity
-:* Draw a Ramachandran plot (using ReportLab)
+:* Draw a Ramachandran plot (using ReportLab; see also [http://www.warwick.ac.uk/go/peter_cock/python/ramachandran/ this page])
 :* Provide "glue" for integrating with some external, widely used structural-biology software (e.g. Modeller, Autodock, MolProbity, PyMol...)
 :* Extend and improve Bio.PDB as appropriate to support this effort
 

@@ -156,7 +156,8 @@ write it to a new file (PDB, FASTA, PIR, and other formats)
 :\* Perform some basic, well-established measures of model
 quality/validity
 
-:\* Draw a Ramachandran plot (using ReportLab)
+:\* Draw a Ramachandran plot (using ReportLab; see also [this
+page](http://www.warwick.ac.uk/go/peter_cock/python/ramachandran/))
 
 :\* Provide "glue" for integrating with some external, widely used
 structural-biology software (e.g. Modeller, Autodock, MolProbity,
