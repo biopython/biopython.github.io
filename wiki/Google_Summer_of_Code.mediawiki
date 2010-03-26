@@ -97,8 +97,7 @@ Please read the [http://www.open-bio.org/wiki/Google_Summer_of_Code GSoC page at
 
 ; Degree of difficulty and needed skills : Moderate. An understanding of the types of information in a PDB file, and what they're used for, is valuable here. It is also good to be aware of functionality that is already available in other popular software, and aim for interoperability in those cases rather than duplicating major features. Applications related to this idea should focus on a specific goal beyond the manipulation PDB files -- in what sort of research will this be useful?
 
-; Mentors : [[User%3AEricTalevich|Eric Talevich]] (looking for co-mentors)
-
+; Mentors : [[User%3AEricTalevich|Eric Talevich]], [https://www.nescent.org/wg_phyloinformatics/User:Dianaj Diana Jaunzeikare]
 
 === Integration with a third-party structural biology application ===
 
