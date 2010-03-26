@@ -151,17 +151,13 @@ Approach : Use Bio.PDB to build a set of simple command-line tools for tidying u
 :\* Renumber residues starting from 1 (or N)
 
 :\* Select a portion of the structure -- models, chains, etc. -- and
-write it to a new file (PDB, FASTA, PIR, and other formats)
+write it to a new file (PDB, FASTA, and other formats)
 
 :\* Perform some basic, well-established measures of model
 quality/validity
 
 :\* Draw a Ramachandran plot (using ReportLab; see also [this
 page](http://www.warwick.ac.uk/go/peter_cock/python/ramachandran/))
-
-:\* Provide "glue" for integrating with some external, widely used
-structural-biology software (e.g. Modeller, Autodock, MolProbity,
-PyMol...)
 
 :\* Extend and improve Bio.PDB as appropriate to support this effort
 
@@ -177,10 +173,37 @@ Involved toolkits or projects :
 
 :\* See RCSB's [list of software tools](http://sw-tools.pdb.org/)
 
-Degree of difficulty and needed skills : Moderate. Knowledge of the types of information in a PDB file, and what they're used for, is valuable here. It is also good to be aware of functionality that is already available in other popular software, and aim for interoperability in those cases rather than duplicating major features. Applications related to this idea should focus on a specific goal beyond the manipulation PDB files -- in what sort of research will this be useful?  
+Degree of difficulty and needed skills : Moderate. An understanding of the types of information in a PDB file, and what they're used for, is valuable here. It is also good to be aware of functionality that is already available in other popular software, and aim for interoperability in those cases rather than duplicating major features. Applications related to this idea should focus on a specific goal beyond the manipulation PDB files -- in what sort of research will this be useful?  
 
 <!-- -->
 
-Mentors : [Eric Talevich](User%3AEricTalevich "wikilink") (co-mentors welcome)  
+Mentors : [Eric Talevich](User%3AEricTalevich "wikilink") (looking for co-mentors)  
+
+### Integration with a third-party structural biology application
+
+Rationale : Biopython is already a useful toolkit for computational structural biology, and Python is a popular language for scripting and configuring a number of separate molecular modelling and simulation tools. Support for controlling these external tools from within Biopython, however, is relatively sparse. This project addresses the issue, starting with a single application.  
+
+<!-- -->
+
+Approach : Select a stable, popular and well-supported third-party application for structural biology (see below) to support from within Biopython. Identify "pain points" that would occur when trying to control various workflows involving your application of choice from Biopython -- e.g. data formats Biopython doesn't yet support, or command-line programs with complex options. In a new Biopython module, write code that makes these common procedures easier to perform, without also making common errors easier to commit.  
+
+<!-- -->
+
+Challenges : Most of the relevant third-party tools have quite extensive functionality, and the corresponding Biopython module should support essentially all of it (unless there's a good reason to skip a particular feature). Some simulation and modelling operations take a long time, too; it should be possible to launch these long-running processes and protect them from interruption.  
+
+<!-- -->
+
+Involved toolkits or projects :  
+
+:\* Biopython: Bio.PDB, and other modules as needed
+
+:\* An external application of your choice: Modeller, AutoDock, PyMol,
+MolProbity, ...
+
+Degree of difficulty and needed skills : Medium to hard. Simpler tasks include providing "glue" at each point of I/O; more challenging design problems could come from automating common parts of a simulation or modeling pipeline. Experience in with the tool being wrapped is probably essential.  
+
+<!-- -->
+
+Mentors : [Eric Talevich](User%3AEricTalevich "wikilink") (looking for co-mentors)  
 
 
