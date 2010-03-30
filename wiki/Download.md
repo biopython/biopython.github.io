@@ -211,7 +211,7 @@ Old Releases
 Recent releases of Biopython require NumPy (and not Numeric):
 
 -   [biopython-1.52.tar.gz](http://biopython.org/DIST/biopython-1.52.tar.gz)
-    5,486 Kb -- Source Tarball
+    5,486 Kb -- Source Tarball (September 22, 2009)
 -   [biopython-1.52.zip](http://biopython.org/DIST/biopython-1.52.zip)
     5,930 Kb -- Source Zip File
 -   [biopython-1.52.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.52.win32-py2.4.exe)
