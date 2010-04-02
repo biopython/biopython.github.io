@@ -1,6 +1,6 @@
 This module provides classes, functions and I/O support for working with phylogenetic trees.
 
-This code is not yet included with Biopython, and therefore the documentation has not been integrated into the Biopython Tutorial yet either. We expect it to be included in Biopython 1.54 (due Spring 2010)
+This code has just been included in Biopython 1.54 ''beta'', but the documentation has not been integrated into the Biopython Tutorial yet.
 
 ==Availability==
 
