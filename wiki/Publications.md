@@ -14,6 +14,13 @@ Biopython application note <cite>CockEtAl2009</cite>. Regrettably, in
 some cases the manuscripts themselves do not directly mention Biopython,
 but this has been confirmed explicitly by an author.
 
+Publications from 2010
+======================
+
+We don't plan to compile a listing manually, since most publications
+should be citing our application note <cite>CockEtAl2009</cite>
+explicitly (and/or one of the module specific papers).
+
 Publications from 2009
 ======================
 
