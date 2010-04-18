@@ -175,13 +175,31 @@ phyloxml = best.to_phylogeny(rooted=True).to_phyloxml()
 Phylo.write(phyloxml, 'example_best.xml', 'phyloxml')
 </source>
 
+===Core classes===
+
+Phyloxml
+* Container for phylogenies; not used by the top-level Bio.Phylo I/O functions
+
+Phylogeny
+* Derived from Tree -- the global tree object
+
+Clade
+* Derived from Subtree -- represents a node in the object tree, and local info
+
+Other
+* Represents data included in the phyloXML file but not described by the phyloXML specification
+
+===Annotation types===
+
+'''(to do)'''
+
 ===Integrating with the rest of Biopython===
 
 The classes used by this module inherit from the [[Phylo]] module's generalized BaseTree classes, and therefore have access to the methods defined on those base classes. Since the phyloXML specification is very detailed, these subclasses are kept in a separate module, Bio.Phylo.PhyloXML, and offer additional methods for converting between phyloXML and standard Biopython types.
 
 The PhyloXML.Sequence class contains methods for converting to and from Biopython [[SeqRecord]] objects -- to_seqrecord() and from_seqrecord(). This includes the molecular sequence (mol_seq) as a [[Seq]] object, and the protein domain architecture as list of [[SeqFeature]] objects. Likewise, PhyloXML.ProteinDomain objects have a to_seqfeature() method.
 
-===Example pipeline===
+==Example pipeline==
 
 See the [http://biopython.org/DIST/docs/tutorial/Tutorial.html Biopython Tutorial] sections on sequence alignment and BLAST for explanations of the first few steps shown here.
 
