@@ -178,8 +178,9 @@ unzipped BioSQL download, then:
 
 `./load_ncbi_taxonomy.pl --dbname bioseqdb --driver mysql --dbuser root --download true`
 
-For PostgreSQL you need to have the perl DBD-Pg module installed and
-substitute *Pg* for *mysql* in the above command.
+For PostgreSQL you need to have the perl DBD-Pg module installed - Using
+CPAN: "perl -MCPAN -e 'install DBI'; perl -MCPAN -e 'install DBD::Pg'".
+Substitute *Pg* for *mysql* in the above command.
 
 There is about 10MB to fetch, so it can take a little while (and doesn't
 give any feedback while this happens). If you are worried, open a file
