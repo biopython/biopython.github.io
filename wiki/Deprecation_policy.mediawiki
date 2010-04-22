@@ -1,5 +1,7 @@
 As bioinformatics and computational biology are developing quickly, some of previously developed Biopython modules may no longer be relevant in today's world. To keep the code base clean, we aim to deprecate and remove such code from Biopython, while avoiding any nasty surprises for users who may be relying on older code.
 
+We keep a plain text file in the Biopython source code to record these changes, available [http://biopython.open-bio.org/SRC/biopython/DEPRECATED here] or on [http://github.com/biopython/biopython/blob/master/DEPRECATED github].
+
 This is the current policy for deprecating and removing code from Biopython:
 * First, ask on the biopython and biopython-dev [[mailing lists]] whether a given piece of code has any users. Please keep in mind that not all users are following the biopython-dev mailing list.
 * Consider declaring the module as "obsolete" for a release ''before'' deprecation. No code changes, just:

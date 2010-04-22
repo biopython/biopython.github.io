@@ -10,6 +10,11 @@ today's world. To keep the code base clean, we aim to deprecate and
 remove such code from Biopython, while avoiding any nasty surprises for
 users who may be relying on older code.
 
+We keep a plain text file in the Biopython source code to record these
+changes, available
+[here](http://biopython.open-bio.org/SRC/biopython/DEPRECATED) or on
+[github](http://github.com/biopython/biopython/blob/master/DEPRECATED).
+
 This is the current policy for deprecating and removing code from
 Biopython:
 
