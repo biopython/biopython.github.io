@@ -6,9 +6,9 @@ To use these modules, see the [[Phylo]] page for installation instructions.
 
 A complete phyloXML document has a root node with the tag "phyloxml". Directly under the root is a sequence of "phylogeny" elements (phylogenetic trees), possibly followed by other arbitrary data not included in the phyloXML spec. The main structural element of these phylogenetic trees is the Clade: a tree has a clade attribute, along with other attributes, and each clade contains a series of clades (and other attributes), recursively.
 
-The child nodes and attributes of each XML node are mapped onto classes in the PhyloXML module, keeping the names the same where possible; the XML document structure is closely mirrored in the Phyloxml objects produced by Bio.Phylo.PhyloXMLIO.read().
+The child nodes and attributes of each XML node are mapped onto classes in the PhyloXML module, keeping the names the same where possible; the XML document structure is closely mirrored in the Phyloxml objects produced by Bio.Phylo.PhyloXMLIO.read(), and the Phylogeny objects produced by Bio.Phylo.read() and parse().
 
-For example, this XML:
+For example, this XML (from Tests/PhyloXML/example.xml):
 
 <pre>
 <phyloxml>
@@ -34,34 +34,32 @@ For example, this XML:
 produces an object hierarchy like this:
 
 <source lang=python>
-Phyloxml(phylogenies=[
-            Phylogeny(name='An example',
-                      rooted='True',
-                      clade=Clade(clades=[
-                                    Clade(branch_length='0.06',
-                                          clades=[
-                                            Clade(branch_length='0.102', name='A'),
-                                            Clade(branch_length='0.23', name='B'),
-                                            ]),
-                                    Clade(branch_length='0.4', name='C'),
-                                    ]))
-    ])
+>>> from Bio import Phylo
+>>> tree = Phylo.read('example.xml')
+>>> print tree
 </source>
+<pre>
+Phylogeny(rooted='True', description='phyloXML allows to use either a "branch_length" attribute...',
+          name='example from Prof. Joe Felsenstein's book "Inferring Phyl...')
+    Clade()
+        Clade(branch_length='0.06')
+            Clade(branch_length='0.102', name='A')
+            Clade(branch_length='0.23', name='B')
+        Clade(branch_length='0.4', name='C')
+</pre>
 
 which represents a phylogeny like this:
 
+<source lang=python>
+>>> Phylo.draw_ascii(tree)
+</source>
 <pre>
-
-         .102
-       _______A
-   .06 |
- ______|
- |     | .23
- |     |______B
-_|
+             __________________ A
+  __________|
+_|          |___________________________________________ B
  |
- |    .4
- |____________C
+ |___________________________________________________________________________ C
+
 </pre>
 
 The tree objects are derived from base classes in [[Phylo|Bio.Phylo]]; see that page for more about this object representation.

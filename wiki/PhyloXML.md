@@ -25,9 +25,10 @@ other attributes), recursively.
 The child nodes and attributes of each XML node are mapped onto classes
 in the PhyloXML module, keeping the names the same where possible; the
 XML document structure is closely mirrored in the Phyloxml objects
-produced by Bio.Phylo.PhyloXMLIO.read().
+produced by Bio.Phylo.PhyloXMLIO.read(), and the Phylogeny objects
+produced by Bio.Phylo.read() and parse().
 
-For example, this XML:
+For example, this XML (from Tests/PhyloXML/example.xml):
 
     <phyloxml>
        <phylogeny rooted="true">
@@ -51,33 +52,30 @@ For example, this XML:
 produces an object hierarchy like this:
 
 ``` python
-Phyloxml(phylogenies=[
-            Phylogeny(name='An example',
-                      rooted='True',
-                      clade=Clade(clades=[
-                                    Clade(branch_length='0.06',
-                                          clades=[
-                                            Clade(branch_length='0.102', name='A'),
-                                            Clade(branch_length='0.23', name='B'),
-                                            ]),
-                                    Clade(branch_length='0.4', name='C'),
-                                    ]))
-    ])
+>>> from Bio import Phylo
+>>> tree = Phylo.read('example.xml')
+>>> print tree
 ```
+
+    Phylogeny(rooted='True', description='phyloXML allows to use either a "branch_length" attribute...',
+              name='example from Prof. Joe Felsenstein's book "Inferring Phyl...')
+        Clade()
+            Clade(branch_length='0.06')
+                Clade(branch_length='0.102', name='A')
+                Clade(branch_length='0.23', name='B')
+            Clade(branch_length='0.4', name='C')
 
 which represents a phylogeny like this:
 
+``` python
+>>> Phylo.draw_ascii(tree)
+```
 
-             .102
-           _______A
-       .06 |
-     ______|
-     |     | .23
-     |     |______B
-    _|
+                 __________________ A
+      __________|
+    _|          |___________________________________________ B
      |
-     |    .4
-     |____________C
+     |___________________________________________________________________________ C
 
 The tree objects are derived from base classes in
 [Bio.Phylo](Phylo "wikilink"); see that page for more about this object
