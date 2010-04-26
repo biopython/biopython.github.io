@@ -211,9 +211,19 @@ in_handle.close()
 ```
 
 You will get back a single record for chromosome 1 which contains all of
-the coding features in memory for further manipulation. Depending on
-your memory requirements and workflow, it may make sense to do analyses
-over each chromosome or set of features you are interested in.
+the coding features in memory for further manipulation. The rec object
+is a Biopython [SeqRecord](SeqRecord "wikilink") containing the features
+described in the GFF file. The features are ordered into parent-child
+relationships based on the line by line information in the original GFF
+file. See the detailed documentation on
+[SeqRecord](SeqRecord "wikilink") and
+[SeqFeature](http://biopython.org/DIST/docs/tutorial/Tutorial.html#sec:seq_features)
+objects for more details on accessing the information in these objects.
+
+Depending on your memory requirements and workflow, it may make sense to
+do analysis over each chromosome or set of features you are interested
+in and the GFF parser provides high level ways to restrict which lines
+are parsed.
 
 ### Iterating over portions of a file
 
