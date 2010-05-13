@@ -30,6 +30,10 @@ Peter is working on a new alignment class for sequence alignments (not the kind 
 
 This [http://bugzilla.open-bio.org/buglist.cgi?product=Biopython&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_severity=enhancement Bugzilla Search] will list all open enhancement bugs (any filed by core developers are fairly likely to be integrated, some are just wish list entries).
 
+=== (GSOC 2010) Extending Bio.PDB ===
+
+GSOC 2010 project that aims to introduce several new features to the Bio.PDB structural biology module. Includes functions to add polar hydrogens to structures, probing for SS bridges based on structural information and annotations, renumbering residues, coarse-graining a structure, etc. A more comprehensive layout of the project is available [[GSOC2010_Joao|here]].
+
 == Project ideas ==
 
 Please add any ideas or proposals for new additions to Biopython. Bugs and enhancements for current code should be discussed though our bugzilla interface.

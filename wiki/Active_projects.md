@@ -82,6 +82,15 @@ Search](http://bugzilla.open-bio.org/buglist.cgi?product=Biopython&bug_status=NE
 will list all open enhancement bugs (any filed by core developers are
 fairly likely to be integrated, some are just wish list entries).
 
+### (GSOC 2010) Extending Bio.PDB
+
+GSOC 2010 project that aims to introduce several new features to the
+Bio.PDB structural biology module. Includes functions to add polar
+hydrogens to structures, probing for SS bridges based on structural
+information and annotations, renumbering residues, coarse-graining a
+structure, etc. A more comprehensive layout of the project is available
+[here](GSOC2010_Joao "wikilink").
+
 Project ideas
 -------------
 
