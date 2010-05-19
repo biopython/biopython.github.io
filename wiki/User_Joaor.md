@@ -18,8 +18,8 @@ University.
 ''' Contributions to Biopython '''
 
 I have been a member of the Biopython community since 2007 but only
-became an active participant with the GSOC 2010 programme. My project
-involves enrich the Bio.PDB module with several features that will
+became an active participant with the GSOC 2010 programme. My project is
+on the enrichment of the Bio.PDB module with several features that will
 hopefully make it more attractive and useful to the structural biology
 community.
 
