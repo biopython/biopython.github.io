@@ -157,16 +157,3 @@ The schedule below was organised to be flexible, which means that some features 
 
 
 ====  Reviewing documentation, code, write tests for new functions. ====
-
-** Same Charge contacts
-** Atom Clashes
-:Via ResidueDepth Class
-** Buried Charges
-*Interface WHATIF PDBReport web service
-** Parse WARNING and ERROR messages
-
-
-=== Week 11 [10th - 17th August] === 
-
-
-====  Reviewing documentation, code, write tests for new functions. ====
