@@ -4,27 +4,23 @@ permalink: wiki/Download
 layout: wiki
 ---
 
-Current Release - 1.54 *beta* - 2 April 2010
-============================================
+Current Release - 1.54 - 20 May 2010
+====================================
 
 See also [What's new](http://biopython.open-bio.org/SRC/biopython/NEWS).
 
 ### Files
 
--   [biopython-1.54b.tar.gz](http://biopython.org/DIST/biopython-1.54b.tar.gz)
-    6,554 Kb -- Source Tarball
--   [biopython-1.54b.zip](http://biopython.org/DIST/biopython-1.54b.zip)
-    7,118 Kb -- Source Zip File
--   [biopython-1.54b.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.54b.win32-py2.4.exe)
-    1,426 Kb -- 32 bit Windows Installer for Python 2.4 and NumPy 1.1
--   [biopython-1.54b.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.54b.win32-py2.5.exe)
-    1,427 Kb -- 32 bit Windows Installer for Python 2.5 and NumPy 1.1
--   [biopython-1.54b.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.54b.win32-py2.6.exe)
-    1,456 Kb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.3
-
-**NOTE** : This is a *beta* release for testing. It would be unwise to
-install this on a production machine without doing extensive testing
-(instead install Biopython 1.53, links at end of page).
+-   [biopython-1.54.tar.gz](http://biopython.org/DIST/biopython-1.54.tar.gz)
+    6,295 Kb -- Source Tarball
+-   [biopython-1.54.zip](http://biopython.org/DIST/biopython-1.54.zip)
+    6,859 Kb -- Source Zip File
+-   [biopython-1.54.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.54.win32-py2.4.exe)
+    1,434 Kb -- 32 bit Windows Installer for Python 2.4 and NumPy 1.1
+-   [biopython-1.54.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.54.win32-py2.5.exe)
+    1,434 Kb -- 32 bit Windows Installer for Python 2.5 and NumPy 1.1
+-   [biopython-1.54.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.54.win32-py2.6.exe)
+    1,457 Kb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.3
 
 Please report any issues on our [mailing
 lists](mailing_lists "wikilink") or
