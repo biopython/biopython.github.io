@@ -243,23 +243,13 @@ pylab.show()
 
 ### Displaying trees
 
-**pretty\_print** produces a plain-text representation of the entire
-tree. Uses str() to display nodes by default; for the longer repr()
-representation, add the argument show\_all=True.
+**str(**tree**)** produces a plain-text representation of the entire
+tree. Strings are automatically truncated to ensure reasonable display.
 
-Strings are automatically truncated to ensure reasonable display.
+Use this with the print statement to get a quick overview of your tree:
 
-    >>> phx = Phylo.parse('phyloxml_examples.xml', 'phyloxml').next()
-    >>> Phylo.pretty_print(phx)
-    Phylogeny example from Prof. Joe Felsenstein's book "Inferring Phylogenies"
-        Clade
-            Clade
-                Clade A
-                Clade B
-            Clade C
-    ...
-
-    >>> Phylo.pretty_print(phx, show_all=True)
+    >>> tree = Phylo.parse('phyloxml_examples.xml', 'phyloxml').next()
+    >>> print tree
     Phylogeny(description='phyloXML allows to use either a "branch_length"
     attribute or element to indicate branch lengths.', name='example from
     Prof. Joe Felsenstein's book "Inferring Phylogenies"')
