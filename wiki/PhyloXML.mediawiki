@@ -205,7 +205,7 @@ See the [http://biopython.org/DIST/docs/tutorial/Tutorial.html Biopython Tutoria
 <source lang=python>
 from Bio.Blast import NBCIStandalone, NCBIXML
 
-query_fname = 'egfr-kinase.fasta'
+query_fname = 'human-egfr.fasta'
 result_handle, error_handle = NCBIStandalone.blastall('/usr/bin/blastall', 'blastp',
                                                       '/db/fasta/nr', query_fname)
 blast_record = NCBIXML.read(result_handle)  # This takes some time to run
@@ -225,47 +225,45 @@ def get_seqrecs(alignments, threshold):
                 break
 
 best_seqs = get_seqrecs(blast_record.alignments, 1e-50)
-SeqIO.write(best_seqs, open('tyr-kinases.fasta', 'w+'), 'fasta')
+SeqIO.write(best_seqs, open('egfr-family.fasta', 'w+'), 'fasta')
 </source>
 
 To help with annotating to your tree later, pick a lookup key here (e.g. accession number) and build a dictionary mapping that key to any additional data you can glean from the BLAST output, such as taxonomy and GI numbers. In this example, we're only keeping the original sequence and accession number.
 
-3. Re-align the sequences using MUSCLE, and format the alignment for use with stand-alone Phylip.
+3. Re-align the sequences using ClustalW. The program creates an alignment file in Clustal format, "egfr-family.aln", and a gene tree in Newick format, "egfr-family.dnd".
 <source lang=python>
 import sys, subprocess
 from Bio import AlignIO
-from Bio.Align.Applications import MuscleCommandline
+from Bio.Align.Applications import ClustalwCommandline
 
-cline = MuscleCommandline(input="tyr-kinases.fasta")
-child = subprocess.call(str(cline),
-                        stdout=subprocess.PIPE,
-                        shell=(sys.platform!="win32"))
-align = AlignIO.read(child.stdout, "fasta")
-AlignIO.write([align], open('tyr-kinases.phy', 'w+'), 'phylip')
+cline = ClustalwCommandline("clustalw", input="egfr-family.fasta")
+child = subprocess.call(str(cline), shell=(sys.platform!="win32"))
 </source>
 
-(Note: Phylip alignments have only 9-letter sequence identifiers, which must be unique. For didactic purposes, let's say there are no name collisions and the accession numbers we used as IDs are all less than 10 characters.)
-
-Now run <code>phylip proml</code> with <code>tyr-kinases.phy</code> as the input file, and convert the resulting tree file <code>outtree</code> to phyloXML format using one of the converters listed at the bottom of this page. Call the result <code>tyr-kinases.xml</code>.
-
-4. Add accession numbers and sequences to the tree -- now we're using Bio.[[Phylo]].
+4. Load the gene tree with Bio.[[Phylo]], and take a quick look at the topology.
 <source lang=python>
 from Bio import Phylo
+
+egfr_tree = Phylo.read("egfr-family.dnd", "newick")
+Phylo.draw_ascii(egfr_tree)
+</source>
+
+5. Add accession numbers and sequences to the tree -- now we're using PhyloXML's extra features.
+<source lang=python>
 from Bio.Phylo import PhyloXML
 
 # Make a lookup table for sequences
 lookup = dict((rec.id, str(rec.seq)) for rec in best_seqs)
 
-tree = Phylo.read('tyr-kinases.xml', 'phyloxml')
-for node in tree.find(terminal=True):
-    key = node.name
+for clade in egfr_tree.get_terminals():
+    key = clade.name
     accession = PhyloXML.Accession(key, 'NCBI')
     mol_seq = PhyloXML.MolSeq(lookup[key], is_aligned=True)
     sequence = PhyloXML.Sequence(type='aa', accession=accession, mol_seq=mol_seq)
-    node.sequences.append(sequence)
+    clade.sequences.append(sequence)
 
 # Save the annotated phyloXML file
-Phylo.write(tree, 'tyr-kinases-pretty.xml', 'phyloxml')
+Phylo.write(tree, 'egfr-family-annotated.xml', 'phyloxml')
 </source>
 
 ==Performance==
