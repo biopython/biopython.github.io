@@ -41,7 +41,7 @@ This table lists the file formats that Bio.SeqIO can read, write and index, with
 |-  
 | embl
 | 1.43
-| git
+| 1.54
 | 1.52
 | The [[bp:EMBL_sequence_format|EMBL flat file format]].  Uses Bio.GenBank internally.
 |-  
