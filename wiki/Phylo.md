@@ -9,19 +9,20 @@ tags:
 This module provides classes, functions and I/O support for working with
 phylogenetic trees.
 
-This code has just been included in Biopython 1.54 *beta*, but the
-documentation has not been integrated into the Biopython Tutorial yet.
+This code is included in Biopython 1.54, and also described in the
+Phylogenetics chapter of the [Biopython
+Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html) and the
+Bio.Phylo [API
+pages](http://biopython.org/DIST/docs/api/Bio.Phylo-module.html)
+generated from the source code.
 
 Availability
 ------------
 
-The source code for this module is being developed on GitHub, and has
-been merged into the main trunk branch, but has not yet been included
-with a stable Biopython release. We expect it to be included in
-Biopython 1.54 (due Spring 2010). If you're interested in testing this
-code before the official release, see
-[SourceCode](SourceCode "wikilink") for instructions on getting a copy
-of the development branch.
+The source code for this module is included in Biopython 1.54. If you're
+interested in testing newer additions to this code before the next
+official release, see [SourceCode](SourceCode "wikilink") for
+instructions on getting a copy of the development branch.
 
 Requirements:
 
@@ -53,6 +54,11 @@ PhyloXMLIO attempts to import each of these compatible ElementTree
 implementations until it succeeds. The given XML file handle is then
 parsed incrementally to instantiate an object hierarchy containing the
 relevant phylogenetic information.
+
+This module has also been successfully tested on Jython 2.5.1, minus the
+Graphviz- and NetworkX-based functions. However, parsing phyloXML files
+is noticeably slower because Jython uses a different version of the
+underlying XML parsing library.
 
 I/O functions
 -------------
