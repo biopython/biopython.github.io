@@ -1,6 +1,4 @@
-The modules Bio.Phylo.PhyloXML and Bio.Phylo.PhyloXMLIO handle the parsing, generation and manipulation of files in the [http://www.phyloxml.org/ phyloXML] format.
-
-To use these modules, see the [[Phylo]] page for installation instructions.
+Within Bio.[[Phylo]], Biopython's module for working with phylogenetic trees, the PhyloXML and PhyloXMLIO sub-modules handle the parsing, generation and manipulation of files in the [http://www.phyloxml.org/ phyloXML] format.
 
 ==About the format==
 

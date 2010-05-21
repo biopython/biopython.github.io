@@ -4,12 +4,10 @@ permalink: wiki/PhyloXML
 layout: wiki
 ---
 
-The modules Bio.Phylo.PhyloXML and Bio.Phylo.PhyloXMLIO handle the
-parsing, generation and manipulation of files in the
+Within Bio.[Phylo](Phylo "wikilink"), Biopython's module for working
+with phylogenetic trees, the PhyloXML and PhyloXMLIO sub-modules handle
+the parsing, generation and manipulation of files in the
 [phyloXML](http://www.phyloxml.org/) format.
-
-To use these modules, see the [Phylo](Phylo "wikilink") page for
-installation instructions.
 
 About the format
 ----------------
