@@ -241,13 +241,6 @@ networkx.draw(net)
 pylab.show()
 ```
 
-**to\_adjacency\_matrix** produces an adjacency matrix as an instance of
-a NumPy 2-dimensional array, where cell values are branch lengths and
-rows and columns are vertices in the graph (i.e. nodes in the tree, the
-root of each clade). The returned tuple includes a list of all clade
-objects in the original tree, used for determining the indexes of cells
-in the matrix corresponding to clades or branches in the tree.
-
 ### Displaying trees
 
 **pretty\_print** produces a plain-text representation of the entire
