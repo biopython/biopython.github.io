@@ -323,7 +323,7 @@ import sys, subprocess
 from Bio import AlignIO
 from Bio.Align.Applications import ClustalwCommandline
 
-cline = ClustalwCommandline("clustalw", input="egfr-family.fasta")
+cline = ClustalwCommandline("clustalw", infile="egfr-family.fasta")
 child = subprocess.call(str(cline), shell=(sys.platform!="win32"))
 </source>
 
