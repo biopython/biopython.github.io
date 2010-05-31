@@ -15,6 +15,17 @@ into Biopython.
 Current projects
 ----------------
 
+### (GSOC 2010) Extending Bio.PDB
+
+João Rodrigues's Summer of Code project aims to introduce several new
+features to the Bio.PDB structural biology module. It will include
+functions for adding polar hydrogens to structures, probing for SS
+bridges based on structural information and annotations, renumbering
+residues, coarse-graining a structure, etc. A more comprehensive layout
+of the project is available [on this wiki](GSOC2010_Joao "wikilink"),
+and the code is on [a GitHub
+branch](http://github.com/JoaoRodrigues/biopython/tree/GSOC2010).
+
 ### Population Genetics development
 
 Giovanni and Tiago are working on expanding population genetics code in
@@ -33,35 +44,31 @@ version](http://bcbio.wordpress.com/2009/03/22/mapreduce-implementation-of-gff-p
 
 ### Phylo
 
-[Eric](User%3AEricTalevich "wikilink") is working on a new module for
-phylogenetics, [Bio.Phylo](Phylo "wikilink"). It grew out of a [Google
-Summer of Code](Google_Summer_of_Code "wikilink") 2009
-[project](http://socghop.appspot.com/student_project/show/google/gsoc2009/nescent/t124022798969),
-mentored by Brad, to add support for
-[phyloXML](http://www.phyloxml.org/) to Biopython; it also refactors
-part of Bio.Nexus. Most of the code has been pushed to the main
-development branch on GitHub already, but new features appear first on
-Eric's [phyloxml
-branch](http://github.com/etal/biopython/tree/phyloxml).
+[Bio.Phylo](Phylo "wikilink"), a new, mostly-stable module for working
+with phylogenetic trees, was released with Biopython 1.54.
+[Eric](User%3AEricTalevich "wikilink") is currently working on NeXML
+support and bringing the Tree object methods to parity with Bio.Nexus.
+New features appear on [GitHub
+branches](http://github.com/etal/biopython/) first.
 
 ### Biogeography
 
-[Nick](Matzke "wikilink") is working on developing a Biogeography module
-for BioPython. This work was funded by a [Google Summer of
-Code](Google_Summer_of_Code "wikilink") 2009
-[project](http://socghop.appspot.com/program/home/google/gsoc2009)
-through NESCENT's [Phyloinformatics Summer of Code
+Nick Matzke developed a biogeography module for BioPython as a [Google
+Summer of Code](Google_Summer_of_Code "wikilink") project through
+NESCent's [Phyloinformatics Summer of Code
 2009](https://www.nescent.org/wg_phyloinformatics/Phyloinformatics_Summer_of_Code_2009).
 See the project proposal at: [Biogeographical Phylogenetics for
 BioPython](http://socghop.appspot.com/student_project/show/google/gsoc2009/nescent/t124022798250).
-The mentors are [Stephen Smith](http://blackrim.org/) (primary), [Brad
+The mentors were [Stephen Smith](http://blackrim.org/) (primary), [Brad
 Chapman](http://bcbio.wordpress.com/), and [David
-Kidd](http://evoviz.nescent.org/). The code currently lives at the
-Bio/Geography directory of the [Geography fork of the nmatzke branch on
-GitHub](http://github.com/nmatzke/biopython/tree/Geography), and you can
-see a timeline and other info about ongoing development
-[here](BioGeography "wikilink"). The new module is being documented on
-this wiki as [BioGeography](BioGeography "wikilink").
+Kidd](http://evoviz.nescent.org/). The new module is documented on this
+wiki as [BioGeography](BioGeography "wikilink").
+
+The code currently lives at the Bio/Geography directory of Nick's
+[Geography branch on
+GitHub](http://github.com/nmatzke/biopython/tree/Geography), and Eric is
+preparing it for integration into the Biopython trunk on [another
+branch](http://github.com/etal/biopython/tree/geography).
 
 ### Roche 454 SFF parsing in Bio.SeqIO
 
@@ -81,15 +88,6 @@ This [Bugzilla
 Search](http://bugzilla.open-bio.org/buglist.cgi?product=Biopython&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_severity=enhancement)
 will list all open enhancement bugs (any filed by core developers are
 fairly likely to be integrated, some are just wish list entries).
-
-### (GSOC 2010) Extending Bio.PDB
-
-GSOC 2010 project that aims to introduce several new features to the
-Bio.PDB structural biology module. Includes functions to add polar
-hydrogens to structures, probing for SS bridges based on structural
-information and annotations, renumbering residues, coarse-graining a
-structure, etc. A more comprehensive layout of the project is available
-[here](GSOC2010_Joao "wikilink").
 
 Project ideas
 -------------
