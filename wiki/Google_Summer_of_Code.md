@@ -4,8 +4,14 @@ permalink: wiki/Google_Summer_of_Code
 layout: wiki
 ---
 
-Biopython was involved with the 2009 Google Summer of Code (GSoC) in
-collaboration with our friends at
+As part of the Open Bioinformatics Foundation, Biopython is
+participating in Google Summer of Code (GSoC) again in 2010. We are
+supporting João Rodrigues in his project, "[Extending Bio.PDB:
+broadening the usefulness of BioPython's Structural Biology
+module](GSOC2010_Joao "wikilink")."
+
+In 2009, Biopython was involved with GSoC in collaboration with our
+friends at
 [NESCent](https://www.nescent.org/wg_phyloinformatics/Main_Page), and
 had two projects funded:
 
@@ -14,14 +20,12 @@ had two projects funded:
 -   Eric Talevich added support for [parsing and writing
     phyloXML](https://www.nescent.org/wg_phyloinformatics/Phyloinformatics_Summer_of_Code_2009#Biopython_support_for_parsing_and_writing_phyloXML).
 
-In 2010 we hope to be continue working with GSoC. If you are interested
-in contributing as a mentor or student, please introduce yourself on the
-[mailing list](http://biopython.org/wiki/Mailing_lists).
-
 Please read the [GSoC page at the Open Bioinformatics
 Foundation](http://www.open-bio.org/wiki/Google_Summer_of_Code) and the
 main [Google Summer of Code](http://code.google.com/soc) page for more
-details about the program.
+details about the program. If you are interested in contributing as a
+mentor or student next year, please introduce yourself on the [mailing
+list](http://biopython.org/wiki/Mailing_lists).
 
 2010 Project ideas
 ------------------
