@@ -157,3 +157,98 @@ The schedule below was organised to be flexible, which means that some features 
 
 
 ====  Reviewing documentation, code, write tests for new functions. ====
+
+== Project Code ==
+
+Hosted at [http://github.com/JoaoRodrigues/biopython/tree/GSOC2010 this GitHub branch]
+
+== Project Progress ==
+
+Since I'm adding some methods that are useful/logical only for proteins, having them exposed in Structure.py for every molecule could be misleading. We decided then to add a 'as_protein()' method that allows protein-specific methods to be accessed. The following example demonstrates how this call works. Note how the "search_ss_bonds" method is absent from dir(s) but not from dir(prot).
+
+<source lang=python>
+from Bio.PDB import PDBParser
+
+p = PDBParser()
+s = p.get_structure('example', '4PTI.pdb')
+
+dir(s)
+# Cut for viewing purposes
+['__doc__', ... , 'renumber_residues', 'set_parent', 'xtra']
+
+prot = s.as_protein()
+
+dir(prot)
+
+['__doc__', ... , 'renumber_residues', 'search_ss_bonds', 'set_parent', 'xtra']
+</source>
+
+=== Week 1 ===
+
+
+==== Renumbering residues of a structure ====
+
+Since parse_pdb_header is far from optimal and is likely to change in the future, I opted to forfeit reading SEQREQ records to account for gaps. However, ignoring this information and renumbering based on ATOM records would make us lose information on gaps. I opted to subtract the first residue number-1 to all residues thus making the numbering start in 1 and still keep gaps. I also added an argument (start) to allow the user to set which number to start the counting from.
+
+Example:
+
+<source lang=python>
+from Bio.PDB import PDBParser
+
+p = PDBParser()
+s = p.get_structure('example', '1IHM.pdb')
+
+print list(s.get_residues())[0]
+<Residue ASP het=  resseq=1029 icode= >
+
+s.renumber_residues()
+print list(s.get_residues())[0]
+<Residue ASP het=  resseq=1 icode= >
+</source>
+
+   
+====  Probe disulphide bridges in the structure ====
+
+The same rationale from SEQRES applies for the exclusion of looking up SSBOND. Also, instead of using NeighborSearch to look for pairs of cysteins in bond distance, I instead used the minus operator since it has been overloaded to return the distance between two atoms (Page 10 of the [http://www.biopython.org/DIST/docs/cookbook/biopdb_faq.pdf FAQ]). The average distance cited in the literature is 2.05A but other software packages and my own tests set 3.0A as a good threshold. Still, the user can set his own threshold manually.
+
+The function returns an iterator with tuples of pairs of residues.
+
+<source lang=python>
+from Bio.PDB import PDBParser
+
+p = PDBParser()
+s = p.get_structure('example', '4PTI.pdb')
+
+prot = s.as_protein()
+
+for bond in prot.search_ss_bonds():
+  print bond
+
+(<Residue CYS het=  resseq=5 icode= >, <Residue CYS het=  resseq=55 icode= >)
+(<Residue CYS het=  resseq=14 icode= >, <Residue CYS het=  resseq=38 icode= >)
+(<Residue CYS het=  resseq=30 icode= >, <Residue CYS het=  resseq=51 icode= >)
+</source>
+
+   
+====  Extract Biological Unit ====
+
+Added parsing for REMARK350 to parse_pdb_header since there was already a bit written for another REMARK section. This extracts the transformation matrices and the translation vector from the header, that is then fed to the Structure function. Each new rotated structure is created as a new MODEL. I chose this because crystal structures very rarely have more than one MODEL instance and also because NMR models don't have REMARK 350 that often (at least to my knowledge).
+
+<source lang=python>
+from Bio.PDB import PDBParser
+
+p = PDBParser()
+
+
+s1 = p.get_structure('a', '4PTI.pdb')
+s1.build_biological_unit()
+'Processed 0 transformations on the structure.' # Identity matrix is ignored.
+
+s2 = p.get_structure('b', 'homol_1bd8.pdb') # A homology model
+s2.build_biological_unit()
+'PDB File lacks appropriate REMARK 350 entries to build Biological Unit.'
+
+s3 = p.get_structure('c', '1IHM.pdb')
+s3.build_biological_unit()
+'Processed 59 transformations on the structure.'
+</source>
