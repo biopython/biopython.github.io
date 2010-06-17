@@ -252,3 +252,50 @@ s3 = p.get_structure('c', '1IHM.pdb')
 s3.build_biological_unit()
 'Processed 59 transformations on the structure.'
 </source>
+
+
+=== Weeks 2 and 3 ===
+
+
+==== Hydrogenation of PDB files ====
+
+Following discussion between the mentors and me, we decided that maybe it was better to not only include a webserver for this purpose but also a local algorithm. This would not limit the user when there he/she lacks an internet connection.
+
+Our webserver of choice was WHATIF. The simplicity of its access justifies its choice, together with the stability and proven results of the method. The service we want to implement is available as a test webservice via a REST or SOAP interface. Access is as simple as this, via REST:
+
+<source lang=python>
+#!/usr/bin/python
+
+import urllib
+import xml.dom.minidom
+
+# read a local PDB file
+f = open('../pdb1crn.ent', 'r')
+data = f.read()
+f.close()
+
+# now upload this PDB file to the What IF webservice
+f = urllib.urlopen("http://www.cmbi.ru.nl/wiwsd/rest/UploadPDB", data)
+x = xml.dom.minidom.parse(f)
+id = x.getElementsByTagName("response")[0].childNodes[0].data
+
+# Call a what-if function, we use SymmetryContact as an example
+f = urllib.urlopen("http://www.cmbi.ru.nl/wiwsd/rest/SymmetryContact/id/" + id)
+x = xml.dom.minidom.parse(f)
+
+# and now we have the data, print out a simple list
+for node in x.getElementsByTagName("response"):
+	nr = node.getElementsByTagName("number")[0].childNodes[0].data
+	cnt = node.getElementsByTagName("contact_count")[0].childNodes[0].data
+	print nr + "\t" + cnt
+</source>
+
+We are still discussing about the technical details of the implementation.
+
+Regarding the local algorithm, several approaches were studied: [http://zhang.bioinformatics.ku.edu/HAAD/ HAAD], [http://manual.gromacs.org/current/online/protonate.html GROMACS], PyMol[http://pymolwiki.org/index.php/H_Add 3], MMTK[http://sourcesup.cru.fr/projects/mmtk/ 4]. All of them add hydrogens based on geometrical criteria, with HAAD doing some sort of pseudo-minimization to get the atoms in the right orientation. Although I think this is valuable strategy, it is a bit beyond the scope of this project. Furthermore, the only way I know of getting perfectly good orientations is under a real force field. Therefore, I believe that adding hydrogens based on geometrical constraints is a simple yet good addition to BioPython.
+
+I am still studying the algorithms to try and replicate their efficiency (don't want to reinvent the wheel). Since some of the code is GPL'ed it can be directly associated with our library.
+
+====  Coarse Grain Structure ====
+
+This feature has been written and implemented for proteins only. It was based on ENCADs coarse graining strategy (3pt per residue) but I'm still adding CABS structure too. I wrote a center of mass function that is independent of any Entity subclass and can therefore be useful for other purposes. We are deciding where to place this code. I will add an example when the code is mature enough.
