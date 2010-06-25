@@ -254,48 +254,127 @@ s3.build_biological_unit()
 </source>
 
 
-=== Weeks 2 and 3 ===
+=== Weeks 2-5 ===
 
 
 ==== Hydrogenation of PDB files ====
 
 Following discussion between the mentors and me, we decided that maybe it was better to not only include a webserver for this purpose but also a local algorithm. This would not limit the user when there he/she lacks an internet connection.
 
-Our webserver of choice was WHATIF. The simplicity of its access justifies its choice, together with the stability and proven results of the method. The service we want to implement is available as a test webservice via a REST or SOAP interface. Access is as simple as this, via REST:
+The interface for the WHATIF Protonation service has been implemented, although it should be regarded as **highly experimental** for now. Interfacing this server included writing a small parser for a PDBXML-like format, which is expected to have serious bugs in its initial versions. I ran some simple tests and it works. It doesn't support water molecules yet, nor any other molecules other than proteins. Such issues will be hopefully solved later on..
+
+For those brave enough to want to test it (and help me debug it), here's an example usage.
 
 <source lang=python>
-#!/usr/bin/python
+from Bio.Struct.WWW import WHATIF
+from Bio import Struct
 
-import urllib
-import xml.dom.minidom
+server = WHATIF.WHATIF() # Performs a sort of PING to the server. Gracefully exits if the servers are down.
 
-# read a local PDB file
-f = open('../pdb1crn.ent', 'r')
-data = f.read()
-f.close()
+# Get the protein structure
+structure = Struct.read('4PTI.pdb')
+protein = structure.as_protein() # This excludes water molecules
 
-# now upload this PDB file to the What IF webservice
-f = urllib.urlopen("http://www.cmbi.ru.nl/wiwsd/rest/UploadPDB", data)
-x = xml.dom.minidom.parse(f)
-id = x.getElementsByTagName("response")[0].childNodes[0].data
+# Upload the structure to the WHATIF server
+# This should convert the structure from a Structure object to a string via tempfile and PDBIO
+# I was having some issues uploading structures...
 
-# Call a what-if function, we use SymmetryContact as an example
-f = urllib.urlopen("http://www.cmbi.ru.nl/wiwsd/rest/SymmetryContact/id/" + id)
-x = xml.dom.minidom.parse(f)
+id = server.UploadPDB(protein)
 
-# and now we have the data, print out a simple list
-for node in x.getElementsByTagName("response"):
-	nr = node.getElementsByTagName("number")[0].childNodes[0].data
-	cnt = node.getElementsByTagName("contact_count")[0].childNodes[0].data
-	print nr + "\t" + cnt
+# Protonate
+# Returns a Structure Object / WARNING! Bug prone for now.
+
+protein_h = server.PDBasXMLwithSymwithPolarH(id)
+
 </source>
 
-We are still discussing about the technical details of the implementation.
 
-Regarding the local algorithm, several approaches were studied: [http://zhang.bioinformatics.ku.edu/HAAD/ HAAD], [http://manual.gromacs.org/current/online/protonate.html GROMACS], PyMol[http://pymolwiki.org/index.php/H_Add 3], MMTK[http://sourcesup.cru.fr/projects/mmtk/ 4]. All of them add hydrogens based on geometrical criteria, with HAAD doing some sort of pseudo-minimization to get the atoms in the right orientation. Although I think this is valuable strategy, it is a bit beyond the scope of this project. Furthermore, the only way I know of getting perfectly good orientations is under a real force field. Therefore, I believe that adding hydrogens based on geometrical constraints is a simple yet good addition to BioPython.
+Regarding the local implementation, after much reading I settled on using PyMol's algorithm. It seems to allow for protonation of any structure, regardless of its nature (protein, DNA, etc). Its vectorial and matrix operations can likely be optimized with Numpy and Biopython's Vector.py module.
 
-I am still studying the algorithms to try and replicate their efficiency (don't want to reinvent the wheel). Since some of the code is GPL'ed it can be directly associated with our library.
 
 ====  Coarse Grain Structure ====
 
-This feature has been written and implemented for proteins only. It was based on ENCADs coarse graining strategy (3pt per residue) but I'm still adding CABS structure too. I wrote a center of mass function that is independent of any Entity subclass and can therefore be useful for other purposes. We are deciding where to place this code. I will add an example when the code is mature enough.
+A Center of Mass function was developed first as part of a new module Bio.Struct.Geometry. It allows for calculation of the center of geometry (all masses are equal) and center of mass (taking into account elemental masses for the atoms). The masses are a new Atom object feature derived from [http://www.chem.qmul.ac.uk/iupac/AtWt/ this list] and from PyMol. Essentially, all atoms of a structure now get their mass defined when the Structure is created (check Atom.py and [http://lists.open-bio.org/pipermail/biopython-dev/2010-June/007880.html this thread] for details). This is obviously experimental.
+
+To calculate the center of mass of any Entity (Structure, Model, Chain, Residue) or a List of Atoms:
+
+<source lang=python>
+from Bio.Struct.Geometry import center_of_mass
+from Bio import Struct
+
+s = Struct.read('4PTI.pdb')
+
+print center_of_mass.__doc__
+
+    Returns gravitic or geometric center of mass of an Entity.
+    Geometric assumes all masses are equal (geometric=True)
+    Defaults to Gravitic.
+
+
+print center_of_mass(s)
+[14.833301303933874, 21.431581746366263, 4.1218478418007134]
+
+print center_of_mass(s, geometric=True)
+[14.805324902127458, 21.365571977563405, 4.1108949403803985]
+</source>
+
+Coarse-Graining makes use of this function when reducing each residue to 3 points (ENCAD-like): Ca, peptide-bond O, and center of mass of side chain. The default CG function reduces the protein to a Ca-trace. I am still working on implementing perhaps some other CG-representations such as that from CABS.
+
+An example, picking up the s Structure from above:
+
+<source lang=python>
+p = s.as_protein() # To expose the CG method
+
+ca_trace = p.coarse_grain()
+
+# One atom per residue
+print ( len(list(p.get_residues())) == len(list(ca_trace.get_atoms())) )
+True
+
+cg_3pt = p.coarse_grain('3pt')
+
+for residue in cg_3pt.get_residues():
+  print residue.resname, residue.child_list
+
+ARG [<Atom CA>, <Atom O>, <Atom CMA>]
+PRO [<Atom CA>, <Atom O>, <Atom CMA>]
+ASP [<Atom CA>, <Atom O>, <Atom CMA>]
+PHE [<Atom CA>, <Atom O>, <Atom CMA>]
+CYS [<Atom CA>, <Atom O>, <Atom CMA>]
+LEU [<Atom CA>, <Atom O>, <Atom CMA>]
+GLU [<Atom CA>, <Atom O>, <Atom CMA>]
+PRO [<Atom CA>, <Atom O>, <Atom CMA>]
+PRO [<Atom CA>, <Atom O>, <Atom CMA>]
+TYR [<Atom CA>, <Atom O>, <Atom CMA>]
+.....
+CYS [<Atom CA>, <Atom O>, <Atom CMA>]
+GLY [<Atom CA>, <Atom O>]
+GLY [<Atom CA>, <Atom O>]
+ALA [<Atom CA>, <Atom O>, <Atom CMA>]
+</source>
+
+==== Removal of disordered atoms ====
+
+Implement as part of Structure.py and based loosely on the [http://www.biopython.org/wiki/Remove_PDB_disordered_atoms contribution of Ramon Crehuet]. The DisorderedAtom objects are removed from the residue and a single Atom object is added corresponding to the location of the user's choice (keep_loc argument) which defaults to A.
+
+An example, still keeping s from above:
+
+<source lang=python>
+s = s.remove_disordered_atoms(verbose=True)
+0 residues were modified
+
+# Now if we load a structure with disordered atoms
+ds = Struct.read('1MC2.pdb')
+ds.remove_disordered_atoms(verbose=True)
+Residue TRP:1010 has 8 disordered atoms: CD1/CD2/NE1/CE2/CE3/CZ2/CZ3/CH2
+Residue VAL:1018 has 3 disordered atoms: CB/CG1/CG2
+Residue LEU:1024 has 4 disordered atoms: CB/CG/CD1/CD2
+Residue ARG:1043 has 7 disordered atoms: CB/CG/CD/NE/CZ/NH1/NH2
+Residue MET:1092 has 4 disordered atoms: CB/CG/SD/CE
+Residue ARG:1107 has 7 disordered atoms: CB/CG/CD/NE/CZ/NH1/NH2
+Residue GLU:1108 has 4 disordered atoms: CG/CD/OE1/OE2
+Residue ASP:1111 has 4 disordered atoms: CB/CG/OD1/OD2
+Residue SER:1116 has 1 disordered atoms: OG
+Residue SER:1131 has 1 disordered atoms: O
+10 residues were modified
+</source>
