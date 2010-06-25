@@ -14,6 +14,12 @@ Here are some examples of using Bio.Phylo for some likely tasks. Some of the giv
 * Root with the given outgroup (terminal or nonterminal)
 
 
+==Graphics==
+
+*TODO:*
+
+* Party tricks with <code>draw_graphviz</code>, covering each keyword argument
+
 ==Exporting to other types==
 
 ===Convert to a PyCogent tree===

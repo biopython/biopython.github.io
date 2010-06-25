@@ -26,6 +26,15 @@ Rooting methods
     of all tips)
 -   Root with the given outgroup (terminal or nonterminal)
 
+Graphics
+--------
+
+-   TODO:\*
+
+<!-- -->
+
+-   Party tricks with `draw_graphviz`, covering each keyword argument
+
 Exporting to other types
 ------------------------
 
