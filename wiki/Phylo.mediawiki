@@ -191,9 +191,7 @@ Here's the same tree without the circles at each labelled node:
 Phylo.draw_graphviz(tree, node_size=0)
 </source>
 
-See the function's docstring for more explanation.
-
-''TODO: Set up a cookbook page to demonstrate the more exotic options.''
+See the [[Phylo cookbook]] page for more drawing features and options.
 
 '''draw_ascii''' prints an ascii-art rooted phylogram to standard output, or another file handle if specified. Only terminal node labels are shown; these are the result of ''str(clade)'' (usually clade names). The width of the text field used for drawing is 80 characters by default, adjustable with the ''column_width'' keyword argument, and the height in character rows is twice the number of terminals in the tree.
 

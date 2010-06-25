@@ -288,9 +288,8 @@ Here's the same tree without the circles at each labelled node:
 Phylo.draw_graphviz(tree, node_size=0)
 ```
 
-See the function's docstring for more explanation.
-
-*TODO: Set up a cookbook page to demonstrate the more exotic options.*
+See the [Phylo cookbook](Phylo_cookbook "wikilink") page for more
+drawing features and options.
 
 **draw\_ascii** prints an ascii-art rooted phylogram to standard output,
 or another file handle if specified. Only terminal node labels are
