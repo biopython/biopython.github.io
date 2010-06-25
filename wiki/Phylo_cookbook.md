@@ -2,6 +2,8 @@
 title: Phylo cookbook
 permalink: wiki/Phylo_cookbook
 layout: wiki
+tags:
+ - Cookbook
 ---
 
 Here are some examples of using Bio.Phylo for some likely tasks. Some of
