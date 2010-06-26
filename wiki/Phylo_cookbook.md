@@ -11,16 +11,51 @@ likely tasks. Some of these functions might be added to Biopython in a
 later release, but you can use them in your own code with Biopython
 1.54.
 
-Consensus methods
------------------
+Convenience functions
+---------------------
 
-*TODO:*
+### Index clades by name
 
--   Majority-rules consensus
--   Adams ([Adams
-    1972](http://www.faculty.biol.ttu.edu/Strauss/Phylogenetics/Readings/Adams1972.pdf))
--   Asymmetric median tree ([Phillips and Warnow
-    1996](http://www.springerlink.com/content/y1x70058822qg257/))
+For large trees it can be useful to be able to select a clade by name,
+or some other unique identifier, rather than searching the whole tree
+for it during each operation.
+
+``` python
+def lookup_by_names(tree):
+    names = {}
+    for clade in tree.find_clades():
+        if clade.name:
+            if clade.name in names:
+                raise ValueError("Duplicate key: %s" % clade.name)
+            names[clade.name] = clade
+    return names
+```
+
+Now you can retrieve a clade by name in constant time:
+
+``` python
+tree = Phylo.read('ncbi_taxonomy.xml', 'phyloxml')
+names = lookup_by_names(tree)
+for phylum in ('Apicomplexa', 'Euglenozoa', 'Fungi'):
+    print "Phylum size", len(names[phylum].get_terminals())
+```
+
+A potential issue: The above implementation of lookup\_by\_names doesn't
+include unnamed clades, generally internal nodes. We can fix this by
+adding a unique identifier for each clade. Here, all clade names are
+prefixed with a unique number (which can be useful for searching, too):
+
+``` python
+def tabulate_names(tree):
+    names = {}
+    for idx, clade in enumerate(tree.find_clades()):
+        if clade.name:
+            clade.name = '%d_%s' % (idx, clade.name)
+        else:
+            clade.name = str(idx)
+        names[clade.name] = clade
+    return clade
+```
 
 Comparing trees
 ---------------
@@ -31,6 +66,17 @@ Comparing trees
 -   Quartets distance
 -   Nearest-neighbor interchange
 -   Path-length-difference
+
+Consensus methods
+-----------------
+
+*TODO:*
+
+-   Majority-rules consensus
+-   Adams ([Adams
+    1972](http://www.faculty.biol.ttu.edu/Strauss/Phylogenetics/Readings/Adams1972.pdf))
+-   Asymmetric median tree ([Phillips and Warnow
+    1996](http://www.springerlink.com/content/y1x70058822qg257/))
 
 Rooting methods
 ---------------
