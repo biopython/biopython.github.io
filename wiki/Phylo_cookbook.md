@@ -226,8 +226,7 @@ Enhancements:
 
 -   Use an OrderedDict for `allclades`, so the separate dictionary
     `lookup` isn't needed. (Python 2.7+)
--   Use NumPy's [http://www.scipy.org/RecordArrays record
-    array](http://www.scipy.org/RecordArrays_record_array "wikilink") to
+-   Use NumPy's [record array](http://www.scipy.org/RecordArrays) to
     assign clade names to rows and columns of the matrix, so `allclades`
     isn't needed either. (This works nicely along with the
     `tabulate_names` function given earlier.)

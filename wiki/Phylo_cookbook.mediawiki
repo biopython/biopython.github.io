@@ -200,7 +200,7 @@ def to_distance_matrix(tree):
 
 Enhancements:
 * Use an OrderedDict for <code>allclades</code>, so the separate dictionary <code>lookup</code> isn't needed. (Python 2.7+)
-* Use NumPy's [[http://www.scipy.org/RecordArrays record array]] to assign clade names to rows and columns of the matrix, so <code>allclades</code> isn't needed either. (This works nicely along with the <code>tabulate_names</code> function given earlier.)
+* Use NumPy's [http://www.scipy.org/RecordArrays record array] to assign clade names to rows and columns of the matrix, so <code>allclades</code> isn't needed either. (This works nicely along with the <code>tabulate_names</code> function given earlier.)
 
 
 ''TODO:''
