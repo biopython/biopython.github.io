@@ -14,7 +14,10 @@ Phylogenetics chapter of the [Biopython
 Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html) and the
 Bio.Phylo [API
 pages](http://biopython.org/DIST/docs/api/Bio.Phylo-module.html)
-generated from the source code.
+generated from the source code. The [Phylo
+cookbook](Phylo_cookbook "wikilink") page has more examples of how to
+use this module, and the [PhyloXML](PhyloXML "wikilink") page describes
+how to attach graphical cues and additional information to a tree.
 
 Availability
 ------------
