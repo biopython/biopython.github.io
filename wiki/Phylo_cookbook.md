@@ -57,6 +57,49 @@ def tabulate_names(tree):
     return clade
 ```
 
+### Calculate distances between neighboring terminals
+
+*Suggested by Joel Berendzen*
+
+``` python
+import itertools
+
+def terminal_neighbor_dists(self):
+    """Return a list of distances between adjacent terminals."""
+    def generate_pairs(self):
+        pairs = itertools.tee(self)
+        pairs[1].next()
+        return itertools.izip(pairs[0], pairs[1])
+    return [self.distance(*i) for i in
+            generate_pairs(self.find_clades(terminal=True))]
+```
+
+### Test for "semi-preterminal" clades
+
+*Suggested by Joel Berendzen*
+
+The existing tree method `is_preterminal` returns True if all of the
+direct descendants are terminal. This snippet will instead return True
+if *any* direct descendent is terminal, but still False if the given
+clade itself is terminal.
+
+``` python
+def is_semipreterminal(clade):
+    """True if any direct descendent is terminal."""
+    for child in clade:
+        if child.is_terminal():
+            return True
+    return False
+```
+
+In Python 2.5 and later, this is simplified with the built-in `any`
+function:
+
+``` python
+def is_semipreterminal(clade):
+    return any(child.is_terminal() for child in clade)
+```
+
 Comparing trees
 ---------------
 
