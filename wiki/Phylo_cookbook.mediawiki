@@ -5,7 +5,8 @@ Here are some examples of using [[Phylo|Bio.Phylo]] for some likely tasks. Some 
 ''TODO:''
 
 * Majority-rules consensus
-
+* Adams
+* (asymmetric) median tree
 
 ==Rooting methods==
 
