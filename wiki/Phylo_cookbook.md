@@ -17,8 +17,13 @@ Consensus methods
 *TODO:*
 
 -   Majority-rules consensus
--   Adams
--   (asymmetric) median tree
+-   Adams ([Adams
+    1972](http://www.faculty.biol.ttu.edu/Strauss/Phylogenetics/Readings/Adams1972.pdf))
+-   Asymmetric median tree ([Phillips and Warnow
+    1996](http://www.springerlink.com/content/y1x70058822qg257/))
+
+Comparing trees
+---------------
 
 Rooting methods
 ---------------

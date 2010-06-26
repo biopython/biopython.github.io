@@ -5,8 +5,10 @@ Here are some examples of using [[Phylo|Bio.Phylo]] for some likely tasks. Some 
 ''TODO:''
 
 * Majority-rules consensus
-* Adams
-* (asymmetric) median tree
+* Adams ([http://www.faculty.biol.ttu.edu/Strauss/Phylogenetics/Readings/Adams1972.pdf Adams 1972])
+* Asymmetric median tree ([http://www.springerlink.com/content/y1x70058822qg257/ Phillips and Warnow 1996])
+
+==Comparing trees==
 
 ==Rooting methods==
 
