@@ -10,6 +10,13 @@ Here are some examples of using [[Phylo|Bio.Phylo]] for some likely tasks. Some 
 
 ==Comparing trees==
 
+''TODO:''
+
+* Symmetric difference / partition metric, a.k.a. topological distance
+* Quartets distance
+* Nearest-neighbor interchange
+* Path-length-difference
+
 ==Rooting methods==
 
 ''TODO:''

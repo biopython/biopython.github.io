@@ -25,6 +25,13 @@ Consensus methods
 Comparing trees
 ---------------
 
+*TODO:*
+
+-   Symmetric difference / partition metric, a.k.a. topological distance
+-   Quartets distance
+-   Nearest-neighbor interchange
+-   Path-length-difference
+
 Rooting methods
 ---------------
 
