@@ -70,18 +70,6 @@ GitHub](http://github.com/nmatzke/biopython/tree/Geography), and Eric is
 preparing it for integration into the Biopython trunk on [another
 branch](http://github.com/etal/biopython/tree/geography).
 
-### Roche 454 SFF parsing in Bio.SeqIO
-
-See [Bug 2837](http://bugzilla.open-bio.org/show_bug.cgi?id=2837), based
-on code from Jose Blanca. Recently merged into the trunk and should be
-included in Biopython 1.54 onwards.
-
-### Multiple Sequence Alignments
-
-Peter is working on a new alignment class for sequence alignments (not
-the kind in next gen sequencing), the core of which was recently merged
-into the trunk and should be included in Biopython 1.54 onwards.
-
 ### Open Enhancement Bugs
 
 This [Bugzilla
