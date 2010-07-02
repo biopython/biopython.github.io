@@ -343,7 +343,19 @@ Regarding the local implementation, after much reading I settled on
 using PyMol's algorithm. It seems to allow for protonation of any
 structure, regardless of its nature (protein, DNA, etc). Its vectorial
 and matrix operations can likely be optimized with Numpy and Biopython's
-Vector.py module.
+Vector.py module. This first implementation works for proteins only.
+I'll add general molecule support later.
+
+``` python
+from Bio import Struct
+from Bio.Struct import Hydrogenate as H
+
+s = Struct.read('1ctf.pdb')
+p = s.as_protein()
+
+prot = H.Hydrogenate_Protein()
+prot.add_hydrogens(p)
+```
 
 #### Coarse Grain Structure
 
