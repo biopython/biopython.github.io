@@ -36,6 +36,10 @@ Peter is working on a new alignment class for sequence alignments (not the kind 
 
 This [http://bugzilla.open-bio.org/buglist.cgi?product=Biopython&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_severity=enhancement Bugzilla Search] will list all open enhancement bugs (any filed by core developers are fairly likely to be integrated, some are just wish list entries).
 
+=== Branches on github.com ===
+
+The [http://github.com/biopython/biopython/network Biopython network diagram at github.com] will show all public branches of our repository on github, and will therefore let you see things that are being worked on.
+
 == Project ideas ==
 
 Please add any ideas or proposals for new additions to Biopython. Bugs and enhancements for current code should be discussed though our bugzilla interface.

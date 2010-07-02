@@ -89,6 +89,13 @@ Search](http://bugzilla.open-bio.org/buglist.cgi?product=Biopython&bug_status=NE
 will list all open enhancement bugs (any filed by core developers are
 fairly likely to be integrated, some are just wish list entries).
 
+### Branches on github.com
+
+The [Biopython network diagram at
+github.com](http://github.com/biopython/biopython/network) will show all
+public branches of our repository on github, and will therefore let you
+see things that are being worked on.
+
 Project ideas
 -------------
 
