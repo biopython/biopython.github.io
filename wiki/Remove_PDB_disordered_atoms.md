@@ -46,6 +46,23 @@ io.set_structure(s)
 io.save("ordered.pdb", select=NotDisordered())
 ```
 
+Note that the code above does not eliminate the alternate location
+identifier ('A' in the example above). It is the programmer's
+responsibility to eliminate the identifier when necessary.
+
+``` python
+keepAltID = ...
+class NMROutputSelector2( Select ): # Inherit methods from Select class
+ def accept_atom( self, atom ):
+  if ( not atom.is_disordered() ) or atom.get_altloc() ==  keepAltID:
+   atom.set_altloc( ' ' ) # Eliminate alt location ID before output.
+   return True
+  else: # Alt location was not one to be output.
+   return False
+ # end of accept_atom()
+# end of NMROutputSelector2()
+```
+
 Discussion
 ----------
 
