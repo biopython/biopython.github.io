@@ -152,6 +152,11 @@ BioPerl, BioRuby, BioJava and EMBOSS </biblio>
 
 #### Presentations
 
+-   July 2010 - EuroSciPy2010, Paris
+
+  
+[PDF](http://biopython.org/DIST/docs/presentations/Biopython_EuroSciPy2010.pdf)
+
 -   February 2010 Biopython workshop at the University of Georgia
 
   
