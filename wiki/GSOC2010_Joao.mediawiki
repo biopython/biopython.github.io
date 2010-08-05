@@ -328,7 +328,12 @@ print center_of_mass(s, geometric=True)
 [14.805324902127458, 21.365571977563405, 4.1108949403803985]
 </source>
 
-Coarse-Graining makes use of this function when reducing each residue to 3 points (ENCAD-like): Ca, peptide-bond O, and center of mass of side chain. The default CG function reduces the protein to a Ca-trace. I am still working on implementing perhaps some other CG-representations such as that from CABS.
+
+As of now, 3 CG models are supported.
+
+1) CA-Trace
+2) ENCAD 3-point model (CA, O, Side Chain bead)
+3) MARTINI protein model (BB, Side Chain points [S1 to S4])
 
 An example, picking up the s Structure from above:
 
@@ -341,9 +346,9 @@ ca_trace = p.coarse_grain()
 print ( len(list(p.get_residues())) == len(list(ca_trace.get_atoms())) )
 True
 
-cg_3pt = p.coarse_grain('3pt')
+cg_encad = p.coarse_grain('ENCAD_3P')
 
-for residue in cg_3pt.get_residues():
+for residue in cg_encad.get_residues():
   print residue.resname, residue.child_list
 
 ARG [<Atom CA>, <Atom O>, <Atom CMA>]
@@ -361,6 +366,27 @@ CYS [<Atom CA>, <Atom O>, <Atom CMA>]
 GLY [<Atom CA>, <Atom O>]
 GLY [<Atom CA>, <Atom O>]
 ALA [<Atom CA>, <Atom O>, <Atom CMA>]
+
+cg_martini = p.coarse_grain('MARTINI')
+
+for residue in cg_martini.get_residues():
+  print residue.resname, residue.child_list
+
+ARG [<Atom BB>, <Atom S1>, <Atom S2>]
+PRO [<Atom BB>, <Atom S1>]
+ASP [<Atom BB>, <Atom S1>]
+PHE [<Atom BB>, <Atom S1>, <Atom S2>, <Atom S3>]
+CYS [<Atom BB>, <Atom S1>]
+LEU [<Atom BB>, <Atom S1>]
+GLU [<Atom BB>, <Atom S1>]
+PRO [<Atom BB>, <Atom S1>]
+PRO [<Atom BB>, <Atom S1>]
+TYR [<Atom BB>, <Atom S1>, <Atom S2>, <Atom S3>]
+......
+CYS [<Atom BB>, <Atom S1>]
+GLY [<Atom BB>]
+GLY [<Atom BB>]
+ALA [<Atom BB>]
 </source>
 
 ==== Removal of disordered atoms ====
