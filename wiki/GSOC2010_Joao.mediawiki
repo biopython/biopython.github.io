@@ -414,3 +414,9 @@ Residue SER:1116 has 1 disordered atoms: OG
 Residue SER:1131 has 1 disordered atoms: O
 10 residues were modified
 </source>
+
+=== Current Development ===
+
+Unit Tests are being developed for all these previous features. Some other features were already developed and are being tested. Additionally, other unplanned features have been developed and tested (check missing atoms).
+
+Current work is focusing on the Nomenclature Normalization and the Homology features. We have established contact with the Dali Server developers and are working towards a solution with the Structural Homology feature. However, it seems that since results take too long to run, this is not a valuable addition to the project..
