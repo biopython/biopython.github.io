@@ -295,9 +295,7 @@ s3.build_biological_unit()
 'Processed 59 transformations on the structure.'
 ```
 
-### Weeks 2-5
-
-#### Hydrogenation of PDB files
+### Hydrogenation of PDB files
 
 Following discussion between the mentors and me, we decided that maybe
 it was better to not only include a webserver for this purpose but also
@@ -355,7 +353,7 @@ prot = H.Hydrogenate_Protein()
 prot.add_hydrogens(p)
 ```
 
-#### Coarse Grain Structure
+### Coarse Grain Structure
 
 A Center of Mass function was developed first as part of a new module
 Bio.Struct.Geometry. It allows for calculation of the center of geometry
@@ -449,7 +447,7 @@ GLY [<Atom BB>]
 ALA [<Atom BB>]
 ```
 
-#### Removal of disordered atoms
+### Removal of disordered atoms
 
 Implement as part of Structure.py and based loosely on the [contribution
 of Ramon
