@@ -408,8 +408,36 @@ Residue SER:1131 has 1 disordered atoms: O
 10 residues were modified
 </source>
 
-=== Current Development ===
+=== Sequence Homologues from Structures ===
 
-Unit Tests are being developed for all these previous features. Some other features were already developed and are being tested. Additionally, other unplanned features have been developed and tested (check missing atoms).
+Biopython supports BLAST (local and remote through NCBI servers). We bridged both Bio.PDB and Bio.Blast modules to allow an easier search for sequence homologues. For now, it supports remote BLAST through Bio.Blast.NCBIWWW and functions as a blackbox - i.e. users cannot change any search parameter. If one wants to fully use BLAST he/she should use the regular BLAST module. This is just a convenience function.
 
-Current work is focusing on the Nomenclature Normalization and the Homology features. We have established contact with the Dali Server developers and are working towards a solution with the Structural Homology feature. However, it seems that since results take too long to run, this is not a valuable addition to the project..
+It is accessible only to Protein objects. It queries the PDB subset database of NCBI BLAST servers with the Structure object's sequence, auto-adjusting parameters for short sequences (less than 15 residues).
+
+It returns a list ranked by Expectation Value with some informational values (e-value, identities, positives, gaps), the PDB code of the match, and the alignment.
+
+<source lang=python>
+from Bio import Struct
+
+s = Struct.read('1A8O.pdb')
+p = s.as_protein()
+
+seq_homologues = p.find_seq_homologues()
+
+for homologues in seq_homologues:
+    print homologues[0], homologues[1]
+    print homologues[-1]
+    print
+
+2BUO 1.82482e-31
+DIRQGPKEPFRDYVDRFYKTLRAEQASQEVKNW-TETLLVQNANPDCKTILKALGPGATLEE--TACQG
+DIRQGPKEPFRDYVDRFYKTLRAEQASQEVKNW TETLLVQNANPDCKTILKALGPGATLEE  TACQG
+DIRQGPKEPFRDYVDRFYKTLRAEQASQEVKNWMTETLLVQNANPDCKTILKALGPGATLEEMMTACQG
+
+1AUM 1.82482e-31
+DIRQGPKEPFRDYVDRFYKTLRAEQASQEVKNW-TETLLVQNANPDCKTILKALGPGATLEE--TACQG
+DIRQGPKEPFRDYVDRFYKTLRAEQASQEVKNW TETLLVQNANPDCKTILKALGPGATLEE  TACQG
+DIRQGPKEPFRDYVDRFYKTLRAEQASQEVKNWMTETLLVQNANPDCKTILKALGPGATLEEMMTACQG
+
+.....
+</source>
