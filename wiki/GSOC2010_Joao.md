@@ -527,10 +527,10 @@ MODELLER PIR format support was added to SeqIO as 'mpir'. Currently, the
 format can be read but not written. An example of the format follows, as
 well as an example of the parser's usage.
 
-`>P1;5fd1` `structureX:5fd1:1` `:A:106` `:A:ferredoxin:Azotobacter`
-`vinelandii:` `1.90:` `0.19`
-`AFVVTDNCIKCKYTDCVEVCPVDCFYEGPNFLVIHPDECIDCALCEPECPAQAIFSEDEVPEDMQEFIQLNAELA`
-`EVWPNITEKKDPLPDAEDWDGVKGKLQHLER*`
+    >P1;5fd1
+    structureX:5fd1:1    :A:106  :A:ferredoxin:Azotobacter vinelandii: 1.90: 0.19
+    AFVVTDNCIKCKYTDCVEVCPVDCFYEGPNFLVIHPDECIDCALCEPECPAQAIFSEDEVPEDMQEFIQLNAELA
+    EVWPNITEKKDPLPDAEDWDGVKGKLQHLER*
 
 ``` python
 from Bio import SeqIO
