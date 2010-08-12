@@ -211,9 +211,7 @@ dir(prot)
 ['__doc__', ... , 'renumber_residues', 'search_ss_bonds', 'set_parent', 'xtra']
 ```
 
-### Week 1
-
-#### Renumbering residues of a structure
+### Renumbering residues of a structure
 
 Since parse\_pdb\_header is far from optimal and is likely to change in
 the future, I opted to forfeit reading SEQREQ records to account for
@@ -239,7 +237,7 @@ print list(s.get_residues())[0]
 <Residue ASP het=  resseq=1 icode= >
 ```
 
-#### Probe disulphide bridges in the structure
+### Probe disulphide bridges in the structure
 
 The same rationale from SEQRES applies for the exclusion of looking up
 SSBOND. Also, instead of using NeighborSearch to look for pairs of
@@ -268,7 +266,7 @@ for bond in prot.search_ss_bonds():
 (<Residue CYS het=  resseq=30 icode= >, <Residue CYS het=  resseq=51 icode= >)
 ```
 
-#### Extract Biological Unit
+### Extract Biological Unit
 
 Added parsing for REMARK350 to parse\_pdb\_header since there was
 already a bit written for another REMARK section. This extracts the

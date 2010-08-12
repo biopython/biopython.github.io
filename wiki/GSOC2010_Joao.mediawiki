@@ -183,10 +183,7 @@ dir(prot)
 ['__doc__', ... , 'renumber_residues', 'search_ss_bonds', 'set_parent', 'xtra']
 </source>
 
-=== Week 1 ===
-
-
-==== Renumbering residues of a structure ====
+=== Renumbering residues of a structure ===
 
 Since parse_pdb_header is far from optimal and is likely to change in the future, I opted to forfeit reading SEQREQ records to account for gaps. However, ignoring this information and renumbering based on ATOM records would make us lose information on gaps. I opted to subtract the first residue number-1 to all residues thus making the numbering start in 1 and still keep gaps. I also added an argument (start) to allow the user to set which number to start the counting from.
 
@@ -207,7 +204,7 @@ print list(s.get_residues())[0]
 </source>
 
    
-====  Probe disulphide bridges in the structure ====
+===  Probe disulphide bridges in the structure ===
 
 The same rationale from SEQRES applies for the exclusion of looking up SSBOND. Also, instead of using NeighborSearch to look for pairs of cysteins in bond distance, I instead used the minus operator since it has been overloaded to return the distance between two atoms (Page 10 of the [http://www.biopython.org/DIST/docs/cookbook/biopdb_faq.pdf FAQ]). The average distance cited in the literature is 2.05A but other software packages and my own tests set 3.0A as a good threshold. Still, the user can set his own threshold manually.
 
@@ -230,7 +227,7 @@ for bond in prot.search_ss_bonds():
 </source>
 
    
-====  Extract Biological Unit ====
+===  Extract Biological Unit ===
 
 Added parsing for REMARK350 to parse_pdb_header since there was already a bit written for another REMARK section. This extracts the transformation matrices and the translation vector from the header, that is then fed to the Structure function. Each new rotated structure is created as a new MODEL. I chose this because crystal structures very rarely have more than one MODEL instance and also because NMR models don't have REMARK 350 that often (at least to my knowledge).
 
@@ -252,7 +249,6 @@ s3 = p.get_structure('c', '1IHM.pdb')
 s3.build_biological_unit()
 'Processed 59 transformations on the structure.'
 </source>
-
 
 === Weeks 2-5 ===
 
