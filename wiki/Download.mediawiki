@@ -129,7 +129,7 @@ Due to the great architecture of the ports system, this simple commands will aut
 
 Recent releases of Biopython require NumPy (and not Numeric):
 
-* [http://biopython.org/DIST/biopython-1.54.tar.gz biopython-1.54.tar.gz] 6,295 Kb -- Source Tarball
+* [http://biopython.org/DIST/biopython-1.54.tar.gz biopython-1.54.tar.gz] 6,295 Kb -- Source Tarball (May 20, 2010)
 * [http://biopython.org/DIST/biopython-1.54.zip biopython-1.54.zip] 6,859 Kb -- Source Zip File
 * [http://biopython.org/DIST/biopython-1.54.win32-py2.4.exe biopython-1.54.win32-py2.4.exe] 1,434 Kb -- 32 bit Windows Installer for Python 2.4 and NumPy 1.1
 * [http://biopython.org/DIST/biopython-1.54.win32-py2.5.exe biopython-1.54.win32-py2.5.exe] 1,434 Kb -- 32 bit Windows Installer for Python 2.5 and NumPy 1.1
