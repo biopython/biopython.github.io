@@ -27,9 +27,9 @@ def get_interregions(genbank_path,intergene_length=1):
             mystart = feature.location._start.position
             myend = feature.location._end.position
             if feature.strand == -1:
-                cds_list_minus.append((mystart,myend))
+                cds_list_minus.append((mystart,myend,-1))
             elif feature.strand == 1:
-                cds_list_plus.append((mystart,myend))
+                cds_list_plus.append((mystart,myend,1))
             else:
                 sys.stderr.write("No strand indicated %d-%d. Assuming +\n" %
                                   (mystart, myend))
