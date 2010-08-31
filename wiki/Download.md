@@ -4,27 +4,25 @@ permalink: wiki/Download
 layout: wiki
 ---
 
-Current Release - 1.55 *beta* - 18 August 2010
-==============================================
+Current Release - 1.55 - 31 August 2010
+=======================================
 
 See also [What's new](http://biopython.open-bio.org/SRC/biopython/NEWS).
 
 ### Files
 
--   [biopython-1.55b.tar.gz](http://biopython.org/DIST/biopython-1.55b.tar.gz)
-    6,428 Kb -- Source Tarball
--   [biopython-1.55b.zip](http://biopython.org/DIST/biopython-1.55b.zip)
-    6,996 Kb -- Source Zip File
--   [biopython-1.55b.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.55b.win32-py2.4.exe)
-    1,451 Kb -- 32 bit Windows Installer for Python 2.4 and NumPy 1.1
--   [biopython-1.55b.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.55b.win32-py2.5.exe)
-    1,451 Kb -- 32 bit Windows Installer for Python 2.5 and NumPy 1.1
--   [biopython-1.55b.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.55b.win32-py2.6.exe)
-    1,474 Kb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.3
-
-**NOTE** : This is a *beta* release for testing. It would be unwise to
-install this on a production machine without doing extensive testing
-(instead install Biopython 1.54, links at end of page).
+-   [biopython-1.55.tar.gz](http://biopython.org/DIST/biopython-1.55.tar.gz)
+    6,493 Kb -- Source Tarball
+-   [biopython-1.55.zip](http://biopython.org/DIST/biopython-1.55.zip)
+    7,058 Kb -- Source Zip File
+-   [biopython-1.55.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.55.win32-py2.4.exe)
+    1,448 Kb -- 32 bit Windows Installer for Python 2.4 and NumPy 1.1
+-   [biopython-1.55.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.55.win32-py2.5.exe)
+    1,449 Kb -- 32 bit Windows Installer for Python 2.5 and NumPy 1.1
+-   [biopython-1.55.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.55.win32-py2.6.exe)
+    1,471 Kb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.3
+-   [biopython-1.55.win32-py2.7.exe](http://biopython.org/DIST/biopython-1.55.win32-py2.7.exe)
+    1,598 Kb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.5
 
 Please report any issues on our [mailing
 lists](mailing_lists "wikilink") or
@@ -32,8 +30,8 @@ lists](mailing_lists "wikilink") or
 
 Note we don't (yet) have official 64 bit Windows Installers - however,
 Christoph Gohlke has kindly made [Windows 64bit
-installers](http://www.lfd.uci.edu/~gohlke/pythonlibs/) for NumPy 1.4.1
-and Biopython 1.54 (and other tools) available for testing.
+installers](http://www.lfd.uci.edu/~gohlke/pythonlibs/) for NumPy and
+Biopython (and other tools) available for testing.
 
 ### Installation Instructions
 
@@ -68,8 +66,8 @@ list](Mailing_lists "wikilink") and ask for help there.
 
 ### Required Software
 
--   [Python 2.4, 2.5 or 2.6](http://www.python.org) (Biopython 1.50 was
-    the last release of Biopython to support Python 2.3)
+-   [Python 2.4, 2.5, 2.6 or 2.7](http://www.python.org) (Biopython 1.50
+    was the last release of Biopython to support Python 2.3)
 -   [C compiler (if compiling
     from source)](http://www.python.org/doc/current/inst/inst.html) You
     need a C compiler supported by distutils, gcc will work fine on

@@ -1,22 +1,21 @@
-= Current Release - 1.55 ''beta'' - 18 August 2010 =
+= Current Release - 1.55 - 31 August 2010 =
 
 See also [http://biopython.open-bio.org/SRC/biopython/NEWS What's new].
 
 === Files ===
 
-* [http://biopython.org/DIST/biopython-1.55b.tar.gz biopython-1.55b.tar.gz] 6,428 Kb -- Source Tarball
-* [http://biopython.org/DIST/biopython-1.55b.zip biopython-1.55b.zip] 6,996 Kb -- Source Zip File
-* [http://biopython.org/DIST/biopython-1.55b.win32-py2.4.exe biopython-1.55b.win32-py2.4.exe] 1,451 Kb -- 32 bit Windows Installer for Python 2.4 and NumPy 1.1
-* [http://biopython.org/DIST/biopython-1.55b.win32-py2.5.exe biopython-1.55b.win32-py2.5.exe] 1,451 Kb -- 32 bit Windows Installer for Python 2.5 and NumPy 1.1
-* [http://biopython.org/DIST/biopython-1.55b.win32-py2.6.exe biopython-1.55b.win32-py2.6.exe] 1,474 Kb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.3
-
-'''NOTE''' : This is a ''beta'' release for testing. It would be unwise to install this on a production machine without doing extensive testing (instead install Biopython 1.54, links at end of page). 
+* [http://biopython.org/DIST/biopython-1.55.tar.gz biopython-1.55.tar.gz] 6,493 Kb -- Source Tarball
+* [http://biopython.org/DIST/biopython-1.55.zip biopython-1.55.zip] 7,058 Kb -- Source Zip File
+* [http://biopython.org/DIST/biopython-1.55.win32-py2.4.exe biopython-1.55.win32-py2.4.exe] 1,448 Kb -- 32 bit Windows Installer for Python 2.4 and NumPy 1.1
+* [http://biopython.org/DIST/biopython-1.55.win32-py2.5.exe biopython-1.55.win32-py2.5.exe] 1,449 Kb -- 32 bit Windows Installer for Python 2.5 and NumPy 1.1
+* [http://biopython.org/DIST/biopython-1.55.win32-py2.6.exe biopython-1.55.win32-py2.6.exe] 1,471 Kb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.3
+* [http://biopython.org/DIST/biopython-1.55.win32-py2.7.exe biopython-1.55.win32-py2.7.exe] 1,598 Kb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.5
 
 Please report any issues on our [[mailing lists]] or [http://bugzilla.open-bio.org/ bugzilla].
 
 Note we don't (yet) have official 64 bit Windows Installers - however, Christoph Gohlke has
 kindly made [http://www.lfd.uci.edu/~gohlke/pythonlibs/ Windows 64bit installers] for
-NumPy 1.4.1 and Biopython 1.54 (and other tools) available for testing.
+NumPy and Biopython (and other tools) available for testing.
 
 === Installation Instructions ===
 
@@ -41,7 +40,7 @@ If you are still stuck, sign up to the [[Mailing_lists|Biopython mailing list]] 
 
 === Required Software ===
 
-* [http://www.python.org Python 2.4, 2.5 or 2.6] (Biopython 1.50 was the last release of Biopython to support Python 2.3)
+* [http://www.python.org Python 2.4, 2.5, 2.6 or 2.7] (Biopython 1.50 was the last release of Biopython to support Python 2.3)
 * [http://www.python.org/doc/current/inst/inst.html C compiler (if compiling from source)] You need a C compiler supported by distutils, gcc will work fine on UNIX-like platforms.  This is not needed on Windows if using the install programs provided above. On Mac OS, we recommend you install Apple's XCode ''including'' the 10.4 SDK.
 * [http://numpy.scipy.org/ NumPy (Numerical Python)]. Note that until BioPython 1.49, Biopython used the older Numeric library.  We have tested NumPy 1.0, 1.1, 1.2, and 1.3 with Biopython.
 
