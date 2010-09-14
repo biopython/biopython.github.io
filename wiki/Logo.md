@@ -16,8 +16,8 @@ This is a cropped version of
 [biopython\_small.jpg](http://www.biopython.org/DIST/docs/images/biopython_small.jpg)
 is also available.
 
-As of Biopython release 1.50, we'll be including the logo on the front
-cover of the [Biopython Tutuorial and
+As of Biopython release 1.50, we've included the logo on the front cover
+of the [Biopython Tutorial and
 Cookbook](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
 ([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)), which had
 previously been rather plain.

@@ -4,7 +4,7 @@ Our logo was created by Henrik Vestergaard and Thomas Hamelryck back in 2003. In
 
 This is a cropped version of [http://www.biopython.org/DIST/docs/images/biopython.jpg biopython.jpg], [http://www.biopython.org/DIST/docs/images/biopython_small.jpg biopython_small.jpg] is also available.
 
-As of Biopython release 1.50, we'll be including the logo on the front cover of the [http://biopython.org/DIST/docs/tutorial/Tutorial.html Biopython Tutuorial and Cookbook] ([http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF]), which had previously been rather plain.
+As of Biopython release 1.50, we've included the logo on the front cover of the [http://biopython.org/DIST/docs/tutorial/Tutorial.html Biopython Tutorial and Cookbook] ([http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF]), which had previously been rather plain.
 
 This design was chosen from panel of entries to an open competition on the mailing lists back in [http://lists.open-bio.org/pipermail/biopython/2003-June/001389.html Summer 2003].
 Our website doesn't have the other competition entries on it any more, so it might be fun to reassemble them here...
