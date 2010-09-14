@@ -147,7 +147,7 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 
 |-
 
-| Biopython Contributions || Sequence parsing including [[SeqIO|Bio.SeqIO]], [[AlignIO|Bio.AlignIO]], our [[BioSQL|BioSQL interface]], and documentation
+| Biopython Contributions || Sequence parsing including [[SeqIO|Bio.SeqIO]], [[AlignIO|Bio.AlignIO]], maintaining the [[BioSQL|BioSQL interface]], and documentation
 
 |-
 
@@ -158,7 +158,6 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 | github || http://github.com/peterjc
 
 |}
-
 
 = Andrew Dalke =
 {| border="0"
