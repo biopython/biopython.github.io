@@ -3,7 +3,14 @@ This is a temporary page documenting efforts to provide a continuous integration
 
 Currently using [http://buildbot.net Buildbot]. The main caveat is the requirement of a public accessible server running buildbot (twister based)
 
+== Workflow ==
 
-[http://help.github.com/post-receive-hooks/ Post receive service hooks]
+[http://buildbot.net/buildbot/docs/current/full.html Buildbot's architecture] might be important to understand the next paragraphs.
+
+The starting point for any continuous integration will be any change made to the main repository. In Biopython's case, this is based on github.
+
+github can inform buildbot that a change was committed using [http://help.github.com/post-receive-hooks/ Post receive service hooks] (Admin>Service Hooks on the Biopython github interface). This means that whenever there is a change, github can POST that to a list of specified URLs. One of those URLs will be a script that will call the buildbot master, informing that there are changes to the source. Buildbot can now act.
+
+
 
 [http://www.apparatusproject.org/blog/2009/06/github-and-buildbot-continuous-integration/ github/buildbot integration]
