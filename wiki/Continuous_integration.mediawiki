@@ -1,0 +1,9 @@
+This is a temporary page documenting efforts to provide a continuous integration platform for Biopython. This effort is ad-hoc for now and this page will probably be deleted in the future.
+
+
+Currently using [http://buildbot.net Buildbot]
+
+
+[http://help.github.com/post-receive-hooks/ Post receive service hooks]
+
+[http://www.apparatusproject.org/blog/2009/06/github-and-buildbot-continuous-integration/ github/buildbot integration]
