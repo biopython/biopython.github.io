@@ -9,3 +9,5 @@ Currently doing a PhD in Tropical Medicine (population genetics and bioinformati
 Publications about parallel computing, phylogenetic analysis, selection detection and coalescent simulation in Parallel Computing, Bioinformatics, BMC Bioinformatics, among others.
 
 [http://tiago.org home page]
+
+[[Continuous integration]]

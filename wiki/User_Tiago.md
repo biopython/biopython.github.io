@@ -20,3 +20,5 @@ detection and coalescent simulation in Parallel Computing,
 Bioinformatics, BMC Bioinformatics, among others.
 
 [home page](http://tiago.org)
+
+[Continuous integration](Continuous_integration "wikilink")
