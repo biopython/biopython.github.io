@@ -8,7 +8,9 @@ This is a temporary page documenting efforts to provide a continuous
 integration platform for Biopython. This effort is ad-hoc for now and
 this page will probably be deleted in the future.
 
-Currently using [Buildbot](http://buildbot.net)
+Currently using [Buildbot](http://buildbot.net). The main caveat is the
+requirement of a public accessible server running buildbot (twister
+based)
 
 [Post receive service hooks](http://help.github.com/post-receive-hooks/)
 
