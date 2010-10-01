@@ -81,6 +81,12 @@ This table lists the file formats that Bio.SeqIO can read, write and index, with
 | 1.52
 | This refers to the IntelliGenetics file format, apparently the same as the [[bp:Mase_multiple_alignment_format|MASE alignment format]].
 |-
+| imgt
+| git
+| git
+| git
+| This refers to the IMGT variant of the EMBL plain text file format.
+|-
 | nexus
 | 1.43
 | 1.48
