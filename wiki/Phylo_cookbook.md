@@ -124,11 +124,36 @@ Consensus methods
 Rooting methods
 ---------------
 
+The basic method on the Tree class (not TreeMixin) is
+`root_with_outgroup`:
+
+``` python
+tree = Phylo.read('example.nwk', 'newick')
+print tree
+# ...
+tree.root_with_outgroups({'name': 'A'})  # Operates in-place
+print tree
+```
+
+Normally you'll want the outgroup to be a monophyletic group, rather
+than a single taxon. This isn't automatically checked, but you can do it
+yourself with the `is_monophyletic` method.
+
+To save some typing, try keeping the query in a separate list and
+reusing it:
+
+``` python
+outgroup = [{'name': taxon_name} for taxon_name in ('E', 'F', 'G')]
+if tree.is_monophyletic(outgroup):
+    tree.root_with_outgroup(*outgroup)
+else:
+    raise ValueError("outgroup is paraphyletic")
+```
+
 *TODO:*
 
 -   Root at the midpoint between the two most distant nodes (or "center"
     of all tips)
--   Root with the given outgroup (terminal or nonterminal)
 
 Graphics
 --------
