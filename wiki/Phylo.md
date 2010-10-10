@@ -133,9 +133,34 @@ check to ensure the input file does in fact contain exactly one
 phylogenetic tree at the top level.
 
 ``` python
-tree = Phylo.read('example.xml', 'phyloxml')
+tree = Phylo.read('example.dnd', 'newick')
 print tree
 ```
+
+If you have your tree data already loaded as a Python string, you can
+parse it with the help of StringIO (in Python's standard library):
+
+``` python
+from cStringIO import StringIO
+
+treedata = "(A, (B, C), (D, E))"
+handle = StringIO(treedata)
+tree = Phylo.read(handle, "newick")
+```
+
+In one line:
+
+``` python
+tree = Phylo.read(StringIO("(A, (B, C), (D, E))"), "newick")
+```
+
+The other I/O functions also can be used with StringIO.
+
+(General tip: if you write to the StringIO object and want to re-read
+the contents, you'll need to call the `seek(0)` method to move the
+handle back to the start of the StringIO data -- the same as an open
+file handle. See examples of this in the unit tests for Phylo,
+`Tests/test_Phylo.py`, in the Biopython source code.)
 
 ### write()
 

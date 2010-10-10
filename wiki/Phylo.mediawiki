@@ -77,9 +77,29 @@ Note that this doesn't immediately reveal whether there are any remaining trees 
 Parse and return exactly one tree from the given file or handle. If the file contains zero or multiple trees, a ValueError is raised. This is useful if you know a file contains just one tree, to load that tree object directly rather than through parse() and next(), and as a safety check to ensure the input file does in fact contain exactly one phylogenetic tree at the top level.
 
 <source lang=python>
-tree = Phylo.read('example.xml', 'phyloxml')
+tree = Phylo.read('example.dnd', 'newick')
 print tree
 </source>
+
+If you have your tree data already loaded as a Python string, you can parse it with the help of StringIO (in Python's standard library):
+
+<source lang=python>
+from cStringIO import StringIO
+
+treedata = "(A, (B, C), (D, E))"
+handle = StringIO(treedata)
+tree = Phylo.read(handle, "newick")
+</source>
+
+In one line:
+
+<source lang=python>
+tree = Phylo.read(StringIO("(A, (B, C), (D, E))"), "newick")
+</source>
+
+The other I/O functions also can be used with StringIO.
+
+(General tip: if you write to the StringIO object and want to re-read the contents, you'll need to call the <code>seek(0)</code> method to move the handle back to the start of the StringIO data -- the same as an open file handle. See examples of this in the unit tests for Phylo, <code>Tests/test_Phylo.py</code>, in the Biopython source code.)
 
 ===write()===
 
