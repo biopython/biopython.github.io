@@ -70,6 +70,14 @@ GitHub](http://github.com/nmatzke/biopython/tree/Geography), and Eric is
 preparing it for integration into the Biopython trunk on [another
 branch](http://github.com/etal/biopython/tree/geography).
 
+### RNA structure
+
+Several branches for working with RNA data have been made available by
+Kristian Rother. They can be used mainly for parsing RNA secondary
+structures [1](http://github.com/krother/biopython/tree/rna) and working
+with Bio.Sequence objects that represent modified RNA nucleotides
+[2](http://github.com/krother/biopython/tree/rna_alphabet).
+
 ### Open Enhancement Bugs
 
 This [Bugzilla

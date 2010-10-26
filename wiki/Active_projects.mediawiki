@@ -24,6 +24,10 @@ Nick Matzke developed a biogeography module for BioPython as a [[Google Summer o
 
 The code currently lives at the Bio/Geography directory of Nick's [http://github.com/nmatzke/biopython/tree/Geography Geography branch on GitHub], and Eric is preparing it for integration into the Biopython trunk on [http://github.com/etal/biopython/tree/geography another branch].
 
+=== RNA structure ===  
+
+Several branches for working with RNA data have been made available by Kristian Rother. They can be used mainly for parsing RNA secondary structures [http://github.com/krother/biopython/tree/rna] and working with Bio.Sequence objects that represent modified RNA nucleotides [http://github.com/krother/biopython/tree/rna_alphabet].
+
 === Open Enhancement Bugs ===
 
 This [http://bugzilla.open-bio.org/buglist.cgi?product=Biopython&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_severity=enhancement Bugzilla Search] will list all open enhancement bugs (any filed by core developers are fairly likely to be integrated, some are just wish list entries).
