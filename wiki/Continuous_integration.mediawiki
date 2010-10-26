@@ -1,11 +1,50 @@
 This is a temporary page documenting efforts to provide a continuous integration platform for Biopython. This effort is ad-hoc for now and this page will probably be deleted in the future.
 
+Are you interested in helping testing Biopython for your preferred platform? Then read on.
 
-Currently using [http://buildbot.net Buildbot]. The main caveat is the requirement of a public accessible server running buildbot (twister based)
+We have a [http://buildbot.net Buildbot] system up to do integration testing. The information provided here is split in two main sections:
 
-== Workflow ==
+#Documentation for people maintaining volunteer testing machines. Of interest to users donating resources for testing.
 
-[http://buildbot.net/buildbot/docs/current/full.html Buildbot's architecture] might be important to understand the next paragraphs.
+#Information regarding server configuration. Of interest to both developers interested in the integration testing status and administrators of the buildbot central server.
+
+
+=Volunteer integration testing=
+
+
+==General instructions==
+
+You will need to install buildbot on your system (*ONLY* the slave part). We strongly recommend version 0.8,1p1
+
+
+After that you should contact the biopython development mailing list saying what you are willing to test (platform, python version, applications) to get a username and a password. With your username and password you can now configure your buildslave. Something like this:
+
+buildslave create-slave your_slave_directory events.open-bio.org:9989 username password
+
+Then you should start your slave with
+
+buildslave start your_slave_directory
+
+Remember to have the external applications that you wish to test (e.g. blast) correctly installed. You should also have all dependencies needed by Biopython installed (e.g. NumPy).
+
+==Linux==
+
+On linux you should make sure that the version of python you want to test is available by the name pythonM.m. E.g, if you offer to test for python 2.6, your python binary should be available by the name python2.6 This is the case in most distributions.
+
+==Windows==
+==Mac==
+==Jython==
+
+=Server configuration=
+
+Buildbot has a server/client architecture where a central server schedules builds that are actually build and tested by the clients. The clients are typically volunteer machines. The main requirement of a public accessible server running Buildbot (twister based).
+
+One note for people trying to install a Builbot server: It seems that Buildbot configuration files change a bit from version to version. Be sure to use the correct documentation for your version. Our examples are for 0.8.1p1.
+
+
+==Workflow==
+
+Understanding [http://buildbot.net/buildbot/docs/current/full.html Buildbot's architecture] might be important to understand the next paragraphs.
 
 The starting point for any continuous integration will be any change made to the main repository. In Biopython's case, this is based on github.
 
