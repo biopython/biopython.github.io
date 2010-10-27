@@ -20,11 +20,11 @@ print record
 
 This would give the following output:
 
-    ID: YP_025292.1
-    Name: HokC
-    Description: toxic membrane protein, small
-    Number of features: 0
-    Seq('MKQHKAMIVALIVICITAVVAALVTRKDLCEVHIRTGQTEVAVF', IUPACProtein())
+ ID: YP_025292.1
+ Name: HokC
+ Description: toxic membrane protein, small
+ Number of features: 0
+ Seq('MKQHKAMIVALIVICITAVVAALVTRKDLCEVHIRTGQTEVAVF', IUPACProtein())
 
 == Extracting information from a SeqRecord ==
 
