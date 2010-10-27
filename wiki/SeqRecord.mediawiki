@@ -142,7 +142,7 @@ Next is '''features''' which is another list property, and it contains SeqFeatur
 5
 </source>
 
-SeqFeature objects are complicated enough to warrant their own page...
+SeqFeature objects are complicated enough to warrant their own wiki page... for now please refer to the Tutorial.
 
 If you are using Biopython 1.48 or later, there will be a '''format''' method.  This lets you convert the '''SeqRecord''' into a string using one of the output formats supported by [[SeqIO|Bio.SeqIO]], for example:
 

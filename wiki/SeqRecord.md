@@ -181,7 +181,8 @@ SeqFeature objects:
 5
 ```
 
-SeqFeature objects are complicated enough to warrant their own page...
+SeqFeature objects are complicated enough to warrant their own wiki
+page... for now please refer to the Tutorial.
 
 If you are using Biopython 1.48 or later, there will be a **format**
 method. This lets you convert the **SeqRecord** into a string using one
