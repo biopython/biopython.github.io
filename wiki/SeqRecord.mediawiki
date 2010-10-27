@@ -2,7 +2,7 @@ This page describes the '''SeqRecord''' object used in BioPython to hold a seque
 
 Most of the sequence file format parsers in BioPython can return '''SeqRecord''' objects (and may offer a format specific record object too, see for example Bio.SwissProt).  The [[SeqIO]] system will ''only'' return SeqRecord objects.
 
-In addition to the '''SeqRecord''' object's [http://biopython.org/DIST/docs/api/Bio.SeqRecord.SeqRecord-class.html API documentation], there is more information in the [http://biopython.org/DIST/docs/tutorial/Tutorial.html Tutorial] ([http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF]), and the [[SeqIO]] page is also very relevant.
+In addition to the '''SeqRecord''' object's [http://biopython.org/DIST/docs/api/Bio.SeqRecord.SeqRecord-class.html API documentation], there is a whole chapter in the [http://biopython.org/DIST/docs/tutorial/Tutorial.html Tutorial] ([http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF]), and the [[SeqIO]] page is also very relevant.
 
 == Creating a SeqRecord object ==
 

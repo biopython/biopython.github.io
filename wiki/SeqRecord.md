@@ -17,7 +17,7 @@ system will *only* return SeqRecord objects.
 
 In addition to the **SeqRecord** object's [API
 documentation](http://biopython.org/DIST/docs/api/Bio.SeqRecord.SeqRecord-class.html),
-there is more information in the
+there is a whole chapter in the
 [Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
 ([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)), and the
 [SeqIO](SeqIO "wikilink") page is also very relevant.
