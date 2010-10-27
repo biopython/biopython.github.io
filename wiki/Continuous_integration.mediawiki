@@ -113,5 +113,15 @@ The two most important parameters of a build are: the slave that implements the 
 #Run the tests
 
 ===Status targets===
+
+Targets are systems that relay information on the test outcomes. Typical targets are:
+
+#Buildbot webserver. A web address where developers and users can check the results of previous builds
+#Email addresses. To be warned of outcomes of builders
+#IRC channels
+#...
+
+There is a main buildbot webserver. There are two types of users: the general audience that can check the results. Admins which can stop the server, restart builds, etc...
+
 ===Identity===
 ===Debugging===

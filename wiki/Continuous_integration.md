@@ -190,6 +190,19 @@ are typically:
 
 ### Status targets
 
+Targets are systems that relay information on the test outcomes. Typical
+targets are:
+
+1.  Buildbot webserver. A web address where developers and users can
+    check the results of previous builds
+2.  Email addresses. To be warned of outcomes of builders
+3.  IRC channels
+4.  ...
+
+There is a main buildbot webserver. There are two types of users: the
+general audience that can check the results. Admins which can stop the
+server, restart builds, etc...
+
 ### Identity
 
 ### Debugging
