@@ -69,16 +69,18 @@ Windows
 
 After you have your version of Python installed, you will need to
 install buildbot. In theory, the best way to install buildbot is with
-[http://pypi.python.org/pypi/setuptools
-setuptools](http://pypi.python.org/pypi/setuptools_setuptools "wikilink"),
-but experience shows that it does not work perfectly with buildbot (and
-twisted, which is also required). Currently there is no twisted binary
-for python 2.7, so 2.6 is recommended if you do not want to waste much
-time installing stuff. setuptools can still be used to install
-zope.interface (twisted requires this). After that then install the
-twisted binary and then buildbot. To sum it up: install python (2.6)
-then setuptools then zope.interface via setuptools/easy\_install, then
-twisted (binary), then buildbot-slave (source)...
+[setuptools](http://pypi.python.org/pypi/setuptools), but experience
+shows that it does not work perfectly with buildbot (and twisted, which
+is also required). Currently there is no twisted binary for python 2.7,
+so 2.6 is recommended if you do not want to waste much time installing
+stuff. setuptools can still be used to install zope.interface (twisted
+requires this). After that then install the twisted binary and then
+buildbot. To sum it up: install python (2.6) then setuptools then
+zope.interface via setuptools/easy\_install, then twisted (binary), then
+buildbot-slave (source)... Ok, just one more thing: pywin32 and you are
+done (get the 32 bit 2.6 binary, not the default download as source).
+
+You will need also a C compiler. MinGW is fine.
 
 Mac
 ---
