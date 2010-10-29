@@ -54,6 +54,11 @@ by Biopython installed (e.g. NumPy).
 Linux
 -----
 
+Installing buildbot-slave is easy. There is just a pitfall: in some
+distributions buildbot and buildbot-slave are the same program (just
+called buildbot). In this case your create-slave command is handled by
+buildbot (not buildslave)
+
 On linux you should make sure that the version of python you want to
 test is available by the name pythonM.m. E.g, if you offer to test for
 python 2.6, your python binary should be available by the name python2.6
