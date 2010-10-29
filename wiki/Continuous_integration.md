@@ -30,7 +30,10 @@ General instructions
 --------------------
 
 You will need to install buildbot on your system (\*ONLY\* the slave
-part). We strongly recommend version 0.8,1p1
+part). We strongly recommend version 0.8,1p1. Please see below more
+specific instructions for your operating system.
+
+You will also need git installed.
 
 After that you should contact the biopython development mailing list
 saying what you are willing to test (platform, python version,
