@@ -14,6 +14,48 @@ later release, but you can use them in your own code with Biopython
 Convenience functions
 ---------------------
 
+### Get the parent of a clade
+
+The Tree data structures in Bio.Phylo don't store parent references for
+each clade. Instead, the `get_path` method can be used to trace the path
+of parent-child links from the tree root to the clade of choice:
+
+``` python
+def get_parent(tree, child_clade):
+    node_path = tree.get_path(child_clade)
+    return node_path[-2]
+
+# Select a clade 
+myclade = tree.find_clades("foo").next()
+# Test the function
+parent = get_parent(tree, myclade)
+assert myclade in parent
+```
+
+Note that `get_path` has a linear run time with respect to the size of
+the tree -- i.e. for best performance, don't call `get_parent` or
+`get_path` inside a time-critical loop. If possible, call `get_path`
+outside the loop, and look up parents in the list returned by that
+function.
+
+Alternately, if you need to repeatedly look up the parents of arbitrary
+tree elements, create a dictionary mapping all nodes to their parents:
+
+``` python
+def all_parents(tree):
+    parents = {}
+    for clade in tree.find_clades(order='level'):
+        for child in clade:
+            parents[child] = clade
+    return parents
+
+# Example
+parents = all_parents(tree)
+myclade = tree.find_clades("foo").next()
+parent_of_myclade = parents[myclade]
+assert myclade in parent_of_myclade
+```
+
 ### Index clades by name
 
 For large trees it can be useful to be able to select a clade by name,
