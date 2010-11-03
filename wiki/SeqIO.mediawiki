@@ -121,7 +121,7 @@ This table lists the file formats that Bio.SeqIO can read, write and index, with
 | 1.43
 | No
 | 1.52
-| [[bp:Swissprot_sequence_format|Swiss-Prot]] aka UniProt format. Uses Bio.SwissProt internally.
+| [[bp:Swissprot_sequence_format|Swiss-Prot]] aka UniProt format. Uses Bio.SwissProt internally. See also the UniProt XML format.
 |-
 | tab
 | 1.48
@@ -134,6 +134,12 @@ This table lists the file formats that Bio.SeqIO can read, write and index, with
 | 1.50
 | 1.52
 | [[bp:Qual_sequence_format|Qual files]] are a bit like FASTA files but instead of the sequence, record space separated integer sequencing values as PHRED quality scores.  A matched pair of FASTA and QUAL files are often used as an alternative to a single FASTQ file.
+|-
+| uniprot-xml
+| git
+| No
+| git
+| UniProt XML format, successor to the plain text Swiss-Prot format.
 |-
 |}
 
