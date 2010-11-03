@@ -200,7 +200,7 @@ environment. The environment can be defined by things like the
 Python/Jython version, the OS, but also if it is a fast or slow build.
 The number of builders can explode quite easily: lets say 5 Python
 versions (2.5, 2.6, 2.7, 3.1 plus Jython 2.5.2) times 3 OSes times 2
-build types (fast and slow) and where are at 30 builds.
+build types (fast and slow) and we are at 30 builds.
 
 The two most important parameters of a build are: the slave that
 implements the build and the list of steps the slave has to do. There
