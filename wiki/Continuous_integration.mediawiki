@@ -28,6 +28,8 @@ buildslave start your_slave_directory
 
 Remember to have the external applications that you wish to test (e.g. blast) correctly installed. You should also have all dependencies needed by Biopython installed (e.g. NumPy).
 
+'''Please read the security notes at the en'''
+
 ==Linux==
 
 Installing buildbot-slave is easy. There is just a pitfall: in some distributions buildbot and buildbot-slave are the same program (just called buildbot). In this case your create-slave command is handled by buildbot (not buildslave)

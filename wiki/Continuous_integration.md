@@ -51,6 +51,8 @@ Remember to have the external applications that you wish to test (e.g.
 blast) correctly installed. You should also have all dependencies needed
 by Biopython installed (e.g. NumPy).
 
+**Please read the security notes at the en**
+
 Linux
 -----
 
