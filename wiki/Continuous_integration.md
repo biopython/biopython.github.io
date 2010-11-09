@@ -176,8 +176,7 @@ The configuration is divided in:
 ### Slaves
 
 The list of slaves. Only listed slaves will be distributed work. Each
-slave has a password. Not a serious security issue (the probable worse
-thing that can happen is bogus reports from slaves)
+slave has a password.
 
 ### Sources
 
@@ -231,3 +230,17 @@ server, restart builds, etc...
 ### Identity
 
 ### Debugging
+
+Security issues
+===============
+
+Slaves are identified by the means of a password. If a password is
+known, there is not much problem: The only thing a rogue slave can do is
+provide back erroneous integration information.
+
+A much more serious issue is a rogue (cracked) server. Servers can
+instruct slaves to run arbitrary code, thus a compromised server can
+also compromise the slaves. As such, volunteers running slaves should
+probably establish separate accounts for the slaves and restrict the
+access of such accounts to Biopython requirements only (preferably no
+write access outside the slave scratch area).
