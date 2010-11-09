@@ -50,6 +50,8 @@ After you have your version of Python installed, you will need to install buildb
 
 You will need also a C compiler. MinGW is fine.
 
+See also: http://buildbot.net/trac/wiki/RunningBuildbotOnWindows
+
 ==Mac==
 ==Jython==
 

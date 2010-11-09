@@ -95,6 +95,8 @@ done (get the 32 bit 2.6 binary, not the default download as source).
 
 You will need also a C compiler. MinGW is fine.
 
+See also: <http://buildbot.net/trac/wiki/RunningBuildbotOnWindows>
+
 Mac
 ---
 
