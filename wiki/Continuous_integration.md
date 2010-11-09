@@ -23,6 +23,17 @@ testing. The information provided here is split in two main sections:
     developers interested in the integration testing status and
     administrators of the buildbot central server.
 
+Checking the integration status
+===============================
+
+Currently you have 3 options
+
+1.  Visit our [buildbot web site](http://events.open-bio.org:8010)
+2.  Subscribe to the integration [RSS
+    feed](http://events.open-bio.org:8010/rss)
+3.  Subscribe to the biopython-dev mailing list where important errors
+    are automatically forward (under construction)
+
 Volunteer integration testing
 =============================
 

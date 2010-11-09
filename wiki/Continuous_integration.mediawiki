@@ -9,6 +9,14 @@ We have a [http://buildbot.net Buildbot] system up to do integration testing. Th
 #Information regarding server configuration. Of interest to both developers interested in the integration testing status and administrators of the buildbot central server.
 
 
+=Checking the integration status=
+
+Currently you have 3 options
+
+#Visit our [http://events.open-bio.org:8010 buildbot web site]
+#Subscribe to the integration [http://events.open-bio.org:8010/rss RSS feed]
+#Subscribe to the biopython-dev mailing list where important errors are automatically forward (under construction)
+
 =Volunteer integration testing=
 
 
