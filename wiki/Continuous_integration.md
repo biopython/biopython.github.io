@@ -100,6 +100,10 @@ See also: <http://buildbot.net/trac/wiki/RunningBuildbotOnWindows>
 Mac
 ---
 
+If when running 'buildslave start' the slave doesn't seem to start, try
+adding python to the list of applications allowed to accept incoming
+connections in the Mac OS X advanced firewall settings.
+
 Jython
 ------
 
