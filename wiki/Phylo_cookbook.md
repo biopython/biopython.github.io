@@ -159,6 +159,7 @@ Consensus methods
 *TODO:*
 
 -   Majority-rules consensus
+-   Strict consensus
 -   Adams ([Adams
     1972](http://www.faculty.biol.ttu.edu/Strauss/Phylogenetics/Readings/Adams1972.pdf))
 -   Asymmetric median tree ([Phillips and Warnow
