@@ -147,7 +147,8 @@ Comparing trees
 
 *TODO:*
 
--   Symmetric difference / partition metric, a.k.a. topological distance
+-   Symmetric difference / partition metric, a.k.a. topological
+    distance (Robinson-Foulds)
 -   Quartets distance
 -   Nearest-neighbor interchange
 -   Path-length-difference
