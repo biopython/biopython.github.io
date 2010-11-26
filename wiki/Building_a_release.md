@@ -4,7 +4,7 @@ permalink: wiki/Building_a_release
 layout: wiki
 ---
 
-Build Biopython in 22 easy steps!!
+Build Biopython in 21 easy steps!!
 
 These instructions are for a Unix machine, with a Windows machine also
 needed to test and prepare the Windows installers.
@@ -70,40 +70,37 @@ and read/write to the same temp files.
 
 10. make documentation PDF, text and HTML files in Doc
 
+`   drevil:~biopython> cd Doc`  
 `   drevil:~biopython/Doc> make`  
-`   drevil:~biopython/Doc> make clean`
+`   drevil:~biopython/Doc> make clean`  
+`   drevil:~biopython/Doc> cd ..`
 
 11. make MANIFEST. First, make sure MANIFEST.in up to date.
 
 `   > python setup.py sdist --manifest-only `
 
-12. make sure the regression tests run here (anything with C code won't
-work of course, as we haven't compiled it).
-
-`   drevil:~tmp1/biopython/Tests/> python run_tests.py`
-
-13. make the source distribution
+12. make the source distribution
 
 `   drevil:~tmp1/biopython> python setup.py sdist --formats=gztar,zip `
 
-14. untar the file somewhere else
+13. untar the file somewhere else
 
 `   drevil:~tmp2> tar -xzvf ../tmp1/biopython/dist/biopython-1.53.tar.gz`
 
 -   Check to make sure it includes the HTML and PDF files under Doc
 
-15. make sure I can build and test it
+14. make sure I can build and test it
 
-`   drevil:~tmp2/biopython-1.00a1/> python setup.py build`  
-`   drevil:~tmp2/biopython-1.00a1/> python setup.py test`  
-`   drevil:~tmp2/biopython-1.00a1/> python setup.py install --root . `
+`   drevil:~tmp2/biopython-1.53/> python setup.py build`  
+`   drevil:~tmp2/biopython-1.53/> python setup.py test`  
+`   drevil:~tmp2/biopython-1.53/> python setup.py install --root . `
 
-16. add git tag
+15. add git tag
 
 `   drevil:~biopython> git tag biopython-153`  
 `   drevil:~biopython> git push origin master --tags`
 
-17. Update API documentation using Epydoc.
+16. Update API documentation using Epydoc.
 
 -   Go to the /usr/local/lib/python2.4/site-packages (or equivalent)
     directory. Running epydoc in your CVS tree works, but can miss some
@@ -115,7 +112,7 @@ work of course, as we haven't compiled it).
     /home/websites/biopython.org/html/static/DIST/docs/api/ on
     biopython.org (aka portal.open-bio.org).
 
-18. On your windows machine, build the Windows installers (either from a
+17. On your windows machine, build the Windows installers (either from a
 clean checkout, or the an unzipped copy of the source code bundle made
 earlier). Build the installers first, if you do a build/test/install
 before hand you seem to get a bloated setup exe. Assuming you have setup
@@ -125,21 +122,21 @@ your compilers etc appropriately just do this:
 `   C:\python25\python setup.py bdist_wininst`  
 `   C:\python26\python setup.py bdist_wininst`
 
-19. Remove any prior Biopython installations on your windows machine,
+18. Remove any prior Biopython installations on your windows machine,
 and confirm the Windows installers work.
 
-20. scp or ftp the .tar.gz, .zip and Windows installer files to the
+19. scp or ftp the .tar.gz, .zip and Windows installer files to the
 Biopython website, folder /home/websites/biopython.org/html/static/DIST/
 on biopython.org (aka portal.open-bio.org).
 
-21. Upload to the python package index:
+20. Upload to the python package index:
 
 `   > python setup.py register sdist upload`
 
 You need to have a login on pypi and be registered with Biopython to be
 able to upload the new version.
 
-22. Update the [website](website "wikilink") and announce the release:
+21. Update the [website](website "wikilink") and announce the release:
 
 -   add to [main page](Main_Page "wikilink") and [downloads
     page](Download "wikilink") (through the wiki), make sure the links
