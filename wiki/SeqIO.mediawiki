@@ -82,9 +82,9 @@ This table lists the file formats that Bio.SeqIO can read, write and index, with
 | This refers to the IntelliGenetics file format, apparently the same as the [[bp:Mase_multiple_alignment_format|MASE alignment format]].
 |-
 | imgt
-| git
-| git
-| git
+| 1.56
+| 1.56
+| 1.56
 | This refers to the IMGT variant of the EMBL plain text file format.
 |-
 | nexus
@@ -136,9 +136,9 @@ This table lists the file formats that Bio.SeqIO can read, write and index, with
 | [[bp:Qual_sequence_format|Qual files]] are a bit like FASTA files but instead of the sequence, record space separated integer sequencing values as PHRED quality scores.  A matched pair of FASTA and QUAL files are often used as an alternative to a single FASTQ file.
 |-
 | uniprot-xml
-| git
+| 1.56
 | No
-| git
+| 1.56
 | UniProt XML format, successor to the plain text Swiss-Prot format.
 |-
 |}
