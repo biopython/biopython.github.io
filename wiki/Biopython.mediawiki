@@ -33,4 +33,4 @@ This wiki will help you download and install Biopython, and start using the libr
 *[[Google Summer of Code]]
 |}
 
-The latest release is [[Download|Biopython 1.55]], released on 31 August 2010.
+The latest release is [[Download|Biopython 1.56]], released on 26 November 2010.
