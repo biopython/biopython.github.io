@@ -120,7 +120,8 @@ your compilers etc appropriately just do this:
 
 `   C:\python24\python setup.py bdist_wininst`  
 `   C:\python25\python setup.py bdist_wininst`  
-`   C:\python26\python setup.py bdist_wininst`
+`   C:\python26\python setup.py bdist_wininst`  
+`   C:\python27\python setup.py bdist_wininst`
 
 18. Remove any prior Biopython installations on your windows machine,
 and confirm the Windows installers work.
