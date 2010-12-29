@@ -1,4 +1,4 @@
-=64-bit Windows Biopython=
+=Compiling and using a 64 bit version of Biopython on Windows=
 
 64 Bit Windows machines normally use a 32 bit version of Biopython/Python/NumPy. This page is a scratchpad documenting how to generate a 64 bit version.
 
@@ -6,9 +6,19 @@ Firstly, such a version is already available, courtesy of Christoph Gohlke at [h
 
 To use a 64-bit version the following is needed: 64-bit Python and 64 bit NumPy. As of today, there is no official version 64 bit of NumPy. Chris makes one available at the address above.
 
-If you intend to compile Biopython from scratch then a '''64 bit C compiler is also needed'''.
+If you intend to compile Biopython from scratch then a '''64 bit C compiler is also needed''' e.g. [http://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/sezero_20101003/ mingw64].
 
 If you have both 32 bit and 64 bit versions of the above installed than some care is needed to avoid mixups. Using the wrong compiler seems to happen quite a bit (if you have both installed).
 
 
-[http://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/sezero_20101003/ mingw 64]
+==Using the mingw64 suite==
+
+There is a minor hurdle to sort before being able to use the mingw64 suite: Python requires msvcr90, but mingw 64 does not provide a stub (libmsvcr90.a) for it. This problem doesn't exist in the 32 bit version as the stub is provided. To get the stub to the following.
+
+#Be sure to have a mingw64 version with gendef.exe. Some builds do not have it. Get one that does
+#do copy C:\Windows\winsxs\amd64_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.21022.8_none_750b37ff97f4f68b\msvcr90.dll .
+#gendef.exe msvcr90.dll
+#dlltool.exe -D msvcr90.dll -l libmsvcr90.a -d msvcr90.def
+#copy libmsvcr90.a MINGW64_PATH\lib
+
+TBC...
