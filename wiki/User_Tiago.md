@@ -22,3 +22,5 @@ Bioinformatics, BMC Bioinformatics, among others.
 [home page](http://tiago.org)
 
 [Continuous integration](Continuous_integration "wikilink")
+
+[64-bit Windows Biopython](64-bit_Windows_Biopython "wikilink")
