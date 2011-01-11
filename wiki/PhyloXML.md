@@ -28,7 +28,8 @@ produced by Bio.Phylo.read() and parse().
 
 For example, this XML (from Tests/PhyloXML/example.xml):
 
-    <phyloxml>
+    <?xml version="1.0" encoding="UTF-8"?>
+    <phyloxml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.phyloxml.org http://www.phyloxml.org/1.10/phyloxml.xsd" xmlns="http://www.phyloxml.org">
        <phylogeny rooted="true">
           <name>An example</name>
           <clade>
