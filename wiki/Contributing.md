@@ -107,9 +107,10 @@ an enhancement bug, and then attaching the file(s).
 
 ### Coding conventions
 
-Biopython follows the coding conventions laid out by Guido in his
-[Python Style Guide](http://www.python.org/doc/essays/styleguide.html)
-(now covered by [PEP 8 Style Guide for Python
+Biopython tries to follow the coding conventions laid out by Guido in
+his [Python Style
+Guide](http://www.python.org/doc/essays/styleguide.html) (now covered by
+[PEP 8 Style Guide for Python
 Code](http://www.python.org/dev/peps/pep-0008/) and [PEP 257 Docstring
 Conventions](http://www.python.org/dev/peps/pep-0257/)). The important
 highlights are:
@@ -126,6 +127,10 @@ highlights are:
     help you take care of this (Emacs python-mode uses the 4 space rule,
     for instance). Tools/scripts/reindent.py in the Python distribution
     will help get rid of tabs in files.
+
+The one notable exception is module names, where we tend to use title
+case. With hindsight this is unfortunate, but we are constrained by
+backwards compatibility.
 
 [Epydoc](http://epydoc.sourceforge.net/) is being used to generate
 automatic documentation of the source code so it definitely is useful to

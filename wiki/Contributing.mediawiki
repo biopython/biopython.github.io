@@ -43,13 +43,15 @@ If all these terms seem acceptable, please send a description of your code to bi
 
 === Coding conventions ===
 
-Biopython follows the coding conventions laid out by Guido in his [http://www.python.org/doc/essays/styleguide.html Python Style Guide] (now covered by [http://www.python.org/dev/peps/pep-0008/ PEP 8 Style Guide for Python Code] and [http://www.python.org/dev/peps/pep-0257/ PEP 257 Docstring Conventions]). The important highlights are:
+Biopython tries to follow the coding conventions laid out by Guido in his [http://www.python.org/doc/essays/styleguide.html Python Style Guide] (now covered by [http://www.python.org/dev/peps/pep-0008/ PEP 8 Style Guide for Python Code] and [http://www.python.org/dev/peps/pep-0257/ PEP 257 Docstring Conventions]). The important highlights are:
 
 * Classes should be in AllFirstLetterUppercase style.
 * Functions should be in lowercase_separated_by_underscores style.
 * Variables are either in lowercase_separated_by_underscores or lowercasemungedtogether style, depending on your preferences and the length of the variable.
 * _single_leading_underscores to indicate internal functions or classes that shouldn't be called directly be a user.
 * Tabs are bad. Most people in the Python community now dislike tabs and instead prefer using 4 spaces for indentation. Most editors can help you take care of this (Emacs python-mode uses the 4 space rule, for instance). Tools/scripts/reindent.py in the Python distribution will help get rid of tabs in files. 
+
+The one notable exception is module names, where we tend to use title case. With hindsight this is unfortunate, but we are constrained by backwards compatibility.
 
 [http://epydoc.sourceforge.net/ Epydoc] is being used to generate automatic documentation of the source code so it definitely is useful to put helpful comments in your code so that they will be reflected in [http://biopython.org/DIST/docs/api the API documentation] (in addition to all the normal reasons to document code).
 
