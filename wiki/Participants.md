@@ -163,20 +163,6 @@ Frank Kauff
 | Biopython Contributions | Phd, Ace, Nexus (mostly with C. Cox)                                |
 | Relevant URL            | <http://www.uni-kl.de/wcms/ag-kauff.html>                           |
 
-[Chris Lasher](User%3AGotgenes "wikilink")
-==========================================
-
-|                         |                                      |
-|-------------------------|--------------------------------------|
-| E-mail                  | <chris.lasher@gmail.com>             |
-| Affiliation             | [Virginia Tech](https://www.vt.edu/) |
-| Location                | Blacksburg, VA                       |
-| Uses Python for         | Putting the joy back in programming  |
-| Work/Research Interests | Data mining                          |
-| Biopython Contributions | Antagonist, minor bug contributions  |
-| GitHub                  | <http://github.com/gotgenes>         |
-| Relevant URL            | <http://gotgenes.com/>               |
-
 [Leighton Pritchard](User%3Alpritc "wikilink")
 ==============================================
 

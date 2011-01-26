@@ -389,42 +389,6 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 |}
 
 
-= [[User%3AGotgenes|Chris Lasher]] =
-{| border="0"
-|-
-
-| E-mail                  || [mailto:chris.lasher@gmail.com chris.lasher@gmail.com]
-
-|-
-
-| Affiliation             || [https://www.vt.edu/ Virginia Tech]
-
-|-
-
-| Location                || Blacksburg, VA
-
-|-
-
-| Uses Python for         || Putting the joy back in programming
-
-|-
-
-| Work/Research Interests || Data mining
-
-|-
-
-| Biopython Contributions || Antagonist, minor bug contributions
-
-|-
-
-| GitHub                  || http://github.com/gotgenes
-
-|-
-
-| Relevant URL            || http://gotgenes.com/
-
-|}
-
 = [[User%3Alpritc|Leighton Pritchard]] =
 {| border="0"
 |-
