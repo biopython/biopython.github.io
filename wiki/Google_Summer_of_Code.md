@@ -144,45 +144,6 @@ Degree of difficulty and needed skills : Moderate. The project requires familiar
 
 Mentors : [Laurent Gautier](http://dk.linkedin.com/pub/laurent-gautier/8/81/869), [Brad Chapman](http://bcbio.wordpress.com), [Peter Cock](http://www.scri.ac.uk/staff/petercock)  
 
-### PDB-Tidy: command-line tools for manipulating PDB files
-
-Rationale : The [Protein Data Bank](http://www.rcsb.org/pdb/home/home.do) is an important data repository for protein structures, but the tools currently available for working with data in the PDB file format are usually specialized for a single specific task (e.g. visualization, homology modelling). Structural biologists would benefit from a command-line toolkit that makes structure data as easy to manipulate as sequence data already is.  
-
-<!-- -->
-
-Approach : Use Bio.PDB to build a set of simple command-line tools for tidying up PDB files. For example:  
-
-:\* Renumber residues starting from 1 (or N)
-
-:\* Select a portion of the structure -- models, chains, etc. -- and
-write it to a new file (PDB, FASTA, and other formats)
-
-:\* Perform some basic, well-established measures of model
-quality/validity
-
-:\* Draw a Ramachandran plot (using ReportLab; see also [this
-page](http://www.warwick.ac.uk/go/peter_cock/python/ramachandran/))
-
-:\* Extend and improve Bio.PDB as appropriate to support this effort
-
-Challenges : Many PDB files contain some inconsistent or surprising features -- some sensible assumptions, like continuous numbering of residues, do not hold in all cases. So, awareness of these issues, defensive coding, and extensive testing will be necesssary. Also, some discretion in the specific features implemented will be necessary: the features should generally supplement each other, and be conceptually cohesive. Your application should include a detailed project plan describing and justifying each feature you plan to implement.  
-
-<!-- -->
-
-Involved toolkits or projects :  
-
-:\* Biopython: Bio.PDB, and other modules as needed
-
-:\* [Protein Data Bank](http://www.rcsb.org/pdb/home/home.do)
-
-:\* See RCSB's [list of software tools](http://sw-tools.pdb.org/)
-
-Degree of difficulty and needed skills : Moderate. An understanding of the types of information in a PDB file, and what they're used for, is valuable here. It is also good to be aware of functionality that is already available in other popular software, and aim for interoperability in those cases rather than duplicating major features. Applications related to this idea should focus on a specific goal beyond the manipulation PDB files -- in what sort of research will this be useful?  
-
-<!-- -->
-
-Mentors : [Eric Talevich](User%3AEricTalevich "wikilink"), [Diana Jaunzeikare](https://www.nescent.org/wg_phyloinformatics/User:Dianaj)  
-
 ### Integration with a third-party structural biology application
 
 Rationale : Biopython is already a useful toolkit for computational structural biology, and Python is a popular language for scripting and configuring a number of separate molecular modelling and simulation tools. Support for controlling these external tools from within Biopython, however, is relatively sparse. This project addresses the issue, starting with a single application.  
