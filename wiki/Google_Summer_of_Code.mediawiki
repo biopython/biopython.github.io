@@ -73,21 +73,3 @@ Please read the [http://www.open-bio.org/wiki/Google_Summer_of_Code GSoC page at
 ; Degree of difficulty and needed skills : Moderate. The project requires familiarity with coding in Python and R, and knowledge of phylogeny or biogeography. The student has plenty of flexibility to define the project based on their biological interests (e.g. [http://www.warwick.ac.uk/go/peter_cock/python/heatmap/ microarrays and heatmaps]); there is also the possibility to venture far into data visualization once access to analysis methods is made. [http://kiwi.cs.dal.ca/GenGIS/Main_Page GenGIS] and can give ideas about what is possible.
 
 ; Mentors : [http://dk.linkedin.com/pub/laurent-gautier/8/81/869 Laurent Gautier], [http://bcbio.wordpress.com Brad Chapman], [http://www.scri.ac.uk/staff/petercock Peter Cock]
-
-
-=== Integration with a third-party structural biology application ===
-
-; Rationale : Biopython is already a useful toolkit for computational structural biology, and Python is a popular language for scripting and configuring a number of separate molecular modelling and simulation tools. Support for controlling these external tools from within Biopython, however, is relatively sparse. This project addresses the issue, starting with a single application.
-
-; Approach : Select a stable, popular and well-supported third-party application for structural biology (see below) to support from within Biopython. Identify "pain points" that would occur when trying to control various workflows involving your application of choice from Biopython -- e.g. data formats Biopython doesn't yet support, or command-line programs with complex options. In a new Biopython module, write code that makes these common procedures easier to perform, without also making common errors easier to commit.
-
-; Challenges : Most of the relevant third-party tools have quite extensive functionality, and the corresponding Biopython module should support essentially all of it (unless there's a good reason to skip a particular feature). Some simulation and modelling operations take a long time, too; it should be possible to launch these long-running processes and protect them from interruption.
-
-; Involved toolkits or projects :
-
-:* Biopython: Bio.PDB, and other modules as needed
-:* An external application of your choice: Modeller, AutoDock, PyMol, MolProbity, ...
-
-; Degree of difficulty and needed skills : Medium to hard. Simpler tasks include providing "glue" at each point of I/O; more challenging design problems could come from automating common parts of a simulation or modeling pipeline. Experience in with the tool being wrapped is probably essential.
-
-; Mentors : [[User%3AEricTalevich|Eric Talevich]] (looking for co-mentors)
