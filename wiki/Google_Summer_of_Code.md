@@ -77,34 +77,6 @@ Degree of difficulty and needed skills : Medium to Hard. At a minimum, the stude
 
 Mentors : [Gavin Huttley](http://jcsmr.anu.edu.au/org/dmb/compgen/), [Rob Knight](http://chem.colorado.edu/index.php?option=com_content&view=article&id=263:rob-knight), [Brad Chapman](http://bcbio.wordpress.com), [Eric Talevich](User%3AEricTalevich "wikilink")  
 
-### Galaxy phylogenetics pipeline development
-
-Rationale : [Galaxy](http://main.g2.bx.psu.edu/) is a popular web based interface for integrating biological tools and analysis pipelines. It is widely used by bench biologists for their analysis work, and by computational biologists for building interfaces to developed tools. [HyPhy](http://hyphy.org) provides a popular package for molecular evolution and sequence statistical analysis, and the [datamonkey.org](http://www.datamonkey.org/) server provides web based workflows to perform a number of common tasks with HyPhy. This project bridges these two complementary projects by bringing HyPhy workflows into the Galaxy system, standardizing these analyses on a widely used platform.  
-
-<!-- -->
-
-Approach : The student would bring existing workflows from datamonkey.org to Galaxy. The general approach would be to pick a datamonkey.org workflow, wrap the relevant tools using [Galaxy's XML tool definition language](http://bitbucket.org/galaxy/galaxy-central/wiki/AddToolTutorial), and implement a shared pipeline with [Galaxy's workflow system](http://screencast.g2.bx.psu.edu/galaxy/flash/WorkflowFromHistory.html). Functional tests will be developed for tools and workflows, along with high level documentation for end users.  
-
-<!-- -->
-
-Challenges : This project requires the student to become comfortable working in the existing Galaxy framework. This is a useful practical skill as Galaxy is widely used in the biological community. Similarly, the student should become familiar with the statistical evolutionary methods in HyPhy to feel comfortable wrapping and testing them in Galaxy. Since the tools would be widely used from the main Galaxy website and installed instances, we place a strong emphasis on students who feel comfortable building tests and examples that would ensure the developed workflows function as expected.  
-
-<!-- -->
-
-Involved toolkits or projects :  
-
-:\* [Galaxy](http://bitbucket.org/galaxy/galaxy-central/wiki/Home)
-
-:\* [HyPhy](http://hyphy.org)
-
-:\* [Adaptive Evolution Server](http://www.datamonkey.org)
-
-Degree of difficulty and needed skills : Medium to Hard. As envisioned, the project would involve implementing full phylogenetic pipelines with the Galaxy toolkits. This would require becoming familiar with the Galaxy tool integration framework as well as being comfortable with HyPhy tools and current pipelines. This would involve comfort with XML for developing the tool interfaces, and Python for integrating scripts and tests with Galaxy and HyPhy.  
-
-<!-- -->
-
-Mentors : [Sergei L Kosakovsky Pond](http://www.hyphy.org/sergei/), [Brad Chapman](http://bcbio.wordpress.com), [Anton Nekrutenko](http://www.bx.psu.edu/~anton/)  
-
 ### Accessing R phylogenetic tools from Python
 
 Rationale : The [R statistical language](http://www.r-project.org/) is a powerful open-source environment for statistical computation and visualization. [Python](http://www.python.org/) serves as an excellent complement to R since it has a wide variety of available libraries to make data processing, analysis, and web presentation easier. The two can be smoothly interfaced using [Rpy2](http://bitbucket.org/lgautier/rpy2/), allowing programmers to leverage the best features of each language. Here we propose to build Rpy2 library components to help ease access to phylogenetic and biogeographical libraries in R.  
