@@ -122,4 +122,30 @@ Degree of difficulty and needed skills : Moderate. The project requires familiar
 
 Mentors : [Laurent Gautier](http://dk.linkedin.com/pub/laurent-gautier/8/81/869), [Brad Chapman](http://bcbio.wordpress.com), [Peter Cock](http://www.scri.ac.uk/staff/petercock)  
 
+### Biopython and Mocapy++
+
+Rationale : [Mocapy++](http://sourceforge.net/projects/mocapy/) is a machine learning toolkit for training and using Bayesian networks. Mocapy++ supports the use of directional statistics; the statistics of angles, orientations and directions. This unique feature of Mocapy++ makes the toolkit especially suited for the formulation of probabilistic models of biomolecular structure, as they are usually described in such terms. The toolkit has already been used to develop (published and peer reviewed) models of [protein](http://www.pnas.org/content/105/26/8932.abstract?etoc) and [RNA](http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1000406) structure. The toolkit is implemented in C++, and does not provide any Python Bindings. The goal of this proposal is to develop an easy-to-use Python interface to Mocapy++, and to integrate this interface with the Biopython project. Through its Bio.PDB module, Biopython provides excellent functionality for data mining of biomolecular structures. Integrating Mocapy++ and Biopython would create strong synergy, as it would become quite easy to extract data from the databases of molecular structure, and subsequently use this data to formulate probabilistic models. As such, it would provide a strong impulse to the field of protein structure prediction, design and simulation. Possible applications beyond bioinformatics include probabilistic models of human or animal movement, or any other application that involves directional data.  
+
+<!-- -->
+
+Approach :  
+
+:\*
+
+Challenges :  
+
+<!-- -->
+
+Involved toolkits or projects :  
+
+:\* [Biopython](http://biopython.org/wiki/Main_Page)
+
+:\* [Mocapy++](http://sourceforge.net/projects/mocapy/)
+
+Degree of difficulty and needed skills : Hard. The student needs to be fluent in C++, Python and the [C++ Boost library](http://www.boost.org). Experience with machine learning, Bayesian statistics and biomolecular structure would be clear advantages.  
+
+<!-- -->
+
+Mentors : [Thomas Hamelryck](http://www.binf.ku.dk/research/structural_bioinformatics/)  
+
 
