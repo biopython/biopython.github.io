@@ -128,20 +128,7 @@ Rationale : [Mocapy++](http://sourceforge.net/projects/mocapy/) is a machine lea
 
 <!-- -->
 
-Approach :  
-
-Ideally, the student would first gain some understanding of the
-theoretical background of the algorithms that are used in Mocapy++,
-which involves parameter learning of Bayesian networks using Stochastic
-Expectation Maximization (S-EM). Next, the student would study some of
-the use cases of the toolkit, and read some of the published articles
-that make use of the toolkit. After becoming familiar with the internals
-of Mocapy++, Python binding will then be implemented using the Boost C++
-library. Based on the use cases, the student would finally implement
-some aexample applications that involve data mining of biomolecular
-structure using Biopython, teh subsequent formulation of probabilistic
-models using Python-Mocapy++, and its biologically relevant application.
-Schematically, the follozing steps are involved for the student:
+Approach : Ideally, the student would first gain some understanding of the theoretical background of the algorithms that are used in Mocapy++, which involves parameter learning of Bayesian networks using Stochastic Expectation Maximization (S-EM). Next, the student would study some of the use cases of the toolkit, and read some of the published articles that make use of the toolkit. After becoming familiar with the internals of Mocapy++, Python binding will then be implemented using the Boost C++ library. Based on the use cases, the student would finally implement some aexample applications that involve data mining of biomolecular structure using Biopython, teh subsequent formulation of probabilistic models using Python-Mocapy++, and its biologically relevant application. Schematically, the follozing steps are involved for the student:  
 
 :\* Theoretical study of S-EM
 
@@ -153,14 +140,9 @@ Schematically, the follozing steps are involved for the student:
 
 :\* Example applications, involving Bio.PDB data mining
 
-Challenges :  
+Challenges : The project is highly interdisciplinary, and ideally requires skills in programming (C++, Python, wrapping C++ libraries in Python, Boost), machine learning, knowledge of biomolecular structure and statistics. The project could be extended (for example, by implementing additional functionlaity in Mocapy++) or limited (for example by limiting the time spent on understanding the theory behoind Mocapy++).  
 
-The project is highly interdisciplinary, and ideally requires skills in
-programming (C++, Python, wrapping C++ libraries in Python, Boost),
-machine learning, knowledge of biomolecular structure and statistics.
-The project could be extended (for example, by implementing additional
-functionlaity in Mocapy++) or limited (for example by limiting the time
-spent on understanding the theory behoind Mocapy++).
+<!-- -->
 
 Involved toolkits or projects :  
 
