@@ -142,7 +142,7 @@ Approach : Ideally, the student (or several students) would first gain some unde
 
 :\* Example applications, involving Bio.PDB data mining
 
-Challenges : The project is highly interdisciplinary, and ideally requires skills in programming (C++, Python, wrapping C++ libraries in Python, Boost), machine learning, knowledge of biomolecular structure and statistics. The project could be extended (for example, by implementing additional functionality in Mocapy++) or limited (for example, by limiting the time spent on understanding the theory behind Mocapy++). The proposal would certainly benefit from several students with complementary skills.  
+Challenges : The project is highly interdisciplinary, and ideally requires skills in programming (C++, Python, wrapping C++ libraries in Python, Boost), machine learning, knowledge of biomolecular structure and statistics. The project could be extended (for example, by implementing additional functionality in Mocapy++) or limited (for example, by limiting the time spent on understanding the theory behind Mocapy++). The project would certainly benefit from several students with complementary skills.  
 
 <!-- -->
 
