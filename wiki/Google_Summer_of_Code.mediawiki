@@ -66,9 +66,10 @@ Please read the [http://www.open-bio.org/wiki/Google_Summer_of_Code GSoC page at
 
 ; Approach : Ideally, the student would first gain some understanding of the theoretical background of the algorithms that are used in Mocapy++, which involves parameter learning of Bayesian networks using [http://en.wikipedia.org/wiki/Expectation-maximization_algorithm Stochastic Expectation Maximization (S-EM)]. Next, the student would study some of the use cases of the toolkit, making use of some of the published articles that involve Mocapy++. After becoming familiar with the internals of Mocapy++, Python bindings will then be implemented using the Boost C++ library. Based on the use cases, the student would finally implement some example applications that involve data mining of biomolecular structure using Biopython, the subsequent formulation of probabilistic models using Python-Mocapy++, and its application to some biologically relevant problem. Schematically, the following steps are involved for the student:   
 
-:* Theoretical study of S-EM
+:* Gaining some understanding of S-EM
 :* Study of Mocapy++ use cases
 :* Study of Mocapy++ internals and code
+:* Design of interface strategy
 :* Implementing Python bindings using Boost
 :* Example applications, involving Bio.PDB data mining
 
