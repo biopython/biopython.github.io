@@ -13,6 +13,35 @@ Please read the [http://www.open-bio.org/wiki/Google_Summer_of_Code GSoC page at
 
 == 2011 Project ideas ==
 
+=== Variant representation, parser, generator, and coordinate converter ===
+
+; Rationale : Computational analysis of genomic variation requires the ability to reliably translate between human and computer representations of genomic variants. While several standards for human variation syntax have been proposed, community support is limited because of the technical complexity of the proposals and the lack of software libraries that implement them. The goal of this project is to initiate freely-available, language-neutral tools to parse, generate, and convert between representations of genomic variation.
+
+; Approach and Goals :
+:* identify variation types to be represented (SNV, CNV, repeats, inversions, etc)
+:* develop internal machine representation for variation types in Python
+:* develop language-neutral grammar for the (reasonably) supportable subset of the Human Genome Variation Society nomeclature guidelines
+:* write a Python library to convert between machine and human representations of variation (i.e., parsing and generating) 
+:* develop coordinate mapping between genomic, cDNA, and protein sequences (at least)
+:* release code to appropriate community efforts and write short manuscript
+:* as time permits:
+:** build Perl modules or Java libraries with identical functionality
+:** develop syntactic and semantic validation
+:** implement web service for coordinate conversion using NCBI Eutilities
+:** develop a new variant syntax that is representation-complete
+
+; Challenges : The major challenge in this project is to design an API which cleanly separates internal representations of variation from the multiple external representations. For example, coordinate conversion per se does not require any sequence information, but validating a variant does. Ideally, the libraries developed in this project will provide low-level functionality of coordinate conversion and parsing, and high-level functionality for the most common use cases. This aim requires analyzing the proposals to determine which aspects may be impossible or difficult to represent with a simple grammar. 
+
+; Involved toolkits or projects :
+:* BioPython
+:* Related: http://www.mutalyzer.nl/2.0/, http://www.hgvs.org/mutnomen/
+
+; Degree of difficulty and needed skills : Easy-to-Medium depending on how many objectives are attempted. The student will need have skills  in most or all of: basic molecular biology (genomes, transcripts, proteins), genomic variation, Python, BioPython, Perl, BioPerl, NCBI Eutilities and/or Ensembl API. Experience with computer grammars is highly desirable.
+
+; Mentors : Reece Hart, Locus Development, San Francisco
+
+
+
 === Biopython and PyCogent interoperability ===
 
 ; Rationale : [http://pycogent.sourceforge.net/ PyCogent] and [http://biopython.org/wiki/Main_Page Biopython] are two widely used toolkits for performing computational biology and bioinformatics work in Python. The libraries have had traditionally different focuses: with Biopython focusing on sequence parsing and retrieval and PyCogent on evolutionary and phylogenetic processing. Both user communities would benefit from increased interoperability between the code bases, easing the developing of complex workflows.
