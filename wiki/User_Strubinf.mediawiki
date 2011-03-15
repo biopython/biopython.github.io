@@ -1,0 +1,9 @@
+Hi,
+
+My name is [http://wiki.binf.ku.dk/User:Thomas_Hamelryck Thomas Hamelryck]. 
+
+I am group leader of the [http://www.binf.ku.dk/research/structural_bioinformatics/ Structural Bioinformatics group] at the [http://www.binf.ku.dk Bioinformatics Center] at [http://www.ku.dk Copenhagen university, Denmark].
+
+My main biological interests are the prediction and simulation of the structure and dynamics of proteins and RNA, and protein design. I am the original author of Biopython's Bio.PDB module. 
+
+-Thomas
