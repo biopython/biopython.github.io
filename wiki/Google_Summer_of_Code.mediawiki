@@ -13,53 +13,6 @@ Please read the [http://www.open-bio.org/wiki/Google_Summer_of_Code GSoC page at
 
 == 2011 Project ideas ==
 
-=== Biopython and PyCogent interoperability ===
-
-; Rationale : [http://pycogent.sourceforge.net/ PyCogent] and [http://biopython.org/wiki/Main_Page Biopython] are two widely used toolkits for performing computational biology and bioinformatics work in Python. The libraries have had traditionally different focuses: with Biopython focusing on sequence parsing and retrieval and PyCogent on evolutionary and phylogenetic processing. Both user communities would benefit from increased interoperability between the code bases, easing the developing of complex workflows.
-
-; Approach : The student would focus on soliciting use case scenarios from developers and the larger communities associated with both projects, and use these as the basis for adding glue code and documentation to both libraries. Some use cases of immediate interest as a starting point are:
-
-:* Allow round-trip conversion between biopython and pycogent core objects (sequence, alignment, tree, etc.).
-:* Building workflows using Codon Usage analyses in PyCogent with clustering code in Biopython.
-:* Connecting Biopython acquired sequences to PyCogent's alignment, phylogenetic tree preparation and tree visualization code.
-:* Integrate Biopython's [http://biopython.org/wiki/Phylo phyloXML support], developed during GSoC 2009, with PyCogent.
-:* Develop a standardised controller architecture for interrogation of genome databases by extending PyCogent's Ensembl code, including export to Biopython objects.
-
-; Challenges : This project provides the student with a lot of freedom to create useful interoperability between two feature rich libraries. As opposed to projects which might require churning out more lines of code, the major challenge here will be defining useful APIs and interfaces for existing code. High level inventiveness and coding skill will be required for generating glue code; we feel library integration is an extremely beneficial skill. We also value clear use case based documentation to support the new interfaces.
-
-; Involved toolkits or projects :
-
-:* [http://biopython.org/wiki/Main_Page Biopython]
-:* [http://pycogent.sourceforge.net/ PyCogent]
-
-; Degree of difficulty and needed skills : Medium to Hard. At a minimum, the student will need to be highly competent in Python and become familiar with core objects in PyCogent and Biopython. Sub-projects will require additional expertise, for instance: familiarity with concepts in phylogenetics and genome biology; understanding SQL dialects.
-
-; Mentors : [http://jcsmr.anu.edu.au/org/dmb/compgen/ Gavin Huttley], [http://chem.colorado.edu/index.php?option=com_content&view=article&id=263:rob-knight Rob Knight], [http://bcbio.wordpress.com Brad Chapman], [[User%3AEricTalevich|Eric Talevich]]
-
-=== Accessing R phylogenetic tools from Python ===
-
-; Rationale : The [http://www.r-project.org/ R statistical language] is a powerful open-source environment for statistical computation and visualization. [http://www.python.org/ Python] serves as an excellent complement to R since it has a wide variety of available libraries to make data processing, analysis, and web presentation easier. The two can be smoothly interfaced using [http://bitbucket.org/lgautier/rpy2/ Rpy2], allowing programmers to leverage the best features of each language. Here we propose to build Rpy2 library components to help ease access to phylogenetic and biogeographical libraries in R.
-
-; Approach : Rpy2 contains higher level interfaces to popular R libraries. For instance, the [http://rpy.sourceforge.net/rpy2/doc-2.1/html/graphics.html#package-ggplot2 ggplot2 interface] allows python users to access powerful plotting functionality in R with an intuitive API. Providing similar high level APIs for biological toolkits available in R would help expose these toolkits to a wider audience of Python programmers. A nice introduction to phylogenetic analysis in R is available from Rich Glor at the [http://bodegaphylo.wikispot.org/Phylogenetics_and_Comparative_Methods_in_R Bodega Bay Marine Lab wiki]. Some examples of R libraries for which integration would be welcomed are:
-
-:* [http://ape.mpl.ird.fr/ ape (Analysis of Phylogenetics and Evolution)] -- an interactive library environment for phylogenetic and evolutionary analyses
-:* [http://pbil.univ-lyon1.fr/ADE-4/home.php?lang=eng ade4] -- Data Analysis functions to analyse Ecological and Environmental data in the framework of Euclidean Exploratory methods
-:* [http://cran.r-project.org/web/packages/geiger/index.html geiger] -- Running macroevolutionary simulation, and estimating parameters related to diversification from comparative phylogenetic data.
-:* [http://picante.r-forge.r-project.org/ picante] -- R tools for integrating phylogenies and ecology
-:* [http://mefa.r-forge.r-project.org/ mefa] -- multivariate data handling for ecological and biogeographical data
-
-; Challenges : The student would have the opportunity to learn an available R toolkit, and then code in Python and R to make this available via an intuitive API. This will involve digging into the R code examples to discover the most useful parts for analysis, and then projecting this into a library that is intuitive to Python coders. Beyond the coding and design aspects, the student should feel comfortable writing up use case documentation to support the API and encourage its adoption.
-
-; Involved toolkits or projects :
-
-:* [http://ape.mpl.ird.fr/ ape (Analysis of Phylogenetics and Evolution)]
-:* [http://bitbucket.org/lgautier/rpy2/ Rpy2]
-:* [http://biopython.org/wiki/Main_Page Biopython]
-
-; Degree of difficulty and needed skills : Moderate. The project requires familiarity with coding in Python and R, and knowledge of phylogeny or biogeography. The student has plenty of flexibility to define the project based on their biological interests (e.g. [http://www.warwick.ac.uk/go/peter_cock/python/heatmap/ microarrays and heatmaps]); there is also the possibility to venture far into data visualization once access to analysis methods is made. [http://kiwi.cs.dal.ca/GenGIS/Main_Page GenGIS] and can give ideas about what is possible.
-
-; Mentors : [http://dk.linkedin.com/pub/laurent-gautier/8/81/869 Laurent Gautier], [http://bcbio.wordpress.com Brad Chapman], [http://www.scri.ac.uk/staff/petercock Peter Cock]
-
 === Mocapy++Biopython: from data to probabilistic models of biomolecules ===
 
 ; Rationale : [http://sourceforge.net/projects/mocapy/ Mocapy++] is a machine learning toolkit for training and using [http://en.wikipedia.org/wiki/Bayesian_network Bayesian networks]. Mocapy++ supports the use of [http://en.wikipedia.org/wiki/Directional_statistics directional statistics]; the statistics of angles, orientations and directions. This unique feature of Mocapy++ makes the toolkit especially suited for the formulation of probabilistic models of biomolecular structure. The toolkit has already been used to develop (published and peer reviewed) models of [http://www.pnas.org/content/105/26/8932.abstract?etoc protein] and [http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1000406 RNA] structure in atomic detail. Mocapy++ is implemented in C++, and does not provide any Python bindings. The goal of this proposal is to develop an easy-to-use Python interface to Mocapy++, and to integrate this interface with the Biopython project. Through its [http://biopython.org/DIST/docs/cookbook/biopdb_faq.pdf Bio.PDB] module (initially implemented by the mentor of this proposal, [http://www.binf.ku.dk/research/structural_bioinformatics/ T. Hamelryck]), Biopython provides excellent functionality for data mining of biomolecular structure databases. Integrating Mocapy++ and Biopython would create strong synergy, as it would become quite easy to extract data from the databases, and subsequently use this data to train a probabilistic model. As such, it would provide a strong impulse to the field of protein structure prediction, design and simulation. Possible applications beyond bioinformatics are obvious, and include probabilistic models of human or animal movement, or any other application that involves directional data. 
