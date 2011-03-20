@@ -43,7 +43,7 @@ Please read the [http://www.open-bio.org/wiki/Google_Summer_of_Code GSoC page at
 
 ; Approach and Goals :
 :* identify variation types to be represented (SNV, CNV, repeats, inversions, etc)
-:* develop internal machine representation for variation types in Python
+:* develop internal machine representation for variation types in Python, perhaps by implementing subclasses of BioPython's SeqFeature class.
 :* develop language-neutral grammar for the (reasonably) supportable subset of the Human Genome Variation Society nomeclature guidelines
 :* write a Python library to convert between machine and human representations of variation (i.e., parsing and generating) 
 :* develop coordinate mapping between genomic, cDNA, and protein sequences (at least)
@@ -62,4 +62,4 @@ Please read the [http://www.open-bio.org/wiki/Google_Summer_of_Code GSoC page at
 
 ; Degree of difficulty and needed skills : Easy-to-Medium depending on how many objectives are attempted. The student will need have skills  in most or all of: basic molecular biology (genomes, transcripts, proteins), genomic variation, Python, BioPython, Perl, BioPerl, NCBI Eutilities and/or Ensembl API. Experience with computer grammars is highly desirable.
 
-; Mentors : Reece Hart (Locus Development, San Francisco); [http://bcbio.wordpress.com Brad Chapman]
+; Mentors : [http://linkedin.com/in/reece Reece Hart] ([http://locusdevelopmentinc.com Locus Development], San Francisco); [http://bcbio.wordpress.com Brad Chapman]

@@ -85,7 +85,8 @@ Approach and Goals :
 inversions, etc)
 
 :\* develop internal machine representation for variation types in
-Python
+Python, perhaps by implementing subclasses of BioPython's SeqFeature
+class.
 
 :\* develop language-neutral grammar for the (reasonably) supportable
 subset of the Human Genome Variation Society nomeclature guidelines
@@ -125,6 +126,6 @@ Degree of difficulty and needed skills : Easy-to-Medium depending on how many ob
 
 <!-- -->
 
-Mentors : Reece Hart (Locus Development, San Francisco); [Brad Chapman](http://bcbio.wordpress.com)  
+Mentors : [Reece Hart](http://linkedin.com/in/reece) ([Locus Development](http://locusdevelopmentinc.com), San Francisco); [Brad Chapman](http://bcbio.wordpress.com)  
 
 
