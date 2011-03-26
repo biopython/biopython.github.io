@@ -9,8 +9,8 @@ tags:
 This module provides classes, functions and I/O support for working with
 phylogenetic trees.
 
-This code is included in Biopython 1.54, and also described in the
-Phylogenetics chapter of the [Biopython
+For more complete documentation, see the Phylogenetics chapter of the
+[Biopython
 Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html) and the
 Bio.Phylo [API
 pages](http://biopython.org/DIST/docs/api/Bio.Phylo-module.html)
@@ -22,9 +22,9 @@ how to attach graphical cues and additional information to a tree.
 Availability
 ------------
 
-The source code for this module is included in Biopython 1.54. If you're
-interested in testing newer additions to this code before the next
-official release, see [SourceCode](SourceCode "wikilink") for
+The source code for this module is included in Biopython 1.54 and later.
+If you're interested in testing newer additions to this code before the
+next official release, see [SourceCode](SourceCode "wikilink") for
 instructions on getting a copy of the development branch.
 
 Requirements:
