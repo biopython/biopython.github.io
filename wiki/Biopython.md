@@ -37,5 +37,5 @@ the libraries and tools.
                                                                                                                                                                                                                                                                                             -   [ Developing on Github ](GitUsage "wikilink")              
                                                                                                                                                                                                                                                                                             -   [Google Summer of Code](Google_Summer_of_Code "wikilink")  |
 
-The latest release is [Biopython 1.56](Download "wikilink"), released on
-26 November 2010.
+The latest release is [Biopython 1.57](Download "wikilink"), released on
+2 April 2011.
