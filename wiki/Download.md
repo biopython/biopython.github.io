@@ -12,9 +12,9 @@ new](https://github.com/biopython/biopython/raw/master/NEWS).
 
 ### Files
 
--   [biopython-1.57.tar.gz](http://biopython.org/DIST/docs/biopython-1.57.tar.gz)
+-   [biopython-1.57.tar.gz](http://biopython.org/DIST/biopython-1.57.tar.gz)
     6.7 Mb -- Source Tarball
--   [biopython-1.57.zip](http://biopython.org/DIST/docs/biopython-1.57.zip)
+-   [biopython-1.57.zip](http://biopython.org/DIST/biopython-1.57.zip)
     7.3 Mb -- Source Zip File
 
 Please report any issues on our [mailing
