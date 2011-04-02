@@ -4,25 +4,18 @@ permalink: wiki/Download
 layout: wiki
 ---
 
-Current Release - 1.56 - 26 November 2010
-=========================================
+Current Release - 1.57 - 2 April 2011
+=====================================
 
-See also [What's new](http://biopython.open-bio.org/SRC/biopython/NEWS).
+See also [What's
+new](https://github.com/biopython/biopython/raw/master/NEWS).
 
 ### Files
 
--   [biopython-1.56.tar.gz](http://biopython.org/DIST/biopython-1.56.tar.gz)
-    6,778 Kb -- Source Tarball
--   [biopython-1.56.zip](http://biopython.org/DIST/biopython-1.56.zip)
-    7,347 Kb -- Source Zip File
--   [biopython-1.56.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.56.win32-py2.4.exe)
-    1,429 Kb -- 32 bit Windows Installer for Python 2.4 and NumPy 1.1
--   [biopython-1.56.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.56.win32-py2.5.exe)
-    1,429 Kb -- 32 bit Windows Installer for Python 2.5 and NumPy 1.1
--   [biopython-1.56.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.56.win32-py2.6.exe)
-    1,451 Kb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.3
--   [biopython-1.56.win32-py2.7.exe](http://biopython.org/DIST/biopython-1.56.win32-py2.7.exe)
-    1,578 Kb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.5
+-   [biopython-1.57.tar.gz](http://biopython.org/DIST/docs/biopython-1.57.tar.gz)
+    6.7 Mb -- Source Tarball
+-   [biopython-1.57.zip](http://biopython.org/DIST/docs/biopython-1.57.zip)
+    7.3 Mb -- Source Zip File
 
 Please report any issues on our [mailing
 lists](mailing_lists "wikilink") or
