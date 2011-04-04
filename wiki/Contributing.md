@@ -102,7 +102,8 @@ lists](Mailing_lists "wikilink")). Be sure to subscribe to biopython-dev
 before sending a message, otherwise your message will be discarded by
 the mail server (this was done to avoid spam on the mailing list). Don't
 send the code directly to the biopython-dev mailing list. Instead,
-please use [our Bugzilla](http://bugzilla.open-bio.org/) by first filing
+please use [our bug
+tracker](http://redmine.open-bio.org/projects/biopython) by first filing
 an enhancement bug, and then attaching the file(s).
 
 ### Coding conventions

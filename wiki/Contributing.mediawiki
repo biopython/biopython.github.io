@@ -39,7 +39,7 @@ Before you submit it, please check that:
 * You included docstrings in the code, and are willing to write documentation.
 * You have written, or are willing to write, a unit test for the new code.
 
-If all these terms seem acceptable, please send a description of your code to biopython-dev@biopython.org (see [[Mailing lists]]). Be sure to subscribe to biopython-dev before sending a message, otherwise your message will be discarded by the mail server (this was done to avoid spam on the mailing list). Don't send the code directly to the biopython-dev mailing list. Instead, please use [http://bugzilla.open-bio.org/ our Bugzilla] by first filing an enhancement bug, and then attaching the file(s).
+If all these terms seem acceptable, please send a description of your code to biopython-dev@biopython.org (see [[Mailing lists]]). Be sure to subscribe to biopython-dev before sending a message, otherwise your message will be discarded by the mail server (this was done to avoid spam on the mailing list). Don't send the code directly to the biopython-dev mailing list. Instead, please use [http://redmine.open-bio.org/projects/biopython our bug tracker] by first filing an enhancement bug, and then attaching the file(s).
 
 === Coding conventions ===
 
