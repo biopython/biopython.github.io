@@ -8,7 +8,7 @@ This document is meant as an outline of the way Biopython is developed. It shoul
 
 If you just want to grab the latest (not yet officially released) Biopython from our repository, see out [[SourceCode|source code page]]. This page is about actually using git for tracking changes.
 
-If you have found a problem with Biopython, and think you know how to fix it, then we suggest following the simple route of [http://bugzilla.open-bio.org/ filing a bug] and describe your fix.  Ideally, you would upload a patch file showing the differences between the latest version of Biopython (from our repository) and your modified version.  Working with the command line tools ''diff'' and ''patch'' is a very useful skill to have, and is almost a precursor to working with a version control system.  
+If you have found a problem with Biopython, and think you know how to fix it, then we suggest following the simple route of [http://redmine.open-bio.org/projects/biopython filing a bug] and describe your fix.  Ideally, you would upload a patch file showing the differences between the latest version of Biopython (from our repository) and your modified version.  Working with the command line tools ''diff'' and ''patch'' is a very useful skill to have, and is almost a precursor to working with a version control system.  
 
 You shouldn't go to the trouble of creating your own git fork unless you are intending to make more than a simple one off contribution.
 
@@ -165,7 +165,7 @@ If you have your repository hosted online (e.g. at github), then push the update
 
 == Submitting changes for inclusion in Biopython ==
 
-If you think you changes are worth including in the main Biopython distribution, then [http://bugzilla.open-bio.org/ file an (enhancement) bug on Bugzilla], and include a link to your updated branch (i.e. your branch on GitHub, or another public Git server).  You could also attach a patch on Bugzilla.  If the changes are accepted, one of the Biopython developers will have to check this code into our main repository.
+If you think you changes are worth including in the main Biopython distribution, then [http://redmine.open-bio.org/projects/biopython file an (enhancement) bug on our bug tracker], and include a link to your updated branch (i.e. your branch on GitHub, or another public Git server).  You could also attach a patch to the bug.  If the changes are accepted, one of the Biopython developers will have to check this code into our main repository.
 
 On GitHub itself, you can inform keepers of the main branch of your changes by sending a 'pull request' from the main page of your branch. Once the file has been committed to the main branch, you may want to delete your now redundant bug fix branch on GitHub.  Branches can be deleted by selecting 'edit' and then 'delete repository' from the bottom of the edit page.
 

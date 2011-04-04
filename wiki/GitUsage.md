@@ -25,12 +25,12 @@ tracking changes.
 
 If you have found a problem with Biopython, and think you know how to
 fix it, then we suggest following the simple route of [filing a
-bug](http://bugzilla.open-bio.org/) and describe your fix. Ideally, you
-would upload a patch file showing the differences between the latest
-version of Biopython (from our repository) and your modified version.
-Working with the command line tools *diff* and *patch* is a very useful
-skill to have, and is almost a precursor to working with a version
-control system.
+bug](http://redmine.open-bio.org/projects/biopython) and describe your
+fix. Ideally, you would upload a patch file showing the differences
+between the latest version of Biopython (from our repository) and your
+modified version. Working with the command line tools *diff* and *patch*
+is a very useful skill to have, and is almost a precursor to working
+with a version control system.
 
 You shouldn't go to the trouble of creating your own git fork unless you
 are intending to make more than a simple one off contribution.
@@ -308,12 +308,12 @@ Submitting changes for inclusion in Biopython
 ---------------------------------------------
 
 If you think you changes are worth including in the main Biopython
-distribution, then [file an (enhancement) bug on
-Bugzilla](http://bugzilla.open-bio.org/), and include a link to your
-updated branch (i.e. your branch on GitHub, or another public Git
-server). You could also attach a patch on Bugzilla. If the changes are
-accepted, one of the Biopython developers will have to check this code
-into our main repository.
+distribution, then [file an (enhancement) bug on our bug
+tracker](http://redmine.open-bio.org/projects/biopython), and include a
+link to your updated branch (i.e. your branch on GitHub, or another
+public Git server). You could also attach a patch to the bug. If the
+changes are accepted, one of the Biopython developers will have to check
+this code into our main repository.
 
 On GitHub itself, you can inform keepers of the main branch of your
 changes by sending a 'pull request' from the main page of your branch.
