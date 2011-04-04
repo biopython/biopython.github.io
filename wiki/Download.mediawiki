@@ -11,7 +11,7 @@ See also [https://github.com/biopython/biopython/raw/master/NEWS What's new].
 * [http://biopython.org/DIST/biopython-1.57.win32-py2.6.exe biopython-1.57.win32-py2.6.exe] 1,428 Kb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.3
 * [http://biopython.org/DIST/biopython-1.57.win32-py2.7.exe biopython-1.57.win32-py2.7.exe] 1,555 Kb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.5
 
-Please report any issues on our [[mailing lists]] or [http://bugzilla.open-bio.org/ bugzilla].
+Please report any issues on our [[mailing lists]] or [http://redmine.open-bio.org/projects/biopython bug tracker].
 
 Note we don't (yet) have official 64 bit Windows Installers - however, Christoph Gohlke has
 kindly made [http://www.lfd.uci.edu/~gohlke/pythonlibs/ Windows 64bit installers] for
