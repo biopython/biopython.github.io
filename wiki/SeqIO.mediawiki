@@ -111,6 +111,12 @@ This table lists the file formats that Bio.SeqIO can read, write and index, with
 | 1.52
 | A "FASTA like" format introduced by the National Biomedical Research Foundation (NBRF) for the [[bp:PIR_sequence_format|Protein Information Resource (PIR)]] database, now part of UniProt.
 |-
+| sff
+| 1.54
+| 1.54
+| 1.54
+| Standard Flowgram Format (SFF) files produced by 454 sequencing.
+|-
 | stockholm
 | 1.43
 | 1.43
