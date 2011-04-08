@@ -208,6 +208,8 @@ The remaining qualifiers are the final key/value pairs of the attribute.
 
 A feature hierarchy is represented as sub_features of the parent feature. This handles any arbitrarily deep nesting of parent and child features.
 
+=== Converting other formats to GFF3 ===
+
 <source lang=python>
 from BCBio import GFF
 from Bio import SeqIO
@@ -222,3 +224,40 @@ GFF.write(SeqIO.parse(in_handle, "genbank"), out_handle)
 in_handle.close()
 out_handle.close()
 </source>
+
+=== Writing GFF3 from scratch ===
+
+You can create Biopython SeqRecord and SeqFeature objects from scratch and use these to generate GFF output. [http://biopython.org/DIST/docs/tutorial/Tutorial.html Chapter 4 of the Tutorial] goes into detail about the objects, and this example demonstrates the major features:
+
+<source lang=python>
+from BCBio import GFF
+from Bio.Seq import Seq
+from Bio.SeqRecord import SeqRecord
+from Bio.SeqFeature import SeqFeature, FeatureLocation
+
+out_file = "your_file.gff"
+seq = Seq("GATC")
+rec = SeqRecord(seq, "ID1") 
+qualifiers = {"source": "prediction", "score": 10.0, "other": ["Some", "annotations"],
+              "ID": "gene1"}
+sub_qualifiers = {"source": "prediction"}
+top_feature = SeqFeature(FeatureLocation(0, 20), type="gene", strand=1,
+                         qualifiers=qualifiers)
+top_feature.sub_features = [SeqFeature(FeatureLocation(0, 5), type="exon", strand=1,
+                                       qualifiers=sub_qualifiers),
+                            SeqFeature(FeatureLocation(15, 20), type="exon", strand=1,
+                                       qualifiers=sub_qualifiers)]
+rec.features = [top_feature]
+
+with open(out_file, "w") as out_handle:
+    GFF.write([rec], out_handle)
+</source>
+
+This generates the following GFF:
+
+<pre>
+##gff-version 3
+ID1     prediction      gene    1       20      10.0    +       .       other=Some,annotations;ID=gene1
+ID1     prediction      exon    1       5       .       +       .       Parent=gene1
+ID1     prediction      exon    16      20      .       +       .       Parent=gene1
+</pre>
