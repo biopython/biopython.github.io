@@ -323,7 +323,7 @@ from Bio.SeqRecord import SeqRecord
 from Bio.SeqFeature import SeqFeature, FeatureLocation
 
 out_file = "your_file.gff"
-seq = Seq("GATC")
+seq = Seq(""GATCGATCGATCGATCGATC)
 rec = SeqRecord(seq, "ID1") 
 qualifiers = {"source": "prediction", "score": 10.0, "other": ["Some", "annotations"],
               "ID": "gene1"}
@@ -343,6 +343,7 @@ with open(out_file, "w") as out_handle:
 This generates the following GFF:
 
     ##gff-version 3
+    ##sequence-region ID1 1 20
     ID1     prediction      gene    1       20      10.0    +       .       other=Some,annotations;ID=gene1
     ID1     prediction      exon    1       5       .       +       .       Parent=gene1
     ID1     prediction      exon    16      20      .       +       .       Parent=gene1
