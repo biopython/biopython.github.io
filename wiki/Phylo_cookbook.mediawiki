@@ -172,6 +172,61 @@ else:
 
 ==Exporting to other types==
 
+===Convert to an 'ape' tree, via Rpy2===
+
+The R statistical programming environment provides support for phylogenetics through the '[ape|http://ape.mpl.ird.fr/]' package and several others that build on top of 'ape'. The Python package [rpy2|http://rpy.sourceforge.net/rpy2.html] provides an interface between R and Python, so it's possible to convert a Bio.Phylo tree into an 'ape' tree object:
+
+<source lang=python>
+import tempfile
+from rpy2.robjects import r
+
+def to_ape(tree):
+    """Convert a tree to the type used by the R package `ape`, via rpy2.
+
+    Requirements:
+        - Python package `rpy2`
+        - R package `ape`
+    """    
+    with tempfile.NamedTemporaryFile as tmpf:
+        Phylo.write(tree, tmpf, 'newick')
+        rtree = r("""
+            library('ape')
+            read.tree('%s')
+            """ % tmpf.name)
+    return rtree
+</source>
+
+See that it works:
+
+<source lang=python>
+>>> from StringIO import StringIO
+>>> from Bio import Phylo
+>>> tree = Phylo.read(StringIO('(A,(B,C),(D,E);'), 'newick')
+>>> rtree = to_ape(tree)
+>>> len(rtree)
+3
+>>> print r.summary(rtree)
+Phylogenetic tree: structure(list(edge = structure(c(6, 6, 7, 7, 6, 8, 8, 1, 7,  2, 3, 8, 4, 5),
+ .Dim = c(7L, 2L)), tip.label = c("A", "B", "C",  "D", "E"), Nnode = 3L),
+ .Names = c("edge", "tip.label", "Nnode" ), class = "phylo") 
+
+  Number of tips: 5 
+  Number of nodes: 3 
+  No branch lengths.
+  No root edge.
+  Tip labels: A 
+              B
+              C
+              D
+              E
+  No node labels.
+NULL
+>>> r.plot(rtree)
+</source>
+
+See the rpy2 documentation for further guidance.
+
+
 ===Convert to a PyCogent tree===
 
 The tree objects used by Biopython and PyCogent are different. Nonetheless, both toolkits support the Newick file format, so interoperability is straightforward at that level:
