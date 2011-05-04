@@ -231,6 +231,7 @@ def to_ape(tree):
     """    
     with tempfile.NamedTemporaryFile() as tmpf:
         Phylo.write(tree, tmpf, 'newick')
+        tmpf.flush()
         rtree = r("""
             library('ape')
             read.tree('%s')
