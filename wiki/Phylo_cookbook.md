@@ -229,7 +229,7 @@ def to_ape(tree):
         - Python package `rpy2`
         - R package `ape`
     """    
-    with tempfile.NamedTemporaryFile as tmpf:
+    with tempfile.NamedTemporaryFile() as tmpf:
         Phylo.write(tree, tmpf, 'newick')
         rtree = r("""
             library('ape')
@@ -243,7 +243,7 @@ See that it works:
 ``` python
 >>> from StringIO import StringIO
 >>> from Bio import Phylo
->>> tree = Phylo.read(StringIO('(A,(B,C),(D,E);'), 'newick')
+>>> tree = Phylo.read(StringIO('(A,(B,C),(D,E));'), 'newick')
 >>> rtree = to_ape(tree)
 >>> len(rtree)
 3
