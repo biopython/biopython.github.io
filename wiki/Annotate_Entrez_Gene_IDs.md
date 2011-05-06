@@ -76,4 +76,11 @@ def print_data(annotation):
         print "ID: %s - Gene Symbol: %s - Gene Name: %s" % (gene_id, gene_symbol, gene_name)
 ```
 
+More
+----
+
+Tao Liu expanded on this code with a [full example of converting between
+Entrez IDs and RefSeq
+IDs](http://blog.vladimirliu.com/2011/05/05/convert-between-entrez-ids-and-refseq-ids-using-biopython/).
+
 ------------------------------------------------------------------------
