@@ -32,8 +32,8 @@ Versions Tested
 [Biopython 1.57+](https://github.com/biopython/biopython) (May 2011) |
 Element column auto-assignment.
 
-[Biopython
-1.58-](https://github.com/JoaoRodrigues/biopython/tree/pdb_enhancements)
+[Biopython PDB
+branch](https://github.com/JoaoRodrigues/biopython/tree/pdb_enhancements)
 (May 2011 @ Github) | Warnings module replaced
 \_handle\_pdb\_exception() && Other minor changes
 
@@ -138,7 +138,7 @@ results](http://nmr.chem.uu.nl/~joao/f/benchmark_CATH-biopython_149.time)
 [Link to full
 results](http://nmr.chem.uu.nl/~joao/f/benchmark_CATH-biopython_current.time)
 
-#### Biopython 1.58-
+#### Biopython PDB Branch
 
 `Total Time Spent: 695.405s`  
 `Average Time per Structure: 61.37ms/structure`  
@@ -185,6 +185,6 @@ results](http://nmr.chem.uu.nl/~joao/f/benchmark_PDB-biopython1.49.time)
 
 In progress
 
-#### Biopython 1.58- (In progress)
+#### Biopython PDB Branch (In progress)
 
 In progress

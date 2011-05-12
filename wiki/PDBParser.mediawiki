@@ -16,7 +16,7 @@ A performance benchmark of the parser was carried out to evaluate wether the dev
 
 [https://github.com/biopython/biopython Biopython 1.57+] (May 2011) | Element column auto-assignment.
 
-[https://github.com/JoaoRodrigues/biopython/tree/pdb_enhancements Biopython 1.58-] (May 2011 @ Github) | Warnings module replaced _handle_pdb_exception() && Other minor changes
+[https://github.com/JoaoRodrigues/biopython/tree/pdb_enhancements Biopython PDB branch] (May 2011 @ Github) | Warnings module replaced _handle_pdb_exception() && Other minor changes
 
 == Benchmarking Script ==
 
@@ -115,7 +115,7 @@ Average Structure Length: 147 residues
 
 [http://nmr.chem.uu.nl/~joao/f/benchmark_CATH-biopython_current.time Link to full results]
 
-==== Biopython 1.58- ====
+==== Biopython PDB Branch ====
 
 
  Total Time Spent: 695.405s
@@ -161,6 +161,6 @@ Average Structure Length: 263 residues
 
 In progress
 
-==== Biopython 1.58- (In progress) ====
+==== Biopython PDB Branch (In progress) ====
 
 In progress
