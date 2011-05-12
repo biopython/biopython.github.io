@@ -41,8 +41,8 @@ Benchmarking Script
 -------------------
 
 The following script was used to benchmark the parser. The garbage
-collection module - <b>gc</b> - was necessary to avoid a memory leak
-that caused the machine to start swapping.
+collection module - <b>gc</b> - was necessary to avoid dead objects
+still in memory causing the machine to start swapping.
 
 ``` python
 #!/usr/bin/env python

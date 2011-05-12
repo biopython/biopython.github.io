@@ -20,7 +20,7 @@ A performance benchmark of the parser was carried out to evaluate wether the dev
 
 == Benchmarking Script ==
 
-The following script was used to benchmark the parser. The garbage collection module - <b>gc</b> - was necessary to avoid a memory leak that caused the machine to start swapping.
+The following script was used to benchmark the parser. The garbage collection module - <b>gc</b> - was necessary to avoid dead objects still in memory causing the machine to start swapping.
 
 <source lang=python>
 #!/usr/bin/env python
