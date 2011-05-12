@@ -157,6 +157,8 @@ results](http://nmr.chem.uu.nl/~joao/f/benchmark_CATH-biopython_current.time)
 
 [Link to full
 results](http://nmr.chem.uu.nl/~joao/f/benchmark_CATH-biopython_pdb_enhancements.time)
+[Plot of the full
+results](http://nmr.chem.uu.nl/~joao/f/benchmark_CATH-biopython_pdb_enhancements.png)
 
 ### PDB Dataset
 
