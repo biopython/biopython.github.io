@@ -139,6 +139,8 @@ results](http://nmr.chem.uu.nl/~joao/f/benchmark_CATH-biopython_149.png)
 
 [Link to full
 results](http://nmr.chem.uu.nl/~joao/f/benchmark_CATH-biopython_current.time)
+[Plot of the full
+results](http://nmr.chem.uu.nl/~joao/f/benchmark_CATH-biopython_current.png)
 
 #### Biopython PDB Branch
 
