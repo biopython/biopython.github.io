@@ -159,6 +159,7 @@ Average Structure Length: 263 residues
  TOTAL                 72836           381.706
 
 [http://nmr.chem.uu.nl/~joao/f/benchmark_PDB-biopython1.49.time Link to full results]
+[http://nmr.chem.uu.nl/~joao/f/benchmark_PDB-biopython1.49.png Plot of the full results]
 
 ==== Biopython 1.57+ (In progress) ====
 
