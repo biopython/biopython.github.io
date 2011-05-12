@@ -96,6 +96,7 @@ Average Structure Length: 147 residues
  TOTAL                 11330           46.84
 
 [http://nmr.chem.uu.nl/~joao/f/benchmark_CATH-biopython_149.time Link to full results]
+[http://nmr.chem.uu.nl/~joao/f/benchmark_CATH-biopython_149.png Plot of the full results]
 
 ==== Biopython 1.57+ ====
 
