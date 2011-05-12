@@ -32,8 +32,9 @@ Versions Tested
 [Biopython 1.57+](https://github.com/biopython/biopython) (May 2011) |
 Element column auto-assignment.
 
-[1](https://github.com/JoaoRodrigues/biopython/tree/pdb_enhancements)
-Biopython 1.58- (May 2011 @ Github) | Warnings module replaced
+[Biopython
+1.58-](https://github.com/JoaoRodrigues/biopython/tree/pdb_enhancements)
+(May 2011 @ Github) | Warnings module replaced
 \_handle\_pdb\_exception() && Other minor changes
 
 Benchmarking Script

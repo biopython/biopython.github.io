@@ -16,7 +16,7 @@ A performance benchmark of the parser was carried out to evaluate wether the dev
 
 [https://github.com/biopython/biopython Biopython 1.57+] (May 2011) | Element column auto-assignment.
 
-[https://github.com/JoaoRodrigues/biopython/tree/pdb_enhancements] Biopython 1.58- (May 2011 @ Github) | Warnings module replaced _handle_pdb_exception() && Other minor changes
+[https://github.com/JoaoRodrigues/biopython/tree/pdb_enhancements Biopython 1.58-] (May 2011 @ Github) | Warnings module replaced _handle_pdb_exception() && Other minor changes
 
 == Benchmarking Script ==
 
