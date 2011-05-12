@@ -149,10 +149,10 @@ Average Structure Length: 263 residues
 
  TOTAL                 72836           381.706
 
-==== Biopython 1.57+ ====
+==== Biopython 1.57+ (In progress) ====
 
 In progress
 
-==== Biopython 1.58- ====
+==== Biopython 1.58- (In progress) ====
 
-Queued...
+In progress
