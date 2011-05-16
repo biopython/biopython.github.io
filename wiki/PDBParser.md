@@ -189,7 +189,7 @@ Failed to parse 2 structures due to errors:
 [Link to full
 results](http://nmr.chem.uu.nl/~joao/f/benchmark_PDB-biopython_1.49.time)
 
-#### Biopython 1.57+ (In progress)
+#### Biopython 1.57+
 
 `Total Time Spent: 29516.480s  (~8.20h)`  
 `Average Time per Structure: 405.246 ms/structure`  
