@@ -164,16 +164,18 @@ results](http://nmr.chem.uu.nl/~joao/f/benchmark_CATH-biopython_pdb_enhancements
 
 ### PDB Dataset
 
-Average Structure Length: 263 residues
+Average Structure Length: 589 residues
+
+Failed to parse 2 structures due to errors:
+
+` 1. 3NH3 (negative occupancy) - fix: `[`http://bit.ly/ks6PDN`](http://bit.ly/ks6PDN)` (still being discussed)`  
+` 2. 2WMW (invalid ANISOU field) - fix: `[`http://bit.ly/ld9BWs`](http://bit.ly/ld9BWs)
 
 #### Biopython 1.49
 
 `Total Time Spent: 27801.934s (7.72h)`  
 `Average Time per Structure: 381.706ms/structure`  
-`Average Structures per Second: 2.62 structures/s`  
-`Failed to parse 2 structures due to errors:`  
-`  1. 3NH3 (negative occupancy) - fix: `[`http://bit.ly/ks6PDN`](http://bit.ly/ks6PDN)  
-`  2. 2WMW (invalid ANISOU field) - fix: `[`http://bit.ly/ld9BWs`](http://bit.ly/ld9BWs)
+`Average Structures per Second: 2.62 structures/s`
 
 `Length                N. Structures   Average Time Spent  (ms)`  
 `< 100                 8402            410.270`  
@@ -185,11 +187,25 @@ Average Structure Length: 263 residues
 `TOTAL                 72836           381.706`
 
 [Link to full
-results](http://nmr.chem.uu.nl/~joao/f/benchmark_PDB-biopython1.49.time)
+results](http://nmr.chem.uu.nl/~joao/f/benchmark_PDB-biopython_1.49.time)
 
 #### Biopython 1.57+ (In progress)
 
-In progress
+`Total Time Spent: 29516.480s  (~8.20h)`  
+`Average Time per Structure: 405.246 ms/structure`  
+`Average Structures per Second: 2.47 structures/s`
+
+`Length                N. Structures   Average Time Spent  (ms)`  
+`< 100                 8402            451.819`  
+`100 =< x < 200        12226           505.933`  
+`200 =< x < 500        26493           190.991`  
+`500 =< x < 1000       15878           304.453`  
+`>= 1000               9837            980.047`
+
+`TOTAL                 72836           405.246`
+
+[Link to full
+results](http://nmr.chem.uu.nl/~joao/f/benchmark_PDB-biopython_1.57.time)
 
 #### Biopython PDB Branch (In progress)
 
