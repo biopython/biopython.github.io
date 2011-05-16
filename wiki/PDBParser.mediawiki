@@ -149,17 +149,16 @@ Average Structure Length: 263 residues
    1. 3NH3 (negative occupancy) - fix: http://bit.ly/ks6PDN
    2. 2WMW (invalid ANISOU field) - fix: http://bit.ly/ld9BWs
 
- Length                N. Structures   Average Time Spent (ms)
- < 100                 10986           392.227
- 100 =< x < 200        19641           371.716
- 200 =< x < 500        35299           301.699
- 500 =< x < 1000       6291            597.472
- >= 1000               619             2881.520
+ Length                N. Structures   Average Time Spent  (ms)
+ < 100                 8402            410.270
+ 100 =< x < 200        12226           461.744
+ 200 =< x < 500        26493           182.027
+ 500 =< x < 1000       15878           290.693
+ >= 1000               9837            942.513
 
  TOTAL                 72836           381.706
 
 [http://nmr.chem.uu.nl/~joao/f/benchmark_PDB-biopython1.49.time Link to full results]
-[http://nmr.chem.uu.nl/~joao/f/benchmark_PDB-biopython1.49.png Plot of the full results]
 
 ==== Biopython 1.57+ (In progress) ====
 
