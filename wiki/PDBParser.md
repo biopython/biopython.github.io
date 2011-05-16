@@ -100,7 +100,7 @@ Results
 
 ### CATH Dataset
 
-Average Structure Length: 147 residues
+Average Structure Length: 146 residues
 
 #### Biopython 1.49
 
@@ -109,11 +109,12 @@ Average Structure Length: 147 residues
 `Average Structures per Second: 21.38 structures/s`  
 `Failed to parse 0 structures due to errors.`
 
-`Length                N. Structures   Average Time Spent (ms)`  
-`< 100                 3663            25.11`  
-`100 =< x < 200        5295            44.68`  
-`200 =< x < 500        2328            83.41`  
-`500 =< x < 1000       44              180.35`
+`Length                N. Structures   Average Time Spent  ms`  
+`< 100                 3660            25.09`  
+`100 =< x < 200        5296            44.67`  
+`200 =< x < 500        2330            83.40`  
+`500 =< x < 1000       43              177.10`  
+`>= 1000               1               320.10`
 
 `TOTAL                 11330           46.84`
 
@@ -129,11 +130,12 @@ results](http://nmr.chem.uu.nl/~joao/f/benchmark_CATH-biopython_149.png)
 `Average Structures per Second: 16.51 structures/s`  
 `Failed to parse 0 structures due to errors.`
 
-`Length                N. Structures   Average Time Spent (ms)`  
-`< 100                 3663            32.57`  
-`100 =< x < 200        5295            57.76`  
-`200 =< x < 500        2328            107.56`  
-`500 =< x < 1000       44              242.30`
+`Length                N. Structures   Average Time Spent  ms`  
+`< 100                 3660            32.55`  
+`100 =< x < 200        5296            57.75`  
+`200 =< x < 500        2330            107.54`  
+`500 =< x < 1000       43              236.62`  
+`>= 1000               1               486.602`
 
 `TOTAL                 11330           60.56`
 
@@ -149,11 +151,12 @@ results](http://nmr.chem.uu.nl/~joao/f/benchmark_CATH-biopython_current.png)
 `Average Structures per Second: 16.29 structures/s`  
 `Failed to parse 0 structures due to errors.`
 
-`Length                N. Structures   Average Time Spent (ms)`  
-`< 100                 3663            33.24`  
-`100 =< x < 200        5295            58.46`  
-`200 =< x < 500        2328            108.77`  
-`500 =< x < 1000       44              247.171`
+`Length                N. Structures   Average Time Spent  ms`  
+`< 100                 3660            33.21`  
+`100 =< x < 200        5296            58.45`  
+`200 =< x < 500        2330            108.76`  
+`500 =< x < 1000       43              234.37`  
+`>= 1000               1               797.583`
 
 `TOTAL                 11330           61.38`
 
