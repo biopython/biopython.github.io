@@ -57,7 +57,7 @@ if __name__=='__main__':
     library_path = sys.argv[1]
 
     pdb_library = [os.path.join(library_path, f) for f in os.listdir(library_path)]
-    pdb_length = [len(set([int(l[23:26]) for l in open(f) if l.startswith('ATOM')])) for f in pdb_library] # Unique counting of residues
+    pdb_length = [len(set([l[17:26] for l in open(f) if l.startswith('ATOM')])) for f in pdb_library] # Unique counting of residues
     sys.stderr.write("Loaded %s structures (Average Length: %4.3f residues)\n" %(len(pdb_length), (sum(pdb_length)/float(len(pdb_length)))))
 
     tps = []
