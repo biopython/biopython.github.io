@@ -166,6 +166,6 @@ Firm pencils down (August 22)
 '''External References:
 '''
 
-[https://docs.google.com/document/d/1E72Qysp3pMd69hSYfIXJKgBLdeSMbzSol9RYD2rKHlI/edit?hl=pt_BR&authkey=CPmFxK0H: Mocapy++Biopython -Box of ideas]
+[https://docs.google.com/document/d/1E72Qysp3pMd69hSYfIXJKgBLdeSMbzSol9RYD2rKHlI/edit?hl=pt_BR&authkey=CPmFxK0H: Mocapy++Biopython - Box of ideas]
 
 [https://docs.google.com/document/d/1JPkCbvJ9Gk3b6LmQ68__UUt4Yz2P1-c286p6FVEqyXs/edit?hl=pt_BR&authkey=CJTCpZgL: Mocapy++ Bindings Prototype]
