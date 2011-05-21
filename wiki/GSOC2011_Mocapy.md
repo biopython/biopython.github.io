@@ -4,9 +4,6 @@ permalink: wiki/GSOC2011_Mocapy
 layout: wiki
 ---
 
-'''Mocapy++Biopython: from data to probabilistic models of biomolecules
-'''
-
 Mocapy++ is a machine learning toolkit for training and using Bayesian
 networks. It has been used to develop probabilistic models of
 biomolecular structures. The goal of this project is to develop a Python
@@ -16,7 +13,8 @@ database. The integration of Mocapy++ with Biopython will provide a
 strong support for the field of protein structure prediction, design and
 simulation.
 
-**Motivation**
+Introduction
+------------
 
 Discovering the structure of biomolecules is one of the biggest problems
 in biology. Given an amino acid or base sequence, what is the three
@@ -54,9 +52,30 @@ new ideas, try a variety of approaches and refine their methods. It will
 provide strong support for the field of biomolecular structure
 prediction, design, and simulation.
 
-**Options to create Python bindings to C++ code**
+Author & Mentors
+----------------
 
-**Swig**
+[Michele Silva](User%3AMchelem "wikilink") michele.silva@gmail.com
+
+**Mentors**
+
+  
+Thomas Hamelryck
+
+Eric Talevich
+
+Project's Code
+--------------
+
+Hosted at [the gSoC11 Mocapy
+branch](http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/)
+
+Project's Progress
+------------------
+
+### Options to create Python bindings to C++ code
+
+#### Swig
 
 There is already an effort to provide bindings for Mocapy++ using Swig.
 However, Swig is not the best option if performance is to be required.
@@ -75,7 +94,7 @@ Python and the code that does the actual work". This was written back in
 consider Swig is for future including Mocapy++ bindings on BioJava and
 BioRuby projects.
 
-'''Boost Python '''
+#### Boost Python
 
 Boost Python is comprehensive and well accepted by the Python community.
 I would go for it for its extensive use and testing. I would decline it
@@ -91,7 +110,7 @@ of [Cython against Boost Python](http://www.behnel.de/cycppbench/).
 There are also previous [benchmarks comparing Swig and Boost
 Python](http://telecom.inescporto.pt/~gjc/pybindgen-benchmarks/).
 
-**Cython**
+#### Cython
 
 It is incredibly faster than other options to create python bindings to
 C++ code, according to several benchmarks available on the web. Check
@@ -105,12 +124,12 @@ definitely give it a try for its leanness and speed.
 Since Boost is well supported and Mocapy++ already relies on it, we
 decided to use Boost.Python for the bindings.
 
-'''Bindings Prototype '''
+### Bindings Prototype
 
 Bindings for a few Mocapy++ features and a couple of examples to find
 possible implementation and performance issues.
 
-*Procedure*
+**Procedure**
 
 -   Implemented the examples hmm\_discrete and
     discrete\_hmm\_with\_prior in Python, assuming the interface
@@ -145,7 +164,8 @@ Python. There was no problem in exposing Mocapy’s data structures and
 algorithms. The performance of the Python version is very close to the
 original Mocapy++.
 
-'''External References: '''
+External References
+-------------------
 
 [Mocapy++Biopython - Box of
 ideas](https://docs.google.com/document/d/1E72Qysp3pMd69hSYfIXJKgBLdeSMbzSol9RYD2rKHlI/edit?hl=pt_BR&authkey=CPmFxK0H)
