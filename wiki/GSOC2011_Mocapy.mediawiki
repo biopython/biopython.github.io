@@ -47,7 +47,6 @@ Bindings for a few Mocapy++ features and a couple of examples to find possible i
 
 ''Procedure''
 
-
 * Implemented the examples hmm_discrete and discrete_hmm_with_prior in Python, assuming the interface Mocapy++ already provides.
 
 * Implemented the bindings to provide a minimum subset of functionality, in order to run the implemented examples. 
