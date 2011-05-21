@@ -64,16 +64,16 @@ The Sage project aims at providing an open source alternative to
 Mathematica or Maple. Cython was developed in conjunction with Sage (it
 is an independent project, though), thus it is based on Sage's
 requirements. They tried Swig, but declined it for performance issues.
-According to the
-\[<http://sage.math.washington.edu/tmp/sage-2.8.12.alpha0/doc/prog/node36.html>:
-Sage programming guide\] "The idea was to write code in C++ for SAGE
-that needed to be fast, then wrap it in SWIG. This ground to a halt,
-because the result was not sufficiently fast. First, there is overhead
-when writing code in C++ in the first place. Second, SWIG generates
-several layers of code between Python and the code that does the actual
-work". This was written back in 2004, but it seems things didn't evolve
-much. The only reason I would consider Swig is for future including
-Mocapy++ bindings on BioJava and BioRuby projects.
+According to the [Sage programming
+guide](http://sage.math.washington.edu/tmp/sage-2.8.12.alpha0/doc/prog/node36.html)
+"The idea was to write code in C++ for SAGE that needed to be fast, then
+wrap it in SWIG. This ground to a halt, because the result was not
+sufficiently fast. First, there is overhead when writing code in C++ in
+the first place. Second, SWIG generates several layers of code between
+Python and the code that does the actual work". This was written back in
+2004, but it seems things didn't evolve much. The only reason I would
+consider Swig is for future including Mocapy++ bindings on BioJava and
+BioRuby projects.
 
 '''Boost Python '''
 
@@ -85,12 +85,11 @@ sake of creating the Python bindings, but since Mocapy++ already depends
 on Boost, using it becomes a more attractive option. In my personal
 experience, Boost Python is very mature and there are no limitations on
 what one can do with it. When it comes to performance, Cython still
-overcomes it. Have a look at the
-\[<http://blog.behnel.de/index.php?p=38>: Cython C++ wrapping
-benchmarks\] and check the timings of [against Boost
-Python](http://www.behnel.de/cycppbench/:Cython). There are also
-previous [comparing Swig and Boost
-Python](http://telecom.inescporto.pt/~gjc/pybindgen-benchmarks/:benchmarks).
+overcomes it. Have a look at the [Cython C++ wrapping
+benchmarks](http://blog.behnel.de/index.php?p=38) and check the timings
+of [Cython against Boost Python](http://www.behnel.de/cycppbench/).
+There are also previous [benchmarks comparing Swig and Boost
+Python](http://telecom.inescporto.pt/~gjc/pybindgen-benchmarks/).
 
 **Cython**
 
@@ -106,10 +105,50 @@ definitely give it a try for its leanness and speed.
 Since Boost is well supported and Mocapy++ already relies on it, we
 decided to use Boost.Python for the bindings.
 
+'''Bindings Prototype '''
+
+Bindings for a few Mocapy++ features and a couple of examples to find
+possible implementation and performance issues.
+
+*Procedure*
+
+-   Implemented the examples hmm\_discrete and
+    discrete\_hmm\_with\_prior in Python, assuming the interface
+    Mocapy++ already provides.
+
+<!-- -->
+
+-   Implemented the bindings to provide a minimum subset of
+    functionality, in order to run the implemented examples.
+
+<!-- -->
+
+-   Compared the performance of C++ and Python versions.
+
+Mocapy++’s interface remained unchanged, so the tests look similar to
+the ones in Mocapy/examples.
+
+In the prototype the bindings were all implemented in a single module.
+For the actual implementation, we could mirror the src packages
+structure, having separated bindings for each package such as discrete,
+inference, etc.
+
+It was possible to implement all the functionality required to run the
+examples. It was not possible to use the
+[vector\_indexing\_suite](http://www.boost.org/doc/libs/1_42_0/libs/python/doc/v2/indexing.html)
+when creating bindings for vectors of MDArrays. A few operators (in the
+MDArray) must be implemented in order to export indexable C++ containers
+to Python.
+
+Two Mocapy++ examples that use discrete nodes were implemented in
+Python. There was no problem in exposing Mocapy’s data structures and
+algorithms. The performance of the Python version is very close to the
+original Mocapy++.
+
 '''External References: '''
 
-\[<https://docs.google.com/document/d/1E72Qysp3pMd69hSYfIXJKgBLdeSMbzSol9RYD2rKHlI/edit?hl=pt_BR&authkey=CPmFxK0H>:
-Mocapy++Biopython - Box of ideas\]
+[Mocapy++Biopython - Box of
+ideas](https://docs.google.com/document/d/1E72Qysp3pMd69hSYfIXJKgBLdeSMbzSol9RYD2rKHlI/edit?hl=pt_BR&authkey=CPmFxK0H)
 
-\[<https://docs.google.com/document/d/1JPkCbvJ9Gk3b6LmQ68__UUt4Yz2P1-c286p6FVEqyXs/edit?hl=pt_BR&authkey=CJTCpZgL>:
-Mocapy++ Bindings Prototype\]
+[Mocapy++ Bindings
+Prototype](https://docs.google.com/document/d/1JPkCbvJ9Gk3b6LmQ68__UUt4Yz2P1-c286p6FVEqyXs/edit?hl=pt_BR&authkey=CJTCpZgL)
