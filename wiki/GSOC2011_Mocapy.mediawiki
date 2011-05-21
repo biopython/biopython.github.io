@@ -61,7 +61,6 @@ Integrating Mocapy++ with Biopython will create a powerful toolkit for researche
 * Implement python bindings for the defined interface.
 
 
-
 '''Explore Mocapy++'s applications
 '''
 * Develop example applications that involve data mining of biomolecular structure databases using Biopython.
