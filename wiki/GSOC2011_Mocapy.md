@@ -326,15 +326,21 @@ definitely give it a try for its leanness and speed.
 Since Boost is well supported and Mocapy++ already relies on it, we
 decided to use Boost.Python for the bindings.
 
+For further information see [Mocapy++Biopython - Box of
+ideas](https://docs.google.com/document/d/1E72Qysp3pMd69hSYfIXJKgBLdeSMbzSol9RYD2rKHlI/edit?hl=pt_BR&authkey=CPmFxK0H).
+
 ### Bindings Prototype
+
+The source code for the prototype is on the gSoC11 branch:
+<http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/bindings/>
 
 Bindings for a few Mocapy++ features and a couple of examples to find
 possible implementation and performance issues.
 
 **Procedure**
 
--   Implemented the examples hmm\_discrete and
-    discrete\_hmm\_with\_prior in Python, assuming the interface
+-   Implemented the examples \[hmm\_discrete\] and
+    \[discrete\_hmm\_with\_prior\] in Python, assuming the interface
     Mocapy++ already provides.
 
 <!-- -->
@@ -366,11 +372,6 @@ Python. There was no problem in exposing Mocapy’s data structures and
 algorithms. The performance of the Python version is very close to the
 original Mocapy++.
 
-External References
--------------------
-
-[Mocapy++Biopython - Box of
-ideas](https://docs.google.com/document/d/1E72Qysp3pMd69hSYfIXJKgBLdeSMbzSol9RYD2rKHlI/edit?hl=pt_BR&authkey=CPmFxK0H)
-
-[Mocapy++ Bindings
+For additional details have a look at the [Mocapy++ Bindings
 Prototype](https://docs.google.com/document/d/1JPkCbvJ9Gk3b6LmQ68__UUt4Yz2P1-c286p6FVEqyXs/edit?hl=pt_BR&authkey=CJTCpZgL)
+report.

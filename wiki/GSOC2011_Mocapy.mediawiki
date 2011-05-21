@@ -197,13 +197,18 @@ Cython has now support for efficient interaction with numpy arrays. it is a youn
 
 Since Boost is well supported and Mocapy++ already relies on it, we decided to use Boost.Python for the bindings.
 
+For further information see [https://docs.google.com/document/d/1E72Qysp3pMd69hSYfIXJKgBLdeSMbzSol9RYD2rKHlI/edit?hl=pt_BR&authkey=CPmFxK0H Mocapy++Biopython - Box of ideas].
+
 === Bindings Prototype ===
+
+The source code for the prototype is on the gSoC11 branch:
+http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/bindings/
 
 Bindings for a few Mocapy++ features and a couple of examples to find possible implementation and performance issues.
 
 '''Procedure'''
 
-* Implemented the examples hmm_discrete and discrete_hmm_with_prior in Python, assuming the interface Mocapy++ already provides.
+* Implemented the examples [hmm_discrete] and [discrete_hmm_with_prior] in Python, assuming the interface Mocapy++ already provides.
 
 * Implemented the bindings to provide a minimum subset of functionality, in order to run the implemented examples. 
 
@@ -216,12 +221,6 @@ In the prototype the bindings were all implemented in a single module. For the a
 
 It was possible to implement all the functionality required to run the examples. It was not possible to use the [http://www.boost.org/doc/libs/1_42_0/libs/python/doc/v2/indexing.html vector_indexing_suite] when creating bindings for vectors of MDArrays. A few operators (in the MDArray) must be implemented in order to export indexable C++ containers to Python.
 
-
 Two Mocapy++ examples that use discrete nodes were implemented in Python. There was no problem in exposing Mocapy’s data structures and algorithms. The performance of the Python version is very close to the original Mocapy++.
 
-
-== External References ==
-
-[https://docs.google.com/document/d/1E72Qysp3pMd69hSYfIXJKgBLdeSMbzSol9RYD2rKHlI/edit?hl=pt_BR&authkey=CPmFxK0H Mocapy++Biopython - Box of ideas]
-
-[https://docs.google.com/document/d/1JPkCbvJ9Gk3b6LmQ68__UUt4Yz2P1-c286p6FVEqyXs/edit?hl=pt_BR&authkey=CJTCpZgL Mocapy++ Bindings Prototype]
+For additional details have a look at the [https://docs.google.com/document/d/1JPkCbvJ9Gk3b6LmQ68__UUt4Yz2P1-c286p6FVEqyXs/edit?hl=pt_BR&authkey=CJTCpZgL Mocapy++ Bindings Prototype] report.
