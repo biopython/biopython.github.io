@@ -32,9 +32,9 @@ will appear in every block, and should be used as the *target\_seqname*
 parameter. For UCSC multiz files, the form of **species.chromosome** is
 used.
 
-To index a MAF file, or load an existing index, create a new MafIndex
-object. If the index database file *sqlite\_file* does not exist, it
-will be created, otherwise it will be loaded.
+To index a MAF file, or load an existing index, create a new
+**MafIO.MafIndex** object. If the index database file *sqlite\_file*
+does not exist, it will be created, otherwise it will be loaded.
 
 ``` python
 # index mouse chr10 from UCSC and store it in a file for later use
@@ -46,9 +46,9 @@ idx = MafIO.MafIndex("chr10.mafindex", "chr10.maf", "mm9.chr10")
 
 ### Retrieving alignments overlapping a given interval
 
-The *search(starts, ends)* generator function accepts a list of start
-and end positions, and yields MultipleSeqAlignment objects that overlap
-the given intervals. This is particularly useful for obtaining
+The **MafIO.MafIndex.search()** generator function accepts a list of
+start and end positions, and yields MultipleSeqAlignment objects that
+overlap the given intervals. This is particularly useful for obtaining
 alignments over the multiple exons of a single transcript, eliminating
 the need to retrieve an entire locus.
 
@@ -74,8 +74,8 @@ print "a total of %s bases align" % total_bases
 
 ### Retrieving a pre-spliced alignment over a given set of exons
 
-The *get\_spliced(starts, ends, strand = "+")* function accepts a list
-of start and end positions representing exons, and returns a single
+The **MafIO.MafIndex.get\_spliced()** function accepts a list of start
+and end positions representing exons, and returns a single
 MultipleSeqAlignment object of the *in silico* spliced transcript from
 the reference and all aligned sequences. If part of the sequence range
 is not found in a particular species in the alignment, dashes ("-") are
