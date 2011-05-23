@@ -53,10 +53,10 @@ The format name is a simple lowercase string, matching the names used in [[SeqIO
 | No
 | The refers to the IntelliGenetics file format often used for ordinary un-aligned sequences.  The tool MASE also appears to use the same file format for alignments, hence its inclusion in this table.  See [[bp:Mase_multiple_alignment_format|MASE format]].
 |-
-| [[Multiple Alignment Format|maf]]
+| maf
 | 1.58
 | 1.58
-| Multiple Alignment Format (MAF) produced by Multiz.  Used to store whole-genome alignments, such as the 30-way alignments available from the UCSC genome browser.
+| [[Multiple Alignment Format|Multiple Alignment Format (MAF)]] produced by Multiz.  Used to store whole-genome alignments, such as the 30-way alignments available from the UCSC genome browser.
 |-
 | nexus
 | 1.46
