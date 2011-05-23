@@ -11,8 +11,8 @@ The Multiple Alignment Format, described by
 series of multiple alignments in a single file. Suitable for
 whole-genome to whole-genome alignments, metadata such as source
 chromosome, start position, size, and strand can be stored. Biopython
-implements a MAF reader, writer, and indexer accessible via
-**Bio.AlignIO**, or in the case of the indexer, **Bio.AlignIO.MafIO**.
+implements a MAF reader and writer accessible via **Bio.AlignIO**, and
+an indexer accessible via **Bio.AlignIO.MafIO**.
 
 MafIndex
 --------
