@@ -60,3 +60,39 @@ multiple_alignment = idx.get_spliced([41905591, 41916271, 41994621, 41996331],
 
 AlignIO.write(multiple_alignment, "mm9_foxo3.fa", "fasta")
 </source>
+
+<source lang=python>
+# find every gene on chr10 in the current UCSC refGene database,
+# retrieve its spliced multiple alignment, and write it to
+# a FASTA file in the current directory
+#
+# depends: MySQLdb
+
+import MySQLdb
+from Bio import AlignIO
+
+# connect to UCSC's live MySQL database
+mysql_conn = MySQLdb.connect(host = "genome-mysql.cse.ucsc.edu",
+                             user = "genome",
+                             passwd = "", 
+                             db = "mm9")
+
+db_conn = mysql_conn.cursor(MySQLdb.cursors.DictCursor)
+
+# load MAF index
+idx = AlignIO.MafIO.MafIndex("chr10.mafindex", "chr10.maf", "mm9.chr10")
+
+# fetch all records on chr10
+db_conn.execute ("SELECT * FROM refGene WHERE chrom = 'chr10'")
+
+for record in db_conn.fetchall():
+    multiple_alignment = idx.get_spliced(map(int, record["exonStarts"].split(",")[:-1]),
+                                         map(int, record["exonEnds"].split(",")[:-1]),
+                                         strand = record["strand"])
+
+    print "writing %s.fa" % record["name"]
+
+    AlignIO.write(multiple_alignment,
+                  "%s.fa" % record["name"],
+                  "fasta")
+</source>
