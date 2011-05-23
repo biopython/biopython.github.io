@@ -7,8 +7,8 @@ tags:
 ---
 
 The Multiple Alignment Format, described by
-[UCSC](https://cgwb.nci.nih.gov/goldenPath/help/maf.html#format5),
-stores a series of multiple alignments in a single file. Suitable for
+[UCSC](http://genome.ucsc.edu/FAQ/FAQformat.html#format5), stores a
+series of multiple alignments in a single file. Suitable for
 whole-genome to whole-genome alignments, metadata such as source
 chromosome, start position, size, and strand can be stored. Biopython
 implements a MAF reader, writer, and indexer accessible via
