@@ -11,19 +11,19 @@ Indexes are created by determining the chromosome start and end position for a s
 
 To index a MAF file, or load an existing index, create a new MafIndex object.  If the index database file ''sqlite_file'' does not exist, it will be created, otherwise it will be loaded.
 
-<pre>
+<source lang=python>
 # index mouse chr10 from UCSC and store it in a file for later use
 
 from Bio.AlignIO import MafIO.MafIndex
 
 idx = MafIO.MafIndex("chr10.mafindex", "chr10.maf", "mm9.chr10")
-</pre>
+</source>
 
 ===Retrieving alignments overlapping a given interval===
 
 The ''search(starts, ends)'' generator function accepts a list of start and end positions, and yields MultipleSeqAlignment objects that overlap the given intervals.  This is particularly useful for obtaining alignments over the multiple exons of a single transcript, eliminating the need to retrieve an entire locus.
 
-<pre>
+<source lang=python>
 # count the number of bases in danRer5 (Zebrafish) that align to the
 # Pcmt1 locus in mouse
 
@@ -41,13 +41,13 @@ for multiple_alignment in results:
             total_bases += len(str(seqrec.seq).replace("-", ""))
 
 print "a total of %s bases align" % total_bases
-</pre>
+</source>
 
 ===Retrieving a pre-spliced alignment over a given set of exons===
 
 The ''get_spliced(starts, ends, strand = "+")'' function accepts a list of start and end positions representing exons, and returns a single MultipleSeqAlignment object of the ''in silico'' spliced transcript from the reference and all aligned sequences.  If part of the sequence range is not found in a particular species in the alignment, dashes ("-") are used to fill the gaps, or "N"s if the sequence is not present in the reference (''target_seqname'') sequence.  If ''strand'' is opposite that in the reference sequence, all sequences in the returned alignment will be reverse complemented.
 
-<pre>
+<source lang=python>
 # convert the alignment for mouse Foxo3 (NM_019740) from MAF to FASTA
 
 from Bio import AlignIO
@@ -59,4 +59,4 @@ multiple_alignment = idx.get_spliced([41905591, 41916271, 41994621, 41996331],
                                      strand = "+")
 
 AlignIO.write(multiple_alignment, "mm9_foxo3.fa", "fasta")
-</pre>
+</source>
