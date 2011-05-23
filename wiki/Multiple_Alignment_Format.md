@@ -49,6 +49,7 @@ does not exist, it will be created, otherwise it will be loaded.
 
 from Bio.AlignIO import MafIO.MafIndex
 
+# idx = MafIO.MafIndex(sqlite_file, maf_file, target_seqname)
 idx = MafIO.MafIndex("chr10.mafindex", "chr10.maf", "mm9.chr10")
 ```
 
