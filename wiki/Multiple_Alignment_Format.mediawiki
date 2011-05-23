@@ -84,7 +84,7 @@ db_conn = mysql_conn.cursor(MySQLdb.cursors.DictCursor)
 idx = AlignIO.MafIO.MafIndex("chr10.mafindex", "chr10.maf", "mm9.chr10")
 
 # fetch all records on chr10
-db_conn.execute ("SELECT * FROM refGene WHERE chrom = 'chr10'")
+db_conn.execute("SELECT * FROM refGene WHERE chrom = 'chr10'")
 
 for record in db_conn.fetchall():
     multiple_alignment = idx.get_spliced(map(int, record["exonStarts"].split(",")[:-1]),
