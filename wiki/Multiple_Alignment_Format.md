@@ -6,6 +6,8 @@ tags:
  - Formats|Formats
 ---
 
+[link title](http://www.example.com)
+
 MafIndex
 --------
 
@@ -15,6 +17,11 @@ example, chr10:25,079,604-25,243,324 in mm9. As MAF files are available
 for entire chromosomes, they can be indexed by chromosome position and
 accessed at random. This functionality is available in the class
 MafIO.MafIndex.
+
+All examples below make use of the Multiz [30-way alignment to mouse
+chromosome
+10](http://hgdownload.cse.ucsc.edu/goldenPath/currentGenomes/Mus_musculus/multiz30way/maf/chr10.maf.gz)
+available from UCSC.
 
 ### Creating or loading a MAF index
 
@@ -28,12 +35,14 @@ parameter. For UCSC multiz files, the form of **species.chromosome** is
 used.
 
 To index a MAF file, or load an existing index, create a new MafIndex
-object. If the index database file *sqlite\_file* does not exist it will
-be created, otherwise it will be loaded.
+object. If the index database file *sqlite\_file* does not exist, it
+will be created, otherwise it will be loaded.
+
+    # index mouse chr10 from UCSC and store it in a file for later use
 
     from Bio.AlignIO import MafIO.MafIndex
 
-    idx = MafIO.MafIndex(sqlite_file, maf_file, target_seqname)
+    idx = MafIO.MafIndex("chr10.mafindex", "chr10.maf", "mm9.chr10")
 
 ### Retrieving alignments overlapping a given interval
 
@@ -43,10 +52,23 @@ the given intervals. This is particularly useful for obtaining
 alignments over the multiple exons of a single transcript, eliminating
 the need to retrieve an entire locus.
 
-    results = idx.search([25079604], [25243324])
+    # count the number of bases in danRer5 (Zebrafish) that align to the
+    # Pcmt1 locus in mouse
+
+    from Bio.AlignIO import MafIO.MafIndex as MafIndex
+
+    idx = MafIndex("chr10.mafindex", "chr10.maf", "mm9.chr10")
+    results = idx.search([7350034], [7383048])
+
+    total_bases = 0
 
     for multiple_alignment in results:
-        print multiple_alignment
+        for seqrec in multiple_alignment:
+            if seqrec.id.startswith("danRer5"):
+                # don't count gaps as bases
+                total_bases += len(str(seqrec.seq).replace("-", ""))
+
+    print "a total of %s bases align" % total_bases
 
 ### Retrieving a pre-spliced alignment over a given set of exons
 
@@ -62,30 +84,12 @@ reverse complemented.
 
     # convert the alignment for mouse Foxo3 (NM_019740) from MAF to FASTA
 
-    from Bio.AlignIO import MafIO.MafIndex
-    from Bio import SeqIO
-    import sys
+    from Bio import AlignIO
 
-    idx = MafIO.MafIndex("chr10.mafindex", "chr10.maf", "mm9.chr10")
+    idx = AlignIO.MafIO.MafIndex("chr10.mafindex", "chr10.maf", "mm9.chr10")
 
     multiple_alignment = idx.get_spliced([41905591, 41916271, 41994621, 41996331],
                                          [41906101, 41917707, 41995347, 41996548],
                                          strand = "+")
 
-    for seqrec in multiple_alignment:
-        SeqIO.write(seqrec, sys.stdout, "fasta")
-
-### Example
-
-chr10:7,350,034-7,383,048) In this example, we are going to download the
-30-way alignment of various species to mouse chromosome 10, generate an
-index file, and load the multiple alignment across the Pcmt1 locus.
-
-The MAF file is available at:
-<http://hgdownload.cse.ucsc.edu/goldenPath/currentGenomes/Mus_musculus/multiz30way/maf/chr10.maf.gz>
-
-<code> from Bio.AlignIO import MafIO.MafIndex as MafIndex
-
-idx = MafIndex("chr10.mafindex", "chr10.maf", "mm9.chr10")
-
-idx
+    AlignIO.write(multiple_alignment, "mm9_foxo3.fa", "fasta")
