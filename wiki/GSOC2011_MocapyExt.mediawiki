@@ -61,7 +61,7 @@ The goal of the MocapyExt project is to develop a plugin interface for Mocapy++.
 
 * Measure performance.
 
-== Project Schedule ==
+== Schedule ==
 
 '''Week 1-2 [May 23th -- June 5th]
 '''

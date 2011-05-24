@@ -116,8 +116,8 @@ Work Plan
 
 -   Measure performance.
 
-Project Schedule
-----------------
+Schedule
+--------
 
 '''Week 1-2 \[May 23th -- June 5th\] '''
 
