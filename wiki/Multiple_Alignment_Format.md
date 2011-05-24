@@ -98,7 +98,7 @@ the need to retrieve an entire locus.
 # count the number of bases in danRer5 (Zebrafish) that align to the
 # Pcmt1 locus in mouse
 
-from Bio.AlignIO import MafIO.MafIndex as MafIndex
+from Bio.AlignIO.MafIO import MafIndex
 
 idx = MafIndex("chr10.mafindex", "chr10.maf", "mm9.chr10")
 results = idx.search([7350034], [7383048])
