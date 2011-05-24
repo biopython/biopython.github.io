@@ -4,6 +4,8 @@ BioPython is a very popular library in Bioinformatics and Computational Biology.
 
 Mocapy++ is an open source toolkit that is freely available under the GNU General Public Licence (GPL) from [http://sourceforge.net/projects/mocapy SourceForge]. Mocapy++ is used for parameter learning and inference in dynamic Bayesian networks (DBNs), which encode probabilistic relationships among random variables in a domain. The library supports a wide spectrum of DBN architectures and probability distributions, including distributions from directional statistics; notably, Kent distribution on the sphere and the bivariate von Mises distribution on the torus, which have proven to be useful in formulating probabilistic models of protein and RNA structure. This makes Mocapy++ especially suitable for biomolecular structure prediction.
 
+The goal of the MocapyExt project is to develop a plugin interface for Mocapy++. This plugin interface will allow to quickly implement and test new probability distributions and thus save development time and effort.
+
 == Author & Mentors == 
 
 [[User%3AJustinas_Daugmaudis|Justinas V. Daugmaudis]] vygis.d@gmail.com
