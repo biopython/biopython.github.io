@@ -14,6 +14,11 @@ chromosome, start position, size, and strand can be stored. Biopython
 implements a MAF reader and writer accessible via **Bio.AlignIO**, and
 an indexer accessible via **Bio.AlignIO.MafIO**.
 
+All examples below make use of the Multiz [30-way alignment to mouse
+chromosome
+10](http://hgdownload.cse.ucsc.edu/goldenPath/currentGenomes/Mus_musculus/multiz30way/maf/chr10.maf.gz)
+available from UCSC.
+
 Reading in a MAF file
 ---------------------
 
@@ -56,11 +61,6 @@ example, chr10:25,079,604-25,243,324 in mm9. As MAF files are available
 for entire chromosomes, they can be indexed by chromosome position and
 accessed at random. This functionality would be available in the class
 Bio.AlignIO.MafIO.MafIndex.
-
-All examples below make use of the Multiz [30-way alignment to mouse
-chromosome
-10](http://hgdownload.cse.ucsc.edu/goldenPath/currentGenomes/Mus_musculus/multiz30way/maf/chr10.maf.gz)
-available from UCSC.
 
 ### Creating or loading a MAF index
 
