@@ -34,7 +34,9 @@ prediction.
 
 The goal of the MocapyExt project is to develop a plugin interface for
 Mocapy++. This plugin interface will allow to quickly implement and test
-new probability distributions and thus save development time and effort.
+new probability distributions and thus save development time and effort
+as it then becomes possible to extend Mocapy++ without undue
+modifications and subsequent recompilations.
 
 Author & Mentors
 ----------------
