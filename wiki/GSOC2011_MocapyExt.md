@@ -132,13 +132,16 @@ Markov model on torus, simple hidden Markov model, etc).
 
 Example applications, involving Bio.PDB data mining
 
-'''Week 11-12 \[July 25th -- August 7th\] ''' Update the documentation
-to reflect the new functions. Also document the examples, do any scrub
-work of code, etc. Planned 'pencils down' date.
+'''Week 11-12 \[July 25th -- August 7th\] '''
+
+Update the documentation to reflect the new functions. Also document the
+examples, do any scrub work of code, etc. Planned 'pencils down' date.
 
 '''Week 13-14 \[August 8th -- August 21st\] '''
 
 Introduce the bindings to the wider audiences, gather the opinions and
 the reviews in community.
 
-'''Week 15 \[August 22nd\] ''' The end of the project.
+'''Week 15 \[August 22nd\] '''
+
+The end of the project.

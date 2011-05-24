@@ -94,6 +94,7 @@ Example applications, involving Bio.PDB data mining
 
 '''Week 11-12 [July 25th -- August 7th]
 '''
+
 Update the documentation to reflect the new functions. Also document the examples, do any scrub work of code, etc. Planned 'pencils down' date. 
 
 
@@ -105,4 +106,5 @@ Introduce the bindings to the wider audiences, gather the opinions and the revie
 
 '''Week 15 [August 22nd]
 '''
+
 The end of the project.
