@@ -80,7 +80,7 @@ does not exist, it will be created, otherwise it will be loaded.
 ``` python
 # index mouse chr10 from UCSC and store it in a file for later use
 
-from Bio.AlignIO import MafIO.MafIndex
+from Bio.AlignIO import MafIO
 
 # idx = MafIO.MafIndex(sqlite_file, maf_file, target_seqname)
 idx = MafIO.MafIndex("chr10.mafindex", "chr10.maf", "mm9.chr10")
