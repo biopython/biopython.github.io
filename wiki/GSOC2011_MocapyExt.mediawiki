@@ -3,7 +3,7 @@
 
 == Author & Mentors == 
 
-[[User%3AJustinas_Daugmaudis|Justinas Daugmaudis]] vygis.d@gmail.com
+[[User%3AJustinas_Daugmaudis|Justinas V. Daugmaudis]] vygis.d@gmail.com
 
 '''Mentors'''
 : Thomas Hamelryck
