@@ -32,5 +32,8 @@ Thomas Hamelryck
 
 Eric Talevich
 
+Work Plan
+---------
+
 Project Schedule
 ----------------
