@@ -17,12 +17,12 @@ an indexer accessible via **Bio.AlignIO.MafIO**.
 MafIndex
 --------
 
-Biopython provides an interface for fast access to the multiple
+Biopython may soon provide an interface for fast access to the multiple
 alignment of several sequences across an arbitrary interval: for
 example, chr10:25,079,604-25,243,324 in mm9. As MAF files are available
 for entire chromosomes, they can be indexed by chromosome position and
-accessed at random. This functionality is available in the class
-MafIO.MafIndex.
+accessed at random. This functionality would be available in the class
+Bio.AlignIO.MafIO.MafIndex.
 
 All examples below make use of the Multiz [30-way alignment to mouse
 chromosome
