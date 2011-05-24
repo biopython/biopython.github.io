@@ -4,6 +4,9 @@ permalink: wiki/GSOC2011_MocapyExt
 layout: wiki
 ---
 
+Introduction
+------------
+
 Author & Mentors
 ----------------
 
@@ -17,4 +20,5 @@ Thomas Hamelryck
 
 Eric Talevich
 
-
+Project Schedule
+----------------

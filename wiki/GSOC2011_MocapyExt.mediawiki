@@ -1,3 +1,6 @@
+== Introduction ==
+
+
 == Author & Mentors == 
 
 [[User%3AJustinas_Daugmaudis|Justinas Daugmaudis]] vygis.d@gmail.com
@@ -5,3 +8,5 @@
 '''Mentors'''
 : Thomas Hamelryck
 : Eric Talevich
+
+== Project Schedule ==
