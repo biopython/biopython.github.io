@@ -171,3 +171,6 @@ Source Code
 
 Hosted at [the gSoC11 Mocapy
 branch](http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/)
+
+Progress
+--------
