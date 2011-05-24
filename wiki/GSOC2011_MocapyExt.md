@@ -19,6 +19,19 @@ familiar manner.
 Introduction
 ------------
 
+Mocapy++ is an open source toolkit that is freely available under the
+GNU General Public Licence (GPL) from
+[SourceForge](http://sourceforge.net/projects/mocapy). Mocapy++ is used
+for parameter learning and inference in dynamic Bayesian networks
+(DBNs), which encode probabilistic relationships among random variables
+in a domain. The library supports a wide spectrum of DBN architectures
+and probability distributions, including distributions from directional
+statistics; notably, Kent distribution on the sphere and the bivariate
+von Mises distribution on the torus, which have proven to be useful in
+formulating probabilistic models of protein and RNA structure. This
+makes Mocapy++ especially suitable for biomolecular structure
+prediction.
+
 Author & Mentors
 ----------------
 
