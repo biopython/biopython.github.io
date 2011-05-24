@@ -14,6 +14,39 @@ chromosome, start position, size, and strand can be stored. Biopython
 implements a MAF reader and writer accessible via **Bio.AlignIO**, and
 an indexer accessible via **Bio.AlignIO.MafIO**.
 
+Reading in a MAF file
+---------------------
+
+Parsing a MAF file is similar to any other alignment file in AlignIO.
+Additional data, however, is stored as a dict in the .annotations
+property of SeqRecords belonging to returned MultipleSeqAlignment
+objects.
+
+### Annotations available in SeqRecords
+
+| Key         | Type           | Value                                                                      |
+|-------------|----------------|----------------------------------------------------------------------------|
+| **start**   | integer        | The start position in the source sequence of this alignment                |
+| **size**    | integer        | The ungapped length of this sequence                                       |
+| **strand**  | enum("+", "-") | The strand this sequence originates from on the source sequence/chromosome |
+| **srcSize** | integer        | The total length of the source sequence/chromosome                         |
+
+### Example
+
+``` python
+from Bio import AlignIO
+
+for multiple_alignment in AlignIO.parse("chr10.maf", "maf"):
+    print "printing a new multiple alignment"
+
+    for seqrec in multiple_alignment:
+        print "starts at %s on the %s strand of a sequence %s in length, and runs for %s bp" % \
+              (seqrec.annotations["start"],
+               seqrec.annotations["strand"],
+               seqrec.annotations["srcSize"],
+               seqrec.annotations["size"])
+```
+
 MafIndex
 --------
 
@@ -142,3 +175,30 @@ for record in db_conn.fetchall():
                   "%s.fa" % record["name"],
                   "fasta")
 ```
+
+Format
+------
+
+    track name=euArc visibility=pack
+    ##maf version=1 scoring=tba.v8 
+    # tba.v8 (((human chimp) baboon) (mouse rat)) 
+                       
+    a score=23262.0     
+    s hg18.chr7    27578828 38 + 158545518 AAA-GGGAATGTTAACCAAATGA---ATTGTCTCTTACGGTG
+    s panTro1.chr6 28741140 38 + 161576975 AAA-GGGAATGTTAACCAAATGA---ATTGTCTCTTACGGTG
+    s baboon         116834 38 +   4622798 AAA-GGGAATGTTAACCAAATGA---GTTGTCTCTTATGGTG
+    s mm4.chr6     53215344 38 + 151104725 -AATGGGAATGTTAAGCAAACGA---ATTGTCTCTCAGTGTG
+    s rn3.chr4     81344243 40 + 187371129 -AA-GGGGATGCTAAGCCAATGAGTTGTTGTCTCTCAATGTG
+                       
+    a score=5062.0                    
+    s hg18.chr7    27699739 6 + 158545518 TAAAGA
+    s panTro1.chr6 28862317 6 + 161576975 TAAAGA
+    s baboon         241163 6 +   4622798 TAAAGA 
+    s mm4.chr6     53303881 6 + 151104725 TAAAGA
+    s rn3.chr4     81444246 6 + 187371129 taagga
+
+    a score=6636.0
+    s hg18.chr7    27707221 13 + 158545518 gcagctgaaaaca
+    s panTro1.chr6 28869787 13 + 161576975 gcagctgaaaaca
+    s baboon         249182 13 +   4622798 gcagctgaaaaca
+    s mm4.chr6     53310102 13 + 151104725 ACAGCTGAAAATA
