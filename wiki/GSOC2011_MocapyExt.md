@@ -163,3 +163,9 @@ the reviews in community.
 '''Week 15 \[August 22nd\] '''
 
 The end of the project.
+
+Source Code
+-----------
+
+Hosted at [the gSoC11 Mocapy
+branch](http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/)
