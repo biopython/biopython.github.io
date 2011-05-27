@@ -201,7 +201,7 @@ For further information see [https://docs.google.com/document/d/1E72Qysp3pMd69hS
 === Bindings Prototype ===
 
 The source code for the prototype is on the gSoC11 branch:
-http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/bindings/
+http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/bindings_prototype/
 
 Bindings for a few Mocapy++ features and a couple of examples to find possible implementation and performance issues.
 
