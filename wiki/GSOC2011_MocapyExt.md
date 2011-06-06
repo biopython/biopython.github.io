@@ -186,3 +186,10 @@ class.
 
 `plugin`<DensityBase>` p("density.py", "ClassName");`  
 `boost::shared_ptr`<DensityBase>` n = p.create(`*`argument` `list`*`);`
+
+-   Internal plugin registration
+
+In addition to the above, it might be desirable to create a registry of
+predefined density distribution classes. This would allow uniform
+instantiation and usage of classes that are loaded by employing Python
+embedding techniques as well as internally defined classes in Mocapy++.
