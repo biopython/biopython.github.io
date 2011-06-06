@@ -375,3 +375,57 @@ original Mocapy++.
 For additional details have a look at the [Mocapy++ Bindings
 Prototype](https://docs.google.com/document/d/1JPkCbvJ9Gk3b6LmQ68__UUt4Yz2P1-c286p6FVEqyXs/edit?hl=pt_BR&authkey=CJTCpZgL)
 report.
+
+### Bindings Implementation
+
+*May 23 - Jun 5: Bindings for the core functions and data structures*
+
+''' Data structures '''
+
+Mocapy uses an internal data structure to represent arrays: MDArray. In
+order to make it easier for the user to interact with Mocapy's API, it
+was decided to provide an interface that accepts numpy arrays.
+Therefore, it was necessary to implement a translation between a numpy
+array and an MDArray.
+
+The translation from MDArray to python was done through the use of
+Boost.Python
+[to\_python\_converter](http://www.boost.org/doc/libs/1_43_0/libs/python/doc/v2/to_python_converter.html).
+We've implemented a template method convert\_MDArray\_to\_numpy\_array,
+which converts an MDArray of any basic type to a corresponding numpy
+array. In order to perform the translation the original array's shape
+and internal data are copied into a new numpy array.
+
+The numpy array was created using the [Numpy Array
+API](http://docs.scipy.org/doc/numpy/reference/c-api.array.html). The
+creation of a new
+[PyArrayObject](http://docs.scipy.org/doc/numpy/reference/c-api.types-and-structures.html#PyArrayObject)
+using existing data (PyArray\_SimpleNewFromData) doesn't copy the array
+data, it just stores a pointer to it. Thus, one can only free the data
+when there is no reference to the object. This was done through the use
+of a [Capsule](http://docs.python.org/c-api/capsule.html). Besides
+encapsulating the data, the capsule also stores a destructor to be used
+when the array is destroyed. The PyArrayObject has a field named "base"
+which points to the capsule.
+
+The translation from Python to C++, i.e. creating an MDArray from a
+numpy array is slightly more complex. Boost.Python will provide a chunk
+of memory into which the new C++ object must constructed in-place. See
+the [How to write boost.python
+converters](http://misspent.wordpress.com/2009/09/27/how-to-write-boost-python-converters/)
+article for more details.
+
+A translation between std::vector of basic types (double, int...) and
+Python list was also implemented. For std::vector of custom types, such
+as Node, the translation to a Python list was not performed. If done the
+same ways as for basic types, a type error is raised: "TypeError: No
+to\_python (by-value) converter found for C++ type". When using
+[vector\_indexing\_suite](http://www.boost.org/doc/libs/1_46_1/libs/python/doc/v2/indexing.html#vector_indexing_suite_class)
+this problem was already solved. See [Wrapping
+std::vector<AbstractClass*>](http://mail.python.org/pipermail/cplusplus-sig/2005-July/008865.html).
+The only inconvenience of using the vector\_indexing\_suite is creating
+new types such as vector\_Node, instead of using a standard Python list.
+
+The code for the translations is in the
+[mocapy\_data\_structures](http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/bindings/mocapy_data_structures.cpp?revision=340&view=markup)
+module.
