@@ -429,3 +429,25 @@ new types such as vector\_Node, instead of using a standard Python list.
 The code for the translations is in the
 [mocapy\_data\_structures](http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/bindings/mocapy_data_structures.cpp?revision=340&view=markup)
 module.
+
+''' Core functions '''
+
+The mocapy Python packages follow Mocapy's current source tree. For each
+package, a shared library with the bindings was created. This makes
+compilation faster and debug easier. Also, if a single library was
+created it wouldn't be possible to define packages.
+
+Each of the libraries is called libmocapy\_<nameofthepackage>. For
+example, libmocapy\_gaussian provides bindings for the gaussian nodes
+and probability distributions. The libmocapy\_data\_structures is used
+by other libraries and, therefore, must be imported first. This is done
+on the Python side. Each of the libmocapy\_\* libraries is imported in
+the corresponding package. See [Creating
+Packages](http://www.boost.org/doc/libs/1_46_1/libs/python/doc/tutorial/doc/html/python/techniques.html#python.creating_packages).
+
+The bindings code can be found in the [Bindings
+directory](http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/bindings/).
+
+Currently, tests to the just created interface are being developed.
+There are a few tests already implemented under the framework package:
+[mocapy/framework/tests](http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/python/mocapy/framework/tests/)

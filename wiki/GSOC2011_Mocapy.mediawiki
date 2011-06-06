@@ -244,3 +244,14 @@ chunk of memory into which the new C++ object must constructed in-place. See the
 A translation between std::vector of basic types (double, int...) and Python list was also implemented. For std::vector of custom types, such as Node, the translation to a Python list was not performed. If done the same ways as for basic types, a type error is raised: "TypeError: No to_python (by-value) converter found for C++ type". When using [http://www.boost.org/doc/libs/1_46_1/libs/python/doc/v2/indexing.html#vector_indexing_suite_class vector_indexing_suite] this problem was already solved. See [http://mail.python.org/pipermail/cplusplus-sig/2005-July/008865.html Wrapping std::vector<AbstractClass*>]. The only inconvenience of using the vector_indexing_suite is creating new types such as vector_Node, instead of using a standard Python list.
 
 The code for the translations is in the [http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/bindings/mocapy_data_structures.cpp?revision=340&view=markup mocapy_data_structures] module.
+
+
+''' Core functions '''
+
+The mocapy Python packages follow Mocapy's current source tree. For each package, a shared library with the bindings was created. This makes compilation faster and debug easier. Also, if a single library was created it wouldn't be possible to define packages. 
+
+Each of the libraries is called libmocapy_<nameofthepackage>. For example, libmocapy_gaussian provides bindings for the gaussian nodes and probability distributions. The libmocapy_data_structures is used by other libraries and, therefore, must be imported first. This is done on the Python side. Each of the libmocapy_* libraries is imported in the corresponding package. See [http://www.boost.org/doc/libs/1_46_1/libs/python/doc/tutorial/doc/html/python/techniques.html#python.creating_packages Creating Packages].
+
+The bindings code can be found in the [http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/bindings/ Bindings directory]. 
+
+Currently, tests to the just created interface are being developed. There are a few tests already implemented under the framework package: [http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/python/mocapy/framework/tests/ mocapy/framework/tests]
