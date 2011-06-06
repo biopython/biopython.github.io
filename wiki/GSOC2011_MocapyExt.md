@@ -174,3 +174,15 @@ branch](http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/)
 
 Progress
 --------
+
+'''Use cases '''
+
+-   Plugin registration
+
+A user provides a name of a python library, a name of class and a set of
+factual arguments necessary for the construction of the model of the
+class. The MocapyExt library in turn then returns an instance of the new
+class.
+
+`plugin`<DensityBase>` p("density.py", "ClassName");`  
+`boost::shared_ptr`<DensityBase>` n = p.create(/argument_list/);`
