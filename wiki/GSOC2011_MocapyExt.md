@@ -185,4 +185,4 @@ class. The MocapyExt library in turn then returns an instance of the new
 class.
 
 `plugin`<DensityBase>` p("density.py", "ClassName");`  
-`boost::shared_ptr`<DensityBase>` n = p.create(/argument_list/);`
+`boost::shared_ptr`<DensityBase>` n = p.create(`*a**r**g*<sub>0</sub>, *a**r**g*<sub>1</sub>, ..., *a**r**g*<sub>*n* − 1</sub>`);`
