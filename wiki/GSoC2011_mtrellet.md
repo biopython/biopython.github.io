@@ -121,6 +121,9 @@ Project Schedule
 
 #### Code organization and final testing
 
+Unit tests
+----------
+
 Unit tests will be perfomed along the project, allowing to do only a
 larger test at the end gathering every tests already performed.
 
