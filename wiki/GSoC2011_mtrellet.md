@@ -132,6 +132,8 @@ in efficiency and rapidity without changes at algorithmic level. Several
 days will be booked to package code and be sure that everything can
 communicate with Biopython.
 
+------------------------------------------------------------------------
+
 Project Progress
 ----------------
 
@@ -158,8 +160,8 @@ SMCRA scheme.
 -   Coding
 
 Interface.py is the definition of the Interface object inherited from
-Entity with the following methods : \_\_init\_\_(self, id), add(self,
-entity) and get\_chains(self).
+Entity with the following methods : **\_\_init\_\_**(self, id),
+**add**(self, entity) and **get\_chains**(self).
 
 The add module overrides the add method of Entity in order to have an
 easy way to class residues according to their respective chains. The
@@ -168,20 +170,25 @@ by the Interface object.
 
 The second class created is InterfaceBuilder.py which deals directly
 with the interface building (hard to guess..!) We find these different
-modules : \_\_init\_\_(self, model, id=None, threshold=5.0,
-include\_waters=False, \*chains), \_unpack\_chains(self,
-list\_of\_tuples), get\_interface(self), \_add\_residue(self, residue),
-\_build\_interface(self, model, id, threshold, include\_waters=False,
-\*chains)
+modules : **\_\_init\_\_**(self, model, id=None, threshold=5.0,
+include\_waters=False, \*chains), **\_unpack\_chains**(self,
+list\_of\_tuples), **get\_interface**(self), **\_add\_residue**(self,
+residue), **\_build\_interface**(self, model, id, threshold,
+include\_waters=False, \*chains)
 
-\_\_init\_\_ : In order to initialize an interface you need to provide
-the model for which you want to calculate the interface, that's the only
-mandatory argument. \_unpack\_chains: Method used by \_\_init\_\_ so as
-to create self.chain\_list, variable read in many parts of the class. It
-transforms a list of tuples (given by the user) in a list of characters
-representing the chains which will be involved in the definition of the
-interface. get\_interface: Returns simply the interface \_add\_residue:
-Allows the user to add some specific residues to his interface
-\_build\_interface: The machinery to build the interface, it uses
-NeighborSearch and Selection in order to define the interface depending
-on the arguments given by the user.
+**\_\_init\_\_** : In order to initialize an interface you need to
+provide the model for which you want to calculate the interface, that's
+the only mandatory argument. **\_unpack\_chains**: Method used by
+\_\_init\_\_ so as to create self.chain\_list, variable read in many
+parts of the class. It transforms a list of tuples (given by the user)
+in a list of characters representing the chains which will be involved
+in the definition of the interface. **get\_interface**: Returns simply
+the interface **\_add\_residue**: Allows the user to add some specific
+residues to his interface **\_build\_interface**: The machinery to build
+the interface, it uses NeighborSearch and Selection in order to define
+the interface depending on the arguments given by the user.
+
+-   Github repository
+
+[1](https://github.com/mtrellet/biopython/commit/4cfa4359d0f927609c076ed7b66f37add5aabdfb)
+[2](https://github.com/mtrellet/biopython/commit/194efe37ac8f88d688e0cf528f1fb896c8441866)
