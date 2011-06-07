@@ -62,6 +62,44 @@ Project Schedule
 
 -   Deduce residues weight from Atom instead of direct dictionnary
     storage
--   -   [pKa values
+-   Polar/charge character (dictionary or influenced by pH)
+-   Hydrophobicity scale(s)
+    -   [pKa values
         algorithm](http://www3.interscience.wiley.com/journal/112117957/abstract)
+
+### Weeks 4 \[14th - 21st June\]
+
+#### Implement Extended Residue class as a subclass of Residue
+
+-   Build Extended Residue on the fly or have it hard-coded (?)
+-   Allow regular operations on Residue to be performed seamlessly in
+    Extended Residue (should come with inheritance)
+-   Unit tests on pdb files containing particular residues
+
+### Weeks 5-6-7 \[22nd June - 11th July\]
+
+#### Implement InterfaceAnalysis module
+
+-   Develop Interface class as a subclass of Model
+-   Develop method to automatically extract Interface from parsed
+    structure upon class instantiation
+    -   e.g. I = Interface(Structure)
+    -   Allow threshold for distance
+    -   Allow chain pairs to ignore (to avoid intra-molecule contacts)
+-   Unit tests with results from usual scripts, broadly used by
+    scientists
+
+### Mid term evaluation
+
+### Weeks 7-8 \[12th July - 25th July\]
+
+#### Develop functions for interface analysis
+
+-   Calculation of interface polar character statistics (% of polar
+    residues, apolar, etc)
+-   Calculation of BSA calling MSMS or HSA
+-   Calculation of SS element statistics in the interface through DSSP
+-   ...
+-   Unit tests and use of results as input for further calculations by
+    other tools and scripts
 
