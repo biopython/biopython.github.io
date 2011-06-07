@@ -132,9 +132,13 @@ The second class created is InterfaceBuilder.py which deals directly with the in
 We find these different modules : '''__init__'''(self, model, id=None, threshold=5.0, include_waters=False, *chains),  '''_unpack_chains'''(self, list_of_tuples),  '''get_interface'''(self),  '''_add_residue'''(self, residue),  '''_build_interface'''(self, model, id, threshold, include_waters=False, *chains)
 
 '''__init__''' : In order to initialize an interface you need to provide the model for which you want to calculate the interface, that's the only mandatory argument.
+
 '''_unpack_chains''': Method used by __init__ so as to create self.chain_list, variable read in many parts of the class. It transforms a list of tuples (given by the user) in a list of characters representing the chains which will be involved in the definition of the interface.
+
 '''get_interface''': Returns simply the interface
+
 '''_add_residue''': Allows the user to add some specific residues to his interface
+
 '''_build_interface''': The machinery to build the interface, it uses NeighborSearch and Selection in order to define the interface depending on the arguments given by the user.
 
 * Github repository

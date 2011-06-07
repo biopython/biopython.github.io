@@ -178,15 +178,22 @@ include\_waters=False, \*chains)
 
 **\_\_init\_\_** : In order to initialize an interface you need to
 provide the model for which you want to calculate the interface, that's
-the only mandatory argument. **\_unpack\_chains**: Method used by
-\_\_init\_\_ so as to create self.chain\_list, variable read in many
-parts of the class. It transforms a list of tuples (given by the user)
-in a list of characters representing the chains which will be involved
-in the definition of the interface. **get\_interface**: Returns simply
-the interface **\_add\_residue**: Allows the user to add some specific
-residues to his interface **\_build\_interface**: The machinery to build
-the interface, it uses NeighborSearch and Selection in order to define
-the interface depending on the arguments given by the user.
+the only mandatory argument.
+
+**\_unpack\_chains**: Method used by \_\_init\_\_ so as to create
+self.chain\_list, variable read in many parts of the class. It
+transforms a list of tuples (given by the user) in a list of characters
+representing the chains which will be involved in the definition of the
+interface.
+
+**get\_interface**: Returns simply the interface
+
+**\_add\_residue**: Allows the user to add some specific residues to his
+interface
+
+**\_build\_interface**: The machinery to build the interface, it uses
+NeighborSearch and Selection in order to define the interface depending
+on the arguments given by the user.
 
 -   Github repository
 
