@@ -82,3 +82,28 @@ Analysis of protein-protein complexes interfaces at a residue level yields signi
 * Calculation of SS element statistics in the interface through DSSP
 * ...
 * Unit tests and use of results as input for further calculations by other tools and scripts
+
+
+=== Weeks 9-10 [26th July - 8th August] === 
+
+
+====  Develop functions for Interface comparison ====
+
+* Perhaps adapt current RMSD functions to allow usage of Interface Residues
+* Otherwise, should be called through something like Ia.rmsd_to(Ib) where Ia and IB are interface objects
+* Calculation of iRMSD
+* Calculation of FCC (Fraction of Common Contacts)
+* Rough Identity and Similarity percentage
+* ...
+* Unit tests, comparison with specific tools as Profit
+
+
+=== Weeks 11 [9th July - 8th August] === 
+
+
+====  Code organization and final testing  ====
+
+
+Unit tests will be perfomed along the project, allowing to do only a larger test at the end gathering every tests already performed.
+
+Then the aim will be to optimized, if possible, some parts of the code in efficiency and rapidity without changes at algorithmic level. Several days will be booked to package code and be sure that everything can communicate with Biopython.
