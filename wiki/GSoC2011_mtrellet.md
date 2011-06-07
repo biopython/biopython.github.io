@@ -131,3 +131,57 @@ Then the aim will be to optimized, if possible, some parts of the code
 in efficiency and rapidity without changes at algorithmic level. Several
 days will be booked to package code and be sure that everything can
 communicate with Biopython.
+
+Project Progress
+----------------
+
+### Implementation of Interface object backbone
+
+-   Theory
+
+We began to think of an easy way to add the Interface as a new part of
+the SMCRA scheme. The idea was to have this new scheme = SM-I-CRA.
+Unfortunately the Interface object is not as well defined as just a
+child of model and a parent of chains. Indeed, the main part of the
+interface is residues, and even residues pairs. We want to keep the
+information of the chain but we can't keep them as they are defined
+actually, since we will get some overlaps, duplication and
+miscompatibility between the chains of our model and the chains of our
+interface. In the same way, our try to link the creation of the
+interface with existing modules as StructureBuilder and Model wasn't
+successful. So, we decided to simplify a bit the concept in adding the
+classes related to the Interface in an independent way. Obviously links
+will exist between the different levels of SMCRA but Interface would be
+considered now as a parallel entity, not integrated completely in the
+SMCRA scheme.
+
+-   Coding
+
+Interface.py is the definition of the Interface object inherited from
+Entity with the following methods : \_\_init\_\_(self, id), add(self,
+entity) and get\_chains(self).
+
+The add module overrides the add method of Entity in order to have an
+easy way to class residues according to their respective chains. The
+get\_chains modules returns the chains involved in the interface defined
+by the Interface object.
+
+The second class created is InterfaceBuilder.py which deals directly
+with the interface building (hard to guess..!) We find these different
+modules : \_\_init\_\_(self, model, id=None, threshold=5.0,
+include\_waters=False, \*chains), \_unpack\_chains(self,
+list\_of\_tuples), get\_interface(self), \_add\_residue(self, residue),
+\_build\_interface(self, model, id, threshold, include\_waters=False,
+\*chains)
+
+\_\_init\_\_ : In order to initialize an interface you need to provide
+the model for which you want to calculate the interface, that's the only
+mandatory argument. \_unpack\_chains: Method used by \_\_init\_\_ so as
+to create self.chain\_list, variable read in many parts of the class. It
+transforms a list of tuples (given by the user) in a list of characters
+representing the chains which will be involved in the definition of the
+interface. get\_interface: Returns simply the interface \_add\_residue:
+Allows the user to add some specific residues to his interface
+\_build\_interface: The machinery to build the interface, it uses
+NeighborSearch and Selection in order to define the interface depending
+on the arguments given by the user.
