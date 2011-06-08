@@ -3,7 +3,7 @@
 [[User%3AMtrellet|Mikael Trellet]] mikael.trellet@gmail.com
 
 '''Mentors'''
-: Joao Rodrigues
+: João Rodrigues
 : Eric Talevich
 
 
@@ -143,5 +143,5 @@ We find these different modules : '''__init__'''(self, model, id=None, threshold
 
 * Github repository
 
-[https://github.com/mtrellet/biopython/commit/4cfa4359d0f927609c076ed7b66f37add5aabdfb]
-[https://github.com/mtrellet/biopython/commit/194efe37ac8f88d688e0cf528f1fb896c8441866]
+
+[https://github.com/mtrellet/biopython/commit/194efe37ac8f88d688e0cf528f1fb896c8441866 InterfaceBuilder.py]

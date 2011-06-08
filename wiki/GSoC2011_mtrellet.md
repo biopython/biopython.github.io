@@ -12,7 +12,7 @@ Author & Mentors
 **Mentors**
 
   
-Joao Rodrigues
+João Rodrigues
 
 Eric Talevich
 
@@ -197,5 +197,4 @@ on the arguments given by the user.
 
 -   Github repository
 
-[1](https://github.com/mtrellet/biopython/commit/4cfa4359d0f927609c076ed7b66f37add5aabdfb)
-[2](https://github.com/mtrellet/biopython/commit/194efe37ac8f88d688e0cf528f1fb896c8441866)
+[InterfaceBuilder.py](https://github.com/mtrellet/biopython/commit/194efe37ac8f88d688e0cf528f1fb896c8441866)
