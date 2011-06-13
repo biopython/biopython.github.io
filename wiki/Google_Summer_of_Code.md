@@ -17,7 +17,8 @@ had two projects funded:
 
 -   Nick Matzke worked on [Biogeographical
     Phylogenetics](https://www.nescent.org/wg_phyloinformatics/Phyloinformatics_Summer_of_Code_2009#Biogeographical_Phylogenetics_for_BioPython).
--   Eric Talevich added support for [parsing and writing
+-   [Eric Talevich](User%3AEricTalevich "wikilink") added support for
+    [parsing and writing
     phyloXML](https://www.nescent.org/wg_phyloinformatics/Phyloinformatics_Summer_of_Code_2009#Biopython_support_for_parsing_and_writing_phyloXML).
 
 In 2010, another project was funded:
@@ -26,6 +27,19 @@ In 2010, another project was funded:
     Bio.PDB](GSOC2010_Joao "wikilink"), adding several features used in
     everyday structural bioinformatics. These features are now gradually
     being merged into the mainline with João's help.
+
+This year, three projects are being funded in Biopython via OBF:
+
+-   [Mikael Trellet](User%3AMtrellet "wikilink") is adding [support for
+    biomolecular interface analysis](GSoC2011_mtrellet "wikilink") to
+    the Bio.PDB module.
+-   Michele Silva is writing a [Python bridge for
+    Mocapy++](GSOC2011_Mocapy "wikilink") and linking it to Bio.PDB to
+    enable statistical analysis of protein structures.
+-   Justinas Daugmaudis is also enhancing Mocapy++ in a complementary
+    way, developing a [plugin system for
+    Mocapy++](GSOC2011_MocapyExt "wikilink") allowing users to easily
+    write new nodes (probability distribution functions) in Python.
 
 Please read the [GSoC page at the Open Bioinformatics
 Foundation](http://www.open-bio.org/wiki/Google_Summer_of_Code) and the

@@ -3,11 +3,17 @@ As part of the Open Bioinformatics Foundation, Biopython is participating in Goo
 In 2009, Biopython was involved with GSoC in collaboration with our friends at [https://www.nescent.org/wg_phyloinformatics/Main_Page NESCent], and had two projects funded:
 
 * Nick Matzke worked on [https://www.nescent.org/wg_phyloinformatics/Phyloinformatics_Summer_of_Code_2009#Biogeographical_Phylogenetics_for_BioPython Biogeographical Phylogenetics].
-* Eric Talevich added support for [https://www.nescent.org/wg_phyloinformatics/Phyloinformatics_Summer_of_Code_2009#Biopython_support_for_parsing_and_writing_phyloXML parsing and writing phyloXML].
+* [[User%3AEricTalevich|Eric Talevich]] added support for [https://www.nescent.org/wg_phyloinformatics/Phyloinformatics_Summer_of_Code_2009#Biopython_support_for_parsing_and_writing_phyloXML parsing and writing phyloXML].
 
 In 2010, another project was funded:
 
 * João Rodrigues [[GSOC2010_Joao|worked on the Structural Biology module Bio.PDB]], adding several features used in everyday structural bioinformatics. These features are now gradually being merged into the mainline with João's help.
+
+This year, three projects are being funded in Biopython via OBF:
+
+* [[User%3AMtrellet|Mikael Trellet]] is adding [[GSoC2011_mtrellet|support for biomolecular interface analysis]] to the Bio.PDB module.
+* Michele Silva is writing a [[GSOC2011_Mocapy|Python bridge for Mocapy++]] and linking it to Bio.PDB to enable statistical analysis of protein structures.
+* Justinas Daugmaudis is also enhancing Mocapy++ in a complementary way, developing a [[GSOC2011_MocapyExt|plugin system for Mocapy++]] allowing users to easily write new nodes (probability distribution functions) in Python.
 
 Please read the [http://www.open-bio.org/wiki/Google_Summer_of_Code GSoC page at the Open Bioinformatics Foundation] and the main [http://code.google.com/soc Google Summer of Code] page for more details about the program. If you are interested in contributing as a mentor or student next year, please introduce yourself on the [http://biopython.org/wiki/Mailing_lists mailing list].
 
