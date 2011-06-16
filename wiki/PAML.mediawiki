@@ -36,7 +36,7 @@ Note that all file locations are converted to locations relative to the working 
 The ''codeml'' runtime options are stored in a dictionary object that is keyed by the option names. For more information on the usage of these options, please refer to the PAML user manual.
 
 The complete set of options and their current values may be printed:
-<python
+<source lang=python>
 >>> cml.print_options()
 verbose = None
 CodonFreq = None

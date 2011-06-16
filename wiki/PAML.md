@@ -68,16 +68,38 @@ keyed by the option names. For more information on the usage of these
 options, please refer to the PAML user manual.
 
 The complete set of options and their current values may be printed:
-<python
->&gt;&gt; cml.print\_options() verbose = None CodonFreq = None cleandata
-= None fix\_blength = None NSsites = None fix\_omega = None clock = None
-ncatG = None runmode = None fix\_kappa = None fix\_alpha = None
-Small\_Diff = None method = None Malpha = None aaDist = None
-RateAncestor = None aaRatefile = None icode = None alpha = None seqtype
-= None omega = None getSE = None noisy = None Mgene = None kappa = None
-model = None ndata = None
 
-</source>
+``` python
+>>> cml.print_options()
+verbose = None
+CodonFreq = None
+cleandata = None
+fix_blength = None
+NSsites = None
+fix_omega = None
+clock = None
+ncatG = None
+runmode = None
+fix_kappa = None
+fix_alpha = None
+Small_Diff = None
+method = None
+Malpha = None
+aaDist = None
+RateAncestor = None
+aaRatefile = None
+icode = None
+alpha = None
+seqtype = None
+omega = None
+getSE = None
+noisy = None
+Mgene = None
+kappa = None
+model = None
+ndata = None
+```
+
 Setting an option to a value of None will cause it to be ignored by
 *codeml* (it will be omitted from the final control file). Options may
 be set by the set\_option() function and their values may be retrieved
