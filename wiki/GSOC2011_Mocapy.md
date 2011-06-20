@@ -451,3 +451,60 @@ directory](http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/bindi
 Currently, tests to the just created interface are being developed.
 There are a few tests already implemented under the framework package:
 [mocapy/framework/tests](http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/python/mocapy/framework/tests/)
+
+*Jun 6 - Jun 19: Bindings for the remaining Mocapy++ functionality*
+
+''' Data structures '''
+
+While implementing the bindings for the remaining Mocapy++ functionality
+there were problems with methods that take pointers and references to an
+mdarray:
+
+-   It is not possible to call a method which takes a pointer if the
+    object is created on the python side. See [how to call a function
+    that expects a
+    pointer?](http://stackoverflow.com/questions/3881457/boostpython-howto-call-a-function-that-expects-a-pointer).
+
+<!-- -->
+
+-   It is not possible to automatically translate a non const reference.
+    The custom rvalue converters only match functions with the following
+    signatures:
+
+<cpp> void foo(std::vector<double> const& array); // pass by
+const-reference
+
+void foo(std::vector<double> array); // pass by value </cpp>
+
+For further details see [How can I wrap functions which take C++
+containers as
+arguments?](http://www.boost.org/doc/libs/1_46_1/libs/python/doc/v2/faq.html#question2)
+
+The mdarray is created in python using a numpy.array that is translated
+to c++ using [custom
+converters](http://www.boost.org/doc/libs/1_42_0/libs/python/doc/v2/faq.html#custom_string).
+The custom converters are registered in the global Boost.Python registry
+near the top of the module initialization function. Once flow control
+has passed through the registration code the automatic conversions from
+and to Python.
+
+Because of this automatic conversions, it was necessary to create
+wrappers for functions which take pointers as arguments and change the
+functions which take references, to get const references. Because
+Mocapy++ is not [const
+correct](http://en.wikipedia.org/wiki/Const-correctness), changes are
+needed to use the const references properly. While the changes are being
+done, some const\_cast have been used. When using const\_cast one must
+be aware [it is not always
+safe](http://stackoverflow.com/questions/357600/is-const-cast-safe).
+
+The [call
+policies](http://www.boost.org/doc/libs/1_46_1/libs/python/doc/tutorial/doc/html/python/functions.html#python.call_policies)
+were also reviewed. When using an incorrect return value policy, you
+won't get a compile error, but your code will crash at runtime.
+
+''' Examples '''
+
+Mocapy++'s examples were implemented in Python, using the exposed API
+and data type conversions.
+<http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/python/examples/>
