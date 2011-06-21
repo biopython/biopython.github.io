@@ -28,9 +28,9 @@ Checking the integration status
 
 Currently you have 3 options
 
-1.  Visit our [buildbot web site](http://events.open-bio.org:8010)
+1.  Visit our [buildbot web site](http://testing.open-bio.org/biopython)
 2.  Subscribe to the integration [RSS
-    feed](http://events.open-bio.org:8010/rss)
+    feed](http://testing.open-bio.org/biopython/rss)
 3.  Subscribe to the biopython-dev mailing list where important errors
     are automatically forward (under construction)
 
