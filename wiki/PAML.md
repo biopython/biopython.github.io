@@ -186,7 +186,7 @@ method:
 If the *codeml* process exits with an error, a PamlError exception will
 be raised.
 
-#### read() and Results
+### read() and Results
 
 As previously stated, the Codeml.run() method returns a dictionary
 containing results parsed from *codeml*'s main output file.
