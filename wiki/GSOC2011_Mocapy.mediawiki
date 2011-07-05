@@ -348,6 +348,7 @@ Using distutils to create a package consists of the following steps:
 * create a source distribution;
 * create a binary distribution.
 
+
 === Integration with Biopython ===
 
 ==== API Design ====
