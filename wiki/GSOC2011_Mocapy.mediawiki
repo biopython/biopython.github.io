@@ -345,6 +345,7 @@ x = numpy.array([[1,2,3,4,5,6]], dtype=numpy.float64)
 ==== Integrate the Mocapy++ Python interface with Biopython ====
 
 ''' API Design '''
+
 In order to use Mocapy in conjunction with Biopython, a new module for PDB-specific features was added to Bio.PDB. This is where the API is being designed.
 
 Mocapy is added as an optional dependency in Biopython. Inside the function or module that requires Mocapy, "import mocapy" is wrapped in a try/except block. A MissingPythonDependencyError is issued if the import fails.
