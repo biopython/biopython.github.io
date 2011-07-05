@@ -289,13 +289,17 @@ Mocapy++'s examples were implemented in Python, using the exposed API and data t
 http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/python/examples/
 
 
+=== Integration with Biopython ===
+
 ''June 20 - July 3: Integrate the Mocapy++ Python interface with Biopython''
 
 Before integrating to Biopython, some unit testing was required, to detect possible errors and make sure future changes that break functionality won't go unnoticed. 
 
 For every Python package, it was created a "tests" directory which contains the unit tests created for each module. Here is one example of the tests created for the framework package:[http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/python/mocapy/framework/tests/].
 
+
 While testing the code, a few issues were detected:
+
 * '''Object ownership:'''
 When passing an object created on the C++ side to a method that takes a pointer as an argument, one should be careful about the life time of that object. 
 
@@ -315,8 +319,6 @@ The reference count has not been incremented and therefore the object can be des
 The way to solve the problem is to make sure the C++ object is held by auto_ptr:
 <cpp>
 class_<RandomGen, std::auto_ptr<RandomGen> >("RandomGen")
-    ...
-    ;
 </cpp>
 
 Then make a thin wrapper function which takes an auto_ptr parameter:
@@ -326,8 +328,14 @@ void node_set_random_gen(Node& node, std::auto_ptr<RandomGen> random_gen) {
     node.release();
 }
 </cpp>
-
-Pointers returned via manage_new_object will also be held by auto_ptr, so this transfer-of-ownership will also work correctly.
 For further details, see [http://www.boost.org/doc/libs/1_46_0/libs/python/doc/v2/faq.html#ownership How can I wrap a function which needs to take ownership of a raw pointer?]
 
+Pointers returned via [http://wiki.python.org/moin/boost.python/CallPolicy#manage_new_object manage_new_object] will also be held by auto_ptr, so the transfer-of-ownership works correctly. When using this call policy the caller is responsible for deleting the C++ object from the heap.
+
 *''' Translation from numpy.array to a float mdarray'''
+If the numpy array is an integer array, the translation creates an mdarray<int> and this is passed to a method which expects an mdarray of floats. This generates incorrect results.
+
+The way to deal with that from the user perspective is either using floating pointer numbers to create the array or setting the ndtype parameter when creating the array:
+<source lang=python>
+x = numpy.array([[1,2,3,4,5,6]], dtype=numpy.float64)
+</source>

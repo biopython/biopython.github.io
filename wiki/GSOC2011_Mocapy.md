@@ -509,6 +509,8 @@ Mocapy++'s examples were implemented in Python, using the exposed API
 and data type conversions.
 <http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/python/examples/>
 
+### Integration with Biopython
+
 *June 20 - July 3: Integrate the Mocapy++ Python interface with
 Biopython*
 
@@ -548,12 +550,7 @@ can be destroyed.
 
 The way to solve the problem is to make sure the C++ object is held by
 auto\_ptr: <cpp> class\_&lt;RandomGen, std::auto\_ptr<RandomGen>
-&gt;("RandomGen")
-
-`   ...`  
-`   ;`
-
-</cpp>
+&gt;("RandomGen") </cpp>
 
 Then make a thin wrapper function which takes an auto\_ptr parameter:
 <cpp> void node\_set\_random\_gen(Node& node, std::auto\_ptr<RandomGen>
@@ -562,13 +559,26 @@ random\_gen) {
 `   node.set_random_gen(random_gen.get());`  
 `   node.release();`
 
-} </cpp>
-
-Pointers returned via manage\_new\_object will also be held by
-auto\_ptr, so this transfer-of-ownership will also work correctly. For
-further details, see [How can I wrap a function which needs to take
-ownership of a raw
+} </cpp> For further details, see [How can I wrap a function which needs
+to take ownership of a raw
 pointer?](http://www.boost.org/doc/libs/1_46_0/libs/python/doc/v2/faq.html#ownership)
+
+Pointers returned via
+[manage\_new\_object](http://wiki.python.org/moin/boost.python/CallPolicy#manage_new_object)
+will also be held by auto\_ptr, so the transfer-of-ownership works
+correctly. When using this call policy the caller is responsible for
+deleting the C++ object from the heap.
 
 -   *' Translation from numpy.array to a float mdarray*'
 
+If the numpy array is an integer array, the translation creates an
+mdarray<int> and this is passed to a method which expects an mdarray of
+floats. This generates incorrect results.
+
+The way to deal with that from the user perspective is either using
+floating pointer numbers to create the array or setting the ndtype
+parameter when creating the array:
+
+``` python
+x = numpy.array([[1,2,3,4,5,6]], dtype=numpy.float64)
+```
