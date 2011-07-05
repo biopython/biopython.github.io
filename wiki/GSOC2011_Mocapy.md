@@ -378,7 +378,7 @@ report.
 
 ### Bindings Implementation
 
-*May 23 - Jun 5: Bindings for the core functions and data structures*
+#### Bindings for the core functions and data structures
 
 ''' Data structures '''
 
@@ -452,7 +452,7 @@ Currently, tests to the just created interface are being developed.
 There are a few tests already implemented under the framework package:
 [mocapy/framework/tests](http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/python/mocapy/framework/tests/)
 
-*Jun 6 - Jun 19: Bindings for the remaining Mocapy++ functionality*
+#### Bindings for the remaining Mocapy++ functionality
 
 ''' Data structures '''
 
@@ -509,10 +509,7 @@ Mocapy++'s examples were implemented in Python, using the exposed API
 and data type conversions.
 <http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/python/examples/>
 
-### Integration with Biopython
-
-*June 20 - July 3: Integrate the Mocapy++ Python interface with
-Biopython*
+#### Testing and Improvements of Mocapy Bindings
 
 Before integrating to Biopython, some unit testing was required, to
 detect possible errors and make sure future changes that break
@@ -520,8 +517,8 @@ functionality won't go unnoticed.
 
 For every Python package, it was created a "tests" directory which
 contains the unit tests created for each module. Here is one example of
-the tests created for the framework
-package:[1](http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/python/mocapy/framework/tests/).
+the tests created for the framework package:
+<http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/python/mocapy/framework/tests/>
 
 While testing the code, a few issues were detected:
 
@@ -582,3 +579,50 @@ parameter when creating the array:
 ``` python
 x = numpy.array([[1,2,3,4,5,6]], dtype=numpy.float64)
 ```
+
+#### Making mocapy a Python
+
+### Integration with Biopython
+
+#### Integrate the Mocapy++ Python interface with Biopython
+
+''' API Design ''' In order to use Mocapy in conjunction with Biopython,
+a new module for PDB-specific features was added to Bio.PDB. This is
+where the API is being designed.
+
+Mocapy is added as an optional dependency in Biopython. Inside the
+function or module that requires Mocapy, "import mocapy" is wrapped in a
+try/except block. A MissingPythonDependencyError is issued if the import
+fails.
+
+Things that are being studied to be included in the module:
+
+-   extract the backbone dihedral angles from a given set of structures;
+-   use this data to train a TorusDBN-like model;
+-   automatically decide on the best model using the BIC criterion.
+
+''' TorusDBN '''
+
+In order to use Mocapy in Bio.PDB the following paper and the source
+code of the TorusDBN model are being studied.
+
+Wouter Boomsma, Kanti V. Mardia, Charles C. Taylor, Jesper
+Ferkinghoff-Borg, Anders Krogh, and Thomas Hamelryck. A generative,
+probabilistic model of local protein structure. Proc Natl Acad Sci U S
+A. 2008 July 1; 105(26): 8932–8937.
+<http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2440424/>
+
+'''Problem: ''' Predict the 3D structure of a biomolecule given its
+amino-acid sequence.
+
+'''Solution: ''' A continuous probabilistic model of the local
+sequence–structure preferences of proteins in atomic detail. The
+backbone of a protein can be represented by a sequence of dihedral angle
+pairs, φ and ψ that are well known from the Ramachandran plot. Two
+angles, both with values ranging from −180° to 180°, define a point on
+the torus. Hence, the backbone structure of a protein can be fully
+parameterized as a sequence of such points.
+
+The TorusDBN model is implemented as part of the backboneDBN package,
+which is freely available at
+<http://sourceforge.net/projects/phaistos/>.
