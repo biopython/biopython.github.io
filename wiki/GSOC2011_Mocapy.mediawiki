@@ -337,8 +337,15 @@ The way to deal with that from the user perspective is either using floating poi
 x = numpy.array([[1,2,3,4,5,6]], dtype=numpy.float64)
 </source>
 
-==== Making mocapy a Python  ====
+==== Building and Distributing Mocapy as a Package  ====
 
+[http://docs.python.org/distutils/index.html Distutils] was used to distribute Mocapy's Python modules.
+
+Using distutils to create a package consists of the following steps:
+* write a setup script (setup.py);
+* write a setup configuration file;
+* create a source distribution;
+* create a binary distribution.
 
 === Integration with Biopython ===
 

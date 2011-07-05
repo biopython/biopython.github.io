@@ -580,7 +580,17 @@ parameter when creating the array:
 x = numpy.array([[1,2,3,4,5,6]], dtype=numpy.float64)
 ```
 
-#### Making mocapy a Python
+#### Building and Distributing Mocapy as a Package
+
+[Distutils](http://docs.python.org/distutils/index.html) was used to
+distribute Mocapy's Python modules.
+
+Using distutils to create a package consists of the following steps:
+
+-   write a setup script (setup.py);
+-   write a setup configuration file;
+-   create a source distribution;
+-   create a binary distribution.
 
 ### Integration with Biopython
 
