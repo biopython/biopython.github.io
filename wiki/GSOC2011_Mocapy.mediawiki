@@ -287,3 +287,47 @@ The [http://www.boost.org/doc/libs/1_46_1/libs/python/doc/tutorial/doc/html/pyth
 
 Mocapy++'s examples were implemented in Python, using the exposed API and data type conversions.
 http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/python/examples/
+
+
+''June 20 - July 3: Integrate the Mocapy++ Python interface with Biopython''
+
+Before integrating to Biopython, some unit testing was required, to detect possible errors and make sure future changes that break functionality won't go unnoticed. 
+
+For every Python package, it was created a "tests" directory which contains the unit tests created for each module. Here is one example of the tests created for the framework package:[http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/python/mocapy/framework/tests/].
+
+While testing the code, a few issues were detected:
+* '''Object ownership:'''
+When passing an object created on the C++ side to a method that takes a pointer as an argument, one should be careful about the life time of that object. 
+
+For example, the set_random_gen method takes a pointer to a RandomGen object. The following code works just fine.
+
+<source lang=python>
+random_gen = RandomGen()
+node.set_random_gen(random_gen=random_gen)
+</source>
+
+But if instead of doing that, we do the following:
+<source lang=python>
+node.set_random_gen(random_gen=RandomGen())
+</source>
+The reference count has not been incremented and therefore the object can be destroyed.
+
+The way to solve the problem is to make sure the C++ object is held by auto_ptr:
+<cpp>
+class_<RandomGen, std::auto_ptr<RandomGen> >("RandomGen")
+    ...
+    ;
+</cpp>
+
+Then make a thin wrapper function which takes an auto_ptr parameter:
+<cpp>
+void node_set_random_gen(Node& node, std::auto_ptr<RandomGen> random_gen) {
+    node.set_random_gen(random_gen.get());
+    node.release();
+}
+</cpp>
+
+Pointers returned via manage_new_object will also be held by auto_ptr, so this transfer-of-ownership will also work correctly.
+For further details, see [http://www.boost.org/doc/libs/1_46_0/libs/python/doc/v2/faq.html#ownership How can I wrap a function which needs to take ownership of a raw pointer?]
+
+*''' Translation from numpy.array to a float mdarray'''
