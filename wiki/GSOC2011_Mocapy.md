@@ -509,7 +509,7 @@ Mocapy++'s examples were implemented in Python, using the exposed API
 and data type conversions.
 <http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/python/examples/>
 
-#### Testing and Improvements of Mocapy Bindings
+#### Testing and Improving Mocapy Bindings
 
 Before integrating to Biopython, some unit testing was required, to
 detect possible errors and make sure future changes that break
@@ -594,9 +594,7 @@ Using distutils to create a package consists of the following steps:
 
 ### Integration with Biopython
 
-#### Integrate the Mocapy++ Python interface with Biopython
-
-''' API Design '''
+#### API Design
 
 In order to use Mocapy in conjunction with Biopython, a new module for
 PDB-specific features was added to Bio.PDB. This is where the API is
