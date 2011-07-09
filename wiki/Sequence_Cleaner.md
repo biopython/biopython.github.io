@@ -65,7 +65,7 @@ def sequence_cleaner(fasta_file,min_length=0,por_n=100):
 "FYI if you don't care about the 2nd and the 3rd parameters you are just gonna remove the duplicate sequences"
 ```
 
-Question
---------
+Questions
+---------
 
 Any question send an email to: genivaldo.gueiros@gmail.com
