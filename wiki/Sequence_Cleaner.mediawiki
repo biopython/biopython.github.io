@@ -43,9 +43,7 @@ def sequence_cleaner(fasta_file,min_length=0,por_n=100):
 "                    #1st: your fasta file 
 "                    #2nd: the user defines the minimum length (default value 0 ( It means you don't have to care about the minimum lenght)
 "                    #3rd: the user defines the % of N is allowed (default value 100 ( It means  you dont care to 'N' in your sequences))
-"FYI if you don't care about the 2nd and the 3rd parameters you are just gonna remove the duplicate sequences
-
-"
+"FYI if you don't care about the 2nd and the 3rd parameters you are just gonna remove the duplicate sequences"
 </source>
 
 == Question==
