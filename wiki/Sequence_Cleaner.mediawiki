@@ -21,7 +21,7 @@ def sequence_cleaner(fasta_file,min_length=0,por_n=100):
        # If the sequence passed in the test "is It clean?" and It isnt in the hash table , the sequence and Its id are going to be in the hash
             if sequence not in sequences:
                 sequences[sequence]=seq_record.id
-            #If It is in the hash table , We are just gonna take its ID and concatenate with the Id of other sequence that was exaclty the same.
+            #if it is already in the hash table, we're just gonna concatenate the ID of the current sequence to another one that is already in the hash table
             else:
                 sequences[sequence]+="_"+seq_record.id
 
