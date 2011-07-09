@@ -39,12 +39,14 @@ def sequence_cleaner(fasta_file,min_length=0,por_n=100):
 
 #sequence_cleaner("Aip_coral.fasta",10,10)
 
-"You should call the function 'sequence_cleaner', there are 3 basic parameters:
-"                    #1st: your fasta file 
-"                    #2nd: the user defines the minimum length (default value 0 ( It means you don't have to care about the minimum lenght)
-"                    #3rd: the user defines the % of N is allowed (default value 100 ( It means  you dont care to 'N' in your sequences))
-"FYI if you don't care about the 2nd and the 3rd parameters you are just gonna remove the duplicate sequences"
+
 </source>
+
+You should call the function 'sequence_cleaner', there are 3 basic parameters:
+                    #1st: your fasta file 
+                    #2nd: the user defines the minimum length (default value 0 ( It means you don't have to care about the minimum lenght)
+                    #3rd: the user defines the % of N is allowed (default value 100 ( It means  you dont care to 'N' in your sequences))
+FYI if you don't care about the 2nd and the 3rd parameters you are just gonna remove the duplicate sequences
 
 == Questions==
 Any question send an email to: genivaldo.gueiros@gmail.com
