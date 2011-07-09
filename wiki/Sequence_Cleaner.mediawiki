@@ -4,8 +4,6 @@ I wanna share my script using biopython to clean sequences up , you should know 
  
 Let me call my script as “Sequence_cleaner” and the big idea is to remove duplicate sequences, remove sequence too short ( the user define the minimum length)  and remove sequences which has too much unknown nucleotides (N)  ( the user define the % of N is allows ) and in the end the use can choose if he/she wanna have a file as output or print the result.
 
-
-
 == Script==
 <source lang=python>
 from Bio import SeqIO
