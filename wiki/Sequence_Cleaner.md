@@ -72,4 +72,4 @@ gonna remove the duplicate sequences
 Questions
 ---------
 
-Any question send an email to: genivaldo.gueiros@gmail.com
+Any question send an email to genivaldo.gueiros@gmail.com

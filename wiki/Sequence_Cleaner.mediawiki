@@ -49,5 +49,5 @@ You should call the function 'sequence_cleaner', there are 3 basic parameters:
 FYI if you don't care about the 2nd and the 3rd parameters you are just gonna remove the duplicate sequences
 
 == Questions==
-Any question send an email to: genivaldo.gueiros@gmail.com
+Any question send an email to genivaldo.gueiros@gmail.com
 
