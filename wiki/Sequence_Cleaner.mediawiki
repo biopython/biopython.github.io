@@ -48,6 +48,6 @@ You should call the function 'sequence_cleaner', there are 3 basic parameters:
          #3rd: the user defines the % of N is allowed (default value 100 ( It means  you dont care to 'N' in your sequences))
 FYI if you don't care about the 2nd and the 3rd parameters you are just gonna remove the duplicate sequences
 
-== Questions==
-Any question send an email to genivaldo.gueiros@gmail.com
+== Questions, Suggestions or Improvement==
+Send an email to genivaldo.gueiros@gmail.com
 

@@ -69,7 +69,7 @@ parameters:
 FYI if you don't care about the 2nd and the 3rd parameters you are just
 gonna remove the duplicate sequences
 
-Questions
----------
+Questions, Suggestions or Improvement
+-------------------------------------
 
-Any question send an email to genivaldo.gueiros@gmail.com
+Send an email to genivaldo.gueiros@gmail.com
