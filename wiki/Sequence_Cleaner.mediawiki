@@ -16,7 +16,7 @@ def sequence_cleaner(fasta_file,min_length=0,por_n=100):
     for seq_record in SeqIO.parse(fasta_file, "fasta"):
         #Take the current sequence
         sequence=str(seq_record.seq).upper()
-        # Check if the current sequence and be in the hash table as a "clean" sequence according with the user parameters
+        #Check if the current sequence is according to the user parameters
         if (len(sequence)>=min_length and (float(sequence.count("N"))/float(len(sequence)))*100<=por_n):
        # If the sequence passed in the test "is It clean?" and It isnt in the hash table , the sequence and Its id gonna be in the hash table
             if sequence not in sequences:
