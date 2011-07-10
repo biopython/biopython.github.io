@@ -118,15 +118,49 @@ Hosted at [http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/ the 
 
 == Progress ==
 
-'''Use cases
+'''Prototype implementation
 '''
+
+* Embedding the Python interpreter
+
+For a client program to be able to execute Python code, it is necessary to initialize the scripting environment. It is done by invoking the Py_Initialize() function. The interpreter is released by invoking the Py_Finalize() function.
+
+It is important to note, however, that any statement between Py_Initialize() and Py_Finalize() calls could throw an exception. If an exception is thrown, it must be either handled in a try/catch block, or the program must be terminated. Having this in mind, an previous example program could be made more robust by enveloping the statements between Py_Initialize() and Py_Finalize() in a try/catch block. Py_Finalize() safety could not be overstated. Currently Boost.Python has several global (or function-static) objects whose existence keeps reference counts from dropping to zero until the Boost.Python shared object is unloaded. This can cause a crash because when the reference counts do go to zero, there is no interpreter.. This poses a question if such a method of initializing the Python interpreter could be considered to be "easy to use", "safe" or even "non-intrusive", which are the major MocapyEXT design tenets. 
+
+The solution to this issue that is easy to use, safe and non-intrusive is surprisingly elegant and showcases the RAII (Resource Acquisition Is Initialization) idiom.
+
+* The lifetime of the Python interpreter
+
+The Python interpreter is initialized before the entry to the main function, and is released after the exit from the main function. No additional end-user effort is required, except to include the headers that define the necessary Python plug-in wrappers.
+
+* Compile/link dependencies
+
+The Python interpreter shall be linked to the client program (not to the Mocapy++ library). The end-user of the MocapyEXT shall be responsible for additional include and/or library paths to the Python headers and libraries that are necessary to compile and link the client program successfully.
+
+MocapyEXT also instantiates its static data members in such a manner that they are instantiated only once and in the library's compilation unit. In the C++ standard it is explicitly stated that
+
+"... in particular, the initialization (and any associated side-effects) of a static data member does not occur unless the static data member is itself used in a way that requires the definition of the static data member to exist."[cpp_std2003, temp.inst]
+
+The user shall not need to manage the instantiated static data members.
+
+* Thread safety guarantees
+
+The MocapyEXT plug-ins have the following thread-safety guarantees:
+
+• it is safe to call plug-in member functions from multiple threads;
+
+• it is safe to perform concurrent read-only accesses of the passed parameter containers;
+
+• it is safe to perform concurrent read/write accesses, if there is only one read or write access to the passed factual parameters at a time.
+
+Concurrent mutable access of the passed parameter containers requires synchronization, for example via reader-writer lock. Mutable access includes altering values within the container, invoking member functions that invalidate iterators, moving the container via the move constructor.
 
 * Plugin registration
 
 A user provides a name of a python library, a name of class and a list of factual arguments necessary for the construction of the model of the class. The MocapyExt library in turn then returns an instance of the new class. 
 
- plugin<DensityBase> p("density.py", "ClassName");
- boost::shared_ptr<DensityBase> n = p.create(''argument list'');
+ densities_plugin p("test_module", "DensitiesClassName");
+ densities_adapter n = p.densities(''argument list'');
 
 * Internal plugin registration
 
