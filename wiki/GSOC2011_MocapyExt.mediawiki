@@ -185,7 +185,7 @@ Basically, a user provides a name of a python library, a name of class and a lis
 
 ====Creation of a node====
 
-This is a simple example that showcases two different methods to initialize a plugin node.
+This is a simple example that showcases two different methods to initialize a plugin node. In this particular case, the module plugin_tests that has been used in the program implements a dummy discrete node of fixed length 1, and always returns [0,] as sampled value.
 
  #include <mocapy/plugin/ess_plugin.hpp>
  #include <mocapy/plugin/densities_plugin.hpp>

@@ -313,7 +313,10 @@ instance of the new class.
 #### Creation of a node
 
 This is a simple example that showcases two different methods to
-initialize a plugin node.
+initialize a plugin node. In this particular case, the module
+plugin\_tests that has been used in the program implements a dummy
+discrete node of fixed length 1, and always returns \[0,\] as sampled
+value.
 
 `#include <mocapy/plugin/ess_plugin.hpp>`  
 `#include <mocapy/plugin/densities_plugin.hpp>`  
