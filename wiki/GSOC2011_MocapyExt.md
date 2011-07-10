@@ -311,6 +311,23 @@ instance of the new class.
 `densities_plugin p("test_module", "DensitiesClassName");`  
 `densities_adapter n = p.densities(`*`argument` `list`*`);`
 
+#### Internal plugin registration
+
+In addition to the above, it might be desirable to create a registry of
+predefined density distribution classes. This would allow uniform
+instantiation and usage of classes that are loaded by employing Python
+embedding techniques as well as internally defined classes in Mocapy++.
+
+#### The lifetime of a class instance
+
+The lifetime of the objects ess and dens that have been created must not
+exceed the lifetime of their respective factory plugin(s). Objects ess
+and dens will try to decrement their reference count upon their
+destruction (thus effectively freeing up the resources allocated by the
+Python interpreter) and the valid Python interpreter instance must
+exist. Failure to ensure the proper destruction order will result in
+undefined behavior; most likely, segmentation faults.
+
 #### Creation of a node
 
 This is a simple example that showcases two different methods to
@@ -349,23 +366,6 @@ count (thus effectively freeing up the resources allocated by the Python
 interpreter) and the valid Python interpreter instance must exist.
 Failure to ensure the proper destruction order will result in undefined
 behavior.
-
-#### The lifetime of a class instance
-
-The lifetime of the objects ess and dens that have been created must not
-exceed the lifetime of their respective factory plugin(s). Objects ess
-and dens will try to decrement their reference count upon their
-destruction (thus effectively freeing up the resources allocated by the
-Python interpreter) and the valid Python interpreter instance must
-exist. Failure to ensure the proper destruction order will result in
-undefined behavior; most likely, segmentation faults.
-
-#### Internal plugin registration
-
-In addition to the above, it might be desirable to create a registry of
-predefined density distribution classes. This would allow uniform
-instantiation and usage of classes that are loaded by employing Python
-embedding techniques as well as internally defined classes in Mocapy++.
 
 ### Measuring performance
 
