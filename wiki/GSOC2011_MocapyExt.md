@@ -175,9 +175,9 @@ branch](http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/)
 Progress
 --------
 
-'''Prototype implementation '''
+### Prototype implementation
 
--   Embedding the Python interpreter
+#### Embedding the Python interpreter
 
 For a client program to be able to execute Python code, it is necessary
 to initialize the scripting environment. It is done by invoking the
@@ -203,14 +203,14 @@ The solution to this issue that is easy to use, safe and non-intrusive
 is surprisingly elegant and showcases the RAII (Resource Acquisition Is
 Initialization) idiom.
 
--   The lifetime of the Python interpreter
+#### The lifetime of the Python interpreter
 
 The Python interpreter is initialized before the entry to the main
 function, and is released after the exit from the main function. No
 additional end-user effort is required, except to include the headers
 that define the necessary Python plug-in wrappers.
 
--   Compile/link dependencies
+#### Compile/link dependencies
 
 The Python interpreter shall be linked to the client program (not to the
 Mocapy++ library). The end-user of the MocapyEXT shall be responsible
@@ -229,17 +229,22 @@ member to exist."\[cpp\_std2003, temp.inst\]
 
 The user shall not need to manage the instantiated static data members.
 
--   Thread safety guarantees
+#### Thread safety guarantees
 
 The MocapyEXT plug-ins have the following thread-safety guarantees:
 
-• it is safe to call plug-in member functions from multiple threads;
+-   it is safe to call plug-in member functions from multiple threads;
 
-• it is safe to perform concurrent read-only accesses of the passed
-parameter containers;
+<!-- -->
 
-• it is safe to perform concurrent read/write accesses, if there is only
-one read or write access to the passed factual parameters at a time.
+-   it is safe to perform concurrent read-only accesses of the passed
+    parameter containers;
+
+<!-- -->
+
+-   it is safe to perform concurrent read/write accesses, if there is
+    only one read or write access to the passed factual parameters at
+    a time.
 
 Concurrent mutable access of the passed parameter containers requires
 synchronization, for example via reader-writer lock. Mutable access
@@ -247,7 +252,7 @@ includes altering values within the container, invoking member functions
 that invalidate iterators, moving the container via the move
 constructor.
 
--   Plugin registration
+#### Plugin registration
 
 A user provides a name of a python library, a name of class and a list
 of factual arguments necessary for the construction of the model of the
@@ -257,7 +262,7 @@ class.
 `densities_plugin p("test_module", "DensitiesClassName");`  
 `densities_adapter n = p.densities(`*`argument` `list`*`);`
 
--   Internal plugin registration
+#### Internal plugin registration
 
 In addition to the above, it might be desirable to create a registry of
 predefined density distribution classes. This would allow uniform
