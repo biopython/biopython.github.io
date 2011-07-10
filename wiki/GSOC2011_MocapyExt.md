@@ -296,9 +296,9 @@ instance of the embedded interpreter for both types ESS and Densities.
 `int main()`  
 `{`  
 `  using namespace mocapy::ext;`  
-`  densities_plugin dens_pl("test", "DensitiesPython");`  
-`  ess_plugin ess_pl("test", "ESSPython");`  
-`  aggregate_plugin aggr_pl("test", "ESSPython", "DensitiesPython");`  
+`  densities_plugin dens_pl("plugin_tests", "DensitiesPython");`  
+`  ess_plugin ess_pl("plugin_tests", "ESSPython");`  
+`  aggregate_plugin aggr_pl("plugin_tests", "ESSPython", "DensitiesPython");`  
 `  return 0;`  
 `}`
 
