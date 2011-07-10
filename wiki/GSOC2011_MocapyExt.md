@@ -315,28 +315,27 @@ instance of the new class.
 This is a simple example that showcases two different methods to
 initialize a plugin node.
 
-1.  include &lt;mocapy/plugin/ess\_plugin.hpp&gt;
-2.  include &lt;mocapy/plugin/densities\_plugin.hpp&gt;
-3.  include &lt;mocapy/plugin/aggregate\_plugin.hpp&gt;
-4.  include &lt;mocapy/plugin/plugin\_node.hpp&gt;
+`#include <mocapy/plugin/ess_plugin.hpp>`  
+`#include <mocapy/plugin/densities_plugin.hpp>`  
+`#include <mocapy/plugin/aggregate_plugin.hpp>`  
+`#include <mocapy/plugin/plugin_node.hpp>`
 
-int main() {
-
-` using namespace mocapy::ext;`  
-` // Node initialization from two separately loaded modules`  
-` {`  
-`   ess_plugin ess("plugin_tests", "ESSPython");`  
-`   densities_plugin dens("plugin_tests", "DensitiesPython");`  
-`   plugin_node_type node(ess.ess(), dens.densities());`  
-` }`  
-` // Node initialization from a single loaded module`  
-` {`  
-`   aggregate_plugin pl("plugin_tests", "ESSPython", "DensitiesPython");`  
-`   plugin_node_type node(pl.ess(), pl.densities());`  
-` }`  
-` return 0;`
-
-}
+`int main()`  
+`{`  
+`  using namespace mocapy::ext;`  
+`  // Node initialization from two separately loaded modules`  
+`  {`  
+`    ess_plugin ess("plugin_tests", "ESSPython");`  
+`    densities_plugin dens("plugin_tests", "DensitiesPython");`  
+`    plugin_node_type node(ess.ess(), dens.densities());`  
+`  }`  
+`  // Node initialization from a single loaded module`  
+`  {`  
+`    aggregate_plugin pl("plugin_tests", "ESSPython", "DensitiesPython");`  
+`    plugin_node_type node(pl.ess(), pl.densities());`  
+`  }`  
+`  return 0;`  
+`}`
 
 #### The lifetime of a class instance
 
