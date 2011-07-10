@@ -164,10 +164,33 @@ Note that because the interpreter also searches in an installation-dependent def
 
 ====Plugin registration====
 
-A user provides a name of a python library, a name of class and a list of factual arguments necessary for the construction of the model of the class. The MocapyExt library in turn then returns an instance of the new class. 
+The minimal interface import example shows the usage of three plug-in classes: densities_plugin, ess_plugin and aggregate_plugin. The intended usage pattern for densities_plugin and ess_plugin are cases when types ESS  and Densities  are implemented in separate files -- one-class-per-file. Each class is loaded in their own interpreter context. The purpose of aggregate_plugin is to simplify the management of the the loaded types and to optimize the resources allocated for the embedded Python interpreter as aggregate_plugin creates only one instance of the embedded interpreter for both types ESS  and Densities.
+
+ #include <mocapy/plugin/ess_plugin.hpp>
+ #include <mocapy/plugin/densities_plugin.hpp>
+ #include <mocapy/plugin/aggregate_plugin.hpp>
+
+ int main()
+ {
+   using namespace mocapy::ext;
+
+   densities_plugin dens_pl("test", "DensitiesPython");
+   ess_plugin ess_pl("test", "ESSPython");
+
+   aggregate_plugin aggr_pl("test", "ESSPython", "DensitiesPython");
+
+   return 0;
+ }
+
+Basically, a user provides a name of a python library, a name of class and a list of factual arguments necessary for the construction of the model of the class. The MocapyExt library in turn then returns an instance of the new class.
 
  densities_plugin p("test_module", "DensitiesClassName");
  densities_adapter n = p.densities(''argument list'');
+
+
+====The lifetime of a class instance====
+
+The lifetime of the objects ess and dens that have been created must not exceed the lifetime of their respective factory plugin(s). Objects ess and dens will try to decrement their reference count upon their destruction (thus effectively freeing up the resources allocated by the Python interpreter) and the valid Python interpreter instance must exist. Failure to ensure the proper destruction order will result in undefined behavior; most likely, segmentation faults.
 
 ====Internal plugin registration====
 
