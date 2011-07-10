@@ -169,6 +169,7 @@ The minimal interface import example shows the usage of three plug-in classes: d
  #include <mocapy/plugin/ess_plugin.hpp>
  #include <mocapy/plugin/densities_plugin.hpp>
  #include <mocapy/plugin/aggregate_plugin.hpp>
+
  int main()
  {
    using namespace mocapy::ext;
