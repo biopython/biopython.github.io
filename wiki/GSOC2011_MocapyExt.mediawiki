@@ -169,16 +169,12 @@ The minimal interface import example shows the usage of three plug-in classes: d
  #include <mocapy/plugin/ess_plugin.hpp>
  #include <mocapy/plugin/densities_plugin.hpp>
  #include <mocapy/plugin/aggregate_plugin.hpp>
-
  int main()
  {
    using namespace mocapy::ext;
-
    densities_plugin dens_pl("test", "DensitiesPython");
    ess_plugin ess_pl("test", "ESSPython");
-
    aggregate_plugin aggr_pl("test", "ESSPython", "DensitiesPython");
-
    return 0;
  }
 
@@ -186,7 +182,6 @@ Basically, a user provides a name of a python library, a name of class and a lis
 
  densities_plugin p("test_module", "DensitiesClassName");
  densities_adapter n = p.densities(''argument list'');
-
 
 ====The lifetime of a class instance====
 

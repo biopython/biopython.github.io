@@ -292,17 +292,13 @@ instance of the embedded interpreter for both types ESS and Densities.
 
 `#include <mocapy/plugin/ess_plugin.hpp>`  
 `#include <mocapy/plugin/densities_plugin.hpp>`  
-`#include <mocapy/plugin/aggregate_plugin.hpp>`
-
+`#include <mocapy/plugin/aggregate_plugin.hpp>`  
 `int main()`  
 `{`  
-`  using namespace mocapy::ext;`
-
+`  using namespace mocapy::ext;`  
 `  densities_plugin dens_pl("test", "DensitiesPython");`  
-`  ess_plugin ess_pl("test", "ESSPython");`
-
-`  aggregate_plugin aggr_pl("test", "ESSPython", "DensitiesPython");`
-
+`  ess_plugin ess_pl("test", "ESSPython");`  
+`  aggregate_plugin aggr_pl("test", "ESSPython", "DensitiesPython");`  
 `  return 0;`  
 `}`
 
