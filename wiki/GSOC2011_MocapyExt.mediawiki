@@ -214,12 +214,12 @@ This is a simple example that showcases two different methods to initialize a pl
    {
      ess_plugin ess("plugin_tests", "ESSPython");
      densities_plugin dens("plugin_tests", "DensitiesPython");
-     plugin_node_type node(ess.ess(), dens.densities());
+     plugin_node_type node(ess.ess(''argument list''), dens.densities(''argument list''));
    }
    // Node initialization from a single loaded module
    {
      aggregate_plugin pl("plugin_tests", "ESSPython", "DensitiesPython");
-     plugin_node_type node(pl.ess(), pl.densities());
+     plugin_node_type node(pl.ess(''argument list''), pl.densities(''argument list''));
    }
    return 0;
  }
