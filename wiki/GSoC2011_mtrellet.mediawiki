@@ -150,4 +150,18 @@ We find these different modules : '''__init__'''(self, model, id=None, threshold
 
 * Theory
 
-In order to have several useful information about residues and in the aim to use them for further calculations inside interfaces, we want to implement a subclass of residues. This new class would be integrate as an inherited class of Residues (as DisorderedResidues) and would calculate by default few information about residues as polar charge, hydrophobicity or weight. We first thought to create a copy of an existing residue to create an extended residue but, with regards to the memory consumming, we preferred change directly the residue type. Thus, we change the class of the residue and perform calculation during the initialization of the new ExtendedResidue class.
+In order to have several useful information about residues and in the aim to use them for further calculations inside interfaces, we want to implement a subclass of residues. This new class would be integrate as an inherited class of Residues (as DisorderedResidues) and would calculate by default few information about residues as polar charge, hydrophobicity or weight. We first thought to create a copy of an existing residue to create an extended residue but, with regards to the memory consumming, we preferred change directly the residue type. Thus, we change the class of the residue and perform calculation during the initialization of the new ExtendedResidue class. So, changing of a residue is done by Residue.extend()
+
+* Coding
+
+ExtendedResidue is an inherited class from Residue, these are the different methods inside :
+
+'''__init__''': Sets charge, mass and hydrophobicity of a residue.
+
+'''__repr__''': Defines a new id for the residue, based on the residue id.
+
+'''set_hydrophobicity''': Sets the residue hydrophobicoty depending on the scale choice, KD {Kyle and Doolittle}, OHM {Sweet and Eisenberg} or consensus (by default= consensus). Returns the scale chosen.
+
+'''set_charge''': Sets the relative charge of a residue with regards to its pka and the pH defined by the user (by default 7.0)
+
+'''set_mass''': Sets the mass of a residue according to its atoms mass

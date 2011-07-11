@@ -213,4 +213,24 @@ hydrophobicity or weight. We first thought to create a copy of an
 existing residue to create an extended residue but, with regards to the
 memory consumming, we preferred change directly the residue type. Thus,
 we change the class of the residue and perform calculation during the
-initialization of the new ExtendedResidue class.
+initialization of the new ExtendedResidue class. So, changing of a
+residue is done by Residue.extend()
+
+-   Coding
+
+ExtendedResidue is an inherited class from Residue, these are the
+different methods inside :
+
+**\_\_init\_\_**: Sets charge, mass and hydrophobicity of a residue.
+
+**\_\_repr\_\_**: Defines a new id for the residue, based on the residue
+id.
+
+**set\_hydrophobicity**: Sets the residue hydrophobicoty depending on
+the scale choice, KD {Kyle and Doolittle}, OHM {Sweet and Eisenberg} or
+consensus (by default= consensus). Returns the scale chosen.
+
+**set\_charge**: Sets the relative charge of a residue with regards to
+its pka and the pH defined by the user (by default 7.0)
+
+**set\_mass**: Sets the mass of a residue according to its atoms mass
