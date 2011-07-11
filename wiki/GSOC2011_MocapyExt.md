@@ -311,11 +311,12 @@ instance of the new class.
 `densities_plugin p("test_module", "DensitiesClassName");`  
 `densities_adapter n = p.densities(`*`argument` `list`*`);`
 
-The given *argument list* would parametrize the initialization of
-Densities object. Parameters are forwarded to the Python API and
-converted using the type conversion facilities provided by the
-Boost.Python library. The mechanism is general and the user can convert
-any arbitrary type T to its equivalent in Python.
+The given *argument list* (up to 6 arguments are supported) would
+parametrize the initialization of Densities object. Parameters are
+forwarded to the Python API and converted using the type conversion
+facilities provided by the Boost.Python library. The mechanism is
+general and the user can convert any arbitrary type T to its equivalent
+in Python.
 
 The parameters are forwarded via const-references. This method accepts
 and forwards arbitrary typed arguments, at the cost of always treating
