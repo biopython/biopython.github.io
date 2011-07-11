@@ -327,8 +327,8 @@ deficiency, which is being addressed in Core Issue
 actually works in our favor, because this prevents ill-intended attempts
 to pass a function to the Python interpreter.
 
-Any further invocation of ess and dens pointee member functions
-automatically calls a corresponding class method in Python.
+Any further invocation of ess and dens member functions automatically
+calls a corresponding class method in Python.
 
 #### Internal plugin registration
 
