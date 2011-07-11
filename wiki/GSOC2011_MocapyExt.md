@@ -194,7 +194,7 @@ Py\_Finalize() safety could not be overstated. Currently Boost.Python
 has several global (or function-static) objects whose existence keeps
 reference counts from dropping to zero until the Boost.Python shared
 object is unloaded. This can cause a crash because when the reference
-counts do go to zero, there is no interpreter.. This poses a question if
+counts do go to zero, there is no interpreter. This poses a question if
 such a method of initializing the Python interpreter could be considered
 to be "easy to use", "safe" or even "non-intrusive", which are the major
 MocapyEXT design tenets.
