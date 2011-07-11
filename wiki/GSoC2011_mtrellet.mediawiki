@@ -145,3 +145,9 @@ We find these different modules : '''__init__'''(self, model, id=None, threshold
 
 [https://github.com/mtrellet/biopython/commit/4cfa4359d0f927609c076ed7b66f37add5aabdfb Interface.py]
 [https://github.com/mtrellet/biopython/commit/194efe37ac8f88d688e0cf528f1fb896c8441866 InterfaceBuilder.py]
+
+=== Extension of residues ===
+
+* Theory
+
+In order to have several useful information about residues and in the aim to use them for further calculations inside interfaces, we want to implement a subclass of residues. This new class would be integrate as an inherited class of Residues (as DisorderedResidues) and would calculate by default few information about residues as polar charge, hydrophobicity or weight. We first thought to create a copy of an existing residue to create an extended residue but, with regards to the memory consumming, we preferred change directly the residue type. Thus, we change the class of the residue and perform calculation during the initialization of the new ExtendedResidue class.
