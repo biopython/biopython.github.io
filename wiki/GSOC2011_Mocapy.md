@@ -592,6 +592,14 @@ Using distutils to create a package consists of the following steps:
 -   create a source distribution;
 -   create a binary distribution.
 
+For Mocapy, it was also necessary to build the extension modules.
+[Building Extensions with
+boost.python](http://wiki.python.org/moin/boost.python/BuildingExtensions)
+describes ways to build extensions using distutils.
+
+Mocapy's setup.py can be found at
+<http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/python/setup.py?revision=418&view=markup>
+
 ### Integration with Biopython
 
 #### API Design
