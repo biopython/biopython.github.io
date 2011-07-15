@@ -352,6 +352,7 @@ Using the setup script, mocapy installation is done in a few steps:
 * Issue "python setup.py build", to build the extension modules;
 * Issue "python setup.py install", to install the package (normally, the install procedure does the step above in case you didn't).
 
+
 === Integration with Biopython ===
 
 ==== API Design ====
