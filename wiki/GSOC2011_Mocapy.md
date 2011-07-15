@@ -641,17 +641,15 @@ a dynamic Bayesian network (DBN) with directional statistics.
 
 <img src="Journal.pcbi.1000406.g002.png" title="Barnacle DBN (doi:10.1371/journal.pcbi.1000406.g002)" alt="Barnacle DBN (doi:10.1371/journal.pcbi.1000406.g002)" width="600" />
 
-In the graph, the nodes represent stochastic variables, and the arrows
-encode their conditional independencies. The shown DBN represents nine
-consecutive dihedral angles, where the seven central angles originate
-from a single nucleotide. Each slice j (a column of three variables)
-corresponds to one dihedral angle in an RNA fragment. The variables in
-each slice are: an angle identifier, Dj, a hidden variable, Hj, and an
-angular variable, Aj. The angle identifier keeps track of which dihedral
-angle is represented by a slice, while the angular node models the
-actual dihedral angle value. The hidden nodes induce dependencies
-between all angles along the sequence (and not just between angles in
-consecutive slices).
+The DBN represents nine consecutive dihedral angles, where the seven
+central angles originate from a single nucleotide. Each slice j (a
+column of three variables) corresponds to one dihedral angle in an RNA
+fragment. The variables in each slice are: an angle identifier, Dj, a
+hidden variable, Hj, and an angular variable, Aj. The angle identifier
+keeps track of which dihedral angle is represented by a slice, while the
+angular node models the actual dihedral angle value. The hidden nodes
+induce dependencies between all angles along the sequence (and not just
+between angles in consecutive slices).
 
 The original code for Barnacle, which contains an embedded version of
 Mocapy written in Python, can be found at
