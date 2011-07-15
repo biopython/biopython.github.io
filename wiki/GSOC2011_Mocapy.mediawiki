@@ -392,6 +392,7 @@ print 'log likelihood = ', model.get_log_likelihood()
 model.save_structure('structure01.pdb')
 </source>
 
+
 ==== TorusDBN ====
 
 In order to use Mocapy in Bio.PDB the following paper and the source code of the TorusDBN model are being studied. 
