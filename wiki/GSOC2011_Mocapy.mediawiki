@@ -366,6 +366,7 @@ Things that are being studied to be included in the module:
 * use this data to train a TorusDBN-like model;
 * automatically decide on the best model using the BIC criterion.
 
+
 ==== Barnacle ====
 
 Frellsen J, Moltke I, Thiim M, Mardia KV, Ferkinghoff-Borg J, et al. 2009 [http://www.ploscompbiol.org/article/info:doi/10.1371/journal.pcbi.1000406 A Probabilistic Model of RNA Conformational Space]. PLoS Comput Biol 5(6): e1000406. doi:10.1371/journal.pcbi.1000406.
