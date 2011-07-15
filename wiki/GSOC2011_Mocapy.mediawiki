@@ -366,7 +366,33 @@ Things that are being studied to be included in the module:
 * use this data to train a TorusDBN-like model;
 * automatically decide on the best model using the BIC criterion.
 
-''' TorusDBN '''
+==== Barnacle ====
+
+Frellsen J, Moltke I, Thiim M, Mardia KV, Ferkinghoff-Borg J, et al. 2009 [http://www.ploscompbiol.org/article/info:doi/10.1371/journal.pcbi.1000406 A Probabilistic Model of RNA Conformational Space]. PLoS Comput Biol 5(6): e1000406. doi:10.1371/journal.pcbi.1000406.
+
+RNA 3-D structure prediction methods require an accurate energy function and a conformational sampling procedure. Barnacle focuses on the problem of conformational sampling.
+
+The aim of BARNACLE (BAyesian network model of RNA using Circular distributions and maximum Likelihood Estimation) is to capture both the marginal distributions of each of the angles and the local dependencies between them. Barnacle describes RNA structure in a natural continuous space. It can be used purely as a proposal distribution, but also as an energy term enforcing realistic local conformations. The model combines a dynamic Bayesian network (DBN) with directional statistics.
+
+[[File:Journal.pcbi.1000406.g002.png|600px|thumb|center|Barnacle DBN (doi:10.1371/journal.pcbi.1000406.g002)]]
+
+In the graph, the nodes represent stochastic variables, and the arrows encode their conditional independencies. The shown DBN represents nine consecutive dihedral angles, where the seven central angles originate from a single nucleotide. Each slice j (a column of three variables) corresponds to one dihedral angle in an RNA fragment. The variables in each slice are: an angle identifier, Dj, a hidden variable, Hj, and an angular variable, Aj. The angle identifier keeps track of which dihedral angle is represented by a slice, while the angular node models the actual dihedral angle value. The hidden nodes induce dependencies between all angles along the sequence (and not just between angles in consecutive slices).
+
+
+The original code for Barnacle, which contains an embedded version of Mocapy written in Python, can be found at http://sourceforge.net/projects/barnacle-rna.
+
+The modified version of Barnacle, changed to work with the Mocapy bindings can be found at https://github.com/mchelem/biopython/tree/master/Bio/PDB/Barnacle.
+
+Here is an example of use:
+<source lang=python>
+model = Barnacle('ACCU')
+model.sample()
+print 'log likelihood = ', model.get_log_likelihood()
+model.save_structure('structure01.pdb')
+</source>
+
+
+==== TorusDBN ====
 
 In order to use Mocapy in Bio.PDB the following paper and the source code of the TorusDBN model are being studied. 
 
