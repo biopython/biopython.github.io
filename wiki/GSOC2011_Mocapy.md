@@ -585,15 +585,15 @@ x = numpy.array([[1,2,3,4,5,6]], dtype=numpy.float64)
 [Distutils](http://docs.python.org/distutils/index.html) was used to
 distribute Mocapy's Python modules.
 
-For Mocapy, it was also necessary to build the extension modules.
-[Building Extensions with
+Besides distributing the python code, it was also necessary to build the
+extension modules. [Building Extensions with
 boost.python](http://wiki.python.org/moin/boost.python/BuildingExtensions)
 describes ways to build extensions using distutils.
 
 Mocapy's setup.py can be found at
 <http://mocapy.svn.sourceforge.net/viewvc/mocapy/branches/gSoC11/python/setup.py?revision=418&view=markup>
 
-With the script, mocapy installation is done in a few steps:
+Using the setup script, mocapy installation is done in a few steps:
 
 -   Build the mocapy library using cmake (usual procedure described in
     mocapy docs);
