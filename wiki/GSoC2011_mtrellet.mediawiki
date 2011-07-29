@@ -165,3 +165,9 @@ ExtendedResidue is an inherited class from Residue, these are the different meth
 '''set_charge''': Sets the relative charge of a residue with regards to its pka and the pH defined by the user (by default 7.0)
 
 '''set_mass''': Sets the mass of a residue according to its atoms mass
+
+=== Interface information ===
+
+* Theory
+
+In order to work with complexes interface, few important information are needed.

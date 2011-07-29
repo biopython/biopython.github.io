@@ -234,3 +234,10 @@ consensus (by default= consensus). Returns the scale chosen.
 its pka and the pH defined by the user (by default 7.0)
 
 **set\_mass**: Sets the mass of a residue according to its atoms mass
+
+### Interface information
+
+-   Theory
+
+In order to work with complexes interface, few important information are
+needed.
