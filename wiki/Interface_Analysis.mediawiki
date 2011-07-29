@@ -20,3 +20,7 @@ Extraction of an interface is done from a complex PDB you have to parse
  
  parser=PDBParser()
  structure=parser.get_structure('test', '/home/directory/of/your/PDB/test.pdb')
+
+Then the extraction of the interface is done in only one line
+
+ interface=InterfaceBuilder.InterfaceBuilder(s[0]).get_interface()
