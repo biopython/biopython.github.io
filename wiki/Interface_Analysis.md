@@ -28,3 +28,7 @@ installation of Biopython and python 2.7. A more precise definition of
 the interface can be done using the NACCESS module present in Biopython
 but require a stable version of Naccess (available in
 [NACCESS](http://www.bioinf.manchester.ac.uk/naccess/)).
+
+### How to use
+
+Extraction of an interface is done from a complex PDB you have to parse
