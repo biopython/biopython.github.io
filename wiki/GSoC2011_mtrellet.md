@@ -18,6 +18,8 @@ Eric Talevich
 
 '''Interface analysis wikipage '''
 
+[Interface analysis](http://biopython.org/wiki/Interface_Analysis)
+
 Abstract
 --------
 
