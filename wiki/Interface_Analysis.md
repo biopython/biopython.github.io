@@ -32,3 +32,8 @@ but require a stable version of Naccess (available in
 ### How to use
 
 Extraction of an interface is done from a complex PDB you have to parse
+
+`from Bio.PDB import InterfaceBuilder`  
+  
+`parser=PDBParser()`  
+`structure=parser.get_structure('test', '/home/directory/of/your/PDB/test.pdb')`
