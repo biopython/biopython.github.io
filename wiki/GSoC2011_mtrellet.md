@@ -16,7 +16,11 @@ João Rodrigues
 
 Eric Talevich
 
-'''Interface analysis wikipage '''
+Interface analysis wikipage
+---------------------------
+
+You can find a descriptive and a "how to use" part of the Interface
+analysis module at the following link:
 
 [Interface analysis](http://biopython.org/wiki/Interface_Analysis)
 
