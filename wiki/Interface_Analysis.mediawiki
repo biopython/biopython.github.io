@@ -23,4 +23,4 @@ Extraction of an interface is done from a complex PDB you have to parse
 
 Then the extraction of the interface is done in only one line
 
- interface=InterfaceBuilder.InterfaceBuilder(s[0]).get_interface()
+ interface=InterfaceBuilder.InterfaceBuilder(structure[0]).get_interface()
