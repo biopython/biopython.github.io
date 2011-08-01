@@ -156,9 +156,9 @@ Concurrent mutable access of the passed parameter containers requires synchroniz
 
 ====The module search path====
 
-When a module foo that contains ESS  or Densities  definitions is imported, the embedded Python interpreter searches for a file named foo.py in the list of directories specified by the environment variable PYTHONPATH. Paths in this environment variable are listed in the same manner as in the shell variable PATH. When PYTHONPATH is not set, or when the file is not found there, the search continues in an installation-dependent default path; on Unix, this is usually .:/usr/local/lib/python.
+When a module foo that contains ESS  or Densities  definitions is imported, the embedded Python interpreter searches for a file named foo.py in the list of directories specified by the environment variable PYTHONPATH and the current path. 
 
-It is important to note that this behavior differs from the default in that regard that modules are not looked up in the current path or, more precisely, modules are not searched in the list of directories given by the variable sys.path, which is initialized from the directory containing the input script, PYTHONPATH and the installation-dependent default. The reason is that sys and sys.path are not imported into the embedded Python environment. A user that relies on scripts being in the same directory as a client program should add "." (the same applies to any other specific directory) to the PYTHONPATH environment variable.
+Before proceeding to import a module, sys.path list is explicitly appended with the current path. A user that relies on scripts being in some other directory than a client program should list the paths in the PYTHONPATH environment variable.
 
 Note that because the interpreter also searches in an installation-dependent default path, it is important that the file containing ESS or Densities  definitions not have the same name as a standard module.
 
