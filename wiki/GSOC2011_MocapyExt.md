@@ -322,13 +322,6 @@ to pass a function to the Python interpreter.
 Any further invocation of ess and dens member functions automatically
 calls a corresponding class method in Python.
 
-#### Internal plugin registration
-
-In addition to the above, it might be desirable to create a registry of
-predefined density distribution classes. This would allow uniform
-instantiation and usage of classes that are loaded by employing Python
-embedding techniques as well as internally defined classes in Mocapy++.
-
 #### The lifetime of a class instance
 
 The lifetime of ESS computer and Densities objects (respectively, ess
