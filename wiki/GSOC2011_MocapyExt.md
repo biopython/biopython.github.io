@@ -371,6 +371,10 @@ interpreter) and the valid Python interpreter instance must exist.
 Failure to ensure the proper destruction order will result in undefined
 behavior.
 
+#### Node output
+
+#### Node serialization
+
 ### Measuring performance
 
 It is interesting to measure how much plugin interface costs compared to
