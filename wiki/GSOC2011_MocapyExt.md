@@ -375,13 +375,13 @@ behavior.
 
 #### Node serialization
 
-MocapyEXT preserves the old Mocapy++ ChildNode class template
+The MocapyEXT preserves the old Mocapy++ ChildNode class template
 serialization behaviour, which means that for ESS computers that do not
 need to be serialized (this includes kentess, gaussianess, poissoness,
-and others) no serialization will happen. However, MocapyEXT necessarily
-has to serialize the Python plugin that implements a ESS computer in
-order to preserve the module and the name of the class, so that the ESS
-computer could be later deserialized.
+and others) no serialization will happen. However, the MocapyEXT
+necessarily has to serialize the Python plugin that implements a ESS
+computer in order to preserve the module and the name of the class, so
+that the ESS computer could be later deserialized.
 
 It also must be noted that after deserialization the ESS computer and
 Densities will not share the same Python interpreter instance, even if
