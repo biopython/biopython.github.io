@@ -254,7 +254,7 @@ constructor.
 
 #### The module search path
 
-When a module foo that contains ESS or Densities definitions is
+When a module foo that contains ESS or Densities definitions is being
 imported, the embedded Python interpreter searches for a file named
 foo.py in the list of directories specified by the environment variable
 PYTHONPATH and the current path.
