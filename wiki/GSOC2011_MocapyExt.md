@@ -331,10 +331,10 @@ embedding techniques as well as internally defined classes in Mocapy++.
 
 #### The lifetime of a class instance
 
-The lifetime of the objects ess and dens that have been created may
-exceed the lifetime of their respective factory plugin(s). Objects ess
-and dens preserve reference counted pointers to the Python interpreter
-thus a valid Python interpreter instance exists until the destruction of
+The lifetime of ESS computer and Densities objects may exceed the
+lifetime of their respective factory plugin(s). Objects ess and dens
+preserve reference counted pointers to the Python interpreter, thus a
+valid Python interpreter instance exists until the destruction of
 objects ess and dens.
 
 #### Creation of a node
