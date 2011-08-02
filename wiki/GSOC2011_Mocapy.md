@@ -553,10 +553,11 @@ amino-acid sequence.
 '''Solution: ''' A continuous probabilistic model of the local
 sequence–structure preferences of proteins in atomic detail. The
 backbone of a protein can be represented by a sequence of dihedral angle
-pairs, φ and ψ that are well known from the Ramachandran plot. Two
-angles, both with values ranging from −180° to 180°, define a point on
-the torus. Hence, the backbone structure of a protein can be fully
-parameterized as a sequence of such points.
+pairs, φ and ψ that are well known from the [Ramachandran
+plot](http://en.wikipedia.org/wiki/Ramachandran_plot). Two angles, both
+with values ranging from −180° to 180°, define a point on the torus.
+Hence, the backbone structure of a protein can be fully parameterized as
+a sequence of such points.
 
 The TorusDBN model is implemented as part of the backboneDBN package,
 which is freely available at
