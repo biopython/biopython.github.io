@@ -85,7 +85,7 @@ object:
 
 `ID: Z78439.1`  
 `Name: Z78439`  
-`Desription: P.barbatum 5.8S rRNA gene and ITS1 and ITS2 DNA.`  
+`Description: P.barbatum 5.8S rRNA gene and ITS1 and ITS2 DNA.`  
 `Number of features: 5`  
 `/source=Paphiopedilum barbatum`  
 `/taxonomy=['Eukaryota', 'Viridiplantae', 'Streptophyta', 'Embryophyta', ..., 'Paphiopedilum']`  
