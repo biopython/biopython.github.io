@@ -391,13 +391,9 @@ they are implemented in the same module.
 It is interesting to measure how much plugin interface costs compared to
 the implementation of ESS and Densities computers themselves.
 
-Nominal precision of quantum: 5%
-
-Timer overhead (t\_c) (ticks): 79.9951
-
-Jitter (ticks): 0.0140693
-
-Approx clock frequency (GHz): 1.66473
+''Nominal precision of quantum: 5% ''Timer overhead (t\_c) (ticks):
+79.9951 ''Jitter (ticks): 0.0140693 ''Approx clock frequency (GHz):
+1.66473
 
 `            Conf. int.     4.53e+04     5.03e+04     5.53e+04`
 
