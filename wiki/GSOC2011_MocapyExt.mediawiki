@@ -235,3 +235,17 @@ It also must be noted that after deserialization the ESS computer and Densities 
 ===Measuring performance===
 
 It is interesting to measure how much plugin interface costs compared to the implementation of ESS and Densities computers themselves.
+
+
+Nominal precision of quantum: 5%
+Timer overhead (t_c) (ticks): 79.9951
+Jitter               (ticks): 0.0140693
+Approx clock frequency (GHz): 1.66473
+
+             Conf. int.     4.53e+04     5.03e+04     5.53e+04
+Speedup percentages based on Wilcoxon matched pair confidence intervals.
+   Func. A vs   Func. B      Minimum       Median      Maximum
+                          (% faster)   (% faster)   (% faster)
+                                 717          719          724
+                                 718          725          730
+                              -0.673       -0.251       0.0774
