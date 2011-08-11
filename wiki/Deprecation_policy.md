@@ -40,7 +40,7 @@ Biopython:
 `              " in a future release of Biopython. Please use the SomeOtherModule"`  
 `              " instead, as described in the Tutorial. If you would like to"`  
 `              " continue using Bio.SomeModule, please contact the Biopython"`  
-`              " developers via the mailing list.""",`  
+`              " developers via the mailing list.",`  
 `              DeprecationWarning)`
 
 -   In principle, we require that two Biopython releases carrying the

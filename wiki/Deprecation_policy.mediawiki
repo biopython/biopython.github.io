@@ -18,7 +18,7 @@ This is the current policy for deprecating and removing code from Biopython:
                " in a future release of Biopython. Please use the SomeOtherModule"
                " instead, as described in the Tutorial. If you would like to"
                " continue using Bio.SomeModule, please contact the Biopython"
-               " developers via the mailing list.""",
+               " developers via the mailing list.",
                DeprecationWarning)
 * In principle, we require that two Biopython releases carrying the deprecation warning are made before the code can be actually removed.
 * In addition, at least one year should pass between the first Biopython release carrying the deprecation warning, and the first Biopython release in which the code has been actually removed.
