@@ -362,14 +362,9 @@ value.
 `  return 0;`  
 `}`
 
-plugin\_node\_type is a typedef of the ChildNode class template. It is
-important to reiterate that the lifetime of a node must not exceed the
-lifetime of plug-in factories. Upon the destruction of a node, its
-member variables ess and densities will try to decrement their reference
-count (thus effectively freeing up the resources allocated by the Python
-interpreter) and the valid Python interpreter instance must exist.
-Failure to ensure the proper destruction order will result in undefined
-behavior.
+plugin\_node\_type is a typedef of the ChildNode class template. Here we
+also note that the lifetime of a node is independent from the lifetime
+of plug-in factories.
 
 #### Node output
 
