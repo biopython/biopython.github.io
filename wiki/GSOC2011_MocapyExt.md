@@ -369,7 +369,7 @@ of plug-in factories.
 #### Node output
 
 A plugin node can be output to a std::ostream. The content of the output
-is the same as repr(Z), where Z is either ESS computer or Densities
+is the same as *repr(Z)*, where *Z* is either ESS computer or Densities
 object.
 
 #### Node serialization
