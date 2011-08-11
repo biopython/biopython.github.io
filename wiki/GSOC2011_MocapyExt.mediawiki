@@ -252,4 +252,19 @@ Speedup percentages based on Wilcoxon matched pair confidence intervals.
                           (% faster)   (% faster)   (% faster)
       N    vs   S                717          719          724
       N    vs   A                718          725          730
-      A    vs   S              -0.673       -0.251       0.0774
+      A    vs   S             -0.673       -0.251       0.0774
+
+
+Test results show that using MocapyEXT plugin interface incurs some performance penalty. It must be noted, however, that tests also performed repetitive construction of ESS and Densities instances.
+
+
+             Conf. int.     1.94e+04     2.15e+04     2.37e+04
+Speedup percentages based on Wilcoxon matched pair confidence intervals.
+   Func. A vs   Func. B      Minimum       Median      Maximum
+                          (% faster)   (% faster)   (% faster)
+      N    vs   S                240          242          243
+      N    vs   A                239          243          245
+      A    vs   S              -1.24        -0.51        -0.25
+
+
+Repeated tests without the construction of ESS and Densities objects show that invocation of a method though the MocapyEXT interface is only ~2,5 times slower than to invoke a member function of natively implemented ESS and Densities objects. It is obvious that in a real-world scenario node construction, sampling, likelihood computation, etc. would be more likely to constitute the better part of the running time as compared to the invocations of methods themselves.
