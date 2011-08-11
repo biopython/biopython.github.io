@@ -27,6 +27,12 @@ This table lists the file formats that Bio.SeqIO can read, write and index, with
 ! Index
 ! Notes
 |-
+| abi
+| 1.58
+| No
+| N/A
+| Reads the ABI "Sanger" capillary sequence traces files, including the PHRED quality scores for the base calls. This allows ABI to FASTQ conversion. Note each ABI file contains one and only one sequence (so there is no point in indexing the file).
+|-
 | ace
 | 1.47
 | No
