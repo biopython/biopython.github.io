@@ -392,8 +392,8 @@ It is interesting to measure how much plugin interface costs compared to
 the implementation of ESS and Densities computers themselves.
 
 We measure the relative performance of tests named N, S, and A. All
-tests invoke member functions of the ESS and Densities computers, albeit
-no particular computation is carried out.
+tests invoke the member functions of the ESS and Densities computers,
+albeit no particular computation is carried out.
 
 N test stands for N(ative), which means that pure C++ implementation of
 ESS and Densities computers were used in the test.
