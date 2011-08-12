@@ -251,4 +251,18 @@ In order to work with complexes interface, few important information are
 needed. Some of them are calculated during the initialization of the
 interface and others are calculated via functions.
 
--   
+-   Coding
+
+Private functions in InterfaceBuilder (used during the Interface
+initialization):
+
+**\_secondary\_structure**: Calculates secondary structure of each
+residue of the Interface using DSSP.
+
+**\_rsa\_calculation**: Used to define the interface according to the
+residues accessibility.
+
+Public functions in Interface (used by the user):
+
+**set\_neighbors**:Creates a dictionary of neighbors for each residue of
+the interface.

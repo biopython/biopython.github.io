@@ -177,4 +177,14 @@ ExtendedResidue is an inherited class from Residue, these are the different meth
 
 In order to work with complexes interface, few important information are needed. Some of them are calculated during the initialization of the interface and others are calculated via functions.
 
-*
+* Coding
+
+Private functions in InterfaceBuilder (used during the Interface initialization):
+
+'''_secondary_structure''': Calculates secondary structure of each residue of the Interface using DSSP.
+
+'''_rsa_calculation''': Used to define the interface according to the residues accessibility.
+
+Public functions in Interface (used by the user):
+
+'''set_neighbors''':Creates a dictionary of neighbors for each residue of the interface.
