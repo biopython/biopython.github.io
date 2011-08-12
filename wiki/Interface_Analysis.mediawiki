@@ -14,7 +14,7 @@ A more precise definition of the interface can be done using the NACCESS module 
 
 === How to use ===
 
-* Initialization
+'''Initialization'''
 
 Extraction of an interface is done from a complex PDB
 
@@ -29,36 +29,36 @@ Then the extraction of the interface is done in only one line
 
 From the Interface object some function and information are included
 
-'''Get chains'''
+* Get chains
  chains=interface.get_chains()
  for c in chains:
    print c
 
-'''Add a residue'''
+* Add a residue
  interface.add(structure[0]['A'][24])
 
-'''Get secondary structure distribution'''
+* Get secondary structure distribution
  ss=interface.secondary_structure
 
-* Further own calculations
+'''Further own calculations'''
 
 Several statistics and information can be calculated from a single interface
 
-'''Polarity statistics'''
+* Polarity statistics
  percent=interface.calculate_polarity()
 
-'''Set up a dictionary of neighbors for each residues of the Interface'''
+* Set up a dictionary of neighbors for each residues of the Interface
  neighbors=interface.set_neighbors()
 
-'''Calculate accessibility of Interface and the complex'''
+* Calculate accessibility of Interface and the complex
  access=interface.calculate_accessibility()
 
-* Comparison of 2 interfaces
+'''Comparison of 2 interfaces'''
 
 In order to compare 2 interfaces, so indirectly 2 complexes, few calculations can be done
 
-'''Root Mean Square Deviation'''
+* Root Mean Square Deviation
  rmsd=interface.rmsd(interface2)
 
-'''Fraction of Common Contacts'''
+* Fraction of Common Contacts
  fcc=interface.fcc(interface2)
