@@ -51,6 +51,8 @@ interface or to add some residues manually
 `for c in chains:`  
 `  print c`
 
+`interface.add(structure[0]['A'][24])`
+
 -   Further calculations
 
 Several statistics and information can be calculated from a single
