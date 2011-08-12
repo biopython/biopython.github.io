@@ -175,4 +175,6 @@ ExtendedResidue is an inherited class from Residue, these are the different meth
 
 * Theory
 
-In order to work with complexes interface, few important information are needed.
+In order to work with complexes interface, few important information are needed. Some of them are calculated during the initialization of the interface and others are calculated via functions.
+
+*

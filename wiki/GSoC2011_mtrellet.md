@@ -248,4 +248,7 @@ its pka and the pH defined by the user (by default 7.0)
 -   Theory
 
 In order to work with complexes interface, few important information are
-needed.
+needed. Some of them are calculated during the initialization of the
+interface and others are calculated via functions.
+
+-   
