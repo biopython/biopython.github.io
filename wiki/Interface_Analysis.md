@@ -31,7 +31,9 @@ but require a stable version of Naccess (available in
 
 ### How to use
 
-Extraction of an interface is done from a complex PDB you have to parse
+-   Initialization
+
+Extraction of an interface is done from a complex PDB
 
 `from Bio.PDB import InterfaceBuilder`  
   
@@ -41,3 +43,18 @@ Extraction of an interface is done from a complex PDB you have to parse
 Then the extraction of the interface is done in only one line
 
 `interface=InterfaceBuilder.InterfaceBuilder(structure[0]).get_interface()`
+
+From this object it is possible to get the chains involved in the
+interface or to add some residues manually
+
+`chains=interface.get_chains()`  
+`for c in chains:`  
+`  print c`
+
+-   Further calculations
+
+Several statistics and information can be calculated from a single
+interface as secondary structure, polar/apolar/charged residues
+repartition etc...
+
+`percent=interface.calculate_polarity()`
