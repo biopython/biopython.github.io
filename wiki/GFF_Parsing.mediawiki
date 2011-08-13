@@ -175,6 +175,7 @@ The parser will attempt to smartly break up the file at your requested number of
 If your file has no nesting of features, or you just want a single line at once, you can set target_lines=1 and the parser will happily give you back and SeqRecord object with a single SeqFeature for every line.
 
 === Providing initial sequence records ===
+GFF records normally contain annotation data, while sequence information is available in a separate FASTA formatted file. The GFF parser can add annotations to existing records. First parse the sequence file with SeqIO, then feed the resulting sequence dictionary to the GFF parser:
 
 <source lang=python>
 from BCBio import GFF
@@ -191,6 +192,8 @@ for rec in GFF.parse(in_handle, base_dict=seq_dict):
     print rec
 in_handle.close()
 </source>
+
+Note that this just adds directly to the existing dictionary. If you apply filters to the GFF parser these are only applied to annotations; records will not be removed from the initial sequence dictionary.
 
 == Writing GFF3 ==
 The <code>GFF3Writer</code> takes an iterator of SeqRecord objects, and writes

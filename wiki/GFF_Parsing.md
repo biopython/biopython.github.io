@@ -255,6 +255,11 @@ you back and SeqRecord object with a single SeqFeature for every line.
 
 ### Providing initial sequence records
 
+GFF records normally contain annotation data, while sequence information
+is available in a separate FASTA formatted file. The GFF parser can add
+annotations to existing records. First parse the sequence file with
+SeqIO, then feed the resulting sequence dictionary to the GFF parser:
+
 ``` python
 from BCBio import GFF
 from Bio import SeqIO
@@ -270,6 +275,10 @@ for rec in GFF.parse(in_handle, base_dict=seq_dict):
     print rec
 in_handle.close()
 ```
+
+Note that this just adds directly to the existing dictionary. If you
+apply filters to the GFF parser these are only applied to annotations;
+records will not be removed from the initial sequence dictionary.
 
 Writing GFF3
 ------------
