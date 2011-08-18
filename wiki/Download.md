@@ -4,27 +4,27 @@ permalink: wiki/Download
 layout: wiki
 ---
 
-Current Release - 1.57 - 2 April 2011
-=====================================
+Current Release - 1.58 - 18 August 2011
+=======================================
 
 See also [What's
 new](https://github.com/biopython/biopython/raw/master/NEWS).
 
 ### Files
 
--   [biopython-1.57.tar.gz](http://biopython.org/DIST/biopython-1.57.tar.gz)
-    6,783 Kb -- Source Tarball
--   [biopython-1.57.zip](http://biopython.org/DIST/biopython-1.57.zip)
-    7,446 Kb -- Source Zip File
--   [biopython-1.57.win32-py2.4-unsupported.exe](http://biopython.org/DIST/biopython-1.57.win32-py2.4-unsupported.exe)
-    1,405 Kb -- 32 bit Windows Installer for Python 2.4 (which we no
+-   [biopython-1.58.tar.gz](http://biopython.org/DIST/biopython-1.58.tar.gz)
+    7,847 Kb -- Source Tarball
+-   [biopython-1.58.zip](http://biopython.org/DIST/biopython-1.58.zip)
+    8,474 Kb -- Source Zip File
+-   [biopython-1.58.win32-py2.4-unsupported.exe](http://biopython.org/DIST/biopython-1.58.win32-py2.4-unsupported.exe)
+    1,427 Kb -- 32 bit Windows Installer for Python 2.4 (which we no
     longer officially support) and NumPy 1.1
--   [biopython-1.57.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.57.win32-py2.5.exe)
-    1,405 Kb -- 32 bit Windows Installer for Python 2.5 and NumPy 1.1
--   [biopython-1.57.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.57.win32-py2.6.exe)
-    1,428 Kb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.3
--   [biopython-1.57.win32-py2.7.exe](http://biopython.org/DIST/biopython-1.57.win32-py2.7.exe)
-    1,555 Kb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.5
+-   [biopython-1.58.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.58.win32-py2.5.exe)
+    1,428 Kb -- 32 bit Windows Installer for Python 2.5 and NumPy 1.1
+-   [biopython-1.58.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.58.win32-py2.6.exe)
+    1,450 Kb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.3
+-   [biopython-1.58.win32-py2.7.exe](http://biopython.org/DIST/biopython-1.58.win32-py2.7.exe)
+    1,577 Kb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.5
 
 Please report any issues on our [mailing
 lists](mailing_lists "wikilink") or [bug
