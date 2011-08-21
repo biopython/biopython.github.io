@@ -519,8 +519,8 @@ angular node models the actual dihedral angle value. The hidden nodes
 induce dependencies between all angles along the sequence (and not just
 between angles in consecutive slices).
 
-The original code for Barnacle, which contains an embedded version of
-Mocapy written in Python, can be found at
+The original source code for Barnacle, which contains an embedded
+version of Mocapy written in Python, can be found at
 <http://sourceforge.net/projects/barnacle-rna>.
 
 The modified version of Barnacle, changed to work with the Mocapy
@@ -538,19 +538,14 @@ model.save_structure('structure01.pdb')
 
 #### TorusDBN
 
-In order to use Mocapy in Bio.PDB the following paper and the source
-code of the TorusDBN model are being studied.
-
 Wouter Boomsma, Kanti V. Mardia, Charles C. Taylor, Jesper
 Ferkinghoff-Borg, Anders Krogh, and Thomas Hamelryck. A generative,
 probabilistic model of local protein structure. Proc Natl Acad Sci U S
 A. 2008 July 1; 105(26): 8932–8937.
 <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2440424/>
 
-'''Problem: ''' Predict the 3D structure of a biomolecule given its
-amino-acid sequence.
-
-'''Solution: ''' A continuous probabilistic model of the local
+TorusDBN aims at predicting the 3D structure of a biomolecule given its
+amino-acid sequence. It is a continuous probabilistic model of the local
 sequence–structure preferences of proteins in atomic detail. The
 backbone of a protein can be represented by a sequence of dihedral angle
 pairs, φ and ψ that are well known from the [Ramachandran
@@ -559,6 +554,60 @@ with values ranging from −180° to 180°, define a point on the torus.
 Hence, the backbone structure of a protein can be fully parameterized as
 a sequence of such points.
 
-The TorusDBN model is implemented as part of the backboneDBN package,
-which is freely available at
+<img src="Torus_dbn.png" title="TorusDBN (doi: 10.1073/pnas.0801715105)" alt="TorusDBN (doi: 10.1073/pnas.0801715105)" width="600" />
+
+The circular nodes represent stochastic variables. The rectangular boxes
+along the arrows illustrate the nature of the conditional probability
+distribution between them. A hidden node emits angle pairs, amino acid
+information, secondary structure labels and cis/trans information.
+
+The TorusDBN model is originally implemented as part of the backboneDBN
+package, which is freely available at
 <http://sourceforge.net/projects/phaistos/>.
+
+A new version of the TorusDBN model was implemented in the context of
+this project and can be found at
+<https://github.com/mchelem/biopython/tree/master/Bio/PDB/TorusDBN>.
+
+The user can use the TorusDBNTrainer to train a model with a given
+training set:
+
+``` python
+trainer = TorusDBNTrainer()
+trainer.train(training_set) # training_set is a list of files
+model = trainer.get_model()
+```
+
+Then the model can be used to sample new sequences:
+
+``` python
+model.set_aa('ACDEFGHIK')
+model.sample()
+print model.get_angles() # The sampled angles.
+```
+
+When creating a model, it is possible to create a new DBN specifying the
+size of the hidden node or loading a DBN from a file.
+
+``` python
+model = TorusDBNModel()
+model.create_dbn(hidden_node_size=10)
+model.save_dbn('test.dbn')
+```
+
+``` python
+model = TorusDBNModel()
+model.load_dbn('test.dbn')
+model.set_aa('ACDEFGHIK')
+model.sample()
+print model.get_angles() # The sampled angles.
+```
+
+It is also possible to choose the best size for the hidden node using
+the find\_optimal\_model method:
+
+``` python
+trainer = TorusDBNTrainer()
+hidden_node_size, IC = trainer.find_optimal_model(training_set)
+model = trainer.get_model()
+```
