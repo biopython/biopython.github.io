@@ -611,3 +611,9 @@ trainer = TorusDBNTrainer()
 hidden_node_size, IC = trainer.find_optimal_model(training_set)
 model = trainer.get_model()
 ```
+
+IC is either the [Bayesian Information
+Criterion](http://en.wikipedia.org/wiki/Bayesian_information_criterion)
+(BIC) or the [Akaike Information
+Criterion](http://en.wikipedia.org/wiki/Akaike_information_criterion)
+(AIC) (Defaults to BIC. AIC can be used setting the use\_aic flag).
