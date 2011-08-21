@@ -617,3 +617,8 @@ Criterion](http://en.wikipedia.org/wiki/Bayesian_information_criterion)
 (BIC) or the [Akaike Information
 Criterion](http://en.wikipedia.org/wiki/Akaike_information_criterion)
 (AIC) (Defaults to BIC. AIC can be used setting the use\_aic flag).
+
+For more details on the model API, see the test files:
+<https://github.com/mchelem/biopython/blob/master/Tests/test_TorusDBNTrainer.py>
+and
+<https://github.com/mchelem/biopython/blob/master/Tests/test_TorusDBNModel.py>.

@@ -347,3 +347,6 @@ model = trainer.get_model()
 </source>
 
 IC is either the [http://en.wikipedia.org/wiki/Bayesian_information_criterion Bayesian Information Criterion] (BIC) or the [http://en.wikipedia.org/wiki/Akaike_information_criterion Akaike Information Criterion] (AIC) (Defaults to BIC. AIC can be used setting the use_aic flag).
+
+For more details on the model API, see the test files:
+https://github.com/mchelem/biopython/blob/master/Tests/test_TorusDBNTrainer.py and https://github.com/mchelem/biopython/blob/master/Tests/test_TorusDBNModel.py.
