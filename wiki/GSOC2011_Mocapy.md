@@ -569,8 +569,8 @@ A new version of the TorusDBN model was implemented in the context of
 this project and can be found at
 <https://github.com/mchelem/biopython/tree/master/Bio/PDB/TorusDBN>.
 
-The user can use the TorusDBNTrainer to train a model with a given
-training set:
+The TorusDBNTrainer can be used to train a model with a given training
+set:
 
 ``` python
 trainer = TorusDBNTrainer()
