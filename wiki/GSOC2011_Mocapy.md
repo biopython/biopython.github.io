@@ -623,3 +623,28 @@ For more details on the model API, see the test files:
 <https://github.com/mchelem/biopython/blob/master/Tests/test_TorusDBNTrainer.py>
 and
 <https://github.com/mchelem/biopython/blob/master/Tests/test_TorusDBNModel.py>.
+
+### Performance
+
+A few performance measurements were made comparing test cases
+implemented both in C++ and in Python. There were no significant
+performance differences. For both implementations the methods
+responsible for consuming most cpu time were the same:
+
+<img src="Hmm_discrete.png" title="fig:DBN with discrete nodes, C++ implementation " alt="DBN with discrete nodes, C++ implementation " width="400" />
+<img src="Hmm_discrete_py.png" title="fig:DBN with discrete nodes, Python implementation " alt="DBN with discrete nodes, Python implementation " width="400" />
+
+The profiling tests were made using
+[Callgrind](http://valgrind.org/info/tools.html#callgrind) and
+visualized using [Kcachegrind](http://kcachegrind.sourceforge.net/).
+
+Here are the average times of running the examples available with Mocapy
+(10 runs):
+
+| Test          | C++           | Python        |
+|---------------|---------------|---------------|
+| row 1, cell 1 | row 1, cell 2 | row 1, cell 3 |
+| row 2, cell 1 | row 2, cell 2 | row 2, cell 3 |
+| row 3, cell 1 | row 3, cell 2 | row 3, cell 3 |
+
+
