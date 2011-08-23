@@ -441,9 +441,7 @@ Even though the PDB files are read, parsed and transformed in a format mocapy ca
 
 The model has been trained with a dataset consisting of about 900 chains with maximum 20% homology, resolution below 1.6 Å and R-factor below 25%.
 
-
-The resulting DBN is available at https://github.com/mchelem/biopython/blob/master/Tests/TorusDBN/pisces_dataset.dbn and can be loaded directly into the model as explained above.
-
+The resulting DBN is available at https://github.com/mchelem/biopython/blob/master/Tests/TorusDBN/pisces_dataset.dbn and can be loaded directly into the model as explained in the TorusDBN section above.
 
 === Future work ===
 

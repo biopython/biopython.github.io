@@ -674,7 +674,8 @@ with maximum 20% homology, resolution below 1.6 Å and R-factor below
 
 The resulting DBN is available at
 <https://github.com/mchelem/biopython/blob/master/Tests/TorusDBN/pisces_dataset.dbn>
-and can be loaded directly into the model as explained above.
+and can be loaded directly into the model as explained in the TorusDBN
+section above.
 
 ### Future work
 
