@@ -359,25 +359,98 @@ For both implementations the methods responsible for consuming most cpu time wer
 [[File:Hmm_discrete.png|400px|thumb|left|DBN with discrete nodes, C++ implementation ]]
 [[File:Hmm_discrete_py.png|400px|thumb|center|DBN with discrete nodes, Python implementation ]]
 
+
+
 The profiling tests were made using [http://valgrind.org/info/tools.html#callgrind Callgrind] and visualized using [http://kcachegrind.sourceforge.net/ Kcachegrind].
 
-Here are the average times of running the examples available with Mocapy (10 runs):
+Here are the average running time of the examples available with Mocapy (10 runs):
 
-{| class="wikitable"
+{| class="wikitable" border="1"
 |-
-! Test
-! C++
-! Python
+! Test name
+! C++ (s)
+! Python (s)
 |-
-| row 1, cell 1
-| row 1, cell 2
-| row 1, cell 3
+| hmm_simple
+| 0.56
+| 0.58
 |-
-| row 2, cell 1
-| row 2, cell 2
-| row 2, cell 3
+| hmm_discrete
+| 52.21
+| 43.45
 |-
-| row 3, cell 1
+| discrete_hmm_with_prior
+| 60.72
+| 50.09
+|-
+| hmm_dirichlet
+| 340.72
+| 353.98
+|-
+| hmm_factorial
 | row 3, cell 2
-| row 3, cell 3
+| 0.12
+|-
+| hmm_gauss_1d
+| 63.24
+| 63.39
+|-
+| hmm_gauss
+| 18.02
+| 16.96
+|-
+| hmm_multinomial
+| 144.51
+| 125.83
+|-
+| hmm_poisson
+| 19.66
+| 10.60
+|-
+| hmm_vonmises
+| 7.62
+| 7.36
+|-
+| hmm_torus
+| 77.08
+| 53.65
+|-
+| hmm_kent
+| 51.21
+| 61.06
+|-
+| hmm_bippo
+| 40.66
+| 41.81
+|-
+| infenginehmm
+| 0.01
+| 0.12
+|-
+| infenginemm
+| 0.01
+| 0.15
 |}
+
+
+==== TorusDBN ====
+
+Even though the PDB files are read, parsed and transformed in a format mocapy can understand, the most time consuming methods are the ones performing mathematical operations during the sampling process (Chebyshev and exp, for example).
+
+[[File:TorusDBN.png|400px|thumb|right|Training of the TorusDBN model ]]
+
+The model has been trained with a dataset consisting of about 900 chains with maximum 20% homology, resolution below 1.6 Å and R-factor below 25%.
+
+
+The resulting DBN is available at https://github.com/mchelem/biopython/blob/master/Tests/TorusDBN/pisces_dataset.dbn and can be loaded directly into the model as explained above.
+
+
+=== Future work ===
+
+The summer is over, but the work continues... There are still a lot of things I intend to work on:
+
+* Test the trained models to check their effectiveness in protein structure prediction.
+
+* Try to reduce dynamic allocation as it is responsible for a lot of running time.
+
+* Guarantee there are no memory leaks in the bindings.

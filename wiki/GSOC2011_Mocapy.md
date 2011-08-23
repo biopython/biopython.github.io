@@ -638,13 +638,58 @@ The profiling tests were made using
 [Callgrind](http://valgrind.org/info/tools.html#callgrind) and
 visualized using [Kcachegrind](http://kcachegrind.sourceforge.net/).
 
-Here are the average times of running the examples available with Mocapy
+Here are the average running time of the examples available with Mocapy
 (10 runs):
 
-| Test          | C++           | Python        |
-|---------------|---------------|---------------|
-| row 1, cell 1 | row 1, cell 2 | row 1, cell 3 |
-| row 2, cell 1 | row 2, cell 2 | row 2, cell 3 |
-| row 3, cell 1 | row 3, cell 2 | row 3, cell 3 |
+| Test name                  | C++ (s)       | Python (s) |
+|----------------------------|---------------|------------|
+| hmm\_simple                | 0.56          | 0.58       |
+| hmm\_discrete              | 52.21         | 43.45      |
+| discrete\_hmm\_with\_prior | 60.72         | 50.09      |
+| hmm\_dirichlet             | 340.72        | 353.98     |
+| hmm\_factorial             | row 3, cell 2 | 0.12       |
+| hmm\_gauss\_1d             | 63.24         | 63.39      |
+| hmm\_gauss                 | 18.02         | 16.96      |
+| hmm\_multinomial           | 144.51        | 125.83     |
+| hmm\_poisson               | 19.66         | 10.60      |
+| hmm\_vonmises              | 7.62          | 7.36       |
+| hmm\_torus                 | 77.08         | 53.65      |
+| hmm\_kent                  | 51.21         | 61.06      |
+| hmm\_bippo                 | 40.66         | 41.81      |
+| infenginehmm               | 0.01          | 0.12       |
+| infenginemm                | 0.01          | 0.15       |
 
+#### TorusDBN
+
+Even though the PDB files are read, parsed and transformed in a format
+mocapy can understand, the most time consuming methods are the ones
+performing mathematical operations during the sampling process
+(Chebyshev and exp, for example).
+
+<img src="TorusDBN.png" title="Training of the TorusDBN model " alt="Training of the TorusDBN model " width="400" />
+
+The model has been trained with a dataset consisting of about 900 chains
+with maximum 20% homology, resolution below 1.6 Å and R-factor below
+25%.
+
+The resulting DBN is available at
+<https://github.com/mchelem/biopython/blob/master/Tests/TorusDBN/pisces_dataset.dbn>
+and can be loaded directly into the model as explained above.
+
+### Future work
+
+The summer is over, but the work continues... There are still a lot of
+things I intend to work on:
+
+-   Test the trained models to check their effectiveness in protein
+    structure prediction.
+
+<!-- -->
+
+-   Try to reduce dynamic allocation as it is responsible for a lot of
+    running time.
+
+<!-- -->
+
+-   Guarantee there are no memory leaks in the bindings.
 
