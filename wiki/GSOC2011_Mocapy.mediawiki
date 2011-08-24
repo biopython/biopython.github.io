@@ -372,15 +372,15 @@ Here are the average running time of the examples available with Mocapy (10 runs
 ! Python (s)
 |-
 | hmm_simple
-| 0.56
+| 0.52
 | 0.58
 |-
 | hmm_discrete
-| 52.21
+| 48.12
 | 43.45
 |-
 | discrete_hmm_with_prior
-| 60.72
+| 55.95
 | 50.09
 |-
 | hmm_dirichlet
@@ -388,35 +388,35 @@ Here are the average running time of the examples available with Mocapy (10 runs
 | 353.98
 |-
 | hmm_factorial
-| row 3, cell 2
+| 0.01
 | 0.12
 |-
 | hmm_gauss_1d
-| 63.24
+| 53.97
 | 63.39
 |-
 | hmm_gauss
-| 18.02
+| 16.02
 | 16.96
 |-
 | hmm_multinomial
-| 144.51
+| 134.64
 | 125.83
 |-
 | hmm_poisson
-| 19.66
+| 11.00
 | 10.60
 |-
 | hmm_vonmises
-| 7.62
+| 7.22
 | 7.36
 |-
 | hmm_torus
-| 77.08
+| 53.79
 | 53.65
 |-
 | hmm_kent
-| 51.21
+| 61.35
 | 61.06
 |-
 | hmm_bippo

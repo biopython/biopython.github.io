@@ -641,23 +641,23 @@ visualized using [Kcachegrind](http://kcachegrind.sourceforge.net/).
 Here are the average running time of the examples available with Mocapy
 (10 runs):
 
-| Test name                  | C++ (s)       | Python (s) |
-|----------------------------|---------------|------------|
-| hmm\_simple                | 0.56          | 0.58       |
-| hmm\_discrete              | 52.21         | 43.45      |
-| discrete\_hmm\_with\_prior | 60.72         | 50.09      |
-| hmm\_dirichlet             | 340.72        | 353.98     |
-| hmm\_factorial             | row 3, cell 2 | 0.12       |
-| hmm\_gauss\_1d             | 63.24         | 63.39      |
-| hmm\_gauss                 | 18.02         | 16.96      |
-| hmm\_multinomial           | 144.51        | 125.83     |
-| hmm\_poisson               | 19.66         | 10.60      |
-| hmm\_vonmises              | 7.62          | 7.36       |
-| hmm\_torus                 | 77.08         | 53.65      |
-| hmm\_kent                  | 51.21         | 61.06      |
-| hmm\_bippo                 | 40.66         | 41.81      |
-| infenginehmm               | 0.01          | 0.12       |
-| infenginemm                | 0.01          | 0.15       |
+| Test name                  | C++ (s) | Python (s) |
+|----------------------------|---------|------------|
+| hmm\_simple                | 0.52    | 0.58       |
+| hmm\_discrete              | 48.12   | 43.45      |
+| discrete\_hmm\_with\_prior | 55.95   | 50.09      |
+| hmm\_dirichlet             | 340.72  | 353.98     |
+| hmm\_factorial             | 0.01    | 0.12       |
+| hmm\_gauss\_1d             | 53.97   | 63.39      |
+| hmm\_gauss                 | 16.02   | 16.96      |
+| hmm\_multinomial           | 134.64  | 125.83     |
+| hmm\_poisson               | 11.00   | 10.60      |
+| hmm\_vonmises              | 7.22    | 7.36       |
+| hmm\_torus                 | 53.79   | 53.65      |
+| hmm\_kent                  | 61.35   | 61.06      |
+| hmm\_bippo                 | 40.66   | 41.81      |
+| infenginehmm               | 0.01    | 0.12       |
+| infenginemm                | 0.01    | 0.15       |
 
 #### TorusDBN
 
