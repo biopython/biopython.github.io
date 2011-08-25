@@ -200,3 +200,5 @@ Several ways are used by scientists to measure differences between two complexes
 * Coding
 
 '''interface_ref.rmsd(interface_model)''': This function used Superimposer module in order to calculate Root Mean Square Deviation between residues of 2 interfaces. It gives the interface RMSD as well.
+
+'''interface_ref.fnat(interface_model)''': This function calculates the fraction of common contacts between 2 interfaces.

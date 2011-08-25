@@ -290,3 +290,6 @@ two calculations we added in the Interface analysis module.
 **interface\_ref.rmsd(interface\_model)**: This function used
 Superimposer module in order to calculate Root Mean Square Deviation
 between residues of 2 interfaces. It gives the interface RMSD as well.
+
+**interface\_ref.fnat(interface\_model)**: This function calculates the
+fraction of common contacts between 2 interfaces.
