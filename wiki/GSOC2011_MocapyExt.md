@@ -16,11 +16,12 @@ the torus, which have proven to be useful in formulating probabilistic
 models of protein and RNA structure.
 
 Such a highly useful and powerful library, which has been used in such
-projects as TorusDBN <cite>BMTFKH2008</cite>,
-Basilisk<cite>HBPFJH2010</cite><cite>PaluszewskiWinter2008</cite> with
-great success, is the result of the long-term effort. The original
-Mocapy implementation dates back to 2004, and since then the library has
-been rewritten in C++. However, C++ is a statically typed and compiled
+projects as TorusDBN<cite>BMTFKH2008</cite>,
+Basilisk<cite>HBPFJH2010</cite>,
+FB5HMM<cite>HKK2006</cite><cite>PaluszewskiWinter2008</cite> with great
+success, is the result of the long-term effort. The original Mocapy
+implementation dates back to 2004, and since then the library has been
+rewritten in C++. However, C++ is a statically typed and compiled
 programming language, which does not facilitate rapid prototyping. As a
 result, currently Mocapy++ has no provisions for dynamic loading of
 custom node types, and a mechanism to plug-in new node types that would
