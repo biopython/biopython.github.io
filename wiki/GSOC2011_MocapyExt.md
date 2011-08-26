@@ -501,11 +501,25 @@ References
 
 <biblio>
 
-1.  paluszewski2010mocapy M. Paluszewski and T. Hamelryck. Mocapy++ - a
-    toolkit for inference and
+1.  PaluszewskiHamelryck2010 M. Paluszewski and T. Hamelryck. Mocapy++ -
+    a toolkit for inference and
 
 learning in dynamic bayesian networks. BMC bioinformatics, 11(1):126,
-2010. </biblio>
+2010.
+
+1.  BMTFKH2008 W. Boomsma, K.V. Mardia, C.C. Taylor, J.
+    Ferkinghoff-Borg, A. Krogh, and T. Hamelryck.
+
+A generative, probabilistic model of local protein structure.
+Proceedings of the National Academy of Sciences, 105(26):8932–8937,
+2008.
+
+1.  HBPFJH2010 Tim Harder, Wouter Boomsma, Martin Paluszewski, Jes
+    Frellsen, Kristoffer
+
+Johansson, and Thomas Hamelryck. Beyond rotamers: a generative,
+probabilistic model of side chains in proteins. BMC Bioinformatics,
+11(1):306, 2010. </biblio>
 
 [1] W. Boomsma, K.V. Mardia, C.C. Taylor, J. Ferkinghoff-Borg, A. Krogh,
 and T. Hamelryck. A generative, probabilistic model of local protein
