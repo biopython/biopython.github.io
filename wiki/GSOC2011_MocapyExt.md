@@ -459,7 +459,7 @@ this example:
 ` {`  
 `   std::vector`<unsigned int>` ps(1, 2);`  
 `   dens.construct(ps);`  
-`   / * do something here */`  
+`   /* do something here */`  
 ` }`
 
 ` // Bippo Densities though the Python interface`  
