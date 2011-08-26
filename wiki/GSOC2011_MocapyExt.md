@@ -580,12 +580,15 @@ The conversion routines have been written and all of them fully work as
 expected, however, the MDArray class template has its problems. It is
 one of the classic examples of failed separation of concerns. Not only
 it serves as a multi-dimensional array, but it is used in a manner that
-one would use a Swiss army knife -- the MDArray also serves as a matrix,
+one would use a Swiss army knife: the MDArray also serves as a matrix,
 as a vector (in the mathematical sense), it has curiously named member
 functions like void keep\_eye() (I still do not know what it does), it
-could be rotated, axis permuted, and whatever else one can think of.
-This is clearly wrong. Still, touching MDArray is also a delicate matter
-that ought to be addressed with utmost care.
+could be rotated, axis permuted, and whatever else one can think of --
+all of which is implemented in member functions. MDArray interface is
+enormous, and this is clearly wrong. Still, touching MDArray is a
+delicate matter that ought to be addressed with utmost care; most likely
+by introducing free functions to do the job, and slowly phasing out the
+member functions.
 
 References
 ----------
