@@ -524,6 +524,11 @@ Johansson, and Thomas Hamelryck. Beyond rotamers: a generative,
 probabilistic model of side chains in proteins. BMC Bioinformatics,
 11(1):306, 2010.
 
+1.  HKK2006 T. Hamelryck, J.T. Kent, and A. Krogh. Sampling realistic
+    protein conformations
+
+using local structural bias. PLoS computational biology, 2(9):e131,2006.
+
 1.  PaluszewskiWinter2008 M. Paluszewski and P. Winter. Protein decoy
     generation using branch and
 
