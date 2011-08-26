@@ -234,7 +234,7 @@ plugin_node_type is a typedef of the ChildNode class template. Here we also note
 
 A plugin node is ''Streamable'', i.e., it can be output to a std::ostream via the operator
 
-<cpp>std::ostream& operator<<(std::ostream&, const node_plugin_type&)</cpp>
+<cpp>std::ostream& operator<<(std::ostream&, const plugin_node_type&);</cpp>
 
 The content of the output is the same as ''repr(Z)'', where ''Z'' is either ESS computer or Densities object.
 

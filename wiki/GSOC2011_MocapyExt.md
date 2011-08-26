@@ -384,7 +384,7 @@ A plugin node is *Streamable*, i.e., it can be output to a std::ostream
 via the operator
 
 <cpp>std::ostream& operator&lt;&lt;(std::ostream&, const
-node\_plugin\_type&)</cpp>
+plugin\_node\_type&);</cpp>
 
 The content of the output is the same as *repr(Z)*, where *Z* is either
 ESS computer or Densities object.
