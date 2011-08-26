@@ -213,8 +213,8 @@ mutable value of *X*.
 
 | expression                 | return type | pre/post-condition                          |
 |----------------------------|-------------|---------------------------------------------|
-| Cell 1                     | Cell 2      | Cell 3                                      |
 | u.construct(parent\_sizes) | void        | the appropriate shape of the ESS is defined |
+| u.estimate(ess)            | void        | adds a sample point to the ESS              |
 
 The class mocapy::BippoESS is an example model for an ESS computer.
 
