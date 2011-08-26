@@ -267,4 +267,23 @@ Speedup percentages based on Wilcoxon matched pair confidence intervals.
       A    vs   S              -1.24        -0.51        -0.25
 
 
-Repeated tests without the construction of ESS and Densities objects show that invocation of a method though the MocapyEXT interface is only ~2,5 times slower than to invoke a member function of natively implemented ESS and Densities objects. It is obvious that in a real-world scenario node construction, sampling, likelihood computation, etc. would be more likely to constitute the better part of the running time as compared to the invocations of methods themselves.
+Repeated tests without the construction of ESS and Densities objects show that invocation of a method though the MocapyEXT interface is only ~2,5 times slower than to invoke a member function of natively implemented ESS and Densities objects. It is obvious that in a real-world scenario node construction, sampling, likelihood computation, etc. would be more likely to constitute the better part of the running time as compared to the invocations of methods themselves. Basically, these tests show that member function invocation takes much less time than even such a 'lightweight' operation as node construction. In principle it is now possible to write quite
+generic algorithms. Consider this example:
+
+   template<typename Densities>
+   inline void do_something_with_densities(Densities dens) // Generic function 
+   {
+     std::vector<unsigned int> ps(1, 2);
+     dens.construct(ps);
+     / * do something here */
+   }
+
+   // Bippo Densities though the Python interface
+   densities_plugin dens("mocapy.bippo", "BippoDensities");
+   do_something_with_densities( dens.densities(lambdas, thetas, ns) );
+
+   // Direct use of Bippo Densities
+   mocapy::BippoDensities bd(lambdas, thetas, ns);
+   do_something_with_densities(bd);
+
+We can be reasonably sure that performance penalty of using MocapyEXT, while not negligible, will not outweight the added value of genericity. And in the pure C++ scenario it does not incur any performance cost.
