@@ -429,7 +429,7 @@ Speedup percentages based on Wilcoxon matched pair confidence intervals.
 `     A    vs   S              -1.24        -0.51        -0.25`
 
 Repeated tests without the construction of ESS and Densities objects
-show that invocation of a method though the MocapyEXT interface is only
+show that invocation of a method through the MocapyEXT interface is only
 ~2,5 times slower than to invoke a member function of natively
 implemented ESS and Densities objects. It is obvious that in a
 real-world scenario node construction, sampling, likelihood computation,
