@@ -495,8 +495,30 @@ We can be reasonably sure that performance penalty of using MocapyEXT,
 while not negligible, will not outweight the added value of genericity.
 And in the pure C++ scenario it does not incur any performance cost.
 
-Notes
------
+References
+----------
+
+{{ Citation
+
+`| last1=Boomsma`  
+`| first1=W.`  
+`| last2=Mardia`  
+`| first2=K.`  
+`| last3=Taylor`  
+`| first3=C.`  
+`| last4=Ferkinghoff-Borg`  
+`| first4=J.`  
+`| last5=Krogh`  
+`| first5=A.`  
+`| last6=Hamelryck`  
+`| first6=T.`  
+`| title=A generative, probabilistic model of local protein structure`  
+`| publisher=Proceedings of the National Academy of Sciences`  
+`| year=2008`  
+`| volume=106`  
+`| issue=26`  
+`| pages=8932-8937`  
+`}}`
 
 [1] M. Paluszewski and T. Hamelryck. Mocapy++- a toolkit for inference
 and learning in dynamic bayesian networks. BMC bioinformatics,
