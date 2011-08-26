@@ -162,31 +162,31 @@ Note that ptv stand for "parent and this node’s values": the values of the par
 ! scope="col" | pre/post-condition
 |-
 | u.construct(parent_sizes)
-| <cpp>void</cpp>
+| void
 | parameters (mean, covariance, CPD, etc.) are initialized
 |-
 | u.estimate(ess)
-| <cpp>void</cpp>
+| void
 | the parameters of the node based on the given ESS are estimated
 |-
 | u.sample(ptv)
-| <cpp>std::vector<double></cpp>
+| std::vector<double>
 | returns a sample based on indicated parent values. Note, that subsequent calls to the sample member function may return different values, so this operation is mutable
 |-
 | v.get_lik(ptv, log)
-| <cpp>double</cpp>
+| double
 | returns likelihood, P(child|parent)
 |-
 | v.get_parameters()
-| <cpp>std::vector<MDArray<double> ></cpp>
+| std::vector<MDArray<double> >
 | returns the distributions parameters
 |-
 | v.get_node_size()
-| <cpp>unsigned int</cpp>
+| unsigned int
 | returns the node size
 |-
 | v.get_output_size()
-| <cpp>unsigned int</cpp>
+| unsigned int
 | returns the output size of the node
 |}
 
