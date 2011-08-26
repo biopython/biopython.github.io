@@ -175,7 +175,7 @@ Note that ptv stand for "parent and this node’s values": the values of the par
 |-
 | v.get_lik(ptv, log)
 | double
-| returns likelihood, <math>P(child|parent)</math>
+| returns likelihood, P(child|parent)
 |-
 | v.get_parameters()
 | std::vector<MDArray<double> >
