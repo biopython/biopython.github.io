@@ -225,15 +225,15 @@ const value of *X*, and *u* is a mutable value of *X*. Note that ptv
 stand for "parent and this node’s values": the values of the parents
 nodes and the value of the node to which the method belongs.
 
-| expression                 | return type                      | pre/post-condition                                                                                                                                                     |
-|----------------------------|----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| u.construct(parent\_sizes) | void                             | parameters (mean, covariance, CPD, etc.) are initialized                                                                                                               |
-| u.estimate(ess)            | void                             | the parameters of the node based on the given ESS are estimated                                                                                                        |
-| u.sample(ptv)              | std::vector<double>              | returns a sample based on indicated parent values. Note, that subsequent calls to the sample member function may return different values, so this operation is mutable |
-| v.get\_lik(ptv, log)       | double                           | returns likelihood, P(child|parent)                                                                                                                                    |
-| v.get\_parameters()        | std::vector<MDArray<double> &gt; | returns the distributions parameters                                                                                                                                   |
-| v.get\_node\_size()        | unsigned int                     | returns the node size                                                                                                                                                  |
-| v.get\_output\_size()      | unsigned int                     | returns the output size of the node                                                                                                                                    |
+| expression                 | return type                                 | pre/post-condition                                                                                                                                                     |
+|----------------------------|---------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| u.construct(parent\_sizes) | <cpp>void</cpp>                             | parameters (mean, covariance, CPD, etc.) are initialized                                                                                                               |
+| u.estimate(ess)            | <cpp>void</cpp>                             | the parameters of the node based on the given ESS are estimated                                                                                                        |
+| u.sample(ptv)              | <cpp>std::vector<double></cpp>              | returns a sample based on indicated parent values. Note, that subsequent calls to the sample member function may return different values, so this operation is mutable |
+| v.get\_lik(ptv, log)       | <cpp>double</cpp>                           | returns likelihood, P(child|parent)                                                                                                                                    |
+| v.get\_parameters()        | <cpp>std::vector<MDArray<double> &gt;</cpp> | returns the distributions parameters                                                                                                                                   |
+| v.get\_node\_size()        | <cpp>unsigned int</cpp>                     | returns the node size                                                                                                                                                  |
+| v.get\_output\_size()      | <cpp>unsigned int</cpp>                     | returns the output size of the node                                                                                                                                    |
 
 The class mocapy::BippoDensities is an example model for a Densities
 computer.
