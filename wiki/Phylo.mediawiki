@@ -191,11 +191,13 @@ Prof. Joe Felsenstein's book "Inferring Phylogenies"')
 ...
 </pre>
 
-'''draw''' displays a rooted phylogram using matplotlib or pylab. ''New in Biopython 1.58.''
 [[File:phylo-draw-apaf1.png|256px|thumb|right|Rooted phylogram, via Phylo.draw]]
+'''draw''' displays a rooted phylogram using matplotlib or pylab. ''New in Biopython 1.58.''
 
+Try this:
 <source lang=python>
 tree = Phylo.read('apaf.xml', 'phyloxml')
+tree.ladderize()   # Flip branches so deeper clades are displayed at top
 Phylo.draw(tree)
 </source>
 

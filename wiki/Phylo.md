@@ -288,12 +288,15 @@ Use this with the print statement to get a quick overview of your tree:
             Clade(branch_length=0.4, name='C')
     ...
 
+<img src="phylo-draw-apaf1.png" title="fig:Rooted phylogram, via Phylo.draw" alt="Rooted phylogram, via Phylo.draw" width="256" />
 **draw** displays a rooted phylogram using matplotlib or pylab. *New in
 Biopython 1.58.*
-<img src="phylo-draw-apaf1.png" title="fig:Rooted phylogram, via Phylo.draw" alt="Rooted phylogram, via Phylo.draw" width="256" />
+
+Try this:
 
 ``` python
 tree = Phylo.read('apaf.xml', 'phyloxml')
+tree.ladderize()   # Flip branches so deeper clades are displayed at top
 Phylo.draw(tree)
 ```
 
