@@ -338,6 +338,8 @@ plugin\_tests that has been used in the program implements a dummy
 discrete node of fixed length 1, and always returns \[0,\] as sampled
 value.
 
+<cpp>
+
 `#include <mocapy/plugin/ess_plugin.hpp>`  
 `#include <mocapy/plugin/densities_plugin.hpp>`  
 `#include <mocapy/plugin/aggregate_plugin.hpp>`  
@@ -361,6 +363,8 @@ value.
 `  }`  
 `  return 0;`  
 `}`
+
+</cpp>
 
 plugin\_node\_type is a typedef of the ChildNode class template. Here we
 also note that the lifetime of a node is independent from the lifetime

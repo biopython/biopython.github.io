@@ -198,6 +198,7 @@ The lifetime of ESS computer and Densities objects (respectively, ess and dens) 
 
 This is a simple example that showcases two different methods to initialize a plugin node. In this particular case, the module plugin_tests that has been used in the program implements a dummy discrete node of fixed length 1, and always returns [0,] as sampled value.
 
+<cpp>
  #include <mocapy/plugin/ess_plugin.hpp>
  #include <mocapy/plugin/densities_plugin.hpp>
  #include <mocapy/plugin/aggregate_plugin.hpp>
@@ -219,6 +220,7 @@ This is a simple example that showcases two different methods to initialize a pl
    }
    return 0;
  }
+</cpp>
 
 plugin_node_type is a typedef of the ChildNode class template. Here we also note that the lifetime of a node is independent from the lifetime of plug-in factories.
 
