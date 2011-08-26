@@ -234,7 +234,7 @@ nodes and the value of the node to which the method belongs.
 The class mocapy::BippoDensities is an example model for a Densities
 computer.
 
-### Prototype implementation
+### MocapyEXT implementation
 
 #### Embedding the Python interpreter
 

@@ -190,7 +190,7 @@ Note that ptv stand for "parent and this node’s values": the values of the par
 
 The class mocapy::BippoDensities is an example model for a Densities computer.
 
-===Prototype implementation===
+===MocapyEXT implementation===
 
 ====Embedding the Python interpreter====
 
