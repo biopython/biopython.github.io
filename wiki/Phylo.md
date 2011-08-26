@@ -421,6 +421,15 @@ width demonstrates how relatively short branches are handled:
                       |
                       |______________________ 33_BRAFL
 
+External Applications
+---------------------
+
+-   Bio.Phylo.PhymlCommandline provides a wrapper for
+    [PhyML](http://www.atgc-montpellier.fr/phyml/) following the usual
+    Bio.Applications API.
+-   Bio.Phylo.[PAML](PAML "wikilink") provides wrappers, parsers and
+    utilities for working with the PAML suite of programs.
+
 Example pipeline
 ----------------
 
