@@ -495,6 +495,9 @@ We can be reasonably sure that performance penalty of using MocapyEXT,
 while not negligible, will not outweight the added value of genericity.
 And in the pure C++ scenario it does not incur any performance cost.
 
+Notes
+-----
+
 [1] M. Paluszewski and T. Hamelryck. Mocapy++- a toolkit for inference
 and learning in dynamic bayesian networks. BMC bioinformatics,
 11(1):126, 2010.
