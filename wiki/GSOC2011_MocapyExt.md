@@ -571,7 +571,7 @@ generator as a parameter. This would singlehandedly solve problems with
 [object
 ownership](http://biopython.org/wiki/GSOC2011_Mocapy#Testing_and_Improving_Mocapy_Bindings)
 in Mocapy++ Python bindings, fix some left-over const-correcness issues
-and so on. However, this would be a breaking change and a lot of
+and so on. However, this would introduce a breaking change, and a lot of
 projects depend on Mocapy++.
 
 During the project one of the interesting technical exercises has been
