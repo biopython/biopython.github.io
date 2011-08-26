@@ -329,7 +329,7 @@ See the [http://biopython.org/DIST/docs/tutorial/Tutorial.html Biopython Tutoria
 <source lang=python>
 from Bio.Blast import NBCIStandalone, NCBIXML
 
-query_fname = 'AAG35789.faa'
+query_fname = 'AAG35789.fasta'
 result_handle, error_handle = NCBIStandalone.blastall('/usr/bin/blastall', 'blastp',
                                                       '/db/fasta/swissprot', query_fname)
 blast_record = NCBIXML.read(result_handle)  # This takes some time to run
@@ -349,12 +349,13 @@ def get_seqrecs(alignments, threshold):
                 break
 
 best_seqs = get_seqrecs(blast_record.alignments, 1e-90)
-SeqIO.write(best_seqs, 'egfr-family.faa', 'fasta')
+SeqIO.write(best_seqs, 'egfr-family.fasta', 'fasta')
 </source>
 
 To help with annotating to your tree later, pick a lookup key here (e.g. accession number) and build a dictionary mapping that key to any additional data you can glean from the BLAST output, such as taxonomy and GI numbers. In this example, we're only keeping the original sequence and accession number.
 
 3. Re-align the sequences using Muscle. The program creates an alignment file in Clustal format, "egfr-family.aln".
+
 <source lang=python>
 from Bio.Align.Applications import MuscleCommandline
 

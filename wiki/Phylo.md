@@ -450,7 +450,7 @@ few steps shown here.
 ``` python
 from Bio.Blast import NBCIStandalone, NCBIXML
 
-query_fname = 'AAG35789.faa'
+query_fname = 'AAG35789.fasta'
 result_handle, error_handle = NCBIStandalone.blastall('/usr/bin/blastall', 'blastp',
                                                       '/db/fasta/swissprot', query_fname)
 blast_record = NCBIXML.read(result_handle)  # This takes some time to run
@@ -471,7 +471,7 @@ def get_seqrecs(alignments, threshold):
                 break
 
 best_seqs = get_seqrecs(blast_record.alignments, 1e-90)
-SeqIO.write(best_seqs, 'egfr-family.faa', 'fasta')
+SeqIO.write(best_seqs, 'egfr-family.fasta', 'fasta')
 ```
 
 To help with annotating to your tree later, pick a lookup key here (e.g.
