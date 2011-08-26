@@ -450,9 +450,9 @@ few steps shown here.
 ``` python
 from Bio.Blast import NBCIStandalone, NCBIXML
 
-query_fname = 'human-egfr.fasta'
+query_fname = 'AAG35789.faa'
 result_handle, error_handle = NCBIStandalone.blastall('/usr/bin/blastall', 'blastp',
-                                                      '/db/fasta/nr', query_fname)
+                                                      '/db/fasta/swissprot', query_fname)
 blast_record = NCBIXML.read(result_handle)  # This takes some time to run
 ```
 
@@ -470,8 +470,8 @@ def get_seqrecs(alignments, threshold):
                 yield SeqRecord(Seq(hsp.sbjct), id=aln.accession)
                 break
 
-best_seqs = get_seqrecs(blast_record.alignments, 1e-50)
-SeqIO.write(best_seqs, open('egfr-family.fasta', 'w+'), 'fasta')
+best_seqs = get_seqrecs(blast_record.alignments, 1e-90)
+SeqIO.write(best_seqs, 'egfr-family.faa', 'fasta')
 ```
 
 To help with annotating to your tree later, pick a lookup key here (e.g.
@@ -480,38 +480,58 @@ additional data you can glean from the BLAST output, such as taxonomy
 and GI numbers. In this example, we're only keeping the original
 sequence and accession number.
 
-3. Re-align the sequences using ClustalW. The program creates an
-alignment file in Clustal format, "egfr-family.aln", and a gene tree in
-Newick format, "egfr-family.dnd".
+3. Re-align the sequences using Muscle. The program creates an alignment
+file in Clustal format, "egfr-family.aln".
 
 ``` python
-import sys, subprocess
-from Bio import AlignIO
-from Bio.Align.Applications import ClustalwCommandline
+from Bio.Align.Applications import MuscleCommandline
 
-cline = ClustalwCommandline("clustalw", infile="egfr-family.fasta")
-child = subprocess.call(str(cline), shell=(sys.platform!="win32"))
+cmdline = MuscleCommandline(input="egfr-family.fasta", out="efgr-family.aln", clw=True)
+cmdline()
 ```
 
-4. Load the gene tree with Phylo, and take a quick look at the topology.
+4. Infer a gene tree using PhyML. First, convert the alignment from step
+3 to "relaxed Phylip" format (new in Biopython 1.58):
+
+``` python
+from Bio import AlignIO
+
+AlignIO.convert("egfr-family.aln", "clustal", "egfr-family.phy", "phylip-relaxed")
+```
+
+Feed the alignment to PhyML using the command line wrapper:
+
+``` python
+from Bio.Phylo.Applications import PhymlCommandline
+
+cmdline = PhymlCommandline(input='egfr-family.phy', datatype='aa', model='WAG', alpha='e', bootstrap=100)
+out_log, err_log = cmdline()
+```
+
+5. Load the gene tree with Phylo, and take a quick look at the topology.
+(PhyML writes the tree to a file named after the input file plus
+"\_phyml\_tree.txt".)
 
 ``` python
 from Bio import Phylo
 
-egfr_tree = Phylo.read("egfr-family.dnd", "newick")
+egfr_tree = Phylo.read("egfr-family.phy_phyml_tree.txt", "newick")
 Phylo.draw_ascii(egfr_tree)
 ```
 
-5. Add accession numbers and sequences to the tree -- now we're using
+6. Add accession numbers and sequences to the tree -- now we're using
 [PhyloXML](PhyloXML "wikilink")'s extra features.
 
 ``` python
 from Bio.Phylo import PhyloXML
 
+# Promote the basic tree to PhyloXML
+egfr_phy = egfr_tree.as_phyloxml()
+
 # Make a lookup table for sequences
 lookup = dict((rec.id, str(rec.seq)) for rec in best_seqs)
 
-for clade in egfr_tree.get_terminals():
+for clade in egfr_phy.get_terminals():
     key = clade.name
     accession = PhyloXML.Accession(key, 'NCBI')
     mol_seq = PhyloXML.MolSeq(lookup[key], is_aligned=True)
@@ -519,5 +539,5 @@ for clade in egfr_tree.get_terminals():
     clade.sequences.append(sequence)
 
 # Save the annotated phyloXML file
-Phylo.write(tree, 'egfr-family-annotated.xml', 'phyloxml')
+Phylo.write(egfr_phy, 'egfr-family-annotated.xml', 'phyloxml')
 ```
