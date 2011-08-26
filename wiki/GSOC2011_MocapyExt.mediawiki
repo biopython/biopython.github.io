@@ -166,6 +166,7 @@ Note that because the interpreter also searches in an installation-dependent def
 
 The minimal interface import example shows the usage of three plug-in classes: densities_plugin, ess_plugin and aggregate_plugin. The intended usage pattern for densities_plugin and ess_plugin are cases when types ESS  and Densities  are implemented in separate files -- one-class-per-file. Each class is loaded in their own interpreter context. The purpose of aggregate_plugin is to simplify the management of the the loaded types and to optimize the resources allocated for the embedded Python interpreter as aggregate_plugin creates only one instance of the embedded interpreter for both types ESS  and Densities.
 
+<cpp>
  #include <mocapy/plugin/ess_plugin.hpp>
  #include <mocapy/plugin/densities_plugin.hpp>
  #include <mocapy/plugin/aggregate_plugin.hpp>
@@ -178,11 +179,14 @@ The minimal interface import example shows the usage of three plug-in classes: d
    aggregate_plugin aggr_pl("plugin_tests", "ESSPython", "DensitiesPython");
    return 0;
  }
+</cpp>
 
 Basically, a user provides a name of a python library, a name of class and a list of factual arguments necessary for the construction of the model of the class. The MocapyExt library in turn then returns an instance of the new class.
 
+<cpp>
  densities_plugin p("test_module", "DensitiesClassName");
  densities_adapter n = p.densities(''argument list'');
+</cpp>
 
 The given ''argument list'' (up to 6 arguments are supported) would parametrize the initialization of Densities object. Parameters are forwarded to the Python API and converted using the type conversion facilities provided by the Boost.Python library. The mechanism is general and the user can convert any arbitrary type T to its equivalent in Python.
 

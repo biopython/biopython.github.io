@@ -281,6 +281,8 @@ of the the loaded types and to optimize the resources allocated for the
 embedded Python interpreter as aggregate\_plugin creates only one
 instance of the embedded interpreter for both types ESS and Densities.
 
+<cpp>
+
 `#include <mocapy/plugin/ess_plugin.hpp>`  
 `#include <mocapy/plugin/densities_plugin.hpp>`  
 `#include <mocapy/plugin/aggregate_plugin.hpp>`
@@ -294,13 +296,19 @@ instance of the embedded interpreter for both types ESS and Densities.
 `  return 0;`  
 `}`
 
+</cpp>
+
 Basically, a user provides a name of a python library, a name of class
 and a list of factual arguments necessary for the construction of the
 model of the class. The MocapyExt library in turn then returns an
 instance of the new class.
 
+<cpp>
+
 `densities_plugin p("test_module", "DensitiesClassName");`  
 `densities_adapter n = p.densities(`*`argument` `list`*`);`
+
+</cpp>
 
 The given *argument list* (up to 6 arguments are supported) would
 parametrize the initialization of Densities object. Parameters are
