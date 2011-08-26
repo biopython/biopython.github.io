@@ -98,33 +98,29 @@ Work Plan
 -   Compare with other examples that implement
     probability distributions.
 
-'''Design of Mocapy++ plugin interface '''
+'''Design of Mocapy++ plug-in interface '''
 
 -   Plugin module has to implement the model of
-    NodeConcept/DensityConcept;
+    ESSConcept/DensitiesConcept;
 
 <!-- -->
 
 -   All the models have to be uniformly accessible through the
-    plugin system.
+    plug-in system.
 
-'''Implement Mocapy++ plugin module '''
+'''Implement Mocapy++ plug-in module '''
 
 -   Implement test cases in C++ using the new plugin interface;
 
 <!-- -->
 
--   Provide Python bindings for the defined interface;
-
-<!-- -->
-
--   Implement test cases in Python. Verify that this plugin system can
-    be used transparently in Python.
+-   Implement test cases in C++. Verify that Python modules can be used
+    transparently in in Mocapy++.
 
 '''Experiment with the modular Mocapy++ architecture '''
 
 -   Create sample applications that showcase the advantages of
-    modularity that is provided by the plugin system in Mocapy++;
+    modularity that is provided by the plug-in system in Mocapy++;
 
 <!-- -->
 
