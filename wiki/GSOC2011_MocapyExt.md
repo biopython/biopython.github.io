@@ -306,11 +306,11 @@ instance of the new class.
 <cpp>
 
 `densities_plugin p("test_module", "DensitiesClassName");`  
-`densities_adapter n = p.densities(`*`argument` `list`*`);`
+`densities_adapter n = p.densities(arg1, arg2, ..., argN);`
 
 </cpp>
 
-The given *argument list* (up to 6 arguments are supported) would
+The given *argument list* (up to N = 6 arguments are supported) would
 parametrize the initialization of Densities object. Parameters are
 forwarded to the Python API and converted using the type conversion
 facilities provided by the Boost.Python library. The mechanism is

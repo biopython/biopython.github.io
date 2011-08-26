@@ -185,10 +185,10 @@ Basically, a user provides a name of a python library, a name of class and a lis
 
 <cpp>
  densities_plugin p("test_module", "DensitiesClassName");
- densities_adapter n = p.densities(''argument list'');
+ densities_adapter n = p.densities(arg1, arg2, ..., argN);
 </cpp>
 
-The given ''argument list'' (up to 6 arguments are supported) would parametrize the initialization of Densities object. Parameters are forwarded to the Python API and converted using the type conversion facilities provided by the Boost.Python library. The mechanism is general and the user can convert any arbitrary type T to its equivalent in Python.
+The given ''argument list'' (up to N = 6 arguments are supported) would parametrize the initialization of Densities object. Parameters are forwarded to the Python API and converted using the type conversion facilities provided by the Boost.Python library. The mechanism is general and the user can convert any arbitrary type T to its equivalent in Python.
 
 The parameters are forwarded via const-references. This method accepts and forwards arbitrary typed arguments, at the cost of always treating the argument as const. This solution is typically used for constructor arguments. An esoteric problem with this approach is that it is not possible to form a const reference to a function type, but this deficiency, which is being addressed in Core Issue [http://std.dkuug.dk/jtc1/sc22/wg21/docs/cwg_active.html#295 295], actually works in our favor, because this prevents ill-intended attempts to pass a function to the Python interpreter.
 
