@@ -191,9 +191,18 @@ Prof. Joe Felsenstein's book "Inferring Phylogenies"')
 ...
 </pre>
 
+'''draw''' displays a rooted phylogram using matplotlib or pylab. ''New in Biopython 1.58.''
+[[File:phylo-draw-apaf1.png|256px|thumb|right|Rooted phylogram, via Phylo.draw]]
+
+<source lang=python>
+tree = Phylo.read('apaf.xml', 'phyloxml')
+Phylo.draw(tree)
+</source>
+
+
 '''draw_graphviz''' mimics the networkx function of the same name, with some tweaks to improve the display of the graph. If a file name is given, the graph is drawn directly to that file, and options such as image format (default PDF) may be used.
 
-[[File:Phylo-apaf.png|256px|thumb|right|Phylogram with colored nodes]]
+[[File:Phylo-apaf.png|256px|thumb|right|Unrooted tree with colored nodes]]
 
 Prerequisites: In addition to networkx, you'll need a local installation of Graphviz, [http://matplotlib.sourceforge.net/ matplotlib] and either [http://networkx.lanl.gov/pygraphviz/ PyGraphviz] or [http://dkbza.org/pydot.html pydot].
 

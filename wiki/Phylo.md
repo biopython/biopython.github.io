@@ -288,12 +288,21 @@ Use this with the print statement to get a quick overview of your tree:
             Clade(branch_length=0.4, name='C')
     ...
 
+**draw** displays a rooted phylogram using matplotlib or pylab. *New in
+Biopython 1.58.*
+<img src="phylo-draw-apaf1.png" title="fig:Rooted phylogram, via Phylo.draw" alt="Rooted phylogram, via Phylo.draw" width="256" />
+
+``` python
+tree = Phylo.read('apaf.xml', 'phyloxml')
+Phylo.draw(tree)
+```
+
 **draw\_graphviz** mimics the networkx function of the same name, with
 some tweaks to improve the display of the graph. If a file name is
 given, the graph is drawn directly to that file, and options such as
 image format (default PDF) may be used.
 
-<img src="Phylo-apaf.png" title="Phylogram with colored nodes" alt="Phylogram with colored nodes" width="256" />
+<img src="Phylo-apaf.png" title="Unrooted tree with colored nodes" alt="Unrooted tree with colored nodes" width="256" />
 
 Prerequisites: In addition to networkx, you'll need a local installation
 of Graphviz, [matplotlib](http://matplotlib.sourceforge.net/) and either
