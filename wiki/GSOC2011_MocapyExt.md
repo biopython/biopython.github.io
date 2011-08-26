@@ -320,7 +320,7 @@ PYTHONPATH and the current path.
 
 Before proceeding to import a module, sys.path list is explicitly
 appended with the current path. A user that relies on scripts being in
-some other directory than a client program should list the paths in the
+some other directory than a client program, should list the paths in the
 PYTHONPATH environment variable.
 
 Note that because the interpreter also searches in an

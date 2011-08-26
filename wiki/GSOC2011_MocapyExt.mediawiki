@@ -230,7 +230,7 @@ Concurrent mutable access of the passed parameter containers requires synchroniz
 
 When a module foo that contains ESS  or Densities  definitions is being imported, the embedded Python interpreter searches for a file named foo.py in the list of directories specified by the environment variable PYTHONPATH and the current path. 
 
-Before proceeding to import a module, sys.path list is explicitly appended with the current path. A user that relies on scripts being in some other directory than a client program should list the paths in the PYTHONPATH environment variable.
+Before proceeding to import a module, sys.path list is explicitly appended with the current path. A user that relies on scripts being in some other directory than a client program, should list the paths in the PYTHONPATH environment variable.
 
 Note that because the interpreter also searches in an installation-dependent default path, it is important that the file containing ESS or Densities  definitions not have the same name as a standard module.
 
