@@ -270,6 +270,7 @@ Speedup percentages based on Wilcoxon matched pair confidence intervals.
 Repeated tests without the construction of ESS and Densities objects show that invocation of a method through the MocapyEXT interface is only ~2,5 times slower than to invoke a member function of natively implemented ESS and Densities objects. It is obvious that in a real-world scenario node construction, sampling, likelihood computation, etc. would be more likely to constitute the better part of the running time as compared to the invocations of methods themselves. Basically, these tests show that member function invocation takes much less time than even such a 'lightweight' operation as node construction. In principle it is now possible to write quite
 generic algorithms. Consider this example:
 
+<cpp>
    template<typename Densities>
    inline void do_something_with_densities(Densities dens) // Generic function 
    {
@@ -285,5 +286,6 @@ generic algorithms. Consider this example:
    // Direct use of Bippo Densities
    mocapy::BippoDensities bd(lambdas, thetas, ns);
    do_something_with_densities(bd);
+</cpp>
 
 We can be reasonably sure that performance penalty of using MocapyEXT, while not negligible, will not outweight the added value of genericity. And in the pure C++ scenario it does not incur any performance cost.

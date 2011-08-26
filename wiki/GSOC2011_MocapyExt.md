@@ -440,6 +440,8 @@ than even such a 'lightweight' operation as node construction. In
 principle it is now possible to write quite generic algorithms. Consider
 this example:
 
+<cpp>
+
 `  template`<typename Densities>  
 `  inline void do_something_with_densities(Densities dens) // Generic function `  
 `  {`  
@@ -455,6 +457,8 @@ this example:
 `  // Direct use of Bippo Densities`  
 `  mocapy::BippoDensities bd(lambdas, thetas, ns);`  
 `  do_something_with_densities(bd);`
+
+</cpp>
 
 We can be reasonably sure that performance penalty of using MocapyEXT,
 while not negligible, will not outweight the added value of genericity.
