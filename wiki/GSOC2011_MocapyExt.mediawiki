@@ -374,6 +374,20 @@ We can be reasonably sure that performance penalty of using MocapyEXT, while not
 
 ===Roadmap===
 
+The MocapyEXT is an ongoing project. In the current state it is usable, however, it is important to stress that the described features are by no means complete and may work differently in the future. Numerous changes have been done in Mocapy++ to support the MocapyEXT infrastructure. Most notably, the Mocapy++ library has been made partially const-correct in the development branch. The importance of const-correctness cannot be overstated as it affects the parameter passing protocol from and to the Python code. The changes, however, have been done transparently. If an end-user did not rely on the side effects of the now immutable operations, she should be able to compile and run the code with minor modifications. Undoubtedly, many other changes await. For example, in some contexts it would be useful to have the ability to clone the Densities by passing their parameters to the constructor:
+
+<cpp>
+  mocapy::BippoDensities bd(lambdas, thetas, ns);
+  mocapy::BippoDensities clone( bd.get_paramters() );
+
+  // The objects must have the same state!
+  assert( bd == clone );
+</cpp>
+
+It is also my belief that the current parameter initialization scheme is ill conceived because the pointer to a random number generator is stored in Densities. It would be much better to pass the random number generator as a parameter. This would singlehandedly solve problems with [http://biopython.org/wiki/GSOC2011_Mocapy#Testing_and_Improving_Mocapy_Bindings object ownership] in Mocapy++ Python bindings, fix some left-over const-correcness issues and so on. However, this would be a breaking change and a lot of projects depend on Mocapy++.
+
+During the project one of the interesting technical exercises has been to convert the values of the MDArray class template to Python's ndarray. The conversion routines have been written and all of them fully work as expected, however, the MDArray class template has its problems. It is one of the classic examples of failed separation of concerns. Not only it serves as a multi-dimensional array, but it is used in a manner that one would use a Swiss army knife -- the MDArray also serves as a matrix, as a vector (in the mathematical sense), it has curiously named member functions like void keep_eye() (I still do not know what it does), it could be rotated, axis permuted, and whatever else one can think of. This is clearly wrong. Still, touching MDArray is also a delicate matter that ought to be addressed with utmost care.
+
 ==References==
 <biblio>
 #PaluszewskiHamelryck2010 M. Paluszewski and T. Hamelryck. Mocapy++ -- a toolkit for inference and
