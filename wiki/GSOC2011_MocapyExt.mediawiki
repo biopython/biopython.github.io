@@ -140,11 +140,11 @@ In the following table, ''X'' denotes an ESS computer class, and ''u'' is a muta
 ! scope="col" | pre/post-condition
 |-
 | u.construct(parent_sizes)
-| void
+| <cpp>void</cpp>
 | the appropriate shape of the ESS is defined
 |-
 | u.estimate(ess)
-| void
+| <cpp>void</cpp>
 | adds a sample point to the ESS
 |}
 

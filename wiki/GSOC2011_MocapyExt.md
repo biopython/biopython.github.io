@@ -211,10 +211,10 @@ used throughout this article.
 In the following table, *X* denotes an ESS computer class, and *u* is a
 mutable value of *X*.
 
-| expression                 | return type | pre/post-condition                          |
-|----------------------------|-------------|---------------------------------------------|
-| u.construct(parent\_sizes) | void        | the appropriate shape of the ESS is defined |
-| u.estimate(ess)            | void        | adds a sample point to the ESS              |
+| expression                 | return type     | pre/post-condition                          |
+|----------------------------|-----------------|---------------------------------------------|
+| u.construct(parent\_sizes) | <cpp>void</cpp> | the appropriate shape of the ESS is defined |
+| u.estimate(ess)            | <cpp>void</cpp> | adds a sample point to the ESS              |
 
 The class mocapy::BippoESS is an example model for an ESS computer.
 
