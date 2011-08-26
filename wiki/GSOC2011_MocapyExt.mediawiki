@@ -378,7 +378,7 @@ The MocapyEXT is an ongoing project. In the current state it is usable, however,
 
 <cpp>
   mocapy::BippoDensities bd(lambdas, thetas, ns);
-  mocapy::BippoDensities clone( bd.get_paramters() );
+  mocapy::BippoDensities clone( bd.get_parameters() );
 
   // The objects must have the same state!
   assert( bd == clone );

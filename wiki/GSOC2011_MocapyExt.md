@@ -557,7 +557,7 @@ Densities by passing their parameters to the constructor:
 <cpp>
 
 ` mocapy::BippoDensities bd(lambdas, thetas, ns);`  
-` mocapy::BippoDensities clone( bd.get_paramters() );`
+` mocapy::BippoDensities clone( bd.get_parameters() );`
 
 ` // The objects must have the same state!`  
 ` assert( bd == clone );`
