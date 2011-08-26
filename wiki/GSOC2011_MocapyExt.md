@@ -206,6 +206,16 @@ used throughout this article.
     estimation and sampling procedures of a given distribution.
     Densities must satisfy the *DensitiesConcept* requirements.
 
+#### ESSConcept
+
+| Header 1      | Header 2      | Header 3      |
+|---------------|---------------|---------------|
+| row 1, cell 1 | row 1, cell 2 | row 1, cell 3 |
+| row 2, cell 1 | row 2, cell 2 | row 2, cell 3 |
+| row 3, cell 1 | row 3, cell 2 | row 3, cell 3 |
+
+#### DensitiesConcept
+
 ### Prototype implementation
 
 #### Embedding the Python interpreter
