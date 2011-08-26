@@ -444,7 +444,7 @@ via the operator
 plugin\_node\_type&);</cpp>
 
 The content of the output is the same as *repr(Z)*, where *Z* is either
-ESS computer or Densities object.
+an ESS computer or Densities object.
 
 #### Node serialization
 
