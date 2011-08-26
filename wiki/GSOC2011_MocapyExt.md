@@ -578,7 +578,8 @@ During the project one of the interesting technical exercises has been
 to convert the values of the MDArray class template to Python's ndarray.
 The conversion routines have been written and all of them fully work as
 expected, however, the MDArray class template has its problems. It is
-one of the classic examples of failed separation of concerns. Not only
+one of the classic examples of failed [separation of
+concerns](http://en.wikipedia.org/wiki/Separation_of_concerns). Not only
 it serves as a multi-dimensional array, but it is used in a manner that
 one would use a Swiss army knife: the MDArray also serves as a matrix,
 as a vector (in the mathematical sense), it has curiously named member
