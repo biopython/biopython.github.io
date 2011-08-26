@@ -5,15 +5,17 @@ layout: wiki
 ---
 
 BioPython is a very popular library in Bioinformatics and Computational
-Biology.Mocapy++1 is a machine learning toolkit for parameter learning
+Biology. Mocapy++ is a machine learning toolkit for parameter learning
 and inference in dynamic Bayesian networks
 (DBNs)<cite>PaluszewskiHamelryck2010</cite>, which encode probabilistic
-relationships among random variables in a domain. The library supports a
-wide spectrum of DBN architectures and probability distributions,
-including distributions from directional statistics. Notably, Kent
-distribution on the sphere and the bivariate von Mises distribution on
-the torus, which have proven to be useful in formulating probabilistic
-models of protein and RNA structure.
+relationships among random variables in a domain. Mocapy++ is freely
+available under the GNU General Public Licence (GPL) from
+[SourceForge](http://sourceforge.net/projects/mocapy). The library
+supports a wide spectrum of DBN architectures and probability
+distributions, including distributions from directional statistics.
+Notably, Kent distribution on the sphere and the bivariate von Mises
+distribution on the torus, which have proven to be useful in formulating
+probabilistic models of protein and RNA structure.
 
 Such a highly useful and powerful library, which has been used in such
 projects as TorusDBN<cite>BMTFKH2008</cite>,
@@ -34,27 +36,19 @@ recompilations. Recognizing this need, the project (herein referred as
 MocapyEXT), with the aim to improve the current Mocapy++ node type
 extension mechanism, has been proposed by T. Hamelryck.
 
-Introduction
-------------
+Project objectives
+------------------
 
-Mocapy++ is an open source toolkit that is freely available under the
-GNU General Public Licence (GPL) from
-[SourceForge](http://sourceforge.net/projects/mocapy). Mocapy++ is used
-for parameter learning and inference in dynamic Bayesian networks
-(DBNs), which encode probabilistic relationships among random variables
-in a domain. The library supports a wide spectrum of DBN architectures
-and probability distributions, including distributions from directional
-statistics; notably, Kent distribution on the sphere and the bivariate
-von Mises distribution on the torus, which have proven to be useful in
-formulating probabilistic models of protein and RNA structure. This
-makes Mocapy++ especially suitable for biomolecular structure
-prediction.
-
-The goal of the MocapyExt project is to develop a plugin interface for
-Mocapy++. This plugin interface will allow to quickly implement and test
-new probability distributions and thus save development time and effort
-as it then becomes possible to extend Mocapy++ without undue
-modifications and subsequent recompilations.
+The MocapyEXT project is largely an engineering effort to bring a
+transparent Python plug-in interface to Mocapy++, where built-in and
+dynamically loaded node types could be used in a uniform manner. Also,
+externally implemented and dynamically loaded nodes could be modified by
+a user and these changes will not necessitate the recompilation of the
+client program, nor the accompanying Mocapy++ library. This will
+facilitate rapid prototyping, ease the adaptation of currently existing
+code, and improve the software interoperability whilst introducing
+minimal changes to the existing Mocapy++ interface, thus facilitating a
+smooth acceptance of the changes introduced by MocapyEXT.
 
 Author & Mentors
 ----------------
