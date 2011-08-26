@@ -208,11 +208,15 @@ used throughout this article.
 
 #### ESSConcept
 
-| Header 1      | Header 2      | Header 3      |
-|---------------|---------------|---------------|
-| row 1, cell 1 | row 1, cell 2 | row 1, cell 3 |
-| row 2, cell 1 | row 2, cell 2 | row 2, cell 3 |
-| row 3, cell 1 | row 3, cell 2 | row 3, cell 3 |
+In the following table, *X* denotes an ESS computer class, and *u* is a
+mutable value of *X*.
+
+| expression                 | return type | pre/post-condition                          |
+|----------------------------|-------------|---------------------------------------------|
+| Cell 1                     | Cell 2      | Cell 3                                      |
+| u.construct(parent\_sizes) | void        | the appropriate shape of the ESS is defined |
+
+The class mocapy::BippoESS is an example model for an ESS computer.
 
 #### DensitiesConcept
 
