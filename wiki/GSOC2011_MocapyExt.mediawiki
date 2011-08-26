@@ -308,7 +308,7 @@ We can be reasonably sure that performance penalty of using MocapyEXT, while not
 
 ==References==
 <biblio>
-#PaluszewskiHamelryck2010 M. Paluszewski and T. Hamelryck. Mocapy++ - a toolkit for inference and
+#PaluszewskiHamelryck2010 M. Paluszewski and T. Hamelryck. Mocapy++ -- a toolkit for inference and
 learning in dynamic bayesian networks. BMC bioinformatics, 11(1):126, 2010.
 
 #BMTFKH2008 W. Boomsma, K.V. Mardia, C.C. Taylor, J. Ferkinghoff-Borg, A. Krogh, and T. Hamelryck.
@@ -318,4 +318,7 @@ Proceedings of the National Academy of Sciences, 105(26):8932–8937, 2008.
 #HBPFJH2010 Tim Harder, Wouter Boomsma, Martin Paluszewski, Jes Frellsen, Kristoffer
 Johansson, and Thomas Hamelryck. Beyond rotamers: a generative, probabilistic model 
 of side chains in proteins. BMC Bioinformatics, 11(1):306, 2010.
+
+#PaluszewskiWinter2008 M. Paluszewski and P. Winter. Protein decoy generation using branch and
+bound with efficient bounding. Algorithms in Bioinformatics, pages 382–393, 2008.
 </biblio>

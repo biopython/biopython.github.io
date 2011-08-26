@@ -503,8 +503,8 @@ References
 
 <biblio>
 
-1.  PaluszewskiHamelryck2010 M. Paluszewski and T. Hamelryck. Mocapy++ -
-    a toolkit for inference and
+1.  PaluszewskiHamelryck2010 M. Paluszewski and T. Hamelryck. Mocapy++
+    -- a toolkit for inference and
 
 learning in dynamic bayesian networks. BMC bioinformatics, 11(1):126,
 2010.
@@ -521,4 +521,10 @@ Proceedings of the National Academy of Sciences, 105(26):8932–8937,
 
 Johansson, and Thomas Hamelryck. Beyond rotamers: a generative,
 probabilistic model of side chains in proteins. BMC Bioinformatics,
-11(1):306, 2010. </biblio>
+11(1):306, 2010.
+
+1.  PaluszewskiWinter2008 M. Paluszewski and P. Winter. Protein decoy
+    generation using branch and
+
+bound with efficient bounding. Algorithms in Bioinformatics, pages
+382–393, 2008. </biblio>
