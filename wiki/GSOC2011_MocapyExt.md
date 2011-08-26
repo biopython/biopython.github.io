@@ -6,15 +6,16 @@ layout: wiki
 
 BioPython is a very popular library in Bioinformatics and Computational
 Biology.Mocapy++1 is a machine learning toolkit for parameter learning
-and inference in dynamic Bayesian networks (DBNs)[1], which encode
-probabilistic relationships among random variables in a domain. The
-library supports a wide spectrum of DBN architectures and probability
-distributions, including distributions from directional statistics.
-Notably, Kent distribution on the sphere and the bivariate von Mises
-distribution on the torus, which have proven to be useful in formulating
-probabilistic models of protein and RNA structure. Such a highly useful
-and powerful library, which has been used in such projects as TorusDBN
-[2], Basilisk[3], FB5HMM[4][5] with great success, is the result of the
+and inference in dynamic Bayesian networks
+(DBNs)<cite>paluszewski2010mocapy</cite>, which encode probabilistic
+relationships among random variables in a domain. The library supports a
+wide spectrum of DBN architectures and probability distributions,
+including distributions from directional statistics. Notably, Kent
+distribution on the sphere and the bivariate von Mises distribution on
+the torus, which have proven to be useful in formulating probabilistic
+models of protein and RNA structure. Such a highly useful and powerful
+library, which has been used in such projects as TorusDBN [1],
+Basilisk[2], FB5HMM[3][4] with great success, is the result of the
 long-term effort. The original Mocapy implementation dates back to 2004,
 and since then the library has been rewritten in C++. However, C++ is a
 statically typed and compiled programming language, which does not
@@ -498,46 +499,28 @@ And in the pure C++ scenario it does not incur any performance cost.
 References
 ----------
 
-{{ Citation
+<biblio>
 
-`| last1=Boomsma`  
-`| first1=W.`  
-`| last2=Mardia`  
-`| first2=K.`  
-`| last3=Taylor`  
-`| first3=C.`  
-`| last4=Ferkinghoff-Borg`  
-`| first4=J.`  
-`| last5=Krogh`  
-`| first5=A.`  
-`| last6=Hamelryck`  
-`| first6=T.`  
-`| title=A generative, probabilistic model of local protein structure`  
-`| publisher=Proceedings of the National Academy of Sciences`  
-`| year=2008`  
-`| volume=106`  
-`| issue=26`  
-`| pages=8932-8937`  
-`}}`
+1.  paluszewski2010mocapy M. Paluszewski and T. Hamelryck. Mocapy++ - a
+    toolkit for inference and
 
-[1] M. Paluszewski and T. Hamelryck. Mocapy++- a toolkit for inference
-and learning in dynamic bayesian networks. BMC bioinformatics,
-11(1):126, 2010.
+learning in dynamic bayesian networks. BMC bioinformatics, 11(1):126,
+2010. </biblio>
 
-[2] W. Boomsma, K.V. Mardia, C.C. Taylor, J. Ferkinghoff-Borg, A. Krogh,
+[1] W. Boomsma, K.V. Mardia, C.C. Taylor, J. Ferkinghoff-Borg, A. Krogh,
 and T. Hamelryck. A generative, probabilistic model of local protein
 structure. Proceedings of the National Academy of Sciences,
 105(26):8932–8937, 2008
 
-[3] Tim Harder, Wouter Boomsma, Martin Paluszewski, Jes Frellsen,
+[2] Tim Harder, Wouter Boomsma, Martin Paluszewski, Jes Frellsen,
 Kristoffer Johansson, and Thomas Hamelryck. Beyond rotamers: a
 generative, probabilistic model of side chains in proteins. BMC
 Bioinformatics, 11(1):306, 2010.
 
-[4] T. Hamelryck, J.T. Kent, and A. Krogh. Sampling realistic protein
+[3] T. Hamelryck, J.T. Kent, and A. Krogh. Sampling realistic protein
 conformations using local structural bias. PLoS computational biology,
 2(9):e131,2006.
 
-[5] M. Paluszewski and P. Winter. Protein decoy generation using branch
+[4] M. Paluszewski and P. Winter. Protein decoy generation using branch
 and bound with efficient bounding. Algorithms in Bioinformatics, pages
 382–393,2008.
