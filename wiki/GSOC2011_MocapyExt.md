@@ -189,7 +189,7 @@ For the uninitiated to the Mocapy++ terminology, it is necessary to
 understand what ESS computer and Densities are, as these terms shall be
 used throughout this article.
 
--   An ESS Computer is a model of the ESS class that contains the
+-   An ESS Computer is an archetype of the ESS class that contains the
     Expected Sufficient Statistics (ESS) for a given node. It implements
     how a sample (from the Gibbs sampler) should be added and stored,
     such that estimation of the distributions parameters can be done. An
@@ -198,7 +198,7 @@ used throughout this article.
 
 <!-- -->
 
--   Densities is a model of Densities class that implements the
+-   Densities is an archetype of Densities class that implements the
     estimation and sampling procedures of a given distribution.
     Densities must satisfy the *DensitiesConcept* requirements.
 
