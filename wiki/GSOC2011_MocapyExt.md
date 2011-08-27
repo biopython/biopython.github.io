@@ -543,7 +543,7 @@ And in the pure C++ scenario it does not incur any performance cost.
 The MocapyEXT is an ongoing project. In the current state it is usable,
 however, it is important to stress that the described features are by no
 means complete and may work differently in the future. Numerous changes
-have been done in Mocapy++ to support the MocapyEXT infrastructure. Most
+have been made in Mocapy++ to support the MocapyEXT infrastructure. Most
 notably, the Mocapy++ library has been made partially const-correct in
 the development branch. The importance of const-correctness cannot be
 overstated as it affects the parameter passing protocol from and to the
