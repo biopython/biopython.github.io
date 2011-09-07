@@ -61,7 +61,7 @@ This table lists the file formats that Bio.SeqIO can read, write and index, with
 | 1.50
 | 1.50
 | 1.52
-| [http://en.wikipedia.org/wiki/FASTQ_format FASTQ files] are a bit like FASTA files but also include sequencing qualities.  In Biopython, "fastq" (or the alias "fastq-sanger") refers to Sanger style FASTQ files which encode PHRED qualities using an ASCII offset of 33. See also the incompatible "fastq-solexa" and "fastq-illumina" variants used in early Solexa/Illumina pipelines.
+| [http://en.wikipedia.org/wiki/FASTQ_format FASTQ files] are a bit like FASTA files but also include sequencing qualities.  In Biopython, "fastq" (or the alias "fastq-sanger") refers to Sanger style FASTQ files which encode PHRED qualities using an ASCII offset of 33. See also the incompatible "fastq-solexa" and "fastq-illumina" variants used in early Solexa/Illumina pipelines, Illumina pipeline 1.8 produces Sanger FASTQ.
 |-  
 | fastq-solexa
 | 1.50
