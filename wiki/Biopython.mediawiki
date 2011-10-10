@@ -31,6 +31,7 @@ This wiki will help you download and install Biopython, and start using the libr
 *[[Active_projects | What's being worked on]]
 *[[ GitUsage | Developing on Github ]]
 *[[Google Summer of Code]]
+*[http://redmine.open-bio.org/projects/biopython Issue Tracker]
 |}
 
 The latest release is [[Download|Biopython 1.58]], released on 18 August 2011.
