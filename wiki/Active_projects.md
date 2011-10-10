@@ -126,7 +126,7 @@ Enhancement list
 ----------------
 
 Maintaining software involves incremental improvements for new format
-changes and removal of bugs. Please see our
-[bugzilla](http://bugzilla.open-bio.org/) page for a current list. Post
-to the developer mailing list if you are interested in tackling any open
-issues.
+changes and removal of bugs. Please see our [Issue
+Tracker](http://redmine.open-bio.org/projects/biopython) page for a
+current list. Post to the developer mailing list if you are interested
+in tackling any open issues.
