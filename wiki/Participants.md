@@ -64,12 +64,12 @@ Brad Chapman
 |                         |                                                                                                                                                                       |
 |-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | E-mail                  | See my web page                                                                                                                                                       |
-| Affiliation             | Plant Pathology, SCRI; previously MOAC Doctoral Training Centre, University of Warwick                                                                                |
+| Affiliation             | The James Hutton Institute (formerly SCRI); previously MOAC Doctoral Training Centre, University of Warwick                                                           |
 | Location                | Dundee, Scotland, UK                                                                                                                                                  |
 | Uses Python for         | Bioinformatics, controlling R with rpy, ...                                                                                                                           |
-| Work/Research Interests | Bacterial signalling, genomics                                                                                                                                        |
+| Work/Research Interests | Bacterial signalling, genomics, sequencings                                                                                                                           |
 | Biopython Contributions | Sequence parsing including [Bio.SeqIO](SeqIO "wikilink"), [Bio.AlignIO](AlignIO "wikilink"), maintaining the [BioSQL interface](BioSQL "wikilink"), and documentation |
-| Relevant URL            | <http://www.scri.ac.uk/staff/petercock> and <http://www.warwick.ac.uk/go/peter_cock/python/>                                                                          |
+| Relevant URL            | <http://www.hutton.ac.uk/staff/peter-cock> and <http://www.warwick.ac.uk/go/peter_cock/python/>                                                                       |
 | github                  | <http://github.com/peterjc>                                                                                                                                           |
 
 Andrew Dalke

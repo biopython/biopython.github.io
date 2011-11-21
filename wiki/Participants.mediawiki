@@ -131,7 +131,7 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 
 |-
 
-| Affiliation             || Plant Pathology, SCRI; previously MOAC Doctoral Training Centre, University of Warwick
+| Affiliation             || The James Hutton Institute (formerly SCRI); previously MOAC Doctoral Training Centre, University of Warwick
 
 |-
 
@@ -143,7 +143,7 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 
 |-
 
-| Work/Research Interests || Bacterial signalling, genomics
+| Work/Research Interests || Bacterial signalling, genomics, sequencings
 
 |-
 
@@ -151,7 +151,7 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 
 |-
 
-| Relevant URL            || http://www.scri.ac.uk/staff/petercock and http://www.warwick.ac.uk/go/peter_cock/python/
+| Relevant URL            || http://www.hutton.ac.uk/staff/peter-cock and http://www.warwick.ac.uk/go/peter_cock/python/
 
 |-
 
