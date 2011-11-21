@@ -192,15 +192,14 @@ João Rodrigues
 Eric Talevich
 =============
 
-|                         |                                                        |
-|-------------------------|--------------------------------------------------------|
-| E-mail                  | Gmail: eric.talevich                                   |
-| Affiliation             | Institute of Bioinformatics, University of Georgia     |
-| Location                | Athens, Georgia, USA                                   |
-| Uses Python for         | Science!                                               |
-| Work/Research Interests | Cell signaling networks in pathogenic protozoa; cancer |
-| Biopython Contributions | Bio.Phylo, occasional maintenance of Bio.PDB           |
-| Relevant URL            | <http://etalog.blogspot.com>                           |
+|                         |                                                                 |
+|-------------------------|-----------------------------------------------------------------|
+| Affiliation             | Institute of Bioinformatics, University of Georgia              |
+| Location                | Athens, Georgia, USA                                            |
+| Uses Python for         | Scripting, prototyping, glue, web dev -- it's my default choice |
+| Work/Research Interests | Cell signaling networks in pathogenic protozoa; cancer          |
+| Biopython Contributions | Bio.Phylo, occasional maintenance of Bio.PDB                    |
+| Relevant URL            | <http://etalog.blogspot.com>                                    |
 
 Bartek Wilczyński
 =================

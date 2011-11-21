@@ -458,10 +458,6 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 {| border="0"
 |-
 
-| E-mail                  || Gmail: eric.talevich
-
-|-
-
 | Affiliation             || Institute of Bioinformatics, University of Georgia
 
 |-
@@ -470,7 +466,7 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 
 |-
 
-| Uses Python for         || Science!
+| Uses Python for         || Scripting, prototyping, glue, web dev -- it's my default choice
 
 |-
 
