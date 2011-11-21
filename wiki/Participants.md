@@ -176,6 +176,19 @@ Frank Kauff
 | Biopython Contributions | GenomeDiagram, bits and bobs                                                                                                                                      |
 | Relevant URL            | <http://www.scri.ac.uk/staff/leightonpritchard>                                                                                                                   |
 
+João Rodrigues
+==============
+
+|                         |                                                                                                   |
+|-------------------------|---------------------------------------------------------------------------------------------------|
+| E-mail                  | <anaryin@gmail.com>                                                                               |
+| Affiliation             | Bijvoet Center for Biomolecular Research, Utrecht University                                      |
+| Location                | Utrecht, NL                                                                                       |
+| Uses Python for         | Pretty much all my (programming) tasks                                                            |
+| Work/Research Interests | Structural Biology, Biophysics, Molecular Simulations, Protein Docking, Homology Modelling, etc.. |
+| Biopython Contributions | Bio.PDB (here and there)                                                                          |
+| Relevant URL            | <http://nmr.chem.uu.nl/~joaor>                                                                    |
+
 Bartek Wilczyński
 =================
 
