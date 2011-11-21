@@ -454,6 +454,38 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 |}
 
 
+= Eric Talevich =
+{| border="0"
+|-
+
+| E-mail                  || Gmail: eric.talevich
+
+|-
+
+| Affiliation             || Institute of Bioinformatics, University of Georgia
+
+|-
+
+| Location                || Athens, Georgia, USA
+
+|-
+
+| Uses Python for         || Science!
+
+|-
+
+| Work/Research Interests || Cell signaling networks in pathogenic protozoa; cancer
+
+|-
+
+| Biopython Contributions || Bio.Phylo, occasional maintenance of Bio.PDB
+
+|-
+
+| Relevant URL            || http://etalog.blogspot.com
+
+|}
+
 = Bartek Wilczyński =
 {| border="0"
 |-
@@ -485,7 +517,6 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 | Relevant URL            || http://bartek.rezolwenta.eu.org
 
 |}
-
 
 = Harry Zuzan =
 {| border="0"

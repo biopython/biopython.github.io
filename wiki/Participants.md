@@ -189,6 +189,19 @@ João Rodrigues
 | Biopython Contributions | Bio.PDB (here and there)                                                                          |
 | Relevant URL            | <http://nmr.chem.uu.nl/~joaor>                                                                    |
 
+Eric Talevich
+=============
+
+|                         |                                                        |
+|-------------------------|--------------------------------------------------------|
+| E-mail                  | Gmail: eric.talevich                                   |
+| Affiliation             | Institute of Bioinformatics, University of Georgia     |
+| Location                | Athens, Georgia, USA                                   |
+| Uses Python for         | Science!                                               |
+| Work/Research Interests | Cell signaling networks in pathogenic protozoa; cancer |
+| Biopython Contributions | Bio.Phylo, occasional maintenance of Bio.PDB           |
+| Relevant URL            | <http://etalog.blogspot.com>                           |
+
 Bartek Wilczyński
 =================
 
