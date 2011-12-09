@@ -92,13 +92,6 @@ Bio.PDB module).
   
 <http://www.dalkescientific.com/writings/NBN/>
 
--   Katja Schuerer and Catherine Letondal teach a Bioinformatics course
-    in Python at the Pasteur Institute.
-
-  
-<http://www.pasteur.fr/recherche/unites/sis/formation/python/> (slightly
-out of date)
-
 -   Ravinder Singh and Scott Kelley teach a Bioinformatics course using
     Biopython at the University of Colorado.
 

@@ -36,8 +36,6 @@ New to BioPython? Check out the [[Getting_Started|Getting Started]] page, or fol
 
 * Andrew Dalke taught an introduction to programming for Bioinformatics in Python class at the National Bioinformatics Network in South Africa.
 :http://www.dalkescientific.com/writings/NBN/
-* Katja Schuerer and Catherine Letondal teach a Bioinformatics course in Python at the Pasteur Institute.
-:http://www.pasteur.fr/recherche/unites/sis/formation/python/ (slightly out of date)
 * Ravinder Singh and Scott Kelley teach a Bioinformatics course using Biopython at the University of Colorado.
 :http://mcdb.colorado.edu/courses/6440/index.html
 * Katja Schuerer, Catherine Letondal and Eric Deveaud have an online course that covers getting started in programming with Python. It's aimed at biologists that want to learn programming.
