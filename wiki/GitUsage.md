@@ -567,4 +567,5 @@ There are a lot of different nice guides to using Git on the web:
 -   <http://projects.scipy.org/numpy/wiki/GitWorkflow> Numpy is also
     evaluating git
 -   <http://learn.github.com/>
+-   [Pro Git](http://progit.org/book/)
 
