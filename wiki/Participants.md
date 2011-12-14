@@ -12,15 +12,15 @@ source code.
 Tiago Antao
 ===========
 
-|                         |                                                                                                                                |
-|-------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| E-mail                  | [tiagoantao@gmail.com](mailto:tiago@gmail.com)                                                                                 |
-| Affiliation             | Liverpool School of Tropical Medicine                                                                                          |
-| Location                | Liverpool, UK                                                                                                                  |
-| Uses Python for         | Almost all programming stuff                                                                                                   |
-| Work/Research Interests | Population genetics, Infectious diseases (malaria), domain specific languages (DSLs) and declarative programming, pharmacology |
-| Biopython Contributions | Bio.PopGen                                                                                                                     |
-| Relevant URL            | <http://tiago.org>                                                                                                             |
+|                         |                                                                                                           |
+|-------------------------|-----------------------------------------------------------------------------------------------------------|
+| E-mail                  | <tiagoantao@gmail.com>                                                                                    |
+| Affiliation             | Division of Biological Anthropology, University of Cambridge                                              |
+| Location                | Cambridge, UK                                                                                             |
+| Uses Python for         | Almost all programming stuff                                                                              |
+| Work/Research Interests | Population genetics, infectious diseases (malaria), human evolution, selection, effective population size |
+| Biopython Contributions | Bio.PopGen                                                                                                |
+| Relevant URL            | <http://tiago.org>                                                                                        |
 
 Sebastian Bassi
 ===============

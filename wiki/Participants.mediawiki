@@ -6,15 +6,15 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 {| border="0"
 |-
 
-| E-mail 	          || [mailto:tiago@gmail.com tiagoantao@gmail.com]
+| E-mail 	          || [mailto:tiagoantao@gmail.com tiagoantao@gmail.com]
 
 |-
 
-| Affiliation 	          || Liverpool School of Tropical Medicine
+| Affiliation 	          || Division of Biological Anthropology, University of Cambridge
 
 |-
 
-| Location 	          || Liverpool, UK
+| Location 	          || Cambridge, UK
 
 |-
 
@@ -22,7 +22,7 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 
 |-
 
-| Work/Research Interests || Population genetics, Infectious diseases (malaria), domain specific languages (DSLs) and declarative programming, pharmacology
+| Work/Research Interests || Population genetics, infectious diseases (malaria), human evolution, selection, effective population size
 
 |-
 
@@ -33,8 +33,6 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 | Relevant URL            || http://tiago.org
 
 |}
-
-
 
 = Sebastian Bassi =
 {| border="0"
