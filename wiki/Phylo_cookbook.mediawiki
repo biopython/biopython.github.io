@@ -315,3 +315,54 @@ Enhancements:
 
 ''TODO:''
 * Relationship matrix? See [http://www.jstor.org/stable/3070822 Martins and Housworth 2002]
+
+==Miscellaneous==
+
+===Make a tree hypermetric===
+
+This scales the branches of a tree so that all tips are equidistant from the root.
+
+<source lang=python>
+
+def hypermetric(tree, max_depth=None, default_branch_length=1.0):
+    """Stretch branch lengths so all tips are equal distance from root.
+
+    `max_depth` is a number.
+    By default, branch lengths are scaled to the depth of the deepest terminal
+    in the tree.
+    To normalize all branches in the tree to a total length of 1, use
+    max_depth=1.
+
+    `default_branch_length` is used when a branch length is None. The default
+    is 1, a reasonable choice to handle trees with no branch lengths assigned. 
+    For trees where most branch lengths are available but some are missing, 0
+    could be a more suitable choice.
+    """
+    orig_depths = tree.depths()
+    if max_depth is None:
+        max_depth = max(orig_depths.itervalues())
+    # This will hurl if a non-numeric max_depth is given
+    max_depth = float(max_depth)
+
+    already_stretched = set()
+
+    def stretch_branches(parent):
+        clade_depths = clade.depths()
+        deepest_tip = max(clade_depths, key=lambda c: clade_depths[c])
+        path_to_deepest_tip = clade.get_path(deepest_tip)
+        scale = max_depth / clade_depths[deepest_tip]
+        for node in path_to_deepest_tip:
+            if node in already_stretched:
+                continue
+            if node.branch_length is None:
+                node.branch_length = default_branch_length
+            node.branch_length *= scale
+            # Don't revisit the branches along this path
+            already_stretched.add(node)
+        # Recurse down to the tips
+        for child in clade:
+            stretch_branches(child)
+
+    stretch_branches(tree.root)
+
+</source>
