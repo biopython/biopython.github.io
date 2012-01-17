@@ -10,9 +10,11 @@ The Multiple Alignment Format, described by
 [UCSC](http://genome.ucsc.edu/FAQ/FAQformat.html#format5), stores a
 series of multiple alignments in a single file. Suitable for
 whole-genome to whole-genome alignments, metadata such as source
-chromosome, start position, size, and strand can be stored. Biopython
-implements a MAF reader and writer accessible via **Bio.AlignIO**, and
-an indexer accessible via **Bio.AlignIO.MafIO**.
+chromosome, start position, size, and strand can be stored.
+
+A branch of Biopython on GitHub (not yet in the main distribution for
+general use) implements a MAF reader and writer accessible via
+**Bio.AlignIO**, and an indexer accessible via **Bio.AlignIO.MafIO**.
 
 All examples below make use of the Multiz [30-way alignment to mouse
 chromosome
