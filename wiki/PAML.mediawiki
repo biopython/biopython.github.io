@@ -69,9 +69,9 @@ ndata = None
 
 Setting an option to a value of None will cause it to be ignored by ''codeml'' (it will be omitted from the final control file). Options may be set by the set_option() function and their values may be retrieved by the get_option() function:
 <source lang=python>
->>> cml.set_option("clock", 1)
->>> cml.set_option("NSsites", [0,1,2])
->>> cml.set_option("aaRatefile", "wag.dat")
+>>> cml.set_options(clock=1)
+>>> cml.set_options(NSsites=[0,1,2])
+>>> cml.set_options(aaRatefile="wag.dat")
 >>> cml.get_option("NSsites")
 [0, 1, 2]
 </source>

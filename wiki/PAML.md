@@ -106,9 +106,9 @@ be set by the set\_option() function and their values may be retrieved
 by the get\_option() function:
 
 ``` python
->>> cml.set_option("clock", 1)
->>> cml.set_option("NSsites", [0,1,2])
->>> cml.set_option("aaRatefile", "wag.dat")
+>>> cml.set_options(clock=1)
+>>> cml.set_options(NSsites=[0,1,2])
+>>> cml.set_options(aaRatefile="wag.dat")
 >>> cml.get_option("NSsites")
 [0, 1, 2]
 ```
