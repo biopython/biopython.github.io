@@ -1,7 +1,7 @@
 This module provides an interface to the [http://abacus.gene.ucl.ac.uk/software/paml.html PAML] (Phylogenetic Analysis by Maximum Likelihood) package of programs. Currently, interfaces to the programs ''codeml'', ''baseml'' and ''yn00'' as well as a Python re-implementation of ''chi2'' have been included.
 
 ==Availability==
-This module has not yet been integrated into Biopython and is available as a development branch of the source code, which may be downloaded at [https://github.com/brandoninvergo/biopython/tree/paml-branch Github].
+This module is available in Biopython 1.58 and later.
 
 To use this module, you must have PAML version 4.1 or greater installed on your system.
 

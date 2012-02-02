@@ -13,9 +13,7 @@ Python re-implementation of *chi2* have been included.
 Availability
 ------------
 
-This module has not yet been integrated into Biopython and is available
-as a development branch of the source code, which may be downloaded at
-[Github](https://github.com/brandoninvergo/biopython/tree/paml-branch).
+This module is available in Biopython 1.58 and later.
 
 To use this module, you must have PAML version 4.1 or greater installed
 on your system.
