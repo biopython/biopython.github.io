@@ -36,7 +36,7 @@ handles = [open('btCOI.nex', 'r'), open('btCOII.nex', 'r'), open('btITS.nex', 'r
 nexi =  [(handle.name, Nexus.Nexus(handle)) for handle in handles]
 
 combined = Nexus.combine(nexi)
-combined.write_nexus_data(filename='btCOMBINED.nex')
+combined.write_nexus_data(filename=open('btCOMBINED.nex', 'w'))
 </source>
 
 That was easy! Lets look at our combined file
