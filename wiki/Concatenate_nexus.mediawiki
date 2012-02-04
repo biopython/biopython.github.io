@@ -30,10 +30,12 @@ We can use the Nexus module to make a supermatrix:
 
 <source lang=python>
 from Bio.Nexus import Nexus
-# the combine function takes a list [(name, nexus instance)...], if we provide the
-# file handles in a list we can use a list comprehension to such a list easily
-handles = [open('btCOI.nex', 'r'), open('btCOII.nex', 'r'), open('btITS.nex', 'r')]   
-nexi =  [(handle.name, Nexus.Nexus(handle)) for handle in handles]
+# the combine function takes a list of tuples [(name, nexus instance)...], 
+#if we provide the file names in a list we can use a list comprehension to 
+# create these tuples
+
+file_list = ['btCOI.nex', 'btCOII.nex', 'btITS.nex]   
+nexi =  [(fname, Nexus.Nexus(fname)) for fname in file_list]
 
 combined = Nexus.combine(nexi)
 combined.write_nexus_data(filename=open('btCOMBINED.nex', 'w'))
@@ -89,7 +91,7 @@ def concat(file_list, same_taxa=True):
   By default this will only work if the same taxa are present in each file
   use  same_taxa=False if you are not concerned by this
   '''    
-  nexi =  [(handle.name, Nexus.Nexus(handle)) for handle in file_list]
+  nexi =  [(fname, Nexus.Nexus(fname)) for fname in file_list]  
   if same_taxa:
     if not check_taxa(nexi): 
       return Nexus.combine(nexi)
