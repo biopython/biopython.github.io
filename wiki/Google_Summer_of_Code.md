@@ -28,16 +28,16 @@ In 2010, another project was funded:
     everyday structural bioinformatics. These features are now gradually
     being merged into the mainline with João's help.
 
-This year, three projects are being funded in Biopython via OBF:
+In 2011, three projects were funded in Biopython via OBF:
 
--   [Mikael Trellet](User%3AMtrellet "wikilink") is adding [support for
+-   [Mikael Trellet](User%3AMtrellet "wikilink") added [support for
     biomolecular interface analysis](GSoC2011_mtrellet "wikilink") to
     the Bio.PDB module.
--   Michele Silva is writing a [Python bridge for
-    Mocapy++](GSOC2011_Mocapy "wikilink") and linking it to Bio.PDB to
+-   Michele Silva wrote a [Python bridge for
+    Mocapy++](GSOC2011_Mocapy "wikilink") and linked it to Bio.PDB to
     enable statistical analysis of protein structures.
--   Justinas Daugmaudis is also enhancing Mocapy++ in a complementary
-    way, developing a [plugin system for
+-   Justinas Daugmaudis also enhanced Mocapy++ in a complementary way,
+    developing a [plugin system for
     Mocapy++](GSOC2011_MocapyExt "wikilink") allowing users to easily
     write new nodes (probability distribution functions) in Python.
 
