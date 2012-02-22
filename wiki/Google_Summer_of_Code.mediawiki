@@ -45,6 +45,8 @@ Please read the [http://www.open-bio.org/wiki/Google_Summer_of_Code GSoC page at
 
 === Variant representation, parser, generator, and coordinate converter ===
 
+2012 GSoC updates are being considered. Stay tuned.
+
 ; Rationale : Computational analysis of genomic variation requires the ability to reliably translate between human and computer representations of genomic variants. While several standards for human variation syntax have been proposed, community support is limited because of the technical complexity of the proposals and the lack of software libraries that implement them. The goal of this project is to initiate freely-available, language-neutral tools to parse, generate, and convert between representations of genomic variation.
 
 ; Approach and Goals :
