@@ -51,14 +51,14 @@ recent git changes like this (adjust the date accordingly):
 Ideally do this with a clean checkout on your Windows machine too.
 Assuming you have setup your compilers etc appropriately just do this:
 
-`   C:\python24\python setup.py build`  
-`   C:\python24\python setup.py test`
+`   C:\python25\python setup.py build`  
+`   C:\python25\python setup.py test`
 
 `   C:\python25\python setup.py build`  
 `   C:\python25\python setup.py test`
 
-`   C:\python26\python setup.py build`  
-`   C:\python26\python setup.py test`
+`   C:\python27\python setup.py build`  
+`   C:\python27\python setup.py test`
 
 Running the tests simultaneously is risky, as two threads may both try
 and read/write to the same temp files.
@@ -97,13 +97,13 @@ and read/write to the same temp files.
 
 15. add git tag
 
-`   drevil:~biopython> git tag biopython-153`  
+`   drevil:~biopython> git tag biopython-159`  
 `   drevil:~biopython> git push origin master --tags`
 
 16. Update API documentation using Epydoc.
 
--   Go to the /usr/local/lib/python2.4/site-packages (or equivalent)
-    directory. Running epydoc in your CVS tree works, but can miss some
+-   Go to the /usr/local/lib/python2.6/site-packages (or equivalent)
+    directory. Running epydoc in your git tree works, but can miss some
     packages due to import errors.
 
 `   epydoc -v -o ~/api -u `[`http://biopython.org`](http://biopython.org)` -n Biopython --docformat plaintext Bio BioSQL`
@@ -118,7 +118,6 @@ earlier). Build the installers first, if you do a build/test/install
 before hand you seem to get a bloated setup exe. Assuming you have setup
 your compilers etc appropriately just do this:
 
-`   C:\python24\python setup.py bdist_wininst`  
 `   C:\python25\python setup.py bdist_wininst`  
 `   C:\python26\python setup.py bdist_wininst`  
 `   C:\python27\python setup.py bdist_wininst`
