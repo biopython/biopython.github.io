@@ -25,7 +25,7 @@ These instructions are for a Unix machine, with a Windows machine also needed to
     > rm -r build
     > rm Tests/*.pyc
     > make clean -C Doc
-    > cvs update -P -d 
+    > git status
 
 8. build Biopython and do last regression test
     drevil:~biopython> python setup.py build 

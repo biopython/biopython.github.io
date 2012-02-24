@@ -41,7 +41,7 @@ recent git changes like this (adjust the date accordingly):
 `   > rm -r build`  
 `   > rm Tests/*.pyc`  
 `   > make clean -C Doc`  
-`   > cvs update -P -d `
+`   > git status`
 
 8. build Biopython and do last regression test
 
