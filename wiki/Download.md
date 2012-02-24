@@ -4,7 +4,7 @@ permalink: wiki/Download
 layout: wiki
 ---
 
-Current Release - 1.59 - 25 February 2011
+Current Release - 1.59 - 24 February 2011
 =========================================
 
 See also [What's
