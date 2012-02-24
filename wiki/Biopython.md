@@ -39,4 +39,4 @@ the libraries and tools.
                                                                                                                                                                                                                                                                                             -   [Issue Tracker](http://redmine.open-bio.org/projects/biopython)  |
 
 The latest release is [Biopython 1.59](Download "wikilink"), released on
-25 February 2011.
+25 February 2012.
