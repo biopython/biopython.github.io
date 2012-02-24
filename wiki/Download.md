@@ -45,8 +45,9 @@ automatically.
 For Mac OS X, we recommend installing from source (see below). Under
 (Snow) Leopard, you will need to have installed Apple's XCode tools
 *including* the optional 10.4 SDK (check the option for 10.4 support
-when installing Xcode tools). For Lion, just get install XCode from the
-Apple App Store.
+when installing Xcode tools) which comes on DVD with the computer. For
+Lion, just install XCode from the Apple App Store (it is a big
+download).
 
 Otherwise you typically install from source by downloading and
 uncompressing the archive, then running the commands:
