@@ -227,9 +227,6 @@ Recent releases of Biopython require NumPy (and not Numeric):
     1,450 Kb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.3
 -   [biopython-1.58.win32-py2.7.exe](http://biopython.org/DIST/biopython-1.58.win32-py2.7.exe)
     1,577 Kb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.5
-
-<!-- -->
-
 -   [biopython-1.57.tar.gz](http://biopython.org/DIST/biopython-1.57.tar.gz)
     6,783 Kb -- Source Tarball (2 April 2011)
 -   [biopython-1.57.zip](http://biopython.org/DIST/biopython-1.57.zip)
