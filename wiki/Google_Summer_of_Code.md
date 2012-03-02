@@ -79,7 +79,7 @@ Involved toolkits or projects :
 
 :\* Biopython
 
-Degree of difficulty and needed skills : Medium/Hard depending on how many objectives are attempted. The student needs to be fluent in Python. Experience with all of the command line tools listed would be clear advantages, as would first hand experience using [BioPerl's SearchIO](bp:HOWTO:SearchIO "wikilink").  
+Degree of difficulty and needed skills : Medium/Hard depending on how many objectives are attempted. The student needs to be fluent in Python. Experience with all of the command line tools listed would be clear advantages, as would first hand experience using [BioPerl's SearchIO](bp:HOWTO:SearchIO "wikilink"). You will also need to know or learn the git version control system.  
 
 <!-- -->
 
@@ -137,7 +137,7 @@ Involved toolkits or projects :
 :\* Related: <http://www.mutalyzer.nl/2.0/>,
 <http://www.hgvs.org/mutnomen/>
 
-Degree of difficulty and needed skills : Easy-to-Medium depending on how many objectives are attempted. The student will need have skills in most or all of: basic molecular biology (genomes, transcripts, proteins), genomic variation, Python, BioPython, Perl, BioPerl, NCBI Eutilities and/or Ensembl API. Experience with computer grammars is highly desirable.  
+Degree of difficulty and needed skills : Easy-to-Medium depending on how many objectives are attempted. The student will need have skills in most or all of: basic molecular biology (genomes, transcripts, proteins), genomic variation, Python, BioPython, Perl, BioPerl, NCBI Eutilities and/or Ensembl API. Experience with computer grammars is highly desirable. You will also need to know or learn the git version control system.  
 
 <!-- -->
 

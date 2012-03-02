@@ -33,7 +33,7 @@ Beyond the initial challenge of an iterator based parsing and writing framework,
 
 :* Biopython
 
-; Degree of difficulty and needed skills : Medium/Hard depending on how many objectives are attempted. The student needs to be fluent in Python. Experience with all of the command line tools listed would be clear advantages, as would first hand experience using [[bp:HOWTO:SearchIO|BioPerl's SearchIO]]. 
+; Degree of difficulty and needed skills : Medium/Hard depending on how many objectives are attempted. The student needs to be fluent in Python. Experience with all of the command line tools listed would be clear advantages, as would first hand experience using [[bp:HOWTO:SearchIO|BioPerl's SearchIO]]. You will also need to know or learn the git version control system.
 
 ; Mentors : Peter Cock
 
@@ -62,6 +62,6 @@ Beyond the initial challenge of an iterator based parsing and writing framework,
 :* BioPython
 :* Related: http://www.mutalyzer.nl/2.0/, http://www.hgvs.org/mutnomen/
 
-; Degree of difficulty and needed skills : Easy-to-Medium depending on how many objectives are attempted. The student will need have skills  in most or all of: basic molecular biology (genomes, transcripts, proteins), genomic variation, Python, BioPython, Perl, BioPerl, NCBI Eutilities and/or Ensembl API. Experience with computer grammars is highly desirable.
+; Degree of difficulty and needed skills : Easy-to-Medium depending on how many objectives are attempted. The student will need have skills  in most or all of: basic molecular biology (genomes, transcripts, proteins), genomic variation, Python, BioPython, Perl, BioPerl, NCBI Eutilities and/or Ensembl API. Experience with computer grammars is highly desirable. You will also need to know or learn the git version control system.
 
 ; Mentors (TO BE CONFIRMED): [http://linkedin.com/in/reece Reece Hart] ([http://locusdevelopmentinc.com Locus Development], San Francisco); [http://bcbio.wordpress.com Brad Chapman]
