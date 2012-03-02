@@ -141,6 +141,6 @@ Degree of difficulty and needed skills : Easy-to-Medium depending on how many ob
 
 <!-- -->
 
-Mentors (TO BE CONFIRMED): [Reece Hart](http://linkedin.com/in/reece) ([Locus Development](http://locusdevelopmentinc.com), San Francisco); [Brad Chapman](http://bcbio.wordpress.com)  
+Mentors (TO BE CONFIRMED): [Reece Hart](http://linkedin.com/in/reece) ([Locus Development](http://locusdevelopmentinc.com), San Francisco); [Brad Chapman](http://bcbio.wordpress.com); [James Casbon](http://casbon.me)  
 
 

@@ -64,4 +64,4 @@ Beyond the initial challenge of an iterator based parsing and writing framework,
 
 ; Degree of difficulty and needed skills : Easy-to-Medium depending on how many objectives are attempted. The student will need have skills  in most or all of: basic molecular biology (genomes, transcripts, proteins), genomic variation, Python, BioPython, Perl, BioPerl, NCBI Eutilities and/or Ensembl API. Experience with computer grammars is highly desirable. You will also need to know or learn the git version control system.
 
-; Mentors (TO BE CONFIRMED): [http://linkedin.com/in/reece Reece Hart] ([http://locusdevelopmentinc.com Locus Development], San Francisco); [http://bcbio.wordpress.com Brad Chapman]
+; Mentors (TO BE CONFIRMED): [http://linkedin.com/in/reece Reece Hart] ([http://locusdevelopmentinc.com Locus Development], San Francisco); [http://bcbio.wordpress.com Brad Chapman]; [http://casbon.me James Casbon]
