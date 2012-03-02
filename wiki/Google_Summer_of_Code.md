@@ -48,48 +48,47 @@ details about the program. If you are interested in contributing as a
 mentor or student next year, please introduce yourself on the [mailing
 list](http://biopython.org/wiki/Mailing_lists).
 
-2011 Project ideas
+2012 Project ideas
 ------------------
 
-### Mocapy++Biopython: from data to probabilistic models of biomolecules
+### SearchIO (DRAFT)
 
-Rationale : [Mocapy++](http://sourceforge.net/projects/mocapy/) is a machine learning toolkit for training and using [Bayesian networks](http://en.wikipedia.org/wiki/Bayesian_network). Mocapy++ supports the use of [directional statistics](http://en.wikipedia.org/wiki/Directional_statistics); the statistics of angles, orientations and directions. This unique feature of Mocapy++ makes the toolkit especially suited for the formulation of probabilistic models of biomolecular structure. The toolkit has already been used to develop (published and peer reviewed) models of [protein](http://www.pnas.org/content/105/26/8932.abstract?etoc) and [RNA](http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1000406) structure in atomic detail. Mocapy++ is implemented in C++, and does not provide any Python bindings. The goal of this proposal is to develop an easy-to-use Python interface to Mocapy++, and to integrate this interface with the Biopython project. Through its [Bio.PDB](http://biopython.org/DIST/docs/cookbook/biopdb_faq.pdf) module (initially implemented by the mentor of this proposal, [T. Hamelryck](http://www.binf.ku.dk/research/structural_bioinformatics/)), Biopython provides excellent functionality for data mining of biomolecular structure databases. Integrating Mocapy++ and Biopython would create strong synergy, as it would become quite easy to extract data from the databases, and subsequently use this data to train a probabilistic model. As such, it would provide a strong impulse to the field of protein structure prediction, design and simulation. Possible applications beyond bioinformatics are obvious, and include probabilistic models of human or animal movement, or any other application that involves directional data.  
+Rationale : Biopython has general APIs for parsing and writing assorted sequence file formats ([SeqIO](SeqIO "wikilink")), multiple sequence alignments ([AlignIO](AlignIO "wikilink")), phylogenetic trees ([Phylo](Phylo "wikilink")) and motifs (Bio.Motif). An obvious omission is something equivalent to [BioPerl's SearchIO](bp:HOWTO:SearchIO "wikilink"). The goal of this proposal is to develop an easy-to-use Python interface in the same style as [SeqIO](SeqIO "wikilink"), [AlignIO](AlignIO "wikilink"), etc but for pairwise search results. This would aim to cover EMBOSS muscle & water, BLAST XML, BLAST tabular, HMMER, Bill Pearson's FASTA alignments, and so on.  
 
-<!-- -->
+Much of the low level parsing code to handle these file formats already
+exists in Biopython, and much as the [SeqIO](SeqIO "wikilink") and
+[AlignIO](AlignIO "wikilink") modules are linked and share code, similar
+links apply to the proposed SearchIO module when using pairwise
+alignment file formats. However, SearchIO will also support pairwise
+search results where the pairwise sequence alignment itself is not
+available (e.g. the default BLAST tabular output). A crucial aspect of
+this work will be to design a pairwise-search-result object heirachy
+that reflects this, probably with a subclass inheriting from both the
+pairwise-search-result and the existing MultipleSequenceAlignment
+object.
 
-Approach : Ideally, the student (or several students) would first gain some understanding of the theoretical background of the algorithms that are used in Mocapy++, such as parameter learning of Bayesian networks using [Stochastic Expectation Maximization (S-EM)](http://en.wikipedia.org/wiki/Expectation-maximization_algorithm). Next, the student would study some of the use cases of the toolkit, making use of some of the published articles that involve Mocapy++. After becoming familiar with the internals of Mocapy++, Python bindings will then be implemented using the [Boost C++ library](http://www.boost.org). Based on the use cases, the student would finally implement some example applications that involve data mining of biomolecular structure using Biopython, the subsequent formulation of probabilistic models using Python-Mocapy++, and its application to some biologically relevant problem. Schematically, the following steps are involved for the student:  
+Beyond the initial challenge of an iterator based parsing and writing
+framework, random access akin to the Bio.SeqIO.index and index\_db
+functionality would be most desirable for working with large datasets.
 
-:\* Gaining some understanding of S-EM and directional statistics
-
-:\* Study of Mocapy++ use cases
-
-:\* Study of Mocapy++ internals and code
-
-:\* Design of interface strategy
-
-:\* Implementing Python bindings using Boost
-
-:\* Example applications, involving Bio.PDB data mining
-
-Challenges : The project is highly interdisciplinary, and ideally requires skills in programming (C++, Python, wrapping C++ libraries in Python, Boost), machine learning, knowledge of biomolecular structure and statistics. The project could be extended (for example, by implementing additional functionality in Mocapy++) or limited (for example, by limiting the time spent on understanding the theory behind Mocapy++). The project would certainly benefit from several students with complementary skills.  
+Challenges : The project will cover a range of important file formats from major Bioinformatics tools, thus will require familiarity with running these tools, and understanding their output and its meaning. Inter-converting file formats is part of this.  
 
 <!-- -->
 
 Involved toolkits or projects :  
 
-:\* [Biopython](http://biopython.org/wiki/Main_Page)
+:\* Biopython
 
-:\* [Mocapy++](http://sourceforge.net/projects/mocapy/)
-
-Degree of difficulty and needed skills : Hard. The student needs to be fluent in C++, Python and the [C++ Boost library](http://www.boost.org). Experience with machine learning, Bayesian statistics and biomolecular structure would be clear advantages.  
+Degree of difficulty and needed skills : Medium/Hard depending on how many objectives are attempted. The student needs to be fluent in Python. Experience with all of the command line tools listed would be clear advantages, as would first hand experience using [BioPerl's SearchIO](bp:HOWTO:SearchIO "wikilink").  
 
 <!-- -->
 
-Mentors : [Thomas Hamelryck](http://www.binf.ku.dk/research/structural_bioinformatics/)  
+Mentors : Peter Cock  
 
-### Variant representation, parser, generator, and coordinate converter
+### Variant representation, parser, generator, and coordinate converter (DRAFT)
 
-2012 GSoC updates are being considered. Stay tuned.
+2012 GSoC updates are being considered, this is the text from a 2011
+proposal which needs to be updated. Stay tuned.
 
 Rationale : Computational analysis of genomic variation requires the ability to reliably translate between human and computer representations of genomic variants. While several standards for human variation syntax have been proposed, community support is limited because of the technical complexity of the proposals and the lack of software libraries that implement them. The goal of this project is to initiate freely-available, language-neutral tools to parse, generate, and convert between representations of genomic variation.  
 
@@ -142,6 +141,6 @@ Degree of difficulty and needed skills : Easy-to-Medium depending on how many ob
 
 <!-- -->
 
-Mentors : [Reece Hart](http://linkedin.com/in/reece) ([Locus Development](http://locusdevelopmentinc.com), San Francisco); [Brad Chapman](http://bcbio.wordpress.com)  
+Mentors (TO BE CONFIRMED): [Reece Hart](http://linkedin.com/in/reece) ([Locus Development](http://locusdevelopmentinc.com), San Francisco); [Brad Chapman](http://bcbio.wordpress.com)  
 
 
