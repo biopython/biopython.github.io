@@ -85,62 +85,50 @@ Degree of difficulty and needed skills : Medium/Hard depending on how many objec
 
 Mentors : Peter Cock  
 
-### Variant representation, parser, generator, and coordinate converter (DRAFT)
+### Representation and manipulation of genomic variants
 
-2012 GSoC updates are being considered, this is the text from a 2011
-proposal which needs to be updated. Stay tuned.
-
-Rationale : Computational analysis of genomic variation requires the ability to reliably translate between human and computer representations of genomic variants. While several standards for human variation syntax have been proposed, community support is limited because of the technical complexity of the proposals and the lack of software libraries that implement them. The goal of this project is to initiate freely-available, language-neutral tools to parse, generate, and convert between representations of genomic variation.  
+Rationale : Computational analysis of genomic variation requires the ability to reliably communicate and manipulate variants. The goal of this project is to provide facilities within BioPython to represent sequence variation objects, convert them to and from common human and file representations, and provide common manipulations on them.  
 
 <!-- -->
 
-Approach and Goals :  
+Approach and Goals  
 
-:\* identify variation types to be represented (SNV, CNV, repeats,
-inversions, etc)
+-   Object representation
+    -   identify variation types to be represented (SNV, CNV, repeats,
+        inversions, etc)
+    -   develop internal machine representation for variation types
+    -   ensure coverage of essential standards, including HGVS, GFF, VCF
+-   External representations
+    -   write parser and generators between objects and external string
+        and file formats
+-   Manipulations
+    -   canonicalize variations with more than one valid representation
+        (e.g., ins versus dup and left shifting repeats).
+    -   develop coordinate mapping between genomic, cDNA, and protein
+        sequences (HGVS)
+-   Other
+    -   release code to appropriate community efforts and write short
+        manuscript
+    -   implement web service for HGVS conversion
 
-:\* develop internal machine representation for variation types in
-Python, perhaps by implementing subclasses of BioPython's SeqFeature
-class.
-
-:\* develop language-neutral grammar for the (reasonably) supportable
-subset of the Human Genome Variation Society nomeclature guidelines
-
-:\* write a Python library to convert between machine and human
-representations of variation (i.e., parsing and generating)
-
-:\* develop coordinate mapping between genomic, cDNA, and protein
-sequences (at least)
-
-:\* release code to appropriate community efforts and write short
-manuscript
-
-:\* as time permits:
-
-:\*\* build Perl modules or Java libraries with identical functionality
-
-:\*\* develop syntactic and semantic validation
-
-:\*\* implement web service for coordinate conversion using NCBI
-Eutilities
-
-:\*\* develop a new variant syntax that is representation-complete
-
-Challenges : The major challenge in this project is to design an API which cleanly separates internal representations of variation from the multiple external representations. For example, coordinate conversion per se does not require any sequence information, but validating a variant does. Ideally, the libraries developed in this project will provide low-level functionality of coordinate conversion and parsing, and high-level functionality for the most common use cases. This aim requires analyzing the proposals to determine which aspects may be impossible or difficult to represent with a simple grammar.  
+Challenges : The major challenge in this project is to design an API that separates internal representations of variation from the multiple external representations. Ideally, the libraries developed in this project will provide low-level functionality of coordinate conversion and parsing, and high-level functionality for the most common use cases. This aim requires analyzing the proposals to determine which aspects may be impossible or difficult to represent with a simple grammar.  
 
 <!-- -->
 
-Involved toolkits or projects :  
+Resources  
 
-:\* BioPython
-
-:\* Related: <http://www.mutalyzer.nl/2.0/>,
-<http://www.hgvs.org/mutnomen/>
+-   [BioPython](http://biopython.org)
+-   [HGVS "nomenclature"](http://www.mutalyzer.nl/2.0/)
+-   [VCF](http://www.1000genomes.org/wiki/Analysis/Variant%20Call%20Format/vcf-variant-call-format-version-41),
+    \[VCFtools <http://vcftools.sourceforge.net/>\]
+-   [GFF3](http://www.sequenceontology.org/gff3.shtml),
+    [GVF](http://www.sequenceontology.org/resources/gvf.html)
+-   [GATK](http://www.broadinstitute.org/gsa/wiki/index.php/The_Genome_Analysis_Toolkit)
 
 Degree of difficulty and needed skills : Easy-to-Medium depending on how many objectives are attempted. The student will need have skills in most or all of: basic molecular biology (genomes, transcripts, proteins), genomic variation, Python, BioPython, Perl, BioPerl, NCBI Eutilities and/or Ensembl API. Experience with computer grammars is highly desirable. You will also need to know or learn the git version control system.  
 
 <!-- -->
 
-Mentors (TO BE CONFIRMED): [Reece Hart](http://linkedin.com/in/reece) ([Locus Development](http://locusdevelopmentinc.com), San Francisco); [Brad Chapman](http://bcbio.wordpress.com); [James Casbon](http://casbon.me)  
+Mentors: [Reece Hart](http://linkedin.com/in/reece) ([Locus Development](http://locusdevelopmentinc.com), San Francisco); [Brad Chapman](http://bcbio.wordpress.com); [James Casbon](http://casbon.me)  
 
 
