@@ -51,7 +51,7 @@ list](http://biopython.org/wiki/Mailing_lists).
 2012 Project ideas
 ------------------
 
-### SearchIO (DRAFT)
+### SearchIO
 
 Rationale : Biopython has general APIs for parsing and writing assorted sequence file formats ([SeqIO](SeqIO "wikilink")), multiple sequence alignments ([AlignIO](AlignIO "wikilink")), phylogenetic trees ([Phylo](Phylo "wikilink")) and motifs (Bio.Motif). An obvious omission is something equivalent to [BioPerl's SearchIO](bp:HOWTO:SearchIO "wikilink"). The goal of this proposal is to develop an easy-to-use Python interface in the same style as [SeqIO](SeqIO "wikilink"), [AlignIO](AlignIO "wikilink"), etc but for pairwise search results. This would aim to cover EMBOSS muscle & water, BLAST XML, BLAST tabular, HMMER, Bill Pearson's FASTA alignments, and so on.  
 

@@ -19,7 +19,7 @@ Please read the [http://www.open-bio.org/wiki/Google_Summer_of_Code GSoC page at
 
 == 2012 Project ideas ==
 
-=== SearchIO (DRAFT) ===
+=== SearchIO ===
 
 ; Rationale : Biopython has general APIs for parsing and writing assorted sequence file formats ([[SeqIO]]), multiple sequence alignments ([[AlignIO]]), phylogenetic trees ([[Phylo]]) and motifs (Bio.Motif). An obvious omission is something equivalent to [[bp:HOWTO:SearchIO|BioPerl's SearchIO]]. The goal of this proposal is to develop an easy-to-use Python interface in the same style as [[SeqIO]], [[AlignIO]], etc but for pairwise search results. This would aim to cover EMBOSS muscle & water, BLAST XML, BLAST tabular, HMMER, Bill Pearson's FASTA alignments, and so on.
 
