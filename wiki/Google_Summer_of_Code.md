@@ -5,7 +5,7 @@ layout: wiki
 ---
 
 As part of the Open Bioinformatics Foundation, Biopython is
-participating in Google Summer of Code (GSoC) again in 2011. This page
+participating in Google Summer of Code (GSoC) again in 2012. This page
 contains a list of project ideas for the upcoming summer; potential GSoC
 students can base an application on any of these ideas, or propose
 something new.
