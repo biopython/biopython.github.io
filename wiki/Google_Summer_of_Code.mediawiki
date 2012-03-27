@@ -58,7 +58,10 @@ Beyond the initial challenge of an iterator based parsing and writing framework,
 ; Challenges : The major challenge in this project is to design an API that separates internal representations of variation from the multiple external representations. Ideally, the libraries developed in this project will provide low-level functionality of coordinate conversion and parsing, and high-level functionality for the most common use cases. This aim requires analyzing the proposals to determine which aspects may be impossible or difficult to represent with a simple grammar.
 
 ; Resources
-* [http://biopython.org BioPython] 
+* [http://biopython.org BioPython]
+* [https://github.com/jamescasbon/PyVCF PyVCF]
+* [http://www.cgat.org/~andreas/documentation/pysam/api.html#pysam.VCF pysam VCF support]
+* [http://biopython.org/wiki/GFF_Parsing Biopython GFF support]
 * [http://www.mutalyzer.nl/2.0/ HGVS "nomenclature"]
 * [http://www.1000genomes.org/wiki/Analysis/Variant%20Call%20Format/vcf-variant-call-format-version-41 VCF], [VCFtools http://vcftools.sourceforge.net/]
 * [http://www.sequenceontology.org/gff3.shtml GFF3], [http://www.sequenceontology.org/resources/gvf.html GVF]

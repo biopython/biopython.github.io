@@ -118,6 +118,10 @@ Challenges : The major challenge in this project is to design an API that separa
 Resources  
 
 -   [BioPython](http://biopython.org)
+-   [PyVCF](https://github.com/jamescasbon/PyVCF)
+-   [pysam VCF
+    support](http://www.cgat.org/~andreas/documentation/pysam/api.html#pysam.VCF)
+-   [Biopython GFF support](http://biopython.org/wiki/GFF_Parsing)
 -   [HGVS "nomenclature"](http://www.mutalyzer.nl/2.0/)
 -   [VCF](http://www.1000genomes.org/wiki/Analysis/Variant%20Call%20Format/vcf-variant-call-format-version-41),
     \[VCFtools <http://vcftools.sourceforge.net/>\]
