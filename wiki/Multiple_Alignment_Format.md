@@ -21,6 +21,35 @@ chromosome
 10](http://hgdownload.cse.ucsc.edu/goldenPath/currentGenomes/Mus_musculus/multiz30way/maf/chr10.maf.gz)
 available from UCSC.
 
+Getting the AlignIO MAF branch from Github
+------------------------------------------
+
+First, clone the repository with git from the command line, like so:
+
+`git clone -b alignio-maf `[`git://github.com/polyatail/biopython.git`](git://github.com/polyatail/biopython.git)` alignio-maf`
+
+If you're using an older version of git, you may need to do this:
+
+`git clone `[`git://github.com/polyatail/biopython.git`](git://github.com/polyatail/biopython.git)` alignio-maf`  
+`cd alignio-maf`  
+`git checkout -b alignio-maf origin/alignio-maf`
+
+To access the MAF parser, you'll need to manually specify the path to it
+in your code, as in:
+
+``` python
+import sys
+
+# replace "./alignio-maf" with the full path of the alignio-maf branch
+# you cloned from github, or keep if it's in the current directory
+sys.path.insert(1, "./alignio-maf")
+
+try:
+    from Bio.AlignIO import MafIO
+except ImportError:
+    print "oops, the import didn't work"
+```
+
 Reading in a MAF file
 ---------------------
 
