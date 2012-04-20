@@ -50,6 +50,10 @@ except ImportError:
     print "oops, the import didn't work"
 ```
 
+For help, contact the branch maintainer Andrew Sczesnak (firstname dot
+lastname at med dot nyu dot edu) or the [BioPython
+Developers](mailto:biopython-dev@lists.open-bio.org).
+
 Reading in a MAF file
 ---------------------
 

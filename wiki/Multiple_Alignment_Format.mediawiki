@@ -28,6 +28,8 @@ except ImportError:
     print "oops, the import didn't work"
 </source>
 
+For help, contact the branch maintainer Andrew Sczesnak (firstname dot lastname at med dot nyu dot edu) or the [mailto:biopython-dev@lists.open-bio.org BioPython Developers].
+
 ==Reading in a MAF file==
 Parsing a MAF file is similar to any other alignment file in AlignIO.  Additional data, however, is stored as a dict in the .annotations property of SeqRecords belonging to returned MultipleSeqAlignment objects.
 
