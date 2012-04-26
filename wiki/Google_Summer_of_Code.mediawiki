@@ -9,11 +9,16 @@ In 2010, another project was funded:
 
 * João Rodrigues [[GSOC2010_Joao|worked on the Structural Biology module Bio.PDB]], adding several features used in everyday structural bioinformatics. These features are now gradually being merged into the mainline with João's help.
 
-In 2011, three projects were funded in Biopython via OBF:
+In 2011, three projects were funded in Biopython via the OBF:
 
 * [[User%3AMtrellet|Mikael Trellet]] added [[GSoC2011_mtrellet|support for biomolecular interface analysis]] to the Bio.PDB module.
 * Michele Silva wrote a [[GSOC2011_Mocapy|Python bridge for Mocapy++]] and linked it to Bio.PDB to enable statistical analysis of protein structures.
 * Justinas Daugmaudis also enhanced Mocapy++ in a complementary way, developing a [[GSOC2011_MocapyExt|plugin system for Mocapy++]] allowing users to easily write new nodes (probability distribution functions) in Python.
+
+In 2012, two projects were funded in Biopython via the OBF:
+
+* Wibowo Arindrarto: ''SearchIO Implementation in Biopython'' ([http://bow.web.id/blog/tag/gsoc/ blog])
+* Lenna Peterson: ''Diff My DNA: Development of a Genomic Variant Toolkit for Biopython'' ([http://arklenna.tumblr.com/tagged/gsoc2012 blog])
 
 Please read the [http://www.open-bio.org/wiki/Google_Summer_of_Code GSoC page at the Open Bioinformatics Foundation] and the main [http://code.google.com/soc Google Summer of Code] page for more details about the program. If you are interested in contributing as a mentor or student next year, please introduce yourself on the [http://biopython.org/wiki/Mailing_lists mailing list].
 

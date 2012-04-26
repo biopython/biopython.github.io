@@ -28,7 +28,7 @@ In 2010, another project was funded:
     everyday structural bioinformatics. These features are now gradually
     being merged into the mainline with João's help.
 
-In 2011, three projects were funded in Biopython via OBF:
+In 2011, three projects were funded in Biopython via the OBF:
 
 -   [Mikael Trellet](User%3AMtrellet "wikilink") added [support for
     biomolecular interface analysis](GSoC2011_mtrellet "wikilink") to
@@ -40,6 +40,14 @@ In 2011, three projects were funded in Biopython via OBF:
     developing a [plugin system for
     Mocapy++](GSOC2011_MocapyExt "wikilink") allowing users to easily
     write new nodes (probability distribution functions) in Python.
+
+In 2012, two projects were funded in Biopython via the OBF:
+
+-   Wibowo Arindrarto: *SearchIO Implementation in Biopython*
+    ([blog](http://bow.web.id/blog/tag/gsoc/))
+-   Lenna Peterson: *Diff My DNA: Development of a Genomic Variant
+    Toolkit for Biopython*
+    ([blog](http://arklenna.tumblr.com/tagged/gsoc2012))
 
 Please read the [GSoC page at the Open Bioinformatics
 Foundation](http://www.open-bio.org/wiki/Google_Summer_of_Code) and the
