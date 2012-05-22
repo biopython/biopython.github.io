@@ -322,8 +322,10 @@ delete your now redundant bug fix branch on GitHub. Branches can be
 deleted by selecting 'edit' and then 'delete repository' from the bottom
 of the edit page.
 
-It is mandatory to merge with the current trunk of Biopython before
-submitting your changes to avoid excess work on the receiving side.
+It is mandatory to merge with the current trunk of Biopython (i.e. the
+official repository's master branch), or better yet rebase to the
+current trunk, before submitting your changes to avoid excess work on
+the receiving side.
 
 Evaluating changes
 ------------------
