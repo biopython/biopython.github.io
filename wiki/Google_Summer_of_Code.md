@@ -43,8 +43,8 @@ In 2011, three projects were funded in Biopython via the OBF:
 
 In 2012, two projects were funded in Biopython via the OBF:
 
--   Wibowo Arindrarto: *SearchIO Implementation in Biopython*
-    ([blog](http://bow.web.id/blog/tag/gsoc/))
+-   Wibowo Arindrarto: *[SearchIO](SearchIO "wikilink") Implementation
+    in Biopython* ([blog](http://bow.web.id/blog/tag/gsoc/))
 -   Lenna Peterson: *Diff My DNA: Development of a Genomic Variant
     Toolkit for Biopython*
     ([blog](http://arklenna.tumblr.com/tagged/gsoc2012))

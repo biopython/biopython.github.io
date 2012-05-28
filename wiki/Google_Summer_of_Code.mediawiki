@@ -17,7 +17,7 @@ In 2011, three projects were funded in Biopython via the OBF:
 
 In 2012, two projects were funded in Biopython via the OBF:
 
-* Wibowo Arindrarto: ''SearchIO Implementation in Biopython'' ([http://bow.web.id/blog/tag/gsoc/ blog])
+* Wibowo Arindrarto: ''[[SearchIO]] Implementation in Biopython'' ([http://bow.web.id/blog/tag/gsoc/ blog])
 * Lenna Peterson: ''Diff My DNA: Development of a Genomic Variant Toolkit for Biopython'' ([http://arklenna.tumblr.com/tagged/gsoc2012 blog])
 
 Please read the [http://www.open-bio.org/wiki/Google_Summer_of_Code GSoC page at the Open Bioinformatics Foundation] and the main [http://code.google.com/soc Google Summer of Code] page for more details about the program. If you are interested in contributing as a mentor or student next year, please introduce yourself on the [http://biopython.org/wiki/Mailing_lists mailing list].
