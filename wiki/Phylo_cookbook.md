@@ -212,9 +212,9 @@ Exporting to other types
 ### Convert to an 'ape' tree, via Rpy2
 
 The R statistical programming environment provides support for
-phylogenetics through the '\[ape|<http://ape.mpl.ird.fr/>\]' package and
+phylogenetics through the '[ape](http://ape.mpl.ird.fr/)' package and
 several others that build on top of 'ape'. The Python package
-\[rpy2|<http://rpy.sourceforge.net/rpy2.html>\] provides an interface
+[rpy2](http://rpy.sourceforge.net/rpy2.html) provides an interface
 between R and Python, so it's possible to convert a Bio.Phylo tree into
 an 'ape' tree object:
 
