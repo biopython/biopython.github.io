@@ -66,12 +66,17 @@ The format name is a simple lowercase string, matching the names used in [[SeqIO
 | phylip
 | 1.46
 | 1.46
-| This is a strict interpretation of the PHYLIP format which truncates names at 10 characters.
+| This is a strict interpretation of the interlaced PHYLIP format which truncates names at 10 characters.
+|-
+| phylip-sequential
+| 1.59
+| 1.59
+| This is a strict interpretation of the sequential PHYLIP format which truncates names at 10 characters.
 |-
 | phylip-relaxed
-| git
-| git
-| This is a relaxted interpretation of the PHYLIP format which allows long names.
+| 1.58
+| 1.58
+| This is a relaxed interpretation of the PHYLIP format which allows long names.
 |-
 | stockholm
 | 1.46
