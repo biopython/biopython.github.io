@@ -240,7 +240,8 @@ server = BioSeqDatabase.open_database(driver="MySQLdb", user="root",
                      passwd = "", host = "localhost", db="bioseqdb")
 db = server["orchids"]
 handle = Entrez.efetch(db="nuccore", id="6273291,6273290,6273289", rettype="gb", retmode="text")
-db.load(SeqIO.parse(handle, "genbank"))
+count = db.load(SeqIO.parse(handle, "genbank"))
+print "Loaded %i records" % count
 server.commit() #On Biopython 1.49 or older, server.adaptor.commit()
 </source>
 
