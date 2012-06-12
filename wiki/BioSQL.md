@@ -401,6 +401,22 @@ get their BioSQL database equivalent, a **DBSeqRecord** object with a
 **DBSeq** object for the sequence. These will only load the sequence and
 annotation from the database on demand.
 
+There are other ways to pull out records - the 'db' object here acts
+somewhat like a dictionary (including supporting deleting entries from
+their key). The python-dictionary-keys are actually the
+database-primary-keys used inside the database for the bioentry table.
+e.g.
+
+``` python
+from BioSQL import BioSeqDatabase
+server = BioSeqDatabase.open_database(driver="MySQLdb", user="root",
+                     passwd = "", host = "localhost", db="bioseqdb")
+db = server["orchids"]
+print "This database contains %i records" % len(db)
+for key, record in db.iteritems():
+    print "Key %r maps to a sequence record with id %s" % (key, record.id)
+```
+
 Deleting a (sub) database
 =========================
 
