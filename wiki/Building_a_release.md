@@ -120,7 +120,9 @@ your compilers etc appropriately just do this:
 
 `   C:\python25\python setup.py bdist_wininst`  
 `   C:\python26\python setup.py bdist_wininst`  
-`   C:\python27\python setup.py bdist_wininst`
+`   C:\python27\python setup.py bdist_wininst`  
+`   C:\python32\python setup.py bdist_wininst`  
+`   copy build\py3.2\dist\biopython-1.60.win32-py3.2.exe dist\biopython-1.60.win32-py3.2-beta.exe`
 
 18. Remove any prior Biopython installations on your windows machine,
 and confirm the Windows installers work.
