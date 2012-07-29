@@ -1,12 +1,12 @@
 Maintaining the population genetics module.
 
-BSc in informatics engineering. Spent a few years working in IT as both a software developer and network engineer (banks, media companies, network companies, universities).
+BEng in informatics. Spent a few years working in IT as both a software developer and network engineer (banks, media companies, network companies, universities).
 
 Returned to school to do a MSc in bioinformatics.
 
-Currently doing a PhD in Tropical Medicine (population genetics and bioinformatics applied to the study of drug resistance).
+Did a PhD in Tropical Medicine (population genetics and bioinformatics applied to the study of malaria drug resistance).
 
-Publications about parallel computing, phylogenetic analysis, selection detection and coalescent simulation in Parallel Computing, Bioinformatics, BMC Bioinformatics, among others.
+Currently doing a post-doc in human evolution at the University of Cambridge (short vacation from malaria research).
 
 [http://tiago.org home page]
 
