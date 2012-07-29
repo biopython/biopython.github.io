@@ -28,7 +28,7 @@ You will also need git installed.
 
 After that you should contact the biopython development mailing list saying what you are willing to test (platform, python version, applications) to get a username and a password. With your username and password you can now configure your buildslave. Something like this:
 
-buildslave create-slave your_slave_directory events.open-bio.org:9989 username password
+buildslave create-slave your_slave_directory testing.open-bio.org:9989 username password
 
 Then you should start your slave with
 

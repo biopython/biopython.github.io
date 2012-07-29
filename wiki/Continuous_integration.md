@@ -51,7 +51,7 @@ saying what you are willing to test (platform, python version,
 applications) to get a username and a password. With your username and
 password you can now configure your buildslave. Something like this:
 
-buildslave create-slave your\_slave\_directory events.open-bio.org:9989
+buildslave create-slave your\_slave\_directory testing.open-bio.org:9989
 username password
 
 Then you should start your slave with
