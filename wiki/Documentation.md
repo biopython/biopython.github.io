@@ -145,6 +145,24 @@ BioPerl, BioRuby, BioJava and EMBOSS </biblio>
 
 #### Presentations
 
+-   BOSC 2012 presentation "Biopython Project Update"
+
+  
+[Flash
+version](http://www.slideshare.net/jandot/e-talevich-biopython-projectupdate)
+
+-   BOSC 2011 presentation "Biopython Project Update"
+
+  
+[Flash
+version](http://www.slideshare.net/bosc2011/talk6-biopython-bosc2011)
+
+-   BOSC 2010 presentation "Biopython Project Update"
+
+  
+[Flash
+version](http://www.slideshare.net/chapmanb/biopython-at-bosc-2010)
+
 -   July 2010 - EuroSciPy2010, Paris
 
   

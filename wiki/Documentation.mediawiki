@@ -62,6 +62,12 @@ We have a separate list of [[Publications|publications citing or using Biopython
 
 ==== Presentations ====
 
+* BOSC 2012 presentation "Biopython Project Update"
+:[http://www.slideshare.net/jandot/e-talevich-biopython-projectupdate Flash version]
+* BOSC 2011 presentation "Biopython Project Update"
+:[http://www.slideshare.net/bosc2011/talk6-biopython-bosc2011 Flash version]
+* BOSC 2010 presentation "Biopython Project Update"
+:[http://www.slideshare.net/chapmanb/biopython-at-bosc-2010 Flash version]
 * July 2010 - EuroSciPy2010, Paris
 :[http://biopython.org/DIST/docs/presentations/Biopython_EuroSciPy2010.pdf PDF]
 * February 2010 Biopython workshop at the University of Georgia
