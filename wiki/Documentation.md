@@ -141,7 +141,11 @@ Biopython.
 1.  CockEtAl2009b pmid=20015970
 
 // This describes the FASTQ file format as supported in Biopython,
-BioPerl, BioRuby, BioJava and EMBOSS </biblio>
+BioPerl, BioRuby, BioJava and EMBOSS
+
+1.  TalevichEtAl2012 pmid=22909249
+
+// This describes the Bio.Phylo and Bio.Phylo.PAML modules. </biblio>
 
 #### Presentations
 

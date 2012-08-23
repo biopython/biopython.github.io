@@ -58,6 +58,8 @@ We have a separate list of [[Publications|publications citing or using Biopython
 // This describes GenomeDiagram, which has now been integrated into Biopython.
 #CockEtAl2009b pmid=20015970
 // This describes the FASTQ file format as supported in Biopython, BioPerl, BioRuby, BioJava and EMBOSS
+#TalevichEtAl2012 pmid=22909249
+// This describes the Bio.Phylo and Bio.Phylo.PAML modules.
 </biblio>
 
 ==== Presentations ====
