@@ -9,12 +9,9 @@ Extract intergenic regions from genome file (genbank).
 modified from script of 2009 Iddo Friedberg & Ian MC Fleming
 (http://biopython.org/wiki/Intergenic\_regions)
 
-1.  
+The function:
 
-    ------------------------------------------------------------------------
-
-def get\_interregions( infiles\_gbff, intergene\_length = 1 ):
-
+`def get_interregions( infiles_gbff, intergene_length = 1 ):`  
 `   import sys`  
 `   from Bio import SeqIO`  
 `   from Bio.SeqRecord import SeqRecord`  
