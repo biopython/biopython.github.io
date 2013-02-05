@@ -132,6 +132,13 @@ Due to the great architecture of the ports system, this simple commands will aut
 
 Recent releases of Biopython require NumPy (and not Numeric):
 
+* [http://biopython.org/DIST/biopython-1.60.tar.gz biopython-1.60.tar.gz] 9,280 Kb -- Source Tarball (25 June 2012)
+* [http://biopython.org/DIST/biopython-1.60.zip biopython-1.60.zip] 10,051 Kb -- Source Zip File
+* [http://biopython.org/DIST/biopython-1.60.win32-py2.5.exe biopython-1.60.win32-py2.5.exe] 1,469 Kb -- 32 bit Windows Installer for Python 2.5 and NumPy 1.1
+* [http://biopython.org/DIST/biopython-1.60.win32-py2.6.exe biopython-1.60.win32-py2.6.exe] 1,492 Kb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.3
+* [http://biopython.org/DIST/biopython-1.60.win32-py2.7.exe biopython-1.60.win32-py2.7.exe] 1,1618 Kb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.5
+* [http://biopython.org/DIST/biopython-1.60.win32-py3.2-beta.exe biopython-1.60.win32-py3.2-beta.exe] 1,611 Kb -- 32 bit Windows Installer for Python 3.2 and NumPy 1.5 (''beta'' status for testing)
+
 * [http://biopython.org/DIST/biopython-1.59.tar.gz biopython-1.59.tar.gz] 8,377 Kb -- Source Tarball (24 February 2012)
 * [http://biopython.org/DIST/biopython-1.59.zip biopython-1.59.zip] 9,127 Kb -- Source Zip File
 * [http://biopython.org/DIST/biopython-1.59.win32-py2.5.exe biopython-1.59.win32-py2.5.exe] 1,440 Kb -- 32 bit Windows Installer for Python 2.5 and NumPy 1.1
