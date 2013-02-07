@@ -10,7 +10,7 @@ See also [https://github.com/biopython/biopython/raw/master/NEWS What's new].
 * [http://biopython.org/DIST/biopython-1.61.win32-py2.6.exe biopython-1.61.win32-py2.6.exe] 1,637 Kb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.3
 * [http://biopython.org/DIST/biopython-1.61.win32-py2.7.exe biopython-1.61.win32-py2.7.exe] 1,764 Kb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.5
 * [http://biopython.org/DIST/biopython-1.61.win32-py3.2-beta.exe biopython-1.61.win32-py3.2-beta.exe] 1,757 Kb -- 32 bit Windows Installer for Python 3.2 and NumPy 1.5 (''beta'' status for testing)
-* [http://biopython.org/DIST/biopython-1.61.win32-py3.3-beta.exe biopython-1.61.win32-py3.3-beta.exe] 1,750 Kb - 32 bit Windows Installer for Python 3.3 and NumPy 1.7 (''beta'' status for testing)
+* [http://biopython.org/DIST/biopython-1.61.win32-py3.3-beta.exe biopython-1.61.win32-py3.3-beta.exe] 1,750 Kb -- 32 bit Windows Installer for Python 3.3 and NumPy 1.7 (''beta'' status for testing)
 
 Please report any issues on our [[mailing lists]] or [http://redmine.open-bio.org/projects/biopython bug tracker].
 

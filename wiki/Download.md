@@ -26,7 +26,7 @@ new](https://github.com/biopython/biopython/raw/master/NEWS).
     1,757 Kb -- 32 bit Windows Installer for Python 3.2 and NumPy 1.5
     (*beta* status for testing)
 -   [biopython-1.61.win32-py3.3-beta.exe](http://biopython.org/DIST/biopython-1.61.win32-py3.3-beta.exe)
-    1,750 Kb - 32 bit Windows Installer for Python 3.3 and NumPy 1.7
+    1,750 Kb -- 32 bit Windows Installer for Python 3.3 and NumPy 1.7
     (*beta* status for testing)
 
 Please report any issues on our [mailing
