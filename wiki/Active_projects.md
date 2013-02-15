@@ -46,10 +46,9 @@ version](http://bcbio.wordpress.com/2009/03/22/mapreduce-implementation-of-gff-p
 
 [Bio.Phylo](Phylo "wikilink"), a new, mostly-stable module for working
 with phylogenetic trees, was released with Biopython 1.54.
-[Eric](User%3AEricTalevich "wikilink") is currently working on NeXML
-support and bringing the Tree object methods to parity with Bio.Nexus.
-New features appear on [GitHub
-branches](http://github.com/etal/biopython/) first.
+[Eric](User%3AEricTalevich "wikilink") is currently working on bringing
+the Tree object methods to parity with Bio.Nexus. New features appear on
+[GitHub branches](http://github.com/etal/biopython/) first.
 
 ### Biogeography
 

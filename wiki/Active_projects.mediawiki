@@ -16,7 +16,7 @@ Brad is working on a Biopython GFF parser. Source code is available from [http:/
 
 === Phylo ===
 
-[[Phylo|Bio.Phylo]], a new, mostly-stable module for working with phylogenetic trees, was released with Biopython 1.54. [[User%3AEricTalevich|Eric]] is currently working on NeXML support and bringing the Tree object methods to parity with Bio.Nexus. New features appear on [http://github.com/etal/biopython/ GitHub branches] first.
+[[Phylo|Bio.Phylo]], a new, mostly-stable module for working with phylogenetic trees, was released with Biopython 1.54. [[User%3AEricTalevich|Eric]] is currently working on bringing the Tree object methods to parity with Bio.Nexus. New features appear on [http://github.com/etal/biopython/ GitHub branches] first.
 
 === Biogeography ===
 
