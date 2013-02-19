@@ -10,11 +10,11 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 
 |-
 
-| Affiliation 	          || Division of Biological Anthropology, University of Cambridge
+| Affiliation 	          || Wellcome Trust Centre for Human Genetics, University of Oxford
 
 |-
 
-| Location 	          || Cambridge, UK
+| Location 	          || Oxford, UK
 
 |-
 
@@ -22,11 +22,11 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 
 |-
 
-| Work/Research Interests || Population genetics, infectious diseases (malaria), human evolution, selection, effective population size
+| Work/Research Interests || Population genetics, infectious diseases (malaria), Anopheles gambiae (malaria vector), selection, effective population size
 
 |-
 
-| Biopython Contributions || Bio.PopGen
+| Biopython Contributions || Bio.PopGen, Java/Jython Zealot
 
 |-
 
