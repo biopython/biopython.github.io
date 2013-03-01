@@ -468,4 +468,4 @@ The format method will take any output format supported by '''Bio.SeqIO''' where
 
 If you are having problems with '''Bio.SeqIO''', please join the discussion mailing list (see [[mailing lists]]).
 
-If you think you've found a bug, please report it on [http://bugzilla.open-bio.org/ bugzilla].
+If you think you've found a bug, please report it on [http://redmine.open-bio.org/projects/biopython RedMine].
