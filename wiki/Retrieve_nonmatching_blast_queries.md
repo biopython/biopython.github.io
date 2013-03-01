@@ -33,7 +33,8 @@ BLAST\_RESULTS.xml
 from Bio import SeqIO
 from Bio.Blast import NCBIXML
 
-q_dict =  SeqIO.to_dict(SeqIO.parse(open("queries.fasta"), "fasta"))
+# Build an index, but we don't need to parse the record
+q_dict =  SeqIO.index("queries.fasta", "fasta")
 
 hits = []
 for record in NCBIXML.parse(open("BLAST_RESULTS.xml")):
