@@ -493,5 +493,5 @@ Help!
 If you are having problems with **Bio.SeqIO**, please join the
 discussion mailing list (see [mailing lists](mailing_lists "wikilink")).
 
-If you think you've found a bug, please report it on
-[RedMine](http://redmine.open-bio.org/projects/biopython).
+If you think you've found a bug, please report it on our [bug
+tracker](http://redmine.open-bio.org/projects/biopython).
