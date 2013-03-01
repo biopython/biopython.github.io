@@ -14,13 +14,13 @@ information on query sequences that have 'no hits' in the target
 database. [Sometimes](http://bugzilla.open-bio.org/show_bug.cgi?id=2821)
 you want to know which sequences don't have match a database and further
 analyse/anotate them accordingly. There are a number of different ways
-to do this, one is to use [SeqIO's method .to\_dict()](SeqIO "wikilink")
-to turn the query file into a flat database then parse the results file
-to get the sequences that *did* match the database. You can then use
-python's set() arithmetic to make a list of sequences that are in the
-query file and not the results which can be used as keys to retrieve the
-complete [SeqRecord](SeqRecord "wikilink") for each of the "no hit"
-queries. Got it? Well, perhaps it's easier to just do it:
+to do this, one is to use [SeqIO's method .index()](SeqIO "wikilink") to
+turn the query file into a dictionary then parse the results file to get
+the sequences that *did* match the dictionary. You can then use python's
+set() arithmetic to make a list of sequences that are in the query file
+and not the results which can be used as keys to retrieve the complete
+[SeqRecord](SeqRecord "wikilink") for each of the "no hit" queries. Got
+it? Well, perhaps it's easier to just do it:
 
 Solution
 --------
