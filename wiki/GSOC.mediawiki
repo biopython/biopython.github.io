@@ -11,21 +11,23 @@ ideas for proposals. There is therefore not a set list of 'available' mentors, s
 
 Past mentors include:
 
+*  [http://casbon.me/ James Casbon]
 *  [https://github.com/chapmanb Brad Chapman]
 *  [http://www.hutton.ac.uk/staff/peter-cock Peter Cock]
 *  [http://wiki.binf.ku.dk/User:Thomas_Hamelryck Thomas Hamelryck]
+*  [http://www.linkedin.com/in/reece Reece Hart]
 *  [http://nmr.chem.uu.nl/~joao João Rodrigues] 
 *  [http://etal.myweb.uga.edu/ Eric Talevich]
 
-== Projects ==
-=== Proposal 2013 ===
-
-==== Add project ideas ====
+== Proposals ==
+=== 2013 ===
 
 The BioPython proposals for 2013 will be published here once discussed. We encourage potential students to join the mailing lists and actively participate in these discussions, either by
 submitting their own ideas or contributing to improving existing ones.
 
-=== Proposals 2012 ===
+== Past Proposals ==
+
+=== 2012 ===
 ==== SearchIO ====
 ;  Rationale
 :  Biopython has general APIs for parsing and writing assorted sequence file formats (SeqIO), multiple sequence alignments (AlignIO), phylogenetic trees (Phylo) and motifs (Bio.Motif). An obvious omission is something equivalent to BioPerl's SearchIO. The goal of this proposal is to develop an easy-to-use Python interface in the same style as SeqIO, AlignIO, etc but for pairwise search results. This would aim to cover EMBOSS muscle & water, BLAST XML, BLAST tabular, HMMER, Bill Pearson's FASTA alignments, and so on.
@@ -58,9 +60,6 @@ submitting their own ideas or contributing to improving existing ones.
 :  Easy-to-Medium depending on how many objectives are attempted. The student will need have skills in most or all of: basic molecular biology (genomes, transcripts, proteins), genomic variation, Python, BioPython, Perl, BioPerl, NCBI Eutilities and/or Ensembl API. Experience with computer grammars is highly desirable. You will also need to know or learn the git version control system.
 ;  Mentors
 :  Reece Hart (Locus Development, San Francisco); Brad Chapman; James Casbon
-
-== Past Projects ==
-
 === 2011 ===
 === 2010 ===
 === 2009 ===

@@ -27,25 +27,28 @@ are proposed every year.
 
 Past mentors include:
 
+-   [James Casbon](http://casbon.me/)
 -   [Brad Chapman](https://github.com/chapmanb)
 -   [Peter Cock](http://www.hutton.ac.uk/staff/peter-cock)
 -   [Thomas Hamelryck](http://wiki.binf.ku.dk/User:Thomas_Hamelryck)
+-   [Reece Hart](http://www.linkedin.com/in/reece)
 -   [João Rodrigues](http://nmr.chem.uu.nl/~joao)
 -   [Eric Talevich](http://etal.myweb.uga.edu/)
 
-Projects
---------
+Proposals
+---------
 
-### Proposal 2013
-
-#### Add project ideas
+### 2013
 
 The BioPython proposals for 2013 will be published here once discussed.
 We encourage potential students to join the mailing lists and actively
 participate in these discussions, either by submitting their own ideas
 or contributing to improving existing ones.
 
-### Proposals 2012
+Past Proposals
+--------------
+
+### 2012
 
 #### SearchIO
 
@@ -131,9 +134,6 @@ learn the git version control system.
 Mentors  
 Reece Hart (Locus Development, San Francisco); Brad Chapman; James
 Casbon
-
-Past Projects
--------------
 
 ### 2011
 
