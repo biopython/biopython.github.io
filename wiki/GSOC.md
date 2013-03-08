@@ -50,7 +50,7 @@ Past Proposals
 
 ### 2012
 
-#### SearchIO
+#### [SearchIO](http://biopython.org/wiki/SearchIO)
 
 Rationale  
 Biopython has general APIs for parsing and writing assorted sequence
@@ -92,9 +92,9 @@ BioPerl's SearchIO. You will also need to know or learn the git version
 control system.
 
 Mentors  
-Peter Cock
+[Peter Cock](http://www.hutton.ac.uk/staff/peter-cock)
 
-#### Representation and manipulation of genomic variants
+#### [Representation and manipulation of genomic variants](http://arklenna.tumblr.com/tagged/gsoc2012)
 
 Rationale  
 Computational analysis of genomic variation requires the ability to
@@ -132,10 +132,187 @@ computer grammars is highly desirable. You will also need to know or
 learn the git version control system.
 
 Mentors  
-Reece Hart (Locus Development, San Francisco); Brad Chapman; James
-Casbon
+[Reece Hart](http://www.linkedin.com/in/reece)
+
+[Brad Chapman](https://github.com/chapmanb)
+
+[James Casbon](http://casbon.me/)
 
 ### 2011
+
+#### [Biomolecular Interface Analysis](http://biopython.org/wiki/GSoC2011_mtrellet)
+
+Student  
+Mikael Trellet
+
+Rationale  
+Analysis of protein-protein complexes interfaces at a residue level
+yields significant information on the overall binding process. Such
+information can be broadly used for example in binding affinity studies,
+interface design, and enzymology. To tap into it, there is a need for
+tools that systematically and automatically analyze protein structures,
+or that provide means to this end.
+Protorop (http://www.bioinformatics.sussex.ac.uk/protorp/) is an example
+of such a tool and the elevated number of citations the server has had
+since its publication acknowledge its importance. However, being a
+webserver, Protorop is not suited for large-scale analysis and it leaves
+the community dependent on its maintainers to keep the
+service available. On the other hand, Biopython’s structural biology
+module, Bio.PDB, provides the ideal parsing machinery and programmatic
+structures for the development of an offline, open-source library for
+interface analysis. Such a library could be easily used in large-scale
+analysis of protein-protein interfaces, for example in the CAPRI
+experiment evaluation or in benchmark statistics. It would be also
+reasonable, if time permits, to extend this module to deal with
+protein-DNA or protein-RNA complexes, as Biopython supports nucleic
+acids already.
+
+Approach & Goals  
+
+-   Add the new module backbone in current Bio.PDB code base
+    -   Evaluate possible code reuse and call it into the new module
+    -   Try simple calculations to be sure that there is stability
+        between the different modules (parsing for example) and
+        functions
+-   Define a stable benchmark
+    -   Select few PDB files among interface size and proteins size
+        would be different
+-   Extend IUPAC.Data module with residue information
+    -   Deduce residues weight from Atom instead of direct dictionary
+        storage
+    -   Polar/charge character (dictionary or influenced by pH)
+    -   Hydrophobicity scale(s)
+-   Implement Extended Residue class as a subclass of Residue
+-   Implement Interface object and InterfaceAnalysis module
+-   Develop functions for interface analysis
+    -   Calculation of interface polar character statistics (% of polar
+        residues, apolar, etc)
+    -   Calculation of BSA calling MSMS or HSA
+    -   Calculation of SS element statistics in the interface through
+        DSSP
+    -   Unit tests and use of results as input for further calculations
+        by other tools and scripts
+-   Develop functions for Interface comparison
+-   Code organization and final testing
+
+Difficulty and needed skills  
+Easy/Medium. Working knowledge of the Bio.PDB module of BioPython.
+Knowledge of structural biology in general and associated file
+formats (PDB).
+
+Mentors  
+[João Rodrigues](http://nmr.chem.uu.nl/~joao)
+
+[Eric Talevich](http://etal.myweb.uga.edu/)
+
+#### [A Python bridge for Mocapy++](http://biopython.org/wiki/GSOC2011_Mocapy)
+
+Student  
+Michele Silva
+
+Rationale  
+Discovering the structure of biomolecules is one of the biggest problems
+in biology. Given an amino acid or base sequence, what is the three
+dimensional structure? One approach to biomolecular structure prediction
+is the construction of probabilistic models. A Bayesian network is a
+probabilistic model composed of a set of variables and their joint
+probability distribution, represented as a directed acyclic graph. A
+dynamic Bayesian network is a Bayesian network that represents sequences
+of variables. These sequences can be time-series or sequences of
+symbols, such as protein sequences. Directional statistics is concerned
+mainly with observations which are unit vectors in the plane or in
+three-dimensional space. The sample space is typically a circle or
+a sphere. There must be special directional methods which take into
+account the structure of the sample spaces. The union of graphical
+models and directional statistics allows the development of
+probabilistic models of biomolecular structures. Through the use of
+dynamic Bayesian networks with directional output it becomes possible to
+construct a joint probability distribution over sequence and structure.
+Biomolecular structures can be represented in a geometrically natural,
+continuous space. Mocapy++ is an open source toolkit for inference and
+learning using dynamic Bayesian networks that provides support for
+directional statistics. Mocapy++ is excellent for constructing
+probabilistic models of biomolecular structures; it has been used to
+develop models of protein and RNA structure in atomic detail. Mocapy++
+is used in several high-impact publications, and will form the core of
+the molecular modeling package Phaistos, which will be released soon.
+The goal of this project is to develop a highly useful Python interface
+to Mocapy++, and to integrate that interface with the Biopython project.
+Through the Bio.PDB module, Biopython provides excellent functionality
+for data mining biomolecular structure databases. Integrating Mocapy++
+and Biopython will allow training a probabilistic model using data
+extracted from a database. Integrating Mocapy++ with Biopython will
+create a powerful toolkit for researchers to quickly implement and test
+new ideas, try a variety of approaches and refine their methods. It will
+provide strong support for the field of biomolecular structure
+prediction, design, and simulation.
+
+Approach & Goals  
+Mocapy++ is a machine learning toolkit for training and using
+Bayesian networks. It has been used to develop probabilistic models of
+biomolecular structures. The goal of this project is to develop a Python
+interface to Mocapy++ and integrate it with Biopython. This will allow
+the training of a probabilistic model using data extracted from
+a database. The integration of Mocapy++ with Biopython will provide a
+strong support for the field of protein structure prediction, design
+and simulation.
+
+Mentors  
+[Eric Talevich](http://etal.myweb.uga.edu/)
+
+[Thomas Hamelryck](http://wiki.binf.ku.dk/User:Thomas_Hamelryck)
+
+#### [MocapyExt](http://biopython.org/wiki/GSOC2011_MocapyExt)
+
+Student  
+Justinas V. Daugmaudis
+
+Rationale  
+BioPython is a very popular library in Bioinformatics and
+Computational Biology. Mocapy++ is a machine learning toolkit for
+parameter learning and inference in dynamic Bayesian networks (DBNs),
+which encode probabilistic relationships among random variables in
+a domain. Mocapy++ is freely available under the GNU General Public
+Licence (GPL) from SourceForge. The library supports a wide spectrum of
+DBN architectures and probability distributions, including distributions
+from directional statistics. Notably, Kent distribution on the sphere
+and the bivariate von Mises distribution on the torus, which have proven
+to be useful in formulating probabilistic models of protein and
+RNA structure.
+
+Such a highly useful and powerful library, which has been used in such
+projects as TorusDBN, Basilisk, FB5HMM with great success, is the result
+of the long-term effort. The original Mocapy implementation dates back
+to 2004, and since then the library has been rewritten in C++. However,
+C++ is a statically typed and compiled programming language, which does
+not facilitate rapid prototyping. As a result, currently Mocapy++ has no
+provisions for dynamic loading of custom node types, and a mechanism to
+plug-in new node types that would not require to modify and recompile
+the library is of interest. Such a plug-in interface would assist rapid
+prototyping by allowing to quickly implement and test new probability
+distributions, which, in turn, could substantially reduce development
+time and effort; the user would be empowered to extend Mocapy++ without
+modifications and subsequent recompilations. Recognizing this need, the
+project (herein referred as MocapyEXT), with the aim to improve the
+current Mocapy++ node type extension mechanism, has been proposed by T.
+Hamelryck.
+
+Approach & Goals  
+The MocapyEXT project is largely an engineering effort to bring a
+transparent Python plug-in interface to Mocapy++, where built-in and
+dynamically loaded node types could be used in a uniform manner. Also,
+externally implemented and dynamically loaded nodes could be modified by
+a user and these changes will not necessitate the recompilation of the
+client program, nor the accompanying Mocapy++ library. This will
+facilitate rapid prototyping, ease the adaptation of currently existing
+code, and improve the software interoperability whilst introducing
+minimal changes to the existing Mocapy++ interface, thus facilitating a
+smooth acceptance of the changes introduced by MocapyEXT.
+
+Mentors  
+[Eric Talevich](http://etal.myweb.uga.edu/)
+
+[Thomas Hamelryck](http://wiki.binf.ku.dk/User:Thomas_Hamelryck)
 
 ### 2010
 
