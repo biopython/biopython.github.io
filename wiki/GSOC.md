@@ -20,10 +20,11 @@ Mentor List
 -----------
 
 Usually, each BioPython proposal has one or more mentors assigned to it.
-Nevertheless, we encourage potential students to contact the mailing
-list with their own ideas for proposals. There is therefore not a set
-list of 'available' mentors, since it highly depends on which projects
-are proposed every year.
+Nevertheless, we encourage potential students/mentors to contact the
+[mailing lists](http://biopython.org/wiki/Mailing_lists) with their own
+ideas for proposals. There is therefore not a set list of 'available'
+mentors, since it highly depends on which projects are proposed every
+year.
 
 Past mentors include:
 
@@ -41,9 +42,10 @@ Proposals
 ### 2013
 
 The BioPython proposals for 2013 will be published here once discussed.
-We encourage potential students to join the mailing lists and actively
-participate in these discussions, either by submitting their own ideas
-or contributing to improving existing ones.
+We encourage potential students and mentors to join the [mailing
+lists](http://biopython.org/wiki/Mailing_lists) and actively participate
+in these discussions, either by submitting their own ideas or
+contributing to improving existing ones.
 
 Past Proposals
 --------------
@@ -314,4 +316,88 @@ Mentors
 
 ### 2010
 
+#### [Improving Bio.PDB](http://biopython.org/wiki/GSOC2010_Joao)
+
+Student  
+[João Rodrigues](http://nmr.chem.uu.nl/~joaor)
+
+Rationale  
+Biopython is a very popular library in Bioinformatics and
+Computational Biology. Its Bio.PDB module, originally developed by
+Thomas Hamelryck, is a simple yet powerful tool for
+structural biologists. Although it provides a reliable PDB parser
+feature and it allows several calculations (Neighbour Search, RMS) to be
+made on macromolecules, it still lacks a number of features that are
+part of a researcher's daily routine. Probing for disulphide bridges in
+a structure and adding polar hydrogen atoms accordingly are two examples
+that can be incorporated in Bio.PDB, given the module's clever structure
+and good overall organisation. Cosmetic operations such as chain removal
+and residue renaming – to account for the different existing
+nomenclatures – and renumbering would also be greatly appreciated by
+the community. Another aspect that can be improved for Bio.PDB is a
+smooth integration/interaction layer for heavy-weights in macromolecule
+simulation such as MODELLER, GROMACS, AutoDock, HADDOCK. It could be
+argued that the easiest solution would be to code hooks to these
+packages' functions and routines. However, projects such as the recently
+developed edPDB or the more complete Biskit library render, in my
+opinion, such interfacing efforts redundant. Instead, I believe it to be
+more advantageous to include these software' input/output formats in
+Biopython's SeqIO and AlignIO modules. This, together with the creation
+of interfaces for model validation/structure checking services/software
+would allow Biopython to be used as a pre- and post-simulation tool.
+Eventually, it would pave the way for its inclusion in pipelines and
+workflows for structure modelling, molecular dynamics, and
+docking simulations.
+
+Mentors  
+[Eric Talevich](http://etal.myweb.uga.edu/)
+
+[Peter Cock](http://www.hutton.ac.uk/staff/peter-cock)
+
+Diana Jaunzeikare
+
 ### 2009
+
+#### [PhyloXML](http://biopython.org/wiki/PhyloXML)
+
+Rationale  
+PhyloXML is an XML format for phylogenetic trees, designed to allow
+storing information about the trees themselves (such as branch lengths
+and multiple support values) along with data such as taxonomic and
+genomic annotations. Connecting these pieces of evolutionary information
+in a standard format is key for comparative genomics.
+
+A Bioperl driver for phyloXML was created during the 2008 Summer of
+Code; this project aims to build a similar module for the popular
+Biopython package.
+
+Mentors  
+[Brad Chapman](https://github.com/chapmanb)
+
+Christian Zmasek
+
+#### [Biogeographical Phylogenetics for BioPython](http://biopython.org/wiki/BioGeography)
+
+Rationale  
+I developed Bio.Geography, a new module for the bioinformatics
+programming toolkit Biopython. Bio.Geography expands upon Biopython's
+traditional capabilities for accessing gene and protein sequences from
+online databases by allowing automated searching, downloading, and
+parsing of geographic location records from GBIF, the authoritative
+aggregator of specimen information from natural history
+collections worldwide. This will enable analyses of evolutionary
+biogeography that require the areas inhabited by the species at the tips
+of the phylogeny, particularly for large-scale analyses where it is
+necessary to process thousands of specimen occurrence records. The
+module will also facilitate applications such as species mapping, niche
+modeling, error-checking of museum records, and monitoring
+range changes.
+
+Mentors  
+[Brad Chapman](https://github.com/chapmanb)
+
+Stephen Smith
+
+David Kidd
+
+
