@@ -64,6 +64,7 @@ Useful features include:
     corresponding protein sequence alignment to a codon alignment.
 -   Calculation of selection pressure from the ratio of nonsynonomous to
     synonomous site replacements, and related functions.
+-   Model selection.
 -   Possible extension of AlignIO and the MultipleSeqAlignment class to
     take full advantage of codon alignments, including validation
     (testing for frame shifts, etc.)
