@@ -15,16 +15,27 @@ into Biopython.
 Current projects
 ----------------
 
-### (GSOC 2010) Extending Bio.PDB
+### Porting Biopython documentation to Sphinx
 
-João Rodrigues's Summer of Code project aims to introduce several new
-features to the Bio.PDB structural biology module. It will include
-functions for adding polar hydrogens to structures, probing for SS
-bridges based on structural information and annotations, renumbering
-residues, coarse-graining a structure, etc. A more comprehensive layout
-of the project is available [on this wiki](GSOC2010_Joao "wikilink"),
-and the code is on [a GitHub
-branch](http://github.com/JoaoRodrigues/biopython/tree/GSOC2010).
+We are planning to port Biopython's documentation from the existing
+combination of LaTeX (cookbook and main docs) and EpyDoc (API docs) to
+Sphinx. This is a multi-step process which we're proceeding through
+incrementally, and help is always appreciated. See the feature request:
+<https://redmine.open-bio.org/issues/3219>
+
+### Extending Bio.PDB
+
+João Rodrigues's Summer of Code project aimed to introduce several new
+features to the Bio.PDB structural biology module: functions for adding
+polar hydrogens to structures, probing for SS bridges based on
+structural information and annotations, renumbering residues,
+coarse-graining a structure, etc. A more comprehensive layout of the
+project is available [on this wiki](GSOC2010_Joao "wikilink"), and the
+code is on [a GitHub
+branch](http://github.com/JoaoRodrigues/biopython/tree/GSOC2010). New
+code for Bio.PDB was also written for [GSoC
+2011](Google_Summer_of_Code "wikilink"). João and Eric are now working
+to integrate this new code into Biopython.
 
 ### Population Genetics development
 
@@ -41,14 +52,6 @@ See blog posts on the [initial
 implementation](http://bcbio.wordpress.com/2009/03/08/initial-gff-parser-for-biopython/)
 and [MapReduce parallel
 version](http://bcbio.wordpress.com/2009/03/22/mapreduce-implementation-of-gff-parsing-for-biopython/).
-
-### Phylo
-
-[Bio.Phylo](Phylo "wikilink"), a new, mostly-stable module for working
-with phylogenetic trees, was released with Biopython 1.54.
-[Eric](User%3AEricTalevich "wikilink") is currently working on bringing
-the Tree object methods to parity with Bio.Nexus. New features appear on
-[GitHub branches](http://github.com/etal/biopython/) first.
 
 ### Biogeography
 

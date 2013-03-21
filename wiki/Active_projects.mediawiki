@@ -2,9 +2,13 @@ This page provides a central location to collect references to active projects. 
 
 == Current projects ==
 
-=== (GSOC 2010) Extending Bio.PDB ===
+=== Porting Biopython documentation to Sphinx ===
 
-João Rodrigues's Summer of Code project aims to introduce several new features to the Bio.PDB structural biology module. It will include functions for adding polar hydrogens to structures, probing for SS bridges based on structural information and annotations, renumbering residues, coarse-graining a structure, etc. A more comprehensive layout of the project is available [[GSOC2010_Joao|on this wiki]], and the code is on [http://github.com/JoaoRodrigues/biopython/tree/GSOC2010 a GitHub branch].
+We are planning to port Biopython's documentation from the existing combination of LaTeX (cookbook and main docs) and EpyDoc (API docs) to Sphinx. This is a multi-step process which we're proceeding through incrementally, and help is always appreciated. See the feature request: https://redmine.open-bio.org/issues/3219
+
+=== Extending Bio.PDB ===
+
+João Rodrigues's Summer of Code project aimed to introduce several new features to the Bio.PDB structural biology module:  functions for adding polar hydrogens to structures, probing for SS bridges based on structural information and annotations, renumbering residues, coarse-graining a structure, etc. A more comprehensive layout of the project is available [[GSOC2010_Joao|on this wiki]], and the code is on [http://github.com/JoaoRodrigues/biopython/tree/GSOC2010 a GitHub branch]. New code for Bio.PDB was also written for [[Google_Summer_of_Code|GSoC 2011]]. João and Eric are now working to integrate this new code into Biopython.
 
 === Population Genetics development ===
 
@@ -13,10 +17,6 @@ Giovanni and Tiago are working on expanding population genetics code in Biopytho
 === GFF parser ===
 
 Brad is working on a Biopython GFF parser. Source code is available from [http://github.com/chapmanb/bcbb/tree/master/gff git hub]. Documentation is in progress at [[GFF Parsing]]. See blog posts on the [http://bcbio.wordpress.com/2009/03/08/initial-gff-parser-for-biopython/ initial implementation] and [http://bcbio.wordpress.com/2009/03/22/mapreduce-implementation-of-gff-parsing-for-biopython/ MapReduce parallel version].
-
-=== Phylo ===
-
-[[Phylo|Bio.Phylo]], a new, mostly-stable module for working with phylogenetic trees, was released with Biopython 1.54. [[User%3AEricTalevich|Eric]] is currently working on bringing the Tree object methods to parity with Bio.Nexus. New features appear on [http://github.com/etal/biopython/ GitHub branches] first.
 
 === Biogeography ===
 
