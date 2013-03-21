@@ -94,13 +94,19 @@ ours:
     multiple trees. E.g.: Strict consensus, as Bio.Nexus already
     implements; perhaps other methods like Adams consensus.
 -   A function to calculate bootstrap support for branches given a
-    target tree and a series of bootstrap replicate trees.
+    target or "master" tree and a series of bootstrap replicate trees
+    (usually read incrementally from a Newick file).
 -   Functions for comparison of two or more trees.
 -   Simple algorithms for tree inference, i.e. neighbor-joining and
     parsimony tree estimation. For small alignments (and perhaps
     medium-sized ones with PyPy), it would be nice to run these without
     an external program, e.g. to construct a guide tree for another
     algorithm or quickly view a phylogenetic clustering of sequences.
+-   Tree visualizations: A proper draw\_unrooted function to perform
+    radial layout, with an optional "iterations" argument to use
+    Felsenstein's Equal Daylight algorithm. Circular radial diagrams are
+    also popular these days. Any new function should support the same
+    arguments as the existing Phylo.draw.
 
 Difficulty and needed skills  
 Medium-to-advanced programming skill in Python -- it's important for
@@ -108,7 +114,7 @@ these implementations to be reasonably efficient, though we don't aim to
 compete with the fastest stand-alone implementations of
 these algorithms. Knowledge of phylogenetic methods is critical; you
 might want to grab a copy of Felsenstein's \*Inferring Phylogenies\*
-for reference.
+for reference. Tree visualizations are done with matplotlib.
 
 Mentors  
 [Eric Talevich](http://etal.myweb.uga.edu/), others?
