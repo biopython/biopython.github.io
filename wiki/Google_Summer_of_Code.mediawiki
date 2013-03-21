@@ -23,6 +23,36 @@ Past mentors include:
 
 The BioPython proposals for the Google Summer of Code 2013 will be published here once discussed. We encourage potential students and mentors to join the [http://biopython.org/wiki/Mailing_lists BioPython mailing lists] and actively participate in these discussions, either by submitting their own ideas or contributing to improving existing ones.
 
+====  Codon alignment and analysis ====
+;  Rationale
+:  A codon alignment is an alignment of nucleotide sequences in which the trinucleotides correspond directly to amino acids in the translated protein product. This carries important information which can be used for several analysis, notably analysis of selection pressures. This project extends Biopython to support this data type and these analyses.
+;  Approach & Goals
+: Useful features include:
+* Conversion of a set of unaligned nucleic acid sequences and a corresponding protein sequence alignment to a codon alignment.
+* Calculation of selection pressure from the ratio of nonsynonomous to synonomous site replacements, and related functions.
+* Possible extension of AlignIO and the MultipleSeqAlignment class to take full advantage of codon alignments, including validation (testing for frame shifts, etc.)
+;  Difficulty and needed skills
+:  Medium, depending on ambition. Familiarity with the Biopython's existing alignment classes and functions, or equivalents in BioPerl, BioJava or BioRuby (e.g.), will be helpful. Understanding of the practical uses of codon alignments, or at least a basic understanding of molecular biology, is important.
+;  Mentors
+:  [http://etal.myweb.uga.edu/ Eric Talevich], others?
+
+<!--
+-->
+
+
+<!--
+=== XXXX ===
+====  Mock Proposal ====
+;  Rationale
+:  aaa
+;  Approach & Goals
+: zzz
+;  Difficulty and needed skills
+:  yyy
+;  Mentors
+:  xxx
+-->
+
 == Past Proposals ==
 
 === 2012 ===
