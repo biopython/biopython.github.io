@@ -76,7 +76,7 @@ BioRuby (e.g.), will be helpful. Understanding of the practical uses of
 codon alignments, or at least a basic understanding of molecular
 biology, is important.
 
-Mentors  
+Possible Mentors  
 [Eric Talevich](http://etal.myweb.uga.edu/), others?
 
 #### Bio.Phylo: filling in the gaps
@@ -117,8 +117,48 @@ these algorithms. Knowledge of phylogenetic methods is critical; you
 might want to grab a copy of Felsenstein's \*Inferring Phylogenies\*
 for reference. Tree visualizations are done with matplotlib.
 
-Mentors  
+Possible Mentors  
 [Eric Talevich](http://etal.myweb.uga.edu/), others?
+
+#### Indexing & Lazy-loading Sequence Parsers
+
+Rationale  
+[Bio.SeqIO](SeqIO "wikilink")'s indexing offers parsing on demand access
+to any sequence in a large file (or collection of files on disk) as a
+[SeqRecord](SeqRecord "wikilink") object. This works well when you have
+many small to medium sized sequences/genomes. However, this is not ideal
+for large genomes or chromosomes where only a sub-region may be needed.
+A lazy-loading parser would delay reading the record until requested.
+For example, if region *record\[3000:4000\]* is requested, then only
+those 1000 bases need to be loaded from disk into memory, plus any
+features in that region. This is how Biopython's
+[BioSQL](BioSQL "wikilink") interface works. Tools like tabix and
+samtools have demonstrated efficient co-ordinate indexing which could be
+useful here.
+
+Aside from being used via an index for random access, lazy-loading
+parsers could be used when iterating over a file as well. This can
+*potentially* offer speed ups for tasks where only a fraction of the
+data is used. For example, if calculating the GC content of a collection
+of genomes from GenBank, using Bio.SeqIO.parse(...) would currently
+needlessly load and parse all the annotation and features. A lazy-parser
+would only parse the sequence information.
+
+Approach & Goals  
+Useful features include:
+
+-   Internal indexing of multiple file formats, including FASTA and
+    richly annotated sequence formats like GenBank/EMBL
+    and GTF/GFF/GFF3.
+-   Full compatibility with existing SeqIO parsers which load everything
+    into memory as a \`SeqRecord\` object.
+
+Difficulty and needed skills  
+Hard. Familiarity with the Biopython's existing sequence
+parsing essential. Understanding of indexing large files will be vital.
+
+Mentors  
+[Peter Cock](https://github.com/peterjc/), others?
 
 Past Proposals
 --------------
