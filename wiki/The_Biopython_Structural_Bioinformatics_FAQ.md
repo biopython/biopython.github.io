@@ -923,15 +923,15 @@ singular value decomposition (this is implemented in the general
 Example:
 
 ``` python
-sup=Superimposer()
- # Specify the atom lists
- # 'fixed' and 'moving' are lists of Atom objects
- # The moving atoms will be put on the fixed atoms
+sup = Superimposer()
+# Specify the atom lists
+# 'fixed' and 'moving' are lists of Atom objects
+# The moving atoms will be put on the fixed atoms
 sup.set_atoms(fixed, moving)
- # Print rotation/translation/rmsd
+# Print rotation/translation/rmsd
 print sup.rotran
 print sup.rms 
- # Apply rotation/translation to the moving atoms
+# Apply rotation/translation to the moving atoms
 sup.apply(moving)
 ```
 
