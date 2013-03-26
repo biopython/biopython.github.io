@@ -85,9 +85,9 @@ day). Python based/aware molecular graphics solutions include:
 
 * PyMol: http://pymol.sourceforge.net/
 * Chimera: http://www.cgl.ucsf.edu/chimera/
-* PMV: http://www.scripps.edu/ sanner/python/
-* Coot: http://www.ysbl.york.ac.uk/ emsley/coot/
-* CCP4mg: http://www.ysbl.york.ac.uk/ lizp/molgraphics.html
+* PMV: http://www.scripps.edu/~sanner/python/
+* Coot: http://www.ysbl.york.ac.uk/~emsley/coot/
+* CCP4mg: http://www.ysbl.york.ac.uk/~lizp/molgraphics.html
 * mmLib: http://pymmlib.sourceforge.net/ 
 * VMD: http://www.ks.uiuc.edu/Research/vmd/
 * MMTK: http://starship.python.net/crew/hinsen/MMTK/
