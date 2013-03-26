@@ -223,11 +223,13 @@ to Kristian Rother for donating this module.
 ==== How do I download the entire PDB? ====
 
 The following commands will store all PDB files in the <code>/data/pdb</code>
-directory: 
+directory:
+
 <code>
 python PDBList.py all /data/pdb
 python PDBList.py all /data/pdb -d
 </code>
+
 The API method for this is called <code>download_entire_pdb</code>.
 Adding the <code>-d</code> option will store all files in the same directory.
 Otherwise, they are sorted into PDB-style subdirectories according

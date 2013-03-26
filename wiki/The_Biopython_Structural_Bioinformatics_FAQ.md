@@ -247,12 +247,15 @@ for donating this module.
 #### How do I download the entire PDB?
 
 The following commands will store all PDB files in the `/data/pdb`
-directory: `python` `PDBList.py` `all` `/data/pdb` `python` `PDBList.py`
-`all` `/data/pdb` `-d` The API method for this is called
-`download_entire_pdb`. Adding the `-d` option will store all files in
-the same directory. Otherwise, they are sorted into PDB-style
-subdirectories according to their PDB ID's. Depending on the traffic, a
-complete download will take 2-4 days.
+directory:
+
+`python` `PDBList.py` `all` `/data/pdb` `python` `PDBList.py` `all`
+`/data/pdb` `-d`
+
+The API method for this is called `download_entire_pdb`. Adding the `-d`
+option will store all files in the same directory. Otherwise, they are
+sorted into PDB-style subdirectories according to their PDB ID's.
+Depending on the traffic, a complete download will take 2-4 days.
 
 #### How do I keep a local copy of the PDB up-to-date?
 
