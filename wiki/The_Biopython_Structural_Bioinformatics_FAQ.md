@@ -698,15 +698,11 @@ return the distance between two atoms.
 Example:
 
 ``` python
- # Get some atoms
-
-ca1=residue1{['CA'{]
-
-ca2=residue2{['CA'{]
-
- # Simply subtract the atoms to get their distance
-
-distance=ca1-ca2
+# Get some atoms
+ca1 = residue1['CA']
+ca2 = residue2['CA']
+# Simply subtract the atoms to get their distance
+distance = ca1-ca2
 ```
 
 #### How do I measure angles?
