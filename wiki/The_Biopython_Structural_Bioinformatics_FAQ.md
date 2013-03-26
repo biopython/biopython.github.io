@@ -101,9 +101,9 @@ Python based/aware molecular graphics solutions include:
 
 -   PyMol: <http://pymol.sourceforge.net/>
 -   Chimera: <http://www.cgl.ucsf.edu/chimera/>
--   PMV: <http://www.scripps.edu/~sanner/python/>
--   Coot: <http://www.ysbl.york.ac.uk/~emsley/coot/>
--   CCP4mg: <http://www.ysbl.york.ac.uk/~lizp/molgraphics.html>
+-   PMV: <http://www.scripps.edu/> sanner/python/
+-   Coot: <http://www.ysbl.york.ac.uk/> emsley/coot/
+-   CCP4mg: <http://www.ysbl.york.ac.uk/> lizp/molgraphics.html
 -   mmLib: <http://pymmlib.sourceforge.net/>
 -   VMD: <http://www.ks.uiuc.edu/Research/vmd/>
 -   MMTK: <http://starship.python.net/crew/hinsen/MMTK/>
@@ -263,7 +263,7 @@ PDB is present) and calls the `update_pdb` method:
 ``` python
 pl=PDBList(pdb='/data/pdb')
 
-pl.update\_pdb()
+pl.update_pdb()
 ```
 
 One can of course make a weekly cronjob out of this to keep the local
@@ -291,11 +291,11 @@ immediately!
 Example:
 
 ``` python
-\#~Permissive~parser
+\# Permissive parser
 parser=PDBParser(PERMISSIVE=1)
-parser=PDBParser()~\#~The~same~(default)
-\#~Strict~parser
-strict\_parser=PDBParser(PERMISSIVE=0)
+parser=PDBParser() \# The same (default)
+\# Strict parser
+strict_parser=PDBParser(PERMISSIVE=0)
 ```
 
 In the permissive state (DEFAULT), PDB files that obviously contain
@@ -330,7 +330,7 @@ Example: saving a structure
 ``` python
 io=PDBIO()
 
-io.set\_structure(s)
+io.set_structure(s)
 
 io.save('out.pdb')
 ```
@@ -339,41 +339,41 @@ If you want to write out a part of the structure, make use of the
 `Select` class (also in `PDBIO`). Select has four methods:
 
 ``` python
-accept\_model(model)
+accept_model(model)
 
-accept\_chain(chain)
+accept_chain(chain)
 
-accept\_residue(residue)
+accept_residue(residue)
 
-accept\_atom(atom)
+accept_atom(atom)
 ```
 
 By default, every method returns 1 (which means the
-model/\\-chain/\\-residue/\\-atom is included in the output). By
-subclassing `Select` and returning 0 when appropriate you can exclude
-models, chains, etc. from the output. Cumbersome maybe, but very
-powerful. The following code only writes out glycine residues:
+model/chain/residue/atom is included in the output). By subclassing
+`Select` and returning 0 when appropriate you can exclude models,
+chains, etc. from the output. Cumbersome maybe, but very powerful. The
+following code only writes out glycine residues:
 
 ``` python
-class~GlySelect(Select):
+class GlySelect(Select):
 
-~~~~def~accept\_residue(self,~residue):
+    def accept_residue(self, residue):
 
-~~~~~~~~if~residue.get\_name()=='GLY':
+        if residue.get_name()=='GLY':
 
-~~~~~~~~~~~~return~1
+            return 1
 
-~~~~~~~~else:
+        else:
 
-~~~~~~~~~~~~return~0
+            return 0
 
 
 
 io=PDBIO()
 
-io.set\_structure(s)
+io.set_structure(s)
 
-io.save('gly\_only.pdb',~GlySelect())
+io.save('gly_only.pdb', GlySelect())
 ```
 
 If this is all too complicated for you, the `Dice` module contains a
@@ -391,7 +391,7 @@ asked for it). People who want to add this can contact me.
 #### What's the overall layout of a Structure object?
 
 The `Structure` object follows the so-called **SMCRA**
-(Structure/\\-Model/\\-Chain/\\-Residue/\\-Atom) architecture :
+(Structure/Model/Chain/Residue/Atom) architecture :
 
 \\begin{itemize \\item A structure consists of models \\item A model
 consists of chains \\item A chain consists of residues \\item A residue
@@ -420,33 +420,33 @@ The following code iterates through all atoms of a structure:
 ``` python
 p=PDBParser()
 
-structure=p.get\_structure('X',~'pdb1fat.ent')
+structure=p.get_structure('X', 'pdb1fat.ent')
 
-for~model~in~structure:
+for model in structure:
 
-~~for~chain~in~model:~
+  for chain in model: 
 
-~~~~for~residue~in~chain:
+    for residue in chain:
 
-~~~~~~for~atom~in~residue:
+      for atom in residue:
 
-~~~~~~~~print~atom
+        print atom
 ```
 
 There are also some shortcuts:
 
 ``` python
-\#~Iterate~over~all~atoms~in~a~structure
+\# Iterate over all atoms in a structure
 
-for~atom~in~structure.get\_atoms():
+for atom in structure.get_atoms():
 
-~~~~print~atom
+    print atom
 
-\#~Iterate~over~all~residues~in~a~model
+\# Iterate over all residues in a model
 
-for~residue~in~model.get\_residues():
+for residue in model.get_residues():
 
-~~~~print~residue
+    print residue
 ```
 
 Structures, models, chains, residues and atoms are called `Entities` in
@@ -454,36 +454,36 @@ Biopython. You can always get a parent `Entity` from a child `Entity`,
 eg.:
 
 ``` python
-residue=atom.get\_parent()
+residue=atom.get_parent()
 
-chain=residue.get\_parent()
+chain=residue.get_parent()
 ```
 
 You can also test whether an `Entity` has a certain child using the
-`has\_id` method.
+`has_id` method.
 
 #### Can I do that a bit more conveniently?
 
 You can do things like:
 
 ``` python
-atoms=structure.get\_atoms()
+atoms=structure.get_atoms()
 
-residue=structure.get\_residues()
+residue=structure.get_residues()
 
-atoms=chain.get\_atoms()
+atoms=chain.get_atoms()
 ```
 
-You can also use the `Selection.unfold\_entities` function:
+You can also use the `Selection.unfold_entities` function:
 
 ``` python
-\#~Get~all~residues~from~a~structure
+\# Get all residues from a structure
 
-res\_list=Selection.unfold\_entities(structure,~'R')
+res_list=Selection.unfold_entities(structure, 'R')
 
-\#~Get~all~atoms~from~a~chain
+\# Get all atoms from a chain
 
-atom\_list=Selection.unfold\_entities(chain,~'A')
+atom_list=Selection.unfold_entities(chain, 'A')
 ```
 
 Obviously, `A`=atom, R</code>=residue, C</code>=chain, M</code>=model,
@@ -492,8 +492,8 @@ get a list of (unique) `Residue` or `Chain` parents from a list of
 `Atoms`:
 
 ``` python
-residue\_list=Selection.unfold\_entities(atom\_list,~'R')
-chain\_list=Selection.unfold\_entities(atom\_list,~'C')
+residue_list=Selection.unfold_entities(atom_list, 'R')
+chain_list=Selection.unfold_entities(atom_list, 'C')
 ```
 
 For more info, see the API documentation.
@@ -550,9 +550,9 @@ the hetero-flag and insertion code are blank, the sequence identifier
 alone can be used:
 
 ``` python
-\#~Full~id
-residue=chain{[('~',~100,~'~'){]
-\#~Shortcut~id
+\# Full id
+residue=chain{[(' ', 100, ' '){]
+\# Shortcut id
 residue=chain{[100{]
 ```
 
@@ -592,24 +592,24 @@ specified by the user.
 
 \\textbf{Disordered atom positions are represented by ordinary `Atom`
 objects, but all `Atom` objects that represent the same physical atom
-are stored in a `Disordered\-Atom` object (see Fig. \\ref{<cap:SMCRA>).
-Each `Atom` object in a `Disordered\-Atom` object can be uniquely
-indexed using its altloc specifier. The `Disordered\-Atom` object
-forwards all uncaught method calls to the selected Atom object, by
-default the one that represents the atom with the highest occupancy. The
-user can of course change the selected `Atom` object, making use of its
-altloc specifier. In this way atom disorder is represented correctly
-without much additional complexity. In other words, if you are not
-interested in atom disorder, you will not be bothered by it.
+are stored in a `DisorderedAtom` object (see Fig. \\ref{<cap:SMCRA>).
+Each `Atom` object in a `DisorderedAtom` object can be uniquely indexed
+using its altloc specifier. The `DisorderedAtom` object forwards all
+uncaught method calls to the selected Atom object, by default the one
+that represents the atom with the highest occupancy. The user can of
+course change the selected `Atom` object, making use of its altloc
+specifier. In this way atom disorder is represented correctly without
+much additional complexity. In other words, if you are not interested in
+atom disorder, you will not be bothered by it.
 
 Each disordered atom has a characteristic altloc identifier. You can
-specify that a `Disordered\-Atom` object should behave like the `Atom`
+specify that a `DisorderedAtom` object should behave like the `Atom`
 object associated with a specific altloc identifier:
 
 ``` python
-atom.disordered\_select('A')~\#~select~altloc~A~atom
+atom.disordered_select('A') \# select altloc A atom
 
-atom.disordered\_select('B')~\#~select~altloc~B~atom~
+atom.disordered_select('B') \# select altloc B atom 
 ```
 
 A special case arises when disorder is due to \\textbf{point mutations,
@@ -620,7 +620,7 @@ Since these residues belong to a different residue type (e.g. let's say
 Ser 60 and Cys 60) they should not be stored in a single `Residue`
 object as in the common case. In this case, each residue is represented
 by one `Residue` object, and both `Residue` objects are stored in a
-single `Disordered\-Residue` object (see Fig. \\ref{<cap:SMCRA>).
+single `DisorderedResidue` object (see Fig. \\ref{<cap:SMCRA>).
 
 The `DisorderedResidue` object forwards all uncaught methods to the
 selected `Residue` object (by default the last `Residue` object added),
@@ -638,7 +638,7 @@ chain behaves as the Cys residue.
 ``` python
 residue=chain{[10{]
 
-residue.disordered\_select('CYS')
+residue.disordered_select('CYS')
 ```
 
 In addition, you can get a list of all `Atom` objects (ie. all
@@ -678,7 +678,7 @@ of the pudding is in the eating.
 
 Moreover, it is quite easy to build more specialised data structures on
 top of the `Structure` class (eg. there's a `Polypeptide` class). On the
-other hand, the `Structure` object is built using a Parser/\\-Consumer
+other hand, the `Structure` object is built using a Parser/Consumer
 approach (called `PDBParser`/`MMCIFParser` and `StructureBuilder`,
 respectively). One can easily reuse the PDB/mmCIF parsers by
 implementing a specialised `StructureBuilder` class. It is of course
@@ -691,27 +691,27 @@ also trivial to add support for new file formats by writing new parsers.
 Using the following methods:
 
 ``` python
-a.get\_name()~\#~atom~name~(spaces~stripped,~e.g.~'CA')
+a.get_name() \# atom name (spaces stripped, e.g. 'CA')
 
-a.get\_id()~\#~id~(equals~atom~name)
+a.get_id() \# id (equals atom name)
 
-a.get\_coord()~\#~atomic~coordinates
+a.get_coord() \# atomic coordinates
 
-a.get\_vector()~\#~atomic~coordinates~as~Vector~object
+a.get_vector() \# atomic coordinates as Vector object
 
-a.get\_bfactor()~\#~isotropic~B~factor
+a.get_bfactor() \# isotropic B factor
 
-a.get\_occupancy()~\#~occupancy
+a.get_occupancy() \# occupancy
 
-a.get\_altloc()~\#~alternative~location~specifier
+a.get_altloc() \# alternative location specifier
 
-a.get\_sigatm()~\#~std.~dev.~of~atomic~parameters
+a.get_sigatm() \# std. dev. of atomic parameters
 
-a.get\_siguij()~\#~std.~dev.~of~anisotropic~B~factor
+a.get_siguij() \# std. dev. of anisotropic B factor
 
-a.get\_anisou()~\#~anisotropic~B~factor
+a.get_anisou() \# anisotropic B factor
 
-a.get\_fullname()~\#~atom~name~(with~spaces,~e.g.~'.CA.')
+a.get_fullname() \# atom name (with spaces, e.g. '.CA.')
 ```
 
 #### How do I extract information from a `Residue` object?
@@ -719,10 +719,10 @@ a.get\_fullname()~\#~atom~name~(with~spaces,~e.g.~'.CA.')
 Using the following methods:
 
 ``` python
-r.get\_resname()~\#~return~the~residue~name~(eg.~'GLY')
-r.is\_disordered()~\#~1~if~the~residue~has~disordered~atoms
-r.get\_segid()~\#~return~the~SEGID
-r.has\_id(name)~\#~test~if~a~residue~has~a~certain~atom
+r.get_resname() \# return the residue name (eg. 'GLY')
+r.is_disordered() \# 1 if the residue has disordered atoms
+r.get_segid() \# return the SEGID
+r.has_id(name) \# test if a residue has a certain atom
 ```
 
 #### How do I measure distances?
@@ -733,13 +733,13 @@ return the distance between two atoms.
 Example:
 
 ``` python
-\#~Get~some~atoms
+\# Get some atoms
 
 ca1=residue1{['CA'{]
 
 ca2=residue2{['CA'{]
 
-\#~Simply~subtract~the~atoms~to~get~their~distance
+\# Simply subtract the atoms to get their distance
 
 distance=ca1-ca2
 ```
@@ -750,10 +750,10 @@ This can easily be done via the vector representation of the atomic
 coordinates, and the `calc_angle` function from the `Vector` module:
 
 ``` python
-vector1=atom1.get\_vector()
-vector2=atom2.get\_vector()
-vector3=atom3.get\_vector()
-angle=calc\_angle(vector1,~vector2,~vector3)
+vector1=atom1.get_vector()
+vector2=atom2.get_vector()
+vector3=atom3.get_vector()
+angle=calc_angle(vector1, vector2, vector3)
 ```
 
 #### How do I measure torsion angles?
@@ -763,11 +763,11 @@ atomic coordinates, this time using the `calc_dihedral` function from
 the `Vector` module:
 
 ``` python
-vector1=atom1.get\_vector()
-vector2=atom2.get\_vector()
-vector3=atom3.get\_vector()
-vector4=atom4.get\_vector()
-angle=calc\_dihedral(vector1,~vector2,~vector3,~vector4)
+vector1=atom1.get_vector()
+vector2=atom2.get_vector()
+vector3=atom3.get_vector()
+vector4=atom4.get_vector()
+angle=calc_dihedral(vector1, vector2, vector3, vector4)
 ```
 
 #### How do I determine atom-atom contacts?
@@ -785,14 +785,14 @@ C$\\alpha$-C$\\alpha$ distance criterion.
 Example:
 
 ``` python
-\#~Using~C-N~
+\# Using C-N 
 ppb=PPBuilder()
-for~pp~in~ppb.build\_peptides(structure):~
-~~~~print~pp.get\_sequence()
-\#~Using~CA-CA
+for pp in ppb.build_peptides(structure): 
+    print pp.get_sequence()
+\# Using CA-CA
 ppb=CaPPBuilder()
-for~pp~in~ppb.build\_peptides(structure):~
-~~~~print~pp.get\_sequence()
+for pp in ppb.build_peptides(structure): 
+    print pp.get_sequence()
 ```
 
 Note that in the above case only model 0 of the structure is considered
@@ -811,11 +811,11 @@ as a Biopython `Seq` object, and its alphabet is defined by a
 Example:
 
 ``` python
->\,{>\,{>~seq=polypeptide.get\_sequence()
+>\,{>\,{> seq=polypeptide.get_sequence()
 
->\,{>\,{>~print~seq
+>\,{>\,{> print seq
 
-Seq('SNVVE...',~<class~Bio.Alphabet.ProteinAlphabet>)
+Seq('SNVVE...', <class Bio.Alphabet.ProteinAlphabet>)
 ```
 
 #### How do I determine secondary structure?
@@ -859,12 +859,12 @@ Example:
 
 ``` python
 model = structure[0]
-rd = ResidueDepth(model,~pdb\_file)
-residue\_depth,~ca\_depth=rd[some\_residue]
+rd = ResidueDepth(model, pdb_file)
+residue_depth, ca_depth=rd[some_residue]
 ```
 
 You can also get access to the molecular surface itself (via the
-`get\_surface` function), in the form of a Numeric python array with the
+`get_surface` function), in the form of a Numeric python array with the
 surface points.
 
 #### How do I calculate Half Sphere Exposure?
@@ -889,13 +889,13 @@ Example:
 ``` python
 model=structure[0]
 hse=HSExposure()
-\#~Calculate~HSEalpha
-exp\_ca=hse.calc\_hs\_exposure(model,~option='CA3')
-\#~Calculate~HSEbeta
-exp\_cb=hse.calc\_hs\_exposure(model,~option='CB')
-\#~Calculate~classical~coordination~number~exp\_fs=hse.calc\_fs\_exposure(model)
-\#~Print~HSEalpha~for~a~residue
-print~exp\_ca{[some\_residue{]
+\# Calculate HSEalpha
+exp_ca=hse.calc_hs_exposure(model, option='CA3')
+\# Calculate HSEbeta
+exp_cb=hse.calc_hs_exposure(model, option='CB')
+\# Calculate classical coordination number exp_fs=hse.calc_fs_exposure(model)
+\# Print HSEalpha for a residue
+print exp_ca{[some_residue{]
 ```
 
 #### How do I map the residues of two related structures onto each other?
@@ -906,7 +906,7 @@ with more than two structures.
 
 #### How do I test if a Residue object is an amino acid?
 
-Use `is\_aa(residue)`.
+Use `is_aa(residue)`.
 
 #### Can I do vector operations on atomic coordinates?
 
@@ -930,20 +930,20 @@ method (which can be used to construct a rotation around a certain axis)
 of the `Vector` module:
 
 ``` python
-\#~get~atom~coordinates~as~vectors
-n=residue{['N'{].get\_vector()~
-c=residue{['C'{].get\_vector()~
-ca=residue{['CA'{].get\_vector()
-\#~center~at~origin
-n=n-ca~
-c=c-ca~
-\#~find~rotation~matrix~that~rotates~n~
-\#~-120~degrees~along~the~ca-c~vector
-rot=rotaxis(-pi{*120.0/180.0,~c)
-\#~apply~rotation~to~ca-n~vector
-cb\_at\_origin=n.left\_multiply(rot)
-\#~put~on~top~of~ca~atom
-cb=cb\_at\_origin+ca
+\# get atom coordinates as vectors
+n=residue{['N'{].get_vector() 
+c=residue{['C'{].get_vector() 
+ca=residue{['CA'{].get_vector()
+\# center at origin
+n=n-ca 
+c=c-ca 
+\# find rotation matrix that rotates n 
+\# -120 degrees along the ca-c vector
+rot=rotaxis(-pi{*120.0/180.0, c)
+\# apply rotation to ca-n vector
+cb_at_origin=n.left_multiply(rot)
+\# put on top of ca atom
+cb=cb_at_origin+ca
 ```
 
 This example shows that it's possible to do some quite nontrivial vector
@@ -975,14 +975,14 @@ Example:
 
 ``` python
 sup=Superimposer()
-\#~Specify~the~atom~lists
-\#~'fixed'~and~'moving'~are~lists~of~Atom~objects
-\#~The~moving~atoms~will~be~put~on~the~fixed~atoms
-sup.set\_atoms(fixed,~moving)
-\#~Print~rotation/translation/rmsd
-print~sup.rotran
-print~sup.rms~
-\#~Apply~rotation/translation~to~the~moving~atoms
+\# Specify the atom lists
+\# 'fixed' and 'moving' are lists of Atom objects
+\# The moving atoms will be put on the fixed atoms
+sup.set_atoms(fixed, moving)
+\# Print rotation/translation/rmsd
+print sup.rotran
+print sup.rms 
+\# Apply rotation/translation to the moving atoms
 sup.apply(moving)
 ```
 
@@ -995,7 +995,7 @@ molecule.
 #### Can I manipulate the atomic coordinates?
 
 Yes, using the `transform` method of the `Atom` object, or directly
-using the `set\_coord` method.
+using the `set_coord` method.
 
 Other Structural Bioinformatics modules
 ---------------------------------------
