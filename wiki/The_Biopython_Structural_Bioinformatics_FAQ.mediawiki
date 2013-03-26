@@ -419,55 +419,40 @@ the <code>has_id</code> method.
 ==== Can I do that a bit more conveniently? ====
 
 You can do things like:
-
 <source lang=python>
-atoms=structure.get_atoms()
-
-residue=structure.get_residues()
-
-atoms=chain.get_atoms()
+atoms = structure.get_atoms()
+residues = structure.get_residues()
+atoms = chain.get_atoms()
 </source>
 You can also use the <code>Selection.unfold_entities</code> function:
-
 <source lang=python>
- # Get all residues from a structure
-
-res_list=Selection.unfold_entities(structure, 'R')
-
- # Get all atoms from a chain
-
-atom_list=Selection.unfold_entities(chain, 'A')
+# Get all residues from a structure
+res_list = Selection.unfold_entities(structure, 'R')
+# Get all atoms from a chain
+atom_list = Selection.unfold_entities(chain, 'A')
 </source>
-Obviously, <code>A</code>=atom, R</code>=residue, C</code>=chain, M</code>=model, S</code>=structure.
-You can use this to go up in the hierarchy, eg.\ to get a list of
-(unique) <code>Residue</code> or <code>Chain</code> parents from a list of
-<code>Atoms</code>:
+Obviously, <code>A</code>=atom, <code>R</code>=residue, <code>C</code>=chain, <code>M</code>=model, <code>S</code>=structure.
+You can use this to go up in the hierarchy, e.g. to get a list of (unique) <code>Residue</code> or <code>Chain</code> parents from a list of
+<code>Atom</code>s:
 
 <source lang=python>
-residue_list=Selection.unfold_entities(atom_list, 'R')
-chain_list=Selection.unfold_entities(atom_list, 'C')
+residue_list = Selection.unfold_entities(atom_list, 'R')
+chain_list = Selection.unfold_entities(atom_list, 'C')
 </source>
 For more info, see the API documentation.
 
-
-==== How do I extract a specific <code>Atom/Residue</code>/Chain</code>/Model</code>
-from a <code>Structure</code>? ====
+==== How do I extract a specific <code>Atom</code>/<code>Residue</code>/<code>Chain</code>/<code>Model</code> from a <code>Structure</code>? ====
 
 Easy. Here are some examples:
-
 <source lang=python>
-model=structure{[0{]
-
-chain=model{['A'{]
-
-residue=chain{[100{]
-
-atom=residue{['CA'{]
+model = structure[0]
+chain = model['A']
+residue = chain[100]
+atom = residue['CA']
 </source>
 Note that you can use a shortcut:
-
 <source lang=python>
-atom=structure{[0{]{['A'{]{[100{]{['CA'{]
+atom = structure[0]['A'][100]['CA']
 </source>
 
 ==== What is a model id? ====

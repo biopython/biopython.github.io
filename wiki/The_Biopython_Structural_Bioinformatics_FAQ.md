@@ -442,55 +442,46 @@ You can also test whether an `Entity` has a certain child using the
 You can do things like:
 
 ``` python
-atoms=structure.get_atoms()
-
-residue=structure.get_residues()
-
-atoms=chain.get_atoms()
+atoms = structure.get_atoms()
+residues = structure.get_residues()
+atoms = chain.get_atoms()
 ```
 
 You can also use the `Selection.unfold_entities` function:
 
 ``` python
- # Get all residues from a structure
-
-res_list=Selection.unfold_entities(structure, 'R')
-
- # Get all atoms from a chain
-
-atom_list=Selection.unfold_entities(chain, 'A')
+# Get all residues from a structure
+res_list = Selection.unfold_entities(structure, 'R')
+# Get all atoms from a chain
+atom_list = Selection.unfold_entities(chain, 'A')
 ```
 
-Obviously, `A`=atom, R</code>=residue, C</code>=chain, M</code>=model,
-S</code>=structure. You can use this to go up in the hierarchy, eg.\\ to
-get a list of (unique) `Residue` or `Chain` parents from a list of
-`Atoms`:
+Obviously, `A`=atom, `R`=residue, `C`=chain, `M`=model, `S`=structure.
+You can use this to go up in the hierarchy, e.g. to get a list of
+(unique) `Residue` or `Chain` parents from a list of `Atom`s:
 
 ``` python
-residue_list=Selection.unfold_entities(atom_list, 'R')
-chain_list=Selection.unfold_entities(atom_list, 'C')
+residue_list = Selection.unfold_entities(atom_list, 'R')
+chain_list = Selection.unfold_entities(atom_list, 'C')
 ```
 
 For more info, see the API documentation.
 
-#### How do I extract a specific `Atom/Residue`/Chain</code>/Model</code> from a `Structure`?
+#### How do I extract a specific `Atom`/`Residue`/`Chain`/`Model` from a `Structure`?
 
 Easy. Here are some examples:
 
 ``` python
-model=structure{[0{]
-
-chain=model{['A'{]
-
-residue=chain{[100{]
-
-atom=residue{['CA'{]
+model = structure[0]
+chain = model['A']
+residue = chain[100]
+atom = residue['CA']
 ```
 
 Note that you can use a shortcut:
 
 ``` python
-atom=structure{[0{]{['A'{]{[100{]{['CA'{]
+atom = structure[0]['A'][100]['CA']
 ```
 
 #### What is a model id?
