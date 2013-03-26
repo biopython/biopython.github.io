@@ -367,20 +367,13 @@ structure. Additional stuff is essentially added when needed. A UML
 diagram of the <code>Structure</code> object (forget about the <code>Disordered</code>
 classes for now) is shown in Fig. \ref{cap:SMCRA.
 
-%
-\begin{figure[tbh]
-\begin{center\includegraphics[%
-  width=100mm,
-  keepaspectratio]{images/smcra.png\end{center
-
+[[File:Smcra.png|200px|thumb|left|alt text]] 
 
 \caption{\label{cap:SMCRAUML diagram of SMCRA architecture of the <code>Structure</code>
 object. Full lines with diamonds denote aggregation, full lines with
 arrows denote referencing, full lines with triangles denote inheritance
 and dashed lines with triangles denote interface realization. 
 \end{figure
-
-
 
 ==== How do I navigate through a Structure object? ====
 
