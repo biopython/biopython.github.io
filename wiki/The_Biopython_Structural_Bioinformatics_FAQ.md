@@ -261,8 +261,7 @@ This can also be done using the `PDBList` object. One simply creates a
 PDB is present) and calls the `update_pdb` method:
 
 ``` python
-pl=PDBList(pdb='/data/pdb')
-
+pl = PDBList(pdb='/data/pdb')
 pl.update_pdb()
 ```
 

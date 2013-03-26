@@ -244,8 +244,7 @@ the local copy of the PDB is present) and calls the <code>update_pdb</code>
 method:
 
 <source lang=python>
-pl=PDBList(pdb='/data/pdb')
-
+pl = PDBList(pdb='/data/pdb')
 pl.update_pdb()
 </source>
 One can of course make a weekly cronjob out of this to keep
@@ -258,7 +257,6 @@ obsolete PDB entries. The <code>changed_this_week</code> method can
 be used to obtain the entries that were added, modified or obsoleted
 during the current week. For more info on the possibilities of <code>PDBList</code>,
 see the API documentation.
-
 
 ==== What about all those buggy PDB files? ====
 
