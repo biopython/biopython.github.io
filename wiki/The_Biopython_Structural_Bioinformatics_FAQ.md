@@ -763,10 +763,8 @@ as a Biopython `Seq` object, and its alphabet is defined by a
 Example:
 
 ``` python
->\,{>\,{> seq=polypeptide.get_sequence()
-
->\,{>\,{> print seq
-
+>>> seq = polypeptide.get_sequence()
+>>> print seq
 Seq('SNVVE...', <class Bio.Alphabet.ProteinAlphabet>)
 ```
 

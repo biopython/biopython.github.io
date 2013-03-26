@@ -718,10 +718,8 @@ defined by a <code>ProteinAlphabet</code> object.
 Example:
 
 <source lang=python>
->\,{>\,{> seq=polypeptide.get_sequence()
-
->\,{>\,{> print seq
-
+>>> seq = polypeptide.get_sequence()
+>>> print seq
 Seq('SNVVE...', <class Bio.Alphabet.ProteinAlphabet>)
 </source>
 
