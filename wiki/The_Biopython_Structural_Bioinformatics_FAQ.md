@@ -579,8 +579,8 @@ atom.disordered_select('A')  # select altloc A atom
 atom.disordered_select('B')  # select altloc B atom 
 ```
 
-A special case arises when disorder is due to \\textbf{point mutations,
-i.e. when two or more point mutants of a polypeptide are present in the
+A special case arises when disorder is due to **point mutations**, i.e.
+when two or more point mutants of a polypeptide are present in the
 crystal. An example of this can be found in PDB structure 1EN2.
 
 Since these residues belong to a different residue type (e.g. let's say
