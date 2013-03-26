@@ -515,7 +515,7 @@ of the disordered atoms or residues. Which subset is picked (e.g.
 which of the two disordered OG side chain atom positions of a Ser
 residue is used) can be specified by the user.
 
-\textbf{Disordered atom positions are represented by ordinary <code>Atom</code>
+'''Disordered atom positions''' are represented by ordinary <code>Atom</code>
 objects, but all <code>Atom</code> objects that represent the same physical
 atom are stored in a <code>DisorderedAtom</code> object (see Fig. \ref{cap:SMCRA).
 Each <code>Atom</code> object in a <code>DisorderedAtom</code> object can
@@ -571,7 +571,6 @@ In addition, you can get a list of all <code>Atom</code> objects (ie.
 all <code>DisorderedAtom</code> objects are 'unpacked' to their individual
 <code>Atom</code> objects) using the <code>get_unpacked_list</code> method
 of a (<code>Disordered</code>)<code>Residue</code> object.
-
 
 ==== Can I sort residues in a chain somehow? ====
 

@@ -557,7 +557,7 @@ atoms or residues. Which subset is picked (e.g. which of the two
 disordered OG side chain atom positions of a Ser residue is used) can be
 specified by the user.
 
-\\textbf{Disordered atom positions are represented by ordinary `Atom`
+**Disordered atom positions** are represented by ordinary `Atom`
 objects, but all `Atom` objects that represent the same physical atom
 are stored in a `DisorderedAtom` object (see Fig. \\ref{<cap:SMCRA>).
 Each `Atom` object in a `DisorderedAtom` object can be uniquely indexed
