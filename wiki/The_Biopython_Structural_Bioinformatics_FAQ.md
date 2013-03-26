@@ -774,20 +774,19 @@ For this functionality, you need to install DSSP (and obtain a license
 for it - free for academic use, see <http://www.cmbi.kun.nl/gv/dssp/>).
 Then use the `DSSP` class, which maps `Residue` objects to their
 secondary structure (and accessible surface area). The DSSP codes are
-listed in Table \\ref{<cap:DSSP-codes>. Note that DSSP (the program, and
-thus by consequence the class) cannot handle multiple models!
+listed in the Table below. Note that DSSP (the program, and thus by
+consequence the class) cannot handle multiple models!
 
-% \\begin{table
-
-==== \\begin{tabular{|c|c| \\hline Code& Secondary
-structure\\tabularnewline \\hline \\hline H& α-helix\\tabularnewline
-\\hline B& Isolated β-bridge residue\\tabularnewline \\hline E& Strand
-\\tabularnewline \\hline G& 3-10 helix \\tabularnewline \\hline I&
-$\\Pi$-helix \\tabularnewline \\hline T& Turn\\tabularnewline \\hline S&
-Bend \\tabularnewline \\hline -& Other\\tabularnewline \\hline
-\\end{tabular
-
-\\caption{\\label{<cap:DSSP-codesDSSP> codes in Bio.PDB. \\end{table
+| DSSP Code | Secondary structure       |
+|-----------|---------------------------|
+| H         | α-helix                   |
+| B         | Isolated β-bridge residue |
+| E         | Strand                    |
+| G         | 3-10 helix                |
+| I         | Π-helix                   |
+| T         | Turn                      |
+| S         | Bend                      |
+| -         | Other                     |
 
 #### How do I calculate the accessible surface area of a residue?
 
