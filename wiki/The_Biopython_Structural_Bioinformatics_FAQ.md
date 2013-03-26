@@ -41,13 +41,13 @@ Is there a Bio.PDB reference?
 Yes, and I'd appreciate it if you would refer to Bio.PDB in publications
 if you make use of it. The reference is:
 
-\\begin{quote Hamelryck, T., Manderick, B. (2003) PDB parser and
-structure class implemented in Python. \\textit{Bioinformatics,
-\\textbf{19, 2308-2310. \\end{quote The article can be freely downloaded
-via the Bioinformatics journal website
-(http://www.binf.ku.dk/users/thamelry/references.html). I welcome
-e-mails telling me what you are using Bio.PDB for. Feature requests are
-welcome too.
+> Hamelryck, T., Manderick, B.: "PDB parser and structure class
+> implemented in Python". *Bioinformatics* **19**: 2308–2310 (2003)
+
+The article can be freely downloaded via the [Bioinformatics journal
+website](http://www.binf.ku.dk/users/thamelry/references.html). I
+welcome e-mails telling me what you are using Bio.PDB for. Feature
+requests are welcome too.
 
 How well tested is Bio.PDB?
 ---------------------------
