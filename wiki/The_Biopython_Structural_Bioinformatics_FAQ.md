@@ -240,9 +240,9 @@ compression format used for the download, and the program used for local
 decompression (default `.Z` format and `gunzip`). In addition, the PDB
 ftp site can be specified upon creation of the `PDBList` object. By
 default, the server of the Worldwide Protein Data Bank
-(\\url{<ftp://ftp.wwpdb.org/pub/pdb/data/structures/divided/pdb/>}) is
-used. See the API documentation for more details. Thanks again to
-Kristian Rother for donating this module.
+(ftp://ftp.wwpdb.org/pub/pdb/data/structures/divided/pdb/) is used. See
+the API documentation for more details. Thanks again to Kristian Rother
+for donating this module.
 
 #### How do I download the entire PDB?
 
