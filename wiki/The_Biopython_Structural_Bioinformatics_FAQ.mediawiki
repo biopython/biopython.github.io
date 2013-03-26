@@ -838,15 +838,16 @@ and contact number values.
 Example:
 
 <source lang=python>
-model=structure[0]
-hse=HSExposure()
- # Calculate HSEalpha
+model = structure[0]
+hse = HSExposure()
+# Calculate HSEalpha
 exp_ca=hse.calc_hs_exposure(model, option='CA3')
- # Calculate HSEbeta
+# Calculate HSEbeta
 exp_cb=hse.calc_hs_exposure(model, option='CB')
- # Calculate classical coordination number exp_fs=hse.calc_fs_exposure(model)
- # Print HSEalpha for a residue
-print exp_ca{[some_residue{]
+# Calculate classical coordination number
+exp_fs=hse.calc_fs_exposure(model)
+# Print HSEalpha for a residue
+print exp_ca[some_residue]
 </source>
 
 ==== How do I map the residues of two related structures onto each other? ====
