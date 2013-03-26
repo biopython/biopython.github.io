@@ -354,26 +354,17 @@ has ever asked for it). People who want to add this can contact me.
 
 The <code>Structure</code> object follows the so-called '''SMCRA'''
 (Structure/Model/Chain/Residue/Atom) architecture : 
-
-\begin{itemize
-\item A structure consists of models
-\item A model consists of chains
-\item A chain consists of residues
-\item A residue consists of atoms
-\end{itemize
+* A structure consists of models
+* A model consists of chains
+* A chain consists of residues
+* A residue consists of atoms
 This is the way many structural biologists/bioinformaticians think
 about structure, and provides a simple but efficient way to deal with
 structure. Additional stuff is essentially added when needed. A UML
-diagram of the <code>Structure</code> object (forget about the <code>Disordered</code>
-classes for now) is shown in Fig. \ref{cap:SMCRA.
+diagram of the <code>Structure</code> object (forgetting about the <code>Disordered</code>
+classes for now) is shown in the figure below.
 
-[[File:Smcra.png|200px|thumb|left|alt text]] 
-
-\caption{\label{cap:SMCRAUML diagram of SMCRA architecture of the <code>Structure</code>
-object. Full lines with diamonds denote aggregation, full lines with
-arrows denote referencing, full lines with triangles denote inheritance
-and dashed lines with triangles denote interface realization. 
-\end{figure
+[[Image:Smcra.png|600px|left|frame|Diagram of SMCRA architecture of the <code>Structure</code> object. Full lines with diamonds denote aggregation, full lines with arrows denote referencing, full lines with triangles denote inheritance and dashed lines with triangles denote interface realization.]]
 
 ==== How do I navigate through a Structure object? ====
 
