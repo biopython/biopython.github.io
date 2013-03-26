@@ -404,45 +404,34 @@ realization. \\end{figure
 The following code iterates through all atoms of a structure:
 
 ``` python
-p=PDBParser()
-
-structure=p.get_structure('X', 'pdb1fat.ent')
-
+p = PDBParser()
+structure = p.get_structure('X', 'pdb1fat.ent')
 for model in structure:
-
-  for chain in model: 
-
-    for residue in chain:
-
-      for atom in residue:
-
-        print atom
+    for chain in model:
+        for residue in chain:
+            for atom in residue:
+                print atom
 ```
 
 There are also some shortcuts:
 
 ``` python
- # Iterate over all atoms in a structure
-
+# Iterate over all atoms in a structure
 for atom in structure.get_atoms():
-
     print atom
 
- # Iterate over all residues in a model
-
+# Iterate over all residues in a model
 for residue in model.get_residues():
-
     print residue
 ```
 
-Structures, models, chains, residues and atoms are called `Entities` in
-Biopython. You can always get a parent `Entity` from a child `Entity`,
-eg.:
+Structures, models, chains, residues and atoms are called **Entities**
+in Biopython. You can always get a parent `Entity` from a child
+`Entity`, e.g.:
 
 ``` python
-residue=atom.get_parent()
-
-chain=residue.get_parent()
+residue = atom.get_parent()
+chain = residue.get_parent()
 ```
 
 You can also test whether an `Entity` has a certain child using the
