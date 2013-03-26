@@ -215,7 +215,7 @@ file.close()
 Sure. Many PDB parsers assume that there is only one model, making them
 all but useless for NMR structures. The design of the `Structure` object
 makes it easy to handle PDB files with more than one model (see section
-\\ref{sub:The-Structure-object).
+[\#The Structure object](#The_Structure_object "wikilink")).
 
 #### How do I download structures from the PDB?
 
@@ -386,7 +386,7 @@ No, and I also don't have plans to add that functionality soon (or ever
 - I don't need it at all, and it's a lot of work, plus no-one has ever
 asked for it). People who want to add this can contact me.
 
-### The Structure object\\label{sub:The-Structure-object
+### The Structure object
 
 #### What's the overall layout of a Structure object?
 
