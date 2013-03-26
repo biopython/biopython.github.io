@@ -701,10 +701,10 @@ This can easily be done via the vector representation of the atomic
 coordinates, and the `calc_angle` function from the `Vector` module:
 
 ``` python
-vector1=atom1.get_vector()
-vector2=atom2.get_vector()
-vector3=atom3.get_vector()
-angle=calc_angle(vector1, vector2, vector3)
+vector1 = atom1.get_vector()
+vector2 = atom2.get_vector()
+vector3 = atom3.get_vector()
+angle = calc_angle(vector1, vector2, vector3)
 ```
 
 #### How do I measure torsion angles?

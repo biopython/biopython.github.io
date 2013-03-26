@@ -655,15 +655,12 @@ distance = ca1-ca2
 
 ==== How do I measure angles? ====
 
-This can easily be done via the vector representation of the atomic
-coordinates, and the <code>calc_angle</code> function from the <code>Vector</code>
-module:
-
+This can easily be done via the vector representation of the atomic coordinates, and the <code>calc_angle</code> function from the <code>Vector</code> module:
 <source lang=python>
-vector1=atom1.get_vector()
-vector2=atom2.get_vector()
-vector3=atom3.get_vector()
-angle=calc_angle(vector1, vector2, vector3)
+vector1 = atom1.get_vector()
+vector2 = atom2.get_vector()
+vector3 = atom3.get_vector()
+angle = calc_angle(vector1, vector2, vector3)
 </source>
 
 ==== How do I measure torsion angles? ====
