@@ -271,28 +271,24 @@ tell me immediately!
 
 Example:
 <source lang=python>
- # Permissive parser
-parser=PDBParser(PERMISSIVE=1)
-parser=PDBParser()  # The same (default)
- # Strict parser
-strict_parser=PDBParser(PERMISSIVE=0)
+# Permissive parser
+parser = PDBParser(PERMISSIVE=1)
+parser = PDBParser()  # The same (default)
+# Strict parser
+strict_parser = PDBParser(PERMISSIVE=0)
 </source>
 In the permissive state (DEFAULT), PDB files that obviously contain
-errors are 'corrected' (ie. some residues or atoms are left out).
+errors are 'corrected' (i.e. some residues or atoms are left out).
 These errors include:
-
-\begin{itemize
-\item Multiple residues with the same identifier
-\item Multiple atoms with the same identifier (taking into account the altloc
-identifier)
-\end{itemize
+* Multiple residues with the same identifier
+* Multiple atoms with the same identifier (taking into account the altloc identifier)
 These errors indicate real problems in the PDB file (for details see
 the Bioinformatics article). In the restrictive state, PDB files with
 errors cause an exception to occur. This is useful to find errors
 in PDB files.
 
 Some errors however are automatically corrected. Normally each disordered
-atom should have a non-blanc altloc identifier. However, there are
+atom should have a non-blank altloc identifier. However, there are
 many structures that do not follow this convention, and have a blank
 and a non-blank identifier for two disordered positions of the same
 atom. This is automatically interpreted in the right way.
