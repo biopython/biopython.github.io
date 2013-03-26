@@ -534,7 +534,6 @@ the <code>Atom</code> object associated with a specific altloc identifier:
 
 <source lang=python>
 atom.disordered_select('A')  # select altloc A atom
-
 atom.disordered_select('B')  # select altloc B atom 
 </source>
 A special case arises when disorder is due to '''point mutations''',
@@ -563,8 +562,7 @@ consisting of a Ser and a Cys residue. Make sure that residue 10 of
 this chain behaves as the Cys residue.
 
 <source lang=python>
-residue=chain{[10{]
-
+residue=chain[10]
 residue.disordered_select('CYS')
 </source>
 In addition, you can get a list of all <code>Atom</code> objects (ie.

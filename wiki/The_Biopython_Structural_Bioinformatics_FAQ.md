@@ -575,7 +575,6 @@ object associated with a specific altloc identifier:
 
 ``` python
 atom.disordered_select('A')  # select altloc A atom
-
 atom.disordered_select('B')  # select altloc B atom 
 ```
 
@@ -603,8 +602,7 @@ consisting of a Ser and a Cys residue. Make sure that residue 10 of this
 chain behaves as the Cys residue.
 
 ``` python
-residue=chain{[10{]
-
+residue=chain[10]
 residue.disordered_select('CYS')
 ```
 
