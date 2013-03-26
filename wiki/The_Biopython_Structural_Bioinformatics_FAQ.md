@@ -674,10 +674,10 @@ a.get_fullname()       # atom name (with spaces, e.g. '.CA.')
 Using the following methods:
 
 ``` python
-r.get_resname()  # return the residue name (eg. 'GLY')
-r.is_disordered()  # 1 if the residue has disordered atoms
-r.get_segid()  # return the SEGID
-r.has_id(name)  # test if a residue has a certain atom
+r.get_resname()         # return the residue name (eg. 'GLY')
+r.is_disordered()       # 1 if the residue has disordered atoms
+r.get_segid()           # return the SEGID
+r.has_id(name)          # test if a residue has a certain atom
 ```
 
 #### How do I measure distances?
