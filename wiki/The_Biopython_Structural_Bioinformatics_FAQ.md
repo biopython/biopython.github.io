@@ -554,15 +554,16 @@ specified by the user.
 
 **Disordered atom positions** are represented by ordinary `Atom`
 objects, but all `Atom` objects that represent the same physical atom
-are stored in a `DisorderedAtom` object (see Fig. \\ref{<cap:SMCRA>).
-Each `Atom` object in a `DisorderedAtom` object can be uniquely indexed
-using its altloc specifier. The `DisorderedAtom` object forwards all
-uncaught method calls to the selected Atom object, by default the one
-that represents the atom with the highest occupancy. The user can of
-course change the selected `Atom` object, making use of its altloc
-specifier. In this way atom disorder is represented correctly without
-much additional complexity. In other words, if you are not interested in
-atom disorder, you will not be bothered by it.
+are stored in a `DisorderedAtom` object (see section [\#The Structure
+object](#The_Structure_object "wikilink")). Each `Atom` object in a
+`DisorderedAtom` object can be uniquely indexed using its altloc
+specifier. The `DisorderedAtom` object forwards all uncaught method
+calls to the selected Atom object, by default the one that represents
+the atom with the highest occupancy. The user can of course change the
+selected `Atom` object, making use of its altloc specifier. In this way
+atom disorder is represented correctly without much additional
+complexity. In other words, if you are not interested in atom disorder,
+you will not be bothered by it.
 
 Each disordered atom has a characteristic altloc identifier. You can
 specify that a `DisorderedAtom` object should behave like the `Atom`

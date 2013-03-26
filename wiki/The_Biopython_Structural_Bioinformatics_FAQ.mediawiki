@@ -503,7 +503,7 @@ residue is used) can be specified by the user.
 
 '''Disordered atom positions''' are represented by ordinary <code>Atom</code>
 objects, but all <code>Atom</code> objects that represent the same physical
-atom are stored in a <code>DisorderedAtom</code> object (see Fig. \ref{cap:SMCRA).
+atom are stored in a <code>DisorderedAtom</code> object (see section [[#The Structure object]]).
 Each <code>Atom</code> object in a <code>DisorderedAtom</code> object can
 be uniquely indexed using its altloc specifier. The <code>DisorderedAtom</code>
 object forwards all uncaught method calls to the selected Atom object,
