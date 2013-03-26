@@ -493,10 +493,9 @@ in the PDB file.
 
 However, in PDB files, a space can be part of an atom name. Often,
 calcium atoms are called <code>'CA..'</code> in order to distinguish them
-from C$\alpha$ atoms (which are called <code>'.CA.'</code>). In cases
+from C&alpha; atoms (which are called <code>'.CA.'</code>). In cases
 were stripping the spaces would create problems (ie. two atoms called
 <code>'CA'</code> in the same residue) the spaces are kept.
-
 
 ==== How is disorder handled? ====
 

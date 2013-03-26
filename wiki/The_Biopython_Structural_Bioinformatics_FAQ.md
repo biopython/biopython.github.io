@@ -534,10 +534,10 @@ name is created by stripping all spaces from the atom name in the PDB
 file.
 
 However, in PDB files, a space can be part of an atom name. Often,
-calcium atoms are called `'CA..'` in order to distinguish them from
-C$\\alpha$ atoms (which are called `'.CA.'`). In cases were stripping
-the spaces would create problems (ie. two atoms called `'CA'` in the
-same residue) the spaces are kept.
+calcium atoms are called `'CA..'` in order to distinguish them from Cα
+atoms (which are called `'.CA.'`). In cases were stripping the spaces
+would create problems (ie. two atoms called `'CA'` in the same residue)
+the spaces are kept.
 
 #### How is disorder handled?
 
