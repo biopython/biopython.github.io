@@ -589,9 +589,7 @@ also deals with standard deviations of anisotropic B factor if present
 
 Yup, supported. See the section [[#Analysis]].
 
-
-==== I think the SMCRA data structure is not flexible/sexy/whatever
-enough... ====
+==== I think the SMCRA data structure is not flexible/sexy/whatever enough... ====
 
 Sure, sure. Everybody is always coming up with (mostly vaporware or
 partly implemented) data structures that handle all possible situations
@@ -610,7 +608,6 @@ and <code>StructureBuilder</code>, respectively). One can easily reuse
 the PDB/mmCIF parsers by implementing a specialised <code>StructureBuilder</code>
 class. It is of course also trivial to add support for new file formats
 by writing new parsers.
-
 
 === Analysis ===
 
