@@ -690,22 +690,22 @@ of C&alpha; atoms as well. Polypeptides can be built using a C-N
 or a C&alpha;-C&alpha; distance criterion.
 
 Example:
-
 <source lang=python>
- # Using C-N 
+# Using C-N 
 ppb=PPBuilder()
 for pp in ppb.build_peptides(structure): 
     print pp.get_sequence()
- # Using CA-CA
+
+# Using CA-CA
 ppb=CaPPBuilder()
 for pp in ppb.build_peptides(structure): 
     print pp.get_sequence()
 </source>
+
 Note that in the above case only model 0 of the structure is considered
 by <code>PolypeptideBuilder</code>. However, it is possible to use <code>PolypeptideBuilder</code>
 to build <code>Polypeptide</code> objects from <code>Model</code> and <code>Chain</code>
 objects as well.
-
 
 ==== How do I get the sequence of a structure? ====
 

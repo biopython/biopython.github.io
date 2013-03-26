@@ -736,11 +736,12 @@ criterion.
 Example:
 
 ``` python
- # Using C-N 
+# Using C-N 
 ppb=PPBuilder()
 for pp in ppb.build_peptides(structure): 
     print pp.get_sequence()
- # Using CA-CA
+
+# Using CA-CA
 ppb=CaPPBuilder()
 for pp in ppb.build_peptides(structure): 
     print pp.get_sequence()
