@@ -26,10 +26,11 @@ predicts disordered regions in proteins (http://dis.embl.de/), and
 COLUMBA, a website that provides annotated protein structures
 (http://www.columba-db.de/). Bio.PDB has also been used to perform a
 large scale search for active sites similarities between protein
-structures in the PDB (see [*Proteins* **51**: 96–108 (2003)), and to
-develop a new algorithm that identifies linear secondary structure
-elements (\[*BMC Bioinformatics* **6**: 202 (2005)
-<http://www.biomedcentral.com/1471-2105/6/202>](http://dx.doi.org/10.1002/prot.10338)).
+structures in the PDB (see [*Proteins* **51**: 96–108
+(2003)](http://dx.doi.org/10.1002/prot.10338)), and to develop a new
+algorithm that identifies linear secondary structure elements (see [*BMC
+Bioinformatics* **6**: 202
+(2005)](http://www.biomedcentral.com/1471-2105/6/202)).
 
 Judging from requests for features and information, Bio.PDB is also used
 by several LPCs (Large Pharmaceutical Companies :-).
