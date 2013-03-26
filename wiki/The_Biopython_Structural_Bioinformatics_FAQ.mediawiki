@@ -159,10 +159,8 @@ y_list = mmcif_dict['_atom_site.Cartn_y']
 Thanks to Christian Rother you can access some information from the
 PDB header. Note however that many PDB files contain headers with
 incomplete or erroneous information. Many of the errors have been
-fixed in the equivalent mmCIF files. '''Hence, if you are interested
-in the header information, it is a good idea to extract information
-from mmCIF files using the <code>MMCIF2Dict</code> tool
-described above, instead of parsing the PDB header.''' 
+fixed in the equivalent mmCIF files.
+'''Hence, if you are interested in the header information, it is a good idea to extract information from mmCIF files using the <code>MMCIF2Dict</code> tool described above, instead of parsing the PDB header.''' 
 
 Now that is clarified, let's return to parsing the PDB header. The
 structure object has an attribute called <code>header</code> which is
