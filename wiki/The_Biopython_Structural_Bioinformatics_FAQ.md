@@ -392,6 +392,8 @@ classes for now) is shown in the figure below.
 
 <img src="Smcra.png" title="Diagram of SMCRA architecture of the Structure object. Full lines with diamonds denote aggregation, full lines with arrows denote referencing, full lines with triangles denote inheritance and dashed lines with triangles denote interface realization." alt="Diagram of SMCRA architecture of the Structure object. Full lines with diamonds denote aggregation, full lines with arrows denote referencing, full lines with triangles denote inheritance and dashed lines with triangles denote interface realization." width="600" />
 
+  
+
 #### How do I navigate through a Structure object?
 
 The following code iterates through all atoms of a structure:
