@@ -714,11 +714,11 @@ atomic coordinates, this time using the `calc_dihedral` function from
 the `Vector` module:
 
 ``` python
-vector1=atom1.get_vector()
-vector2=atom2.get_vector()
-vector3=atom3.get_vector()
-vector4=atom4.get_vector()
-angle=calc_dihedral(vector1, vector2, vector3, vector4)
+vector1 = atom1.get_vector()
+vector2 = atom2.get_vector()
+vector3 = atom3.get_vector()
+vector4 = atom4.get_vector()
+angle = calc_dihedral(vector1, vector2, vector3, vector4)
 ```
 
 #### How do I determine atom-atom contacts?
