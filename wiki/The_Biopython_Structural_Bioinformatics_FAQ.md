@@ -548,8 +548,8 @@ the same position).
 Disorder should be dealt with from two points of view: the atom and the
 residue points of view. In general, I have tried to encapsulate all the
 complexity that arises from disorder. If you just want to loop over all
-C$\\alpha$ atoms, you do not care that some residues have a disordered
-side chain. On the other hand it should also be possible to represent
+Cα atoms, you do not care that some residues have a disordered side
+chain. On the other hand it should also be possible to represent
 disorder completely in the data structure. Therefore, disordered atoms
 or residues are stored in special objects that behave as if there is no
 disorder. This is done by only representing a subset of the disordered
@@ -745,9 +745,9 @@ behind the screens, so it's pretty darn fast (see `Bio.KDTree`).
 #### How do I extract polypeptides from a `Structure` object?
 
 Use `PolypeptideBuilder`. You can use the resulting `Polypeptide` object
-to get the sequence as a `Seq` object or to get a list of C$\\alpha$
-atoms as well. Polypeptides can be built using a C-N or a
-C$\\alpha$-C$\\alpha$ distance criterion.
+to get the sequence as a `Seq` object or to get a list of Cα atoms as
+well. Polypeptides can be built using a C-N or a Cα-Cα distance
+criterion.
 
 Example:
 
@@ -797,12 +797,12 @@ thus by consequence the class) cannot handle multiple models!
 % \\begin{table
 
 ==== \\begin{tabular{|c|c| \\hline Code& Secondary
-structure\\tabularnewline \\hline \\hline H&
-$\\alpha$-helix\\tabularnewline \\hline B& Isolated $\\beta$-bridge
-residue\\tabularnewline \\hline E& Strand \\tabularnewline \\hline G&
-3-10 helix \\tabularnewline \\hline I& $\\Pi$-helix \\tabularnewline
-\\hline T& Turn\\tabularnewline \\hline S& Bend \\tabularnewline \\hline
--& Other\\tabularnewline \\hline \\end{tabular
+structure\\tabularnewline \\hline \\hline H& α-helix\\tabularnewline
+\\hline B& Isolated β-bridge residue\\tabularnewline \\hline E& Strand
+\\tabularnewline \\hline G& 3-10 helix \\tabularnewline \\hline I&
+$\\Pi$-helix \\tabularnewline \\hline T& Turn\\tabularnewline \\hline S&
+Bend \\tabularnewline \\hline -& Other\\tabularnewline \\hline
+\\end{tabular
 
 \\caption{\\label{<cap:DSSP-codesDSSP> codes in Bio.PDB. \\end{table
 
@@ -818,9 +818,9 @@ parameterization of solvent accessibility. For this functionality, you
 need to install Michel Sanner's MSMS program
 (http://www.scripps.edu/pub/olson-web/people/sanner/html/msms\_home.html).
 Then use the `ResidueDepth` class. This class behaves as a dictionary
-which maps `Residue` objects to corresponding (residue depth, C$\\alpha$
-depth) tuples. The C$\\alpha$ depth is the distance of a residue's
-C$\\alpha$ atom to the solvent accessible surface.
+which maps `Residue` objects to corresponding (residue depth, Cα depth)
+tuples. The Cα depth is the distance of a residue's Cα atom to the
+solvent accessible surface.
 
 Example:
 
@@ -837,19 +837,18 @@ surface points.
 #### How do I calculate Half Sphere Exposure?
 
 Half Sphere Exposure (HSE) is a new, 2D measure of solvent exposure.
-Basically, it counts the number of C$\\alpha$ atoms around a residue in
-the direction of its side chain, and in the opposite direction (within a
+Basically, it counts the number of Cα atoms around a residue in the
+direction of its side chain, and in the opposite direction (within a
 radius of 13 Å). Despite its simplicity, it outperforms many other
 measures of solvent exposure. An article describing this novel 2D
 measure has been submitted.
 
-HSE comes in two flavors: HSE$\\alpha$ and HSE$\\beta$. The former only
-uses the C$\\alpha$ atom positions, while the latter uses the C$\\alpha$
-and C$\\beta$ atom positions. The HSE measure is calculated by the
-`HSExposure` class, which can also calculate the contact number. The
-latter class has methods which return dictionaries that map a `Residue`
-object to its corresponding HSE$\\alpha$, HSE$\\beta$ and contact number
-values.
+HSE comes in two flavors: HSEα and HSEβ. The former only uses the Cα
+atom positions, while the latter uses the Cα and Cβ atom positions. The
+HSE measure is calculated by the `HSExposure` class, which can also
+calculate the contact number. The latter class has methods which return
+dictionaries that map a `Residue` object to its corresponding HSEα, HSEβ
+and contact number values.
 
 Example:
 
@@ -883,18 +882,18 @@ set of 3D vector operations, matrix multiplication (left and right) and
 some advanced rotation-related operations as well. See also next
 question.
 
-#### How do I put a virtual C$\\beta$ on a Gly residue?
+#### How do I put a virtual Cβ on a Gly residue?
 
 OK, I admit, this example is only present to show off the possibilities
 of Bio.PDB's `Vector` module (though this code is actually used in the
 `HSExposure` module, which contains a novel way to parametrize residue
 exposure - publication underway). Suppose that you would like to find
-the position of a Gly residue's C$\\beta$ atom, if it had one. How would
-you do that? Well, rotating the N atom of the Gly residue along the
-C$\\alpha$-C bond over -120 degrees roughly puts it in the position of a
-virtual C$\\beta$ atom. Here's how to do it, making use of the `rotaxis`
-method (which can be used to construct a rotation around a certain axis)
-of the `Vector` module:
+the position of a Gly residue's Cβ atom, if it had one. How would you do
+that? Well, rotating the N atom of the Gly residue along the Cα-C bond
+over -120 degrees roughly puts it in the position of a virtual Cβ atom.
+Here's how to do it, making use of the `rotaxis` method (which can be
+used to construct a rotation around a certain axis) of the `Vector`
+module:
 
 ``` python
  # get atom coordinates as vectors

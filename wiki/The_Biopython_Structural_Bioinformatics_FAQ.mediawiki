@@ -506,7 +506,7 @@ position).
 Disorder should be dealt with from two points of view: the atom and
 the residue points of view. In general, I have tried to encapsulate
 all the complexity that arises from disorder. If you just want to
-loop over all C$\alpha$ atoms, you do not care that some residues
+loop over all C&alpha; atoms, you do not care that some residues
 have a disordered side chain. On the other hand it should also be
 possible to represent disorder completely in the data structure. Therefore,
 disordered atoms or residues are stored in special objects that behave
@@ -711,8 +711,8 @@ in C behind the screens, so it's pretty darn fast (see <code>Bio.KDTree</code>).
 
 Use <code>PolypeptideBuilder</code>. You can use the resulting <code>Polypeptide</code>
 object to get the sequence as a <code>Seq</code> object or to get a list
-of C$\alpha$ atoms as well. Polypeptides can be built using a C-N
-or a C$\alpha$-C$\alpha$ distance criterion.
+of C&alpha; atoms as well. Polypeptides can be built using a C-N
+or a C&alpha;-C&alpha; distance criterion.
 
 Example:
 
@@ -770,10 +770,10 @@ Secondary structure\tabularnewline
 \hline
 \hline 
 H&
-$\alpha$-helix\tabularnewline
+&alpha;-helix\tabularnewline
 \hline 
 B&
-Isolated $\beta$-bridge residue\tabularnewline
+Isolated &beta;-bridge residue\tabularnewline
 \hline 
 E&
 Strand \tabularnewline
@@ -814,8 +814,8 @@ of solvent accessibility. For this functionality, you need to install
 Michel Sanner's MSMS program (http://www.scripps.edu/pub/olson-web/people/sanner/html/msms_home.html).
 Then use the <code>ResidueDepth</code> class. This class behaves as a
 dictionary which maps <code>Residue</code> objects to corresponding (residue
-depth, C$\alpha$ depth) tuples. The C$\alpha$ depth is the distance
-of a residue's C$\alpha$ atom to the solvent accessible surface. 
+depth, C&alpha; depth) tuples. The C&alpha; depth is the distance
+of a residue's C&alpha; atom to the solvent accessible surface. 
 
 Example:
 <source lang=python>
@@ -829,18 +829,18 @@ function), in the form of a Numeric python array with the surface points.
 ==== How do I calculate Half Sphere Exposure? ====
 
 Half Sphere Exposure (HSE) is a new, 2D measure of solvent exposure.
-Basically, it counts the number of C$\alpha$ atoms around a residue
+Basically, it counts the number of C&alpha; atoms around a residue
 in the direction of its side chain, and in the opposite direction
 (within a radius of 13 Å). Despite its simplicity, it outperforms
 many other measures of solvent exposure. An article describing this
 novel 2D measure has been submitted.
 
-HSE comes in two flavors: HSE$\alpha$ and HSE$\beta$. The former
-only uses the C$\alpha$ atom positions, while the latter uses the
-C$\alpha$ and C$\beta$ atom positions. The HSE measure is calculated
+HSE comes in two flavors: HSE&alpha; and HSE&beta;. The former
+only uses the C&alpha; atom positions, while the latter uses the
+C&alpha; and C&beta; atom positions. The HSE measure is calculated
 by the <code>HSExposure</code> class, which can also calculate the contact
 number. The latter class has methods which return dictionaries that
-map a <code>Residue</code> object to its corresponding HSE$\alpha$, HSE$\beta$
+map a <code>Residue</code> object to its corresponding HSE&alpha;, HSE&beta;
 and contact number values.
 
 Example:
@@ -875,16 +875,16 @@ implements the full set of 3D vector operations, matrix multiplication
 (left and right) and some advanced rotation-related operations as
 well. See also next question.
 
-==== How do I put a virtual C$\beta$ on a Gly residue? ====
+==== How do I put a virtual C&beta; on a Gly residue? ====
 
 OK, I admit, this example is only present to show off the possibilities
 of Bio.PDB's <code>Vector</code> module (though this code is actually
 used in the <code>HSExposure</code> module, which contains a novel way
 to parametrize residue exposure - publication underway). Suppose that
-you would like to find the position of a Gly residue's C$\beta$ atom,
+you would like to find the position of a Gly residue's C&beta; atom,
 if it had one. How would you do that? Well, rotating the N atom of
-the Gly residue along the C$\alpha$-C bond over -120 degrees roughly
-puts it in the position of a virtual C$\beta$ atom. Here's how to
+the Gly residue along the C&alpha;-C bond over -120 degrees roughly
+puts it in the position of a virtual C&beta; atom. Here's how to
 do it, making use of the <code>rotaxis</code> method (which can be used
 to construct a rotation around a certain axis) of the <code>Vector</code>
 module:
