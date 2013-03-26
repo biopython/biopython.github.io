@@ -65,7 +65,6 @@ to look elsewhere because there is only limited support for this.
 If you look for a powerful, complete data structure to access the
 atomic data Bio.PDB is probably for you. 
 
-
 == Usage ==
 
 === General questions ===
@@ -263,7 +262,7 @@ during the current week. For more info on the possibilities of <code>PDBList</co
 see the API documentation.
 
 
-==== What about all those buggy PDB files?
+==== What about all those buggy PDB files? ====
 
 It is well known that many PDB files contain semantic errors (I'm
 not talking about the structures themselves know, but their representation
@@ -275,16 +274,11 @@ a bug (hah!), so I changed it. If you ever encounter a real bug, please
 tell me immediately!
 
 Example:
-
 <source lang=python>
 \#~Permissive~parser
-
 parser=PDBParser(PERMISSIVE=1)
-
 parser=PDBParser()~\#~The~same~(default)
-
 \#~Strict~parser
-
 strict\_parser=PDBParser(PERMISSIVE=0)
 </source>
 In the permissive state (DEFAULT), PDB files that obviously contain
@@ -312,8 +306,7 @@ A, followed by residues belonging to chain B, and again followed by
 residues belonging to chain A, i.e. the chains are 'broken'. This
 is also correctly interpreted.
 
-
-==== Can I write PDB files?
+==== Can I write PDB files? ====
 
 Use the PDBIO class for this. It's easy to write out specific parts
 of a structure too, of course.
@@ -371,17 +364,17 @@ a handy <code>extract</code> function that writes out all residues in
 a chain between a start and end residue. 
 
 
-==== Can I write mmCIF files?
+==== Can I write mmCIF files? ====
 
 No, and I also don't have plans to add that functionality soon (or
 ever - I don't need it at all, and it's a lot of work, plus no-one
 has ever asked for it). People who want to add this can contact me.
 
 
-=== The Structure object\label{sub:The-Structure-object
+=== The Structure object\label{sub:The-Structure-object ===
 
 
-==== What's the overall layout of a Structure object?
+==== What's the overall layout of a Structure object? ====
 
 The <code>Structure</code> object follows the so-called '''SMCRA'''
 (Structure/\-Model/\-Chain/\-Residue/\-Atom) architecture : 
@@ -413,7 +406,7 @@ and dashed lines with triangles denote interface realization.
 
 
 
-==== How do I navigate through a Structure object?
+==== How do I navigate through a Structure object? ====
 
 The following code iterates through all atoms of a structure:
 
@@ -460,7 +453,7 @@ You can also test whether an <code>Entity</code> has a certain child using
 the <code>has\_id</code> method.
 
 
-==== Can I do that a bit more conveniently?
+==== Can I do that a bit more conveniently? ====
 
 You can do things like:
 
@@ -489,14 +482,13 @@ You can use this to go up in the hierarchy, eg.\ to get a list of
 
 <source lang=python>
 residue\_list=Selection.unfold\_entities(atom\_list,~'R')
-
 chain\_list=Selection.unfold\_entities(atom\_list,~'C')
 </source>
 For more info, see the API documentation.
 
 
 ==== How do I extract a specific <code>Atom/Residue</code>/Chain</code>/Model</code>
-from a <code>Structure</code>?
+from a <code>Structure</code>? ====
 
 Easy. Here are some examples:
 
@@ -515,21 +507,19 @@ Note that you can use a shortcut:
 atom=structure{[0{]{['A'{]{[100{]{['CA'{]
 </source>
 
-==== What is a model id?
+==== What is a model id? ====
 
 The model id is an integer which denotes the rank of the model in
 the PDB/mmCIF file. The model is starts at 0. Crystal structures generally
 have only one model (with id 0), while NMR files usually have several
 models.
 
-
-==== What is a chain id?
+==== What is a chain id? ====
 
 The chain id is specified in the PDB/mmCIF file, and is a single character
 (typically a letter). 
 
-
-==== What is a residue id?
+==== What is a residue id? ====
 
 This is a bit more complicated, due to the clumsy PDB format. A residue
 id is a tuple with three elements:
@@ -549,14 +539,10 @@ scheme stays in tune with that of the wild type structure.
 The id of the above glucose residue would thus be <code>('H_GLC',
 100, 'A')</code>. If the hetero-flag and insertion code are blank, the sequence
 identifier alone can be used:
-
 <source lang=python>
 \#~Full~id
-
 residue=chain{[('~',~100,~'~'){]
-
 \#~Shortcut~id
-
 residue=chain{[100{]
 </source>
 The reason for the hetero-flag is that many, many PDB files use the
@@ -564,8 +550,7 @@ same sequence identifier for an amino acid and a hetero-residue or
 a water, which would create obvious problems if the hetero-flag was
 not used. 
 
-
-==== What is an atom id?
+==== What is an atom id? ====
 
 The atom id is simply the atom name (eg. <code>'CA'</code>). In practice,
 the atom name is created by stripping all spaces from the atom name
@@ -578,7 +563,7 @@ were stripping the spaces would create problems (ie. two atoms called
 <code>'CA'</code> in the same residue) the spaces are kept.
 
 
-==== How is disorder handled?
+==== How is disorder handled? ====
 
 This is one of the strong points of Bio.PDB. It can handle both disordered
 atoms and point mutations (ie. a Gly and an Ala residue in the same
@@ -654,31 +639,28 @@ all <code>DisorderedAtom</code> objects are 'unpacked' to their individual
 of a (<code>Disordered</code>)<code>Residue</code> object.
 
 
-==== Can I sort residues in a chain somehow?
+==== Can I sort residues in a chain somehow? ====
 
 Yes, kinda, but I'm waiting for a request for this feature to finish
 it :-).
 
-
-==== How are ligands and solvent handled?
+==== How are ligands and solvent handled? ====
 
 See 'What is a residue id?'.
 
-
-==== What about B factors?
+==== What about B factors? ====
 
 Well, yes! Bio.PDB supports isotropic and anisotropic B factors, and
 also deals with standard deviations of anisotropic B factor if present
 (see \ref{sub:Analysis).
 
-
-==== What about standard deviation of atomic positions?
+==== What about standard deviation of atomic positions? ====
 
 Yup, supported. See section \ref{sub:Analysis.
 
 
-==== I think the SMCRA data structure is not flexible/\-sexy/\-whatever
-enough...
+==== I think the SMCRA data structure is not flexible/sexy/whatever
+enough... ====
 
 Sure, sure. Everybody is always coming up with (mostly vaporware or
 partly implemented) data structures that handle all possible situations
@@ -699,10 +681,9 @@ class. It is of course also trivial to add support for new file formats
 by writing new parsers.
 
 
-=== \label{sub:AnalysisAnalysis
+=== \label{sub:Analysis} Analysis ===
 
-
-==== How do I extract information from an <code>Atom</code> object?
+==== How do I extract information from an <code>Atom</code> object? ====
 
 Using the following methods:
 
@@ -730,21 +711,18 @@ a.get\_anisou()~\#~anisotropic~B~factor
 a.get\_fullname()~\#~atom~name~(with~spaces,~e.g.~'.CA.')
 </source>
 
-==== How do I extract information from a <code>Residue</code> object?
+==== How do I extract information from a <code>Residue</code> object? ====
 
 Using the following methods:
 
 <source lang=python>
 r.get\_resname()~\#~return~the~residue~name~(eg.~'GLY')
-
 r.is\_disordered()~\#~1~if~the~residue~has~disordered~atoms
-
 r.get\_segid()~\#~return~the~SEGID
-
 r.has\_id(name)~\#~test~if~a~residue~has~a~certain~atom
 </source>
 
-==== How do I measure distances?
+==== How do I measure distances? ====
 
 That's simple: the minus operator for atoms has been overloaded to
 return the distance between two atoms. 
@@ -763,7 +741,7 @@ ca2=residue2{['CA'{]
 distance=ca1-ca2
 </source>
 
-==== How do I measure angles?
+==== How do I measure angles? ====
 
 This can easily be done via the vector representation of the atomic
 coordinates, and the <code>calc_angle</code> function from the <code>Vector</code>
@@ -771,15 +749,12 @@ module:
 
 <source lang=python>
 vector1=atom1.get\_vector()
-
 vector2=atom2.get\_vector()
-
 vector3=atom3.get\_vector()
-
 angle=calc\_angle(vector1,~vector2,~vector3)
 </source>
 
-==== How do I measure torsion angles?
+==== How do I measure torsion angles? ====
 
 Again, this can easily be done via the vector representation of the
 atomic coordinates, this time using the <code>calc_dihedral</code> function
@@ -787,23 +762,18 @@ from the <code>Vector</code> module:
 
 <source lang=python>
 vector1=atom1.get\_vector()
-
 vector2=atom2.get\_vector()
-
 vector3=atom3.get\_vector()
-
 vector4=atom4.get\_vector()
-
 angle=calc\_dihedral(vector1,~vector2,~vector3,~vector4)
 </source>
 
-==== How do I determine atom-atom contacts?
+==== How do I determine atom-atom contacts? ====
 
 Use <code>NeighborSearch</code>. This uses a KD tree data structure coded
-in C++ behind the screens, so it's pretty darn fast (see <code>Bio.KDTree</code>).
+in C behind the screens, so it's pretty darn fast (see <code>Bio.KDTree</code>).
 
-
-==== How do I extract polypeptides from a <code>Structure</code> object?
+==== How do I extract polypeptides from a <code>Structure</code> object? ====
 
 Use <code>PolypeptideBuilder</code>. You can use the resulting <code>Polypeptide</code>
 object to get the sequence as a <code>Seq</code> object or to get a list
@@ -814,19 +784,12 @@ Example:
 
 <source lang=python>
 \#~Using~C-N~
-
 ppb=PPBuilder()
-
 for~pp~in~ppb.build\_peptides(structure):~
-
 ~~~~print~pp.get\_sequence()
-
 \#~Using~CA-CA
-
 ppb=CaPPBuilder()
-
 for~pp~in~ppb.build\_peptides(structure):~
-
 ~~~~print~pp.get\_sequence()
 </source>
 Note that in the above case only model 0 of the structure is considered
@@ -835,7 +798,7 @@ to build <code>Polypeptide</code> objects from <code>Model</code> and <code>Chai
 objects as well.
 
 
-==== How do I get the sequence of a structure?
+==== How do I get the sequence of a structure? ====
 
 The first thing to do is to extract all polypeptides from the structure
 (see previous entry). The sequence of each polypeptide can then easily
@@ -853,7 +816,7 @@ Example:
 Seq('SNVVE...',~<class~Bio.Alphabet.ProteinAlphabet>)
 </source>
 
-==== How do I determine secondary structure?
+==== How do I determine secondary structure? ====
 
 For this functionality, you need to install DSSP (and obtain a license
 for it - free for academic use, see http://www.cmbi.kun.nl/gv/dssp/).
@@ -904,13 +867,12 @@ Other\tabularnewline
 
 
 
-==== How do I calculate the accessible surface area of a residue?
+==== How do I calculate the accessible surface area of a residue? ====
 
 Use the <code>DSSP</code> class (see also previous entry). But see also
 next entry.
 
-
-==== How do I calculate residue depth?
+==== How do I calculate residue depth? ====
 
 Residue depth is the average distance of a residue's atoms from the
 solvent accessible surface. It's a fairly new and very powerful parameterization
@@ -922,19 +884,15 @@ depth, C$\alpha$ depth) tuples. The C$\alpha$ depth is the distance
 of a residue's C$\alpha$ atom to the solvent accessible surface. 
 
 Example:
-
 <source lang=python>
-model=structure{[0{]
-
-rd=ResidueDepth(model,~pdb\_file)
-
-residue\_depth,~ca\_depth=rd{[some\_residue{]
+model = structure[0]
+rd = ResidueDepth(model,~pdb\_file)
+residue\_depth,~ca\_depth=rd[some\_residue]
 </source>
 You can also get access to the molecular surface itself (via the <code>get\_surface</code>
 function), in the form of a Numeric python array with the surface points.
 
-
-==== How do I calculate Half Sphere Exposure?
+==== How do I calculate Half Sphere Exposure? ====
 
 Half Sphere Exposure (HSE) is a new, 2D measure of solvent exposure.
 Basically, it counts the number of C$\alpha$ atoms around a residue
@@ -954,38 +912,28 @@ and contact number values.
 Example:
 
 <source lang=python>
-model=structure{[0{]
-
+model=structure[0]
 hse=HSExposure()
-
 \#~Calculate~HSEalpha
-
 exp\_ca=hse.calc\_hs\_exposure(model,~option='CA3')
-
 \#~Calculate~HSEbeta
-
 exp\_cb=hse.calc\_hs\_exposure(model,~option='CB')
-
 \#~Calculate~classical~coordination~number~exp\_fs=hse.calc\_fs\_exposure(model)
-
 \#~Print~HSEalpha~for~a~residue
-
 print~exp\_ca{[some\_residue{]
 </source>
 
-==== How do I map the residues of two related structures onto each other?
+==== How do I map the residues of two related structures onto each other? ====
 
 First, create an alignment file in FASTA format, then use the <code>StructureAlignment</code>
 class. This class can also be used for alignments with more than two
 structures.
 
-
-==== How do I test if a Residue object is an amino acid?
+==== How do I test if a Residue object is an amino acid? ====
 
 Use <code>is\_aa(residue)</code>.
 
-
-==== Can I do vector operations on atomic coordinates?
+==== Can I do vector operations on atomic coordinates? ====
 
 <code>Atom</code> objects return a <code>Vector</code> object representation
 of the coordinates with the <code>get_vector</code> method. <code>Vector</code>
@@ -993,8 +941,7 @@ implements the full set of 3D vector operations, matrix multiplication
 (left and right) and some advanced rotation-related operations as
 well. See also next question.
 
-
-==== How do I put a virtual C$\beta$ on a Gly residue?
+==== How do I put a virtual C$\beta$ on a Gly residue? ====
 
 OK, I admit, this example is only present to show off the possibilities
 of Bio.PDB's <code>Vector</code> module (though this code is actually
@@ -1010,31 +957,18 @@ module:
 
 <source lang=python>
 \#~get~atom~coordinates~as~vectors
-
 n=residue{['N'{].get\_vector()~
-
 c=residue{['C'{].get\_vector()~
-
 ca=residue{['CA'{].get\_vector()
-
 \#~center~at~origin
-
 n=n-ca~
-
 c=c-ca~
-
 \#~find~rotation~matrix~that~rotates~n~
-
 \#~-120~degrees~along~the~ca-c~vector
-
 rot=rotaxis(-pi{*120.0/180.0,~c)
-
 \#~apply~rotation~to~ca-n~vector
-
 cb\_at\_origin=n.left\_multiply(rot)
-
 \#~put~on~top~of~ca~atom
-
 cb=cb\_at\_origin+ca
 </source>
 This example shows that it's possible to do some quite nontrivial
@@ -1045,11 +979,9 @@ dot (use <code>*</code>) product, angle, norm, etc.) and the above mentioned
 to rotate (<code>rotmat</code>) or reflect (<code>refmat</code>) one vector
 on top of another.
 
+=== Manipulating the structure ===
 
-=== Manipulating the structure
-
-
-==== How do I superimpose two structures?
+==== How do I superimpose two structures? ====
 
 Surprisingly, this is done using the <code>Superimposer</code> object.
 This object calculates the rotation and translation matrix that rotates
@@ -1067,70 +999,66 @@ of singular value decomposition (this is implemented in the general
 <code>Bio.SVDSuperimposer</code> module).
 
 Example:
-
 <source lang=python>
 sup=Superimposer()
-
 \#~Specify~the~atom~lists
-
 \#~'fixed'~and~'moving'~are~lists~of~Atom~objects
-
 \#~The~moving~atoms~will~be~put~on~the~fixed~atoms
-
 sup.set\_atoms(fixed,~moving)
-
 \#~Print~rotation/translation/rmsd
-
 print~sup.rotran
-
 print~sup.rms~
-
 \#~Apply~rotation/translation~to~the~moving~atoms
-
 sup.apply(moving)
 </source>
 
-==== How do I superimpose two structures based on their active sites?
+==== How do I superimpose two structures based on their active sites? ====
 
 Pretty easily. Use the active site atoms to calculate the rotation/translation
 matrices (see above), and apply these to the whole molecule.
 
-
-==== Can I manipulate the atomic coordinates?
+==== Can I manipulate the atomic coordinates? ====
 
 Yes, using the <code>transform</code> method of the <code>Atom</code> object,
 or directly using the <code>set\_coord</code> method.
 
+== Other Structural Bioinformatics modules ==
 
-== Other Structural Bioinformatics modules
-
-
-==== Bio.SCOP
+==== Bio.SCOP ====
 
 See the main Biopython tutorial.
 
-==== Bio.FSSP
+==== Bio.FSSP ====
 
 No documentation available yet.
 
-== You haven't answered my question yet!
+== You haven't answered my question yet! ==
 
-Woah! It's late and I'm tired, and a glass of excellent \textit{Pedro
-Ximenez sherry is waiting for me. Just drop me a mail, and I'll answer
+Woah! It's late and I'm tired, and a glass of excellent ''Pedro
+Ximenez'' sherry is waiting for me. Just drop me a mail, and I'll answer
 you in the morning (with a bit of luck...).
 
+== Contributors ==
 
-== Contributors
+The main author/maintainer of Bio.PDB is:
 
-The main author/maintainer of Bio.PDB is Thomas Hamelryck. Kristian Rother
-donated code to interact with the PDB database, and to parse the PDB
+Thomas Hamelryck
+Bioinformatics center
+Institute of Molecular Biology
+University of Copenhagen
+Universitetsparken 15, Bygning 10
+DK-2100 København Ø
+Denmark
+thamelry@binf.ku.dk
+
+Kristian Rother donated code to interact with the PDB database, and to parse the PDB
 header. Indraneel Majumdar sent in some bug reports and assisted in
 coding the <code>Polypeptide</code> module. Many thanks to Brad Chapman,
 Jeffrey Chang, Andrew Dalke and Iddo Friedberg for suggestions, comments,
 help and/or biting criticism :-).
 
 
-== Can I contribute?
+== Can I contribute? ==
 
-Yes, yes, yes! Just send me an e-mail (thamelry@binf.ku.dk) if you
+Yes, yes, yes! Just send me an e-mail (thamelry@binf.ku.dk) or to the Biopython developers (biopython-dev@biopython.org) if you
 have something useful to contribute! Eternal fame awaits!
