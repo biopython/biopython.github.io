@@ -582,7 +582,8 @@ Since these residues belong to a different residue type (e.g. let's say
 Ser 60 and Cys 60) they should not be stored in a single `Residue`
 object as in the common case. In this case, each residue is represented
 by one `Residue` object, and both `Residue` objects are stored in a
-single `DisorderedResidue` object (see Fig. \\ref{<cap:SMCRA>).
+single `DisorderedResidue` object (see section [\#The Structure
+object](#The_Structure_object "wikilink")).
 
 The `DisorderedResidue` object forwards all uncaught methods to the
 selected `Residue` object (by default the last `Residue` object added),
