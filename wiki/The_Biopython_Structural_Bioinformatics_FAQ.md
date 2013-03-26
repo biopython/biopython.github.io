@@ -987,6 +987,7 @@ comments, help and/or biting criticism :-).
 Can I contribute?
 -----------------
 
-Yes, yes, yes! Just send me an e-mail (thamelry@binf.ku.dk) or to the
-Biopython developers (biopython-dev@biopython.org) if you have something
+Yes, yes, yes! Just send an e-mail to [Thomas
+Hamelryck](mailto:thamelry@binf.ku.dk) or to [the Biopython
+developers](mailto:biopython-dev@biopython.org) if you have something
 useful to contribute! Eternal fame awaits!

@@ -966,5 +966,4 @@ help and/or biting criticism :-).
 
 == Can I contribute? ==
 
-Yes, yes, yes! Just send me an e-mail (thamelry@binf.ku.dk) or to the Biopython developers (biopython-dev@biopython.org) if you
-have something useful to contribute! Eternal fame awaits!
+Yes, yes, yes! Just send an e-mail to [mailto:thamelry@binf.ku.dk Thomas Hamelryck] or to [mailto:biopython-dev@biopython.org the Biopython developers] if you have something useful to contribute! Eternal fame awaits!
