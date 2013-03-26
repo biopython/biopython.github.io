@@ -659,11 +659,11 @@ See 'What is a residue id?'.
 
 Well, yes! Bio.PDB supports isotropic and anisotropic B factors, and
 also deals with standard deviations of anisotropic B factor if present
-(see \\ref{sub:Analysis).
+(see the section [\#Analysis](#Analysis "wikilink")).
 
 #### What about standard deviation of atomic positions?
 
-Yup, supported. See section \\ref{sub:Analysis.
+Yup, supported. See the section [\#Analysis](#Analysis "wikilink").
 
 #### I think the SMCRA data structure is not flexible/sexy/whatever enough...
 
@@ -684,7 +684,7 @@ respectively). One can easily reuse the PDB/mmCIF parsers by
 implementing a specialised `StructureBuilder` class. It is of course
 also trivial to add support for new file formats by writing new parsers.
 
-### \\label{sub:Analysis} Analysis
+### Analysis
 
 #### How do I extract information from an `Atom` object?
 
