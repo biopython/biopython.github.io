@@ -471,32 +471,19 @@ The chain id is specified in the PDB/mmCIF file, and is a single character
 
 This is a bit more complicated, due to the clumsy PDB format. A residue
 id is a tuple with three elements:
+* The '''hetero-flag''': this is <code>'H_'</code> plus the name of the hetero-residue (e.g. <code>'H_GLC'</code> in the case of a glucose molecule), or <code>'W'</code> in the case of a water molecule.
+* The '''sequence identifier''' in the chain, e.g. 100
+* The '''insertion code''', e.g. <code>'A'</code>. The insertion code is sometimes used to preserve a certain desirable residue numbering scheme. A Ser 80 insertion mutant (inserted e.g. between a Thr 80 and an Asn 81 residue) could e.g. have sequence identifiers and insertion codes as follows: Thr 80 A, Ser 80 B, Asn 81. In this way the residue numbering scheme stays in tune with that of the wild type structure.
 
-\begin{itemize
-\item The \textbf{hetero-flag: this is <code>'H_'</code> plus the name of
-the hetero-residue (eg. <code>'H_GLC'</code> in the case of a glucose
-molecule), or <code>'W'</code> in the case of a water molecule.
-\item The \textbf{sequence identifier in the chain, eg. 100
-\item The \textbf{insertion code, eg. 'A'. The insertion code is sometimes
-used to preserve a certain desirable residue numbering scheme. A Ser
-80 insertion mutant (inserted e.g. between a Thr 80 and an Asn 81
-residue) could e.g. have sequence identifiers and insertion codes
-as follows: Thr 80 A, Ser 80 B, Asn 81. In this way the residue numbering
-scheme stays in tune with that of the wild type structure.
-\end{itemize
-The id of the above glucose residue would thus be <code>('H_GLC',
-100, 'A')</code>. If the hetero-flag and insertion code are blank, the sequence
+The id of the above glucose residue would thus be <code>('H_GLC', 100, 'A')</code>. If the hetero-flag and insertion code are blank, the sequence
 identifier alone can be used:
 <source lang=python>
- # Full id
-residue=chain{[(' ', 100, ' '){]
- # Shortcut id
-residue=chain{[100{]
+# Full id
+residue = chain[(' ', 100, ' ')]
+# Shortcut id
+residue = chain[100]
 </source>
-The reason for the hetero-flag is that many, many PDB files use the
-same sequence identifier for an amino acid and a hetero-residue or
-a water, which would create obvious problems if the hetero-flag was
-not used. 
+The reason for the hetero-flag is that many, many PDB files use the same sequence identifier for an amino acid and a hetero-residue or a water, which would create obvious problems if the hetero-flag was not used.
 
 ==== What is an atom id? ====
 

@@ -501,25 +501,26 @@ character (typically a letter).
 This is a bit more complicated, due to the clumsy PDB format. A residue
 id is a tuple with three elements:
 
-\\begin{itemize \\item The \\textbf{hetero-flag: this is `'H_'` plus the
-name of the hetero-residue (eg. `'H_GLC'` in the case of a glucose
-molecule), or `'W'` in the case of a water molecule. \\item The
-\\textbf{sequence identifier in the chain, eg. 100 \\item The
-\\textbf{insertion code, eg. 'A'. The insertion code is sometimes used
-to preserve a certain desirable residue numbering scheme. A Ser 80
-insertion mutant (inserted e.g. between a Thr 80 and an Asn 81 residue)
-could e.g. have sequence identifiers and insertion codes as follows: Thr
-80 A, Ser 80 B, Asn 81. In this way the residue numbering scheme stays
-in tune with that of the wild type structure. \\end{itemize The id of
-the above glucose residue would thus be `('H_GLC',` `100,` `'A')`. If
-the hetero-flag and insertion code are blank, the sequence identifier
-alone can be used:
+-   The **hetero-flag**: this is `'H_'` plus the name of the
+    hetero-residue (e.g. `'H_GLC'` in the case of a glucose molecule),
+    or `'W'` in the case of a water molecule.
+-   The **sequence identifier** in the chain, e.g. 100
+-   The **insertion code**, e.g. `'A'`. The insertion code is sometimes
+    used to preserve a certain desirable residue numbering scheme. A Ser
+    80 insertion mutant (inserted e.g. between a Thr 80 and an Asn
+    81 residue) could e.g. have sequence identifiers and insertion codes
+    as follows: Thr 80 A, Ser 80 B, Asn 81. In this way the residue
+    numbering scheme stays in tune with that of the wild type structure.
+
+The id of the above glucose residue would thus be `('H_GLC',` `100,`
+`'A')`. If the hetero-flag and insertion code are blank, the sequence
+identifier alone can be used:
 
 ``` python
- # Full id
-residue=chain{[(' ', 100, ' '){]
- # Shortcut id
-residue=chain{[100{]
+# Full id
+residue = chain[(' ', 100, ' ')]
+# Shortcut id
+residue = chain[100]
 ```
 
 The reason for the hetero-flag is that many, many PDB files use the same
