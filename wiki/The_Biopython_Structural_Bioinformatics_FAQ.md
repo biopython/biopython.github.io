@@ -602,7 +602,7 @@ consisting of a Ser and a Cys residue. Make sure that residue 10 of this
 chain behaves as the Cys residue.
 
 ``` python
-residue=chain[10]
+residue = chain[10]
 residue.disordered_select('CYS')
 ```
 
