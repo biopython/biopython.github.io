@@ -205,9 +205,9 @@ The dictionary can also be created without creating a `Structure`
 object, ie. directly from the PDB file:
 
 ``` python
-file = open(filename,'r')
-header_dict = parse_pdb_header(file)
-file.close()
+handle = open(filename,'r')
+header_dict = parse_pdb_header(handle)
+handle.close()
 ```
 
 #### Can I use Bio.PDB with NMR structures (ie. with more than one model)?
