@@ -1020,9 +1020,14 @@ Contributors
 
 The main author/maintainer of Bio.PDB is:
 
-Thomas Hamelryck Bioinformatics center Institute of Molecular Biology
-University of Copenhagen Universitetsparken 15, Bygning 10 DK-2100
-København Ø Denmark thamelry@binf.ku.dk
+`Thomas Hamelryck`  
+`Bioinformatics center`  
+`Institute of Molecular Biology`  
+`University of Copenhagen`  
+`Universitetsparken 15, Bygning 10`  
+`DK-2100 København Ø`  
+`Denmark`  
+`thamelry@binf.ku.dk`
 
 Kristian Rother donated code to interact with the PDB database, and to
 parse the PDB header. Indraneel Majumdar sent in some bug reports and
