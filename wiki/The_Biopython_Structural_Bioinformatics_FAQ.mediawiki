@@ -883,20 +883,19 @@ to construct a rotation around a certain axis) of the <code>Vector</code>
 module:
 
 <source lang=python>
- # get atom coordinates as vectors
-n=residue{['N'{].get_vector() 
-c=residue{['C'{].get_vector() 
-ca=residue{['CA'{].get_vector()
- # center at origin
-n=n-ca 
-c=c-ca 
- # find rotation matrix that rotates n 
- # -120 degrees along the ca-c vector
-rot=rotaxis(-pi{*120.0/180.0, c)
- # apply rotation to ca-n vector
-cb_at_origin=n.left_multiply(rot)
- # put on top of ca atom
-cb=cb_at_origin+ca
+# get atom coordinates as vectors
+n = residue['N'].get_vector() 
+c = residue['C'].get_vector() 
+ca = residue['CA'].get_vector()
+# center at origin
+n = n - ca
+c = c - ca
+# find rotation matrix that rotates n -120 degrees along the ca-c vector
+rot = rotaxis(-pi{*120.0/180.0, c)
+# apply rotation to ca-n vector
+cb_at_origin = n.left_multiply(rot)
+# put on top of ca atom
+cb = cb_at_origin + ca
 </source>
 This example shows that it's possible to do some quite nontrivial
 vector operations on atomic data, which can be quite useful. In addition
