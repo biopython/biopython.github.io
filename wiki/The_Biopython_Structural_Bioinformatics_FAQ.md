@@ -656,27 +656,17 @@ also trivial to add support for new file formats by writing new parsers.
 Using the following methods:
 
 ``` python
-a.get_name()  # atom name (spaces stripped, e.g. 'CA')
-
-a.get_id()  # id (equals atom name)
-
-a.get_coord()  # atomic coordinates
-
-a.get_vector()  # atomic coordinates as Vector object
-
-a.get_bfactor()  # isotropic B factor
-
-a.get_occupancy()  # occupancy
-
-a.get_altloc()  # alternative location specifier
-
-a.get_sigatm()  # std. dev. of atomic parameters
-
-a.get_siguij()  # std. dev. of anisotropic B factor
-
-a.get_anisou()  # anisotropic B factor
-
-a.get_fullname()  # atom name (with spaces, e.g. '.CA.')
+a.get_name()           # atom name (spaces stripped, e.g. 'CA')
+a.get_id()             # id (equals atom name)
+a.get_coord()          # atomic coordinates
+a.get_vector()         # atomic coordinates as Vector object
+a.get_bfactor()        # isotropic B factor
+a.get_occupancy()      # occupancy
+a.get_altloc()         # alternative location specifier
+a.get_sigatm()         # std. dev. of atomic parameters
+a.get_siguij()         # std. dev. of anisotropic B factor
+a.get_anisou()         # anisotropic B factor
+a.get_fullname()       # atom name (with spaces, e.g. '.CA.')
 ```
 
 #### How do I extract information from a `Residue` object?

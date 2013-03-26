@@ -614,29 +614,18 @@ by writing new parsers.
 ==== How do I extract information from an <code>Atom</code> object? ====
 
 Using the following methods:
-
 <source lang=python>
-a.get_name()  # atom name (spaces stripped, e.g. 'CA')
-
-a.get_id()  # id (equals atom name)
-
-a.get_coord()  # atomic coordinates
-
-a.get_vector()  # atomic coordinates as Vector object
-
-a.get_bfactor()  # isotropic B factor
-
-a.get_occupancy()  # occupancy
-
-a.get_altloc()  # alternative location specifier
-
-a.get_sigatm()  # std. dev. of atomic parameters
-
-a.get_siguij()  # std. dev. of anisotropic B factor
-
-a.get_anisou()  # anisotropic B factor
-
-a.get_fullname()  # atom name (with spaces, e.g. '.CA.')
+a.get_name()           # atom name (spaces stripped, e.g. 'CA')
+a.get_id()             # id (equals atom name)
+a.get_coord()          # atomic coordinates
+a.get_vector()         # atomic coordinates as Vector object
+a.get_bfactor()        # isotropic B factor
+a.get_occupancy()      # occupancy
+a.get_altloc()         # alternative location specifier
+a.get_sigatm()         # std. dev. of atomic parameters
+a.get_siguij()         # std. dev. of anisotropic B factor
+a.get_anisou()         # anisotropic B factor
+a.get_fullname()       # atom name (with spaces, e.g. '.CA.')
 </source>
 
 ==== How do I extract information from a <code>Residue</code> object? ====
