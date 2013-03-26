@@ -12,6 +12,7 @@ New to BioPython? Check out the [[Getting_Started|Getting Started]] page, or fol
 :* [[SeqIO|Bio.SeqIO]] - sequence input/output
 :* [[AlignIO|Bio.AlignIO]] - alignment input/output
 :* [[PopGen|Bio.PopGen]] - population genetics
+:* [[PDB|Bio.PDB]] - structural bioinformatics
 :* Biopython's [[BioSQL|BioSQL interface]]
 * Documentation for the Biopython interfaces to BioSQL cover installing Python database adaptors and basic usage of BioSQL. 
 :[http://biopython.org/DIST/docs/biosql/python_biosql_basic.html HTML] | [http://biopython.org/DIST/docs/biosql/python_biosql_basic.pdf PDF]
