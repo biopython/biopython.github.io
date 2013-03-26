@@ -794,7 +794,7 @@ Example:
 <source lang=python>
 model = structure[0]
 rd = ResidueDepth(model, pdb_file)
-residue_depth, ca_depth=rd[some_residue]
+residue_depth, ca_depth = rd[some_residue]
 </source>
 You can also get access to the molecular surface itself (via the <code>get_surface</code>
 function), in the form of a Numeric python array with the surface points.
