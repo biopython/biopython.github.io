@@ -74,10 +74,12 @@ Medium, depending on ambition. Familiarity with the Biopython's existing
 alignment classes and functions, or equivalents in BioPerl, BioJava or
 BioRuby (e.g.), will be helpful. Understanding of the practical uses of
 codon alignments, or at least a basic understanding of molecular
-biology, is important.
+biology, is important. One useful book to have on hand is *Computational
+Molecular Evolution* by Ziheng Yang.
 
 Possible Mentors  
-[Eric Talevich](http://etal.myweb.uga.edu/), others?
+[Eric Talevich](http://etal.myweb.uga.edu/), [Peter
+Cock](http://www.hutton.ac.uk/staff/peter-cock), others welcome
 
 #### Bio.Phylo: filling in the gaps
 

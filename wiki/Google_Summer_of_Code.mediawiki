@@ -33,9 +33,9 @@ The BioPython proposals for the Google Summer of Code 2013 will be published her
 * Model selection.
 * Possible extension of AlignIO and the MultipleSeqAlignment class to take full advantage of codon alignments, including validation (testing for frame shifts, etc.)
 ;  Difficulty and needed skills
-:  Medium, depending on ambition. Familiarity with the Biopython's existing alignment classes and functions, or equivalents in BioPerl, BioJava or BioRuby (e.g.), will be helpful. Understanding of the practical uses of codon alignments, or at least a basic understanding of molecular biology, is important.
+:  Medium, depending on ambition. Familiarity with the Biopython's existing alignment classes and functions, or equivalents in BioPerl, BioJava or BioRuby (e.g.), will be helpful. Understanding of the practical uses of codon alignments, or at least a basic understanding of molecular biology, is important. One useful book to have on hand is ''Computational Molecular Evolution'' by Ziheng Yang.
 ;  Possible Mentors
-:  [http://etal.myweb.uga.edu/ Eric Talevich], others?
+:  [http://etal.myweb.uga.edu/ Eric Talevich], [http://www.hutton.ac.uk/staff/peter-cock Peter Cock], others welcome
 
 ====  Bio.Phylo: filling in the gaps ====
 ;  Rationale
