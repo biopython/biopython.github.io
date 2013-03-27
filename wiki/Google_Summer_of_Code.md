@@ -65,28 +65,30 @@ Useful features include:
 -   Calculation of selection pressure from the ratio of nonsynonomous to
     synonomous site replacements, and related functions.
 -   Model selection.
--   Possible extension of AlignIO and the MultipleSeqAlignment class to
-    take full advantage of codon alignments, including validation
-    (testing for frame shifts, etc.)
+-   Possible extension of [AlignIO](AlignIO "wikilink") and the
+    MultipleSeqAlignment class to take full advantage of codon
+    alignments, including validation (testing for frame shifts, etc.)
 
 Difficulty and needed skills  
 Medium, depending on ambition. Familiarity with the Biopython's existing
 alignment classes and functions, or equivalents in BioPerl, BioJava or
 BioRuby (e.g.), will be helpful. Understanding of the practical uses of
 codon alignments, or at least a basic understanding of molecular
-biology, is important. One useful book to have on hand is *Computational
-Molecular Evolution* by Ziheng Yang.
+biology, is important. Some basic math is involved, essentially reading
+a few equations and converting them to code. One useful book to have on
+hand is *[Computational Molecular
+Evolution](http://abacus.gene.ucl.ac.uk/CME/)* by Ziheng Yang.
 
 Possible Mentors  
 [Eric Talevich](http://etal.myweb.uga.edu/), [Peter
-Cock](http://www.hutton.ac.uk/staff/peter-cock), others welcome
+Cock](https://github.com/peterjc/), others welcome
 
 #### Bio.Phylo: filling in the gaps
 
 Rationale  
-While the phylogenetics module in Biopython supports I/O and basic tree
-operations, there are some important components that remain to
-be implemented.
+While the [Phylo](Phylo "wikilink") module in Biopython supports I/O and
+basic tree operations, there are some important components that remain
+to be implemented to better support phylogenetic workflows.
 
 Approach & Goals  
 This "idea" is intentially left open-ended -- you can propose any
@@ -116,8 +118,9 @@ Medium-to-advanced programming skill in Python -- it's important for
 these implementations to be reasonably efficient, though we don't aim to
 compete with the fastest stand-alone implementations of
 these algorithms. Knowledge of phylogenetic methods is critical; for
-reference, you might like to have a copy of Joe Felsenstein's *Inferring
-Phylogenies*. Tree visualizations are done with matplotlib.
+reference, you might like to have a copy of Joe Felsenstein's
+*[Inferring Phylogenies](http://www.sinauer.com/detail.php?id=1775)*.
+Tree visualizations are done with matplotlib.
 
 Possible Mentors  
 [Eric Talevich](http://etal.myweb.uga.edu/), others welcome
@@ -160,7 +163,7 @@ Hard. Familiarity with the Biopython's existing sequence
 parsing essential. Understanding of indexing large files will be vital.
 
 Mentors  
-[Peter Cock](https://github.com/peterjc/), others?
+[Peter Cock](https://github.com/peterjc/), others welcome
 
 Past Proposals
 --------------
