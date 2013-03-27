@@ -115,12 +115,12 @@ Difficulty and needed skills
 Medium-to-advanced programming skill in Python -- it's important for
 these implementations to be reasonably efficient, though we don't aim to
 compete with the fastest stand-alone implementations of
-these algorithms. Knowledge of phylogenetic methods is critical; you
-might want to grab a copy of Felsenstein's \*Inferring Phylogenies\*
-for reference. Tree visualizations are done with matplotlib.
+these algorithms. Knowledge of phylogenetic methods is critical; for
+reference, you might like to have a copy of Joe Felsenstein's *Inferring
+Phylogenies*. Tree visualizations are done with matplotlib.
 
 Possible Mentors  
-[Eric Talevich](http://etal.myweb.uga.edu/), others?
+[Eric Talevich](http://etal.myweb.uga.edu/), others welcome
 
 #### Indexing & Lazy-loading Sequence Parsers
 
