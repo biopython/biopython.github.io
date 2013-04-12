@@ -7,14 +7,15 @@ layout: wiki
 Introduction
 ------------
 
-The Open Bioinformatics foundation successfully [applied to participate
-in the Google Summer of
-Code](http://www.open-bio.org/wiki/Google_Summer_of_Code).
+For the past several years, Biopython-related GSoC projects have been
+successfully run under the mentorship of the [Open Bioinformatics
+Foundation (OBF)](http://www.open-bio.org/wiki/Google_Summer_of_Code)
+and the [National Evolutionary Synthesis Center
+(NESCent)](http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2013).
 
-Please read the [GSoC page at the Open Bioinformatics
-Foundation](http://www.open-bio.org/wiki/Google_Summer_of_Code) and the
-[main Google Summer of Code page](http://code.google.com/soc) for more
-details about the program.
+Please read those organizations' GSoC pages and the [main Google Summer
+of Code page](http://code.google.com/soc) for more details about the
+program.
 
 Mentor List
 -----------
