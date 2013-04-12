@@ -42,7 +42,11 @@ Proposals
 
 ### 2013
 
-The BioPython proposals for the Google Summer of Code 2013 will be
+This year, NESCent was selected as a mentoring organization for Google
+Summer of Code. See also [NESCent's list of project
+ideas](http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2013).
+
+The BioPython proposals for the Google Summer of Code 2013 are be
 published here once discussed. We encourage potential students and
 mentors to join the [BioPython mailing
 lists](http://biopython.org/wiki/Mailing_lists) and actively participate

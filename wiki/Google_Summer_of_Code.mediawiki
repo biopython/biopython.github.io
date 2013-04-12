@@ -23,7 +23,9 @@ Past mentors include:
 == Proposals ==
 === 2013 ===
 
-The BioPython proposals for the Google Summer of Code 2013 will be published here once discussed. We encourage potential students and mentors to join the [http://biopython.org/wiki/Mailing_lists BioPython mailing lists] and actively participate in these discussions, either by submitting their own ideas or contributing to improving existing ones.
+This year, NESCent was selected as a mentoring organization for Google Summer of Code. See also [http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2013 NESCent's list of project ideas].
+
+The BioPython proposals for the Google Summer of Code 2013 are be published here once discussed. We encourage potential students and mentors to join the [http://biopython.org/wiki/Mailing_lists BioPython mailing lists] and actively participate in these discussions, either by submitting their own ideas or contributing to improving existing ones.
 
 ====  Codon alignment and analysis ====
 ;  Rationale
