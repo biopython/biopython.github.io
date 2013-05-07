@@ -104,10 +104,10 @@ Iddo Friedberg
 |                         |                                                                                             |
 |-------------------------|---------------------------------------------------------------------------------------------|
 | E-mail                  | idoerg "at" gmail.com                                                                       |
-| Affiliation             | University of California San Diego                                                          |
-| Location                | La-Jolla, CA, USA                                                                           |
+| Affiliation             | Miami University                                                                            |
+| Location                | Oxford, OH, USA                                                                             |
 | Uses Python for         | Maintaining World Domination                                                                |
-| Work/Research Interests | Structural Bioinformatics, metagenomics                                                     |
+| Work/Research Interests | Structural Bioinformatics, metagenomics, genomics                                           |
 | Biopython Contributions | SubsMat, FSSP, bits of Align, bits of the Manual, and a lot of silly questions to the lists |
 | Relevant URL            | <http://iddo-friedberg.org>                                                                 |
 

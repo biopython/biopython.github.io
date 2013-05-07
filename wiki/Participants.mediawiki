@@ -231,11 +231,11 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 
 |-
 
-| Affiliation             || University of California San Diego
+| Affiliation             || Miami University
 
 |-
 
-| Location                || La-Jolla, CA, USA
+| Location                || Oxford, OH, USA
 
 |-
 
@@ -243,7 +243,7 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 
 |-
 
-| Work/Research Interests || Structural Bioinformatics, metagenomics
+| Work/Research Interests || Structural Bioinformatics, metagenomics, genomics
 
 |-
 
