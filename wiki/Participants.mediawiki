@@ -239,7 +239,7 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 
 |-
 
-| Uses Python for         || Maintaining World Domination
+| Uses Python for         || Maintaining clandestine world domination
 
 |-
 
