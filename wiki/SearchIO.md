@@ -18,6 +18,5 @@ input/output, for example from BLAST, HMMER or Bill Pearson's FASTA
 suite. See the [BioPerl SearchIO
 HOWTO](http://www.bioperl.org/wiki/HOWTO:SearchIO) for background.
 
-This is expected to be included in Biopython 1.61 as an *experimental*
-module, and is already available from our source code repository if you
-want to test it.
+This was included in Biopython 1.61 onwards as an *experimental* module
+if you want to test it.
