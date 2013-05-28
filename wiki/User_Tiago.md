@@ -15,11 +15,20 @@ Returned to school to do a MSc in bioinformatics.
 Did a PhD in Tropical Medicine (population genetics and bioinformatics
 applied to the study of malaria drug resistance).
 
-Currently doing a post-doc in human evolution at the University of
-Cambridge (short vacation from malaria research).
+Did a post-doc in human evolution at the University of Cambridge (short
+vacation from malaria research).
+
+Back on malaria with a post-doc on Whole Genome Sequencing of Anopheles
+gambiae (the main vector of malaria).
+
+Wellcome Trust Post-doctoral fellow starting in November 2013 on
+detecting genomic and transcriptomic signatures of selection for
+insecticide resistance in Anopheles (Liverpool, Oxford, Broad)
 
 [home page](http://tiago.org)
 
 [Continuous integration](Continuous_integration "wikilink")
 
 [64-bit Windows Biopython](64-bit_Windows_Biopython "wikilink")
+
+[BioSQL](BioSQL "wikilink")
