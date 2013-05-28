@@ -333,3 +333,8 @@ And if there are, assuming you are the only person using this database, you migh
  mysql --user=root bioseqdb -e "KILL 123;"
 
 Use at your own risk!
+
+
+= Jython =
+
+Jython is supported for both PostgreSQL and MySQL. Usage is almost fully transparent: You access the databases using the exact same configuration parameters as specified above. The only issue to take into consideration is that you will need the correct JBDC driver in your CLASSPATH. For both databases you should use the official JDBC drivers (available [http://jdbc.postgresql.org/ here for PosgreSQL] and [http://dev.mysql.com/downloads/connector/j/ here for MySQL])
