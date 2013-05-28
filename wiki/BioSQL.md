@@ -474,10 +474,10 @@ Use at your own risk!
 Jython
 ======
 
-Jython is supported for both PostgreSQL and MySQL. Usage is almost fully
-transparent: You access the databases using the exact same configuration
-parameters as specified above. The only issue to take into consideration
-is that you will need the correct JBDC driver in your CLASSPATH. For
-both databases you should use the official JDBC drivers (available [here
-for PosgreSQL](http://jdbc.postgresql.org/) and [here for
-MySQL](http://dev.mysql.com/downloads/connector/j/))
+Jython is supported for both PostgreSQL and MySQL from version 1.62.
+Usage is almost fully transparent: You access the databases using the
+exact same configuration parameters as specified above. The only issue
+to take into consideration is that you will need the correct JBDC driver
+in your CLASSPATH. For both databases you should use the official JDBC
+drivers (available [here for PosgreSQL](http://jdbc.postgresql.org/) and
+[here for MySQL](http://dev.mysql.com/downloads/connector/j/))
