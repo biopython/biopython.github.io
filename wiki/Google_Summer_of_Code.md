@@ -37,23 +37,17 @@ Past mentors include:
 -   [João Rodrigues](http://nmr.chem.uu.nl/~joao)
 -   [Eric Talevich](http://etal.myweb.uga.edu/)
 
-Proposals
----------
-
-### 2013
+Current projects
+----------------
 
 This year, NESCent was selected as a mentoring organization for Google
-Summer of Code. See also [NESCent's list of project
-ideas](http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2013).
+Summer of Code. See also [NESCent's GSoC
+page](http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2013).
 
-The BioPython proposals for the Google Summer of Code 2013 are be
-published here once discussed. We encourage potential students and
-mentors to join the [BioPython mailing
-lists](http://biopython.org/wiki/Mailing_lists) and actively participate
-in these discussions, either by submitting their own ideas or
-contributing to improving existing ones.
+### Codon alignment and analysis
 
-#### Codon alignment and analysis
+Student  
+Zheng Ruan
 
 Rationale  
 A codon alignment is an alignment of nucleotide sequences in which the
@@ -84,11 +78,14 @@ a few equations and converting them to code. One useful book to have on
 hand is *[Computational Molecular
 Evolution](http://abacus.gene.ucl.ac.uk/CME/)* by Ziheng Yang.
 
-Possible Mentors  
+Mentors  
 [Eric Talevich](http://etal.myweb.uga.edu/), [Peter
-Cock](https://github.com/peterjc/), others welcome
+Cock](https://github.com/peterjc/)
 
-#### Bio.Phylo: filling in the gaps
+### Bio.Phylo: filling in the gaps
+
+Student  
+Yanbo Ye
 
 Rationale  
 While the [Phylo](Phylo "wikilink") module in Biopython supports I/O and
@@ -96,9 +93,8 @@ basic tree operations, there are some important components that remain
 to be implemented to better support phylogenetic workflows.
 
 Approach & Goals  
-This "idea" is intentially left open-ended -- you can propose any
-features you think would be useful in Biopython. Some suggestions of
-ours:
+This "idea" is intentially left open-ended -- some potentially useful
+features are:
 
 -   A "Phylo.consensus" module with functions for the consensus of
     multiple trees. E.g.: Strict consensus, as Bio.Nexus already
@@ -127,48 +123,8 @@ reference, you might like to have a copy of Joe Felsenstein's
 *[Inferring Phylogenies](http://www.sinauer.com/detail.php?id=1775)*.
 Tree visualizations are done with matplotlib.
 
-Possible Mentors  
-[Eric Talevich](http://etal.myweb.uga.edu/), others welcome
-
-#### Indexing & Lazy-loading Sequence Parsers
-
-Rationale  
-[Bio.SeqIO](SeqIO "wikilink")'s indexing offers parsing on demand access
-to any sequence in a large file (or collection of files on disk) as a
-[SeqRecord](SeqRecord "wikilink") object. This works well when you have
-many small to medium sized sequences/genomes. However, this is not ideal
-for large genomes or chromosomes where only a sub-region may be needed.
-A lazy-loading parser would delay reading the record until requested.
-For example, if region *record\[3000:4000\]* is requested, then only
-those 1000 bases need to be loaded from disk into memory, plus any
-features in that region. This is how Biopython's
-[BioSQL](BioSQL "wikilink") interface works. Tools like tabix and
-samtools have demonstrated efficient co-ordinate indexing which could be
-useful here.
-
-Aside from being used via an index for random access, lazy-loading
-parsers could be used when iterating over a file as well. This can
-*potentially* offer speed ups for tasks where only a fraction of the
-data is used. For example, if calculating the GC content of a collection
-of genomes from GenBank, using Bio.SeqIO.parse(...) would currently
-needlessly load and parse all the annotation and features. A lazy-parser
-would only parse the sequence information.
-
-Approach & Goals  
-Useful features include:
-
--   Internal indexing of multiple file formats, including FASTA and
-    richly annotated sequence formats like GenBank/EMBL
-    and GTF/GFF/GFF3.
--   Full compatibility with existing SeqIO parsers which load everything
-    into memory as a \`SeqRecord\` object.
-
-Difficulty and needed skills  
-Hard. Familiarity with the Biopython's existing sequence
-parsing essential. Understanding of indexing large files will be vital.
-
 Mentors  
-[Peter Cock](https://github.com/peterjc/), others welcome
+[Eric Talevich](http://etal.myweb.uga.edu/), others welcome
 
 Past Proposals
 --------------
@@ -522,5 +478,55 @@ Mentors
 Stephen Smith
 
 David Kidd
+
+Future project ideas
+--------------------
+
+The BioPython proposals for future Google Summers of Code are to be
+published here once discussed. We encourage potential students and
+mentors to join the [BioPython mailing
+lists](http://biopython.org/wiki/Mailing_lists) and actively participate
+in these discussions, either by submitting their own ideas or
+contributing to improving existing ones.
+
+### Indexing & Lazy-loading Sequence Parsers
+
+Rationale  
+[Bio.SeqIO](SeqIO "wikilink")'s indexing offers parsing on demand access
+to any sequence in a large file (or collection of files on disk) as a
+[SeqRecord](SeqRecord "wikilink") object. This works well when you have
+many small to medium sized sequences/genomes. However, this is not ideal
+for large genomes or chromosomes where only a sub-region may be needed.
+A lazy-loading parser would delay reading the record until requested.
+For example, if region *record\[3000:4000\]* is requested, then only
+those 1000 bases need to be loaded from disk into memory, plus any
+features in that region. This is how Biopython's
+[BioSQL](BioSQL "wikilink") interface works. Tools like tabix and
+samtools have demonstrated efficient co-ordinate indexing which could be
+useful here.
+
+Aside from being used via an index for random access, lazy-loading
+parsers could be used when iterating over a file as well. This can
+*potentially* offer speed ups for tasks where only a fraction of the
+data is used. For example, if calculating the GC content of a collection
+of genomes from GenBank, using Bio.SeqIO.parse(...) would currently
+needlessly load and parse all the annotation and features. A lazy-parser
+would only parse the sequence information.
+
+Approach & Goals  
+Useful features include:
+
+-   Internal indexing of multiple file formats, including FASTA and
+    richly annotated sequence formats like GenBank/EMBL
+    and GTF/GFF/GFF3.
+-   Full compatibility with existing SeqIO parsers which load everything
+    into memory as a \`SeqRecord\` object.
+
+Difficulty and needed skills  
+Hard. Familiarity with the Biopython's existing sequence
+parsing essential. Understanding of indexing large files will be vital.
+
+Possible Mentors  
+[Peter Cock](https://github.com/peterjc/), others welcome
 
 

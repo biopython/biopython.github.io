@@ -20,14 +20,14 @@ Past mentors include:
 *  [http://nmr.chem.uu.nl/~joao João Rodrigues] 
 *  [http://etal.myweb.uga.edu/ Eric Talevich]
 
-== Proposals ==
-=== 2013 ===
 
-This year, NESCent was selected as a mentoring organization for Google Summer of Code. See also [http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2013 NESCent's list of project ideas].
+== Current projects ==
 
-The BioPython proposals for the Google Summer of Code 2013 are be published here once discussed. We encourage potential students and mentors to join the [http://biopython.org/wiki/Mailing_lists BioPython mailing lists] and actively participate in these discussions, either by submitting their own ideas or contributing to improving existing ones.
+This year, NESCent was selected as a mentoring organization for Google Summer of Code. See also [http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2013 NESCent's GSoC page].
 
-====  Codon alignment and analysis ====
+===  Codon alignment and analysis ===
+;  Student
+: Zheng Ruan
 ;  Rationale
 :  A codon alignment is an alignment of nucleotide sequences in which the trinucleotides correspond directly to amino acids in the translated protein product. This carries important information which can be used for several analysis, notably analysis of selection pressures. This project extends Biopython to support this data type and these analyses.
 ;  Approach & Goals
@@ -38,14 +38,16 @@ The BioPython proposals for the Google Summer of Code 2013 are be published here
 * Possible extension of [[AlignIO]] and the MultipleSeqAlignment class to take full advantage of codon alignments, including validation (testing for frame shifts, etc.)
 ;  Difficulty and needed skills
 :  Medium, depending on ambition. Familiarity with the Biopython's existing alignment classes and functions, or equivalents in BioPerl, BioJava or BioRuby (e.g.), will be helpful. Understanding of the practical uses of codon alignments, or at least a basic understanding of molecular biology, is important. Some basic math is involved, essentially reading a few equations and converting them to code. One useful book to have on hand is ''[http://abacus.gene.ucl.ac.uk/CME/ Computational Molecular Evolution]'' by Ziheng Yang.
-;  Possible Mentors
-:  [http://etal.myweb.uga.edu/ Eric Talevich], [https://github.com/peterjc/ Peter Cock], others welcome
+;  Mentors
+:  [http://etal.myweb.uga.edu/ Eric Talevich], [https://github.com/peterjc/ Peter Cock]
 
-====  Bio.Phylo: filling in the gaps ====
+===  Bio.Phylo: filling in the gaps ===
+;  Student
+: Yanbo Ye
 ;  Rationale
 :  While the [[Phylo]] module in Biopython supports I/O and basic tree operations, there are some important components that remain to be implemented to better support phylogenetic workflows.
 ;  Approach & Goals
-: This "idea" is intentially left open-ended -- you can propose any features you think would be useful in Biopython. Some suggestions of ours:
+: This "idea" is intentially left open-ended -- some potentially useful features are:
 * A "Phylo.consensus" module with functions for the consensus of multiple trees. E.g.: Strict consensus, as Bio.Nexus already implements; perhaps other methods like Adams consensus.
 * A function to calculate bootstrap support for branches given a target or "master" tree and a series of bootstrap replicate trees (usually read incrementally from a Newick file).
 * Functions for comparison of two or more trees.
@@ -53,35 +55,9 @@ The BioPython proposals for the Google Summer of Code 2013 are be published here
 * Tree visualizations: A proper draw_unrooted function to perform radial layout, with an optional "iterations" argument to use Felsenstein's Equal Daylight algorithm. Circular radial diagrams are also popular these days. Any new function should support the same arguments as the existing Phylo.draw.
 ;  Difficulty and needed skills
 :  Medium-to-advanced programming skill in Python -- it's important for these implementations to be reasonably efficient, though we don't aim to compete with the fastest stand-alone implementations of these algorithms. Knowledge of phylogenetic methods is critical; for reference, you might like to have a copy of Joe Felsenstein's ''[http://www.sinauer.com/detail.php?id=1775 Inferring Phylogenies]''. Tree visualizations are done with matplotlib.
-;  Possible Mentors
+;  Mentors
 :  [http://etal.myweb.uga.edu/ Eric Talevich], others welcome
 
-==== Indexing & Lazy-loading Sequence Parsers ====
-;  Rationale
-: [[SeqIO|Bio.SeqIO]]'s indexing offers parsing on demand access to any sequence in a large file (or collection of files on disk) as a [[SeqRecord]] object. This works well when you have many small to medium sized sequences/genomes. However, this is not ideal for large genomes or chromosomes where only a sub-region may be needed. A lazy-loading parser would delay reading the record until requested. For example, if region ''record[3000:4000]'' is requested, then only those 1000 bases need to be loaded from disk into memory, plus any features in that region. This is how Biopython's [[BioSQL]] interface works. Tools like tabix and samtools have demonstrated efficient co-ordinate indexing which could be useful here.
-: Aside from being used via an index for random access, lazy-loading parsers could be used when iterating over a file as well. This can ''potentially'' offer speed ups for tasks where only a fraction of the data is used. For example, if calculating the GC content of a collection of genomes from GenBank, using Bio.SeqIO.parse(...) would currently needlessly load and parse all the annotation and features. A lazy-parser would only parse the sequence information.
-;  Approach & Goals
-: Useful features include:
-* Internal indexing of multiple file formats, including FASTA and richly annotated sequence formats like GenBank/EMBL and GTF/GFF/GFF3.
-* Full compatibility with existing SeqIO parsers which load everything into memory as a `SeqRecord` object.
-;  Difficulty and needed skills
-: Hard. Familiarity with the Biopython's existing sequence parsing essential. Understanding of indexing large files will be vital.
-;  Mentors
-:  [https://github.com/peterjc/ Peter Cock], others welcome
-
-
-<!--
-=== XXXX ===
-====  Mock Proposal ====
-;  Rationale
-:  aaa
-;  Approach & Goals
-: zzz
-;  Difficulty and needed skills
-:  yyy
-;  Possible Mentors
-:  xxx
--->
 
 == Past Proposals ==
 
@@ -203,6 +179,25 @@ A Bioperl driver for phyloXML was created during the 2008 Summer of Code; this p
 :  Stephen Smith
 :  David Kidd
 
+
+== Future project ideas ==
+
+The BioPython proposals for future Google Summers of Code are to be published here once discussed. We encourage potential students and mentors to join the [http://biopython.org/wiki/Mailing_lists BioPython mailing lists] and actively participate in these discussions, either by submitting their own ideas or contributing to improving existing ones.
+
+=== Indexing & Lazy-loading Sequence Parsers ===
+;  Rationale
+: [[SeqIO|Bio.SeqIO]]'s indexing offers parsing on demand access to any sequence in a large file (or collection of files on disk) as a [[SeqRecord]] object. This works well when you have many small to medium sized sequences/genomes. However, this is not ideal for large genomes or chromosomes where only a sub-region may be needed. A lazy-loading parser would delay reading the record until requested. For example, if region ''record[3000:4000]'' is requested, then only those 1000 bases need to be loaded from disk into memory, plus any features in that region. This is how Biopython's [[BioSQL]] interface works. Tools like tabix and samtools have demonstrated efficient co-ordinate indexing which could be useful here.
+: Aside from being used via an index for random access, lazy-loading parsers could be used when iterating over a file as well. This can ''potentially'' offer speed ups for tasks where only a fraction of the data is used. For example, if calculating the GC content of a collection of genomes from GenBank, using Bio.SeqIO.parse(...) would currently needlessly load and parse all the annotation and features. A lazy-parser would only parse the sequence information.
+;  Approach & Goals
+: Useful features include:
+* Internal indexing of multiple file formats, including FASTA and richly annotated sequence formats like GenBank/EMBL and GTF/GFF/GFF3.
+* Full compatibility with existing SeqIO parsers which load everything into memory as a `SeqRecord` object.
+;  Difficulty and needed skills
+: Hard. Familiarity with the Biopython's existing sequence parsing essential. Understanding of indexing large files will be vital.
+;  Possible Mentors
+:  [https://github.com/peterjc/ Peter Cock], others welcome
+
+
 <!--
 === XXXX ===
 ====  Mock Proposal ====
@@ -212,6 +207,6 @@ A Bioperl driver for phyloXML was created during the 2008 Summer of Code; this p
 : zzz
 ;  Difficulty and needed skills
 :  yyy
-;  Mentors
+;  Possible Mentors
 :  xxx
 -->
