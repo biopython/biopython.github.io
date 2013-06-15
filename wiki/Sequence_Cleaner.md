@@ -73,7 +73,7 @@ except:
     print "There is a problem!"
 
     
-#python sequence_cleaner "Aip_coral.fasta" 10 10
+#python sequence_cleaner.py "Aip_coral.fasta" 10 10
 ```
 
 You should call the function 'sequence\_cleaner', there are 3 basic

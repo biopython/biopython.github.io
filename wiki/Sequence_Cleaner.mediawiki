@@ -54,7 +54,7 @@ except:
     print "There is a problem!"
 
 	
-#python sequence_cleaner "Aip_coral.fasta" 10 10
+#python sequence_cleaner.py "Aip_coral.fasta" 10 10
 
 
 </source>
