@@ -9,8 +9,8 @@ tags:
 Description
 -----------
 
-I want to share my script using biopython to clean sequences up , you
-should know analyzing poor data takes CPU time and interpreting the
+I want to share my script using biopython to clean sequences up. You
+should know that analyzing poor data takes CPU time and interpreting the
 results from poor data takes people time, so it's always important to
 make a preprocessing.
 
