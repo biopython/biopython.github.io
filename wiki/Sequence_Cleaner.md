@@ -73,17 +73,20 @@ except:
     print "There is a problem!"
 
     
-#python sequence_cleaner.py "Aip_coral.fasta" 10 10
+#python sequence_cleaner.py Aip_coral.fasta 10 10
 ```
 
-You should call the function 'sequence\_cleaner', there are 3 basic
+Using command line, you should run python sequence\_cleaner.py
+INPUT-(1st) MIN\_LENGHT-(2nd) MIN\_%-(3rd) - there are 3 basic
 parameters:
 
 `        #1st: your fasta file `  
 `        #2nd: the user defines the minimum length (default value 0 ( It means you don't have to care about the minimum lenght)`  
 `        #3rd: the user defines the % of N is allowed (default value 100 ( It means  you dont care to 'N' in your sequences))`
 
-FYI if you don't care about the 2nd and the 3rd parameters you are just
+`        For exemple: python sequence_cleaner.py Aip_coral.fasta 10 10`
+
+FYI: if you don't care about the 2nd and the 3rd parameters you are just
 gonna remove the duplicate sequences
 
 Questions, Suggestions or Improvement
