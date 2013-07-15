@@ -110,7 +110,7 @@ and read/write to the same temp files.
 
 -   Move the generated ~/api directory to replace
     /home/websites/biopython.org/html/static/DIST/docs/api/ on
-    biopython.org (aka portal.open-bio.org).
+    biopython.org (aka cloudportal.open-bio.org).
 
 17. On your windows machine, build the Windows installers (either from a
 clean checkout, or the an unzipped copy of the source code bundle made
