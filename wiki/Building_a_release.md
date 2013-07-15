@@ -131,7 +131,8 @@ and confirm the Windows installers work.
 Biopython website, folder /home/websites/biopython.org/html/static/DIST/
 on biopython.org (aka portal.open-bio.org).
 
-20. Upload to the python package index:
+20. Upload to the python package index (except for beta/alpha level
+releases):
 
 `   > python setup.py register sdist upload`
 
