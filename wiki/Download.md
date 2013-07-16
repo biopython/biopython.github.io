@@ -12,22 +12,22 @@ new](https://github.com/biopython/biopython/raw/master/NEWS).
 
 ### Files
 
--   [biopython-1.61.tar.gz](http://biopython.org/DIST/biopython-1.61.tar.gz)
-    10,311 Kb -- Source Tarball
--   [biopython-1.61.zip](http://biopython.org/DIST/biopython-1.61.zip)
-    11,198 Kb -- Source Zip File
--   [biopython-1.61.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.61.win32-py2.5.exe)
-    1,612 Kb -- 32 bit Windows Installer for Python 2.5 and NumPy 1.1
--   [biopython-1.61.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.61.win32-py2.6.exe)
-    1,637 Kb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.3
--   [biopython-1.61.win32-py2.7.exe](http://biopython.org/DIST/biopython-1.61.win32-py2.7.exe)
-    1,764 Kb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.5
--   [biopython-1.61.win32-py3.2-beta.exe](http://biopython.org/DIST/biopython-1.61.win32-py3.2-beta.exe)
-    1,757 Kb -- 32 bit Windows Installer for Python 3.2 and NumPy 1.5
-    (*beta* status for testing)
--   [biopython-1.61.win32-py3.3-beta.exe](http://biopython.org/DIST/biopython-1.61.win32-py3.3-beta.exe)
-    1,750 Kb -- 32 bit Windows Installer for Python 3.3 and NumPy 1.7
-    (*beta* status for testing)
+-   [biopython-1.62b.tar.gz](http://biopython.org/DIST/biopython-1.62b.tar.gz)
+    10,658 Kb -- Source Tarball
+-   [biopython-1.62b.zip](http://biopython.org/DIST/biopython-1.62b.zip)
+    11,607 Kb -- Source Zip File
+-   [biopython-1.62b.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.62b.win32-py2.5.exe)
+    1,661 Kb -- 32 bit Windows Installer for Python 2.5 and NumPy 1.1
+-   [biopython-1.62b.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.62b.win32-py2.6.exe)
+    1,686 Kb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.3
+-   [biopython-1.62b.win32-py2.7.exe](http://biopython.org/DIST/biopython-1.62b.win32-py2.7.exe)
+    1,813 Kb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.5
+-   [biopython-1.62b.win32-py3.3.exe](http://biopython.org/DIST/biopython-1.62b.win32-py3.3.exe)
+    1,814 Kb -- 32 bit Windows Installer for Python 3.3 and NumPy 1.7
+
+NOTE : This is a *beta* release for testing. It would be unwise to
+install this on a production machine without doing extensive testing
+(instead install Biopython 1.61, links at end of page).
 
 Please report any issues on our [mailing
 lists](mailing_lists "wikilink") or [bug
