@@ -133,6 +133,9 @@ Past Proposals
 
 #### [SearchIO](http://biopython.org/wiki/SearchIO)
 
+Student  
+Wibowo Arindrarto ([blog](http://bow.web.id/blog/tag/gsoc/))
+
 Rationale  
 Biopython has general APIs for parsing and writing assorted sequence
 file formats (SeqIO), multiple sequence alignments (AlignIO),
@@ -176,6 +179,9 @@ Mentors
 [Peter Cock](http://www.hutton.ac.uk/staff/peter-cock)
 
 #### [Representation and manipulation of genomic variants](http://arklenna.tumblr.com/tagged/gsoc2012)
+
+Student  
+Lenna Peterson ([blog](http://arklenna.tumblr.com/tagged/gsoc2012))
 
 Rationale  
 Computational analysis of genomic variation requires the ability to

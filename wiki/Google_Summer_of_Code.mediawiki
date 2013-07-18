@@ -63,6 +63,8 @@ This year, NESCent was selected as a mentoring organization for Google Summer of
 
 === 2012 ===
 ==== [http://biopython.org/wiki/SearchIO SearchIO] ====
+; Student
+: Wibowo Arindrarto ([http://bow.web.id/blog/tag/gsoc/ blog])
 ;  Rationale
 :  Biopython has general APIs for parsing and writing assorted sequence file formats (SeqIO), multiple sequence alignments (AlignIO), phylogenetic trees (Phylo) and motifs (Bio.Motif). An obvious omission is something equivalent to BioPerl's SearchIO. The goal of this proposal is to develop an easy-to-use Python interface in the same style as SeqIO, AlignIO, etc but for pairwise search results. This would aim to cover EMBOSS muscle & water, BLAST XML, BLAST tabular, HMMER, Bill Pearson's FASTA alignments, and so on.
 ;  Approach
@@ -75,6 +77,8 @@ This year, NESCent was selected as a mentoring organization for Google Summer of
 :  [http://www.hutton.ac.uk/staff/peter-cock Peter Cock]
 
 ====  [http://arklenna.tumblr.com/tagged/gsoc2012 Representation and manipulation of genomic variants] ====
+; Student
+: Lenna Peterson ([http://arklenna.tumblr.com/tagged/gsoc2012 blog])
 ;  Rationale
 :  Computational analysis of genomic variation requires the ability to reliably communicate and manipulate variants. The goal of this project is to provide facilities within BioPython to represent sequence variation objects, convert them to and from common human and file representations, and provide common manipulations on them.
 ;  Approach & Goals
@@ -96,6 +100,7 @@ This year, NESCent was selected as a mentoring organization for Google Summer of
 :  [http://www.linkedin.com/in/reece Reece Hart] 
 :  [https://github.com/chapmanb Brad Chapman] 
 :  [http://casbon.me/ James Casbon]
+
 === 2011 ===
 ====  [http://biopython.org/wiki/GSoC2011_mtrellet Biomolecular Interface Analysis] ====
 ;  Student
