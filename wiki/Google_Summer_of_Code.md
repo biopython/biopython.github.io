@@ -47,7 +47,7 @@ page](http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2013).
 ### Codon alignment and analysis
 
 Student  
-Zheng Ruan
+Zheng Ruan ([blog](http://zr1991.blogspot.de/))
 
 Rationale  
 A codon alignment is an alignment of nucleotide sequences in which the
@@ -85,7 +85,7 @@ Cock](https://github.com/peterjc/)
 ### Bio.Phylo: filling in the gaps
 
 Student  
-Yanbo Ye
+Yanbo Ye ([blog](http://blog.yeyanbo.com/tag/gsoc.html))
 
 Rationale  
 While the [Phylo](Phylo "wikilink") module in Biopython supports I/O and
