@@ -65,6 +65,9 @@ We have a separate list of [[Publications|publications citing or using Biopython
 
 ==== Presentations ====
 
+
+* BOSC 2013 presentation "Biopython Project Update"
+:[http://www.open-bio.org/bosc2013/day1/BOSC2013_Biopython_Update_-_Peter_Cock.pdf PDF] | [http://www.slideshare.net/pjacock/biopython-update-bosc2013/ Flash version]
 * BOSC 2012 presentation "Biopython Project Update"
 :[http://www.slideshare.net/jandot/e-talevich-biopython-projectupdate Flash version]
 * BOSC 2011 presentation "Biopython Project Update"

@@ -152,6 +152,13 @@ BioPerl, BioRuby, BioJava and EMBOSS
 
 #### Presentations
 
+-   BOSC 2013 presentation "Biopython Project Update"
+
+  
+[PDF](http://www.open-bio.org/bosc2013/day1/BOSC2013_Biopython_Update_-_Peter_Cock.pdf)
+| [Flash
+version](http://www.slideshare.net/pjacock/biopython-update-bosc2013/)
+
 -   BOSC 2012 presentation "Biopython Project Update"
 
   
