@@ -27,7 +27,7 @@ new](https://github.com/biopython/biopython/raw/master/NEWS).
 
 Please report any issues on our [mailing
 lists](mailing_lists "wikilink") or [bug
-tracker](http://redmine.open-bio.org/projects/biopython).
+tracker](https://github.com/biopython/biopython/issues?state=open).
 
 Note we don't (yet) have official 64 bit Windows Installers - however,
 Christoph Gohlke has kindly made [Windows 64bit
