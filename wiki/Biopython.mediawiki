@@ -34,4 +34,4 @@ This wiki will help you download and install Biopython, and start using the libr
 *[https://github.com/biopython/biopython/issues Report bugs] ([http://redmine.open-bio.org/projects/biopython older issues])
 |}
 
-The latest release is [[Download|Biopython 1.62 ''beta'']], released on 15 July 2013.
+The latest release is [[Download|Biopython 1.62]], released on 28 August 2013.
