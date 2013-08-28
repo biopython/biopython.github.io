@@ -123,7 +123,7 @@ your compilers etc appropriately just do this:
 `   C:\python26\python setup.py bdist_wininst`  
 `   C:\python27\python setup.py bdist_wininst`  
 `   C:\python33\python setup.py bdist_wininst`  
-`   copy build\py3.3\dist\biopython-1.62.win33-py3.2.exe dist\biopython-1.62.win32-py3.3.exe`
+`   copy build\py3.3\dist\biopython-1.62.win32-py3.3.exe dist`
 
 18. Remove any prior Biopython installations on your windows machine,
 and confirm the Windows installers work.
