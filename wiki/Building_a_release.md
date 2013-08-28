@@ -130,7 +130,7 @@ and confirm the Windows installers work.
 
 19. scp or ftp the .tar.gz, .zip and Windows installer files to the
 Biopython website, folder /home/websites/biopython.org/html/static/DIST/
-on biopython.org (aka portal.open-bio.org).
+on biopython.org (aka cloudportal.open-bio.org).
 
 20. Upload to the python package index (except for beta/alpha level
 releases):
