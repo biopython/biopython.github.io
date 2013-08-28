@@ -95,12 +95,8 @@ and read/write to the same temp files.
 `   drevil:~tmp2/biopython-1.53/> python setup.py test`  
 `   drevil:~tmp2/biopython-1.53/> python setup.py install --root . `
 
-15. add git tag
-
-`   drevil:~biopython> git tag biopython-159`  
-`   drevil:~biopython> git push origin master --tags`
-
-16. Update API documentation using Epydoc.
+15. Update API documentation using Epydoc (this can often report
+otherwise overlooked errors).
 
 -   Go to the /usr/local/lib/python2.6/site-packages (or equivalent)
     directory. Running epydoc in your git tree works, but can miss some
@@ -111,6 +107,11 @@ and read/write to the same temp files.
 -   Move the generated ~/api directory to replace
     /home/websites/biopython.org/html/static/DIST/docs/api/ on
     biopython.org (aka cloudportal.open-bio.org).
+
+16. add git tag
+
+`   drevil:~biopython> git tag biopython-159`  
+`   drevil:~biopython> git push origin master --tags`
 
 17. On your windows machine, build the Windows installers (either from a
 clean checkout, or the an unzipped copy of the source code bundle made
