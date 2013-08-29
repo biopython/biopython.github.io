@@ -1,5 +1,5 @@
 Matching the names in BioPerl, Biopython has a [[SeqIO]] module for sequence file input/output, and [[AlignIO]] for multiple sequence alignment input/output. The third member of the BioPerl trio is SearchIO, and a Biopython equivalent was written during summer 2012 by [[Google Summer of Code]] student Wibowo Arindrarto ([http://bow.web.id/blog/tag/gsoc/ blog]).
 
-This covers pairwise sequence search file input/output, for example from BLAST, HMMER or Bill Pearson's FASTA suite. See the [http://www.bioperl.org/wiki/HOWTO:SearchIO BioPerl SearchIO HOWTO] for background.
+This covers pairwise sequence search file input/output, for example from BLAST, HMMER, BLAT, or Bill Pearson's FASTA suite. See the [http://www.bioperl.org/wiki/HOWTO:SearchIO BioPerl SearchIO HOWTO] for background.
 
 It is included in Biopython 1.61 onwards as an ''experimental'' module if you want to test it.
