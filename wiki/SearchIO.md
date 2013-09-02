@@ -25,8 +25,8 @@ you want to test it. An chapter in the
 Bio.SearchIO is also published alongside the 1.61 release.
 
 This wiki describes the important bits with some small examples. For a
-full reference, consult the API documentation. [API
-documentation](http://biopython.org/DIST/docs/api/Bio.SearchIO-module.html)
+full reference, consult the [API
+documentation](http://biopython.org/DIST/docs/api/Bio.SearchIO-module.html).
 
 Supported File Formats
 ----------------------

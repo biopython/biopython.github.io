@@ -4,7 +4,7 @@ This covers pairwise sequence search file input/output, for example from BLAST, 
 
 It is included in Biopython 1.61 onwards as an ''experimental'' module if you want to test it. An chapter in the [http://biopython.org/DIST/docs/tutorial/Tutorial.html Tutorial] ([http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF]) on Bio.SearchIO is also published alongside the 1.61 release.
 
-This wiki describes the important bits with some small examples. For a full reference, consult the API documentation. [http://biopython.org/DIST/docs/api/Bio.SearchIO-module.html API documentation]
+This wiki describes the important bits with some small examples. For a full reference, consult the [http://biopython.org/DIST/docs/api/Bio.SearchIO-module.html API documentation].
 
 == Supported File Formats ==
 
