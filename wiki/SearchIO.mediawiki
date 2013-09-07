@@ -203,6 +203,6 @@ of these are standard Biopython conventions.
 
 == FAQ == 
 
-# ''How does Bio.SearchIO differ from Bio.Blast.NCBIXML''?<p>Both modules are based on completely different object models and are not compatible with each other. Not only that, the underlying parsers and writers are also different (indexing is not possible with Bio.Blast.NCBIXML). Finally, Bio.SearchIO is planned to be the replacement of Bio.Blast.NCBIXML.</p>
+* ''How does Bio.SearchIO differ from Bio.Blast.NCBIXML''?<p>Both modules are based on completely different object models and are not compatible with each other. Not only that, the underlying parsers and writers are also different (indexing is not possible with Bio.Blast.NCBIXML). Finally, Bio.SearchIO is planned to be the replacement of Bio.Blast.NCBIXML.</p>
 
-# ''How does Bio.SearchIO differ from Bio.Blast.NCBIStandalone''?<p>Again, they provide different object models. However, Bio.SearchIO currently uses the parser from Bio.Blast.NCBIStandalone internally, but that old module will be deprecated.</p>
+* ''How does Bio.SearchIO differ from Bio.Blast.NCBIStandalone''?<p>Again, they provide different object models. However, Bio.SearchIO currently uses the parser from Bio.Blast.NCBIStandalone internally, but that old module will be deprecated.</p>

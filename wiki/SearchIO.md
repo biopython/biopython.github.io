@@ -226,7 +226,7 @@ Both of these are standard Biopython conventions.
 FAQ
 ---
 
-1.  *How does Bio.SearchIO differ from Bio.Blast.NCBIXML*?
+-   *How does Bio.SearchIO differ from Bio.Blast.NCBIXML*?
     Both modules are based on completely different object models and are
     not compatible with each other. Not only that, the underlying
     parsers and writers are also different (indexing is not possible
@@ -235,7 +235,7 @@ FAQ
 
 <!-- -->
 
-1.  *How does Bio.SearchIO differ from Bio.Blast.NCBIStandalone*?
+-   *How does Bio.SearchIO differ from Bio.Blast.NCBIStandalone*?
     Again, they provide different object models. However, Bio.SearchIO
     currently uses the parser from Bio.Blast.NCBIStandalone internally,
     but that old module will be deprecated.
