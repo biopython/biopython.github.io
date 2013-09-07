@@ -236,12 +236,8 @@ FAQ
 <!-- -->
 
 1.  *How does Bio.SearchIO differ from Bio.Blast.NCBIStandalone*?
-    Different from Bio.Blast.NCBIXML, Bio.SearchIO actually uses the
-    parser from Bio.Blast.NCBIStandalone under its hood. Due to the
-    complexity and fickleness of the BLAST plain text output, the plan
-    is to keep the existing parser under Bio.SearchIO to preserve the
-    parsing capability of Bio.Blast.NCBIStandalone. Note that while
-    support for plain text format parsing is tested up to Blast 2.2.26+,
-    plain text outputs from newer BLAST+ versions may not be parseable.
+    Again, they provide different object models. However, Bio.SearchIO
+    currently uses the parser from Bio.Blast.NCBIStandalone internally,
+    but that old module will be deprecated.
 
 
