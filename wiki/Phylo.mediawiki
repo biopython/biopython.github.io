@@ -30,9 +30,11 @@ from Bio import Phylo
 Like SeqIO and AlignIO, this module provides four I/O functions: parse(), read(), write() and convert(). Each function accepts either a file name or an open file handle, so data can be also loaded from compressed files, StringIO objects, and so on. If the file name is passed as a string, the file is automatically closed when the function finishes; otherwise, you're responsible for closing the handle yourself.
 
 The second argument to each function is the target format. Currently, the following formats are supported:
-* phyloxml
 * newick
 * nexus
+* nexml
+* phyloxml
+* cdao
 
 See the [[PhyloXML]] page for more examples of using tree objects.
 
@@ -120,13 +122,16 @@ Within the Phylo module are parsers and writers for specific file formats, confo
 '''PhyloXMLIO:'''
 Support for the [http://www.phyloxml.org/ phyloXML] format. See the [[PhyloXML]] page for details.
 
+'''NeXMLIO:'''
+Support for the [http://www.nexml.org/ NeXML] format.
+
 '''NewickIO:'''
 A port of the parser in Bio.Nexus.Trees to support the Newick (a.k.a. New Hampshire) format through the Phylo API.
 
 '''NexusIO:'''
 Wrappers around Bio.Nexus to support the Nexus tree format.
 
-The Nexus format actually contains several sub-formats for different kinds of data; to represent trees, Nexus provides a block containing some metadata and one or more Newick trees. (Another kind of Nexus block can represent alignments; this is handled in [[AlignIO]].) So to parse a complete Nexus file with all block types handled, use Bio.Nexus directly, and to extract just the trees, use Bio.Phylo. Integration between Bio.Nexus and Bio.Phylo will be improved in the future.
+The Nexus format actually contains several sub-formats for different kinds of data; to represent trees, Nexus provides a block containing some metadata and one or more Newick trees. (Another kind of Nexus block can represent alignments; this is handled in [[AlignIO]].) So to parse a complete Nexus file with all block types handled, use Bio.Nexus directly, and to extract just the trees, use Bio.Phylo.
 
 ==Tree and Subtree classes==
 
