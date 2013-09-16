@@ -4,26 +4,20 @@ For more complete documentation, see the Phylogenetics chapter of the [http://bi
 
 ==Availability==
 
-The source code for this module is included in Biopython 1.54 and later. If you're interested in testing newer additions to this code before the next official release, see [[SourceCode]] for instructions on getting a copy of the development branch.
-
-Requirements:
-* Python 2.4 or newer
-* ElementTree module
+This module is included in Biopython 1.54 and later. If you're interested in testing newer additions to this code before the next official release, see [[SourceCode]] for instructions on getting a copy of the development branch.
 
 To draw trees (optional), you'll also need these packages:
-* [http://networkx.lanl.gov/index.html NetworkX] 1.0rc1 (or 0.36 for snapshot at the end of GSoC 2009)
-* [http://networkx.lanl.gov/pygraphviz/ PyGraphviz] 0.99.1 or [http://dkbza.org/pydot.html pydot]
 * [http://matplotlib.sourceforge.net/ matplotlib]
+* [http://networkx.lanl.gov/index.html NetworkX] -- for the functions 'draw_graphviz' and 'to_networkx'
+* [http://networkx.lanl.gov/pygraphviz/ PyGraphviz] or [http://dkbza.org/pydot.html pydot] -- for the functions 'draw_graphviz' and 'to_networkx'
 
-The I/O and tree-manipulation functionality will work without them; they're imported on demand when the functions to_networkx() and draw_graphviz() are called.
+The I/O and tree-manipulation functionality will work without them; they're imported on demand when the functions draw(), draw_graphviz() and to_networkx() are called.
 
-The XML parser used in the PhyloXMLIO sub-module is ElementTree, added to the Python standard library in Python 2.5. To use this module in Python 2.4, you'll need to install a separate package that provides the ElementTree interface. Two exist:
+To use this module in older versions of Biopython with Python 2.4, you'll also need to install a separate package that provides the ElementTree interface for XML parsing. Either of these will work:
 * [http://codespeak.net/lxml/ lxml]
 * [http://effbot.org/zone/element-index.htm elementtree] (or cElementTree)
 
-PhyloXMLIO attempts to import each of these compatible ElementTree implementations until it succeeds. The given XML file handle is then parsed incrementally to instantiate an object hierarchy containing the relevant phylogenetic information.
-
-This module has also been successfully tested on Jython 2.5.1, minus the Graphviz- and NetworkX-based functions. However, parsing phyloXML files is noticeably slower because Jython uses a different version of the underlying XML parsing library.
+The Phylo module has also been successfully tested on Jython 2.5.1, minus the Graphviz- and NetworkX-based functions. However, parsing phyloXML files is noticeably slower because Jython uses a different version of the underlying XML parsing library.
 
 ==I/O functions==
 
