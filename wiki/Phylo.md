@@ -192,6 +192,9 @@ Newick (a.k.a. New Hampshire) format through the Phylo API.
 
 **NexusIO:** Wrappers around Bio.Nexus to support the Nexus tree format.
 
+**CDAOIO:** Support for the Comparative Data Analysis Ontology (CDAO).
+Requires [RDFlib](https://github.com/RDFLib/rdflib).
+
 The Nexus format actually contains several sub-formats for different
 kinds of data; to represent trees, Nexus provides a block containing
 some metadata and one or more Newick trees. (Another kind of Nexus block

@@ -131,6 +131,9 @@ A port of the parser in Bio.Nexus.Trees to support the Newick (a.k.a. New Hampsh
 '''NexusIO:'''
 Wrappers around Bio.Nexus to support the Nexus tree format.
 
+'''CDAOIO:'''
+Support for the Comparative Data Analysis Ontology (CDAO). Requires [https://github.com/RDFLib/rdflib RDFlib].
+
 The Nexus format actually contains several sub-formats for different kinds of data; to represent trees, Nexus provides a block containing some metadata and one or more Newick trees. (Another kind of Nexus block can represent alignments; this is handled in [[AlignIO]].) So to parse a complete Nexus file with all block types handled, use Bio.Nexus directly, and to extract just the trees, use Bio.Phylo.
 
 ==Tree and Subtree classes==
