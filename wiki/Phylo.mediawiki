@@ -318,6 +318,323 @@ pylab.show()
 
 Recipes for exporting to other libraries, including '''ape''' (via Rpy2) and '''PyCogent''', are available on the [[Phylo_cookbook|Phylo cookbook]] page.
 
+== Tree Construction ==
+
+In addition to wrappers of tree construction programs(PHYLIP programs through EMBOSS wrappers in Bio.Emboss.Applications), now Biopython also provides several tree construction algorithm implementations in pure python in the <code>Bio.Phylo.TreeConstruction</code> module.
+
+All algorithms are designed as worker subclasses of a base class <code>TreeConstructor</code>. All constructors have the same method <code>build_tree</code> that accept a <code>MultipleSeqAlignment</code> object to construct the tree. Currently there are two types of tree constructors: <code>DistanceTreeConstructor</code> and <code>ParsimonyTreeConstructor</code>.
+
+=== DistanceTreeConstructor ===
+
+The <code>DistanceTreeConstructor</code> has two algorithms: UPGMA(Unweighted Pair Group Method with Arithmetic Mean) and NJ(Neighbor Joining).
+
+Both algorithms construct trees based on a distance matrix. So before using these algorithms, let me introduce the <code>DistanceCalculator</code> to generate the distance matrix from a <code>MultipleSeqAlignment</code> object. The following code shows a common way to do this:
+
+<pre>&gt;&gt;&gt; from Bio.Phylo.TreeConstruction import DistanceCalculator
+&gt;&gt;&gt; from Bio import AlignIO
+&gt;&gt;&gt; aln = AlignIO.read('Tests/TreeConstruction/msa.phy', 'phylip')
+&gt;&gt;&gt; print aln
+SingleLetterAlphabet() alignment with 5 rows and 13 columns
+AACGTGGCCACAT Alpha
+AAGGTCGCCACAC Beta
+GAGATTTCCGCCT Delta
+GAGATCTCCGCCC Epsilon
+CAGTTCGCCACAA Gamma
+&gt;&gt;&gt; calculator = DistanceCalculator('identity')
+&gt;&gt;&gt; dm = calculator.get_distance(aln)
+&gt;&gt;&gt; dm
+DistanceMatrix(names=['Alpha', 'Beta', 'Gamma', 'Delta', 'Epsilon'], matrix=[[0], [0.23076923076923073, 0], [0.3846153846153846, 0.23076923076923073, 0], [0.5384615384615384, 0.5384615384615384, 0.5384615384615384, 0], [0.6153846153846154, 0.3846153846153846, 0.46153846153846156, 0.15384615384615385, 0]])
+&gt;&gt;&gt; print dm
+Alpha   0
+Beta    0.230769230769  0
+Gamma   0.384615384615  0.230769230769  0
+Delta   0.538461538462  0.538461538462  0.538461538462  0
+Epsilon 0.615384615385  0.384615384615  0.461538461538  0.153846153846  0
+    Alpha   Beta    Gamma   Delta   Epsilon</pre>
+As you see, we create a <code>DistanceCalculator</code> object with a string 'identity', which is the name of the model(scoring matrix) to calculate the distance. The 'identity' model is the default one and can be used both for DNA and Protein sequence. To check available models for DNA, protein or all, use the attribute of the calculator <code>dna_models</code>, <code>protein_models</code>, <code>models</code> respectively.
+
+After the calculator is created with the model, simply use the <code>get_distance()</code> method to get the distance matrix of a given alignment object. Then you will get a <code>DistanceMatrix</code> object, a subclass of <code>Matrix</code>(we will talk about this later).
+
+Now, let's get back to the <code>DistanceTreeConstructor</code>. We can pass the <code>DistanceCalculator</code> object and a string parameter('nj' or 'upgma') to initialize it, and then call its <code>build_tree()</code> as mentioned before.
+
+<pre>&gt;&gt;&gt; from TreeConstruction import DistanceTreeConstructor
+&gt;&gt;&gt; constructor = DistanceTreeConstructor(calculator, 'nj')
+&gt;&gt;&gt; tree = constructor.build_tree(aln)
+&gt;&gt;&gt; print tree
+Tree(rooted=False)
+    Clade(branch_length=0, name='Inner3')
+        Clade(branch_length=0.182692307692, name='Alpha')
+        Clade(branch_length=0.0480769230769, name='Beta')
+        Clade(branch_length=0.0480769230769, name='Inner2')
+            Clade(branch_length=0.278846153846, name='Inner1')
+                Clade(branch_length=0.0512820512821, name='Epsilon')
+                Clade(branch_length=0.102564102564, name='Delta')
+            Clade(branch_length=0.144230769231, name='Gamma')</pre>
+While sometimes you might want to use your own <code>DistanceMatrix</code> directly instead of the raw alignment, we provide another direct way to use both algorithms.
+
+<pre>&gt;&gt;&gt; from TreeConstruction import DistanceTreeConstructor
+&gt;&gt;&gt; constructor = DistanceTreeConstructor()
+&gt;&gt;&gt; tree = constructor.nj(dm)
+&gt;&gt;&gt; print tree
+Tree(rooted=False)
+    Clade(branch_length=0, name='Inner3')
+        Clade(branch_length=0.182692307692, name='Alpha')
+        Clade(branch_length=0.0480769230769, name='Beta')
+        Clade(branch_length=0.0480769230769, name='Inner2')
+            Clade(branch_length=0.278846153846, name='Inner1')
+                Clade(branch_length=0.0512820512821, name='Epsilon')
+                Clade(branch_length=0.102564102564, name='Delta')
+            Clade(branch_length=0.144230769231, name='Gamma')
+&gt;&gt;&gt; tree = constructor.upgma(dm)
+&gt;&gt;&gt; print tree
+Tree(rooted=True)
+    Clade(branch_length=0, name='Inner4')
+        Clade(branch_length=0.1875, name='Inner1')
+            Clade(branch_length=0.0769230769231, name='Epsilon')
+            Clade(branch_length=0.0769230769231, name='Delta')
+        Clade(branch_length=0.110576923077, name='Inner3')
+            Clade(branch_length=0.0384615384615, name='Inner2')
+                Clade(branch_length=0.115384615385, name='Gamma')
+                Clade(branch_length=0.115384615385, name='Beta')
+            Clade(branch_length=0.153846153846, name='Alpha')</pre>
+=== ParsimonyTreeConstructor ===
+
+Unlike <code>DistanceTreeConstructor</code>, the concrete algorithm of <code>ParsimonyTreeConstructor</code> is delegated to two different worker classes: the <code>ParsimonyScorer</code> to calculate the parsimony score of a target tree by the given alignment, and the <code>TreeSearcher</code> to search the best tree that minimize the parsimony score. A typical usage example can be as follows:
+
+<pre>&gt;&gt;&gt; from Bio import AlignIO
+&gt;&gt;&gt; from TreeConstruction import *
+&gt;&gt;&gt; aln = AlignIO.read(open('Tests/TreeConstruction/msa.phy'), 'phylip')
+&gt;&gt;&gt; starting_tree = Phylo.read('Tests/TreeConstruction/nj.tre', 'newick')
+&gt;&gt;&gt; scorer = ParsimonyScorer()
+&gt;&gt;&gt; searcher = NNITreeSearcher(scorer)
+&gt;&gt;&gt; constructor = ParsimonyTreeConstructor(searcher, starting_tree)
+&gt;&gt;&gt; pars_tree = constructor.build_tree(aln)
+&gt;&gt;&gt; print pars_tree
+Tree(weight=1.0, rooted=True)
+    Clade(branch_length=0.0)
+        Clade(branch_length=0.197335, name='Inner1')
+            Clade(branch_length=0.13691, name='Delta')
+            Clade(branch_length=0.08531, name='Epsilon')
+        Clade(branch_length=0.041935, name='Inner2')
+            Clade(branch_length=0.01421, name='Inner3')
+                Clade(branch_length=0.17523, name='Gamma')
+                Clade(branch_length=0.07477, name='Beta')
+            Clade(branch_length=0.29231, name='Alpha')</pre>
+The <code>ParsimonyScorer</code> is a combination of the Fitch algorithm and Sankoff algorithm. It will work as Fitch algorithm by default if no parameter is provide, and work as Sankoff algorithm if a parsimony scoring matrix(a <code>Matrix</code> object) is given, .
+
+Then the scorer is passed to a <code>TreeSearcher</code> to tell it how to evaluate different trees during searching. Currently, only one searcher <code>NNITreeSearcher</code>, the Nearest Neighbor Interchange(NNI) algorithm, is implemented.
+
+By passing the searcher and a starting tree to the <code>ParsimonyTreeConstructor</code>, we finally get the instance of it. If no starting tree is provided, a simple upgma tree will be created instead, with the 'identity' model. To use this parsimony constructor, just simply call the <code>build_tree</code> method with an alignment.
+
+== Consensus Tree ==
+
+=== Strict, Majority Rule and Adam Consensus ===
+
+Same as tree construction algorithms, three consensus tree algorithms(Strict, Majority Rule and Adam Consensus) in pure python are also implemented in the <code>Bio.Phylo.Consensus</code> module. You can directly call <code>strict_consensus</code>, <code>majority_consensus</code> and <code>adam_consensus</code> to use these algorithms with a list of trees as the input.
+
+<pre>&gt;&gt;&gt; from Bio import Phylo
+&gt;&gt;&gt; from Bio.Phylo.Consensus import *
+&gt;&gt;&gt; trees = list(Phylo.parse('Tests/TreeConstruction/trees.tre', 'newick'))
+&gt;&gt;&gt; strict_tree = strict_consensus(trees)
+&gt;&gt;&gt; majority_tree = majority_consensus(trees, 0.5)
+&gt;&gt;&gt; adam_tree = adam_consensus(trees)</pre>
+Instead of using 50% as the cutoff, the <code>majority_consensus</code> method allows you to set your own one by providing an extra <code>cutoff</code> parameter(0~1, 0 by default). That means it can also work as strict consensus algorithm when the <code>cutoff</code> equals 1. One more thing different to strict and adam consensus tree, the result majority rule consensus tree has branch support value that are automatically assigned during calculation.
+
+=== Bootstrap Methods ===
+
+To get the consensus tree, we must construct a list of bootstrap replicate trees. So in the <code>Bio.Phylo.Consensus</code> module, we also provide several useful bootstrap methods to achieve this.
+
+<pre>&gt;&gt;&gt; from Bio import Phylo
+&gt;&gt;&gt; from Bio.Phylo.Consensus import *
+&gt;&gt;&gt; msa = AlignIO.read('Tests/TreeConstruction/msa.phy', 'phylip')
+&gt;&gt;&gt; msas = bootstrap(msa, 100)</pre>
+As you see, the <code>bootstrap</code> method accepts a <code>MultipleSeqAlignment</code> object and generates its bootstrap replicate 100 times. The you can use them to build replicate trees. While, we also provide a convenient method to do this.
+
+<pre>&gt;&gt;&gt; calculator = DistanceCalculator('blosum62')
+&gt;&gt;&gt; constructor = DistanceTreeConstructor(calculator)
+&gt;&gt;&gt; trees = bootstrap_trees(msa, 100, constructor)</pre>
+This time we pass an extra <code>DistanceTreeConstructor</code> object to a <code>bootstrap_trees</code> method and finally got the replicate trees. Note that both <code>bootstrap</code> and <code>bootstrap_trees</code> are generator functions. You need to use <code>list()</code> function to turn the result into a list of alignment or trees.
+
+Another useful function is <code>bootstrap_consensus</code>. By passing the consensus method as another extra parameter, we can directly get the consensus tree.
+
+<pre>&gt;&gt;&gt; consensus_tree = bootstrap_consensus(msa, 100, constructor, majority_consensus)</pre>
+=== Branch Support ===
+
+To get the branch support of a specific tree, we can use the <code>get_support</code> method.
+
+<pre>&gt;&gt;&gt; from Bio import Phylo
+&gt;&gt;&gt; from Bio.Phylo.Consensus import *
+&gt;&gt;&gt; trees = list(Phylo.parse('Tests/TreeConstruction/trees.tre', 'newick'))
+&gt;&gt;&gt; target_tree = trees[0]
+&gt;&gt;&gt; support_tree = get_support(target_tree, trees)</pre>
+In the above code, we use the first tree as the target tree that we want to calculate its branch support. The <code>get_support</code> method accepts the target tree and a list of trees, and returns a tree, with all internal clades assigned with branch support values.
+
+== Other Useful Classes ==
+
+There are some other classes in both <code>TreeConstruction</code> and <code>Consensus</code> module that are used in those algorithms. They may not be used commonly, but might be useful to you in some cases.
+
+=== Matrix. ===
+
+The <code>Matrix</code> class in the <code>TreeConstruction</code> module is the super class of <code>DistanceMatrix</code>. They are both actually constructed by a list of names and a nested list of numbers in lower triangular matrix format. The only difference between them is that the diagonal elements in <code>DistanceMatrix</code> will all be 0 no matter what values are assigned.
+
+To create a <code>Matrix</code> object:
+
+<pre>&gt;&gt;&gt; from Bio.Phylo.TreeConstruction import Matrix
+&gt;&gt;&gt; names = ['Alpha', 'Beta', 'Gamma', 'Delta']
+&gt;&gt;&gt; matrix = [[0], [1, 0], [2, 3, 0], [4, 5, 6, 0]]
+&gt;&gt;&gt; m = Matrix(names, matrix)
+&gt;&gt;&gt; m
+Matrix(names=['Alpha', 'Beta', 'Gamma', 'Delta'], matrix=[[0], [1, 0], [2, 3, 0], [4, 5, 6, 0]])
+&gt;&gt;&gt; print m
+Alpha   0
+Beta    1   0
+Gamma   2   3   0
+Delta   4   5   6   0
+    Alpha   Beta    Gamma   Delta</pre>
+You can use two indices to get or assign an element in the matrix, and the indices are exchangeable.
+
+<pre>&gt;&gt;&gt; m[1,2]
+3
+&gt;&gt;&gt; m[2,1]
+3
+&gt;&gt;&gt; m['Beta','Gamma']
+3
+&gt;&gt;&gt; m['Beta','Gamma'] = 4
+&gt;&gt;&gt; m['Beta','Gamma']
+4</pre>
+Further more, you can use one index to get or assign a list of elements related to that index:
+
+<pre>&gt;&gt;&gt; m[0]
+[0, 1, 2, 4]
+&gt;&gt;&gt; m['Alpha']
+[0, 1, 2, 4]
+&gt;&gt;&gt; m['Alpha'] = [0, 7, 8, 9]
+&gt;&gt;&gt; m[0]
+[0, 7, 8, 9]
+&gt;&gt;&gt; m[0,1]
+7</pre>
+Also you can delete or insert a column&amp;row of elements by index:
+
+<pre>&gt;&gt;&gt; m
+Matrix(names=['Alpha', 'Beta', 'Gamma', 'Delta'], matrix=[[0], [7, 0], [8, 4, 0], [9, 5, 6, 0]])
+&gt;&gt;&gt; del m['Alpha']
+&gt;&gt;&gt; m
+Matrix(names=['Beta', 'Gamma', 'Delta'], matrix=[[0], [4, 0], [5, 6, 0]])
+&gt;&gt;&gt; m.insert('Alpha', [0, 7, 8, 9] , 0)
+&gt;&gt;&gt; m
+Matrix(names=['Alpha', 'Beta', 'Gamma', 'Delta'], matrix=[[0], [7, 0], [8, 4, 0], [9, 5, 6, 0]])</pre>
+=== BitString ===
+
+<code>BitString</code> is an assistant class used frequently in the algorithms in the <code>Consensus</code> module. It's a sub-class of <code>str</code> object that only accepts two characters('0' and '1'), with additional functions for binary-like manipulation(&amp;|^~). Common usage is as follows:
+
+<pre>&gt;&gt;&gt; from Bio.Phylo.Consensus import BitString
+&gt;&gt;&gt; bitstr1 = BitString('11111')
+&gt;&gt;&gt; bitstr2 = BitString('11100')
+&gt;&gt;&gt; bitstr3 = BitString('01101')
+&gt;&gt;&gt; bitstr1
+BitString('11111')
+&gt;&gt;&gt; bitstr2 &amp; bitstr3
+BitString('01100')
+&gt;&gt;&gt; bitstr2 | bitstr3
+BitString('11101')
+&gt;&gt;&gt; bitstr2 ^ bitstr3
+BitString('10001')
+&gt;&gt;&gt; bitstr2.index_one()
+[0, 1, 2]
+&gt;&gt;&gt; bitstr3.index_one()
+[1, 2, 4]
+&gt;&gt;&gt; bitstr3.index_zero()
+[0, 3]
+&gt;&gt;&gt; bitstr1.contains(bitstr2)
+True
+&gt;&gt;&gt; bitstr2.contains(bitstr3)
+False
+&gt;&gt;&gt; bitstr2.independent(bitstr3)
+False
+&gt;&gt;&gt; bitstr2.independent(bitstr4)
+True
+&gt;&gt;&gt; bitstr1.iscompatible(bitstr2)
+True
+&gt;&gt;&gt; bitstr2.iscompatible(bitstr3)
+False
+&gt;&gt;&gt; bitstr2.iscompatible(bitstr4)
+True</pre>
+In consensus and branch support algorithms, it is used to count and store the clades in multiple trees. During counting, the clades will be considered the same if their terminals(in terms of <code>name</code> attribute) are the same.
+
+For example, let's say two trees are provided as below to search their strict consensus tree:
+
+<pre>tree1: (((A, B), C),(D, E))
+tree2: ((A, (B, C)),(D, E))</pre>
+For both trees, a <code>BitString</code> object '11111' will represent their root clade. Each '1' stands for the terminal clade in the list [A, B, C, D, E] (the order might not be the same, it's determined by the <code>get_terminal</code> method of the first tree provided). For the clade ((A, B), C) in tree1 and (A, (B, C)) in tree2, they both can be represented by '11100'. Similarly, '11000' represents clade (A, B) in tree1, '01100' represents clade (B, C) in tree2, and '00011' represents clade (D, E) in both trees.
+
+So, with the <code>_count_clades</code> function in this module, finally we can get the clade counts and their BitString representation as follows(the root and terminals are omitted):
+
+<pre>clade   BitString   count
+ABC     '11100'     2
+DE      '00011'     2
+AB      '11000'     1
+BC      '01100'     1</pre>
+To get the BitString representation of a clade, we can use the following code snippet:
+
+<pre># suppose we are provided with a tree list, the first thing to do is 
+# to get all the terminal names in the first tree
+term_names = [term.name for term in trees[0].get_terminals()]
+# for a specific clade in any of the tree, also get its terminal names
+clade_term_names = [term.name for term in clade.get_terminals()]
+# then create a boolean list 
+boolvals = [name in clade_term_names for name in term_names]
+# create the string version and pass it to BitString  
+bitstr = BitString(''.join(map(str, map(int, boolvals))))</pre>
+To convert back:
+
+<pre># get all the terminal clades of the first tree
+terms = [term for term in trees[0].get_terminals()]
+# get the index of terminal clades in bitstr
+index_list = bitstr.index_one()
+# get all terminal clades by index
+clade_terms = [terms[i] for i in index_list]
+# create a new calde and append all the terminal clades
+new_clade = BaseTree.Clade()
+new_clade.clades.extend(clade_terms)</pre>
+This is how the <code>BitString</code> is used in the consensus and branch support algorithms. And I think it can be used in many other conditions.
+
+For example, we can even use it to check whether the structures of two trees are the same.
+
+<pre># store and return all BitStrings
+def _bitstrs(tree):
+    bitstrs = set()
+    term_names = [term.name for term in tree.get_terminals()]
+    term_names.sort()
+    for clade in tree.get_nonterminals():
+        clade_term_names = [term.name for term in clade.get_terminals()]
+        boolvals = [name in clade_term_names for name in term_names]  
+        bitstr = BitString(''.join(map(str, map(int, boolvals))))
+        bitstrs.add(bitstr)
+    return bitstrs
+    
+def compare(tree1, tree2):
+    term_names1 =  [term.name for term in tree1.get_terminals()]
+    term_names2 =  [term.name for term in tree2.get_terminals()]
+    # false if terminals are not the same 
+    if set(term_names1) != set(term_names2):
+        return False
+    # true if BitStrings are the same
+    if _bitstrs(tree1) == _bitstrs(tree2):
+        return True
+    else:
+        return False</pre>
+To use it:
+
+<pre>&gt;&gt;&gt; tree1 = Phylo.read('Tests/TreeConstruction/upgma.tre', 'newick')
+&gt;&gt;&gt; tree2 = Phylo.read('Tests/TreeConstruction/nj.tre', 'newick')
+&gt;&gt;&gt; tree3 = Phylo.read('Tests/TreeConstruction/pars1.tre', 'newick')
+&gt;&gt;&gt; compare(tree1, tree2)
+False
+&gt;&gt;&gt; compare(tree1, tree3)
+True
+&gt;&gt;&gt; compare(tree2, tree3)
+False</pre>
+
 ==External Applications==
 
 * Bio.Phylo.PhymlCommandline provides a wrapper for [http://www.atgc-montpellier.fr/phyml/ PhyML] following the usual Bio.Applications API.
