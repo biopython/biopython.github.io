@@ -318,13 +318,18 @@ pylab.show()
 
 Recipes for exporting to other libraries, including '''ape''' (via Rpy2) and '''PyCogent''', are available on the [[Phylo_cookbook|Phylo cookbook]] page.
 
-== Tree Construction ==
+== Upcoming GSoC 2013 features ==
+
+Many new features for building and processing phylogenetic trees were developed by Yanbo Ye for [[Google Summer of Code 2013]]. They are implemented on a development branch which has not yet been merged into the main Biopython codebase, but is available on GitHub at: https://github.com/lijax/biopython. Note that the behavior and API of these features may change before the official release.
+
+
+=== Tree Construction ===
 
 In addition to wrappers of tree construction programs(PHYLIP programs through EMBOSS wrappers in Bio.Emboss.Applications), now Biopython also provides several tree construction algorithm implementations in pure python in the <code>Bio.Phylo.TreeConstruction</code> module.
 
 All algorithms are designed as worker subclasses of a base class <code>TreeConstructor</code>. All constructors have the same method <code>build_tree</code> that accept a <code>MultipleSeqAlignment</code> object to construct the tree. Currently there are two types of tree constructors: <code>DistanceTreeConstructor</code> and <code>ParsimonyTreeConstructor</code>.
 
-=== DistanceTreeConstructor ===
+==== DistanceTreeConstructor ====
 
 The <code>DistanceTreeConstructor</code> has two algorithms: UPGMA(Unweighted Pair Group Method with Arithmetic Mean) and NJ(Neighbor Joining).
 
@@ -396,8 +401,10 @@ Tree(rooted=True)
             Clade(branch_length=0.0384615384615, name='Inner2')
                 Clade(branch_length=0.115384615385, name='Gamma')
                 Clade(branch_length=0.115384615385, name='Beta')
-            Clade(branch_length=0.153846153846, name='Alpha')</pre>
-=== ParsimonyTreeConstructor ===
+            Clade(branch_length=0.153846153846, name='Alpha')
+</pre>
+
+==== ParsimonyTreeConstructor ====
 
 Unlike <code>DistanceTreeConstructor</code>, the concrete algorithm of <code>ParsimonyTreeConstructor</code> is delegated to two different worker classes: the <code>ParsimonyScorer</code> to calculate the parsimony score of a target tree by the given alignment, and the <code>TreeSearcher</code> to search the best tree that minimize the parsimony score. A typical usage example can be as follows:
 
@@ -426,9 +433,9 @@ Then the scorer is passed to a <code>TreeSearcher</code> to tell it how to evalu
 
 By passing the searcher and a starting tree to the <code>ParsimonyTreeConstructor</code>, we finally get the instance of it. If no starting tree is provided, a simple upgma tree will be created instead, with the 'identity' model. To use this parsimony constructor, just simply call the <code>build_tree</code> method with an alignment.
 
-== Consensus Tree ==
+=== Consensus Tree ===
 
-=== Strict, Majority Rule and Adam Consensus ===
+==== Strict, Majority Rule and Adam Consensus ====
 
 Same as tree construction algorithms, three consensus tree algorithms(Strict, Majority Rule and Adam Consensus) in pure python are also implemented in the <code>Bio.Phylo.Consensus</code> module. You can directly call <code>strict_consensus</code>, <code>majority_consensus</code> and <code>adam_consensus</code> to use these algorithms with a list of trees as the input.
 
@@ -440,7 +447,7 @@ Same as tree construction algorithms, three consensus tree algorithms(Strict, Ma
 &gt;&gt;&gt; adam_tree = adam_consensus(trees)</pre>
 Instead of using 50% as the cutoff, the <code>majority_consensus</code> method allows you to set your own one by providing an extra <code>cutoff</code> parameter(0~1, 0 by default). That means it can also work as strict consensus algorithm when the <code>cutoff</code> equals 1. One more thing different to strict and adam consensus tree, the result majority rule consensus tree has branch support value that are automatically assigned during calculation.
 
-=== Bootstrap Methods ===
+==== Bootstrap Methods ====
 
 To get the consensus tree, we must construct a list of bootstrap replicate trees. So in the <code>Bio.Phylo.Consensus</code> module, we also provide several useful bootstrap methods to achieve this.
 
@@ -458,7 +465,8 @@ This time we pass an extra <code>DistanceTreeConstructor</code> object to a <cod
 Another useful function is <code>bootstrap_consensus</code>. By passing the consensus method as another extra parameter, we can directly get the consensus tree.
 
 <pre>&gt;&gt;&gt; consensus_tree = bootstrap_consensus(msa, 100, constructor, majority_consensus)</pre>
-=== Branch Support ===
+
+==== Branch Support ====
 
 To get the branch support of a specific tree, we can use the <code>get_support</code> method.
 
@@ -469,11 +477,11 @@ To get the branch support of a specific tree, we can use the <code>get_support</
 &gt;&gt;&gt; support_tree = get_support(target_tree, trees)</pre>
 In the above code, we use the first tree as the target tree that we want to calculate its branch support. The <code>get_support</code> method accepts the target tree and a list of trees, and returns a tree, with all internal clades assigned with branch support values.
 
-== Other Useful Classes ==
+=== Other Useful Classes ===
 
 There are some other classes in both <code>TreeConstruction</code> and <code>Consensus</code> module that are used in those algorithms. They may not be used commonly, but might be useful to you in some cases.
 
-=== Matrix. ===
+==== Matrix ====
 
 The <code>Matrix</code> class in the <code>TreeConstruction</code> module is the super class of <code>DistanceMatrix</code>. They are both actually constructed by a list of names and a nested list of numbers in lower triangular matrix format. The only difference between them is that the diagonal elements in <code>DistanceMatrix</code> will all be 0 no matter what values are assigned.
 
@@ -523,7 +531,8 @@ Matrix(names=['Beta', 'Gamma', 'Delta'], matrix=[[0], [4, 0], [5, 6, 0]])
 &gt;&gt;&gt; m.insert('Alpha', [0, 7, 8, 9] , 0)
 &gt;&gt;&gt; m
 Matrix(names=['Alpha', 'Beta', 'Gamma', 'Delta'], matrix=[[0], [7, 0], [8, 4, 0], [9, 5, 6, 0]])</pre>
-=== BitString ===
+
+==== BitString ====
 
 <code>BitString</code> is an assistant class used frequently in the algorithms in the <code>Consensus</code> module. It's a sub-class of <code>str</code> object that only accepts two characters('0' and '1'), with additional functions for binary-like manipulation(&amp;|^~). Common usage is as follows:
 
@@ -635,12 +644,12 @@ True
 &gt;&gt;&gt; compare(tree2, tree3)
 False</pre>
 
-==External Applications==
+===External Applications===
 
 * Bio.Phylo.PhymlCommandline provides a wrapper for [http://www.atgc-montpellier.fr/phyml/ PhyML] following the usual Bio.Applications API.
 * Bio.Phylo.[[PAML]] provides wrappers, parsers and utilities for working with the PAML suite of programs.
 
-==Example pipeline==
+===Example pipeline===
 
 See the [http://biopython.org/DIST/docs/tutorial/Tutorial.html Biopython Tutorial] sections on sequence alignment and BLAST for explanations of the first few steps shown here.
 

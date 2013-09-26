@@ -424,8 +424,18 @@ Recipes for exporting to other libraries, including **ape** (via Rpy2)
 and **PyCogent**, are available on the [Phylo
 cookbook](Phylo_cookbook "wikilink") page.
 
-Tree Construction
------------------
+Upcoming GSoC 2013 features
+---------------------------
+
+Many new features for building and processing phylogenetic trees were
+developed by Yanbo Ye for [Google Summer of Code
+2013](Google_Summer_of_Code_2013 "wikilink"). They are implemented on a
+development branch which has not yet been merged into the main Biopython
+codebase, but is available on GitHub at:
+<https://github.com/lijax/biopython>. Note that the behavior and API of
+these features may change before the official release.
+
+### Tree Construction
 
 In addition to wrappers of tree construction programs(PHYLIP programs
 through EMBOSS wrappers in Bio.Emboss.Applications), now Biopython also
@@ -438,7 +448,7 @@ that accept a `MultipleSeqAlignment` object to construct the tree.
 Currently there are two types of tree constructors:
 `DistanceTreeConstructor` and `ParsimonyTreeConstructor`.
 
-### DistanceTreeConstructor
+#### DistanceTreeConstructor
 
 The `DistanceTreeConstructor` has two algorithms: UPGMA(Unweighted Pair
 Group Method with Arithmetic Mean) and NJ(Neighbor Joining).
@@ -530,7 +540,7 @@ algorithms.
                     Clade(branch_length=0.115384615385, name='Beta')
                 Clade(branch_length=0.153846153846, name='Alpha')
 
-### ParsimonyTreeConstructor
+#### ParsimonyTreeConstructor
 
 Unlike `DistanceTreeConstructor`, the concrete algorithm of
 `ParsimonyTreeConstructor` is delegated to two different worker classes:
@@ -575,10 +585,9 @@ starting tree is provided, a simple upgma tree will be created instead,
 with the 'identity' model. To use this parsimony constructor, just
 simply call the `build_tree` method with an alignment.
 
-Consensus Tree
---------------
+### Consensus Tree
 
-### Strict, Majority Rule and Adam Consensus
+#### Strict, Majority Rule and Adam Consensus
 
 Same as tree construction algorithms, three consensus tree
 algorithms(Strict, Majority Rule and Adam Consensus) in pure python are
@@ -601,7 +610,7 @@ to strict and adam consensus tree, the result majority rule consensus
 tree has branch support value that are automatically assigned during
 calculation.
 
-### Bootstrap Methods
+#### Bootstrap Methods
 
 To get the consensus tree, we must construct a list of bootstrap
 replicate trees. So in the `Bio.Phylo.Consensus` module, we also provide
@@ -633,7 +642,7 @@ consensus tree.
 
     &gt;&gt;&gt; consensus_tree = bootstrap_consensus(msa, 100, constructor, majority_consensus)
 
-### Branch Support
+#### Branch Support
 
 To get the branch support of a specific tree, we can use the
 `get_support` method.
@@ -649,14 +658,13 @@ to calculate its branch support. The `get_support` method accepts the
 target tree and a list of trees, and returns a tree, with all internal
 clades assigned with branch support values.
 
-Other Useful Classes
---------------------
+### Other Useful Classes
 
 There are some other classes in both `TreeConstruction` and `Consensus`
 module that are used in those algorithms. They may not be used commonly,
 but might be useful to you in some cases.
 
-### Matrix.
+#### Matrix
 
 The `Matrix` class in the `TreeConstruction` module is the super class
 of `DistanceMatrix`. They are both actually constructed by a list of
@@ -716,7 +724,7 @@ Also you can delete or insert a column&row of elements by index:
     &gt;&gt;&gt; m
     Matrix(names=['Alpha', 'Beta', 'Gamma', 'Delta'], matrix=[[0], [7, 0], [8, 4, 0], [9, 5, 6, 0]])
 
-### BitString
+#### BitString
 
 `BitString` is an assistant class used frequently in the algorithms in
 the `Consensus` module. It's a sub-class of `str` object that only
@@ -853,8 +861,7 @@ To use it:
     &gt;&gt;&gt; compare(tree2, tree3)
     False
 
-External Applications
----------------------
+### External Applications
 
 -   Bio.Phylo.PhymlCommandline provides a wrapper for
     [PhyML](http://www.atgc-montpellier.fr/phyml/) following the usual
@@ -862,8 +869,7 @@ External Applications
 -   Bio.Phylo.[PAML](PAML "wikilink") provides wrappers, parsers and
     utilities for working with the PAML suite of programs.
 
-Example pipeline
-----------------
+### Example pipeline
 
 See the [Biopython
 Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
