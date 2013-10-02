@@ -8,7 +8,7 @@ Starting with a [http://www.cbcb.umd.edu/software/GlimmerHMM/ GlimmerHMM] output
 
 == Solution ==
 
-Setting this up, we import the required modules and parse our input FASTA file into a standard python dictionary, using [http://www.biopython.org/wiki/SeqIO SeqIO]. SeqIO is also used for writing the output file. We pass the output function a python generator, which SeqIO will convert into FASTA files one at a time. This allows the script to be generalized to arbitrarily large data sets without running into memory issues.
+Setting this up, we import the required modules and parse our input FASTA file into a standard python dictionary, using [[SeqIO]]. SeqIO is also used for writing the output file. We pass the output function a python generator, which SeqIO will convert into FASTA files one at a time. This allows the script to be generalized to arbitrarily large data sets without running into memory issues.
 
 <source lang=python>
 from __future__ import with_statement
@@ -31,7 +31,7 @@ def main(glimmer_file, ref_file):
         SeqIO.write(protein_recs(glimmer_file, ref_recs), out_handle, "fasta")
 </source>
 
-Next, we provide a function to parse the GlimmerHMM output. Thanks to the [http://www.biopython.org/wiki/GFF_Parsing GFF] library, this is very easy. We iterate over a group of lines at a time to handle very large output files, and provide as input the reference records we parsed earlier with SeqIO:
+Next, we provide a function to parse the GlimmerHMM output. Thanks to the [[GFF Parsing|GFF]] library, this is very easy. We iterate over a group of lines at a time to handle very large output files, and provide as input the reference records we parsed earlier with SeqIO:
 
 <source lang=python>
 def glimmer_predictions(in_handle, ref_recs):

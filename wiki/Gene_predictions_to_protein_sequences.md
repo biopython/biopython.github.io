@@ -24,11 +24,11 @@ Solution
 
 Setting this up, we import the required modules and parse our input
 FASTA file into a standard python dictionary, using
-[SeqIO](http://www.biopython.org/wiki/SeqIO). SeqIO is also used for
-writing the output file. We pass the output function a python generator,
-which SeqIO will convert into FASTA files one at a time. This allows the
-script to be generalized to arbitrarily large data sets without running
-into memory issues.
+[SeqIO](SeqIO "wikilink"). SeqIO is also used for writing the output
+file. We pass the output function a python generator, which SeqIO will
+convert into FASTA files one at a time. This allows the script to be
+generalized to arbitrarily large data sets without running into memory
+issues.
 
 ``` python
 from __future__ import with_statement
@@ -52,10 +52,9 @@ def main(glimmer_file, ref_file):
 ```
 
 Next, we provide a function to parse the GlimmerHMM output. Thanks to
-the [GFF](http://www.biopython.org/wiki/GFF_Parsing) library, this is
-very easy. We iterate over a group of lines at a time to handle very
-large output files, and provide as input the reference records we parsed
-earlier with SeqIO:
+the [GFF](GFF_Parsing "wikilink") library, this is very easy. We iterate
+over a group of lines at a time to handle very large output files, and
+provide as input the reference records we parsed earlier with SeqIO:
 
 ``` python
 def glimmer_predictions(in_handle, ref_recs):
