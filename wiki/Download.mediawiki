@@ -40,7 +40,7 @@ If you are still stuck, sign up to the [[Mailing_lists|Biopython mailing list]] 
 
 === Required Software ===
 
-* [http://www.python.org Python 2.5, 2.6, 2.7 or 3.3] (Biopython 1.56 was the last release to officially support Python 2.4, although Biopython 1.58 should work)
+* [http://www.python.org Python 2.5, 2.6, 2.7 or 3.3] (Biopython 1.62 is our last release to officially support Python 2.5)
 * [http://www.python.org/doc/current/inst/inst.html C compiler (if compiling from source)] You need a C compiler supported by distutils, gcc will work fine on UNIX-like platforms.  This is not needed on Windows if using the install programs provided above. On Mac OS, we recommend you install Apple's XCode ''including'' the 10.4 SDK if offered.
 * [http://numpy.scipy.org/ NumPy (Numerical Python)]. Note that until Biopython 1.49, Biopython used the older Numeric library.  We have tested NumPy 1.1 to 1.5 with Biopython.
 
