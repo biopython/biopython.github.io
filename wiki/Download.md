@@ -56,6 +56,9 @@ uncompressing the archive, then running the commands:
 `python setup.py test`  
 `sudo python setup.py install`
 
+Substitute python with your specific version, for example python3,
+jython or pypy.
+
 If you have trouble, see the full installation instructions:
 
 -   [HTML Full Installation

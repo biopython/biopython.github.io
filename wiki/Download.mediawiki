@@ -31,6 +31,8 @@ Otherwise you typically install from source by downloading and uncompressing the
  python setup.py test
  sudo python setup.py install
 
+Substitute python with your specific version, for example python3, jython or pypy.
+
 If you have trouble, see the full installation instructions:
 
 * [http://biopython.org/DIST/docs/install/Installation.html HTML Full Installation Instructions]
