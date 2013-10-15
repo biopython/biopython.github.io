@@ -85,12 +85,6 @@ list](Mailing_lists "wikilink") and ask for help there.
 
 ### Optional Software
 
-For compiling Biopython:
-
--   [flex: The Fast Lexical Analyzer](http://flex.sourceforge.net/) --
-    for building Bio.PDB.mmCIF.MMCIFlex which is used to parse
-    macromolecular Crystallographic Information Files (mmCIF)
-
 Some parts of Biopython use the following additional python libraries:
 
 -   [ReportLab](http://www.reportlab.org/downloads.html) -- used for pdf
