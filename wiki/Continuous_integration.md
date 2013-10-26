@@ -41,8 +41,8 @@ General instructions
 --------------------
 
 You will need to install buildbot on your system (\*ONLY\* the slave
-part). We strongly recommend version 0.8,1p1. Please see below more
-specific instructions for your operating system.
+part). Please see below more specific instructions for your operating
+system.
 
 You will also need git installed.
 
