@@ -46,11 +46,11 @@ On linux you should make sure that the version of python you want to test is ava
 
 ==Windows==
 
-After you have your version of Python installed, you will need to install buildbot. In theory, the best way to install buildbot is with [http://pypi.python.org/pypi/setuptools setuptools], but experience shows that it does not work perfectly with buildbot (and twisted, which is also required). Currently there is no twisted binary for python 2.7, so 2.6 is recommended if you do not want to waste much time installing stuff. setuptools can still be used to install zope.interface (twisted requires this). After that then install the twisted binary and then buildbot. To sum it up: install python (2.6) then setuptools then zope.interface via setuptools/easy_install, then twisted (binary), then buildbot-slave (source)... Ok, just one more thing: pywin32 and you are done (get the 32 bit 2.6 binary, not the default download as source).
+After you have your version of Python installed, you will need to install buildbot. We recommend using Python 2.7. easy_install (setuptools) will allow you to install all dependencies except pywin32 and maybe twister (just use the binary installer for the packages).
 
-You will need also a C compiler. MinGW is fine.
+See: http://buildbot.net/trac/wiki/RunningBuildbotOnWindows
 
-See also: http://buildbot.net/trac/wiki/RunningBuildbotOnWindows
+If you install buildbot slave as a service (recommended), you might want to run the python setup script on the link above (buildbot_service.py) on a shell (cmd.exe) with Administrator privileges (right-click on cmd.exe and chose "Run as Administrator").
 
 ==Mac==
 
