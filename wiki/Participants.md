@@ -15,11 +15,11 @@ Tiago Antao
 |                         |                                                                                                                              |
 |-------------------------|------------------------------------------------------------------------------------------------------------------------------|
 | E-mail                  | <tiagoantao@gmail.com>                                                                                                       |
-| Affiliation             | Wellcome Trust Centre for Human Genetics, University of Oxford                                                               |
+| Affiliation             | Liverpool School of Tropical Medicine, UK                                                                                    |
 | Location                | Oxford, UK                                                                                                                   |
 | Uses Python for         | Almost all programming stuff                                                                                                 |
 | Work/Research Interests | Population genetics, infectious diseases (malaria), Anopheles gambiae (malaria vector), selection, effective population size |
-| Biopython Contributions | Bio.PopGen, Java/Jython Zealot                                                                                               |
+| Biopython Contributions | Bio.PopGen, testing                                                                                                          |
 | Relevant URL            | <http://tiago.org>                                                                                                           |
 
 Sebastian Bassi

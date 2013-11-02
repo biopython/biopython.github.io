@@ -10,7 +10,7 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 
 |-
 
-| Affiliation 	          || Wellcome Trust Centre for Human Genetics, University of Oxford
+| Affiliation 	          || Liverpool School of Tropical Medicine, UK
 
 |-
 
@@ -26,7 +26,7 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 
 |-
 
-| Biopython Contributions || Bio.PopGen, Java/Jython Zealot
+| Biopython Contributions || Bio.PopGen, testing
 
 |-
 
