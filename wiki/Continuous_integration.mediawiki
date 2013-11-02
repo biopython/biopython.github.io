@@ -34,7 +34,7 @@ Then you should start your slave with
 
 buildslave start your_slave_directory
 
-Remember to have the external applications that you wish to test (e.g. blast) correctly installed. You should also have all dependencies needed by Biopython installed (e.g. NumPy).
+Remember to have the external applications that you wish to test (e.g. blast) correctly installed, if you want to test all of Biopython you might want to have a look at the [[List of applications executed via Biopython]] and install them all. You should also have all dependencies needed by Biopython installed (e.g. NumPy).
 
 '''Please read the security notes at the end.'''
 
