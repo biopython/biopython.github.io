@@ -36,21 +36,14 @@ Biopython (and other tools) available for testing.
 
 ### Installation Instructions
 
-For Windows we provide click-and-run installers (specific to your
+For **Windows** we provide click-and-run installers (specific to your
 version of python), but you will first need to install some prerequisite
 software (listed below, in particular, NumPy).
 
-Most Linux distributions will include an optional Biopython package
+Most **Linux** distributions will include an optional Biopython package
 (described below), and will take care of any prerequisite software
-automatically.
-
-For Mac OS X, we recommend installing from source (see below). You will
-need to have installed Apple's XCode tools from the App Store (it is a
-big download), and then the optional command line tools from within the
-XCode GUI's options menu.
-
-Otherwise you typically install from source by downloading and
-uncompressing the archive, then running the commands:
+automatically. Otherwise you typically install from source by
+downloading and uncompressing the archive, then running the commands:
 
 `python setup.py build`  
 `python setup.py test`  
@@ -58,6 +51,13 @@ uncompressing the archive, then running the commands:
 
 Substitute python with your specific version, for example python3,
 jython or pypy.
+
+For **Mac OS X**, we recommend installing from source as above. You will
+need to have installed Apple's XCode tools from the App Store (it is a
+big download), and then the optional command line tools from within the
+XCode GUI's options menu, or on Mavericks by using the command:
+
+`xcode-select --install`
 
 If you have trouble, see the full installation instructions:
 
