@@ -60,6 +60,11 @@ Assuming you have setup your compilers etc appropriately just do this:
 `   C:\python33\python setup.py build`  
 `   C:\python33\python setup.py test`
 
+If you are using a modern MinGW compiler, then distutils of Python 2.6
+will use an option (-mno-cywgin) that is deprecated and will break gcc.
+A possible solution is to [edit
+distutils](http://bugs.python.org/issue12641)
+
 Running the tests simultaneously is risky, as two threads may both try
 and read/write to the same temp files.
 
