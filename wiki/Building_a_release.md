@@ -61,9 +61,9 @@ Assuming you have setup your compilers etc appropriately just do this:
 `   C:\python33\python setup.py test`
 
 If you are using MinGW, do not forget to add --compiler=mingw32. Also If
-you are using a \*modern\* MinGW compiler, then distutils of Python
-2.6/7 will use an option (-mno-cywgin) that is deprecated and will break
-gcc. A possible solution is to [edit
+you are using a modern MinGW compiler, then distutils of Python 2.6/7
+will use an option (-mno-cywgin) that is deprecated and will break gcc.
+A possible solution is to [edit
 distutils](http://bugs.python.org/issue12641)
 
 Running the tests simultaneously is risky, as two threads may both try
