@@ -60,10 +60,11 @@ Assuming you have setup your compilers etc appropriately just do this:
 `   C:\python33\python setup.py build`  
 `   C:\python33\python setup.py test`
 
-If you are using MinGW, do not forget to add --compiler=mingw32. Also If
-you are using a modern MinGW compiler, then distutils of Python will use
-an option (-mno-cywgin) that is deprecated and will break gcc. A
-possible solution is to [edit
+If you are using MinGW, do not forget to add --compiler=mingw32 (or make
+it the default on distutils, see the step on building on windows
+machines). Also If you are using a modern MinGW compiler, then distutils
+of Python will use an option (-mno-cywgin) that is deprecated and will
+break gcc. A possible solution is to [edit
 distutils](http://bugs.python.org/issue12641)
 
 Running the tests simultaneously is risky, as two threads may both try
@@ -128,6 +129,12 @@ your compilers etc appropriately just do this:
 `   C:\python26\python setup.py bdist_wininst`  
 `   C:\python27\python setup.py bdist_wininst`  
 `   C:\python33\python setup.py bdist_wininst`
+
+If you are using MinGW, you will have to make distutils use it (it will
+use a MS compiler by default). Here (contrary to the build step) you
+cannot pass the compiler as a parameter. The best solution might be to
+[configure
+distutils](http://stackoverflow.com/questions/3297254/how-to-use-mingws-gcc-compiler-when-installing-python-package-using-pip)
 
 18. Remove any prior Biopython installations on your windows machine,
 and confirm the Windows installers work.
