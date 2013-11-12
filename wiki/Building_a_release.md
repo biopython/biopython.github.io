@@ -28,8 +28,6 @@ If you don't have any of the above, please ask.
 The instructions proper
 -----------------------
 
-=
-
 These instructions are for a Unix machine, with a Windows machine also
 needed to test and prepare the Windows installers.
 

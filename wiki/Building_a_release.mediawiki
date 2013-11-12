@@ -17,7 +17,7 @@ The instructions below require that you have access to a few servers and the cod
 
 If you don't have any of the above, please ask.
 
-==The instructions proper===
+==The instructions proper==
 
 These instructions are for a Unix machine, with a Windows machine also needed to test and prepare the Windows installers.
 
