@@ -1,8 +1,20 @@
-= Current Release - 1.62 - 28 August 2013 =
+= Current Release - 1.62 - 28 August 2013 (beta 1.63 - 12 November 2013) =
 
 See also [https://github.com/biopython/biopython/raw/master/NEWS What's new].
 
 === Files ===
+
+====1.63 (beta)====
+
+* [http://biopython.org/DIST/biopython-1.63b.tar.gz biopython-1.63b.tar.gz] 11,123 Kb -- Source Tarball
+* [http://biopython.org/DIST/biopython-1.63b.zip biopython-1.63b.zip] 12,111 Kb -- Source Zip File
+* [http://biopython.org/DIST/biopython-1.63b.win32-py2.6.exe biopython-1.63b.win32-py2.6.exe] 1,877 Kb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.7
+* [http://biopython.org/DIST/biopython-1.63b.win32-py2.7.exe biopython-1.63b.win32-py2.7.exe] 2,003 Kb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.7
+* [http://biopython.org/DIST/biopython-1.63b.win32-py3.3.exe biopython-1.63b.win32-py3.3.exe] 2,005 Kb -- 32 bit Windows Installer for Python 3.3 and NumPy 1.7
+
+
+====1.62 (stable)====
+
 
 * [http://biopython.org/DIST/biopython-1.62.tar.gz biopython-1.62.tar.gz] 11,123 Kb -- Source Tarball
 * [http://biopython.org/DIST/biopython-1.62.zip biopython-1.62.zip] 12,111 Kb -- Source Zip File
