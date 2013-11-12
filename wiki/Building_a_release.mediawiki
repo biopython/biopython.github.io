@@ -7,7 +7,7 @@ The instructions below require that you have access to a few servers and the cod
 
 1. Write access to the github biopython repo.
 
-2. cloudportal.open-bio.org. You need to have write access to write the API and the source tarballs (might require 2 different operations).
+2. biopython.org aka cloudportal.open-bio.org. You need to have write access to write the API and the source tarballs and Windows installers (might require 2 different operations) under the DIST folder.
 
 3. Wordpress news.open-bio.org with posting permissions.
 
