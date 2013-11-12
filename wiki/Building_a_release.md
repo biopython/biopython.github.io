@@ -183,7 +183,8 @@ able to upload the new version.
     [news.open-bio.org](http://news.open-bio.org) (which will update the
     [news page](News "wikilink") and
     [twitter](http://twitter.com/Biopython) via the news feed)
--   add the new version to [Bugzilla](http://bugzilla.open-bio.org/)
+-   add the new version to
+    [RedMine](https://redmine.open-bio.org/projects/biopython)
 -   send email to biopython@biopython.org and
     biopython-announce@biopython.org (see [mailing
     lists](Mailing_lists "wikilink"))

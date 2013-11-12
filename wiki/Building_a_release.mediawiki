@@ -122,5 +122,5 @@ You need to have a login on pypi and be registered with Biopython to be able to 
 21. Update the website and announce the release:
 * add to [[Main_Page|main page]] and [[Download|downloads page]] (through the wiki), make sure the links work
 * post the announcement on [http://news.open-bio.org news.open-bio.org] (which will update the [[News|news page]] and [http://twitter.com/Biopython twitter] via the news feed)
-* add the new version to [http://bugzilla.open-bio.org/ Bugzilla]
+* add the new version to [https://redmine.open-bio.org/projects/biopython RedMine]
 * send email to biopython@biopython.org and biopython-announce@biopython.org (see [[Mailing_lists|mailing lists]])
