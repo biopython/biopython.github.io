@@ -96,7 +96,7 @@ def tabulate_names(tree):
         else:
             clade.name = str(idx)
         names[clade.name] = clade
-    return clade
+    return names
 ```
 
 ### Calculate distances between neighboring terminals
