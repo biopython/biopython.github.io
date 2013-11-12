@@ -1,5 +1,24 @@
 Build Biopython in 21 easy steps!!
 
+
+==Setup required for a new release manager==
+
+The instructions below require that you have access to a few servers and the code repository. When you start, be sure to have access to:
+
+1. Write access to the github biopython repo.
+
+2. cloudportal.open-bio.org. You need to have write access to write the API and the source tarballs (might require 2 different operations).
+
+3. Wordpress news.open-bio.org with posting permissions.
+
+4. pypi - associated with Biopython.
+
+5. Writing permissions on the wiki page.
+
+If you don't have any of the above, please ask.
+
+==The instructions proper===
+
 These instructions are for a Unix machine, with a Windows machine also needed to test and prepare the Windows installers.
 
 1. make sure I have the latest code
