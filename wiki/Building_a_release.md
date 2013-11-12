@@ -174,7 +174,7 @@ releases):
 You need to have a login on pypi and be registered with Biopython to be
 able to upload the new version.
 
-21. Update the [website](website "wikilink") and announce the release:
+21. Update the website and announce the release:
 
 -   add to [main page](Main_Page "wikilink") and [downloads
     page](Download "wikilink") (through the wiki), make sure the links

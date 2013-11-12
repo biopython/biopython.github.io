@@ -119,7 +119,7 @@ If you are using MinGW, you will have to make distutils use it (it will use a MS
 
 You need to have a login on pypi and be registered with Biopython to be able to upload the new version.
 
-21. Update the [[website]] and announce the release:
+21. Update the website and announce the release:
 * add to [[Main_Page|main page]] and [[Download|downloads page]] (through the wiki), make sure the links work
 * post the announcement on [http://news.open-bio.org news.open-bio.org] (which will update the [[News|news page]] and [http://twitter.com/Biopython twitter] via the news feed)
 * add the new version to [http://bugzilla.open-bio.org/ Bugzilla]
