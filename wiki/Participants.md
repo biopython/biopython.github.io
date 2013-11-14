@@ -22,6 +22,19 @@ Tiago Antao
 | Biopython Contributions | Bio.PopGen, testing                                                                                                          |
 | Relevant URL            | <http://tiago.org>                                                                                                           |
 
+Wibowo Arindrarto
+=================
+
+|                         |                                                                    |
+|-------------------------|--------------------------------------------------------------------|
+| E-mail                  | <bow@bow.web.id>                                                   |
+| Affiliation             | Leiden University Medical Center                                   |
+| Location                | Leiden, The Netherlands                                            |
+| Uses Python for         | exploring NGS data and other programming-related things            |
+| Work/Research Interests | RNA-seq, variant calling, analyzing NGS data in computing clusters |
+| Biopython Contributions | Bio.SearchIO + fixes here and there                                |
+| Relevant URL            | <http://bow.web.id>                                                |
+
 Sebastian Bassi
 ===============
 

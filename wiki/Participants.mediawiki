@@ -34,6 +34,40 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 
 |}
 
+
+= Wibowo Arindrarto =
+{| border="0"
+|-
+
+| E-mail 	          || [mailto:bow@bow.web.id bow@bow.web.id]
+
+|-
+
+| Affiliation 	          || Leiden University Medical Center
+
+|-
+
+| Location 	          || Leiden, The Netherlands
+
+|-
+
+| Uses Python for         || exploring NGS data and other programming-related things
+
+|-
+
+| Work/Research Interests || RNA-seq, variant calling, analyzing NGS data in computing clusters
+
+|-
+
+| Biopython Contributions || Bio.SearchIO + fixes here and there
+
+|-
+
+| Relevant URL            || http://bow.web.id
+
+|}
+
+
 = Sebastian Bassi =
 {| border="0"
 |-
