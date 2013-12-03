@@ -174,10 +174,6 @@ build dependencies with the following command:
 
 `sudo apt-get build-dep python-biopython`
 
-Note: You may need to additionally install the NumPy package by hand, as
-a very out of date repository may still expect Biopython to use Numeric
-instead.
-
 ### Fedora
 
 Biopython is an official Fedora package (since Fedora 5). The package is
