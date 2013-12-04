@@ -4,7 +4,7 @@ permalink: wiki/Building_a_release
 layout: wiki
 ---
 
-Build Biopython in 21 easy steps!!
+Build Biopython in 22 easy steps!!
 
 Setup required for a new release manager
 ----------------------------------------
@@ -189,3 +189,7 @@ able to upload the new version.
     biopython-announce@biopython.org (see [mailing
     lists](Mailing_lists "wikilink"))
 
+22. Update Bio/\_\_init\_\_.py version
+
+Add a plus to the version to note that development is after the said
+version. E.g. if you have \_\_version\_\_ = "1.61", make it 1.61+
