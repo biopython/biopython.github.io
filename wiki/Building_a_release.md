@@ -88,7 +88,8 @@ it the default on distutils, see the step on building on windows
 machines). Also If you are using a modern MinGW compiler, then distutils
 of Python will use an option (-mno-cywgin) that is deprecated and will
 break gcc. A possible solution is to [edit
-distutils](http://bugs.python.org/issue12641)
+distutils](http://bugs.python.org/issue12641), but on recent Python (3.3
+as tested) this seems to have been addressed.
 
 Running the tests simultaneously is risky, as two threads may both try
 and read/write to the same temp files.
