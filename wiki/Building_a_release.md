@@ -189,7 +189,12 @@ able to upload the new version.
     biopython-announce@biopython.org (see [mailing
     lists](Mailing_lists "wikilink"))
 
-22. Update Bio/\_\_init\_\_.py version
+22. Bump version numbers again
+
+-   Update Bio/\_\_init\_\_.py version
+-   Biopython Tutorial - update the date/version line in the
+    Doc/Tutorial.tex file
+-   Make sure to commit the modified files to github.
 
 Add a plus to the version to note that development is after the said
 version. E.g. if you have \_\_version\_\_ = "1.61", make it 1.61+
