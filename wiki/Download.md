@@ -12,33 +12,18 @@ new](https://github.com/biopython/biopython/raw/master/NEWS).
 
 ### Files
 
-#### 1.63 (beta)
+#### 1.63
 
--   [biopython-1.63b.tar.gz](http://biopython.org/DIST/biopython-1.63b.tar.gz)
-    11,123 Kb -- Source Tarball
--   [biopython-1.63b.zip](http://biopython.org/DIST/biopython-1.63b.zip)
-    12,111 Kb -- Source Zip File
--   [biopython-1.63b.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.63b.win32-py2.6.exe)
-    1,877 Kb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.7
--   [biopython-1.63b.win32-py2.7.exe](http://biopython.org/DIST/biopython-1.63b.win32-py2.7.exe)
-    2,003 Kb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.7
--   [biopython-1.63b.win32-py3.3.exe](http://biopython.org/DIST/biopython-1.63b.win32-py3.3.exe)
-    2,005 Kb -- 32 bit Windows Installer for Python 3.3 and NumPy 1.7
-
-#### 1.62 (stable)
-
--   [biopython-1.62.tar.gz](http://biopython.org/DIST/biopython-1.62.tar.gz)
-    11,123 Kb -- Source Tarball
--   [biopython-1.62.zip](http://biopython.org/DIST/biopython-1.62.zip)
-    12,111 Kb -- Source Zip File
--   [biopython-1.62.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.62.win32-py2.5.exe)
-    1,852 Kb -- 32 bit Windows Installer for Python 2.5 and NumPy 1.1
--   [biopython-1.62.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.62.win32-py2.6.exe)
-    1,877 Kb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.3
--   [biopython-1.62.win32-py2.7.exe](http://biopython.org/DIST/biopython-1.62.win32-py2.7.exe)
-    2,003 Kb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.5
--   [biopython-1.62.win32-py3.3.exe](http://biopython.org/DIST/biopython-1.62.win32-py3.3.exe)
-    2,005 Kb -- 32 bit Windows Installer for Python 3.3 and NumPy 1.7
+-   [biopython-1.63.tar.gz](http://biopython.org/DIST/biopython-1.63.tar.gz)
+    11Mb -- Source Tarball
+-   [biopython-1.63.zip](http://biopython.org/DIST/biopython-1.63.zip)
+    12Mb -- Source Zip File
+-   [biopython-1.63.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.63.win32-py2.6.exe)
+    1Mb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.7
+-   [biopython-1.63.win32-py2.7.exe](http://biopython.org/DIST/biopython-1.63.win32-py2.7.exe)
+    2Mb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.7
+-   [biopython-1.63.win32-py3.3.exe](http://biopython.org/DIST/biopython-1.63.win32-py3.3.exe)
+    2Mb -- 32 bit Windows Installer for Python 3.3 and NumPy 1.7
 
 Please report any issues on our [mailing
 lists](mailing_lists "wikilink") or [bug
