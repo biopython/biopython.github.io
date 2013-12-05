@@ -19,7 +19,7 @@ new](https://github.com/biopython/biopython/raw/master/NEWS).
 -   [biopython-1.63.zip](http://biopython.org/DIST/biopython-1.63.zip)
     12Mb -- Source Zip File
 -   [biopython-1.63.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.63.win32-py2.6.exe)
-    1Mb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.7
+    2Mb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.7
 -   [biopython-1.63.win32-py2.7.exe](http://biopython.org/DIST/biopython-1.63.win32-py2.7.exe)
     2Mb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.7
 -   [biopython-1.63.win32-py3.3.exe](http://biopython.org/DIST/biopython-1.63.win32-py3.3.exe)
