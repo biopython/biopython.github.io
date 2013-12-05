@@ -95,7 +95,7 @@ Running the tests simultaneously is risky, as two threads may both try and read/
 * Go to the /usr/local/lib/python2.6/site-packages (or equivalent) directory. Running epydoc in your git tree works, but can miss some packages due to import errors.
     epydoc -v -o ~/api -u http://biopython.org -n Biopython --docformat plaintext Bio BioSQL
 * Move the generated ~/api directory to replace /home/websites/biopython.org/html/static/DIST/docs/api/ on biopython.org (aka cloudportal.open-bio.org).
-
+* Also update /home/websites/biopython.org/html/static/DIST/docs/tutorial with the tutorial files
 16. add git tag
     drevil:~biopython> git tag biopython-159
     drevil:~biopython> git push origin master --tags

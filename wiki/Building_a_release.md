@@ -138,6 +138,9 @@ otherwise overlooked errors).
 -   Move the generated ~/api directory to replace
     /home/websites/biopython.org/html/static/DIST/docs/api/ on
     biopython.org (aka cloudportal.open-bio.org).
+-   Also update
+    /home/websites/biopython.org/html/static/DIST/docs/tutorial with the
+    tutorial files
 
 16. add git tag
 
