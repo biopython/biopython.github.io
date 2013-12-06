@@ -39,5 +39,4 @@ the libraries and tools.
                                                                                                                                                                                                                                                                                             -   [Report bugs](https://github.com/biopython/biopython/issues) ([older issues](http://redmine.open-bio.org/projects/biopython))  |
 
 The latest release is [Biopython 1.62](Download "wikilink"), released on
-28 August 2013. A beta version of 1.63 [is also
-available](Download "wikilink").
+6 December 2013.
