@@ -180,6 +180,9 @@ able to upload the new version.
 
 21. Update the website and announce the release:
 
+-   before you announce the release, be sure to send your announcement
+    text to the biopython-dev mailing list for
+    proof-reading/final corrections.
 -   add to [main page](Main_Page "wikilink") and [downloads
     page](Download "wikilink") (through the wiki), make sure the links
     work
