@@ -226,9 +226,9 @@ NULL
 
 See the rpy2 documentation for further guidance.
 
-===Convert to a PyCogent tree===
+===Convert to a DendroPy or PyCogent tree===
 
-The tree objects used by Biopython and PyCogent are different. Nonetheless, both toolkits support the Newick file format, so interoperability is straightforward at that level:
+The tree objects used by Biopython, DendroPy and PyCogent are different. Nonetheless, all three toolkits support the Newick file format, so interoperability is straightforward at that level by writing to a temporary file or StringIO object with one library, then reading the same string again with another.
 
 <source lang=python>
 from Bio import Phylo
@@ -238,10 +238,15 @@ Phylo.write(bptree, 'mytree.nwk', 'newick')  # Biopython tree
 ctree = cogent.LoadTree('mytree.nwk')        # PyCogent tree
 </source>
 
-''TODO:''
+<source lang=python>
+import dendropy
 
-* Convert objects directly, preserving some PhyloXML annotations if possible
-
+# Create or load a tree in DendroPy
+dtree = dendropy.Tree.get_from_string("(A, (B, C), (D, E))", "newick")
+dtree.write_to_path("tmp.nwk", "newick", suppress_rooting=True)
+# Load the same tree in Biopython
+bptree = Phylo.read("tmp.nwk', 'newick')
+</source>
 
 ===Convert to a NumPy array or matrix===
 
