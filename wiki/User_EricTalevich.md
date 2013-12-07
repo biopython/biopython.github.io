@@ -4,9 +4,10 @@ permalink: wiki/User:EricTalevich
 layout: wiki
 ---
 
-I've been using Biopython in my [lab](http://esbg.bmb.uga.edu/) at the
-University of Georgia since January 2009. I take an interest in the
-evolution and structure of regulatory proteins, mainly.
+I've been using Biopython since January 2009, starting in grad school at
+my [lab](http://esbg.bmb.uga.edu/) at the University of Georgia. I take
+an interest in the genetics, evolution and mechanisms of regulatory
+proteins, mainly.
 
 For Google Summer of Code 2009, I wrote the [Phylo](Phylo "wikilink")
 module to initially support the [PhyloXML](PhyloXML "wikilink") format,
