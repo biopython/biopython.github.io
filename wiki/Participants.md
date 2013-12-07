@@ -205,14 +205,14 @@ João Rodrigues
 Eric Talevich
 =============
 
-|                         |                                                                 |
-|-------------------------|-----------------------------------------------------------------|
-| Affiliation             | Institute of Bioinformatics, University of Georgia              |
-| Location                | Athens, Georgia, USA                                            |
-| Uses Python for         | Scripting, prototyping, glue, web dev -- it's my default choice |
-| Work/Research Interests | Cell signaling networks in pathogenic protozoa; cancer          |
-| Biopython Contributions | Bio.Phylo, occasional maintenance of Bio.PDB                    |
-| Relevant URL            | <http://etalog.blogspot.com>                                    |
+|                         |                                                                       |
+|-------------------------|-----------------------------------------------------------------------|
+| Affiliation             | Department of Dermatology, University of California, San Francisco    |
+| Location                | San Francisco, California, USA                                        |
+| Uses Python for         | Scripting, prototyping, math, glue, web dev -- it's my default choice |
+| Work/Research Interests | Cell signaling networks; cancer; pathogens                            |
+| Biopython Contributions | Bio.Phylo, occasional maintenance of Bio.PDB                          |
+| Relevant URL            | <http://etalog.blogspot.com>                                          |
 
 Bartek Wilczyński
 =================
