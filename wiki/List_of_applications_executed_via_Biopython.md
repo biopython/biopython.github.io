@@ -12,9 +12,11 @@ NumPy
 
 Matplotib
 
-RDFLib (epydoc is requesting this)
+Reportlab (Bio.Graphics only)
 
-NetworkX
+RDFLib (Bio.Phylo.CDAOIO only)
+
+NetworkX (Bio.Phylo.to\_networkx and draw\_graphviz only)
 
 ### Applications
 
