@@ -8,6 +8,8 @@ Matplotib
 
 RDFLib (epydoc is requesting this)
 
+NetworkX
+
 ===Applications===
 
 
