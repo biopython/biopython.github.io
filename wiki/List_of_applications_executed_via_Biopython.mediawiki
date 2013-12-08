@@ -4,13 +4,15 @@
 
 NumPy
 
-Matplotib
-
 Reportlab (Bio.Graphics only)
+
+Matplotlib (Bio.Phylo.draw and draw_graphviz only)
 
 RDFLib (Bio.Phylo.CDAOIO only)
 
 NetworkX (Bio.Phylo.to_networkx and draw_graphviz only)
+
+PyGraphviz or Pydot (Bio.Phylo.draw_graphviz only)
 
 ===Applications===
 
