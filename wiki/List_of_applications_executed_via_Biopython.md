@@ -22,6 +22,24 @@ PyGraphviz or Pydot (Bio.Phylo.draw\_graphviz only)
 
 ### Applications
 
+Bio.Align:
+
+-   [Clustal Omega](http://www.clustal.org/omega/)
+-   [Clustal W](http://www.clustal.org/clustal2/)
+-   [DIALIGN](http://bibiserv.techfak.uni-bielefeld.de/dialign/)
+-   [MSAProbs](http://msaprobs.sourceforge.net/homepage.htm)
+-   [MAFFT](http://mafft.cbrc.jp/alignment/software/)
+-   [MUSCLE](http://www.drive5.com/muscle/)
+-   [PRANK](http://code.google.com/p/prank-msa/)
+-   [ProbCons](http://probcons.stanford.edu/)
+-   [T-Coffee](http://www.tcoffee.org/)
+
+Bio.PDB:
+
+-   [DSSP](http://swift.cmbi.ru.nl/gv/dssp/)
+-   [NACCESS](http://www.e-lucid.com/i/software/bioinformatics/naccess.html)
+-   [PSEA](ftp://ftp.lmcp.jussieu.fr/pub/sincris/software/protein/p-sea/)
+
 Bio.Phylo:
 
 -   [FastTree](http://www.microbesonline.org/fasttree/)
@@ -29,12 +47,6 @@ Bio.Phylo:
 -   [RAxML](http://sco.h-its.org/exelixis/web/software/raxml/index.html)
 -   [PAML](http://abacus.gene.ucl.ac.uk/software/) (baseml,
     codeml, yn00)
-
-Bio.PDB:
-
--   [DSSP](http://swift.cmbi.ru.nl/gv/dssp/)
--   [NACCESS](http://www.e-lucid.com/i/software/bioinformatics/naccess.html)
--   [PSEA](ftp://ftp.lmcp.jussieu.fr/pub/sincris/software/protein/p-sea/)
 
 *I am not particularly fond of the title of this page (tiago), if you
 have a better one, please correct*

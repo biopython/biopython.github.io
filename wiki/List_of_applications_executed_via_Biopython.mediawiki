@@ -16,17 +16,29 @@ PyGraphviz or Pydot (Bio.Phylo.draw_graphviz only)
 
 ===Applications===
 
-Bio.Phylo:
+Bio.Align:
 
-* [http://www.microbesonline.org/fasttree/ FastTree]
-* [http://www.atgc-montpellier.fr/phyml/ PhyML]
-* [http://sco.h-its.org/exelixis/web/software/raxml/index.html RAxML]
-* [http://abacus.gene.ucl.ac.uk/software/ PAML] (baseml, codeml, yn00)
+* [http://www.clustal.org/omega/ Clustal Omega]
+* [http://www.clustal.org/clustal2/ Clustal W]
+* [http://bibiserv.techfak.uni-bielefeld.de/dialign/ DIALIGN]
+* [http://msaprobs.sourceforge.net/homepage.htm MSAProbs]
+* [http://mafft.cbrc.jp/alignment/software/ MAFFT]
+* [http://www.drive5.com/muscle/ MUSCLE]
+* [http://code.google.com/p/prank-msa/ PRANK]
+* [http://probcons.stanford.edu/ ProbCons]
+* [http://www.tcoffee.org/ T-Coffee]
 
 Bio.PDB:
 
 * [http://swift.cmbi.ru.nl/gv/dssp/ DSSP]
 * [http://www.e-lucid.com/i/software/bioinformatics/naccess.html NACCESS]
 * [ftp://ftp.lmcp.jussieu.fr/pub/sincris/software/protein/p-sea/ PSEA]
+
+Bio.Phylo:
+
+* [http://www.microbesonline.org/fasttree/ FastTree]
+* [http://www.atgc-montpellier.fr/phyml/ PhyML]
+* [http://sco.h-its.org/exelixis/web/software/raxml/index.html RAxML]
+* [http://abacus.gene.ucl.ac.uk/software/ PAML] (baseml, codeml, yn00)
 
 ''I am not particularly fond of the title of this page (tiago), if you have a better one, please correct''
