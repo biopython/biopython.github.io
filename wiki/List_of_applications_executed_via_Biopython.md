@@ -34,6 +34,11 @@ Bio.Align:
 -   [ProbCons](http://probcons.stanford.edu/)
 -   [T-Coffee](http://www.tcoffee.org/)
 
+Bio.Blast
+
+-   [NCBI
+    BLAST+](http://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download)
+
 Bio.Emboss:
 
 -   [EMBOSS](http://emboss.open-bio.org/)
