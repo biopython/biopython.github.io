@@ -8,7 +8,7 @@ layout: wiki
 
 ### Python libraries
 
-NumPy
+NumPy (Bio.PDB, Bio.Cluster, ...)
 
 Reportlab (Bio.Graphics only)
 
