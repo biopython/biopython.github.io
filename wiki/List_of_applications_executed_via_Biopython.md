@@ -34,6 +34,10 @@ Bio.Align:
 -   [ProbCons](http://probcons.stanford.edu/)
 -   [T-Coffee](http://www.tcoffee.org/)
 
+Bio.Emboss:
+
+-   [EMBOSS](http://emboss.open-bio.org/)
+
 Bio.PDB:
 
 -   [DSSP](http://swift.cmbi.ru.nl/gv/dssp/)
