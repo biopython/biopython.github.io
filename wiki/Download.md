@@ -4,8 +4,8 @@ permalink: wiki/Download
 layout: wiki
 ---
 
-Current Release - 1.62 - 28 August 2013 (beta 1.63 - 12 November 2013)
-======================================================================
+Current Release - 1.63 - 5 December 2013
+========================================
 
 See also [What's
 new](https://github.com/biopython/biopython/raw/master/NEWS).
