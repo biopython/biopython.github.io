@@ -159,6 +159,19 @@ build dependencies with the following command:
 
 `sudo apt-get build-dep python-biopython`
 
+### Archlinux
+
+Biopython is in the [official Archlinux
+repository](https://www.archlinux.org/packages/?q=biopython) as
+python-biopython (for Python 3) or python2-biopython (for Python 2) and
+can be installed using pacman:
+
+`  pacman -S python2-biopython`
+
+Or, for Python 3:
+
+`  pacman -S python-biopython`
+
 ### Fedora
 
 Biopython is an official Fedora package (since Fedora 5). The package is

@@ -97,6 +97,18 @@ However, this will probably not be the latest release (see [http://packages.ubun
 
  sudo apt-get build-dep python-biopython
 
+
+=== Archlinux ===
+
+Biopython is in the [https://www.archlinux.org/packages/?q=biopython official Archlinux repository] as python-biopython (for Python 3) or python2-biopython (for Python 2) and can be installed using pacman:
+
+   pacman -S python2-biopython
+
+Or, for Python 3:
+
+   pacman -S python-biopython
+
+
 === Fedora ===
 
 Biopython is an official Fedora package (since Fedora 5).  The package is named [https://admin.fedoraproject.org/community/?package=python-biopython#package_maintenance python-biopython], and can be installed using yum as root:
