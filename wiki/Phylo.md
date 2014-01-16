@@ -428,12 +428,12 @@ Upcoming GSoC 2013 features
 ---------------------------
 
 Many new features for building and processing phylogenetic trees were
-developed by Yanbo Ye for [Google Summer of Code
-2013](Google_Summer_of_Code_2013 "wikilink"). They are implemented on a
-development branch which has not yet been merged into the main Biopython
-codebase, but is available on GitHub at:
-<https://github.com/lijax/biopython>. Note that the behavior and API of
-these features may change before the official release.
+developed by Yanbo Ye for [Google Summer of
+Code](Google_Summer_of_Code "wikilink") 2013. They are available on the
+development branch (see [SourceCode](SourceCode "wikilink")) but are not
+yet included in an official Biopython release version. Note that the
+behavior and API of these features may change before the upcoming
+official release.
 
 ### Tree Construction
 
