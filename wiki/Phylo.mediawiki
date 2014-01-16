@@ -644,7 +644,7 @@ True
 &gt;&gt;&gt; compare(tree2, tree3)
 False</pre>
 
-===External Applications===
+==External Applications==
 
 * Bio.Phylo.PhymlCommandline provides a wrapper for [http://www.atgc-montpellier.fr/phyml/ PhyML] following the usual Bio.Applications API.
 * Bio.Phylo.[[PAML]] provides wrappers, parsers and utilities for working with the PAML suite of programs.

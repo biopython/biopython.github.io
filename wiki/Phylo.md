@@ -861,7 +861,8 @@ To use it:
     &gt;&gt;&gt; compare(tree2, tree3)
     False
 
-### External Applications
+External Applications
+---------------------
 
 -   Bio.Phylo.PhymlCommandline provides a wrapper for
     [PhyML](http://www.atgc-montpellier.fr/phyml/) following the usual
