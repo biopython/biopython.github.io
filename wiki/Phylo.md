@@ -724,25 +724,25 @@ Also you can delete or insert a column&row of elements by index:
     &gt;&gt;&gt; m
     _Matrix(names=['Alpha', 'Beta', 'Gamma', 'Delta'], matrix=[[0], [7, 0], [8, 4, 0], [9, 5, 6, 0]])
 
-#### BitString
+#### \_BitString
 
-`BitString` is an assistant class used frequently in the algorithms in
+`_BitString` is an assistant class used frequently in the algorithms in
 the `Consensus` module. It's a sub-class of `str` object that only
 accepts two characters('0' and '1'), with additional functions for
 binary-like manipulation(&|^~). Common usage is as follows:
 
-    &gt;&gt;&gt; from Bio.Phylo.Consensus import BitString
-    &gt;&gt;&gt; bitstr1 = BitString('11111')
-    &gt;&gt;&gt; bitstr2 = BitString('11100')
-    &gt;&gt;&gt; bitstr3 = BitString('01101')
+    &gt;&gt;&gt; from Bio.Phylo.Consensus import _BitString
+    &gt;&gt;&gt; bitstr1 = _BitString('11111')
+    &gt;&gt;&gt; bitstr2 = _BitString('11100')
+    &gt;&gt;&gt; bitstr3 = _BitString('01101')
     &gt;&gt;&gt; bitstr1
-    BitString('11111')
+    _BitString('11111')
     &gt;&gt;&gt; bitstr2 &amp; bitstr3
-    BitString('01100')
+    _BitString('01100')
     &gt;&gt;&gt; bitstr2 | bitstr3
-    BitString('11101')
+    _BitString('11101')
     &gt;&gt;&gt; bitstr2 ^ bitstr3
-    BitString('10001')
+    _BitString('10001')
     &gt;&gt;&gt; bitstr2.index_one()
     [0, 1, 2]
     &gt;&gt;&gt; bitstr3.index_one()
@@ -775,7 +775,7 @@ strict consensus tree:
     tree1: (((A, B), C),(D, E))
     tree2: ((A, (B, C)),(D, E))
 
-For both trees, a `BitString` object '11111' will represent their root
+For both trees, a `_BitString` object '11111' will represent their root
 clade. Each '1' stands for the terminal clade in the list \[A, B, C, D,
 E\] (the order might not be the same, it's determined by the
 `get_terminal` method of the first tree provided). For the clade ((A,
@@ -785,17 +785,17 @@ represents clade (B, C) in tree2, and '00011' represents clade (D, E) in
 both trees.
 
 So, with the `_count_clades` function in this module, finally we can get
-the clade counts and their BitString representation as follows(the root
-and terminals are omitted):
+the clade counts and their \_BitString representation as follows(the
+root and terminals are omitted):
 
-    clade   BitString   count
+    clade   _BitString   count
     ABC     '11100'     2
     DE      '00011'     2
     AB      '11000'     1
     BC      '01100'     1
 
-To get the BitString representation of a clade, we can use the following
-code snippet:
+To get the \_BitString representation of a clade, we can use the
+following code snippet:
 
     # suppose we are provided with a tree list, the first thing to do is 
     # to get all the terminal names in the first tree
@@ -804,8 +804,8 @@ code snippet:
     clade_term_names = [term.name for term in clade.get_terminals()]
     # then create a boolean list 
     boolvals = [name in clade_term_names for name in term_names]
-    # create the string version and pass it to BitString  
-    bitstr = BitString(''.join(map(str, map(int, boolvals))))
+    # create the string version and pass it to _BitString  
+    bitstr = _BitString(''.join(map(str, map(int, boolvals))))
 
 To convert back:
 
@@ -819,13 +819,13 @@ To convert back:
     new_clade = BaseTree.Clade()
     new_clade.clades.extend(clade_terms)
 
-This is how the `BitString` is used in the consensus and branch support
+This is how the `_BitString` is used in the consensus and branch support
 algorithms. And I think it can be used in many other conditions.
 
 For example, we can even use it to check whether the structures of two
 trees are the same.
 
-    # store and return all BitStrings
+    # store and return all _BitStrings
     def _bitstrs(tree):
         bitstrs = set()
         term_names = [term.name for term in tree.get_terminals()]
@@ -833,7 +833,7 @@ trees are the same.
         for clade in tree.get_nonterminals():
             clade_term_names = [term.name for term in clade.get_terminals()]
             boolvals = [name in clade_term_names for name in term_names]  
-            bitstr = BitString(''.join(map(str, map(int, boolvals))))
+            bitstr = _BitString(''.join(map(str, map(int, boolvals))))
             bitstrs.add(bitstr)
         return bitstrs
         
@@ -843,7 +843,7 @@ trees are the same.
         # false if terminals are not the same 
         if set(term_names1) != set(term_names2):
             return False
-        # true if BitStrings are the same
+        # true if _BitStrings are the same
         if _bitstrs(tree1) == _bitstrs(tree2):
             return True
         else:

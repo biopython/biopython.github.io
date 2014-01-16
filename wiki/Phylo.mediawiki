@@ -532,22 +532,22 @@ _Matrix(names=['Beta', 'Gamma', 'Delta'], matrix=[[0], [4, 0], [5, 6, 0]])
 &gt;&gt;&gt; m
 _Matrix(names=['Alpha', 'Beta', 'Gamma', 'Delta'], matrix=[[0], [7, 0], [8, 4, 0], [9, 5, 6, 0]])</pre>
 
-==== BitString ====
+==== _BitString ====
 
-<code>BitString</code> is an assistant class used frequently in the algorithms in the <code>Consensus</code> module. It's a sub-class of <code>str</code> object that only accepts two characters('0' and '1'), with additional functions for binary-like manipulation(&amp;|^~). Common usage is as follows:
+<code>_BitString</code> is an assistant class used frequently in the algorithms in the <code>Consensus</code> module. It's a sub-class of <code>str</code> object that only accepts two characters('0' and '1'), with additional functions for binary-like manipulation(&amp;|^~). Common usage is as follows:
 
-<pre>&gt;&gt;&gt; from Bio.Phylo.Consensus import BitString
-&gt;&gt;&gt; bitstr1 = BitString('11111')
-&gt;&gt;&gt; bitstr2 = BitString('11100')
-&gt;&gt;&gt; bitstr3 = BitString('01101')
+<pre>&gt;&gt;&gt; from Bio.Phylo.Consensus import _BitString
+&gt;&gt;&gt; bitstr1 = _BitString('11111')
+&gt;&gt;&gt; bitstr2 = _BitString('11100')
+&gt;&gt;&gt; bitstr3 = _BitString('01101')
 &gt;&gt;&gt; bitstr1
-BitString('11111')
+_BitString('11111')
 &gt;&gt;&gt; bitstr2 &amp; bitstr3
-BitString('01100')
+_BitString('01100')
 &gt;&gt;&gt; bitstr2 | bitstr3
-BitString('11101')
+_BitString('11101')
 &gt;&gt;&gt; bitstr2 ^ bitstr3
-BitString('10001')
+_BitString('10001')
 &gt;&gt;&gt; bitstr2.index_one()
 [0, 1, 2]
 &gt;&gt;&gt; bitstr3.index_one()
@@ -574,16 +574,16 @@ For example, let's say two trees are provided as below to search their strict co
 
 <pre>tree1: (((A, B), C),(D, E))
 tree2: ((A, (B, C)),(D, E))</pre>
-For both trees, a <code>BitString</code> object '11111' will represent their root clade. Each '1' stands for the terminal clade in the list [A, B, C, D, E] (the order might not be the same, it's determined by the <code>get_terminal</code> method of the first tree provided). For the clade ((A, B), C) in tree1 and (A, (B, C)) in tree2, they both can be represented by '11100'. Similarly, '11000' represents clade (A, B) in tree1, '01100' represents clade (B, C) in tree2, and '00011' represents clade (D, E) in both trees.
+For both trees, a <code>_BitString</code> object '11111' will represent their root clade. Each '1' stands for the terminal clade in the list [A, B, C, D, E] (the order might not be the same, it's determined by the <code>get_terminal</code> method of the first tree provided). For the clade ((A, B), C) in tree1 and (A, (B, C)) in tree2, they both can be represented by '11100'. Similarly, '11000' represents clade (A, B) in tree1, '01100' represents clade (B, C) in tree2, and '00011' represents clade (D, E) in both trees.
 
-So, with the <code>_count_clades</code> function in this module, finally we can get the clade counts and their BitString representation as follows(the root and terminals are omitted):
+So, with the <code>_count_clades</code> function in this module, finally we can get the clade counts and their _BitString representation as follows(the root and terminals are omitted):
 
-<pre>clade   BitString   count
+<pre>clade   _BitString   count
 ABC     '11100'     2
 DE      '00011'     2
 AB      '11000'     1
 BC      '01100'     1</pre>
-To get the BitString representation of a clade, we can use the following code snippet:
+To get the _BitString representation of a clade, we can use the following code snippet:
 
 <pre># suppose we are provided with a tree list, the first thing to do is 
 # to get all the terminal names in the first tree
@@ -592,8 +592,8 @@ term_names = [term.name for term in trees[0].get_terminals()]
 clade_term_names = [term.name for term in clade.get_terminals()]
 # then create a boolean list 
 boolvals = [name in clade_term_names for name in term_names]
-# create the string version and pass it to BitString  
-bitstr = BitString(''.join(map(str, map(int, boolvals))))</pre>
+# create the string version and pass it to _BitString  
+bitstr = _BitString(''.join(map(str, map(int, boolvals))))</pre>
 To convert back:
 
 <pre># get all the terminal clades of the first tree
@@ -605,11 +605,11 @@ clade_terms = [terms[i] for i in index_list]
 # create a new calde and append all the terminal clades
 new_clade = BaseTree.Clade()
 new_clade.clades.extend(clade_terms)</pre>
-This is how the <code>BitString</code> is used in the consensus and branch support algorithms. And I think it can be used in many other conditions.
+This is how the <code>_BitString</code> is used in the consensus and branch support algorithms. And I think it can be used in many other conditions.
 
 For example, we can even use it to check whether the structures of two trees are the same.
 
-<pre># store and return all BitStrings
+<pre># store and return all _BitStrings
 def _bitstrs(tree):
     bitstrs = set()
     term_names = [term.name for term in tree.get_terminals()]
@@ -617,7 +617,7 @@ def _bitstrs(tree):
     for clade in tree.get_nonterminals():
         clade_term_names = [term.name for term in clade.get_terminals()]
         boolvals = [name in clade_term_names for name in term_names]  
-        bitstr = BitString(''.join(map(str, map(int, boolvals))))
+        bitstr = _BitString(''.join(map(str, map(int, boolvals))))
         bitstrs.add(bitstr)
     return bitstrs
     
@@ -627,7 +627,7 @@ def compare(tree1, tree2):
     # false if terminals are not the same 
     if set(term_names1) != set(term_names2):
         return False
-    # true if BitStrings are the same
+    # true if _BitStrings are the same
     if _bitstrs(tree1) == _bitstrs(tree2):
         return True
     else:
