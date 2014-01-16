@@ -481,18 +481,18 @@ In the above code, we use the first tree as the target tree that we want to calc
 
 There are some other classes in both <code>TreeConstruction</code> and <code>Consensus</code> module that are used in those algorithms. They may not be used commonly, but might be useful to you in some cases.
 
-==== Matrix ====
+==== _Matrix ====
 
-The <code>Matrix</code> class in the <code>TreeConstruction</code> module is the super class of <code>DistanceMatrix</code>. They are both actually constructed by a list of names and a nested list of numbers in lower triangular matrix format. The only difference between them is that the diagonal elements in <code>DistanceMatrix</code> will all be 0 no matter what values are assigned.
+The <code>_Matrix</code> class in the <code>TreeConstruction</code> module is the super class of <code>_DistanceMatrix</code>. They are both actually constructed by a list of names and a nested list of numbers in lower triangular matrix format. The only difference between them is that the diagonal elements in <code>_DistanceMatrix</code> will all be 0 no matter what values are assigned.
 
-To create a <code>Matrix</code> object:
+To create a <code>_Matrix</code> object:
 
-<pre>&gt;&gt;&gt; from Bio.Phylo.TreeConstruction import Matrix
+<pre>&gt;&gt;&gt; from Bio.Phylo.TreeConstruction import _Matrix
 &gt;&gt;&gt; names = ['Alpha', 'Beta', 'Gamma', 'Delta']
 &gt;&gt;&gt; matrix = [[0], [1, 0], [2, 3, 0], [4, 5, 6, 0]]
-&gt;&gt;&gt; m = Matrix(names, matrix)
+&gt;&gt;&gt; m = _Matrix(names, matrix)
 &gt;&gt;&gt; m
-Matrix(names=['Alpha', 'Beta', 'Gamma', 'Delta'], matrix=[[0], [1, 0], [2, 3, 0], [4, 5, 6, 0]])
+_Matrix(names=['Alpha', 'Beta', 'Gamma', 'Delta'], matrix=[[0], [1, 0], [2, 3, 0], [4, 5, 6, 0]])
 &gt;&gt;&gt; print m
 Alpha   0
 Beta    1   0
@@ -524,13 +524,13 @@ Further more, you can use one index to get or assign a list of elements related 
 Also you can delete or insert a column&amp;row of elements by index:
 
 <pre>&gt;&gt;&gt; m
-Matrix(names=['Alpha', 'Beta', 'Gamma', 'Delta'], matrix=[[0], [7, 0], [8, 4, 0], [9, 5, 6, 0]])
+_Matrix(names=['Alpha', 'Beta', 'Gamma', 'Delta'], matrix=[[0], [7, 0], [8, 4, 0], [9, 5, 6, 0]])
 &gt;&gt;&gt; del m['Alpha']
 &gt;&gt;&gt; m
-Matrix(names=['Beta', 'Gamma', 'Delta'], matrix=[[0], [4, 0], [5, 6, 0]])
+_Matrix(names=['Beta', 'Gamma', 'Delta'], matrix=[[0], [4, 0], [5, 6, 0]])
 &gt;&gt;&gt; m.insert('Alpha', [0, 7, 8, 9] , 0)
 &gt;&gt;&gt; m
-Matrix(names=['Alpha', 'Beta', 'Gamma', 'Delta'], matrix=[[0], [7, 0], [8, 4, 0], [9, 5, 6, 0]])</pre>
+_Matrix(names=['Alpha', 'Beta', 'Gamma', 'Delta'], matrix=[[0], [7, 0], [8, 4, 0], [9, 5, 6, 0]])</pre>
 
 ==== BitString ====
 

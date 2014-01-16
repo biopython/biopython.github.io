@@ -664,22 +664,22 @@ There are some other classes in both `TreeConstruction` and `Consensus`
 module that are used in those algorithms. They may not be used commonly,
 but might be useful to you in some cases.
 
-#### Matrix
+#### \_Matrix
 
-The `Matrix` class in the `TreeConstruction` module is the super class
-of `DistanceMatrix`. They are both actually constructed by a list of
+The `_Matrix` class in the `TreeConstruction` module is the super class
+of `_DistanceMatrix`. They are both actually constructed by a list of
 names and a nested list of numbers in lower triangular matrix format.
 The only difference between them is that the diagonal elements in
-`DistanceMatrix` will all be 0 no matter what values are assigned.
+`_DistanceMatrix` will all be 0 no matter what values are assigned.
 
-To create a `Matrix` object:
+To create a `_Matrix` object:
 
-    &gt;&gt;&gt; from Bio.Phylo.TreeConstruction import Matrix
+    &gt;&gt;&gt; from Bio.Phylo.TreeConstruction import _Matrix
     &gt;&gt;&gt; names = ['Alpha', 'Beta', 'Gamma', 'Delta']
     &gt;&gt;&gt; matrix = [[0], [1, 0], [2, 3, 0], [4, 5, 6, 0]]
-    &gt;&gt;&gt; m = Matrix(names, matrix)
+    &gt;&gt;&gt; m = _Matrix(names, matrix)
     &gt;&gt;&gt; m
-    Matrix(names=['Alpha', 'Beta', 'Gamma', 'Delta'], matrix=[[0], [1, 0], [2, 3, 0], [4, 5, 6, 0]])
+    _Matrix(names=['Alpha', 'Beta', 'Gamma', 'Delta'], matrix=[[0], [1, 0], [2, 3, 0], [4, 5, 6, 0]])
     &gt;&gt;&gt; print m
     Alpha   0
     Beta    1   0
@@ -716,13 +716,13 @@ related to that index:
 Also you can delete or insert a column&row of elements by index:
 
     &gt;&gt;&gt; m
-    Matrix(names=['Alpha', 'Beta', 'Gamma', 'Delta'], matrix=[[0], [7, 0], [8, 4, 0], [9, 5, 6, 0]])
+    _Matrix(names=['Alpha', 'Beta', 'Gamma', 'Delta'], matrix=[[0], [7, 0], [8, 4, 0], [9, 5, 6, 0]])
     &gt;&gt;&gt; del m['Alpha']
     &gt;&gt;&gt; m
-    Matrix(names=['Beta', 'Gamma', 'Delta'], matrix=[[0], [4, 0], [5, 6, 0]])
+    _Matrix(names=['Beta', 'Gamma', 'Delta'], matrix=[[0], [4, 0], [5, 6, 0]])
     &gt;&gt;&gt; m.insert('Alpha', [0, 7, 8, 9] , 0)
     &gt;&gt;&gt; m
-    Matrix(names=['Alpha', 'Beta', 'Gamma', 'Delta'], matrix=[[0], [7, 0], [8, 4, 0], [9, 5, 6, 0]])
+    _Matrix(names=['Alpha', 'Beta', 'Gamma', 'Delta'], matrix=[[0], [7, 0], [8, 4, 0], [9, 5, 6, 0]])
 
 #### BitString
 
