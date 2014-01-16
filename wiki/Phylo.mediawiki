@@ -649,7 +649,7 @@ False</pre>
 * Bio.Phylo.PhymlCommandline provides a wrapper for [http://www.atgc-montpellier.fr/phyml/ PhyML] following the usual Bio.Applications API.
 * Bio.Phylo.[[PAML]] provides wrappers, parsers and utilities for working with the PAML suite of programs.
 
-===Example pipeline===
+==Example pipeline==
 
 See the [http://biopython.org/DIST/docs/tutorial/Tutorial.html Biopython Tutorial] sections on sequence alignment and BLAST for explanations of the first few steps shown here.
 

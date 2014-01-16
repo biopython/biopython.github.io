@@ -870,7 +870,8 @@ External Applications
 -   Bio.Phylo.[PAML](PAML "wikilink") provides wrappers, parsers and
     utilities for working with the PAML suite of programs.
 
-### Example pipeline
+Example pipeline
+----------------
 
 See the [Biopython
 Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
