@@ -23,9 +23,14 @@ Past mentors include:
 
 == Current projects ==
 
-This year, NESCent was selected as a mentoring organization for Google Summer of Code. See also [http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2013 NESCent's GSoC page].
+Google Summer of Code 2014 is ON! Google has not yet selected the mentoring organizations for this summer, but we are collecting project ideas and proposals here.
 
-===  Codon alignment and analysis ===
+
+== Past Proposals ==
+
+=== 2013 ===
+
+====  Codon alignment and analysis ====
 ;  Student
 : Zheng Ruan ([http://zr1991.blogspot.de/ blog])
 ;  Rationale
@@ -41,7 +46,7 @@ This year, NESCent was selected as a mentoring organization for Google Summer of
 ;  Mentors
 :  [http://etal.myweb.uga.edu/ Eric Talevich], [https://github.com/peterjc/ Peter Cock]
 
-===  Bio.Phylo: filling in the gaps ===
+====  Bio.Phylo: filling in the gaps ====
 ;  Student
 : Yanbo Ye ([http://blog.yeyanbo.com/tag/gsoc.html blog])
 ;  Rationale
@@ -56,9 +61,7 @@ This year, NESCent was selected as a mentoring organization for Google Summer of
 ;  Difficulty and needed skills
 :  Medium-to-advanced programming skill in Python -- it's important for these implementations to be reasonably efficient, though we don't aim to compete with the fastest stand-alone implementations of these algorithms. Knowledge of phylogenetic methods is critical; for reference, you might like to have a copy of Joe Felsenstein's ''[http://www.sinauer.com/detail.php?id=1775 Inferring Phylogenies]''. Tree visualizations are done with matplotlib.
 ;  Mentors
-:  [http://etal.myweb.uga.edu/ Eric Talevich], others welcome
-
-== Past Proposals ==
+:  Mark Holder, Jeet Sukumaran, [http://etal.myweb.uga.edu/ Eric Talevich]
 
 === 2012 ===
 ==== [http://biopython.org/wiki/SearchIO SearchIO] ====

@@ -40,11 +40,16 @@ Past mentors include:
 Current projects
 ----------------
 
-This year, NESCent was selected as a mentoring organization for Google
-Summer of Code. See also [NESCent's GSoC
-page](http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2013).
+Google Summer of Code 2014 is ON! Google has not yet selected the
+mentoring organizations for this summer, but we are collecting project
+ideas and proposals here.
 
-### Codon alignment and analysis
+Past Proposals
+--------------
+
+### 2013
+
+#### Codon alignment and analysis
 
 Student  
 Zheng Ruan ([blog](http://zr1991.blogspot.de/))
@@ -82,7 +87,7 @@ Mentors
 [Eric Talevich](http://etal.myweb.uga.edu/), [Peter
 Cock](https://github.com/peterjc/)
 
-### Bio.Phylo: filling in the gaps
+#### Bio.Phylo: filling in the gaps
 
 Student  
 Yanbo Ye ([blog](http://blog.yeyanbo.com/tag/gsoc.html))
@@ -124,10 +129,7 @@ reference, you might like to have a copy of Joe Felsenstein's
 Tree visualizations are done with matplotlib.
 
 Mentors  
-[Eric Talevich](http://etal.myweb.uga.edu/), others welcome
-
-Past Proposals
---------------
+Mark Holder, Jeet Sukumaran, [Eric Talevich](http://etal.myweb.uga.edu/)
 
 ### 2012
 
