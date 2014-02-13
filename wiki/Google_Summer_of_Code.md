@@ -17,39 +17,18 @@ Please read those organizations' GSoC pages and the [main Google Summer
 of Code page](http://code.google.com/soc) for more details about the
 program.
 
-Mentor List
------------
-
-Usually, each BioPython proposal has one or more mentors assigned to it.
-Nevertheless, we encourage potential students/mentors to contact the
-[mailing lists](http://biopython.org/wiki/Mailing_lists) with their own
-ideas for proposals. There is therefore not a set list of 'available'
-mentors, since it highly depends on which projects are proposed every
-year.
-
-Past mentors include:
-
--   [James Casbon](http://casbon.me/)
--   [Brad Chapman](https://github.com/chapmanb)
--   [Peter Cock](http://www.hutton.ac.uk/staff/peter-cock)
--   [Thomas Hamelryck](http://wiki.binf.ku.dk/User:Thomas_Hamelryck)
--   [Reece Hart](http://www.linkedin.com/in/reece)
--   [João Rodrigues](http://nmr.chem.uu.nl/~joao)
--   [Eric Talevich](http://etal.myweb.uga.edu/)
-
 Current project proposals
 -------------------------
 
-Google Summer of Code 2014 is ON! Google has not yet selected the
-mentoring organizations for this summer, but we are collecting project
-ideas and proposals here.
+Google Summer of Code 2014 is ON! We are applying for GSoC 2014 as a
+mentoring organization with the [Open Bioinformatics Foundation
+(OBF)](http://www.open-bio.org/wiki/Google_Summer_of_Code) and are now
+collecting project ideas and proposals here.
 
-The BioPython proposals for future Google Summers of Code are to be
-published here once discussed. We encourage potential students and
-mentors to join the [BioPython mailing
-lists](http://biopython.org/wiki/Mailing_lists) and actively participate
-in these discussions, either by submitting their own ideas or
-contributing to improving existing ones.
+We encourage potential students and mentors to join the [BioPython
+mailing lists](http://biopython.org/wiki/Mailing_lists) and actively
+participate in developing these project ideas, either by submitting
+their own ideas or contributing to improving existing ones.
 
 ### Indexing & Lazy-loading Sequence Parsers
 
@@ -89,7 +68,28 @@ Hard. Familiarity with the Biopython's existing sequence
 parsing essential. Understanding of indexing large files will be vital.
 
 Possible Mentors  
-[Peter Cock](https://github.com/peterjc/), others welcome
+[Wibowo Arindrarto](https://github.com/bow), [Peter
+Cock](https://github.com/peterjc/), others welcome
+
+Past Mentors
+------------
+
+Usually, each BioPython proposal has one or more mentors assigned to it.
+Nevertheless, we encourage potential students/mentors to contact the
+[mailing lists](http://biopython.org/wiki/Mailing_lists) with their own
+ideas for proposals. There is therefore not a set list of 'available'
+mentors, since it highly depends on which projects are proposed every
+year.
+
+Past mentors include:
+
+-   [James Casbon](http://casbon.me/)
+-   [Brad Chapman](https://github.com/chapmanb)
+-   [Peter Cock](http://www.hutton.ac.uk/staff/peter-cock)
+-   [Thomas Hamelryck](http://wiki.binf.ku.dk/User:Thomas_Hamelryck)
+-   [Reece Hart](http://www.linkedin.com/in/reece)
+-   [João Rodrigues](http://nmr.chem.uu.nl/~joao)
+-   [Eric Talevich](http://etal.myweb.uga.edu/)
 
 Past Proposals
 --------------
