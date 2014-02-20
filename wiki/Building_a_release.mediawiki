@@ -1,4 +1,4 @@
-Build Biopython in 22 easy steps!!
+Build Biopython in 23 easy steps!!
 
 
 ==Setup required for a new release manager==
@@ -126,7 +126,9 @@ You need to have a login on pypi and be registered with Biopython to be able to 
 * add the new version to [https://redmine.open-bio.org/projects/biopython RedMine]
 * send email to biopython@biopython.org and biopython-announce@biopython.org (see [[Mailing_lists|mailing lists]])
 
-22. Bump version numbers again
+22. Ask Peter, Brad, or Bjoern to prepare a new Galaxy package on https://github.com/biopython/galaxy_packages and upload it to the main and test Galaxy ToolShed
+
+23. Bump version numbers again
 * Update Bio/__init__.py version
 * Biopython Tutorial - update the date/version line in the Doc/Tutorial.tex file
 * Make sure to commit the modified files to github.
