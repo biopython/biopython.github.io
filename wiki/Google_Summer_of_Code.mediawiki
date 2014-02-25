@@ -59,7 +59,7 @@ Past mentors include:
 
 ====  Codon alignment and analysis ====
 ;  Student
-: Zheng Ruan ([http://zr1991.blogspot.de/ blog])
+: Zheng Ruan ([http://zruanweb.com/ blog])
 ;  Rationale
 :  A codon alignment is an alignment of nucleotide sequences in which the trinucleotides correspond directly to amino acids in the translated protein product. This carries important information which can be used for several analysis, notably analysis of selection pressures. This project extends Biopython to support this data type and these analyses.
 ;  Approach & Goals

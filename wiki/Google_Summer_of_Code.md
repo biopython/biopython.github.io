@@ -99,7 +99,7 @@ Past Proposals
 #### Codon alignment and analysis
 
 Student  
-Zheng Ruan ([blog](http://zr1991.blogspot.de/))
+Zheng Ruan ([blog](http://zruanweb.com/))
 
 Rationale  
 A codon alignment is an alignment of nucleotide sequences in which the
