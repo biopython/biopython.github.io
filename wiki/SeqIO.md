@@ -10,6 +10,10 @@ This page describes Bio.SeqIO, the standard Sequence Input/Output
 interface for BioPython 1.43 and later. For implementation details, see
 the [SeqIO development page](SeqIO_dev "wikilink").
 
+Python novices might find Peter's introductory [Biopython
+Workshop](https://github.com/peterjc/biopython_workshop) useful which
+start with working with sequence files using SeqIO.
+
 There is a whole chapter in the
 [Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
 ([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)) on
