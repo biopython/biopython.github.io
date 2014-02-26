@@ -22,36 +22,10 @@ there is a whole chapter in the
 ([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)), and the
 [SeqIO](SeqIO "wikilink") page is also very relevant.
 
-Creating a SeqRecord object
----------------------------
-
-Most of the time you'll create **SeqRecord** objects by parsing a
-sequence file with [Bio.SeqIO](SeqIO "wikilink"). However, it is useful
-to know how to create a **SeqRecord** directly. For example,
-
-``` python
-from Bio.Seq import Seq
-from Bio.SeqRecord import SeqRecord
-from Bio.Alphabet import IUPAC
-record = SeqRecord(Seq("MKQHKAMIVALIVICITAVVAALVTRKDLCEVHIRTGQTEVAVF",
-                   IUPAC.protein),
-                   id="YP_025292.1", name="HokC",
-                   description="toxic membrane protein, small")
-print record
-```
-
-This would give the following output:
-
-`ID: YP_025292.1`  
-`Name: HokC`  
-`Description: toxic membrane protein, small`  
-`Number of features: 0`  
-`Seq('MKQHKAMIVALIVICITAVVAALVTRKDLCEVHIRTGQTEVAVF', IUPACProtein())`
-
 Extracting information from a SeqRecord
 ---------------------------------------
 
-Lets look in closer detail at the well annotated **SeqRecord** objects
+Lets look in detail at the well annotated **SeqRecord** objects
 Biopython creates from a GenBank file, such as
 [ls\_orchid.gbk](http://biopython.org/DIST/docs/tutorial/examples/ls_orchid.gbk),
 which we'll load using the [SeqIO](SeqIO "wikilink") module. This file
@@ -221,3 +195,32 @@ files, so in this case the dictionary is empty:
 Have a look at FASTQ or QUAL files to see how quality scores are
 represented. Stockholm (PFAM) alignment files also often include
 per-letter-annotation.
+
+Creating a SeqRecord object
+---------------------------
+
+Most of the time you'll create **SeqRecord** objects by parsing a
+sequence file with [Bio.SeqIO](SeqIO "wikilink"). However, it is useful
+to know how to create a **SeqRecord** directly. For example,
+
+``` python
+from Bio.Seq import Seq
+from Bio.SeqRecord import SeqRecord
+from Bio.Alphabet import IUPAC
+record = SeqRecord(Seq("MKQHKAMIVALIVICITAVVAALVTRKDLCEVHIRTGQTEVAVF",
+                   IUPAC.protein),
+                   id="YP_025292.1", name="HokC",
+                   description="toxic membrane protein, small")
+print record
+```
+
+This would give the following output:
+
+`ID: YP_025292.1`  
+`Name: HokC`  
+`Description: toxic membrane protein, small`  
+`Number of features: 0`  
+`Seq('MKQHKAMIVALIVICITAVVAALVTRKDLCEVHIRTGQTEVAVF', IUPACProtein())`
+
+You could then pass this new record to
+[Bio.SeqIO.write(...)](SeqIO "wikilink") to save it to disk.

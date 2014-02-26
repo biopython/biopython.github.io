@@ -4,31 +4,9 @@ Most of the sequence file format parsers in BioPython can return '''SeqRecord'''
 
 In addition to the '''SeqRecord''' object's [http://biopython.org/DIST/docs/api/Bio.SeqRecord.SeqRecord-class.html API documentation], there is a whole chapter in the [http://biopython.org/DIST/docs/tutorial/Tutorial.html Tutorial] ([http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF]), and the [[SeqIO]] page is also very relevant.
 
-== Creating a SeqRecord object ==
-
-Most of the time you'll create '''SeqRecord''' objects by parsing a sequence file with [[SeqIO|Bio.SeqIO]].  However, it is useful to know how to create a '''SeqRecord''' directly.  For example,
-<source lang=python>
-from Bio.Seq import Seq
-from Bio.SeqRecord import SeqRecord
-from Bio.Alphabet import IUPAC
-record = SeqRecord(Seq("MKQHKAMIVALIVICITAVVAALVTRKDLCEVHIRTGQTEVAVF",
-                   IUPAC.protein),
-                   id="YP_025292.1", name="HokC",
-                   description="toxic membrane protein, small")
-print record
-</source>
-
-This would give the following output:
-
- ID: YP_025292.1
- Name: HokC
- Description: toxic membrane protein, small
- Number of features: 0
- Seq('MKQHKAMIVALIVICITAVVAALVTRKDLCEVHIRTGQTEVAVF', IUPACProtein())
-
 == Extracting information from a SeqRecord ==
 
-Lets look in closer detail at the well annotated '''SeqRecord''' objects Biopython creates from a GenBank file, such as [http://biopython.org/DIST/docs/tutorial/examples/ls_orchid.gbk ls_orchid.gbk], which we'll load using the [[SeqIO]] module.  This file contains 94 records:
+Lets look in detail at the well annotated '''SeqRecord''' objects Biopython creates from a GenBank file, such as [http://biopython.org/DIST/docs/tutorial/examples/ls_orchid.gbk ls_orchid.gbk], which we'll load using the [[SeqIO]] module.  This file contains 94 records:
 
 <source lang=python>
 from Bio import SeqIO
@@ -173,3 +151,27 @@ If you are using Biopython 1.50 or later, there will also be a '''letter_annotat
 </source>
 
 Have a look at FASTQ or QUAL files to see how quality scores are represented.  Stockholm (PFAM) alignment files also often include per-letter-annotation.
+
+== Creating a SeqRecord object ==
+
+Most of the time you'll create '''SeqRecord''' objects by parsing a sequence file with [[SeqIO|Bio.SeqIO]].  However, it is useful to know how to create a '''SeqRecord''' directly.  For example,
+<source lang=python>
+from Bio.Seq import Seq
+from Bio.SeqRecord import SeqRecord
+from Bio.Alphabet import IUPAC
+record = SeqRecord(Seq("MKQHKAMIVALIVICITAVVAALVTRKDLCEVHIRTGQTEVAVF",
+                   IUPAC.protein),
+                   id="YP_025292.1", name="HokC",
+                   description="toxic membrane protein, small")
+print record
+</source>
+
+This would give the following output:
+
+ ID: YP_025292.1
+ Name: HokC
+ Description: toxic membrane protein, small
+ Number of features: 0
+ Seq('MKQHKAMIVALIVICITAVVAALVTRKDLCEVHIRTGQTEVAVF', IUPACProtein())
+
+You could then pass this new record to [[SeqIO|Bio.SeqIO.write(...)]] to save it to disk.
