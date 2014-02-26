@@ -28,7 +28,7 @@ Main sources of [documentation](documentation "wikilink"):
 
 <!-- -->
 
--   Peter's \[[Biopython Workshop for Python
+-   Peter's [Biopython Workshop for Python
     Novices](https://github.com/peterjc/biopython_workshop), focussed on
     working with sequence files.
 

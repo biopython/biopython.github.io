@@ -6,6 +6,6 @@ Main sources of [[documentation]]:
 
 * [[Category%3ACookbook|Cookbook documentation]] (on the wiki)
 
-* Peter's [[https://github.com/peterjc/biopython_workshop Biopython Workshop for Python Novices], focussed on working with sequence files.
+* Peter's [https://github.com/peterjc/biopython_workshop Biopython Workshop for Python Novices], focussed on working with sequence files.
 
 In addition, this wiki contains some information on a few of the core functions of Biopython, all of those pages are included in this category:
