@@ -26,6 +26,12 @@ Main sources of [documentation](documentation "wikilink"):
 -   [Cookbook documentation](Category%3ACookbook "wikilink") (on
     the wiki)
 
+<!-- -->
+
+-   Peter's \[[Biopython Workshop for Python
+    Novices](https://github.com/peterjc/biopython_workshop), focussed on
+    working with sequence files.
+
 In addition, this wiki contains some information on a few of the core
 functions of Biopython, all of those pages are included in this
 category:
