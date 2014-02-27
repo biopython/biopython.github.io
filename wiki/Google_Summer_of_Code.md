@@ -71,6 +71,32 @@ Possible Mentors
 [Wibowo Arindrarto](https://github.com/bow), [Peter
 Cock](https://github.com/peterjc/), others welcome
 
+### Interactive GenomeDiagram Module
+
+Rationale  
+The GenomeDiagram genome/comparative genomics visualisation module
+currently produces static images (bitmap format), or images with
+relatively limited interactive capability such as click-throughs
+(.pdf, .svg). This is fine for its original intent of producing
+publication-quality graphics, but interactivity such as dynamic
+formatting, data selection, and box-outs would greatly enhance the value
+of the existing visualisations, and enable new uses.
+
+Approach & Goals  
+The [Bokeh](http://bokeh.pydata.org/) interactive visualisation library
+uses the standalone [BokehJS](http://bokeh.pydata.org/dev_guide.html)
+backend for in-browser visualisation. Targeting BokehJS with
+GenomeDiagram ought to be possible.
+
+Difficulty and needed skills  
+Looks tricky to me. Introduction of BokehJS brings dependencies that may
+not be desirable for Biopython. BokehJS is in Coffeescript - the Python
+interface is not well documented.
+
+Possible Mentors  
+[Leighton Pritchard](https://github.com/widdowquinn) though I'd be
+learning as much as the student, so others very welcome.
+
 Past Mentors
 ------------
 
