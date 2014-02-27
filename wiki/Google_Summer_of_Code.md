@@ -91,7 +91,8 @@ GenomeDiagram ought to be possible.
 Difficulty and needed skills  
 Looks tricky to me. Introduction of BokehJS brings dependencies that may
 not be desirable for Biopython. BokehJS is in Coffeescript - the Python
-interface is not well documented.
+interface is not well documented. Familiarity with Javascript would be
+very useful.
 
 Possible Mentors  
 [Leighton Pritchard](https://github.com/widdowquinn) though I'd be

@@ -31,7 +31,7 @@ We encourage potential students and mentors to join the [http://biopython.org/wi
 ;  Approach & Goals
 : The [http://bokeh.pydata.org/ Bokeh] interactive visualisation library uses the standalone [http://bokeh.pydata.org/dev_guide.html BokehJS] backend for in-browser visualisation. Targeting BokehJS with GenomeDiagram ought to be possible.
 ;  Difficulty and needed skills
-:  Looks tricky to me. Introduction of BokehJS brings dependencies that may not be desirable for Biopython. BokehJS is in Coffeescript - the Python interface is not well documented.
+:  Looks tricky to me. Introduction of BokehJS brings dependencies that may not be desirable for Biopython. BokehJS is in Coffeescript - the Python interface is not well documented. Familiarity with Javascript would be very useful.
 ;  Possible Mentors
 :  [https://github.com/widdowquinn Leighton Pritchard] though I'd be learning as much as the student, so others very welcome.
 
