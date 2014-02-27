@@ -20,10 +20,11 @@ program.
 Current project proposals
 -------------------------
 
-Google Summer of Code 2014 is ON! We are applying for GSoC 2014 as a
-mentoring organization with the [Open Bioinformatics Foundation
-(OBF)](http://www.open-bio.org/wiki/Google_Summer_of_Code) and are now
-collecting project ideas and proposals here.
+Google Summer of Code 2014 is ON! We were accepted into GSoC 2014 with
+the [Open Bioinformatics Foundation
+(OBF)](http://www.open-bio.org/wiki/Google_Summer_of_Code) as the
+mentoring organization, and are now collecting project ideas and
+proposals here.
 
 We encourage potential students and mentors to join the [BioPython
 mailing lists](http://biopython.org/wiki/Mailing_lists) and actively
