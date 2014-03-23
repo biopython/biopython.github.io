@@ -129,7 +129,7 @@ This table lists the file formats that Bio.SeqIO can read, write and index, with
 | 1.54
 | 1.54
 | 1.54
-| Standard Flowgram Format (SFF) files produced by 454 sequencing.
+| Standard Flowgram Format ([http://www.ncbi.nlm.nih.gov/books/NBK47537/#File_Format_Guide_B.Standard_Flowgram_Fo SFF]) binary files produced by Roche 454 and IonTorrent/IonProton sequencing machines.
 |-
 | stockholm
 | 1.43
