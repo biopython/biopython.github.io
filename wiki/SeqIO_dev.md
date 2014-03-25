@@ -79,7 +79,9 @@ Possible additional formats
 ---------------------------
 
 There are existing parsers in BioPython for the following file formats,
-which could be integrated into Bio.SeqIO or Bio.AlignIO if appropriate.
+which could be integrated into [SeqIO](SeqIO "wikilink"),
+[AlignIO](AlignIO "wikilink") or [SearchIO](SearchIO "wikilink") if
+appropriate.
 
 ### KEGG format
 
@@ -98,9 +100,3 @@ like it could be treated like an alignment format.
 Pairwise alignments from the BLAST suite could be turned into a pairwise
 Alignment object with Bio.AlignIO. Is this useful? Sample code on [Bug
 2560](http://bugzilla.open-bio.org/show_bug.cgi?id=2560)
-
-### COMPASS pairwise alignment format
-
-Bio.Compass can parse the pairwise alignments from COMPASS. The output
-is similar to BLAST in many ways. Again, is getting the results as
-SeqRecord or pairwise alignment objects useful?
