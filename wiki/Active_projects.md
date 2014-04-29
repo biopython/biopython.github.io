@@ -128,7 +128,11 @@ Enhancement list
 ----------------
 
 Maintaining software involves incremental improvements for new format
-changes and removal of bugs. Please see our [Issue
-Tracker](http://redmine.open-bio.org/projects/biopython) page for a
-current list. Post to the developer mailing list if you are interested
-in tackling any open issues.
+changes and removal of bugs. Please see the [GitHub pull
+requests](https://github.com/biopython/biopython/pulls), [open issues
+list](https://github.com/biopython/biopython/issues?state=open) and our
+old [Issue Tracker](http://redmine.open-bio.org/projects/biopython) for
+an overview.
+
+Post to the developer mailing list if you are interested in tackling any
+open issues.

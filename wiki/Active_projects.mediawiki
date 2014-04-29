@@ -48,4 +48,6 @@ Please add any ideas or proposals for new additions to Biopython. Bugs and enhan
 
 == Enhancement list ==
 
-Maintaining software involves incremental improvements for new format changes and removal of bugs. Please see our [http://redmine.open-bio.org/projects/biopython Issue Tracker] page for a current list. Post to the developer mailing list if you are interested in tackling any open issues.
+Maintaining software involves incremental improvements for new format changes and removal of bugs. Please see the [https://github.com/biopython/biopython/pulls GitHub pull requests], [https://github.com/biopython/biopython/issues?state=open open issues list] and our old [http://redmine.open-bio.org/projects/biopython Issue Tracker] for an overview.
+
+Post to the developer mailing list if you are interested in tackling any open issues.
