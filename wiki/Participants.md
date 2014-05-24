@@ -9,18 +9,18 @@ partial listing, see also the [contributor
 listing](http://biopython.org/SRC/biopython/CONTRIB) in the Biopython
 source code.
 
-Tiago Antao
-===========
+[Tiago Antao](User%3ATiago "wikilink")
+======================================
 
-|                         |                                                                                                                              |
-|-------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| E-mail                  | <tiagoantao@gmail.com>                                                                                                       |
-| Affiliation             | Liverpool School of Tropical Medicine, UK                                                                                    |
-| Location                | Oxford, UK                                                                                                                   |
-| Uses Python for         | Almost all programming stuff                                                                                                 |
-| Work/Research Interests | Population genetics, infectious diseases (malaria), Anopheles gambiae (malaria vector), selection, effective population size |
-| Biopython Contributions | Bio.PopGen, testing                                                                                                          |
-| Relevant URL            | <http://tiago.org>                                                                                                           |
+|                         |                                                                                                                |
+|-------------------------|----------------------------------------------------------------------------------------------------------------|
+| E-mail                  | <tiagoantao@gmail.com>                                                                                         |
+| Affiliation             | Liverpool School of Tropical Medicine, UK                                                                      |
+| Location                | Liverpool, UK                                                                                                  |
+| Uses Python for         | Almost all programming stuff                                                                                   |
+| Work/Research Interests | Population genetics, infectious diseases (malaria), Anopheles gambiae (malaria vector), big data, data science |
+| Biopython Contributions | Bio.PopGen, testing, Python 3 zealot                                                                           |
+| Relevant URL            | <http://tiago.org>                                                                                             |
 
 Wibowo Arindrarto
 =================

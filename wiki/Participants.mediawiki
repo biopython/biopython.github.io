@@ -2,7 +2,7 @@ Note: People are listed here alphabetically by surname.
 This is only a partial listing, see also the [http://biopython.org/SRC/biopython/CONTRIB contributor listing] in the Biopython source code.
 
 
-= Tiago Antao =
+= [[User%3ATiago|Tiago Antao]] =
 {| border="0"
 |-
 
@@ -14,7 +14,7 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 
 |-
 
-| Location 	          || Oxford, UK
+| Location 	          || Liverpool, UK
 
 |-
 
@@ -22,18 +22,17 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 
 |-
 
-| Work/Research Interests || Population genetics, infectious diseases (malaria), Anopheles gambiae (malaria vector), selection, effective population size
+| Work/Research Interests || Population genetics, infectious diseases (malaria), Anopheles gambiae (malaria vector), big data, data science
 
 |-
 
-| Biopython Contributions || Bio.PopGen, testing
+| Biopython Contributions || Bio.PopGen, testing, Python 3 zealot
 
 |-
 
 | Relevant URL            || http://tiago.org
 
 |}
-
 
 = Wibowo Arindrarto =
 {| border="0"
