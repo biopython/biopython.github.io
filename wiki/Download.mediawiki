@@ -51,7 +51,9 @@ If you are still stuck, sign up to the [[Mailing_lists|Biopython mailing list]] 
 
 Some parts of Biopython use the following additional python libraries:
 * [http://www.reportlab.org/downloads.html ReportLab] -- used for pdf graphics code
-* [http://sourceforge.net/projects/mysql-python MySQLdb] -- used for [[BioSQL]] with a MySQL database
+* [http://initd.org/psycopg/ psycopg] -- used for [[BioSQL]] with a PostgreSQL database
+* [http://dev.mysql.com/downloads/connector/python/ mysql-connector] -- used for [[BioSQL]] with a MySQL database
+* [http://sourceforge.net/projects/mysql-python MySQLdb] -- An alternative MySQL library used by [[BioSQL]]
 
 In addition Biopython includes wrapper code for calling a number of third party command line tools including:
 * [http://www.ebi.ac.uk/Wise2/ Wise2] -- for command line tool dnal

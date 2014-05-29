@@ -89,8 +89,12 @@ Some parts of Biopython use the following additional python libraries:
 
 -   [ReportLab](http://www.reportlab.org/downloads.html) -- used for pdf
     graphics code
--   [MySQLdb](http://sourceforge.net/projects/mysql-python) -- used for
-    [BioSQL](BioSQL "wikilink") with a MySQL database
+-   [psycopg](http://initd.org/psycopg/) -- used for
+    [BioSQL](BioSQL "wikilink") with a PostgreSQL database
+-   [mysql-connector](http://dev.mysql.com/downloads/connector/python/)
+    -- used for [BioSQL](BioSQL "wikilink") with a MySQL database
+-   [MySQLdb](http://sourceforge.net/projects/mysql-python) -- An
+    alternative MySQL library used by [BioSQL](BioSQL "wikilink")
 
 In addition Biopython includes wrapper code for calling a number of
 third party command line tools including:
