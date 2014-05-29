@@ -158,7 +158,8 @@ your compilers etc appropriately just do this:
 
 `   C:\python26\python setup.py bdist_wininst`  
 `   C:\python27\python setup.py bdist_wininst`  
-`   C:\python33\python setup.py bdist_wininst`
+`   C:\python33\python setup.py bdist_wininst`  
+`   C:\python34\python setup.py bdist_wininst`
 
 If you are using MinGW, you will have to make distutils use it (it will
 use a MS compiler by default). Here (contrary to the build step) you
