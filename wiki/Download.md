@@ -4,26 +4,28 @@ permalink: wiki/Download
 layout: wiki
 ---
 
-Current Release - 1.63 - 5 December 2013
-========================================
+Current Release - 1.64 - 29 May 2014
+====================================
 
 See also [What's
 new](https://github.com/biopython/biopython/raw/master/NEWS).
 
 ### Files
 
-#### 1.63
+#### 1.64
 
--   [biopython-1.63.tar.gz](http://biopython.org/DIST/biopython-1.63.tar.gz)
-    11Mb -- Source Tarball
--   [biopython-1.63.zip](http://biopython.org/DIST/biopython-1.63.zip)
-    12Mb -- Source Zip File
--   [biopython-1.63.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.63.win32-py2.6.exe)
-    2Mb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.7
--   [biopython-1.63.win32-py2.7.exe](http://biopython.org/DIST/biopython-1.63.win32-py2.7.exe)
-    2Mb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.7
--   [biopython-1.63.win32-py3.3.exe](http://biopython.org/DIST/biopython-1.63.win32-py3.3.exe)
-    2Mb -- 32 bit Windows Installer for Python 3.3 and NumPy 1.7
+-   [biopython-1.64.tar.gz](http://biopython.org/DIST/biopython-1.64.tar.gz)
+    12Mb -- Source Tarball
+-   [biopython-1.64.zip](http://biopython.org/DIST/biopython-1.64.zip)
+    13Mb -- Source Zip File
+-   [biopython-1.64.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.64.win32-py2.6.exe)
+    2Mb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.8.1
+-   [biopython-1.64.win32-py2.7.exe](http://biopython.org/DIST/biopython-1.64.win32-py2.7.exe)
+    2Mb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.8.1
+-   [biopython-1.64.win32-py3.3.exe](http://biopython.org/DIST/biopython-1.64.win32-py3.3.exe)
+    2Mb -- 32 bit Windows Installer for Python 3.3 and NumPy 1.8.1
+-   [biopython-1.64.win32-py3.4.exe](http://biopython.org/DIST/biopython-1.64.win32-py3.4.exe)
+    2Mb -- 32 bit Windows Installer for Python 3.4 and NumPy 1.8.1
 
 Please report any issues on our [mailing
 lists](mailing_lists "wikilink") or [bug
@@ -223,6 +225,19 @@ Old Releases
 ============
 
 Recent releases of Biopython require NumPy (and not Numeric):
+
+-   [biopython-1.63.tar.gz](http://biopython.org/DIST/biopython-1.63.tar.gz)
+    11Mb -- Source Tarball
+-   [biopython-1.63.zip](http://biopython.org/DIST/biopython-1.63.zip)
+    12Mb -- Source Zip File
+-   [biopython-1.63.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.63.win32-py2.6.exe)
+    2Mb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.7
+-   [biopython-1.63.win32-py2.7.exe](http://biopython.org/DIST/biopython-1.63.win32-py2.7.exe)
+    2Mb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.7
+-   [biopython-1.63.win32-py3.3.exe](http://biopython.org/DIST/biopython-1.63.win32-py3.3.exe)
+    2Mb -- 32 bit Windows Installer for Python 3.3 and NumPy 1.7
+
+<!-- -->
 
 -   [biopython-1.62b.tar.gz](http://biopython.org/DIST/biopython-1.62b.tar.gz)
     10,658 Kb -- Source Tarball (*beta release*, 15 July 2013)
