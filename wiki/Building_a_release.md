@@ -129,6 +129,9 @@ and read/write to the same temp files.
 `   drevil:~tmp2/biopython-1.53/> python setup.py test`  
 `   drevil:~tmp2/biopython-1.53/> python setup.py install --root . `
 
+A typical source of failure here (on the tests) is the lack of example
+files being added to the source distribution: add them to MANIFEST.in
+
 15. Update API documentation using Epydoc (this can often report
 otherwise overlooked errors).
 

@@ -94,6 +94,8 @@ Running the tests simultaneously is risky, as two threads may both try and read/
     drevil:~tmp2/biopython-1.53/> python setup.py test
     drevil:~tmp2/biopython-1.53/> python setup.py install --root . 
 
+A typical source of failure here (on the tests) is the lack of example files being added to the source distribution: add them to MANIFEST.in
+
 15. Update API documentation using Epydoc (this can often report otherwise overlooked errors).
 * Go to the /usr/local/lib/python2.6/site-packages (or equivalent) directory. Running epydoc in your git tree works, but can miss some packages due to import errors.
     epydoc -v -o ~/api -u http://biopython.org -n Biopython --docformat plaintext Bio BioSQL
