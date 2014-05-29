@@ -61,6 +61,9 @@ Ideally do this with a clean checkout on your Windows machine too.  Assuming you
     C:\python33\python setup.py build
     C:\python33\python setup.py test
 
+    C:\python34\python setup.py build
+    C:\python34\python setup.py test
+
 
 If you are using MinGW, do not forget to add  --compiler=mingw32 (or make it the default on distutils, see the step on building on windows machines). Also If you are using a modern MinGW compiler, then distutils of Python will use an option (-mno-cywgin) that is deprecated and will break gcc. A possible solution is to [http://bugs.python.org/issue12641 edit distutils], but on recent Python (3.3 as tested) this seems to have been addressed.
 

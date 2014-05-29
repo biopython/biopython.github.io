@@ -83,6 +83,9 @@ Assuming you have setup your compilers etc appropriately just do this:
 `   C:\python33\python setup.py build`  
 `   C:\python33\python setup.py test`
 
+`   C:\python34\python setup.py build`  
+`   C:\python34\python setup.py test`
+
 If you are using MinGW, do not forget to add --compiler=mingw32 (or make
 it the default on distutils, see the step on building on windows
 machines). Also If you are using a modern MinGW compiler, then distutils
