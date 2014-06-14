@@ -205,6 +205,8 @@ able to upload the new version.
 -   send email to biopython@biopython.org and
     biopython-announce@biopython.org (see [mailing
     lists](Mailing_lists "wikilink"))
+-   forward the email to Linux packagers e.g.
+    debian-med@lists.debian.org
 
 22. Ask Peter, Brad, or Bjoern to prepare a new Galaxy package on
 <https://github.com/biopython/galaxy_packages> and upload it to the main

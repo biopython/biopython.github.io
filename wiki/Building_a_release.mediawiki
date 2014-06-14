@@ -131,6 +131,7 @@ You need to have a login on pypi and be registered with Biopython to be able to 
 * post the announcement on [http://news.open-bio.org news.open-bio.org] (which will update the [[News|news page]] and [http://twitter.com/Biopython twitter] via the news feed)
 * add the new version to [https://redmine.open-bio.org/projects/biopython RedMine]
 * send email to biopython@biopython.org and biopython-announce@biopython.org (see [[Mailing_lists|mailing lists]])
+* forward the email to Linux packagers e.g. debian-med@lists.debian.org 
 
 22. Ask Peter, Brad, or Bjoern to prepare a new Galaxy package on https://github.com/biopython/galaxy_packages and upload it to the main and test Galaxy ToolShed
 
