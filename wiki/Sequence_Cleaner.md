@@ -81,8 +81,8 @@ INPUT-(1st) MIN\_LENGHT-(2nd) MIN\_%-(3rd) - there are 3 basic
 parameters:
 
 `        #1st: your fasta file `  
-`        #2nd: the user defines the minimum length (default value 0 ( It means you don't have to care about the minimum lenght)`  
-`        #3rd: the user defines the % of N is allowed (default value 100 ( It means  you dont care to 'N' in your sequences))`
+`        #2nd: the user defines the minimum length (default value 0 (It means you don't have to care about the minimum length)`  
+`        #3rd: the user defines the % of N is allowed (default value 100 ( It means  you dont care to 'N' in your sequences), set value to -1 if you want no sequences with "N" in your output)`
 
 `        For exemple: python sequence_cleaner.py Aip_coral.fasta 10 10`
 
