@@ -424,7 +424,7 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 {| border="0"
 |-
 
-| E-mail                  || leighton.pritchard@hutton.ac.uk
+| E-mail                  || [mailto:leighton.pritchard@hutton.ac.uk leighton.pritchard@hutton.ac.uk]
 
 |-
 

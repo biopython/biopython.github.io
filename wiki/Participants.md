@@ -181,7 +181,7 @@ Frank Kauff
 
 |                         |                                                                                                                                                                   |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| E-mail                  | leighton.pritchard@hutton.ac.uk                                                                                                                                   |
+| E-mail                  | <leighton.pritchard@hutton.ac.uk>                                                                                                                                 |
 | Affiliation             | [The James Hutton Institute](http://www.hutton.ac.uk/) (formerly the Scottish Crop Research Institute)                                                            |
 | Location                | Invergowrie, Scotland                                                                                                                                             |
 | Uses Python for         | Generally when I have to explain to a computer exactly what I want it to do                                                                                       |
