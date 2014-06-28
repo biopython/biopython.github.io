@@ -181,13 +181,13 @@ Frank Kauff
 
 |                         |                                                                                                                                                                   |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| E-mail                  | lpritc(squiggly symbol)scri ac uk                                                                                                                                 |
-| Affiliation             | [Scottish Crop Research Institute](http://www.scri.ac.uk/)                                                                                                        |
+| E-mail                  | leighton.pritchard@hutton.ac.uk                                                                                                                                   |
+| Affiliation             | [The James Hutton Institute](http://www.hutton.ac.uk/) (formerly the Scottish Crop Research Institute)                                                            |
 | Location                | Invergowrie, Scotland                                                                                                                                             |
 | Uses Python for         | Generally when I have to explain to a computer exactly what I want it to do                                                                                       |
 | Work/Research Interests | Comparative genomics; Systems Biology; Protein sequence-structure-function relationships; Plant host-pathogen interactions and genomics (heavy on the pathogens). |
 | Biopython Contributions | GenomeDiagram, bits and bobs                                                                                                                                      |
-| Relevant URL            | <http://www.scri.ac.uk/staff/leightonpritchard>                                                                                                                   |
+| Relevant URL            | [<http://www.hutton.ac.uk/staff/leighton-pritchard>](http://www.hutton.ac.uk/staff/leighton-pritchard)                                                            |
 
 João Rodrigues
 ==============

@@ -424,11 +424,11 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 {| border="0"
 |-
 
-| E-mail                  || lpritc(squiggly symbol)scri ac uk
+| E-mail                  || leighton.pritchard@hutton.ac.uk
 
 |-
 
-| Affiliation             || [http://www.scri.ac.uk/ Scottish Crop Research Institute]
+| Affiliation             || [http://www.hutton.ac.uk/ The James Hutton Institute] (formerly the Scottish Crop Research Institute)
 
 |-
 
@@ -448,7 +448,7 @@ This is only a partial listing, see also the [http://biopython.org/SRC/biopython
 
 |-
 
-| Relevant URL            || http://www.scri.ac.uk/staff/leightonpritchard
+| Relevant URL            || [http://www.hutton.ac.uk/staff/leighton-pritchard http://www.hutton.ac.uk/staff/leighton-pritchard]
 
 |}
 
