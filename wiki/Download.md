@@ -73,8 +73,8 @@ list](Mailing_lists "wikilink") and ask for help there.
 
 ### Required Software
 
--   [Python 2.5, 2.6, 2.7, 3.3 or 3.4](http://www.python.org) (Biopython
-    1.62 is our last release to officially support Python 2.5)
+-   [Python 2.6, 2.7, 3.3 or 3.4](http://www.python.org) (Biopython 1.62
+    was our last release to officially support Python 2.5)
 -   [C compiler (if compiling
     from source)](http://www.python.org/doc/current/inst/inst.html) You
     need a C compiler supported by distutils, gcc will work fine on
