@@ -4,7 +4,7 @@ This page provides a central location to collect references to active projects. 
 
 === Porting Biopython documentation to Sphinx ===
 
-We are planning to port Biopython's documentation from the existing combination of LaTeX (cookbook and main docs) and EpyDoc (API docs) to [http://sphinx.pocoo.org/ Sphinx]. This is a multi-step process which we're proceeding through incrementally, and help is always appreciated. See the [https://redmine.open-bio.org/issues/3219 feature request].
+It has been proposed we port Biopython's documentation from the existing combination of LaTeX (cookbook and main docs) and EpyDoc (API docs) to [http://sphinx.pocoo.org/ Sphinx]. This is a multi-step process which we're proceeding through incrementally, and help is always appreciated. See the [https://redmine.open-bio.org/issues/3219 feature request]. The short term goal is converting all the docstrings (API docs) to use reStructuredText markup rather than EpyDoc specific markup.
 
 === Extending Bio.PDB ===
 
