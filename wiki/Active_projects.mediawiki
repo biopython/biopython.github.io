@@ -34,7 +34,7 @@ This [http://bugzilla.open-bio.org/buglist.cgi?product=Biopython&bug_status=NEW&
 
 === Branches on github.com ===
 
-The [http://github.com/biopython/biopython/network Biopython network diagram at github.com] will show all public branches of our repository on github, and will therefore let you see things that are being worked on.
+The [http://github.com/biopython/biopython/network Biopython network diagram at github.com] will show all public branches of our repository on github, and will therefore let you see things that are being worked on. Sadly this no longer gives a good overview as more and more people are contributing to Biopython - there is no way to zoom out for example.
 
 == Project ideas ==
 

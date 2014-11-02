@@ -94,7 +94,9 @@ fairly likely to be integrated, some are just wish list entries).
 The [Biopython network diagram at
 github.com](http://github.com/biopython/biopython/network) will show all
 public branches of our repository on github, and will therefore let you
-see things that are being worked on.
+see things that are being worked on. Sadly this no longer gives a good
+overview as more and more people are contributing to Biopython - there
+is no way to zoom out for example.
 
 Project ideas
 -------------
