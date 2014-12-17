@@ -4,28 +4,28 @@ permalink: wiki/Download
 layout: wiki
 ---
 
-Current Release - 1.64 - 29 May 2014
-====================================
+Current Release - 1.65 - 17 December 2014
+=========================================
 
 See also [What's
 new](https://github.com/biopython/biopython/raw/master/NEWS).
 
 ### Files
 
-#### 1.64
+#### Biopython 1.65
 
--   [biopython-1.64.tar.gz](http://biopython.org/DIST/biopython-1.64.tar.gz)
-    12Mb -- Source Tarball
--   [biopython-1.64.zip](http://biopython.org/DIST/biopython-1.64.zip)
-    13Mb -- Source Zip File
--   [biopython-1.64.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.64.win32-py2.6.exe)
-    2Mb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.8.1
--   [biopython-1.64.win32-py2.7.exe](http://biopython.org/DIST/biopython-1.64.win32-py2.7.exe)
-    2Mb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.8.1
--   [biopython-1.64.win32-py3.3.exe](http://biopython.org/DIST/biopython-1.64.win32-py3.3.exe)
-    2Mb -- 32 bit Windows Installer for Python 3.3 and NumPy 1.8.1
--   [biopython-1.64.win32-py3.4.exe](http://biopython.org/DIST/biopython-1.64.win32-py3.4.exe)
-    2Mb -- 32 bit Windows Installer for Python 3.4 and NumPy 1.8.1
+-   [biopython-1.65.tar.gz](http://biopython.org/DIST/biopython-1.65.tar.gz)
+    13Mb -- Source Tarball
+-   [biopython-1.65.zip](http://biopython.org/DIST/biopython-1.65.zip)
+    14Mb -- Source Zip File
+-   [biopython-1.65.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.65.win32-py2.6.exe)
+    2Mb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.8.2
+-   [biopython-1.65.win32-py2.7.exe](http://biopython.org/DIST/biopython-1.65.win32-py2.7.exe)
+    2Mb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.9.1
+-   [biopython-1.65.win32-py3.3.exe](http://biopython.org/DIST/biopython-1.65.win32-py3.3.exe)
+    2Mb -- 32 bit Windows Installer for Python 3.3 and NumPy 1.9.1
+-   [biopython-1.65.win32-py3.4.exe](http://biopython.org/DIST/biopython-1.65.win32-py3.4.exe)
+    2Mb -- 32 bit Windows Installer for Python 3.4 and NumPy 1.9.1
 
 Please report any issues on our [mailing
 lists](mailing_lists "wikilink") or [bug

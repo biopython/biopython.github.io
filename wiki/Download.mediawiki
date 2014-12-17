@@ -1,17 +1,17 @@
-= Current Release - 1.64 - 29 May 2014 =
+= Current Release - 1.65 - 17 December 2014 =
 
 See also [https://github.com/biopython/biopython/raw/master/NEWS What's new].
 
 === Files ===
 
-====1.64====
+==== Biopython 1.65 ====
 
-* [http://biopython.org/DIST/biopython-1.64.tar.gz biopython-1.64.tar.gz] 12Mb -- Source Tarball
-* [http://biopython.org/DIST/biopython-1.64.zip biopython-1.64.zip] 13Mb -- Source Zip File
-* [http://biopython.org/DIST/biopython-1.64.win32-py2.6.exe biopython-1.64.win32-py2.6.exe] 2Mb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.8.1
-* [http://biopython.org/DIST/biopython-1.64.win32-py2.7.exe biopython-1.64.win32-py2.7.exe] 2Mb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.8.1
-* [http://biopython.org/DIST/biopython-1.64.win32-py3.3.exe biopython-1.64.win32-py3.3.exe] 2Mb -- 32 bit Windows Installer for Python 3.3 and NumPy 1.8.1
-* [http://biopython.org/DIST/biopython-1.64.win32-py3.4.exe biopython-1.64.win32-py3.4.exe] 2Mb -- 32 bit Windows Installer for Python 3.4 and NumPy 1.8.1
+* [http://biopython.org/DIST/biopython-1.65.tar.gz biopython-1.65.tar.gz] 13Mb -- Source Tarball
+* [http://biopython.org/DIST/biopython-1.65.zip biopython-1.65.zip] 14Mb -- Source Zip File
+* [http://biopython.org/DIST/biopython-1.65.win32-py2.6.exe biopython-1.65.win32-py2.6.exe] 2Mb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.8.2
+* [http://biopython.org/DIST/biopython-1.65.win32-py2.7.exe biopython-1.65.win32-py2.7.exe] 2Mb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.9.1
+* [http://biopython.org/DIST/biopython-1.65.win32-py3.3.exe biopython-1.65.win32-py3.3.exe] 2Mb -- 32 bit Windows Installer for Python 3.3 and NumPy 1.9.1
+* [http://biopython.org/DIST/biopython-1.65.win32-py3.4.exe biopython-1.65.win32-py3.4.exe] 2Mb -- 32 bit Windows Installer for Python 3.4 and NumPy 1.9.1
 
 Please report any issues on our [[mailing lists]] or [https://github.com/biopython/biopython/issues?state=open bug tracker].
 
