@@ -843,7 +843,7 @@ ca = residue['CA'].get_vector()
 n = n - ca
 c = c - ca
 # find rotation matrix that rotates n -120 degrees along the ca-c vector
-rot = rotaxis(-pi{*120.0/180.0, c)
+rot = rotaxis(-pi*120.0/180.0, c)
 # apply rotation to ca-n vector
 cb_at_origin = n.left_multiply(rot)
 # put on top of ca atom
