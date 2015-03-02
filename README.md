@@ -14,3 +14,5 @@ to GitHub accounts - if I have mis-identified you, please email
 me during this testing period and I'll remove the false mapping.
 I failed to match about 20 accounts on the wiki (mostly single
 contributions).
+
+This site ought to be viewable via https://peterjc.github.io/README.html
