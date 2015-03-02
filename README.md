@@ -15,4 +15,5 @@ me during this testing period and I'll remove the false mapping.
 I failed to match about 20 accounts on the wiki (mostly single
 contributions).
 
-This site ought to be viewable via https://peterjc.github.io/README.html
+This site ought to be viewable via https://peterjc.github.io/
+and this page at https://peterjc.github.io/README.html
