@@ -6,6 +6,7 @@ redcarpet:
     - autolink
     - strikethrough
     - fenced_code_blocks
+    - tables
 
 defaults:
   -
