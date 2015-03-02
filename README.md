@@ -16,4 +16,6 @@ I failed to match about 20 accounts on the wiki (mostly single
 contributions).
 
 This site ought to be viewable via https://peterjc.github.io/
-and this page at https://peterjc.github.io/README.html
+and this page as *html* at https://peterjc.github.io/README.html
+and https://github.com/peterjc/peterjc.github.io/blob/master/README.md
+in the original source *markdown* view on GitHub.
