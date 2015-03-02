@@ -1,4 +1,5 @@
 ---
+title: Placeholder Index Page
 ---
 
 This site is currently being used for a trial migration

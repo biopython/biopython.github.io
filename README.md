@@ -1,4 +1,5 @@
 ---
+title: README
 ---
 
 This is an attempt to automatically convert a Mediawiki XML export
