@@ -214,7 +214,7 @@ Tree visualizations are done with matplotlib.
 Mentors  
 Mark Holder, Jeet Sukumaran, [Eric Talevich](http://etal.myweb.uga.edu/)
 
-### 2012
+### 2012 (OBF)
 
 #### [SearchIO](http://biopython.org/wiki/SearchIO)
 

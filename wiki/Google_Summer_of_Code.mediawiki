@@ -109,7 +109,7 @@ Biopython instead participated under [http://informatics.nescent.org/wiki/Phyloi
 ;  Mentors
 :  Mark Holder, Jeet Sukumaran, [http://etal.myweb.uga.edu/ Eric Talevich]
 
-=== 2012 ===
+=== 2012 (OBF) ===
 ==== [http://biopython.org/wiki/SearchIO SearchIO] ====
 ; Student
 : Wibowo Arindrarto ([http://bow.web.id/blog/tag/gsoc/ blog])
