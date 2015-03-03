@@ -3,7 +3,7 @@ title: README
 ---
 
 This is an attempt to automatically convert a Mediawiki XML export
-from http://biopthon.org into markdown (using pandoc) as a git
+from http://biopython.org into markdown (using pandoc) as a git
 repository to be hosted using GitHub Pages (rendered using Jekyll).
 https://help.github.com/articles/using-jekyll-with-pages/
 
