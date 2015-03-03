@@ -484,7 +484,7 @@ Mentors
 
 [Thomas Hamelryck](http://wiki.binf.ku.dk/User:Thomas_Hamelryck)
 
-### 2010
+### 2010 (OBF)
 
 #### [Improving Bio.PDB](http://biopython.org/wiki/GSOC2010_Joao)
 

@@ -203,7 +203,7 @@ Biopython instead participated under [http://informatics.nescent.org/wiki/Phyloi
 :  [http://etal.myweb.uga.edu/ Eric Talevich] 
 :  [http://wiki.binf.ku.dk/User:Thomas_Hamelryck Thomas Hamelryck]
 
-=== 2010 ===
+=== 2010 (OBF) ===
 ====  [http://biopython.org/wiki/GSOC2010_Joao Improving Bio.PDB] ====
 ; Student
 : [http://nmr.chem.uu.nl/~joaor João Rodrigues]
