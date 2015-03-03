@@ -63,23 +63,26 @@ However, there are a few tricks to make your documentation look it's best. The m
 
 Here's an example of a module documented so that epydoc will be happy:
 
-   """This is a one line description of the module followed with a period.
-   
-   More information about the module and its goals and usage.
-   """
+<source lang=python>
+"""This is a one line description of the module followed with a period.
 
-   class MyClass:
-       """One line description of the class followed by a period.
-  
-       More information about the class -- its purpose, usage, and
-       implementation.
-       """
-       def my_function(self, spam):
-           """A terse description of my function followed with a period.
-      
-           A longer description with all kinds of additional goodies. This may
-           include information about what the function does, along with
-           what parameters it will be passed and what it returns. You know, 
-           information so people know how to use the function.
-           """
-           #the code ...
+More information about the module and its goals and usage.
+"""
+
+class MyClass:
+    """One line description of the class followed by a period.
+
+    More information about the class -- its purpose, usage, and
+    implementation.
+    """
+
+    def my_function(self, spam):
+        """A terse description of my function followed with a period.
+
+        A longer description with all kinds of additional goodies. This may
+        include information about what the function does, along with
+        what parameters it will be passed and what it returns. You know, 
+        information so people know how to use the function.
+        """
+        #the code ...
+</source>
