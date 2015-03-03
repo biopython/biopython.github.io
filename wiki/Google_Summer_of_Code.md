@@ -310,7 +310,7 @@ Mentors
 
 [James Casbon](http://casbon.me/)
 
-### 2011
+### 2011 (OBF)
 
 #### [Biomolecular Interface Analysis](http://biopython.org/wiki/GSoC2011_mtrellet)
 

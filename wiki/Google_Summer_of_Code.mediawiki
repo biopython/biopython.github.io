@@ -149,7 +149,7 @@ Biopython instead participated under [http://informatics.nescent.org/wiki/Phyloi
 :  [https://github.com/chapmanb Brad Chapman] 
 :  [http://casbon.me/ James Casbon]
 
-=== 2011 ===
+=== 2011 (OBF) ===
 ====  [http://biopython.org/wiki/GSoC2011_mtrellet Biomolecular Interface Analysis] ====
 ;  Student
 : Mikael Trellet
