@@ -526,7 +526,11 @@ Mentors
 
 Diana Jaunzeikare
 
-### 2009
+### 2009 (NESCent)
+
+This was the first year Biopython took part in GSoC, and we did so under
+the banner of [NESCent's GSoC 2013
+program](http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2009).
 
 #### [PhyloXML](http://biopython.org/wiki/PhyloXML)
 
