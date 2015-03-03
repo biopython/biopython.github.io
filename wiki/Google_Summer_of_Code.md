@@ -122,7 +122,11 @@ Past mentors include:
 Past Accepted Projects
 ----------------------
 
-### 2013
+### 2013 (NESCent)
+
+This year the Open Bioinformatics Foundation was not accepted on the
+very competitive GSoC programme. Biopython instead participated under
+[NEScent](http://informatics.nescent.org/wiki/Phyloinformatics_Summer_of_Code_2013).
 
 #### Codon alignment and analysis
 
