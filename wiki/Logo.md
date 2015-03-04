@@ -9,7 +9,7 @@ Our logo was created by Henrik Vestergaard and Thomas Hamelryck back in
 twisting in opposite directions to form a double helix around the word
 Biopython:
 
-![](biopython.jpg "biopython.jpg")
+![](Biopython.jpg "Biopython.jpg")
 
 This is a cropped version of
 [biopython.jpg](http://www.biopython.org/DIST/docs/images/biopython.jpg),
