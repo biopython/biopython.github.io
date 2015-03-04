@@ -1,3 +1,4 @@
+# Dependencies
 highlighter: pygments
 markdown: redcarpet
 redcarpet:
@@ -8,6 +9,10 @@ redcarpet:
     - fenced_code_blocks
     - tables
 
+# Setup
+baseurl: /
+
+# Page settings
 defaults:
   -
     scope:
