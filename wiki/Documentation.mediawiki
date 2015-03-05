@@ -1,29 +1,22 @@
 ==== Documentation ====
 New to BioPython? Check out the [[Getting_Started|Getting Started]] page, or follow one of the links below.
 
-* Installation instructions cover the installation of Python itself, the Biopython dependencies, and Biopython itself. 
-:[http://biopython.org/DIST/docs/install/Installation.html HTML] | [http://biopython.org/DIST/docs/install/Installation.pdf PDF]
-* The '''Biopython Tutorial and Cookbook''' contains the bulk of Biopython documentation. It provides information to get you started with Biopython, in addition to specific documentation on a number of modules. 
-:[http://biopython.org/DIST/docs/tutorial/Tutorial.html HTML] | [http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF]
-* API documentation for Biopython modules is generated directly from source code comments using [http://epydoc.sourceforge.net/ Epydoc].
-:[http://biopython.org/DIST/docs/api HTML]
+* Installation instructions cover the installation of Python itself, the Biopython dependencies, and Biopython itself. [http://biopython.org/DIST/docs/install/Installation.html HTML] | [http://biopython.org/DIST/docs/install/Installation.pdf PDF]
+* The '''Biopython Tutorial and Cookbook''' contains the bulk of Biopython documentation. It provides information to get you started with Biopython, in addition to specific documentation on a number of modules [http://biopython.org/DIST/docs/tutorial/Tutorial.html HTML] | [http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF]
+* API documentation for Biopython modules is generated directly from source code comments using [http://epydoc.sourceforge.net/ Epydoc]. [http://biopython.org/DIST/docs/api HTML]
 * Wiki documentation,
-:* [[Seq]] and [[SeqRecord]] objects
-:* [[SeqIO|Bio.SeqIO]] - sequence input/output
-:* [[AlignIO|Bio.AlignIO]] - alignment input/output
-:* [[PopGen|Bio.PopGen]] - population genetics
-:* [[The Biopython Structural Bioinformatics FAQ|Bio.PDB]] - structural bioinformatics
-:* Biopython's [[BioSQL|BioSQL interface]]
-* Documentation for the Biopython interfaces to BioSQL cover installing Python database adaptors and basic usage of BioSQL. 
-:[http://biopython.org/DIST/docs/biosql/python_biosql_basic.html HTML] | [http://biopython.org/DIST/docs/biosql/python_biosql_basic.pdf PDF]
-* Documentation for the cluster module in Biopython. This describes the underlying C library and the Python interface. 
-:[http://biopython.org/DIST/docs/cluster/cluster.pdf PDF]
+** [[Seq]] and [[SeqRecord]] objects
+** [[SeqIO|Bio.SeqIO]] - sequence input/output
+** [[AlignIO|Bio.AlignIO]] - alignment input/output
+** [[PopGen|Bio.PopGen]] - population genetics
+** [[The Biopython Structural Bioinformatics FAQ|Bio.PDB]] - structural bioinformatics
+** Biopython's [[BioSQL|BioSQL interface]]
+* Documentation for the Biopython interfaces to BioSQL cover installing Python database adaptors and basic usage of BioSQL.  [http://biopython.org/DIST/docs/biosql/python_biosql_basic.html HTML] | [http://biopython.org/DIST/docs/biosql/python_biosql_basic.pdf PDF]
+* Documentation for the cluster module in Biopython. This describes the underlying C library and the Python interface.  [http://biopython.org/DIST/docs/cluster/cluster.pdf PDF]
 * Cookbook-style documentation:
-:*[[Category%3ACookbook|Cookbook documentation]] (on the wiki)
-:*The Biopython Structural Bioinformatics FAQ (i.e. how to use the Bio.PDB module). 
-::[http://biopython.org/DIST/docs/cookbook/biopdb_faq.pdf PDF]
-:*Working with restriction enzymes. 
-::[http://biopython.org/DIST/docs/cookbook/Restriction.html HTML]
+**[[Category%3ACookbook|Cookbook documentation]] (on the wiki)
+**The Biopython Structural Bioinformatics FAQ (i.e. how to use the Bio.PDB module).  [http://biopython.org/DIST/docs/cookbook/biopdb_faq.pdf PDF]
+**Working with restriction enzymes. [http://biopython.org/DIST/docs/cookbook/Restriction.html HTML]
 
 ==== Documentation for Developers ====
 

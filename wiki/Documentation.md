@@ -12,69 +12,42 @@ below.
 
 -   Installation instructions cover the installation of Python itself,
     the Biopython dependencies, and Biopython itself.
-
-  
-[HTML](http://biopython.org/DIST/docs/install/Installation.html) |
-[PDF](http://biopython.org/DIST/docs/install/Installation.pdf)
-
+    [HTML](http://biopython.org/DIST/docs/install/Installation.html) |
+    [PDF](http://biopython.org/DIST/docs/install/Installation.pdf)
 -   The **Biopython Tutorial and Cookbook** contains the bulk of
     Biopython documentation. It provides information to get you started
-    with Biopython, in addition to specific documentation on a number
-    of modules.
-
-  
-[HTML](http://biopython.org/DIST/docs/tutorial/Tutorial.html) |
-[PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)
-
+    with Biopython, in addition to specific documentation on a number of
+    modules
+    [HTML](http://biopython.org/DIST/docs/tutorial/Tutorial.html) |
+    [PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)
 -   API documentation for Biopython modules is generated directly from
     source code comments using [Epydoc](http://epydoc.sourceforge.net/).
-
-  
-[HTML](http://biopython.org/DIST/docs/api)
-
+    [HTML](http://biopython.org/DIST/docs/api)
 -   Wiki documentation,
-
-:\* [Seq](Seq "wikilink") and [SeqRecord](SeqRecord "wikilink") objects
-
-:\* [Bio.SeqIO](SeqIO "wikilink") - sequence input/output
-
-:\* [Bio.AlignIO](AlignIO "wikilink") - alignment input/output
-
-:\* [Bio.PopGen](PopGen "wikilink") - population genetics
-
-:\* [Bio.PDB](The_Biopython_Structural_Bioinformatics_FAQ "wikilink") -
-structural bioinformatics
-
-:\* Biopython's [BioSQL interface](BioSQL "wikilink")
-
+    -   [Seq](Seq "wikilink") and [SeqRecord](SeqRecord "wikilink")
+        objects
+    -   [Bio.SeqIO](SeqIO "wikilink") - sequence input/output
+    -   [Bio.AlignIO](AlignIO "wikilink") - alignment input/output
+    -   [Bio.PopGen](PopGen "wikilink") - population genetics
+    -   [Bio.PDB](The_Biopython_Structural_Bioinformatics_FAQ "wikilink") -
+        structural bioinformatics
+    -   Biopython's [BioSQL interface](BioSQL "wikilink")
 -   Documentation for the Biopython interfaces to BioSQL cover
     installing Python database adaptors and basic usage of BioSQL.
-
-  
-[HTML](http://biopython.org/DIST/docs/biosql/python_biosql_basic.html) |
-[PDF](http://biopython.org/DIST/docs/biosql/python_biosql_basic.pdf)
-
+    [HTML](http://biopython.org/DIST/docs/biosql/python_biosql_basic.html)
+    |
+    [PDF](http://biopython.org/DIST/docs/biosql/python_biosql_basic.pdf)
 -   Documentation for the cluster module in Biopython. This describes
     the underlying C library and the Python interface.
-
-  
-[PDF](http://biopython.org/DIST/docs/cluster/cluster.pdf)
-
+    [PDF](http://biopython.org/DIST/docs/cluster/cluster.pdf)
 -   Cookbook-style documentation:
-
-:\*[Cookbook documentation](Category%3ACookbook "wikilink") (on the
-wiki)
-
-:\*The Biopython Structural Bioinformatics FAQ (i.e. how to use the
-Bio.PDB module).
-
-::[PDF](http://biopython.org/DIST/docs/cookbook/biopdb_faq.pdf)
-
-:\*Working with restriction enzymes.
-
-  
-  
-[HTML](http://biopython.org/DIST/docs/cookbook/Restriction.html)
+    -   [Cookbook documentation](Category%3ACookbook "wikilink") (on
+        the wiki)
+    -   The Biopython Structural Bioinformatics FAQ (i.e. how to use the
+        Bio.PDB module).
+        [PDF](http://biopython.org/DIST/docs/cookbook/biopdb_faq.pdf)
+    -   Working with restriction enzymes.
+        [HTML](http://biopython.org/DIST/docs/cookbook/Restriction.html)
 
 #### Documentation for Developers
 
