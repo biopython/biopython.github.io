@@ -6,7 +6,7 @@ layout: wiki
 
 #### Documentation
 
-New to BioPython? Check out the [Getting
+New to Biopython? Check out the [Getting
 Started](Getting_Started "wikilink") page, or follow one of the links
 below.
 
