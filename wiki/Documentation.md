@@ -126,105 +126,90 @@ BioPerl, BioRuby, BioJava and EMBOSS
 #### Presentations
 
 -   BOSC 2013 presentation "Biopython Project Update"
-
-  
-[PDF](http://www.open-bio.org/bosc2013/day1/BOSC2013_Biopython_Update_-_Peter_Cock.pdf)
-| [Flash
-version](http://www.slideshare.net/pjacock/biopython-update-bosc2013/)
+      
+    [PDF](http://www.open-bio.org/bosc2013/day1/BOSC2013_Biopython_Update_-_Peter_Cock.pdf)
+    | [Flash
+    version](http://www.slideshare.net/pjacock/biopython-update-bosc2013/)
 
 -   BOSC 2012 presentation "Biopython Project Update"
-
-  
-[Flash
-version](http://www.slideshare.net/jandot/e-talevich-biopython-projectupdate)
+      
+    [Flash
+    version](http://www.slideshare.net/jandot/e-talevich-biopython-projectupdate)
 
 -   BOSC 2011 presentation "Biopython Project Update"
-
-  
-[Flash
-version](http://www.slideshare.net/bosc2011/talk6-biopython-bosc2011)
+      
+    [Flash
+    version](http://www.slideshare.net/bosc2011/talk6-biopython-bosc2011)
 
 -   BOSC 2010 presentation "Biopython Project Update"
-
-  
-[Flash
-version](http://www.slideshare.net/chapmanb/biopython-at-bosc-2010)
+      
+    [Flash
+    version](http://www.slideshare.net/chapmanb/biopython-at-bosc-2010)
 
 -   July 2010 - EuroSciPy2010, Paris
-
-  
-[PDF](http://biopython.org/DIST/docs/presentations/Biopython_EuroSciPy2010.pdf)
+      
+    [PDF](http://biopython.org/DIST/docs/presentations/Biopython_EuroSciPy2010.pdf)
 
 -   February 2010 Biopython workshop at the University of Georgia
-
-  
-[PDF](http://etal.myweb.uga.edu/biopywork.pdf) | [Flash
-version](http://www.slideshare.net/etalevich/biopython-programming-workshop-at-uga)
+      
+    [PDF](http://etal.myweb.uga.edu/biopywork.pdf) | [Flash
+    version](http://www.slideshare.net/etalevich/biopython-programming-workshop-at-uga)
 
 -   BOSC 2009 presentation "Biopython Project Update"
-
-  
-[PDF](http://biopython.org/DIST/docs/presentations/Biopython_BOSC_2009.pdf)
-| [Flash
-version](http://www.slideshare.net/bosc/cock-biopython-bosc2009)
+      
+    [PDF](http://biopython.org/DIST/docs/presentations/Biopython_BOSC_2009.pdf)
+    | [Flash
+    version](http://www.slideshare.net/bosc/cock-biopython-bosc2009)
 
 -   Scottish Bioinformatics Forum NextGenBug meeting June 2009 - Second
     generation sequence data and Biopython
-
-  
-[PDF](http://biopython.org/DIST/docs/presentations/Biopython_NextGenBUG_June2009.pdf)
+      
+    [PDF](http://biopython.org/DIST/docs/presentations/Biopython_NextGenBUG_June2009.pdf)
 
 -   Laptop session at "2009 Biología Computacional de Proteínas
     workshop" at Quilmes National University
-
-  
-[HTML](http://www.bioinformatica.info/biopython/) (requires Crunchy to
-try the code online)
+      
+    [HTML](http://www.bioinformatica.info/biopython/) (requires Crunchy
+    to try the code online)
 
 -   BOSC 2008 presentation "Biopython Project Update"
-
-  
-[PDF](http://biopython.org/DIST/docs/presentations/Biopython_BOSC_2008.pdf)
-| [Flash
-version](http://www.slideshare.net/bosc_2008/antao-biopython-bosc2008/)
+      
+    [PDF](http://biopython.org/DIST/docs/presentations/Biopython_BOSC_2008.pdf)
+    | [Flash
+    version](http://www.slideshare.net/bosc_2008/antao-biopython-bosc2008/)
 
 -   BOSC 2007 presentation "Biopython Project Update"
-
-  
-[PDF](http://biopython.org/DIST/docs/presentations/Biopython_BOSC_2007.pdf)
-| [Flash version](http://www.slideshare.net/bosc/biopython)
+      
+    [PDF](http://biopython.org/DIST/docs/presentations/Biopython_BOSC_2007.pdf)
+    | [Flash version](http://www.slideshare.net/bosc/biopython)
 
 -   March 2004 presentation at Exelixis about Biopython. Includes code
     examples with Biopython libraries and Martel.
-
-  
-[PDF](http://biopython.org/DIST/docs/presentations/biopython_exelixis.pdf)
-| [tarball with LaTeX
-source](http://biopython.org/DIST/docs/presentations/biopython_exelixis.tar.gz)
+      
+    [PDF](http://biopython.org/DIST/docs/presentations/biopython_exelixis.pdf)
+    | [tarball with LaTeX
+    source](http://biopython.org/DIST/docs/presentations/biopython_exelixis.tar.gz)
 
 -   BOSC 2003 presentation about Biopython and using it for Laboratory
     Analysis Pipelines.
-
-  
-[PDF](http://biopython.org/DIST/docs/presentations/bosc_biopython.pdf) |
-[tarball with LaTeX
-source](http://biopython.org/DIST/docs/presentations/bosc_biopython.tar.gz)
+      
+    [PDF](http://biopython.org/DIST/docs/presentations/bosc_biopython.pdf)
+    | [tarball with LaTeX
+    source](http://biopython.org/DIST/docs/presentations/bosc_biopython.tar.gz)
 
 -   General talk about scripting with Biopython based example of a
     primer design program (old).
-
-  
-[PDF](http://biopython.org/DIST/docs/presentations/scripting.pdf) |
-[tarball with LaTeX
-source](http://biopython.org/DIST/docs/presentations/scripting.tar.gz)
+      
+    [PDF](http://biopython.org/DIST/docs/presentations/scripting.pdf) |
+    [tarball with LaTeX
+    source](http://biopython.org/DIST/docs/presentations/scripting.tar.gz)
 
 -   Talk about Python and Biopython with an emphasis on teaching the
     design goals of Biopython (old).
-
-  
-[PDF](http://biopython.org/DIST/docs/presentations/biopython.pdf) |
-[tarball with LaTeX
-source](http://biopython.org/DIST/docs/presentations/biopy_group.tar.gz)
+      
+    [PDF](http://biopython.org/DIST/docs/presentations/biopython.pdf) |
+    [tarball with LaTeX
+    source](http://biopython.org/DIST/docs/presentations/biopy_group.tar.gz)
 
 #### Logo
 
