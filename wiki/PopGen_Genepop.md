@@ -12,8 +12,11 @@ interface. This means that the vast majority of Genepop's methods (exact
 tests for Hardy–Weinberg equilibrium, population differentiation,
 genotypic disequilibrium, F-statistics, null allele frequencies, allele
 size-based statistics for microsatellites and much more) can now be
-accessed from Python. A parser to Genepop files is also available (and
-documented in the Tutorial).
+accessed from Python. Genepop needs to be installed for this as the code
+is only a wrapper.
+
+A parser to Genepop files is also available (and documented in the
+Tutorial). Genepop formatted files can be processed without Genepop.
 
 Two interfaces are supplied: A general, more complex and more efficient
 one (GenePopController) and a simplified, more easy to use, not complete
