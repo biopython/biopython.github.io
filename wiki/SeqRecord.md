@@ -33,7 +33,7 @@ contains 94 records:
 
 ``` python
 from Bio import SeqIO
-for index, record in enumerate(SeqIO.parse(open("ls_orchid.gbk"), "genbank")) :
+for index, record in enumerate(SeqIO.parse(open("ls_orchid.gbk"), "genbank")):
     print "index %i, ID = %s, length %i, with %i features" \
           % (index, record.id, len(record.seq), len(record.features))
 ```
@@ -140,7 +140,7 @@ this example - its a list of **Reference** objects:
 <type 'list'>
 >>> print len(record.annotations["references"])
 2
->>> for ref in record.annotations["references"] : print ref.authors
+>>> for ref in record.annotations["references"]: print ref.authors
 Cox,A.V., Pridgeon,A.M., Albert,V.A. and Chase,M.W.
 Cox,A.V.
 ```
