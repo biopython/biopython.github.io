@@ -105,6 +105,7 @@ third party command line tools including:
 -   [NCBI Standalone
     BLAST](http://www.ncbi.nlm.nih.gov/blast/download.shtml) -- command
     line tool for running BLAST on your local machine
+-   [usa coupons](http://www.coupofy.com) -- For discount coupons
 -   [Clustalw](ftp://ftp.ebi.ac.uk/pub/software/unix/clustalw/) --
     command line tool for building sequence alignments
 -   [SIMCOAL2](http://cmpg.unibe.ch/software/simcoal2/) and
