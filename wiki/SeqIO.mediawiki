@@ -101,6 +101,18 @@ This table lists the file formats that Bio.SeqIO can read, write and index, with
 | No
 | The [[bp:NEXUS_multiple_alignment_format|NEXUS multiple alignment]] format, also known as PAUP format.  Uses Bio.Nexus internally.
 |-
+| pdb-seqres
+| 1.61
+| No
+| No
+| Reads a Protein Data Bank (PDB) file to determine the complete protein sequence as it appears in the header (no dependency on Bio.PDB and NumPy).
+|-
+| pdb-atom
+| 1.61
+| No
+| No
+| Uses Bio.PDB to determine the (partial) protein sequence as it appears in the structure based on the atom coordinate section of the file (requires NumPy).
+|-
 | phd
 | 1.46
 | 1.52
