@@ -38,5 +38,5 @@ the libraries and tools.
                                                                                                                                                                                                                                                                                             -   [Google Summer of Code](Google_Summer_of_Code "wikilink")                                                                      
                                                                                                                                                                                                                                                                                             -   [Report bugs](https://github.com/biopython/biopython/issues) ([older issues](http://redmine.open-bio.org/projects/biopython))  |
 
-The latest release is [Biopython 1.65](Download "wikilink"), released on
-17 December 2014.
+The latest release is [Biopython 1.66](Download "wikilink"), released on
+21 October 2015.
