@@ -100,6 +100,8 @@ A typical source of failure here (on the tests) is the lack of example files bei
 15. Update API documentation using Epydoc (this can often report otherwise overlooked errors).
 * Go to the ./usr/local/lib/python2.6/site-packages directory. This is the directory created under your source installation after the install step above (the name might vary a bit - it should be the place where the source packages were "installed"). Running epydoc in your git tree works, but can miss some packages due to import errors.
     epydoc -v -o ~/api -u http://biopython.org -n Biopython --docformat plaintext Bio BioSQL
+    zip api.zip -r ~/api/
+    scp api.zip biopython.org:.
 * Move the generated ~/api directory to replace /home/websites/biopython.org/html/static/DIST/docs/api/ on biopython.org (aka cloudportal.open-bio.org).
 * Also update /home/websites/biopython.org/html/static/DIST/docs/tutorial with the tutorial files
 16. add git tag

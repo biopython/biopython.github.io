@@ -143,7 +143,9 @@ otherwise overlooked errors).
     your git tree works, but can miss some packages due to
     import errors.
 
-`   epydoc -v -o ~/api -u `[`http://biopython.org`](http://biopython.org)` -n Biopython --docformat plaintext Bio BioSQL`
+`   epydoc -v -o ~/api -u `[`http://biopython.org`](http://biopython.org)` -n Biopython --docformat plaintext Bio BioSQL`  
+`   zip api.zip -r ~/api/`  
+`   scp api.zip biopython.org:.`
 
 -   Move the generated ~/api directory to replace
     /home/websites/biopython.org/html/static/DIST/docs/api/ on
