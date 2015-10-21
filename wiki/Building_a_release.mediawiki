@@ -24,9 +24,10 @@ These instructions are for a Unix machine, with a Windows machine also needed to
 1. make sure I have the latest code
     drevil:~biopython> git pull origin master
 
-2. bump version numbers:
+2. bump version numbers and set the release data:
 * Biopython version - edit  Bio/__init__.py
 * Biopython Tutorial - update the date/version line in the Doc/Tutorial.tex file
+* Biopython README - fill in the release date
 * Make sure to commit the modified files to github.
 
 3. make sure the README file is still up to date

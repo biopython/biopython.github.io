@@ -36,11 +36,12 @@ needed to test and prepare the Windows installers.
 
 `   drevil:~biopython> git pull origin master`
 
-2. bump version numbers:
+2. bump version numbers and set the release data:
 
 -   Biopython version - edit Bio/\_\_init\_\_.py
 -   Biopython Tutorial - update the date/version line in the
     Doc/Tutorial.tex file
+-   Biopython README - fill in the release date
 -   Make sure to commit the modified files to github.
 
 3. make sure the README file is still up to date
