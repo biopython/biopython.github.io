@@ -158,7 +158,7 @@ otherwise overlooked errors).
 `   drevil:~biopython> git push origin master --tags`
 
 17. On your windows machine, build the Windows installers (either from a
-clean checkout, or the an unzipped copy of the source code bundle made
+clean checkout, or an unzipped copy of the source code bundle made
 earlier). Build the installers first, if you do a build/test/install
 before hand you seem to get a bloated setup exe. Assuming you have setup
 your compilers etc appropriately just do this:
