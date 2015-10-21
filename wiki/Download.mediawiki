@@ -1,17 +1,17 @@
-= Current Release - 1.65 - 17 December 2014 =
+= Current Release - 1.66 - 21 October 2015 =
 
 See also [https://github.com/biopython/biopython/raw/master/NEWS What's new].
 
 === Files ===
 
-==== Biopython 1.65 ====
+==== Biopython 1.66 ====
 
-* [http://biopython.org/DIST/biopython-1.65.tar.gz biopython-1.65.tar.gz] 13Mb -- Source Tarball
-* [http://biopython.org/DIST/biopython-1.65.zip biopython-1.65.zip] 14Mb -- Source Zip File
-* [http://biopython.org/DIST/biopython-1.65.win32-py2.6.exe biopython-1.65.win32-py2.6.exe] 2Mb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.8.2
-* [http://biopython.org/DIST/biopython-1.65.win32-py2.7.exe biopython-1.65.win32-py2.7.exe] 2Mb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.9.1
-* [http://biopython.org/DIST/biopython-1.65.win32-py3.3.exe biopython-1.65.win32-py3.3.exe] 2Mb -- 32 bit Windows Installer for Python 3.3 and NumPy 1.9.1
-* [http://biopython.org/DIST/biopython-1.65.win32-py3.4.exe biopython-1.65.win32-py3.4.exe] 2Mb -- 32 bit Windows Installer for Python 3.4 and NumPy 1.9.1
+* [http://biopython.org/DIST/biopython-1.66.tar.gz biopython-1.66.tar.gz] 14Mb -- Source Tarball
+* [http://biopython.org/DIST/biopython-1.66.zip biopython-1.66.zip] 15Mb -- Source Zip File
+* [http://biopython.org/DIST/biopython-1.66.win32-py2.6.exe biopython-1.66.win32-py2.6.exe] 2Mb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.8.2
+* [http://biopython.org/DIST/biopython-1.66.win32-py2.7.exe biopython-1.66.win32-py2.7.exe] 2Mb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.9.1
+* [http://biopython.org/DIST/biopython-1.66.win32-py3.3.exe biopython-1.66.win32-py3.3.exe] 2Mb -- 32 bit Windows Installer for Python 3.3 and NumPy 1.9.1
+* [http://biopython.org/DIST/biopython-1.66.win32-py3.4.exe biopython-1.66.win32-py3.4.exe] 2Mb -- 32 bit Windows Installer for Python 3.4 and NumPy 1.9.1
 
 Please report any issues on our [[mailing lists]] or [https://github.com/biopython/biopython/issues?state=open bug tracker].
 
@@ -21,9 +21,16 @@ NumPy and Biopython (and other tools) available for testing.
 
 === Installation Instructions ===
 
-For '''Windows''' we provide click-and-run installers (specific to your version of python), but you will first need to install some prerequisite software (listed below, in particular, NumPy).
+For '''Windows''' 32-bit we provide click-and-run installers (specific to your version of python), but you will first need to install some prerequisite software (listed below, in particular, NumPy).
 
-Most '''Linux''' distributions will include an optional Biopython package (described below), and will take care of any prerequisite software automatically. Otherwise you typically install from source by downloading and uncompressing the archive, then running the commands:
+For '''Windows''' 64-bit we recommend the click-and-run [http://www.lfd.uci.edu/~gohlke/pythonlibs/ Windows 64bit installers]
+(specific to your version of python) kindly provided by Christoph Gohlke.
+
+Most '''Linux''' distributions will include an optional Biopython package (described below), and will take care of any prerequisite software automatically. If you have the Python package management tool pip installed, try:
+
+ pip install biopython
+
+Otherwise you typically install from source by downloading and uncompressing the archive, then running the commands:
 
  python setup.py build
  python setup.py test
