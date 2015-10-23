@@ -70,21 +70,6 @@ In addition Biopython includes wrapper code for calling a number of third party 
 * [http://cmpg.unibe.ch/software/simcoal2/ SIMCOAL2] and [http://www.rubic.rdg.ac.uk/~mab/software.html FDist] -- command line tools for population genetics
 * [http://emboss.sourceforge.net/ EMBOSS] -- lots of useful command line tools.
 
-= Easy Install = 
-
-We don't officially sanction this option, but it has been reported to work fine.
-If you have [http://peak.telecommunity.com/DevCenter/EasyInstall easy_install] installed on your computer, you can download and install the latest Biopython distribution by simply executing this command:
-
-<pre>
- easy_install -f http://biopython.org/DIST/ biopython
-</pre>
-
-You will have to have administrator's rights to do this. On a Unix style system this is normally done by:
-
-<pre>
- sudo easy_install -f http://biopython.org/DIST/ biopython
-</pre>
-
 = Packages =
 
 For those of you using Linux, the easiest way to install Biopython is through your distribution's package management system.  However, unless you are running a recent release of your Linux Distribution, you may find that the Biopython packages available to be a little out of date.  You might want to see if there is a backport available, otherwise you will have to install Biopython from source.

@@ -122,22 +122,6 @@ third party command line tools including:
 -   [EMBOSS](http://emboss.sourceforge.net/) -- lots of useful command
     line tools.
 
-Easy Install
-============
-
-We don't officially sanction this option, but it has been reported to
-work fine. If you have
-[easy\_install](http://peak.telecommunity.com/DevCenter/EasyInstall)
-installed on your computer, you can download and install the latest
-Biopython distribution by simply executing this command:
-
-     easy_install -f http://biopython.org/DIST/ biopython
-
-You will have to have administrator's rights to do this. On a Unix style
-system this is normally done by:
-
-     sudo easy_install -f http://biopython.org/DIST/ biopython
-
 Packages
 ========
 
