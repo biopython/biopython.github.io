@@ -136,12 +136,11 @@ files being added to the source distribution: add them to MANIFEST.in
 15. Update API documentation using Epydoc (this can often report
 otherwise overlooked errors).
 
--   Go to the ./usr/local/lib/python2.6/site-packages directory. This is
-    the directory created under your source installation after the
-    install step above (the name might vary a bit - it should be the
-    place where the source packages were "installed"). Running epydoc in
-    your git tree works, but can miss some packages due to
-    import errors.
+-   Go to the ./lib/python2.6/site-packages directory. This is the
+    directory created under your source installation after the install
+    step above (the name might vary a bit - it should be the place where
+    the source packages were "installed"). Running epydoc in your git
+    tree works, but can miss some packages due to import errors.
 
 `   epydoc -v -o ~/api -u `[`http://biopython.org`](http://biopython.org)` -n Biopython --docformat plaintext Bio BioSQL`  
 `   zip api.zip -r ~/api/`  
