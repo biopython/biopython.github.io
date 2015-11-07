@@ -26,9 +26,9 @@ new](https://github.com/biopython/biopython/raw/master/NEWS).
     2Mb -- 32 bit Windows .exe Installer for Python 3.3 and NumPy 1.9.1
 -   [biopython-1.66.win32-py3.4.exe](http://biopython.org/DIST/biopython-1.66.win32-py3.4.exe)
     2Mb -- 32 bit Windows .exe Installer for Python 3.4 and NumPy 1.9.1
--   [biopython-1.66.win32-py3.4.exe](http://biopython.org/DIST/biopython-1.66.win32-py3.5.exe)
+-   [biopython-1.66.win32-py3.5.exe](http://biopython.org/DIST/biopython-1.66.win32-py3.5.exe)
     2Mb -- 32 bit Windows .exe Installer for Python 3.5
--   [biopython-1.66.win32-py3.4.exe](http://biopython.org/DIST/biopython-1.66.win32-py3.4.msi)
+-   [biopython-1.66.win32-py3.5.msi](http://biopython.org/DIST/biopython-1.66.win32-py3.5.msi)
     2Mb -- 32 bit Windows .msi Installer for Python 3.5
 
 Please report any issues on our [mailing
