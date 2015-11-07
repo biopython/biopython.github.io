@@ -114,7 +114,8 @@ A typical source of failure here (on the tests) is the lack of example files bei
     C:\python27\python setup.py bdist_wininst
     C:\python33\python setup.py bdist_wininst
     C:\python34\python setup.py bdist_wininst
-
+    C:\python35\python setup.py bdist_wininst
+    C:\python35\python setup.py bdist_msi
 
 If you are using MinGW, you will have to make distutils use it (it will use a MS compiler by default). Here (contrary to the build step) you cannot pass the compiler as a parameter. The best solution might be to [http://stackoverflow.com/questions/3297254/how-to-use-mingws-gcc-compiler-when-installing-python-package-using-pip configure distutils]
 
