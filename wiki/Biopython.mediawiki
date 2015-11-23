@@ -18,20 +18,22 @@ This wiki will help you download and install Biopython, and start using the libr
 ![[Getting_Started|Get Started]]
 ![[Documentation | Get help]]
 ![[Contributing | Contribute]]
-|-style="vertical-align:top; text-align:left"
-!
-*[[Download | Download Biopython]]
-*[http://biopython.org/DIST/docs/install/Installation.html Installation help] ([http://biopython.org/DIST/docs/install/Installation.pdf PDF])
-!
-*[http://biopython.org/DIST/docs/tutorial/Tutorial.html Tutorial] ([http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF])
-*[[Category%3AWiki_Documentation | Documentation on this wiki]]
-*[[Category%3ACookbook | Cookbook (working examples)]]
-*[[Mailing_lists | Discuss and ask questions]]
-!
-*[[Active_projects | What's being worked on]]
-*[[ GitUsage | Developing on Github ]]
-*[[Google Summer of Code]]
-*[https://github.com/biopython/biopython/issues Report bugs] ([http://redmine.open-bio.org/projects/biopython older issues])
+|-
+|[[Download | Download Biopython]]
+|[http://biopython.org/DIST/docs/tutorial/Tutorial.html Tutorial] ([http://biopython.org/DIST/docs/tutorial/Tutorial.pdf PDF])
+|[[Active_projects | What's being worked on]]
+|-
+|[http://biopython.org/DIST/docs/install/Installation.html Installation help] ([http://biopython.org/DIST/docs/install/Installation.pdf PDF])
+|[[Category%3AWiki_Documentation | Documentation on this wiki]]
+|[[ GitUsage | Developing on Github ]]
+|-
+|
+|[[Category%3ACookbook | Cookbook (working examples)]]
+|[[Google Summer of Code]]
+|-
+|
+|[[Mailing_lists | Discuss and ask questions]]
+|[https://github.com/biopython/biopython/issues Report bugs] ([http://redmine.open-bio.org/projects/biopython older issues])
 |}
 
 The latest release is [[Download|Biopython 1.66]], released on 21 October 2015.
