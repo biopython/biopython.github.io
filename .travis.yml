@@ -3,4 +3,5 @@
 # See https://help.github.com/articles/troubleshooting-github-pages-build-failures/
 
 language: ruby
+rvm: 2.1.1
 script: "bundle exec jekyll build"
