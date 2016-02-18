@@ -23,39 +23,13 @@ Current project proposals
 See the [Open Bioinformatics Foundation (OBF) GSoC wiki
 page](http://www.open-bio.org/wiki/Google_Summer_of_Code) and [OBF GSoC
 page](http://obf.github.io/GSoC/) as our usual mentoring organization.
-Any project ideas for Biopython can be posted here (below).
+Any project ideas for Biopython can be posted there (via a GitHub pull
+request).
 
 We encourage potential students and mentors to join the [BioPython
 mailing lists](http://biopython.org/wiki/Mailing_lists) and actively
 participate in developing these project ideas, either by submitting
 their own ideas or contributing to improving existing ones.
-
-### Interactive GenomeDiagram Module
-
-Rationale  
-The GenomeDiagram genome/comparative genomics visualisation module
-currently produces static images (bitmap format), or images with
-relatively limited interactive capability such as click-throughs
-(.pdf, .svg). This is fine for its original intent of producing
-publication-quality graphics, but interactivity such as dynamic
-formatting, data selection, and box-outs would greatly enhance the value
-of the existing visualisations, and enable new uses.
-
-Approach & Goals  
-The [Bokeh](http://bokeh.pydata.org/) interactive visualisation library
-uses the standalone [BokehJS](http://bokeh.pydata.org/dev_guide.html)
-backend for in-browser visualisation. Targeting BokehJS with
-GenomeDiagram ought to be possible.
-
-Difficulty and needed skills  
-Looks tricky to me. Introduction of BokehJS brings dependencies that may
-not be desirable for Biopython. BokehJS is in Coffeescript - the Python
-interface is not well documented. Familiarity with Javascript would be
-very useful.
-
-Possible Mentors  
-[Leighton Pritchard](https://github.com/widdowquinn) though I'd be
-learning as much as the student, so others very welcome.
 
 Past Mentors
 ------------
