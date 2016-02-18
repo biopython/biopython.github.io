@@ -20,10 +20,10 @@ program.
 Current project proposals
 -------------------------
 
-See the [Open Bioinformatics Foundation
-(OBF)](http://www.open-bio.org/wiki/Google_Summer_of_Code) page as our
-usual the mentoring organization. Any project ideas for Biopython can be
-posted here.
+See the [Open Bioinformatics Foundation (OBF) GSoC wiki
+page](http://www.open-bio.org/wiki/Google_Summer_of_Code) and [OBF GSoC
+page](http://obf.github.io/GSoC/) as our usual mentoring organization.
+Any project ideas for Biopython can be posted here (below).
 
 We encourage potential students and mentors to join the [BioPython
 mailing lists](http://biopython.org/wiki/Mailing_lists) and actively

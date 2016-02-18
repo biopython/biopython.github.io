@@ -8,7 +8,7 @@ Please read those organizations' GSoC pages and the [http://code.google.com/soc 
 
 == Current project proposals ==
 
-See the [http://www.open-bio.org/wiki/Google_Summer_of_Code Open Bioinformatics Foundation (OBF)] page as our usual the mentoring organization. Any project ideas for Biopython can be posted here.
+See the [http://www.open-bio.org/wiki/Google_Summer_of_Code Open Bioinformatics Foundation (OBF) GSoC wiki page] and [http://obf.github.io/GSoC/ OBF GSoC page] as our usual mentoring organization. Any project ideas for Biopython can be posted here (below).
 
 We encourage potential students and mentors to join the [http://biopython.org/wiki/Mailing_lists BioPython mailing lists] and actively participate in developing these project ideas, either by submitting their own ideas or contributing to improving existing ones.
 
