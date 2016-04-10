@@ -10,4 +10,4 @@ While this will probably eventually be a redirect page,
 for now please see the migration
 [README](https://biopython.github.io/README.html) file,
 or conversion of the wiki's
-[main page])[http://biopython.github.io/wiki/Biopython].
+[main page](http://biopython.github.io/wiki/Biopython).
