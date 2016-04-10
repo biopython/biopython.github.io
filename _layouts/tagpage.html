@@ -1,0 +1,19 @@
+{% include head.html %}
+
+    <h1>{{ page.title }}</h1>
+
+    {{ content }}
+
+    <ul class="page-list">
+      {% for p in site.pages %}
+        {% for tag in p.tags %}
+          {% if tag == page.tag %}
+            <li>
+               <a class="page-link" href="{{ p.url }}">{{ p.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </ul>
+
+{% include foot.html %}
