@@ -6,6 +6,8 @@ kramdown:
   syntax_highlighter: rouge
 gems:
   - jekyll-redirect-from
+whitelist:
+  - jekyll-redirect-from
 
 # Setup
 baseurl: /
