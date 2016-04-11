@@ -1,7 +1,7 @@
 ---
 title: Download
 permalink: wiki/Download
-layout: wiki
+layout: page
 ---
 
 Current Release - 1.66 - 21 October 2015

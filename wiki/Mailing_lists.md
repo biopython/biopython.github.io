@@ -1,7 +1,7 @@
 ---
 title: Mailing lists
 permalink: wiki/Mailing_lists
-layout: wiki
+layout: page
 ---
 
 ### Discussion and questions

@@ -1,7 +1,7 @@
 ---
 title: Documentation
 permalink: wiki/Documentation
-layout: wiki
+layout: page
 ---
 
 #### Documentation

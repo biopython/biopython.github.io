@@ -1,7 +1,7 @@
 ---
 title: SourceCode
 permalink: wiki/SourceCode
-layout: wiki
+layout: page
 ---
 
 ### Introduction

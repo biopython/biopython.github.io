@@ -1,7 +1,7 @@
 ---
 title: News
 permalink: wiki/News
-layout: wiki
+layout: page
 ---
 
 [Biopython

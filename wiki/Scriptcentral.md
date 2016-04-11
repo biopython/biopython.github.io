@@ -1,7 +1,7 @@
 ---
 title: Scriptcentral
 permalink: wiki/Scriptcentral
-layout: wiki
+layout: page
 ---
 
 |             |                                                                                                                                                                                      |
