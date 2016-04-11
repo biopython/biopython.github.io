@@ -1,12 +1,14 @@
-{% include head.html %}
+---
+layout: default
+---
 
-    <h1>{{ page.title }}</h1>
-
+<div class="page">
+    <h1 class="page-title">{{ page.title }}</h1>
     {{ content }}
 
     <ul class="page-list">
-      {% for p in site.pages %}
-        {% for tag in p.tags %}
+       {% for p in site.pages %}
+         {% for tag in p.tags %}
           {% if tag == page.tag %}
             <li>
                <a class="page-link" href="{{ p.url }}">{{ p.title }}</a>
@@ -15,5 +17,4 @@
         {% endfor %}
       {% endfor %}
     </ul>
-
-{% include foot.html %}
+</div>

@@ -10,7 +10,14 @@ whitelist:
   - jekyll-redirect-from
 
 # Setup
+title: Biopython
+tagline: Python Tools for Computational Molecular Biology
+url: http://biopython.org
 baseurl: /
+
+author:
+  name: Biopython Contributors
+  url: https://twitter.com/biopython
 
 # Page settings
 defaults:
@@ -19,3 +26,9 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
+
+
+# Custom variables for Hyde theme
+version: 1.66
+github:
+  repo: https://github.com/biopython/biopython
