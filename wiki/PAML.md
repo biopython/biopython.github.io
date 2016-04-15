@@ -2,6 +2,8 @@
 title: PAML
 permalink: wiki/PAML
 layout: wiki
+tags:
+ - Wiki Documentation
 ---
 
 This module provides an interface to the
@@ -450,6 +452,3 @@ And use the cdf\_chi2() function:
 >>> cdf_chi2(df, statistic)
 0.027187444813595696
 ```
-
-[`category:Wiki`
-`Documentation`](category:Wiki_Documentation "wikilink")
