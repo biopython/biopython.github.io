@@ -1,6 +1,6 @@
 ---
-title: BioSQL/Windows
-permalink: wiki/BioSQL/Windows
+title: BioSQL_Windows
+permalink: wiki/BioSQL_Windows
 layout: wiki
 ---
 
