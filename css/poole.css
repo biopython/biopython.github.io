@@ -183,6 +183,8 @@ pre code {
 .highlight {
   margin-bottom: 1rem;
   border-radius: 4px;
+  white-space: pre;
+  overflow-x: auto;
 }
 .highlight pre {
   margin-bottom: 0;
