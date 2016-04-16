@@ -1,5 +1,5 @@
 # Ask TravisCI to build the site for testing purposes,
-# results at https://travis-ci.org/peterjc/peterjc.github.io/builds
+# results at https://travis-ci.org/biopython/biopython.github.io/builds
 # See https://help.github.com/articles/troubleshooting-github-pages-build-failures/
 
 language: ruby
