@@ -1,7 +1,11 @@
 # Ask TravisCI to build the site for testing purposes,
-# results at https://travis-ci.org/peterjc/peterjc.github.io/builds
+# results at https://travis-ci.org/biopython/biopython.github.io/builds
 # See https://help.github.com/articles/troubleshooting-github-pages-build-failures/
+#
+# We ask TravisCI to use the same version of Ruby as used on GitHub Pages,
+# see https://docs.travis-ci.com/user/languages/ruby/ and
+# https://pages.github.com/versions/
 
 language: ruby
-rvm: 2.1.1
+rvm: 2.1.7
 script: "bundle exec jekyll build"
