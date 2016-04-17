@@ -37,11 +37,14 @@ def sequence_cleaner(fasta_file,min_length=0,por_n=100):
         #Take the current sequence
         sequence=str(seq_record.seq).upper()
         #Check if the current sequence is according to the user parameters
-        if (len(sequence)>=min_length and (float(sequence.count("N"))/float(len(sequence)))*100<=por_n):
-       # If the sequence passed in the test "is It clean?" and It isnt in the hash table , the sequence and Its id are going to be in the hash
+        if (len(sequence)>=min_length and 
+		   (float(sequence.count("N"))/float(len(sequence)))*100<=por_n):
+        # If the sequence passed in the test "is It clean?" and It isnt in the
+        # hash table , the sequence and Its id are going to be in the hash
             if sequence not in sequences:
                 sequences[sequence]=seq_record.id
-       #If It is already in the hash table, We're just gonna concatenate the ID of the current sequence to another one that is already in the hash table
+       # If It is already in the hash table, We're just gonna concatenate the ID
+       # of the current sequence to another one that is already in the hash table
             else:
                 sequences[sequence]+="_"+seq_record.id
  
@@ -66,26 +69,34 @@ try:
     elif len(userParameters)==2:
         sequence_cleaner(userParameters[0],float(userParameters[1]))
     elif len(userParameters)==3:
-        sequence_cleaner(userParameters[0],float(userParameters[1]),float(userParameters[2]))
+        sequence_cleaner(userParameters[0],float(userParameters[1]),
+		                 float(userParameters[2]))
     else:
         print "There is a problem!"
 except:
     print "There is a problem!"
-
-    
-#python sequence_cleaner.py Aip_coral.fasta 10 10
 ```
 
-Using command line, you should run python sequence\_cleaner.py
-INPUT-(1st) MIN\_LENGHT-(2nd) MIN\_%-(3rd) - there are 3 basic
-parameters:
+Using the command line, you should run: 
 
-`        #1st: your fasta file `  
-`        #2nd: the user defines the minimum length (default value 0 (It means you don't have to care about the minimum length)`  
-`        #3rd: the user defines the % of N is allowed (default value 100 (all sequences with 'N' will be in your ouput), `  
-`              set value to 0 if you want no sequences with "N" in your output)`
+``` bash
+python sequence_cleaner.py input[1] min_length[2] min[3]
+```
 
-`        For exemple: python sequence_cleaner.py Aip_coral.fasta 10 10`
+There are 3 basic parameters:
+
+-   \[1\]: your fasta file
+-   \[2\]: the user defines the minimum length. Default value 0, it means you
+    don't have to care about the minimum length
+-   \[3\]: the user defines the % of N is allowed. Default value 100, all
+    sequences with 'N' will be in your ouput, set value to 0 if you want no
+    sequences with "N" in your output
+
+For example:
+
+``` bash
+python sequence_cleaner.py Aip_coral.fasta 10 10
+```
 
 FYI: if you don't care about the 2nd and the 3rd parameters you are just
 gonna remove the duplicate sequences

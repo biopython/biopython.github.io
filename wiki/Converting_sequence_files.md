@@ -42,18 +42,22 @@ print "Coverted %i records" % count
 In this example the GenBank file contained six records and started like
 this:
 
-`LOCUS       ATCOR66M      513 bp    mRNA            PLN       02-MAR-1992`  
-`DEFINITION  A.thaliana cor6.6 mRNA.`  
-`ACCESSION   X55053`  
-`VERSION     X55053.1  GI:16229`  
-`...`
+```
+LOCUS       ATCOR66M      513 bp    mRNA            PLN       02-MAR-1992
+DEFINITION  A.thaliana cor6.6 mRNA.  
+ACCESSION   X55053  
+VERSION     X55053.1  GI:16229  
+...
+```
 
 The resulting Fasta file also contains all six records and looks like
 this:
 
-`>X55053.1 A.thaliana cor6.6 mRNA.`  
-`AACAAAACACACATCAAAAACGATTTTACAAGAAAAAAATA...`  
-`...`
+```
+>X55053.1 A.thaliana cor6.6 mRNA.  
+AACAAAACACACATCAAAAACGATTTTACAAGAAAAAAATA...  
+...
+```
 
 Note that all the Fasta file can store is the identifier, description
 and sequence.

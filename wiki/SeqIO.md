@@ -282,17 +282,21 @@ print "Converted %i records" % count
 
 In this example the GenBank file started like this:
 
-`LOCUS       ATCOR66M      513 bp    mRNA            PLN       02-MAR-1992`  
-`DEFINITION  A.thaliana cor6.6 mRNA.`  
-`ACCESSION   X55053`  
-`VERSION     X55053.1  GI:16229`  
-`...`
+```
+LOCUS       ATCOR66M      513 bp    mRNA            PLN       02-MAR-1992  
+DEFINITION  A.thaliana cor6.6 mRNA.  
+ACCESSION   X55053  
+VERSION     X55053.1  GI:16229  
+...
+```
 
 The resulting Fasta file looks like this:
 
-`>X55053.1 A.thaliana cor6.6 mRNA.`  
-`AACAAAACACACATCAAAAACGATTTTACAAGAAAAAAATA...`  
-`...`
+```
+>X55053.1 A.thaliana cor6.6 mRNA.  
+AACAAAACACACATCAAAAACGATTTTACAAGAAAAAAATA...  
+...
+```
 
 Note that all the Fasta file can store is the identifier, description
 and sequence.
@@ -396,10 +400,12 @@ for record in SeqIO.parse(open("ls_orchid.gbk"), "genbank") :
 
 You should get this output:
 
-`Z78533.1 JUEoWn6DPhgZ9nAyowsgtoD9TTo`  
-`Z78532.1 MN/s0q9zDoCVEEc+k/IFwCNF2pY`  
-`...`  
-`Z78439.1 H+JfaShya/4yyAj7IbMqgNkxdxQ`
+```
+Z78533.1 JUEoWn6DPhgZ9nAyowsgtoD9TTo  
+Z78532.1 MN/s0q9zDoCVEEc+k/IFwCNF2pY  
+... 
+Z78439.1 H+JfaShya/4yyAj7IbMqgNkxdxQ
+```
 
 Now lets use the checksum function and **Bio.SeqIO.to\_dict()** to build
 a [SeqRecord](SeqRecord "wikilink") dictionary using the SEGUID as the
@@ -420,8 +426,10 @@ print record.description
 
 Giving this output:
 
-`Z78439.1 `  
-`P.barbatum 5.8S rRNA gene and ITS1 and ITS2 DNA.`
+```
+Z78439.1   
+P.barbatum 5.8S rRNA gene and ITS1 and ITS2 DNA.
+```
 
 ### Random subsequences
 
@@ -456,17 +464,19 @@ output_handle.close()
 
 That should give something like this as the output file,
 
-`>fragment_1 `  
-`TGGGCCTCATATTTATCCTATATACCATGTTCGTATGGTGGCGCGATGTTCTACGTGAAT`  
-`CCACGTTCGAAGGACATCATACCAAAGTCGTACAATTAGGACCTCGATATGGTTTTATTC`  
-`TGTTTATCGTATCGGAGGTTATGTTCTTTTTTGCTCTTTTTCGGGCTTCTTCTCATTCTT`  
-`CTTTGGCACCTACGGTAGAG`  
-`...`  
-`>fragment_500 `  
-`ACCCAGTGCCGCTACCCACTTCTACTAAGGCTGAGCTTAATAGGAGCAAGAGACTTGGAG`  
-`GCAACAACCAGAATGAAATATTATTTAATCGTGGAAATGCCATGTCAGGCGCACCTATCA`  
-`GAATCGGAACAGACCAATTACCAGATCCACCTATCATCGCCGGCATAACCATAAAAAAGA`  
-`TCATTAAAAAAGCGTGAGCC`
+```
+>fragment_1  
+TGGGCCTCATATTTATCCTATATACCATGTTCGTATGGTGGCGCGATGTTCTACGTGAAT  
+CCACGTTCGAAGGACATCATACCAAAGTCGTACAATTAGGACCTCGATATGGTTTTATTC  
+TGTTTATCGTATCGGAGGTTATGTTCTTTTTTGCTCTTTTTCGGGCTTCTTCTCATTCTT  
+CTTTGGCACCTACGGTAGAG 
+...  
+>fragment_500  
+ACCCAGTGCCGCTACCCACTTCTACTAAGGCTGAGCTTAATAGGAGCAAGAGACTTGGAG  
+GCAACAACCAGAATGAAATATTATTTAATCGTGGAAATGCCATGTCAGGCGCACCTATCA  
+GAATCGGAACAGACCAATTACCAGATCCACCTATCATCGCCGGCATAACCATAAAAAAGA  
+TCATTAAAAAAGCGTGAGCC
+```
 
 ### Writing to a string
 

@@ -49,12 +49,16 @@ example we'll talk about the most common choice, MySQL. How you do this
 will also depend on your operating system, for example on a Debian or
 Ubuntu Linux machine try this:
 
-`sudo apt-get install mysql-common mysql-server python-mysqldb`
+``` bash
+sudo apt-get install mysql-common mysql-server python-mysqldb
+```
 
 It will also be important to have perl (to run some of the setup
 scripts). Again, on a Debian or Ubuntu Linux machine try this:
 
-`sudo apt-get install perl`
+``` bash
+sudo apt-get install perl
+```
 
 You may find perl is already installed.
 
@@ -83,57 +87,67 @@ Creating the empty database
 The following command line should create a new database on your own
 computer called *bioseqdb*, belonging to the *root* user account:
 
-`mysqladmin -u root create bioseqdb`
+``` bash
+mysqladmin -u root create bioseqdb
+```
 
 We can then tell MySQL to load the BioSQL scheme we downloaded above.
 Change to the scripts subdirectory from the unzipped BioSQL download,
 then:
 
-`mysql -u root bioseqdb < biosqldb-mysql.sql`
+``` bash
+mysql -u root bioseqdb < biosqldb-mysql.sql
+```
 
 You can have a quick play using the mysql command line tool, for
 example:
 
-`mysql --user=root bioseqdb -e "show tables"`
+``` bash
+mysql --user=root bioseqdb -e "show tables"
+```
 
 giving:
 
-`+----------------------------+`  
-`| Tables_in_bioseqdb         |`  
-`+----------------------------+`  
-`| biodatabase                |`  
-`| bioentry                   |`  
-`| bioentry_dbxref            |`  
-`| bioentry_path              |`  
-`| bioentry_qualifier_value   |`  
-`| bioentry_reference         |`  
-`| bioentry_relationship      |`  
-`| biosequence                |`  
-`| comment                    |`  
-`| dbxref                     |`  
-`| dbxref_qualifier_value     |`  
-`| location                   |`  
-`| location_qualifier_value   |`  
-`| ontology                   |`  
-`| reference                  |`  
-`| seqfeature                 |`  
-`| seqfeature_dbxref          |`  
-`| seqfeature_path            |`  
-`| seqfeature_qualifier_value |`  
-`| seqfeature_relationship    |`  
-`| taxon                      |`  
-`| taxon_name                 |`  
-`| term                       |`  
-`| term_dbxref                |`  
-`| term_path                  |`  
-`| term_relationship          |`  
-`| term_relationship_term     |`  
-`| term_synonym               |`  
-`+----------------------------+`
+```
++----------------------------+  
+| Tables_in_bioseqdb         |  
++----------------------------+  
+| biodatabase                |  
+| bioentry                   |  
+| bioentry_dbxref            |  
+| bioentry_path              |  
+| bioentry_qualifier_value   |  
+| bioentry_reference         |  
+| bioentry_relationship      |  
+| biosequence                |  
+| comment                    |  
+| dbxref                     |  
+| dbxref_qualifier_value     |  
+| location                   |  
+| location_qualifier_value   |  
+| ontology                   |  
+| reference                  |  
+| seqfeature                 |  
+| seqfeature_dbxref          |  
+| seqfeature_path            |  
+| seqfeature_qualifier_value |  
+| seqfeature_relationship    |  
+| taxon                      |  
+| taxon_name                 |  
+| term                       |  
+| term_dbxref                |  
+| term_path                  |  
+| term_relationship          |  
+| term_relationship_term     |  
+| term_synonym               |  
++----------------------------+
+```
 
 Or, to look inside a table:
 
-`mysql --user=root bioseqdb -e "select * from bioentry;"`
+``` bash
+mysql --user=root bioseqdb -e "select * from bioentry;"
+```
 
 This should return no rows as the table is empty.
 
@@ -147,14 +161,18 @@ biosqldb-pg.sql BioSQL version 1.0.1
 First you need to set up user permissions, if you are not sure how to do
 this, try:
 
-` su - postgres`  
-` createuser `<your user name>
+``` bash
+su - postgres  
+createuser <your user name>
+```
 
 Then, assuming you are logged-in as <your user name> and Postgres is
 running on the local machine, you should be able to do the following:
 
-`createdb biosqldb`  
-`psql biosqldb < biosqldb-pg.sql`
+``` bash
+createdb biosqldb  
+psql biosqldb < biosqldb-pg.sql
+```
 
 Run *psql* and type enter *\\d <ENTER>* to see all the entities created.
 
@@ -176,7 +194,9 @@ information needed downloaded as needed from Entrez.
 To update the NCBI taxonomy, change to the scripts subdirectory from the
 unzipped BioSQL download, then:
 
-`./load_ncbi_taxonomy.pl --dbname bioseqdb --driver mysql --dbuser root --download true`
+``` bash
+./load_ncbi_taxonomy.pl --dbname bioseqdb --driver mysql --dbuser root --download true
+```
 
 For PostgreSQL you need to have the perl DBD-Pg module installed - Using
 CPAN: "perl -MCPAN -e 'install DBI'; perl -MCPAN -e 'install DBD::Pg'".
@@ -191,17 +211,19 @@ You should see this output at the command prompt - be warned that some
 of these steps do take a while (especially *rebuilding nested set
 left/right values*):
 
-`Loading NCBI taxon database in taxdata:`  
-`        ... retrieving all taxon nodes in the database`  
-`        ... reading in taxon nodes from nodes.dmp`  
-`        ... insert / update / delete taxon nodes`  
-`        ... (committing nodes)`  
-`        ... rebuilding nested set left/right values`  
-`        ... reading in taxon names from names.dmp`  
-`        ... deleting old taxon names`  
-`        ... inserting new taxon names`  
-`        ... cleaning up`  
-`Done.`
+```
+Loading NCBI taxon database in taxdata:  
+        ... retrieving all taxon nodes in the database  
+        ... reading in taxon nodes from nodes.dmp  
+        ... insert / update / delete taxon nodes  
+        ... (committing nodes)  
+        ... rebuilding nested set left/right values  
+        ... reading in taxon names from names.dmp  
+        ... deleting old taxon names  
+        ... inserting new taxon names  
+        ... cleaning up  
+Done.
+```
 
 This might be a good point for a tea break - I didn't time this but it
 was over ten minutes.
@@ -245,7 +267,9 @@ TESTDB = 'biosql_test'
 Change these to match your setup. You can then run the BioSQL unit tests
 as normal, e.g.
 
-`python run_tests.py test_BioSQL test_BioSQL_SeqIO`
+``` bash
+python run_tests.py test_BioSQL test_BioSQL_SeqIO
+```
 
 For PostgreSQL, use:
 
@@ -286,20 +310,26 @@ orchid namespace. You can check this at the command line:
 
 MySQL:
 
-`mysql --user=root bioseqdb -e "select * from biodatabase;"`
+``` bash
+mysql --user=root bioseqdb -e "select * from biodatabase;"
+```
 
 PostgreSQL:
 
-`psql -c "SELECT * FROM biodatabase;" bioseqdb`
+``` bash
+psql -c "SELECT * FROM biodatabase;" bioseqdb
+```
 
 Which should give something like this (assuming you haven't done any
 other testing yet):
 
-`+----------------+---------+-----------+------------------+`  
-`| biodatabase_id | name    | authority | description      |`  
-`+----------------+---------+-----------+------------------+`  
-`|              1 | orchids | NULL      | Just for testing |`  
-`+----------------+---------+-----------+------------------+`
+```
++----------------+---------+-----------+------------------+  
+| biodatabase_id | name    | authority | description      |  
++----------------+---------+-----------+------------------+  
+|              1 | orchids | NULL      | Just for testing |  
++----------------+---------+-----------+------------------+
+```
 
 Now that we have setup an *orchids* namespace within our *biosqldb*
 MySQL database, lets add some sequences to it.
@@ -327,12 +357,14 @@ handle.close()
 The expected output is below, note we have three records with a total of
 nine features:
 
-`AF191665.1 Opuntia marenae rpl16 gene; chloroplast gene for c...`  
-`Sequence length 902, 3 features, from: chloroplast Opuntia marenae`  
-`AF191664.1 Opuntia clavata rpl16 gene; chloroplast gene for c...`  
-`Sequence length 899, 3 features, from: chloroplast Grusonia clavata`  
-`AF191663.1 Opuntia bradtiana rpl16 gene; chloroplast gene for...`  
-`Sequence length 899, 3 features, from: chloroplast Opuntia bradtianaa`
+```
+AF191665.1 Opuntia marenae rpl16 gene; chloroplast gene for c...  
+Sequence length 902, 3 features, from: chloroplast Opuntia marenae  
+AF191664.1 Opuntia clavata rpl16 gene; chloroplast gene for c...  
+Sequence length 899, 3 features, from: chloroplast Grusonia clavata  
+AF191663.1 Opuntia bradtiana rpl16 gene; chloroplast gene for...  
+Sequence length 899, 3 features, from: chloroplast Opuntia bradtianaa
+```
 
 Now, instead of printing things on screen, let's add these three records
 to a new (empty) *orchid* database:
@@ -359,12 +391,16 @@ and you should see new rows in several tables.
 
 The *bioentry* and *biosequence* tables should have three new rows:
 
-`mysql --user=root bioseqdb -e "select * from bioentry;"`  
-`mysql --user=root bioseqdb -e "select * from biosequence;"`
+``` bash
+mysql --user=root bioseqdb -e "select * from bioentry;"  
+mysql --user=root bioseqdb -e "select * from biosequence;"
+```
 
 The should also be nine new features:
 
-`mysql --user=root bioseqdb -e "select * from seqfeature;"`
+``` bash
+mysql --user=root bioseqdb -e "select * from seqfeature;"
+```
 
 Next, we'll try and load these three records back from the database.
 
@@ -387,12 +423,14 @@ for identifier in ['6273291', '6273290', '6273289'] :
 
 Giving:
 
-`AF191665.1 Opuntia marenae rpl16 gene; chloroplast gene for c...`  
-`Sequence length 902`  
-`AF191664.1 Opuntia clavata rpl16 gene; chloroplast gene for c...`  
-`Sequence length 899`  
-`AF191663.1 Opuntia bradtiana rpl16 gene; chloroplast gene for...`  
-`Sequence length 899`
+```
+AF191665.1 Opuntia marenae rpl16 gene; chloroplast gene for c...  
+Sequence length 902  
+AF191664.1 Opuntia clavata rpl16 gene; chloroplast gene for c...  
+Sequence length 899  
+AF191663.1 Opuntia bradtiana rpl16 gene; chloroplast gene for...  
+Sequence length 899
+```
 
 The objects you get back from BioSQL act like a
 [SeqRecord](SeqRecord "wikilink") object with a [Seq](Seq "wikilink")
@@ -440,7 +478,9 @@ to apply this change.
 There should now be one less row in the *biodatabase* table, check this
 at the command line:
 
-`mysql --user=root bioseqdb -e "select * from biodatabase;"`
+``` bash
+mysql --user=root bioseqdb -e "select * from biodatabase;"
+```
 
 You can also check that the three orchid sequences have gone from the
 other tables.
@@ -461,13 +501,17 @@ MySQL Tips and Tricks
 If you are getting timeout errors, check to see if your SQL server has
 any orphaned threads.
 
-`mysql --user=root bioseqdb -e "SHOW INNODB STATUS\G" | grep "thread id"`
+``` bash
+mysql --user=root bioseqdb -e "SHOW INNODB STATUS\G" | grep "thread id"
+```
 
 And if there are, assuming you are the only person using this database,
 you might try killing them off using the thread id given by the above
 command:
 
-`mysql --user=root bioseqdb -e "KILL 123;"`
+``` bash
+mysql --user=root bioseqdb -e "KILL 123;"
+```
 
 Use at your own risk!
 
