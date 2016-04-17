@@ -249,8 +249,10 @@ for donating this module.
 The following commands will store all PDB files in the `/data/pdb`
 directory:
 
-`python` `PDBList.py` `all` `/data/pdb` `python` `PDBList.py` `all`
-`/data/pdb` `-d`
+``` python
+python PDBList.py all /data/pdb
+python PDBList.py all /data/pdb -d
+```
 
 The API method for this is called `download_entire_pdb`. Adding the `-d`
 option will store all files in the same directory. Otherwise, they are
@@ -325,7 +327,7 @@ also correctly interpreted.
 
 #### Can I write PDB files?
 
-Use the PDBIO class for this. It's easy to write out specific parts of a
+Use the `PDBIO` class for this. It's easy to write out specific parts of a
 structure too, of course.
 
 Example: saving a structure
@@ -510,8 +512,8 @@ id is a tuple with three elements:
     as follows: Thr 80 A, Ser 80 B, Asn 81. In this way the residue
     numbering scheme stays in tune with that of the wild type structure.
 
-The id of the above glucose residue would thus be `('H_GLC',` `100,`
-`'A')`. If the hetero-flag and insertion code are blank, the sequence
+The id of the above glucose residue would thus be `('H_GLC', 100, 'A')`.
+If the hetero-flag and insertion code are blank, the sequence
 identifier alone can be used:
 
 ``` python
@@ -897,8 +899,8 @@ cb = cb_at_origin + ca
 This example shows that it's possible to do some quite nontrivial vector
 operations on atomic data, which can be quite useful. In addition to all
 the usual vector operations (cross (use `**`), and dot (use `*`)
-product, angle, norm, etc.) and the above mentioned <code>rotaxis
-function, the <code>Vector module also has methods to rotate (`rotmat`)
+product, angle, norm, etc.) and the above mentioned `rotaxis`
+function, the `Vector` module also has methods to rotate (`rotmat`)
 or reflect (`refmat`) one vector on top of another.
 
 ### Manipulating the structure

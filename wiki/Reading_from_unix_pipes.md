@@ -38,8 +38,9 @@ command or program. For example, the following shell command can be used
 to extract the compressed sequence and pipe it to the script
 (solexa2sanger\_fq.py).
 
-<bash> gunzip -c some\_solexa.fastq.gz | python solexa2sanger\_fq.py
-</bash>
+``` bash
+gunzip -c some_solexa.fastq.gz | python solexa2sanger_fq.py
+```
 
 This will write the sequence in Sanger FASTQ format to stdout - in this
 case the screen.
@@ -51,8 +52,9 @@ program's stdout to a file. In this example, the python script is fed
 its data redirected from an input file, and the output which would have
 been printed to screen is instead redirected to an output file:
 
-<bash> python solexa2sanger\_fq.py &lt; some\_solexa.fastq &gt;
-some\_phred.fastq </bash>
+``` bash
+python solexa2sanger_fq.py < some_solexa.fastq > some_phred.fastq
+```
 
 Redirection can also be used to redirect a program or command's stderr
 to a file. Further examples of using redirection can be found

@@ -55,14 +55,18 @@ Most **Linux** distributions will include an optional Biopython package
 automatically. If you have the Python package management tool pip
 installed, try:
 
-`pip install biopython`
+``` bash
+pip install biopython
+```
 
 Otherwise you typically install from source by downloading and
 uncompressing the archive, then running the commands:
 
-`python setup.py build`  
-`python setup.py test`  
-`sudo python setup.py install`
+``` bash
+python setup.py build  
+python setup.py test  
+sudo python setup.py install
+```
 
 Substitute python with your specific version, for example python3,
 jython or pypy.
@@ -72,7 +76,9 @@ need to have installed Apple's XCode tools from the App Store (it is a
 big download), and then the optional command line tools from within the
 XCode GUI's options menu, or on Mavericks by using the command:
 
-`xcode-select --install`
+``` bash
+xcode-select --install
+```
 
 If you have trouble, see the full installation instructions:
 
@@ -142,15 +148,21 @@ You should be able to install Biopython and its dependencies using the
 Synaptic GUI tool (on the main menu under System / Administration /
 Synaptic Package Manager), or at the command line using:
 
-`sudo apt-get install python-biopython`
+``` bash
+sudo apt-get install python-biopython
+```
 
 If you want the documentation and unit tests,
 
-`sudo apt-get install python-biopython-doc`
+``` bash
+sudo apt-get install python-biopython-doc
+```
 
 And if you want to use [BioSQL](BioSQL "wikilink"),
 
-`sudo apt-get install python-biopython-sql`
+``` bash
+sudo apt-get install python-biopython-sql
+```
 
 However, this will probably not be the latest release (see [Ubuntu
 listing here](http://packages.ubuntu.com/python-biopython), and [Debian
@@ -160,7 +172,9 @@ If you want the latest version of Biopython, you will need to install it
 from source. However, you should be able to automatically install the
 build dependencies with the following command:
 
-`sudo apt-get build-dep python-biopython`
+``` bash
+sudo apt-get build-dep python-biopython
+```
 
 ### Archlinux
 
@@ -169,11 +183,15 @@ repository](https://www.archlinux.org/packages/?q=biopython) as
 python-biopython (for Python 3) or python2-biopython (for Python 2) and
 can be installed using pacman:
 
-`  pacman -S python2-biopython`
+``` bash
+pacman -S python2-biopython
+```
 
 Or, for Python 3:
 
-`  pacman -S python-biopython`
+``` bash
+pacman -S python-biopython
+```
 
 ### Fedora
 
@@ -182,7 +200,9 @@ named
 [python-biopython](https://admin.fedoraproject.org/community/?package=python-biopython#package_maintenance),
 and can be installed using yum as root:
 
-`yum install python-biopython`
+``` bash
+yum install python-biopython
+```
 
 or via one of the GUI package management systems such as pirut and
 PackageKit (available in F-9 and later).
@@ -192,7 +212,9 @@ PackageKit (available in F-9 and later).
 Gentoo's portage tree contains an ebuild (sci-biology/biopython) which
 builds from source. To install it, open a terminal as root and run:
 
-`emerge -va biopython `
+``` bash
+emerge -va biopython
+```
 
 [Here](http://www.gentoo-portage.com/sci-biology/biopython) is a link to
 Biopython at [Gentoo-Portage](http://www.gentoo-portage.com) which shows
@@ -212,7 +234,9 @@ Supposing that you're familiar with this method and that you have an
 up-to-date ports tree, all you need to do is to execute the following
 commands as root:
 
-<bash> cd /usr/ports/biology/py-biopython make install clean </bash>
+``` bash
+cd /usr/ports/biology/py-biopython make install clean
+```
 
 Due to the great architecture of the ports system, this simple commands
 will automatically fetch and install Biopython (as well as its necessary

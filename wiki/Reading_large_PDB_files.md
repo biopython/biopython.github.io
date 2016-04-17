@@ -11,10 +11,12 @@ produced by molecular dynamics (MD) codes then one quickly runs into
 problems with missing atoms on reading. The typical error message says
 that atoms will be missing:
 
-`WARNING: Residue (' ', 1, ' ') redefined at line 31.`  
-`PDBConstructionException: Blank altlocs in duplicate residue SOL (' ', 1, ' ') at line 31.`  
-`Exception ignored.`  
-`Some atoms or residues will be missing in the data structure.`
+```
+WARNING: Residue (' ', 1, ' ') redefined at line 31.  
+PDBConstructionException: Blank altlocs in duplicate residue SOL (' ', 1, ' ') at line 31.  
+Exception ignored.  
+Some atoms or residues will be missing in the data structure.
+```
 
 The problem is simply that these files can be large with hundreds of
 thousands of atoms and residues (for instance, each water molecule is a
@@ -25,7 +27,7 @@ appropriate columns of the
 record to accommodate atom numbers (*serial*) &gt;99,999 and residue
 numbers (*resSeq*) &gt; 9999. Thus, these numbers are simply written
 modulo 100,000 (*serial*) or modulo 10,000 (*resSeq*). This creates
-duplicate entries in the chain and the Bio.PDB.PDBParser (or rather, the
+duplicate entries in the chain and the `Bio.PDB.PDBParser` (or rather, the
 StructureBuilder) complains. The effect is that not all atoms are read.
 
 The [code below](#Classes "wikilink") derives a new class from
@@ -183,7 +185,7 @@ def get_structure(pdbfile,pdbid='system'):
 See Also
 --------
 
-The SloppyStructureBuilder() was used as the basis for a small python
+The `SloppyStructureBuilder()` was used as the basis for a small python
 module
 [edPDB](http://sbcb.bioch.ox.ac.uk/oliver/software/GromacsWrapper/html/edpdb.html)
 to edit PDB files in preparation for MD simulations.

@@ -41,12 +41,14 @@ for index, record in enumerate(SeqIO.parse(open("ls_orchid.gbk"), "genbank")):
 And this is some of the output. Remember python likes to count from
 zero, so the 94 records in this file have been labelled 0 to 93:
 
-`index 0, ID = Z78533.1, length 740, with 5 features`  
-`index 1, ID = Z78532.1, length 753, with 5 features`  
-`index 2, ID = Z78531.1, length 748, with 5 features`  
-`...`  
-`index 92, ID = Z78440.1, length 744, with 5 features`  
-`index 93, ID = Z78439.1, length 592, with 5 features`
+```
+index 0, ID = Z78533.1, length 740, with 5 features  
+index 1, ID = Z78532.1, length 753, with 5 features  
+index 2, ID = Z78531.1, length 748, with 5 features  
+...  
+index 92, ID = Z78440.1, length 744, with 5 features  
+index 93, ID = Z78439.1, length 592, with 5 features
+```
 
 Lets look in a little more detail at the final record:
 
@@ -57,19 +59,21 @@ print record
 That should give you a hint of the sort of information held in this
 object:
 
-`ID: Z78439.1`  
-`Name: Z78439`  
-`Description: P.barbatum 5.8S rRNA gene and ITS1 and ITS2 DNA.`  
-`Number of features: 5`  
-`/source=Paphiopedilum barbatum`  
-`/taxonomy=['Eukaryota', 'Viridiplantae', 'Streptophyta', 'Embryophyta', ..., 'Paphiopedilum']`  
-`/keywords=['5.8S ribosomal RNA', '5.8S rRNA gene', 'internal transcribed spacer', 'ITS1', 'ITS2']`  
-`/references=[`<Bio.SeqFeature.Reference ...>`, `<Bio.SeqFeature.Reference ...>`]`  
-`/data_file_division=PLN`  
-`/date=30-NOV-2006`  
-`/organism=Paphiopedilum barbatum`  
-`/gi=2765564`  
-`Seq('CATTGTTGAGATCACATAATAATTGATCGAGTTAATCTGGAGGATCTGTTTACTTTGGTC ...', IUPACAmbiguousDNA())`
+```
+ID: Z78439.1  
+Name: Z78439  
+Description: P.barbatum 5.8S rRNA gene and ITS1 and ITS2 DNA. 
+Number of features: 5 
+/source=Paphiopedilum barbatum
+/taxonomy=['Eukaryota', 'Viridiplantae', 'Streptophyta', 'Embryophyta', ..., 'Paphiopedilum']
+/keywords=['5.8S ribosomal RNA', '5.8S rRNA gene', 'internal transcribed spacer', 'ITS1', 'ITS2']
+/references=[`<Bio.SeqFeature.Reference ...>`, `<Bio.SeqFeature.Reference ...>`]
+/data_file_division=PLN 
+/date=30-NOV-2006  
+/organism=Paphiopedilum barbatum  
+/gi=2765564 
+Seq('CATTGTTGAGATCACATAATAATTGATCGAGTTAATCTGGAGGATCTGTTTACTTTGGTC ...', IUPACAmbiguousDNA())
+```
 
 Lets look a little more closely... and use python's **dir()** function
 to find out more about the SeqRecord object and what it does:
@@ -169,17 +173,19 @@ example:
 
 This should give:
 
-`>Z78439.1 P.barbatum 5.8S rRNA gene and ITS1 and ITS2 DNA.`  
-`CATTGTTGAGATCACATAATAATTGATCGAGTTAATCTGGAGGATCTGTTTACTTTGGTC`  
-`ACCCATGGGCATTTGCTGTTGAAGTGACCTAGATTTGCCATCGAGCCTCCTTGGGAGCTT`  
-`TCTTGTTGGCGAGATCTAAACCCCTGCCCGGCGGAGTTGGGCGCCAAGTCATATGACACA`  
-`TAATTGGTGAAGGGGGTGGTAATCCTGCCCTGACCCTCCCCAAATTATTTTTTTAACAAC`  
-`TCTCAGCAACGGATATCTCGGCTCTTGCATCGATGAAGAACGCAGCGAAATGCGATAATG`  
-`GTGTGAATTGCAGAATCCCGTGAACATCGAGTCTTTGAACGCAAGTTGCGCCCGAGGCCA`  
-`TCAGGCCAAGGGCACGCCTGCCTGGGCATTGCGAGTCATATCTCTCCCTTAATGAGGCTG`  
-`TCCATACATACTGTTCAGCCGGTGCGGATGTGAGTTTGGCCCCTTGTTCTTTGGTACGGG`  
-`GGGTCTAAGAGCTGCATGGGCTTTGGATGGTCCTAAATACGGAAAGAGGTGGACGAACTA`  
-`TGCTACAACAAAATTGTTGTGCAAATGCCCCGGTTGGCCGTTTAGTTGGGCC`
+```
+>Z78439.1 P.barbatum 5.8S rRNA gene and ITS1 and ITS2 DNA.  
+CATTGTTGAGATCACATAATAATTGATCGAGTTAATCTGGAGGATCTGTTTACTTTGGTC  
+ACCCATGGGCATTTGCTGTTGAAGTGACCTAGATTTGCCATCGAGCCTCCTTGGGAGCTT  
+TCTTGTTGGCGAGATCTAAACCCCTGCCCGGCGGAGTTGGGCGCCAAGTCATATGACACA  
+TAATTGGTGAAGGGGGTGGTAATCCTGCCCTGACCCTCCCCAAATTATTTTTTTAACAAC  
+TCTCAGCAACGGATATCTCGGCTCTTGCATCGATGAAGAACGCAGCGAAATGCGATAATG  
+GTGTGAATTGCAGAATCCCGTGAACATCGAGTCTTTGAACGCAAGTTGCGCCCGAGGCCA  
+TCAGGCCAAGGGCACGCCTGCCTGGGCATTGCGAGTCATATCTCTCCCTTAATGAGGCTG  
+TCCATACATACTGTTCAGCCGGTGCGGATGTGAGTTTGGCCCCTTGTTCTTTGGTACGGG  
+GGGTCTAAGAGCTGCATGGGCTTTGGATGGTCCTAAATACGGAAAGAGGTGGACGAACTA  
+TGCTACAACAAAATTGTTGTGCAAATGCCCCGGTTGGCCGTTTAGTTGGGCC
+```
 
 If you are using Biopython 1.50 or later, there will also be a
 **letter\_annotations** property. Again this is a dictionary but for
@@ -216,11 +222,13 @@ print record
 
 This would give the following output:
 
-`ID: YP_025292.1`  
-`Name: HokC`  
-`Description: toxic membrane protein, small`  
-`Number of features: 0`  
-`Seq('MKQHKAMIVALIVICITAVVAALVTRKDLCEVHIRTGQTEVAVF', IUPACProtein())`
+```
+ID: YP_025292.1  
+Name: HokC  
+Description: toxic membrane protein, small  
+Number of features: 0  
+Seq('MKQHKAMIVALIVICITAVVAALVTRKDLCEVHIRTGQTEVAVF', IUPACProtein())
+```
 
 You could then pass this new record to
 [Bio.SeqIO.write(...)](SeqIO "wikilink") to save it to disk.
