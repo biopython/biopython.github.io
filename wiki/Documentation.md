@@ -85,7 +85,7 @@ below.
 -   Ravinder Singh and Scott Kelley teach a Bioinformatics course using
     Biopython at the University of Colorado.
       
-    <http://mcdb.colorado.edu/courses/6440/index.html>
+    <http://www.colorado.edu/catalog/2012-13/courses?college=ARSC&department=B-MCDB>
 
 -   Katja Schuerer, Catherine Letondal and Eric Deveaud have an online
     course that covers getting started in programming with Python. It's
