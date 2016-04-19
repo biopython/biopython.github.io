@@ -87,11 +87,6 @@ below.
       
     <http://www.colorado.edu/catalog/2012-13/courses?college=ARSC&department=B-MCDB>
 
--   Katja Schuerer, Catherine Letondal and Eric Deveaud have an online
-    course that covers getting started in programming with Python. It's
-    aimed at biologists that want to learn programming.
-      
-    <http://www.pasteur.fr/formation/infobio/python/>
 
 #### Papers
 
