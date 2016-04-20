@@ -141,7 +141,7 @@ codon alignments, or at least a basic understanding of molecular
 biology, is important. Some basic math is involved, essentially reading
 a few equations and converting them to code. One useful book to have on
 hand is *[Computational Molecular
-Evolution](http://abacus.gene.ucl.ac.uk/CME/)* by Ziheng Yang.
+Evolution](http://abacus.gene.ucl.ac.uk/CME2006/)* by Ziheng Yang.
 
 Mentors  
 [Eric Talevich](http://etal.myweb.uga.edu/), [Peter
