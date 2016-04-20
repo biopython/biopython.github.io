@@ -100,7 +100,7 @@ Occurrence data is derived mainly from museum collections. The major
 source of such data is the [Global Biodiversity Information
 Facility](http://www.gbif.org/) (GBIF). GBIF serves occurrence data
 recorded by hundreds of museums worldwide. GBIF occurrence data can be
-[searched manually](http://data.gbif.org/occurrences/), and results
+[searched manually](http://www.gbif.org/occurrence), and results
 downloaded (see examples on GBIF website) in various formats:
 spreadsheet, Google Earth KML, or the XML DarwinCore format.
 
