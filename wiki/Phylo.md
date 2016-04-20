@@ -40,14 +40,6 @@ The I/O and tree-manipulation functionality will work without them;
 they're imported on demand when the functions draw(), draw\_graphviz()
 and to\_networkx() are called.
 
-To use this module in older versions of Biopython with Python 2.4,
-you'll also need to install a separate package that provides the
-ElementTree interface for XML parsing. Either of these will work:
-
--   [lxml](http://codespeak.net/lxml/)
--   [elementtree](http://effbot.org/zone/element-index.htm)
-    (or cElementTree)
-
 The Phylo module has also been successfully tested on Jython 2.5.1,
 minus the Graphviz- and NetworkX-based functions. However, parsing
 phyloXML files is noticeably slower because Jython uses a different
