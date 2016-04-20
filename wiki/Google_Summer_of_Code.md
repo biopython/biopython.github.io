@@ -196,7 +196,7 @@ Mark Holder, Jeet Sukumaran, [Eric Talevich](http://etal.myweb.uga.edu/)
 #### [SearchIO](http://biopython.org/wiki/SearchIO)
 
 Student  
-Wibowo Arindrarto ([blog](http://bow.web.id/blog/tag/gsoc/))
+Wibowo Arindrarto ([blog](http://bow.web.id/blog/2012/08/back-on-the-main-branch/))
 
 Rationale  
 Biopython has general APIs for parsing and writing assorted sequence
