@@ -81,6 +81,6 @@ More
 
 Tao Liu expanded on this code with a [full example of converting between
 Entrez IDs and RefSeq
-IDs](http://blog.vladimirliu.com/2011/05/05/convert-between-entrez-ids-and-refseq-ids-using-biopython/).
+IDs](https://github.com/taoliu/taolib/blob/master/Scripts/convert_gene_ids.py).
 
 ------------------------------------------------------------------------
