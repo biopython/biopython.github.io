@@ -85,13 +85,8 @@ below.
 -   Ravinder Singh and Scott Kelley teach a Bioinformatics course using
     Biopython at the University of Colorado.
       
-    <http://mcdb.colorado.edu/courses/6440/index.html>
+    <http://www.colorado.edu/catalog/2012-13/courses?college=ARSC&department=B-MCDB>
 
--   Katja Schuerer, Catherine Letondal and Eric Deveaud have an online
-    course that covers getting started in programming with Python. It's
-    aimed at biologists that want to learn programming.
-      
-    <http://www.pasteur.fr/formation/infobio/python/>
 
 #### Papers
 
@@ -164,8 +159,7 @@ BioPerl, BioRuby, BioJava and EMBOSS
 
 -   February 2010 Biopython workshop at the University of Georgia
       
-    [PDF](http://etal.myweb.uga.edu/biopywork.pdf) | [Flash
-    version](http://www.slideshare.net/etalevich/biopython-programming-workshop-at-uga)
+    [Blog Post](http://etalog.blogspot.com/2010/02/python-workshop-2-biopython.html)
 
 -   BOSC 2009 presentation "Biopython Project Update"
       
