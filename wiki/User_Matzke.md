@@ -9,10 +9,9 @@ Nick Matzke is working on the [Google/Phyloinformatics Summer of Code
 project "[Biogeographical Phylogenetics for
 BioPython](https://www.nescent.org/wg_phyloinformatics/Phyloinformatics_Summer_of_Code_2009#Biogeographical_Phylogenetics_for_BioPython)."
 
-Nick is a Ph.D. candidate in the Department of Integrative Biology at
-University of California, Berkeley. [Departmental
-page](http://ib.berkeley.edu/people/students/person_detail.php?person=370)
--- [Lab page](http://fisher.berkeley.edu/cteg/members/matzke.html).
+Nicholas Matzke is currently a Discovery Early Career Researcher Award fellow in the Division of Evolution, Ecology,
+and Genetics, Research School of Biology, at the Australian National University in Canberra, Australian Capital Territory.
+[PhyloWiki](http://phylo.wikidot.com/nicholas-j-matzke)
 
 He has also done some other strange and interesting things. See
 [1](http://en.wikipedia.org/wiki/Nick_Matzke) and
