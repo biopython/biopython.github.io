@@ -6,11 +6,11 @@ layout: wiki
 
 ### Description
 
-The Interface module integrated in biopython provides an easy and
-friendly way to extract and analyse interface from PDB complexes.
+The Interface module integrated in Biopython provides an easy and
+friendly way to extract and analyze interface from PDB complexes.
 Different information are calculated and provided with the extraction of
 the interface: - polar/apolar/charged residues distribution - buried
-surface area
+surface area.
 
 Developed during the Google Summer of Code 2011 by Mikael Trellet, this
 module is still not available in the official repository of Biopython.
