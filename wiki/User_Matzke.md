@@ -15,5 +15,5 @@ page](http://ib.berkeley.edu/people/students/person_detail.php?person=370)
 -- [Lab page](http://fisher.berkeley.edu/cteg/members/matzke.html).
 
 He has also done some other strange and interesting things. See
-[1](http://en.wikipedia.org/wiki/Nick_Matzke%7Cwikipedia) and
+[1](http://en.wikipedia.org/wiki/Nick_Matzke) and
 [2](http://www.google.com/search?hl=en&rlz=1B3GGGL_enUS239US239&q=evolution+matzke&btnG=Search%7Cgoogle).
