@@ -33,7 +33,7 @@ To draw trees (optional), you'll also need these packages:
 -   [NetworkX](http://networkx.lanl.gov/index.html) -- for the functions
     'draw\_graphviz' and 'to\_networkx'
 -   [PyGraphviz](http://networkx.lanl.gov/pygraphviz/) or
-    [pydot](http://dkbza.org/pydot.html) -- for the functions
+    [pydot](https://github.com/erocarrera/pydot) -- for the functions
     'draw\_graphviz' and 'to\_networkx'
 
 The I/O and tree-manipulation functionality will work without them;
@@ -272,7 +272,7 @@ image format (default PDF) may be used.
 Prerequisites: In addition to networkx, you'll need a local installation
 of Graphviz, [matplotlib](http://matplotlib.sourceforge.net/) and either
 [PyGraphviz](http://networkx.lanl.gov/pygraphviz/) or
-[pydot](http://dkbza.org/pydot.html).
+[pydot](https://github.com/erocarrera/pydot).
 
 Drawing a basic dendrogram is simple:
 
