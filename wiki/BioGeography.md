@@ -16,7 +16,7 @@ See the project proposal at: [Biogeographical Phylogenetics for
 BioPython](http://socghop.appspot.com/student_project/show/google/gsoc2009/nescent/t124022798250).
 The mentors are [Stephen Smith](http://blackrim.org/) (primary), [Brad
 Chapman](http://bcbio.wordpress.com/), and [David
-Kidd](http://evoviz.nescent.org/). The source code is in the
+Kidd](https://www.nescent.org/science/awards_summary.php-id=59.html). The source code is in the
 Bio/Geography directory of the [Geography fork of the nmatzke branch on
 GitHub](http://github.com/nmatzke/biopython/tree/Geography), and you can
 see a timeline and other info about ongoing development of the module
@@ -53,7 +53,7 @@ See the project proposal at: [Biogeographical Phylogenetics for
 BioPython](http://socghop.appspot.com/student_project/show/google/gsoc2009/nescent/t124022798250).
 The mentors are [Stephen Smith](http://blackrim.org/) (primary), [Brad
 Chapman](http://bcbio.wordpress.com/), and [David
-Kidd](http://evoviz.nescent.org/). The source code is in the
+Kidd](https://www.nescent.org/science/awards_summary.php-id=59.html). The source code is in the
 Bio/Geography directory of the [Geography fork of the nmatzke branch on
 GitHub](http://github.com/nmatzke/biopython/tree/Geography), and you can
 see a timeline and other info about ongoing development of the module
