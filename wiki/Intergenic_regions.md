@@ -100,7 +100,9 @@ For a full explanation of the code, see here:
 Running
 -------
 
-```bash> ./get\_intergene mygenbankfile.gb 1 </bash>
+```bash
+./get\_intergene mygenbankfile.gb 1
+```
 
 Run on the genbank file. The intergenic sequences will appear in the
 file mygenbank\_ign.fasta in FASTA format.
