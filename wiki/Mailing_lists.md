@@ -13,7 +13,7 @@ a message only if you are subscribed to the mailing list.
 A few other useful places for questions and answers - but please don't
 post duplicate your questions here and on the mailing list:
 
--   [BioStar](http://biostar.stackexchange.com/) -- A dedicated
+-   [BioStar](https://www.biostars.org/) -- A dedicated
     Bioinformatics question and answer forum. Please tag your post
     with: biopython.
 -   [StackOverflow](http://stackoverflow.com/questions/tagged/biopython)
