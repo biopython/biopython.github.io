@@ -30,7 +30,7 @@ Bio.Align:
 -   [MSAProbs](http://msaprobs.sourceforge.net/homepage.htm)
 -   [MAFFT](http://mafft.cbrc.jp/alignment/software/)
 -   [MUSCLE](http://www.drive5.com/muscle/)
--   [PRANK](http://code.google.com/p/prank-msa/)
+-   [PRANK](http://wasabiapp.org/software/prank/)
 -   [ProbCons](http://probcons.stanford.edu/)
 -   [T-Coffee](http://www.tcoffee.org/)
 
