@@ -36,8 +36,7 @@ Bio.Align:
 
 Bio.Blast
 
--   [NCBI
-    BLAST+](http://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download)
+-   [NCBI BLAST+](http://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download)
 
 Bio.Emboss:
 
@@ -54,8 +53,4 @@ Bio.Phylo:
 -   [FastTree](http://www.microbesonline.org/fasttree/)
 -   [PhyML](http://www.atgc-montpellier.fr/phyml/)
 -   [RAxML](http://sco.h-its.org/exelixis/web/software/raxml/index.html)
--   [PAML](http://abacus.gene.ucl.ac.uk/software/) (baseml,
-    codeml, yn00)
-
-*I am not particularly fond of the title of this page (tiago), if you
-have a better one, please correct*
+-   [PAML](http://abacus.gene.ucl.ac.uk/software/) (baseml, codeml, yn00)
