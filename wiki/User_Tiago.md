@@ -6,7 +6,7 @@ layout: wiki
 
 Maintaining the population genetics module.
 
-BEng in informatics. Spent a few years working in IT as both a software
+BEng in Informatics. Spent a few years working in IT as both a software
 developer and network engineer (banks, media companies, network
 companies, universities).
 
@@ -21,14 +21,15 @@ vacation from malaria research).
 Back on malaria with a post-doc on Whole Genome Sequencing of Anopheles
 gambiae (the main vector of malaria).
 
-Wellcome Trust Post-doctoral fellow starting in November 2013 on
+Wellcome Trust Post-doctoral fellow until August 2015 on
 detecting genomic and transcriptomic signatures of selection for
-insecticide resistance in Anopheles (Liverpool, Oxford, Broad)
+insecticide resistance in Anopheles (Liverpool, Oxford, Broad Insititute).
+
+
+Currently a Research Scientist at the University of Montana
 
 [home page](http://tiago.org)
 
 [Continuous integration](Continuous_integration "wikilink")
-
-[64-bit Windows Biopython](64-bit_Windows_Biopython "wikilink")
 
 [BioSQL](BioSQL "wikilink")
