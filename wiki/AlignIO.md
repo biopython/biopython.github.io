@@ -81,9 +81,9 @@ Alignment Input
 ---------------
 
 As in [Bio.SeqIO](SeqIO "wikilink"), there are two functions for
-alignment input. These are **Bio.AlignIO.read()** for when the file
+alignment input. These are `Bio.AlignIO.read()` for when the file
 contains one and only one alignment, and the more general
-**Bio.AlignIO.parse()** when the file may contain multiple separate
+`Bio.AlignIO.parse()` when the file may contain multiple separate
 alignments.
 
 Both these functions have two required arguments, a file handle and a
