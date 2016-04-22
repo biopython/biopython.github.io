@@ -40,7 +40,7 @@ Volunteer integration testing
 General instructions
 --------------------
 
-You will need to install buildbot on your system (\*ONLY\* the slave
+You will need to install buildbot on your system (*ONLY* the slave
 part). Please see below more specific instructions for your operating
 system.
 
@@ -51,12 +51,16 @@ saying what you are willing to test (platform, python version,
 applications) to get a username and a password. With your username and
 password you can now configure your buildslave. Something like this:
 
-buildslave create-slave your\_slave\_directory testing.open-bio.org:9989
+```bash
+buildslave create-slave your_slave_directory testing.open-bio.org:9989
 username password
+```
 
 Then you should start your slave with
 
-buildslave start your\_slave\_directory
+``` bash
+buildslave start your_slave_directory
+```
 
 Remember to have the external applications that you wish to test (e.g.
 blast) correctly installed, if you want to test all of Biopython you
@@ -84,21 +88,21 @@ Windows
 -------
 
 After you have your version of Python installed, you will need to
-install buildbot. We recommend using Python 2.7. easy\_install
-(setuptools) will allow you to install all dependencies except pywin32
-and maybe twister (just use the binary installer for the packages).
+install buildbot. We recommend using Python 2.7. `easy_install`
+(setuptools) will allow you to install all dependencies except `pywin32`
+and maybe `twister` (just use the binary installer for the packages).
 
 See: <http://buildbot.net/trac/wiki/RunningBuildbotOnWindows>
 
 If you install buildbot slave as a service (recommended), you might want
-to run the python setup script on the link above (buildbot\_service.py)
+to run the python setup script on the link above (buildbot_service.py)
 on a shell (cmd.exe) with Administrator privileges (right-click on
 cmd.exe and chose "Run as Administrator").
 
 Mac
 ---
 
-If when running 'buildslave start' the slave doesn't seem to start, try
+If when running `buildslave start` the slave doesn't seem to start, try
 adding python to the list of applications allowed to accept incoming
 connections in the Mac OS X advanced firewall settings.
 
@@ -111,7 +115,7 @@ Server configuration
 Buildbot has a server/client architecture where a central server
 schedules builds that are actually build and tested by the clients. The
 clients are typically volunteer machines. The main requirement of a
-public accessible server running Buildbot (twister based).
+public accessible server running Buildbot (`twister` based).
 
 One note for people trying to install a Builbot server: It seems that
 Buildbot configuration files change a bit from version to version. Be
@@ -160,8 +164,8 @@ Before Buildbot
 ---------------
 
 Before buildbot we have git. We need to inform buildbot of git changes.
-Recommended read is: [github/buildbot
-integration](http://www.apparatusproject.org/blog/2009/06/github-and-buildbot-continuous-integration/).
+
+[//]: # (BROKEN Recommended read is: [github/buildbot integration](http://www.apparatusproject.org/blog/2009/06/github-and-buildbot-continuous-integration/).)
 
 While, from an architectural point of view it might seem
 convoluted/complex. The implementations is actually quite simple: a
