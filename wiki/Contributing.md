@@ -102,18 +102,11 @@ lists](Mailing_lists "wikilink")). Be sure to subscribe to biopython-dev
 before sending a message, otherwise your message will be discarded by
 the mail server (this was done to avoid spam on the mailing list). Don't
 send the code directly to the biopython-dev mailing list. Instead,
-please use [our bug
-tracker](http://redmine.open-bio.org/projects/biopython) by first filing
-an enhancement bug, and then attaching the file(s).
+please use [GitHub](https://github.com/biopython/biopython/) by creating a pull request.
 
 ### Coding conventions
 
-Biopython tries to follow the coding conventions laid out by Guido in
-his [Python Style
-Guide](http://www.python.org/doc/essays/styleguide.html) (now covered by
-[PEP 8 Style Guide for Python
-Code](http://www.python.org/dev/peps/pep-0008/) and [PEP 257 Docstring
-Conventions](http://www.python.org/dev/peps/pep-0257/)). The important
+Biopython tries to follow the coding conventions laid out in [PEP 8](http://www.python.org/dev/peps/pep-0008/) and [PEP 257](http://www.python.org/dev/peps/pep-0257/)). The important
 highlights are:
 
 -   Classes should be in AllFirstLetterUppercase style.
@@ -145,7 +138,7 @@ in the source. This isn't fancy, but it's effective and easier then
 trying to deal with the myriad of different ways to try and structure
 source code comments.
 
-However, there are a few tricks to make your documentation look it's
+However, there are a few tricks to make your documentation look its
 best. The main ones are:
 
 -   Modules, classes and function documentation should start with a one
