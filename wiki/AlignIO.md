@@ -1,5 +1,5 @@
 ---
-title: Introducting AlignIO
+title: Introducing AlignIO
 permalink: wiki/AlignIO
 layout: wiki
 tags:
