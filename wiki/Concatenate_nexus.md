@@ -61,7 +61,7 @@ from Bio.Nexus import Nexus
 #if we provide the file names in a list we can use a list comprehension to 
 # create these tuples
 
-file_list = ['btCOI.nex', 'btCOII.nex', 'btITS.nex]   
+file_list = ['btCOI.nex', 'btCOII.nex', 'btITS.nex']   
 nexi =  [(fname, Nexus.Nexus(fname)) for fname in file_list]
 
 combined = Nexus.combine(nexi)
