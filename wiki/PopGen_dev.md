@@ -1,11 +1,8 @@
 ---
-title: PopGen dev
+title: Development page for the PopGen module
 permalink: wiki/PopGen_dev
 layout: wiki
 ---
-
-Development page for the PopGen module.
-=======================================
 
 Introduction
 ------------
@@ -37,66 +34,11 @@ extensible, easy to use and future-proof framework. Code exists (see
 below on how to find it), but will probably be refactored. Below there
 is also a with list where you can add your desired features.
 
-In the pipeline
----------------
-
-Currently (i.e., for the near term) the following new functionality can
-be expected
-
--   STRUCTURE support
--   LDNe support
--   [Statistics](PopGen_dev_Statistics "wikilink")
-
 Code and contributing
 ---------------------
 
-The official production code is available on CVS.
-
-If you would like to contribute, we suggest the following:
-
-1.  Please have a look at the [General Biopython contribution
-    guidelines](Contributing "wikilink").
-2.  Join us on the biopython-devel mailing list and tell us about your
-    ideas so that we know who is working on what, and can discuss the
-    the viability of including your contribution on the
-    official release.
-3.  Current development of Bio.PopGen is made on
-    [github](http://github.com). For Biopython's intruduction to GIT
-    check [this page](GitUsage "wikilink"). Most probably you will want
-    to fork from the main development line at
-    <http://github.com/tiagoantao/biopython-popgen-test/tree/master> (I
-    don't like this being associated with my personal account -
-    any suggestions?)
-4.  You are completely free to work on your own branch (but, if you want
-    your changes to go to the official distribution don't forget to go
-    to biopython-dev and discuss what you are doing).
-5.  When you feel your contribution is ready and you would like to
-    propose it to the official distribution, your branch will have to be
-    merged with the main development one. Contact the mailing list for
-    help with doing this. You are expected to have production quality
-    code (this includes unit tests and documentation). If you have
-    doubts about unit testing and producing documentation, don't
-    hesitate to contact the mailing list.
-
-Existing development branches
------------------------------
-
-While the fundamental branch to start developing is
-<http://github.com/tiagoantao/biopython-popgen-test/tree/master> (this
-is the real starting point if you want to develop new functionality), we
-would like to have a notion of who is working on what (to avoid
-overlapping and allow for coordination).
-
-Here are documented existing development branches. These branches are
-informal places where developers are creating new functionality,
-correcting bugs, etc... Feel free to add yours (or fork from existing
-ones). If you are interested in any of them contact the author directly
-or go to the mailing list.
-
-| Purpose                             | URL                                                   | who         |
-|-------------------------------------|-------------------------------------------------------|-------------|
-| Statistics (He, Fst, Tajima D, ...) | <http://github.com/tiagoantao/biopython/tree/stats>   | Tiago Antao |
-| Genepop (parser and application)    | <http://github.com/tiagoantao/biopython/tree/genepop> | Tiago Antao |
+Your contributions are most welcome. You should follow the general development
+guidelines for Biopython.
 
 Wish list
 ---------
@@ -106,4 +48,3 @@ Wish list
     [snpfile](http://lists.open-bio.org/pipermail/biopython/2008-December/004830.html)
 -   support for database: it is frequent to carry analysis on a big
     scale, so it is not unfrequent to use databases to store data
-

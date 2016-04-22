@@ -1,11 +1,8 @@
 ---
-title: PopGen dev Statistics
+title: Developing Statistics for the population genetics module
 permalink: wiki/PopGen_dev_Statistics
 layout: wiki
 ---
-
-Developing Statistics for the population genetics module
-========================================================
 
 Introduction
 ------------
@@ -106,20 +103,13 @@ This issue I suggest abandon for now.
     haplo/geno
 -   Alleic range, nt, intra, single-locus, microsat, haplo/geno
 -   EHH, nt, positional
--   Tajima D, nt, intra, single-locus, sequence/rflp
+-   Tajima D, nt, intra, single-locus, sequence/RFLP
 
 Design
 ------
 
 The design will have to be able to cope with all the dimensions above
 
-Existing code
--------------
-
-Existing development code can be found
-[here](http://github.com/tiagoantao/biopython-popgen-test/tree/stats).
-If you want to work on statistics feel free to add your github
-repository here.
 
 Pending issues
 --------------
