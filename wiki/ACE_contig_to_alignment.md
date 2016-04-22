@@ -20,7 +20,9 @@ Solution
 --------
 
 Let's represent contig in the ACE file that is used in biopython's
-testing framework: ~/biopython/Tests/Ace/contig1.ace as an example
+testing framework:
+[Tests/Ace/contig1.ace](https://github.com/biopython/biopython/blob/master/Tests/Ace/contig1.ace)
+as an example
 
 ``` python
 from Bio.Sequencing import Ace
@@ -30,15 +32,15 @@ from Bio.Alphabet import IUPAC, Gapped
 def cut_ends(read, start, end):
   '''Replace residues on either end of a sequence with gaps.
 
-  In this case we want to cut out the sections of each read which the assembler has 
-  decided are not good enough to include in the contig and replace them with gaps 
+  In this case we want to cut out the sections of each read which the assembler has
+  decided are not good enough to include in the contig and replace them with gaps
   so the other information about positions in the read is maintained
-  ''' 
+  '''
   return (start-1) * '-' + read[start-1:end] + (len(read)-end) * '-'
 
 def pad_read(read, start, conlength):
   ''' Pad out either end of a read so it fits into an alignment.
-  
+
   The start argument is the position of the first base of the reads sequence in
   the contig it is part of. If the start value is negative (or 0 since ACE
   files count from 1, not 0) we need to take some sequence off the start
@@ -50,7 +52,7 @@ def pad_read(read, start, conlength):
     seq = (start-1) * '-' + read
   seq = seq + (conlength-len(seq)) * '-'
   return seq
-  
+
 
 # We will use the Ace parser to read individual contigs from file. Be aware
 # that using this iterator can miss WA, CT, RT and WR tags (which can be
@@ -62,10 +64,10 @@ ace_gen = Ace.parse(open("contig1.ace", 'r'))
 contig = ace_gen.next()
 align = Alignment(Gapped(IUPAC.ambiguous_dna, "-"))
 
-# Now we have started our alignment we can add sequences to it, 
+# Now we have started our alignment we can add sequences to it,
 # we will loop through contig's reads and get quality clipping from
 # .reads[readnumber].qa and the position of each read in the contig
-# .af[readnumber].padded_start and use the functions above to cut and 
+# .af[readnumber].padded_start and use the functions above to cut and
 # pad the sequences before they are added
 
 for readn in range(len(contig.reads)):
