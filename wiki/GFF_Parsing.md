@@ -1,13 +1,10 @@
 ---
-title: GFF Parsing
+title: Parsing GFF Files
 permalink: wiki/GFF_Parsing
 layout: wiki
 tags:
  - Wiki Documentation
 ---
-
-GFF Parsing
-===========
 
 *Note:* GFF parsing is not yet integrated into Biopython. This
 documentation is work towards making it ready for inclusion. You can
@@ -50,12 +47,11 @@ These differences have some consequences in how you will deal with GFF:
 The documentation below provides a practical guide to examining, parsing
 and writing GFF files in Python.
 
-Examining your GFF file
------------------------
+## Examining your GFF file
 
 Since GFF is a very general format, it is extremely useful to start by
 getting a sense of the type of data in the file and how it is
-structured. GFFExaminer provides an interface to examine and query the
+structured. `GFFExaminer` provides an interface to examine and query the
 file. To examine relationships between features, examine a dictionary
 mapping parent to child features:
 
@@ -71,32 +67,34 @@ in_handle.close()
 ```
 
 This file contains a flexible three level description of coding
-sequences: genes have mRNA trascripts; those mRNA transcripts each
+sequences: genes have mRNA trasncripts; those mRNA transcripts each
 contain common features of coding sequence, the CDS itself, exon, intron
 and 5' and 3' untranslated regions. This is a common GFF structure
 allowing representation of multiple transcripts:
 
-    {('Coding_transcript', 'gene'): [('Coding_transcript', 'mRNA')],
-     ('Coding_transcript', 'mRNA'): [('Coding_transcript', 'CDS'),
-                                     ('Coding_transcript', 'exon'),
-                                     ('Coding_transcript', 'five_prime_UTR'),
-                                     ('Coding_transcript', 'intron'),
-                                     ('Coding_transcript', 'three_prime_UTR')]}
+``` bash
+{('Coding_transcript', 'gene'): [('Coding_transcript', 'mRNA')],
+ ('Coding_transcript', 'mRNA'): [('Coding_transcript', 'CDS'),
+                                 ('Coding_transcript', 'exon'),
+                                 ('Coding_transcript', 'five_prime_UTR'),
+                                 ('Coding_transcript', 'intron'),
+                                 ('Coding_transcript', 'three_prime_UTR')]}
+```
 
 Another item of interest for designing your parse strategy is
 understanding the various tags used to label the features. These consist
 of:
 
--   gff\_id -- The record identifier being described. This will often
-    refer to a chromosome or other scaffold sequence.
--   gff\_source -- The source description from the second column of the
-    GFF file, which specifies how a feature was generated.
--   gff\_type -- The type of the feature, pulled from the 3rd column of
-    the GFF file.
--   gff\_source\_type -- All combinations of sources and types in
-    the file.
+-   `gff_id` -- The record identifier being described. This will often
+     refer to a chromosome or other scaffold sequence.
+-   `gff_source` -- The source description from the second column of the
+     GFF file, which specifies how a feature was generated.
+-   `gff_type` -- The type of the feature, pulled from the 3rd column of
+     the GFF file.
+-   `gff_source_type` -- All combinations of sources and types in
+     the file.
 
-The available\_limits function in the examiner gives you a high level
+The `available_limits` function in the examiner gives you a high level
 summary of these feature attributes, along with counts for the number of
 times they appear in the file:
 
@@ -111,63 +109,64 @@ pprint.pprint(examiner.available_limits(in_handle))
 in_handle.close()
 ```
 
-    {'gff_id': {('I',): 159,
-                ('II',): 3,
-                ('III',): 2,
-                ('IV',): 5,
-                ('V',): 2,
-                ('X',): 6},
-     'gff_source': {('Allele',): 1,
-                    ('Coding_transcript',): 102,
-                    ('Expr_profile',): 1,
-                    ('GenePair_STS',): 8,
-                    ('Oligo_set',): 1,
-                    ('Orfeome',): 8,
-                    ('Promoterome',): 5,
-                    ('SAGE_tag',): 1,
-                    ('SAGE_tag_most_three_prime',): 1,
-                    ('SAGE_tag_unambiguously_mapped',): 12,
-                    ('history',): 30,
-                    ('mass_spec_genome',): 7},
-     'gff_source_type': {('Allele', 'SNP'): 1,
-                         ('Coding_transcript', 'CDS'): 27,
-                         ('Coding_transcript', 'exon'): 33,
-                         ('Coding_transcript', 'five_prime_UTR'): 4,
-                         ('Coding_transcript', 'gene'): 2,
-                         ('Coding_transcript', 'intron'): 29,
-                         ('Coding_transcript', 'mRNA'): 4,
-                         ('Coding_transcript', 'three_prime_UTR'): 3,
-                         ('Expr_profile', 'experimental_result_region'): 1,
-                         ('GenePair_STS', 'PCR_product'): 8,
-                         ('Oligo_set', 'reagent'): 1,
-                         ('Orfeome', 'PCR_product'): 8,
-                         ('Promoterome', 'PCR_product'): 5,
-                         ('SAGE_tag', 'SAGE_tag'): 1,
-                         ('SAGE_tag_most_three_prime', 'SAGE_tag'): 1,
-                         ('SAGE_tag_unambiguously_mapped', 'SAGE_tag'): 12,
-                         ('history', 'CDS'): 30,
-                         ('mass_spec_genome', 'translated_nucleotide_match'): 7},
-     'gff_type': {('CDS',): 57,
-                  ('PCR_product',): 21,
-                  ('SAGE_tag',): 14,
-                  ('SNP',): 1,
-                  ('exon',): 33,
-                  ('experimental_result_region',): 1,
-                  ('five_prime_UTR',): 4,
-                  ('gene',): 2,
-                  ('intron',): 29,
-                  ('mRNA',): 4,
-                  ('reagent',): 1,
-                  ('three_prime_UTR',): 3,
-                  ('translated_nucleotide_match',): 7}}
+``` bash
+{'gff_id': {('I',): 159,
+            ('II',): 3,
+            ('III',): 2,
+            ('IV',): 5,
+            ('V',): 2,
+            ('X',): 6},
+ 'gff_source': {('Allele',): 1,
+                ('Coding_transcript',): 102,
+                ('Expr_profile',): 1,
+                ('GenePair_STS',): 8,
+                ('Oligo_set',): 1,
+                ('Orfeome',): 8,
+                ('Promoterome',): 5,
+                ('SAGE_tag',): 1,
+                ('SAGE_tag_most_three_prime',): 1,
+                ('SAGE_tag_unambiguously_mapped',): 12,
+                ('history',): 30,
+                ('mass_spec_genome',): 7},
+ 'gff_source_type': {('Allele', 'SNP'): 1,
+                     ('Coding_transcript', 'CDS'): 27,
+                     ('Coding_transcript', 'exon'): 33,
+                     ('Coding_transcript', 'five_prime_UTR'): 4,
+                     ('Coding_transcript', 'gene'): 2,
+                     ('Coding_transcript', 'intron'): 29,
+                     ('Coding_transcript', 'mRNA'): 4,
+                     ('Coding_transcript', 'three_prime_UTR'): 3,
+                     ('Expr_profile', 'experimental_result_region'): 1,
+                     ('GenePair_STS', 'PCR_product'): 8,
+                     ('Oligo_set', 'reagent'): 1,
+                     ('Orfeome', 'PCR_product'): 8,
+                     ('Promoterome', 'PCR_product'): 5,
+                     ('SAGE_tag', 'SAGE_tag'): 1,
+                     ('SAGE_tag_most_three_prime', 'SAGE_tag'): 1,
+                     ('SAGE_tag_unambiguously_mapped', 'SAGE_tag'): 12,
+                     ('history', 'CDS'): 30,
+                     ('mass_spec_genome', 'translated_nucleotide_match'): 7},
+ 'gff_type': {('CDS',): 57,
+              ('PCR_product',): 21,
+              ('SAGE_tag',): 14,
+              ('SNP',): 1,
+              ('exon',): 33,
+              ('experimental_result_region',): 1,
+              ('five_prime_UTR',): 4,
+              ('gene',): 2,
+              ('intron',): 29,
+              ('mRNA',): 4,
+              ('reagent',): 1,
+              ('three_prime_UTR',): 3,
+              ('translated_nucleotide_match',): 7}}
+```
 
-GFF Parsing
------------
+## GFF Parsing
 
 ### Basic GFF parsing
 
 Generally, the GFF parser works similar to other parsers in Biopython.
-Calling parse with a handle to a GFF file returns a set of SeqRecord
+Calling `parse` with a handle to a GFF file returns a set of `SeqRecord`
 objects corresponding to the various IDs referenced in the file:
 
 ``` python
@@ -181,12 +180,12 @@ for rec in GFF.parse(in_handle):
 in_handle.close()
 ```
 
-The rec object is a Biopython [SeqRecord](SeqRecord "wikilink")
+The rec object is a Biopython [`SeqRecord`](SeqRecord "wikilink")
 containing the features described in the GFF file. The features are
 ordered into parent-child relationships based on the line by line
 information in the original GFF file. See the detailed documentation on
-[SeqRecord](SeqRecord "wikilink") and
-[SeqFeature](http://biopython.org/DIST/docs/tutorial/Tutorial.html#sec:seq_features)
+[`SeqRecord`](SeqRecord "wikilink") and
+[`SeqFeature`](http://biopython.org/DIST/docs/tutorial/Tutorial.html#sec:seq_features)
 objects for more details on accessing the information in these objects.
 
 Since a GFF file is not broken down into an explicit record structure,
@@ -198,8 +197,8 @@ features of interest or a section of lines at once to conserve memory.
 ### Limiting to features of interest
 
 A GFF file will commonly contain many types of features, and you will be
-interested in retrieving a subset of these. The limit\_info argument to
-GFF.parse allows exact specification of which features to parse, turn
+interested in retrieving a subset of these. The `limit_info` argument to
+`GFF.parse` allows exact specification of which features to parse, turn
 into objects and retrieve. An example is retrieving all coding sequence
 on chromosome 1:
 
@@ -229,7 +228,7 @@ Another way to break up a large GFF file parse into sections is to limit
 the number of lines that are read at once. This is a useful workflow for
 GFF files in which you don't need all of the features at once and can do
 something useful with a few at a time. To do this, pass the
-target\_lines argument to GFF.parse:
+`target_lines` argument to `GFF.parse`:
 
 ``` python
 from BCBio import GFF
@@ -250,15 +249,15 @@ region is read. This helps ensure that you have fully formed features
 for analysis.
 
 If your file has no nesting of features, or you just want a single line
-at once, you can set target\_lines=1 and the parser will happily give
-you back and SeqRecord object with a single SeqFeature for every line.
+at once, you can set `target_lines=1` and the parser will happily give
+you back a `SeqRecord` object with a single `SeqFeature` for every line.
 
 ### Providing initial sequence records
 
 GFF records normally contain annotation data, while sequence information
 is available in a separate FASTA formatted file. The GFF parser can add
 annotations to existing records. First parse the sequence file with
-SeqIO, then feed the resulting sequence dictionary to the GFF parser:
+`SeqIO`, then feed the resulting sequence dictionary to the GFF parser:
 
 ``` python
 from BCBio import GFF
@@ -280,23 +279,22 @@ Note that this just adds directly to the existing dictionary. If you
 apply filters to the GFF parser these are only applied to annotations;
 records will not be removed from the initial sequence dictionary.
 
-Writing GFF3
-------------
+## Writing GFF3
 
-The `GFF3Writer` takes an iterator of SeqRecord objects, and writes each
-SeqFeature as a GFF3 line:
+The `GFF3Writer` takes an iterator of `SeqRecord objects`, and writes each
+`SeqFeature` as a GFF3 line:
 
--   seqid -- SeqRecord ID
--   source -- Feature qualifier with key "source"
--   type -- Feature type attribute
--   start, end -- The Feature Location
--   score -- Feature qualifier with key "score"
--   strand -- Feature strand attribute
--   phase -- Feature qualifier with key "phase"
+-   `seqid` -- SeqRecord ID
+-   `source` -- Feature qualifier with key "source"
+-   `type` -- Feature type attribute
+-   `start`, `end` -- The Feature Location
+-   `score` -- Feature qualifier with key "score"
+-   `strand` -- Feature strand attribute
+-   `phase` -- Feature qualifier with key "phase"
 
 The remaining qualifiers are the final key/value pairs of the attribute.
 
-A feature hierarchy is represented as sub\_features of the parent
+A feature hierarchy is represented as `sub_features` of the parent
 feature. This handles any arbitrarily deep nesting of parent and child
 features.
 
@@ -319,7 +317,7 @@ out_handle.close()
 
 ### Writing GFF3 from scratch
 
-You can create Biopython SeqRecord and SeqFeature objects from scratch
+You can create Biopython `SeqRecord` and `SeqFeature` objects from scratch
 and use these to generate GFF output. [Chapter 4 of the
 Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html) goes
 into detail about the objects, and this example demonstrates the major
@@ -351,8 +349,10 @@ with open(out_file, "w") as out_handle:
 
 This generates the following GFF:
 
-    ##gff-version 3
-    ##sequence-region ID1 1 20
-    ID1     prediction      gene    1       20      10.0    +       .       other=Some,annotations;ID=gene1
-    ID1     prediction      exon    1       5       .       +       .       Parent=gene1
-    ID1     prediction      exon    16      20      .       +       .       Parent=gene1
+``` bash
+##gff-version 3
+##sequence-region ID1 1 20
+ID1     prediction      gene    1       20      10.0    +       .       other=Some,annotations;ID=gene1 
+ID1     prediction      exon    1       5       .       +       .       Parent=gene1
+ID1     prediction      exon    16      20      .       +       .       Parent=gene1
+```

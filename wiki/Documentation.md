@@ -4,8 +4,6 @@ permalink: wiki/Documentation
 layout: page
 ---
 
-#### Documentation
-
 New to Biopython? Check out the [Getting
 Started](Getting_Started "wikilink") page, or follow one of the links
 below.
@@ -32,8 +30,9 @@ below.
 -   Wiki documentation,
     -   [Seq](Seq "wikilink") and [SeqRecord](SeqRecord "wikilink")
         objects
-    -   [Bio.SeqIO](SeqIO "wikilink") - sequence input/output
+	-   [Bio.SeqIO](SeqIO "wikilink") - sequence input/output
     -   [Bio.AlignIO](AlignIO "wikilink") - alignment input/output
+	-   [Bio.Restriction](Restriction "wikilink") - using restriction enzymes
     -   [Bio.PopGen](PopGen "wikilink") - population genetics
     -   [Bio.PDB](The_Biopython_Structural_Bioinformatics_FAQ "wikilink") -
         structural bioinformatics
@@ -48,21 +47,19 @@ below.
 -   Documentation for the cluster module in Biopython. This describes
     the underlying C library and the Python interface.
       
-    [PDF](http://biopython.org/DIST/docs/cluster/cluster.pdf)
+    [PDF (2008)](http://biopython.org/DIST/docs/cluster/cluster.pdf) | 
+	[PDF (2013)](http://bonsai.hgc.jp/~mdehoon/software/cluster/cluster.pdf)
 
 -   Cookbook-style documentation:
     -   [Cookbook documentation](Category%3ACookbook "wikilink") (on
-        the wiki)
+        the wiki).
     -   The Biopython Structural Bioinformatics FAQ (i.e. how to use the
         Bio.PDB module).
-
       
-    [PDF](http://biopython.org/DIST/docs/cookbook/biopdb_faq.pdf)
+        [PDF](http://biopython.org/DIST/docs/tutorial/biopdb_faq.pdf)
 
-    -   Working with restriction enzymes.
-
+    -   [Working with restriction enzymes](Restriction "wikilink").
       
-    [HTML](http://biopython.org/DIST/docs/cookbook/Restriction.html)
 
 #### Documentation for Developers
 
@@ -70,9 +67,9 @@ below.
     involved with.
 -   How to [contribute code](Contributing "wikilink") to Biopython.
 -   [Deprecation policy](Deprecation_policy "wikilink")
--   Instructions for [building a release](building_a_release "wikilink")
+-   Instructions for [building a release](Building_a_release "wikilink")
     of Biopython.
--   Details about the biopython.org [website](website "wikilink").
+-   Details about the biopython.org [website](https://github.com/biopython/biopython.github.io).
 
 #### Online Course Notes
 
@@ -80,12 +77,11 @@ below.
     Bioinformatics in Python class at the National Bioinformatics
     Network in South Africa.
       
-    <http://www.dalkescientific.com/writings/NBN/>
+    [html](http://www.dalkescientific.com/writings/NBN/)
 
--   Ravinder Singh and Scott Kelley teach a Bioinformatics course using
-    Biopython at the University of Colorado.
-      
-    <http://www.colorado.edu/catalog/2012-13/courses?college=ARSC&department=B-MCDB>
+-   Kristian Rother wrote a GitBook for learning Biopython with two case studies
+
+    [GitBook](https://www.gitbook.com/book/krother/biopython-tutorial/details)
 
 
 #### Papers
@@ -93,42 +89,49 @@ below.
 We have a separate list of [publications citing or using
 Biopython](Publications "wikilink"). If you use Biopython in a
 scientific publication, please cite the application note
-<cite>CockEtAl2009</cite> and/or one of the other listed papers:
+([Cock *et al.*, 2009](http://dx.doi.org/10.1093/bioinformatics/btp163))
+and/or one of the other listed papers:
 
-<biblio>
+1.  Cock PA, Antao T, Chang JT, Bradman BA, Cox CJ, Dalke A, Friedberg I, Hamelryck T, Kauff F, 
+    Wilczynski B and de Hoon MJL (2009) Biopython: freely available Python tools for computational
+	molecular biology and bioinformatics. [Bioinformatics, 25, 1422-1423](http://dx.doi.org/10.1093/bioinformatics/btp163)
 
-1.  CockEtAl2009 pmid=19304878
+    // This application note covers the whole of Biopython
 
-// This application note covers the whole of Biopython
+2.  Chapman BA and Chang JT (2000). Biopython: Python tools for computational biology.
+    [ACM SIGBIO Newsletter, 20, 15-19](http://dx.doi.org/10.1145/360262.360268).
 
-1.  ChapmanAndChang2000 Chapman BA and Chang JT. *Biopython: Python
-    tools for computational biology.* ACM SIGBIO Newsletter 2000 Aug;
-    20, 15-19. [HTML](http://biopython.org/DIST/docs/acm/ACMbiopy.html)
+	[HTML](http://biopython.org/DIST/docs/acm/ACMbiopy.html)
     | [PDF](http://biopython.org/DIST/docs/acm/ACMbiopy.pdf)
 
-// This served as the official project announcement.
+    // This served as the official project announcement.
 
-1.  HamelryckAndManderick2003 pmid=14630660
+3.  Hamelryck T and Manderick B (2003) PDB file parser and structure class implemented in Python.
+    [Bioinformatics, 22, 2308-2310](http://dx.doi.org/10.1093/bioinformatics/btg299)
 
-// The Bio.PDB module is described here.
+    // The `Bio.PDB` module is described here.
 
-1.  DeHoonEtAl2004 pmid=14871861
+4.  de Hoon MJ, Imoto S, Nolan J and Miyano S (2004) Open source clustering software.
+    [Bioinformatics, 20, 1454-1453](http://dx.doi.org/10.1093/bioinformatics/bth078)
 
-// The Bio.Cluster module is described here.
+    // The `Bio.Cluster` module is described here.
 
-1.  PritchardEtAl2006 pmid=16377612
+5.  Pritchard L, White JA, Birch PR and Toth IK (2006) GenomeDiagram: a Python package for the
+    visualization of large-scale genomic data. [Bioinformatics, 22, 616-617](http://dx.doi.org/10.1093/bioinformatics/btk021)
 
-// This describes GenomeDiagram, which has now been integrated into
-Biopython.
+    // This describes `GenomeDiagram`, which has now been integrated into Biopython.
 
-1.  CockEtAl2009b pmid=20015970
+6.  Cock PJ, Fields CJ, Goto N, Heuer ML and Rice PM (2009) The Sanger FASTQ file format for sequences with
+    quality scores, and the Solexa/Illumina FASTQ variants.
+    [Nucleic Acids Res., 38, 1767-1771](http://dx.doi.org/10.1093/nar/gkp1137)
 
-// This describes the FASTQ file format as supported in Biopython,
-BioPerl, BioRuby, BioJava and EMBOSS
+    // This describes the FASTQ file format as supported in Biopython, BioPerl, BioRuby, BioJava and EMBOSS
 
-1.  TalevichEtAl2012 pmid=22909249
+7.  Talevich E, Invergo BM, Cock PJ and Chapman BA (2012) Bio.Phylo: a unified toolkit for processing, analyzing
+    and visualizing phylogenetic trees in Biopython.
+    [BMC Bioinformatics, 13, 209](http://dx.doi.org/10.1186/1471-2105-13-209)
 
-// This describes the Bio.Phylo and Bio.Phylo.PAML modules. </biblio>
+    // This describes the `Bio.Phylo` and `Bio.Phylo.PAML modules`.
 
 #### Presentations
 
