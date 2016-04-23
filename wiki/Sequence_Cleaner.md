@@ -4,6 +4,8 @@ permalink: wiki/Sequence_Cleaner
 layout: wiki
 tags:
  - Cookbook
+redirect_from:
+ - /wiki/Create_an_Article_to_this_category
 ---
 
 Description

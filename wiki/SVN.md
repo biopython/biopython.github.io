@@ -2,6 +2,8 @@
 title: SVN
 permalink: wiki/SVN
 layout: wiki
+redirect_from:
+ - /wiki/Subversion
 ---
 
 Biopython and other [Open Bioinformatics

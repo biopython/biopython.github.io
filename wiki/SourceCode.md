@@ -2,6 +2,8 @@
 title: SourceCode
 permalink: wiki/SourceCode
 layout: page
+redirect_from:
+ - /wiki/Git
 ---
 
 ### Introduction

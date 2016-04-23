@@ -2,6 +2,8 @@
 title: GSoC2011 mtrellet
 permalink: wiki/GSoC2011_mtrellet
 layout: wiki
+redirect_from:
+ - /wiki/User:Mtrellet
 ---
 
 Author & Mentors

@@ -2,6 +2,8 @@
 title: Google Summer of Code
 permalink: wiki/Google_Summer_of_Code
 layout: wiki
+redirect_from:
+ - /wiki/GSOC
 ---
 
 Introduction
