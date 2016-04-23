@@ -1,5 +1,6 @@
 ---
 title: Placeholder Index Page
+layout: default
 ---
 
 This site is currently being used for a trial migration
