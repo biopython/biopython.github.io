@@ -24,9 +24,6 @@ defaults:
   -
     scope:
       path: "" # an empty string here means all files in the project
-    values:
-      layout: "default"
-
 
 # Custom variables for Hyde theme
 version: 1.66

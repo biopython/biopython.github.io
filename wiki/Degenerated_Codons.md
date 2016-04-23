@@ -2,6 +2,8 @@
 title: Degenerated Codons
 permalink: wiki/Degenerated_Codons
 layout: wiki
+redirect_from:
+ - /wiki/Degenerated
 ---
 
 Problem

@@ -4,6 +4,8 @@ permalink: wiki/Split_large_file
 layout: wiki
 tags:
  - Cookbook
+redirect_from:
+ - /wiki/Split_fasta_file
 ---
 
 Problem

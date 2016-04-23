@@ -1,13 +1,12 @@
 ---
-title: Placeholder Index Page
+title: Placeholder for Biopython welcome page
+layout: default
 ---
 
-This site is currently being used for a trial migration
-of the [Biopython wiki pages](http://biopython.org)
-using <https://github.com/peterjc/mediawiki_to_git_md>
+We recently [migrated from MediaWiki to GitHub pages](https://github.com/peterjc/mediawiki_to_git_md),
+see our [README](https://biopython.github.io/README.html) file for details.
 
-While this will probably eventually be a redirect page,
-for now please see the migration
-[README](https://biopython.github.io/README.html) file,
-or conversion of the wiki's
-[main page](http://biopython.github.io/wiki/Biopython).
+The new site is mostly working, but there are a number of
+[known issues](https://github.com/biopython/biopython.github.io/issues).
+
+Please see the [main page](/wiki/Biopython).

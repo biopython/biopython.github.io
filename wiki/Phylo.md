@@ -4,6 +4,9 @@ permalink: wiki/Phylo
 layout: wiki
 tags:
  - Wiki Documentation
+redirect_from:
+ - /wiki/Tree
+ - /wiki/TreeIO
 ---
 
 This module provides classes, functions and I/O support for working with

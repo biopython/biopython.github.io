@@ -4,6 +4,8 @@ permalink: wiki/Retrieve_nonmatching_blast_queries
 layout: wiki
 tags:
  - Cookbook
+redirect_from:
+ - /wiki/Retrieve_nonmathching_blast_queries
 ---
 
 Problem

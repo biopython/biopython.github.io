@@ -2,6 +2,11 @@
 title: SourceCode
 permalink: wiki/SourceCode
 layout: page
+redirect_from:
+ - /wiki/CVS
+ - /wiki/Git
+ - /wiki/SVN
+ - /wiki/Subversion
 ---
 
 ### Introduction
@@ -79,8 +84,8 @@ Once you have access, see the instructions on
 ### Migration from CVS
 
 Most of the other [Open Bioinformatics Foundation](http://open-bio.org)
-projects migrated from [CVS](CVS "wikilink") to [Subversion
-(SVN)](SVN "wikilink"). Biopython had been considering [moving from CVS
-to SVN](Subversion_migration "wikilink") for a while, but instead [moved
-to git](GitMigration "wikilink") in September 2009. Note that
-[BioRuby](http://bioruby.org) also uses github.
+projects migrated from CVS to SVN (Subversion), and later to git hosted
+at GitHub.
+
+While Biopython did considering moving from CVS to SVN, instead we
+migrated directly from CVS to git in September 2009.
