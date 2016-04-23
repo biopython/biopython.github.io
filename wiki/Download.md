@@ -32,7 +32,7 @@ new](https://github.com/biopython/biopython/raw/master/NEWS).
     2Mb -- 32 bit Windows .msi Installer for Python 3.5
 
 Please report any issues on our [mailing
-lists](mailing_lists "wikilink") or [bug
+lists](Mailing_lists "wikilink") or [bug
 tracker](https://github.com/biopython/biopython/issues?state=open).
 
 Note we don't (yet) have official 64 bit Windows Installers - however,
@@ -43,17 +43,20 @@ Biopython (and other tools) available for testing.
 ### Installation Instructions
 
 For **Windows** 32-bit we provide click-and-run installers (specific to
-your version of python), but you will first need to install some
+your version of Python), but you will first need to install some
 prerequisite software (listed below, in particular, NumPy).
 
 For **Windows** 64-bit we recommend the click-and-run [Windows 64bit
 installers](http://www.lfd.uci.edu/~gohlke/pythonlibs/) (specific to
-your version of python) kindly provided by Christoph Gohlke.
+your version of Python) kindly provided by Christoph Gohlke.
 
 Most **Linux** distributions will include an optional Biopython package
 (described below), and will take care of any prerequisite software
-automatically. If you have the Python package management tool pip
-installed, try:
+automatically.
+
+Recent version of Python (starting with Python 2.7.9 and Python 3.4) include
+the Python package management tool `pip`, which allows an easy installation
+on all plattforms. Try:
 
 ``` bash
 pip install biopython
@@ -92,23 +95,24 @@ list](Mailing_lists "wikilink") and ask for help there.
 
 ### Required Software
 
--   [Python 2.6, 2.7, 3.3 or 3.4](http://www.python.org) (Biopython 1.62
-    was our last release to officially support Python 2.5)
+-   [Python 2.6, 2.7, 3.3, 3.4, 3.5](http://www.python.org) (Biopython 1.62
+    was our last release to officially support Python 2.5, since Biopythn 1.66
+	Python 2.6 is deprecated)
 -   [C compiler (if compiling
-    from source)](http://www.python.org/doc/current/inst/inst.html) You
-    need a C compiler supported by distutils, gcc will work fine on
+    from source)](https://docs.python.org/3/using/index.html) You
+    need a C compiler supported by `distutils`, **gcc** will work fine on
     UNIX-like platforms. This is not needed on Windows if using the
     install programs provided above. On Mac OS, you should install
-    Apple's XCode *including* the command line tools.
+    Apple's **XCode** *including* the command line tools.
 -   [NumPy (Numerical Python)](http://numpy.scipy.org/). Note that until
     Biopython 1.49, Biopython used the older Numeric library. We have
-    tested NumPy 1.1 to 1.5 with Biopython.
+    tested NumPy 1.1 to 1.9 with Biopython.
 
 ### Optional Software
 
 Some parts of Biopython use the following additional python libraries:
 
--   [ReportLab](http://www.reportlab.org/downloads.html) -- used for pdf
+-   [ReportLab](http://www.reportlab.com/software/downloads/) -- used for pdf
     graphics code
 -   [psycopg](http://initd.org/psycopg/) -- used for
     [BioSQL](BioSQL "wikilink") with a PostgreSQL database
@@ -120,14 +124,14 @@ Some parts of Biopython use the following additional python libraries:
 In addition Biopython includes wrapper code for calling a number of
 third party command line tools including:
 
--   [Wise2](http://www.ebi.ac.uk/Wise2/) -- for command line tool dnal
+-   [Wise2](http://www.ebi.ac.uk/~birney/wise2/) -- for command line tool dnal
 -   [NCBI Standalone
-    BLAST](http://www.ncbi.nlm.nih.gov/blast/download.shtml) -- command
+    BLAST](http://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download) -- command
     line tool for running BLAST on your local machine
 -   [Clustalw](ftp://ftp.ebi.ac.uk/pub/software/unix/clustalw/) --
     command line tool for building sequence alignments
 -   [SIMCOAL2](http://cmpg.unibe.ch/software/simcoal2/) and
-    [FDist](http://www.rubic.rdg.ac.uk/~mab/software.html) -- command
+    [FDist](http://www.maths.bris.ac.uk/~mamab/software/) -- command
     line tools for population genetics
 -   [EMBOSS](http://emboss.sourceforge.net/) -- lots of useful command
     line tools.
@@ -197,7 +201,7 @@ pacman -S python-biopython
 
 Biopython is an official Fedora package (since Fedora 5). The package is
 named
-[python-biopython](https://admin.fedoraproject.org/community/?package=python-biopython#package_maintenance),
+[python-biopython](https://apps.fedoraproject.org/packages/python-biopython),
 and can be installed using yum as root:
 
 ``` bash
@@ -216,8 +220,8 @@ builds from source. To install it, open a terminal as root and run:
 emerge -va biopython
 ```
 
-[Here](http://www.gentoo-portage.com/sci-biology/biopython) is a link to
-Biopython at [Gentoo-Portage](http://www.gentoo-portage.com) which shows
+[Here](https://packages.gentoo.org/packages/sci-biology/biopython) is a link to
+Biopython at [Gentoo](https://packages.gentoo.org/) which shows
 the latest versions in Gentoo's Portage tree.
 
 Ports
@@ -244,6 +248,8 @@ dependencies).
 
 Old Releases
 ============
+***Due to the recent moving of the Biopython homepage, many versions are still missing - 
+they will be uploaded in due time***
 
 Recent releases of Biopython require NumPy (and not Numeric):
 
@@ -565,7 +571,7 @@ not its replacement NumPy. Windows installers for Python 2.4 and older
 are available from the [Numerical
 Python](http://numpy.scipy.org/#older_array) website. A Windows
 installer for Numeric 24.2 for Python 2.5 is available here:
-[Numeric-24.2.win32-py2.5.exe](http://biopython.org/DIST/Numeric-24.2.win32-py2.5.exe)
+[Numeric-24.2.win32-py2.5.exe](https://sourceforge.net/projects/numpy/files/Old%20Numeric/24.2/)
 446 Kb
 
 Please note that Biopython 1.48 and older used [mxTextTools
