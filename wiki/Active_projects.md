@@ -64,7 +64,7 @@ See the project proposal at: [Biogeographical Phylogenetics for
 BioPython](http://socghop.appspot.com/student_project/show/google/gsoc2009/nescent/t124022798250).
 The mentors were [Stephen Smith](http://blackrim.org/) (primary), [Brad
 Chapman](http://bcbio.wordpress.com/), and [David
-Kidd](http://evoviz.nescent.org/). The new module is documented on this
+Kidd](https://www.nescent.org/science/awards_summary.php-id=59.html). The new module is documented on this
 wiki as [BioGeography](BioGeography "wikilink").
 
 The code currently lives at the Bio/Geography directory of Nick's

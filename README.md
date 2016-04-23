@@ -1,28 +1,22 @@
 ---
-title: README
+title: Biopython.org website README
 ---
 
-This is an attempt to automatically convert a Mediawiki XML export
-from <http://biopython.org> into markdown (using pandoc) as a git
-repository to be hosted using GitHub Pages (rendered using Jekyll).
-<https://help.github.com/articles/using-jekyll-with-pages/>
+The git repository at <https://github.com/biopython/biopython.github.io/>
+produces the Biopython website at <https://biopython.org>
+using GitHub Pages (rendered using Jekyll, see
+<https://help.github.com/articles/using-jekyll-with-pages/> for details).
 
-The conversion is via a Python script (calling pandoc and git), see:
-<https://github.com/biopython/mediawiki_to_git_md>
+Almost all of the content is under the URL prefix ``/wiki/`` because
+this was based on an automated conversion of the old MediaWiki website,
+using <https://github.com/biopython/mediawiki_to_git_md> to turn all
+the changes in the MediaWiki XML export file into into markdown (using
+pandoc) as a git repository.
 
-I'm using a manually compiled table mapping MediaWiki usernames
-to GitHub accounts - if I have mis-identified you, please email
-me during this testing period and I'll remove the false mapping.
-I failed to match about 20 accounts on the wiki (mostly single
-contributions).
+The old MediaWiki usernames were manually mapped to GitHub accounts.
+About 20 accounts on the wiki (mostly single contributions) could not
+be identified, but the old username is still logged in the git commits.
 
-This site ought to be viewable via <https://biopython.github.io/>
-and this page as *html* at <https://biopython.github.io/README.html>
-and <https://github.com/biopython/biopython.github.io/blob/master/README.md>
-in the original source *markdown* view on GitHub.
-
-Branches: GitHub pages will automatically show the ``master`` branch
-on <https://biopython.github.io/> which I am therefore using for live
-testing of the automated imports. This means I will regularly
-re-write git history with replacement ``master`` branches.
-Each time I will return to the ``pre_auto_import`` branch.
+Note the website content under ``/DIST/`` is hosted in a separate
+GitHub Pages project repository <https://github.com/biopython/DIST>
+covering the Biopython releases and assorted documentation files.

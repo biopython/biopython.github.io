@@ -36,7 +36,7 @@ layout: page
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | Name        | GenomeDiagram                                                                                                                                    |
 | Author      | Leighton Pritchard                                                                                                                               |
-| URL         | <http://bioinf.scri.ac.uk/lp/programs.html>                                                                                                      |
+| URL         | <https://ics.hutton.ac.uk/software/tools/>                                                                                                      |
 | Description | A genomic and biological sequence schematic drawing package. Creates publication-quality genome schematics in several vector and bitmap formats. |
 
 |             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
@@ -50,7 +50,7 @@ layout: page
 |-------------|--------------------------------------------------------------------------------------------|
 | Name        | pyzerg                                                                                     |
 | Author      | Leighton Pritchard                                                                         |
-| URL         | <http://bioinf.scri.ac.uk/lp/programs.html>                                                |
+| URL         | <https://pypi.python.org/pypi/PyZerg/0.1>                                                |
 | Description | A Python wrapper for the Zerg BLAST parser, a very fast BLAST parser library written in C. |
 
 |             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |

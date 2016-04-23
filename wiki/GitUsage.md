@@ -88,27 +88,8 @@ Download the `.dmg` disk image from
 
 ### Windows
 
-Two options exist for Windows:
-[msysGit](http://code.google.com/p/msysgit/) and running Git under
-[Cygwin](http://www.cygwin.com/).
-
-#### msysGit (Recommended)
-
-[msysGit](http://code.google.com/p/msysgit/) is a port of Git that runs
-natively on Windows via the MinGW library. Because Git was not
-originally designed to run on Windows, and since this is a port, some
-bugs exist, though are rarely encountered in everyday use of Git. See
-their website for download and installation instructions. Additionally,
-you can watch [Scott Chacon's screencast on installing msysGit on
-Windows](http://gitcasts.com/posts/git-on-windows), and see [this GitHub
-guide](http://github.com/guides/using-git-and-github-for-the-windows-for-newbies).
-
-#### Cygwin
-
-[Cygwin](http://www.cygwin.com/) provides a Linux-like environment for
-Windows. It includes access to repositories of many software packages
-available commonly in Linux distributions, including Git. You can find
-the `git` package under the "devel" category.
+Download the official installers from
+[Windows installers](https://git-scm.com/download/win)
 
 Testing your git installation
 -----------------------------

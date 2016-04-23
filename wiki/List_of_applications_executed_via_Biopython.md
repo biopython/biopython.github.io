@@ -30,14 +30,13 @@ Bio.Align:
 -   [MSAProbs](http://msaprobs.sourceforge.net/homepage.htm)
 -   [MAFFT](http://mafft.cbrc.jp/alignment/software/)
 -   [MUSCLE](http://www.drive5.com/muscle/)
--   [PRANK](http://code.google.com/p/prank-msa/)
+-   [PRANK](http://wasabiapp.org/software/prank/)
 -   [ProbCons](http://probcons.stanford.edu/)
 -   [T-Coffee](http://www.tcoffee.org/)
 
 Bio.Blast
 
--   [NCBI
-    BLAST+](http://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download)
+-   [NCBI BLAST+](http://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download)
 
 Bio.Emboss:
 
@@ -54,8 +53,4 @@ Bio.Phylo:
 -   [FastTree](http://www.microbesonline.org/fasttree/)
 -   [PhyML](http://www.atgc-montpellier.fr/phyml/)
 -   [RAxML](http://sco.h-its.org/exelixis/web/software/raxml/index.html)
--   [PAML](http://abacus.gene.ucl.ac.uk/software/) (baseml,
-    codeml, yn00)
-
-*I am not particularly fond of the title of this page (tiago), if you
-have a better one, please correct*
+-   [PAML](http://abacus.gene.ucl.ac.uk/software/) (baseml, codeml, yn00)

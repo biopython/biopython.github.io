@@ -1,5 +1,5 @@
 ---
-title: AlignIO
+title: Introducing AlignIO
 permalink: wiki/AlignIO
 layout: wiki
 tags:
@@ -52,16 +52,16 @@ with the Biopython version where this was first supported.
 
 The format name is a simple lowercase string, matching the names used in
 [Bio.SeqIO](SeqIO "wikilink"). Where possible we use the same name as
-[BioPerl's SeqIO](bp:HOWTO:SeqIO#Formats "wikilink") and
+[BioPerl's SeqIO](http://bioperl.org/howtos/SeqIO_HOWTO.html "wikilink") and
 [EMBOSS](http://emboss.sourceforge.net/docs/themes/SequenceFormats.html).
 
 | Format name       | Reads | Writes | Notes                                                                                                                                                                                                                                                                                                                               |
 |-------------------|-------|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| clustal           | 1.46  | 1.46   | The [alignment format of Clustal X and Clustal W](bp:ClustalW_multiple_alignment_format "wikilink").                                                                                                                                                                                                                                |
+| clustal           | 1.46  | 1.46   | The [alignment format of Clustal X and Clustal W](http://bioperl.org/formats/alignment_formats/ClustalW_multiple_alignment_format.html "wikilink").                                                                                                                                                                                 |
 | emboss            | 1.46  | No     | The EMBOSS simple/pairs alignment format.                                                                                                                                                                                                                                                                                           |
 | fasta             | 1.46  | 1.48   | This refers to the *input* file format introduced for Bill Pearson's FASTA tool, where each record starts with a "&gt;" line. Note that storing more than one alignment in this format is ambiguous. Writing FASTA files with AlignIO failed prior to release 1.48 (Bug [2557](http://bugzilla.open-bio.org/show_bug.cgi?id=2557)). |
 | fasta-m10         | 1.46  | No     | This refers to the pairwise alignment *output* from Bill Pearson's FASTA tools, specifically the machine readable version when the -m 10 command line option is used. The default free format text output from the FASTA tools is not supported.                                                                                    |
-| ig                | 1.47  | No     | The refers to the IntelliGenetics file format often used for ordinary un-aligned sequences. The tool MASE also appears to use the same file format for alignments, hence its inclusion in this table. See [MASE format](bp:Mase_multiple_alignment_format "wikilink").                                                              |
+| ig                | 1.47  | No     | The refers to the IntelliGenetics file format often used for ordinary un-aligned sequences. The tool MASE also appears to use the same file format for alignments, hence its inclusion in this table. See [MASE format](http://bioperl.org/formats/alignment_formats/ClustalW_multiple_alignment_format.html "wikilink").           |
 | maf               | TBD   | TBD    | [Multiple Alignment Format (MAF)](Multiple_Alignment_Format "wikilink") produced by Multiz. Used to store whole-genome alignments, such as the 30-way alignments available from the UCSC genome browser.                                                                                                                            |
 | nexus             | 1.46  | 1.48   | Also known as PAUP format. Uses Bio.Nexus internally. Only one alignment per file is supported.                                                                                                                                                                                                                                     |
 | phylip            | 1.46  | 1.46   | This is a strict interpretation of the interlaced PHYLIP format which truncates names at 10 characters.                                                                                                                                                                                                                             |
@@ -81,9 +81,9 @@ Alignment Input
 ---------------
 
 As in [Bio.SeqIO](SeqIO "wikilink"), there are two functions for
-alignment input. These are **Bio.AlignIO.read()** for when the file
+alignment input. These are `Bio.AlignIO.read()` for when the file
 contains one and only one alignment, and the more general
-**Bio.AlignIO.parse()** when the file may contain multiple separate
+`Bio.AlignIO.parse()` when the file may contain multiple separate
 alignments.
 
 Both these functions have two required arguments, a file handle and a
@@ -118,12 +118,12 @@ amino acids, and is shown below in the PFAM or Stockholm format:
     O02676_CROCR/1-77            RFGSYCPTTCGIADFLSTYQTGVXNDLRTLEDLLSGIENKTSEAKELIKSIQVSYNPNEPPKPNTIVSATKDSKKMM
     Q6X869_TENEC/1-77            RFGSYCPTTCGIADFLSTYQGSIDKDLQTLEDILNQVENKTXEASELIKSIQVSYNPDEPPRPNMIEGATQKSKKML
     FIBG_HUMAN/40-116            RFGSYCPTTCGIADFLSTYQTKVDKDLQSLEDILHQVENKTSEVKQLIKAIQLTYNPDESSKPNMIDAATLKSRKML
-    #=GS FIBG_HUMAN/40-116    DR PDB; 1qvh L;14-45 
-    #=GS FIBG_HUMAN/40-116    DR PDB; 1fza C;88-90 
-    #=GS FIBG_HUMAN/40-116    DR PDB; 1fzb C;88-90 
-    #=GS FIBG_HUMAN/40-116    DR PDB; 1fzb F;88-90 
-    #=GS FIBG_HUMAN/40-116    DR PDB; 1qvh I;14-45 
-    #=GS FIBG_HUMAN/40-116    DR PDB; 1fza F;88-90 
+    #=GS FIBG_HUMAN/40-116    DR PDB; 1qvh L;14-45
+    #=GS FIBG_HUMAN/40-116    DR PDB; 1fza C;88-90
+    #=GS FIBG_HUMAN/40-116    DR PDB; 1fzb C;88-90
+    #=GS FIBG_HUMAN/40-116    DR PDB; 1fzb F;88-90
+    #=GS FIBG_HUMAN/40-116    DR PDB; 1qvh I;14-45
+    #=GS FIBG_HUMAN/40-116    DR PDB; 1fza F;88-90
     #=GR FIBG_HUMAN/40-116    SS CCXCXBXXHHHHHHHHHHHHHHHHHHHHHHHXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-CC
     O02689_TAPIN/1-77            RFGSYCPTTCGIADFLSTYQTXVDKDLQVLEDILNQAENKTSEAKELIKAIQVRYKPDEPTKPGGIDSATRESKKML
     O02688_PIG/1-77              RFGSYCPTMCGIAGFLSTYQNTVEKDLQNLEGILHQVENKTSEARELIKAIQISYNPEDLSKPDRIQSATKESKKML
@@ -133,8 +133,8 @@ amino acids, and is shown below in the PFAM or Stockholm format:
     FIBG_RAT/40-116              RFGSYCPTTCGISDFLNSYQTDVDTDLQTLENILQRAENRTTEAKELIKAIQVYYNPDQPPKPGMIEGATQKSKKMV
     Q6X866_DROAU/1-76            RFGSYCPTTCGIADFLNKYQTTIDQDLRHMEETLRDIDNKTAESTLLIQKIQIGQTPDPRPQ-NVIGDVTQKSRKMI
     O93568_CHICK/40-116          RFGSYCPTTCGIADFFNKYRLTTDGELLEIEGLLQQATNSTGSIEYLIQHIKTIYPSEKQTLPQSIEQLTQKSKKII
-    #=GS O93568_CHICK/40-116  DR PDB; 1m1j F;14-90 
-    #=GS O93568_CHICK/40-116  DR PDB; 1m1j C;14-90 
+    #=GS O93568_CHICK/40-116  DR PDB; 1m1j F;14-90
+    #=GS O93568_CHICK/40-116  DR PDB; 1m1j C;14-90
     #=GR O93568_CHICK/40-116  SS CCEEEEE-CCCCCCCCCCCCCHHHCCCCCHHHHHHHHHHHHHHHCCCCCCHHHHS-SSTT--SS-HHHHHHHHHHHH
     FIBG_XENLA/38-114            RFGEYCPTTCGISDFLNRYQENVDTDLQYLENLLTQISNSTSGTTIIVEHLIDSGKKPATSPQTAIDPMTQKSKTCW
     #=GC SS_cons                 CCECEEE-CCCCCCCCCCCCCHHHCCCCCHHHHHHHHHHHHHHHCCCCCCHHHHS-SSTT--SS-HHHHHHHHHHCC
@@ -147,9 +147,9 @@ cross-references and secondary structure information for the human and
 chick fibrinogen proteins.
 
 This file contains a single alignment, so we can use the
-**Bio.AlignIO.read()** function to load it in Biopython. Let's assume
+`Bio.AlignIO.read()` function to load it in Biopython. Let's assume
 you have downloaded this alignment from Sanger, or have copy and pasted
-the text above, and saved this as a file called **PF09395\_seed.sth** on
+the text above, and saved this as a file called `PF09395\_seed.sth` on
 your computer. Then in python:
 
 ``` python

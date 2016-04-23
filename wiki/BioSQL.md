@@ -302,8 +302,7 @@ the SQL transaction). It is up to you to decide when to commit the SQL
 transaction(s), and/or rollback changes, rather than having Biopython
 try and decide for you and risk getting it wrong. See *Explicit is
 better than implicit* ([The Zen of
-Python](http://www.python.org/dev/peps/pep-0020/)) and [bug
-2395](http://bugzilla.open-bio.org/show_bug.cgi?id=2395).
+Python](http://www.python.org/dev/peps/pep-0020/)).
 
 There should now be a single row in the *biodatabase* table for our new
 orchid namespace. You can check this at the command line:

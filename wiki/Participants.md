@@ -12,15 +12,15 @@ source code.
 [Tiago Antao](User%3ATiago "wikilink")
 ======================================
 
-|                         |                                                                                                                |
-|-------------------------|----------------------------------------------------------------------------------------------------------------|
-| E-mail                  | <tiagoantao@gmail.com>                                                                                         |
-| Affiliation             | Liverpool School of Tropical Medicine, UK                                                                      |
-| Location                | Liverpool, UK                                                                                                  |
-| Uses Python for         | Almost all programming stuff                                                                                   |
-| Work/Research Interests | Population genetics, infectious diseases (malaria), Anopheles gambiae (malaria vector), big data, data science |
-| Biopython Contributions | Bio.PopGen, testing, Python 3 zealot                                                                           |
-| Relevant URL            | <http://tiago.org>                                                                                             |
+|                         |                                                                           |
+|-------------------------|---------------------------------------------------------------------------|
+| E-mail                  | <tiagoantao@gmail.com>                                                    |
+| Affiliation             | Division of Biological Sciences, University of Montana                    |
+| Location                | Missoula, Montana, US                                                     |
+| Uses Python for         | Almost all programming stuff                                              |
+| Work/Research Interests | Population genetics, Statistics, Machine learning, big data, data science |
+| Biopython Contributions | Bio.PopGen, testing, Python 3 zealot                                      |
+| Relevant URL            | <http://tiago.org>                                                        |
 
 Wibowo Arindrarto
 =================

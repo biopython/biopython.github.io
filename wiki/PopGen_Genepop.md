@@ -1,11 +1,8 @@
 ---
-title: PopGen Genepop
+title: Genepop support in Biopython
 permalink: wiki/PopGen_Genepop
 layout: wiki
 ---
-
-Introduction
-============
 
 The Genepop module allows to access Genepop functionality using a Python
 interface. This means that the vast majority of Genepop's methods (exact

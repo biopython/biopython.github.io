@@ -89,18 +89,20 @@ if __name__ == '__main__':
     elif len(sys.argv) == 3:
          get_interregions(sys.argv[1],int(sys.argv[2]))
     else:
-         print "Usage: get_intergenic.py gb_file [intergenic_length]"
+         print("Usage: get_intergenic.py gb_file [intergenic_length]")
          sys.exit(0)
  
 ```
 
 For a full explanation of the code, see here:
-[1](http://bytesizebio.net/index.php/2010/02/11/short-bioinformatic-hacks-reading-between-the-genes/)
+[bytesizebio.net](http://bytesizebio.net/index.php/2010/02/11/short-bioinformatic-hacks-reading-between-the-genes/)
 
 Running
 -------
 
-<bash> ./get\_intergene mygenbankfile.gb 1 </bash>
+```bash
+./get\_intergene mygenbankfile.gb 1
+```
 
 Run on the genbank file. The intergenic sequences will appear in the
 file mygenbank\_ign.fasta in FASTA format.
