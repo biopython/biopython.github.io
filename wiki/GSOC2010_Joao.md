@@ -22,29 +22,27 @@ Abstract
 --------
 
 Biopython is a very popular library in Bioinformatics and Computational
-Biology. Its Bio.PDB module, originally developed by Thomas Hamelryck,
+Biology. Its `Bio.PDB` module, originally developed by Thomas Hamelryck,
 is a simple yet powerful tool for structural biologists. Although it
 provides a reliable PDB parser feature and it allows several
 calculations (Neighbour Search, RMS) to be made on macromolecules, it
 still lacks a number of features that are part of a researcher's daily
 routine. Probing for disulphide bridges in a structure and adding polar
 hydrogen atoms accordingly are two examples that can be incorporated in
-Bio.PDB, given the module's clever structure and good overall
+`Bio.PDB`, given the module's clever structure and good overall
 organisation. Cosmetic operations such as chain removal and residue
 renaming – to account for the different existing nomenclatures – and
 renumbering would also be greatly appreciated by the community.
 
-Another aspect that can be improved for Bio.PDB is a smooth
+Another aspect that can be improved for `Bio.PDB` is a smooth
 integration/interaction layer for heavy-weights in macromolecule
 simulation such as MODELLER, GROMACS, AutoDock, HADDOCK. It could be
 argued that the easiest solution would be to code hooks to these
 packages' functions and routines. However, projects such as the recently
-developed
-[edPDB](http://sbcb.bioch.ox.ac.uk/oliver/software/GromacsWrapper/html/edpdb.html)
-or the more complete [Biskit library](http://biskit.pasteur.fr/) render,
+developed edPDB or the more complete [Biskit library](http://biskit.pasteur.fr/) render,
 in my opinion, such interfacing efforts redundant. Instead, I believe it
 to be more advantageous to include these software' input/output formats
-in Biopython's SeqIO and AlignIO modules. This, together with the
+in Biopython's `SeqIO` and `AlignIO` modules. This, together with the
 creation of interfaces for model validation/structure checking
 services/software would allow Biopython to be used as a pre- and
 post-simulation tool. Eventually, it would pave the way for its
@@ -62,10 +60,8 @@ periods for reviewing these efforts at the two points during the project
 
 ### Community Bonding Period
 
--   Getting familiar with development environment (Git Hub account, Git,
+-   Getting familiar with development environment (GitHub account, Git,
     Biopython's repository, Bug tracking system, etc)
-
-<!-- -->
 
 -   Gather scientific literature and discuss some of the
     to-be-implemented methods.
@@ -79,7 +75,7 @@ periods for reviewing these efforts at the two points during the project
 
 #### Probe disulphide bridges in the structure
 
--   Via NeighbourSearch class
+-   Via `NeighbourSearch` class
 -   Also use SSBOND in header
 
 #### Extract Biological Unit
@@ -99,7 +95,7 @@ periods for reviewing these efforts at the two points during the project
 #### Hydrogenation Report
 
 -   Produces a brief list of polar hydrogen atoms in the structure.
-    -   Chain | Residue \[number\] | Atom
+    -   Chain \| Residue \[number\] \| Atom
 
 ### Weeks 3-5 \[14th June- 4th July\]
 
@@ -128,27 +124,27 @@ periods for reviewing these efforts at the two points during the project
 
 ### Week 6 (Mid-Term) \[5th - 11th July\]
 
-  
-Testing and consolidating the features thoroughly.
+ 
+-   Testing and consolidating the features thoroughly.
 
-Write documentation & examples for each feature, to be included in
-Biopython's Wiki and Bio.PDB's FAQ.
+-   Write documentation & examples for each feature, to be included in
+    Biopython's Wiki and `Bio.PDB`'s FAQ.
 
-Mid-term Evaluations. Discussing with mentors current state of project
-and adjust following schedule to comply with project's needs.
+-   Mid-term Evaluations. Discussing with mentors current state of project
+    and adjust following schedule to comply with project's needs.
 
 ### Week 7 \[12th - 19th July\]
 
 #### Add support for MODELLER's PIR format to Biopython
 
 -   [Format
-    Description](http://www.salilab.org/modeller/manual/node445.html#alignmentformat)
--   SeqIO
--   AlignIO
+    Description](http://www.salilab.org/modeller/manual/node495.html#alignmentformat)
+-   `SeqIO`
+-   `AlignIO`
 
 #### Allow conversion of Structure Object to Sequence Object
 
--   Based on Bio.PDB.Polypeptide function
+-   Based on `Bio.PDB.Polypeptide` function
 
 ### Weeks 8-10 \[20th July - 9th August\]
 
@@ -156,7 +152,7 @@ and adjust following schedule to comply with project's needs.
 
 -   Create call to Biopython's BLAST interfaces
     -   Allow direct blast from structure object ( e.g.
-        protein.find\_homoseq() )
+        `protein.find_homoseq()` )
     -   Returns list of tuples with E-Value \*Dictionary (name, length
         of alignment, etc..)
 -   Create interface with structural homology web services
@@ -188,11 +184,11 @@ Project Progress
 ----------------
 
 Since I'm adding some methods that are useful/logical only for proteins,
-having them exposed in Structure.py for every molecule could be
-misleading. We decided then to add a 'as\_protein()' method that allows
+having them exposed in `Structure.py` for every molecule could be
+misleading. We decided then to add a `as_protein()` method that allows
 protein-specific methods to be accessed. The following example
-demonstrates how this call works. Note how the "search\_ss\_bonds"
-method is absent from dir(s) but not from dir(prot).
+demonstrates how this call works. Note how the `search_ss_bonds`
+method is absent from `dir(s)` but not from `dir(prot)`.
 
 ``` python
 from Bio.PDB import PDBParser
@@ -213,7 +209,7 @@ dir(prot)
 
 ### Renumbering residues of a structure
 
-Since parse\_pdb\_header is far from optimal and is likely to change in
+Since `parse_pdb_header` is far from optimal and is likely to change in
 the future, I opted to forfeit reading SEQREQ records to account for
 gaps. However, ignoring this information and renumbering based on ATOM
 records would make us lose information on gaps. I opted to subtract the
@@ -240,10 +236,10 @@ print list(s.get_residues())[0]
 ### Probe disulphide bridges in the structure
 
 The same rationale from SEQRES applies for the exclusion of looking up
-SSBOND. Also, instead of using NeighborSearch to look for pairs of
+SSBOND. Also, instead of using `NeighborSearch` to look for pairs of
 cysteins in bond distance, I instead used the minus operator since it
 has been overloaded to return the distance between two atoms (Page 10 of
-the [FAQ](http://www.biopython.org/DIST/docs/cookbook/biopdb_faq.pdf)).
+the [FAQ](http://http://biopython.org/DIST/docs/tutorial/biopdb_faq.pdf)).
 The average distance cited in the literature is 2.05A but other software
 packages and my own tests set 3.0A as a good threshold. Still, the user
 can set his own threshold manually.
@@ -268,10 +264,10 @@ for bond in prot.search_ss_bonds():
 
 ### Extract Biological Unit
 
-Added parsing for REMARK350 to parse\_pdb\_header since there was
+Added parsing for REMARK350 to `parse_pdb_header` since there was
 already a bit written for another REMARK section. This extracts the
 transformation matrices and the translation vector from the header, that
-is then fed to the Structure function. Each new rotated structure is
+is then fed to the `Structure` function. Each new rotated structure is
 created as a new MODEL. I chose this because crystal structures very
 rarely have more than one MODEL instance and also because NMR models
 don't have REMARK 350 that often (at least to my knowledge).
@@ -303,7 +299,7 @@ a local algorithm. This would not limit the user when there he/she lacks
 an internet connection.
 
 The interface for the WHATIF Protonation service has been implemented,
-although it should be regarded as \*\*highly experimental\*\* for now.
+although it should be regarded as **highly experimental** for now.
 Interfacing this server included writing a small parser for a
 PDBXML-like format, which is expected to have serious bugs in its
 initial versions. I ran some simple tests and it works. It doesn't
@@ -339,7 +335,7 @@ Regarding the local implementation, after much reading I settled on
 using PyMol's algorithm. It seems to allow for protonation of any
 structure, regardless of its nature (protein, DNA, etc). Its vectorial
 and matrix operations can likely be optimized with Numpy and Biopython's
-Vector.py module. This first implementation works for proteins only.
+`Vector` module. This first implementation works for proteins only.
 I'll add general molecule support later.
 
 ``` python
@@ -356,12 +352,12 @@ prot.add_hydrogens(p)
 ### Coarse Grain Structure
 
 A Center of Mass function was developed first as part of a new module
-Bio.Struct.Geometry. It allows for calculation of the center of geometry
+`Bio.Struct.Geometry`. It allows for calculation of the center of geometry
 (all masses are equal) and center of mass (taking into account elemental
 masses for the atoms). The masses are a new Atom object feature derived
 from [this list](http://www.chem.qmul.ac.uk/iupac/AtWt/) and from PyMol.
 Essentially, all atoms of a structure now get their mass defined when
-the Structure is created (check Atom.py and [this
+the structure is created (check `Atom.py` and [this
 thread](http://lists.open-bio.org/pipermail/biopython-dev/2010-June/007880.html)
 for details). This is obviously experimental.
 
@@ -401,7 +397,7 @@ p = s.as_protein() # To expose the CG method
 ca_trace = p.coarse_grain()
 
 # One atom per residue
-print ( len(list(p.get_residues())) == len(list(ca_trace.get_atoms())) )
+print (len(list(p.get_residues())) == len(list(ca_trace.get_atoms())) )
 True
 
 cg_encad = p.coarse_grain('ENCAD_3P')
@@ -449,12 +445,12 @@ ALA [<Atom BB>]
 
 ### Removal of disordered atoms
 
-Implement as part of Structure.py and based loosely on the [contribution
+Implement as part of `Structure.py` and based loosely on the [contribution
 of Ramon
 Crehuet](http://www.biopython.org/wiki/Remove_PDB_disordered_atoms). The
-DisorderedAtom objects are removed from the residue and a single Atom
+`DisorderedAtom` objects are removed from the residue and a single `Atom`
 object is added corresponding to the location of the user's choice
-(keep\_loc argument) which defaults to A.
+(`keep_loc` argument) which defaults to A.
 
 An example, still keeping s from above:
 
@@ -481,13 +477,13 @@ Residue SER:1131 has 1 disordered atoms: O
 ### Sequence Homologues from Structures
 
 Biopython supports BLAST (local and remote through NCBI servers). We
-bridged both Bio.PDB and Bio.Blast modules to allow an easier search for
+bridged both `Bio.PDB` and `Bio.Blast` modules to allow an easier search for
 sequence homologues. For now, it supports remote BLAST through
-Bio.Blast.NCBIWWW and functions as a blackbox - i.e. users cannot change
+`Bio.Blast.NCBIWWW` and functions as a blackbox - i.e. users cannot change
 any search parameter. If one wants to fully use BLAST he/she should use
-the regular BLAST module. This is just a convenience function.
+the regular `BLAST` module. This is just a convenience function.
 
-It is accessible only to Protein objects. It queries the PDB subset
+It is accessible only to `Protein` objects. It queries the PDB subset
 database of NCBI BLAST servers with the Structure object's sequence,
 auto-adjusting parameters for short sequences (less than 15 residues).
 
@@ -523,7 +519,7 @@ DIRQGPKEPFRDYVDRFYKTLRAEQASQEVKNWMTETLLVQNANPDCKTILKALGPGATLEEMMTACQG
 
 ### Support for MODELLER PIR format in SeqIO
 
-MODELLER PIR format support was added to SeqIO as 'pir-modeller'.
+MODELLER PIR format support was added to `SeqIO` as 'pir-modeller'.
 Currently, the format can be read but not written. An example of the
 format follows, as well as an example of the parser's usage.
 

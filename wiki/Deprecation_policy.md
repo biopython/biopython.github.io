@@ -11,15 +11,15 @@ remove such code from Biopython, while avoiding any nasty surprises for
 users who may be relying on older code.
 
 We keep a plain text file in the Biopython source code to record these
-changes, available
-[here](http://biopython.open-bio.org/SRC/biopython/DEPRECATED) or on
-[github](http://github.com/biopython/biopython/blob/master/DEPRECATED).
+changes, available on 
+[GitHub](http://github.com/biopython/biopython/blob/master/DEPRECATED) or
+[here](http://biopython.open-bio.org/SRC/biopython/DEPRECATED).
 
 This is the current policy for deprecating and removing code from
 Biopython:
 
 -   First, ask on the biopython and biopython-dev [mailing
-    lists](mailing_lists "wikilink") whether a given piece of code has
+    lists](Mailing_lists "wikilink") whether a given piece of code has
     any users. Please keep in mind that not all users are following the
     biopython-dev mailing list.
 -   Consider declaring the module as "obsolete" for a release
@@ -35,13 +35,15 @@ Biopython:
         ideally with examples or a reference to the tutorial.
     -   Most importantly, add a DeprecationWarning to the code:
 
-`import warnings`  
-`warnings.warn("Bio.SomeModule has been deprecated, and we intend to remove it"`  
-`              " in a future release of Biopython. Please use the SomeOtherModule"`  
-`              " instead, as described in the Tutorial. If you would like to"`  
-`              " continue using Bio.SomeModule, please contact the Biopython"`  
-`              " developers via the mailing list.",`  
-`              DeprecationWarning)`
+```
+import warnings
+warnings.warn("Bio.SomeModule has been deprecated, and we intend to remove it"
+              " in a future release of Biopython. Please use the SomeOtherModule" 
+              " instead, as described in the Tutorial. If you would like to"
+              " continue using Bio.SomeModule, please contact the Biopython"
+              " developers via the mailing list.",
+              DeprecationWarning)
+```
 
 -   In principle, we require that two Biopython releases carrying the
     deprecation warning are made before the code can be
