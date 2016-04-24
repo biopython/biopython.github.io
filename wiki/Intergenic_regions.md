@@ -2,6 +2,8 @@
 title: Intergenic regions
 permalink: wiki/Intergenic_regions
 layout: wiki
+tags:
+ - Cookbook
 ---
 
 Problem
@@ -106,5 +108,3 @@ Running
 
 Run on the genbank file. The intergenic sequences will appear in the
 file mygenbank\_ign.fasta in FASTA format.
-
-[`category:Cookbook`](category:Cookbook "wikilink")

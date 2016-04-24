@@ -2,6 +2,8 @@
 title: Coordinate mapping
 permalink: wiki/Coordinate_mapping
 layout: wiki
+tags:
+ - Cookbook
 ---
 
 Contributed by Lenna X. Peterson
@@ -105,5 +107,3 @@ gcp_table(cm, sample_g_values)
 The code shown in this example may be downloaded here:
 <https://gist.github.com/lennax/10600113> The example file used is
 located in the Tests directory of the Biopython source code.
-
-[`category:Cookbook`](category:Cookbook "wikilink")

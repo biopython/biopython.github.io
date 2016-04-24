@@ -2,6 +2,8 @@
 title: Gene predictions to protein sequences
 permalink: wiki/Gene_predictions_to_protein_sequences
 layout: wiki
+tags:
+ - Cookbook
 ---
 
 Contributed by Brad Chapman
@@ -123,5 +125,3 @@ See also:
     entry](http://friendfeed.com/the-life-scientists/553c495e/does-anyone-know-how-to-take-gff3-file-gene)
 -   [Iddo's post on parsing standard Glimmer
     output](http://bytesizebio.net/index.php/2009/10/29/short-bioinformatics-hacks-glimmer-splitter/)
-
-[`category:Cookbook`](category:Cookbook "wikilink")
