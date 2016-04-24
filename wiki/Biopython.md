@@ -2,6 +2,9 @@
 title: Biopython
 permalink: wiki/Biopython
 layout: wiki
+redirect_from:
+ - wiki/Website_HTML
+ - wiki/Main_Page
 ---
 
 |                                                                                                                                |
