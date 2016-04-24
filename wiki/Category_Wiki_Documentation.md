@@ -5,7 +5,7 @@ layout: tagpage
 tag: Wiki Documentation
 ---
 
-Main sources of [documentation](documentation "wikilink"):
+Main sources of [documentation](Documentation "wikilink"):
 
 -   The [Biopython Tutorial and
     Cookbook](http://biopython.org/DIST/docs/tutorial/Tutorial.html)

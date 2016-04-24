@@ -19,9 +19,9 @@ See also the chapter about contributing in the
 
 Even if you don't feel ready or able to contribute code, you can still
 help out. There always things that can be improved on the
-[documentation](documentation "wikilink") (even just proof reading, or
+[documentation](Documentation "wikilink") (even just proof reading, or
 telling us if a section isn't clear enough). We also need people on the
-[mailing lists](mailing_lists "wikilink") to help out with beginner's
+[mailing lists](Mailing_lists "wikilink") to help out with beginner's
 questions, or to participate in debates about new features. Maybe you
 can propose general examples for the [wiki
 cookbook](Category%3ACookbook "wikilink")?

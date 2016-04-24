@@ -56,7 +56,7 @@ File Formats
 
 This table lists the file formats that Bio.SeqIO can read, write and
 index, with the Biopython version where this was first supported (or
-[git](git "wikilink") to indicate this is supported in our latest in
+[git](Git "wikilink") to indicate this is supported in our latest in
 development code). The format name is a simple lowercase string. Where
 possible we use the same name as [BioPerl's
 SeqIO](http://bioperl.org/howtos/SeqIO_HOWTO) and
@@ -507,7 +507,7 @@ Help!
 -----
 
 If you are having problems with **Bio.SeqIO**, please join the
-discussion mailing list (see [mailing lists](mailing_lists "wikilink")).
+discussion mailing list (see [mailing lists](Mailing_lists "wikilink")).
 
 If you think you've found a bug, please report it on our [bug
 tracker](http://redmine.open-bio.org/projects/biopython).
