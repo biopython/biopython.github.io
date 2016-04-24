@@ -79,7 +79,7 @@ appropriate.
 ### KEGG format
 
 Can Bio.KEGG parse files in [KEGG
-format](bp:KEGG_sequence_format "wikilink")?
+format](http://bioperl.org/formats/sequence_formats/KEGG_sequence_format)?
 
 ### MEME format
 
