@@ -34,7 +34,7 @@ github](http://github.com/biopython/biopython).
 ### Track changes
 
 You can [track changes](Tracking_commits "wikilink") via
-[RSS](wp:RSS_(file_format) "wikilink").
+[RSS](https://en.wikipedia.org/wiki/RSS).
 
 ### Downloading the latest source
 

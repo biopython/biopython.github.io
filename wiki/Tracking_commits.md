@@ -7,8 +7,8 @@ redirect_from:
 ---
 
 You can track code development in Biopython by [RSS
-feeds](wp:RSS_(file_format) "wikilink") or the biopython-dev [Mailing
-list](Mailing_lists "wikilink").
+feeds](https://en.wikipedia.org/wiki/RSS) or the biopython-dev
+[Mailing list](Mailing_lists "wikilink").
 
 | Core commits                                                                            |
 |-----------------------------------------------------------------------------------------|
