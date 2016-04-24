@@ -20,7 +20,7 @@ Solution
 --------
 
 Suppose you have a GenBank file which you want to turn into a Fasta
-file. For example, lets consider the file
+file. For example, let's consider the file
 '[cor6\_6.gb](http://biopython.open-bio.org/SRC/biopython/Tests/GenBank/cor6_6.gb)'
 (which is included in the Biopython unit tests under the GenBank
 directory):
@@ -36,7 +36,7 @@ count = SeqIO.write(sequences, output_handle, "fasta")
 
 output_handle.close()
 input_handle.close()
-print "Coverted %i records" % count
+print("Converted %i records" % count)
 ```
 
 In this example the GenBank file contained six records and started like
