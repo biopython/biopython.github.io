@@ -102,11 +102,15 @@ lists](Mailing_lists "wikilink")). Be sure to subscribe to biopython-dev
 before sending a message, otherwise your message will be discarded by
 the mail server (this was done to avoid spam on the mailing list). Don't
 send the code directly to the biopython-dev mailing list. Instead,
-please use [our GitHub page](https://github.com/biopython/biopython/) by creating an issue and either attaching the file(s) or linking to your GitHub branch.
+please use [our GitHub page](https://github.com/biopython/biopython/) by
+creating an issue and either attaching the file(s) or linking to your
+GitHub branch.
 
 ### Coding conventions
 
-Biopython tries to follow the coding conventions laid out in [PEP 8](http://www.python.org/dev/peps/pep-0008/) and [PEP 257](http://www.python.org/dev/peps/pep-0257/). The important
+Biopython tries to follow the coding conventions laid out in
+[PEP 8](http://www.python.org/dev/peps/pep-0008/) and
+[PEP 257](http://www.python.org/dev/peps/pep-0257/). The important
 highlights are:
 
 -   Classes should be in AllFirstLetterUppercase style.
