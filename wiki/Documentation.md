@@ -30,13 +30,13 @@ below.
 -   Wiki documentation,
     -   [Seq](Seq "wikilink") and [SeqRecord](SeqRecord "wikilink")
         objects
-	-   [Bio.SeqIO](SeqIO "wikilink") - sequence input/output
+    -   [Bio.SeqIO](SeqIO "wikilink") - sequence input/output
     -   [Bio.AlignIO](AlignIO "wikilink") - alignment input/output
-	-   [Bio.Restriction](Restriction "wikilink") - using restriction enzymes
     -   [Bio.PopGen](PopGen "wikilink") - population genetics
     -   [Bio.PDB](The_Biopython_Structural_Bioinformatics_FAQ "wikilink") -
         structural bioinformatics
     -   Biopython's [BioSQL interface](BioSQL "wikilink")
+
 -   Documentation for the Biopython interfaces to BioSQL cover
     installing Python database adaptors and basic usage of BioSQL.
       
@@ -57,9 +57,9 @@ below.
         Bio.PDB module).
       
         [PDF](http://biopython.org/DIST/docs/tutorial/biopdb_faq.pdf)
+    -   Working with restriction enzymes.
 
-    -   [Working with restriction enzymes](Restriction "wikilink").
-      
+        [HTML](http://biopython.org/DIST/docs/cookbook/Restriction.html)
 
 #### Documentation for Developers
 
