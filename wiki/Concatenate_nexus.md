@@ -35,9 +35,8 @@ The Solution
 ------------
 
 Say we have NEXUS files for three genes,
-[btCOI.nex](http://atavism.webs.com/btCOI.nex),[btCOII.nex](http://atavism.webs.com/btCOII.nex)
-and [btITS.nex](http://atavism.webs.com/btITS.nex), containing
-alignments:
+[btCOI.nex](../examples/btCOI.nex), [btCOII.nex](../examples/btCOII.nex)
+and [btITS.nex](../examples/btITS.nex), containing alignments:
 
     #COI
     bt1 GGGGGGGGGGGG
