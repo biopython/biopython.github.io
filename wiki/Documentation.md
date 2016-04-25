@@ -48,7 +48,7 @@ below.
     the underlying C library and the Python interface.
       
     [PDF (2008)](http://biopython.org/DIST/docs/cluster/cluster.pdf) | 
-	[PDF (2013)](http://bonsai.hgc.jp/~mdehoon/software/cluster/cluster.pdf)
+    [PDF (2013)](http://bonsai.hgc.jp/~mdehoon/software/cluster/cluster.pdf)
 
 -   Cookbook-style documentation:
     -   [Cookbook documentation](Category%3ACookbook "wikilink") (on
@@ -94,14 +94,14 @@ and/or one of the other listed papers:
 
 1.  Cock PA, Antao T, Chang JT, Bradman BA, Cox CJ, Dalke A, Friedberg I, Hamelryck T, Kauff F, 
     Wilczynski B and de Hoon MJL (2009) Biopython: freely available Python tools for computational
-	molecular biology and bioinformatics. [Bioinformatics, 25, 1422-1423](http://dx.doi.org/10.1093/bioinformatics/btp163)
+    molecular biology and bioinformatics. [Bioinformatics, 25, 1422-1423](http://dx.doi.org/10.1093/bioinformatics/btp163)
 
     // This application note covers the whole of Biopython
 
 2.  Chapman BA and Chang JT (2000). Biopython: Python tools for computational biology.
     [ACM SIGBIO Newsletter, 20, 15-19](http://dx.doi.org/10.1145/360262.360268).
 
-	[HTML](http://biopython.org/DIST/docs/acm/ACMbiopy.html)
+    [HTML](http://biopython.org/DIST/docs/acm/ACMbiopy.html)
     | [PDF](http://biopython.org/DIST/docs/acm/ACMbiopy.pdf)
 
     // This served as the official project announcement.

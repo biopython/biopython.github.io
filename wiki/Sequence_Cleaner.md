@@ -40,7 +40,7 @@ def sequence_cleaner(fasta_file,min_length=0,por_n=100):
         sequence=str(seq_record.seq).upper()
         #Check if the current sequence is according to the user parameters
         if (len(sequence)>=min_length and 
-		   (float(sequence.count("N"))/float(len(sequence)))*100<=por_n):
+            (float(sequence.count("N"))/float(len(sequence)))*100<=por_n):
         # If the sequence passed in the test "is It clean?" and It isnt in the
         # hash table , the sequence and Its id are going to be in the hash
             if sequence not in sequences:
@@ -72,7 +72,7 @@ try:
         sequence_cleaner(userParameters[0],float(userParameters[1]))
     elif len(userParameters)==3:
         sequence_cleaner(userParameters[0],float(userParameters[1]),
-		                 float(userParameters[2]))
+                         float(userParameters[2]))
     else:
         print "There is a problem!"
 except:
