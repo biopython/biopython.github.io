@@ -8,4 +8,6 @@
 
 language: ruby
 rvm: 2.1.7
-script: "bundle exec jekyll build"
+script:
+ - "if grep '\t' wiki/*.md; then echo 'Tabs are bad, please use four spaces.'; false; fi"
+ - "bundle exec jekyll build"
