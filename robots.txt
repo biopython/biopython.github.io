@@ -14,3 +14,4 @@ Disallow: /DIST/docs/_api_163/
 Disallow: /DIST/docs/_api_163b/
 Disallow: /DIST/docs/_api_164/
 Disallow: /DIST/docs/_api_165/
+Disallow: /static/
