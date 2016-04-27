@@ -1,3 +1,16 @@
 User-agent: *
 Disallow: /css/
 Disallow: /SRC/
+Disallow: /DIST/docs/_api_155/
+Disallow: /DIST/docs/_api_156/
+Disallow: /DIST/docs/_api_157/
+Disallow: /DIST/docs/_api_158/
+Disallow: /DIST/docs/_api_159/
+Disallow: /DIST/docs/_api_160/
+Disallow: /DIST/docs/_api_161/
+Disallow: /DIST/docs/_api_162/
+Disallow: /DIST/docs/_api_162b/
+Disallow: /DIST/docs/_api_163/
+Disallow: /DIST/docs/_api_163b/
+Disallow: /DIST/docs/_api_164/
+Disallow: /DIST/docs/_api_165/
