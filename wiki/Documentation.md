@@ -2,6 +2,8 @@
 title: Documentation
 permalink: wiki/Documentation
 layout: page
+redirect_from:
+ - /documentation/
 ---
 
 New to Biopython? Check out the [Getting
