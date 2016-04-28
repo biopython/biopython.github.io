@@ -6,8 +6,9 @@ layout: page
 
 Note: People are listed here alphabetically by surname. This is only a
 partial listing, see also the [contributor
-listing](http://biopython.org/SRC/biopython/CONTRIB) in the Biopython
-source code.
+listing](https://github.com/biopython/biopython/blob/master/CONTRIB) in
+the Biopython source code, and the [GitHub contributor
+graphs](https://github.com/biopython/biopython/graphs/contributors).
 
 [Tiago Antao](User%3ATiago "wikilink")
 ======================================
