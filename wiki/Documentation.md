@@ -133,7 +133,7 @@ and/or one of the other listed papers:
     and visualizing phylogenetic trees in Biopython.
     [BMC Bioinformatics, 13, 209](http://dx.doi.org/10.1186/1471-2105-13-209)
 
-    // This describes the `Bio.Phylo` and `Bio.Phylo.PAML modules`.
+    // This describes the `Bio.Phylo` and `Bio.Phylo.PAML` modules.
 
 #### Presentations
 
