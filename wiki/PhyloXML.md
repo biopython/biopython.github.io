@@ -29,7 +29,7 @@ produced by `Bio.Phylo.read()` and `parse()`.
 For example, this XML (from
 [Tests/PhyloXML/example.xml](https://github.com/biopython/biopython/blob/master/Tests/PhyloXML/example.xml)):
 
-```
+``` xml
 <?xml version="1.0" encoding="UTF-8"?>
 <phyloxml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.phyloxml.org http://www.phyloxml.org/1.10/phyloxml.xsd" xmlns="http://www.phyloxml.org">
    <phylogeny rooted="true">
@@ -120,8 +120,8 @@ from Bio.Phylo import PhyloXMLIO
 
 The `read()` function returns a single `Bio.Phylo.PhyloXML.Phyloxml` object
 representing the entire file's data. The phylogenetic trees are in the
-"phylogenies" attribute, and any other arbitrary data is stored in
-"other".
+`.phylogenies` attribute, and any other arbitrary data is stored in
+`.other`.
 
 ``` python
 >>> phx = PhyloXMLIO.read('phyloxml_examples.xml')
@@ -270,7 +270,7 @@ Biopython [`SeqRecord`](SeqRecord "wikilink") objects -- `to_seqrecord()`
 and `from_seqrecord()`. This includes the molecular sequence `mol_seq`)
 as a [`Seq`](Seq "wikilink") object, and the protein domain architecture
 as list of [`SeqFeature`](SeqFeature "wikilink") objects. Likewise,
-`PhyloXML.ProteinDomain` objects have a `to_seqfeature()` method.
+`PhyloXML.ProteinDomain` objects have a `.to_seqfeature()` method.
 
 Performance
 -----------
@@ -287,7 +287,7 @@ The `read()` and `parse()` functions process a complete file in about the
 same amount of CPU time. Most of the underlying code is the same, and
 the majority of the time is spent building `Clade` objects (the most
 common node type). For small files (smaller than
-ncbi\_taxonomy\_mollusca.xml), the `write()` function serializes the
+`ncbi_taxonomy_mollusca.xml`), the `write()` function serializes the
 complete object back to an equivalent file slightly slower than the
 corresponding `read()` call; for very large files, `write()` finishes faster
 than `read()`.
