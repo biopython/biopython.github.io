@@ -6,7 +6,7 @@ tags:
  - Wiki Documentation
 ---
 
-This page describes Bio.SeqIO, the standard Sequence Input/Output
+This page describes `Bio.SeqIO`, the standard Sequence Input/Output
 interface for BioPython 1.43 and later. For implementation details, see
 the [SeqIO development page](SeqIO_dev "wikilink").
 
@@ -109,7 +109,7 @@ This lets you do things like:
 from Bio import SeqIO
 handle = open("example.fasta", "rU")
 for record in SeqIO.parse(handle, "fasta") :
-    print record.id
+    print(record.id)
 handle.close()
 ```
 
@@ -128,32 +128,32 @@ If you had a different type of file, for example a Clustalw alignment
 file such as
 [`opuntia.aln`](https://raw.githubusercontent.com/biopython/biopython/master/Tests/Clustalw/opuntia.aln)
 which contains seven sequences, the only difference is you specify
-"clustal" instead of "fasta":
+`"clustal"` instead of `"fasta"`:
 
 ``` python
 from Bio import SeqIO
 handle = open("opuntia.aln", "rU")
 for record in SeqIO.parse(handle, "clustal") :
-    print record.id
+    print(record.id)
 handle.close()
 ```
 
 Iterators are great for when you only need the records one by one, in
 the order found in the file. For some tasks you may need to have random
 access to the records in any order. In this situation, use the built in
-python `list` function to turn the iterator into a list:
+python `list()` function to turn the iterator into a list:
 
 ``` python
 from Bio import SeqIO
 handle = open("example.fasta", "rU")
 records = list(SeqIO.parse(handle, "fasta"))
 handle.close()
-print records[0].id  #first record
-print records[-1].id #last record
+print(records[0].id)  # first record
+print(records[-1].id)  # last record
 ```
 
 Another common task is to index your records by some identifier. For
-small files we have a function `Bio.SeqIO.to_dict` to turn a
+small files we have a function `Bio.SeqIO.to_dict()` to turn a
 [SeqRecord](SeqRecord "wikilink") iterator (or list) into a dictionary
 (in memory):
 
@@ -162,10 +162,10 @@ from Bio import SeqIO
 handle = open("example.fasta", "rU")
 record_dict = SeqIO.to_dict(SeqIO.parse(handle, "fasta"))
 handle.close()
-print record_dict["gi:12345678"] #use any record ID
+print(record_dict["gi:12345678"])  #use any record ID
 ```
 
-The function `Bio.SeqIO.to_dict` will use the record ID as the
+The function `Bio.SeqIO.to_dict()` will use the record ID as the
 dictionary key by default, but you can specify any mapping you like with
 its optional argument, `key_function`.
 
@@ -177,7 +177,7 @@ might also consider [BioSQL](BioSQL "wikilink").
 ``` python
 from Bio import SeqIO
 record_dict = SeqIO.index("example.fasta", "fasta")
-print record_dict["gi:12345678"] #use any record ID
+print(record_dict["gi:12345678"])  #use any record ID
 ```
 
 Biopython 1.45 introduced another function, `Bio.SeqIO.read()`, which
@@ -204,7 +204,7 @@ Sequence Output
 ---------------
 
 For writing records to a file use the function `Bio.SeqIO.write()`,
-which takes a SeqRecord iterator (or list), output handle and format
+which takes a `SeqRecord` iterator (or list), output handle and format
 string:
 
 ``` python
@@ -248,7 +248,7 @@ function:
 from Bio import SeqIO
 input_handle = open("cor6_6.gb", "rU")
 for record in SeqIO.parse(input_handle, "genbank") :
-    print record
+    print(record)
 input_handle.close()
 ```
 
@@ -268,7 +268,7 @@ count = SeqIO.write(sequences, output_handle, "fasta")
 output_handle.close()
 input_handle.close()
 
-print "Converted %i records" % count
+print("Converted %i records" % count)
 ```
 
 Or more concisely using the `Bio.SeqIO.convert()` function (in
@@ -277,7 +277,7 @@ Biopython 1.52 or later), just:
 ``` python
 from Bio import SeqIO
 count = SeqIO.convert("cor6_6.gb", "genbank", "cor6_6.fasta", "fasta")
-print "Converted %i records" % count
+print("Converted %i records" % count)
 ```
 
 In this example the GenBank file started like this:
@@ -324,7 +324,7 @@ for record in SeqIO.parse(open("cor6_6.gb", "rU"), "genbank") :
         # Add this record to our list
         short_sequences.append(record)
 
-print "Found %i short sequences" % len(short_sequences)
+print("Found %i short sequences" % len(short_sequences))
 
 output_handle = open("short_seqs.fasta", "w")
 SeqIO.write(short_sequences, output_handle, "fasta")
@@ -343,7 +343,7 @@ input_seq_iterator = SeqIO.parse(open("cor6_6.gb", "rU"), "genbank")
 short_sequences = [record for record in input_seq_iterator \
                    if len(record.seq) < 300]
 
-print "Found %i short sequences" % len(short_sequences)
+print("Found %i short sequences" % len(short_sequences))
 
 output_handle = open("short_seqs.fasta", "w")
 SeqIO.write(short_sequences, output_handle, "fasta")
@@ -371,7 +371,7 @@ output_handle.close()
 ```
 
 Remember that for sequential file formats like Fasta or GenBank,
-`Bio.SeqIO.write()` will accept a **SeqRecord** iterator. The
+`Bio.SeqIO.write()` will accept a `SeqRecord` iterator. The
 advantage of the code above is that only one record will be in memory at
 any one time.
 
@@ -395,7 +395,7 @@ file
 from Bio import SeqIO
 from Bio.SeqUtils.CheckSum import seguid
 for record in SeqIO.parse(open("ls_orchid.gbk"), "genbank") :
-    print record.id, seguid(record.seq)
+    print(record.id + "_" + seguid(record.seq))
 ```
 
 You should get this output:
@@ -420,8 +420,8 @@ from Bio.SeqUtils.CheckSum import seguid
 seguid_dict = SeqIO.to_dict(SeqIO.parse(open("ls_orchid.gbk"), "genbank"),
                             lambda rec : seguid(rec.seq))
 record = seguid_dict["MN/s0q9zDoCVEEc+k/IFwCNF2pY"]
-print record.id
-print record.description
+print(record.id)
+print(record.description)
 ```
 
 Giving this output:
@@ -483,11 +483,11 @@ TCATTAAAAAAGCGTGAGCC
 Sometimes you won't want to write your [SeqRecord](SeqRecord "wikilink")
 object(s) to a file, but to a string. For example, you might be
 preparing output for display as part of a webpage. If you want to write
-multiple records to a single string, use **StringIO** to create a
+multiple records to a single string, use `StringIO` to create a
 string-based handle. The
 [Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
 ([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)) has an
-example of this in the **SeqIO** chapter.
+example of this in the `SeqIO` chapter.
 
 For the special case where you want a single record as a string in a
 given file format, Biopython 1.48 added a new format method:
@@ -495,7 +495,7 @@ given file format, Biopython 1.48 added a new format method:
 ``` python
 from Bio import SeqIO
 mito_record = SeqIO.read(open("NC_006581.gbk"), "genbank")
-print mito_record.format("fasta")
+print(mito_record.format("fasta"))
 ```
 
 The format method will take any output format supported by `Bio.SeqIO`
