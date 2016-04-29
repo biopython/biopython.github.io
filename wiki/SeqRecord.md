@@ -27,7 +27,7 @@ Extracting information from a SeqRecord
 
 Lets look in detail at the well annotated **SeqRecord** objects
 Biopython creates from a GenBank file, such as
-[ls\_orchid.gbk](http://biopython.org/DIST/docs/tutorial/examples/ls_orchid.gbk),
+[`ls_orchid.gbk`](https://raw.githubusercontent.com/biopython/biopython/master/Doc/examples/ls_orchid.gbk),
 which we'll load using the [SeqIO](SeqIO "wikilink") module. This file
 contains 94 records:
 

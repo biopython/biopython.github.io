@@ -389,7 +389,7 @@ In this example, we'll use **Bio.SeqIO** with the
 **Bio.SeqUtils.CheckSum** module (in Biopython 1.44 or later). First of
 all, we'll just print out the checksum for each sequence in the GenBank
 file
-[ls\_orchid.gbk](http://biopython.org/DIST/docs/tutorial/examples/ls_orchid.gbk):
+[`ls_orchid.gbk`](https://raw.githubusercontent.com/biopython/biopython/master/Doc/examples/ls_orchid.gbk):
 
 ``` python
 from Bio import SeqIO
