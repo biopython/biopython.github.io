@@ -13,7 +13,7 @@ name), description and optionally annotation and sub-features.
 Most of the sequence file format parsers in BioPython can return
 `SeqRecord` objects (and may offer a format specific record object
 too, see for example Bio.SwissProt). The [SeqIO](SeqIO "wikilink")
-system will *only* return SeqRecord objects.
+system will *only* return `SeqRecord` objects.
 
 In addition to the `SeqRecord` object's [API
 documentation](http://biopython.org/DIST/docs/api/Bio.SeqRecord.SeqRecord-class.html),
@@ -76,7 +76,7 @@ Seq('CATTGTTGAGATCACATAATAATTGATCGAGTTAATCTGGAGGATCTGTTTACTTTGGTC ...', IUPACA
 ```
 
 Lets look a little more closely... and use python's `dir()` function
-to find out more about the SeqRecord object and what it does:
+to find out more about the `SeqRecord` object and what it does:
 
 ``` python
 >>> dir(record)
