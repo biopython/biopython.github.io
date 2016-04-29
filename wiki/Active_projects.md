@@ -81,12 +81,11 @@ structures [1](http://github.com/krother/biopython/tree/rna) and working
 with Bio.Sequence objects that represent modified RNA nucleotides
 [2](http://github.com/krother/biopython/tree/rna_alphabet).
 
-### Open Enhancement Bugs
+### Open Enhancement Issues / Pull Requests
 
-This [Bugzilla
-Search](http://bugzilla.open-bio.org/buglist.cgi?product=Biopython&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_severity=enhancement)
-will list all open enhancement bugs (any filed by core developers are
-fairly likely to be integrated, some are just wish list entries).
+The [open GitHub issues](https://github.com/biopython/biopython/issues)
+and [GitHub pull requests](https://github.com/biopython/biopython/pulls)
+are worth looking at.
 
 ### Branches on github.com
 
@@ -101,8 +100,7 @@ Project ideas
 -------------
 
 Please add any ideas or proposals for new additions to Biopython. Bugs
-and enhancements for current code should be discussed though our
-bugzilla interface.
+and enhancements for current code should be discussed though GitHub.
 
 -   Build a general tool to filter sequences containing ambiguous or low
     quality bases. Chris Fields from BioPerl is interested in
