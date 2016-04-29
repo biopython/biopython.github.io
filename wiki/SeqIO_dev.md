@@ -92,4 +92,4 @@ like it could be treated like an alignment format.
 
 Pairwise alignments from the BLAST suite could be turned into a pairwise
 Alignment object with Bio.AlignIO. Is this useful? Sample code on [Bug
-2560](http://bugzilla.open-bio.org/show_bug.cgi?id=2560)
+2560](https://redmine.open-bio.org/issues/2560)
