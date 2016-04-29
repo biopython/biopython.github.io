@@ -1,5 +1,5 @@
 ---
-title: Development page for the PopGen module
+title: Development Page for the PopGen Module
 permalink: wiki/PopGen_dev
 layout: wiki
 ---
@@ -7,13 +7,13 @@ layout: wiki
 Introduction
 ------------
 
-The [PopGen](PopGen "wikilink") module contains modules to handle
+The [`PopGen`](PopGen "wikilink") module contains modules to handle
 population genetics data, applications and algorithms.
 
 History and philosophy
 ----------------------
 
-Most of the existing Bio.PopGen features are of non-core population
+Most of the existing `Bio.PopGen` features are of non-core population
 genetics functionality. This was seen as feature (and not as a bug) in
 order to start building a module with functionality where newbie crass
 errors would not have dramatic consequences. Currently, with the

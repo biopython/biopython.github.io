@@ -1,5 +1,5 @@
 ---
-title: Developing Statistics for the population genetics module
+title: Developing Statistics for the Population Genetics Module
 permalink: wiki/PopGen_dev_Statistics
 layout: wiki
 ---
@@ -11,26 +11,24 @@ A few observations about population genetics and bioinformatics
 
 1.  Population genetics is used in a wide variety of settings, from
     cancer studies to conservation of endangered species. Even names
-    might not be standartized, e.g. a human geneticist might use Short
-    Tandem Repeat(STR) while an animal geneticist might
-    use microsatellite.
+    might not be standardized, e.g. a human geneticist might use *Short
+    Tandem Repeat* (STR) while an animal geneticist might
+    use *microsatellite*.
 2.  Different research communities have completely different sets of
-    requirements: Markers change (SNPs, Microsatellites/STSs, RFLPs,
+    requirements: markers change (SNPs, microsatellites/STSs, RFLPs,
     sequences); number of individuals sampled change (for few units, to
-    thousands to very large synthetic datasets); Number of populations
-    change; The density of markers change (from 10 million SNPs in the
+    thousands to very large synthetic datasets); number of populations
+    change; the density of markers change (from 10 million SNPs in the
     HapMap for humans and full sequences appearing for many individuals
     on parasites, to the opposite, where only 20-30 loci are available)
 3.  A good implementation should support the vast majority of scenarios
     above: should support as many markers as possible, big and small
     datasets
 4.  The most used format in population genetics is still the
-    genepop format. This format is not used much outside the
+    **Genepop** format. This format is not used much outside the
     popgen community. For an overview of the importance of the format,
-    read Excoffier and Heckel
-    [<http://www.nature.com/nrg/journal/v7/n10/full/nrg1904.html>](Computer_programs_for_population_genetics_data_analysis:_a_survival_guide "wikilink"),
-    Nature Reviews Genetics. This happens to be a
-    marker-independent format.
+    read [Excoffier and Heckel (2006)](http://dx.doi.org/10.1038/nrg1904).
+    This happens to be a marker-independent format.
 5.  The popgen community while producing lots of free software cares
     very little about licensing or data-standardization issues.
     Different ad-hoc formats exist (again, see the above paper).
@@ -46,8 +44,8 @@ Different dimensions
 --------------------
 
 Here we characterize the different dimensions that need to be accounted
-for. For a good intro see page 89 of the [Arlequin3
-manual](http://cmpg.unibe.ch/software/arlequin3/arlequin31.pdf)
+for. For a good intro see page 98 of the [Arlequin3
+manual](http://cmpg.unibe.ch/software/arlequin35/man/Arlequin35.pdf).
 
 ### Marker dependent versus marker independent statistics
 
@@ -67,7 +65,7 @@ population differentiation.
 
 ### Data type
 
-haplotypic, genotypic (phase unknown), genotypic (phase known),
+Haplotypic, genotypic (phase unknown), genotypic (phase known),
 genoptypic dominant, frequency only.
 
 Say, for expected heterozygosity frequencies are enough, for observed
