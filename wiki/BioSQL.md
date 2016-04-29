@@ -37,7 +37,7 @@ usernames and passwords associated with database. And finally the
 details will also vary depending on your operating system.
 
 This text is based in part on the [BioSQL schema INSTALL
-instructions](http://code.open-bio.org/svnweb/index.cgi/biosql/view/biosql-schema/trunk/INSTALL),
+instructions](https://github.com/biosql/biosql/blob/master/INSTALL)
 which also covers alternatives to MySQL.
 
 Installing Required Software
