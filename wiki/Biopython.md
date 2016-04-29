@@ -8,11 +8,9 @@ redirect_from:
  - wiki/Main_Page
 ---
 
-|                                                                                                                                |
-|--------------------------------------------------------------------------------------------------------------------------------|
-| <rss><http://news.open-bio.org/news/category/obf-projects/biopython/feed/%7Ccharset=utf-8%7Cshort%7Cdata%7Cmax=4%7Cdate></rss> |
-|                                                                                                                                |
-| See also our [news page](News "wikilink"), and [twitter](http://twitter.com/biopython).                                        |
+See also our
+[https://news.open-bio.org/category/obf-projects/biopython/](News feed)
+and [Twitter](https://twitter.com/biopython).
 
 ### Introduction
 
