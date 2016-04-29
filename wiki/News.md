@@ -6,7 +6,7 @@ layout: page
 
 [Biopython
 News](http://news.open-bio.org/category/obf-projects/biopython/) is
-posted on the [Open Bioinformatics Foundation](https://www.open-bio.org/wiki/Main_Page)
+posted on the [Open Bioinformatics Foundation](https://www.open-bio.org/)
 shared [news server](http://news.open-bio.org). If you use
 news-reader software you can subscribe to Biopython news using the
 [RDF](http://news.open-bio.org/category/obf-projects/biopython/feed/rdf),
