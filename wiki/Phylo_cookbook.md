@@ -1,12 +1,12 @@
 ---
-title: Phylo cookbook
+title: Phylo Cookbook
 permalink: wiki/Phylo_cookbook
 layout: wiki
 tags:
  - Cookbook
 ---
 
-Here are some examples of using [Bio.Phylo](Phylo "wikilink") for some
+Here are some examples of using [`Bio.Phylo`](Phylo "wikilink") for some
 likely tasks. Some of these functions might be added to Biopython in a
 later release, but you can use them in your own code with Biopython
 1.54.
@@ -16,7 +16,7 @@ Convenience functions
 
 ### Get the parent of a clade
 
-The Tree data structures in Bio.Phylo don't store parent references for
+The Tree data structures in `Bio.Phylo` don't store parent references for
 each clade. Instead, the `get_path` method can be used to trace the path
 of parent-child links from the tree root to the clade of choice:
 
@@ -79,10 +79,11 @@ Now you can retrieve a clade by name in constant time:
 tree = Phylo.read('ncbi_taxonomy.xml', 'phyloxml')
 names = lookup_by_names(tree)
 for phylum in ('Apicomplexa', 'Euglenozoa', 'Fungi'):
-    print "Phylum size", len(names[phylum].get_terminals())
+    print ("Phylum size: %d" %
+           len(names[phylum].get_terminals()))
 ```
 
-A potential issue: The above implementation of lookup\_by\_names doesn't
+A potential issue: The above implementation of `lookup_by_names` doesn't
 include unnamed clades, generally internal nodes. We can fix this by
 adding a unique identifier for each clade. Here, all clade names are
 prefixed with a unique number (which can be useful for searching, too):
@@ -120,9 +121,9 @@ def terminal_neighbor_dists(self):
 
 *Suggested by Joel Berendzen*
 
-The existing tree method `is_preterminal` returns True if all of the
-direct descendants are terminal. This snippet will instead return True
-if *any* direct descendent is terminal, but still False if the given
+The existing tree method `is_preterminal` returns `True` if all of the
+direct descendants are terminal. This snippet will instead return `True`
+if *any* direct descendent is terminal, but still `False` if the given
 clade itself is terminal.
 
 ``` python
@@ -160,10 +161,10 @@ Consensus methods
 
 -   Majority-rules consensus
 -   Strict consensus
--   Adams ([Adams
-    1972](http://www.faculty.biol.ttu.edu/Strauss/Phylogenetics/Readings/Adams1972.pdf))
--   Asymmetric median tree ([Phillips and Warnow
-    1996](http://www.springerlink.com/content/y1x70058822qg257/))
+-   Adams ([Adams 1972](http://dx.doi.org/10.2307/2412432), 
+    [pdf](http://www.faculty.biol.ttu.edu/Strauss/Phylogenetics/Readings/Adams1972.pdf))
+-   Asymmetric median tree
+    ([Phillips and Warnow 1996](http://dx.doi.org/10.1007/3-540-61258-0_18))
 
 Rooting methods
 ---------------
@@ -173,10 +174,10 @@ The basic method on the Tree class (not TreeMixin) is
 
 ``` python
 tree = Phylo.read('example.nwk', 'newick')
-print tree
+print(tree)
 # ...
 tree.root_with_outgroups({'name': 'A'})  # Operates in-place
-print tree
+print (tree)
 ```
 
 Normally you'll want the outgroup to be a monophyletic group, rather
@@ -211,12 +212,12 @@ Exporting to other types
 
 ### Convert to an 'ape' tree, via Rpy2
 
-The R statistical programming environment provides support for
-phylogenetics through the '[ape](http://ape.mpl.ird.fr/)' package and
-several others that build on top of 'ape'. The Python package
-[rpy2](http://rpy.sourceforge.net/rpy2.html) provides an interface
-between R and Python, so it's possible to convert a Bio.Phylo tree into
-an 'ape' tree object:
+The **R** statistical programming environment provides support for
+phylogenetics through the [**ape**](http://ape-package.ird.fr/) package and
+several others that build on top of **ape**. The Python package
+[rpy2](http://rpy2.bitbucket.org/) provides an interface
+between R and Python, so it's possible to convert a `Bio.Phylo` tree into
+an **ape** tree object:
 
 ``` python
 import tempfile
@@ -248,10 +249,10 @@ See that it works:
 >>> rtree = to_ape(tree)
 >>> len(rtree)
 3
->>> print r.summary(rtree)
+>>> print(r.summary(rtree))
 Phylogenetic tree: structure(list(edge = structure(c(6, 6, 7, 7, 6, 8, 8, 1, 7,  2, 3, 8, 4, 5),
  .Dim = c(7L, 2L)), tip.label = c("A", "B", "C",  "D", "E"), Nnode = 3L),
- .Names = c("edge", "tip.label", "Nnode" ), class = "phylo") 
+ .Names = c("edge", "tip.label", "Nnode" ), class="phylo") 
 
   Number of tips: 5 
   Number of nodes: 3 
@@ -267,14 +268,14 @@ NULL
 >>> r.plot(rtree)
 ```
 
-See the rpy2 documentation for further guidance.
+See the **rpy2** documentation for further guidance.
 
 ### Convert to a DendroPy or PyCogent tree
 
 The tree objects used by Biopython, DendroPy and PyCogent are different.
 Nonetheless, all three toolkits support the Newick file format, so
 interoperability is straightforward at that level by writing to a
-temporary file or StringIO object with one library, then reading the
+temporary file or `StringIO` object with one library, then reading the
 same string again with another.
 
 ``` python
@@ -297,7 +298,7 @@ bptree = Phylo.read("tmp.nwk', 'newick')
 
 ### Convert to a NumPy array or matrix
 
-Adjacency matrix: cells are 1 (true) if a parent-child relationship
+**Adjacency matrix:** cells are 1 (true) if a parent-child relationship
 exists, otherwise 0 (false).
 
 ``` python
@@ -328,8 +329,8 @@ def to_adjacency_matrix(tree):
     return (allclades, numpy.matrix(adjmat))
 ```
 
-Distance matrix: cell values are branch lengths if a branch exists,
-otherwise infinity. (This plays well with graph algorithms.)
+**Distance matrix:** cell values are branch lengths if a branch exists,
+otherwise infinity (this plays well with graph algorithms).
 
 ``` python
 import numpy
@@ -360,15 +361,15 @@ def to_distance_matrix(tree):
 
 Enhancements:
 
--   Use an OrderedDict for `allclades`, so the separate dictionary
+-   Use an `OrderedDict` for `allclades`, so the separate dictionary
     `lookup` isn't needed. (Python 2.7+)
--   Use NumPy's [record array](http://www.scipy.org/RecordArrays) to
+-   Use NumPy's [structured arrays](http://docs.scipy.org/doc/numpy-1.10.1/user/basics.rec.html) to
     assign clade names to rows and columns of the matrix, so `allclades`
-    isn't needed either. (This works nicely along with the
-    `tabulate_names` function given earlier.)
+    isn't needed either (this works nicely along with the
+    `tabulate_names` function given earlier).
 
 *TODO:*
 
 -   Relationship matrix? See [Martins and Housworth
-    2002](http://www.jstor.org/stable/3070822)
+    2002](http://dx.doi.org/10.1080/10635150290102573)
 
