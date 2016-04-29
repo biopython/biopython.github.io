@@ -11,9 +11,8 @@ remove such code from Biopython, while avoiding any nasty surprises for
 users who may be relying on older code.
 
 We keep a plain text file in the Biopython source code to record these
-changes, available on 
-[GitHub](http://github.com/biopython/biopython/blob/master/DEPRECATED) or
-[here](http://biopython.open-bio.org/SRC/biopython/DEPRECATED).
+changes, named
+[`DEPRECATED`](http://github.com/biopython/biopython/blob/master/DEPRECATED).
 
 This is the current policy for deprecating and removing code from
 Biopython:

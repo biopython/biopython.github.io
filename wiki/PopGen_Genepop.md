@@ -66,7 +66,7 @@ ctrl = EasyController(your_file_here, path_to_genepop_here)
 
 If everything is working, now we can go on and use Genepop. For the
 examples below, we will use the genepop file
-[big.gen](http://biopython.open-bio.org/SRC/biopython/Tests/PopGen/big.gen)
+[`big.gen`](https://raw.githubusercontent.com/biopython/biopython/master/Tests/PopGen/big.gen)
 made available with the unit tests. We will also assume that there is a
 ctrl object initialized with the relevant file chosen.
 

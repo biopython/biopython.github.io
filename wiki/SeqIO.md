@@ -126,7 +126,7 @@ Python](http://www.python.org/dev/peps/pep-0020/)).
 
 If you had a different type of file, for example a Clustalw alignment
 file such as
-'[opuntia.aln](http://biopython.open-bio.org/SRC/biopython/Tests/Clustalw/opuntia.aln)'
+[`opuntia.aln`](https://raw.githubusercontent.com/biopython/biopython/master/Tests/Clustalw/opuntia.aln)
 which contains seven sequences, the only difference is you specify
 "clustal" instead of "fasta":
 
@@ -237,7 +237,7 @@ File Format Conversion
 
 Suppose you have a GenBank file which you want to turn into a Fasta
 file. For example, lets consider the file
-'[cor6\_6.gb](http://biopython.open-bio.org/SRC/biopython/Tests/GenBank/cor6_6.gb)'
+[`cor6_6.gb`](https://raw.githubusercontent.com/biopython/biopython/master/Tests/GenBank/cor6_6.gb)
 which is included in the Biopython unit tests under the GenBank
 directory.
 

@@ -21,7 +21,7 @@ Solution
 
 Suppose you have a GenBank file which you want to turn into a Fasta
 file. For example, let's consider the file
-'[cor6\_6.gb](http://biopython.open-bio.org/SRC/biopython/Tests/GenBank/cor6_6.gb)'
+[`cor6_6.gb`](https://raw.githubusercontent.com/biopython/biopython/master/Tests/GenBank/cor6_6.gb)
 (which is included in the Biopython unit tests under the GenBank
 directory):
 
