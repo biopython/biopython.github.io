@@ -46,7 +46,7 @@ system.
 
 You will also need git installed.
 
-After that you should contact the biopython development mailing list
+After that you should contact the Biopython development mailing list
 saying what you are willing to test (platform, python version,
 applications) to get a username and a password. With your username and
 password you can now configure your buildslave. Something like this:
@@ -129,10 +129,10 @@ The starting point for any continuous integration will be any change
 made to the main repository. In Biopython's case, this is based on
 github.
 
-github can inform buildbot that a change was committed using [Post
+GitHub can inform buildbot that a change was committed using [Post
 receive service hooks](http://help.github.com/post-receive-hooks/)
-(Admin&gt;Service Hooks on the Biopython github interface). This means
-that whenever there is a change, github can POST that to a list of
+(Admin&gt;Service Hooks on the Biopython GitHub interface). This means
+that whenever there is a change, GitHub can POST that to a list of
 specified URLs. One of those URLs will be a script that will call the
 buildbot master, informing that there are changes to the source.
 Buildbot can now act.
@@ -168,8 +168,8 @@ convoluted/complex. The implementations is actually quite simple: a
 simple entry in github, a small cgi script and configuring buildbot to
 accept github's source.
 
-The only problem is that Buildbot has no native support for github (at
-least to be informed of changes -- buildbot can download github code),
+The only problem is that Buildbot has no native support for GitHub (at
+least to be informed of changes -- buildbot can download GitHub code),
 so the solution is the aforementioned cgi script. For reference the
 correct source in buildbot is the generic PBChangeSource (see below)
 
@@ -223,7 +223,7 @@ implements the build and the list of steps the slave has to do. There
 are typically:
 
 1.  Get the source (either a light update or a full download), for this
-    buildbot has github support.
+    buildbot has GitHub support.
 2.  Compile the source
 3.  Run the tests
 

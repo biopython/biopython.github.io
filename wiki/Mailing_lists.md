@@ -15,7 +15,7 @@ post duplicate your questions here and on the mailing list:
 
 -   [BioStar](https://www.biostars.org/) -- A dedicated
     Bioinformatics question and answer forum. Please tag your post
-    with: biopython.
+    with: Biopython.
 -   [StackOverflow](http://stackoverflow.com/questions/tagged/biopython)
     -- The main Stack Overflow programming question and answer forum.
     Please tag your posts with: Biopython.

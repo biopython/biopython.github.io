@@ -38,7 +38,7 @@ Summary of functions
 --------------------
 
 All classes and functions have been documented with standard docstrings.
-Code is available at the most recent github commit here:
+Code is available at the most recent GitHub commit here:
 <http://github.com/nmatzke/biopython/commits/Geography>
 
 Introduction
@@ -149,7 +149,7 @@ analysis as new data is added to GBIF, automation is desirable.
 A manual search conducted on the GBIF website can return results in the
 form of an XML file adhering to the
 [DarwinCore](http://en.wikipedia.org/wiki/Darwin_Core) data standard. An
-example file can be found in biopython's Tests/Geography directory, with
+example file can be found in Biopython's Tests/Geography directory, with
 the name *utric\_search\_v2.xml*. This file contains over 1000
 occurrence records for *Utricularia*, a genus of carnivorous plant.
 

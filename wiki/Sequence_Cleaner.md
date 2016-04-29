@@ -11,7 +11,7 @@ redirect_from:
 Description
 -----------
 
-I want to share my script using biopython to clean sequences up. You
+I want to share my script using Biopython to clean sequences up. You
 should know that analyzing poor data takes CPU time and interpreting the
 results from poor data takes people time, so it's always important to
 make a preprocessing.
@@ -34,7 +34,7 @@ def sequence_cleaner(fasta_file,min_length=0,por_n=100):
     #create our hash table to add the sequences
     sequences={}
  
-    #Using the biopython fasta parse we can read our fasta input
+    #Using the Biopython fasta parse we can read our fasta input
     for seq_record in SeqIO.parse(fasta_file, "fasta"):
         #Take the current sequence
         sequence=str(seq_record.seq).upper()

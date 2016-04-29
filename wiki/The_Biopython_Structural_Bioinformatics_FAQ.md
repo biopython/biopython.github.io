@@ -7,7 +7,7 @@ layout: wiki
 Introduction
 ------------
 
-Bio.PDB is a biopython module that focuses on working with crystal
+Bio.PDB is a Biopython module that focuses on working with crystal
 structures of biological macromolecules. This document gives a fairly
 complete overview of Bio.PDB.
 

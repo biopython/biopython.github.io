@@ -17,7 +17,7 @@ changes, named
 This is the current policy for deprecating and removing code from
 Biopython:
 
--   First, ask on the biopython and biopython-dev [mailing
+-   First, ask on the Biopython and biopython-dev [mailing
     lists](Mailing_lists "wikilink") whether a given piece of code has
     any users. Please keep in mind that not all users are following the
     biopython-dev mailing list.

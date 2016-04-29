@@ -12,7 +12,7 @@ Setup required for a new release manager
 The instructions below require that you have access to a few servers and
 the code repository. When you start, be sure to have access to:
 
-1. Write access to the github biopython repo.
+1. Write access to the GitHub Biopython repo.
 
 2. biopython.org aka cloudportal.open-bio.org. You need to have write
 access to write the API and the source tarballs and Windows installers

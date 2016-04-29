@@ -19,7 +19,7 @@ contig to a generic alignment.'
 Solution
 --------
 
-Let's represent contig in the ACE file that is used in biopython's
+Let's represent contig in the ACE file that is used in Biopython's
 testing framework:
 [Tests/Ace/contig1.ace](https://github.com/biopython/biopython/blob/master/Tests/Ace/contig1.ace)
 as an example

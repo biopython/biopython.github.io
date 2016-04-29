@@ -24,7 +24,7 @@ This could become the official repository. Currently it is synchronized
 with the main [CVS](CVS "wikilink") trunk every hour, so it should be up
 to date most of the time.
 
-Updates from CVS to github branch
+Updates from CVS to GitHub branch
 ---------------------------------
 
 The updates are done with the [cvs2svn](http://cvs2svn.tigris.org/) tool
@@ -50,12 +50,12 @@ Accepting code contributions
 
 During the migration, the CVS repo is assumed to be still of higher
 priority. This means that all code contributions need to go through CVS
-and then get updated to the github branch. This effectively means, we
-cannot push to the main biopython branch directly, but instead work on
+and then get updated to the GitHub branch. This effectively means, we
+cannot push to the main Biopython branch directly, but instead work on
 different branches and generate diffs to be applied to CVS.
 
 In case of small bug fixes, the core developers can continue to work
-directly in CVS. The changes will get pushed to github eventually.
+directly in CVS. The changes will get pushed to GitHub eventually.
 
 Since we also want to accept contributions through github, it means that
 core developer integrating changes will need to do some extra work:

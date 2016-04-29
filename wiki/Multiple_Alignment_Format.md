@@ -18,10 +18,10 @@ general use) implements a MAF reader and writer accessible via
 
 All examples below make use of the Multiz [30-way alignment to mouse
 chromosome
-10](http://hgdownload.cse.ucsc.edu/goldenPath/currentGenomes/Mus_musculus/multiz30way/maf/chr10.maf.gz)
+10](http://hgdownload.cse.ucsc.edu/goldenpath/hg19/multiz46way/maf/chr10.maf.gz)
 available from UCSC.
 
-Getting the AlignIO MAF branch from Github
+Getting the AlignIO MAF branch from GitHub
 ------------------------------------------
 
 First, clone the repository with git from the command line, like so:
@@ -47,7 +47,7 @@ sys.path.insert(1, "./alignio-maf")
 try:
     from Bio.AlignIO import MafIO
 except ImportError:
-    print "oops, the import didn't work"
+    print("oops, the import didn't work")
 ```
 
 For help, contact the branch maintainer Andrew Sczesnak (firstname dot
@@ -77,14 +77,14 @@ objects.
 from Bio import AlignIO
 
 for multiple_alignment in AlignIO.parse("chr10.maf", "maf"):
-    print "printing a new multiple alignment"
+    print("printing a new multiple alignment")
 
     for seqrec in multiple_alignment:
-        print "starts at %s on the %s strand of a sequence %s in length, and runs for %s bp" % \
+        print("starts at %s on the %s strand of a sequence %s in length, and runs for %s bp" % \
               (seqrec.annotations["start"],
                seqrec.annotations["strand"],
                seqrec.annotations["srcSize"],
-               seqrec.annotations["size"])
+               seqrec.annotations["size"]))
 ```
 
 MafIndex
@@ -146,7 +146,7 @@ for multiple_alignment in results:
             # don't count gaps as bases
             total_bases += len(str(seqrec.seq).replace("-", ""))
 
-print "a total of %s bases align" % total_bases
+print("a total of %s bases align" % total_bases)
 ```
 
 ### Retrieving a pre-spliced alignment over a given set of exons
@@ -204,7 +204,7 @@ for record in db_conn.fetchall():
                                          map(int, record["exonEnds"].split(",")[:-1]),
                                          strand = record["strand"])
 
-    print "writing %s.fa" % record["name"]
+    print("writing %s.fa" % record["name"])
 
     AlignIO.write(multiple_alignment,
                   "%s.fa" % record["name"],

@@ -195,7 +195,7 @@ authentication.
 
 Now, assuming that you have git installed on your computer, execute the
 following commands locally on your machine. This "url" is given on the
-github page for your repository (if you are logged in):
+GitHub page for your repository (if you are logged in):
 
 ``` bash
 git clone git@github.com:yourusername/biopython.git
@@ -218,8 +218,8 @@ the 'Repository Collaborators' section. You will need to know their
 username on GitHub.
 
 If you haven't already done so, tell git your name and the email address
-you are using on github (so that your commits get matched up to your
-github account). For example,
+you are using on GitHub (so that your commits get matched up to your
+GitHub account). For example,
 
 ``` bash
 git config --global user.name "David Jones"  
@@ -451,7 +451,7 @@ git branch -r
 ```
 
 Alternatively, from within GitHub you can use the fork-queue to cherry
-pick commits from other people's forked branches. See [this github blog
+pick commits from other people's forked branches. See [this GitHub blog
 post](http://github.com/blog/270-the-fork-queue) for details. While this
 defaults to applying the changes to your current branch, you would
 typically do this using a new integration branch, then fetch it to your
@@ -461,23 +461,23 @@ Commiting changes to main branch
 ================================
 
 This section is intended for Biopython developers, who are allowed to
-commit changes to the biopython main "official" branch. It describes the
+commit changes to the Biopython main "official" branch. It describes the
 typical activities, such as merging contributed code changes both from
 git branches and patch files.
 
 Prerequisites
 -------------
 
-Currently, the main biopython branch is hosted on github. In order to
-make changes to the main branch you need a github account and you need
-to be added as a collaborator to the biopython account. This needs to be
-done only once. If you have a github account, but you are not yet a
+Currently, the main Biopython branch is hosted on github. In order to
+make changes to the main branch you need a GitHub account and you need
+to be added as a collaborator to the Biopython account. This needs to be
+done only once. If you have a GitHub account, but you are not yet a
 collaborator and you think you should be (for example, you had a cvs
 account on open-bio server): ask Peter to be added (this is meant for
 regular contributors, so in case you have only a single change to make,
 please consider submitting your changes through one of developers).
 
-Once you are a collaborator, you can pull biopython official branch
+Once you are a collaborator, you can pull Biopython official branch
 using the private url. If you want to make a new repository (linked to
 the main branch), you can just clone it:
 
@@ -486,9 +486,9 @@ git clone git@github.com:biopython/biopython.git
 ```
 
 It creates a new directory "biopython" with a local copy of the official
-branch. It also sets the "origin" to the github copy This is the
+branch. It also sets the "origin" to the GitHub copy This is the
 recommended way (at least for the beginning) as it minimizes the risk of
-accidentally pushing changes to the official github branch.
+accidentally pushing changes to the official GitHub branch.
 
 Alternatively, if you already have a working git repo (containing your
 branch and your own changes), you can add a link to the official branch
@@ -545,11 +545,11 @@ Commiting from someone's git branch
 -----------------------------------
 
 Assume you want to merge changes someone has committed to a git
-repository which was at some point cloned from the official biopython
+repository which was at some point cloned from the official Biopython 
 branch. He needs to make his repository available to you (read-only) by
-giving you a URL. Typically this will be on github (but it may be any
+giving you a URL. Typically this will be on GitHub (but it may be any
 public git url). Let us assume that the url is (which happens to be my
-clone of biopython):
+clone of Biopython):
 
 [git://github.com/barwil/biopython.git](git://github.com/barwil/biopython.git)
 
@@ -584,7 +584,7 @@ git pull Bartek test-branch
 ```
 
 And (assuming you are OK with the results of git diff and git status),
-you can push to the public repository on github (please don't try that
+you can push to the public repository on GitHub (please don't try that
 with this exemplary data):
 
 ``` bash
@@ -600,7 +600,7 @@ git remote rm Bartek
 Tagging the official branch
 ---------------------------
 
-If you want to put tag on the current biopython official branch (this is
+If you want to put tag on the current Biopython official branch (this is
 usually done to mark a new release), you need to follow these steps:
 
 First make sure you are up to date with official branch:
