@@ -36,9 +36,8 @@ and
 -   integrating with Bio.Seq and Bio.Align, so that the API is more
     natural for the end users
 -   making modifications to Seq.startwswith, .endswith .find and .rfind
-    to support passing motifs to them. see
-    [http://bugzilla.open-bio.org/show\_bug.cgi?id=2809 this
-    bug](http://bugzilla.open-bio.org/show_bug.cgi?id=2809_this_bug "wikilink")
+    to support passing motifs to them. See also
+    [this commit](https://github.com/biopython/biopython/commit/49096ecf89d050129ef5b22b66b8bc34fec692ed).
 
 Kind of separate issue (also from Leighton) is to take into account HMM
 based motif searching:
