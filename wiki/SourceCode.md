@@ -44,10 +44,6 @@ page](http://github.com/biopython/biopython) (this will offer you a [tar
 ball](http://github.com/biopython/biopython/tarball/master) or
 [zip](http://github.com/biopython/biopython/zipball/master) file).
 
-An hourly updated copy of the code is also available at
-<http://biopython.open-bio.org/SRC/biopython> (just a snapshot - no
-history etc).
-
 ### Anonymous Access
 
 Getting a copy of the repository (called "cloning" in git terminology)
