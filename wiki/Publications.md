@@ -1,5 +1,5 @@
 ---
-title: Publications
+title: Publications using Biopython
 permalink: wiki/Publications
 layout: wiki
 ---
@@ -15,8 +15,8 @@ Biopython application note
 Regrettably, in some cases the manuscripts themselves do not directly
 mention Biopython, but this has been confirmed explicitly by an author.
 
-Publications from 2010
-----------------------
+Publications from 2010 onwards
+------------------------------
 
 We don't plan to compile a listing manually, since most publications
 should be citing our application note
