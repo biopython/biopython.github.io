@@ -72,7 +72,7 @@ The format name is a simple lowercase string, matching the names used in
 
 In addition, you can store the (gapped) sequences from an alignment in
 many of the [file formats supported by
-Bio.SeqIO](SeqIO#File_Formats "wikilink"). The most common example of
+Bio.SeqIO](SeqIO#file-formats "wikilink"). The most common example of
 this is storing alignments in the simple fasta format. However, storing
 more than one alignment in a single such file is ambiguous - and this is
 not recommended.

@@ -26,11 +26,11 @@ predicts disordered regions in proteins (http://dis.embl.de/), and
 COLUMBA, a website that provides annotated protein structures
 (http://www.columba-db.de/). Bio.PDB has also been used to perform a
 large scale search for active sites similarities between protein
-structures in the PDB (see [*Proteins* **51**: 96–108
-(2003)](http://dx.doi.org/10.1002/prot.10338)), and to develop a new
+structures in the PDB (see [*Proteins* **51**: 96–108,
+2003](http://dx.doi.org/10.1002/prot.10338)), and to develop a new
 algorithm that identifies linear secondary structure elements (see [*BMC
-Bioinformatics* **6**: 202
-(2005)](http://www.biomedcentral.com/1471-2105/6/202)).
+Bioinformatics* **6**: 202,
+2005](http://www.biomedcentral.com/1471-2105/6/202)).
 
 Judging from requests for features and information, Bio.PDB is also used
 by several LPCs (Large Pharmaceutical Companies :-).
@@ -41,8 +41,8 @@ Is there a Bio.PDB reference?
 Yes, and I'd appreciate it if you would refer to Bio.PDB in publications
 if you make use of it. The reference is:
 
-> Hamelryck, T., Manderick, B.: "PDB parser and structure class
-> implemented in Python". *Bioinformatics* **19**: 2308–2310 (2003)
+> Hamelryck, T., Manderick, B. (2003) PDB parser and structure class
+> implemented in Python. *Bioinformatics* **19**: 2308–2310
 
 The article can be freely downloaded via the [Bioinformatics journal
 website](http://www.binf.ku.dk/users/thamelry/references.html). I
@@ -215,7 +215,7 @@ handle.close()
 Sure. Many PDB parsers assume that there is only one model, making them
 all but useless for NMR structures. The design of the `Structure` object
 makes it easy to handle PDB files with more than one model (see section
-[\#The Structure object](#The_Structure_object "wikilink")).
+[**The Structure object**](#the-structure-object "wikilink")).
 
 #### How do I download structures from the PDB?
 
@@ -559,8 +559,8 @@ specified by the user.
 
 **Disordered atom positions** are represented by ordinary `Atom`
 objects, but all `Atom` objects that represent the same physical atom
-are stored in a `DisorderedAtom` object (see section [\#The Structure
-object](#The_Structure_object "wikilink")). Each `Atom` object in a
+are stored in a `DisorderedAtom` object (see section [**The Structure
+object**](#the-structure-object "wikilink")). Each `Atom` object in a
 `DisorderedAtom` object can be uniquely indexed using its altloc
 specifier. The `DisorderedAtom` object forwards all uncaught method
 calls to the selected Atom object, by default the one that represents
@@ -587,8 +587,8 @@ Since these residues belong to a different residue type (e.g. let's say
 Ser 60 and Cys 60) they should not be stored in a single `Residue`
 object as in the common case. In this case, each residue is represented
 by one `Residue` object, and both `Residue` objects are stored in a
-single `DisorderedResidue` object (see section [\#The Structure
-object](#The_Structure_object "wikilink")).
+single `DisorderedResidue` object (see section [**The Structure
+object**](#the-structure-object "wikilink")).
 
 The `DisorderedResidue` object forwards all uncaught methods to the
 selected `Residue` object (by default the last `Residue` object added),
@@ -626,11 +626,11 @@ See 'What is a residue id?'.
 
 Well, yes! Bio.PDB supports isotropic and anisotropic B factors, and
 also deals with standard deviations of anisotropic B factor if present
-(see the section [\#Analysis](#Analysis "wikilink")).
+(see the section [**Analysis**](#analysis "wikilink")).
 
 #### What about standard deviation of atomic positions?
 
-Yup, supported. See the section [\#Analysis](#Analysis "wikilink").
+Yup, supported. See the section [**Analysis**](#analysis "wikilink").
 
 #### I think the SMCRA data structure is not flexible/sexy/whatever enough...
 

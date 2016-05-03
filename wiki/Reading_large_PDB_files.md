@@ -30,7 +30,7 @@ modulo 100,000 (*serial*) or modulo 10,000 (*resSeq*). This creates
 duplicate entries in the chain and the `Bio.PDB.PDBParser` (or rather, the
 StructureBuilder) complains. The effect is that not all atoms are read.
 
-The [code below](#Classes "wikilink") derives a new class from
+The [code below](#classes "wikilink") derives a new class from
 `Bio.PDB.StructureBuilder.StructureBuilder` that simply increases the
 *resSeq* if necessary. Because it is not very careful it is called a
 `SloppyStructureBuilder`.

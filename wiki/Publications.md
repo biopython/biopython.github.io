@@ -4,8 +4,8 @@ permalink: wiki/Publications
 layout: wiki
 ---
 
-There is a separate shorter listing of [*Biopython papers you may wish to
-cite](Documentation#Papers "wikilink").
+There is a separate shorter listing of [Biopython papers you may wish to
+cite](Documentation#papers "wikilink").
 
 This is a list of papers citing, referencing or using Biopython, by year
 sorted alphabetically by author. In many cases these citations are just
@@ -181,7 +181,7 @@ Publications from 2009
 26. Schanda P. (2009) Fast-pulsing longitudinal relaxation
     optimized techniques: Enriching the toolbox of fast biomolecular
     NMR spectroscopy. [*Progress in Nuclear Magnetic Resonance
-    Spectroscopy, 55, 238-264](http://dx.doi.org/10.1016/j.pnmrs.2009.05.002)
+    Spectroscopy*, 55, 238-264](http://dx.doi.org/10.1016/j.pnmrs.2009.05.002)
 
     *Used `Bio.PDB`*
 
@@ -344,7 +344,8 @@ Publications from 2008
     *Used Biopython to work with lattice structures, including superimposition*
 
 18. Raman K, Yeturu K and Chandra N (2008) targetTB: a target identification
-    pipeline for Mycobacterium tuberculosis through an interactome, reactome and genome-scale structural analysis.
+    pipeline for *Mycobacterium tuberculosis* through an interactome, reactome
+    and genome-scale structural analysis.
     [*BMC Syst Biol*, 2, 109](http://dx.doi.org/10.1186/1752-0509-2-109)
 
     *Used `Bio.Blast`*
@@ -611,7 +612,7 @@ Publications from 2005
 ----------------------
 
 1.  Boomsma W and Hamelryck T (2005) Full cyclic coordinate descent: solving
-    the protein loop closure problem in Calpha space.
+    the protein loop closure problem in C&alpha; space.
     [*BMC Bioinformatics*, 6, 159](http://www.ncbi.nlm.nih.gov/pubmed/?term=15985178)
 
 2.  Armstrong MR, Whisson SC, Pritchard L, Bos JI, Venter E, Avrova AO,

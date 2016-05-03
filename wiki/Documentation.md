@@ -86,7 +86,7 @@ below.
     [GitBook](https://www.gitbook.com/book/krother/biopython-tutorial/details)
 
 
-#### <a name="Papers"></a>Papers
+#### Papers
 
 We have a separate list of [publications citing or using
 Biopython](Publications "wikilink"). If you use Biopython in a
