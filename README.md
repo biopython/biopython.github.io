@@ -9,7 +9,7 @@ using GitHub Pages (rendered using Jekyll, see
 
 Almost all of the content is under the URL prefix ``/wiki/`` because
 this was based on an automated conversion of the old MediaWiki website,
-using <https://github.com/biopython/mediawiki_to_git_md> to turn all
+using <https://github.com/peterjc/mediawiki_to_git_md> to turn all
 the changes in the MediaWiki XML export file into into markdown (using
 pandoc) as a git repository.
 
