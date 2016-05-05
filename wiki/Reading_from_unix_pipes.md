@@ -1,5 +1,5 @@
 ---
-title: Reading from unix pipes
+title: Reading from UNIX Pipes
 permalink: wiki/Reading_from_unix_pipes
 layout: wiki
 tags:
@@ -20,9 +20,9 @@ as flexible.
 Solution
 --------
 
-This example script uses [Bio.SeqIO](SeqIO "wikilink") to read a
-Solexa/Illumina FASTQ from stdin, converts the data to Sanger FASTQ
-(using PHRED scores) and writes it to stdout. See this more general page
+This example script uses [`Bio.SeqIO`](SeqIO "wikilink") to read a
+Solexa/Illumina FASTQ from `stdin`, converts the data to Sanger FASTQ
+(using PHRED scores) and writes it to `stdout`. See this more general page
 on [converting sequence files](Converting_sequence_files "wikilink") for
 some background.
 
@@ -32,23 +32,23 @@ from Bio import SeqIO
 SeqIO.convert(sys.stdin, "fastq-solexa", sys.stdout, "fastq")
 ```
 
-Pipes are a feature of the command line that enable the stdout output of
-a program or command to be directed to the stdin input of another
+Pipes are a feature of the command line that enable the `stdout` output of
+a program or command to be directed to the `stdin` input of another
 command or program. For example, the following shell command can be used
 to extract the compressed sequence and pipe it to the script
-(solexa2sanger\_fq.py).
+(`solexa2sanger_fq.py`).
 
 ``` bash
 gunzip -c some_solexa.fastq.gz | python solexa2sanger_fq.py
 ```
 
-This will write the sequence in Sanger FASTQ format to stdout - in this
+This will write the sequence in Sanger FASTQ format to `stdout` - in this
 case the screen.
 
 Redirection is similar to using pipes, but instead of directing the
 output of one program to the input of another, redirection redirects the
-contents of a file to a program's stdin, and/or the output of a
-program's stdout to a file. In this example, the python script is fed
+contents of a file to a program's `stdin`, and/or the output of a
+program's `stdout` to a file. In this example, the Python script is fed
 its data redirected from an input file, and the output which would have
 been printed to screen is instead redirected to an output file:
 
@@ -56,6 +56,6 @@ been printed to screen is instead redirected to an output file:
 python solexa2sanger_fq.py < some_solexa.fastq > some_phred.fastq
 ```
 
-Redirection can also be used to redirect a program or command's stderr
+Redirection can also be used to redirect a program or command's `stderr`
 to a file. Further examples of using redirection can be found
 [here](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-3.html).
