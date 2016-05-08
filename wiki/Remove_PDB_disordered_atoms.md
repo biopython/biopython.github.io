@@ -20,7 +20,7 @@ simulations.
 Solution
 --------
 
-[`Bio.PDB`](http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc118)
+[`Bio.PDB`](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
 is proficient in dealing with disordered atoms. Each disordered atom has
 a property indicating its alternative positions: `atom.altloc`. Usually
 there are only two alternative positions labelled *'A'* and *'B'*. The key

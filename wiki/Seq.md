@@ -1,35 +1,35 @@
 ---
-title: Seq
+title: The Seq Object
 permalink: wiki/Seq
 layout: wiki
 tags:
  - Wiki Documentation
 ---
 
-In Biopython, sequences are usually held as **Seq** objects, which hold
+In Biopython, sequences are usually held as ` Seq` objects, which hold
 the sequence string and an associated alphabet.
 
-This page describes the Biopython **Seq** object, defined in the Bio.Seq
-module (together with related objects like the **MutableSeq**, plus some
+This page describes the Biopython `Seq` object, defined in the `Bio.Seq`
+module (together with related objects like the `MutableSeq`, plus some
 general purpose sequence functions). In addition to this wiki page,
 there is a whole chapter in the
 [Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
 ([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)) on the
-**Seq** object - plus its [API
+`Seq` object - plus its [API
 documentation](http://biopython.org/DIST/docs/api/Bio.Seq.Seq-class.html)
 (which you can read online, or from within Python with the help
 command).
 
 If you need to store additional information like a sequence identifier
 or name, or even more details like a description or annotation, then we
-use a [SeqRecord](SeqRecord "wikilink") object instead. These are the
-sequence records used by the [SeqIO](SeqIO "wikilink") module for
+use a [`SeqRecord`](SeqRecord "wikilink") object instead. These are the
+sequence records used by the [`SeqIO`](SeqIO "wikilink") module for
 reading and writing sequence files.
 
 The Seq Object
 ==============
 
-The Seq object essentially combines a Python string with an (optional)
+The `Seq` object essentially combines a Python string with an (optional)
 biological alphabet. For example:
 
 ``` python
@@ -44,7 +44,7 @@ Alphabet()
 In the above example, we haven't specified an alphabet so we end up with
 a default generic alphabet. Biopython doesn't know if this is a
 nucleotide sequence or a protein rich in alanines, glycines, cysteines
-and threonines. If you know, you should supply this information:
+and threonines. If *you* know, you should supply this information:
 
 ``` python
 >>> from Bio.Seq import Seq
@@ -62,7 +62,7 @@ Seq('AGTACACTGGT', ProteinAlphabet())
 
 Why is this important? Well it can catch some errors for you - you
 wouldn't want to accidentally try and combine a DNA sequence with a
-protein would you:
+protein, would you?
 
 ``` python
 >>> my_protein + my_dna
@@ -77,7 +77,7 @@ methods like translation (see below) on a protein sequence.
 General methods
 ---------------
 
-The Seq object has a number of methods which act just like those of a
+The `Seq` object has a number of methods which act just like those of a
 Python string, for example the find method:
 
 ``` python
@@ -124,7 +124,7 @@ available in Biopython 1.49 onwards.
 
 ### Complement and reverse complement
 
-These are very simple - the methods return a new Seq object with the
+These are very simple - the methods return a new `Seq` object with the
 appropriate sequence and the same alphabet:
 
 ``` python
@@ -248,7 +248,7 @@ Traceback (most recent call last):
 ValueError: Proteins do not have complements!
 ```
 
-You can use them on Seq objects with a generic alphabet:
+You can use them on `Seq` objects with a generic alphabet:
 
 ``` python
 >>> my_seq.complement()
