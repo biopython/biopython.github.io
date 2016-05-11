@@ -68,8 +68,8 @@ Otherwise you typically install from source by downloading and
 uncompressing the archive, then running the commands:
 
 ``` bash
-python setup.py build  
-python setup.py test  
+python setup.py build
+python setup.py test
 sudo python setup.py install
 ```
 
@@ -250,7 +250,7 @@ dependencies).
 
 Old Releases
 ============
-***Due to the recent moving of the Biopython homepage, many versions are still missing - 
+***Due to the recent moving of the Biopython homepage, many versions are still missing -
 they will be uploaded in due time***
 
 Recent releases of Biopython require NumPy (and not Numeric):

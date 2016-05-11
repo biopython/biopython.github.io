@@ -18,5 +18,7 @@ Download and install MySQLdb (the python interface) from
 Create a new database, and load the schema etc as described on
 [BioSQL](BioSQL "wikilink")
 
-`mysqladmin -u root create bioseqdb`  
-`mysql -p -u root bioseqdb < biosqldb-mysql.sql`
+``` bash
+mysqladmin -u root create bioseqdb
+mysql -p -u root bioseqdb < biosqldb-mysql.sql
+```

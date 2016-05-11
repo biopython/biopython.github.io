@@ -34,8 +34,8 @@ might help.
 Unmoderated list for use, comments, help, and other things related to
 Biopython.
 
-[List Website](http://lists.open-bio.org/mailman/listinfo/biopython/) | 
-[Web Archive](http://lists.open-bio.org/pipermail/biopython/) | 
+[List Website](http://lists.open-bio.org/mailman/listinfo/biopython/) |
+[Web Archive](http://lists.open-bio.org/pipermail/biopython/) |
 [Gmane
 Web Archive](http://dir.gmane.org/gmane.comp.python.bio.general)
 
@@ -56,6 +56,6 @@ Unmoderated list for Biopython developers and interested people.
 Low volume moderated list, providing announcements of major Biopython
 releases and upgrades.
 
-[List Website](http://lists.open-bio.org/mailman/listinfo/biopython-announce/) | 
-[Web Archive](http://lists.open-bio.org/pipermail/biopython-announce/) | 
+[List Website](http://lists.open-bio.org/mailman/listinfo/biopython-announce/) |
+[Web Archive](http://lists.open-bio.org/pipermail/biopython-announce/) |
 [Gmane Web Archive](http://dir.gmane.org/gmane.comp.python.bio.announce)

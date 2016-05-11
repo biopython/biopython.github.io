@@ -169,7 +169,7 @@ class MyClass:
 
         A longer description with all kinds of additional goodies. This may
         include information about what the function does, along with
-        what parameters it will be passed and what it returns. You know, 
+        what parameters it will be passed and what it returns. You know,
         information so people know how to use the function.
         """
         #the code ...

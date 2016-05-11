@@ -59,7 +59,7 @@ Author & Mentors
 
 **Mentors**
 
-  
+
 Thomas Hamelryck
 
 Eric Talevich
@@ -421,7 +421,7 @@ Then make a thin wrapper function which takes an auto\_ptr parameter:
 <cpp> void node\_set\_random\_gen(Node& node, std::auto\_ptr<RandomGen>
 random\_gen) {
 
-`   node.set_random_gen(random_gen.get());`  
+`   node.set_random_gen(random_gen.get());`
 `   node.release();`
 
 } </cpp> For further details, see [How can I wrap a function which needs

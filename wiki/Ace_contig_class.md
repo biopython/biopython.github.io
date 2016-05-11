@@ -38,7 +38,7 @@ you are studying). Treating contigs as sequences is pretty straight
 forward, using the contig class you can do it this way:
 
 ``` python
-#Start by parsing a file to get some contigs 
+#Start by parsing a file to get some contigs
 >>>from Bio.Sequencing import Ace
 >>>ace_gen = Ace.parse(open("contig1.ace", 'r')) # from Tests/Ace/contig1.ace
 >>>contig = ace_gen.next()
@@ -62,7 +62,7 @@ Ace files are also supported by the [SeqIO](SeqIO "wikilink") module
 >>>ace_gen2 = SeqIO.parse(open("contig1.ace", 'r'), 'ace')
 >>>new_contig = ace_gen2.next()
 >>>print new_contig
-ID: Contig1                                                                                                                                        
+ID: Contig1
 Name: Contig1
 Description: <unknown description>
 Number of features: 0
@@ -100,7 +100,7 @@ from two lists in the contig class, 'reads' and 'af'
 for i in range(len(contig.reads)):
   print "for read %s newbler decided bases %i:%i where good enough to \
  include in  the consensus" % (contig.reads[i].rd.name,
-                               contig.reads[i].qa.qual_clipping_start, 
+                               contig.reads[i].qa.qual_clipping_start,
                                contig.reads[i].qa.qual_clipping_end)
 ...
 for read BL060c3-LR5.g.ab1 newbler decided bases 80:853 where good enough to  include in  the consensus

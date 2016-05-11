@@ -397,7 +397,7 @@ classes for now) is shown in the figure below.
 
 <img src="Smcra.png" title="Diagram of SMCRA architecture of the Structure object. Full lines with diamonds denote aggregation, full lines with arrows denote referencing, full lines with triangles denote inheritance and dashed lines with triangles denote interface realization." alt="Diagram of SMCRA architecture of the Structure object. Full lines with diamonds denote aggregation, full lines with arrows denote referencing, full lines with triangles denote inheritance and dashed lines with triangles denote interface realization." width="600" />
 
-  
+
 
 #### How do I navigate through a Structure object?
 
@@ -576,7 +576,7 @@ object associated with a specific altloc identifier:
 
 ``` python
 atom.disordered_select('A')  # select altloc A atom
-atom.disordered_select('B')  # select altloc B atom 
+atom.disordered_select('B')  # select altloc B atom
 ```
 
 A special case arises when disorder is due to **point mutations**, i.e.
@@ -738,14 +738,14 @@ criterion.
 Example:
 
 ``` python
-# Using C-N 
+# Using C-N
 ppb=PPBuilder()
-for pp in ppb.build_peptides(structure): 
+for pp in ppb.build_peptides(structure):
     print pp.get_sequence()
 
 # Using CA-CA
 ppb=CaPPBuilder()
-for pp in ppb.build_peptides(structure): 
+for pp in ppb.build_peptides(structure):
     print pp.get_sequence()
 ```
 
@@ -882,8 +882,8 @@ module:
 
 ``` python
 # get atom coordinates as vectors
-n = residue['N'].get_vector() 
-c = residue['C'].get_vector() 
+n = residue['N'].get_vector()
+c = residue['C'].get_vector()
 ca = residue['CA'].get_vector()
 # center at origin
 n = n - ca
@@ -931,7 +931,7 @@ sup = Superimposer()
 sup.set_atoms(fixed, moving)
 # Print rotation/translation/rmsd
 print sup.rotran
-print sup.rms 
+print sup.rms
 # Apply rotation/translation to the moving atoms
 sup.apply(moving)
 ```
@@ -970,12 +970,12 @@ Contributors
 
 The main author/maintainer of Bio.PDB is:
 
-> [Thomas Hamelryck](mailto:thamelry@binf.ku.dk)  
-> Bioinformatics center  
-> Institute of Molecular Biology  
-> University of Copenhagen  
-> Universitetsparken 15, Bygning 10  
-> DK-2100 København Ø  
+> [Thomas Hamelryck](mailto:thamelry@binf.ku.dk)
+> Bioinformatics center
+> Institute of Molecular Biology
+> University of Copenhagen
+> Universitetsparken 15, Bygning 10
+> DK-2100 København Ø
 > Denmark
 
 Kristian Rother donated code to interact with the PDB database, and to

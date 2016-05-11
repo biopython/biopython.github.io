@@ -324,7 +324,7 @@ Isolation By Distance (IBD) analysis **requires** a special form of
 
 Example:
 
-``` 
+```
 ...
 Pop
 0 15, 0201  0303 0102 0302 1011

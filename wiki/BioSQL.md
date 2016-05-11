@@ -109,37 +109,37 @@ mysql --user=root bioseqdb -e "show tables"
 giving:
 
 ```
-+----------------------------+  
-| Tables_in_bioseqdb         |  
-+----------------------------+  
-| biodatabase                |  
-| bioentry                   |  
-| bioentry_dbxref            |  
-| bioentry_path              |  
-| bioentry_qualifier_value   |  
-| bioentry_reference         |  
-| bioentry_relationship      |  
-| biosequence                |  
-| comment                    |  
-| dbxref                     |  
-| dbxref_qualifier_value     |  
-| location                   |  
-| location_qualifier_value   |  
-| ontology                   |  
-| reference                  |  
-| seqfeature                 |  
-| seqfeature_dbxref          |  
-| seqfeature_path            |  
-| seqfeature_qualifier_value |  
-| seqfeature_relationship    |  
-| taxon                      |  
-| taxon_name                 |  
-| term                       |  
-| term_dbxref                |  
-| term_path                  |  
-| term_relationship          |  
-| term_relationship_term     |  
-| term_synonym               |  
++----------------------------+
+| Tables_in_bioseqdb         |
++----------------------------+
+| biodatabase                |
+| bioentry                   |
+| bioentry_dbxref            |
+| bioentry_path              |
+| bioentry_qualifier_value   |
+| bioentry_reference         |
+| bioentry_relationship      |
+| biosequence                |
+| comment                    |
+| dbxref                     |
+| dbxref_qualifier_value     |
+| location                   |
+| location_qualifier_value   |
+| ontology                   |
+| reference                  |
+| seqfeature                 |
+| seqfeature_dbxref          |
+| seqfeature_path            |
+| seqfeature_qualifier_value |
+| seqfeature_relationship    |
+| taxon                      |
+| taxon_name                 |
+| term                       |
+| term_dbxref                |
+| term_path                  |
+| term_relationship          |
+| term_relationship_term     |
+| term_synonym               |
 +----------------------------+
 ```
 
@@ -162,7 +162,7 @@ First you need to set up user permissions, if you are not sure how to do
 this, try:
 
 ``` bash
-su - postgres  
+su - postgres
 createuser <your user name>
 ```
 
@@ -170,7 +170,7 @@ Then, assuming you are logged-in as <your user name> and Postgres is
 running on the local machine, you should be able to do the following:
 
 ``` bash
-createdb biosqldb  
+createdb biosqldb
 psql biosqldb < biosqldb-pg.sql
 ```
 
@@ -212,16 +212,16 @@ of these steps do take a while (especially *rebuilding nested set
 left/right values*):
 
 ```
-Loading NCBI taxon database in taxdata:  
-        ... retrieving all taxon nodes in the database  
-        ... reading in taxon nodes from nodes.dmp  
-        ... insert / update / delete taxon nodes  
-        ... (committing nodes)  
-        ... rebuilding nested set left/right values  
-        ... reading in taxon names from names.dmp  
-        ... deleting old taxon names  
-        ... inserting new taxon names  
-        ... cleaning up  
+Loading NCBI taxon database in taxdata:
+        ... retrieving all taxon nodes in the database
+        ... reading in taxon nodes from nodes.dmp
+        ... insert / update / delete taxon nodes
+        ... (committing nodes)
+        ... rebuilding nested set left/right values
+        ... reading in taxon names from names.dmp
+        ... deleting old taxon names
+        ... inserting new taxon names
+        ... cleaning up
 Done.
 ```
 
@@ -325,10 +325,10 @@ Which should give something like this (assuming you haven't done any
 other testing yet):
 
 ```
-+----------------+---------+-----------+------------------+  
-| biodatabase_id | name    | authority | description      |  
-+----------------+---------+-----------+------------------+  
-|              1 | orchids | NULL      | Just for testing |  
++----------------+---------+-----------+------------------+
+| biodatabase_id | name    | authority | description      |
++----------------+---------+-----------+------------------+
+|              1 | orchids | NULL      | Just for testing |
 +----------------+---------+-----------+------------------+
 ```
 
@@ -359,11 +359,11 @@ The expected output is below, note we have three records with a total of
 nine features:
 
 ```
-AF191665.1 Opuntia marenae rpl16 gene; chloroplast gene for c...  
-Sequence length 902, 3 features, from: chloroplast Opuntia marenae  
-AF191664.1 Opuntia clavata rpl16 gene; chloroplast gene for c...  
-Sequence length 899, 3 features, from: chloroplast Grusonia clavata  
-AF191663.1 Opuntia bradtiana rpl16 gene; chloroplast gene for...  
+AF191665.1 Opuntia marenae rpl16 gene; chloroplast gene for c...
+Sequence length 902, 3 features, from: chloroplast Opuntia marenae
+AF191664.1 Opuntia clavata rpl16 gene; chloroplast gene for c...
+Sequence length 899, 3 features, from: chloroplast Grusonia clavata
+AF191663.1 Opuntia bradtiana rpl16 gene; chloroplast gene for...
 Sequence length 899, 3 features, from: chloroplast Opuntia bradtianaa
 ```
 
@@ -393,7 +393,7 @@ and you should see new rows in several tables.
 The *bioentry* and *biosequence* tables should have three new rows:
 
 ``` bash
-mysql --user=root bioseqdb -e "select * from bioentry;"  
+mysql --user=root bioseqdb -e "select * from bioentry;"
 mysql --user=root bioseqdb -e "select * from biosequence;"
 ```
 
@@ -425,11 +425,11 @@ for identifier in ['6273291', '6273290', '6273289'] :
 Giving:
 
 ```
-AF191665.1 Opuntia marenae rpl16 gene; chloroplast gene for c...  
-Sequence length 902  
-AF191664.1 Opuntia clavata rpl16 gene; chloroplast gene for c...  
-Sequence length 899  
-AF191663.1 Opuntia bradtiana rpl16 gene; chloroplast gene for...  
+AF191665.1 Opuntia marenae rpl16 gene; chloroplast gene for c...
+Sequence length 902
+AF191664.1 Opuntia clavata rpl16 gene; chloroplast gene for c...
+Sequence length 899
+AF191663.1 Opuntia bradtiana rpl16 gene; chloroplast gene for...
 Sequence length 899
 ```
 

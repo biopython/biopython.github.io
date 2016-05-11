@@ -37,16 +37,16 @@ from __future__ import with_statement
 import sys
 import os
 import operator
- 
+
 from Bio import SeqIO
 from Bio.SeqRecord import SeqRecord
- 
+
 from BCBio import GFF
- 
+
 def main(glimmer_file, ref_file):
     with open(ref_file) as in_handle:
         ref_recs = SeqIO.to_dict(SeqIO.parse(in_handle, "fasta"))
- 
+
     base, ext = os.path.splitext(glimmer_file)
     out_file = "%s-proteins.fa" % base
     with open(out_file, "w") as out_handle:

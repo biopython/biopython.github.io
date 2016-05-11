@@ -72,7 +72,7 @@ You'll probably also want to install the following packages: `gitk`,
 
 #### Redhat/Fedora/Mandriva
 
-git is also packaged in rpm-based linux distributions. 
+git is also packaged in rpm-based linux distributions.
 
 ``` bash
 yum install gitk
@@ -222,7 +222,7 @@ you are using on GitHub (so that your commits get matched up to your
 GitHub account). For example,
 
 ``` bash
-git config --global user.name "David Jones"  
+git config --global user.name "David Jones"
 git config --global user.email "d.jones@example.com"
 ```
 
@@ -238,7 +238,7 @@ First of all, create a new branch to make some changes in, and switch to
 it:
 
 ``` bash
-git branch demo-branch  
+git branch demo-branch
 git checkout demo-branch
 ```
 
@@ -307,7 +307,7 @@ git remote add upstream git://github.com/biopython/biopython.git
 Then all you need to do is:
 
 ``` bash
-git checkout master  
+git checkout master
 git pull upstream master
 ```
 
@@ -374,16 +374,16 @@ git remote add eric git://github.com/etal/biopython.git
 Now we can fetch *all* of Eric's public repository with one line:
 
 ``` bash
-git fetch eric  
-remote: Counting objects: 138, done.  
-remote: Compressing objects: 100% (105/105), done. 
-remote: Total 105 (delta 77), reused 0 (delta 0)  
-Receiving objects: 100% (105/105), 27.53 KiB, done.  
-Resolving deltas: 100% (77/77), completed with 24 local objects.  
-From git://github.com/etal/biopython  
- * [new branch]      bug2754    -> eric/bug2754  
- * [new branch]      master     -> eric/master  
- * [new branch]      pdbtidy    -> eric/pdbtidy  
+git fetch eric
+remote: Counting objects: 138, done.
+remote: Compressing objects: 100% (105/105), done.
+remote: Total 105 (delta 77), reused 0 (delta 0)
+Receiving objects: 100% (105/105), 27.53 KiB, done.
+Resolving deltas: 100% (77/77), completed with 24 local objects.
+From git://github.com/etal/biopython
+ * [new branch]      bug2754    -> eric/bug2754
+ * [new branch]      master     -> eric/master
+ * [new branch]      pdbtidy    -> eric/pdbtidy
  * [new branch]      phyloxml   -> eric/phyloxml
 ```
 
@@ -391,8 +391,8 @@ Now we can run a diff between any of our own branches and any of Eric's
 branches. You can list your own branches with:
 
 ``` bash
-git branch  
-* master  
+git branch
+* master
   ...
 ```
 
@@ -401,14 +401,14 @@ Remember the asterisk shows which branch is currently checked out.
 To list the remote branches you have setup:
 
 ``` bash
-git branch -r  
- eric/bug2754  
- eric/master  
- eric/pdbtidy  
- eric/phyloxml  
- upstream/master  
- origin/HEAD  
- origin/master  
+git branch -r
+ eric/bug2754
+ eric/master
+ eric/pdbtidy
+ eric/phyloxml
+ upstream/master
+ origin/HEAD
+ origin/master
  ...
 ```
 
@@ -416,7 +416,7 @@ For example, to show the difference between your **master** branch and
 Eric's **master** branch:
 
 ``` bash
-git diff master eric/master  
+git diff master eric/master
 ...
 ```
 
@@ -425,7 +425,7 @@ Biopython repository, then his **master** branch won't be very
 interesting. Instead, try:
 
 ``` bash
-git diff master eric/pdbtidy  
+git diff master eric/pdbtidy
 ...
 ```
 
@@ -435,18 +435,18 @@ on your local repository.
 If you later want to remove the reference to this particular branch:
 
 ``` bash
-git branch -r -d eric/pdbtidy  
+git branch -r -d eric/pdbtidy
 Deleted remote branch eric/pdbtidy (79b5974)
 ```
 
 Or, to delete the references to all of Eric's branches:
 
 ``` bash
-git remote rm eric  
-git branch -r  
-  upstream/master  
-  origin/HEAD  
-  origin/master  
+git remote rm eric
+git branch -r
+  upstream/master
+  origin/HEAD
+  origin/master
   ...
 ```
 
@@ -497,11 +497,11 @@ with the git "remote command"... but we'll not cover that here.
 In the following sections, we assume you have followed the recommended
 scenario and you have the following entries in your .git/config file:
 
-``` 
-[remote "origin"]  
-       url = git@github.com:biopython/biopython.git  
-         
-[branch "master"]  
+```
+[remote "origin"]
+       url = git@github.com:biopython/biopython.git
+       
+[branch "master"]
        remote = origin
 ```
 
@@ -512,7 +512,7 @@ If you are committing from a patch, it's also quite easy. First make
 sure you are up to date with official branch:
 
 ``` bash
-git checkout master   
+git checkout master 
 git pull origin
 ```
 
@@ -545,7 +545,7 @@ Commiting from someone's git branch
 -----------------------------------
 
 Assume you want to merge changes someone has committed to a git
-repository which was at some point cloned from the official Biopython 
+repository which was at some point cloned from the official Biopython
 branch. He needs to make his repository available to you (read-only) by
 giving you a URL. Typically this will be on GitHub (but it may be any
 public git url). Let us assume that the url is (which happens to be my
@@ -556,16 +556,16 @@ clone of Biopython):
 First, you need to get the code from this repository:
 
 ``` bash
-git remote add Bartek git://github.com/barwil/biopython.git  
+git remote add Bartek git://github.com/barwil/biopython.git
 git fetch Bartek
 ```
 
 Then you can see what branches are there:
 
 ``` bash
-git branch -r  
- Bartek/master  
- Bartek/motif_docs  
+git branch -r
+ Bartek/master
+ Bartek/motif_docs
  Bartek/test-branch
 ```
 
@@ -573,7 +573,7 @@ Let's say you want to merge changes from test-branch. You need to make
 sure you are up to date with the official branch:
 
 ``` bash
-git checkout master   
+git checkout master 
 git pull origin
 ```
 
@@ -606,7 +606,7 @@ usually done to mark a new release), you need to follow these steps:
 First make sure you are up to date with official branch:
 
 ``` bash
-git checkout master   
+git checkout master 
 git pull origin
 ```
 

@@ -58,7 +58,7 @@ vygis.d@gmail.com
 
 **Mentors**
 
-  
+
 Thomas Hamelryck
 
 Eric Talevich
@@ -342,17 +342,17 @@ instance of the embedded interpreter for both types ESS and Densities.
 
 <cpp>
 
-`#include <mocapy/plugin/ess_plugin.hpp>`  
-`#include <mocapy/plugin/densities_plugin.hpp>`  
+`#include <mocapy/plugin/ess_plugin.hpp>`
+`#include <mocapy/plugin/densities_plugin.hpp>`
 `#include <mocapy/plugin/aggregate_plugin.hpp>`
 
-`int main()`  
-`{`  
-`  using namespace mocapy::ext;`  
-`  densities_plugin dens_pl("plugin_tests", "DensitiesPython");`  
-`  ess_plugin ess_pl("plugin_tests", "ESSPython");`  
-`  aggregate_plugin aggr_pl("plugin_tests", "ESSPython", "DensitiesPython");`  
-`  return 0;`  
+`int main()`
+`{`
+`  using namespace mocapy::ext;`
+`  densities_plugin dens_pl("plugin_tests", "DensitiesPython");`
+`  ess_plugin ess_pl("plugin_tests", "ESSPython");`
+`  aggregate_plugin aggr_pl("plugin_tests", "ESSPython", "DensitiesPython");`
+`  return 0;`
 `}`
 
 </cpp>
@@ -364,7 +364,7 @@ instance of the new class.
 
 <cpp>
 
-`densities_plugin p("test_module", "DensitiesClassName");`  
+`densities_plugin p("test_module", "DensitiesClassName");`
 `densities_adapter n = p.densities(arg1, arg2, ..., argN);`
 
 </cpp>
@@ -407,26 +407,26 @@ value.
 
 <cpp>
 
-`#include <mocapy/plugin/ess_plugin.hpp>`  
-`#include <mocapy/plugin/densities_plugin.hpp>`  
-`#include <mocapy/plugin/aggregate_plugin.hpp>`  
+`#include <mocapy/plugin/ess_plugin.hpp>`
+`#include <mocapy/plugin/densities_plugin.hpp>`
+`#include <mocapy/plugin/aggregate_plugin.hpp>`
 `#include <mocapy/plugin/plugin_node.hpp>`
 
-`int main()`  
-`{`  
-`  using namespace mocapy::ext;`  
-`  // Node initialization from two separately loaded modules`  
-`  {`  
-`    ess_plugin ess("plugin_tests", "ESSPython");`  
-`    densities_plugin dens("plugin_tests", "DensitiesPython");`  
-`    plugin_node_type node(ess.ess(arg1, arg2, ..., argN), dens.densities(arg1, arg2, ..., argN));`  
-`  }`  
-`  // Node initialization from a single loaded module`  
-`  {`  
-`    aggregate_plugin pl("plugin_tests", "ESSPython", "DensitiesPython");`  
-`    plugin_node_type node(pl.ess(arg1, arg2, ..., argN), pl.densities(arg1, arg2, ..., argN));`  
-`  }`  
-`  return 0;`  
+`int main()`
+`{`
+`  using namespace mocapy::ext;`
+`  // Node initialization from two separately loaded modules`
+`  {`
+`    ess_plugin ess("plugin_tests", "ESSPython");`
+`    densities_plugin dens("plugin_tests", "DensitiesPython");`
+`    plugin_node_type node(ess.ess(arg1, arg2, ..., argN), dens.densities(arg1, arg2, ..., argN));`
+`  }`
+`  // Node initialization from a single loaded module`
+`  {`
+`    aggregate_plugin pl("plugin_tests", "ESSPython", "DensitiesPython");`
+`    plugin_node_type node(pl.ess(arg1, arg2, ..., argN), pl.densities(arg1, arg2, ..., argN));`
+`  }`
+`  return 0;`
 `}`
 
 </cpp>
@@ -482,10 +482,10 @@ the same Python interpreter instance.
 
 Speedup percentages based on Wilcoxon matched pair confidence intervals.
 
-`  Func. A vs   Func. B      Minimum       Median      Maximum`  
-`                         (% faster)   (% faster)   (% faster)`  
-`     N    vs   S                717          719          724`  
-`     N    vs   A                718          725          730`  
+`  Func. A vs   Func. B      Minimum       Median      Maximum`
+`                         (% faster)   (% faster)   (% faster)`
+`     N    vs   S                717          719          724`
+`     N    vs   A                718          725          730`
 `     A    vs   S             -0.673       -0.251       0.0774`
 
 Test results show that using MocapyEXT plugin interface incurs some
@@ -496,10 +496,10 @@ performed repetitive construction of ESS and Densities instances.
 
 Speedup percentages based on Wilcoxon matched pair confidence intervals.
 
-`  Func. A vs   Func. B      Minimum       Median      Maximum`  
-`                         (% faster)   (% faster)   (% faster)`  
-`     N    vs   S                240          242          243`  
-`     N    vs   A                239          243          245`  
+`  Func. A vs   Func. B      Minimum       Median      Maximum`
+`                         (% faster)   (% faster)   (% faster)`
+`     N    vs   S                240          242          243`
+`     N    vs   A                239          243          245`
 `     A    vs   S              -1.24        -0.51        -0.25`
 
 Repeated tests without the construction of ESS and Densities objects
@@ -516,20 +516,20 @@ this example:
 
 <cpp>
 
-` template`<typename Densities>  
-` inline void do_something_with_densities(Densities dens) // Generic function `  
-` {`  
-`   std::vector`<unsigned int>` ps(1, 2);`  
-`   dens.construct(ps);`  
-`   /* do something here */`  
+` template`<typename Densities>
+` inline void do_something_with_densities(Densities dens) // Generic function `
+` {`
+`   std::vector`<unsigned int>` ps(1, 2);`
+`   dens.construct(ps);`
+`   /* do something here */`
 ` }`
 
-` // Bippo Densities though the Python interface`  
-` densities_plugin dens("mocapy.bippo", "BippoDensities");`  
+` // Bippo Densities though the Python interface`
+` densities_plugin dens("mocapy.bippo", "BippoDensities");`
 ` do_something_with_densities( dens.densities(lambdas, thetas, ns) );`
 
-` // Direct use of Bippo Densities`  
-` mocapy::BippoDensities bd(lambdas, thetas, ns);`  
+` // Direct use of Bippo Densities`
+` mocapy::BippoDensities bd(lambdas, thetas, ns);`
 ` do_something_with_densities(bd);`
 
 </cpp>
@@ -556,10 +556,10 @@ Densities by passing their parameters to the constructor:
 
 <cpp>
 
-` mocapy::BippoDensities bd(lambdas, thetas, ns);`  
+` mocapy::BippoDensities bd(lambdas, thetas, ns);`
 ` mocapy::BippoDensities clone( bd.get_parameters() );`
 
-` // The objects must have the same state!`  
+` // The objects must have the same state!`
 ` assert( bd == clone );`
 
 </cpp>

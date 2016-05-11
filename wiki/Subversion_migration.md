@@ -37,7 +37,7 @@ whether you have Subversion installed using \`which\` <code>
 
     user@compy$ which svn
     /usr/bin/svn
-    user@compy$ 
+    user@compy$
 
 </code>
 
@@ -47,7 +47,7 @@ located within `/usr/bin/`.
 <code>
 
     user@compy$ which svn
-    user@compy$ 
+    user@compy$
 
 </code>
 

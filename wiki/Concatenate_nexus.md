@@ -56,11 +56,11 @@ We can use the `Nexus` module to make a supermatrix:
 
 ``` python
 from Bio.Nexus import Nexus
-# the combine function takes a list of tuples [(name, nexus instance)...], 
-#if we provide the file names in a list we can use a list comprehension to 
+# the combine function takes a list of tuples [(name, nexus instance)...],
+#if we provide the file names in a list we can use a list comprehension to
 # create these tuples
 
-file_list = ['btCOI.nex', 'btCOII.nex', 'btITS.nex']   
+file_list = ['btCOI.nex', 'btCOII.nex', 'btITS.nex']
 nexi =  [(fname, Nexus.Nexus(fname)) for fname in file_list]
 
 combined = Nexus.combine(nexi)
@@ -86,7 +86,7 @@ That was easy! Let's look at our combined file
     charset btCOI.nex = 1-12;
     charset btCOII.nex = 21-32;
     charpartition combined = btCOI.nex: 1-12, btITS.nex: 13-20, btCOII.nex: 21-32;
-    end; 
+    end;
 
 Ahh, it was too easy. The matrices have been combined and the character
 sets and partitions set up but the ITS file had a taxon (bt4) that
@@ -100,8 +100,8 @@ message if not (i.e. what to delete from your NEXUS files if you want
 them to combine nicely).
 
 ``` python
-def check_taxa(matrices):  
-  '''Checks that nexus instances in a list [(name, instance)...] have 
+def check_taxa(matrices):
+  '''Checks that nexus instances in a list [(name, instance)...] have
   the same taxa, provides useful error if not and returns None if
   everything matches
   '''
@@ -124,10 +124,10 @@ def concat(file_list, same_taxa=True):
   ''' Combine multiple nexus data matrices in one partitioned file.
   By default this will only work if the same taxa are present in each file
   use  same_taxa=False if you are not concerned by this
-  '''    
-  nexi =  [(fname, Nexus.Nexus(fname)) for fname in file_list]  
+  '''
+  nexi =  [(fname, Nexus.Nexus(fname)) for fname in file_list]
   if same_taxa:
-    if not check_taxa(nexi): 
+    if not check_taxa(nexi):
       return Nexus.combine(nexi)
   else:
     return Nexus.combine(nexi)

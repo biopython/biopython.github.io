@@ -30,12 +30,12 @@ once.
 ``` python
 def batch_iterator(iterator, batch_size) :
     """Returns lists of length batch_size.
- 
+
     This can be used on any iterator, for example to batch up
     SeqRecord objects from Bio.SeqIO.parse(...), or to batch
     Alignment objects from Bio.AlignIO.parse(...), or simply
     lines from a file handle.
- 
+
     This is a generator function, and it returns lists of the
     entries from the supplied iterator.  Each list will have
     batch_size entries, although the final list may be shorter.
@@ -75,15 +75,15 @@ for i, batch in enumerate(batch_iterator(record_iter, 10000)) :
 And the output:
 
 ```
-Wrote 10000 records to group_1.fastq  
-Wrote 10000 records to group_2.fastq  
-Wrote 10000 records to group_3.fastq  
-Wrote 10000 records to group_4.fastq  
-Wrote 10000 records to group_5.fastq  
-Wrote 10000 records to group_6.fastq  
-Wrote 10000 records to group_7.fastq  
-Wrote 10000 records to group_8.fastq  
-Wrote 10000 records to group_9.fastq  
+Wrote 10000 records to group_1.fastq
+Wrote 10000 records to group_2.fastq
+Wrote 10000 records to group_3.fastq
+Wrote 10000 records to group_4.fastq
+Wrote 10000 records to group_5.fastq
+Wrote 10000 records to group_6.fastq
+Wrote 10000 records to group_7.fastq
+Wrote 10000 records to group_8.fastq
+Wrote 10000 records to group_9.fastq
 Wrote 4696 records to group_10.fastq
 ```
 

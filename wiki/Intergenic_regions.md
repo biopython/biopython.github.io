@@ -93,7 +93,7 @@ if __name__ == '__main__':
     else:
          print("Usage: get_intergenic.py gb_file [intergenic_length]")
          sys.exit(0)
- 
+
 ```
 
 For a full explanation of the code, see here:

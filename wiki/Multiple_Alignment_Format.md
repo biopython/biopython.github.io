@@ -14,7 +14,7 @@ chromosome, start position, size, and strand can be stored.
 
 A branch of Biopython on GitHub (not yet in the main distribution for
 general use) implements a MAF reader and writer accessible via
-**Bio.AlignIO**, and an indexer accessible via **Bio.AlignIO.MafIO**.
+[`Bio.AlignIO`](AlignIO "wikilink"), and an indexer accessible via `Bio.AlignIO.MafIO`.
 
 All examples below make use of the Multiz [30-way alignment to mouse
 chromosome
@@ -26,13 +26,17 @@ Getting the AlignIO MAF branch from GitHub
 
 First, clone the repository with git from the command line, like so:
 
-`git clone -b alignio-maf `[`git://github.com/polyatail/biopython.git`](git://github.com/polyatail/biopython.git)` alignio-maf`
+``` bash
+git clone -b alignio-maf git://github.com/polyatail/biopython.git alignio-maf
+```
 
 If you're using an older version of git, you may need to do this:
 
-`git clone `[`git://github.com/polyatail/biopython.git`](git://github.com/polyatail/biopython.git)` alignio-maf`  
-`cd alignio-maf`  
-`git checkout -b alignio-maf origin/alignio-maf`
+``` bash
+git clone git://github.com/polyatail/biopython.git alignio-maf
+cd alignio-maf
+git checkout -b alignio-maf origin/alignio-maf
+```
 
 To access the MAF parser, you'll need to manually specify the path to it
 in your code, as in:
@@ -51,15 +55,15 @@ except ImportError:
 ```
 
 For help, contact the branch maintainer Andrew Sczesnak (firstname dot
-lastname at med dot nyu dot edu) or the [BioPython
+lastname at med dot nyu dot edu) or the [Biopython
 Developers](mailto:biopython-dev@lists.open-bio.org).
 
 Reading in a MAF file
 ---------------------
 
-Parsing a MAF file is similar to any other alignment file in AlignIO.
-Additional data, however, is stored as a dict in the .annotations
-property of SeqRecords belonging to returned MultipleSeqAlignment
+Parsing a MAF file is similar to any other alignment file in `AlignIO`.
+Additional data, however, is stored as a dict in the `.annotations`
+property of `SeqRecord`s belonging to returned `MultipleSeqAlignment`
 objects.
 
 ### Annotations available in SeqRecords
@@ -95,7 +99,7 @@ alignment of several sequences across an arbitrary interval: for
 example, chr10:25,079,604-25,243,324 in mm9. As MAF files are available
 for entire chromosomes, they can be indexed by chromosome position and
 accessed at random. This functionality would be available in the class
-Bio.AlignIO.MafIO.MafIndex.
+`Bio.AlignIO.MafIO.MafIndex`.
 
 ### Creating or loading a MAF index
 
@@ -109,7 +113,7 @@ every block, and should be used as the *target\_seqname* parameter. For
 UCSC multiz files, the form of **species.chromosome** is used.
 
 To index a MAF file, or load an existing index, create a new
-**MafIO.MafIndex** object. If the index database file *sqlite\_file*
+`MafIO.MafIndex` object. If the index database file *sqlite\_file*
 does not exist, it will be created, otherwise it will be loaded.
 
 ``` python
@@ -123,8 +127,8 @@ idx = MafIO.MafIndex("chr10.mafindex", "chr10.maf", "mm9.chr10")
 
 ### Retrieving alignments overlapping a given interval
 
-The **MafIO.MafIndex.search()** generator function accepts a list of
-start and end positions, and yields MultipleSeqAlignment objects that
+The `MafIO.MafIndex.search()` generator function accepts a list of
+start and end positions, and yields `MultipleSeqAlignment` objects that
 overlap the given intervals. This is particularly useful for obtaining
 alignments over the multiple exons of a single transcript, eliminating
 the need to retrieve an entire locus.
@@ -151,9 +155,9 @@ print("a total of %s bases align" % total_bases)
 
 ### Retrieving a pre-spliced alignment over a given set of exons
 
-The **MafIO.MafIndex.get\_spliced()** function accepts a list of start
+The `MafIO.MafIndex.get_spliced()` function accepts a list of start
 and end positions representing exons, and returns a single
-MultipleSeqAlignment object of the *in silico* spliced transcript from
+`MultipleSeqAlignment` object of the *in silico* spliced transcript from
 the reference and all aligned sequences. If part of the sequence range
 is not found in a particular species in the alignment, dashes ("-") are
 used to fill the gaps, or "N"s if the sequence is not present in the
@@ -188,7 +192,7 @@ from Bio import AlignIO
 # connect to UCSC's live MySQL database
 mysql_conn = MySQLdb.connect(host = "genome-mysql.cse.ucsc.edu",
                              user = "genome",
-                             passwd = "", 
+                             passwd = "",
                              db = "mm9")
 
 db_conn = mysql_conn.cursor(MySQLdb.cursors.DictCursor)
@@ -214,26 +218,28 @@ for record in db_conn.fetchall():
 Format
 ------
 
-    track name=euArc visibility=pack
-    ##maf version=1 scoring=tba.v8 
-    # tba.v8 (((human chimp) baboon) (mouse rat)) 
-                       
-    a score=23262.0     
-    s hg18.chr7    27578828 38 + 158545518 AAA-GGGAATGTTAACCAAATGA---ATTGTCTCTTACGGTG
-    s panTro1.chr6 28741140 38 + 161576975 AAA-GGGAATGTTAACCAAATGA---ATTGTCTCTTACGGTG
-    s baboon         116834 38 +   4622798 AAA-GGGAATGTTAACCAAATGA---GTTGTCTCTTATGGTG
-    s mm4.chr6     53215344 38 + 151104725 -AATGGGAATGTTAAGCAAACGA---ATTGTCTCTCAGTGTG
-    s rn3.chr4     81344243 40 + 187371129 -AA-GGGGATGCTAAGCCAATGAGTTGTTGTCTCTCAATGTG
-                       
-    a score=5062.0                    
-    s hg18.chr7    27699739 6 + 158545518 TAAAGA
-    s panTro1.chr6 28862317 6 + 161576975 TAAAGA
-    s baboon         241163 6 +   4622798 TAAAGA 
-    s mm4.chr6     53303881 6 + 151104725 TAAAGA
-    s rn3.chr4     81444246 6 + 187371129 taagga
+```
+track name=euArc visibility=pack
+##maf version=1 scoring=tba.v8
+# tba.v8 (((human chimp) baboon) (mouse rat))
 
-    a score=6636.0
-    s hg18.chr7    27707221 13 + 158545518 gcagctgaaaaca
-    s panTro1.chr6 28869787 13 + 161576975 gcagctgaaaaca
-    s baboon         249182 13 +   4622798 gcagctgaaaaca
-    s mm4.chr6     53310102 13 + 151104725 ACAGCTGAAAATA
+a score=23262.0
+s hg18.chr7    27578828 38 + 158545518 AAA-GGGAATGTTAACCAAATGA---ATTGTCTCTTACGGTG
+s panTro1.chr6 28741140 38 + 161576975 AAA-GGGAATGTTAACCAAATGA---ATTGTCTCTTACGGTG
+s baboon         116834 38 +   4622798 AAA-GGGAATGTTAACCAAATGA---GTTGTCTCTTATGGTG
+s mm4.chr6     53215344 38 + 151104725 -AATGGGAATGTTAAGCAAACGA---ATTGTCTCTCAGTGTG
+s rn3.chr4     81344243 40 + 187371129 -AA-GGGGATGCTAAGCCAATGAGTTGTTGTCTCTCAATGTG
+
+a score=5062.0
+s hg18.chr7    27699739 6 + 158545518 TAAAGA
+s panTro1.chr6 28862317 6 + 161576975 TAAAGA
+s baboon         241163 6 +   4622798 TAAAGA
+s mm4.chr6     53303881 6 + 151104725 TAAAGA
+s rn3.chr4     81444246 6 + 187371129 taagga
+
+a score=6636.0
+s hg18.chr7    27707221 13 + 158545518 gcagctgaaaaca
+s panTro1.chr6 28869787 13 + 161576975 gcagctgaaaaca
+s baboon         249182 13 +   4622798 gcagctgaaaaca
+s mm4.chr6     53310102 13 + 151104725 ACAGCTGAAAATA
+```

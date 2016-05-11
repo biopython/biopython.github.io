@@ -25,7 +25,7 @@ def get_parent(tree, child_clade):
     node_path = tree.get_path(child_clade)
     return node_path[-2]
 
-# Select a clade 
+# Select a clade
 myclade = tree.find_clades("foo").next()
 # Test the function
 parent = get_parent(tree, myclade)
@@ -161,7 +161,7 @@ Consensus methods
 
 -   Majority-rules consensus
 -   Strict consensus
--   Adams ([Adams 1972](http://dx.doi.org/10.2307/2412432), 
+-   Adams ([Adams 1972](http://dx.doi.org/10.2307/2412432),
     [pdf](http://www.faculty.biol.ttu.edu/Strauss/Phylogenetics/Readings/Adams1972.pdf))
 -   Asymmetric median tree
     ([Phillips and Warnow 1996](http://dx.doi.org/10.1007/3-540-61258-0_18))
@@ -229,7 +229,7 @@ def to_ape(tree):
     Requirements:
         - Python package `rpy2`
         - R package `ape`
-    """    
+    """
     with tempfile.NamedTemporaryFile() as tmpf:
         Phylo.write(tree, tmpf, 'newick')
         tmpf.flush()
@@ -252,13 +252,13 @@ See that it works:
 >>> print(r.summary(rtree))
 Phylogenetic tree: structure(list(edge = structure(c(6, 6, 7, 7, 6, 8, 8, 1, 7,  2, 3, 8, 4, 5),
  .Dim = c(7L, 2L)), tip.label = c("A", "B", "C",  "D", "E"), Nnode = 3L),
- .Names = c("edge", "tip.label", "Nnode" ), class="phylo") 
+ .Names = c("edge", "tip.label", "Nnode" ), class="phylo")
 
-  Number of tips: 5 
-  Number of nodes: 3 
+  Number of tips: 5
+  Number of nodes: 3
   No branch lengths.
   No root edge.
-  Tip labels: A 
+  Tip labels: A
               B
               C
               D

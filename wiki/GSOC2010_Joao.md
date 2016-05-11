@@ -11,7 +11,7 @@ Author & Mentors
 
 **Mentors**
 
-  
+
 Eric Talevich
 
 Diana Jaunzeikare
@@ -124,7 +124,7 @@ periods for reviewing these efforts at the two points during the project
 
 ### Week 6 (Mid-Term) \[5th - 11th July\]
 
- 
+
 -   Testing and consolidating the features thoroughly.
 
 -   Write documentation & examples for each feature, to be included in

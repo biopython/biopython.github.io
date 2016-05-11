@@ -65,7 +65,7 @@ d=True)
             Clade(branch_length=0.102, name='A')
             Clade(branch_length=0.23, name='B')
         Clade(branch_length=0.4, name='C')
->>> 
+>>>
 ```
 
 which represents a phylogeny like this:

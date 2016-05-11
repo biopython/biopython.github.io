@@ -81,7 +81,7 @@ tree objects.
 
 Incrementally parse each tree in the given file or handle, returning an
 iterator of Tree objects (i.e. some subclass of the `Bio.Phylo.BaseTree`
-Tree class, depending on the file format). 
+Tree class, depending on the file format).
 
 ``` python
 >>> trees = Phylo.parse('phyloxml_examples.xml', 'phyloxml')
@@ -828,17 +828,17 @@ To get the `_BitString` representation of a clade, we can use the
 following code snippet:
 
 ``` python
-# suppose we are provided with a tree list, the first thing 
+# suppose we are provided with a tree list, the first thing
 # to do is to get all the terminal names in the first tree
 term_names = [term.name for term in trees[0].get_terminals()]
 
 # for a specific clade in any of the tree, also get its terminal names
 clade_term_names = [term.name for term in clade.get_terminals()]
 
-# then create a boolean list 
+# then create a boolean list
 boolvals = [name in clade_term_names for name in term_names]
 
-# create the string version and pass it to _BitString  
+# create the string version and pass it to _BitString
 bitstr = _BitString(''.join(map(str, map(int, boolvals))))
 ```
 
@@ -873,15 +873,15 @@ def _bitstrs(tree):
     term_names.sort()
     for clade in tree.get_nonterminals():
         clade_term_names = [term.name for term in clade.get_terminals()]
-        boolvals = [name in clade_term_names for name in term_names]  
+        boolvals = [name in clade_term_names for name in term_names]
         bitstr = _BitString(''.join(map(str, map(int, boolvals))))
         bitstrs.add(bitstr)
     return bitstrs
-        
+
 def compare(tree1, tree2):
     term_names1 = [term.name for term in tree1.get_terminals()]
     term_names2 = [term.name for term in tree2.get_terminals()]
-    # false if terminals are not the same 
+    # false if terminals are not the same
     if set(term_names1) != set(term_names2):
         return False
     # true if _BitStrings are the same

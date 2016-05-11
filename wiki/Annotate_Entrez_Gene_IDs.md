@@ -37,7 +37,7 @@ Entrez.email = "your email here"
 def retrieve_annotation(id_list):
 
     """Annotates Entrez Gene IDs using Bio.Entrez, in particular epost (to
-    submit the data to NCBI) and esummary to retrieve the information. 
+    submit the data to NCBI) and esummary to retrieve the information.
     Returns a list of dictionaries with the annotations."""
 
     request = Entrez.epost("gene",id=",".join(id_list))

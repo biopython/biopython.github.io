@@ -13,7 +13,7 @@ Author & Mentors
 
 **Mentors**
 
-  
+
 João Rodrigues
 
 Eric Talevich
