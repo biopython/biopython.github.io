@@ -500,7 +500,7 @@ scenario and you have the following entries in your .git/config file:
 ```
 [remote "origin"]
        url = git@github.com:biopython/biopython.git
-       
+
 [branch "master"]
        remote = origin
 ```
@@ -512,7 +512,7 @@ If you are committing from a patch, it's also quite easy. First make
 sure you are up to date with official branch:
 
 ``` bash
-git checkout master 
+git checkout master
 git pull origin
 ```
 
@@ -573,7 +573,7 @@ Let's say you want to merge changes from test-branch. You need to make
 sure you are up to date with the official branch:
 
 ``` bash
-git checkout master 
+git checkout master
 git pull origin
 ```
 
@@ -606,7 +606,7 @@ usually done to mark a new release), you need to follow these steps:
 First make sure you are up to date with official branch:
 
 ``` bash
-git checkout master 
+git checkout master
 git pull origin
 ```
 

@@ -427,7 +427,7 @@ print(record.description)
 Giving this output:
 
 ```
-Z78439.1 
+Z78439.1
 P.barbatum 5.8S rRNA gene and ITS1 and ITS2 DNA.
 ```
 
