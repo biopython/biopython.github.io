@@ -73,6 +73,9 @@ a {
 a strong {
   color: inherit;
 }
+a code {
+  color: inherit;
+}
 /* `:focus` is linked to `:hover` for basic accessibility */
 a:hover,
 a:focus {
@@ -153,11 +156,11 @@ pre {
   font-family: Menlo, Monaco, "Courier New", monospace;
 }
 code {
-  padding: .25em .5em;
+  padding: .1em .2em;
   font-size: 85%;
   color: #bf616a;
-  background-color: #f9f9f9;
-  border-radius: 3px;
+  background-color: #e9e9e9;
+  border-radius: 5px;
 }
 pre {
   display: block;
@@ -170,7 +173,8 @@ pre {
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: #f9f9f9;
+  background-color: #e9e9e9;
+  border-radius: 5px;
 }
 pre code {
   padding: 0;
