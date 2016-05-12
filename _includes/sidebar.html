@@ -13,7 +13,7 @@
       -->
       <div class="sidebar-logo">
         <a href="{{ site.baseurl }}">
-          <img src="/biopython_grey.png" alt="Biopython Logo" title="" width="100%"/>
+          <img src="/biopython_grey.png" alt="Biopython Logo" title="Biopython Home" width="100%"/>
         </a>
       </div>
       <p class="lead">{{ site.description }}</p>
@@ -43,9 +43,11 @@
       <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
       -->
       <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
-      <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
     </nav>
-
-    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+    
+  </div>
+  <div class="sidebar-footer">
+      Biopython version {{ site.version }}<br>
+      &copy; {{ site.time | date: '%Y' }}. All rights reserved.
   </div>
 </div>
