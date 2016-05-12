@@ -55,7 +55,7 @@ html {
 
 .sidebar {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 0.5rem 1rem;
   color: rgba(255,255,255,.5);
   background-color: #10100F;
 }
@@ -67,6 +67,23 @@ html {
     bottom: 0;
     width: 18rem;
     text-align: left;
+    padding: 2rem 1rem;
+  }
+  .sidebar-nav {
+    margin-bottom: 1rem;
+  }
+  .sidebar-nav-item {
+    display: block;
+    line-height: 1.75;
+  }
+  .sidebar-footer {
+    position: absolute;
+    bottom: 5px;
+    padding: 1rem;
+  }
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -85,11 +102,10 @@ html {
 
 /* Sidebar nav */
 .sidebar-nav {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .sidebar-nav-item {
-  display: block;
-  line-height: 1.75;
+  padding-right: 0.5rem
 }
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
@@ -122,8 +138,10 @@ a.sidebar-nav-item:focus {
  */
 
 .content {
-  padding-top:    4rem;
-  padding-bottom: 4rem;
+  padding-top:    2rem;
+  padding-bottom: 1rem;
+  padding-left:   1rem;
+  padding-right:  1rem;
 }
 
 @media (min-width: 48em) {
@@ -131,6 +149,8 @@ a.sidebar-nav-item:focus {
     max-width: 46rem;
     margin-left: 20rem;
     margin-right: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
   }
 }
 
@@ -138,6 +158,8 @@ a.sidebar-nav-item:focus {
   .content {
     margin-left: 22rem;
     margin-right: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
   }
 }
 
