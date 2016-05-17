@@ -7,56 +7,55 @@ layout: wiki
 Introduction
 ------------
 
-Bio.PDB is a Biopython module that focuses on working with crystal
+`Bio.PDB` is a Biopython module that focuses on working with crystal
 structures of biological macromolecules. This document gives a fairly
-complete overview of Bio.PDB.
+complete overview of `Bio.PDB`.
 
-Bio.PDB's installation
+Bio.PDB's Installation
 ----------------------
 
-Bio.PDB is automatically installed as part of Biopython. Biopython can
+`Bio.PDB` is automatically installed as part of Biopython. Biopython can
 be obtained from <http://www.biopython.org>. It runs on many platforms
 (Linux/Unix, windows, Mac,...).
 
 Who's using Bio.PDB?
 --------------------
 
-Bio.PDB was used in the construction of DISEMBL, a web server that
-predicts disordered regions in proteins (http://dis.embl.de/), and
-COLUMBA, a website that provides annotated protein structures
-(http://www.columba-db.de/). Bio.PDB has also been used to perform a
-large scale search for active sites similarities between protein
-structures in the PDB (see [*Proteins* **51**: 96–108,
+`Bio.PDB` was used in the construction of [DISEMBL](http://dis.embl.de/), a web
+server that predicts disordered regions in proteins , and COLUMBA, a website
+that provides annotated protein structures (*not longer available?*). `Bio.PDB`
+has also been used to perform a large scale search for active sites similarities
+between protein structures in the PDB (see [*Proteins* **51**: 96–108,
 2003](http://dx.doi.org/10.1002/prot.10338)), and to develop a new
 algorithm that identifies linear secondary structure elements (see [*BMC
 Bioinformatics* **6**: 202,
 2005](http://www.biomedcentral.com/1471-2105/6/202)).
 
-Judging from requests for features and information, Bio.PDB is also used
+Judging from requests for features and information, `Bio.PDB` is also used
 by several LPCs (Large Pharmaceutical Companies :-).
 
 Is there a Bio.PDB reference?
 -----------------------------
 
-Yes, and I'd appreciate it if you would refer to Bio.PDB in publications
+Yes, and I'd appreciate it if you would refer to `Bio.PDB` in publications
 if you make use of it. The reference is:
 
 > Hamelryck, T., Manderick, B. (2003) PDB parser and structure class
 > implemented in Python. *Bioinformatics* **19**: 2308–2310
 
 The article can be freely downloaded via the [Bioinformatics journal
-website](http://www.binf.ku.dk/users/thamelry/references.html). I
-welcome e-mails telling me what you are using Bio.PDB for. Feature
+website](http://dx.doi.org/10.1093/bioinformatics/btg299). I
+welcome e-mails telling me what you are using `Bio.PDB` for. Feature
 requests are welcome too.
 
 How well tested is Bio.PDB?
 ---------------------------
 
-Pretty well, actually. Bio.PDB has been extensively tested on nearly
+Pretty well, actually. `Bio.PDB` has been extensively tested on nearly
 5500 structures from the PDB - all structures seemed to be parsed
-correctly. More details can be found in the Bio.PDB Bioinformatics
-article. Bio.PDB has been used/is being used in many research projects
-as a reliable tool. In fact, I'm using Bio.PDB almost daily for research
+correctly. More details can be found in the `Bio.PDB` Bioinformatics
+article. `Bio.PDB` has been used/is being used in many research projects
+as a reliable tool. In fact, I'm using `Bio.PDB` almost daily for research
 purposes and continue working on improving it and adding new features.
 
 How fast is it?
@@ -72,11 +71,11 @@ applications.
 Why should I use Bio.PDB?
 -------------------------
 
-Bio.PDB might be exactly what you want, and then again it might not. If
+`Bio.PDB` might be exactly what you want, and then again it might not. If
 you are interested in data mining the PDB header, you might want to look
 elsewhere because there is only limited support for this. If you look
 for a powerful, complete data structure to access the atomic data
-Bio.PDB is probably for you.
+`Bio.PDB` is probably for you.
 
 Usage
 -----
@@ -94,19 +93,19 @@ from Bio.PDB import *
 #### Is there support for molecular graphics?
 
 Not directly, mostly since there are quite a few Python based/Python
-aware solutions already, that can potentially be used with Bio.PDB. My
-choice is Pymol, BTW (I've used this successfully with Bio.PDB, and
-there will probably be specific PyMol modules in Bio.PDB soon/some day).
+aware solutions already, that can potentially be used with `Bio.PDB`. My
+choice is Pymol, BTW (I've used this successfully with `Bio.PDB`, and
+there will probably be specific PyMol modules in `Bio.PDB` soon/some day).
 Python based/aware molecular graphics solutions include:
 
--   PyMol: <http://pymol.sourceforge.net/>
+-   PyMol: <http://pymol.org>
 -   Chimera: <http://www.cgl.ucsf.edu/chimera/>
--   PMV: <http://www.scripps.edu/~sanner/python/>
--   Coot: <http://www.ysbl.york.ac.uk/~emsley/coot/>
--   CCP4mg: <http://www.ysbl.york.ac.uk/~lizp/molgraphics.html>
+-   PMV: <http://mgltools.scripps.edu/packages/pmv>
+-   Coot: <http://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/>
+-   CCP4mg: <http://www.ccp4.ac.uk/MG/>
 -   mmLib: <http://pymmlib.sourceforge.net/>
 -   VMD: <http://www.ks.uiuc.edu/Research/vmd/>
--   MMTK: <http://starship.python.net/crew/hinsen/MMTK/>
+-   MMTK: <http://dirac.cnrs-orleans.fr/MMTK/>
 
 I'd be crazy to write another molecular graphics application (been there
 - done that, actually :-).
@@ -122,7 +121,7 @@ parser = PDBParser()
 ```
 
 Then, create a structure object from a PDB file in the following way
-(the PDB file in this case is called '1FAT.pdb', 'PHA-L' is a user
+(the PDB file in this case is called `1FAT.pdb`, `PHA-L` is a user
 defined name for the structure):
 
 ``` python
@@ -152,7 +151,7 @@ might encourage me :-).
 
 #### I'd like to have some more low level access to an mmCIF file...
 
-You got it. You can create a python dictionary that maps all mmCIF tags
+You got it. You can create a Python dictionary that maps all mmCIF tags
 in an mmCIF file to their values. If there are multiple values (like in
 the case of tag `_atom_site.Cartn_y`, which holds the *y* coordinates of
 all atoms), the tag is mapped to a list of values. The dictionary is
@@ -215,7 +214,7 @@ handle.close()
 Sure. Many PDB parsers assume that there is only one model, making them
 all but useless for NMR structures. The design of the `Structure` object
 makes it easy to handle PDB files with more than one model (see section
-[**The Structure object**](#the-structure-object "wikilink")).
+[**The Structure Object**](#the-structure-object "wikilink")).
 
 #### How do I download structures from the PDB?
 
@@ -228,8 +227,13 @@ pdbl = PDBList()
 pdbl.retrieve_pdb_file('1FAT')
 ```
 
-The `PDBList` class can also be used as a command-line tool: `python`
-`PDBList.py` `1fat` The downloaded file will be called `pdb1fat.ent` and
+The `PDBList` class can also be used as a command-line tool:
+
+``` bash
+python PDBList.py 1fat
+```
+
+The downloaded file will be called `pdb1fat.ent` and
 stored in the current working directory. Note that the
 `retrieve_pdb_file` method also has an optional argument `pdir` that
 specifies a specific directory in which to store the downloaded PDB
@@ -239,8 +243,8 @@ The `retrieve_pdb_file` method also has some options for specifying the
 compression format used for the download, and the program used for local
 decompression (default `.Z` format and `gunzip`). In addition, the PDB
 ftp site can be specified upon creation of the `PDBList` object. By
-default, the server of the Worldwide Protein Data Bank
-(ftp://ftp.wwpdb.org/pub/pdb/data/structures/divided/pdb/) is used. See
+default, the ftp server of the [Worldwide Protein Data
+Bank](ftp://ftp.wwpdb.org/pub/pdb/data/structures/divided/pdb/) is used. See
 the API documentation for more details. Thanks again to Kristian Rother
 for donating this module.
 
@@ -284,11 +288,11 @@ documentation.
 #### What about all those buggy PDB files?
 
 It is well known that many PDB files contain semantic errors (I'm not
-talking about the structures themselves know, but their representation
-in PDB files). Bio.PDB tries to handle this in two ways. The PDBParser
+talking about the structures themselves, but their representation
+in PDB files). `Bio.PDB` tries to handle this in two ways. The `PDBParser`
 object can behave in two ways: a restrictive way and a permissive way
 (THIS IS NOW THE DEFAULT). The restrictive way used to be the default,
-but people seemed to think that Bio.PDB 'crashed' due to a bug (hah!),
+but people seemed to think that `Bio.PDB` 'crashed' due to a bug (hah!),
 so I changed it. If you ever encounter a real bug, please tell me
 immediately!
 
@@ -377,7 +381,7 @@ No, and I also don't have plans to add that functionality soon (or ever
 - I don't need it at all, and it's a lot of work, plus no-one has ever
 asked for it). People who want to add this can contact me.
 
-### The Structure object
+### The Structure Object
 
 #### What's the overall layout of a Structure object?
 
@@ -395,7 +399,13 @@ structure. Additional stuff is essentially added when needed. A UML
 diagram of the `Structure` object (forgetting about the `Disordered`
 classes for now) is shown in the figure below.
 
-<img src="Smcra.png" title="Diagram of SMCRA architecture of the Structure object. Full lines with diamonds denote aggregation, full lines with arrows denote referencing, full lines with triangles denote inheritance and dashed lines with triangles denote interface realization." alt="Diagram of SMCRA architecture of the Structure object. Full lines with diamonds denote aggregation, full lines with arrows denote referencing, full lines with triangles denote inheritance and dashed lines with triangles denote interface realization." width="600" />
+<img src="Smcra.png" title="Diagram of SMCRA architecture of the Structure object." alt="Diagram of SMCRA architecture of the Structure object." width="600" />
+
+**Diagram of SMCRA architecture of the Structure object.**
+
+*Full lines with diamonds denote aggregation, full lines with arrows denote
+referencing, full lines with triangles denote inheritance and dashed lines with
+triangles denote interface realization.*
 
 
 
@@ -486,20 +496,20 @@ atom = structure[0]['A'][100]['CA']
 
 #### What is a model id?
 
-The model id is an integer which denotes the rank of the model in the
-PDB/mmCIF file. The model is starts at 0. Crystal structures generally
-have only one model (with id 0), while NMR files usually have several
+The *model id*  is an integer which denotes the rank of the model in the
+PDB/mmCIF file. The *model id* starts at 0. Crystal structures generally
+have only one model (with *id* 0), while NMR files usually have several
 models.
 
 #### What is a chain id?
 
-The chain id is specified in the PDB/mmCIF file, and is a single
+The *chain id*  is specified in the PDB/mmCIF file, and is a single
 character (typically a letter).
 
 #### What is a residue id?
 
-This is a bit more complicated, due to the clumsy PDB format. A residue
-id is a tuple with three elements:
+This is a bit more complicated, due to the clumsy PDB format. A *residue
+id* is a tuple with three elements:
 
 -   The **hetero-flag**: this is `'H_'` plus the name of the
     hetero-residue (e.g. `'H_GLC'` in the case of a glucose molecule),
@@ -529,7 +539,7 @@ which would create obvious problems if the hetero-flag was not used.
 
 #### What is an atom id?
 
-The atom id is simply the atom name (eg. `'CA'`). In practice, the atom
+The *atom id*  is simply the atom name (eg. `'CA'`). In practice, the atom
 name is created by stripping all spaces from the atom name in the PDB
 file.
 
@@ -541,7 +551,7 @@ the spaces are kept.
 
 #### How is disorder handled?
 
-This is one of the strong points of Bio.PDB. It can handle both
+This is one of the strong points of `Bio.PDB`. It can handle both
 disordered atoms and point mutations (ie. a Gly and an Ala residue in
 the same position).
 
@@ -560,7 +570,7 @@ specified by the user.
 **Disordered atom positions** are represented by ordinary `Atom`
 objects, but all `Atom` objects that represent the same physical atom
 are stored in a `DisorderedAtom` object (see section [**The Structure
-object**](#the-structure-object "wikilink")). Each `Atom` object in a
+Object**](#the-structure-object "wikilink")). Each `Atom` object in a
 `DisorderedAtom` object can be uniquely indexed using its altloc
 specifier. The `DisorderedAtom` object forwards all uncaught method
 calls to the selected Atom object, by default the one that represents
@@ -588,7 +598,7 @@ Ser 60 and Cys 60) they should not be stored in a single `Residue`
 object as in the common case. In this case, each residue is represented
 by one `Residue` object, and both `Residue` objects are stored in a
 single `DisorderedResidue` object (see section [**The Structure
-object**](#the-structure-object "wikilink")).
+Object**](#the-structure-object "wikilink")).
 
 The `DisorderedResidue` object forwards all uncaught methods to the
 selected `Residue` object (by default the last `Residue` object added),
@@ -620,11 +630,11 @@ Yes, kinda, but I'm waiting for a request for this feature to finish it
 
 #### How are ligands and solvent handled?
 
-See 'What is a residue id?'.
+See ['What is a residue id?'](#what-is-a-residue-id "wikilink").
 
 #### What about B factors?
 
-Well, yes! Bio.PDB supports isotropic and anisotropic B factors, and
+Well, yes! `Bio.PDB` supports isotropic and anisotropic B factors, and
 also deals with standard deviations of anisotropic B factor if present
 (see the section [**Analysis**](#analysis "wikilink")).
 
@@ -637,9 +647,9 @@ Yup, supported. See the section [**Analysis**](#analysis "wikilink").
 Sure, sure. Everybody is always coming up with (mostly vaporware or
 partly implemented) data structures that handle all possible situations
 and are extensible in all thinkable (and unthinkable) ways. The prosaic
-truth however is that 99.9\\% of people using (and I mean really using!)
+truth however is that 99.9% of people using (and I mean really using!)
 crystal structures think in terms of models, chains, residues and atoms.
-The philosophy of Bio.PDB is to provide a reasonably fast, clean,
+The philosophy of `Bio.PDB` is to provide a reasonably fast, clean,
 simple, but complete data structure to access structure data. The proof
 of the pudding is in the eating.
 
@@ -658,17 +668,17 @@ also trivial to add support for new file formats by writing new parsers.
 Using the following methods:
 
 ``` python
-a.get_name()           # atom name (spaces stripped, e.g. 'CA')
-a.get_id()             # id (equals atom name)
-a.get_coord()          # atomic coordinates
-a.get_vector()         # atomic coordinates as Vector object
-a.get_bfactor()        # isotropic B factor
-a.get_occupancy()      # occupancy
-a.get_altloc()         # alternative location specifier
-a.get_sigatm()         # std. dev. of atomic parameters
-a.get_siguij()         # std. dev. of anisotropic B factor
-a.get_anisou()         # anisotropic B factor
-a.get_fullname()       # atom name (with spaces, e.g. '.CA.')
+a.get_name()       # atom name (spaces stripped, e.g. 'CA')
+a.get_id()         # id (equals atom name)
+a.get_coord()      # atomic coordinates
+a.get_vector()     # atomic coordinates as Vector object
+a.get_bfactor()    # isotropic B factor
+a.get_occupancy()  # occupancy
+a.get_altloc()     # alternative location specifier
+a.get_sigatm()     # std. dev. of atomic parameters
+a.get_siguij()     # std. dev. of anisotropic B factor
+a.get_anisou()     # anisotropic B factor
+a.get_fullname()   # atom name (with spaces, e.g. '.CA.')
 ```
 
 #### How do I extract information from a `Residue` object?
@@ -676,10 +686,10 @@ a.get_fullname()       # atom name (with spaces, e.g. '.CA.')
 Using the following methods:
 
 ``` python
-r.get_resname()         # return the residue name (eg. 'GLY')
-r.is_disordered()       # 1 if the residue has disordered atoms
-r.get_segid()           # return the SEGID
-r.has_id(name)          # test if a residue has a certain atom
+r.get_resname()    # return the residue name (eg. 'GLY')
+r.is_disordered()  # 1 if the residue has disordered atoms
+r.get_segid()      # return the SEGID
+r.has_id(name)     # test if a residue has a certain atom
 ```
 
 #### How do I measure distances?
@@ -694,7 +704,7 @@ Example:
 ca1 = residue1['CA']
 ca2 = residue2['CA']
 # Simply subtract the atoms to get their distance
-distance = ca1-ca2
+distance = ca1 - ca2
 ```
 
 #### How do I measure angles?
@@ -739,14 +749,14 @@ Example:
 
 ``` python
 # Using C-N
-ppb=PPBuilder()
+ppb = PPBuilder()
 for pp in ppb.build_peptides(structure):
-    print pp.get_sequence()
+    print(pp.get_sequence())
 
 # Using CA-CA
-ppb=CaPPBuilder()
+ppb = CaPPBuilder()
 for pp in ppb.build_peptides(structure):
-    print pp.get_sequence()
+    print(pp.get_sequence())
 ```
 
 Note that in the above case only model 0 of the structure is considered
@@ -772,8 +782,9 @@ Seq('SNVVE...', <class Bio.Alphabet.ProteinAlphabet>)
 
 #### How do I determine secondary structure?
 
-For this functionality, you need to install DSSP (and obtain a license
-for it - free for academic use, see <http://www.cmbi.kun.nl/gv/dssp/>).
+For this functionality, you need to install
+[DSSP](http://swift.cmbi.ru.nl/gv/dssp/) (and obtain a license
+for it - free for academic use).
 Then use the `DSSP` class, which maps `Residue` objects to their
 secondary structure (and accessible surface area). The DSSP codes are
 listed in the Table below. Note that DSSP (the program, and thus by
@@ -799,8 +810,8 @@ Use the `DSSP` class (see also previous entry). But see also next entry.
 Residue depth is the average distance of a residue's atoms from the
 solvent accessible surface. It's a fairly new and very powerful
 parameterization of solvent accessibility. For this functionality, you
-need to install Michel Sanner's MSMS program
-(http://www.scripps.edu/pub/olson-web/people/sanner/html/msms\_home.html).
+need to install [Michel Sanner's MSMS
+program](http://mgl.scripps.edu/people/sanner/html/msms_home.html).
 Then use the `ResidueDepth` class. This class behaves as a dictionary
 which maps `Residue` objects to corresponding (residue depth, Cα depth)
 tuples. The Cα depth is the distance of a residue's Cα atom to the
@@ -815,7 +826,7 @@ residue_depth, ca_depth = rd[some_residue]
 ```
 
 You can also get access to the molecular surface itself (via the
-`get_surface` function), in the form of a Numeric python array with the
+`get_surface` function), in the form of a NumPy array with the
 surface points.
 
 #### How do I calculate Half Sphere Exposure?
@@ -870,7 +881,7 @@ question.
 #### How do I put a virtual Cβ on a Gly residue?
 
 OK, I admit, this example is only present to show off the possibilities
-of Bio.PDB's `Vector` module (though this code is actually used in the
+of `Bio.PDB`'s `Vector` module (though this code is actually used in the
 `HSExposure` module, which contains a novel way to parametrize residue
 exposure - publication underway). Suppose that you would like to find
 the position of a Gly residue's Cβ atom, if it had one. How would you do
@@ -916,10 +927,11 @@ of atoms. The rotation and translation are stored as a tuple in the
 `rotran` attribute of the `Superimposer` object (note that the rotation
 is right multiplying!). The RMSD is stored in the `rmsd` attribute.
 
-The algorithm used by `Superimposer` comes from \\textit{Matrix
-computations, 2nd ed. Golub, G. \\& Van Loan (1989) and makes use of
-singular value decomposition (this is implemented in the general
-`Bio.SVDSuperimposer` module).
+The algorithm used by `Superimposer` comes from [Matrix
+computations, 2nd ed. Golub, G. & Van Loan
+(1989)](http://web.mit.edu/ehliu/Public/sclark/Golub%20G.H.,%20Van%20Loan%20C.F.-%20Matrix%20Computations.pdf)
+and makes use of singular value decomposition (this is implemented in the
+general `Bio.SVDSuperimposer` module).
 
 Example:
 
@@ -952,7 +964,7 @@ Other Structural Bioinformatics modules
 
 #### Bio.SCOP
 
-See the main Biopython tutorial.
+See the main [Biopython tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html).
 
 #### Bio.FSSP
 
@@ -968,7 +980,7 @@ the morning (with a bit of luck...).
 Contributors
 ------------
 
-The main author/maintainer of Bio.PDB is:
+The main author/maintainer of `Bio.PDB` is:
 
 > [Thomas Hamelryck](mailto:thamelry@binf.ku.dk)
 > Bioinformatics center

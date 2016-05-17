@@ -1,5 +1,5 @@
 ---
-title: SourceCode
+title: Source Code
 permalink: wiki/SourceCode
 layout: page
 redirect_from:
@@ -7,13 +7,15 @@ redirect_from:
  - /wiki/Git
  - /wiki/SVN
  - /wiki/Subversion
+ - /wiki/Tracking_commits
+ - /wiki/Tracking_CVS_commits
 ---
 
 ### Introduction
 
 The source code from Biopython is freely available for your use and
 contribution under our [liberal
-license](http://www.biopython.org/DIST/LICENSE).
+license](https://github.com/biopython/DIST/blob/gh-pages/LICENSE).
 
 The [Biopython source code](http://github.com/biopython/biopython) is
 kept under a distributed version control system which allows multiple
@@ -26,17 +28,18 @@ Linus Torvalds for Linux kernel development) hosted on
 Our core developers maintain a stable trunk from which we will roll
 releases as new functionality is integrated and bugs are fixed.
 
-### Viewing the source code
+### Viewing the Source Code
 
 You can [browse our latest source code on
 github](http://github.com/biopython/biopython).
 
-### Track changes
+### Track Changes
 
-You can [track changes](Tracking_commits "wikilink") via
-[RSS](https://en.wikipedia.org/wiki/RSS).
+You can track code development by [RSS feed](https://github.com/biopython/biopython/commits/master.atom)
+or the [Biopython Development mailing list](mailto:biopython-dev@biopython.org).
+See also our other [mailing lists](Mailing_lists "wikilink").
 
-### Downloading the latest source
+### Downloading the Latest Source
 
 You can download the latest source code by clicking the Download link
 near the top of the [Biopython GitHub
@@ -50,14 +53,18 @@ Getting a copy of the repository (called "cloning" in git terminology)
 is very simple using the git command line tool, you don't need an
 account or password:
 
-`git clone `[`git://github.com/biopython/biopython.git`](git://github.com/biopython/biopython.git)
+``` bash
+git clone git://github.com/biopython/biopython.git
+```
 
 This command creates a local copy of the entire Biopython repository on
 your machine (your own personal copy of the official repository with its
 complete history). You can update this local copy at the command line
 (from within the Biopython repository directory) with:
 
-`git pull origin`
+``` bash
+git pull origin
+```
 
 You can even make *local* changes and commit them to this local copy,
 see [GitUsage](GitUsage "wikilink") or the git documentation for further

@@ -5,7 +5,8 @@ layout: wiki
 ---
 
 This page will outlined plans for migrating Biopython from
-[CVS](CVS "wikilink") to [Subversion (SVN)](SVN "wikilink"), although in
+[CVS](SourceCode#migration-from-cvs "wikilink") to [Subversion
+(SVN)](SourceCode#migration-from-cvs "wikilink"), although in
 the end we [switched straight to Git](GitMigration "wikilink") instead.
 
 Biopython Users
@@ -21,47 +22,43 @@ Download and install either
 [TortoiseSVN](http://tortoisesvn.tigris.org/) or
 [RapidSVN](http://www.rapidsvn.org/). There is also a binary available
 for a command line based Subversion client; see the [Subversion
-website](http://subversion.tigris.org/project_packages.html#binary-packages).
+website](http://subversion.apache.org/packages.html).
 
 #### Mac OS X
 
 Download and install Subversion via [Fink](http://fink.sourceforge.net/)
 or the [binary
-package](http://subversion.tigris.org/project_packages.html#binary-packages).
+package](http://subversion.apache.org/packages.html).
 
 #### Linux
 
 Some distributions come with the Subversion packages by default, or they
 may have already been installed by your system administrator. Verify
-whether you have Subversion installed using \`which\` <code>
+whether you have Subversion installed using `which`:
 
-    user@compy$ which svn
-    /usr/bin/svn
-    user@compy$
-
-</code>
+``` bash
+user@compy$ which svn
+/usr/bin/svn
+user@compy$
+```
 
 In the above example, Subversion is installed and its executable is
 located within `/usr/bin/`.
 
-<code>
+``` bash
+user@compy$ which svn
+user@compy$
+```
 
-    user@compy$ which svn
-    user@compy$
-
-</code>
-
-On the other hand, in the above example, `which` `svn` returns nothing.
+On the other hand, in the above example, `which svn` returns nothing.
 This indicates Subversion is not likely installed. You or your system
 administrator will need to use the appropriate package manager to
 download and install the packages for Subversion. For example, on
 Ubuntu, users would execute the following:
 
-<code>
-
-    user@compy$ sudo apt-get update && sudo apt-get install subversion
-
-</code>
+``` bash
+user@compy$ sudo apt-get update && sudo apt-get install subversion
+```
 
 Biopython Developers
 --------------------
@@ -76,5 +73,5 @@ Biopython Migration Strategy
 Currently this is being discussed on the Biopython developers [mailing
 list](Mailing_lists "wikilink"), where there is a general consensus that
 moving to a distributed version control system (DVCS) would be more
-worthwhile than simple moving from CVS to SVN. See the [git
-migration](GitMigration "wikilink") page.
+worthwhile than simple moving from CVS to SVN. See the
+[GitMigragion](GitMigration "wikilink") page.

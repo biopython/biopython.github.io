@@ -2,6 +2,8 @@
 title: Methods for Degenerated Codons
 permalink: wiki/Degenerated_Codons
 layout: wiki
+tags:
+ - Cookbook
 redirect_from:
  - /wiki/Degenerated
 ---
