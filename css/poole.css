@@ -292,6 +292,7 @@ tbody tr:nth-child(odd) th {
  */
 
 .container {
+  position: relative;
   max-width: 38rem;
   margin-left:  auto;
   margin-right: auto;

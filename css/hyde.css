@@ -45,6 +45,20 @@ html {
   }
 }
 
+/* Head
+ *
+ * Home of 'Edit this page'
+ */
+.head {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+} 
+
+hr.head {
+  left: 1rem;
+}
+
 
 /*
  * Sidebar
@@ -84,6 +98,9 @@ html {
   .container {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+  .head {
+  top: 1rem;
   }
 }
 
