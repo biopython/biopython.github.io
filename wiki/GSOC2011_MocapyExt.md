@@ -53,11 +53,9 @@ smooth acceptance of the changes introduced by MocapyEXT.
 Author & Mentors
 ----------------
 
-[Justinas V. Daugmaudis](User%3AJustinas_Daugmaudis "wikilink")
-vygis.d@gmail.com
+Justinas V. Daugmaudis (vygis.d@gmail.com)
 
 **Mentors**
-
 
 Thomas Hamelryck
 
