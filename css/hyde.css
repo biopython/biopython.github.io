@@ -114,6 +114,23 @@ a.sidebar-nav-item:focus {
   }
 }
 
+/* Head
+ *
+ * Home of 'Edit this page'
+ */
+ 
+.head a{
+   position: absolute;
+   top: 1rem;
+   right: 1rem;
+}
+.head  hr {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+}
+
 
 /* Container
  *

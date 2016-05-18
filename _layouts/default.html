@@ -6,7 +6,8 @@
   <body>
 
     {% include sidebar.html %}
-
+    <a href="https://github.com/{{ site.github.repository_nwo }}/edit/master/{{ page.path }}" class="head">Edit this page on GitHub</a>
+    <hr class="head"/>
     <div class="content container">
       {{ content }}
     </div>
