@@ -10,19 +10,13 @@ Setup required for a new release manager
 ----------------------------------------
 
 The instructions below require that you have access to a few servers and
-the code repository. When you start, be sure to have access to:
+the code repository. When you start, be sure to have write access to:
 
-1. Write access to the GitHub Biopython repo.
-
-2. biopython.org aka cloudportal.open-bio.org. You need to have write
-access to write the API and the source tarballs and Windows installers
-(might require 2 different operations) under the DIST folder.
-
-3. Wordpress news.open-bio.org with posting permissions.
-
-4. pypi - associated with Biopython.
-
-5. Writing permissions on the wiki page.
+1. [GitHub Biopython source code repository](https://github.com/biopython/biopython)
+2. [GitHub biopython.org website repository](https://github.com/biopython/biopython.github.io)
+3. [GitHub biopython.org/DIST/ repository](https://github.com/biopython/DIST)
+4. [OBF WordPress Blog](https://news.open-bio.org)
+5. [Biopython on PyPI](https://pypi.python.org/pypi/biopython)
 
 If you don't have any of the above, please ask.
 
