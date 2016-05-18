@@ -16,3 +16,5 @@ Disallow: /DIST/docs/_api_164/
 Disallow: /DIST/docs/_api_165/
 Disallow: /static/
 Disallow: /wiki/Special:*
+Disallow: /wiki/Talk:*
+Disallow: /wiki/Html/
