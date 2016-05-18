@@ -2,6 +2,8 @@
 title: Scriptcentral
 permalink: wiki/Scriptcentral
 layout: page
+redirect_from:
+ - /scriptcentral/
 ---
 
 |             |                                                                                                                                                                                    |
