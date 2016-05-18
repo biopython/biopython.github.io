@@ -22,9 +22,13 @@ It is a distributed collaborative effort to develop Python libraries and
 applications which address the needs of current and future work in
 bioinformatics. The source code is made available under the [Biopython
 License](http://www.biopython.org/DIST/LICENSE), which is extremely
-liberal and compatible with almost every license in the world. We work
-along with the [Open Bioinformatics Foundation](http://open-bio.org),
-who generously host our website, bug tracker, and mailing lists.
+liberal and compatible with almost every license in the world.
+
+We are a member project of the
+[Open Bioinformatics Foundation (OBF)](http://open-bio.org),
+who take care of our domain name and hosting for our mailing list etc.
+The OBF used to host our developement repository, issue tracker and
+website but these are now on [GitHub](https://github.com/biopython).
 
 This wiki will help you download and install Biopython, and start using
 the libraries and tools.
