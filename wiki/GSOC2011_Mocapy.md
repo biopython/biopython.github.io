@@ -55,7 +55,7 @@ prediction, design, and simulation.
 Author & Mentors
 ----------------
 
-[Michele Silva](User%3AMchelem "wikilink") michele.silva@gmail.com
+[Michele Silva](https://github.com/mchelem) (michele.silva@gmail.com)
 
 **Mentors**
 
