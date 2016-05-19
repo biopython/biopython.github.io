@@ -10,7 +10,7 @@ redirect_from:
 ---
 
 See also our
-[News feed](https://news.open-bio.org/category/obf-projects/biopython/)
+[News feed](http://news.open-bio.org/category/obf-projects/biopython/feed/rss)
 and [Twitter](https://twitter.com/biopython).
 
 ### Introduction
@@ -22,7 +22,7 @@ developers.
 It is a distributed collaborative effort to develop Python libraries and
 applications which address the needs of current and future work in
 bioinformatics. The source code is made available under the [Biopython
-License](http://www.biopython.org/DIST/LICENSE), which is extremely
+License](https://github.com/biopython/biopython/blob/master/LICENSE), which is extremely
 liberal and compatible with almost every license in the world.
 
 We are a member project of the
