@@ -14,3 +14,8 @@
 
 #Ignore hidden files from Dolphin window manager
 .directory
+
+#Jekyll specific files
+_site/
+.sass-cache/
+.jekyll-metadata
