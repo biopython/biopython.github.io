@@ -30,3 +30,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+_site/
+.sass-cache/
+.jekyll-metadata
