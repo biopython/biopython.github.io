@@ -1,5 +1,6 @@
 ---
 title: Biopython.org website README
+layout: default
 ---
 
 The git repository at <https://github.com/biopython/biopython.github.io/>
