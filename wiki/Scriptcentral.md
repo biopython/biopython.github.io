@@ -29,7 +29,7 @@ redirect_from:
 
 |             |                                                                                                                                                  |
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| Name        | GenomeDiagram                                                                                                                                    |
+| Name        | GenomeDiagram (included in Biopython since release 1.50) |
 | Author      | Leighton Pritchard                                                                                                                               |
 | URL         | <https://ics.hutton.ac.uk/software/tools/>                                                                                                      |
 | Description | A genomic and biological sequence schematic drawing package. Creates publication-quality genome schematics in several vector and bitmap formats. |
