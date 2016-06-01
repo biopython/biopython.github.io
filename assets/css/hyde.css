@@ -41,7 +41,7 @@ html {
 }
 @media (min-width: 58em) {
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -79,7 +79,7 @@ hr.head {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 18rem;
+    width: 16rem;
     text-align: left;
     padding: 2rem 1rem;
   }
@@ -164,16 +164,16 @@ a.sidebar-nav-item:focus {
 @media (min-width: 48em) {
   .content {
     max-width: 46rem;
-    margin-left: 20rem;
+    margin-left: 17rem;
     margin-right: 2rem;
     padding-top: 4rem;
     padding-bottom: 1rem;
   }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 58em) {
   .content {
-    margin-left: 22rem;
+    margin-left: 18rem;
     margin-right: 4rem;
     padding-top: 4rem;
     padding-bottom: 1rem;
