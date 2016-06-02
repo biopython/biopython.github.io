@@ -1,5 +1,5 @@
 ---
-title: Cookbook entries
+title: Cookbook Entries
 permalink: wiki/Category:Cookbook
 layout: tagpage
 tag: Cookbook

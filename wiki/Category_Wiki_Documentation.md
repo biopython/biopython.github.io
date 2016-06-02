@@ -1,5 +1,5 @@
 ---
-title: Category:Wiki Documentation
+title: Wiki Documentation
 permalink: wiki/Category:Wiki_Documentation
 layout: tagpage
 tag: Wiki Documentation

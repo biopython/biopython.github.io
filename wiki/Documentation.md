@@ -29,7 +29,7 @@ below.
 
     [HTML](http://biopython.org/DIST/docs/api)
 
--   Wiki documentation,
+-   [Wiki documentation](Category%3AWiki_Documentation "wikilink")
     -   [Seq](Seq "wikilink") and [SeqRecord](SeqRecord "wikilink")
         objects
     -   [Bio.SeqIO](SeqIO "wikilink") - sequence input/output
