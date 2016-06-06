@@ -32,30 +32,30 @@ needed to test and prepare the Windows installers.
    $ git pull origin master
    ```
 
-2. bump version numbers and set the release data:
+2. make sure the `README` file is still up to date
 
-   - Biopython version - edit `Bio/__init__.py`
-   - Biopython Tutorial - update the date/version line in the
-     `Doc/Tutorial.tex` file
-   - Biopython `README` - fill in the release date
-   - Make sure to commit the modified files to github.
-
-3. make sure the `README` file is still up to date
-
-4. add any important info to `NEWS` or `DEPRECATED` - you can get a
+3. add any important info to `NEWS` or `DEPRECATED` - you can get a
    log of recent git changes like this (adjust the date accordingly):
 
    ``` bash
    $ git log --since="2009/08/30" --reverse --pretty="medium"
    ```
 
-5. make sure `CONTRIB` still current
+4. make sure `CONTRIB` still current
 
-6. make sure setup.py is still up to date
+5. make sure `setup.py` is still up to date
 
    - Are there any new modules which should get installed?
    - You don't need to update version in `setup.py` itself
      (this is now done in `Bio/__init__.py` as described above)
+
+6. bump version numbers and set the release data:
+
+   - Biopython version - edit `Bio/__init__.py`
+   - Biopython Tutorial - update the date/version line in the
+     `Doc/Tutorial.tex` file
+   - Biopython `README` - fill in the release date
+   - Make sure to commit the modified files to github.
 
 7. do last check to make sure things are checked in:
 
