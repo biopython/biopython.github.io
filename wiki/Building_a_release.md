@@ -54,8 +54,12 @@ needed to test and prepare the Windows installers.
    - Biopython version - edit `Bio/__init__.py`
    - Biopython Tutorial - update the date/version line in the
      `Doc/Tutorial.tex` file
-   - Biopython `README` - fill in the release date
-   - Make sure to commit the modified files to github.
+   - Biopython `NEWS` - fill in the release date
+   - Make sure to commit the modified files to github, e.g.
+
+   ``` bash
+   $ git commit Bio/__init__.py Doc/Tutorial.tex NEWS -m "Call this Biopython 1.67"
+   ```
 
 7. do last check to make sure things are checked in:
 
