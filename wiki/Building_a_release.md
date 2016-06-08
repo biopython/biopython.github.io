@@ -135,7 +135,10 @@ needed to test and prepare the Windows installers.
 13. untar the file somewhere else
 
     ``` bash
-    drevil:~tmp2> tar -xzvf ../tmp1/biopython/dist/biopython-1.53.tar.gz
+    drevil:~tmp1/biopython/> cd ..
+    drevil:~tmp1/> mkdir tmp2
+    drevil:~tmp1/> cd tmp2
+    drevil:~tmp2/> tar -xzvf ../tmp1/biopython/dist/biopython-1.57.tar.gz
     ```
 
     - Check to make sure it includes the HTML and PDF files under Doc
@@ -143,9 +146,9 @@ needed to test and prepare the Windows installers.
 14. make sure I can build and test it
 
     ``` bash
-    drevil:~tmp2/biopython-1.53/> python setup.py build
-    drevil:~tmp2/biopython-1.53/> python setup.py test
-    drevil:~tmp2/biopython-1.53/> python setup.py install --root .
+    drevil:~tmp2/biopython-1.57/> python setup.py build
+    drevil:~tmp2/biopython-1.57/> python setup.py test
+    drevil:~tmp2/biopython-1.57/> python setup.py install --root .
     ```
 
     A typical source of failure here (on the tests) is the lack of example
