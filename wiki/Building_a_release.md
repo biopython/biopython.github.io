@@ -158,14 +158,14 @@ needed to test and prepare the Windows installers.
 
     - If you haven't already, checkout the ``DIST`` repository, and remove
       the old version of the API documentation which we're going to replace:
-    
+
     ``` bash
     $ cd ~/repositories
     $ git clone git@github.com:biopython/DIST.git
     $ cd ~/repositories/DIST
     $ git rm docs/api/*.html
     ```
-    
+
     - Go to the `/tmp/test-install/lib/python2.7/site-packages` directory. This is the
       directory created under your source installation after the install step above.
       Running epydoc in your git tree works, but can miss some packages due to import
@@ -176,8 +176,7 @@ needed to test and prepare the Windows installers.
     $ grep "__version__" Bio/__init__.py
     __version__ = "1.67"
     $ epydoc -v -o ~/repositories/DIST/docs/api/ -u http://biopython.org -n Biopython --docformat restructuredtext Bio BioSQL
-    $ grep "__version__" ~/repositories/DIST/docs/api/*.html
-    $ grep "__version__" ~/repositories/DIST/docs/api/Bio-pysrc.html 
+    $ grep "__version__" ~/repositories/DIST/docs/api/Bio-pysrc.html
     <a name="L13"></a><tt class="py-lineno"> 13</tt>  <tt class="py-line"><tt class="py-name">__version__</tt> <tt class="py-op">=</tt> <tt class="py-string">"1.67"</tt> </tt>
     ```
 
@@ -254,7 +253,7 @@ releases):
 
    - You need to have a login on pypi and be registered with Biopython to be
      able to upload the new version
- 
+
    - Check this is live at <https://pypi.python.org/pypi/biopython/>
 
 21. Update the website and announce the release:
