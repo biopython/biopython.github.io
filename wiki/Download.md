@@ -238,8 +238,6 @@ dependencies).
 
 Old Releases
 ============
-***Due to the recent moving of the Biopython homepage, many versions are still missing -
-they will be uploaded in due time***
 
 Recent releases of Biopython require NumPy (and not Numeric):
 
