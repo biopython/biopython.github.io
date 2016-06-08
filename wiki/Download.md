@@ -606,8 +606,9 @@ not its replacement NumPy. Windows installers for Python 2.4 and older
 are available from the [Numerical
 Python](http://numpy.scipy.org/#older_array) website. A Windows
 installer for Numeric 24.2 for Python 2.5 is available here:
-[Numeric-24.2.win32-py2.5.exe](https://sourceforge.net/projects/numpy/files/Old%20Numeric/24.2/)
-446 Kb
+
+-   [Numeric-24.2.win32-py2.5.exe](https://sourceforge.net/projects/numpy/files/Old%20Numeric/24.2/)
+    446 Kb - Windows Installer for Python 2.5
 
 Please note that Biopython 1.48 and older used [mxTextTools
 2.0](http://www.egenix.com/www2002/python/eGenix-mx-Extensions-v2.x.html/)
