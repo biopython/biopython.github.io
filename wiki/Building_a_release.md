@@ -109,8 +109,8 @@ needed to test and prepare the Windows installers.
 9. check out clean version somewhere else:
 
    ``` bash
-   drevil:~tmp1/> git clone git://github.com/biopython/biopython.git
-   drevil:~tmp1/> cd biopython
+   drevil:~tmp1/> git clone git://github.com/biopython/biopython.git
+   drevil:~tmp1/> cd biopython
    ```
 
 10. make documentation PDF, text and HTML files in Doc:
@@ -136,10 +136,8 @@ needed to test and prepare the Windows installers.
 
     ``` bash
     drevil:~tmp1/biopython/> cd ..
-    drevil:~tmp1/> mkdir tmp2
-    drevil:~tmp1/> cd tmp2
-    drevil:~tmp2/> tar -xzvf ../tmp1/biopython/dist/biopython-1.67.tar.gz
-    drevil:~tmp2/> cd biopython-1.67
+    drevil:~tmp1/> tar -xzvf biopython/dist/biopython-1.67.tar.gz
+    drevil:~tmp1/> cd biopython-1.67
     ```
 
     - Check to make sure it includes the HTML and PDF files under Doc
@@ -147,41 +145,76 @@ needed to test and prepare the Windows installers.
 14. make sure I can build and test it
 
     ``` bash
-    drevil:~tmp2/biopython-1.67/> python setup.py build
-    drevil:~tmp2/biopython-1.67/> python setup.py test
-    drevil:~tmp2/biopython-1.67/> python setup.py install --root .
+    drevil:~tmp1/biopython-1.67/> python setup.py build
+    drevil:~tmp1/biopython-1.67/> python setup.py test
+    drevil:~tmp1/biopython-1.67/> python setup.py install --prefix /tmp/test-install
     ```
 
     A typical source of failure here (on the tests) is the lack of example
     files being added to the source distribution: add them to `MANIFEST.in`
 
-15. Update API documentation using Epydoc (this can often report
-otherwise overlooked errors).
+15. Update API documentation using Epydoc (this can often report otherwise overlooked
+    errors).
 
-    - Go to the `./lib/python2.7/site-packages` directory. This is the
-      directory created under your source installation after the install
-      step above (the name might vary a bit - it should be the place where
-      the source packages were "installed"). Running epydoc in your git
-      tree works, but can miss some packages due to import errors.
+    - If you haven't already, checkout the ``DIST`` repository, and remove
+      the old version of the API documentation which we're going to replace:
+    
+    ``` bash
+    $ cd ~/repositories
+    $ git clone git@github.com:biopython/DIST.git
+    $ cd ~/repositories/DIST
+    $ git rm docs/api/*.html
+    ```
+    
+    - Go to the `/tmp/test-install/lib/python2.7/site-packages` directory. This is the
+      directory created under your source installation after the install step above.
+      Running epydoc in your git tree works, but can miss some packages due to import
+      errors.
 
     ``` bash
-    $ epydoc -v -o ~/api -u http://biopython.org -n Biopython --docformat restructuredtext Bio BioSQL
-    $ zip api.zip -r ~/api/
-    $ scp api.zip biopython.org:.
+    $ cd /tmp/test-install/lib/python2.7/site-packages
+    $ grep "__version__" Bio/__init__.py
+    __version__ = "1.67"
+    $ epydoc -v -o ~/repositories/DIST/docs/api/ -u http://biopython.org -n Biopython --docformat restructuredtext Bio BioSQL
+    $ grep "__version__" ~/repositories/DIST/docs/api/*.html
+    $ grep "__version__" ~/repositories/DIST/docs/api/Bio-pysrc.html 
+    <a name="L13"></a><tt class="py-lineno"> 13</tt>  <tt class="py-line"><tt class="py-name">__version__</tt> <tt class="py-op">=</tt> <tt class="py-string">"1.67"</tt> </tt>
     ```
 
-    - Move the generated `~/api` directory to replace
-      /home/websites/biopython.org/html/static/DIST/docs/api/ on
-      biopython.org (aka cloudportal.open-bio.org).
-    - Also update
-      /home/websites/biopython.org/html/static/DIST/docs/tutorial with the
-      tutorial files
+    - Assuming no mismatches in version number (which would suggest epydoc is not looking
+      at the new test installation), commit these new HTML files to the `gh-pages` branch:
+
+    ``` bash
+    $ cd ~/repositories/DIST
+    $ git add docs/api/*
+    $ git commit -m "epydoc for Biopython 1.67"
+    ```
+
+    - Update the tutorial too:
+
+    ``` bash
+    $ cd ~/repositories/DIST/docs/tutorial/
+    $ cp .../tmp1/biopython/Doc/Tutorial.html .
+    $ cp .../tmp1/biopython/Doc/Tutorial.pdf .
+    $ git commit Tutorial.html Tutorial.pdf -m "Tutorial for Biopython 1.67"
+    ```
+
+    - Push this to GitHub Pages to update the website:
+
+   ``` bash
+    $ git push origin gh-pages
+    ```
+
+    - Check this is live at <http://biopython.org/DIST/docs/api/Bio-module.html>,
+      <http://biopython.org/DIST/docs/tutorial/Tutorial.html>, and
+      <http://biopython.org/DIST/docs/tutorial/Tutorial.pdf>
 
 16. add git tag
 
     ``` bash
-    $ git tag biopython-159
-    $ git push origin master --tags
+    $ cd  .../tmp1/biopython/
+    $ git tag biopython-167
+    $ git push origin master --tags
     ```
 
 17. On your windows machine, build the Windows installers (either from a
@@ -216,7 +249,8 @@ on biopython.org (aka cloudportal.open-bio.org).
 releases):
 
     ``` bash
-    $ python setup.py register sdist upload
+    $ cd  .../tmp1/biopython/
+    $ python setup.py register sdist upload
     ```
 
     You need to have a login on pypi and be registered with Biopython to be
