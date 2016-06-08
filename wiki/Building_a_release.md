@@ -228,6 +228,13 @@ your compilers etc appropriately just do this:
     C:\python33\python setup.py bdist_wininst
     C:\python34\python setup.py bdist_wininst
     C:\python35\python setup.py bdist_wininst
+    ```
+
+    and:
+
+    ```
+    C:\python33\python setup.py bdist_msi
+    C:\python34\python setup.py bdist_msi
     C:\python35\python setup.py bdist_msi
     ```
 
