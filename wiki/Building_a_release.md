@@ -116,22 +116,20 @@ needed to test and prepare the Windows installers.
 10. make documentation PDF, text and HTML files in Doc:
 
     ``` bash
-    drevil:~biopython> cd Doc
-    drevil:~biopython/Doc> make
-    drevil:~biopython/Doc> make clean
-    drevil:~biopython/Doc> cd ..
+    drevil:~tmp1/biopython/> make -C Doc
+    drevil:~tmp1/biopython/> make clean -C Doc
     ```
 
 11. make `MANIFEST`. First, make sure `MANIFEST.in` is up to date.
 
     ``` bash
-    $ python setup.py sdist --manifest-only
+    drevil:~tmp1/biopython> python setup.py sdist --manifest-only
     ```
 
 12. make the source distribution
 
     ``` bash
-    drevil:~tmp1/biopython> python setup.py sdist --formats=gztar,zip
+    drevil:~tmp1/biopython> python setup.py sdist --formats=gztar,zip
     ```
 
 13. untar the file somewhere else
