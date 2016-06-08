@@ -20,6 +20,18 @@ new](https://github.com/biopython/biopython/raw/master/NEWS).
     14Mb -- Source Tarball
 -   [biopython-1.67.zip](http://biopython.org/DIST/biopython-1.67.zip)
     15Mb -- Source Zip File
+-   [biopython-1.67.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.67.win32-py2.6.exe)
+    2Mb -- 32 bit Windows .exe Installer for Python 2.6 and NumPy 1.8.2
+-   [biopython-1.67.win32-py2.7.exe](http://biopython.org/DIST/biopython-1.67.win32-py2.7.exe)
+    2Mb -- 32 bit Windows .exe Installer for Python 2.7 and NumPy 1.9.1
+-   [biopython-1.67.win32-py3.3.exe](http://biopython.org/DIST/biopython-1.67.win32-py3.3.exe)
+    2Mb -- 32 bit Windows .exe Installer for Python 3.3 and NumPy 1.9.1
+-   [biopython-1.67.win32-py3.3.msi](http://biopython.org/DIST/biopython-1.67.win32-py3.3.msi)
+    2Mb -- 32 bit Windows .exe Installer for Python 3.3 and NumPy 1.9.1
+-   [biopython-1.67.win32-py3.4.exe](http://biopython.org/DIST/biopython-1.67.win32-py3.4.exe)
+    2Mb -- 32 bit Windows .exe Installer for Python 3.4 and NumPy 1.9.1
+-   [biopython-1.67.win32-py3.4.msi](http://biopython.org/DIST/biopython-1.67.win32-py3.4.msi)
+    2Mb -- 32 bit Windows .msi Installer for Python 3.4 and NumPy 1.9.1
 
 Please report any issues on our [mailing
 lists](Mailing_lists "wikilink") or [bug
