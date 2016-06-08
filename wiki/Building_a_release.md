@@ -29,7 +29,7 @@ needed to test and prepare the Windows installers.
 1. make sure I have the latest code:
 
    ``` bash
-   $ git pull origin master
+   $ git pull origin master
    ```
 
 2. make sure the `README` file is still up to date
@@ -38,7 +38,7 @@ needed to test and prepare the Windows installers.
    log of recent git changes like this (adjust the date accordingly):
 
    ``` bash
-   $ git log --since="2009/08/30" --reverse --pretty="medium"
+   $ git log --since="2016/01/01" --reverse --pretty="medium"
    ```
 
 4. make sure `CONTRIB` still current
@@ -64,17 +64,17 @@ needed to test and prepare the Windows installers.
 7. do last check to make sure things are checked in:
 
    ``` bash
-   $ rm -r build
-   $ rm Tests/*.pyc
-   $ make clean -C Doc
-   $ git status
+   $ rm -r build
+   $ rm Tests/*.pyc
+   $ make clean -C Doc
+   $ git status
    ```
 
 8. build Biopython and do last regression test:
 
    ``` bash
-   drevil:~biopython> python setup.py build
-   drevil:~biopython> python setup.py test
+   drevil:~biopython> python setup.py build
+   drevil:~biopython> python setup.py test
    ```
 
    Ideally do this with a clean checkout on your Windows machine too.
@@ -82,17 +82,17 @@ needed to test and prepare the Windows installers.
    this:
 
    ```
-   C:\python26\python setup.py build
-   C:\python26\python setup.py test
+   C:\python26\python setup.py build
+   C:\python26\python setup.py test
 
-   C:\python27\python setup.py build
-   C:\python27\python setup.py test
+   C:\python27\python setup.py build
+   C:\python27\python setup.py test
 
-   C:\python33\python setup.py build
-   C:\python33\python setup.py test
+   C:\python33\python setup.py build
+   C:\python33\python setup.py test
 
-   C:\python34\python setup.py build
-   C:\python34\python setup.py test
+   C:\python34\python setup.py build
+   C:\python34\python setup.py test
    ```
 
    If you are using MinGW, do not forget to add `--compiler=mingw32`
@@ -239,11 +239,10 @@ your compilers etc appropriately just do this:
     distutils](http://stackoverflow.com/questions/3297254/how-to-use-mingws-gcc-compiler-when-installing-python-package-using-pip)
 
 18. Remove any prior Biopython installations on your windows machine,
-and confirm the Windows installers work.
+and confirm the Windows installers work. Then copy them to your Linux
+machine.
 
-19. scp or ftp the `.tar.gz`, `.zip` and Windows installer files to the
-Biopython website, folder /home/websites/biopython.org/html/static/DIST/
-on biopython.org (aka cloudportal.open-bio.org).
+19. Upload the new release to the website via GitHub Pages `DIST` repository.
 
 20. Upload to the python package index (except for beta/alpha level
 releases):
@@ -253,10 +252,30 @@ releases):
     $ python setup.py register sdist upload
     ```
 
-    You need to have a login on pypi and be registered with Biopython to be
-    able to upload the new version.
+   - You need to have a login on pypi and be registered with Biopython to be
+     able to upload the new version
+ 
+   - Check this is live at <https://pypi.python.org/pypi/biopython/>
 
 21. Update the website and announce the release:
+
+    - If you haven't already, clone the ``biopython.github.io`` repository,
+      (otherwise make sure your copy is up to date):
+
+    ``` bash
+    $ cd ~/repositories
+    $ git clone git@github.com:biopython/biopython.github.io.git
+    ```
+
+     - Update the website:
+
+    ``` bash
+    $ cd ~/repositories/biopython.github.io
+    $ emacs _config.yml
+    $ emacs wiki/Biopython.md
+    $ emacs wiki/Download.md
+    $ git commit _config.yml wiki/Biopython.md wiki/Download.md -m "Biopython 1.67 released"
+    ```
 
     - before you announce the release, be sure to send your announcement
       text to the biopython-dev mailing list for
