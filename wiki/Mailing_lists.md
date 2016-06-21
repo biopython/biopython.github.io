@@ -2,6 +2,15 @@
 title: Mailing lists
 permalink: wiki/Mailing_lists
 layout: page
+redirect_from:
+ - /mailman
+ - /mailman/
+ - /mailman/listinfo
+ - /mailman/listinfo/
+ - /mailman/listinfo/biopython
+ - /mailman/listinfo/biopython/
+ - /mailman/listinfo/biopython-dev
+ - /mailman/listinfo/biopython-dev/
 ---
 
 ### Discussion and questions
