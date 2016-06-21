@@ -15,6 +15,7 @@ Disallow: /DIST/docs/_api_163b/
 Disallow: /DIST/docs/_api_164/
 Disallow: /DIST/docs/_api_165/
 Disallow: /static/
+Disallow: /pipermail/
 Disallow: /info/
 Disallow: /w/index.php*
 Disallow: /wiki/Special:*
