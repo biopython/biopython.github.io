@@ -32,16 +32,18 @@ Biopython:
     -   Add "(DEPRECATED)" to the first line of the module docstring
     -   Use the module docstring to explain any migration needed,
         ideally with examples or a reference to the tutorial.
-    -   Most importantly, add a DeprecationWarning to the code:
+    -   Most importantly, add a ``BiopythonDeprecationWarning`` to the
+        code (Python's ``DeprecationWarning`` is silent by default):
 
 ```
 import warnings
+from Bio import BiopythonDeprecationWarning
 warnings.warn("Bio.SomeModule has been deprecated, and we intend to remove it"
               " in a future release of Biopython. Please use the SomeOtherModule"
               " instead, as described in the Tutorial. If you would like to"
               " continue using Bio.SomeModule, please contact the Biopython"
               " developers via the mailing list.",
-              DeprecationWarning)
+              BiopythonDeprecationWarning)
 ```
 
 -   In principle, we require that two Biopython releases carrying the
