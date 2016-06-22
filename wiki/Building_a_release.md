@@ -254,8 +254,10 @@ machine.
 releases):
 
     ``` bash
-    $ cd  .../tmp1/biopython/
-    $ python setup.py register sdist upload
+    $ cd  .../biopython/
+    $ pip install twine
+    $ twine register dist/biopython-1.XX.tar.gz
+    $ twine upload dist/biopython-1.XX.tar.gz
     ```
 
    - You need to have a login on pypi and be registered with Biopython to be
