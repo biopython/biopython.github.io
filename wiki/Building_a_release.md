@@ -58,7 +58,7 @@ needed to test and prepare the Windows installers.
    - Make sure to commit the modified files to github, e.g.
 
    ``` bash
-   $ git commit Bio/__init__.py Doc/Tutorial.tex NEWS -m "Call this Biopython 1.67"
+   $ git commit Bio/__init__.py Doc/Tutorial.tex NEWS -m "Call this Biopython 1.68"
    ```
 
 7. do last check to make sure things are checked in:
@@ -136,8 +136,8 @@ needed to test and prepare the Windows installers.
 
     ``` bash
     drevil:~tmp1/biopython/> cd ..
-    drevil:~tmp1/> tar -xzvf biopython/dist/biopython-1.67.tar.gz
-    drevil:~tmp1/> cd biopython-1.67
+    drevil:~tmp1/> tar -xzvf biopython/dist/biopython-1.68.tar.gz
+    drevil:~tmp1/> cd biopython-1.68
     ```
 
     - Check to make sure it includes the HTML and PDF files under Doc
@@ -145,9 +145,9 @@ needed to test and prepare the Windows installers.
 14. make sure I can build and test it
 
     ``` bash
-    drevil:~tmp1/biopython-1.67/> python setup.py build
-    drevil:~tmp1/biopython-1.67/> python setup.py test
-    drevil:~tmp1/biopython-1.67/> python setup.py install --prefix /tmp/test-install
+    drevil:~tmp1/biopython-1.68/> python setup.py build
+    drevil:~tmp1/biopython-1.68/> python setup.py test
+    drevil:~tmp1/biopython-1.68/> python setup.py install --prefix /tmp/test-install
     ```
 
     A typical source of failure here (on the tests) is the lack of example
@@ -174,10 +174,10 @@ needed to test and prepare the Windows installers.
     ``` bash
     $ cd /tmp/test-install/lib/python2.7/site-packages
     $ grep "__version__" Bio/__init__.py
-    __version__ = "1.67"
+    __version__ = "1.68"
     $ epydoc -v -o ~/repositories/DIST/docs/api/ -u http://biopython.org -n Biopython --docformat restructuredtext Bio BioSQL
     $ grep "__version__" ~/repositories/DIST/docs/api/Bio-pysrc.html
-    <a name="L13"></a><tt class="py-lineno"> 13</tt>  <tt class="py-line"><tt class="py-name">__version__</tt> <tt class="py-op">=</tt> <tt class="py-string">"1.67"</tt> </tt>
+    <a name="L13"></a><tt class="py-lineno"> 13</tt>  <tt class="py-line"><tt class="py-name">__version__</tt> <tt class="py-op">=</tt> <tt class="py-string">"1.68"</tt> </tt>
     ```
 
     - Assuming no mismatches in version number (which would suggest epydoc is not looking
@@ -186,7 +186,7 @@ needed to test and prepare the Windows installers.
     ``` bash
     $ cd ~/repositories/DIST
     $ git add docs/api/*
-    $ git commit -m "epydoc for Biopython 1.67"
+    $ git commit -m "epydoc for Biopython 1.68"
     ```
 
     - Update the tutorial too:
@@ -195,7 +195,7 @@ needed to test and prepare the Windows installers.
     $ cd ~/repositories/DIST/docs/tutorial/
     $ cp .../tmp1/biopython/Doc/Tutorial.html .
     $ cp .../tmp1/biopython/Doc/Tutorial.pdf .
-    $ git commit Tutorial.html Tutorial.pdf -m "Tutorial for Biopython 1.67"
+    $ git commit Tutorial.html Tutorial.pdf -m "Tutorial for Biopython 1.68"
     ```
 
     - Push this to GitHub Pages to update the website:
@@ -212,7 +212,7 @@ needed to test and prepare the Windows installers.
 
     ``` bash
     $ cd  .../tmp1/biopython/
-    $ git tag biopython-167
+    $ git tag biopython-168
     $ git push origin master --tags
     ```
 
@@ -256,8 +256,8 @@ releases):
     ``` bash
     $ cd  .../biopython/
     $ pip install twine
-    $ twine register dist/biopython-1.XX.tar.gz
-    $ twine upload dist/biopython-1.XX.tar.gz
+    $ twine register dist/biopython-1.68.tar.gz
+    $ twine upload dist/biopython-1.68.tar.gz
     ```
 
    - You need to have a login on pypi and be registered with Biopython to be
@@ -282,7 +282,7 @@ releases):
     $ emacs _config.yml
     $ emacs wiki/Biopython.md
     $ emacs wiki/Download.md
-    $ git commit _config.yml wiki/Biopython.md wiki/Download.md -m "Biopython 1.67 released"
+    $ git commit _config.yml wiki/Biopython.md wiki/Download.md -m "Biopython 1.68 released"
     ```
 
     - before you announce the release, be sure to send your announcement
@@ -314,5 +314,5 @@ and upload it to the main and test Galaxy ToolShed.
       `Doc/Tutorial.tex` file
     - Make sure to commit the modified files to github.
 
-    Add a plus to the version to note that development is after the said
-    version. E.g. if you have `__version__ = "1.61"`, make it `1.61+`
+    Include the suffix ``.dev`` to indicate this is a development version
+    e.g. if you have `__version__ = "1.68"`, make it `1.69.dev`
