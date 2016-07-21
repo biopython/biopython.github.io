@@ -6,6 +6,7 @@
 # see https://docs.travis-ci.com/user/languages/ruby/ and
 # https://pages.github.com/versions/
 
+sudo: false
 language: ruby
 rvm: 2.1.7
 script:
