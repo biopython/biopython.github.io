@@ -314,5 +314,5 @@ and upload it to the main and test Galaxy ToolShed.
       `Doc/Tutorial.tex` file
     - Make sure to commit the modified files to github.
 
-    Include the suffix ``.dev`` to indicate this is a development version
-    e.g. if you have `__version__ = "1.68"`, make it `1.69.dev`
+    Include the suffix ``.dev0`` to indicate this is a development version
+    e.g. if you have `__version__ = "1.68"`, make it `1.69.dev0`
