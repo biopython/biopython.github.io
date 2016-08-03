@@ -342,10 +342,32 @@ delete your now redundant bug fix branch on GitHub. Branches can be
 deleted by selecting 'edit' and then 'delete repository' from the bottom
 of the edit page.
 
-It is mandatory to merge with the current trunk of Biopython (i.e. the
-official repository's master branch), or better yet rebase to the
-current trunk, before submitting your changes to avoid excess work on
-the receiving side.
+If other things have happened since you began your work, it may require
+merging when applied to the official repository's master branch. In this
+case we might ask you to help by rebasing your work:
+
+``` bash
+git fetch upstream
+git checkout demo-branch
+git rebase upstream/master
+```
+
+Hopefully the only changes between your branch and the official repository's
+master branch are trivial and git will handle everything automatically.
+If not, you would have to deal with the clashes manually. If this works,
+you can update the pull request by replacing the existing (pre-rebase)
+branch:
+
+``` bash
+git push origin demo-branch --force
+```
+
+If however the rebase does not go smoothly, give up with the following command
+(and hopefully the Biopython developers can sort out the rebase or merge for you):
+
+``` bash
+git rebase --abort
+```
 
 Evaluating changes
 ------------------
