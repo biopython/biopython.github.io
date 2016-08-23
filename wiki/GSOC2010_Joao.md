@@ -239,7 +239,7 @@ The same rationale from SEQRES applies for the exclusion of looking up
 SSBOND. Also, instead of using `NeighborSearch` to look for pairs of
 cysteins in bond distance, I instead used the minus operator since it
 has been overloaded to return the distance between two atoms (Page 10 of
-the [FAQ](http://http://biopython.org/DIST/docs/tutorial/biopdb_faq.pdf)).
+the [FAQ](http://biopython.org/DIST/docs/tutorial/biopdb_faq.pdf)).
 The average distance cited in the literature is 2.05A but other software
 packages and my own tests set 3.0A as a good threshold. Still, the user
 can set his own threshold manually.
