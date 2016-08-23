@@ -13,3 +13,4 @@ script:
  - "if grep '\t' wiki/*.md; then echo 'Tabs are bad, please use four spaces.'; false; fi"
  - "if grep -n -r '[[:blank:]]$' wiki/*.md; then echo 'Please remove trailing whitespace.'; false; fi"
  - "bundle exec jekyll build"
+ - "check-links && echo 'SUCCESS'"
