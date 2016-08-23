@@ -31,10 +31,9 @@ post duplicate your questions here and on the mailing list:
 
 ### Searching
 
-Gmane archives of the lists, linked below, provide a nice interface to
-search past messages. A number of questions have been discussed and
-answered; before posting please search for relevant discussions which
-might help.
+Google is a practical way to search the mailing list archives. A number
+of questions have been discussed and answered; before posting please
+search for relevant discussions which might help.
 
 ### Discussion List
 
@@ -45,8 +44,7 @@ Biopython.
 
 [List Website](http://lists.open-bio.org/mailman/listinfo/biopython/) |
 [Web Archive](http://lists.open-bio.org/pipermail/biopython/) |
-[Gmane
-Web Archive](http://dir.gmane.org/gmane.comp.python.bio.general)
+[Example Google Search](https://www.google.co.uk/search?q=example+url%3Ahttp%3A%2F%2Flists.open-bio.org%2Fpipermail%2Fbiopython%2F)
 
 ### Development List
 
@@ -56,7 +54,7 @@ Unmoderated list for Biopython developers and interested people.
 
 [List Website](http://lists.open-bio.org/mailman/listinfo/biopython-dev/) |
 [Web Archive](http://lists.open-bio.org/pipermail/biopython-dev/) |
-[Gmane Web Archive](http://dir.gmane.org/gmane.comp.python.bio.devel)
+[Example Google Search](https://www.google.co.uk/search?q=example+url%3Ahttp%3A%2F%2Flists.open-bio.org%2Fpipermail%2Fbiopython%2F)
 
 ### Announcement List
 
