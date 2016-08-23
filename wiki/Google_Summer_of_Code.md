@@ -54,7 +54,7 @@ Past mentors include:
 -   [Thomas Hamelryck](http://wiki.binf.ku.dk/User:Thomas_Hamelryck)
 -   [Reece Hart](http://www.linkedin.com/in/reece)
 -   [João Rodrigues](http://nmr.chem.uu.nl/~joao)
--   [Eric Talevich](http://etal.myweb.uga.edu/)
+-   [Eric Talevich](https://github.com/etal/)
 
 Past Accepted Projects
 ----------------------
@@ -146,7 +146,7 @@ hand is *[Computational Molecular
 Evolution](http://abacus.gene.ucl.ac.uk/CME2006/)* by Ziheng Yang.
 
 Mentors
-[Eric Talevich](http://etal.myweb.uga.edu/), [Peter
+[Eric Talevich](https://github.com/etal/), [Peter
 Cock](https://github.com/peterjc/)
 
 #### Bio.Phylo: filling in the gaps
@@ -191,7 +191,7 @@ reference, you might like to have a copy of Joe Felsenstein's
 Tree visualizations are done with matplotlib.
 
 Mentors
-Mark Holder, Jeet Sukumaran, [Eric Talevich](http://etal.myweb.uga.edu/)
+Mark Holder, Jeet Sukumaran, [Eric Talevich](https://github.com/etal/)
 
 ### 2012 (OBF)
 
@@ -354,7 +354,7 @@ formats (PDB).
 Mentors
 [João Rodrigues](http://nmr.chem.uu.nl/~joao)
 
-[Eric Talevich](http://etal.myweb.uga.edu/)
+[Eric Talevich](https://github.com/etal/)
 
 #### [A Python bridge for Mocapy++](http://biopython.org/wiki/GSOC2011_Mocapy)
 
@@ -409,7 +409,7 @@ strong support for the field of protein structure prediction, design
 and simulation.
 
 Mentors
-[Eric Talevich](http://etal.myweb.uga.edu/)
+[Eric Talevich](https://github.com/etal/)
 
 [Thomas Hamelryck](http://wiki.binf.ku.dk/User:Thomas_Hamelryck)
 
@@ -459,7 +459,7 @@ minimal changes to the existing Mocapy++ interface, thus facilitating a
 smooth acceptance of the changes introduced by MocapyEXT.
 
 Mentors
-[Eric Talevich](http://etal.myweb.uga.edu/)
+[Eric Talevich](https://github.com/etal/)
 
 [Thomas Hamelryck](http://wiki.binf.ku.dk/User:Thomas_Hamelryck)
 
@@ -499,7 +499,7 @@ workflows for structure modelling, molecular dynamics, and
 docking simulations.
 
 Mentors
-[Eric Talevich](http://etal.myweb.uga.edu/)
+[Eric Talevich](https://github.com/etal/)
 
 [Peter Cock](http://www.hutton.ac.uk/staff/peter-cock)
 

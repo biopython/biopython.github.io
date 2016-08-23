@@ -5,20 +5,16 @@ layout: wiki
 ---
 
 I've been using Biopython since January 2009, starting in grad school at
-my [lab](http://esbg.bmb.uga.edu/) at the University of Georgia. I take
-an interest in the genetics, evolution and mechanisms of regulatory
-proteins, mainly.
-
+my [lab](http://esbg.bmb.uga.edu/) at the University of Georgia.
 For Google Summer of Code 2009, I wrote the [Phylo](Phylo "wikilink")
 module to initially support the [PhyloXML](PhyloXML "wikilink") format,
 and later generalized it to support multiple formats (inspired by SeqIO
-and AlignIO). I'm planning to extend these modules to support more
-formats and basic operations as research demands.
+and AlignIO). The Biopython community's friendliness, wisdom, support and good
+cheer motivated me to get involved and continue in open source software
+development.
 
 **See also**
 
--   [GitHub](http://github.com/etal)
--   [UGA personal page](http://etal.myweb.uga.edu/)
--   [Homepage](http://eric.talevich.com/) (ill-maintained)
+-   [GitHub](https://github.com/etal/)
 -   [Blog](http://etalog.blogspot.com/)
-
+-   [Twitter](https://twitter.com/etalevich)
