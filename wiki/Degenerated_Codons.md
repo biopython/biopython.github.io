@@ -5,7 +5,7 @@ layout: wiki
 tags:
  - Cookbook
 redirect_from:
- - /wiki/Degenerated
+ - wiki/Degenerated
 ---
 
 Problem

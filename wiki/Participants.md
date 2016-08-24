@@ -3,10 +3,10 @@ title: Biopython Contributors
 permalink: wiki/Participants
 layout: page
 redirect_from:
- - /wiki/Michiel_De_Hoon
- - /wiki/User:Mdehoon
- - /wiki/Iddo_Friedberg
- - /wiki/User:Idoerg
+ - wiki/Michiel_De_Hoon
+ - wiki/User:Mdehoon
+ - wiki/Iddo_Friedberg
+ - wiki/User:Idoerg
 ---
 
 Note: People are listed here alphabetically by surname. This is only a

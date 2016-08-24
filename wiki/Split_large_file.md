@@ -5,7 +5,7 @@ layout: wiki
 tags:
  - Cookbook
 redirect_from:
- - /wiki/Split_fasta_file
+ - wiki/Split_fasta_file
 ---
 
 Problem

@@ -3,12 +3,12 @@ title: Source Code
 permalink: wiki/SourceCode
 layout: page
 redirect_from:
- - /wiki/CVS
- - /wiki/Git
- - /wiki/SVN
- - /wiki/Subversion
- - /wiki/Tracking_commits
- - /wiki/Tracking_CVS_commits
+ - wiki/CVS
+ - wiki/Git
+ - wiki/SVN
+ - wiki/Subversion
+ - wiki/Tracking_commits
+ - wiki/Tracking_CVS_commits
 ---
 
 ### Introduction

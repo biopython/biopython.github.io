@@ -5,7 +5,7 @@ layout: wiki
 tags:
  - Cookbook
 redirect_from:
- - /wiki/Retrieve_nonmathching_blast_queries
+ - wiki/Retrieve_nonmathching_blast_queries
 ---
 
 Problem
