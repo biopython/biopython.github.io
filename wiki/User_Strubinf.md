@@ -1,6 +1,6 @@
 ---
 title: User:Strubinf
-permalink: wiki/User:Strubinf
+permalink: wiki/User%3AStrubinf
 layout: wiki
 ---
 

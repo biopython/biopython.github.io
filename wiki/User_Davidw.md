@@ -1,6 +1,6 @@
 ---
 title: User:Davidw
-permalink: wiki/User:Davidw
+permalink: wiki/User%3ADavidw
 layout: wiki
 ---
 

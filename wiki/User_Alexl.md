@@ -1,6 +1,6 @@
 ---
 title: User:Alexl
-permalink: wiki/User:Alexl
+permalink: wiki/User%3AAlexl
 layout: wiki
 ---
 

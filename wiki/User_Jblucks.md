@@ -1,6 +1,6 @@
 ---
 title: User:Jblucks
-permalink: wiki/User:Jblucks
+permalink: wiki/User%3AJblucks
 layout: wiki
 ---
 

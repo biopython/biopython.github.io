@@ -1,6 +1,6 @@
 ---
 title: User:Edward.Tao
-permalink: wiki/User:Edward.Tao
+permalink: wiki/User%3AEdward.Tao
 layout: wiki
 ---
 

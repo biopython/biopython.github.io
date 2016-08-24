@@ -1,6 +1,6 @@
 ---
 title: User:Blivens
-permalink: wiki/User:Blivens
+permalink: wiki/User%3ABlivens
 layout: wiki
 ---
 

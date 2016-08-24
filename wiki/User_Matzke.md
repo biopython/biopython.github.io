@@ -1,6 +1,6 @@
 ---
 title: User:Matzke
-permalink: wiki/User:Matzke
+permalink: wiki/User%3AMatzke
 layout: wiki
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: User:Orbeckst
-permalink: wiki/User:Orbeckst
+permalink: wiki/User%3AOrbeckst
 layout: wiki
 ---
 

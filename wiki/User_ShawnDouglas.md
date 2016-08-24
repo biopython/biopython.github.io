@@ -1,6 +1,6 @@
 ---
 title: User:ShawnDouglas
-permalink: wiki/User:ShawnDouglas
+permalink: wiki/User%3AShawnDouglas
 layout: wiki
 ---
 

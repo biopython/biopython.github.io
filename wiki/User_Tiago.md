@@ -1,6 +1,6 @@
 ---
 title: User:Tiago
-permalink: wiki/User:Tiago
+permalink: wiki/User%3ATiago
 layout: wiki
 ---
 

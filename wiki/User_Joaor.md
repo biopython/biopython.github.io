@@ -1,6 +1,6 @@
 ---
 title: User:Joaor
-permalink: wiki/User:Joaor
+permalink: wiki/User%3AJoaor
 layout: wiki
 ---
 

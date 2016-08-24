@@ -1,6 +1,6 @@
 ---
 title: User:Gotgenes
-permalink: wiki/User:Gotgenes
+permalink: wiki/User%3AGotgenes
 layout: wiki
 ---
 

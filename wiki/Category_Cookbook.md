@@ -1,6 +1,6 @@
 ---
 title: Cookbook Entries
-permalink: wiki/Category:Cookbook
+permalink: wiki/Category%3ACookbook
 layout: tagpage
 tag: Cookbook
 ---

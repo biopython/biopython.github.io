@@ -1,6 +1,6 @@
 ---
 title: Wiki Documentation
-permalink: wiki/Category:Wiki_Documentation
+permalink: wiki/Category%3AWiki_Documentation
 layout: tagpage
 tag: Wiki Documentation
 ---

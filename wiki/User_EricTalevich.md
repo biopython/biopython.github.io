@@ -1,6 +1,6 @@
 ---
 title: User:EricTalevich
-permalink: wiki/User:EricTalevich
+permalink: wiki/User%3AEricTalevich
 layout: wiki
 ---
 

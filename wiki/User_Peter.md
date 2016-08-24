@@ -1,6 +1,6 @@
 ---
 title: User:Peter
-permalink: wiki/User:Peter
+permalink: wiki/User%3APeter
 layout: wiki
 tags:
  - People
