@@ -17,6 +17,5 @@ variety of reasons including vastly more maintainable code. But, the
 biology and bioinformatics community has embraced perl. My pet theory is
 because of the documentation, and I am out to change that!
 
-See [ My Contributions](Special:Contributions/Jblucks "wikilink"), or my
-[OpenWetWare](http://openwetware.org/wiki/User:Lucks) page for more
-information.
+See my [OpenWetWare](http://openwetware.org/wiki/User:Lucks) page for
+more information.
