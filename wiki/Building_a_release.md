@@ -260,6 +260,10 @@ machine.
     # Also copy in the Windows files
     $ cd ~/repositories/DIST/
     $ git commit biopython-1.68.* -m "Downloads for Biopython 1.68"
+    $ shasum -a 256 biopython-1.68.*
+    $ md5sum biopython-1.68.*
+    $ git commit --amend # paste checksums into comment
+    $ git push origin gh-pages
     ```
 
 20. Upload to the python package index (except for beta/alpha level
