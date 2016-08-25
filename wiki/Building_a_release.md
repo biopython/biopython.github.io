@@ -164,7 +164,7 @@ needed to test and prepare the Windows installers.
     $ git clone git@github.com:biopython/DIST.git
     $ cd ~/repositories/DIST
     ```
-      
+
     - Remove version of the API documentation which we're going to replace:
 
     ``` bash
