@@ -238,6 +238,7 @@ your compilers etc appropriately just do this:
     and:
 
     ```
+    C:\python27\python setup.py bdist_msi
     C:\python33\python setup.py bdist_msi
     C:\python34\python setup.py bdist_msi
     C:\python35\python setup.py bdist_msi
