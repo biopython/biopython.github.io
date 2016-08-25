@@ -259,6 +259,7 @@ machine.
     $ cp dist/biopython-1.68.* ~/repositories/DIST/
     # Also copy in the Windows files
     $ cd ~/repositories/DIST/
+    $ git add biopython-1.68.*
     $ git commit biopython-1.68.* -m "Downloads for Biopython 1.68"
     $ shasum -a 256 biopython-1.68.*
     $ md5sum biopython-1.68.*
