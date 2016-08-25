@@ -267,20 +267,20 @@ releases):
     $ twine upload dist/biopython-1.68.tar.gz
     ```
 
-   - You need to have a login on pypi and be registered with Biopython to be
-     able to upload the new version
+    - You need to have a login on pypi and be registered with Biopython to be
+      able to upload the new version
 
-   - Check this is live at <https://pypi.python.org/pypi/biopython/>
+    - Check this is live at <https://pypi.python.org/pypi/biopython/>
 
 21. Update the website and announce the release:
 
     - If you haven't already, clone the ``biopython.github.io`` repository,
       (otherwise make sure your copy is up to date):
 
-   ``` bash
-   $ cd ~/repositories
-   $ git clone git@github.com:biopython/biopython.github.io.git
-   ```
+    ``` bash
+    $ cd ~/repositories
+    $ git clone git@github.com:biopython/biopython.github.io.git
+    ```
 
     - Update the website:
 
