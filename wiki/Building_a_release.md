@@ -277,12 +277,12 @@ releases):
     - If you haven't already, clone the ``biopython.github.io`` repository,
       (otherwise make sure your copy is up to date):
 
-    ``` bash
-    $ cd ~/repositories
-    $ git clone git@github.com:biopython/biopython.github.io.git
-    ```
+   ``` bash
+   $ cd ~/repositories
+   $ git clone git@github.com:biopython/biopython.github.io.git
+   ```
 
-     - Update the website:
+    - Update the website:
 
     ``` bash
     $ cd ~/repositories/biopython.github.io
