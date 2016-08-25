@@ -250,6 +250,13 @@ machine.
 
 19. Upload the new release to the website via GitHub Pages `DIST` repository.
 
+    ``` bash
+    $ cp dist/biopython-1.68.* ~/repositories/DIST/
+    # Also copy in the Windows files
+    $ cd ~/repositories/DIST/
+    $ git commit biopython-1.68.* -m "Downloads for Biopython 1.68" 
+    ```
+
 20. Upload to the python package index (except for beta/alpha level
 releases):
 
