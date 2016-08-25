@@ -200,7 +200,7 @@ needed to test and prepare the Windows installers.
 
     - Push this to GitHub Pages to update the website:
 
-   ``` bash
+    ``` bash
     $ git push origin gh-pages
     ```
 
