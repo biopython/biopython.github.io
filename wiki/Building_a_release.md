@@ -156,13 +156,18 @@ needed to test and prepare the Windows installers.
 15. Update API documentation using Epydoc (this can often report otherwise overlooked
     errors).
 
-    - If you haven't already, checkout the ``DIST`` repository, and remove
-      the old version of the API documentation which we're going to replace:
+    - If you haven't already, clone the ``DIST`` repository - otherwise first
+      fetch any upstream changes.
 
     ``` bash
     $ cd ~/repositories
     $ git clone git@github.com:biopython/DIST.git
     $ cd ~/repositories/DIST
+    ```
+      
+    - Remove version of the API documentation which we're going to replace:
+
+    ``` bash
     $ git rm docs/api/*
     ```
 
