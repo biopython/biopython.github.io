@@ -163,7 +163,7 @@ needed to test and prepare the Windows installers.
     $ cd ~/repositories
     $ git clone git@github.com:biopython/DIST.git
     $ cd ~/repositories/DIST
-    $ git rm docs/api/*.html
+    $ git rm docs/api/*
     ```
 
     - Go to the `/tmp/test-install/lib/python2.7/site-packages` directory. This is the
