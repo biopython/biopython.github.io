@@ -274,7 +274,6 @@ releases):
     ``` bash
     $ cd  .../biopython/
     $ pip install twine
-    $ twine register dist/biopython-1.68.tar.gz
     $ twine upload dist/biopython-1.68.tar.gz
     ```
 
