@@ -81,7 +81,8 @@ hr.head {
     bottom: 0;
     width: 16rem;
     text-align: left;
-    padding: 2rem 1rem;
+    padding: 2rem 1rem;     
+    overflow-y: auto;
   }
   .sidebar-nav {
     margin-bottom: 1rem;
@@ -91,7 +92,6 @@ hr.head {
     line-height: 1.75;
   }
   .sidebar-footer {
-    position: absolute;
     padding: 1rem;
   }
   .container {
