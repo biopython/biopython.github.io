@@ -25,5 +25,8 @@ previously been rather plain.
 This design was chosen from panel of entries to an open competition on
 the mailing lists back in [Summer
 2003](http://lists.open-bio.org/pipermail/biopython/2003-June/001389.html).
-Our website doesn't have the other competition entries on it any more,
-so it might be fun to reassemble them here...
+
+This picture shows the nine entries for the competition (taken from
+[Brad Chapman's BOSC 2003 talk](http://biopython.org/DIST/docs/presentations/bosc_biopython.pdf)):
+
+![](Biopython_logos.png "Biopython_logos.png")
