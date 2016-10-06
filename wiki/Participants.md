@@ -102,12 +102,12 @@ in the Biopython source code or the
 |                         |                                                          |
 |-------------------------|----------------------------------------------------------|
 | E-mail                  | See my web page                                          |
-| Affiliation             | RIKEN Omics Science Center                               |
+| Affiliation             | RIKEN Center for Life Science Technologies               |
 | Location                | Yokohama                                                 |
 | Uses Python for         | High-throughput data analysis & Scientific visualization |
-| Work/Research Interests | RNA Genomics                                             |
+| Work/Research Interests | RNA Genomics & RNA Structures                            |
 | Biopython Contributions | Bio.Cluster; Bio.Entrez; Windows installer               |
-| Relevant URL            | <http://www.riken.jp/en/research/labs/clst/genom_tech/life_sci_accel/genom_algo/>               |
+| Relevant URL            | <http://gadu.riken.jp>                                   |
 
 ### Iddo Friedberg
 
