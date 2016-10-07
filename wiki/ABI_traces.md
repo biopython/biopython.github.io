@@ -1,6 +1,6 @@
 ---
 title: Plotting ABI traces
-permalink: wiki/ACE_contig_to_alignment
+permalink: wiki/ABI_traces
 layout: wiki
 tags:
  - Cookbook
