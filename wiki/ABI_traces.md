@@ -77,3 +77,5 @@ We will get the following trace, after zooming into a particular region.
 Discussion
 ----------
 As of current writing, this cookbook recipe didn't go further into computing metrics. One particular thing that may be interesting is to quantify the Shannon Diversity of mixed base calls vs. single base calls.
+
+Another thing to note: There are 10 chromatogram values per base in the data. Therefore, that means that it may be advisable to grab every 5th value out, so that the final length of the sequence trace array matches up with the number of positions that should have been sequenced, rather than being 10x larger.
