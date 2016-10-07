@@ -9,7 +9,7 @@ tags:
 Problem
 -------
 
-ABI trace files can be useful to inspect. While there are ready-made solutions available, you may find yourself in a place where you need to write your own code to programmatically interact with the traces. BioPython allows us to do so.
+ABI trace files can be useful to inspect. While there are ready-made solutions available, you may find yourself in a place where you need to write your own code to programmatically interact with the traces. Biopython allows us to do so.
 
 Solution
 --------
