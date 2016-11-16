@@ -107,16 +107,16 @@ This lets you do things like:
 
 ``` python
 from Bio import SeqIO
-handle = open("example.fasta", "rU")
-for record in SeqIO.parse(handle, "fasta"):
-    print(record.id)
-handle.close()
+with open("example.fasta", "rU") as handle:
+    for record in SeqIO.parse(handle, "fasta"):
+        print(record.id)
 ```
 
 In the above example, we opened the file using the built-in python
 function `open`. The argument `'rU'` means open for **r**eading using
 **u**niversal readline mode - this means you don't have to worry if the
-file uses Unix, Mac or DOS/Windows style newline characters.
+file uses Unix, Mac or DOS/Windows style newline characters. The `with`-
+statement makes sure that the file is properly closed after reading it.
 
 Note that you *must* specify the file format explicitly, unlike
 [BioPerl's SeqIO](http://bioperl.org/howtos/SeqIO_HOWTO) which can try to guess
@@ -132,10 +132,9 @@ which contains seven sequences, the only difference is you specify
 
 ``` python
 from Bio import SeqIO
-handle = open("opuntia.aln", "rU")
-for record in SeqIO.parse(handle, "clustal") :
-    print(record.id)
-handle.close()
+with open("opuntia.aln", "rU") as handle:
+    for record in SeqIO.parse(handle, "clustal") :
+        print(record.id)
 ```
 
 Iterators are great for when you only need the records one by one, in
@@ -145,9 +144,8 @@ python `list()` function to turn the iterator into a list:
 
 ``` python
 from Bio import SeqIO
-handle = open("example.fasta", "rU")
-records = list(SeqIO.parse(handle, "fasta"))
-handle.close()
+with open("example.fasta", "rU") as handle:
+    records = list(SeqIO.parse(handle, "fasta"))
 print(records[0].id)  # first record
 print(records[-1].id)  # last record
 ```
@@ -159,9 +157,8 @@ small files we have a function `Bio.SeqIO.to_dict()` to turn a
 
 ``` python
 from Bio import SeqIO
-handle = open("example.fasta", "rU")
-record_dict = SeqIO.to_dict(SeqIO.parse(handle, "fasta"))
-handle.close()
+with open("example.fasta", "rU") as handle:
+    record_dict = SeqIO.to_dict(SeqIO.parse(handle, "fasta"))
 print(record_dict["gi:12345678"])  # use any record ID
 ```
 
@@ -210,9 +207,8 @@ output handle and format string:
 ``` python
 from Bio import SeqIO
 sequences = ...  # add code here
-output_handle = open("example.fasta", "w")
-SeqIO.write(sequences, output_handle, "fasta")
-output_handle.close()
+with open("example.fasta", "w") as output_handle:
+    SeqIO.write(sequences, output_handle, "fasta")
 ```
 
 There are more examples in the following section on converting between
@@ -246,10 +242,9 @@ function:
 
 ``` python
 from Bio import SeqIO
-input_handle = open("cor6_6.gb", "rU")
-for record in SeqIO.parse(input_handle, "genbank"):
-    print(record)
-input_handle.close()
+with open("cor6_6.gb", "rU") as input_handle:
+    for record in SeqIO.parse(input_handle, "genbank"):
+        print(record)
 ```
 
 Notice that this file contains six records. Now instead of printing the
@@ -259,14 +254,9 @@ function, to turn this GenBank file into a Fasta file:
 ``` python
 from Bio import SeqIO
 
-input_handle = open("cor6_6.gb", "rU")
-output_handle = open("cor6_6.fasta", "w")
-
-sequences = SeqIO.parse(input_handle, "genbank")
-count = SeqIO.write(sequences, output_handle, "fasta")
-
-output_handle.close()
-input_handle.close()
+with open("cor6_6.gb", "rU") as input_handle, open("cor6_6.fasta", "w") as output_handle:
+    sequences = SeqIO.parse(input_handle, "genbank")
+    count = SeqIO.write(sequences, output_handle, "fasta")
 
 print("Converted %i records" % count)
 ```
@@ -326,9 +316,8 @@ for record in SeqIO.parse(open("cor6_6.gb", "rU"), "genbank"):
 
 print("Found %i short sequences" % len(short_sequences))
 
-output_handle = open("short_seqs.fasta", "w")
-SeqIO.write(short_sequences, output_handle, "fasta")
-output_handle.close()
+with open("short_seqs.fasta", "w") as output_handle:
+    SeqIO.write(short_sequences, output_handle, "fasta")
 ```
 
 If you know about **list comprehensions** then you could have written
@@ -345,9 +334,8 @@ short_sequences = [record for record in input_seq_iterator \
 
 print("Found %i short sequences" % len(short_sequences))
 
-output_handle = open("short_seqs.fasta", "w")
-SeqIO.write(short_sequences, output_handle, "fasta")
-output_handle.close()
+with open("short_seqs.fasta", "w") as output_handle:
+    SeqIO.write(short_sequences, output_handle, "fasta")
 ```
 
 I'm not convinced this is actually any easier to understand, but it is
@@ -365,9 +353,8 @@ input_seq_iterator = SeqIO.parse(open("cor6_6.gb", "rU"), "genbank")
 short_seq_iterator = (record for record in input_seq_iterator \
                       if len(record.seq) < 300)
 
-output_handle = open("short_seqs.fasta", "w")
-SeqIO.write(short_seq_iterator, output_handle, "fasta")
-output_handle.close()
+with open("short_seqs.fasta", "w") as output_handle:
+    SeqIO.write(short_seq_iterator, output_handle, "fasta")
 ```
 
 Remember that for sequential file formats like Fasta or GenBank,
@@ -457,9 +444,8 @@ for i in range(0, 500):
     record = SeqRecord(mito_frag,'fragment_%i' % (i+1), '', '')
     mito_frags.append(record)
 
-output_handle = open("mitofrags.fasta", "w")
-SeqIO.write(mito_frags, output_handle, "fasta")
-output_handle.close()
+with open("mitofrags.fasta", "w") as output_handle:
+    SeqIO.write(mito_frags, output_handle, "fasta")
 ```
 
 That should give something like this as the output file,
