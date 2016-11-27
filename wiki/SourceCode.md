@@ -72,7 +72,9 @@ information.
 
 ### Write Access
 
-In order to make changes to the official repository, you will need a
+Most changes are submitted as pull requests via GitHub.
+
+In order to directly make changes to the official repository, you will need a
 GitHub account with collaborator status. Write access is available for
 Biopython developers (including all those who previously had CVS commit
 rights).
