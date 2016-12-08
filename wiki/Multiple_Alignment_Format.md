@@ -54,9 +54,9 @@ except ImportError:
     print("oops, the import didn't work")
 ```
 
-For help, contact the branch maintainer Andrew Sczesnak (firstname dot
-lastname at med dot nyu dot edu) or the [Biopython
-Developers](mailto:biopython-dev@lists.open-bio.org).
+For help, contact the branch maintainer
+[Andrew Sczesnak](https://github.com/polyatail) or the
+[Biopython Developers](mailto:biopython-dev@lists.open-bio.org).
 
 Reading in a MAF file
 ---------------------
