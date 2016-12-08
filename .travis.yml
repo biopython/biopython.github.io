@@ -4,11 +4,13 @@
 #
 # We ask TravisCI to use the same version of Ruby as used on GitHub Pages,
 # see https://docs.travis-ci.com/user/languages/ruby/ and
-# https://pages.github.com/versions/
+# https://pages.github.com/versions/ and our Gemfile.
+#
+# Currently would like to use Ruby 2.3.3 but not yet available, thus 2.2 only
 
 sudo: false
 language: ruby
-rvm: 2.1.7
+rvm: 2.2
 script:
  - "if grep '\t' wiki/*.md; then echo 'Tabs are bad, please use four spaces.'; false; fi"
  - "if grep -n -r '[[:blank:]]$' wiki/*.md; then echo 'Please remove trailing whitespace.'; false; fi"
