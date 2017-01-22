@@ -1,5 +1,5 @@
 ---
-title: BioGeography
+title: Gathering and processing biogeographical data with the BioGeography module.
 permalink: wiki/BioGeography
 layout: wiki
 ---
