@@ -1,5 +1,5 @@
 ---
-title: Converting sequence files
+title: Converting sequence files with the Bio.SeqIO module.
 permalink: wiki/Converting_sequence_files
 layout: wiki
 tags:
