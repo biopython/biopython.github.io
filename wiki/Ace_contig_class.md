@@ -1,5 +1,5 @@
 ---
-title: Ace contig class
+title: Handling contigs with the Contig class.
 permalink: wiki/Ace_contig_class
 layout: wiki
 ---
