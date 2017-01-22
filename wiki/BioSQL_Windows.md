@@ -1,5 +1,5 @@
 ---
-title: BioSQL_Windows
+title: Managing local biological databases with the BioSQL module [Windows environment version].
 permalink: wiki/BioSQL_Windows
 layout: wiki
 ---
