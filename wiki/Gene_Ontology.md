@@ -1,5 +1,5 @@
 ---
-title: Gene Ontology
+title: Biopython and the Gene Ontology (GO) consortium.
 permalink: wiki/Gene_Ontology
 layout: wiki
 ---
