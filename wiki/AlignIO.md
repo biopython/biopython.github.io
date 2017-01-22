@@ -1,5 +1,5 @@
 ---
-title: The module for multiple sequence alignments: AlignIO
+title: The module for multiple sequence alignments, AlignIO
 permalink: wiki/AlignIO
 layout: wiki
 tags:
