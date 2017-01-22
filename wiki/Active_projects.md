@@ -1,5 +1,5 @@
 ---
-title: Active projects
+title: List of active project for Biopython.
 permalink: wiki/Active_projects
 layout: wiki
 ---
