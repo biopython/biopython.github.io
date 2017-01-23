@@ -1,5 +1,5 @@
 ---
-title: Reading from UNIX Pipes
+title: Reading data from UNIX pipes.
 permalink: wiki/Reading_from_unix_pipes
 layout: wiki
 tags:
