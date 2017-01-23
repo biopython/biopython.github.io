@@ -1,5 +1,5 @@
 ---
-title:Analyzing protein sequences with the ProtParam module.
+title: Analyzing protein sequences with the ProtParam module.
 permalink: wiki/ProtParam
 layout: wiki
 ---
