@@ -1,5 +1,5 @@
 ---
-title: Remove PDB disordered atoms
+title: Remove PDB disordered atoms with the Bio.PDB module.
 permalink: wiki/Remove_PDB_disordered_atoms
 layout: wiki
 tags:

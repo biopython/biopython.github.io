@@ -1,5 +1,5 @@
 ---
-title: BioSQL
+title: Managing local biological databases with the BioSQL module.
 permalink: wiki/BioSQL
 layout: wiki
 tags:

@@ -1,5 +1,5 @@
 ---
-title: List of applications executed via Biopython
+title: List of applications executed via Biopython.
 permalink: wiki/List_of_applications_executed_via_Biopython
 layout: wiki
 ---

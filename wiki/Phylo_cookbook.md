@@ -1,5 +1,5 @@
 ---
-title: Phylo Cookbook
+title: Bio.Phylo Cookbook.
 permalink: wiki/Phylo_cookbook
 layout: wiki
 tags:

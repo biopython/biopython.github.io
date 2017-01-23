@@ -1,5 +1,5 @@
 ---
-title: Reading large PDB Files
+title: Reading large PDB files with Biopython.
 permalink: wiki/Reading_large_PDB_files
 layout: wiki
 tags:

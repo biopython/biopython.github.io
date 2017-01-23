@@ -1,5 +1,5 @@
 ---
-title: Publications using Biopython
+title: Publications using Biopython.
 permalink: wiki/Publications
 layout: wiki
 ---

@@ -1,5 +1,5 @@
 ---
-title: Gene predictions to protein sequences
+title: From gene sequence to predicted protein with the GFF module.
 permalink: wiki/Gene_predictions_to_protein_sequences
 layout: wiki
 tags:

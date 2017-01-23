@@ -1,5 +1,5 @@
 ---
-title: The Seq Object
+title: Handling sequences with the Seq class.
 permalink: wiki/Seq
 layout: wiki
 tags:

@@ -1,5 +1,5 @@
 ---
-title: Developing Statistics for the Population Genetics Module
+title: Developing statistics for the Population Genetics Module.
 permalink: wiki/PopGen_dev_Statistics
 layout: wiki
 ---

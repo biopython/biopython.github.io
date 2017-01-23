@@ -1,5 +1,5 @@
 ---
-title: Concatenate nexus
+title: Concatenating multiple alignments NEXUS files with the Bio.Nexus module.
 permalink: wiki/Concatenate_nexus
 layout: wiki
 tags:

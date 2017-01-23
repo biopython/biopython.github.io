@@ -1,5 +1,5 @@
 ---
-title: Contributing
+title: Contributing to Biopython.
 permalink: wiki/Contributing
 layout: wiki
 ---

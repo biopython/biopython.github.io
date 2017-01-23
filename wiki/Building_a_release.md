@@ -1,5 +1,5 @@
 ---
-title: Building a release
+title: How to build a release for Biopython.
 permalink: wiki/Building_a_release
 layout: wiki
 ---

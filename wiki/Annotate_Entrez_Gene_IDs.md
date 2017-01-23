@@ -1,5 +1,5 @@
 ---
-title: Annotate Entrez Gene IDs
+title: Retrieve and annotate Entrez Gene IDS with the Entrez module.
 permalink: wiki/Annotate_Entrez_Gene_IDs
 layout: wiki
 tags:

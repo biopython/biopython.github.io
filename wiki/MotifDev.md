@@ -1,5 +1,5 @@
 ---
-title: MotifDev
+title: Current development for the Bio.Motif module.
 permalink: wiki/MotifDev
 layout: wiki
 ---

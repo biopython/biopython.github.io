@@ -1,5 +1,5 @@
 ---
-title: Coordinate mapping
+title: Mapping genetic coordinates with the Bio.SeqUtils.Mapper module.
 permalink: wiki/Coordinate_mapping
 layout: wiki
 tags:

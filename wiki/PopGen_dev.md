@@ -1,5 +1,5 @@
 ---
-title: Development Page for the PopGen Module
+title: Development Page for the PopGen Module.
 permalink: wiki/PopGen_dev
 layout: wiki
 ---
