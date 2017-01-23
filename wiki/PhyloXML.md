@@ -1,5 +1,5 @@
 ---
-title: PhyloXML - Working with phyloXML Files
+title: Working with phyloXML files with the PhyloXML module.
 permalink: wiki/PhyloXML
 layout: wiki
 ---
