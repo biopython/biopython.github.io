@@ -1,5 +1,5 @@
 ---
-title: Introduction to SeqRecord
+title: Introduction to the SeqRecord class.
 permalink: wiki/SeqRecord
 layout: wiki
 tags:
