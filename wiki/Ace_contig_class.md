@@ -1,5 +1,5 @@
 ---
-title: Handling contigs with the Contig class.
+title: Handling contigs with the Contig class from the Bio.Sequencing.Ace module.
 permalink: wiki/Ace_contig_class
 layout: wiki
 ---
