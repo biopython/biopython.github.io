@@ -1,5 +1,5 @@
 ---
-title: Visualize an alignment from conting archived in ACE files.
+title: Represent an alignment from contig archived in ACE files.
 permalink: wiki/ACE_contig_to_alignment
 layout: wiki
 tags:
