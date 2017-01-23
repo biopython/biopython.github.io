@@ -1,5 +1,5 @@
 ---
-title: Intergenic regions
+title: Workflow to extract intergenic regions from a sequence.
 permalink: wiki/Intergenic_regions
 layout: wiki
 tags:
