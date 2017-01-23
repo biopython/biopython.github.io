@@ -1,5 +1,5 @@
 ---
-title: Interfacing with PAML
+title: Interfacing with "Phylogenetic Analysis by Maximum Likelihood" (PAML) package.
 permalink: wiki/PAML
 layout: wiki
 tags:
