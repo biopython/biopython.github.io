@@ -82,14 +82,16 @@ sudo python setup.py install
 Substitute python with your specific version, for example python3,
 jython or pypy.
 
-For **Mac OS X**, we recommend installing from source as above. You will
-need to have installed Apple's XCode tools from the App Store (it is a
-big download), and then the optional command line tools from within the
-XCode GUI's options menu, or on Mavericks by using the command:
+For **Mac OS X**, or as it is branded, ``macOS``, we recommend installing
+Biopython from source as above. You will need to have installed Apple's
+command line tools, which can de done with the terminal command:
 
 ``` bash
 xcode-select --install
 ```
+
+This will offer to install Apple's XCode development suite - you can, but
+it is not needed and takes a lot of disk space.
 
 If you have trouble, see the full installation instructions:
 
