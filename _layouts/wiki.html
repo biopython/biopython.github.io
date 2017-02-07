@@ -3,6 +3,9 @@ layout: default
 ---
 
 <div class="page">
+  <ul class="tag_list_in_post">
+    {% for tag in page.tags %}<li class="inline tag_list_item"><a class="tag_list_link" href="/wiki/Category%3A{{ tag | replace:' ','_' }}">{{ tag }}</a></li>{% endfor %}
+  </ul>
   <h1 class="page-title">{{ page.title }}</h1>
   {{ content }}
 </div>
