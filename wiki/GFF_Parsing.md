@@ -9,7 +9,8 @@ tags:
 *Note:* GFF parsing is not yet integrated into Biopython. This
 documentation is work towards making it ready for inclusion. You can
 retrieve the current version of the GFF parser from:
-<http://github.com/chapmanb/bcbb/tree/master/gff>. Comments are very
+<http://github.com/chapmanb/bcbb/tree/master/gff>, which in turn
+led to <https://github.com/daler/gffutils>. Comments are very
 welcome.
 
 Generic Feature Format (GFF) is a biological sequence file format for
