@@ -4,8 +4,8 @@ permalink: wiki/MotifDev
 layout: wiki
 ---
 
-This page describes current state of the development of the Bio.Motif
-module
+This page describes current state of the development of the
+``Bio.motifs`` (formerly ``Bio.Motif``) module.
 
 Enhancements currently underway:
 
@@ -29,14 +29,14 @@ and
 
 -   Writing different implementations for different motif types:
     -   consensus sequences (possibly with ambiguity)
-    -   alignments (gapped or ungapped-&gt; pwms)
+    -   alignments (gapped or ungapped pwms)
     -   motifs with variable-length gaps
 -   writing conversions from alignments to motif instances (possibly
     different for different motifs)
--   integrating with Bio.Seq and Bio.Align, so that the API is more
+-   integrating with `Bio.Seq` and `Bio.Align`, so that the API is more
     natural for the end users
--   making modifications to Seq.startwswith, .endswith .find and .rfind
-    to support passing motifs to them. See also
+-   making modifications to `Seq.startwswith`, `.endswith`, `.find` and
+    `.rfind` to support passing motifs to them. See also
     [this commit](https://github.com/biopython/biopython/commit/49096ecf89d050129ef5b22b66b8bc34fec692ed).
 
 Kind of separate issue (also from Leighton) is to take into account HMM
