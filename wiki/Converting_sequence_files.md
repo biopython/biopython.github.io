@@ -28,14 +28,10 @@ directory):
 ``` python
 from Bio import SeqIO
 
-input_handle = open("cor6_6.gb", "rU")
-output_handle = open("cor6_6.fasta", "w")
-
-sequences = SeqIO.parse(input_handle, "genbank")
-count = SeqIO.write(sequences, output_handle, "fasta")
-
-output_handle.close()
-input_handle.close()
+with open("cor6_6.gb", "rU") as input_handle, open("cor6_6.fasta", "w") as output_handle:
+    sequences = SeqIO.parse(input_handle, "genbank")
+    count = SeqIO.write(sequences, output_handle, "fasta")
+    
 print("Converted %i records" % count)
 ```
 
