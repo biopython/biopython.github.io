@@ -66,9 +66,8 @@ from Bio import SeqIO
 record_iter = SeqIO.parse(open("SRR014849_1.fastq"),"fastq")
 for i, batch in enumerate(batch_iterator(record_iter, 10000)):
     filename = "group_%i.fastq" % (i + 1)
-    handle = open(filename, "w")
-    count = SeqIO.write(batch, handle, "fastq")
-    handle.close()
+    with open(filename, "w") as handle:
+        count = SeqIO.write(batch, handle, "fastq")
     print("Wrote %i records to %s" % (count, filename))
 ```
 
@@ -95,9 +94,8 @@ from Bio import SeqIO
 record_iter = SeqIO.parse(open("large.fasta"),"fasta")
 for i, batch in enumerate(batch_iterator(record_iter, 1000)):
     filename = "group_%i.fasta" % (i + 1)
-    handle = open(filename, "w")
-    count = SeqIO.write(batch, handle, "fasta")
-    handle.close()
+    with open(filename, "w") as handle:
+        count = SeqIO.write(batch, handle, "fasta")
     print("Wrote %i records to %s" % (count, filename))
 ```
 
