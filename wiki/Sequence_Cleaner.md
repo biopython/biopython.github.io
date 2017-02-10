@@ -54,11 +54,10 @@ def sequence_cleaner(fasta_file, min_length=0, por_n=100):
     # Write the clean sequences
 
     # Create a file in the same directory where you ran this script
-    output_file = open("clear_" + fasta_file, "w+")
-    # Just read the hash table and write on the file as a fasta format
-    for sequence in sequences:
+    with open("clear_" + fasta_file, "w+") as output_file:
+        # Just read the hash table and write on the file as a fasta format
+        for sequence in sequences:
             output_file.write(">" + sequences[sequence] + "\n" + sequence + "\n")
-    output_file.close()
 
     print("CLEAN!!!\nPlease check clear_" + fasta_file)
 
