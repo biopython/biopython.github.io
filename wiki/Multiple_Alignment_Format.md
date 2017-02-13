@@ -12,51 +12,28 @@ series of multiple alignments in a single file. Suitable for
 whole-genome to whole-genome alignments, metadata such as source
 chromosome, start position, size, and strand can be stored.
 
-A branch of Biopython on GitHub (not yet in the main distribution for
-general use) implements a MAF reader and writer accessible via
-[`Bio.AlignIO`](AlignIO "wikilink"), and an indexer accessible via `Bio.AlignIO.MafIO`.
+Biopython 1.69 includes a MAF reader and writer accessible via
+[`Bio.AlignIO`](AlignIO "wikilink"), and an indexer accessible via
+`Bio.AlignIO.MafIO`.
 
 All examples below make use of the Multiz [30-way alignment to mouse
 chromosome
 10](http://hgdownload.cse.ucsc.edu/goldenpath/hg19/multiz46way/maf/chr10.maf.gz)
 available from UCSC.
 
-Getting the AlignIO MAF branch from GitHub
-------------------------------------------
+Getting the AlignIO code from GitHub
+------------------------------------
+
+If you can't wait for Biopython 1.69 to be released, get the latest
+Biopython from GitHub:
 
 First, clone the repository with git from the command line, like so:
 
 ``` bash
-git clone -b alignio-maf git://github.com/polyatail/biopython.git alignio-maf
+git clone git@github.com:biopython/biopython.git
 ```
 
-If you're using an older version of git, you may need to do this:
-
-``` bash
-git clone git://github.com/polyatail/biopython.git alignio-maf
-cd alignio-maf
-git checkout -b alignio-maf origin/alignio-maf
-```
-
-To access the MAF parser, you'll need to manually specify the path to it
-in your code, as in:
-
-``` python
-import sys
-
-# replace "./alignio-maf" with the full path of the alignio-maf branch
-# you cloned from github, or keep if it's in the current directory
-sys.path.insert(1, "./alignio-maf")
-
-try:
-    from Bio.AlignIO import MafIO
-except ImportError:
-    print("oops, the import didn't work")
-```
-
-For help, contact the branch maintainer
-[Andrew Sczesnak](https://github.com/polyatail) or the
-[Biopython Developers](mailto:biopython-dev@lists.open-bio.org).
+This will give you the default master branch. Then install from source.
 
 Reading in a MAF file
 ---------------------
