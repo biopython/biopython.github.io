@@ -101,39 +101,39 @@ them to combine nicely).
 
 ``` python
 def check_taxa(matrices):
-  """Verify Nexus instances have the same taxa information.
-  
-  Checks that nexus instances in a list [(name, instance)...] have
-  the same taxa, provides useful error if not and returns None if
-  everything matches
-  """
-  first_taxa = matrices[0][1].taxlabels
-  for name, matrix in matrices[1:]:
-    first_only = [t for t in first_taxa if t not in matrix.taxlabels]
-    new_only = [t for t in matrix.taxlabels if t not in first_taxa]
-    if first_only:
-      missing = ', '.join(first_only)
-      msg = '%s taxa %s not in martix %s' % (nexi[0][0], missing, name)
-      raise Nexus.NexusError(msg)
-    elif new_only:
-      missing = ', '.join(new_only)
-      msg = '%s taxa %s not in all matrices'  % (name, missing)
-      raise Nexus.NexusError(msg)
-  return None # will only get here if it hasn't thrown an exception
+    """Verify Nexus instances have the same taxa information.
+
+    Checks that nexus instances in a list [(name, instance)...] have
+    the same taxa, provides useful error if not and returns None if
+    everything matches
+    """
+    first_taxa = matrices[0][1].taxlabels
+    for name, matrix in matrices[1:]:
+        first_only = [t for t in first_taxa if t not in matrix.taxlabels]
+        new_only = [t for t in matrix.taxlabels if t not in first_taxa]
+        if first_only:
+            missing = ', '.join(first_only)
+            msg = '%s taxa %s not in martix %s' % (nexi[0][0], missing, name)
+            raise Nexus.NexusError(msg)
+        elif new_only:
+            missing = ', '.join(new_only)
+            msg = '%s taxa %s not in all matrices'  % (name, missing)
+            raise Nexus.NexusError(msg)
+    return None # will only get here if it hasn't thrown an exception
 
 
 def concat(file_list, same_taxa=True):
-  """Combine multiple nexus data matrices in one partitioned file.
+    """Combine multiple nexus data matrices in one partitioned file.
 
-  By default this will only work if the same taxa are present in each file
-  use  same_taxa=False if you are not concerned by this
-  """
-  nexi =  [(fname, Nexus.Nexus(fname)) for fname in file_list]
-  if same_taxa:
-    if not check_taxa(nexi):
-      return Nexus.combine(nexi)
-  else:
-    return Nexus.combine(nexi)
+    By default this will only work if the same taxa are present in each file
+    use same_taxa=False if you are not concerned by this
+    """
+    nexi = [(fname, Nexus.Nexus(fname)) for fname in file_list]
+    if same_taxa:
+        if not check_taxa(nexi):
+            return Nexus.combine(nexi)
+    else:
+        return Nexus.combine(nexi)
 ```
 
 And now, using our new functions:
