@@ -101,10 +101,12 @@ them to combine nicely).
 
 ``` python
 def check_taxa(matrices):
-  '''Checks that nexus instances in a list [(name, instance)...] have
+  """Verify Nexus instances have the same taxa information.
+  
+  Checks that nexus instances in a list [(name, instance)...] have
   the same taxa, provides useful error if not and returns None if
   everything matches
-  '''
+  """
   first_taxa = matrices[0][1].taxlabels
   for name, matrix in matrices[1:]:
     first_only = [t for t in first_taxa if t not in matrix.taxlabels]
@@ -121,10 +123,11 @@ def check_taxa(matrices):
 
 
 def concat(file_list, same_taxa=True):
-  ''' Combine multiple nexus data matrices in one partitioned file.
+  """Combine multiple nexus data matrices in one partitioned file.
+
   By default this will only work if the same taxa are present in each file
   use  same_taxa=False if you are not concerned by this
-  '''
+  """
   nexi =  [(fname, Nexus.Nexus(fname)) for fname in file_list]
   if same_taxa:
     if not check_taxa(nexi):
