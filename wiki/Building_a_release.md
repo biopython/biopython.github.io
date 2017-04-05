@@ -32,16 +32,16 @@ needed to test and prepare the Windows installers.
    $ git pull origin master
    ```
 
-2. make sure the `README` file is still up to date
+2. make sure the `README.rst` file is still up to date
 
-3. add any important info to `NEWS` or `DEPRECATED` - you can get a
+3. add any important info to `NEWS.rst` or `DEPRECATED.rst` - you can get a
    log of recent git changes like this (adjust the date accordingly):
 
    ``` bash
    $ git log --since="2016/01/01" --reverse --pretty="medium"
    ```
 
-4. make sure `CONTRIB` still current
+4. make sure `CONTRIB.rst` still current
 
 5. make sure `setup.py` is still up to date
 
@@ -54,11 +54,11 @@ needed to test and prepare the Windows installers.
    - Biopython version - edit `Bio/__init__.py`
    - Biopython Tutorial - update the date/version line in the
      `Doc/Tutorial.tex` file
-   - Biopython `NEWS` - fill in the release date
+   - Biopython `NEWS.rst` - fill in the release date
    - Make sure to commit the modified files to github, e.g.
 
    ``` bash
-   $ git commit Bio/__init__.py Doc/Tutorial.tex NEWS -m "Call this Biopython 1.68"
+   $ git commit Bio/__init__.py Doc/Tutorial.tex NEWS.rst -m "Call this Biopython 1.68"
    ```
 
 7. do last check to make sure things are checked in:
