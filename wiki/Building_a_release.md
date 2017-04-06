@@ -193,6 +193,9 @@ needed to test and prepare the Windows installers.
     $ git add docs/api/*
     $ git commit -m "epydoc for Biopython 1.68"
     ```
+    
+    - Check with ``git status`` if any Python files where removed, in which case you also
+      need to use ``git rm ...`` to remove the associated HTML files.
 
     - Update the tutorial too:
 
