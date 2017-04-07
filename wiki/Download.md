@@ -6,38 +6,33 @@ redirect_from:
  - /download/
 ---
 
-Current Release - 1.68 - 25 August 2016
-=======================================
+Current Release - 1.69 - 7 April 2017
+=====================================
 
 See also [What's
 new](https://github.com/biopython/biopython/raw/master/NEWS).
 
 ### Files
 
-#### Biopython 1.68
+#### Biopython 1.69
 
--   [biopython-1.68.tar.gz](http://biopython.org/DIST/biopython-1.68.tar.gz)
-    14Mb -- Source Tarball
--   [biopython-1.68.zip](http://biopython.org/DIST/biopython-1.68.zip)
-    15Mb -- Source Zip File
--   [biopython-1.68.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.68.win32-py2.6.exe)
-    2Mb -- 32 bit Windows .exe Installer for Python 2.6 and NumPy 1.8.2
--   [biopython-1.68.win32-py2.7.exe](http://biopython.org/DIST/biopython-1.68.win32-py2.7.exe)
+-   [biopython-1.69.tar.gz](http://biopython.org/DIST/biopython-1.69.tar.gz)
+    15Mb -- Source Tarball
+-   [biopython-1.69.zip](http://biopython.org/DIST/biopython-1.69.zip)
+    16Mb -- Source Zip File
+-   [biopython-1.69.win32-py2.7.exe](http://biopython.org/DIST/biopython-1.69.win32-py2.7.exe)
     2Mb -- 32 bit Windows .exe Installer for Python 2.7 and NumPy 1.11.0
--   [biopython-1.68.win32-py2.7.msi](http://biopython.org/DIST/biopython-1.68.win32-py2.7.msi)
+-   [biopython-1.69.win32-py2.7.msi](http://biopython.org/DIST/biopython-1.69.win32-py2.7.msi)
     2Mb -- 32 bit Windows .msi Installer for Python 2.7 and NumPy 1.11.0
--   [biopython-1.68.win32-py3.3.exe](http://biopython.org/DIST/biopython-1.68.win32-py3.3.exe)
+-   [biopython-1.69.win32-py3.3.exe](http://biopython.org/DIST/biopython-1.69.win32-py3.3.exe)
     2Mb -- 32 bit Windows .exe Installer for Python 3.3 and NumPy 1.10.2
--   [biopython-1.68.win32-py3.3.msi](http://biopython.org/DIST/biopython-1.68.win32-py3.3.msi)
+-   [biopython-1.69.win32-py3.3.msi](http://biopython.org/DIST/biopython-1.69.win32-py3.3.msi)
     2Mb -- 32 bit Windows .msi Installer for Python 3.3 and NumPy 1.10.2
--   [biopython-1.68.win32-py3.4.exe](http://biopython.org/DIST/biopython-1.68.win32-py3.4.exe)
+-   [biopython-1.69.win32-py3.4.exe](http://biopython.org/DIST/biopython-1.69.win32-py3.4.exe)
     2Mb -- 32 bit Windows .exe Installer for Python 3.4 and NumPy 1.11.0
--   [biopython-1.68.win32-py3.4.msi](http://biopython.org/DIST/biopython-1.68.win32-py3.4.msi)
+-   [biopython-1.69.win32-py3.4.msi](http://biopython.org/DIST/biopython-1.69.win32-py3.4.msi)
     2Mb -- 32 bit Windows .msi Installer for Python 3.4 and NumPy 1.11.0
--   [biopython-1.68.win32-py3.5.exe](http://biopython.org/DIST/biopython-1.68.win32-py3.5.exe)
-    2Mb -- 32 bit Windows .exe Installer for Python 3.5 and NumPy 1.11.1
--   [biopython-1.68.win32-py3.5.msi](http://biopython.org/DIST/biopython-1.68.win32-py3.5.msi)
-    2Mb -- 32 bit Windows .msi Installer for Python 3.5 and NumPy 1.11.1
+-   32-bit Windows installers for Python 3.5 and 3.6 pending.
 
 Please report any issues on our [mailing
 lists](Mailing_lists "wikilink") or [bug
@@ -260,6 +255,31 @@ Old Releases
 ============
 
 Recent releases of Biopython require NumPy (and not Numeric):
+
+-   [biopython-1.68.tar.gz](http://biopython.org/DIST/biopython-1.68.tar.gz)
+    14Mb -- Source Tarball
+-   [biopython-1.68.zip](http://biopython.org/DIST/biopython-1.68.zip)
+    15Mb -- Source Zip File
+-   [biopython-1.68.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.68.win32-py2.6.exe)
+    2Mb -- 32 bit Windows .exe Installer for Python 2.6 and NumPy 1.8.2
+-   [biopython-1.68.win32-py2.7.exe](http://biopython.org/DIST/biopython-1.68.win32-py2.7.exe)
+    2Mb -- 32 bit Windows .exe Installer for Python 2.7 and NumPy 1.11.0
+-   [biopython-1.68.win32-py2.7.msi](http://biopython.org/DIST/biopython-1.68.win32-py2.7.msi)
+    2Mb -- 32 bit Windows .msi Installer for Python 2.7 and NumPy 1.11.0
+-   [biopython-1.68.win32-py3.3.exe](http://biopython.org/DIST/biopython-1.68.win32-py3.3.exe)
+    2Mb -- 32 bit Windows .exe Installer for Python 3.3 and NumPy 1.10.2
+-   [biopython-1.68.win32-py3.3.msi](http://biopython.org/DIST/biopython-1.68.win32-py3.3.msi)
+    2Mb -- 32 bit Windows .msi Installer for Python 3.3 and NumPy 1.10.2
+-   [biopython-1.68.win32-py3.4.exe](http://biopython.org/DIST/biopython-1.68.win32-py3.4.exe)
+    2Mb -- 32 bit Windows .exe Installer for Python 3.4 and NumPy 1.11.0
+-   [biopython-1.68.win32-py3.4.msi](http://biopython.org/DIST/biopython-1.68.win32-py3.4.msi)
+    2Mb -- 32 bit Windows .msi Installer for Python 3.4 and NumPy 1.11.0
+-   [biopython-1.68.win32-py3.5.exe](http://biopython.org/DIST/biopython-1.68.win32-py3.5.exe)
+    2Mb -- 32 bit Windows .exe Installer for Python 3.5 and NumPy 1.11.1
+-   [biopython-1.68.win32-py3.5.msi](http://biopython.org/DIST/biopython-1.68.win32-py3.5.msi)
+    2Mb -- 32 bit Windows .msi Installer for Python 3.5 and NumPy 1.11.1
+
+<!-- -->
 
 -   [biopython-1.67.tar.gz](http://biopython.org/DIST/biopython-1.67.tar.gz)
     14Mb -- Source Tarball
