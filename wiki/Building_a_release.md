@@ -82,9 +82,6 @@ needed to test and prepare the Windows installers.
    this:
 
    ```
-   C:\python26\python setup.py build
-   C:\python26\python setup.py test
-
    C:\python27\python setup.py build
    C:\python27\python setup.py test
 
@@ -231,7 +228,6 @@ before hand you seem to get a bloated setup exe. Assuming you have setup
 your compilers etc appropriately just do this:
 
     ```
-    C:\python26\python setup.py bdist_wininst
     C:\python27\python setup.py bdist_wininst
     C:\python33\python setup.py bdist_wininst
     C:\python34\python setup.py bdist_wininst
