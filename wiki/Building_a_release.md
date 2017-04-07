@@ -232,6 +232,7 @@ your compilers etc appropriately just do this:
     C:\python33\python setup.py bdist_wininst
     C:\python34\python setup.py bdist_wininst
     C:\python35\python setup.py bdist_wininst
+    C:\python36\python setup.py bdist_wininst
     ```
 
     and:
@@ -241,6 +242,7 @@ your compilers etc appropriately just do this:
     C:\python33\python setup.py bdist_msi
     C:\python34\python setup.py bdist_msi
     C:\python35\python setup.py bdist_msi
+    C:\python36\python setup.py bdist_msi
     ```
 
     If you are using MinGW, you will have to make distutils use it (it will
