@@ -16,8 +16,8 @@ or
 [Atom](http://news.open-bio.org/category/obf-projects/biopython/feed/atom)
 feed.
 
-See also the latest version of the [NEWS
-file](https://github.com/biopython/biopython/raw/master/NEWS) included with
+See also the latest version of the [NEWS.rst
+file](https://github.com/biopython/biopython/raw/master/NEWS.rst) included with
 each release.
 
 P.S. You can also follow us on [Twitter](http://twitter.com/biopython)!
