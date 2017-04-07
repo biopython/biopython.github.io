@@ -213,7 +213,7 @@ needed to test and prepare the Windows installers.
       <http://biopython.org/DIST/docs/tutorial/Tutorial.html>, and
       <http://biopython.org/DIST/docs/tutorial/Tutorial.pdf>
 
-16. add git tag
+16. Back in the main repository, tag the release:
 
     ``` bash
     $ cd  .../tmp1/biopython/
