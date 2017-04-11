@@ -10,9 +10,9 @@ tags:
 the [OBF](http://open-bio.org/) projects (BioPerl, BioJava etc) to
 support a shared database schema for storing sequence data. In theory,
 you could load a GenBank file into the database with BioPerl, then using
-Biopython extract this from the database as a record object with featues
-- and get more or less the same thing as if you had loaded the GenBank
-file directly as a [SeqRecord](SeqRecord "wikilink") using
+Biopython extract this from the database as a record object with
+features - and get more or less the same thing as if you had loaded
+the GenBank file directly as a [SeqRecord](SeqRecord "wikilink") using
 [SeqIO](SeqIO "wikilink").
 
 We have some existing documentation
