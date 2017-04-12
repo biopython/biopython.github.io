@@ -32,7 +32,14 @@ new](https://github.com/biopython/biopython/raw/master/NEWS).
     2Mb -- 32 bit Windows .exe Installer for Python 3.4 and NumPy 1.11.0
 -   [biopython-1.69.win32-py3.4.msi](http://biopython.org/DIST/biopython-1.69.win32-py3.4.msi)
     2Mb -- 32 bit Windows .msi Installer for Python 3.4 and NumPy 1.11.0
--   32-bit Windows installers for Python 3.5 and 3.6 pending.
+-   [biopython-1.69.win32-py3.5.exe](http://biopython.org/DIST/biopython-1.69.win32-py3.5.exe)
+    3Mb -- 32 bit Windows .exe Installer for Python 3.5 and NumPy 1.11.1
+-   [biopython-1.69.win32-py3.5.msi](http://biopython.org/DIST/biopython-1.69.win32-py3.5.msi)
+    3Mb -- 32 bit Windows .msi Installer for Python 3.5 and NumPy 1.11.1
+-   [biopython-1.69.win32-py3.6.exe](http://biopython.org/DIST/biopython-1.69.win32-py3.6.exe)
+    2Mb -- 32 bit Windows .exe Installer for Python 3.6 and NumPy 1.11.3
+-   [biopython-1.69.win32-py3.6.msi](http://biopython.org/DIST/biopython-1.69.win32-py3.6.msi)
+    2Mb -- 32 bit Windows .msi Installer for Python 3.6 and NumPy 1.11.3
 
 Please report any issues on our [mailing
 lists](Mailing_lists "wikilink") or [bug
