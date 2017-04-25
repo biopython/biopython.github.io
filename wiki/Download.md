@@ -10,7 +10,7 @@ Current Release - 1.69 - 7 April 2017
 =====================================
 
 See also [What's
-new](https://github.com/biopython/biopython/raw/master/NEWS).
+new](https://github.com/biopython/biopython/blob/master/NEWS.rst).
 
 ### Files
 
