@@ -4,8 +4,8 @@ permalink: wiki/Logo
 layout: wiki
 ---
 
-Our logo was created by Henrik Vestergaard and Thomas Hamelryck back in
-2003. Inspired by the structure of DNA, it shows two golden pythons
+Our logo was created by Henrik Vestergaard and Thomas Hamelryck back
+in 2003. Inspired by the structure of DNA, it shows two golden pythons
 twisting in opposite directions to form a double helix around the word
 Biopython:
 
