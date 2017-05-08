@@ -10,15 +10,15 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="1800"
-   height="1200"
-   viewBox="0 0 1800 1200"
+   height="1800"
+   viewBox="0 0 1800 1800"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="biopython_logo.svg"
-   inkscape:export-filename="F:\Informatik\biopython_website\assets\images\biopython_logo_xs.png"
-   inkscape:export-xdpi="15"
-   inkscape:export-ydpi="15">
+   sodipodi:docname="biopython_icon.svg"
+   inkscape:export-filename="F:\Informatik\biopython_website\assets\images\biopython_icon.png"
+   inkscape:export-xdpi="1.6"
+   inkscape:export-ydpi="1.6">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.5"
-     inkscape:cx="595.69723"
-     inkscape:cy="713.42446"
+     inkscape:zoom="0.35355339"
+     inkscape:cx="978.2474"
+     inkscape:cy="906.38549"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -55,7 +55,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -63,10 +63,10 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,147.63782)">
+     transform="translate(0,747.63782)">
     <g
        id="g4310"
-       transform="matrix(4.4382931,0,0,4.4382931,-595.1727,-792.75821)">
+       transform="matrix(4.4382931,0,0,4.4382931,-595.1727,-924.7582)">
       <g
          transform="matrix(-1,0,0,-1,673.27502,484.23998)"
          id="g4270">
@@ -141,17 +141,5 @@
          d="m 252.29455,318.4099 0,-19.86133 c 0.0163,0.002 -0.0414,0.005 -0.0156,0.008 -1.6926,-0.15841 -3.49684,-0.81602 -4.55274,-1.54883 -4.27021,-2.96363 -8.23731,-8.88378 -12.82226,-15.7832 -4.6013,-6.92401 -8.17418,-15.49069 -12.59766,-24.54297 -6.40732,-13.11204 -12.20654,-26.89325 -18.78906,-40.68555 -7.61804,-18.48397 -25.96566,-41.91891 -32.79492,-42.99609 -1.54657,6.88352 6.35711,33.99084 14.74414,51.61132 6.31238,13.22628 12.13433,27.06534 18.87109,40.85157 4.0366,8.26054 7.84637,17.70531 13.91016,26.83007 4.29814,6.46783 9.15908,14.95723 18.07422,21.14454 4.3593,3.02545 9.22344,4.57738 14.09374,5.0332 0.65812,0.0616 1.24518,-0.0576 1.87891,-0.0606 z"
          id="path4268" />
     </g>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:312.5px;line-height:125%;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#676767;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="59.792538"
-       y="902.07721"
-       id="text4326"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan4328"
-         x="59.792538"
-         y="902.07721"
-         style="-inkscape-font-specification:'Comfortaa, Normal';font-family:Comfortaa;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:312.5px;text-anchor:start;text-align:start;writing-mode:lr;line-height:125%">biopython</tspan></text>
   </g>
 </svg>
