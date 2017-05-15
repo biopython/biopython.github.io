@@ -37,15 +37,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.50000001"
-     inkscape:cx="550.53785"
+     inkscape:cx="1001.1531"
      inkscape:cy="579.40019"
      inkscape:document-units="px"
-     inkscape:current-layer="g4345"
+     inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
+     inkscape:window-width="1680"
+     inkscape:window-height="987"
      inkscape:window-x="-8"
-     inkscape:window-y="1042"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      units="px"
      showguides="false"
@@ -72,18 +72,46 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,147.63782)">
-    <text
-       xml:space="preserve"
+    <g
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:312.5px;line-height:125%;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#676767;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="61.792538"
-       y="922.07721"
-       id="text4326"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan4328"
-         x="61.792538"
-         y="922.07721"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:312.5px;line-height:125%;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">biopython</tspan></text>
+       id="text4326">
+      <path
+         d="m 179.29254,749.57721 q 23.75,0 42.8125,11.5625 19.375,11.25 30.3125,31.25 11.25,19.6875 11.25,44.0625 0,24.375 -11.5625,44.375 -11.25,20 -31.25,31.5625 -19.6875,11.25 -44.0625,11.25 -24.375,0 -44.375,-11.25 -19.6875,-11.5625 -31.25,-31.5625 -11.250002,-20 -11.250002,-44.375 l 0,-73.4375 q 0,-1.875 0.3125,-2.8125 l 0,-70 q 0,-5.3125 3.125,-8.75 3.4375,-3.4375 8.750002,-3.4375 5.3125,0 8.75,3.4375 3.4375,3.4375 3.4375,8.75 l 0,91.5625 q 10.9375,-15 27.8125,-23.4375 16.875,-8.75 37.1875,-8.75 z m -2.5,152.1875 q 17.8125,0 32.1875,-8.4375 14.6875,-8.75 22.8125,-23.4375 8.4375,-15 8.4375,-33.4375 0,-18.4375 -8.4375,-33.125 -8.125,-15 -22.8125,-23.4375 -14.375,-8.4375 -32.1875,-8.4375 -24.6875,0 -42.1875,15.625 -17.1875,15.625 -20.3125,40 0,0.9375 -0.3125,1.5625 -0.3125,2.5 -0.3125,7.8125 0,18.4375 8.125,33.4375 8.4375,14.6875 22.8125,23.4375 14.375,8.4375 32.1875,8.4375 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:312.5px;line-height:125%;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+         id="path4148" />
+      <path
+         d="m 328.0523,922.07721 q -5.3125,0 -8.75,-3.4375 -3.4375,-3.4375 -3.4375,-8.75 l 0,-146.5625 q 0,-5.3125 3.4375,-8.75 3.4375,-3.4375 8.75,-3.4375 5.3125,0 8.4375,3.4375 3.4375,3.4375 3.4375,8.75 l 0,146.5625 q 0,5.3125 -3.4375,8.75 -3.125,3.4375 -8.4375,3.4375 z m -0.3125,-203.4375 q -7.1875,0 -12.1875,-5 -4.6875,-5 -4.6875,-12.1875 0,-7.5 5,-12.1875 5,-4.6875 12.1875,-4.6875 6.875,0 11.875,4.6875 5,4.6875 5,12.1875 0,7.1875 -5,12.1875 -5,5 -12.1875,5 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:312.5px;line-height:125%;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+         id="path4150" />
+      <path
+         d="m 479.00933,923.63971 q -24.6875,0 -44.6875,-11.25 -19.6875,-11.25 -30.9375,-30.9375 -11.25,-20 -11.25,-44.6875 0,-24.6875 11.25,-44.6875 11.25,-20 30.9375,-31.25 20,-11.25 44.6875,-11.25 24.6875,0 44.375,11.25 19.6875,11.25 30.9375,31.25 11.5625,20 11.5625,44.6875 0,24.6875 -11.25,44.6875 -11.25,19.6875 -31.25,30.9375 -19.6875,11.25 -44.375,11.25 z m 0,-21.875 q 18.125,0 32.5,-8.4375 14.375,-8.4375 22.5,-23.125 8.125,-15 8.125,-33.4375 0,-18.75 -8.125,-33.4375 -8.125,-15 -22.5,-23.4375 -14.375,-8.4375 -32.5,-8.4375 -17.8125,0 -32.5,8.4375 -14.375,8.4375 -22.8125,23.4375 -8.125,14.6875 -8.125,33.4375 0,18.4375 8.125,33.4375 8.4375,14.6875 22.8125,23.125 14.6875,8.4375 32.5,8.4375 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:312.5px;line-height:125%;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+         id="path4152" />
+      <path
+         d="m 699.86383,749.57721 q 24.375,0 44.0625,11.5625 20,11.25 31.25,31.25 11.5625,20 11.5625,44.375 0,24.375 -11.25,44.375 -10.9375,19.6875 -30.3125,31.25 -19.0625,11.25 -42.8125,11.25 -20.3125,0 -37.1875,-8.4375 -16.875,-8.75 -27.8125,-23.75 l 0,91.5625 q 0,5.3125 -3.4375,8.75 -3.4375,3.4375 -8.75,3.4375 -5.3125,0 -8.75,-3.4375 -3.125,-3.4375 -3.125,-8.75 l 0,-70 q -0.3125,-0.9375 -0.3125,-2.8125 l 0,-73.4375 q 0,-24.375 11.25,-44.375 11.5625,-20 31.25,-31.25 20,-11.5625 44.375,-11.5625 z m 0,152.1875 q 17.8125,0 32.1875,-8.4375 14.6875,-8.4375 22.8125,-23.125 8.4375,-15 8.4375,-33.4375 0,-18.4375 -8.4375,-33.125 -8.125,-15 -22.8125,-23.4375 -14.375,-8.75 -32.1875,-8.75 -17.8125,0 -32.1875,8.75 -14.375,8.4375 -22.8125,23.4375 -8.125,14.6875 -8.125,33.125 0,5.3125 0.3125,7.8125 0.3125,0.625 0.3125,1.5625 3.125,24.375 20.3125,40 17.5,15.625 42.1875,15.625 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:312.5px;line-height:125%;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+         id="path4154" />
+      <path
+         d="m 964.02398,752.07721 q 7.1875,2.8125 7.1875,9.0625 0,2.8125 -1.25,5.625 l -101.25,222.5 q -2.8125,7.1875 -9.0625,7.1875 -3.125,0 -5.625,-1.25 -7.1875,-2.8125 -7.1875,-9.375 0,-2.8125 1.25,-5.625 l 30.9375,-68.4375 0,-0.3125 -69.6875,-144.375 q -1.25,-2.5 -1.25,-5.625 0,-6.5625 6.875,-9.375 2.5,-1.25 5.625,-1.25 6.5625,0 9.375,6.5625 l 60.9375,128.4375 58.125,-128.125 q 3.125,-6.875 9.375,-6.875 2.8125,0 5.625,1.25 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:312.5px;line-height:125%;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+         id="path4156" />
+      <path
+         d="m 1077.0953,898.01471 q 5,0 8.125,3.4375 3.125,3.4375 3.125,8.75 0,5 -3.75,8.4375 -3.75,3.4375 -9.375,3.4375 l -6.5625,0 q -16.5625,0 -29.6875,-7.8125 -13.125,-8.125 -20.625,-21.5625 -7.1875,-13.75 -7.1875,-30.9375 l 0,-83.4375 -20.31253,0 q -5,0 -8.125,-2.8125 -2.8125,-3.125 -2.8125,-7.5 0,-4.6875 2.8125,-7.5 3.125,-3.125 8.125,-3.125 l 20.31253,0 0,-48.4375 q 0,-5.3125 3.125,-8.75 3.4375,-3.4375 8.75,-3.4375 5.3125,0 8.75,3.4375 3.4375,3.4375 3.4375,8.75 l 0,48.4375 35.3125,0 q 5,0 7.8125,3.125 3.125,2.8125 3.125,7.5 0,4.375 -3.125,7.5 -2.8125,2.8125 -7.8125,2.8125 l -35.3125,0 0,83.4375 q 0,15.9375 9.375,26.25 9.375,10 24.0625,10 l 8.4375,0 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:312.5px;line-height:125%;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+         id="path4158" />
+      <path
+         d="m 1208.4527,749.26471 q 22.1875,0 39.6875,9.375 17.8125,9.375 27.8125,27.5 10,17.8125 10,42.8125 l 0,81.25 q 0,5 -3.4375,8.4375 -3.4375,3.4375 -8.4375,3.4375 -5.3125,0 -8.75,-3.4375 -3.4375,-3.4375 -3.4375,-8.4375 l 0,-81.25 q 0,-27.8125 -15.625,-42.1875 -15.3125,-14.6875 -40.3125,-14.6875 -15.3125,0 -27.8125,5.9375 -12.1875,5.9375 -19.375,16.5625 -7.1875,10.3125 -7.1875,23.125 l 0,92.5 q 0,5.3125 -3.4375,8.75 -3.125,3.125 -8.4375,3.125 -5.3125,0 -8.75,-3.125 -3.4375,-3.4375 -3.4375,-8.75 l 0,-220 q 0,-5.3125 3.4375,-8.75 3.4375,-3.4375 8.75,-3.4375 5.3125,0 8.4375,3.4375 3.4375,3.4375 3.4375,8.75 l 0,83.75 q 10.3125,-11.5625 25,-18.125 14.6875,-6.5625 31.875,-6.5625 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:312.5px;line-height:125%;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+         id="path4160" />
+      <path
+         d="m 1417.1197,923.63971 q -24.6875,0 -44.6875,-11.25 -19.6875,-11.25 -30.9375,-30.9375 -11.25,-20 -11.25,-44.6875 0,-24.6875 11.25,-44.6875 11.25,-20 30.9375,-31.25 20,-11.25 44.6875,-11.25 24.6875,0 44.375,11.25 19.6875,11.25 30.9375,31.25 11.5625,20 11.5625,44.6875 0,24.6875 -11.25,44.6875 -11.25,19.6875 -31.25,30.9375 -19.6875,11.25 -44.375,11.25 z m 0,-21.875 q 18.125,0 32.5,-8.4375 14.375,-8.4375 22.5,-23.125 8.125,-15 8.125,-33.4375 0,-18.75 -8.125,-33.4375 -8.125,-15 -22.5,-23.4375 -14.375,-8.4375 -32.5,-8.4375 -17.8125,0 -32.5,8.4375 -14.375,8.4375 -22.8125,23.4375 -8.125,14.6875 -8.125,33.4375 0,18.4375 8.125,33.4375 8.4375,14.6875 22.8125,23.125 14.6875,8.4375 32.5,8.4375 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:312.5px;line-height:125%;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+         id="path4162" />
+      <path
+         d="m 1632.0367,749.26471 q 22.1875,0 39.6875,9.375 17.8125,9.375 27.8125,27.5 10,17.8125 10,42.8125 l 0,81.25 q 0,5 -3.4375,8.4375 -3.4375,3.4375 -8.4375,3.4375 -5.3125,0 -8.75,-3.4375 -3.4375,-3.4375 -3.4375,-8.4375 l 0,-81.25 q 0,-27.8125 -15.625,-42.1875 -15.3125,-14.6875 -40.3125,-14.6875 -15.3125,0 -27.8125,5.9375 -12.1875,5.9375 -19.375,16.5625 -7.1875,10.3125 -7.1875,23.125 l 0,92.5 q 0,5.3125 -3.4375,8.75 -3.125,3.125 -8.4375,3.125 -5.3125,0 -8.75,-3.125 -3.4375,-3.4375 -3.4375,-8.75 l 0,-146.875 q 0,-5.3125 3.4375,-8.75 3.4375,-3.4375 8.75,-3.4375 5.3125,0 8.4375,3.4375 3.4375,3.4375 3.4375,8.75 l 0,10.625 q 10.3125,-11.5625 25,-18.125 14.6875,-6.5625 31.875,-6.5625 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:312.5px;line-height:125%;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+         id="path4164" />
+    </g>
     <g
        id="g4359"
        transform="translate(2,6)">
