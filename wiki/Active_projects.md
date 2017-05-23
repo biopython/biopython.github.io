@@ -21,8 +21,8 @@ It has been proposed we port Biopython's documentation from the existing
 combination of LaTeX (cookbook and main docs) and EpyDoc (API docs) to
 [Sphinx](http://sphinx.pocoo.org/). This is a multi-step process which
 we're proceeding through incrementally, and help is always appreciated.
-The short term goal is converting all the docstrings (API docs) to use
-reStructuredText markup rather than EpyDoc specific markup.
+The short term goal is [ensuring all the docstrings (API docs) use valid
+reStructuredText markup](https://github.com/biopython/biopython/issues/1221). 
 
 ### Extending Bio.PDB
 
