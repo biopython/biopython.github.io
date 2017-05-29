@@ -94,7 +94,7 @@ scientific publication, please cite the application note
 ([Cock *et al.*, 2009](http://dx.doi.org/10.1093/bioinformatics/btp163))
 and/or one of the other listed papers:
 
-1.  Cock PA, Antao T, Chang JT, Bradman BA, Cox CJ, Dalke A, Friedberg I, Hamelryck T, Kauff F,
+1.  Cock PA, Antao T, Chang JT, Chapman BA, Cox CJ, Dalke A, Friedberg I, Hamelryck T, Kauff F,
     Wilczynski B and de Hoon MJL (2009) Biopython: freely available Python tools for computational
     molecular biology and bioinformatics. [*Bioinformatics*, 25, 1422-1423](http://dx.doi.org/10.1093/bioinformatics/btp163)
 
