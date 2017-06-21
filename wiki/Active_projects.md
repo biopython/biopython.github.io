@@ -81,6 +81,12 @@ structures [1](http://github.com/krother/biopython/tree/rna) and working
 with Bio.Sequence objects that represent modified RNA nucleotides
 [2](http://github.com/krother/biopython/tree/rna_alphabet).
 
+
+### Biopython 2
+
+[A discussion](Biopython2 "wikilink") about a new version of Biopython with restructured
+internals.
+
 ### Open Enhancement Issues / Pull Requests
 
 The [open GitHub issues](https://github.com/biopython/biopython/issues)
