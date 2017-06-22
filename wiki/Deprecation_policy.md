@@ -42,7 +42,7 @@ warnings.warn("Bio.SomeModule has been deprecated, and we intend to remo
               " in a future release of Biopython. Please use the SomeOtherModule"
               " instead, as described in the Tutorial. If you would like to"
               " continue using Bio.SomeModule, please contact the Biopython"
-              " developers via the mailing list.",
+              " developers via the mailing list or GitHub.",
               BiopythonDeprecationWarning)
 ```
 
