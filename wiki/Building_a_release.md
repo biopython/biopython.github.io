@@ -313,9 +313,9 @@ releases):
     - forward the email to Linux packagers e.g.
       debian-med@lists.debian.org
 
-21. Ask Peter, Brad, or Bjoern to prepare a new Galaxy package on
-[biopython/galaxy_packages](https://github.com/biopython/galaxy_packages)
-and upload it to the main and test Galaxy ToolShed.
+21. Open an issue (or better a pull request) to update the BioConda recipe
+https://github.com/bioconda/bioconda-recipes/tree/master/recipes/biopython
+which populates https://anaconda.org/bioconda/biopython
 
 22. Bump version numbers again
 
