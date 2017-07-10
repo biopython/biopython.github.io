@@ -4,7 +4,7 @@ permalink: wiki/Building_a_release
 layout: wiki
 ---
 
-Build Biopython in 23 easy steps!!
+Build Biopython in 22 easy steps!!
 
 Setup required for a new release manager
 ----------------------------------------
@@ -43,11 +43,9 @@ needed to test and prepare the Windows installers.
 
 4. make sure `CONTRIB.rst` still current
 
-5. make sure `setup.py` is still up to date
+5. make sure `setup.py` and `MANIFEST.in` are still up to date
 
-   - Are there any new modules which should get installed?
-   - You don't need to update version in `setup.py` itself
-     (this is now done in `Bio/__init__.py` as described above)
+   - Are there any new modules/files which should get installed?
 
 6. bump version numbers and set the release data:
 
@@ -117,19 +115,13 @@ needed to test and prepare the Windows installers.
     drevil:~tmp1/biopython/> make clean -C Doc
     ```
 
-11. make `MANIFEST`. First, make sure `MANIFEST.in` is up to date.
-
-    ``` bash
-    drevil:~tmp1/biopython> python setup.py sdist --manifest-only
-    ```
-
-12. make the source distribution
+11. make the source distribution
 
     ``` bash
     drevil:~tmp1/biopython> python setup.py sdist --formats=gztar,zip
     ```
 
-13. untar the file somewhere else
+12. untar the file somewhere else
 
     ``` bash
     drevil:~tmp1/biopython/> cd ..
@@ -139,7 +131,7 @@ needed to test and prepare the Windows installers.
 
     - Check to make sure it includes the HTML and PDF files under Doc
 
-14. make sure I can build and test it
+13. make sure I can build and test it
 
     ``` bash
     drevil:~tmp1/biopython-1.68/> python setup.py build
@@ -150,7 +142,7 @@ needed to test and prepare the Windows installers.
     A typical source of failure here (on the tests) is the lack of example
     files being added to the source distribution: add them to `MANIFEST.in`
 
-15. Update API documentation using Epydoc (this can often report otherwise overlooked
+14. Update API documentation using Epydoc (this can often report otherwise overlooked
     errors).
 
     - If you haven't already, clone the ``DIST`` repository - otherwise first
@@ -213,7 +205,7 @@ needed to test and prepare the Windows installers.
       <http://biopython.org/DIST/docs/tutorial/Tutorial.html>, and
       <http://biopython.org/DIST/docs/tutorial/Tutorial.pdf>
 
-16. Back in the main repository, tag the release:
+15. Back in the main repository, tag the release:
 
     ``` bash
     $ cd  .../tmp1/biopython/
@@ -221,7 +213,7 @@ needed to test and prepare the Windows installers.
     $ git push origin master --tags
     ```
 
-17. On your windows machine, build the Windows installers (either from a
+16. On your windows machine, build the Windows installers (either from a
 clean checkout, or an unzipped copy of the source code bundle made
 earlier). Build the installers first, if you do a build/test/install
 before hand you seem to get a bloated setup exe. Assuming you have setup
@@ -251,11 +243,11 @@ your compilers etc appropriately just do this:
     [configure
     distutils](http://stackoverflow.com/questions/3297254/how-to-use-mingws-gcc-compiler-when-installing-python-package-using-pip)
 
-18. Remove any prior Biopython installations on your windows machine,
+17. Remove any prior Biopython installations on your windows machine,
 and confirm the Windows installers work. Then copy them to your Linux
 machine.
 
-19. Upload the new release to the website via GitHub Pages `DIST` repository.
+18. Upload the new release to the website via GitHub Pages `DIST` repository.
 
     ``` bash
     $ cp dist/biopython-1.68.* ~/repositories/DIST/
@@ -269,7 +261,7 @@ machine.
     $ git push origin gh-pages
     ```
 
-20. Upload to the python package index (except for beta/alpha level
+19. Upload to the python package index (except for beta/alpha level
 releases):
 
     ``` bash
@@ -283,7 +275,7 @@ releases):
 
     - Check this is live at <https://pypi.python.org/pypi/biopython/>
 
-21. Update the website and announce the release:
+20. Update the website and announce the release:
 
     - If you haven't already, clone the ``biopython.github.io`` repository,
       (otherwise make sure your copy is up to date):
@@ -321,11 +313,11 @@ releases):
     - forward the email to Linux packagers e.g.
       debian-med@lists.debian.org
 
-22. Ask Peter, Brad, or Bjoern to prepare a new Galaxy package on
+21. Ask Peter, Brad, or Bjoern to prepare a new Galaxy package on
 [biopython/galaxy_packages](https://github.com/biopython/galaxy_packages)
 and upload it to the main and test Galaxy ToolShed.
 
-23. Bump version numbers again
+22. Bump version numbers again
 
     - Update `Bio/__init__.py` version
     - Biopython Tutorial - update the date/version line in the
