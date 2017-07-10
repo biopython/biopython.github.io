@@ -65,26 +65,26 @@ Most **Linux** distributions will include an optional Biopython package
 automatically.
 
 Recent version of Python (starting with Python 2.7.9 and Python 3.4) include
-the Python package management tool `pip`, which allows an easy installation
+the Python package management tool ``pip``, which allows an easy installation
 on all plattforms. Try:
 
 ``` bash
 pip install biopython
 ```
 
-Otherwise you typically install from source by downloading and
-uncompressing the archive, then running the commands:
+To install from source, after downloading and uncompressing the archive,
+use ``pip install .`` instead.
 
+If you need to install under a specific version of Python, try something
+like this:
+ 
 ``` bash
-python setup.py build
-python setup.py test
-sudo python setup.py install
+python2.7 -m pip install biopython
+python3.6 -m pip install biopython
+pypy -m pip install biopython
 ```
 
-Substitute python with your specific version, for example python3,
-jython or pypy.
-
-For **Mac OS X**, or as it is branded, ``macOS``, we recommend installing
+For **Mac OS X**, or as it is now branded, **macOS**, we recommend installing
 Biopython from source as above. You will need to have installed Apple's
 command line tools, which can de done with the terminal command:
 
@@ -112,13 +112,12 @@ list](Mailing_lists "wikilink") and ask for help there.
     Python 2.6 is deprecated)
 -   [C compiler (if compiling
     from source)](https://docs.python.org/3/using/index.html) You
-    need a C compiler supported by `distutils`, **gcc** will work fine on
+    need a C compiler supported by ``setuptools``, **gcc** will work fine on
     UNIX-like platforms. This is not needed on Windows if using the
     install programs provided above. On Mac OS, you should install
-    Apple's **XCode** *including* the command line tools.
+    Apple's the compiler tools as described above.
 -   [NumPy (Numerical Python)](http://numpy.scipy.org/). Note that until
-    Biopython 1.49, Biopython used the older Numeric library. We have
-    tested NumPy 1.1 to 1.9 with Biopython.
+    Biopython 1.49, Biopython used the older Numeric library.
 
 ### Optional Software
 
