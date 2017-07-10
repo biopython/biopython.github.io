@@ -77,7 +77,7 @@ use ``pip install .`` instead.
 
 If you need to install under a specific version of Python, try something
 like this:
- 
+
 ``` bash
 python2.7 -m pip install biopython
 python3.6 -m pip install biopython
