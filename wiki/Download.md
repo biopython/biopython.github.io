@@ -66,7 +66,7 @@ automatically.
 
 Recent version of Python (starting with Python 2.7.9 and Python 3.4) include
 the Python package management tool ``pip``, which allows an easy installation
-on all plattforms. Try:
+on all platforms. Try:
 
 ``` bash
 pip install biopython
