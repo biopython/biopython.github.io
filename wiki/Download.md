@@ -193,11 +193,18 @@ pacman -S python-biopython
 
 Biopython is an official Fedora package (since Fedora 5). The package is
 named
-[python-biopython](https://apps.fedoraproject.org/packages/python-biopython),
+[python-biopython](https://apps.fedoraproject.org/packages/python-biopython) for Python 2, or
+[python3-biopython](https://apps.fedoraproject.org/packages/python3-biopython) for Python 3,
 and can be installed using yum as root:
 
 ``` bash
 yum install python-biopython
+```
+
+or
+
+``` bash
+yum install python3-biopython
 ```
 
 or via one of the GUI package management systems such as pirut and
