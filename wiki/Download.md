@@ -16,9 +16,9 @@ new](https://github.com/biopython/biopython/blob/master/NEWS.rst).
 
 #### Biopython 1.70
 
--   [biopython-1.69.tar.gz](http://biopython.org/DIST/biopython-1.69.tar.gz)
+-   [biopython-1.70.tar.gz](http://biopython.org/DIST/biopython-1.70.tar.gz)
     15Mb -- Source Tarball
--   [biopython-1.69.zip](http://biopython.org/DIST/biopython-1.69.zip)
+-   [biopython-1.70.zip](http://biopython.org/DIST/biopython-1.70.zip)
     16Mb -- Source Zip File
 -   Windows installers pending
 
