@@ -88,17 +88,14 @@ list](Mailing_lists "wikilink") and ask for help there.
 
 ### Required Software
 
--   [Python 2.6, 2.7, 3.4, 3.5](http://www.python.org) (Biopython 1.62
-    was our last release to officially support Python 2.5, since Biopythn 1.66
-    Python 2.6 is deprecated)
--   [C compiler (if compiling
-    from source)](https://docs.python.org/3/using/index.html) You
+-   [Python 2.7, 3.4, 3.5, or 3.6](http://www.python.org)
+-   [C compiler (if compiling from
+    source)](https://docs.python.org/3/using/index.html) You
     need a C compiler supported by ``setuptools``, **gcc** will work fine on
     UNIX-like platforms. This is not needed on Windows if using the
     install programs provided above. On Mac OS, you should install
     Apple's the compiler tools as described above.
--   [NumPy (Numerical Python)](http://numpy.scipy.org/). Note that until
-    Biopython 1.49, Biopython used the older Numeric library.
+-   [NumPy (Numerical Python)](http://numpy.scipy.org/).
 
 ### Optional Software
 
