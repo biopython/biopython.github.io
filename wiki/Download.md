@@ -56,6 +56,12 @@ pip install biopython
 To install from source, after downloading and uncompressing the archive,
 use ``pip install .`` instead.
 
+If pip is not already installed, try:
+
+``` bash
+python -m ensurepip
+```
+
 If you need to install under a specific version of Python, try something
 like this:
 
