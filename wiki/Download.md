@@ -20,25 +20,32 @@ new](https://github.com/biopython/biopython/blob/master/NEWS.rst).
     15Mb -- Source Tarball
 -   [biopython-1.70.zip](http://biopython.org/DIST/biopython-1.70.zip)
     16Mb -- Source Zip File
--   Windows installers pending
+-   [biopython-1.70.tar.gz](http://biopython.org/DIST/biopython-1.70.tar.gz)
+    15Mb -- Source Tarball
+-   [biopython-1.70.zip](http://biopython.org/DIST/biopython-1.70.zip)
+    16Mb -- Source Zip File
+-   Pre-compiled wheel files pending
+
+Pre-compiled wheels are planned for Windows, Mac and Linux, at
+which point we will update the instructions below.
+
+Until then, Christoph Gohlke has kindly made [Windows 64bit
+wheels](http://www.lfd.uci.edu/~gohlke/pythonlibs/) for NumPy and
+Biopython (and other tools) available.
 
 Please report any issues on our [mailing
 lists](Mailing_lists "wikilink") or [bug
 tracker](https://github.com/biopython/biopython/issues?state=open).
 
-Note we don't (yet) have official 64 bit Windows Installers - however,
-Christoph Gohlke has kindly made [Windows 64bit
-installers](http://www.lfd.uci.edu/~gohlke/pythonlibs/) for NumPy and
-Biopython (and other tools) available for testing.
-
 ### Installation Instructions
 
-For **Windows** 32-bit we provide click-and-run installers (specific to
+For **Windows** 32-bit we provided click-and-run installers (specific to
 your version of Python), but you will first need to install some
 prerequisite software (listed below, in particular, NumPy).
+See the old releases at the end of this page.
 
-For **Windows** 64-bit we recommend the click-and-run [Windows 64bit
-installers](http://www.lfd.uci.edu/~gohlke/pythonlibs/) (specific to
+For **Windows** 64-bit we used to recommend the [Windows 64bit
+installers or wheel files](http://www.lfd.uci.edu/~gohlke/pythonlibs/) (specific to
 your version of Python) kindly provided by Christoph Gohlke.
 
 Most **Linux** distributions will include an optional Biopython package
