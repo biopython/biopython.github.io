@@ -61,8 +61,9 @@ python3.6 -m pip install biopython
 pypy -m pip install biopython
 ```
 
-On **Windows** try something like this, depending on where your copy of
-Python is installer:
+On **Windows**, by default ``python`` and ``pip`` are not on the ``PATH``.
+You can re-install Python and tick this option, or give the full path instead.
+Try something like this, depending on where your copy of Python is installed:
 
 ```
 C:\Python27\Scripts\pip install biopython
