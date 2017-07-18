@@ -20,10 +20,6 @@ new](https://github.com/biopython/biopython/blob/master/NEWS.rst).
     15Mb -- Source Tarball
 -   [biopython-1.70.zip](http://biopython.org/DIST/biopython-1.70.zip)
     16Mb -- Source Zip File
--   [biopython-1.70.tar.gz](http://biopython.org/DIST/biopython-1.70.tar.gz)
-    15Mb -- Source Tarball
--   [biopython-1.70.zip](http://biopython.org/DIST/biopython-1.70.zip)
-    16Mb -- Source Zip File
 -   Pre-compiled wheel files pending
 
 Pre-compiled wheels are now availble for Windows, Mac and Linux, on PyPI
