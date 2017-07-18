@@ -22,17 +22,6 @@ new](https://github.com/biopython/biopython/blob/master/NEWS.rst).
     16Mb -- Source Zip File
 -   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.70)
 
-Pre-compiled wheels are now available for Windows, Mac and Linux, on PyPI
-for automated installation using ``pip`` (see below).
-
-Also, Christoph Gohlke has kindly made [Windows 64bit
-wheels](http://www.lfd.uci.edu/~gohlke/pythonlibs/) for NumPy and
-Biopython (and other tools) available.
-
-Please report any issues on our [mailing
-lists](Mailing_lists "wikilink") or [bug
-tracker](https://github.com/biopython/biopython/issues?state=open).
-
 ### Installation Instructions
 
 Recent versions of Python (starting with Python 2.7.9 and Python 3.4) include
@@ -66,6 +55,10 @@ Try something like this, depending on where your copy of Python is installed:
 C:\Python27\Scripts\pip install biopython
 ```
 
+### Installation from Source
+
+Installation from source requires an appropriate C compiler, for example
+GCC on **Linux**, and MSVC on **Windows**.
 For **Mac OS X**, or as it is now branded, **macOS**, if you want to
 compile Biopython from source you will need to have installed Apple's
 command line tools, which can de done with the terminal command:
@@ -76,6 +69,13 @@ xcode-select --install
 
 This will offer to install Apple's XCode development suite - you can, but
 it is not needed and takes a lot of disk space.
+
+You can then download and unzip a Biopython source code release, or get
+our code from GitHub. Then run:
+
+``` bash
+pip install .
+```
 
 If you are still stuck, sign up to the [Biopython mailing
 list](Mailing_lists "wikilink") and ask for help there.
@@ -122,12 +122,13 @@ third party command line tools including:
 Packages
 ========
 
-For those of you using Linux, the easiest way to install Biopython is
-through your distribution's package management system. However, unless
+We would now recommend ``pip``, however for those of you using Linux,
+you can alternatively install Biopython through your Linux
+distribution's package management system. However, unless
 you are running a recent release of your Linux Distribution, you may
 find that the Biopython packages available to be a little out of date.
 You might want to see if there is a backport available, otherwise you
-will have to install Biopython from source.
+will have to install Biopython using ``pip`` or from compiled from source.
 
 ### Ubuntu or Debian
 
@@ -240,6 +241,13 @@ Old Releases
 ============
 
 Recent releases of Biopython require NumPy (and not Numeric):
+
+-   [biopython-1.70.tar.gz](http://biopython.org/DIST/biopython-1.70.tar.gz)
+    15Mb -- Source Tarball
+-   [biopython-1.70.zip](http://biopython.org/DIST/biopython-1.70.zip)
+    16Mb -- Source Zip File
+
+<!-- -->
 
 -   [biopython-1.69.tar.gz](http://biopython.org/DIST/biopython-1.69.tar.gz)
     15Mb -- Source Tarball
