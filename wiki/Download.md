@@ -37,14 +37,11 @@ tracker](https://github.com/biopython/biopython/issues?state=open).
 
 Recent versions of Python (starting with Python 2.7.9 and Python 3.4) include
 the Python package management tool ``pip``, which allows an easy installation
-on all platforms. Try:
+from the command line on all platforms. Try:
 
 ``` bash
 pip install biopython
 ```
-
-To install from source, after downloading and uncompressing the archive,
-use ``pip install .`` instead.
 
 If pip is not already installed, try:
 
