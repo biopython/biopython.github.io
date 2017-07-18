@@ -26,10 +26,10 @@ new](https://github.com/biopython/biopython/blob/master/NEWS.rst).
     16Mb -- Source Zip File
 -   Pre-compiled wheel files pending
 
-Pre-compiled wheels are planned for Windows, Mac and Linux, at
-which point we will update the instructions below.
+Pre-compiled wheels are now availble for Windows, Mac and Linux, on PyPI
+for automated installation using ``pip`` (see below).
 
-Until then, Christoph Gohlke has kindly made [Windows 64bit
+Also, Christoph Gohlke has kindly made [Windows 64bit
 wheels](http://www.lfd.uci.edu/~gohlke/pythonlibs/) for NumPy and
 Biopython (and other tools) available.
 
@@ -39,20 +39,7 @@ tracker](https://github.com/biopython/biopython/issues?state=open).
 
 ### Installation Instructions
 
-For **Windows** 32-bit we provided click-and-run installers (specific to
-your version of Python), but you will first need to install some
-prerequisite software (listed below, in particular, NumPy).
-See the old releases at the end of this page.
-
-For **Windows** 64-bit we used to recommend the [Windows 64bit
-installers or wheel files](http://www.lfd.uci.edu/~gohlke/pythonlibs/) (specific to
-your version of Python) kindly provided by Christoph Gohlke.
-
-Most **Linux** distributions will include an optional Biopython package
-(described below), and will take care of any prerequisite software
-automatically.
-
-Recent version of Python (starting with Python 2.7.9 and Python 3.4) include
+Recent versions of Python (starting with Python 2.7.9 and Python 3.4) include
 the Python package management tool ``pip``, which allows an easy installation
 on all platforms. Try:
 
@@ -78,8 +65,15 @@ python3.6 -m pip install biopython
 pypy -m pip install biopython
 ```
 
-For **Mac OS X**, or as it is now branded, **macOS**, we recommend installing
-Biopython from source as above. You will need to have installed Apple's
+On **Windows** try something like this, depending on where your copy of
+Python is installer:
+
+```
+C:\Python27\Scripts\pip install biopython
+```
+
+For **Mac OS X**, or as it is now branded, **macOS**, if you want to
+compile Biopython from source you will need to have installed Apple's
 command line tools, which can de done with the terminal command:
 
 ``` bash
@@ -88,13 +82,6 @@ xcode-select --install
 
 This will offer to install Apple's XCode development suite - you can, but
 it is not needed and takes a lot of disk space.
-
-If you have trouble, see the full installation instructions:
-
--   [HTML Full Installation
-    Instructions](http://biopython.org/DIST/docs/install/Installation.html)
--   [PDF Full Installation
-    Instructions](http://biopython.org/DIST/docs/install/Installation.pdf)
 
 If you are still stuck, sign up to the [Biopython mailing
 list](Mailing_lists "wikilink") and ask for help there.
