@@ -32,7 +32,7 @@ from the command line on all platforms. Try:
 pip install biopython
 ```
 
-If pip is not already installed, try:
+If pip is not already installed you may need to update your Python, but first try:
 
 ``` bash
 python -m ensurepip
