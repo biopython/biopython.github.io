@@ -111,7 +111,7 @@ I'd be crazy to write another molecular graphics application (been there
 done that, actually :-).
 
 You can however interactively view Biopython structural entities in a Jupyter
-notebook using (nglview)[https://github.com/arose/nglview]:
+notebook using [nglview](https://github.com/arose/nglview):
 
 ```python
 import nglview as nv
