@@ -1,5 +1,6 @@
 ---
 title: Biopython Source Code - Redirection
+layout: default
 ---
 
 We originally used <http://biopython.org/SRC/> to hold a complete
