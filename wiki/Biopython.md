@@ -1,12 +1,13 @@
 ---
 title: Biopython
-permalink: wiki/Biopython
+permalink: /
 layout: wiki
 redirect_from:
  - wiki/
  - wiki/Website
  - wiki/Website_HTML
  - wiki/Main_Page
+ - wiki/Biopython
 ---
 
 See also our
