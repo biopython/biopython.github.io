@@ -310,9 +310,13 @@ releases):
     - forward the email to Linux packagers e.g.
       debian-med@lists.debian.org
 
-21. Open an issue (or better a pull request) to update the BioConda recipe
-https://github.com/bioconda/bioconda-recipes/tree/master/recipes/biopython
-which populates https://anaconda.org/bioconda/biopython
+21. Open an issue (or better a pull request) to update the Conda-Forge
+    recipe via https://github.com/conda-forge/biopython-feedstock which
+    populates https://anaconda.org/conda-forge/biopython
+
+    If it hasn't been deprecated, do the same for the BioConda recipe
+    https://github.com/bioconda/bioconda-recipes/tree/master/recipes/biopython
+    which populates https://anaconda.org/bioconda/biopython
 
 22. Bump version numbers again
 
