@@ -85,6 +85,8 @@ below.
 
     [GitBook](https://www.gitbook.com/book/krother/biopython-tutorial/details)
 
+-   Peter Cock wrote a [Biopython Workshop](https://github.com/peterjc/biopython_workshop)
+    which was used at the University of Dundee.
 
 #### Papers
 
