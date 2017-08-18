@@ -4,7 +4,7 @@ permalink: wiki/Packages
 layout: default
 ---
 
-As per our [Downloads Page](Downloads "wikilink") page, we generally
+As per our [Downloads Page](Download "wikilink") page, we generally
 recommend using Python's package manager ``pip`` to install Biopython:
 
 ``` bash
