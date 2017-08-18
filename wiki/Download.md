@@ -111,7 +111,7 @@ list](Mailing_lists "wikilink") and ask for help there.
     source)](https://docs.python.org/3/using/index.html) You
     need a C compiler supported by ``setuptools``, **gcc** will work fine on
     UNIX-like platforms. This is not needed on Windows if using the
-    install programs provided above. On Mac OS, you should install
+    compiled packages provided. On Mac OS, you should install
     Apple's the compiler tools as described above.
 -   [NumPy (Numerical Python)](http://numpy.scipy.org/).
 
