@@ -90,6 +90,14 @@ You can then download and unzip a Biopython source code release, or get
 our code from GitHub. Then run:
 
 ``` bash
+python setup.py build
+python setup.py test
+python setup.py install
+```
+
+or:
+
+``` bash
 pip install .
 ```
 
