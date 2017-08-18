@@ -33,8 +33,11 @@ conda update biopython
 ```
 
 Note Conda is available on Windows, Mac OS X and Linux, and covers far
-more than just Python. In particular you may want to use the bioinformatics
-packages from the [BioConda channel](https://bioconda.github.io/).
+more than just Python.
+
+We recommend [Biopython from the conda-forge
+channel](https://anaconda.org/conda-forge/biopython) which is usually
+up to date and covers Windows, Mac OS X and Linux.
 
 
 Linux Packages
