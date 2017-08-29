@@ -11,7 +11,7 @@ redirect_from:
 
 Note: People are listed here alphabetically by surname. This is only a
 partial listing, see also the
-[contributor listing](https://github.com/biopython/biopython/blob/master/CONTRIB)
+[contributor listing](https://github.com/biopython/biopython/blob/master/CONTRIB.rst)
 in the Biopython source code or the
 [Contributor page on GitHub](https://github.com/biopython/biopython/graphs/contributors).
 
