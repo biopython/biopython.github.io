@@ -13,9 +13,11 @@ redirect_from:
 
 ### Introduction
 
-The source code from Biopython is freely available for your use and
-contribution under our [liberal
-license](https://github.com/biopython/DIST/blob/gh-pages/LICENSE).
+Biopython is currently released under the liberal "Biopython License
+Agreement", but as part of a plan to switch to the more commonly used
+"3-Clause BSD License", some of the code is explicitly dual licensed
+under your choice of these two options. For details, see our [license
+file](https://github.com/biopython/biopython/blob/master/LICENSE.rst).
 
 The [Biopython source code](http://github.com/biopython/biopython) is
 kept under a distributed version control system which allows multiple
