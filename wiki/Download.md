@@ -153,6 +153,7 @@ Recent releases of Biopython require NumPy (and not Numeric):
     15Mb -- Source Tarball
 -   [biopython-1.70.zip](http://biopython.org/DIST/biopython-1.70.zip)
     16Mb -- Source Zip File
+-   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.70)
 
 <!-- -->
 
