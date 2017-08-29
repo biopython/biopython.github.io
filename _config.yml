@@ -4,7 +4,7 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-gems:
+plugins:
   - jekyll-redirect-from
 whitelist:
   - jekyll-redirect-from
