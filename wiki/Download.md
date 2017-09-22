@@ -112,7 +112,8 @@ list](Mailing_lists "wikilink") and ask for help there.
 
 ### Required Software
 
--   [Python 2.7, 3.4, 3.5, or 3.6](http://www.python.org)
+-   [Python 2.7, 3.4, 3.5, or 3.6](http://www.python.org) or PyPy,
+    including the Python development header files like ``python.h``
 -   [C compiler (if compiling from
     source)](https://docs.python.org/3/using/index.html) You
     need a C compiler supported by ``setuptools``, **gcc** will work fine on
