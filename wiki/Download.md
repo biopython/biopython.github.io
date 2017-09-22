@@ -41,6 +41,12 @@ pip install biopython --upgrade
 This will delete older versions of Biopython and NumPy before it installs
 the recent versions.
 
+Should you wish to uninstall Biopython:
+
+```bash
+pip uninstall biopython
+```
+
 If pip is not already installed you may need to update your Python, but first try:
 
 ``` bash
