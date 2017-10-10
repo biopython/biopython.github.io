@@ -40,7 +40,7 @@ search for relevant discussions which might help.
 <biopython@biopython.org>
 
 Unmoderated list for use, comments, help, and other things related to
-Biopython.
+Biopython. Only subscribers can send to the mailing list.
 
 [List Website](http://lists.open-bio.org/mailman/listinfo/biopython/) |
 [Web Archive](http://lists.open-bio.org/pipermail/biopython/) |
@@ -50,7 +50,7 @@ Biopython.
 
 <biopython-dev@biopython.org>
 
-Unmoderated list for Biopython developers and interested people.
+Unmoderated list for Biopython developers and interested people. Only subscribers can send to the mailing list.
 
 [List Website](http://lists.open-bio.org/mailman/listinfo/biopython-dev/) |
 [Web Archive](http://lists.open-bio.org/pipermail/biopython-dev/) |
