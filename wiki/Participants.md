@@ -146,15 +146,15 @@ in the Biopython source code or the
 
 ### Michael Hoffman
 
-|                         |                                           |
-|-------------------------|-------------------------------------------|
-| E-mail                  | michael.hoffman at utoronto.ca            |
-| Affiliation             | The University of Toronto                 |
-| Location                | Toronto                                   |
-| Uses Python for         | Biopython!                                |
-| Work/Research Interests | RNA, Genome annotations                   |
-| Biopython Contributions | Bio.GFF, Bio.DocSQL                       |
-| Relevant URL            | <https://www.pmgenomics.ca/hoffmanlab/>   |
+|                         |                                                                       |
+|-------------------------|-----------------------------------------------------------------------|
+| E-mail                  | michael.hoffman at utoronto.ca                                        |
+| Affiliation             | Princess Margaret Cancer Centre/University of Toronto                 |
+| Location                | Toronto                                                               |
+| Uses Python for         | writing software like Segway                                          |
+| Work/Research Interests | epigenomics, machine learning                                         |
+| Biopython Contributions | Bio.GFF, Bio.DocSQL                                                   |
+| Relevant URL            | <https://hoffmanlab.org/>                                             |
 
 ### Frank Kauff
 
