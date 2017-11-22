@@ -23,21 +23,22 @@ example using [miniconda](https://conda.io/miniconda.html) or
 be able to use Biopython from the conda packages:
 
 ``` bash
-conda install biopython
+conda install -c conda-forge biopython
 ```
 
 or:
 
 ``` bash
-conda update biopython
+conda update -c conda-forge biopython
 ```
+
+We deliberately recommend using [Biopython from the conda-forge
+channel](https://anaconda.org/conda-forge/biopython), as this is usually
+up to date and covers Windows, Mac OS X and Linux. The default Conda
+channel does have Biopython, but is often out of date.
 
 Note Conda is available on Windows, Mac OS X and Linux, and covers far
 more than just Python.
-
-We recommend [Biopython from the conda-forge
-channel](https://anaconda.org/conda-forge/biopython) which is usually
-up to date and covers Windows, Mac OS X and Linux.
 
 
 Linux Packages
