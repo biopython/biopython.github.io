@@ -20,7 +20,7 @@ few dedicated mailing lists. Please join us; to avoid spam, you can post
 a message only if you are subscribed to the mailing list.
 
 A few other useful places for questions and answers - but please don't
-post duplicate your questions here and on the mailing list:
+duplicate your questions here and on the mailing list:
 
 -   [BioStar](https://www.biostars.org/) -- A dedicated
     Bioinformatics question and answer forum. Please tag your post
