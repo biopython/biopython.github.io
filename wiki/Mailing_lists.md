@@ -40,17 +40,21 @@ search for relevant discussions which might help.
 <biopython@biopython.org>
 
 Unmoderated list for use, comments, help, and other things related to
-Biopython. Only subscribers can send to the mailing list.
+Biopython. Since January 2018, this includes any development discussions
+not held on GitHub. Only subscribers can send to the mailing list.
 
 [List Website](http://lists.open-bio.org/mailman/listinfo/biopython/) |
 [Web Archive](http://lists.open-bio.org/pipermail/biopython/) |
 [Example Google Search](https://www.google.co.uk/search?q=example+url%3Ahttp%3A%2F%2Flists.open-bio.org%2Fpipermail%2Fbiopython%2F)
 
-### Development List
+### Development List (closed since January 2018)
 
 <biopython-dev@biopython.org>
 
-Unmoderated list for Biopython developers and interested people. Only subscribers can send to the mailing list.
+This was an unmoderated list for Biopython developers and interested people.
+Since we moved to GitHub development discussion here dropped, and as of
+January 2018 we have closed this list - all subscribers were added to the
+main discussion list (see above).
 
 [List Website](http://lists.open-bio.org/mailman/listinfo/biopython-dev/) |
 [Web Archive](http://lists.open-bio.org/pipermail/biopython-dev/) |
