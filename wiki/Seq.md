@@ -251,7 +251,7 @@ ValueError: Proteins do not have complements!
 You can use them on `Seq` objects with a generic alphabet:
 
 ``` python
->>> my_seq.complement()
+>>> my_seq
 Seq('AGTACACTGGT', Alphabet())
 >>> my_seq.complement()
 Seq('TCATGTGACCA', Alphabet())
