@@ -51,6 +51,7 @@ hmmer3-domtab   |1.61 |1.61 |1.61 |HMMER3.0 domain table output format. The name
 hmmer3-tab      |1.61 |1.61 |1.61 |HMMER 3.0 table output format.      |
 hmmer3-text     |1.61 |n/a  |1.61 |HMMER 3.0 plain text output format. |
 hmmer2-text     |1.61 |n/a  |1.61 |HMMER 2.x plain text output format. |
+interproscan-xml|1.71 |n/a  |n/a  |InterProScan XML output.            |
 
 
 Format-specific Arguments
