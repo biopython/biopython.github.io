@@ -15,8 +15,9 @@ the code repository. When you start, be sure to have write access to:
 1. [GitHub Biopython source code repository](https://github.com/biopython/biopython)
 2. [GitHub biopython.org website repository](https://github.com/biopython/biopython.github.io)
 3. [GitHub biopython.org/DIST/ repository](https://github.com/biopython/DIST)
-4. [OBF WordPress Blog](https://news.open-bio.org)
-5. [Biopython on PyPI](https://pypi.python.org/pypi/biopython)
+4. [GitHub biopython wheel repository](https://github.com/biopython/biopython-wheels)
+5. [OBF WordPress Blog](https://news.open-bio.org)
+6. [Biopython on PyPI](https://pypi.python.org/pypi/biopython)
 
 If you don't have any of the above, please ask.
 
