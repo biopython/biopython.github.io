@@ -210,38 +210,11 @@ needed to test and prepare the Windows installers.
     $ git push origin master --tags
     ```
 
-16. On your windows machine, build the Windows installers (either from a
-clean checkout, or an unzipped copy of the source code bundle made
-earlier). Build the installers first, if you do a build/test/install
-before hand you seem to get a bloated setup exe. Assuming you have setup
-your compilers etc appropriately just do this:
-
-    ```
-    C:\python27\python setup.py bdist_wininst
-    C:\python33\python setup.py bdist_wininst
-    C:\python34\python setup.py bdist_wininst
-    C:\python35\python setup.py bdist_wininst
-    C:\python36\python setup.py bdist_wininst
-    ```
-
-    and:
-
-    ```
-    C:\python27\python setup.py bdist_msi
-    C:\python33\python setup.py bdist_msi
-    C:\python34\python setup.py bdist_msi
-    C:\python35\python setup.py bdist_msi
-    C:\python36\python setup.py bdist_msi
-    ```
-
-    If you are using MinGW, you will have to make distutils use it (it will
-    use a MS compiler by default). Here (contrary to the build step) you
-    cannot pass the compiler as a parameter. The best solution might be to
-    [configure
-    distutils](http://stackoverflow.com/questions/3297254/how-to-use-mingws-gcc-compiler-when-installing-python-package-using-pip)
+16. Now we use https://github.com/biopython/biopython-wheels to build wheels,
+by updating the ``BUILD_COMMIT=...`` line in ``.travis.yml`` to the new tag.
 
 17. Remove any prior Biopython installations on your windows machine,
-and confirm the Windows installers work. Then copy them to your Linux
+and confirm the Windows wheel file(s) work. Then copy them to your Linux
 machine.
 
 18. Upload the new release to the website via GitHub Pages `DIST` repository.
