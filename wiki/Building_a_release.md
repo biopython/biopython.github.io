@@ -213,6 +213,24 @@ needed to test and prepare the Windows installers.
 16. Now we use https://github.com/biopython/biopython-wheels to build wheels,
 by updating the ``BUILD_COMMIT=...`` line in ``.travis.yml`` to the new tag.
 
+    ``` bash
+    $ git clone git@github.com:biopython/biopython-wheels.git
+    $ cd biopython-wheels/
+    $ git submodule update --init
+    $ emacs .travis.yml  # update BUILD_COMMIT=... line
+    $ git commit -a -m "Build Biopython 1.xx"
+    $ git push origin master
+    ```
+
+You don't seem to need to update the ``biopython`` git submodule, but if you
+need to update ``multibuild`` this seems to work:
+
+    ``` bash
+    $ git submodule foreach git pull origin master
+    $ git commit -a -m "Update submodules"
+    $ git push origin master
+    ```
+
 17. Remove any prior Biopython installations on your windows machine,
 and confirm the Windows wheel file(s) work. Then copy them to your Linux
 machine.
