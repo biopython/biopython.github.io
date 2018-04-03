@@ -222,14 +222,22 @@ by updating the ``BUILD_COMMIT=...`` line in ``.travis.yml`` to the new tag.
     $ git push origin master
     ```
 
-You don't seem to need to update the ``biopython`` git submodule, but if you
-need to update ``multibuild`` this seems to work:
+    Check the wheels build
+    [on TravisCI for Linux and Mac](https://travis-ci.org/biopython/biopython-wheels/builds) and
+    [on AppVeyor for Windows](https://ci.appveyor.com/project/biopython/biopython-wheels/history).
+
+    You don't seem to need to update the ``biopython`` git submodule, but if you
+    need to update ``multibuild`` this seems to work.
 
     ``` bash
     $ git submodule foreach git pull origin master
     $ git commit -a -m "Update submodules"
     $ git push origin master
     ```
+
+    Successful wheels will be on
+    [on Rackspace](https://a365fff413fe338398b6-1c8a9b3114517dc5fe17b7c3f8c63a43.ssl.cf2.rackcdn.com/),
+    download them from there.
 
 17. Remove any prior Biopython installations on your windows machine,
 and confirm the Windows wheel file(s) work. Then copy them to your Linux
