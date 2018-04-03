@@ -215,6 +215,7 @@ needed to test and prepare the Windows installers.
     to the new release's git tag.
 
     ``` bash
+    $ cd ~/repositories
     $ git clone git@github.com:biopython/biopython-wheels.git
     $ cd biopython-wheels/
     $ git submodule update --init
