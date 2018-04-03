@@ -211,14 +211,16 @@ needed to test and prepare the Windows installers.
     ```
 
 16. Now we use https://github.com/biopython/biopython-wheels to build wheels,
-by updating the ``BUILD_COMMIT=...`` line in ``.travis.yml`` to the new tag.
+    by updating the ``BUILD_COMMIT`` line in ``.travis.yml`` and ``appveyor.yaml``
+    to the new release's git tag.
 
     ``` bash
     $ git clone git@github.com:biopython/biopython-wheels.git
     $ cd biopython-wheels/
     $ git submodule update --init
     $ emacs .travis.yml  # update BUILD_COMMIT=... line
-    $ git commit -a -m "Build Biopython 1.xx"
+    $ emacs appveyor.yml  # update BUILD_COMMIT=... line
+    $ git commit .travis.yml appveyor.yml -m "Build Biopython 1.xx"
     $ git push origin master
     ```
 
