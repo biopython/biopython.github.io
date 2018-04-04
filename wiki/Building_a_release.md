@@ -241,7 +241,8 @@ needed to test and prepare the Windows installers.
 
     Successful wheels will be on
     [on Rackspace](https://a365fff413fe338398b6-1c8a9b3114517dc5fe17b7c3f8c63a43.ssl.cf2.rackcdn.com/),
-    download them from there.
+    download them from there to your ``~/repository/biopython/dist`` folder.
+    We will upload these to PyPI later using Twine.
 
 17. Remove any prior Biopython installations on your windows machine,
 and confirm the Windows wheel file(s) work. Then copy them to your Linux
@@ -267,7 +268,8 @@ releases):
     ``` bash
     $ cd  .../biopython/
     $ pip install twine
-    $ twine upload dist/biopython-1.68.tar.gz
+    $ twine upload dist/biopython-1.71.tar.gz
+    $ twine upload dist/biopython-1.71-*.whl
     ```
 
     - You need to have a login on pypi and be registered with Biopython to be
