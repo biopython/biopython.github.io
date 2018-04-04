@@ -6,7 +6,7 @@ redirect_from:
  - /download/
 ---
 
-Current Release - 1.70 - 10 July 2017
+Current Release - 1.71 - 4 April 2017
 =====================================
 
 See also [What's
@@ -14,13 +14,13 @@ new](https://github.com/biopython/biopython/blob/master/NEWS.rst).
 
 ### Files
 
-#### Biopython 1.70
+#### Biopython 1.71
 
--   [biopython-1.70.tar.gz](http://biopython.org/DIST/biopython-1.70.tar.gz)
-    15Mb -- Source Tarball
--   [biopython-1.70.zip](http://biopython.org/DIST/biopython-1.70.zip)
-    16Mb -- Source Zip File
--   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.70)
+-   [biopython-1.71.tar.gz](http://biopython.org/DIST/biopython-1.71.tar.gz)
+    16Mb -- Source Tarball
+-   [biopython-1.71.zip](http://biopython.org/DIST/biopython-1.71.zip)
+    17Mb -- Source Zip File
+-   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.71)
 
 ### Installation Instructions
 
@@ -38,7 +38,7 @@ For updating an older version of Biopython try:
 pip install biopython --upgrade
 ```
 
-This will delete older versions of Biopython and NumPy before it installs
+This will remove older versions of Biopython and NumPy before it installs
 the recent versions.
 
 Should you wish to uninstall Biopython:
