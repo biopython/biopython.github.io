@@ -126,8 +126,8 @@ needed to test and prepare the Windows installers.
 
     ``` bash
     drevil:~tmp1/biopython/> cd ..
-    drevil:~tmp1/> tar -xzvf biopython/dist/biopython-1.68.tar.gz
-    drevil:~tmp1/> cd biopython-1.68
+    drevil:~tmp1/> tar -xzvf biopython/dist/biopython-1.71.tar.gz
+    drevil:~tmp1/> cd biopython-1.71
     ```
 
     - Check to make sure it includes the HTML and PDF files under Doc
@@ -135,9 +135,9 @@ needed to test and prepare the Windows installers.
 13. make sure I can build and test it
 
     ``` bash
-    drevil:~tmp1/biopython-1.68/> python setup.py build
-    drevil:~tmp1/biopython-1.68/> python setup.py test
-    drevil:~tmp1/biopython-1.68/> python setup.py install --prefix /tmp/test-install
+    drevil:~tmp1/biopython-1.71/> python setup.py build
+    drevil:~tmp1/biopython-1.71/> python setup.py test
+    drevil:~tmp1/biopython-1.71/> python setup.py install --prefix /tmp/test-install
     ```
 
     A typical source of failure here (on the tests) is the lack of example
@@ -169,10 +169,10 @@ needed to test and prepare the Windows installers.
     ``` bash
     $ cd /tmp/test-install/lib/python2.7/site-packages
     $ grep "__version__" Bio/__init__.py
-    __version__ = "1.68"
+    __version__ = "1.71"
     $ epydoc -v -o ~/repositories/DIST/docs/api/ -u http://biopython.org -n Biopython --docformat restructuredtext Bio BioSQL
     $ grep "__version__" ~/repositories/DIST/docs/api/Bio-pysrc.html
-    <a name="L13"></a><tt class="py-lineno"> 13</tt>  <tt class="py-line"><tt class="py-name">__version__</tt> <tt class="py-op">=</tt> <tt class="py-string">"1.68"</tt> </tt>
+    <a name="L13"></a><tt class="py-lineno"> 13</tt>  <tt class="py-line"><tt class="py-name">__version__</tt> <tt class="py-op">=</tt> <tt class="py-string">"1.71"</tt> </tt>
     ```
 
     - Assuming no mismatches in version number (which would suggest epydoc is not looking
@@ -190,7 +190,7 @@ needed to test and prepare the Windows installers.
     $ cd ~/repositories/DIST/docs/tutorial/
     $ cp .../tmp1/biopython/Doc/Tutorial.html .
     $ cp .../tmp1/biopython/Doc/Tutorial.pdf .
-    $ git commit Tutorial.html Tutorial.pdf -m "Tutorial for Biopython 1.68"
+    $ git commit Tutorial.html Tutorial.pdf -m "Tutorial for Biopython 1.71"
     ```
 
     - Push this to GitHub Pages to update the website:
@@ -207,7 +207,7 @@ needed to test and prepare the Windows installers.
 
     ``` bash
     $ cd  .../tmp1/biopython/
-    $ git tag biopython-168
+    $ git tag biopython-171
     $ git push origin master --tags
     ```
 
@@ -221,7 +221,7 @@ needed to test and prepare the Windows installers.
     $ cd biopython-wheels/
     $ git submodule update --init
     $ emacs .travis.yml  # update BUILD_COMMIT=... line
-    $ emacs appveyor.yml  # update BUILD_COMMIT=... line
+    $ emacs appveyor.yml  # update BUILD_COMMIT: ... line
     $ git commit .travis.yml appveyor.yml -m "Build Biopython 1.xx"
     $ git push origin master
     ```
@@ -254,10 +254,10 @@ machine.
     $ cp dist/biopython-1.68.* ~/repositories/DIST/
     # Also copy in the Windows files
     $ cd ~/repositories/DIST/
-    $ git add biopython-1.68.*
-    $ git commit biopython-1.68.* -m "Downloads for Biopython 1.68"
-    $ shasum -a 256 biopython-1.68.*
-    $ md5sum biopython-1.68.*
+    $ git add biopython-1.71.*
+    $ git commit biopython-1.71.* -m "Downloads for Biopython 1.71"
+    $ shasum -a 256 biopython-1.71.*
+    $ md5sum biopython-1.71.*
     $ git commit --amend # paste checksums into comment
     $ git push origin gh-pages
     ```
@@ -266,7 +266,7 @@ machine.
 releases):
 
     ``` bash
-    $ cd  .../biopython/
+    $ cd  ~/repositories/biopython/
     $ pip install twine
     $ twine upload dist/biopython-1.71.tar.gz
     $ twine upload dist/biopython-1.71-*.whl
