@@ -315,9 +315,10 @@ releases):
     - forward the email to Linux packagers e.g.
       debian-med@lists.debian.org
 
-21. Open an issue (or better a pull request) to update the Conda-Forge
-    recipe via https://github.com/conda-forge/biopython-feedstock which
-    populates https://anaconda.org/conda-forge/biopython
+21. Conda-Forge should automatically open a pull request to update the
+    package once it appears on PyPI. Check for a new pull request on
+    https://github.com/conda-forge/biopython-feedstock which once merged
+    will upload the new release to https://anaconda.org/conda-forge/biopython
 
 22. Bump version numbers again
 
