@@ -23,7 +23,7 @@ developers.
 It is a distributed collaborative effort to develop Python libraries and
 applications which address the needs of current and future work in
 bioinformatics. The source code is made available under the [Biopython
-License](https://github.com/biopython/biopython/blob/master/LICENSE), which is extremely
+License](https://github.com/biopython/biopython/blob/master/LICENSE.rst), which is extremely
 liberal and compatible with almost every license in the world.
 
 We are a member project of the
