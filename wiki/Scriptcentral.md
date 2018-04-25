@@ -5,6 +5,7 @@ layout: page
 redirect_from:
  - /scriptcentral/
  - /ScriptCentral.shtml
+ - /Related/
 ---
 
 |             |                                                                                                                                                                                    |
