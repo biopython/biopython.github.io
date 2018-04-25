@@ -7,6 +7,7 @@ redirect_from:
  - wiki/Website
  - wiki/Website_HTML
  - wiki/Main_Page
+ - wiki/Main
  - wiki/Biopython
 ---
 
