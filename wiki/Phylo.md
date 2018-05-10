@@ -33,11 +33,11 @@ instructions on getting a copy of the development branch.
 To draw trees (optional), you'll also need these packages:
 
 -   [Matplotlib](http://matplotlib.sourceforge.net/)
--   [NetworkX](http://networkx.github.io) -- for the functions
-    `draw_graphviz` and `to_networkx`
+-   [NetworkX](http://networkx.github.io) -- for the function
+    `to_networkx` (and deprecated function `draw_graphviz`)
 -   [PyGraphviz](http://networkx.lanl.gov/pygraphviz/) or
-    [pydot](https://github.com/erocarrera/pydot) -- for the functions
-    `draw_graphviz` and `to_networkx`
+    [pydot](https://github.com/erocarrera/pydot) -- for the function
+    `to_networkx` (and deprecated function `draw_graphviz`)
 
 The I/O and tree-manipulation functionality will work without them;
 they're imported on demand when the functions `draw()`, `draw_graphviz()`
@@ -277,6 +277,14 @@ image format (default PDF) may be used.
 
 <img src="Phylo-apaf.png" title="Unrooted tree with colored nodes" alt="Unrooted tree with colored nodes" width="500" />
 
+Sadly the plot `draw_graphviz` draws is misleading, so we have deprecated
+this method. The branch lengths are ignored and the distances between nodes
+in the plot is arbitrary, per the graphviz layout engine. But it looks like
+a proper radial phylogeny at first glance, which could lead to a wrong
+interpretation of the data. It would be better for users to create radial
+plots with another library like ETE or DendroPy, or just use the simple
+rectangular plot produced by Phylo.draw.
+
 Prerequisites: In addition to NetworkX, you'll need a local installation
 of Graphviz, [Matplotlib](http://matplotlib.sourceforge.net/) and either
 [PyGraphviz](https://pygraphviz.github.io/) or
@@ -292,6 +300,7 @@ pylab.show()
 ```
 
 <img src="Phylo-apaf-node0.png" title="fig:Phylogram with plain text nodes" alt="Phylogram with plain text nodes" width="500" />
+
 Here's the same tree without the circles at each labelled node:
 
 ``` python
