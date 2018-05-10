@@ -205,7 +205,7 @@ Graphics
 
 *TODO:*
 
--   Party tricks with `draw_graphviz`, covering each keyword argument
+-   Party tricks with draw methods, covering each keyword argument
 
 Exporting to other types
 ------------------------
