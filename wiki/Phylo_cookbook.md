@@ -325,7 +325,7 @@ def to_adjacency_matrix(tree):
             adjmat[lookup[parent], lookup[child]] = 1
     if not tree.rooted:
         # Branches can go from "child" to "parent" in unrooted trees
-        adjmat += adjmat.transpose
+        adjmat = adjmat + adjmat.transpose()
     return (allclades, numpy.matrix(adjmat))
 ```
 
