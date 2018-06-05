@@ -67,12 +67,12 @@ are some formats which accepts extra keyword arguments.
 | Format name | Argument name                            | Default value              | Applicable for                                                                              | Explanation                                                             |
 |-------------|------------------------------------------|----------------------------|---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
 | blast-tab   | comments                                 | False                      | Reading, writing, indexing                                                                  | Boolean, whether the input/output file is the commented variant or not. |
-| fields      | Default BLAST tabular output field names | reading, writing, indexing | Space-separated string, list of fields / columns in the input/output file.                  |                                                                         |
+|             | fields      | Default BLAST tabular output field names | reading, writing, indexing | Space-separated string, list of fields / columns in the input/output file.                  |                                                                         |
 | blast-xml   | encoding                                 | "utf-8"                    | Writing                                                                                     | XML encoding name.                                                      |
-| indent      | " " (empty space)                        | writing                    | Character(s) to use for indenting the XML.                                                  |                                                                         |
-| increment   | 2                                        | writing                    | How many times the character defined in `indent` are printed when printing a child element. |                                                                         |
+|             | indent      | " " (empty space)                        | writing                    | Character(s) to use for indenting the XML.                                                  |                                                                         |
+|             | increment   | 2                                        | writing                    | How many times the character defined in `indent` are printed when printing a child element. |                                                                         |
 | blat-psl    | pslx                                     | False                      | Reading, writing, indexing                                                                  | Boolean, whether the input/output file contains sequences or not.       |
-| header      | False                                    | writing                    | Boolean, whether to write PSL header or not.                                                |
+|             | header      | False                                    | writing                    | Boolean, whether to write PSL header or not.                                                |
 
 
 Conventions
