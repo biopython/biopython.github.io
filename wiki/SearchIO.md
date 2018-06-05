@@ -18,11 +18,12 @@ BLAST, HMMER, BLAT, or Bill Pearson's FASTA suite. See the [BioPerl
 SearchIO HOWTO](http://bioperl.org/howtos/SearchIO_HOWTO.html) for
 background.
 
-It is included in Biopython 1.61 onwards as an *experimental* module if
-you want to test it. A chapter in the
+`Bio.SearchIO` was included in Biopython 1.61 onwards as an *experimental*
+module, with that caveat dropped in Biopython 1.72.
+
+There is a full chapter in the
 [Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
-([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)) on
-`Bio.SearchIO` is also published alongside the 1.61 release.
+([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)).
 
 This wiki describes the important bits with some small examples. For a
 full reference, consult the [API
