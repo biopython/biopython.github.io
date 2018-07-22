@@ -12,7 +12,7 @@ users who may be relying on older code.
 
 We keep a plain text file in the Biopython source code to record these
 changes, named
-[`DEPRECATED`](http://github.com/biopython/biopython/blob/master/DEPRECATED).
+[`DEPRECATED.rst`](http://github.com/biopython/biopython/blob/master/DEPRECATED.rst).
 
 This is the current policy for deprecating and removing code from
 Biopython:
