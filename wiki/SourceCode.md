@@ -1,5 +1,5 @@
 ---
-title: Source Code
+iitle: Source Code
 permalink: wiki/SourceCode
 layout: page
 redirect_from:
@@ -82,8 +82,8 @@ Biopython developers (including all those who previously had CVS commit
 rights).
 
 This is normally given on a case by case basis, and the best place to
-discuss getting write access is on the [Biopython Development mailing
-list](mailto:biopython-dev@biopython.org).
+discuss getting write access is on the [Biopython mailing
+list](mailto:biopython@biopython.org).
 
 Once you have access, see the instructions on
 [GitUsage](GitUsage "wikilink")
