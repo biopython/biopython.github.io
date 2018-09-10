@@ -1,5 +1,5 @@
 ---
-iitle: Source Code
+Title: Source Code
 permalink: wiki/SourceCode
 layout: page
 redirect_from:
@@ -83,7 +83,7 @@ rights).
 
 This is normally given on a case by case basis, and the best place to
 discuss getting write access is on the [Biopython mailing
-list](mailto:biopython@biopython.org).
+lists](https://biopython.org/wiki/Mailing_lists).
 
 Once you have access, see the instructions on
 [GitUsage](GitUsage "wikilink")
