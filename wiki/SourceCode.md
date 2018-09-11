@@ -1,5 +1,5 @@
 ---
-Title: Source Code
+title: Source Code
 permalink: wiki/SourceCode
 layout: page
 redirect_from:
