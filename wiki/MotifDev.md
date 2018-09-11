@@ -45,5 +45,5 @@ based motif searching:
 -   Supporting HMM-based motifs (with dependencies between positions)
 -   particular tools like HMMer
 
-If you want to contribute, please contact bartek@rezolwenta.eu.org or
-biopython-dev@biopython.org
+If you want to contribute, please contact [bartek@rezolwenta.eu.org](mailto:bartek@rezolwenta.eu.org) or
+[biopython@biopython.org](mailto:biopython@biopython.org).

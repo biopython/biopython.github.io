@@ -298,7 +298,7 @@ releases):
     ```
 
     - before you announce the release, be sure to send your announcement
-      text to the biopython-dev mailing list for
+      text to the [Biopython mailing list](mailto:biopython@biopython.org) for
       proof-reading/final corrections.
     - add to [main page](Main_Page "wikilink") and [downloads
       page](Download "wikilink") (through the wiki), make sure the links
@@ -309,16 +309,15 @@ releases):
       [twitter](http://twitter.com/Biopython) via the news feed)
     - add the new version to
       [RedMine](https://redmine.open-bio.org/projects/biopython)
-    - send email to biopython@biopython.org and
-      biopython-announce@biopython.org (see [mailing
-      lists](Mailing_lists "wikilink"))
+    - send email to biopython-announce@biopython.org
+      (see [mailing lists](Mailing_lists "wikilink"))
     - forward the email to Linux packagers e.g.
       debian-med@lists.debian.org
 
 21. Conda-Forge should automatically open a pull request to update the
     package once it appears on PyPI. Check for a new pull request on
-    https://github.com/conda-forge/biopython-feedstock which once merged
-    will upload the new release to https://anaconda.org/conda-forge/biopython
+    [github.com/conda-forge/biopython-feedstock](https://github.com/conda-forge/biopython-feedstock)
+    which once merged will upload the new release to [anaconda.org/conda-forge/biopython](https://anaconda.org/conda-forge/biopython)
 
 22. Bump version numbers again
 
