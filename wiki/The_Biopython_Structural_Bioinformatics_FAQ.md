@@ -1010,5 +1010,5 @@ Can I contribute?
 
 Yes, yes, yes! Just send an e-mail to [Thomas
 Hamelryck](mailto:thamelry@binf.ku.dk) or to [the Biopython
-developers](mailto:biopython-dev@biopython.org) if you have something
+developers](mailto:biopython@biopython.org) if you have something
 useful to contribute! Eternal fame awaits!

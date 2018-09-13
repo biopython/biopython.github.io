@@ -97,11 +97,11 @@ Before you submit it, please check that:
     new code.
 
 If all these terms seem acceptable, please send a description of your
-code to biopython-dev@biopython.org (see [Mailing
-lists](Mailing_lists "wikilink")). Be sure to subscribe to biopython-dev
+code to [biopython@biopython.org](mailto:biopython@biopython.org) (see [Mailing
+lists](Mailing_lists "wikilink")). Be sure to subscribe to biopython mailing list
 before sending a message, otherwise your message will be discarded by
 the mail server (this was done to avoid spam on the mailing list). Don't
-send the code directly to the biopython-dev mailing list. Instead,
+send the code directly to the biopython mailing list. Instead,
 please use [our GitHub page](https://github.com/biopython/biopython/) by
 creating an issue and either attaching the file(s) or linking to your
 GitHub branch.

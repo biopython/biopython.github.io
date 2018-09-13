@@ -17,10 +17,9 @@ changes, named
 This is the current policy for deprecating and removing code from
 Biopython:
 
--   First, ask on the Biopython and biopython-dev [mailing
-    lists](Mailing_lists "wikilink") whether a given piece of code has
-    any users. Please keep in mind that not all users are following the
-    biopython-dev mailing list.
+-   First, ask on the [Biopython mailing list](Mailing_lists "wikilink")
+    whether a given piece of code has any users. Please keep in mind that
+    not all users are following the biopython mailing list.
 -   Consider declaring the module as "obsolete" for a release
     *before* deprecation. No code changes, just:
     -   Note this in the DEPRECATED file,

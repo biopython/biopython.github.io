@@ -38,7 +38,7 @@ github](http://github.com/biopython/biopython).
 ### Track Changes
 
 You can track code development by [RSS feed](https://github.com/biopython/biopython/commits/master.atom)
-or the [Biopython Development mailing list](mailto:biopython-dev@biopython.org).
+or the [Biopython mailing list](mailto:biopython@biopython.org).
 See also our other [mailing lists](Mailing_lists "wikilink").
 
 ### Downloading the Latest Source
@@ -83,7 +83,7 @@ rights).
 
 This is normally given on a case by case basis, and the best place to
 discuss getting write access is on the [Biopython mailing
-lists](Mailing_lists).
+list](Mailing_lists).
 
 Once you have access, see the instructions on
 [GitUsage](GitUsage "wikilink")
