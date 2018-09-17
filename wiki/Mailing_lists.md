@@ -41,7 +41,12 @@ search for relevant discussions which might help.
 
 Unmoderated list for use, comments, help, and other things related to
 Biopython. Since January 2018, this includes any development discussions
-not held on GitHub. Only subscribers can send to the mailing list.
+not held on GitHub.
+
+Only subscribers can send to the mailing list. Sadly due to the server
+load from spam, any emails from a non-subscriber are silently ignored.
+If your message fails to appear in the archive, double check you are
+subscribed with the exact address your sent emails from.
 
 [List Website](http://lists.open-bio.org/mailman/listinfo/biopython/) |
 [Web Archive](http://lists.open-bio.org/pipermail/biopython/) |
