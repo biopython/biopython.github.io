@@ -90,6 +90,9 @@ repository at (https://github.com/biosql/biosql.git)
 ``` bash
 svn export https://github.com/biosql/biosql.git/trunk biosql
 ```
+The two files that are needed are the following:
+1. biosqldb-mysql.sql -- the BioSQL schema -- found inside the **sql** subfolder
+2. load_ncbi_taxonomy.pl -- the Perl script to populate the database -- found inside the **scrpts** subfolder
 
 Creating the empty database
 ---------------------------
