@@ -285,14 +285,25 @@ Change these to match your setup. You can then run the BioSQL unit tests
 as normal, e.g.
 
 ``` bash
-python run_tests.py test_BioSQL test_BioSQL_SeqIO
+python run_tests.py test_BioSQL_MySQLdb.py test_BioSQL_MySQLdb_online.py
 ```
+or
+``` bash
+python run_tests.py test_BioSQL_mysql_connector.py test_BioSQL_mysql_connector_online.py
+```
+depending on the driver.
 
-For PostgreSQL, use:
+For PostgreSQL in the same file edit the following lines:
 
 ``` python
-DBDRIVER = 'psycopg2'
-DBTYPE = 'pg'
+[pg]
+# Covers DBDRIVER="psycopg2" etc
+# The database and user below are created in .travis.yml
+dbhost=localhost
+dbuser=biosql_user
+dbpasswd=biosql_pass
+testdb=biosql_test
+
 ```
 
 Creating a (sub) database
