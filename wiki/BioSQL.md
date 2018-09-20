@@ -100,7 +100,7 @@ mysqladmin -u root create bioseqdb
 ```
 
 We can then tell MySQL to load the BioSQL scheme we downloaded above.
-Change to the scripts subdirectory from the unzipped BioSQL download,
+Change to the sql subdirectory from the unzipped BioSQL download,
 then:
 
 ``` bash
