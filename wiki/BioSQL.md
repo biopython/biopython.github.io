@@ -77,7 +77,7 @@ Downloading the BioSQL Schema & Scripts
 
 Once the software is installed, your next task is to setup a database, 
 import the BioSQL schema (i.e. setup the relevant tables within the
-database) as well and finally populate the database.
+database) and finally populate the database.
 
 The two files can be obtained by:
 
