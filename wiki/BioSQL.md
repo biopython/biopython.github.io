@@ -75,9 +75,9 @@ pip install mysql-connector
 Downloading the BioSQL Schema & Scripts
 ---------------------------------------
 
-Once the software is installed, your next task is to setup a database
-and import the BioSQL schema (i.e. setup the relevant tables within the
-database) as well as the script to populate the database.
+Once the software is installed, your next task is to setup a database, 
+import the BioSQL schema (i.e. setup the relevant tables within the
+database) as well and finally populate the database.
 
 The two files can be obtained by:
 
