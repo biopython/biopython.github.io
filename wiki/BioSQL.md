@@ -62,11 +62,11 @@ You may find perl is already installed.
 
 For **Windows** users, see [BioSQL on Windows](BioSQL_Windows "wikilink").
 
-For **Cygwin** users, use [apt-cyg](https://github.com/transcode-open/apt-cyg) to install packages:
+For **Cygwin** users, use [apt-cyg](https://github.com/transcode-open/apt-cyg) to install packages **mysql** and **mysql-server**,
 ``` bash
 apt-cyg install mysql mysql-server
 ```
-and to install the driver mysql-connector use [pip](https://pypi.org/project/pip/)
+and to install the driver **mysql-connector** use [pip](https://pypi.org/project/pip/),
 
 ``` bash
 pip install mysql-connector
