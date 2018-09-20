@@ -79,7 +79,7 @@ Once the software is installed, your next task is to setup a database,
 import the BioSQL schema (i.e. setup the relevant tables within the
 database) and finally populate the database.
 
-In order to do files from the **biosql** project need to be obtained:
+In order to do so, files from the **biosql** project need to be obtained:
 
 * Either from [BioSQL downloads](http://www.biosql.org/wiki/Downloads)
 -- you'll need to unzip the archive.
