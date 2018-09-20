@@ -261,19 +261,20 @@ Running the unit tests
 ----------------------
 
 Because there are so many ways you could have setup your BioSQL
-database, you have to tell the unit test a few bits of information by
-editing the file Tests/setup\_BioSQL.py and filling in the following
+database, you have to tell the unit test a few bits of information. 
+If you installed biopython using pip then the relevant [**Tests**](https://github.com/biopython/biopython/tree/master/Tests) 
+folder would not have been copied. If this is the case one can 
+perform check out (or export) using:
+
+```bash
+svn export https://github.com/biopython/biopython/trunk/Tests
+```
+Inside *Tests*, copy the file *biosql.ini.sample* to *biosql.ini* and edit it by filling in the following
 fields:
 
 ``` python
 DBDRIVER = 'MySQLdb'
 DBTYPE = 'mysql'
-```
-
-and a little lower down,
-
-``` python
-DBHOST = 'localhost'
 DBUSER = 'root'
 DBPASSWD = ''
 TESTDB = 'biosql_test'
