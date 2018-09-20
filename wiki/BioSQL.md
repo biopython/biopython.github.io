@@ -77,15 +77,19 @@ Downloading the BioSQL Schema & Scripts
 
 Once the software is installed, your next task is to setup a database
 and import the BioSQL schema (i.e. setup the relevant tables within the
-database). See [BioSQL downloads](http://www.biosql.org/wiki/Downloads)
+database). 
+
+The BioSQL schema can be obtained by:
+
+* Either [BioSQL downloads](http://www.biosql.org/wiki/Downloads)
 -- you'll need to unzip the archive.
 
-Alternatively to get the very latest BioSQL, check out their git
-repository. Or, navigate to the relevant schema file for your database
-and download just that, e.g.
-[biosqldb-mysql.sql](https://raw.github.com/biosql/biosql/master/sql/biosqldb-mysql.sql)
-for MySQL. You will also want the NCBI Taxonomy loading perl script,
-[load\_ncbi\_taxonomy.pl](https://raw.github.com/biosql/biosql/master/scripts/load_ncbi_taxonomy.pl).
+* Or to get the **very latest** BioSQL, check out or export their git
+repository at (https://github.com/biosql/biosql.git)
+
+``` bash
+svn export https://github.com/biosql/biosql.git/trunk biosql
+```
 
 Creating the empty database
 ---------------------------
