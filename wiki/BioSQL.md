@@ -77,9 +77,9 @@ Downloading the BioSQL Schema & Scripts
 
 Once the software is installed, your next task is to setup a database
 and import the BioSQL schema (i.e. setup the relevant tables within the
-database). 
+database) as well as the script to populate the database.
 
-The BioSQL schema can be obtained by:
+The two files can be obtained by:
 
 * Either [BioSQL downloads](http://www.biosql.org/wiki/Downloads)
 -- you'll need to unzip the archive.
@@ -90,9 +90,9 @@ repository at (https://github.com/biosql/biosql.git)
 ``` bash
 svn export https://github.com/biosql/biosql.git/trunk biosql
 ```
-The two files that are needed are the following:
-1. biosqldb-mysql.sql -- the BioSQL schema -- found inside the **sql** subfolder
-2. load_ncbi_taxonomy.pl -- the Perl script to populate the database -- found inside the **scripts** subfolder
+The names of the two files that are needed are the following:
+1. biosqldb-mysql.sql -- the BioSQL schema -- found inside the **sql** subdirectory
+2. load_ncbi_taxonomy.pl -- the Perl script to populate the database -- found inside the **scripts** subdirectory
 
 Creating the empty database
 ---------------------------
@@ -107,8 +107,7 @@ mysqladmin -u root create bioseqdb
 ```
 
 We can then tell MySQL to load the BioSQL scheme we downloaded above.
-Change to the sql subdirectory from the unzipped BioSQL download,
-then:
+Change to the **sql** subdirectory (see above) and then:
 
 ``` bash
 mysql -u root bioseqdb < biosqldb-mysql.sql
@@ -191,11 +190,11 @@ psql biosqldb < biosqldb-pg.sql
 
 Run *psql* and type enter *\\d <ENTER>* to see all the entities created.
 
-NCBI Taxonomy
--------------
+Populate the database With NCBI Taxonomy
+----------------------------------------
 
-The BioSQL package includes a perl script under
-scripts/load\_ncbi\_taxonomy.pl to download and update the taxonomy
+The BioSQL package includes a perl script under the
+**scripts** subdirectory named **load\_ncbi\_taxonomy.pl** that downloads and updates the taxonomy
 tables. The script should be able to download the files it needs from
 the [NCBI taxonomy FTP site](ftp://ftp.ncbi.nih.gov/pub/taxonomy/)
 automatically.
@@ -206,8 +205,7 @@ trying to load sequences into the database. This isn't so important with
 Biopython 1.49 onwards, where you can instead opt to have the
 information needed downloaded as needed from Entrez.
 
-To update the NCBI taxonomy, change to the scripts subdirectory from the
-unzipped BioSQL download, then:
+To update the NCBI taxonomy, change to the **scripts** subdirectory (see above) and then:
 
 ``` bash
 ./load_ncbi_taxonomy.pl --dbname bioseqdb --driver mysql --dbuser root --download true
