@@ -273,11 +273,12 @@ Inside *Tests*, copy the file *biosql.ini.sample* to *biosql.ini* and edit it by
 fields:
 
 ``` python
-DBDRIVER = 'MySQLdb'
-DBTYPE = 'mysql'
-DBUSER = 'root'
-DBPASSWD = ''
-TESTDB = 'biosql_test'
+[mysql]
+# Covers DBDRIVER="MySQLdb" and "mysql.connector" etc
+dbhost=localhost
+dbuser=root
+dbpasswd=
+testdb=bioseqdb
 ```
 
 Change these to match your setup. You can then run the BioSQL unit tests
