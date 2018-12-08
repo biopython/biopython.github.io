@@ -46,12 +46,6 @@ below.
     |
     [PDF](http://biopython.org/DIST/docs/biosql/python_biosql_basic.pdf)
 
--   Documentation for the cluster module in Biopython. This describes
-    the underlying C library and the Python interface.
-
-    [PDF (2008)](http://biopython.org/DIST/docs/cluster/cluster.pdf) |
-    [PDF (2013)](http://bonsai.hgc.jp/~mdehoon/software/cluster/cluster.pdf)
-
 -   Cookbook-style documentation:
     -   [Cookbook documentation](Category%3ACookbook "wikilink") (on
         the wiki).
