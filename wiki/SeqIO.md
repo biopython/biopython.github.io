@@ -208,7 +208,10 @@ happy to ignore any subsequent records), you can use the iterator's
 
 ``` python
 from Bio import SeqIO
+# python2.7
 first_record = SeqIO.parse("example.fasta", "fasta").next()
+# python3
+first_record = next(SeqIO.parse("example.fasta", "fasta"))
 ```
 
 Sequence Output
