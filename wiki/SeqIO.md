@@ -203,12 +203,12 @@ record = SeqIO.read("single.fasta", "fasta")
 ```
 
 For the related situation where you just want the first record (and are
-happy to ignore any subsequent records), you can use the iterator's
-`.next()` method:
+happy to ignore any subsequent records), you can use the built-in python
+function `next`:
 
 ``` python
 from Bio import SeqIO
-first_record = SeqIO.parse("example.fasta", "fasta").next()
+first_record = next(SeqIO.parse("example.fasta", "fasta"))
 ```
 
 Sequence Output
