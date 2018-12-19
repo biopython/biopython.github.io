@@ -21,6 +21,9 @@ the code repository. When you start, be sure to have write access to:
 
 If you don't have any of the above, please ask.
 
+We assume you have cloned these under ``~/repositories/`` and that the
+``git origin`` is the official Biopython copy of the repository.
+
 We assume you are running Linux (but macOS should be fine too),
 and have the following tools installed (plus as many of the
 Biopython optional dependencies as possible for local testing):
@@ -32,14 +35,14 @@ Biopython optional dependencies as possible for local testing):
 5. LaTeX, including assorted packages like comments and preprint.
 6. [hevea](http://hevea.inria.fr/), I am currently using version 1.10+9 of 2008-12-17
 
-The instructions proper
------------------------
+Final commit(s)
+---------------
 
-These instructions are for a Unix/Linux machine.
-
-1. make sure I have the latest code:
+1. Using make sure I have the latest code:
 
    ``` bash
+   $ cd ~/repositories/biopython
+   $ git checkout master
    $ git pull origin master
    ```
 
