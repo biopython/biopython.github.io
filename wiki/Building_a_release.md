@@ -21,6 +21,17 @@ the code repository. When you start, be sure to have write access to:
 
 If you don't have any of the above, please ask.
 
+We assume you are running Linux (but macOS should be fine too),
+and have the following tools installed (plus as many of the
+Biopython optional dependencies as possible for local testing):
+
+1. Python (traditionally we've used Python 2, but 3 should be fine)
+2. git
+3. [twine](https://github.com/pypa/twine/), installed with ``pip install twine``
+4. [epydoc](http://epydoc.sourceforge.net/), currently using version 3.0.1
+5. LaTeX, including assorted packages like comments and preprint.
+6. [hevea](http://hevea.inria.fr/), I am currently using version 1.10+9 of 2008-12-17
+
 The instructions proper
 -----------------------
 
