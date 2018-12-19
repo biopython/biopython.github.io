@@ -14,7 +14,7 @@ new](https://github.com/biopython/biopython/blob/master/NEWS.rst).
 
 ### Files
 
-#### Biopython 1.72
+#### Biopython 1.73
 
 -   [biopython-1.73.tar.gz](http://biopython.org/DIST/biopython-1.73.tar.gz)
     15Mb -- Source Tarball
