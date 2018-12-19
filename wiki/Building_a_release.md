@@ -91,27 +91,38 @@ Final commit(s)
    Running the tests simultaneously is risky (e.g. Python 2 and 3),
    as two threads may both try to read/write to the same temp files.
 
-9. check out clean version somewhere else:
+9. Push this to gitub, all being well this commit will be tagged as the release
+   (barring no problems uncovered while building the documentation, or
+   with the manifest while testing the tar-ball):
 
    ``` bash
-   drevil:~tmp1/> git clone git://github.com/biopython/biopython.git
-   drevil:~tmp1/> cd biopython
+   $ git push origin master
    ```
 
-10. make documentation PDF, text and HTML files in Doc:
+Making and testing the tar-ball
+-------------------------------
+
+10. check out clean version somewhere else:
+
+    ``` bash
+    drevil:~tmp1/> git clone git://github.com/biopython/biopython.git
+    drevil:~tmp1/> cd biopython
+    ```
+
+11. make documentation PDF, text and HTML files in Doc:
 
     ``` bash
     drevil:~tmp1/biopython/> make -C Doc
     drevil:~tmp1/biopython/> make clean -C Doc
     ```
 
-11. make the source distribution
+12. make the source distribution
 
     ``` bash
     drevil:~tmp1/biopython> python setup.py sdist --formats=gztar,zip
     ```
 
-12. untar the file somewhere else
+13. untar the file somewhere else
 
     ``` bash
     drevil:~tmp1/biopython/> cd ..
@@ -119,9 +130,9 @@ Final commit(s)
     drevil:~tmp1/> cd biopython-1.71
     ```
 
-    - Check to make sure it includes the HTML and PDF files under Doc
+    Check to make sure it includes the HTML and PDF files under Doc
 
-13. make sure I can build and test it
+14. make sure I can build and test it
 
     ``` bash
     drevil:~tmp1/biopython-1.71/> python setup.py build
@@ -132,7 +143,10 @@ Final commit(s)
     A typical source of failure here (on the tests) is the lack of example
     files being added to the source distribution: add them to `MANIFEST.in`
 
-14. Update API documentation using Epydoc (this can often report otherwise overlooked
+Making the API documentation
+----------------------------
+
+15. Update API documentation using Epydoc (this can often report otherwise overlooked
     errors).
 
     - If you haven't already, clone the ``DIST`` repository - otherwise first
@@ -192,7 +206,10 @@ Final commit(s)
       <http://biopython.org/DIST/docs/tutorial/Tutorial.html>, and
       <http://biopython.org/DIST/docs/tutorial/Tutorial.pdf>
 
-15. Back in the main repository, tag the release:
+Tagging the release, and making wheels
+--------------------------------------
+
+16. Back in the main repository, tag the release:
 
     ``` bash
     $ cd  .../tmp1/biopython/
@@ -200,7 +217,7 @@ Final commit(s)
     $ git push origin master --tags
     ```
 
-16. Now we use https://github.com/biopython/biopython-wheels to build wheels,
+17. Now we use https://github.com/biopython/biopython-wheels to build wheels,
     by updating the ``BUILD_COMMIT`` line in ``.travis.yml`` and ``appveyor.yaml``
     to the new release's git tag.
 
@@ -228,20 +245,21 @@ Final commit(s)
     $ git push origin master
     ```
 
-    Successful wheels will be on
+18. Successful wheels will be on
     [on Rackspace](https://a365fff413fe338398b6-1c8a9b3114517dc5fe17b7c3f8c63a43.ssl.cf2.rackcdn.com/),
     download them from there to your ``~/repository/biopython/dist`` folder.
     We will upload these to PyPI later using Twine.
 
-17. Remove any prior Biopython installations on your windows machine,
-and confirm the Windows wheel file(s) work. Then copy them to your Linux
-machine.
+19. If you have a Windows machine, remove any prior Biopython installations,
+    and confirm the Windows wheel file(s) work.
 
-18. Upload the new release to the website via GitHub Pages `DIST` repository.
+Tagging the release, and uploading
+----------------------------------
+
+20. Upload the new release tar-ball and zip to the website via GitHub Pages `DIST` repository.
 
     ``` bash
     $ cp dist/biopython-1.68.* ~/repositories/DIST/
-    # Also copy in the Windows files
     $ cd ~/repositories/DIST/
     $ git add biopython-1.71.*
     $ git commit biopython-1.71.* -m "Downloads for Biopython 1.71"
@@ -251,7 +269,7 @@ machine.
     $ git push origin gh-pages
     ```
 
-19. Upload to the python package index (except for beta/alpha level
+21. Upload to the python package index (except for beta/alpha level
 releases):
 
     ``` bash
@@ -266,7 +284,7 @@ releases):
 
     - Check this is live at <https://pypi.python.org/pypi/biopython/>
 
-20. Update the website and announce the release:
+22. Update the website:
 
     - If you haven't already, clone the ``biopython.github.io`` repository,
       (otherwise make sure your copy is up to date):
@@ -292,23 +310,27 @@ releases):
     - add to [main page](Main_Page "wikilink") and [downloads
       page](Download "wikilink") (through the wiki), make sure the links
       work
+      
+23. Annoucment:
+
     - post the announcement on
       [news.open-bio.org](http://news.open-bio.org) (which will update the
       [news page](News "wikilink") and
       [twitter](http://twitter.com/Biopython) via the news feed)
-    - add the new version to
-      [RedMine](https://redmine.open-bio.org/projects/biopython)
     - send email to biopython-announce@biopython.org
       (see [mailing lists](Mailing_lists "wikilink"))
     - forward the email to Linux packagers e.g.
       debian-med@lists.debian.org
 
-21. Conda-Forge should automatically open a pull request to update the
+23. Conda-Forge should automatically open a pull request to update the
     package once it appears on PyPI. Check for a new pull request on
     [github.com/conda-forge/biopython-feedstock](https://github.com/conda-forge/biopython-feedstock)
     which once merged will upload the new release to [anaconda.org/conda-forge/biopython](https://anaconda.org/conda-forge/biopython)
 
-22. Bump version numbers again
+Post release version bump
+-------------------------
+
+24. Bump version numbers again
 
     - Update `Bio/__init__.py` version
     - Biopython Tutorial - update the date/version line in the
