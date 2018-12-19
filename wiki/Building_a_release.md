@@ -35,8 +35,7 @@ Biopython optional dependencies as possible for local testing):
 The instructions proper
 -----------------------
 
-These instructions are for a Unix machine, with a Windows machine also
-needed to test and prepare the Windows installers.
+These instructions are for a Unix/Liunux machine.
 
 1. make sure I have the latest code:
 
