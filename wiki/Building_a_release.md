@@ -309,8 +309,8 @@ releases):
       proof-reading/final corrections.
     - add to [main page](Main_Page "wikilink") and [downloads
       page](Download "wikilink") (through the wiki), make sure the links
-      work
-      
+      work.
+
 23. Annoucment:
 
     - post the announcement on
