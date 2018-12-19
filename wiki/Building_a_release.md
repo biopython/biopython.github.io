@@ -35,7 +35,7 @@ Biopython optional dependencies as possible for local testing):
 The instructions proper
 -----------------------
 
-These instructions are for a Unix/Liunux machine.
+These instructions are for a Unix/Linux machine.
 
 1. make sure I have the latest code:
 
@@ -85,32 +85,8 @@ These instructions are for a Unix/Liunux machine.
    drevil:~biopython> python setup.py build
    drevil:~biopython> python setup.py test
    ```
-
-   Ideally do this with a clean checkout on your Windows machine too.
-   Assuming you have setup your compilers etc appropriately just do
-   this:
-
-   ```
-   C:\python27\python setup.py build
-   C:\python27\python setup.py test
-
-   C:\python33\python setup.py build
-   C:\python33\python setup.py test
-
-   C:\python34\python setup.py build
-   C:\python34\python setup.py test
-   ```
-
-   If you are using MinGW, do not forget to add `--compiler=mingw32`
-   (or make it the default on distutils, see the step on building on
-   Windows machines). Also If you are using a modern MinGW compiler,
-   then distutils of Python will use an option (`-mno-cywgin`) that
-   is deprecated and will break gcc. A possible solution is to
-   [edit distutils](http://bugs.python.org/issue12641), but on
-   recent Python (3.3 as tested) this seems to have been addressed.
-
-   Running the tests simultaneously is risky, as two threads may both
-   try to read/write to the same temp files.
+   Running the tests simultaneously is risky (e.g. Python 2 and 3),
+   as two threads may both try to read/write to the same temp files.
 
 9. check out clean version somewhere else:
 
