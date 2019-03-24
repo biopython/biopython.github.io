@@ -50,7 +50,7 @@ you should look also into code review and branch merging.
 Installing Git
 --------------
 
-You will need to install Git on your computer. Git (http://git-scm.com/)
+You will need to install Git on your computer. [Git](http://git-scm.com/)
 is available for all major operating systems. Please use the appropriate
 installation method as described below.
 
@@ -102,7 +102,7 @@ git --help
 
 in a console window to obtain information on git usage. If this fails,
 you should refer to git
-[documentation](http://git-scm.com/documentation) for troubleshooting.
+[documentation](https://git-scm.com/doc) for troubleshooting.
 
 Creating a GitHub account (Optional)
 ------------------------------------
@@ -118,11 +118,11 @@ track other developers' contributions. This fosters a social,
 collaborative environment for the Biopython community.
 
 If you don't already have a GitHub account, you can create one
-[here](http://github.com/plans) (the free plan is absolutely enough).
+[here](https://github.com/join).
 Once you have created your account, upload an SSH public key by clicking
-on '[Account](https://github.com/account/)' after logging in. For more
+on '[SSH and GPG keys](https://github.com/settings/keys)' after logging in. For more
 information on generating and uploading an SSH public key, see [this
-GitHub guide](http://github.com/guides/providing-your-ssh-key).
+GitHub guide](https://help.github.com/en/articles/connecting-to-github-with-ssh).
 
 Working with the source code
 ============================
@@ -175,7 +175,7 @@ Forking Biopython with your GitHub account
 If you are logged in to GitHub, you can go to the Biopython repository
 page:
 
-[http://github.com/biopython/biopython/tree/master](http://github.com/biopython/biopython/tree/master)
+[https://github.com/biopython/biopython/tree/master](https://github.com/biopython/biopython/tree/master)
 
 and click on a button named 'Fork'. This will create a fork (basically a
 copy) of the official Biopython repository, publicly viewable on GitHub,
@@ -190,7 +190,7 @@ meaningful (i.e. different from the ones copied from the official
 repository).
 
 If you haven't done so already, setup an SSH key and [upload it to
-github](http://github.com/guides/providing-your-ssh-key) for
+github](https://github.com/settings/keys) for
 authentication.
 
 Now, assuming that you have git installed on your computer, execute the
@@ -474,7 +474,7 @@ git branch -r
 
 Alternatively, from within GitHub you can use the fork-queue to cherry
 pick commits from other people's forked branches. See [this GitHub blog
-post](http://github.com/blog/270-the-fork-queue) for details. While this
+post](https://github.com/blog/270-the-fork-queue) for details. While this
 defaults to applying the changes to your current branch, you would
 typically do this using a new integration branch, then fetch it to your
 local machine to test everything, before merging it to your main branch.
@@ -651,10 +651,9 @@ There are a lot of different nice guides to using Git on the web:
 
 -   [Git Community Book](http://book.git-scm.com/)
 -   [Understanding Git
-    Conceptually](http://www.eecs.harvard.edu/~cduan/technical/git/)
+    Conceptually](https://www.sbf5.com/~cduan/technical/git/)
 -   [git ready: git tips](http://gitready.com/)
--   <http://github.com/guides/git-cheat-sheet>
--   <http://zrusin.blogspot.com/2007/09/git-cheat-sheet.html>
+-   <http://http://cheat.errtheblog.com/s/git>
 -   <http://www.kernel.org/pub/software/scm/git/docs/v1.4.4.4/cvs-migration.html>
 -   <http://projects.scipy.org/numpy/wiki/GitWorkflow> Numpy is also
     evaluating git
