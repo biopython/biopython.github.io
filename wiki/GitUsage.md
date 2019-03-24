@@ -24,8 +24,8 @@ page](SourceCode "wikilink"). This page is about actually using git for
 tracking changes.
 
 If you have found a problem with Biopython, and think you know how to
-fix it, then we suggest following the simple route of [filing a
-bug](http://redmine.open-bio.org/projects/biopython) and describe your
+fix it, then we suggest following the simple route of filing a
+bug and describe your
 fix. Ideally, you would upload a patch file showing the differences
 between the latest version of Biopython (from our repository) and your
 modified version. Working with the command line tools *diff* and *patch*
@@ -182,7 +182,7 @@ copy) of the official Biopython repository, publicly viewable on GitHub,
 but listed under your personal account. It should be visible under a URL
 that looks like this:
 
-[http://github.com/yourusername/biopython](http://github.com/yourusername/biopython)
+https://github.com/yourusername/biopython
 
 Since your new Biopython repository is publicly visible, it's considered
 good practice to change the description and homepage fields to something
@@ -328,8 +328,8 @@ Submitting changes for inclusion in Biopython
 ---------------------------------------------
 
 If you think you changes are worth including in the main Biopython
-distribution, then [file an (enhancement) bug on our bug
-tracker](http://redmine.open-bio.org/projects/biopython), and include a
+distribution, then file an (enhancement) bug on our bug
+tracker, and include a
 link to your updated branch (i.e. your branch on GitHub, or another
 public Git server). You could also attach a patch to the bug. If the
 changes are accepted, one of the Biopython developers will have to check
@@ -384,7 +384,7 @@ core developers, or anyone accepting changes on a branch.
 For example, suppose Eric has some interesting changes on his public
 repository:
 
-[git://github.com/etal/biopython.git](git://github.com/etal/biopython.git)
+git://github.com/etal/biopython.git
 
 You must tell git about this by creating a reference to this remote
 repository:
@@ -573,7 +573,7 @@ giving you a URL. Typically this will be on GitHub (but it may be any
 public git url). Let us assume that the url is (which happens to be my
 clone of Biopython):
 
-[git://github.com/barwil/biopython.git](git://github.com/barwil/biopython.git)
+git://github.com/barwil/biopython.git
 
 First, you need to get the code from this repository:
 
@@ -649,15 +649,11 @@ Additional Resources
 
 There are a lot of different nice guides to using Git on the web:
 
--   [Git Community Book](http://book.git-scm.com/)
 -   [Understanding Git
     Conceptually](http://www.eecs.harvard.edu/~cduan/technical/git/)
 -   [git ready: git tips](http://gitready.com/)
 -   <http://github.com/guides/git-cheat-sheet>
 -   <http://zrusin.blogspot.com/2007/09/git-cheat-sheet.html>
--   <http://www.kernel.org/pub/software/scm/git/docs/v1.4.4.4/cvs-migration.html>
--   <http://projects.scipy.org/numpy/wiki/GitWorkflow> Numpy is also
-    evaluating git
--   <http://learn.github.com/>
--   [Pro Git](http://progit.org/book/)
+-   <https://lab.github.com/courses>
+-   [Pro Git](https://git-scm.com/book/en/v2)
 
