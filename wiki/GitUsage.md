@@ -452,7 +452,20 @@ git diff master eric/pdbtidy
 ```
 
 You might now want to merge in (some) of Eric's changes to a new branch
-on your local repository.
+on your local repository. To make a copy of the branch (e.g. pdbtidy)
+in your local repository, type:
+
+``` bash
+git checkout --track eric/pdbtidy
+```
+
+If Eric is adding more commits to his remote branch and you want to update
+your local copy, just do:
+
+``` bash
+git checkout pdbtidy  # if you are not already in branch pdbtidy
+git pull
+```
 
 If you later want to remove the reference to this particular branch:
 
