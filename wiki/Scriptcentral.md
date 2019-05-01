@@ -105,3 +105,10 @@ redirect_from:
 | Author      | Paul Magwene                                                                                                                                                                                                                                      |
 | URL         | <https://github.com/pmagwene?tab=repositories>                                                                                                                                                                                                    |
 | Description | This collects Paul's modules for doing different tasks (and also has links and a nice essay about why he likes python). A particularly interesting module is disipyl, which provides an object oriented interface to the Dislin plotting library. |
+
+|             |                                                                                                                                                                                     |
+|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name        | snpFC                                                                                                                                                                               |
+| Author      | Ram Krishna Shrestha                                                                                                                                                                |
+| URL         | <https://github.com/TeamMacLean/snpFC>                                                                                                                                              |
+| Description | snpFC is a a tool for easy to filter VCF records with filter parameters and compare two or more VCF records for obtaining unique and common records.                                |
