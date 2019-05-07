@@ -5,15 +5,14 @@ layout: page
 ---
 
 [Biopython
-News](http://news.open-bio.org/category/obf-projects/biopython/) is
-posted on the [Open Bioinformatics Foundation](https://www.open-bio.org/)
-shared [news server](http://news.open-bio.org). If you use
-news-reader software you can subscribe to Biopython news using the
-[RDF](http://news.open-bio.org/category/obf-projects/biopython/feed/rdf),
-[RSS](http://news.open-bio.org/category/obf-projects/biopython/feed/rss),
-[RSS2](http://news.open-bio.org/category/obf-projects/biopython/feed/rss2)
+News](http://www.open-bio.org/category/biopython/) is
+posted on the [Open Bioinformatics Foundation Blog](https://www.open-bio.org/blog).
+If you use news-reader software you can subscribe to Biopython news using the
+[RDF](http://www.open-bio.org/category/biopython/feed/rdf),
+[RSS](http://www.open-bio.org/category/biopython/feed/rss),
+[RSS2](http://www.open-bio.org/category/biopython/feed/rss2)
 or
-[Atom](http://news.open-bio.org/category/obf-projects/biopython/feed/atom)
+[Atom](http://www.open-bio.org/category/biopython/feed/atom)
 feed.
 
 See also the latest version of the [NEWS.rst
