@@ -15,6 +15,11 @@ See also the chapter about contributing in the
 [Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
 ([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)).
 
+If you get as far as making a pull request with changes, you should
+read [CONTRIBUTING.rst](https://github.com/biopython/biopython/blob/master/CONTRIBUTING.rst)
+which describes how the automated testing including style checks are
+done.
+
 ### Non-code contributions
 
 Even if you don't feel ready or able to contribute code, you can still
@@ -137,17 +142,16 @@ API documentation](http://biopython.org/DIST/docs/api) (in addition to
 all the normal reasons to document code).
 
 We generally don't do anything fancy to try and format the comments in
-the code -- by default they are displayed by epydoc exactly as written
-in the source. This isn't fancy, but it's effective and easier then
-trying to deal with the myriad of different ways to try and structure
-source code comments.
+the code -- but they are interpreted as reStructuredText markup which
+allows things like bullet points and italics. This isn't fancy, but
+it's effective and easier then trying to deal with the myriad of
+different ways to try and structure source code comments.
 
 However, there are a few tricks to make your documentation look its
 best. The main ones are:
 
 -   Modules, classes and function documentation should start with a one
-    line description. Epydoc is a little picky, so you need to make sure
-    that the description ends with a period. Not too hard.
+    line description. This must end with a period.
 
 Here's an example of a module documented so that epydoc will be happy:
 
