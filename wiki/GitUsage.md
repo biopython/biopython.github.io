@@ -245,7 +245,7 @@ pip install flake8-docstrings flake8-blind-except flake8-rst-docstrings
 pip install flake8-bugbear  # Only for Python 3!
 ```
 
-Next, within your git source-code branch (e.g. \biopython), you setup a
+Next, within your git clone of the source code (e.g. `~/biopython`), you setup a
 'pre-commit hook':
 
 ```bash
@@ -269,6 +269,8 @@ looking only for E501 issues ('line too long', we ignore this currently) in the
 flake8
 flake8 Bio --isolated --select E501 --statistics --quiet
 ```
+
+See the [CONTRIBUTING.rst](https://github.com/biopython/biopython/blob/master/CONTRIBUTING.rst) file for more.
 
 Making changes locally
 ----------------------
