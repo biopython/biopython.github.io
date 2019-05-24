@@ -201,7 +201,7 @@ GitHub page for your repository (if you are logged in):
 git clone git@github.com:yourusername/biopython.git
 ```
 
-Where <yourusername>, not surprisingly, stands for your GitHub username.
+Where `yourusername`, not surprisingly, stands for your GitHub username.
 You have just created a local copy of the Biopython repository on your
 machine.
 
@@ -224,6 +224,50 @@ GitHub account). For example,
 ``` bash
 git config --global user.name "David Jones"
 git config --global user.email "d.jones@example.com"
+```
+
+Setting up a coding-style checker
+---------------------------------
+
+Biopython tries to follow the coding conventions laid out in PEP8 and PEP257. So
+before starting to work on the code, you need to install `flake8`, a Python
+module which can do different types of style-checks on your files.
+
+```bash
+pip install flake8
+```
+
+If you have `flake8` already installed, please update it to a recent version.
+Several `flake8` plugins are availabe, of which you need to add the following:
+
+``` bash
+pip install flake8-docstrings flake8-blind-except flake8-rst-docstrings
+pip install flake8-bugbear  # Only for Python 3!
+```
+
+Next, within your git source-code branch (e.g. \biopython), you setup a
+'pre-commit hook':
+
+```bash
+flake8 --install-hook git
+git config --bool flake8.strict true
+```
+
+Now, each of your commits (see below) will automatically be checked for
+violations of Biopython's agreed coding style by `flake8`. Accepted exceptions
+are listed in the `.flake8` config file of the root repository folder (we are,
+however, in the process of reducing them over time). Commits with violations
+will be blocked. Thus you ensure that a later submission to Biopython (a pull
+request, see below) will not be stopped by the automatic online style-checks.
+
+`flake8` can also be run from the command line. In the following examples,
+`flake8` will check the whole Biopython folder with our standard settings or is
+looking only for E501 issues ('line too long', we ignore this currently) in the
+`Bio` folder, respectively:
+
+``` bash
+flake8
+flake8 Bio --isolated --select E501 --statistics --quiet
 ```
 
 Making changes locally
