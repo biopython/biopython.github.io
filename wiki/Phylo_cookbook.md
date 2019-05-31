@@ -176,7 +176,7 @@ The basic method on the Tree class (not TreeMixin) is
 tree = Phylo.read('example.nwk', 'newick')
 print(tree)
 # ...
-tree.root_with_outgroups({'name': 'A'})  # Operates in-place
+tree.root_with_outgroup({'name': 'A'})  # Operates in-place
 print (tree)
 ```
 
