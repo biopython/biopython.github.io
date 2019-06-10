@@ -235,9 +235,9 @@ scheduled job to do this automatically (say once a fortnight).
 
 P.S. It is a particularly good idea to do update the taxonomy if you
 will be working with the left/right values in the taxon table (see also
-[BioSQL enhancement request
-2493](https://redmine.open-bio.org/issues/2493). Biopython 1.67 onwards
-will do this when writing to the taxon tables.
+[BioSQL enhancement request GitHub issue 14
+(Redmine 2493)](https://github.com/biosql/biosql/issues/14)).
+Biopython 1.67 onwards will do this when writing to the taxon tables.
 
 Note Biopython ignores these optional fields when loading or retrieving
 sequences - instead using just the parent link. See
