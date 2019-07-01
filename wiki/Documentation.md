@@ -10,12 +10,6 @@ New to Biopython? Check out the [Getting
 Started](Getting_Started "wikilink") page, or follow one of the links
 below.
 
--   Installation instructions cover the installation of Python itself,
-    the Biopython dependencies, and Biopython itself.
-
-    [HTML](http://biopython.org/DIST/docs/install/Installation.html) |
-    [PDF](http://biopython.org/DIST/docs/install/Installation.pdf)
-
 -   The **Biopython Tutorial and Cookbook** contains the bulk of
     Biopython documentation. It provides information to get you started
     with Biopython, in addition to specific documentation on a number of
