@@ -19,7 +19,13 @@ below.
     [PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)
 
 -   API documentation for Biopython modules is generated directly from
-    source code comments using [Epydoc](http://epydoc.sourceforge.net/).
+    source code comments Sphinx autodoc:
+    
+    [Biopython 1.74 API](https://biopython.org/docs/1.74/api/)
+    [Biopython in-development API](https://biopython.org/docs/dev/api/)
+    
+    We used to use [Epydoc](http://epydoc.sourceforge.net/), but are
+    stopping after Biopyton 1.74:
 
     [HTML](http://biopython.org/DIST/docs/api)
 
