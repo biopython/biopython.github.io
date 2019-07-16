@@ -15,13 +15,13 @@ below.
     with Biopython, in addition to specific documentation on a number of
     modules
 
-    [HTML](http://biopython.org/DIST/docs/tutorial/Tutorial.html) |
+    [HTML](http://biopython.org/DIST/docs/tutorial/Tutorial.html),
     [PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)
 
 -   API documentation for Biopython modules is generated directly from
     source code comments Sphinx autodoc:
     
-    [Biopython 1.74 API](https://biopython.org/docs/1.74/api/)
+    [Biopython 1.74 API](https://biopython.org/docs/1.74/api/),
     [Biopython in-development API](https://biopython.org/docs/dev/api/)
     
     We used to use [Epydoc](http://epydoc.sourceforge.net/), but are
