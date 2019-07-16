@@ -247,7 +247,7 @@ Tagging the release, and making wheels
 
 18. Successful wheels will be on
     [on Rackspace](https://a365fff413fe338398b6-1c8a9b3114517dc5fe17b7c3f8c63a43.ssl.cf2.rackcdn.com/),
-    download them from there to your ``~/repository/biopython/dist`` folder.
+    download them from there to your ``~/repository/biopython/DIST/`` folder.
     We will upload these to PyPI later using Twine.
 
 19. If you have a Windows machine, remove any prior Biopython installations,
