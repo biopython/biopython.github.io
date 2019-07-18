@@ -157,7 +157,7 @@ Old Releases
 Recent releases of Biopython require NumPy (and not Numeric):
 
 -   [biopython-1.73.tar.gz](http://biopython.org/DIST/biopython-1.73.tar.gz)
-    15Mb -- Source Tarball
+    15Mb -- Source Tarball (18 December 2018)
 -   [biopython-1.73.zip](http://biopython.org/DIST/biopython-1.73.zip)
     17Mb -- Source Zip File
 -   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.73)
@@ -165,7 +165,7 @@ Recent releases of Biopython require NumPy (and not Numeric):
 <!-- -->
 
 -   [biopython-1.72.tar.gz](http://biopython.org/DIST/biopython-1.72.tar.gz)
-    16Mb -- Source Tarball
+    16Mb -- Source Tarball (27 June 2018)
 -   [biopython-1.72.zip](http://biopython.org/DIST/biopython-1.72.zip)
     17Mb -- Source Zip File
 -   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.72)
@@ -173,7 +173,7 @@ Recent releases of Biopython require NumPy (and not Numeric):
 <!-- -->
 
 -   [biopython-1.71.tar.gz](http://biopython.org/DIST/biopython-1.71.tar.gz)
-    16Mb -- Source Tarball
+    16Mb -- Source Tarball (4 April 2018)
 -   [biopython-1.71.zip](http://biopython.org/DIST/biopython-1.71.zip)
     17Mb -- Source Zip File
 -   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.71)
@@ -181,7 +181,7 @@ Recent releases of Biopython require NumPy (and not Numeric):
 <!-- -->
 
 -   [biopython-1.70.tar.gz](http://biopython.org/DIST/biopython-1.70.tar.gz)
-    15Mb -- Source Tarball
+    15Mb -- Source Tarball (11 July 2017)
 -   [biopython-1.70.zip](http://biopython.org/DIST/biopython-1.70.zip)
     16Mb -- Source Zip File
 -   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.70)
@@ -189,7 +189,7 @@ Recent releases of Biopython require NumPy (and not Numeric):
 <!-- -->
 
 -   [biopython-1.69.tar.gz](http://biopython.org/DIST/biopython-1.69.tar.gz)
-    15Mb -- Source Tarball
+    15Mb -- Source Tarball (7 April 2017)
 -   [biopython-1.69.zip](http://biopython.org/DIST/biopython-1.69.zip)
     16Mb -- Source Zip File
 -   [biopython-1.69.win32-py2.7.exe](http://biopython.org/DIST/biopython-1.69.win32-py2.7.exe)
@@ -216,7 +216,7 @@ Recent releases of Biopython require NumPy (and not Numeric):
 <!-- -->
 
 -   [biopython-1.68.tar.gz](http://biopython.org/DIST/biopython-1.68.tar.gz)
-    14Mb -- Source Tarball
+    14Mb -- Source Tarball (26 August 2016)
 -   [biopython-1.68.zip](http://biopython.org/DIST/biopython-1.68.zip)
     15Mb -- Source Zip File
 -   [biopython-1.68.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.68.win32-py2.6.exe)
@@ -241,7 +241,7 @@ Recent releases of Biopython require NumPy (and not Numeric):
 <!-- -->
 
 -   [biopython-1.67.tar.gz](http://biopython.org/DIST/biopython-1.67.tar.gz)
-    14Mb -- Source Tarball
+    14Mb -- Source Tarball (8 June 2016)
 -   [biopython-1.67.zip](http://biopython.org/DIST/biopython-1.67.zip)
     15Mb -- Source Zip File
 -   [biopython-1.67.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.67.win32-py2.6.exe)
@@ -268,7 +268,7 @@ Recent releases of Biopython require NumPy (and not Numeric):
 <!-- -->
 
 -   [biopython-1.66.tar.gz](http://biopython.org/DIST/biopython-1.66.tar.gz)
-    14Mb -- Source Tarball
+    14Mb -- Source Tarball (21 October 2015)
 -   [biopython-1.66.zip](http://biopython.org/DIST/biopython-1.66.zip)
     15Mb -- Source Zip File
 -   [biopython-1.66.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.66.win32-py2.6.exe)
@@ -287,7 +287,7 @@ Recent releases of Biopython require NumPy (and not Numeric):
 <!-- -->
 
 -   [biopython-1.65.tar.gz](http://biopython.org/DIST/biopython-1.65.tar.gz)
-    13Mb -- Source Tarball
+    13Mb -- Source Tarball (17 December 2014)
 -   [biopython-1.65.zip](http://biopython.org/DIST/biopython-1.65.zip)
     14Mb -- Source Zip File
 -   [biopython-1.65.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.65.win32-py2.6.exe)
@@ -302,7 +302,7 @@ Recent releases of Biopython require NumPy (and not Numeric):
 <!-- -->
 
 -   [biopython-1.64.tar.gz](http://biopython.org/DIST/biopython-1.64.tar.gz)
-    12Mb -- Source Tarball
+    12Mb -- Source Tarball (29 May 2014)
 -   [biopython-1.64.zip](http://biopython.org/DIST/biopython-1.64.zip)
     13Mb -- Source Zip File
 -   [biopython-1.64.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.64.win32-py2.6.exe)
@@ -317,7 +317,7 @@ Recent releases of Biopython require NumPy (and not Numeric):
 <!-- -->
 
 -   [biopython-1.63.tar.gz](http://biopython.org/DIST/biopython-1.63.tar.gz)
-    11Mb -- Source Tarball
+    11Mb -- Source Tarball (6 December 2013)
 -   [biopython-1.63.zip](http://biopython.org/DIST/biopython-1.63.zip)
     12Mb -- Source Zip File
 -   [biopython-1.63.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.63.win32-py2.6.exe)
@@ -330,7 +330,7 @@ Recent releases of Biopython require NumPy (and not Numeric):
 <!-- -->
 
 -   [biopython-1.63b.tar.gz](http://biopython.org/DIST/biopython-1.63b.tar.gz)
-    11,123 Kb -- Source Tarball
+    11,123 Kb -- Source Tarball (*beta release*, 12 November 2013)
 -   [biopython-1.63b.zip](http://biopython.org/DIST/biopython-1.63b.zip)
     12,111 Kb -- Source Zip File
 -   [biopython-1.63b.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.63b.win32-py2.6.exe)
@@ -343,7 +343,7 @@ Recent releases of Biopython require NumPy (and not Numeric):
 <!-- -->
 
 -   [biopython-1.62.tar.gz](http://biopython.org/DIST/biopython-1.62.tar.gz)
-    11,123 Kb -- Source Tarball
+    11,123 Kb -- Source Tarball (28 August 2013)
 -   [biopython-1.62.zip](http://biopython.org/DIST/biopython-1.62.zip)
     12,111 Kb -- Source Zip File
 -   [biopython-1.62.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.62.win32-py2.5.exe)
