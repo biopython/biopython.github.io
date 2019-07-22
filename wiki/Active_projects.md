@@ -128,14 +128,14 @@ and enhancements for current code should be discussed though GitHub.
     Davis' GEOquery parser in
     R/Bioconductor](http://www.bioconductor.org/packages/bioc/html/GEOquery.html).
     See also [this page](http://www.warwick.ac.uk/go/peter_cock/r/geo/).
-    
+
 <!-- -->
 
--   Write a parser for PAML supplementary output files (`rst` files) for 
+-   Write a parser for PAML supplementary output files (`rst` files) for
     `Bio.Phylo.PAML`. Presently only the main output files are parsed, but
     the supplementary output files contain potentially useful information
-    for ancestral sequence reconstruction, Bayes posterior probability 
-    estimates for positive selection at all sites, etc. The format is 
+    for ancestral sequence reconstruction, Bayes posterior probability
+    estimates for positive selection at all sites, etc. The format is
     generally different from the main output files and it probably varies
     even more widely between models than the main output, so it will
     require a lot of care.
