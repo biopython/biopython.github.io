@@ -33,7 +33,7 @@ who take care of our domain name and hosting for our mailing list etc.
 The OBF used to host our developement repository, issue tracker and
 website but these are now on [GitHub](https://github.com/biopython).
 
-This wiki will help you download and install Biopython, and start using
+This page will help you download and install Biopython, and start using
 the libraries and tools.
 
 | [Get Started](wiki/Getting_Started "wikilink")                                                                                                      | [ Get help](wiki/Documentation "wikilink")                                                                                           | [ Contribute](wiki/Contributing "wikilink")                                                                                        |
