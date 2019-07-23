@@ -16,7 +16,7 @@ the code repository. When you start, be sure to have write access to:
 2. [GitHub biopython.org website repository](https://github.com/biopython/biopython.github.io)
 3. [GitHub biopython.org/DIST/ repository](https://github.com/biopython/DIST)
 4. [GitHub biopython wheel repository](https://github.com/biopython/biopython-wheels)
-5. [OBF WordPress Blog](https://news.open-bio.org)
+5. [OBF WordPress Blog](https://www.open-bio.org)
 6. [Biopython on PyPI](https://pypi.python.org/pypi/biopython)
 
 If you don't have any of the above, please ask.
@@ -313,10 +313,10 @@ releases):
 
 23. Annoucment:
 
-    - post the announcement on
-      [news.open-bio.org](http://news.open-bio.org) (which will update the
-      [news page](News "wikilink") and
-      [twitter](http://twitter.com/Biopython) via the news feed)
+    - post the announcement on the [www.open-bio.org](https://www.open-bio.org)
+      blog (making sure to use the Biopython category which will update the
+      [news page](News "wikilink") and [twitter](http://twitter.com/Biopython)
+      via the news feed)
     - send email to biopython-announce@biopython.org
       (see [mailing lists](Mailing_lists "wikilink"))
     - forward the email to Linux packagers e.g.
