@@ -25,7 +25,7 @@ below.
     [Biopython in-development API](https://biopython.org/docs/dev/api/)
 
     We used to use [Epydoc](http://epydoc.sourceforge.net/), but are
-    stopping after Biopyton 1.74:
+    stopping after Biopython 1.74:
 
     [HTML](http://biopython.org/DIST/docs/api)
 
