@@ -5,10 +5,13 @@ layout: wiki
 ---
 
 As bioinformatics and computational biology are developing quickly, some
-of previously developed Biopython modules may no longer be relevant in
+of previously developed Biopython code may no longer be relevant in
 today's world. To keep the code base clean, we aim to deprecate and
 remove such code from Biopython, while avoiding any nasty surprises for
 users who may be relying on older code.
+
+We use the same process to deprecate obsolete modules, methods, functions 
+and classes.
 
 We keep a plain text file in the Biopython source code to record these
 changes, named
@@ -17,18 +20,25 @@ changes, named
 This is the current policy for deprecating and removing code from
 Biopython:
 
--   First, ask on the [Biopython mailing list](Mailing_lists "wikilink")
-    whether a given piece of code has any users. Please keep in mind that
-    not all users are following the biopython mailing list.
--   Consider declaring the module as "obsolete" for a release
-    *before* deprecation. No code changes, just:
-    -   Note this in the DEPRECATED file,
-    -   Add "(OBSOLETE)" to the first line of the module docstring,
-    -   Use the module docstring to explain why the module is obsolete
+-   Initial consultation
+    - Ask on the [Biopython mailing list](Mailing_lists "wikilink")
+        whether a given piece of code has any users. Please keep in mind that
+        not all users are following the biopython mailing list.
+-   Declare the code "obsolete"
+    Before deprecation, add notes indicating the code is obsolete; do not 
+    change the code.
+    -   Add a note in the DEPRECATED file, include the name of the module, 
+        method, function, and the reason for the code to be deprecated.
+    -   Add "(OBSOLETE)" to the first line of the code's docstring,
+    -   Use the docstring to explain why the module is obsolete
         and what should be used instead.
--   If there are no apparent users, then actually deprecate it:
+    -   Wait for users feedback till the next release, if there are no apparent 
+        users, proceed to the next step.
+    -   The initial consultation and declaring the code obsolete can be done at 
+        the same time. 
+-   Deprecate the code:
     -   Note this in the DEPRECATED file,
-    -   Add "(DEPRECATED)" to the first line of the module docstring
+    -   Add "(DEPRECATED)" to the first line of the code's docstring
     -   Use the module docstring to explain any migration needed,
         ideally with examples or a reference to the tutorial.
     -   Most importantly, add a ``BiopythonDeprecationWarning`` to the
