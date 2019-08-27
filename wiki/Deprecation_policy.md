@@ -10,6 +10,9 @@ today's world. To keep the code base clean, we aim to deprecate and
 remove such code from Biopython, while avoiding any nasty surprises for
 users who may be relying on older code.
 
+We use the same process to deprecate obsolete modules, methods, functions
+and classes.
+
 We keep a plain text file in the Biopython source code to record these
 changes, named
 [`DEPRECATED.rst`](http://github.com/biopython/biopython/blob/master/DEPRECATED.rst).
