@@ -135,7 +135,9 @@ The one notable exception is module names, where we tend to use title
 case. With hindsight this is unfortunate, but we are constrained by
 backwards compatibility.
 
-[Epydoc](http://epydoc.sourceforge.net/) is being used to generate
+[Epydoc](http://epydoc.sourceforge.net/) and/or
+[Sphinx apidoc](https://www.sphinx-doc.org/en/master/man/sphinx-apidoc.html)
+is being used to generate
 automatic documentation of the source code so it definitely is useful to
 put helpful comments in your code so that they will be reflected in [the
 API documentation](http://biopython.org/DIST/docs/api) (in addition to
