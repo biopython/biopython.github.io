@@ -241,7 +241,7 @@ If you have `flake8` already installed, please update it to a recent version.
 Several `flake8` plugins are availabe, of which you need to add the following:
 
 ``` bash
-pip install flake8-docstrings flake8-blind-except flake8-rst-docstrings
+pip install flake8 flake8-docstrings flake8-blind-except flake8-rst-docstrings flake8-comprehensions flake8-quotes
 pip install flake8-bugbear  # Only for Python 3!
 ```
 
