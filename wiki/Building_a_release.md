@@ -104,7 +104,7 @@ Making and testing the tar-ball
 10. check out clean version somewhere else:
 
     ``` bash
-    drevil:~tmp1/> git clone git://github.com/biopython/biopython.git
+    drevil:~tmp1/> git clone https://github.com/biopython/biopython.git
     drevil:~tmp1/> cd biopython
     ```
 

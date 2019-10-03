@@ -56,7 +56,7 @@ is very simple using the git command line tool, you don't need an
 account or password:
 
 ``` bash
-git clone git://github.com/biopython/biopython.git
+git clone https://github.com/biopython/biopython.git
 ```
 
 This command creates a local copy of the entire Biopython repository on

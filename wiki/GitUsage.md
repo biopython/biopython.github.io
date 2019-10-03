@@ -157,7 +157,7 @@ Getting a copy of the repository (called "cloning" in Git terminology)
 without GitHub account is very simple:
 
 ``` bash
-git clone git://github.com/biopython/biopython.git
+git clone https://github.com/biopython/biopython.git
 ```
 
 This command creates a local copy of the entire Biopython repository on
@@ -209,7 +209,7 @@ You may want to also link your branch with the official distribution
 (see below on how to keep your copy in sync):
 
 ``` bash
-git remote add upstream git://github.com/biopython/biopython.git
+git remote add upstream https://github.com/biopython/biopython.git
 ```
 
 To add additional contributors to your repository on GitHub (i.e. people
@@ -347,7 +347,7 @@ official Biopython branch) to your repository.
 Assuming you have issued this command (you only need to do this once):
 
 ``` bash
-git remote add upstream git://github.com/biopython/biopython.git
+git remote add upstream https://github.com/biopython/biopython.git
 ```
 
 Then all you need to do is:
@@ -430,13 +430,13 @@ core developers, or anyone accepting changes on a branch.
 For example, suppose Eric has some interesting changes on his public
 repository:
 
-git://github.com/etal/biopython.git
+https://github.com/etal/biopython.git
 
 You must tell git about this by creating a reference to this remote
 repository:
 
 ``` bash
-git remote add eric git://github.com/etal/biopython.git
+git remote add eric https://github.com/etal/biopython.git
 ```
 
 Now we can fetch *all* of Eric's public repository with one line:
@@ -448,7 +448,7 @@ remote: Compressing objects: 100% (105/105), done.
 remote: Total 105 (delta 77), reused 0 (delta 0)
 Receiving objects: 100% (105/105), 27.53 KiB, done.
 Resolving deltas: 100% (77/77), completed with 24 local objects.
-From git://github.com/etal/biopython
+From https://github.com/etal/biopython
  * [new branch]      bug2754    -> eric/bug2754
  * [new branch]      master     -> eric/master
  * [new branch]      pdbtidy    -> eric/pdbtidy
@@ -632,12 +632,12 @@ giving you a URL. Typically this will be on GitHub (but it may be any
 public git url). Let us assume that the url is (which happens to be my
 clone of Biopython):
 
-git://github.com/barwil/biopython.git
+https://github.com/barwil/biopython.git
 
 First, you need to get the code from this repository:
 
 ``` bash
-git remote add Bartek git://github.com/barwil/biopython.git
+git remote add Bartek https://github.com/barwil/biopython.git
 git fetch Bartek
 ```
 
