@@ -31,9 +31,8 @@ Biopython optional dependencies as possible for local testing):
 1. Python (traditionally we've used Python 2, but 3 should be fine)
 2. git
 3. [twine](https://github.com/pypa/twine/), installed with ``pip install twine``
-4. [epydoc](http://epydoc.sourceforge.net/), currently using version 3.0.1
-5. LaTeX, including assorted packages like comments and preprint.
-6. [hevea](http://hevea.inria.fr/), I am currently using version 1.10+9 of 2008-12-17
+4. LaTeX, including assorted packages like comments and preprint.
+5. [hevea](http://hevea.inria.fr/), I am currently using version 1.10+9 of 2008-12-17
 
 Final commit(s)
 ---------------
@@ -143,51 +142,13 @@ Making and testing the tar-ball
     A typical source of failure here (on the tests) is the lack of example
     files being added to the source distribution: add them to `MANIFEST.in`
 
-Making the API documentation
-----------------------------
+Checking the compiled documentation
+-----------------------------------
 
-15. Update API documentation using Epydoc (this can often report otherwise overlooked
-    errors).
+15. Since Biopython 1.74, Sphinx has handled the API documentation via continuous
+    integration, but still have to update the Tutorial on the website.
 
-    - If you haven't already, clone the ``DIST`` repository - otherwise first
-      fetch any upstream changes.
-
-    ``` bash
-    $ cd ~/repositories
-    $ git clone git@github.com:biopython/DIST.git
-    $ cd ~/repositories/DIST
-    ```
-
-    - Remove version of the API documentation which we're going to replace:
-
-    ``` bash
-    $ git rm docs/api/*
-    ```
-
-    - Go to the `/tmp/test-install/lib/python2.7/site-packages` directory. This is the
-      directory created under your source installation after the install step above.
-      Running epydoc in your git tree works, but can miss some packages due to import
-      errors.
-
-    ``` bash
-    $ cd /tmp/test-install/lib/python2.7/site-packages
-    $ grep "__version__" Bio/__init__.py
-    __version__ = "1.71"
-    $ epydoc -v -o ~/repositories/DIST/docs/api/ -u http://biopython.org -n Biopython --docformat restructuredtext Bio BioSQL
-    $ grep "__version__" ~/repositories/DIST/docs/api/Bio-pysrc.html
-    <a name="L13"></a><tt class="py-lineno"> 13</tt>  <tt class="py-line"><tt class="py-name">__version__</tt> <tt class="py-op">=</tt> <tt class="py-string">"1.71"</tt> </tt>
-    ```
-
-    - Assuming no mismatches in version number (which would suggest epydoc is not looking
-      at the new test installation), commit these new HTML files to the `gh-pages` branch:
-
-    ``` bash
-    $ cd ~/repositories/DIST
-    $ git add docs/api/*
-    $ git commit -m "epydoc for Biopython 1.68"
-    ```
-
-    - Update the tutorial too:
+  - Update the tutorial too:
 
     ``` bash
     $ cd ~/repositories/DIST/docs/tutorial/
