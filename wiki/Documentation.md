@@ -21,11 +21,11 @@ below.
 -   API documentation for Biopython modules is generated directly from
     source code comments Sphinx autodoc:
 
-    [Biopython 1.74 API](https://biopython.org/docs/1.74/api/), and
+    [Biopython 1.75 API](https://biopython.org/docs/1.75/api/), and
     [Biopython in-development API](https://biopython.org/docs/dev/api/)
 
     We used to use [Epydoc](http://epydoc.sourceforge.net/), but are
-    stopping after Biopython 1.74:
+    stopping after Biopython 1.75:
 
     [HTML](http://biopython.org/DIST/docs/api)
 
