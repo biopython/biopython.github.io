@@ -46,38 +46,53 @@ Installing Required Software
 You will need to install some database software plus the associated
 python library so that Biopython can "talk" to the database. In this
 example we'll talk about the most common choice, MySQL. How you do this
-will also depend on your operating system, for example on a Debian or
-Ubuntu Linux machine try this:
+will also depend on your operating system.
+For example on a **Debian or Ubuntu Linux** machine try this:
 
 ``` bash
 sudo apt-get install mysql-common mysql-server python-mysqldb
 ```
-
 It will also be important to have perl (to run some of the setup
-scripts). Again, on a Debian or Ubuntu Linux machine try this:
+scripts). Again, on a **Debian or Ubuntu Linux** machine try this:
 
 ``` bash
 sudo apt-get install perl
 ```
-
 You may find perl is already installed.
 
-For Windows users, see [BioSQL on Windows](BioSQL_Windows "wikilink").
+For **Windows** users, see [BioSQL on Windows](BioSQL_Windows "wikilink").
+
+For **Cygwin** users, use [apt-cyg](https://github.com/transcode-open/apt-cyg) to install packages **mysql** and **mysql-server**,
+``` bash
+apt-cyg install mysql mysql-server
+```
+and to install the driver **mysql-connector** use [pip](https://pypi.org/project/pip/),
+
+``` bash
+pip install mysql-connector
+```
 
 Downloading the BioSQL Schema & Scripts
 ---------------------------------------
 
-Once the software is installed, your next task is to setup a database
-and import the BioSQL schema (i.e. setup the relevant tables within the
-database). See [BioSQL downloads](http://www.biosql.org/wiki/Downloads)
+Once the software is installed, your next task is to setup a database, 
+import the BioSQL schema (i.e. setup the relevant tables within the
+database) and finally populate the database.
+
+In order to do so, files from the **biosql** project need to be obtained:
+
+* Either from [BioSQL downloads](http://www.biosql.org/wiki/Downloads)
 -- you'll need to unzip the archive.
 
-Alternatively to get the very latest BioSQL, check out their git
-repository. Or, navigate to the relevant schema file for your database
-and download just that, e.g.
-[biosqldb-mysql.sql](https://raw.github.com/biosql/biosql/master/sql/biosqldb-mysql.sql)
-for MySQL. You will also want the NCBI Taxonomy loading perl script,
-[load\_ncbi\_taxonomy.pl](https://raw.github.com/biosql/biosql/master/scripts/load_ncbi_taxonomy.pl).
+* Or to get the **very latest** files, check out (or export) the relevant git
+repository at (https://github.com/biosql/biosql.git)
+
+``` bash
+svn export https://github.com/biosql/biosql.git/trunk biosql
+```
+The names of the two files that are needed are the following:
+1. biosqldb-mysql.sql -- the BioSQL schema -- found inside the **sql** subdirectory
+2. load_ncbi_taxonomy.pl -- the Perl script to populate the database -- found inside the **scripts** subdirectory
 
 Creating the empty database
 ---------------------------
@@ -92,8 +107,7 @@ mysqladmin -u root create bioseqdb
 ```
 
 We can then tell MySQL to load the BioSQL scheme we downloaded above.
-Change to the scripts subdirectory from the unzipped BioSQL download,
-then:
+Change to the **sql** subdirectory (see above) and then:
 
 ``` bash
 mysql -u root bioseqdb < biosqldb-mysql.sql
@@ -176,11 +190,11 @@ psql biosqldb < biosqldb-pg.sql
 
 Run *psql* and type enter *\\d <ENTER>* to see all the entities created.
 
-NCBI Taxonomy
--------------
+Populate the database With NCBI Taxonomy
+----------------------------------------
 
-The BioSQL package includes a perl script under
-scripts/load\_ncbi\_taxonomy.pl to download and update the taxonomy
+The BioSQL package includes a perl script under the
+**scripts** subdirectory named **load\_ncbi\_taxonomy.pl** that downloads and updates the taxonomy
 tables. The script should be able to download the files it needs from
 the [NCBI taxonomy FTP site](ftp://ftp.ncbi.nih.gov/pub/taxonomy/)
 automatically.
@@ -191,8 +205,7 @@ trying to load sequences into the database. This isn't so important with
 Biopython 1.49 onwards, where you can instead opt to have the
 information needed downloaded as needed from Entrez.
 
-To update the NCBI taxonomy, change to the scripts subdirectory from the
-unzipped BioSQL download, then:
+To update the NCBI taxonomy, change to the **scripts** subdirectory (see above) and then:
 
 ``` bash
 ./load_ncbi_taxonomy.pl --dbname bioseqdb --driver mysql --dbuser root --download true
@@ -248,36 +261,49 @@ Running the unit tests
 ----------------------
 
 Because there are so many ways you could have setup your BioSQL
-database, you have to tell the unit test a few bits of information by
-editing the file Tests/setup\_BioSQL.py and filling in the following
+database, you have to tell the unit test a few bits of information. 
+If you installed biopython using pip then the relevant [**Tests**](https://github.com/biopython/biopython/tree/master/Tests) 
+folder would not have been copied. If this is the case one can 
+perform check out (or export) using:
+
+```bash
+svn export https://github.com/biopython/biopython/trunk/Tests
+```
+Inside *Tests*, copy the file *biosql.ini.sample* to *biosql.ini* and edit it by filling in the following
 fields:
 
 ``` python
-DBDRIVER = 'MySQLdb'
-DBTYPE = 'mysql'
-```
-
-and a little lower down,
-
-``` python
-DBHOST = 'localhost'
-DBUSER = 'root'
-DBPASSWD = ''
-TESTDB = 'biosql_test'
+[mysql]
+# Covers DBDRIVER="MySQLdb" and "mysql.connector" etc
+dbhost=localhost
+dbuser=root
+dbpasswd=
+testdb=bioseqdb
 ```
 
 Change these to match your setup. You can then run the BioSQL unit tests
 as normal, e.g.
 
 ``` bash
-python run_tests.py test_BioSQL test_BioSQL_SeqIO
+python run_tests.py test_BioSQL_MySQLdb.py test_BioSQL_MySQLdb_online.py
 ```
+or
+``` bash
+python run_tests.py test_BioSQL_mysql_connector.py test_BioSQL_mysql_connector_online.py
+```
+depending on the driver.
 
-For PostgreSQL, use:
+For PostgreSQL in the same file edit the following lines:
 
 ``` python
-DBDRIVER = 'psycopg2'
-DBTYPE = 'pg'
+[pg]
+# Covers DBDRIVER="psycopg2" etc
+# The database and user below are created in .travis.yml
+dbhost=localhost
+dbuser=biosql_user
+dbpasswd=biosql_pass
+testdb=biosql_test
+
 ```
 
 Creating a (sub) database
