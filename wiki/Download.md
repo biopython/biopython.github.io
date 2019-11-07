@@ -14,11 +14,11 @@ new](https://github.com/biopython/biopython/blob/master/NEWS.rst).
 
 ### Files
 
-#### Biopython 1.74
+#### Biopython 1.75
 
--   [biopython-1.74.tar.gz](http://biopython.org/DIST/biopython-1.75.tar.gz)
+-   [biopython-1.75.tar.gz](http://biopython.org/DIST/biopython-1.75.tar.gz)
     16Mb -- Source Tarball
--   [biopython-1.74.zip](http://biopython.org/DIST/biopython-1.75.zip)
+-   [biopython-1.75.zip](http://biopython.org/DIST/biopython-1.75.zip)
     17Mb -- Source Zip File
 -   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.75)
 
