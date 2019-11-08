@@ -53,6 +53,8 @@ Ubuntu Linux machine try this:
 sudo apt-get install mysql-common mysql-server python-mysqldb
 ```
 
+A password is required for logon. Please refer to [MySQL documentation](https://dev.mysql.com/doc/refman/8.0/en/linux-installation-debian.html).
+
 It will also be important to have perl (to run some of the setup
 scripts). Again, on a Debian or Ubuntu Linux machine try this:
 
@@ -88,7 +90,7 @@ The following command line should create a new database on your own
 computer called *bioseqdb*, belonging to the *root* user account:
 
 ``` bash
-mysqladmin -u root create bioseqdb
+mysqladmin -u root -p create biosqldb
 ```
 
 We can then tell MySQL to load the BioSQL scheme we downloaded above.
@@ -96,14 +98,14 @@ Change to the scripts subdirectory from the unzipped BioSQL download,
 then:
 
 ``` bash
-mysql -u root bioseqdb < biosqldb-mysql.sql
+mysql -u root -p bioseqdb < biosqldb-mysql.sql
 ```
 
 You can have a quick play using the mysql command line tool, for
 example:
 
 ``` bash
-mysql --user=root bioseqdb -e "show tables"
+mysql --user=root -p bioseqdb -e "show tables"
 ```
 
 giving:
@@ -146,7 +148,7 @@ giving:
 Or, to look inside a table:
 
 ``` bash
-mysql --user=root bioseqdb -e "select * from bioentry;"
+mysql --user=root -p bioseqdb -e "select * from bioentry;"
 ```
 
 This should return no rows as the table is empty.
@@ -262,7 +264,7 @@ and a little lower down,
 ``` python
 DBHOST = 'localhost'
 DBUSER = 'root'
-DBPASSWD = ''
+DBPASSWD = 'your-password'
 TESTDB = 'biosql_test'
 ```
 
@@ -290,7 +292,7 @@ example, lets create a one for some orchid sequences:
 ``` python
 from BioSQL import BioSeqDatabase
 server = BioSeqDatabase.open_database(driver="MySQLdb", user="root",
-                     passwd = "", host = "localhost", db="bioseqdb")
+                     passwd = "your-password", host = "localhost", db="bioseqdb")
 db = server.new_database("orchids", description="Just for testing")
 server.commit() #On Biopython 1.49 or older, server.adaptor.commit()
 ```
@@ -312,7 +314,7 @@ orchid namespace. You can check this at the command line:
 MySQL:
 
 ``` bash
-mysql --user=root bioseqdb -e "select * from biodatabase;"
+mysql --user=root -p bioseqdb -e "select * from biodatabase;"
 ```
 
 PostgreSQL:
@@ -375,7 +377,7 @@ from Bio import Entrez
 from Bio import SeqIO
 from BioSQL import BioSeqDatabase
 server = BioSeqDatabase.open_database(driver="MySQLdb", user="root",
-                     passwd = "", host = "localhost", db="bioseqdb")
+                     passwd = "your-password", host = "localhost", db="bioseqdb")
 db = server["orchids"]
 handle = Entrez.efetch(db="nuccore", id="6273291,6273290,6273289", rettype="gb", retmode="text")
 count = db.load(SeqIO.parse(handle, "genbank"))
@@ -400,7 +402,7 @@ mysql --user=root bioseqdb -e "select * from biosequence;"
 The should also be nine new features:
 
 ``` bash
-mysql --user=root bioseqdb -e "select * from seqfeature;"
+mysql --user=root -p bioseqdb -e "select * from seqfeature;"
 ```
 
 Next, we'll try and load these three records back from the database.
@@ -414,7 +416,7 @@ into an *orchids* database (namespace):
 ``` python
 from BioSQL import BioSeqDatabase
 server = BioSeqDatabase.open_database(driver="MySQLdb", user="root",
-                     passwd = "", host = "localhost", db="bioseqdb")
+                     passwd = "your-password", host = "localhost", db="bioseqdb")
 db = server["orchids"]
 for identifier in ['6273291', '6273290', '6273289'] :
     seq_record = db.lookup(gi=identifier)
@@ -449,7 +451,7 @@ e.g.
 ``` python
 from BioSQL import BioSeqDatabase
 server = BioSeqDatabase.open_database(driver="MySQLdb", user="root",
-                     passwd = "", host = "localhost", db="bioseqdb")
+                     passwd = "your-password", host = "localhost", db="bioseqdb")
 db = server["orchids"]
 print "This database contains %i records" % len(db)
 for key, record in db.iteritems():
@@ -468,7 +470,7 @@ the records in it):
 ``` python
 from BioSQL import BioSeqDatabase
 server = BioSeqDatabase.open_database(driver="MySQLdb", user="root",
-                     passwd = "", host = "localhost", db="bioseqdb")
+                     passwd = "your-password", host = "localhost", db="bioseqdb")
 server.remove_database("orchids")
 server.commit() #On Biopython 1.49 or older, server.adaptor.commit()
 ```
@@ -480,7 +482,7 @@ There should now be one less row in the *biodatabase* table, check this
 at the command line:
 
 ``` bash
-mysql --user=root bioseqdb -e "select * from biodatabase;"
+mysql --user=root -p bioseqdb -e "select * from biodatabase;"
 ```
 
 You can also check that the three orchid sequences have gone from the
@@ -503,7 +505,7 @@ If you are getting timeout errors, check to see if your SQL server has
 any orphaned threads.
 
 ``` bash
-mysql --user=root bioseqdb -e "SHOW INNODB STATUS\G" | grep "thread id"
+mysql --user=root -p bioseqdb -e "SHOW INNODB STATUS\G" | grep "thread id"
 ```
 
 And if there are, assuming you are the only person using this database,
@@ -511,7 +513,7 @@ you might try killing them off using the thread id given by the above
 command:
 
 ``` bash
-mysql --user=root bioseqdb -e "KILL 123;"
+mysql --user=root -p bioseqdb -e "KILL 123;"
 ```
 
 Use at your own risk!
