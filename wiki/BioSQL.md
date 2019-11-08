@@ -53,6 +53,8 @@ Ubuntu Linux machine try this:
 sudo apt-get install mysql-common mysql-server python-mysqldb
 ```
 
+A password is required for logon. Please refer to [MySQL documentation](https://dev.mysql.com/doc/refman/8.0/en/linux-installation-debian.html).
+
 It will also be important to have perl (to run some of the setup
 scripts). Again, on a Debian or Ubuntu Linux machine try this:
 
@@ -84,24 +86,7 @@ Creating the empty database
 
 ### MySQL
 
-Some systems like Ubuntu, new version of mysql is using by default the [UNIX auth_socket plugin](https://dev.mysql.com/doc/mysql-security-excerpt/5.5/en/socket-pluggable-authentication.html) if the password is left empty while installing. To proceed, a password is recommended.
-
-```bash
-sudo mysql -u root -p
-```
-
-```bash
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your-password';
-```
-
-Once finished.
-
-```bash
-sudo service mysql stop
-sudo service mysql start
-```
-
-Therefore, the following command line should create a new database on your own
+The following command line should create a new database on your own
 computer called *bioseqdb*, belonging to the *root* user account:
 
 ``` bash
