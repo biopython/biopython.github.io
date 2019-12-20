@@ -6,21 +6,21 @@ redirect_from:
  - /download/
 ---
 
-Current Release - 1.75 - 6 November 2019
-========================================
+Current Release - 1.76 - 20 December 2019
+=========================================
 
 See also [What's
 new](https://github.com/biopython/biopython/blob/master/NEWS.rst).
 
 ### Files
 
-#### Biopython 1.75
+#### Biopython 1.76
 
--   [biopython-1.75.tar.gz](http://biopython.org/DIST/biopython-1.75.tar.gz)
+-   [biopython-1.76.tar.gz](http://biopython.org/DIST/biopython-1.76.tar.gz)
     16Mb -- Source Tarball
--   [biopython-1.75.zip](http://biopython.org/DIST/biopython-1.75.zip)
+-   [biopython-1.76.zip](http://biopython.org/DIST/biopython-1.76.zip)
     17Mb -- Source Zip File
--   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.75)
+-   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.76)
 
 ### Installation Instructions
 
@@ -155,6 +155,14 @@ Old Releases
 ============
 
 Recent releases of Biopython require NumPy (and not Numeric):
+
+-   [biopython-1.75.tar.gz](http://biopython.org/DIST/biopython-1.75.tar.gz)
+    16Mb -- Source Tarball
+-   [biopython-1.75.zip](http://biopython.org/DIST/biopython-1.75.zip)
+    17Mb -- Source Zip File
+-   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.75)
+
+<!-- -->
 
 -   [biopython-1.74.tar.gz](http://biopython.org/DIST/biopython-1.74.tar.gz)
     16Mb -- Source Tarball
