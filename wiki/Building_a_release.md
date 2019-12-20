@@ -28,7 +28,7 @@ We assume you are running Linux (but macOS should be fine too),
 and have the following tools installed (plus as many of the
 Biopython optional dependencies as possible for local testing):
 
-1. Python (traditionally we've used Python 2, but 3 should be fine)
+1. Python 3
 2. git
 3. [twine](https://github.com/pypa/twine/), installed with ``pip install twine``
 4. LaTeX, including assorted packages like comments and preprint.
