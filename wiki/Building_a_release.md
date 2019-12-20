@@ -4,7 +4,7 @@ permalink: wiki/Building_a_release
 layout: wiki
 ---
 
-Build Biopython in 22 easy steps!!
+Build Biopython with many small steps!!
 
 Setup required for a new release manager
 ----------------------------------------
@@ -167,20 +167,13 @@ Checking the compiled documentation
       <http://biopython.org/DIST/docs/tutorial/Tutorial.html>, and
       <http://biopython.org/DIST/docs/tutorial/Tutorial.pdf>
 
-Tagging the release, and making wheels
---------------------------------------
+Making wheels
+-------------
 
-16. Back in the main repository, tag the release:
 
-    ``` bash
-    $ cd  .../tmp1/biopython/
-    $ git tag biopython-171
-    $ git push origin master --tags
-    ```
-
-17. Now we use https://github.com/biopython/biopython-wheels to build wheels,
+16. Now we use https://github.com/biopython/biopython-wheels to build wheels,
     by updating the ``BUILD_COMMIT`` line in ``.travis.yml`` and ``appveyor.yaml``
-    to the new release's git tag.
+    to the new release's commit hash (which all being well will get a git tag).
 
     ``` bash
     $ cd ~/repositories
@@ -206,16 +199,24 @@ Tagging the release, and making wheels
     $ git push origin master
     ```
 
-18. Successful wheels will be on
+17. Successful wheels will be on
     [on Rackspace](https://a365fff413fe338398b6-1c8a9b3114517dc5fe17b7c3f8c63a43.ssl.cf2.rackcdn.com/),
     download them from there to your ``~/repository/biopython/DIST/`` folder.
     We will upload these to PyPI later using Twine.
 
-19. If you have a Windows machine, remove any prior Biopython installations,
+18. If you have a Windows machine, remove any prior Biopython installations,
     and confirm the Windows wheel file(s) work.
 
 Tagging the release, and uploading
 ----------------------------------
+
+19. Back in the main repository, tag the release:
+
+    ``` bash
+    $ cd  .../tmp1/biopython/
+    $ git tag biopython-171
+    $ git push origin master --tags
+    ```
 
 20. Upload the new release tar-ball and zip to the website via GitHub Pages `DIST` repository.
 
