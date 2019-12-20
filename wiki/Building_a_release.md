@@ -263,6 +263,7 @@ releases):
     $ emacs _config.yml
     $ emacs wiki/Biopython.md
     $ emacs wiki/Download.md
+    $ emacs wiki/Documentation.md # update API docs link
     $ git commit _config.yml wiki/Biopython.md wiki/Download.md -m "Biopython 1.68 released"
     ```
 
