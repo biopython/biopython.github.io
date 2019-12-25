@@ -38,14 +38,17 @@ Biopython:
         code (Python's ``DeprecationWarning`` is silent by default):
 
 ```python
-import warnings
+import warnings
 from Bio import BiopythonDeprecationWarning
-warnings.warn("Bio.SomeModule has been deprecated, and we intend to remove it"
-              " in a future release of Biopython. Please use the SomeOtherModule"
-              " instead, as described in the Tutorial. If you would like to"
-              " continue using Bio.SomeModule, please contact the Biopython"
-              " developers via the mailing list or GitHub.",
-              BiopythonDeprecationWarning)
+
+warnings.warn(
+    "Bio.SomeModule has been deprecated, and we intend to remove it"
+    " in a future release of Biopython. Please use the SomeOtherModule"
+    " instead, as described in the Tutorial. If you would like to"
+    " continue using Bio.SomeModule, please contact the Biopython"
+    " developers via the mailing list or GitHub.",
+    BiopythonDeprecationWarning,
+)
 ```
 
 -   Silence the new warning in the tests, for example if your tests use
