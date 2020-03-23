@@ -76,7 +76,7 @@ below.
 
 -   Peter Cock wrote a [Biopython Workshop](https://github.com/peterjc/biopython_workshop)
     which was used at the University of Dundee.
-    
+
 -   Tiago Antao converted and adapted a good part of the Tutorial into
     [Notebook format](https://github.com/tiagoantao/biopython-notebook).
 
