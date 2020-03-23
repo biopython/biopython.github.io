@@ -77,6 +77,9 @@ below.
 -   Peter Cock wrote a [Biopython Workshop](https://github.com/peterjc/biopython_workshop)
     which was used at the University of Dundee.
 
+-   Chris Rands wrote a seperate [Biopython Notebook tutorial](https://github.com/chris-rands/biopython-coronavirus)
+    illustrating how to characterize a small sequence like a coronavirus genome.
+
 #### Papers
 
 We have a separate list of [publications citing or using
