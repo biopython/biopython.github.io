@@ -19,7 +19,7 @@ Relevance
 =========
 
 If you just want to grab the latest (not yet officially released)
-Biopython from our repository, see out [source code
+Biopython from our repository, see our [source code
 page](SourceCode "wikilink"). This page is about actually using git for
 tracking changes.
 
