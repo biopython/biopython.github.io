@@ -331,7 +331,7 @@ from Bio.SeqRecord import SeqRecord
 from Bio.SeqFeature import SeqFeature, FeatureLocation
 
 out_file = "your_file.gff"
-seq = Seq(""GATCGATCGATCGATCGATC)
+seq = Seq("GATCGATCGATCGATCGATC")
 rec = SeqRecord(seq, "ID1")
 qualifiers = {"source": "prediction", "score": 10.0, "other": ["Some", "annotations"],
               "ID": "gene1"}
