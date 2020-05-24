@@ -6,7 +6,7 @@ redirect_from:
  - /download/
 ---
 
-Current Release - 1.76 - 20 December 2019
+Current Release - 1.77 - 25 May 2019
 =========================================
 
 See also [What's
@@ -14,13 +14,13 @@ new](https://github.com/biopython/biopython/blob/master/NEWS.rst).
 
 ### Files
 
-#### Biopython 1.76
+#### Biopython 1.77
 
--   [biopython-1.76.tar.gz](http://biopython.org/DIST/biopython-1.76.tar.gz)
+-   [biopython-1.77.tar.gz](http://biopython.org/DIST/biopython-1.77.tar.gz)
     16Mb -- Source Tarball
--   [biopython-1.76.zip](http://biopython.org/DIST/biopython-1.76.zip)
+-   [biopython-1.77.zip](http://biopython.org/DIST/biopython-1.77.zip)
     17Mb -- Source Zip File
--   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.76)
+-   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.77)
 
 ### Installation Instructions
 
@@ -57,7 +57,6 @@ If you need to install under a specific version of Python, try something
 like this:
 
 ``` bash
-python2.7 -m pip install biopython
 python3.6 -m pip install biopython
 pypy -m pip install biopython
 ```
@@ -67,7 +66,7 @@ You can re-install Python and tick this option, or give the full path instead.
 Try something like this, depending on where your copy of Python is installed:
 
 ```
-C:\Python27\Scripts\pip install biopython
+C:\Python36\Scripts\pip install biopython
 ```
 
 ### Other packages
@@ -112,7 +111,7 @@ list](Mailing_lists "wikilink") and ask for help there.
 
 ### Required Software
 
--   [Python 2.7, 3.4, 3.5, 3.6, or 3.7](http://www.python.org) or PyPy,
+-   [Python 3.6, 3.7 or higher](http://www.python.org) or PyPy,
     including the Python development header files like ``python.h``
 -   [C compiler (if compiling from
     source)](https://docs.python.org/3/using/index.html) You
@@ -154,7 +153,15 @@ third party command line tools including:
 Old Releases
 ============
 
-Recent releases of Biopython require NumPy (and not Numeric):
+Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is the last release to support Python 2.7 and 3.5, all later releases require Python 3.6 or greater:
+
+-   [biopython-1.76.tar.gz](http://biopython.org/DIST/biopython-1.76.tar.gz)
+    16Mb -- Source Tarball
+-   [biopython-1.75.zip](http://biopython.org/DIST/biopython-1.76.zip)
+    17Mb -- Source Zip File
+-   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.76)
+
+<!-- -->
 
 -   [biopython-1.75.tar.gz](http://biopython.org/DIST/biopython-1.75.tar.gz)
     16Mb -- Source Tarball
