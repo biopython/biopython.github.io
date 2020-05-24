@@ -6,7 +6,7 @@ redirect_from:
  - /download/
 ---
 
-Current Release - 1.77 - 25 May 2019
+Current Release - 1.77 - 25 May 2020
 =========================================
 
 See also [What's
