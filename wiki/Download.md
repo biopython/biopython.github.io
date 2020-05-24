@@ -111,7 +111,7 @@ list](Mailing_lists "wikilink") and ask for help there.
 
 ### Required Software
 
--   [Python 3.6, 3.7 or higher](http://www.python.org) or PyPy,
+-   [Python 3.6, 3.7 or 3.8](http://www.python.org) or PyPy,
     including the Python development header files like ``python.h``
 -   [C compiler (if compiling from
     source)](https://docs.python.org/3/using/index.html) You
