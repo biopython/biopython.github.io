@@ -37,7 +37,7 @@ Biopython optional dependencies as possible for local testing):
 Final commit(s)
 ---------------
 
-1. Using make sure I have the latest code:
+1. Using git make sure I have the latest code:
 
    ``` bash
    $ cd ~/repositories/biopython
@@ -72,7 +72,7 @@ Final commit(s)
    $ git commit Bio/__init__.py Doc/Tutorial.tex NEWS.rst -m "Call this Biopython 1.68"
    ```
 
-7. do last check to make sure things are checked in:
+7. do a final check to make sure things are checked in:
 
    ``` bash
    $ rm -r build
@@ -81,14 +81,13 @@ Final commit(s)
    $ git status
    ```
 
-8. build Biopython and do last regression test:
+8. build Biopython and run a a final regression test:
 
    ``` bash
    drevil:~biopython> python setup.py build
    drevil:~biopython> python setup.py test
    ```
-   Running the tests simultaneously is risky (e.g. Python 2 and 3),
-   as two threads may both try to read/write to the same temp files.
+   Running the tests simultaneously is risky as two threads may both try to read/write to the same temp files.
 
 9. Push this to gitub, all being well this commit will be tagged as the release
    (barring no problems uncovered while building the documentation, or
@@ -101,14 +100,14 @@ Final commit(s)
 Making and testing the tar-ball
 -------------------------------
 
-10. check out clean version somewhere else:
+10. check out a clean version somewhere else:
 
     ``` bash
     drevil:~tmp1/> git clone https://github.com/biopython/biopython.git
     drevil:~tmp1/> cd biopython
     ```
 
-11. make documentation PDF, text and HTML files in Doc:
+11. make the documentation PDF, text and HTML files in Doc:
 
     ``` bash
     drevil:~tmp1/biopython/> make -C Doc
@@ -146,9 +145,9 @@ Checking the compiled documentation
 -----------------------------------
 
 15. Since Biopython 1.74, Sphinx has handled the API documentation via continuous
-    integration, but still have to update the Tutorial on the website.
+    integration, but you still have to update the Tutorial on the website manually.
 
-  - Update the tutorial too:
+  - Update the tutorial:
 
     ``` bash
     $ cd ~/repositories/DIST/docs/tutorial/
@@ -200,7 +199,7 @@ Making wheels
     ```
 
 17. Successful wheels will be on
-    [on Rackspace](https://a365fff413fe338398b6-1c8a9b3114517dc5fe17b7c3f8c63a43.ssl.cf2.rackcdn.com/),
+    [Rackspace](https://a365fff413fe338398b6-1c8a9b3114517dc5fe17b7c3f8c63a43.ssl.cf2.rackcdn.com/),
     download them from there to your ``~/repository/biopython/DIST/`` folder.
     We will upload these to PyPI later using Twine.
 
@@ -274,13 +273,13 @@ releases):
       page](Download "wikilink") (through the wiki), make sure the links
       work.
 
-23. Annoucment:
+23. Announcement:
 
     - post the announcement on the [www.open-bio.org](https://www.open-bio.org)
       blog (making sure to use the Biopython category which will update the
       [news page](News "wikilink") and [twitter](http://twitter.com/Biopython)
       via the news feed)
-    - send email to biopython-announce@biopython.org
+    - send an email to biopython-announce@biopython.org
       (see [mailing lists](Mailing_lists "wikilink"))
     - forward the email to Linux packagers e.g.
       debian-med@lists.debian.org
