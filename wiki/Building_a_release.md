@@ -81,7 +81,7 @@ Final commit(s)
    $ git status
    ```
 
-8. build Biopython and run a a final regression test:
+8. build Biopython and run a final regression test:
 
    ``` bash
    drevil:~biopython> python setup.py build
