@@ -129,7 +129,7 @@ How about the `.annotations` property? This is a Python dictionary...
 ``` python
 >>> print(record.annotations)
 {'sequence_version: 1, 'source': 'Paphiopedilum barbatum', 'taxonomy': ...}
->>> tpye(record.annotations)
+>>> type(record.annotations)
 <type 'dict'>
 >>> print(record.annotations["source"])
 Paphiopedilum barbatum
