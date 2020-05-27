@@ -238,7 +238,7 @@ pip install flake8
 ```
 
 If you have `flake8` already installed, please update it to a recent version.
-Several `flake8` plugins are availabe, of which you need to add the following:
+Several `flake8` plugins are available, of which you need to add the following:
 
 ``` bash
 pip install flake8 flake8-docstrings flake8-blind-except flake8-rst-docstrings flake8-comprehensions flake8-quotes
@@ -538,7 +538,7 @@ defaults to applying the changes to your current branch, you would
 typically do this using a new integration branch, then fetch it to your
 local machine to test everything, before merging it to your main branch.
 
-Commiting changes to main branch
+Committing changes to main branch
 ================================
 
 This section is intended for Biopython developers, who are allowed to
@@ -622,7 +622,7 @@ After your changes are committed, you can push to github:
 git push origin
 ```
 
-Commiting from someone's git branch
+Committing from someone's git branch
 -----------------------------------
 
 Assume you want to merge changes someone has committed to a git
