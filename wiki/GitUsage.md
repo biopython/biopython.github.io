@@ -539,7 +539,7 @@ typically do this using a new integration branch, then fetch it to your
 local machine to test everything, before merging it to your main branch.
 
 Committing changes to main branch
-================================
+=================================
 
 This section is intended for Biopython developers, who are allowed to
 commit changes to the Biopython main "official" branch. It describes the
@@ -623,7 +623,7 @@ git push origin
 ```
 
 Committing from someone's git branch
------------------------------------
+------------------------------------
 
 Assume you want to merge changes someone has committed to a git
 repository which was at some point cloned from the official Biopython
