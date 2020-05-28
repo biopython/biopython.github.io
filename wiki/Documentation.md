@@ -80,7 +80,7 @@ below.
 -   Tiago Antao converted and adapted a good part of the Tutorial into
     [Notebook format](https://github.com/tiagoantao/biopython-notebook).
 
--   Chris Rands wrote a seperate [Biopython Notebook tutorial](https://github.com/chris-rands/biopython-coronavirus)
+-   Chris Rands wrote a separate [Biopython Notebook tutorial](https://github.com/chris-rands/biopython-coronavirus)
     illustrating how to characterize a small sequence like a coronavirus genome.
 
 #### Papers

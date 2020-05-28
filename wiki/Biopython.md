@@ -30,7 +30,7 @@ liberal and compatible with almost every license in the world.
 We are a member project of the
 [Open Bioinformatics Foundation (OBF)](http://open-bio.org),
 who take care of our domain name and hosting for our mailing list etc.
-The OBF used to host our developement repository, issue tracker and
+The OBF used to host our development repository, issue tracker and
 website but these are now on [GitHub](https://github.com/biopython).
 
 This page will help you download and install Biopython, and start using
