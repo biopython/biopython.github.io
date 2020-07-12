@@ -19,7 +19,7 @@ Current projects
 
 It has been proposed we port Biopython's documentation from the existing
 combination of LaTeX (cookbook and main docs) and EpyDoc (API docs) to
-[Sphinx](http://sphinx.pocoo.org/). This is a multi-step process which
+[Sphinx](https://www.sphinx-doc.org/en/master/). This is a multi-step process which
 we're proceeding through incrementally, and help is always appreciated.
 
 ### Extending Bio.PDB
