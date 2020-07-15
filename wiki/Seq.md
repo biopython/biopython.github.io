@@ -112,7 +112,7 @@ a *non-overlapping* count!
 ```
 
 In some biological situations, you might prefer an overlapping count
-using count_overlap which would give three for this example.
+using `count_overlap` which would give three for this example.
 
 Nucleotide methods
 ------------------
