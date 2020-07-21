@@ -218,7 +218,7 @@ Tagging the release, and uploading
 20. Upload the new release tar-ball and zip to the website via GitHub Pages `DIST` repository.
 
     ``` bash
-    $ cp dist/biopython-1.68.* ~/repositories/DIST/
+    $ cp dist/biopython-1.78.* ~/repositories/DIST/
     $ cd ~/repositories/DIST/
     $ git add biopython-1.78.*
     $ git commit biopython-1.78.* -m "Downloads for Biopython 1.78"
