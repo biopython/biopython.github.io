@@ -32,7 +32,7 @@ Biopython optional dependencies as possible for local testing):
 2. git
 3. [twine](https://github.com/pypa/twine/), installed with ``pip install twine``
 4. LaTeX, including assorted packages like comments and preprint.
-5. [hevea](http://hevea.inria.fr/), I am currently using version 1.10+9 of 2008-12-17
+5. [hevea](http://hevea.inria.fr/), I am currently using version 2.32 of 2012-07-04
 
 Final commit(s)
 ---------------
@@ -51,7 +51,7 @@ Final commit(s)
    log of recent git changes like this (adjust the date accordingly):
 
    ``` bash
-   $ git log --since="2016/01/01" --reverse --pretty="medium"
+   $ git log --since="2020/05/25" --reverse --pretty="medium"
    ```
 
 4. make sure `CONTRIB.rst` still current
@@ -63,8 +63,6 @@ Final commit(s)
 6. bump version numbers and set the release data:
 
    - Biopython version - edit `Bio/__init__.py`
-   - Biopython Tutorial - update the date/version line in the
-     `Doc/Tutorial.tex` file
    - Biopython `NEWS.rst` - fill in the release date
    - Make sure to commit the modified files to github, e.g.
 
@@ -124,8 +122,8 @@ Making and testing the tar-ball
 
     ``` bash
     drevil:~tmp1/biopython/> cd ..
-    drevil:~tmp1/> tar -xzvf biopython/dist/biopython-1.71.tar.gz
-    drevil:~tmp1/> cd biopython-1.71
+    drevil:~tmp1/> tar -xzvf biopython/dist/biopython-1.78.tar.gz
+    drevil:~tmp1/> cd biopython-1.78
     ```
 
     Check to make sure it includes the HTML and PDF files under Doc
@@ -133,9 +131,9 @@ Making and testing the tar-ball
 14. make sure I can build and test it
 
     ``` bash
-    drevil:~tmp1/biopython-1.71/> python setup.py build
-    drevil:~tmp1/biopython-1.71/> python setup.py test
-    drevil:~tmp1/biopython-1.71/> python setup.py install --prefix /tmp/test-install
+    drevil:~tmp1/biopython-1.78/> python setup.py build
+    drevil:~tmp1/biopython-1.78/> python setup.py test
+    drevil:~tmp1/biopython-1.78/> python setup.py install --prefix /tmp/test-install
     ```
 
     A typical source of failure here (on the tests) is the lack of example
@@ -153,7 +151,7 @@ Checking the compiled documentation
     $ cd ~/repositories/DIST/docs/tutorial/
     $ cp .../tmp1/biopython/Doc/Tutorial.html .
     $ cp .../tmp1/biopython/Doc/Tutorial.pdf .
-    $ git commit Tutorial.html Tutorial.pdf -m "Tutorial for Biopython 1.71"
+    $ git commit Tutorial.html Tutorial.pdf -m "Tutorial for Biopython 1.78"
     ```
 
     - Push this to GitHub Pages to update the website:
@@ -222,10 +220,10 @@ Tagging the release, and uploading
     ``` bash
     $ cp dist/biopython-1.68.* ~/repositories/DIST/
     $ cd ~/repositories/DIST/
-    $ git add biopython-1.71.*
-    $ git commit biopython-1.71.* -m "Downloads for Biopython 1.71"
-    $ shasum -a 256 biopython-1.71.*
-    $ md5sum biopython-1.71.*
+    $ git add biopython-1.78.*
+    $ git commit biopython-1.78.* -m "Downloads for Biopython 1.78"
+    $ shasum -a 256 biopython-1.78.*
+    $ md5sum biopython-1.78.*
     $ git commit --amend # paste checksums into comment
     $ git push origin gh-pages
     ```
@@ -236,8 +234,8 @@ releases):
     ``` bash
     $ cd  ~/repositories/biopython/
     $ pip install twine
-    $ twine upload dist/biopython-1.71.tar.gz
-    $ twine upload dist/biopython-1.71-*.whl
+    $ twine upload dist/biopython-1.78.tar.gz
+    $ twine upload dist/biopython-1.78-*.whl
     ```
 
     - You need to have a login on pypi and be registered with Biopython to be
@@ -300,4 +298,4 @@ Post release version bump
     - Make sure to commit the modified files to github.
 
     Include the suffix ``.dev0`` to indicate this is a development version
-    e.g. if you have `__version__ = "1.68"`, make it `1.69.dev0`
+    e.g. if you have `__version__ = "1.79"`, make it `1.79.dev0`
