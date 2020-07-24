@@ -56,10 +56,10 @@ GitHub](http://github.com/eoc21/biopython/tree/eoc21Branch/).
 GO is best [represented as a directed acyclic graph
 (DAG)](http://www.geneontology.org/GO.ontology.structure.shtml#go-as-a-graph).
 To facilitate this data structure, we'll use
-[NetworkX](http://networkx.lanl.gov/), a popular, well-supported Python
+[NetworkX](https://networkx.github.io/), a popular, well-supported Python
 graph library with no required dependencies other than Python. We'll use
 the directed graph class
-[DiGraph](http://networkx.lanl.gov/reference/classes.digraph.html) of
+[DiGraph](https://networkx.github.io/documentation/stable/reference/classes/digraph.html) of
 NetworkX to represent the ontologies.
 
 ### Sources of Code/Inspiration
