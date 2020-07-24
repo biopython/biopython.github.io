@@ -35,7 +35,7 @@ To draw trees (optional), you'll also need these packages:
 -   [Matplotlib](http://matplotlib.sourceforge.net/)
 -   [NetworkX](http://networkx.github.io) -- for the function
     `to_networkx` (and deprecated function `draw_graphviz`)
--   [PyGraphviz](http://networkx.lanl.gov/pygraphviz/) or
+-   [PyGraphviz](https://pygraphviz.github.io/) or
     [pydot](https://github.com/erocarrera/pydot) -- for the function
     `to_networkx` (and deprecated function `draw_graphviz`)
 
