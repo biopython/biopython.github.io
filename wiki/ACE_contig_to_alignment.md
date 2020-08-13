@@ -26,27 +26,26 @@ as an example
 
 ``` python
 from Bio.Sequencing import Ace
-from Bio.Align.Generic import Alignment
-from Bio.Alphabet import IUPAC, Gapped
+from Bio.Align import MultipleSeqAlignment
 
 
 def cut_ends(read, start, end):
-    """Replace residues on either end of a sequence with gaps.                                                   
-                                                                                                                 
-    In this case we want to cut out the sections of each read which the assembler has                            
-    decided are not good enough to include in the contig and replace them with gaps                              
-    so the other information about positions in the read is maintained                                           
+    """Replace residues on either end of a sequence with gaps.
+
+    In this case we want to cut out the sections of each read which the assembler has
+    decided are not good enough to include in the contig and replace them with gaps
+    so the other information about positions in the read is maintained
     """
     return (start - 1) * "-" + read[start - 1 : end] + (len(read) - end) * "-"
 
 
 def pad_read(read, start, conlength):
-    """ Pad out either end of a read so it fits into an alignment.                                               
-                                                                                                                 
-    The start argument is the position of the first base of the reads sequence in                                
-    the contig it is part of. If the start value is negative (or 0 since ACE                                     
-    files count from 1, not 0) we need to take some sequence off the start                                       
-    otherwise each end is padded to the length of the consensus with gaps.                                       
+    """ Pad out either end of a read so it fits into an alignment.
+
+    The start argument is the position of the first base of the reads sequence in
+    the contig it is part of. If the start value is negative (or 0 since ACE
+    files count from 1, not 0) we need to take some sequence off the start
+    otherwise each end is padded to the length of the consensus with gaps.
     """
     if start < 1:
         seq = read[-1 * start + 1 :]
@@ -63,14 +62,14 @@ def pad_read(read, start, conlength):
 # If you need these tags you'll need to use  Ace.read() (and lots of RAM).
 
 ace_gen = Ace.parse(open("contig1.ace", "r"))
-contig = ace_gen.next()
-align = Alignment(Gapped(IUPAC.ambiguous_dna, "-"))
+contig = next(ace_gen)  # Looking only at first contig
+align = MultipleSeqAlignment([])
 
-# Now we have started our alignment we can add sequences to it,                                                  
-# we will loop through contig's reads and get quality clipping from                                              
-# .reads[readnumber].qa and the position of each read in the contig                                              
-# .af[readnumber].padded_start and use the functions above to cut and                                            
-# pad the sequences before they are added                                                                        
+# Now we have started our alignment we can add sequences to it,
+# we will loop through contig's reads and get quality clipping from
+# .reads[readnumber].qa and the position of each read in the contig
+# .af[readnumber].padded_start and use the functions above to cut and
+# pad the sequences before they are added
 
 for readn in range(len(contig.reads)):
     clipst = contig.reads[readn].qa.qual_clipping_start
