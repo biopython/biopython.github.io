@@ -24,9 +24,8 @@ You may do this using:
     could build a list of `SeqRecord`s and then turn it into an iterator
     using the `iter()` function.
 
-You may accept additional *optional* arguments (an alphabet for
-example). However there *must* be one and only one required argument
-(the input file handle).
+You may accept additional *optional* arguments. However there *must* be one
+and only one required argument (the input file handle).
 
 What you use as the `SeqRecord`'s `id`, `name` and `description` will depend on
 the file format. Ideally you would use the accesion number for the `id`.
