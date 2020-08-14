@@ -60,19 +60,23 @@ That should give you a hint of the sort of information held in this
 object:
 
 ```
-ID: Z78439.1
-Name: Z78439
-Description: P.barbatum 5.8S rRNA gene and ITS1 and ITS2 DNA.
-Number of features: 5
-/source=Paphiopedilum barbatum
-/taxonomy=['Eukaryota', 'Viridiplantae', 'Streptophyta', 'Embryophyta', ..., 'Paphiopedilum']
-/keywords=['5.8S ribosomal RNA', '5.8S rRNA gene', 'internal transcribed spacer', 'ITS1', 'ITS2']
-/references=[`<Bio.SeqFeature.Reference ...>`, `<Bio.SeqFeature.Reference ...>`]
+ID: Z78439.1
+Name: Z78439
+Description: P.barbatum 5.8S rRNA gene and ITS1 and ITS2 DNA
+Number of features: 5
+/molecule_type=DNA
+/topology=linear
 /data_file_division=PLN
 /date=30-NOV-2006
-/organism=Paphiopedilum barbatum
+/accessions=['Z78439']
+/sequence_version=1
 /gi=2765564
-Seq('CATTGTTGAGATCACATAATAATTGATCGAGTTAATCTGGAGGATCTGTTTACTTTGGTC ...', IUPACAmbiguousDNA())
+/keywords=['5.8S ribosomal RNA', '5.8S rRNA gene', 'internal transcribed spacer', 'ITS1', 'ITS2']
+/source=Paphiopedilum barbatum
+/organism=Paphiopedilum barbatum
+/taxonomy=['Eukaryota', 'Viridiplantae', 'Streptophyta', ..., 'Paphiopedilum']
+/references=[Reference(title='Phylogenetics of the slipper orchids (Cypripedioideae: Orchidaceae): nuclear rDNA ITS sequences', ...), Reference(title='Direct Submission', ...)]
+Seq('CATTGTTGAGATCACATAATAATTGATCGAGTTAATCTGGAGGATCTGTTTACT...GCC')
 ```
 
 Lets look a little more closely... and use Python's `dir()` function
@@ -90,7 +94,7 @@ in this discussion. We'll start with the `.seq` property:
 
 ``` python
 >>> record.seq
-Seq('CATTGTTGAGATCACATAATAATTGATCGAGTTAATCTGGAGGATCTGTTTACTTTGGTC ...', IUPACAmbiguousDNA())
+Seq('CATTGTTGAGATCACATAATAATTGATCGAGTTAATCTGGAGGATCTGTTTACT...GCC')
 >>> type(record.seq)
 <class 'Bio.Seq.Seq'>
 ```
@@ -214,9 +218,7 @@ to know how to create a `SeqRecord` directly. For example,
 ``` python
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
-from Bio.Alphabet import IUPAC
-record = SeqRecord(Seq("MKQHKAMIVALIVICITAVVAALVTRKDLCEVHIRTGQTEVAVF",
-                       IUPAC.protein),
+record = SeqRecord(Seq("MKQHKAMIVALIVICITAVVAALVTRKDLCEVHIRTGQTEVAVF"),
                    id="YP_025292.1", name="HokC",
                    description="toxic membrane protein, small")
 print(record)
@@ -229,7 +231,7 @@ ID: YP_025292.1
 Name: HokC
 Description: toxic membrane protein, small
 Number of features: 0
-Seq('MKQHKAMIVALIVICITAVVAALVTRKDLCEVHIRTGQTEVAVF', IUPACProtein())
+Seq('MKQHKAMIVALIVICITAVVAALVTRKDLCEVHIRTGQTEVAVF')
 ```
 
 You could then pass this new record to
