@@ -778,15 +778,14 @@ by `PolypeptideBuilder`. However, it is possible to use
 The first thing to do is to extract all polypeptides from the structure
 (see previous entry). The sequence of each polypeptide can then easily
 be obtained from the `Polypeptide` objects. The sequence is represented
-as a Biopython `Seq` object, and its alphabet is defined by a
-`ProteinAlphabet` object.
+as a Biopython `Seq` object.
 
 Example:
 
 ``` python
 >>> seq = polypeptide.get_sequence()
 >>> print seq
-Seq('SNVVE...', <class Bio.Alphabet.ProteinAlphabet>)
+Seq('SNVVE...')
 ```
 
 #### How do I determine secondary structure?
