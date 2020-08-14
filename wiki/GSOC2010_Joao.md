@@ -550,5 +550,5 @@ Number of features: 0
 /initial_residue=1
 /resolution= 1.90
 /source_organism=Azotobacter vinelandii
-Seq('AFVVTDNCIKCKYTDCVEVCPVDCFYEGPNFLVIHPDECIDCALCEPECPAQAI...LER', ProteinAlphabet())
+Seq('AFVVTDNCIKCKYTDCVEVCPVDCFYEGPNFLVIHPDECIDCALCEPECPAQAI...LER')
 ```
