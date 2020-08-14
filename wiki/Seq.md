@@ -86,15 +86,14 @@ using `count_overlap` which would give three for this example.
 Nucleotide methods
 ------------------
 
-If you have a nucleotide sequence (or a sequence with a generic
-alphabet) you may want to do things like take the reverse complement, or
-do a translation. Note some of these methods described here are only
-available in Biopython 1.49 onwards.
+If you have a nucleotide sequence you may want to do things like take the
+reverse complement, or do a translation. Note some of these methods described
+here are only available in Biopython 1.49 onwards.
 
 ### Complement and reverse complement
 
 These are very simple - the methods return a new `Seq` object with the
-appropriate sequence and the same alphabet:
+appropriate sequence:
 
 ``` python
 >>> from Bio.Seq import Seq
