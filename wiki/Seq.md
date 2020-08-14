@@ -52,10 +52,9 @@ Python string, for example the find method:
 
 ``` python
 >>> from Bio.Seq import Seq
->>> from Bio.Alphabet import generic_dna
->>> my_dna = Seq("AGTACACTGGT", generic_dna)
+>>> my_dna = Seq("AGTACACTGGT")
 >>> my_dna
-Seq('AGTACACTGGT', DNAAlphabet())
+Seq('AGTACACTGGT')
 >>> my_dna.find("ACT")
 5
 >>> my_dna.find("TAG")
@@ -154,8 +153,7 @@ You can translate RNA:
 
 ``` python
 >>> from Bio.Seq import Seq
->>> from Bio.Alphabet import generic_rna
->>> messenger_rna = Seq("AUGGCCAUUGUAAUGGGCCGCUGAAAGGGUGCCCGAUAG", generic_rna)
+>>> messenger_rna = Seq("AUGGCCAUUGUAAUGGGCCGCUGAAAGGGUGCCCGAUAG")
 >>> messenger_rna.translate()
 Seq('MAIVMGR*KGAR*')
 ```
