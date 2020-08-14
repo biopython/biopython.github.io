@@ -6,8 +6,8 @@ tags:
  - Wiki Documentation
 ---
 
-In Biopython, sequences are usually held as ` Seq` objects, which hold
-the sequence string and an associated alphabet.
+In Biopython, sequences are usually held as ` Seq` objects, which add
+various biological methods on top of string like behaviour.
 
 This page describes the Biopython `Seq` object, defined in the `Bio.Seq`
 module (together with related objects like the `MutableSeq`, plus some
@@ -29,50 +29,20 @@ reading and writing sequence files.
 The Seq Object
 ==============
 
-The `Seq` object essentially combines a Python string with an (optional)
-biological alphabet. For example:
+The `Seq` object essentially combines a Python string with biological
+methods. For example:
 
 ``` python
 >>> from Bio.Seq import Seq
 >>> my_seq = Seq("AGTACACTGGT")
 >>> my_seq
-Seq('AGTACACTGGT', Alphabet())
->>> my_seq.alphabet
-Alphabet()
+Seq('AGTACACTGGT')
 ```
 
-In the above example, we haven't specified an alphabet so we end up with
-a default generic alphabet. Biopython doesn't know if this is a
-nucleotide sequence or a protein rich in alanines, glycines, cysteines
-and threonines. If *you* know, you should supply this information:
+Biopython doesn't know if this is a nucleotide sequence or a protein rich
+in alanines, glycines, cysteines and threonines. If *you* know, keep this
+mind when you call methods like (reverse)complement - see below.
 
-``` python
->>> from Bio.Seq import Seq
->>> from Bio.Alphabet import generic_dna, generic_protein
->>> my_seq = Seq("AGTACACTGGT")
->>> my_seq
-Seq('AGTACACTGGT', Alphabet())
->>> my_dna = Seq("AGTACACTGGT", generic_dna)
->>> my_dna
-Seq('AGTACACTGGT', DNAAlphabet())
->>> my_protein = Seq("AGTACACTGGT", generic_protein)
->>> my_protein
-Seq('AGTACACTGGT', ProteinAlphabet())
-```
-
-Why is this important? Well it can catch some errors for you - you
-wouldn't want to accidentally try and combine a DNA sequence with a
-protein, would you?
-
-``` python
->>> my_protein + my_dna
-Traceback (most recent call last):
-...
-TypeError: Incompatable alphabets ProteinAlphabet() and DNAAlphabet()
-```
-
-Biopython will also catch things like trying to use nucleotide only
-methods like translation (see below) on a protein sequence.
 
 General methods
 ---------------
@@ -129,14 +99,13 @@ appropriate sequence and the same alphabet:
 
 ``` python
 >>> from Bio.Seq import Seq
->>> from Bio.Alphabet import generic_dna
->>> my_dna = Seq("AGTACACTGGT", generic_dna)
+>>> my_dna = Seq("AGTACACTGGT")
 >>> my_dna
-Seq('AGTACACTGGT', DNAAlphabet())
+Seq('AGTACACTGGT')
 >>> my_dna.complement()
-Seq('TCATGTGACCA', DNAAlphabet())
+Seq('TCATGTGACCA')
 >>> my_dna.reverse_complement()
-Seq('ACCAGTGTACT', DNAAlphabet())
+Seq('ACCAGTGTACT')
 ```
 
 ### Transcription and back transcription
@@ -148,9 +117,9 @@ thymines with uracil:
 
 ``` python
 >>> my_dna
-Seq('AGTACACTGGT', DNAAlphabet())
+Seq('AGTACACTGGT')
 >>> my_dna.transcribe()
-Seq('AGUACACUGGU', RNAAlphabet())
+Seq('AGUACACUGGU')
 ```
 
 Naturally, given some RNA, you might want the associated DNA - and again
@@ -159,9 +128,9 @@ Biopython does a simple U/T substitution:
 ``` python
 >>> my_rna = my_dna.transcribe()
 >>> my_rna
-Seq('AGUACACUGGU', RNAAlphabet())
+Seq('AGUACACUGGU')
 >>> my_rna.back_transcribe()
-Seq('AGTACACTGGT', DNAAlphabet())
+Seq('AGTACACTGGT')
 ```
 
 If you actually do want the template strand, you'd have to do a reverse
@@ -169,9 +138,9 @@ complement on top:
 
 ``` python
 >>> my_rna
-Seq('AGUACACUGGU', RNAAlphabet())
+Seq('AGUACACUGGU')
 >>> my_rna.back_transcribe().reverse_complement()
-Seq('ACCAGTGTACT', DNAAlphabet())
+Seq('ACCAGTGTACT')
 ```
 
 The chapter in the
@@ -188,17 +157,16 @@ You can translate RNA:
 >>> from Bio.Alphabet import generic_rna
 >>> messenger_rna = Seq("AUGGCCAUUGUAAUGGGCCGCUGAAAGGGUGCCCGAUAG", generic_rna)
 >>> messenger_rna.translate()
-Seq('MAIVMGR*KGAR*', HasStopCodon(ExtendedIUPACProtein(), '*'))
+Seq('MAIVMGR*KGAR*')
 ```
 
 Or DNA - which is assumed to be the coding strand:
 
 ``` python
 >>> from Bio.Seq import Seq
->>> from Bio.Alphabet import generic_dna
->>> coding_dna = Seq("ATGGCCATTGTAATGGGCCGCTGAAAGGGTGCCCGATAG", generic_dna)
+>>> coding_dna = Seq("ATGGCCATTGTAATGGGCCGCTGAAAGGGTGCCCGATAG")
 >>> coding_dna.translate()
-Seq('MAIVMGR*KGAR*', HasStopCodon(ExtendedIUPACProtein(), '*'))
+Seq('MAIVMGR*KGAR*')
 ```
 
 In either case there are several useful options - by default as you will
@@ -207,7 +175,7 @@ codons, but this is optional:
 
 ``` python
 >>> coding_dna.translate(to_stop=True)
-Seq('MAIVMGR', ExtendedIUPACProtein())
+Seq('MAIVMGR')
 ```
 
 Then there is the translation table, for which you can give an [NCBI
@@ -216,16 +184,16 @@ name](http://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi):
 
 ``` python
 >>> coding_dna.translate(table=2)
-Seq('MAIVMGRWKGAR*', HasStopCodon(ExtendedIUPACProtein(), '*'))
+Seq('MAIVMGRWKGAR*')
 >>> coding_dna.translate(table="Vertebrate Mitochondrial")
-Seq('MAIVMGRWKGAR*', HasStopCodon(ExtendedIUPACProtein(), '*'))
+Seq('MAIVMGRWKGAR*')
 ```
 
 You can of course combine these options:
 
 ``` python
 >>> coding_dna.translate(table=2, to_stop=True)
-Seq('MAIVMGRWKGAR', ExtendedIUPACProtein())
+Seq('MAIVMGRWKGAR')
 ```
 
 Consult the tutorial for more examples and arguments (e.g. specifying a
@@ -234,25 +202,4 @@ different symbol for a stop codon), or see the built in help:
 ``` python
 >>> help(coding_dna.translate)
 ...
-```
-
-### Using nucleotide methods on a protein
-
-None of this operations apply to a protein sequence and trying this will
-raise an exception:
-
-``` python
->>> my_protein.complement()
-Traceback (most recent call last):
-...
-ValueError: Proteins do not have complements!
-```
-
-You can use them on `Seq` objects with a generic alphabet:
-
-``` python
->>> my_seq
-Seq('AGTACACTGGT', Alphabet())
->>> my_seq.complement()
-Seq('TCATGTGACCA', Alphabet())
 ```
