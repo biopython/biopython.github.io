@@ -472,7 +472,7 @@ following code shows a common way to do this:
 >>> from Bio import AlignIO
 >>> aln = AlignIO.read('Tests/TreeConstruction/msa.phy', 'phylip')
 >>> print aln
-SingleLetterAlphabet() alignment with 5 rows and 13 columns
+Alignment with 5 rows and 13 columns
 AACGTGGCCACAT Alpha
 AAGGTCGCCACAC Beta
 GAGATTTCCGCCT Delta
