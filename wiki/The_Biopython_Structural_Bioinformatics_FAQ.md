@@ -113,7 +113,7 @@ done that, actually :-).
 You can however interactively view Biopython structural entities in a Jupyter
 notebook using [nglview](https://github.com/arose/nglview):
 
-```python
+``` python
 import nglview as nv
 view = nv.show_biopython(structure)
 view

@@ -37,7 +37,7 @@ Biopython:
     -   Most importantly, add a ``BiopythonDeprecationWarning`` to the
         code (Python's ``DeprecationWarning`` is silent by default):
 
-```python
+``` python
 import warnings
 from Bio import BiopythonDeprecationWarning
 
@@ -54,7 +54,7 @@ warnings.warn(
 -   Silence the new warning in the tests, for example if your tests use
     ``from Bio import SomeModule`` replace that with:
 
-```python
+``` python
 from Bio import BiopythonDeprecationWarning
 with warnings.catch_warnings():
     warnings.simplefilter("ignore", BiopythonDeprecationWarning)
