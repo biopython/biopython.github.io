@@ -1,4 +1,4 @@
----
+OB---
 title: Getting Started
 permalink: wiki/Getting_Started
 layout: wiki
@@ -15,12 +15,13 @@ page](Download "wikilink") for details including the prerequisites.
 
 You can check your installation has worked at the python prompt:
 
-``` python
+``` pycon
 >>> import Bio
 ```
 
 If that gives no error, you should be done. If you get something like
-"ImportError: No module named Bio" something has gone wrong.
+"ImportError: No module named Bio" something has gone wrong. Note the
+case is important.
 
 Tutorial
 --------

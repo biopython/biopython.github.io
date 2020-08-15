@@ -242,7 +242,7 @@ def to_ape(tree):
 
 See that it works:
 
-``` python
+``` pycon
 >>> from StringIO import StringIO
 >>> from Bio import Phylo
 >>> tree = Phylo.read(StringIO('(A,(B,C),(D,E));'), 'newick')
@@ -293,7 +293,7 @@ import dendropy
 dtree = dendropy.Tree.get_from_string("(A, (B, C), (D, E))", "newick")
 dtree.write_to_path("tmp.nwk", "newick", suppress_rooting=True)
 # Load the same tree in Biopython
-bptree = Phylo.read("tmp.nwk', 'newick')
+bptree = Phylo.read("tmp.nwk", "newick")
 ```
 
 ### Convert to a NumPy array or matrix

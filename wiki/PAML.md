@@ -70,7 +70,7 @@ options, please refer to the PAML user manual.
 
 The complete set of options and their current values may be printed:
 
-``` python
+``` pycon
 >>> cml.print_options()
 verbose = None
 CodonFreq = None
@@ -106,7 +106,7 @@ Setting an option to a value of `None` will cause it to be ignored by
 be set by the `set_option()` function and their values may be retrieved
 by the `get_option()` function:
 
-``` python
+``` pycon
 >>> cml.set_options(clock=1)
 >>> cml.set_options(NSsites=[0, 1, 2])
 >>> cml.set_options(aaRatefile="wag.dat")
@@ -126,7 +126,7 @@ below). The control file to read is provided as an argument to the
 `read_ctl_file()` method, while the `write_ctl_file()` method writes to
 the `Codeml` object's `ctl_file` attribute
 
-``` python
+``` pycon
 >>> cml.read_ctl_file("codeml.ctl")
 >>> cml.print_options()
 verbose = 1
@@ -305,7 +305,7 @@ does not have a tree attribute, as *yn00* does not require a tree file.
 
 The parameters available in the Baseml options are:
 
-``` python
+``` pycon
 >>> bml.print_options()
 verbose = None
 cleandata = None
@@ -378,7 +378,7 @@ All of the possible contents of the `Baseml` results file are:
 
 The parameters available in the `Yn00` options are:
 
-``` python
+``` pycon
 >>> yn.print_options()
 commonf3x4 = None
 weighting = None
@@ -442,12 +442,12 @@ original.
 To retrieve a *p*-value, simply import the module
 
 ``` python
- from Bio.Phylo.PAML.chi2 import cdf_chi2
+from Bio.Phylo.PAML.chi2 import cdf_chi2
 ```
 
 And use the `cdf_chi2()` function:
 
-``` python
+``` pycon
 >>> df = 2
 >>> statistic = 7.21
 >>> cdf_chi2(df, statistic)

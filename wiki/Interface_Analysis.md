@@ -36,10 +36,10 @@ but require a stable version of Naccess (available in
 Extraction of an interface is done from a complex PDB
 
 ``` python
-from Bio.PDB import InterfaceBuilder
+from Bio.PDB import InterfaceBuilder
 
 parser = PDBParser()
-structure = parser.get_structure('test', '/home/directory/of/your/PDB/test.pdb')
+structure = parser.get_structure('test', '/home/directory/of/your/PDB/test.pdb')
 ```
 
 Then the extraction of the interface is done in only one line
@@ -54,8 +54,8 @@ From the `Interface` object some function and information are included
 
 ``` python
 chains = interface.get_chains()
-for c in chains:
-`   print(c)
+for c in chains:
+    print(c)
 ```
 
 -   Add a residue

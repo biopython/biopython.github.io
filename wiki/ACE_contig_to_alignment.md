@@ -82,7 +82,7 @@ for readn in range(len(contig.reads)):
 
 and when you print the alignment, or the sequences within it
 
-``` python
+``` pycon
 >>> print(align)
 Alignment with 2 rows and 856 columns
 --------------------------------------------...--- read1

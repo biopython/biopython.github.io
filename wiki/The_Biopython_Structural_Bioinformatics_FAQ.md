@@ -262,7 +262,7 @@ for donating this module.
 The following commands will store all PDB files in the `/data/pdb`
 directory:
 
-``` python
+``` bash
 python PDBList.py all /data/pdb
 python PDBList.py all /data/pdb -d
 ```
@@ -782,7 +782,7 @@ as a Biopython `Seq` object.
 
 Example:
 
-``` python
+``` pycon
 >>> seq = polypeptide.get_sequence()
 >>> print seq
 Seq('SNVVE...')
