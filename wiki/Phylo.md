@@ -121,7 +121,7 @@ phylogenetic tree at the top level.
 
 ``` python
 tree = Phylo.read("example.dnd", "newick")
-print tree
+print(tree)
 ```
 
 If you have your tree data already loaded as a Python string, you can
@@ -240,7 +240,7 @@ to install or use the rest of the Tree module.
 `str(tree)` produces a plain-text representation of the entire
 tree. Strings are automatically truncated to ensure reasonable display.
 
-Use this with the print statement to get a quick overview of your tree:
+Use this with the print function to get a quick overview of your tree:
 
 ``` pycon
 >>> tree = Phylo.parse('phyloxml_examples.xml', 'phyloxml').next()
@@ -471,7 +471,7 @@ following code shows a common way to do this:
 >>> from Bio.Phylo.TreeConstruction import DistanceCalculator
 >>> from Bio import AlignIO
 >>> aln = AlignIO.read('Tests/TreeConstruction/msa.phy', 'phylip')
->>> print aln
+>>> print(aln)
 Alignment with 5 rows and 13 columns
 AACGTGGCCACAT Alpha
 AAGGTCGCCACAC Beta
@@ -573,7 +573,7 @@ follows:
 >>> searcher = NNITreeSearcher(scorer)
 >>> constructor = ParsimonyTreeConstructor(searcher, starting_tree)
 >>> pars_tree = constructor.build_tree(aln)
->>> print pars_tree
+>>> print(pars_tree)
 Tree(weight=1.0, rooted=True)
     Clade(branch_length=0.0)
         Clade(branch_length=0.197335, name='Inner1')
@@ -711,7 +711,7 @@ To create a `_Matrix` object:
 >>> m = _Matrix(names, matrix)
 >>> m
 _Matrix(names=['Alpha', 'Beta', 'Gamma', 'Delta'], matrix=[[0], [1, 0], [2, 3, 0], [4, 5, 6, 0]])
->>> print m
+>>> print(m)
 Alpha   0
 Beta    1   0
 Gamma   2   3   0

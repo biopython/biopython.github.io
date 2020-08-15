@@ -360,9 +360,9 @@ handle = Entrez.efetch(
     db="nuccore", id="6273291,6273290,6273289", rettype="gb", retmode="text"
 )
 for seq_record in SeqIO.parse(handle, "genbank"):
-    print seq_record.id, seq_record.description[:50] + "..."
-    print "Sequence length %i," % len(seq_record.seq),
-    print "from: %s" % seq_record.annotations["source"]
+    print(seq_record.id, seq_record.description[:50] + "...")
+    print("Sequence length %i," % len(seq_record.seq))
+    print("from: %s" % seq_record.annotations["source"])
 handle.close()
 ```
 
@@ -398,7 +398,7 @@ handle = Entrez.efetch(
     db="nuccore", id="6273291,6273290,6273289", rettype="gb", retmode="text"
 )
 count = db.load(SeqIO.parse(handle, "genbank"))
-print "Loaded %i records" % count
+print("Loaded %i records" % count)
 server.commit()  # On Biopython 1.49 or older, server.adaptor.commit()
 ```
 
@@ -443,8 +443,8 @@ server = BioSeqDatabase.open_database(
 db = server["orchids"]
 for identifier in ["6273291", "6273290", "6273289"]:
     seq_record = db.lookup(gi=identifier)
-    print seq_record.id, seq_record.description[:50] + "..."
-    print "Sequence length %i," % len(seq_record.seq)
+    print(seq_record.id, seq_record.description[:50] + "...")
+    print("Sequence length %i," % len(seq_record.seq))
 ```
 
 Giving:
@@ -482,9 +482,9 @@ server = BioSeqDatabase.open_database(
     db="bioseqdb",
 )
 db = server["orchids"]
-print "This database contains %i records" % len(db)
+print("This database contains %i records" % len(db))
 for key, record in db.iteritems():
-    print "Key %r maps to a sequence record with id %s" % (key, record.id)
+    print("Key %r maps to a sequence record with id %s" % (key, record.id))
 ```
 
 Deleting a (sub) database

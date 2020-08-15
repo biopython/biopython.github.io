@@ -532,7 +532,7 @@ Here is an example of use:
 ``` python
 model = Barnacle("ACCU")
 model.sample()
-print "log likelihood = ", model.get_log_likelihood()
+print("log likelihood = ", model.get_log_likelihood())
 model.save_structure("structure01.pdb")
 ```
 
@@ -583,7 +583,7 @@ Then the model can be used to sample new sequences:
 ``` python
 model.set_aa("ACDEFGHIK")
 model.sample()
-print model.get_angles()  # The sampled angles.
+print(model.get_angles())  # The sampled angles.
 ```
 
 When creating a model, it is possible to create a new DBN specifying the
@@ -600,7 +600,7 @@ model = TorusDBNModel()
 model.load_dbn("test.dbn")
 model.set_aa("ACDEFGHIK")
 model.sample()
-print model.get_angles()  # The sampled angles.
+print(model.get_angles())  # The sampled angles.
 ```
 
 It is also possible to choose the best size for the hidden node using

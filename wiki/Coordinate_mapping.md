@@ -80,7 +80,7 @@ for raw_g_pos in sample_g_values:
     except ValueError:
         p_pos = None
     protein_positions.append(p_pos)
-print protein_positions
+print(protein_positions)
 ```
 
 Here's an example function that prints a table of the genomic, CDS, and
@@ -94,8 +94,8 @@ from Bio.SeqUtils.Mapper import GenomePosition
 def gcp_table(mapper, g_list):
     """Print a table of genomic, CDS, and protein coordinates"""
     # Print header
-    print "%4s | %6s | %2s" % ("g", "CDS", "p")
-    print "-" * 20
+    print("%4s | %6s | %2s" % ("g", "CDS", "p"))
+    print("-" * 20)
     for g_pos in g_list:
         # Directly convert g_pos from Genbank to Python coordinates
         g_pos = GenomePosition.from_dialect("genbank", g_pos)
@@ -106,7 +106,7 @@ def gcp_table(mapper, g_list):
         else:
             p_pos = ""
         # Print formatted row
-        print "%4s | %6s | %2s" % (g_pos, c_pos, p_pos)
+        print("%4s | %6s | %2s" % (g_pos, c_pos, p_pos))
 
 
 gcp_table(cm, sample_g_values)

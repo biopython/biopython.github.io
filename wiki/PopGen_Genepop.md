@@ -52,7 +52,7 @@ formated file):
 from Bio.PopGen.GenePop.EasyController import EasyController
 
 ctrl = EasyController(your_file_here)
-print ctrl.get_basic_info()
+print(ctrl.get_basic_info())
 ```
 
 Replace `your_file_here` with the name and path to your file. If you get
