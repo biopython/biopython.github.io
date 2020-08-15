@@ -507,7 +507,7 @@ Now, let's get back to the `DistanceTreeConstructor`. We can pass the
 `DistanceCalculator` object and a string parameter('nj' or 'upgma') to
 initialize it, and then call its `build_tree()` as mentioned before.
 
-```python
+``` python
 >>> from TreeConstruction import DistanceTreeConstructor
 >>> constructor = DistanceTreeConstructor(calculator, 'nj')
 >>> tree = constructor.build_tree(aln)
