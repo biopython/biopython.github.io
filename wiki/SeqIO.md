@@ -116,6 +116,7 @@ This lets you do things like:
 
 ``` python
 from Bio import SeqIO
+
 for record in SeqIO.parse("example.fasta", "fasta"):
     print(record.id)
 ```
@@ -125,6 +126,7 @@ or using a handle:
 
 ``` python
 from Bio import SeqIO
+
 with open("example.fasta", "rU") as handle:
     for record in SeqIO.parse(handle, "fasta"):
         print(record.id)
@@ -151,8 +153,9 @@ which contains seven sequences, the only difference is you specify
 
 ``` python
 from Bio import SeqIO
+
 with open("opuntia.aln", "rU") as handle:
-    for record in SeqIO.parse(handle, "clustal") :
+    for record in SeqIO.parse(handle, "clustal"):
         print(record.id)
 ```
 
@@ -163,6 +166,7 @@ python `list()` function to turn the iterator into a list:
 
 ``` python
 from Bio import SeqIO
+
 records = list(SeqIO.parse("example.fasta", "fasta"))
 print(records[0].id)  # first record
 print(records[-1].id)  # last record
@@ -175,6 +179,7 @@ small files we have a function `Bio.SeqIO.to_dict()` to turn a
 
 ``` python
 from Bio import SeqIO
+
 record_dict = SeqIO.to_dict(SeqIO.parse("example.fasta", "fasta"))
 print(record_dict["gi:12345678"])  # use any record ID
 ```
@@ -190,6 +195,7 @@ might also consider [`BioSQL`](BioSQL "wikilink").
 
 ``` python
 from Bio import SeqIO
+
 record_dict = SeqIO.index("example.fasta", "fasta")
 print(record_dict["gi:12345678"])  # use any record ID
 ```
@@ -202,6 +208,7 @@ records, or more than one, then an exception is raised:
 
 ``` python
 from Bio import SeqIO
+
 record = SeqIO.read("single.fasta", "fasta")
 ```
 
@@ -211,6 +218,7 @@ function `next`:
 
 ``` python
 from Bio import SeqIO
+
 first_record = next(SeqIO.parse("example.fasta", "fasta"))
 ```
 
@@ -223,6 +231,7 @@ output handle (or filename) and format string:
 
 ``` python
 from Bio import SeqIO
+
 sequences = ...  # add code here
 with open("example.fasta", "w") as output_handle:
     SeqIO.write(sequences, output_handle, "fasta")
@@ -232,6 +241,7 @@ or:
 
 ``` python
 from Bio import SeqIO
+
 sequences = ...  # add code here
 SeqIO.write(sequences, "example.fasta", "fasta")
 ```
@@ -267,6 +277,7 @@ function:
 
 ``` python
 from Bio import SeqIO
+
 with open("cor6_6.gb", "rU") as input_handle:
     for record in SeqIO.parse(input_handle, "genbank"):
         print(record)
@@ -279,7 +290,9 @@ function, to turn this GenBank file into a Fasta file:
 ``` python
 from Bio import SeqIO
 
-with open("cor6_6.gb", "rU") as input_handle, open("cor6_6.fasta", "w") as output_handle:
+with open("cor6_6.gb", "rU") as input_handle, open(
+    "cor6_6.fasta", "w"
+) as output_handle:
     sequences = SeqIO.parse(input_handle, "genbank")
     count = SeqIO.write(sequences, output_handle, "fasta")
 
@@ -291,6 +304,7 @@ Biopython 1.52 or later), just:
 
 ``` python
 from Bio import SeqIO
+
 count = SeqIO.convert("cor6_6.gb", "genbank", "cor6_6.fasta", "fasta")
 print("Converted %i records" % count)
 ```
@@ -333,9 +347,9 @@ nucleotides to a Fasta file:
 ``` python
 from Bio import SeqIO
 
-short_sequences = [] # Setup an empty list
+short_sequences = []  # Setup an empty list
 for record in SeqIO.parse("cor6_6.gb", "genbank"):
-    if len(record.seq) < 300 :
+    if len(record.seq) < 300:
         # Add this record to our list
         short_sequences.append(record)
 
@@ -353,8 +367,7 @@ from Bio import SeqIO
 input_seq_iterator = SeqIO.parse("cor6_6.gb", "genbank")
 
 # Build a list of short sequences:
-short_sequences = [record for record in input_seq_iterator \
-                   if len(record.seq) < 300]
+short_sequences = [record for record in input_seq_iterator if len(record.seq) < 300]
 
 print("Found %i short sequences" % len(short_sequences))
 
@@ -372,8 +385,7 @@ creating the entire list of desired records in memory:
 from Bio import SeqIO
 
 input_seq_iterator = SeqIO.parse("cor6_6.gb", "genbank")
-short_seq_iterator = (record for record in input_seq_iterator \
-                      if len(record.seq) < 300)
+short_seq_iterator = (record for record in input_seq_iterator if len(record.seq) < 300)
 
 SeqIO.write(short_seq_iterator, "short_seqs.fasta", "fasta")
 ```
@@ -402,6 +414,7 @@ file
 ``` python
 from Bio import SeqIO
 from Bio.SeqUtils.CheckSum import seguid
+
 for record in SeqIO.parse("ls_orchid.gbk", "genbank"):
     print(record.id + "_" + seguid(record.seq))
 ```
@@ -425,8 +438,10 @@ the `seguid()` function directly as it only works on
 ``` python
 from Bio import SeqIO
 from Bio.SeqUtils.CheckSum import seguid
-seguid_dict = SeqIO.to_dict(SeqIO.parse("ls_orchid.gbk", "genbank"),
-                            lambda rec: seguid(rec.seq))
+
+seguid_dict = SeqIO.to_dict(
+    SeqIO.parse("ls_orchid.gbk", "genbank"), lambda rec: seguid(rec.seq)
+)
 record = seguid_dict["MN/s0q9zDoCVEEc+k/IFwCNF2pY"]
 print(record.id)
 print(record.description)
@@ -456,13 +471,13 @@ from random import randint
 # There should be one and only one record, the entire genome:
 mito_record = SeqIO.read("NC_006581.gbk", "genbank")
 
-mito_frags=[]
-limit=len(mito_record.seq)
+mito_frags = []
+limit = len(mito_record.seq)
 for i in range(0, 500):
-    start = randint(0,limit-200)
-    end = start+200
+    start = randint(0, limit - 200)
+    end = start + 200
     mito_frag = mito_record.seq[start:end]
-    record = SeqRecord(mito_frag,'fragment_%i' % (i+1), '', '')
+    record = SeqRecord(mito_frag, "fragment_%i" % (i + 1), "", "")
     mito_frags.append(record)
 
 SeqIO.write(mito_frags, "mitofrags.fasta", "fasta")
@@ -500,6 +515,7 @@ given file format, Biopython 1.48 added a new format method:
 
 ``` python
 from Bio import SeqIO
+
 mito_record = SeqIO.read("NC_006581.gbk", "genbank")
 print(mito_record.format("fasta"))
 ```

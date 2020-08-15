@@ -193,9 +193,9 @@ Standard Python syntactic sugar is supported wherever it's reasonable.
 `Clade` objects also support slicing and multiple indexing:
 
 ``` python
-tree = Phylo.parse('example.xml', 'phyloxml').next()
+tree = Phylo.parse("example.xml", "phyloxml").next()
 assert tree.clade[0] == tree.clade.clades[0]
-assert tree.clade[0,1] == tree.clade.clades[0].clades[1]
+assert tree.clade[0, 1] == tree.clade.clades[0].clades[1]
 ```
 
 Since valid Phylogeny objects always have a single clade attribute, this
@@ -211,8 +211,8 @@ cases:
     characteristic, isolate it as a new `PhyloXML` object.
 
 ``` python
-for tree in Phylo.parse('example.xml', 'phyloxml'):
-    if tree.name == 'monitor lizards':
+for tree in Phylo.parse("example.xml", "phyloxml"):
+    if tree.name == "monitor lizards":
         mon_lizard_tree = tree.to_phyloxml()
 ```
 
@@ -220,15 +220,15 @@ for tree in Phylo.parse('example.xml', 'phyloxml'):
     probably a new phyloXML file).
 
 ``` python
-tree = Phylo.parse('example.xml', 'phyloxml').next()
+tree = Phylo.parse("example.xml", "phyloxml").next()
 best = None
 for clade in tree.clade:
-    if (clade.confidences[0].type == 'bootstrap'
-            and (best is None
-                or clade.confidences[0].value > best.confidences[0].value)):
+    if clade.confidences[0].type == "bootstrap" and (
+        best is None or clade.confidences[0].value > best.confidences[0].value
+    ):
         best = clade
 phyloxml = best.to_phylogeny(rooted=True).to_phyloxml()
-Phylo.write(phyloxml, 'example_best.xml', 'phyloxml')
+Phylo.write(phyloxml, "example_best.xml", "phyloxml")
 ```
 
 ### Core classes

@@ -43,8 +43,12 @@ of the desired working directory, may be specified in the `Codeml`
 constructor as follows:
 
 ``` python
-cml = codeml.Codeml(alignment = "align.phylip", tree = "species.tree",
-                    out_file = "results.out", working_dir = "./scratch")
+cml = codeml.Codeml(
+    alignment="align.phylip",
+    tree="species.tree",
+    out_file="results.out",
+    working_dir="./scratch",
+)
 ```
 
 They may also be set individually:

@@ -217,7 +217,7 @@ Example:
 from Bio.PDB import PDBParser
 
 p = PDBParser()
-s = p.get_structure('example', '1IHM.pdb')
+s = p.get_structure("example", "1IHM.pdb")
 
 print(list(s.get_residues())[0])
 # <Residue ASP het=  resseq=1029 icode= >
@@ -244,7 +244,7 @@ The function returns an iterator with tuples of pairs of residues.
 from Bio.PDB import PDBParser
 
 p = PDBParser()
-s = p.get_structure('example', '4PTI.pdb')
+s = p.get_structure("example", "4PTI.pdb")
 
 prot = s.as_protein()
 
@@ -272,15 +272,15 @@ from Bio.PDB import PDBParser
 p = PDBParser()
 
 
-s1 = p.get_structure('a', '4PTI.pdb')
+s1 = p.get_structure("a", "4PTI.pdb")
 s1.build_biological_unit()
 # 'Processed 0 transformations on the structure.' # Identity matrix is ignored.
 
-s2 = p.get_structure('b', 'homol_1bd8.pdb') # A homology model
+s2 = p.get_structure("b", "homol_1bd8.pdb")  # A homology model
 s2.build_biological_unit()
 # 'PDB File lacks appropriate REMARK 350 entries to build Biological Unit.'
 
-s3 = p.get_structure('c', '1IHM.pdb')
+s3 = p.get_structure("c", "1IHM.pdb")
 s3.build_biological_unit()
 # 'Processed 59 transformations on the structure.'
 ```
@@ -307,11 +307,13 @@ an example usage.
 from Bio.Struct.WWW import WHATIF
 from Bio import Struct
 
-server = WHATIF.WHATIF() # Performs a sort of PING to the server. Gracefully exits if the servers are down.
+server = (
+    WHATIF.WHATIF()
+)  # Performs a sort of PING to the server. Gracefully exits if the servers are down.
 
 # Get the protein structure
-structure = Struct.read('4PTI.pdb')
-protein = structure.as_protein() # This excludes water molecules
+structure = Struct.read("4PTI.pdb")
+protein = structure.as_protein()  # This excludes water molecules
 
 # Upload the structure to the WHATIF server
 # This should convert the structure from a Structure object to a string via tempfile and PDBIO
@@ -336,7 +338,7 @@ I'll add general molecule support later.
 from Bio import Struct
 from Bio.Struct import Hydrogenate as H
 
-s = Struct.read('1ctf.pdb')
+s = Struct.read("1ctf.pdb")
 p = s.as_protein()
 
 prot = H.Hydrogenate_Protein()

@@ -43,6 +43,7 @@ from Bio.SeqRecord import SeqRecord
 
 from BCBio import GFF
 
+
 def main(glimmer_file, ref_file):
     with open(ref_file) as in_handle:
         ref_recs = SeqIO.to_dict(SeqIO.parse(in_handle, "fasta"))
@@ -86,9 +87,9 @@ def protein_recs(glimmer_file, ref_recs):
             for feature in rec.features:
                 seq_exons = []
                 for cds in feature.sub_features:
-                    seq_exons.append(rec.seq[
-                        cds.location.nofuzzy_start:
-                        cds.location.nofuzzy_end])
+                    seq_exons.append(
+                        rec.seq[cds.location.nofuzzy_start : cds.location.nofuzzy_end]
+                    )
                 gene_seq = reduce(operator.add, seq_exons)
                 if feature.strand == -1:
                     gene_seq = gene_seq.reverse_complement()

@@ -158,9 +158,10 @@ your computer. Then in python:
 
 ``` python
 from Bio import AlignIO
+
 alignment = AlignIO.read(open("PF09395_seed.sth"), "stockholm")
 print("Alignment length %i" % alignment.get_alignment_length())
-for record in alignment :
+for record in alignment:
     print(record.seq + " " + record.id)
 ```
 

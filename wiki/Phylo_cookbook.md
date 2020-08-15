@@ -25,6 +25,7 @@ def get_parent(tree, child_clade):
     node_path = tree.get_path(child_clade)
     return node_path[-2]
 
+
 # Select a clade
 myclade = tree.find_clades("foo").next()
 # Test the function
@@ -44,10 +45,11 @@ tree elements, create a dictionary mapping all nodes to their parents:
 ``` python
 def all_parents(tree):
     parents = {}
-    for clade in tree.find_clades(order='level'):
+    for clade in tree.find_clades(order="level"):
         for child in clade:
             parents[child] = clade
     return parents
+
 
 # Example
 parents = all_parents(tree)
@@ -76,11 +78,10 @@ def lookup_by_names(tree):
 Now you can retrieve a clade by name in constant time:
 
 ``` python
-tree = Phylo.read('ncbi_taxonomy.xml', 'phyloxml')
+tree = Phylo.read("ncbi_taxonomy.xml", "phyloxml")
 names = lookup_by_names(tree)
-for phylum in ('Apicomplexa', 'Euglenozoa', 'Fungi'):
-    print ("Phylum size: %d" %
-           len(names[phylum].get_terminals()))
+for phylum in ("Apicomplexa", "Euglenozoa", "Fungi"):
+    print("Phylum size: %d" % len(names[phylum].get_terminals()))
 ```
 
 A potential issue: The above implementation of `lookup_by_names` doesn't
@@ -93,7 +94,7 @@ def tabulate_names(tree):
     names = {}
     for idx, clade in enumerate(tree.find_clades()):
         if clade.name:
-            clade.name = '%d_%s' % (idx, clade.name)
+            clade.name = "%d_%s" % (idx, clade.name)
         else:
             clade.name = str(idx)
         names[clade.name] = clade
@@ -107,14 +108,16 @@ def tabulate_names(tree):
 ``` python
 import itertools
 
+
 def terminal_neighbor_dists(self):
     """Return a list of distances between adjacent terminals."""
+
     def generate_pairs(self):
         pairs = itertools.tee(self)
         pairs[1].next()
         return itertools.izip(pairs[0], pairs[1])
-    return [self.distance(*i) for i in
-            generate_pairs(self.find_clades(terminal=True))]
+
+    return [self.distance(*i) for i in generate_pairs(self.find_clades(terminal=True))]
 ```
 
 ### Test for "semi-preterminal" clades
@@ -173,11 +176,11 @@ The basic method on the Tree class (not TreeMixin) is
 `root_with_outgroup`:
 
 ``` python
-tree = Phylo.read('example.nwk', 'newick')
+tree = Phylo.read("example.nwk", "newick")
 print(tree)
 # ...
-tree.root_with_outgroup({'name': 'A'})  # Operates in-place
-print (tree)
+tree.root_with_outgroup({"name": "A"})  # Operates in-place
+print(tree)
 ```
 
 Normally you'll want the outgroup to be a monophyletic group, rather
@@ -188,7 +191,7 @@ To save some typing, try keeping the query in a separate list and
 reusing it:
 
 ``` python
-outgroup = [{'name': taxon_name} for taxon_name in ('E', 'F', 'G')]
+outgroup = [{"name": taxon_name} for taxon_name in ("E", "F", "G")]
 if tree.is_monophyletic(outgroup):
     tree.root_with_outgroup(*outgroup)
 else:
@@ -223,6 +226,7 @@ an **ape** tree object:
 import tempfile
 from rpy2.robjects import r
 
+
 def to_ape(tree):
     """Convert a tree to the type used by the R package `ape`, via rpy2.
 
@@ -231,12 +235,15 @@ def to_ape(tree):
         - R package `ape`
     """
     with tempfile.NamedTemporaryFile() as tmpf:
-        Phylo.write(tree, tmpf, 'newick')
+        Phylo.write(tree, tmpf, "newick")
         tmpf.flush()
-        rtree = r("""
+        rtree = r(
+            """
             library('ape')
             read.tree('%s')
-            """ % tmpf.name)
+            """
+            % tmpf.name
+        )
     return rtree
 ```
 
@@ -282,8 +289,8 @@ same string again with another.
 from Bio import Phylo
 import cogent
 
-Phylo.write(bptree, 'mytree.nwk', 'newick')  # Biopython tree
-ctree = cogent.LoadTree('mytree.nwk')        # PyCogent tree
+Phylo.write(bptree, "mytree.nwk", "newick")  # Biopython tree
+ctree = cogent.LoadTree("mytree.nwk")  # PyCogent tree
 ```
 
 ``` python
@@ -304,6 +311,7 @@ exists, otherwise 0 (false).
 ``` python
 import numpy
 
+
 def to_adjacency_matrix(tree):
     """Create an adjacency matrix (NumPy array) from clades/branches in tree.
 
@@ -315,12 +323,12 @@ def to_adjacency_matrix(tree):
     Returns a tuple of (allclades, adjacency_matrix) where allclades is a list
     of clades and adjacency_matrix is a NumPy 2D array.
     """
-    allclades = list(tree.find_clades(order='level'))
+    allclades = list(tree.find_clades(order="level"))
     lookup = {}
     for i, elem in enumerate(allclades):
         lookup[elem] = i
     adjmat = numpy.zeros((len(allclades), len(allclades)))
-    for parent in tree.find_clades(terminal=False, order='level'):
+    for parent in tree.find_clades(terminal=False, order="level"):
         for child in parent.clades:
             adjmat[lookup[parent], lookup[child]] = 1
     if not tree.rooted:
@@ -335,6 +343,7 @@ otherwise infinity (this plays well with graph algorithms).
 ``` python
 import numpy
 
+
 def to_distance_matrix(tree):
     """Create a distance matrix (NumPy array) from clades/branches in tree.
 
@@ -344,13 +353,13 @@ def to_distance_matrix(tree):
     Returns a tuple of (allclades, distance_matrix) where allclades is a list of
     clades and distance_matrix is a NumPy 2D array.
     """
-    allclades = list(tree.find_clades(order='level'))
+    allclades = list(tree.find_clades(order="level"))
     lookup = {}
     for i, elem in enumerate(allclades):
         lookup[elem] = i
-    distmat = numpy.repeat(numpy.inf, len(allclades)**2)
+    distmat = numpy.repeat(numpy.inf, len(allclades) ** 2)
     distmat.shape = (len(allclades), len(allclades))
-    for parent in tree.find_clades(terminal=False, order='level'):
+    for parent in tree.find_clades(terminal=False, order="level"):
         for child in parent.clades:
             if child.branch_length:
                 distmat[lookup[parent], lookup[child]] = child.branch_length

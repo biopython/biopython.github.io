@@ -56,6 +56,7 @@ warnings.warn(
 
 ``` python
 from Bio import BiopythonDeprecationWarning
+
 with warnings.catch_warnings():
     warnings.simplefilter("ignore", BiopythonDeprecationWarning)
     from Bio import SomeModule

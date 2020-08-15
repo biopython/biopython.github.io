@@ -21,7 +21,7 @@ Firstly, we read in the ABI file:
 ``` python
 from Bio import SeqIO
 
-record = SeqIO.read('55-Mn-fw-EM-28.ab1', 'abi')
+record = SeqIO.read("55-Mn-fw-EM-28.ab1", "abi")
 ```
 
 The data that we are most interested in is in the annotations attribute of the record.

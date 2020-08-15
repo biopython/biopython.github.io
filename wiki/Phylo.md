@@ -120,7 +120,7 @@ check to ensure the input file does in fact contain exactly one
 phylogenetic tree at the top level.
 
 ``` python
-tree = Phylo.read('example.dnd', 'newick')
+tree = Phylo.read("example.dnd", "newick")
 print tree
 ```
 
@@ -157,9 +157,9 @@ single Tree object instead of a list or iterable will also work (see,
 `Phylo` is friendly).
 
 ``` python
-tree1 = Phylo.read('example1.xml', 'phyloxml')
-tree2 = Phylo.read('example2.xml', 'phyloxml')
-Phylo.write([tree1, tree2], 'example-both.xml', 'phyloxml')
+tree1 = Phylo.read("example1.xml", "phyloxml")
+tree2 = Phylo.read("example2.xml", "phyloxml")
+Phylo.write([tree1, tree2], "example-both.xml", "phyloxml")
 ```
 
 ### convert()
@@ -169,7 +169,7 @@ Given two files (or handles) and two formats, both supported by
 format, writing the output to the second file.
 
 ``` python
-Phylo.convert('example.nhx', 'newick', 'example2.nex', 'nexus')
+Phylo.convert("example.nhx", "newick", "example2.nex", "nexus")
 ```
 
 ### Sub-modules
@@ -263,8 +263,8 @@ Biopython 1.58.*
 Try this:
 
 ``` python
-tree = Phylo.read('apaf.xml', 'phyloxml')
-tree.ladderize()   # Flip branches so deeper clades are displayed at top
+tree = Phylo.read("apaf.xml", "phyloxml")
+tree.ladderize()  # Flip branches so deeper clades are displayed at top
 Phylo.draw(tree)
 ```
 
@@ -292,7 +292,8 @@ Drawing a basic dendrogram is simple:
 
 ``` python
 import pylab
-tree = Phylo.read('apaf.xml', 'phyloxml')
+
+tree = Phylo.read("apaf.xml", "phyloxml")
 Phylo.draw_graphviz(tree)
 pylab.show()
 ```
@@ -421,7 +422,8 @@ may even work -- but you'll have better results with Phylo's own
 
 ``` python
 import networkx, pylab
-tree = Phylo.read('example.xml', 'phyloxml')
+
+tree = Phylo.read("example.xml", "phyloxml")
 net = Phylo.to_networkx(tree)
 networkx.draw(net)
 pylab.show()
@@ -613,7 +615,8 @@ use these algorithms with a list of trees as the input.
 ``` python
 from Bio import Phylo
 from Bio.Phylo.Consensus import *
-trees = list(Phylo.parse('Tests/TreeConstruction/trees.tre', 'newick'))
+
+trees = list(Phylo.parse("Tests/TreeConstruction/trees.tre", "newick"))
 strict_tree = strict_consensus(trees)
 majority_tree = majority_consensus(trees, 0.5)
 adam_tree = adam_consensus(trees)
@@ -636,7 +639,8 @@ several useful bootstrap methods to achieve this.
 ``` python
 from Bio import Phylo
 from Bio.Phylo.Consensus import *
-msa = AlignIO.read('Tests/TreeConstruction/msa.phy', 'phylip')
+
+msa = AlignIO.read("Tests/TreeConstruction/msa.phy", "phylip")
 msas = bootstrap(msa, 100)
 ```
 
@@ -646,7 +650,7 @@ them to build replicate trees. While, we also provide a convenient
 method to do this.
 
 ``` python
-calculator = DistanceCalculator('blosum62')
+calculator = DistanceCalculator("blosum62")
 constructor = DistanceTreeConstructor(calculator)
 trees = bootstrap_trees(msa, 100, constructor)
 ```
@@ -673,7 +677,8 @@ To get the branch support of a specific tree, we can use the
 ``` python
 from Bio import Phylo
 from Bio.Phylo.Consensus import *
-trees = list(Phylo.parse('Tests/TreeConstruction/trees.tre', 'newick'))
+
+trees = list(Phylo.parse("Tests/TreeConstruction/trees.tre", "newick"))
 target_tree = trees[0]
 support_tree = get_support(target_tree, trees)
 ```
@@ -846,7 +851,7 @@ clade_term_names = [term.name for term in clade.get_terminals()]
 boolvals = [name in clade_term_names for name in term_names]
 
 # create the string version and pass it to _BitString
-bitstr = _BitString(''.join(map(str, map(int, boolvals))))
+bitstr = _BitString("".join(map(str, map(int, boolvals))))
 ```
 
 To convert back:
@@ -881,9 +886,10 @@ def _bitstrs(tree):
     for clade in tree.get_nonterminals():
         clade_term_names = [term.name for term in clade.get_terminals()]
         boolvals = [name in clade_term_names for name in term_names]
-        bitstr = _BitString(''.join(map(str, map(int, boolvals))))
+        bitstr = _BitString("".join(map(str, map(int, boolvals))))
         bitstrs.add(bitstr)
     return bitstrs
+
 
 def compare(tree1, tree2):
     term_names1 = [term.name for term in tree1.get_terminals()]
@@ -934,9 +940,10 @@ few steps shown here.
     ``` python
     from Bio.Blast import NBCIStandalone, NCBIXML
 
-    query_fname = 'AAG35789.fasta'
-    result_handle, error_handle = NCBIStandalone.blastall('/usr/bin/blastall', 'blastp',
-                                                          '/db/fasta/swissprot', query_fname)
+    query_fname = "AAG35789.fasta"
+    result_handle, error_handle = NCBIStandalone.blastall(
+        "/usr/bin/blastall", "blastp", "/db/fasta/swissprot", query_fname
+    )
     blast_record = NCBIXML.read(result_handle)  # This takes some time to run
     ```
 
@@ -947,6 +954,7 @@ few steps shown here.
     from Bio.Seq import Seq
     from Bio.SeqRecord import SeqRecord
 
+
     def get_seqrecs(alignments, threshold):
         for aln in alignments:
             for hsp in aln.hsps:
@@ -954,8 +962,9 @@ few steps shown here.
                     yield SeqRecord(Seq(hsp.sbjct), id=aln.accession)
                     break
 
+
     best_seqs = get_seqrecs(blast_record.alignments, 1e-90)
-    SeqIO.write(best_seqs, 'egfr-family.fasta', 'fasta')
+    SeqIO.write(best_seqs, "egfr-family.fasta", "fasta")
     ```
 
     To help with annotating to your tree later, pick a lookup key here (e.g.
@@ -988,7 +997,9 @@ few steps shown here.
     ``` python
     from Bio.Phylo.Applications import PhymlCommandline
 
-    cmdline = PhymlCommandline(input='egfr-family.phy', datatype='aa', model='WAG', alpha='e', bootstrap=100)
+    cmdline = PhymlCommandline(
+        input="egfr-family.phy", datatype="aa", model="WAG", alpha="e", bootstrap=100
+    )
     out_log, err_log = cmdline()
     ```
 
@@ -1017,11 +1028,11 @@ few steps shown here.
 
     for clade in egfr_phy.get_terminals():
         key = clade.name
-        accession = PhyloXML.Accession(key, 'NCBI')
+        accession = PhyloXML.Accession(key, "NCBI")
         mol_seq = PhyloXML.MolSeq(lookup[key], is_aligned=True)
-        sequence = PhyloXML.Sequence(type='aa', accession=accession, mol_seq=mol_seq)
+        sequence = PhyloXML.Sequence(type="aa", accession=accession, mol_seq=mol_seq)
         clade.sequences.append(sequence)
 
     # Save the annotated phyloXML file
-    Phylo.write(egfr_phy, 'egfr-family-annotated.xml', 'phyloxml')
+    Phylo.write(egfr_phy, "egfr-family-annotated.xml", "phyloxml")
     ```

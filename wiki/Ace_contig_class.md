@@ -91,17 +91,22 @@ from two lists in the contig class, 'reads' and 'af'
 
 # get the name and the sequence of each read in the contig
 for i in range(len(contig.reads)):
-    print('read %s: %s' % (contig.reads[i].rd.name, contig.reads[i].rd.sequence[:50]))
+    print("read %s: %s" % (contig.reads[i].rd.name, contig.reads[i].rd.sequence[:50]))
 # ...
 # read BL060c3-LR5.g.ab1: tagcgaggaaagaacccaacaGgaTTGCCCTAGTAACGGCGAGTGAAGCG
 # read BL060c3-LR0R.b.ab1: aatacgGGATTGCCCTagtaacGGCGAGTGAAGCGGCAACAGCTCAAATT
 
 # the 'qa' property of each read contains the reads quality clipping
 for i in range(len(contig.reads)):
-    print("for read %s newbler decided bases %i:%i where good enough to "
-          "include in  the consensus" % (contig.reads[i].rd.name,
-                               contig.reads[i].qa.qual_clipping_start,
-                               contig.reads[i].qa.qual_clipping_end))
+    print(
+        "for read %s newbler decided bases %i:%i where good enough to "
+        "include in  the consensus"
+        % (
+            contig.reads[i].rd.name,
+            contig.reads[i].qa.qual_clipping_start,
+            contig.reads[i].qa.qual_clipping_end,
+        )
+    )
 # ...
 # for read BL060c3-LR5.g.ab1 newbler decided bases 80:853 where good enough to  include in  the consensus
 # for read BL060c3-LR0R.b.ab1 newbler decided bases 7:778 where good enough to  include in  the consensus
@@ -109,8 +114,10 @@ for i in range(len(contig.reads)):
 
 # the 'af' list has information on the read relative to the consensus it supports
 for i in range(len(contig.reads)):
-    print("the first base in %s aligns with base %i in the consensus"
-          % ( contig.reads[i].rd.name, contig.af[i].padded_start))
+    print(
+        "the first base in %s aligns with base %i in the consensus"
+        % (contig.reads[i].rd.name, contig.af[i].padded_start)
+    )
 # ...
 # the first base in BL060c3-LR5.g.ab1 aligns with base -14 in the consensus
 # the first base in BL060c3-LR0R.b.ab1 aligns with base 1 in the consensus

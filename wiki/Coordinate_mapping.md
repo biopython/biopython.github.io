@@ -30,8 +30,11 @@ either of these formats:
 ``` python
 from Bio.SeqUtils.Mapper import MapPosition
 
+
 def use_genbank(self):
     return str(self.to_genbank())
+
+
 MapPosition.__str__ = use_genbank
 ```
 
@@ -47,11 +50,14 @@ example is located in the Tests directory of the Biopython source code.
 from Bio.SeqUtils.Mapper import CoordinateMapper
 from Bio import SeqIO
 
+
 def get_first_CDS(parser):
     for rec in parser:
         for feat in rec.features:
             if feat.type == "CDS" and len(feat.location.parts) > 1:
                 return feat
+
+
 exons = get_first_CDS(SeqIO.parse("GenBank/cor6_6.gb", "genbank"))
 cm = CoordinateMapper(exons)
 ```
@@ -84,6 +90,7 @@ values.
 ``` python
 from Bio.SeqUtils.Mapper import GenomePosition
 
+
 def gcp_table(mapper, g_list):
     """Print a table of genomic, CDS, and protein coordinates"""
     # Print header
@@ -100,6 +107,7 @@ def gcp_table(mapper, g_list):
             p_pos = ""
         # Print formatted row
         print "%4s | %6s | %2s" % (g_pos, c_pos, p_pos)
+
 
 gcp_table(cm, sample_g_values)
 ```

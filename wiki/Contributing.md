@@ -163,6 +163,7 @@ Here's an example of a module documented so that epydoc will be happy:
 More information about the module and its goals and usage.
 """
 
+
 class MyClass:
     """One line description of the class followed by a period.
 
@@ -178,5 +179,5 @@ class MyClass:
         what parameters it will be passed and what it returns. You know,
         information so people know how to use the function.
         """
-        #the code ...
+        # the code ...
 ```
