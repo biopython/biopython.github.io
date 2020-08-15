@@ -33,13 +33,14 @@ of the disordered ones.
 from Bio.PDB import *
 
 parser = PDBParser()
-s = parser.get_structure('my_pdb', 'my_pdb.pdb')
+s = parser.get_structure("my_pdb", "my_pdb.pdb")
 io = PDBIO()
 
 
 class NotDisordered(Select):
     def accept_atom(self, atom):
-        return not atom.is_disordered() or atom.get_altloc() == 'A'
+        return not atom.is_disordered() or atom.get_altloc() == "A"
+
 
 io = PDBIO()
 io.set_structure(s)
@@ -57,11 +58,13 @@ keepAltID = ...
 class NMROutputSelector2(Select):  # Inherit methods from Select class
     def accept_atom(self, atom):
         if (not atom.is_disordered()) or atom.get_altloc() == keepAltID:
-            atom.set_altloc(' ')  # Eliminate alt location ID before output.
+            atom.set_altloc(" ")  # Eliminate alt location ID before output.
             return True
         else:  # Alt location was not one to be output.
             return False
         # end of accept_atom()
+
+
 # end of NMROutputSelector2()
 ```
 
@@ -77,8 +80,8 @@ could also think of deleting atoms with *'B'* values in `atom.altloc`.
 # Will not work!
 
 for atom in all_atoms:  # all_atoms is a list containg all atoms
-   if atom.altloc == 'B':
-       del atom
+    if atom.altloc == "B":
+        del atom
 ```
 
 but that **does not work**, because it only deletes the local variable

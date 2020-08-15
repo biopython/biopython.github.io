@@ -200,7 +200,7 @@ We will now get the Fis of a certain locus/population plus a few other
 statistics:
 
 ``` python
-allele_dict, summary_fis =  ctrl.get_fis(0, "Locus2")
+allele_dict, summary_fis = ctrl.get_fis(0, "Locus2")
 ```
 
 Lets have a detailed look at the output of `get_fis`:
@@ -208,10 +208,7 @@ Lets have a detailed look at the output of `get_fis`:
 ``` python
 summary_fis = (62, -0.1111, -0.11269999999999999)
 
-allele_dict = {
-    3: (55, 0.8871, -0.1111),
-    20: (7, 0.1129, -0.1111)
-}
+allele_dict = {3: (55, 0.8871, -0.1111), 20: (7, 0.1129, -0.1111)}
 ```
 
 *summary\_fis* holds a triple with: total number of alleles, Cockerham and
@@ -306,8 +303,9 @@ We can test if 2 loci are in linkage disequilibrium using the log
 likelihood ratio statistic (G-test).
 
 ``` python
-chi2, df, pval = ctrl.test_ld_all_pair("Locus1", "Locus2",
-    dememorization=1000, batches=10, iterations=100)
+chi2, df, pval = ctrl.test_ld_all_pair(
+    "Locus1", "Locus2", dememorization=1000, batches=10, iterations=100
+)
 ```
 
 Returns the Chi square value, degrees of freedom and P value for the G
@@ -347,8 +345,9 @@ case**.
 There is a single call for IBD analysis:
 
 ``` python
-estimate, distance, (a, b), (bb, bblow, bbhigh) = \
-    ctrl.calc_ibd(self, is_diplo = True, stat="a", scale="Log", min_dist=0.00001)
+estimate, distance, (a, b), (bb, bblow, bbhigh) = ctrl.calc_ibd(
+    self, is_diplo=True, stat="a", scale="Log", min_dist=0.00001
+)
 ```
 
 -  `is_diplo` specifies if data is diploid (`True`) or haploid (`False`).
@@ -374,11 +373,7 @@ Pythonwise, a matrix is implemented with a list of lists of numbers,
 like this:
 
 ``` python
-[
-   [0.1],
-   [0.2, 0.3],
-   [0.4, 0.5, 0.6]
-]
+[[0.1], [0.2, 0.3], [0.4, 0.5, 0.6]]
 ```
 
 The above data structure corresponds to the following triangular matrix:

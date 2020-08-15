@@ -56,15 +56,16 @@ We can use the `Nexus` module to make a supermatrix:
 
 ``` python
 from Bio.Nexus import Nexus
+
 # the combine function takes a list of tuples [(name, nexus instance)...],
-#if we provide the file names in a list we can use a list comprehension to
+# if we provide the file names in a list we can use a list comprehension to
 # create these tuples
 
-file_list = ['btCOI.nex', 'btCOII.nex', 'btITS.nex']
-nexi =  [(fname, Nexus.Nexus(fname)) for fname in file_list]
+file_list = ["btCOI.nex", "btCOII.nex", "btITS.nex"]
+nexi = [(fname, Nexus.Nexus(fname)) for fname in file_list]
 
 combined = Nexus.combine(nexi)
-combined.write_nexus_data(filename=open('btCOMBINED.nex', 'w'))
+combined.write_nexus_data(filename=open("btCOMBINED.nex", "w"))
 ```
 
 That was easy! Let's look at our combined file
@@ -112,14 +113,14 @@ def check_taxa(matrices):
         first_only = [t for t in first_taxa if t not in matrix.taxlabels]
         new_only = [t for t in matrix.taxlabels if t not in first_taxa]
         if first_only:
-            missing = ', '.join(first_only)
-            msg = '%s taxa %s not in martix %s' % (nexi[0][0], missing, name)
+            missing = ", ".join(first_only)
+            msg = "%s taxa %s not in martix %s" % (nexi[0][0], missing, name)
             raise Nexus.NexusError(msg)
         elif new_only:
-            missing = ', '.join(new_only)
-            msg = '%s taxa %s not in all matrices'  % (name, missing)
+            missing = ", ".join(new_only)
+            msg = "%s taxa %s not in all matrices" % (name, missing)
             raise Nexus.NexusError(msg)
-    return None # will only get here if it hasn't thrown an exception
+    return None  # will only get here if it hasn't thrown an exception
 
 
 def concat(file_list, same_taxa=True):

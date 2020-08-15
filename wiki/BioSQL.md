@@ -255,17 +255,17 @@ editing the file Tests/setup\_BioSQL.py and filling in the following
 fields:
 
 ``` python
-DBDRIVER = 'MySQLdb'
-DBTYPE = 'mysql'
+DBDRIVER = "MySQLdb"
+DBTYPE = "mysql"
 ```
 
 and a little lower down,
 
 ``` python
-DBHOST = 'localhost'
-DBUSER = 'root'
-DBPASSWD = 'your-password'
-TESTDB = 'biosql_test'
+DBHOST = "localhost"
+DBUSER = "root"
+DBPASSWD = "your-password"
+TESTDB = "biosql_test"
 ```
 
 Change these to match your setup. You can then run the BioSQL unit tests
@@ -278,8 +278,8 @@ python run_tests.py test_BioSQL test_BioSQL_SeqIO
 For PostgreSQL, use:
 
 ``` python
-DBDRIVER = 'psycopg2'
-DBTYPE = 'pg'
+DBDRIVER = "psycopg2"
+DBTYPE = "pg"
 ```
 
 Creating a (sub) database
@@ -291,10 +291,16 @@ example, lets create a one for some orchid sequences:
 
 ``` python
 from BioSQL import BioSeqDatabase
-server = BioSeqDatabase.open_database(driver="MySQLdb", user="root",
-                     passwd = "your-password", host = "localhost", db="bioseqdb")
+
+server = BioSeqDatabase.open_database(
+    driver="MySQLdb",
+    user="root",
+    passwd="your-password",
+    host="localhost",
+    db="bioseqdb",
+)
 db = server.new_database("orchids", description="Just for testing")
-server.commit() #On Biopython 1.49 or older, server.adaptor.commit()
+server.commit()  # On Biopython 1.49 or older, server.adaptor.commit()
 ```
 
 (If you are using PostgreSQL rather than MySQL, just change the driver
@@ -349,11 +355,14 @@ examples in the Biopython Tutorial:
 ``` python
 from Bio import Entrez
 from Bio import SeqIO
-handle = Entrez.efetch(db="nuccore", id="6273291,6273290,6273289", rettype="gb", retmode="text")
-for seq_record in SeqIO.parse(handle, "genbank") :
+
+handle = Entrez.efetch(
+    db="nuccore", id="6273291,6273290,6273289", rettype="gb", retmode="text"
+)
+for seq_record in SeqIO.parse(handle, "genbank"):
     print seq_record.id, seq_record.description[:50] + "..."
     print "Sequence length %i," % len(seq_record.seq),
-    print "from: %s" % seq_record.annotations['source']
+    print "from: %s" % seq_record.annotations["source"]
 handle.close()
 ```
 
@@ -376,13 +385,21 @@ to a new (empty) *orchid* database:
 from Bio import Entrez
 from Bio import SeqIO
 from BioSQL import BioSeqDatabase
-server = BioSeqDatabase.open_database(driver="MySQLdb", user="root",
-                     passwd = "your-password", host = "localhost", db="bioseqdb")
+
+server = BioSeqDatabase.open_database(
+    driver="MySQLdb",
+    user="root",
+    passwd="your-password",
+    host="localhost",
+    db="bioseqdb",
+)
 db = server["orchids"]
-handle = Entrez.efetch(db="nuccore", id="6273291,6273290,6273289", rettype="gb", retmode="text")
+handle = Entrez.efetch(
+    db="nuccore", id="6273291,6273290,6273289", rettype="gb", retmode="text"
+)
 count = db.load(SeqIO.parse(handle, "genbank"))
 print "Loaded %i records" % count
-server.commit() #On Biopython 1.49 or older, server.adaptor.commit()
+server.commit()  # On Biopython 1.49 or older, server.adaptor.commit()
 ```
 
 Again, you must explicitly call *commit* to record the SQL transaction
@@ -415,10 +432,16 @@ into an *orchids* database (namespace):
 
 ``` python
 from BioSQL import BioSeqDatabase
-server = BioSeqDatabase.open_database(driver="MySQLdb", user="root",
-                     passwd = "your-password", host = "localhost", db="bioseqdb")
+
+server = BioSeqDatabase.open_database(
+    driver="MySQLdb",
+    user="root",
+    passwd="your-password",
+    host="localhost",
+    db="bioseqdb",
+)
 db = server["orchids"]
-for identifier in ['6273291', '6273290', '6273289'] :
+for identifier in ["6273291", "6273290", "6273289"]:
     seq_record = db.lookup(gi=identifier)
     print seq_record.id, seq_record.description[:50] + "..."
     print "Sequence length %i," % len(seq_record.seq)
@@ -450,8 +473,14 @@ e.g.
 
 ``` python
 from BioSQL import BioSeqDatabase
-server = BioSeqDatabase.open_database(driver="MySQLdb", user="root",
-                     passwd = "your-password", host = "localhost", db="bioseqdb")
+
+server = BioSeqDatabase.open_database(
+    driver="MySQLdb",
+    user="root",
+    passwd="your-password",
+    host="localhost",
+    db="bioseqdb",
+)
 db = server["orchids"]
 print "This database contains %i records" % len(db)
 for key, record in db.iteritems():
@@ -469,10 +498,16 @@ the records in it):
 
 ``` python
 from BioSQL import BioSeqDatabase
-server = BioSeqDatabase.open_database(driver="MySQLdb", user="root",
-                     passwd = "your-password", host = "localhost", db="bioseqdb")
+
+server = BioSeqDatabase.open_database(
+    driver="MySQLdb",
+    user="root",
+    passwd="your-password",
+    host="localhost",
+    db="bioseqdb",
+)
 server.remove_database("orchids")
-server.commit() #On Biopython 1.49 or older, server.adaptor.commit()
+server.commit()  # On Biopython 1.49 or older, server.adaptor.commit()
 ```
 
 Again, you must explicitly finialise the SQL transaction with a commit

@@ -61,11 +61,15 @@ for multiple_alignment in AlignIO.parse("chr10.maf", "maf"):
     print("printing a new multiple alignment")
 
     for seqrec in multiple_alignment:
-        print("starts at %s on the %s strand of a sequence %s in length, and runs for %s bp" % \
-              (seqrec.annotations["start"],
-               seqrec.annotations["strand"],
-               seqrec.annotations["srcSize"],
-               seqrec.annotations["size"]))
+        print(
+            "starts at %s on the %s strand of a sequence %s in length, and runs for %s bp"
+            % (
+                seqrec.annotations["start"],
+                seqrec.annotations["strand"],
+                seqrec.annotations["srcSize"],
+                seqrec.annotations["size"],
+            )
+        )
 ```
 
 MafIndex
@@ -149,9 +153,11 @@ from Bio import AlignIO
 
 idx = AlignIO.MafIO.MafIndex("chr10.mafindex", "chr10.maf", "mm9.chr10")
 
-multiple_alignment = idx.get_spliced([41905591, 41916271, 41994621, 41996331],
-                                     [41906101, 41917707, 41995347, 41996548],
-                                     strand = "+")
+multiple_alignment = idx.get_spliced(
+    [41905591, 41916271, 41994621, 41996331],
+    [41906101, 41917707, 41995347, 41996548],
+    strand="+",
+)
 
 AlignIO.write(multiple_alignment, "mm9_foxo3.fa", "fasta")
 ```
@@ -167,10 +173,9 @@ import MySQLdb
 from Bio import AlignIO
 
 # connect to UCSC's live MySQL database
-mysql_conn = MySQLdb.connect(host = "genome-mysql.cse.ucsc.edu",
-                             user = "genome",
-                             passwd = "",
-                             db = "mm9")
+mysql_conn = MySQLdb.connect(
+    host="genome-mysql.cse.ucsc.edu", user="genome", passwd="", db="mm9"
+)
 
 db_conn = mysql_conn.cursor(MySQLdb.cursors.DictCursor)
 
@@ -181,15 +186,15 @@ idx = AlignIO.MafIO.MafIndex("chr10.mafindex", "chr10.maf", "mm9.chr10")
 db_conn.execute("SELECT * FROM refGene WHERE chrom = 'chr10'")
 
 for record in db_conn.fetchall():
-    multiple_alignment = idx.get_spliced(map(int, record["exonStarts"].split(",")[:-1]),
-                                         map(int, record["exonEnds"].split(",")[:-1]),
-                                         strand = record["strand"])
+    multiple_alignment = idx.get_spliced(
+        map(int, record["exonStarts"].split(",")[:-1]),
+        map(int, record["exonEnds"].split(",")[:-1]),
+        strand=record["strand"],
+    )
 
     print("writing %s.fa" % record["name"])
 
-    AlignIO.write(multiple_alignment,
-                  "%s.fa" % record["name"],
-                  "fasta")
+    AlignIO.write(multiple_alignment, "%s.fa" % record["name"], "fasta")
 ```
 
 Format

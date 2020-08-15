@@ -39,7 +39,7 @@ Extraction of an interface is done from a complex PDB
 from Bio.PDB import InterfaceBuilder
 
 parser = PDBParser()
-structure = parser.get_structure('test', '/home/directory/of/your/PDB/test.pdb')
+structure = parser.get_structure("test", "/home/directory/of/your/PDB/test.pdb")
 ```
 
 Then the extraction of the interface is done in only one line
@@ -61,7 +61,7 @@ for c in chains:
 -   Add a residue
 
 ``` python
-interface.add(structure[0]['A'][24])
+interface.add(structure[0]["A"][24])
 ```
 
 -   Get secondary structure distribution

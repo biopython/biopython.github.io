@@ -54,9 +54,10 @@ import sys, os, warnings
 def parse_structure(path):
     """ Parses a PDB file """
 
-    s = P.get_structure('test', path)
+    s = P.get_structure("test", path)
 
     return 0
+
 
 def fancy_output(tps):
     """ Outputs the results in a nicer way """
@@ -64,33 +65,46 @@ def fancy_output(tps):
     print("# Bio.PDB PDBParser Benchmark")
     print()
     print("Structure \tLenght \tTime Spent (ms)")
-    for i,s in enumerate(tps):
-        print(" %s\t (%s) \t%3.3f" % (os.path.basename(pdb_library[i]),
-                                      pdb_length[i], s))
+    for i, s in enumerate(tps):
+        print(
+            " %s\t (%s) \t%3.3f" % (os.path.basename(pdb_library[i]), pdb_length[i], s)
+        )
     print()
-    print("Total time spent: %5.3fs" % (sum(tps)/1000))
-    print("Average time per structure: %5.3fms" % (sum(tps)/len(tps)))
+    print("Total time spent: %5.3fs" % (sum(tps) / 1000))
+    print("Average time per structure: %5.3fms" % (sum(tps) / len(tps)))
 
-if __name__=='__main__':
+
+if __name__ == "__main__":
 
     import time, gc
     from Bio.PDB import PDBParser
-    P = PDBParser(PERMISSIVE=1) # For the pdb_enhancements branch benchmarking, PERMISSIVE was set to 2 (silence warnings).
+
+    P = PDBParser(
+        PERMISSIVE=1
+    )  # For the pdb_enhancements branch benchmarking, PERMISSIVE was set to 2 (silence warnings).
 
     library_path = sys.argv[1]
 
     pdb_library = [os.path.join(library_path, f) for f in os.listdir(library_path)]
-    pdb_length = [len(set([l[17:26] for l in open(f) if l.startswith('ATOM')])) for f in pdb_library] # Unique counting of residues
-    sys.stderr.write("Loaded %s structures (Average Length: %4.3f residues)\n" %(len(pdb_length), (sum(pdb_length)/float(len(pdb_length)))))
+    pdb_length = [
+        len(set([l[17:26] for l in open(f) if l.startswith("ATOM")]))
+        for f in pdb_library
+    ]  # Unique counting of residues
+    sys.stderr.write(
+        "Loaded %s structures (Average Length: %4.3f residues)\n"
+        % (len(pdb_length), (sum(pdb_length) / float(len(pdb_length))))
+    )
 
     tps = []
     # Run the Test
     for i, pdb_file in enumerate(pdb_library):
-        sys.stderr.write( "[%s] %i Structure(s) Parsed \n" %(os.path.basename(pdb_file), i+1) )
+        sys.stderr.write(
+            "[%s] %i Structure(s) Parsed \n" % (os.path.basename(pdb_file), i + 1)
+        )
         a = time.time()
         parse_structure(pdb_file)
-        b = time.time()-a
-        tps.append(b*1000)
+        b = time.time() - a
+        tps.append(b * 1000)
         gc.collect()
     # Output Results
     fancy_output(tps)

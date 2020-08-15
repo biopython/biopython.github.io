@@ -63,7 +63,7 @@ file](ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR014/SRR014849/SRR014849_1.fastq.gz))
 ``` python
 from Bio import SeqIO
 
-record_iter = SeqIO.parse(open("SRR014849_1.fastq"),"fastq")
+record_iter = SeqIO.parse(open("SRR014849_1.fastq"), "fastq")
 for i, batch in enumerate(batch_iterator(record_iter, 10000)):
     filename = "group_%i.fastq" % (i + 1)
     with open(filename, "w") as handle:
@@ -91,7 +91,7 @@ file into units of 1000 sequences:
 ``` python
 from Bio import SeqIO
 
-record_iter = SeqIO.parse(open("large.fasta"),"fasta")
+record_iter = SeqIO.parse(open("large.fasta"), "fasta")
 for i, batch in enumerate(batch_iterator(record_iter, 1000)):
     filename = "group_%i.fasta" % (i + 1)
     with open(filename, "w") as handle:

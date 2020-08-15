@@ -40,8 +40,11 @@ def altcodons(codon, table):
     except:
         return []
 
-    return [k for (k, v) in tab.forward_table.iteritems()
-            if v == aa and k[0] == codon[0] and k[1] == codon[1]]
+    return [
+        k
+        for (k, v) in tab.forward_table.iteritems()
+        if v == aa and k[0] == codon[0] and k[1] == codon[1]
+    ]
 
 
 def degeneration(codon, table):
@@ -63,16 +66,15 @@ def is_x_degenerated(x, codon, table):
     @param true if x <= the degeneration of the codon
 
     """
-    return (x <= len(altcodons(codon, table)))
+    return x <= len(altcodons(codon, table))
 
 
 def degenerated_subseq(seq, x, table):
     """Get a subsequence consisting of the x-fold degenerated codons only."""
     data = ""
     for i in range(0, len(seq), 3):
-        codon = seq[i:i + 3].tostring()
+        codon = seq[i : i + 3].tostring()
         if isXdegenerated(x, codon, table):
             data += codon
     return data
-
 ```

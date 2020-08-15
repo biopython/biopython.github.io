@@ -445,7 +445,7 @@ floating pointer numbers to create the array or setting the ndtype
 parameter when creating the array:
 
 ``` python
-x = numpy.array([[1,2,3,4,5,6]], dtype=numpy.float64)
+x = numpy.array([[1, 2, 3, 4, 5, 6]], dtype=numpy.float64)
 ```
 
 #### Building and Distributing Mocapy as a Package
@@ -530,10 +530,10 @@ bindings can be found at
 Here is an example of use:
 
 ``` python
-model = Barnacle('ACCU')
+model = Barnacle("ACCU")
 model.sample()
-print 'log likelihood = ', model.get_log_likelihood()
-model.save_structure('structure01.pdb')
+print "log likelihood = ", model.get_log_likelihood()
+model.save_structure("structure01.pdb")
 ```
 
 #### TorusDBN
@@ -574,16 +574,16 @@ set:
 
 ``` python
 trainer = TorusDBNTrainer()
-trainer.train(training_set) # training_set is a list of files
+trainer.train(training_set)  # training_set is a list of files
 model = trainer.get_model()
 ```
 
 Then the model can be used to sample new sequences:
 
 ``` python
-model.set_aa('ACDEFGHIK')
+model.set_aa("ACDEFGHIK")
 model.sample()
-print model.get_angles() # The sampled angles.
+print model.get_angles()  # The sampled angles.
 ```
 
 When creating a model, it is possible to create a new DBN specifying the
@@ -592,15 +592,15 @@ size of the hidden node or loading the DBN from a file.
 ``` python
 model = TorusDBNModel()
 model.create_dbn(hidden_node_size=10)
-model.save_dbn('test.dbn')
+model.save_dbn("test.dbn")
 ```
 
 ``` python
 model = TorusDBNModel()
-model.load_dbn('test.dbn')
-model.set_aa('ACDEFGHIK')
+model.load_dbn("test.dbn")
+model.set_aa("ACDEFGHIK")
 model.sample()
-print model.get_angles() # The sampled angles.
+print model.get_angles()  # The sampled angles.
 ```
 
 It is also possible to choose the best size for the hidden node using

@@ -32,7 +32,7 @@ tasks.
 #### read()
 
 ``` python
-s = Struct.read('protein_A.pdb')
+s = Struct.read("protein_A.pdb")
 ```
 
 The name of the resulting Structure object is based on the filename.
@@ -69,7 +69,7 @@ filters all residues and excludes all those that are not aminoacids
 the optional `filter_residues` argument to `False`.
 
 ``` python
-s = Struct.read('protein_A.pdb')
+s = Struct.read("protein_A.pdb")
 
 dir(s)
 # Edited for shortening purposes
@@ -90,7 +90,7 @@ can be manually specified through the `threshold` argument.
 
 ``` python
 for bond in p.search_ss_bonds():
-   print(bond)
+    print(bond)
 # (<Residue CYS het=  resseq=5 icode= >, <Residue CYS het=  resseq=55 icode= >)
 # (<Residue CYS het=  resseq=14 icode= >, <Residue CYS het=  resseq=38 icode= >)
 # (<Residue CYS het=  resseq=30 icode= >, <Residue CYS het=  resseq=51 icode= >)
@@ -106,10 +106,10 @@ residue should be coarse grained. As of now, three models are supported.
 ##### Example Usage: MARTINI
 
 ``` python
-cg_martini = p.coarse_grain('MARTINI')
+cg_martini = p.coarse_grain("MARTINI")
 
 for residue in cg_martini.get_residues():
-   print(residue.resname + ' ' + residue.child_list)
+    print(residue.resname + " " + residue.child_list)
 # ARG [<Atom BB>, <Atom S1>, <Atom S2>]
 # PRO [<Atom BB>, <Atom S1>]
 # ASP [<Atom BB>, <Atom S1>]
@@ -172,7 +172,7 @@ results with raw XML output from the BLAST search.
 seq_homologues = p.find_seq_homologues()
 
 for homologues in seq_homologues:
-    print(homologues[0] + ' ' + homologues[1])
+    print(homologues[0] + " " + homologues[1])
     print(homologues[-1])
     print()
 # 2BUO 1.82482e-31

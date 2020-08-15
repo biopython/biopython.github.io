@@ -115,6 +115,7 @@ notebook using [nglview](https://github.com/arose/nglview):
 
 ``` python
 import nglview as nv
+
 view = nv.show_biopython(structure)
 view
 ```
@@ -134,7 +135,7 @@ Then, create a structure object from a PDB file in the following way
 defined name for the structure):
 
 ``` python
-structure = parser.get_structure('PHA-L', '1FAT.pdb')
+structure = parser.get_structure("PHA-L", "1FAT.pdb")
 ```
 
 #### How do I create a structure object from an mmCIF file?
@@ -149,7 +150,7 @@ parser = MMCIFParser()
 Then use this parser to create a structure object from the mmCIF file:
 
 ``` python
-structure = parser.get_structure('PHA-L', '1FAT.cif')
+structure = parser.get_structure("PHA-L", "1FAT.cif")
 ```
 
 #### ...and what about the new PDB XML format?
@@ -167,19 +168,19 @@ all atoms), the tag is mapped to a list of values. The dictionary is
 created from the mmCIF file as follows:
 
 ``` python
-mmcif_dict = MMCIF2Dict('1FAT.cif')
+mmcif_dict = MMCIF2Dict("1FAT.cif")
 ```
 
 Example: get the solvent content from an mmCIF file:
 
 ``` python
-sc = mmcif_dict['_exptl_crystal.density_percent_sol']
+sc = mmcif_dict["_exptl_crystal.density_percent_sol"]
 ```
 
 Example: get the list of the *y* coordinates of all atoms
 
 ``` python
-y_list = mmcif_dict['_atom_site.Cartn_y']
+y_list = mmcif_dict["_atom_site.Cartn_y"]
 ```
 
 #### Can I access the header information?
@@ -199,8 +200,8 @@ dictionary that maps header records to their values.
 Example:
 
 ``` python
-resolution = structure.header['resolution']
-keywords = structure.header['keywords']
+resolution = structure.header["resolution"]
+keywords = structure.header["keywords"]
 ```
 
 The available keys are `name`, `head`, `deposition_date`,
@@ -213,7 +214,7 @@ The dictionary can also be created without creating a `Structure`
 object, ie. directly from the PDB file:
 
 ``` python
-handle = open(filename,'r')
+handle = open(filename, "r")
 header_dict = parse_pdb_header(handle)
 handle.close()
 ```
@@ -233,7 +234,7 @@ identifier of the structure.
 
 ``` python
 pdbl = PDBList()
-pdbl.retrieve_pdb_file('1FAT')
+pdbl.retrieve_pdb_file("1FAT")
 ```
 
 The `PDBList` class can also be used as a command-line tool:
@@ -279,7 +280,7 @@ This can also be done using the `PDBList` object. One simply creates a
 PDB is present) and calls the `update_pdb` method:
 
 ``` python
-pl = PDBList(pdb='/data/pdb')
+pl = PDBList(pdb="/data/pdb")
 pl.update_pdb()
 ```
 
@@ -348,7 +349,7 @@ Example: saving a structure
 ``` python
 io = PDBIO()
 io.set_structure(s)
-io.save('out.pdb')
+io.save("out.pdb")
 ```
 
 If you want to write out a part of the structure, make use of the
@@ -370,14 +371,15 @@ following code only writes out glycine residues:
 ``` python
 class GlySelect(Select):
     def accept_residue(self, residue):
-        if residue.get_name()=='GLY':
+        if residue.get_name() == "GLY":
             return 1
         else:
             return 0
 
+
 io = PDBIO()
 io.set_structure(s)
-io.save('gly_only.pdb', GlySelect())
+io.save("gly_only.pdb", GlySelect())
 ```
 
 If this is all too complicated for you, the `Dice` module contains a
@@ -424,7 +426,7 @@ The following code iterates through all atoms of a structure:
 
 ``` python
 p = PDBParser()
-structure = p.get_structure('X', 'pdb1fat.ent')
+structure = p.get_structure("X", "pdb1fat.ent")
 for model in structure:
     for chain in model:
         for residue in chain:
@@ -470,9 +472,9 @@ You can also use the `Selection.unfold_entities` function:
 
 ``` python
 # Get all residues from a structure
-res_list = Selection.unfold_entities(structure, 'R')
+res_list = Selection.unfold_entities(structure, "R")
 # Get all atoms from a chain
-atom_list = Selection.unfold_entities(chain, 'A')
+atom_list = Selection.unfold_entities(chain, "A")
 ```
 
 Obviously, `A`=atom, `R`=residue, `C`=chain, `M`=model, `S`=structure.
@@ -480,8 +482,8 @@ You can use this to go up in the hierarchy, e.g. to get a list of
 (unique) `Residue` or `Chain` parents from a list of `Atom`s:
 
 ``` python
-residue_list = Selection.unfold_entities(atom_list, 'R')
-chain_list = Selection.unfold_entities(atom_list, 'C')
+residue_list = Selection.unfold_entities(atom_list, "R")
+chain_list = Selection.unfold_entities(atom_list, "C")
 ```
 
 For more info, see the API documentation.
@@ -492,15 +494,15 @@ Easy. Here are some examples:
 
 ``` python
 model = structure[0]
-chain = model['A']
+chain = model["A"]
 residue = chain[100]
-atom = residue['CA']
+atom = residue["CA"]
 ```
 
 Note that you can use a shortcut:
 
 ``` python
-atom = structure[0]['A'][100]['CA']
+atom = structure[0]["A"][100]["CA"]
 ```
 
 #### What is a model id?
@@ -537,7 +539,7 @@ identifier alone can be used:
 
 ``` python
 # Full id
-residue = chain[(' ', 100, ' ')]
+residue = chain[(" ", 100, " ")]
 # Shortcut id
 residue = chain[100]
 ```
@@ -594,8 +596,8 @@ specify that a `DisorderedAtom` object should behave like the `Atom`
 object associated with a specific altloc identifier:
 
 ``` python
-atom.disordered_select('A')  # select altloc A atom
-atom.disordered_select('B')  # select altloc B atom
+atom.disordered_select("A")  # select altloc A atom
+atom.disordered_select("B")  # select altloc B atom
 ```
 
 A special case arises when disorder is due to **point mutations**, i.e.
@@ -624,7 +626,7 @@ chain behaves as the Cys residue.
 
 ``` python
 residue = chain[10]
-residue.disordered_select('CYS')
+residue.disordered_select("CYS")
 ```
 
 In addition, you can get a list of all `Atom` objects (ie. all
@@ -677,17 +679,17 @@ also trivial to add support for new file formats by writing new parsers.
 Using the following methods:
 
 ``` python
-a.get_name()       # atom name (spaces stripped, e.g. 'CA')
-a.get_id()         # id (equals atom name)
-a.get_coord()      # atomic coordinates
-a.get_vector()     # atomic coordinates as Vector object
-a.get_bfactor()    # isotropic B factor
+a.get_name()  # atom name (spaces stripped, e.g. 'CA')
+a.get_id()  # id (equals atom name)
+a.get_coord()  # atomic coordinates
+a.get_vector()  # atomic coordinates as Vector object
+a.get_bfactor()  # isotropic B factor
 a.get_occupancy()  # occupancy
-a.get_altloc()     # alternative location specifier
-a.get_sigatm()     # std. dev. of atomic parameters
-a.get_siguij()     # std. dev. of anisotropic B factor
-a.get_anisou()     # anisotropic B factor
-a.get_fullname()   # atom name (with spaces, e.g. '.CA.')
+a.get_altloc()  # alternative location specifier
+a.get_sigatm()  # std. dev. of atomic parameters
+a.get_siguij()  # std. dev. of anisotropic B factor
+a.get_anisou()  # anisotropic B factor
+a.get_fullname()  # atom name (with spaces, e.g. '.CA.')
 ```
 
 #### How do I extract information from a `Residue` object?
@@ -695,10 +697,10 @@ a.get_fullname()   # atom name (with spaces, e.g. '.CA.')
 Using the following methods:
 
 ``` python
-r.get_resname()    # return the residue name (eg. 'GLY')
+r.get_resname()  # return the residue name (eg. 'GLY')
 r.is_disordered()  # 1 if the residue has disordered atoms
-r.get_segid()      # return the SEGID
-r.has_id(name)     # test if a residue has a certain atom
+r.get_segid()  # return the SEGID
+r.has_id(name)  # test if a residue has a certain atom
 ```
 
 #### How do I measure distances?
@@ -710,8 +712,8 @@ Example:
 
 ``` python
 # Get some atoms
-ca1 = residue1['CA']
-ca2 = residue2['CA']
+ca1 = residue1["CA"]
+ca2 = residue2["CA"]
 # Simply subtract the atoms to get their distance
 distance = ca1 - ca2
 ```
@@ -859,9 +861,9 @@ Example:
 model = structure[0]
 hse = HSExposure()
 # Calculate HSEalpha
-exp_ca = hse.calc_hs_exposure(model, option='CA3')
+exp_ca = hse.calc_hs_exposure(model, option="CA3")
 # Calculate HSEbeta
-exp_cb = hse.calc_hs_exposure(model, option='CB')
+exp_cb = hse.calc_hs_exposure(model, option="CB")
 # Calculate classical coordination number
 exp_fs = hse.calc_fs_exposure(model)
 # Print HSEalpha for a residue
@@ -901,14 +903,14 @@ module:
 
 ``` python
 # get atom coordinates as vectors
-n = residue['N'].get_vector()
-c = residue['C'].get_vector()
-ca = residue['CA'].get_vector()
+n = residue["N"].get_vector()
+c = residue["C"].get_vector()
+ca = residue["CA"].get_vector()
 # center at origin
 n = n - ca
 c = c - ca
 # find rotation matrix that rotates n -120 degrees along the ca-c vector
-rot = rotaxis(-pi*120.0/180.0, c)
+rot = rotaxis(-pi * 120.0 / 180.0, c)
 # apply rotation to ca-n vector
 cb_at_origin = n.left_multiply(rot)
 # put on top of ca atom

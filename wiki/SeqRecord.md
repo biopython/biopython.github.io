@@ -33,9 +33,12 @@ contains 94 records:
 
 ``` python
 from Bio import SeqIO
+
 for index, record in enumerate(SeqIO.parse("ls_orchid.gbk", "genbank")):
-    print("index %i, ID = %s, length %i, with %i features"
-          % (index, record.id, len(record.seq), len(record.features)))
+    print(
+        "index %i, ID = %s, length %i, with %i features"
+        % (index, record.id, len(record.seq), len(record.features))
+    )
 ```
 
 And this is some of the output. Remember Python likes to count from
@@ -218,9 +221,13 @@ to know how to create a `SeqRecord` directly. For example,
 ``` python
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
-record = SeqRecord(Seq("MKQHKAMIVALIVICITAVVAALVTRKDLCEVHIRTGQTEVAVF"),
-                   id="YP_025292.1", name="HokC",
-                   description="toxic membrane protein, small")
+
+record = SeqRecord(
+    Seq("MKQHKAMIVALIVICITAVVAALVTRKDLCEVHIRTGQTEVAVF"),
+    id="YP_025292.1",
+    name="HokC",
+    description="toxic membrane protein, small",
+)
 print(record)
 ```
 
