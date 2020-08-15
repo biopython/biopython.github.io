@@ -122,11 +122,12 @@ the file with Bio.Geography's GbifXml module. First, import the
 necessary classes and functions, and specify the filename of the input
 file.
 
-    from Bio.Geography.GbifXml import GbifXmlTree, GbifSearchResults
+``` python
+from Bio.Geography.GbifXml import GbifXmlTree, GbifSearchResults
+from Bio.Geography.GeneralUtils import fix_ASCII_file
 
-    from Bio.Geography.GeneralUtils import fix_ASCII_file
-
-    xml_fn = 'utric_search_v2.xml'
+xml_fn = 'utric_search_v2.xml'
+```
 
 Second, in order to display results to screen in python, we need to
 convert the file to plain ASCII (GBIF results contain all many of
@@ -134,7 +135,9 @@ unusual characters from different languages, and no standardization of
 slanted quotes and the like; this can cause crashes when attempting to
 print to screen in python or ipython).
 
-    xml_fn_new = fix_ASCII_file(xml_fn)
+``` python
+xml_fn_new = fix_ASCII_file(xml_fn)
+```
 
 This creates a new file with the string "\_fixed.xml" added to the
 filename.
@@ -143,31 +146,40 @@ Next, we will parse the XML file into an ElementTree (a python object
 which contains the data from the XML file as a nested series of lists
 and dictionaries).
 
-    from xml.etree import ElementTree as ET
-    xmltree = ET.parse(xml_fn_new)
+``` python
+from xml.etree import ElementTree as ET
+xmltree = ET.parse(xml_fn_new)
+```
 
 We can then store the element tree as an object of Class GbifXmlTree:
 
-    gbif_recs_xmltree = GbifXmlTree(xmltree)
+``` python
+gbif_recs_xmltree = GbifXmlTree(xmltree)
+```
 
 Then, with the xmltree stored, we parse it into individual records
 (stored in individual objects of class GbifObservationRecord), which are
 then stored as a group in an object of class GbifSearchResults.
 
-    recs = GbifSearchResults(gbif_recs_xmltree)
-    recs.extract_occurrences_from_gbif_xmltree(recs.gbif_recs_xmltree)
+``` python
+recs = GbifSearchResults(gbif_recs_xmltree)
+recs.extract_occurrences_from_gbif_xmltree(recs.gbif_recs_xmltree)
+```
 
 The list of individual observation records can be accessed at
 recs.obs\_recs\_list. This will display the references to the first five
 records:
 
-    recs.obs_recs_list[0:4]
+``` python
+recs.obs_recs_list[0:4]
+```
 
 To get the data for the first individual record:
 
-    rec = recs.obs_recs_list[0]
-
-    dir(rec)
+``` python
+rec = recs.obs_recs_list[0]
+dir(rec)
+```
 
 rec.lat will return the latitude, rec.long the longitude, etc. Certain
 data attributes are not found in all GBIF records; if they are missing,
@@ -175,7 +187,9 @@ the field in question will contain "None".
 
 To print all of the records in a tab-delimited table format:
 
-    recs.print_records()
+``` python
+recs.print_records()
+```
 
 ### Checking how many matching records are hosted by GBIF
 
@@ -184,8 +198,11 @@ may wish to know how many there are in GBIF first. The user must set up
 a dictionary containing the fields and search terms as keys and items,
 respectively. I.e.,
 
-    from GbifXml import GbifXmlTree, GbifSearchResults
-    params = {'format': 'darwin', 'scientificname': 'Genlisea*'}
+``` python
+from GbifXml import GbifXmlTree, GbifSearchResults
+
+params = {'format': 'darwin', 'scientificname': 'Genlisea*'}
+```
 
 "'format': 'darwin'" specifies that GBIF should return the results in
 DarwinCore format.
@@ -201,17 +218,21 @@ portal](http://data.gbif.org/tutorial/services).
 Once you have specified your search parameters, initiate a new
 GbifSearchResults object and run get\_numhits to get the number of hits:
 
-    params = {'format': 'darwin', 'scientificname': 'Genlisea*'}
-    recs = GbifSearchResults()
-    numhits = recs.get_numhits(params)
+``` python
+params = {'format': 'darwin', 'scientificname': 'Genlisea*'}
+recs = GbifSearchResults()
+numhits = recs.get_numhits(params)
+```
 
 As of August 2009, 169 matching records existed in GBIF matching
 "Genlisea\*"
 
 For constrast, run the same search *without* the asterisk ('\*'):
 
-    params = {'format': 'darwin', 'scientificname': 'Genlisea'}
-    numhits = recs.get_numhits(params)
+``` python
+params = {'format': 'darwin', 'scientificname': 'Genlisea'}
+numhits = recs.get_numhits(params)
+```
 
 We only get ~10 results -- presumably records of specimens only
 identified down to genus and no further.
@@ -221,17 +242,21 @@ identified down to genus and no further.
 Individual records can be downloaded by key. To download an individual
 record:
 
-    rec = recs.obs_recs_list[0]
-    key = rec.gbifkey
-    # (or manually)
-    # key = 175067484
-    xmlrec = recs.get_record(key)
-    print xmlrec
+``` python
+rec = recs.obs_recs_list[0]
+key = rec.gbifkey
+# (or manually)
+# key = 175067484
+xmlrec = recs.get_record(key)
+print(xmlrec)
+```
 
 If you want to print the xmlrec ElementTree object, store xmlrec in a
 GbifXmlTree object and run print\_xmltree:
 
-    GbifXmlTree(xmlrec).print_xmltree()
+``` python
+GbifXmlTree(xmlrec).print_xmltree()
+```
 
 ### Summary statistics for phylogenetic trees with TreeSum
 
@@ -246,20 +271,26 @@ python.
 
 Here, we need to start with a Newick tree string:
 
-    trstr2 = "(((t9:0.385832, (t8:0.445135,t4:0.41401)C:0.024032)B:0.041436, t6:0.392496)A:0.0291131, t2:0.497673, ((t0:0.301171, t7:0.482152)E:0.0268148, ((t5:0.0984167,t3:0.488578)G:0.0349662, t1:0.130208)F:0.0318288)D:0.0273876);"
+``` python
+trstr2 = "(((t9:0.385832, (t8:0.445135,t4:0.41401)C:0.024032)B:0.041436, t6:0.392496)A:0.0291131, t2:0.497673, ((t0:0.301171, t7:0.482152)E:0.0268148, ((t5:0.0984167,t3:0.488578)G:0.0349662, t1:0.130208)F:0.0318288)D:0.0273876);"
 
-    to2 = Tree(trstr2)
+to2 = Tree(trstr2)
+```
 
 Then, we create a tree summary object:
 
-    ts = TreeSum(to2)
+``` python
+ts = TreeSum(to2)
+```
 
 The function test\_Tree will run the metrics (MPD = Mean Phylogenetic
 Distance, NRI = Net Relatedness Index, MNPD = Mean Nearest Neighbor
 Phylogenetic Distance, NTI = Nearest Taxon Index, PD = total
 Phylogenetic distance) and output to screen:
 
-    ts.test_Tree()
+``` python
+ts.test_Tree()
+```
 
 By subsetting a tree to taxa only existing within a region, statistics
 can be calculated by region.
@@ -274,10 +305,12 @@ Again we will set up our parameters dictionary, and also an "inc"
 variable to specify the number of records to download per server
 request.
 
-    params = {'format': 'darwin', 'scientificname': 'Genlisea*'}
-    inc = 100
-    recs3 = GbifSearchResults()
-    gbif_xmltree_list = recs3.get_all_records_by_increment(params, inc)
+``` python
+params = {'format': 'darwin', 'scientificname': 'Genlisea*'}
+inc = 100
+recs3 = GbifSearchResults()
+gbif_xmltree_list = recs3.get_all_records_by_increment(params, inc)
+```
 
 As with biopython's interactions with NCBI servers, the
 GbifSearchResults module keeps track of when the last GBIF request was
@@ -288,7 +321,9 @@ GbifXmlTree objects, and a list of the returned GbifXmlTree objects is
 returned to gbif\_xmltree\_list. The individual records have also been
 parsed:
 
-    recs3.print_records()
+``` python
+recs3.print_records()
+```
 
 ### Classifying records into geographical regions
 
@@ -301,14 +336,16 @@ Below, we set up a polygon containing the latitude/longitude coordinates
 for the Northern Hemisphere, and then set the "area" attribute for each
 matching record to "NorthernHemisphere":
 
-    ul = (-180, 90)
-    ur = (180, 90)
-    ll = (-180, 0)
-    lr = (180, 0)
-    poly = [ul, ur, ll, lr]
-    polyname = "NorthernHemisphere"
+``` python
+ul = (-180, 90)
+ur = (180, 90)
+ll = (-180, 0)
+lr = (180, 0)
+poly = [ul, ur, ll, lr]
+polyname = "NorthernHemisphere"
 
-    recs3.print_records()
+recs3.print_records()
+```
 
 This process can be repeated for all polygons of interest until all GBIF
 records have been classified (except for GBIF records which lacked
