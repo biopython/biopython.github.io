@@ -190,20 +190,14 @@ protein-specific methods to be accessed. The following example
 demonstrates how this call works. Note how the `search_ss_bonds`
 method is absent from `dir(s)` but not from `dir(prot)`.
 
-``` python
-from Bio.PDB import PDBParser
-
-p = PDBParser()
-s = p.get_structure('example', '4PTI.pdb')
-
-dir(s)
-# Cut for viewing purposes
+``` pycon
+>>> from Bio.PDB import PDBParser
+>>> p = PDBParser()
+>>> s = p.get_structure('example', '4PTI.pdb')
+>>> dir(s)  # Cut for viewing purposes
 ['__doc__', ... , 'renumber_residues', 'set_parent', 'xtra']
-
-prot = s.as_protein()
-
-dir(prot)
-
+>>> prot = s.as_protein()
+>>> dir(prot)
 ['__doc__', ... , 'renumber_residues', 'search_ss_bonds', 'set_parent', 'xtra']
 ```
 
@@ -225,12 +219,12 @@ from Bio.PDB import PDBParser
 p = PDBParser()
 s = p.get_structure('example', '1IHM.pdb')
 
-print list(s.get_residues())[0]
-<Residue ASP het=  resseq=1029 icode= >
+print(list(s.get_residues())[0])
+# <Residue ASP het=  resseq=1029 icode= >
 
 s.renumber_residues()
-print list(s.get_residues())[0]
-<Residue ASP het=  resseq=1 icode= >
+print(list(s.get_residues())[0])
+# <Residue ASP het=  resseq=1 icode= >
 ```
 
 ### Probe disulphide bridges in the structure
@@ -255,11 +249,11 @@ s = p.get_structure('example', '4PTI.pdb')
 prot = s.as_protein()
 
 for bond in prot.search_ss_bonds():
-  print bond
+    print(bond)
 
-(<Residue CYS het=  resseq=5 icode= >, <Residue CYS het=  resseq=55 icode= >)
-(<Residue CYS het=  resseq=14 icode= >, <Residue CYS het=  resseq=38 icode= >)
-(<Residue CYS het=  resseq=30 icode= >, <Residue CYS het=  resseq=51 icode= >)
+# (<Residue CYS het=  resseq=5 icode= >, <Residue CYS het=  resseq=55 icode= >)
+# (<Residue CYS het=  resseq=14 icode= >, <Residue CYS het=  resseq=38 icode= >)
+# (<Residue CYS het=  resseq=30 icode= >, <Residue CYS het=  resseq=51 icode= >)
 ```
 
 ### Extract Biological Unit
@@ -280,15 +274,15 @@ p = PDBParser()
 
 s1 = p.get_structure('a', '4PTI.pdb')
 s1.build_biological_unit()
-'Processed 0 transformations on the structure.' # Identity matrix is ignored.
+# 'Processed 0 transformations on the structure.' # Identity matrix is ignored.
 
 s2 = p.get_structure('b', 'homol_1bd8.pdb') # A homology model
 s2.build_biological_unit()
-'PDB File lacks appropriate REMARK 350 entries to build Biological Unit.'
+# 'PDB File lacks appropriate REMARK 350 entries to build Biological Unit.'
 
 s3 = p.get_structure('c', '1IHM.pdb')
 s3.build_biological_unit()
-'Processed 59 transformations on the structure.'
+# 'Processed 59 transformations on the structure.'
 ```
 
 ### Hydrogenation of PDB files
@@ -364,23 +358,17 @@ for details). This is obviously experimental.
 To calculate the center of mass of any Entity (Structure, Model, Chain,
 Residue) or a List of Atoms:
 
-``` python
-from Bio.Struct.Geometry import center_of_mass
-from Bio import Struct
-
-s = Struct.read('4PTI.pdb')
-
-print center_of_mass.__doc__
-
-    Returns gravitic or geometric center of mass of an Entity.
-    Geometric assumes all masses are equal (geometric=True)
-    Defaults to Gravitic.
-
-
-print center_of_mass(s)
+``` pycon
+>>> from Bio.Struct.Geometry import center_of_mass
+>>> from Bio import Struct
+>>> s = Struct.read('4PTI.pdb')
+>>> print(center_of_mass.__doc__)
+Returns gravitic or geometric center of mass of an Entity.
+Geometric assumes all masses are equal (geometric=True)
+Defaults to Gravitic.
+>>> print(center_of_mass(s))
 [14.833301303933874, 21.431581746366263, 4.1218478418007134]
-
-print center_of_mass(s, geometric=True)
+>>> print(center_of_mass(s, geometric=True))
 [14.805324902127458, 21.365571977563405, 4.1108949403803985]
 ```
 
@@ -391,20 +379,16 @@ protein model (BB, Side Chain points \[S1 to S4\])
 
 An example, picking up the s Structure from above:
 
-``` python
-p = s.as_protein() # To expose the CG method
-
-ca_trace = p.coarse_grain()
-
-# One atom per residue
-print (len(list(p.get_residues())) == len(list(ca_trace.get_atoms())) )
+``` pycon
+>>> p = s.as_protein() # To expose the CG method
+>>> ca_trace = p.coarse_grain()
+>>> # One atom per residue
+>>> print(len(list(p.get_residues())) == len(list(ca_trace.get_atoms())))
 True
-
-cg_encad = p.coarse_grain('ENCAD_3P')
-
-for residue in cg_encad.get_residues():
-  print residue.resname, residue.child_list
-
+>>> cg_encad = p.coarse_grain('ENCAD_3P')
+>>> for residue in cg_encad.get_residues():
+...     print(residue.resname, residue.child_list)
+...
 ARG [<Atom CA>, <Atom O>, <Atom CMA>]
 PRO [<Atom CA>, <Atom O>, <Atom CMA>]
 ASP [<Atom CA>, <Atom O>, <Atom CMA>]
@@ -415,17 +399,15 @@ GLU [<Atom CA>, <Atom O>, <Atom CMA>]
 PRO [<Atom CA>, <Atom O>, <Atom CMA>]
 PRO [<Atom CA>, <Atom O>, <Atom CMA>]
 TYR [<Atom CA>, <Atom O>, <Atom CMA>]
-.....
+...
 CYS [<Atom CA>, <Atom O>, <Atom CMA>]
 GLY [<Atom CA>, <Atom O>]
 GLY [<Atom CA>, <Atom O>]
 ALA [<Atom CA>, <Atom O>, <Atom CMA>]
-
-cg_martini = p.coarse_grain('MARTINI')
-
-for residue in cg_martini.get_residues():
-  print residue.resname, residue.child_list
-
+>>> cg_martini = p.coarse_grain('MARTINI')
+>>> for residue in cg_martini.get_residues():
+...     print(residue.resname, residue.child_list)
+...
 ARG [<Atom BB>, <Atom S1>, <Atom S2>]
 PRO [<Atom BB>, <Atom S1>]
 ASP [<Atom BB>, <Atom S1>]
@@ -454,13 +436,12 @@ object is added corresponding to the location of the user's choice
 
 An example, still keeping s from above:
 
-``` python
-s = s.remove_disordered_atoms(verbose=True)
+``` pycon
+>>> s = s.remove_disordered_atoms(verbose=True)
 0 residues were modified
-
-# Now if we load a structure with disordered atoms
-ds = Struct.read('1MC2.pdb')
-ds.remove_disordered_atoms(verbose=True)
+>>> # Now if we load a structure with disordered atoms
+>>> ds = Struct.read('1MC2.pdb')
+>>> ds.remove_disordered_atoms(verbose=True)
 Residue TRP:1010 has 8 disordered atoms: CD1/CD2/NE1/CE2/CE3/CZ2/CZ3/CH2
 Residue VAL:1018 has 3 disordered atoms: CB/CG1/CG2
 Residue LEU:1024 has 4 disordered atoms: CB/CG/CD1/CD2
@@ -491,19 +472,16 @@ It returns a list ranked by Expectation Value with some informational
 values (e-value, identities, positives, gaps), the PDB code of the
 match, and the alignment.
 
-``` python
-from Bio import Struct
-
-s = Struct.read('1A8O.pdb')
-p = s.as_protein()
-
-seq_homologues = p.find_seq_homologues()
-
-for homologues in seq_homologues:
-    print homologues[0], homologues[1]
-    print homologues[-1]
-    print
-
+``` pycon
+>>> from Bio import Struct
+>>> s = Struct.read('1A8O.pdb')
+>>> p = s.as_protein()
+>>> seq_homologues = p.find_seq_homologues()
+>>> for homologues in seq_homologues:
+...    print(homologues[0], homologues[1])
+...    print(homologues[-1])
+...    print()
+...
 2BUO 1.82482e-31
 DIRQGPKEPFRDYVDRFYKTLRAEQASQEVKNW-TETLLVQNANPDCKTILKALGPGATLEE--TACQG
 DIRQGPKEPFRDYVDRFYKTLRAEQASQEVKNW TETLLVQNANPDCKTILKALGPGATLEE  TACQG
@@ -513,8 +491,7 @@ DIRQGPKEPFRDYVDRFYKTLRAEQASQEVKNWMTETLLVQNANPDCKTILKALGPGATLEEMMTACQG
 DIRQGPKEPFRDYVDRFYKTLRAEQASQEVKNW-TETLLVQNANPDCKTILKALGPGATLEE--TACQG
 DIRQGPKEPFRDYVDRFYKTLRAEQASQEVKNW TETLLVQNANPDCKTILKALGPGATLEE  TACQG
 DIRQGPKEPFRDYVDRFYKTLRAEQASQEVKNWMTETLLVQNANPDCKTILKALGPGATLEEMMTACQG
-
-.....
+...
 ```
 
 ### Support for MODELLER PIR format in SeqIO
@@ -528,16 +505,11 @@ format follows, as well as an example of the parser's usage.
     AFVVTDNCIKCKYTDCVEVCPVDCFYEGPNFLVIHPDECIDCALCEPECPAQAIFSEDEVPEDMQEFIQLNAELA
     EVWPNITEKKDPLPDAEDWDGVKGKLQHLER*
 
-``` python
-from Bio import SeqIO
-
-handle = open('test_pir.txt')
-
-records = SeqIO.parse(handle, 'pir-modeller')
-
-for i in records:
-    print i
-
+``` pycon
+>>> from Bio import SeqIO
+>>> for i in SeqIO.parse("test_pir.txt", "pir-modeller"):
+...     print(i)
+...
 ID: 5fd1
 Name: 5fd1
 Description: ferredoxin

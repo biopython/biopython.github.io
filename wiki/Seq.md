@@ -32,7 +32,7 @@ The Seq Object
 The `Seq` object essentially combines a Python string with biological
 methods. For example:
 
-``` python
+``` pycon
 >>> from Bio.Seq import Seq
 >>> my_seq = Seq("AGTACACTGGT")
 >>> my_seq
@@ -50,7 +50,7 @@ General methods
 The `Seq` object has a number of methods which act just like those of a
 Python string, for example the find method:
 
-``` python
+``` pycon
 >>> from Bio.Seq import Seq
 >>> my_dna = Seq("AGTACACTGGT")
 >>> my_dna
@@ -63,7 +63,7 @@ Seq('AGTACACTGGT')
 
 There is a count method too:
 
-``` python
+``` pycon
 >>> my_dna.count("A")
 3
 >>> my_dna.count("ACT")
@@ -73,7 +73,7 @@ There is a count method too:
 However, watch out because just like the Python string's count, this is
 a *non-overlapping* count!
 
-``` python
+``` pycon
 >>> "AAAA".count("AA")
 2
 >>> Seq("AAAA", generic_dna).count("AA")
@@ -95,7 +95,7 @@ here are only available in Biopython 1.49 onwards.
 These are very simple - the methods return a new `Seq` object with the
 appropriate sequence:
 
-``` python
+``` pycon
 >>> from Bio.Seq import Seq
 >>> my_dna = Seq("AGTACACTGGT")
 >>> my_dna
@@ -113,7 +113,7 @@ bioinformatics we normally assume the DNA is the coding strand (not the
 template strand) so this is a simple matter of replacing all the
 thymines with uracil:
 
-``` python
+``` pycon
 >>> my_dna
 Seq('AGTACACTGGT')
 >>> my_dna.transcribe()
@@ -123,7 +123,7 @@ Seq('AGUACACUGGU')
 Naturally, given some RNA, you might want the associated DNA - and again
 Biopython does a simple U/T substitution:
 
-``` python
+``` pycon
 >>> my_rna = my_dna.transcribe()
 >>> my_rna
 Seq('AGUACACUGGU')
@@ -134,7 +134,7 @@ Seq('AGTACACTGGT')
 If you actually do want the template strand, you'd have to do a reverse
 complement on top:
 
-``` python
+``` pycon
 >>> my_rna
 Seq('AGUACACUGGU')
 >>> my_rna.back_transcribe().reverse_complement()
@@ -150,7 +150,7 @@ more detail on this strand issue.
 
 You can translate RNA:
 
-``` python
+``` pycon
 >>> from Bio.Seq import Seq
 >>> messenger_rna = Seq("AUGGCCAUUGUAAUGGGCCGCUGAAAGGGUGCCCGAUAG")
 >>> messenger_rna.translate()
@@ -159,7 +159,7 @@ Seq('MAIVMGR*KGAR*')
 
 Or DNA - which is assumed to be the coding strand:
 
-``` python
+``` pycon
 >>> from Bio.Seq import Seq
 >>> coding_dna = Seq("ATGGCCATTGTAATGGGCCGCTGAAAGGGTGCCCGATAG")
 >>> coding_dna.translate()
@@ -170,7 +170,7 @@ In either case there are several useful options - by default as you will
 notice the in example above translation continues through any stop
 codons, but this is optional:
 
-``` python
+``` pycon
 >>> coding_dna.translate(to_stop=True)
 Seq('MAIVMGR')
 ```
@@ -179,7 +179,7 @@ Then there is the translation table, for which you can give an [NCBI
 genetic code number or
 name](http://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi):
 
-``` python
+``` pycon
 >>> coding_dna.translate(table=2)
 Seq('MAIVMGRWKGAR*')
 >>> coding_dna.translate(table="Vertebrate Mitochondrial")
@@ -188,7 +188,7 @@ Seq('MAIVMGRWKGAR*')
 
 You can of course combine these options:
 
-``` python
+``` pycon
 >>> coding_dna.translate(table=2, to_stop=True)
 Seq('MAIVMGRWKGAR')
 ```
@@ -196,7 +196,7 @@ Seq('MAIVMGRWKGAR')
 Consult the tutorial for more examples and arguments (e.g. specifying a
 different symbol for a stop codon), or see the built in help:
 
-``` python
+``` pycon
 >>> help(coding_dna.translate)
 ...
 ```

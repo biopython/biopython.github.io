@@ -73,13 +73,12 @@ s = Struct.read('protein_A.pdb')
 
 dir(s)
 # Edited for shortening purposes
-['__doc__', ... , 'renumber_residues', 'set_parent', 'xtra']
+# ['__doc__', ... , 'renumber_residues', 'set_parent', 'xtra']
 
 p = s.as_protein()
 
 dir(p)
-
-['__doc__', ... , 'renumber_residues', 'search_ss_bonds', 'set_parent', 'xtra']
+# ['__doc__', ... , 'renumber_residues', 'search_ss_bonds', 'set_parent', 'xtra']
 ```
 
 #### search\_ss\_bonds()
@@ -91,11 +90,10 @@ can be manually specified through the `threshold` argument.
 
 ``` python
 for bond in p.search_ss_bonds():
-  print(bond)
-
-(<Residue CYS het=  resseq=5 icode= >, <Residue CYS het=  resseq=55 icode= >)
-(<Residue CYS het=  resseq=14 icode= >, <Residue CYS het=  resseq=38 icode= >)
-(<Residue CYS het=  resseq=30 icode= >, <Residue CYS het=  resseq=51 icode= >)
+   print(bond)
+# (<Residue CYS het=  resseq=5 icode= >, <Residue CYS het=  resseq=55 icode= >)
+# (<Residue CYS het=  resseq=14 icode= >, <Residue CYS het=  resseq=38 icode= >)
+# (<Residue CYS het=  resseq=30 icode= >, <Residue CYS het=  resseq=51 icode= >)
 ```
 
 #### coarse\_grain()
@@ -111,15 +109,14 @@ residue should be coarse grained. As of now, three models are supported.
 cg_martini = p.coarse_grain('MARTINI')
 
 for residue in cg_martini.get_residues():
-  print(residue.resname + ' ' + residue.child_list)
-
-ARG [<Atom BB>, <Atom S1>, <Atom S2>]
-PRO [<Atom BB>, <Atom S1>]
-ASP [<Atom BB>, <Atom S1>]
-PHE [<Atom BB>, <Atom S1>, <Atom S2>, <Atom S3>]
-......
-GLY [<Atom BB>]
-ALA [<Atom BB>]
+   print(residue.resname + ' ' + residue.child_list)
+# ARG [<Atom BB>, <Atom S1>, <Atom S2>]
+# PRO [<Atom BB>, <Atom S1>]
+# ASP [<Atom BB>, <Atom S1>]
+# PHE [<Atom BB>, <Atom S1>, <Atom S2>, <Atom S3>]
+# ...
+# GLY [<Atom BB>]
+# ALA [<Atom BB>]
 ```
 
 ##### Supported Models
@@ -178,11 +175,9 @@ for homologues in seq_homologues:
     print(homologues[0] + ' ' + homologues[1])
     print(homologues[-1])
     print()
-
-2BUO 1.82482e-31
-DIRQGPKEPFRDYVDRFYKTLRAEQASQEVKNW-TETLLVQNANPDCKTILKALGPGATLEE--TACQG
-DIRQGPKEPFRDYVDRFYKTLRAEQASQEVKNW TETLLVQNANPDCKTILKALGPGATLEE  TACQG
-DIRQGPKEPFRDYVDRFYKTLRAEQASQEVKNWMTETLLVQNANPDCKTILKALGPGATLEEMMTACQG
-
-.....
+# 2BUO 1.82482e-31
+# DIRQGPKEPFRDYVDRFYKTLRAEQASQEVKNW-TETLLVQNANPDCKTILKALGPGATLEE--TACQG
+# DIRQGPKEPFRDYVDRFYKTLRAEQASQEVKNW TETLLVQNANPDCKTILKALGPGATLEE  TACQG
+# DIRQGPKEPFRDYVDRFYKTLRAEQASQEVKNWMTETLLVQNANPDCKTILKALGPGATLEEMMTACQG
+# ...
 ```

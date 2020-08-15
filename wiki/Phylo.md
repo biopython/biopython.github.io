@@ -83,13 +83,11 @@ Incrementally parse each tree in the given file or handle, returning an
 iterator of Tree objects (i.e. some subclass of the `Bio.Phylo.BaseTree`
 Tree class, depending on the file format).
 
-``` python
+``` pycon
 >>> trees = Phylo.parse('phyloxml_examples.xml', 'phyloxml')
 >>> for tree in trees:
 ...     print(tree.name)
-```
-
-```
+...
 example from Prof. Joe Felsenstein's book "Inferring Phylogenies"
 example from Prof. Joe Felsenstein's book "Inferring Phylogenies"
 same example, with support of type "bootstrap"
@@ -103,7 +101,7 @@ network, node B is connected to TWO nodes: AB and C
 If there's only one tree, then the `next()` method on the resulting
 generator will return it.
 
-``` python
+``` pycon
 >>> tree = Phylo.parse('phyloxml_examples.xml', 'phyloxml').next()
 >>> tree.name
 'example from Prof. Joe Felsenstein\'s book "Inferring Phylogenies"'
@@ -244,7 +242,7 @@ tree. Strings are automatically truncated to ensure reasonable display.
 
 Use this with the print statement to get a quick overview of your tree:
 
-``` python
+``` pycon
 >>> tree = Phylo.parse('phyloxml_examples.xml', 'phyloxml').next()
 >>> print(tree)
 Phylogeny(description='phyloXML allows to use either a "branch_length"
@@ -467,7 +465,7 @@ using these algorithms, let me introduce the `DistanceCalculator` to
 generate the distance matrix from a `MultipleSeqAlignment` object. The
 following code shows a common way to do this:
 
-``` python
+``` pycon
 >>> from Bio.Phylo.TreeConstruction import DistanceCalculator
 >>> from Bio import AlignIO
 >>> aln = AlignIO.read('Tests/TreeConstruction/msa.phy', 'phylip')
@@ -507,7 +505,7 @@ Now, let's get back to the `DistanceTreeConstructor`. We can pass the
 `DistanceCalculator` object and a string parameter('nj' or 'upgma') to
 initialize it, and then call its `build_tree()` as mentioned before.
 
-``` python
+``` pycon
 >>> from TreeConstruction import DistanceTreeConstructor
 >>> constructor = DistanceTreeConstructor(calculator, 'nj')
 >>> tree = constructor.build_tree(aln)
@@ -527,7 +525,7 @@ While sometimes you might want to use your own `DistanceMatrix` directly
 instead of the raw alignment, we provide another direct way to use both
 algorithms.
 
-``` python
+``` pycon
 >>> from TreeConstruction import DistanceTreeConstructor
 >>> constructor = DistanceTreeConstructor()
 >>> tree = constructor.nj(dm)
@@ -564,7 +562,7 @@ by the given alignment, and the `TreeSearcher` to search the best tree
 that minimize the parsimony score. A typical usage example can be as
 follows:
 
-``` python
+``` pycon
 >>> from Bio import AlignIO
 >>> from TreeConstruction import *
 >>> aln = AlignIO.read(open('Tests/TreeConstruction/msa.phy'), 'phylip')
@@ -613,12 +611,12 @@ call `strict_consensus`, `majority_consensus` and `adam_consensus` to
 use these algorithms with a list of trees as the input.
 
 ``` python
->>> from Bio import Phylo
->>> from Bio.Phylo.Consensus import *
->>> trees = list(Phylo.parse('Tests/TreeConstruction/trees.tre', 'newick'))
->>> strict_tree = strict_consensus(trees)
->>> majority_tree = majority_consensus(trees, 0.5)
->>> adam_tree = adam_consensus(trees)
+from Bio import Phylo
+from Bio.Phylo.Consensus import *
+trees = list(Phylo.parse('Tests/TreeConstruction/trees.tre', 'newick'))
+strict_tree = strict_consensus(trees)
+majority_tree = majority_consensus(trees, 0.5)
+adam_tree = adam_consensus(trees)
 ```
 
 Instead of using 50% as the cutoff, the `majority_consensus` method
@@ -636,10 +634,10 @@ replicate trees. So in the `Bio.Phylo.Consensus` module, we also provide
 several useful bootstrap methods to achieve this.
 
 ``` python
->>> from Bio import Phylo
->>> from Bio.Phylo.Consensus import *
->>> msa = AlignIO.read('Tests/TreeConstruction/msa.phy', 'phylip')
->>> msas = bootstrap(msa, 100)
+from Bio import Phylo
+from Bio.Phylo.Consensus import *
+msa = AlignIO.read('Tests/TreeConstruction/msa.phy', 'phylip')
+msas = bootstrap(msa, 100)
 ```
 
 As you see, the `bootstrap` method accepts a `MultipleSeqAlignment`
@@ -648,9 +646,9 @@ them to build replicate trees. While, we also provide a convenient
 method to do this.
 
 ``` python
->>> calculator = DistanceCalculator('blosum62')
->>> constructor = DistanceTreeConstructor(calculator)
->>> trees = bootstrap_trees(msa, 100, constructor)
+calculator = DistanceCalculator('blosum62')
+constructor = DistanceTreeConstructor(calculator)
+trees = bootstrap_trees(msa, 100, constructor)
 ```
 
 This time we pass an extra `DistanceTreeConstructor` object to a
@@ -664,7 +662,7 @@ consensus method as another extra parameter, we can directly get the
 consensus tree.
 
 ``` python
->>> consensus_tree = bootstrap_consensus(msa, 100, constructor, majority_consensus)
+consensus_tree = bootstrap_consensus(msa, 100, constructor, majority_consensus)
 ```
 
 #### Branch Support
@@ -673,11 +671,11 @@ To get the branch support of a specific tree, we can use the
 `get_support` method.
 
 ``` python
->>> from Bio import Phylo
->>> from Bio.Phylo.Consensus import *
->>> trees = list(Phylo.parse('Tests/TreeConstruction/trees.tre', 'newick'))
->>> target_tree = trees[0]
->>> support_tree = get_support(target_tree, trees)
+from Bio import Phylo
+from Bio.Phylo.Consensus import *
+trees = list(Phylo.parse('Tests/TreeConstruction/trees.tre', 'newick'))
+target_tree = trees[0]
+support_tree = get_support(target_tree, trees)
 ```
 
 In the above code, we use the first tree as the target tree that we want
@@ -701,7 +699,7 @@ The only difference between them is that the diagonal elements in
 
 To create a `_Matrix` object:
 
-``` python
+``` pycon
 >>> from Bio.Phylo.TreeConstruction import _Matrix
 >>> names = ['Alpha', 'Beta', 'Gamma', 'Delta']
 >>> matrix = [[0], [1, 0], [2, 3, 0], [4, 5, 6, 0]]
@@ -719,7 +717,7 @@ Delta   4   5   6   0
 You can use two indices to get or assign an element in the matrix, and
 the indices are exchangeable.
 
-``` python
+``` pycon
 >>> m[1,2]
 3
 >>> m[2,1]
@@ -734,7 +732,7 @@ the indices are exchangeable.
 Further more, you can use one index to get or assign a list of elements
 related to that index:
 
-``` python
+``` pycon
 >>> m[0]
 [0, 1, 2, 4]
 >>> m['Alpha']
@@ -748,7 +746,7 @@ related to that index:
 
 Also you can delete or insert a column&row of elements by index:
 
-``` python
+``` pycon
 >>> m
 _Matrix(names=['Alpha', 'Beta', 'Gamma', 'Delta'], matrix=[[0], [7, 0], [8, 4, 0], [9, 5, 6, 0]])
 >>> del m['Alpha']
@@ -766,7 +764,7 @@ the `Consensus` module. It's a sub-class of `str` object that only
 accepts two characters ('0' and '1'), with additional functions for
 binary-like manipulation (& | ^ ~). Common usage is as follows:
 
-``` python
+``` pycon
 >>> from Bio.Phylo.Consensus import _BitString
 >>> bitstr1 = _BitString('11111')
 >>> bitstr2 = _BitString('11100')
@@ -902,7 +900,7 @@ def compare(tree1, tree2):
 
 To use it:
 
-``` python
+``` pycon
 >>> tree1 = Phylo.read('Tests/TreeConstruction/upgma.tre', 'newick')
 >>> tree2 = Phylo.read('Tests/TreeConstruction/nj.tre', 'newick')
 >>> tree3 = Phylo.read('Tests/TreeConstruction/pars1.tre', 'newick')

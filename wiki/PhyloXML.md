@@ -53,7 +53,7 @@ For example, this XML (from
 
 produces an object hierarchy like this:
 
-``` python
+``` pycon
 >>> from Bio import Phylo
 >>> tree = Phylo.read('example.xml','phyloxml')
 >>> print(tree)
@@ -70,7 +70,7 @@ d=True)
 
 which represents a phylogeny like this:
 
-``` python
+``` pycon
 >>> Phylo.draw_ascii(tree)
 
 
@@ -92,7 +92,7 @@ I/O functions
 To start working with **phyloXML** files, use the [`Phylo`](Phylo "wikilink")
 package with 'phyloxml' as the format argument:
 
-``` python
+``` pycon
 >>> from Bio import Phylo
 >>> tree = Phylo.read('some-trees.xml', 'phyloxml')
 # ValueError: There are multiple trees in this file; use parse() instead.
@@ -123,7 +123,7 @@ representing the entire file's data. The phylogenetic trees are in the
 `.phylogenies` attribute, and any other arbitrary data is stored in
 `.other`.
 
-``` python
+``` pycon
 >>> phx = PhyloXMLIO.read('phyloxml_examples.xml')
 >>> print(phx)
 Phyloxml
@@ -148,7 +148,7 @@ format argument.
 `Phyloxml` object (the result of `read()` or `to_phyloxml()`) to serialize.
 Optionally, an encoding other than UTF-8 can be specified.
 
-``` python
+``` pycon
 >>> phx = PhyloXMLIO.read('phyloxml_examples.xml')
 >>> print(phx.other)
 [Other(tag='alignment', namespace='http://example.org/align')]
@@ -165,7 +165,7 @@ of the XML tags as they are encountered in a **phyloXML** file. This can be
 helpful for debugging, or used along with grep or sort -u on the command
 line to obtain a list of the tags a **phyloXML** file contains.
 
-``` python
+``` pycon
 >>> PhyloXMLIO.dump_tags('phyloxml_examples.xml')
 {http://www.phyloxml.org}phyloxml
 {http://www.phyloxml.org}phylogeny

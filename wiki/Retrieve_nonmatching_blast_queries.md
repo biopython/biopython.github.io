@@ -59,9 +59,10 @@ orphan_records = [q_dict[name] for name in misses]
 
 We can do a little sanity check to make sure everything worked OK:
 
-``` python
+``` pycon
 >>> print("found %i records in query, %i have hits, making %i misses"
-      % (len(q_dict), len(hits), len(misses)))
+...       % (len(q_dict), len(hits), len(misses)))
+...
 found 11955 records in query, 2802 have hits, making 9153 misses
 ```
 
