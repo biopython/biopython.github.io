@@ -177,7 +177,7 @@ in_file = "your_file.gff"
 
 in_handle = open(in_file)
 for rec in GFF.parse(in_handle):
-    print rec
+    print(rec)
 in_handle.close()
 ```
 
@@ -212,7 +212,7 @@ limit_info = dict(gff_id=["chr1"], gff_source=["Coding_transcript"])
 
 in_handle = open(in_file)
 for rec in GFF.parse(in_handle, limit_info=limit_info):
-    print rec.features[0]
+    print(rec.features[0])
 in_handle.close()
 ```
 
@@ -236,7 +236,7 @@ in_file = "your_file.gff"
 
 in_handle = open(in_file)
 for rec in GFF.parse(in_handle, target_lines=1000):
-    print rec
+    print(rec)
 in_handle.close()
 ```
 
@@ -270,7 +270,7 @@ in_seq_handle.close()
 in_file = "your_file.gff"
 in_handle = open(in_file)
 for rec in GFF.parse(in_handle, base_dict=seq_dict):
-    print rec
+    print(rec)
 in_handle.close()
 ```
 

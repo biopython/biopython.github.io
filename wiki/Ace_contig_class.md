@@ -61,7 +61,7 @@ Ace files are also supported by the [SeqIO](SeqIO "wikilink") module
 >>>from Bio import SeqIO
 >>>ace_gen2 = SeqIO.parse(open("contig1.ace", 'r'), 'ace')
 >>>new_contig = ace_gen2.next()
->>>print new_contig
+>>>print(new_contig)
 ID: Contig1
 Name: Contig1
 Description: <unknown description>

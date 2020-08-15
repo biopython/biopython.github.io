@@ -133,7 +133,7 @@ Phyloxml
 1
 >>> print(phx.other)
 [Other(tag='alignment', namespace='http://example.org/align')]
->>> print phx.other[0].children
+>>> print(phx.other[0].children)
 [Other(tag='seq', namespace='http://www.phyloxml.org', value='acgtcgcggcccgtggaagtcctctcct'),
 Other(tag='seq', namespace='http://www.phyloxml.org', value='aggtcgcggcctgtggaagtcctctcct'),
 Other(tag='seq', namespace='http://www.phyloxml.org', value='taaatcgc--cccgtgg-agtccc-cct')]

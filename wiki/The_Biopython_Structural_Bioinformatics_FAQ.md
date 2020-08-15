@@ -431,7 +431,7 @@ for model in structure:
     for chain in model:
         for residue in chain:
             for atom in residue:
-                print atom
+                print(atom)
 ```
 
 There are also some shortcuts:
@@ -439,11 +439,11 @@ There are also some shortcuts:
 ``` python
 # Iterate over all atoms in a structure
 for atom in structure.get_atoms():
-    print atom
+    print(atom)
 
 # Iterate over all residues in a model
 for residue in model.get_residues():
-    print residue
+    print(residue)
 ```
 
 Structures, models, chains, residues and atoms are called **Entities**
@@ -786,7 +786,7 @@ Example:
 
 ``` pycon
 >>> seq = polypeptide.get_sequence()
->>> print seq
+>>> print(seq)
 Seq('SNVVE...')
 ```
 
@@ -867,7 +867,7 @@ exp_cb = hse.calc_hs_exposure(model, option="CB")
 # Calculate classical coordination number
 exp_fs = hse.calc_fs_exposure(model)
 # Print HSEalpha for a residue
-print exp_ca[some_residue]
+print(exp_ca[some_residue])
 ```
 
 #### How do I map the residues of two related structures onto each other?
@@ -952,8 +952,8 @@ sup = Superimposer()
 # The moving atoms will be put on the fixed atoms
 sup.set_atoms(fixed, moving)
 # Print rotation/translation/rmsd
-print sup.rotran
-print sup.rms
+print(sup.rotran)
+print(sup.rms)
 # Apply rotation/translation to the moving atoms
 sup.apply(moving)
 ```
