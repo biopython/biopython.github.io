@@ -67,7 +67,7 @@ Final commit(s)
    - Make sure to commit the modified files to github, e.g.
 
    ``` bash
-   $ git commit Bio/__init__.py Doc/Tutorial.tex NEWS.rst -m "Call this Biopython 1.68"
+   $ git commit Bio/__init__.py NEWS.rst -m "Call this Biopython 1.78"
    ```
 
 7. do a final check to make sure things are checked in:
@@ -143,15 +143,16 @@ Checking the compiled documentation
 -----------------------------------
 
 15. Since Biopython 1.74, Sphinx has handled the API documentation via continuous
-    integration, but you still have to update the Tutorial on the website manually.
+    integration, but you still have to update the Tutorial and PDB FAQ on the website manually.
 
-  - Update the tutorial:
+  - Update the Tutorial and PDB FAQ:
 
     ``` bash
     $ cd ~/repositories/DIST/docs/tutorial/
     $ cp .../tmp1/biopython/Doc/Tutorial.html .
     $ cp .../tmp1/biopython/Doc/Tutorial.pdf .
-    $ git commit Tutorial.html Tutorial.pdf -m "Tutorial for Biopython 1.78"
+    $ cp .../tmp1/biopython/Doc/biopdb_faq.pdf .
+    $ git commit Tutorial.html Tutorial.pdf biopdb_faq.pdf -m "Tutorial and FAQ for Biopython 1.78"
     ```
 
     - Push this to GitHub Pages to update the website:
@@ -161,12 +162,12 @@ Checking the compiled documentation
     ```
 
     - Check this is live at <http://biopython.org/DIST/docs/api/Bio-module.html>,
-      <http://biopython.org/DIST/docs/tutorial/Tutorial.html>, and
-      <http://biopython.org/DIST/docs/tutorial/Tutorial.pdf>
+      <http://biopython.org/DIST/docs/tutorial/Tutorial.html>,
+      <http://biopython.org/DIST/docs/tutorial/Tutorial.pdf>, and
+      <http://biopython.org/DIST/docs/tutorial/biopdb_faq.pdf>
 
 Making wheels
 -------------
-
 
 16. Now we use https://github.com/biopython/biopython-wheels to build wheels,
     by updating the ``BUILD_COMMIT`` line in ``.travis.yml`` and ``appveyor.yaml``
@@ -211,7 +212,7 @@ Tagging the release, and uploading
 
     ``` bash
     $ cd  .../tmp1/biopython/
-    $ git tag biopython-171
+    $ git tag biopython-178
     $ git push origin master --tags
     ```
 
@@ -261,7 +262,7 @@ releases):
     $ emacs wiki/Biopython.md
     $ emacs wiki/Download.md
     $ emacs wiki/Documentation.md # update API docs link
-    $ git commit _config.yml wiki/Biopython.md wiki/Download.md -m "Biopython 1.68 released"
+    $ git commit _config.yml wiki/Biopython.md wiki/Download.md -m "Biopython 1.78 released"
     ```
 
     - before you announce the release, be sure to send your announcement
@@ -282,7 +283,7 @@ releases):
     - forward the email to Linux packagers e.g.
       debian-med@lists.debian.org
 
-23. Conda-Forge should automatically open a pull request to update the
+24. Conda-Forge should automatically open a pull request to update the
     package once it appears on PyPI. Check for a new pull request on
     [github.com/conda-forge/biopython-feedstock](https://github.com/conda-forge/biopython-feedstock)
     which once merged will upload the new release to [anaconda.org/conda-forge/biopython](https://anaconda.org/conda-forge/biopython)
@@ -290,11 +291,9 @@ releases):
 Post release version bump
 -------------------------
 
-24. Bump version numbers again
+25. Bump version numbers again
 
     - Update `Bio/__init__.py` version
-    - Biopython Tutorial - update the date/version line in the
-      `Doc/Tutorial.tex` file
     - Make sure to commit the modified files to github.
 
     Include the suffix ``.dev0`` to indicate this is a development version
