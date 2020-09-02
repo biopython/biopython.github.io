@@ -150,7 +150,7 @@ SeqIO.write(rec_start, "start_only.xml", "seqxml")
 ```
 
 Similarly, the ``Bio.SeqIO.convert`` function's optional alphabet argument has
-been  replaced with an optional molecule type argument:
+been replaced with an optional molecule type argument:
 
 ```python
 # Old style
