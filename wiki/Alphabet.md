@@ -18,21 +18,20 @@ The objects from `Bio.Alphabet` had two main uses:
 
 # Motivation
 
-There were drawbacks to the twenty year old design. In particular how the
+The intended purpose of the alphabet objects was never clearly defined, and
+there were drawbacks to the twenty year old design. In particular the
 `AlphabetEncoder` class (used to add information about gap or stop symbols)
 was overly complicated, and made even determining the molecule type difficult.
 Taking the consensus of multiple alphabet objects (for example during string
 addition) was also complicated. While you could specify a strict alphabet like
-unambiguous IUPC DNA for a sequence, this did not enforce that only letters
+unambiguous IUPAC DNA for a sequence, this did not enforce that only letters
 used were `A`, `C`, `G` and `T`.
 
 # Code changes
 
-After failing to reach any consensus on how to improve or replace the existing
-system, it was agreed to remove it.
-
-In general you can simply remove any explicit use of ``Bio.Alphabet`` in your
-code.
+With no clear proposal on how to improve or replace the existing system, it
+was agreed to remove it. In general you can simply remove any explicit use of
+``Bio.Alphabet`` in your code.
 
 ## Seq changes
 
