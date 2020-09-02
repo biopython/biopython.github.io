@@ -78,10 +78,10 @@ print(my_dna.ungap("="))
 
 ## SeqRecord changes
 
-Some sequence file formats require the molecule type, which previously was
-recorded with a ``Bio.Alphabet`` object as the `.alphabet` attribute of the
-`Seq` object. This is now recorded as a molecule type string in the
-`SeqRecord` object annotation dictionary instead.
+Some sequence file formats require the molecule type when writing a file,
+which previously was recorded with a ``Bio.Alphabet`` object as the
+`.alphabet` attribute of the `Seq` object. This is now recorded as a molecule
+type string in the `SeqRecord` object annotation dictionary instead.
 
 ```python
 # Old style
