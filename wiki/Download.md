@@ -6,27 +6,27 @@ redirect_from:
  - /download/
 ---
 
-Current Release - 1.77 - 25 May 2020
-=========================================
+Current Release - 1.78 - 04 September 2020
+==========================================
 
 See also [What's
 new](https://github.com/biopython/biopython/blob/master/NEWS.rst).
 
 ### Files
 
-#### Biopython 1.77
+#### Biopython 1.78
 
--   [biopython-1.77.tar.gz](http://biopython.org/DIST/biopython-1.77.tar.gz)
-    16Mb -- Source Tarball
--   [biopython-1.77.zip](http://biopython.org/DIST/biopython-1.77.zip)
-    17Mb -- Source Zip File
--   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.77)
+-   [biopython-1.78.tar.gz](http://biopython.org/DIST/biopython-1.78.tar.gz)
+    17Mb -- Source Tarball
+-   [biopython-1.78.zip](http://biopython.org/DIST/biopython-1.78.zip)
+    18Mb -- Source Zip File
+-   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.78)
 
 ### Installation Instructions
 
-Recent versions of Python (starting with Python 2.7.9 and Python 3.4) include
-the Python package management tool ``pip``, which allows an easy installation
-from the command line on all platforms. Try:
+All supported versions of Python include the Python package management
+tool ``pip``, which allows an easy installation from the command line on
+all platforms. Try:
 
 ``` bash
 pip install biopython
@@ -154,6 +154,14 @@ Old Releases
 ============
 
 Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is the last release to support Python 2.7 and 3.5, all later releases require Python 3.6 or greater:
+
+-   [biopython-1.77.tar.gz](http://biopython.org/DIST/biopython-1.77.tar.gz)
+    16Mb -- Source Tarball
+-   [biopython-1.77.zip](http://biopython.org/DIST/biopython-1.77.zip)
+    17Mb -- Source Zip File
+-   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.77)
+
+<!-- -->
 
 -   [biopython-1.76.tar.gz](http://biopython.org/DIST/biopython-1.76.tar.gz)
     16Mb -- Source Tarball
