@@ -198,7 +198,7 @@ Making wheels
     ```
 
 17. Successful wheels will be on
-    [Rackspace](https://a365fff413fe338398b6-1c8a9b3114517dc5fe17b7c3f8c63a43.ssl.cf2.rackcdn.com/),
+    [Anaconda](https://anaconda.org/multibuild-wheels-staging/biopython/files),
     download them from there to your ``~/repository/biopython/DIST/`` folder.
     We will upload these to PyPI later using Twine.
 
