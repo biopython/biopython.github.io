@@ -294,7 +294,8 @@ Post release version bump
 25. Bump version numbers again
 
     - Update `Bio/__init__.py` version
+    - Start entry in `NEWS.rst` for next version
     - Make sure to commit the modified files to github.
 
     Include the suffix ``.dev0`` to indicate this is a development version
-    e.g. if you have `__version__ = "1.79"`, make it `1.79.dev0`
+    e.g. if you had `__version__ = "1.78"`, make it `1.79.dev0`
