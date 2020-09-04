@@ -44,4 +44,4 @@ the libraries and tools.
 |                                                                                                                                                | [ Discuss and ask questions](wiki/Mailing_lists "wikilink")                                                                          | [Report bugs](https://github.com/biopython/biopython/issues) |
 
 The latest release is [Biopython 1.78](wiki/Download "wikilink"), released on
-04 September 2020.
+4 September 2020.
