@@ -17,9 +17,9 @@ new](https://github.com/biopython/biopython/blob/master/NEWS.rst).
 #### Biopython 1.78
 
 -   [biopython-1.78.tar.gz](http://biopython.org/DIST/biopython-1.78.tar.gz)
-    17Mb -- Source Tarball
+    16Mb -- Source Tarball
 -   [biopython-1.78.zip](http://biopython.org/DIST/biopython-1.78.zip)
-    18Mb -- Source Zip File
+    17Mb -- Source Zip File
 -   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.78)
 
 ### Installation Instructions
