@@ -21,8 +21,8 @@ below.
 -   API documentation for Biopython modules is generated directly from
     source code comments Sphinx autodoc:
 
-    [Biopython 1.78 API](https://biopython.org/docs/1.78/api/), and
-    [Biopython in-development API](https://biopython.org/docs/dev/api/).
+    [Biopython API (latest release)](https://biopython.org/docs/latest/api/), and
+    [Biopython API (in-developement)](https://biopython.org/docs/dev/api/).
 
 -   [Wiki documentation](Category%3AWiki_Documentation "wikilink")
     -   [Seq](Seq "wikilink") and [SeqRecord](SeqRecord "wikilink")
