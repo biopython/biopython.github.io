@@ -124,7 +124,7 @@ highlights are:
     lowercasemungedtogether style, depending on your preferences and the
     length of the variable.
 -   \_single\_leading\_underscores to indicate internal functions or
-    classes that shouldn't be called directly be a user.
+    classes that shouldn't be called directly by a user.
 -   Tabs are bad. Most people in the Python community now dislike tabs
     and instead prefer using 4 spaces for indentation. Most editors can
     help you take care of this (Emacs python-mode uses the 4 space rule,
