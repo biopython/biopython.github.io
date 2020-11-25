@@ -13,7 +13,7 @@ whitelist:
 title: Biopython
 tagline: Python Tools for Computational Molecular Biology
 url: http://biopython.org
-baseurl: /
+baseurl:
 
 author:
   name: Biopython Contributors
