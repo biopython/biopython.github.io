@@ -5,8 +5,8 @@ layout: default
 <div class="page">
   <ul class="tag_list_in_post">
     {% for tag in page.tags %}
-      {% assign tag_with_ =  tag | replace:' ','_' %}
-      {% assign rawlink = "/wiki/Category%3A" | append: tag_with_ %}
+      {% assign category =  tag | replace:' ','_' %}
+      {% assign rawlink = "/wiki/Category%3A" | append: category %}
       <li class="inline tag_list_item"><a class="tag_list_link" href={{ rawlink | relative_url }}>{{ tag }}</a></li>
     {% endfor %}
   </ul>
