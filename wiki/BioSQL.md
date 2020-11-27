@@ -50,10 +50,16 @@ will also depend on your operating system, for example on a Debian or
 Ubuntu Linux machine try this:
 
 ``` bash
-sudo apt-get install mysql-common mysql-server python-mysqldb
+sudo apt install mysql-common mysql-server python3-mysqldb
 ```
 
 A password is required for logon. Please refer to [MySQL documentation](https://dev.mysql.com/doc/refman/8.0/en/linux-installation-debian.html).
+
+Python also needs a database driver to access MySQL database. In your virtual environment:
+
+``` bash
+pip install mysql-connector-python
+```
 
 It will also be important to have perl (to run some of the setup
 scripts). Again, on a Debian or Ubuntu Linux machine try this:
@@ -255,7 +261,7 @@ editing the file Tests/setup\_BioSQL.py and filling in the following
 fields:
 
 ``` python
-DBDRIVER = "MySQLdb"
+DBDRIVER = "mysql.connector"
 DBTYPE = "mysql"
 ```
 
@@ -293,7 +299,7 @@ example, lets create a one for some orchid sequences:
 from BioSQL import BioSeqDatabase
 
 server = BioSeqDatabase.open_database(
-    driver="MySQLdb",
+    driver="mysql.connector",
     user="root",
     passwd="your-password",
     host="localhost",
@@ -387,7 +393,7 @@ from Bio import SeqIO
 from BioSQL import BioSeqDatabase
 
 server = BioSeqDatabase.open_database(
-    driver="MySQLdb",
+    driver="mysql.connector",
     user="root",
     passwd="your-password",
     host="localhost",
@@ -434,7 +440,7 @@ into an *orchids* database (namespace):
 from BioSQL import BioSeqDatabase
 
 server = BioSeqDatabase.open_database(
-    driver="MySQLdb",
+    driver="mysql.connector",
     user="root",
     passwd="your-password",
     host="localhost",
@@ -475,7 +481,7 @@ e.g.
 from BioSQL import BioSeqDatabase
 
 server = BioSeqDatabase.open_database(
-    driver="MySQLdb",
+    driver="mysql.connector",
     user="root",
     passwd="your-password",
     host="localhost",
@@ -500,7 +506,7 @@ the records in it):
 from BioSQL import BioSeqDatabase
 
 server = BioSeqDatabase.open_database(
-    driver="MySQLdb",
+    driver="mysql.connector",
     user="root",
     passwd="your-password",
     host="localhost",
