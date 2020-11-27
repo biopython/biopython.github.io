@@ -56,6 +56,16 @@ Ubuntu Linux machine try this:
 
 A password is required for logon. Please refer to [MySQL documentation](https://dev.mysql.com/doc/refman/8.0/en/linux-installation-debian.html).
 
+Python also needs a database driver to access MySQL database. In your virtual environment:
+
+``` bash
+(python2): pip install MySQL-python
+(python3): pip install mysql-connector-python
+```
+
+In the examples below the driver name used is the one for Python 2 (`"MySQLdb"`).
+If you use Python 3, remember to replace it with `"mysql.connector"`.
+
 It will also be important to have perl (to run some of the setup
 scripts). Again, on a Debian or Ubuntu Linux machine try this:
 
