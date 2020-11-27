@@ -61,9 +61,6 @@ Python also needs a database driver to access MySQL database. In your virtual en
 pip install mysql-connector-python
 ```
 
-In the examples below the driver name used is the one for Python 2 (`"MySQLdb"`).
-If you use Python 3, remember to replace it with `"mysql.connector"`.
-
 It will also be important to have perl (to run some of the setup
 scripts). Again, on a Debian or Ubuntu Linux machine try this:
 
@@ -264,7 +261,7 @@ editing the file Tests/setup\_BioSQL.py and filling in the following
 fields:
 
 ``` python
-DBDRIVER = "MySQLdb"
+DBDRIVER = "mysql.connector"
 DBTYPE = "mysql"
 ```
 
@@ -302,7 +299,7 @@ example, lets create a one for some orchid sequences:
 from BioSQL import BioSeqDatabase
 
 server = BioSeqDatabase.open_database(
-    driver="MySQLdb",
+    driver="mysql.connector",
     user="root",
     passwd="your-password",
     host="localhost",
@@ -396,7 +393,7 @@ from Bio import SeqIO
 from BioSQL import BioSeqDatabase
 
 server = BioSeqDatabase.open_database(
-    driver="MySQLdb",
+    driver="mysql.connector",
     user="root",
     passwd="your-password",
     host="localhost",
@@ -443,7 +440,7 @@ into an *orchids* database (namespace):
 from BioSQL import BioSeqDatabase
 
 server = BioSeqDatabase.open_database(
-    driver="MySQLdb",
+    driver="mysql.connector",
     user="root",
     passwd="your-password",
     host="localhost",
@@ -484,7 +481,7 @@ e.g.
 from BioSQL import BioSeqDatabase
 
 server = BioSeqDatabase.open_database(
-    driver="MySQLdb",
+    driver="mysql.connector",
     user="root",
     passwd="your-password",
     host="localhost",
@@ -509,7 +506,7 @@ the records in it):
 from BioSQL import BioSeqDatabase
 
 server = BioSeqDatabase.open_database(
-    driver="MySQLdb",
+    driver="mysql.connector",
     user="root",
     passwd="your-password",
     host="localhost",
