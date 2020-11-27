@@ -23,8 +23,7 @@ database adaptors and basic usage of BioSQL. This is a little old, and I
 am hoping to use this wiki page to update the above documentation in
 future.
 
-The following text applies to Biopython 1.45 or later (and won't work
-with Biopython 1.44).
+The following text applies to Biopython 1.64 or later (and assumes Python 3).
 
 Installation
 ============
@@ -300,7 +299,7 @@ server = BioSeqDatabase.open_database(
     db="bioseqdb",
 )
 db = server.new_database("orchids", description="Just for testing")
-server.commit()  # On Biopython 1.49 or older, server.adaptor.commit()
+server.commit()
 ```
 
 (If you are using PostgreSQL rather than MySQL, just change the driver
@@ -399,7 +398,7 @@ handle = Entrez.efetch(
 )
 count = db.load(SeqIO.parse(handle, "genbank"))
 print("Loaded %i records" % count)
-server.commit()  # On Biopython 1.49 or older, server.adaptor.commit()
+server.commit()
 ```
 
 Again, you must explicitly call *commit* to record the SQL transaction
@@ -507,7 +506,7 @@ server = BioSeqDatabase.open_database(
     db="bioseqdb",
 )
 server.remove_database("orchids")
-server.commit()  # On Biopython 1.49 or older, server.adaptor.commit()
+server.commit()
 ```
 
 Again, you must explicitly finialise the SQL transaction with a commit
