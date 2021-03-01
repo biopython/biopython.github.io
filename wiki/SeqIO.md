@@ -133,20 +133,9 @@ with open("example.fasta") as handle:
 ```
 
 In the above example, we opened the file using the built-in python
-function `open`. If you are using Python version that is less than 3.4,
-you can add `'rU'` to the open function as
-
-``` python
-with open("example.fasta","rU") as handle:
-```
-
-The argument `'rU'` means open for **r**eading using
-**u**niversal readline mode - this means you don't have to worry if the
-file uses Unix, Mac or DOS/Windows style newline characters. If you use
-Python 3.4+, you do not need to worry about it. 
-
-The `with`- statement makes sure that the file is properly closed after reading it.
-That should all happen automatically if you just use the filename instead.
+function `open`. The `with`- statement makes sure that the file is properly 
+closed after reading it. That should all happen automatically if you 
+just use the filename instead.
 
 Note that you *must* specify the file format explicitly, unlike
 [BioPerl's SeqIO](http://bioperl.org/howtos/SeqIO_HOWTO) which can try to guess
