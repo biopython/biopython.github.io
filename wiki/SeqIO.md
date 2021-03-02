@@ -133,8 +133,8 @@ with open("example.fasta") as handle:
 ```
 
 In the above example, we opened the file using the built-in python
-function `open`. The `with`- statement makes sure that the file is properly 
-closed after reading it. That should all happen automatically if you 
+function `open`. The `with`- statement makes sure that the file is properly
+closed after reading it. That should all happen automatically if you
 just use the filename instead.
 
 Note that you *must* specify the file format explicitly, unlike
