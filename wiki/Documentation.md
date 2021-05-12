@@ -22,7 +22,7 @@ below.
     source code comments Sphinx autodoc:
 
     [Biopython API (latest release)](https://biopython.org/docs/latest/api/), and
-    [Biopython API (in-developement)](https://biopython.org/docs/dev/api/).
+    [Biopython API (in-development)](https://biopython.org/docs/dev/api/).
 
 -   [Wiki documentation](Category%3AWiki_Documentation "wikilink")
     -   [Seq](Seq "wikilink") and [SeqRecord](SeqRecord "wikilink")
@@ -54,7 +54,7 @@ below.
 
 #### Documentation for Developers
 
--   List of [Active projects](Active_projects "wikilink") to get
+-   List of [active projects](Active_projects "wikilink") to get
     involved with.
 -   How to [contribute code](Contributing "wikilink") to Biopython.
 -   [Deprecation policy](Deprecation_policy "wikilink")
@@ -68,7 +68,7 @@ below.
     Bioinformatics in Python class at the National Bioinformatics
     Network in South Africa.
 
-    [html](http://www.dalkescientific.com/writings/NBN/)
+    [HTML](http://www.dalkescientific.com/writings/NBN/)
 
 -   Kristian Rother wrote a GitBook for learning Biopython with two case studies
 
