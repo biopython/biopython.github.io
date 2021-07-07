@@ -18,9 +18,9 @@ Biopython 1.69 includes a MAF reader and writer accessible via
 
 All examples below make use of the Multiz [30-way alignment to mouse
 chromosome
-10](http://hgdownload.cse.ucsc.edu/goldenpath/hg19/multiz46way/maf/chr10.maf.gz)
+10](http://hgdownload.cse.ucsc.edu/goldenpath/mm9/multiz30way/maf/chr10.maf.gz)
 available from UCSC.
-
+    
 Getting the AlignIO code from GitHub
 ------------------------------------
 
