@@ -11,7 +11,7 @@ layout: default
          {% for tag in p.tags %}
           {% if tag == page.tag %}
             <li>
-               <a class="page-link" href="{{ p.url }}">{{ p.title }}</a>
+               <a class="page-link" href="{{ p.url | relative_url }}">{{ p.title }}</a>
             </li>
           {% endif %}
         {% endfor %}
