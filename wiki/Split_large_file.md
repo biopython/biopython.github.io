@@ -102,7 +102,7 @@ for i, batch in enumerate(batch_iterator(record_iter, 1000)):
 How it works
 ------------
 
-It is possible to use list ([`SeqIO.parse(...)`](SeqIO "wikilink")) to read
+It is possible to use [`list(SeqIO.parse(...))`](SeqIO "wikilink")) to read
 the entire contents of a file into memory then write slices of the list
 out as smaller files. For large files (like the ones this recipe is
 about) that would take up a big hunk of memory, instead we can define a
