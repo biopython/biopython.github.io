@@ -21,6 +21,7 @@ new](https://github.com/biopython/biopython/blob/master/NEWS.rst).
 -   [biopython-1.79.zip](http://biopython.org/DIST/biopython-1.79.zip)
     17Mb -- Source Zip File
 -   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.79)
+-   [Tutorial-1.79.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.79.pdf) -- Documentation
 
 ### Installation Instructions
 
@@ -156,42 +157,47 @@ Old Releases
 Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is the last release to support Python 2.7 and 3.5, all later releases require Python 3.6 or greater:
 
 -   [biopython-1.78.tar.gz](http://biopython.org/DIST/biopython-1.78.tar.gz)
-    16Mb -- Source Tarball
+    16Mb -- Source Tarball (4 September 2020)
 -   [biopython-1.78.zip](http://biopython.org/DIST/biopython-1.78.zip)
     17Mb -- Source Zip File
 -   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.78)
+-   [Tutorial-1.78.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.78.pdf) -- Documentation
 
 <!-- -->
 
 -   [biopython-1.77.tar.gz](http://biopython.org/DIST/biopython-1.77.tar.gz)
-    16Mb -- Source Tarball
+    16Mb -- Source Tarball (25 May 2020)
 -   [biopython-1.77.zip](http://biopython.org/DIST/biopython-1.77.zip)
     17Mb -- Source Zip File
 -   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.77)
+-   [Tutorial-1.77.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.77.pdf) -- Documentation
 
 <!-- -->
 
 -   [biopython-1.76.tar.gz](http://biopython.org/DIST/biopython-1.76.tar.gz)
-    16Mb -- Source Tarball
+    16Mb -- Source Tarball (20 December 2019)
 -   [biopython-1.75.zip](http://biopython.org/DIST/biopython-1.76.zip)
     17Mb -- Source Zip File
 -   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.76)
+-   [Tutorial-1.76.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.76.pdf) -- Documentation
 
 <!-- -->
 
 -   [biopython-1.75.tar.gz](http://biopython.org/DIST/biopython-1.75.tar.gz)
-    16Mb -- Source Tarball
+    16Mb -- Source Tarball (6 November 2019)
 -   [biopython-1.75.zip](http://biopython.org/DIST/biopython-1.75.zip)
     17Mb -- Source Zip File
 -   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.75)
+-   [Tutorial-1.75.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.75.pdf) -- Documentation
 
 <!-- -->
 
 -   [biopython-1.74.tar.gz](http://biopython.org/DIST/biopython-1.74.tar.gz)
-    16Mb -- Source Tarball
+    16Mb -- Source Tarball (16 July 2019)
 -   [biopython-1.74.zip](http://biopython.org/DIST/biopython-1.74.zip)
     17Mb -- Source Zip File
 -   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.74)
+-   [Tutorial-1.74.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.74.pdf) -- Documentation
 
 <!-- -->
 
@@ -200,6 +206,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
 -   [biopython-1.73.zip](http://biopython.org/DIST/biopython-1.73.zip)
     17Mb -- Source Zip File
 -   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.73)
+-   [Tutorial-1.73.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.73.pdf) -- Documentation
 
 <!-- -->
 
@@ -208,6 +215,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
 -   [biopython-1.72.zip](http://biopython.org/DIST/biopython-1.72.zip)
     17Mb -- Source Zip File
 -   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.72)
+-   [Tutorial-1.72.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.72.pdf) -- Documentation
 
 <!-- -->
 
@@ -216,6 +224,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
 -   [biopython-1.71.zip](http://biopython.org/DIST/biopython-1.71.zip)
     17Mb -- Source Zip File
 -   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.71)
+-   [Tutorial-1.71.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.71.pdf) -- Documentation
 
 <!-- -->
 
@@ -224,6 +233,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
 -   [biopython-1.70.zip](http://biopython.org/DIST/biopython-1.70.zip)
     16Mb -- Source Zip File
 -   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.70)
+-   [Tutorial-1.70.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.70.pdf) -- Documentation
 
 <!-- -->
 
@@ -251,6 +261,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
     2Mb -- 32 bit Windows .exe Installer for Python 3.6 and NumPy 1.11.3
 -   [biopython-1.69.win32-py3.6.msi](http://biopython.org/DIST/biopython-1.69.win32-py3.6.msi)
     2Mb -- 32 bit Windows .msi Installer for Python 3.6 and NumPy 1.11.3
+-   [Tutorial-1.69.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.69.pdf) -- Documentation
 
 <!-- -->
 
@@ -276,6 +287,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
     2Mb -- 32 bit Windows .exe Installer for Python 3.5 and NumPy 1.11.1
 -   [biopython-1.68.win32-py3.5.msi](http://biopython.org/DIST/biopython-1.68.win32-py3.5.msi)
     2Mb -- 32 bit Windows .msi Installer for Python 3.5 and NumPy 1.11.1
+-   [Tutorial-1.68.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.68.pdf) -- Documentation
 
 <!-- -->
 
@@ -303,6 +315,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
     2Mb -- 32 bit Windows .exe Installer for Python 3.4 and NumPy 1.9.3
 -   [biopython-1.67.win32-py3.5.msi](http://biopython.org/DIST/biopython-1.67.win32-py3.5.msi)
     2Mb -- 32 bit Windows .msi Installer for Python 3.4 and NumPy 1.9.3
+-   [Tutorial-1.67.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.67.pdf) -- Documentation
 
 <!-- -->
 
@@ -322,6 +335,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
     2Mb -- 32 bit Windows .exe Installer for Python 3.5
 -   [biopython-1.66.win32-py3.5.msi](http://biopython.org/DIST/biopython-1.66.win32-py3.5.msi)
     2Mb -- 32 bit Windows .msi Installer for Python 3.5
+-   [Tutorial-1.66.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.66.pdf) -- Documentation
 
 <!-- -->
 
@@ -337,6 +351,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
     2Mb -- 32 bit Windows Installer for Python 3.3 and NumPy 1.9.1
 -   [biopython-1.65.win32-py3.4.exe](http://biopython.org/DIST/biopython-1.65.win32-py3.4.exe)
     2Mb -- 32 bit Windows Installer for Python 3.4 and NumPy 1.9.1
+-   [Tutorial-1.65.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.65.pdf) -- Documentation
 
 <!-- -->
 
@@ -352,6 +367,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
     2Mb -- 32 bit Windows Installer for Python 3.3 and NumPy 1.8.1
 -   [biopython-1.64.win32-py3.4.exe](http://biopython.org/DIST/biopython-1.64.win32-py3.4.exe)
     2Mb -- 32 bit Windows Installer for Python 3.4 and NumPy 1.8.1
+-   [Tutorial-1.64.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.64.pdf) -- Documentation
 
 <!-- -->
 
@@ -365,6 +381,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
     2Mb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.7
 -   [biopython-1.63.win32-py3.3.exe](http://biopython.org/DIST/biopython-1.63.win32-py3.3.exe)
     2Mb -- 32 bit Windows Installer for Python 3.3 and NumPy 1.7
+-   [Tutorial-1.63.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.63.pdf) -- Documentation
 
 <!-- -->
 
@@ -378,6 +395,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
     2,003 Kb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.7
 -   [biopython-1.63b.win32-py3.3.exe](http://biopython.org/DIST/biopython-1.63b.win32-py3.3.exe)
     2,005 Kb -- 32 bit Windows Installer for Python 3.3 and NumPy 1.7
+-   [Tutorial-1.63b.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.63b.pdf) -- Documentation
 
 <!-- -->
 
@@ -393,6 +411,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
     2,003 Kb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.5
 -   [biopython-1.62.win32-py3.3.exe](http://biopython.org/DIST/biopython-1.62.win32-py3.3.exe)
     2,005 Kb -- 32 bit Windows Installer for Python 3.3 and NumPy 1.7
+-   [Tutorial-1.62.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.62.pdf) -- Documentation
 
 <!-- -->
 
@@ -408,6 +427,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
     1,813 Kb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.5
 -   [biopython-1.62b.win32-py3.3.exe](http://biopython.org/DIST/biopython-1.62b.win32-py3.3.exe)
     1,814 Kb -- 32 bit Windows Installer for Python 3.3 and NumPy 1.7
+-   [Tutorial-1.62b.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.62b.pdf) -- Documentation
 
 <!-- -->
 
@@ -427,6 +447,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
 -   [biopython-1.61.win32-py3.3-beta.exe](http://biopython.org/DIST/biopython-1.61.win32-py3.3-beta.exe)
     1,750 Kb -- 32 bit Windows Installer for Python 3.3 and NumPy 1.7
     (*beta* status for testing)
+-   [Tutorial-1.61.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.61.pdf) -- Documentation
 
 <!-- -->
 
@@ -443,6 +464,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
 -   [biopython-1.60.win32-py3.2-beta.exe](http://biopython.org/DIST/biopython-1.60.win32-py3.2-beta.exe)
     1,611 Kb -- 32 bit Windows Installer for Python 3.2 and NumPy 1.5
     (*beta* status for testing)
+-   [Tutorial-1.60.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.60.pdf) -- Documentation
 
 <!-- -->
 
@@ -456,6 +478,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
     1,463 Kb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.3
 -   [biopython-1.59.win32-py2.7.exe](http://biopython.org/DIST/biopython-1.59.win32-py2.7.exe)
     1,590 Kb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.5
+-   [Tutorial-1.59.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.59.pdf) -- Documentation
 
 <!-- -->
 
@@ -472,6 +495,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
     1,450 Kb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.3
 -   [biopython-1.58.win32-py2.7.exe](http://biopython.org/DIST/biopython-1.58.win32-py2.7.exe)
     1,577 Kb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.5
+-   [Tutorial-1.58.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.58.pdf) -- Documentation
 
 <!-- -->
 
@@ -488,6 +512,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
     1,428 Kb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.3
 -   [biopython-1.57.win32-py2.7.exe](http://biopython.org/DIST/biopython-1.57.win32-py2.7.exe)
     1,555 Kb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.5
+-   [Tutorial-1.57.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.57.pdf) -- Documentation
 
 <!-- -->
 
@@ -503,6 +528,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
     1,451 Kb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.3
 -   [biopython-1.56.win32-py2.7.exe](http://biopython.org/DIST/biopython-1.56.win32-py2.7.exe)
     1,578 Kb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.5
+-   [Tutorial-1.56.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.56.pdf) -- Documentation
 
 <!-- -->
 
@@ -518,6 +544,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
     1,471 Kb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.3
 -   [biopython-1.55.win32-py2.7.exe](http://biopython.org/DIST/biopython-1.55.win32-py2.7.exe)
     1,598 Kb -- 32 bit Windows Installer for Python 2.7 and NumPy 1.5
+-   [Tutorial-1.55.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.55.pdf) -- Documentation
 
 <!-- -->
 
@@ -531,6 +558,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
     1,451 Kb -- 32 bit Windows Installer for Python 2.5 and NumPy 1.1
 -   [biopython-1.55b.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.55b.win32-py2.6.exe)
     1,474 Kb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.3
+-   [Tutorial-1.55b.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.55b.pdf) -- Documentation
 
 <!-- -->
 
@@ -544,6 +572,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
     1,434 Kb -- 32 bit Windows Installer for Python 2.5 and NumPy 1.1
 -   [biopython-1.54.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.54.win32-py2.6.exe)
     1,457 Kb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.3
+-   [Tutorial-1.54.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.54.pdf) -- Documentation
 
 <!-- -->
 
@@ -557,6 +586,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
     1,427 Kb -- 32 bit Windows Installer for Python 2.5 and NumPy 1.1
 -   [biopython-1.54b.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.54b.win32-py2.6.exe)
     1,456 Kb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.3
+-   [Tutorial-1.54b.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.54b.pdf) -- Documentation
 
 <!-- -->
 
@@ -570,6 +600,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
     1,130 Kb -- 32 bit Windows Installer for Python 2.5 and NumPy 1.1
 -   [biopython-1.53.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.53.win32-py2.6.exe)
     1,155 Kb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.3
+-   [Tutorial-1.53.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.53.pdf) -- Documentation
 
 <!-- -->
 
@@ -583,6 +614,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
     1,108 Kb -- 32 bit Windows Installer for Python 2.5 and NumPy 1.1
 -   [biopython-1.52.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.52.win32-py2.6.exe)
     1,147 Kb -- 32 bit Windows Installer for Python 2.6 and NumPy 1.3
+-   [Tutorial-1.52.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.52.pdf) -- Documentation
 
 <!-- -->
 
@@ -596,6 +628,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
     1,167 Kb -- Windows Installer for Python 2.5 and NumPy 1.1
 -   [biopython-1.51.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.51.win32-py2.6.exe)
     1,206 Kb -- Windows Installer for Python 2.6 and NumPy 1.3
+-   [Tutorial-1.51.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.51.pdf) -- Documentation
 
 <!-- -->
 
@@ -609,6 +642,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
     1,161 Kb -- Windows Installer for Python 2.5 and NumPy 1.1
 -   [biopython-1.51b.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.51b.win32-py2.6.exe)
     1,199 Kb -- Windows Installer for Python 2.6 and NumPy 1.3
+-   [Tutorial-1.51b.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.51b.pdf) -- Documentation
 
 <!-- -->
 
@@ -624,6 +658,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
     1,232 Kb -- Windows Installer for Python 2.5 and NumPy 1.1
 -   [biopython-1.50.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.50.win32-py2.6.exe)
     1,270 Kb -- Windows Installer for Python 2.6 and NumPy 1.3
+-   [Tutorial-1.50.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.50.pdf) -- Documentation
 
 <!-- -->
 
@@ -639,6 +674,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
     1,230 Kb -- Windows Installer for Python 2.5 and NumPy 1.1
 -   [biopython-1.50b.win32-py2.6.exe](http://biopython.org/DIST/biopython-1.50b.win32-py2.6.exe)
     1,268 Kb -- Windows Installer for Python 2.6 and NumPy 1.3
+-   [Tutorial-1.50b.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.50b.pdf) -- Documentation
 
 <!-- -->
 
@@ -652,6 +688,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
     1,115 Kb -- Windows Installer for Python 2.4 and NumPy 1.1
 -   [biopython-1.49.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.49.win32-py2.5.exe)
     1,115 Kb -- Windows Installer for Python 2.5 and NumPy 1.1
+-   [Tutorial-1.49.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.49.pdf) -- Documentation
 
 <!-- -->
 
@@ -665,6 +702,7 @@ Recent releases of Biopython require NumPy (and not Numeric). Version 1.76 is th
     1,113 Kb -- Windows Installer for Python 2.4 and NumPy 1.1
 -   [biopython-1.49b.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.49b.win32-py2.5.exe)
     1,114 Kb -- Windows Installer for Python 2.5 and NumPy 1.1
+-   [Tutorial-1.49b.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.49b.pdf) -- Documentation
 
 Please note that Biopython 1.48 and older require the Numeric library,
 not its replacement NumPy. Windows installers for Python 2.4 and older
@@ -690,6 +728,7 @@ so ideally install the older mxTextTools 2.0.
     1,254 Kb
 -   [biopython-1.48.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.48.win32-py2.5.exe)
     1,254 Kb
+-   [Tutorial-1.48.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.48.pdf) -- Documentation
 -   [biopython-1.47.tar.gz](http://biopython.org/DIST/biopython-1.47.tar.gz)
     4,018 Kb (July 5, 2008)
 -   [biopython-1.47.zip](http://biopython.org/DIST/biopython-1.47.zip)
@@ -700,6 +739,7 @@ so ideally install the older mxTextTools 2.0.
     1,236 Kb
 -   [biopython-1.47.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.47.win32-py2.5.exe)
     1,236 Kb
+-   [Tutorial-1.47.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.47.pdf) -- Documentation
 -   [biopython-1.46.tar.gz](http://biopython.org/DIST/biopython-1.46.tar.gz)
     3,926 Kb (June 29, 2008)
 -   [biopython-1.46.zip](http://biopython.org/DIST/biopython-1.46.zip)
@@ -710,6 +750,7 @@ so ideally install the older mxTextTools 2.0.
     1,235 Kb
 -   [biopython-1.46.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.46.win32-py2.5.exe)
     1,235 Kb
+-   [Tutorial-1.46.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.46.pdf) -- Documentation
 -   [biopython-1.45.tar.gz](http://biopython.org/DIST/biopython-1.45.tar.gz)
     3,886 Kb (March 22, 2008)
 -   [biopython-1.45.zip](http://biopython.org/DIST/biopython-1.45.zip)
@@ -720,6 +761,7 @@ so ideally install the older mxTextTools 2.0.
     1,141 Kb
 -   [biopython-1.45.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.45.win32-py2.5.exe)
     1,142 Kb
+-   [Tutorial-1.45.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.45.pdf) -- Documentation
 -   [biopython-1.44.tar.gz](http://biopython.org/DIST/biopython-1.44.tar.gz)
     3,750 Kb (October 28, 2007)
 -   [biopython-1.44.zip](http://biopython.org/DIST/biopython-1.44.zip)
@@ -730,6 +772,7 @@ so ideally install the older mxTextTools 2.0.
     1,116 Kb
 -   [biopython-1.44.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.44.win32-py2.5.exe)
     1,116 Kb
+-   [Tutorial-1.44.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.44.pdf) -- Documentation
 -   [biopython-1.43.tar.gz](http://biopython.org/DIST/biopython-1.43.tar.gz)
     3,778 Kb (March 17, 2007)
 -   [biopython-1.43.zip](http://biopython.org/DIST/biopython-1.43.zip)
@@ -740,6 +783,7 @@ so ideally install the older mxTextTools 2.0.
     1,108 Kb
 -   [biopython-1.43.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.43.win32-py2.5.exe)
     1,109 Kb
+-   [Tutorial-1.43.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.43.pdf) -- Documentation
 -   [biopython-1.42.tar.gz](http://biopython.org/DIST/biopython-1.42.tar.gz)
     3,841 Kb (July 16, 2006)
 -   [biopython-1.42.zip](http://biopython.org/DIST/biopython-1.42.zip)
@@ -750,6 +794,7 @@ so ideally install the older mxTextTools 2.0.
     1,074 Kb
 -   [biopython-1.42.win32-py2.5.exe](http://biopython.org/DIST/biopython-1.42.win32-py2.5.exe)
     1,075 Kb
+-   [Tutorial-1.42.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.42.pdf) -- Documentation
 -   [biopython-1.41.tar.gz](http://biopython.org/DIST/biopython-1.41.tar.gz)
     3,719 Kb (October 28, 2005)
 -   [biopython-1.41.zip](http://biopython.org/DIST/biopython-1.41.zip)
@@ -758,6 +803,7 @@ so ideally install the older mxTextTools 2.0.
     1,038 Kb
 -   [biopython-1.41.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.41.win32-py2.4.exe)
     1,042 Kb
+-   [Tutorial-1.41.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.41.pdf) -- Documentation
 -   [biopython-1.40b.tar.gz](http://biopython.org/DIST/biopython-1.40b.tar.gz)
     3,437 Kb (February 18, 2005)
 -   [biopython-1.40b.zip](http://biopython.org/DIST/biopython-1.40b.zip)
@@ -766,8 +812,10 @@ so ideally install the older mxTextTools 2.0.
     1,019 Kb
 -   [biopython-1.40b.win32-py2.4.exe](http://biopython.org/DIST/biopython-1.40b.win32-py2.4.exe)
     1,023 Kb
+-   [Tutorial-1.40b.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.40b.pdf) -- Documentation
 -   [biopython-1.30.tar.gz](http://biopython.org/DIST/biopython-1.30.tar.gz)
     3,186 Kb (May 14, 2004)
+-   [Tutorial-1.30.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.30.pdf) -- Documentation
 -   [biopython-1.24.tar.gz](http://biopython.org/DIST/biopython-1.24.tar.gz)
     3,081 Kb (February 16, 2004)
 -   [biopython-1.24.zip](http://biopython.org/DIST/biopython-1.24.zip)
@@ -776,6 +824,7 @@ so ideally install the older mxTextTools 2.0.
     892 Kb
 -   [biopython-1.24.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.24.win32-py2.3.exe)
     894 Kb
+-   [Tutorial-1.24.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.24.pdf) -- Documentation
 -   [biopython-1.23.tar.gz](http://biopython.org/DIST/biopython-1.23.tar.gz)
     2,241 Kb (October 18, 2003)
 -   [biopython-1.23.zip](http://biopython.org/DIST/biopython-1.23.zip)
@@ -784,10 +833,12 @@ so ideally install the older mxTextTools 2.0.
     833 Kb
 -   [biopython-1.23.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.23.win32-py2.3.exe)
     842 Kb
+-   [Tutorial-1.23.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.23.pdf) -- Documentation
 -   [biopython-1.22.tar.gz](http://biopython.org/DIST/biopython-1.22.tar.gz)
     2,214 Kb (October 9, 2003)
 -   [biopython-1.22.zip](http://biopython.org/DIST/biopython-1.22.zip)
     2,691 Kb
+-   [Tutorial-1.22.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.22.pdf) -- Documentation
 -   [biopython-1.21.tar.gz](http://biopython.org/DIST/biopython-1.21.tar.gz)
     2,214 Kb
 -   [biopython-1.21.zip](http://biopython.org/DIST/biopython-1.21.zip)
@@ -796,16 +847,19 @@ so ideally install the older mxTextTools 2.0.
     770 Kb
 -   [biopython-1.21.win32-py2.3.exe](http://biopython.org/DIST/biopython-1.21.win32-py2.3.exe)
     832 Kb
+-   [Tutorial-1.21.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.21.pdf) -- Documentation
 -   [biopython-1.20.tar.gz](http://biopython.org/DIST/biopython-1.20.tar.gz)
     2,101 Kb (July 28, 2003)
 -   [biopython-1.20.zip](http://biopython.org/DIST/biopython-1.20.zip)
     2,602 Kb
+-   [Tutorial-1.20.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.20.pdf) -- Documentation
 -   [biopython-1.10.tar.gz](http://biopython.org/DIST/biopython-1.10.tar.gz)
     1,811 Kb (December 17, 2002)
 -   [biopython-1.10.zip](http://biopython.org/DIST/biopython-1.10.zip)
     2,300 Kb
 -   [biopython-1.10.win32-py2.2.exe](http://biopython.org/DIST/biopython-1.10.win32-py2.2.exe)
     1,199 Kb
+-   [Tutorial-1.10.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.10.pdf) -- Documentation
 -   [biopython-1.00a4.tar.gz](http://biopython.org/DIST/biopython-1.00a4.tar.gz)
     1,739Kb (December 18, 2001)
 -   [biopython-1.00a4.zip](http://biopython.org/DIST/biopython-1.00a4.zip)
@@ -818,6 +872,7 @@ so ideally install the older mxTextTools 2.0.
     838Kb
 -   [MacBiopython-1.00a4.sit](http://biopython.org/DIST/MacBiopython-1.00a4.sit)
     2.2Mb
+-   [Tutorial-1.00a4.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.00a4.pdf) -- Documentation
 -   [biopython-1.00a3.tar.gz](http://biopython.org/DIST/biopython-1.00a3.tar.gz)
     1,816Kb (September 3, 2001)
 -   [biopython-1.00a3.zip](http://biopython.org/DIST/biopython-1.00a3.zip)
@@ -828,4 +883,5 @@ so ideally install the older mxTextTools 2.0.
     585Kb
 -   [Macbiopython-1.00a3.sit.bin](http://biopython.org/DIST/Macbiopython-1.00a3.sit.bin)
     1926Kb
+-   [Tutorial-1.00a3.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.00a3.pdf) -- Documentation
 
