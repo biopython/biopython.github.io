@@ -145,33 +145,46 @@ Checking the compiled documentation
 -----------------------------------
 
 15. Since Biopython 1.74, Sphinx has handled the API documentation via continuous
-    integration, but you still have to update the Tutorial and PDB FAQ on the website manually.
-
-  - Update the Tutorial and PDB FAQ:
+    integration, but you still have to update the "latest" symlink.
 
     ``` bash
-    $ cd ~/repositories/DIST/docs/tutorial/
-    $ cp .../tmp1/biopython/Doc/Tutorial.html .
-    $ cp .../tmp1/biopython/Doc/Tutorial.pdf .
-    $ cp .../tmp1/biopython/Doc/biopdb_faq.pdf .
-    $ git commit Tutorial.html Tutorial.pdf biopdb_faq.pdf -m "Tutorial and FAQ for Biopython 1.78"
-    ```
-
-    - Push this to GitHub Pages to update the website:
-
-    ``` bash
+    $ cd ~/repositories/docs/
+    $ git fetch origin
+    $ git checkout gh-pages  # should only be this one branch
+    $ git checkout rebase origin/gh-pages  # get any changes
+    $ rm latest
+    $ ln -s 1.78 latest
+    $ git commit latest -m "Update 'latest' symlink to point at 1.78"
     $ git push origin gh-pages
     ```
 
-    - Check this is live at <http://biopython.org/DIST/docs/api/Bio-module.html>,
-      <http://biopython.org/DIST/docs/tutorial/Tutorial.html>,
-      <http://biopython.org/DIST/docs/tutorial/Tutorial.pdf>, and
-      <http://biopython.org/DIST/docs/tutorial/biopdb_faq.pdf>
+16. Update Tutorial and PDB FAQ on the website manually.
+
+      - Update the Tutorial and PDB FAQ:
+
+      ``` bash
+      $ cd ~/repositories/DIST/docs/tutorial/
+      $ cp .../tmp1/biopython/Doc/Tutorial.html .
+      $ cp .../tmp1/biopython/Doc/Tutorial.pdf .
+      $ cp .../tmp1/biopython/Doc/biopdb_faq.pdf .
+      $ git commit Tutorial.html Tutorial.pdf biopdb_faq.pdf -m "Tutorial and FAQ for Biopython 1.78"
+      ```
+
+      - Push this to GitHub Pages to update the website:
+
+      ``` bash
+      $ git push origin gh-pages
+      ```
+
+      - Check this is live at <http://biopython.org/DIST/docs/api/Bio-module.html>,
+        <http://biopython.org/DIST/docs/tutorial/Tutorial.html>,
+        <http://biopython.org/DIST/docs/tutorial/Tutorial.pdf>, and
+        <http://biopython.org/DIST/docs/tutorial/biopdb_faq.pdf>
 
 Making wheels
 -------------
 
-16. Now we use https://github.com/biopython/biopython-wheels to build wheels,
+17. Now we use https://github.com/biopython/biopython-wheels to build wheels,
     by updating the ``BUILD_COMMIT`` line in ``.travis.yml`` and ``appveyor.yaml``
     to the new release's commit hash (which all being well will get a git tag).
 
@@ -199,18 +212,18 @@ Making wheels
     $ git push origin master
     ```
 
-17. Successful wheels will be on
+18. Successful wheels will be on
     [Anaconda](https://anaconda.org/multibuild-wheels-staging/biopython/files),
     download them from there to your ``~/repository/biopython/DIST/`` folder.
     We will upload these to PyPI later using Twine.
 
-18. If you have a Windows machine, remove any prior Biopython installations,
+19. If you have a Windows machine, remove any prior Biopython installations,
     and confirm the Windows wheel file(s) work.
 
 Tagging the release, and uploading
 ----------------------------------
 
-19. Back in the main repository, tag the release:
+20. Back in the main repository, tag the release:
 
     ``` bash
     $ cd  .../tmp1/biopython/
@@ -218,7 +231,7 @@ Tagging the release, and uploading
     $ git push origin master --tags
     ```
 
-20. Upload the new release tar-ball and zip to the website via GitHub Pages `DIST` repository.
+21. Upload the new release tar-ball and zip to the website via GitHub Pages `DIST` repository.
 
     ``` bash
     $ cp dist/biopython-1.78.* ~/repositories/DIST/
@@ -231,8 +244,7 @@ Tagging the release, and uploading
     $ git push origin gh-pages
     ```
 
-21. Upload to the python package index (except for beta/alpha level
-releases):
+22. Upload to the python package index (except for beta/alpha level releases):
 
     ``` bash
     $ cd  ~/repositories/biopython/
@@ -246,7 +258,7 @@ releases):
 
     - Check this is live at <https://pypi.python.org/pypi/biopython/>
 
-22. Update the website:
+23. Update the website:
 
     - If you haven't already, clone the ``biopython.github.io`` repository,
       (otherwise make sure your copy is up to date):
@@ -273,7 +285,7 @@ releases):
       page](Download "wikilink") (through the wiki), make sure the links
       work.
 
-23. Announcement:
+24. Announcement:
 
     - post the announcement on the [www.open-bio.org](https://www.open-bio.org)
       blog (making sure to use the Biopython category which will update the
@@ -284,7 +296,7 @@ releases):
     - forward the email to Linux packagers e.g.
       debian-med@lists.debian.org
 
-24. Conda-Forge should automatically open a pull request to update the
+25. Conda-Forge should automatically open a pull request to update the
     package once it appears on PyPI. Check for a new pull request on
     [github.com/conda-forge/biopython-feedstock](https://github.com/conda-forge/biopython-feedstock)
     which once merged will upload the new release to [anaconda.org/conda-forge/biopython](https://anaconda.org/conda-forge/biopython)
@@ -292,7 +304,7 @@ releases):
 Post release version bump
 -------------------------
 
-25. Bump version numbers again
+26. Bump version numbers again
 
     - Update `Bio/__init__.py` version
     - Start entry in `NEWS.rst` for next version
