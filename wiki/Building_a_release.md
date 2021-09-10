@@ -12,15 +12,14 @@ Setup required for a new release manager
 The instructions below require that you have access to a few servers and
 the code repository. When you start, be sure to have write access to:
 
-1. These repositories (e.g. via membership of the *Releases* team, or have someone ready to merge pull requests):
+1. [OBF WordPress Blog](https://www.open-bio.org)
+2. [Biopython on PyPI](https://pypi.python.org/pypi/biopython)
+3. These repositories (e.g. via membership of the *Releases* team, or have someone ready to merge pull requests):
 
   - [Source code repository](https://github.com/biopython/biopython)
   - [Main website repository](https://github.com/biopython/biopython.github.io)
   - [Website DIST repository](https://github.com/biopython/DIST)
   - [Wheel building repository](https://github.com/biopython/biopython-wheels)
-
-2. [OBF WordPress Blog](https://www.open-bio.org)
-3. [Biopython on PyPI](https://pypi.python.org/pypi/biopython)
 
 If you don't have any of the above, please ask.
 
