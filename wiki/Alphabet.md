@@ -43,12 +43,14 @@ removing the alphabet argument:
 # Old style
 from Bio.Alphabet import generic_dna
 from Bio.Seq import Seq
+
 my_dna = Seq("ACGTTT", generic_dna)
 ```
 
 ```python
 # New style
 from Bio.Seq import Seq
+
 my_dna = Seq("ACGTTT")
 ```
 
@@ -64,6 +66,7 @@ object `.ungap()` method explicitly now:
 # Old style
 from Bio.Alphabet import generic_dna, Gapped
 from Bio.Seq import Seq
+
 my_dna = Seq("ACGT=TT", Gapped(generic_dna, "="))
 print(my_dna.ungap())
 ```
@@ -71,6 +74,7 @@ print(my_dna.ungap())
 ```python
 # New style
 from Bio.Seq import Seq
+
 my_dna = Seq("ACGT=TT")
 print(my_dna.ungap("="))
 ```
@@ -88,6 +92,7 @@ from Bio.Alphabet import generic_dna
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 from Bio import SeqIO
+
 seq = Seq("ATGCGTGCAT", generic_dna)
 record = SeqRecord(seq, id="test")
 SeqIO.write(record, "test_write.gb", "genbank")
@@ -98,6 +103,7 @@ SeqIO.write(record, "test_write.gb", "genbank")
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 from Bio import SeqIO
+
 seq = Seq("ATGCGTGCAT")
 record = SeqRecord(seq, id="test", annotations={"molecule_type": "DNA"})
 SeqIO.write(record, "test_write.gb", "genbank")
@@ -112,6 +118,7 @@ except ImportError:
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 from Bio import SeqIO
+
 if generic_dna:
     # Newer Biopython refuses second argument
     seq = Seq("ATGCGTGCAT", generic_dna)
@@ -129,6 +136,7 @@ file format. That is no longer possible:
 # Old style
 from Bio.Alphabet import generic_dna
 from Bio import SeqIO
+
 # This file has a single record only
 record = SeqIO.read("Tests/Fasta/wisteria.nu", "fasta", generic_dna)
 rec_start = record[:20]
@@ -141,6 +149,7 @@ record annotation before writing it:
 ```python
 # New style
 from Bio import SeqIO
+
 # This file has a single record only
 record = SeqIO.read("Tests/Fasta/wisteria.nu", "fasta")
 rec_start = record[:20]
@@ -155,12 +164,14 @@ been replaced with an optional molecule type argument:
 # Old style
 from Bio.Alphabet import generic_dna
 from Bio import SeqIO
+
 SeqIO.convert("example.fasta", "fasta", "example.xml", "seqxml", generic_dna)
 ```
 
 ```python
 # New style
 from Bio import SeqIO
+
 SeqIO.convert("example.fasta", "fasta", "example.xml", "seqxml", "DNA")
 ```
 
@@ -173,6 +184,7 @@ try:
 except ImportError:
     generic_dna = "DNA"
 from Bio import SeqIO
+
 SeqIO.convert("example.fasta", "fasta", "example.xml", "seqxml", generic_dna)
 ```
 

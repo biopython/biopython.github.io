@@ -40,7 +40,7 @@ def cut_ends(read, start, end):
 
 
 def pad_read(read, start, conlength):
-    """ Pad out either end of a read so it fits into an alignment.
+    """Pad out either end of a read so it fits into an alignment.
 
     The start argument is the position of the first base of the reads sequence in
     the contig it is part of. If the start value is negative (or 0 since ACE

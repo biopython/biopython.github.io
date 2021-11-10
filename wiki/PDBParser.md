@@ -52,7 +52,7 @@ import sys, os, warnings
 
 # Parsing Function
 def parse_structure(path):
-    """ Parses a PDB file """
+    """Parses a PDB file"""
 
     s = P.get_structure("test", path)
 
@@ -60,7 +60,7 @@ def parse_structure(path):
 
 
 def fancy_output(tps):
-    """ Outputs the results in a nicer way """
+    """Outputs the results in a nicer way"""
 
     print("# Bio.PDB PDBParser Benchmark")
     print()

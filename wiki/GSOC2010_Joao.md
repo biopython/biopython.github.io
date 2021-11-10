@@ -193,7 +193,7 @@ method is absent from `dir(s)` but not from `dir(prot)`.
 ``` pycon
 >>> from Bio.PDB import PDBParser
 >>> p = PDBParser()
->>> s = p.get_structure('example', '4PTI.pdb')
+>>> s = p.get_structure("example", "4PTI.pdb")
 >>> dir(s)  # Cut for viewing purposes
 ['__doc__', ... , 'renumber_residues', 'set_parent', 'xtra']
 >>> prot = s.as_protein()

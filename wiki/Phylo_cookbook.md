@@ -252,7 +252,7 @@ See that it works:
 ``` pycon
 >>> from StringIO import StringIO
 >>> from Bio import Phylo
->>> tree = Phylo.read(StringIO('(A,(B,C),(D,E));'), 'newick')
+>>> tree = Phylo.read(StringIO("(A,(B,C),(D,E));"), "newick")
 >>> rtree = to_ape(tree)
 >>> len(rtree)
 3

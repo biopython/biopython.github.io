@@ -126,7 +126,7 @@ file.
 from Bio.Geography.GbifXml import GbifXmlTree, GbifSearchResults
 from Bio.Geography.GeneralUtils import fix_ASCII_file
 
-xml_fn = 'utric_search_v2.xml'
+xml_fn = "utric_search_v2.xml"
 ```
 
 Second, in order to display results to screen in python, we need to
@@ -148,6 +148,7 @@ and dictionaries).
 
 ``` python
 from xml.etree import ElementTree as ET
+
 xmltree = ET.parse(xml_fn_new)
 ```
 
@@ -201,7 +202,7 @@ respectively. I.e.,
 ``` python
 from GbifXml import GbifXmlTree, GbifSearchResults
 
-params = {'format': 'darwin', 'scientificname': 'Genlisea*'}
+params = {"format": "darwin", "scientificname": "Genlisea*"}
 ```
 
 "'format': 'darwin'" specifies that GBIF should return the results in
@@ -219,7 +220,7 @@ Once you have specified your search parameters, initiate a new
 GbifSearchResults object and run get\_numhits to get the number of hits:
 
 ``` python
-params = {'format': 'darwin', 'scientificname': 'Genlisea*'}
+params = {"format": "darwin", "scientificname": "Genlisea*"}
 recs = GbifSearchResults()
 numhits = recs.get_numhits(params)
 ```
@@ -230,7 +231,7 @@ As of August 2009, 169 matching records existed in GBIF matching
 For constrast, run the same search *without* the asterisk ('\*'):
 
 ``` python
-params = {'format': 'darwin', 'scientificname': 'Genlisea'}
+params = {"format": "darwin", "scientificname": "Genlisea"}
 numhits = recs.get_numhits(params)
 ```
 
@@ -306,7 +307,7 @@ variable to specify the number of records to download per server
 request.
 
 ``` python
-params = {'format': 'darwin', 'scientificname': 'Genlisea*'}
+params = {"format": "darwin", "scientificname": "Genlisea*"}
 inc = 100
 recs3 = GbifSearchResults()
 gbif_xmltree_list = recs3.get_all_records_by_increment(params, inc)

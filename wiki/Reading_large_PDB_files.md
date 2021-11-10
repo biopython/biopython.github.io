@@ -181,7 +181,7 @@ class SloppyPDBIO(Bio.PDB.PDBIO):
         element="  ",
         charge="  ",
     ):
-        """ Returns an ATOM string that is guaranteed to fit the ATOM format.
+        """Returns an ATOM string that is guaranteed to fit the ATOM format.
 
         - Resid (resseq) is wrapped (modulo 10,000) to fit into %4i (4I) format
         - Atom number (atom_number) is wrapped (modulo 100,000) to fit into

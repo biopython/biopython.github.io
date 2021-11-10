@@ -84,7 +84,7 @@ iterator of Tree objects (i.e. some subclass of the `Bio.Phylo.BaseTree`
 Tree class, depending on the file format).
 
 ``` pycon
->>> trees = Phylo.parse('phyloxml_examples.xml', 'phyloxml')
+>>> trees = Phylo.parse("phyloxml_examples.xml", "phyloxml")
 >>> for tree in trees:
 ...     print(tree.name)
 ...

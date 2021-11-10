@@ -55,7 +55,7 @@ produces an object hierarchy like this:
 
 ``` pycon
 >>> from Bio import Phylo
->>> tree = Phylo.read('example.xml','phyloxml')
+>>> tree = Phylo.read("example.xml", "phyloxml")
 >>> print(tree)
 Phylogeny(description='phyloXML allows to use either a "branch_length" attribute
 ...', name='example from Prof. Joe Felsensteins book "Inferring Phyl..."', roote
