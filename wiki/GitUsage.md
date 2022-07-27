@@ -158,6 +158,7 @@ without GitHub account is very simple:
 
 ``` bash
 git clone https://github.com/biopython/biopython.git
+cd biopython
 ```
 
 This command creates a local copy of the entire Biopython repository on
@@ -199,6 +200,7 @@ GitHub page for your repository (if you are logged in):
 
 ``` bash
 git clone git@github.com:yourusername/biopython.git
+cd biopython
 ```
 
 Where `yourusername`, not surprisingly, stands for your GitHub username.
@@ -237,6 +239,11 @@ will automatically be checked for violations of Biopython's agreed coding style.
 Commits with violations will be blocked. Thus you ensure that a later submission to
 Biopython (a pull request, see below) will not be stopped by our automatic online
 style-checks.
+
+``` bash
+pip install pre-commit
+pre-commit install  # in biopython directory
+```
 
 See the [CONTRIBUTING.rst](https://github.com/biopython/biopython/blob/master/CONTRIBUTING.rst) file for more.
 
