@@ -185,7 +185,7 @@ Making wheels
 -------------
 
 17. Now we use https://github.com/biopython/biopython-wheels to build wheels,
-    by updating the ``BUILD_COMMIT`` line in ``.travis.yml`` and ``appveyor.yaml``
+    by updating the ``git checkout`` line in ``.github/workflows/cibuildwheel.yml``
     to the new release's commit hash (which all being well will get a git tag).
 
     ``` bash
@@ -193,18 +193,15 @@ Making wheels
     $ git clone git@github.com:biopython/biopython-wheels.git
     $ cd biopython-wheels/
     $ git submodule update --init
-    $ emacs .travis.yml  # update BUILD_COMMIT=... line
-    $ emacs appveyor.yml  # update BUILD_COMMIT: ... line
-    $ git commit .travis.yml appveyor.yml -m "Build Biopython 1.xx"
+    $ emacs .github/workflows/cibuildwheel.yml  # update git checkout line
+    $ git commit .github/workflows/cibuildwheel.yml -m "Build Biopython 1.xx"
     $ git push origin master
     ```
 
-    Check the wheels build
-    [on TravisCI for Linux and Mac](https://travis-ci.org/biopython/biopython-wheels/builds) and
-    [on AppVeyor for Windows](https://ci.appveyor.com/project/biopython/biopython-wheels/history).
+    Check the wheels build on the [GitHub Actions runs](https://github.com/biopython/biopython-wheels/actions).
 
     You don't seem to need to update the ``biopython`` git submodule, but if you
-    need to update ``multibuild`` this seems to work.
+    need to this seems to work.
 
     ``` bash
     $ git submodule foreach git pull origin master
@@ -212,9 +209,9 @@ Making wheels
     $ git push origin master
     ```
 
-18. Successful wheels will be on
-    [Anaconda](https://anaconda.org/multibuild-wheels-staging/biopython/files),
-    download them from there to your ``~/repository/biopython/DIST/`` folder.
+18. Successful wheels will in an ``artifact.zip`` file available in the footer of the
+    run via [GitHub Actions runs](https://github.com/biopython/biopython-wheels/actions).
+    Download this and unzip to your ``~/repository/biopython/DIST/`` folder.
     We will upload these to PyPI later using Twine.
 
 19. If you have a Windows machine, remove any prior Biopython installations,
