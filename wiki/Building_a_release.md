@@ -134,8 +134,8 @@ Making and testing the tar-ball
 
     ``` bash
     drevil:~tmp1/biopython-1.78/> python setup.py build
-    drevil:~tmp1/biopython-1.78/> python setup.py test
     drevil:~tmp1/biopython-1.78/> python setup.py install --prefix /tmp/test-install
+    drevil:~tmp1/biopython-1.78/> cd Tests && python run_tests.py
     ```
 
     A typical source of failure here (on the tests) is the lack of example
