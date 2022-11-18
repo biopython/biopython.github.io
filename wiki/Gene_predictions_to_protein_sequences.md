@@ -61,8 +61,7 @@ provide as input the reference records we parsed earlier with SeqIO:
 
 ``` python
 def glimmer_predictions(in_handle, ref_recs):
-    """Parse Glimmer output, generating SeqRecord and SeqFeatures for predictions
-    """
+    """Parse Glimmer output, generating SeqRecord and SeqFeatures for predictions"""
     for rec in GFF.parse(in_handle, target_lines=1000, base_dict=ref_recs):
         yield rec
 ```
@@ -80,8 +79,7 @@ generator we used earlier to write the output file:
 
 ``` python
 def protein_recs(glimmer_file, ref_recs):
-    """Generate protein records from GlimmerHMM gene predictions.
-    """
+    """Generate protein records from GlimmerHMM gene predictions."""
     with open(glimmer_file) as in_handle:
         for rec in glimmer_predictions(in_handle, ref_recs):
             for feature in rec.features:
