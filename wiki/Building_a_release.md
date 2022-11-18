@@ -164,10 +164,14 @@ Checking the compiled documentation
 
       ``` bash
       $ cd ~/repositories/DIST/docs/tutorial/
-      $ cp .../tmp1/biopython/Doc/Tutorial.html .
-      $ cp .../tmp1/biopython/Doc/Tutorial.pdf .
-      $ cp .../tmp1/biopython/Doc/biopdb_faq.pdf .
-      $ git commit Tutorial.html Tutorial.pdf biopdb_faq.pdf -m "Tutorial and FAQ for Biopython 1.78"
+      $ cp ../../../biopython/Doc/biopdb_faq.pdf .
+      $ cp ../../../biopython/Doc/Tutorial.html Tutorial-1.80.html
+      $ cp ../../../biopython/Doc/Tutorial.pdf Tutorial-1.80.pdf
+      $ rm Tutorial.html Tutorial.pdf
+      $ ln -s Tutorial-1.80.html Tutorial.html
+      $ ln -s Tutorial-1.80.pdf Tutorial.pdf
+      $ git add Tutorial-1.80.html Tutorial-1.80.pdf
+      $ git commit Tutorial-1.80.html Tutorial-1.80.pdf Tutorial.html Tutorial.pdf biopdb_faq.pdf -m "Tutorial and FAQ for Biopython 1.80"
       ```
 
       - Push this to GitHub Pages to update the website:
