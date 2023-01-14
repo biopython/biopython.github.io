@@ -29,6 +29,16 @@ Biopython:
     -   Add "(OBSOLETE)" to the first line of the module docstring,
     -   Use the module docstring to explain why the module is obsolete
         and what should be used instead.
+    -   As use of obsolete code should be avoided in the Biopython code
+        base, start replacing obsolete code by the newly recommended
+        code. This also serves to verify whether the code can actually
+        be deprecated and removed. To track changes more easily, multiple
+        pull requests may be used to replace obsolete code.
+    -   Start reorganizing or rewriting the Biopython documentation to
+        point users to the newly recommended code, and away from the
+        deprecated code. However, during the deprecation process a
+        description of the obsolete code should remain in the
+        documentation until the code is actually removed.
 -   If there are no apparent users, then actually deprecate it:
     -   Note this in the DEPRECATED file,
     -   Add "(DEPRECATED)" to the first line of the module docstring
