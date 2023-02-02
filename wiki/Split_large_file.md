@@ -46,6 +46,8 @@ def batch_iterator(iterator, batch_size):
         if len(batch) == batch_size:
             yield batch
             batch = []
+    if batch:
+        yield batch
 ```
 
 Here is an example using this function to divide up a large FASTQ file,
