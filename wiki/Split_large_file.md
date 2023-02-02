@@ -46,7 +46,7 @@ def batch_iterator(iterator, batch_size):
         if len(batch) == batch_size:
             yield batch
             batch = []
-    if len(batch) > 0:
+    if batch:
         yield batch
 ```
 
