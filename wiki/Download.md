@@ -120,7 +120,7 @@ list](Mailing_lists "wikilink") and ask for help there.
     UNIX-like platforms. This is not needed on Windows if using the
     compiled packages provided. On Mac OS, you should install
     Apple's the compiler tools as described above.
--   [NumPy (Numerical Python)](http://numpy.scipy.org/).
+-   [NumPy (Numerical Python)](https://numpy.org/).
 
 ### Optional Software
 
