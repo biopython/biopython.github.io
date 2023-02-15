@@ -159,7 +159,7 @@ Version 1.76 is the last release to support Python 2.7 and 3.5,
 all later releases require Python 3.6 or greater:
 
 -   [biopython-1.80.tar.gz](http://biopython.org/DIST/biopython-1.80.tar.gz)
-    17Mb -- Source Tarball
+    17Mb -- Source Tarball (18 November 2022)
 -   [biopython-1.80.zip](http://biopython.org/DIST/biopython-1.80.zip)
     19Mb -- Source Zip File
 -   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.80)
