@@ -309,7 +309,7 @@ bptree = Phylo.read("tmp.nwk", "newick")
 exists, otherwise 0 (false).
 
 ``` python
-import numpy
+import numpy as np
 
 
 def to_adjacency_matrix(tree):
@@ -327,21 +327,21 @@ def to_adjacency_matrix(tree):
     lookup = {}
     for i, elem in enumerate(allclades):
         lookup[elem] = i
-    adjmat = numpy.zeros((len(allclades), len(allclades)))
+    adjmat = np.zeros((len(allclades), len(allclades)))
     for parent in tree.find_clades(terminal=False, order="level"):
         for child in parent.clades:
             adjmat[lookup[parent], lookup[child]] = 1
     if not tree.rooted:
         # Branches can go from "child" to "parent" in unrooted trees
         adjmat = adjmat + adjmat.transpose()
-    return (allclades, numpy.matrix(adjmat))
+    return (allclades, np.matrix(adjmat))
 ```
 
 **Distance matrix:** cell values are branch lengths if a branch exists,
 otherwise infinity (this plays well with graph algorithms).
 
 ``` python
-import numpy
+import numpy as np
 
 
 def to_distance_matrix(tree):
@@ -357,7 +357,7 @@ def to_distance_matrix(tree):
     lookup = {}
     for i, elem in enumerate(allclades):
         lookup[elem] = i
-    distmat = numpy.repeat(numpy.inf, len(allclades) ** 2)
+    distmat = np.repeat(np.inf, len(allclades) ** 2)
     distmat.shape = (len(allclades), len(allclades))
     for parent in tree.find_clades(terminal=False, order="level"):
         for child in parent.clades:
@@ -365,7 +365,7 @@ def to_distance_matrix(tree):
                 distmat[lookup[parent], lookup[child]] = child.branch_length
     if not tree.rooted:
         distmat += distmat.transpose
-    return (allclades, numpy.matrix(distmat))
+    return (allclades, np.matrix(distmat))
 ```
 
 Enhancements:
