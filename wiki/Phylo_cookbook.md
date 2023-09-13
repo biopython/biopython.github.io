@@ -114,8 +114,8 @@ def terminal_neighbor_dists(self):
 
     def generate_pairs(self):
         pairs = itertools.tee(self)
-        pairs[1].next()
-        return itertools.izip(pairs[0], pairs[1])
+        next(pairs[1])
+        return zip(pairs[0], pairs[1])
 
     return [self.distance(*i) for i in generate_pairs(self.find_clades(terminal=True))]
 ```
