@@ -152,7 +152,7 @@ Checking the compiled documentation
     $ cd ~/repositories/docs/
     $ git fetch origin
     $ git checkout gh-pages  # should only be this one branch
-    $ git checkout rebase origin/gh-pages  # get any changes
+    $ git rebase origin/gh-pages  # get any changes
     $ rm latest
     $ ln -s 1.78 latest
     $ git commit latest -m "Update 'latest' symlink to point at 1.78"
