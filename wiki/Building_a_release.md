@@ -164,6 +164,9 @@ Checking the compiled documentation
 
       ``` bash
       $ cd ~/repositories/DIST/docs/tutorial/
+      $ git fetch origin
+      $ git checkout gh-pages  # should only be this one branch
+      $ git rebase origin/gh-pages  # get any changes
       $ cp ../../../biopython/Doc/biopdb_faq.pdf .
       $ cp ../../../biopython/Doc/Tutorial.html Tutorial-1.80.html
       $ cp ../../../biopython/Doc/Tutorial.pdf Tutorial-1.80.pdf
