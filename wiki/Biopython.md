@@ -12,8 +12,7 @@ redirect_from:
 ---
 
 See also our
-[News feed](http://www.open-bio.org/category/biopython/)
-and [Twitter](https://twitter.com/biopython).
+[News feed](http://www.open-bio.org/category/biopython/).
 
 ### Introduction
 
