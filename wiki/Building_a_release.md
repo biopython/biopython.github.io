@@ -87,9 +87,10 @@ Final commit(s)
    drevil:~biopython> python setup.py build
    drevil:~biopython> python setup.py test
    ```
-   Running the tests simultaneously is risky as two threads may both try to read/write to the same temp files.
+   Running the tests simultaneously (e.g. with different versions of Python) is risky as
+   two threads may both try to read/write to the same temp files.
 
-9. Push this to gitub, all being well this commit will be tagged as the release
+10. Push this to gitub, all being well this commit will be tagged as the release
    (barring no problems uncovered while building the documentation, or
    with the manifest while testing the tar-ball):
 
