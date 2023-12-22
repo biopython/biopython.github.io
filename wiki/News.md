@@ -18,5 +18,3 @@ feed.
 See also the latest version of the [NEWS.rst
 file](https://github.com/biopython/biopython/raw/master/NEWS.rst) included with
 each release.
-
-P.S. You can also follow us on [Twitter](http://twitter.com/biopython)!
