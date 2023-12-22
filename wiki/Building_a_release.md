@@ -134,8 +134,7 @@ Making and testing the tar-ball
 14. make sure I can build and test it
 
     ``` bash
-    drevil:~tmp1/biopython-1.78/> python setup.py build
-    drevil:~tmp1/biopython-1.78/> python setup.py install --prefix /tmp/test-install
+    drevil:~tmp1/biopython-1.78/> python -m pip install .  --prefix /tmp/test-install
     drevil:~tmp1/biopython-1.78/> cd Tests && python run_tests.py
     ```
 
