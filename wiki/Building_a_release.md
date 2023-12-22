@@ -293,8 +293,7 @@ Tagging the release, and uploading
 
     - post the announcement on the [www.open-bio.org](https://www.open-bio.org)
       blog (making sure to use the Biopython category which will update the
-      [news page](News "wikilink") and [twitter](http://twitter.com/Biopython)
-      via the news feed)
+      [news page](News "wikilink") via the news feed)
     - send an email to biopython-announce@biopython.org
       (see [mailing lists](Mailing_lists "wikilink"))
     - forward the email to Linux packagers e.g.
