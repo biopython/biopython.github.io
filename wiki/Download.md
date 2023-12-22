@@ -6,7 +6,7 @@ redirect_from:
  - /download/
 ---
 
-Current Release - 1.81 - 12 February 2023
+Current Release - 1.82 - 22 December 2023
 =========================================
 
 See also [What's
@@ -16,12 +16,12 @@ new](https://github.com/biopython/biopython/blob/master/NEWS.rst).
 
 #### Biopython 1.81
 
--   [biopython-1.81.tar.gz](http://biopython.org/DIST/biopython-1.81.tar.gz)
-    17Mb -- Source Tarball
--   [biopython-1.81.zip](http://biopython.org/DIST/biopython-1.81.zip)
-    19Mb -- Source Zip File
--   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.81)
--   [Tutorial-1.81.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.81.pdf) -- Documentation
+-   [biopython-1.82.tar.gz](http://biopython.org/DIST/biopython-1.82.tar.gz)
+    19Mb -- Source Tarball
+-   [biopython-1.82.zip](http://biopython.org/DIST/biopython-1.82.zip)
+    20Mb -- Source Zip File
+-   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.82)
+-   [Tutorial-1.82.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.82.pdf) -- Documentation
 
 ### Installation Instructions
 
@@ -158,6 +158,15 @@ Recent releases of Biopython require NumPy (and not Numeric).
 Version 1.76 is the last release to support Python 2.7 and 3.5,
 all later releases require Python 3.6 or greater:
 
+-   [biopython-1.81.tar.gz](http://biopython.org/DIST/biopython-1.81.tar.gz)
+    17Mb -- Source Tarball
+-   [biopython-1.81.zip](http://biopython.org/DIST/biopython-1.81.zip)
+    19Mb -- Source Zip File
+-   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.81)
+-   [Tutorial-1.81.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.81.pdf) -- Documentation
+
+<!-- -->
+
 -   [biopython-1.80.tar.gz](http://biopython.org/DIST/biopython-1.80.tar.gz)
     17Mb -- Source Tarball (18 November 2022)
 -   [biopython-1.80.zip](http://biopython.org/DIST/biopython-1.80.zip)
@@ -165,6 +174,7 @@ all later releases require Python 3.6 or greater:
 -   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.80)
 -   [Tutorial-1.80.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.80.pdf) -- Documentation
 
+<!-- -->
 
 -   [biopython-1.79.tar.gz](http://biopython.org/DIST/biopython-1.79.tar.gz)
     16Mb -- Source Tarball (1 June 2021)
@@ -173,6 +183,7 @@ all later releases require Python 3.6 or greater:
 -   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.79)
 -   [Tutorial-1.79.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.79.pdf) -- Documentation
 
+<!-- -->
 
 -   [biopython-1.78.tar.gz](http://biopython.org/DIST/biopython-1.78.tar.gz)
     16Mb -- Source Tarball (4 September 2020)
