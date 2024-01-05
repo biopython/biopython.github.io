@@ -60,7 +60,7 @@ output file format.
 Another case where the alphabet was used was in declaring the gap character,
 by default `-` in the various Biopython sequence and alignment parsers. If
 you are using a different character, you will need to pass this to the `Seq`
-object `.ungap()` method explicitly now:
+object `.replace()` method explicitly now:
 
 ```python
 # Old style
@@ -76,7 +76,7 @@ print(my_dna.ungap())
 from Bio.Seq import Seq
 
 my_dna = Seq("ACGT=TT")
-print(my_dna.ungap("="))
+print(my_dna.replace("=", ""))
 ```
 
 ## SeqRecord changes
