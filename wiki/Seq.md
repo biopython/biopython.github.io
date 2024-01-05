@@ -76,7 +76,7 @@ a *non-overlapping* count!
 ``` pycon
 >>> "AAAA".count("AA")
 2
->>> Seq("AAAA", generic_dna).count("AA")
+>>> Seq("AAAA").count("AA")
 2
 ```
 
