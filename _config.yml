@@ -17,9 +17,9 @@ baseurl:
 
 author:
   name: Biopython Contributors
-  url: https://twitter.com/biopython
+  url: https://biopython.org
 
 # Custom variables for Hyde theme
-version: "1.82"
+version: "1.83"
 github:
   repo: https://github.com/biopython/biopython

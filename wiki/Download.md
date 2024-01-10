@@ -6,22 +6,22 @@ redirect_from:
  - /download/
 ---
 
-Current Release - 1.82 - 22 December 2023
-=========================================
+Current Release - 1.83 - 10 January 2024
+========================================
 
 See also [What's
 new](https://github.com/biopython/biopython/blob/master/NEWS.rst).
 
 ### Files
 
-#### Biopython 1.81
+#### Biopython 1.83
 
--   [biopython-1.82.tar.gz](http://biopython.org/DIST/biopython-1.82.tar.gz)
+-   [biopython-1.83.tar.gz](http://biopython.org/DIST/biopython-1.83.tar.gz)
     19Mb -- Source Tarball
--   [biopython-1.82.zip](http://biopython.org/DIST/biopython-1.82.zip)
+-   [biopython-1.83.zip](http://biopython.org/DIST/biopython-1.83.zip)
     20Mb -- Source Zip File
--   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.82)
--   [Tutorial-1.82.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.82.pdf) -- Documentation
+-   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.83)
+-   [Tutorial-1.83.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.83.pdf) -- Documentation
 
 ### Installation Instructions
 
@@ -157,6 +157,17 @@ Old Releases
 Recent releases of Biopython require NumPy (and not Numeric).
 Version 1.76 is the last release to support Python 2.7 and 3.5,
 all later releases require Python 3.6 or greater:
+
+-   [biopython-1.82.tar.gz](http://biopython.org/DIST/biopython-1.82.tar.gz)
+    19Mb -- Source Tarball
+-   [biopython-1.82.zip](http://biopython.org/DIST/biopython-1.82.zip)
+    20Mb -- Source Zip File
+-   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1\
+.82)
+-   [Tutorial-1.82.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.82.p\
+df) -- Documentation
+
+<!-- -->
 
 -   [biopython-1.81.tar.gz](http://biopython.org/DIST/biopython-1.81.tar.gz)
     17Mb -- Source Tarball (12 February 2023)
