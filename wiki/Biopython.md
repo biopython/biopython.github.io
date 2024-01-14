@@ -43,4 +43,4 @@ the libraries and tools.
 |                                                                                                                                                | [ Discuss and ask questions](wiki/Mailing_lists "wikilink")                                                                          | [Report bugs](https://github.com/biopython/biopython/issues) |
 
 The latest release is [Biopython 1.83](wiki/Download "wikilink"), released on
-10 Januaray 2024.
+10 January 2024.
