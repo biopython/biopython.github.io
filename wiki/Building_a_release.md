@@ -133,7 +133,7 @@ Making and testing the tar-ball
 
     Check to make sure it includes the documentation PDF file under Doc
 
-14. make sure I can build and test it
+14. make sure I can build (won't install and use this) and test it (using the tar-ball test files):
 
     ``` bash
     drevil:~tmp1/biopython-1.78/> python -m pip install .  --prefix /tmp/test-install
