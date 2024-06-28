@@ -80,8 +80,7 @@ the wheel packages we provide on PyPI (as above), there are also
 ### Installation from Source
 
 Installation from source requires an appropriate C compiler, for example
-GCC on **Linux**, and MSVC on **Windows**.
-For **Mac OS X**, or as it is now branded, **macOS**, if you want to
+GCC on **Linux**, and MSVC on **Windows**. For **macOS**, if you want to
 compile Biopython from source you will need to have installed Apple's
 command line tools, which can de done with the terminal command:
 
@@ -112,13 +111,13 @@ list](Mailing_lists "wikilink") and ask for help there.
 
 ### Required Software
 
--   [Python 3.6, 3.7 or 3.8](http://www.python.org) or PyPy,
-    including the Python development header files like ``python.h``
+-   [Python 3](http://www.python.org) or PyPy (a version supported by
+    the version of Biopython you wish to install), including the Python
+    development header files like ``python.h`` (if compiling from source)
 -   [C compiler (if compiling from
     source)](https://docs.python.org/3/using/index.html) You
     need a C compiler supported by ``setuptools``, **gcc** will work fine on
-    UNIX-like platforms. This is not needed on Windows if using the
-    compiled packages provided. On Mac OS, you should install
+    UNIX-like platforms. Try MSVC on Windows. On macOS, you should install
     Apple's the compiler tools as described above.
 -   [NumPy (Numerical Python)](https://numpy.org/).
 
