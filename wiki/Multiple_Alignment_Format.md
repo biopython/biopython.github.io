@@ -20,7 +20,7 @@ All examples below make use of the Multiz [30-way alignment to mouse
 chromosome
 10](http://hgdownload.cse.ucsc.edu/goldenpath/mm9/multiz30way/maf/chr10.maf.gz)
 available from UCSC.
-    
+
 Getting the AlignIO code from GitHub
 ------------------------------------
 
