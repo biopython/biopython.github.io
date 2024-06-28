@@ -108,10 +108,11 @@ Making and testing the tar-ball
     drevil:~tmp1/> cd biopython
     ```
 
-11. make the documentation PDF, text and HTML files in Doc:
+11. make the documentation PDF in Doc (we have automated an HTML version online; will need ``latexmk`` etc installed):
 
     ``` bash
-    drevil:~tmp1/biopython/> make -C Doc
+    drevil:~tmp1/biopython/> pip install -r .circleci/requirements-sphinx.txt
+    drevil:~tmp1/biopython/> make -C Doc latexpdf
     drevil:~tmp1/biopython/> make clean -C Doc
     ```
 
@@ -129,7 +130,7 @@ Making and testing the tar-ball
     drevil:~tmp1/> cd biopython-1.78
     ```
 
-    Check to make sure it includes the HTML and PDF files under Doc
+    Check to make sure it includes the Tutorial PDF file under Doc
 
 14. make sure I can build and test it
 
