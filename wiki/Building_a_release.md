@@ -274,7 +274,8 @@ Tagging the release, and uploading
     $ git clone git@github.com:biopython/biopython.github.io.git
     ```
 
-    - Update the website:
+    - Update the website theme,  [downloads
+      page](Download "wikilink") and [main page](Main_Page "wikilink"):
 
     ``` bash
     $ cd ~/repositories/biopython.github.io
@@ -287,9 +288,7 @@ Tagging the release, and uploading
     - before you announce the release, be sure to send your announcement
       text to the [Biopython mailing list](mailto:biopython@biopython.org) for
       proof-reading/final corrections.
-    - add to [main page](Main_Page "wikilink") and [downloads
-      page](Download "wikilink") (through the wiki), make sure the links
-      work.
+    - Make sure the download links work.
 
 24. Announcement:
 
