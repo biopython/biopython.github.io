@@ -15,7 +15,7 @@ below.
     with Biopython, in addition to specific documentation on a number of
     modules
 
-    [HTML](http://biopython.org/DIST/docs/tutorial/Tutorial.html),
+    [HTML](https://biopython.org/docs/latest/Tutorial/),
     [PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)
 
 -   API documentation for Biopython modules is generated directly from
