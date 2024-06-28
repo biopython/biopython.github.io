@@ -113,6 +113,7 @@ Making and testing the tar-ball
     ``` bash
     drevil:~tmp1/biopython/> pip install -r .circleci/requirements-sphinx.txt
     drevil:~tmp1/biopython/> make -C Doc latexpdf
+    drevil:~tmp1/biopython/> cp Doc/_build/latex/Biopython_doc.pdf Doc/
     drevil:~tmp1/biopython/> make clean -C Doc
     ```
 
@@ -130,7 +131,7 @@ Making and testing the tar-ball
     drevil:~tmp1/> cd biopython-1.78
     ```
 
-    Check to make sure it includes the Tutorial PDF file under Doc
+    Check to make sure it includes the documentation PDF file under Doc
 
 14. make sure I can build and test it
 
