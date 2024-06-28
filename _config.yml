@@ -20,6 +20,6 @@ author:
   url: https://biopython.org
 
 # Custom variables for Hyde theme
-version: "1.83"
+version: "1.84"
 github:
   repo: https://github.com/biopython/biopython
