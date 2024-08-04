@@ -168,6 +168,8 @@ all atoms), the tag is mapped to a list of values. The dictionary is
 created from the mmCIF file as follows:
 
 ``` python
+from Bio.PDB.MMCIF2Dict import MMCIF2Dict
+
 mmcif_dict = MMCIF2Dict("1FAT.cif")
 ```
 
