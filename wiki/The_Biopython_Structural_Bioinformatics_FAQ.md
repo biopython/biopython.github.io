@@ -390,8 +390,8 @@ a start and end residue.
 
 #### Can I write mmCIF files?
 
-No, and I also don't have plans to add that functionality soon (or ever
-- I don't need it at all, and it's a lot of work, plus no-one has ever
+No, and I also don't have plans to add that functionality soon (or ever—I
+don't need it at all, and it's a lot of work, plus no-one has ever
 asked for it). People who want to add this can contact me.
 
 ### The Structure Object
