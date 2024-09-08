@@ -110,7 +110,7 @@ and/or one of the other listed papers:
 
     *The `Bio.PDB` module is described here*
 
-4.  de Hoon MJ, Imoto S, Nolan J and Miyano S (2004) Open source clustering software.
+4.  De Hoon MJ, Imoto S, Nolan J and Miyano S (2004) Open source clustering software.
     [*Bioinformatics*, 20, 1454-1453](http://dx.doi.org/10.1093/bioinformatics/bth078)
 
     *The `Bio.Cluster` module is described here*
