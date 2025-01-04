@@ -6,7 +6,7 @@ tag: Cookbook
 ---
 
 The entries contained in the Cookbook category are designed to
-compliment the general help given in the
+complement the general help given in the
 [Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
 ([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)) with
 specific examples of problems that can be solved with the Biopython
