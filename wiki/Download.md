@@ -6,22 +6,22 @@ redirect_from:
  - /download/
 ---
 
-Current Release - 1.84 - 28 June 2024
-========================================
+Current Release - 1.85 - 15 Jan 2025
+====================================
 
 See also [What's
 new](https://github.com/biopython/biopython/blob/master/NEWS.rst).
 
 ### Files
 
-#### Biopython 1.84
+#### Biopython 1.85
 
--   [biopython-1.84.tar.gz](http://biopython.org/DIST/biopython-1.84.tar.gz)
-    25Mb -- Source Tarball
--   [biopython-1.84.zip](http://biopython.org/DIST/biopython-1.84.zip)
-    27Mb -- Source Zip File
--   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.84)
--   [Documentation](https://biopython.org/docs/1.84/)
+-   [biopython-1.85.tar.gz](http://biopython.org/DIST/biopython-1.85.tar.gz)
+    19Mb -- Source Tarball
+-   [biopython-1.85.zip](http://biopython.org/DIST/biopython-1.85.zip)
+    21Mb -- Source Zip File
+-   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.85)
+-   [Documentation](https://biopython.org/docs/1.85/)
 
 ### Installation Instructions
 
@@ -58,7 +58,7 @@ If you need to install under a specific version of Python, try something
 like this:
 
 ``` bash
-python3.9 -m pip install biopython
+python3.13 -m pip install biopython
 pypy -m pip install biopython
 ```
 
@@ -156,6 +156,15 @@ Old Releases
 Recent releases of Biopython require NumPy (and not Numeric).
 Version 1.76 is the last release to support Python 2.7 and 3.5,
 all later releases require Python 3:
+
+-   [biopython-1.84.tar.gz](http://biopython.org/DIST/biopython-1.84.tar.gz)
+    25Mb -- Source Tarball
+-   [biopython-1.84.zip](http://biopython.org/DIST/biopython-1.84.zip)
+    27Mb -- Source Zip File
+-   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.84)
+-   [Documentation](https://biopython.org/docs/1.84/)
+
+<!-- -->
 
 -   [biopython-1.83.tar.gz](http://biopython.org/DIST/biopython-1.83.tar.gz)
     19Mb -- Source Tarball (10 January 2024)
