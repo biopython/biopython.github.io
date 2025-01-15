@@ -160,36 +160,6 @@ Checking the compiled documentation
     $ git push origin gh-pages
     ```
 
-16. Update Tutorial and PDB FAQ on the website manually.
-
-      - Update the Tutorial and PDB FAQ:
-
-      ``` bash
-      $ cd ~/repositories/DIST/docs/tutorial/
-      $ git fetch origin
-      $ git checkout gh-pages  # should only be this one branch
-      $ git rebase origin/gh-pages  # get any changes
-      $ cp ../../../biopython/Doc/biopdb_faq.pdf .
-      $ cp ../../../biopython/Doc/Tutorial.html Tutorial-1.80.html
-      $ cp ../../../biopython/Doc/Tutorial.pdf Tutorial-1.80.pdf
-      $ rm Tutorial.html Tutorial.pdf
-      $ ln -s Tutorial-1.80.html Tutorial.html
-      $ ln -s Tutorial-1.80.pdf Tutorial.pdf
-      $ git add Tutorial-1.80.html Tutorial-1.80.pdf
-      $ git commit Tutorial-1.80.html Tutorial-1.80.pdf Tutorial.html Tutorial.pdf biopdb_faq.pdf -m "Tutorial and FAQ for Biopython 1.80"
-      ```
-
-      - Push this to GitHub Pages to update the website:
-
-      ``` bash
-      $ git push origin gh-pages
-      ```
-
-      - Check this is live at <http://biopython.org/DIST/docs/api/Bio-module.html>,
-        <http://biopython.org/DIST/docs/tutorial/Tutorial.html>,
-        <http://biopython.org/DIST/docs/tutorial/Tutorial.pdf>, and
-        <http://biopython.org/DIST/docs/tutorial/biopdb_faq.pdf>
-
 Making wheels
 -------------
 
