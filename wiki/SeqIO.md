@@ -54,6 +54,10 @@ requirements, I hope this should suffice.
 File Formats
 ------------
 
+The authorative [list of supported
+formats](https://biopython.org/docs/latest/api/Bio.SeqIO.html#file-formats)
+is in the code's docstrings. The table here may not be fully up to date.
+
 This table lists the file formats that `Bio.SeqIO` can read, write and
 index, with the Biopython version where this was first supported (or
 [git](Git "wikilink") to indicate this is supported in our latest in
