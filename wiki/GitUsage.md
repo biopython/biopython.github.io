@@ -242,7 +242,8 @@ style-checks.
 
 ``` bash
 pip install pre-commit
-pre-commit install  # in biopython directory
+# in biopython directory:
+pre-commit install
 ```
 
 See the [CONTRIBUTING.rst](https://github.com/biopython/biopython/blob/master/CONTRIBUTING.rst) file for more.
