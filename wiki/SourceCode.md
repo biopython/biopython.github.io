@@ -94,5 +94,5 @@ Most of the other [Open Bioinformatics Foundation](http://open-bio.org)
 projects migrated from CVS to SVN (Subversion), and later to git hosted
 at GitHub.
 
-While Biopython did considering moving from CVS to SVN, instead we
+While Biopython did consider moving from CVS to SVN, instead we
 migrated directly from CVS to git in September 2009.
