@@ -70,9 +70,9 @@ below.
 
     [HTML](http://www.dalkescientific.com/writings/NBN/)
 
--   Kristian Rother wrote a GitBook for learning Biopython with two case studies
+-   Kristian Rother wrote a GitBook for learning Biopython
 
-    [GitBook](https://www.gitbook.com/book/krother/biopython-tutorial/details)
+    [GitBook](https://krother.gitbooks.io/biopython-tutorial/content/)
 
 -   Peter Cock wrote a [Biopython Workshop](https://github.com/peterjc/biopython_workshop)
     which was used at the University of Dundee.
