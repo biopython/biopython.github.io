@@ -33,8 +33,6 @@ Biopython optional dependencies as possible for local testing):
 1. Python 3
 2. git
 3. [twine](https://github.com/pypa/twine/), installed with ``pip install twine``
-4. LaTeX, including assorted packages like comments and preprint.
-5. [hevea](http://hevea.inria.fr/), I am currently using version 2.32 of 2012-07-04
 
 Final commit(s)
 ---------------
@@ -108,22 +106,13 @@ Making and testing the tar-ball
     drevil:~tmp1/> cd biopython
     ```
 
-11. make the documentation PDF in Doc (we have automated an HTML version online; will need ``latexmk`` etc installed):
-
-    ``` bash
-    drevil:~tmp1/biopython/> pip install -r .circleci/requirements-sphinx.txt
-    drevil:~tmp1/biopython/> make -C Doc latexpdf
-    drevil:~tmp1/biopython/> cp Doc/_build/latex/Biopython_doc.pdf Doc/
-    drevil:~tmp1/biopython/> make clean -C Doc
-    ```
-
-12. make the source distribution
+11. make the source distribution
 
     ``` bash
     drevil:~tmp1/biopython> python setup.py sdist --formats=gztar,zip
     ```
 
-13. untar the file somewhere else
+12. untar the file somewhere else
 
     ``` bash
     drevil:~tmp1/biopython/> cd ..
@@ -131,9 +120,7 @@ Making and testing the tar-ball
     drevil:~tmp1/> cd biopython-1.78
     ```
 
-    Check to make sure it includes the documentation PDF file under Doc
-
-14. make sure I can build (won't install and use this) and test it (using the tar-ball test files):
+13. make sure I can build (won't install and use this) and test it (using the tar-ball test files):
 
     ``` bash
     drevil:~tmp1/biopython-1.78/> python -m pip install .  --prefix /tmp/test-install
@@ -146,7 +133,7 @@ Making and testing the tar-ball
 Checking the compiled documentation
 -----------------------------------
 
-15. Since Biopython 1.74, Sphinx has handled the API documentation via continuous
+14. Since Biopython 1.74, Sphinx has handled the API documentation via continuous
     integration, but you still have to update the "latest" symlink.
 
     ``` bash
@@ -163,7 +150,7 @@ Checking the compiled documentation
 Making wheels
 -------------
 
-17. Now we use https://github.com/biopython/biopython-wheels to build wheels,
+15. Now we use https://github.com/biopython/biopython-wheels to build wheels,
     by updating the ``git checkout`` line in ``.github/workflows/cibuildwheel.yml``
     to the new release's commit hash (which all being well will get a git tag).
 
@@ -188,18 +175,18 @@ Making wheels
     $ git push origin master
     ```
 
-18. Successful wheels will in an ``artifact.zip`` file available in the footer of the
+16. Successful wheels will in an ``artifact.zip`` file available in the footer of the
     run via [GitHub Actions runs](https://github.com/biopython/biopython-wheels/actions).
     Download this and unzip to your ``~/repository/biopython/DIST/`` folder.
     We will upload these to PyPI later using Twine.
 
-19. If you have a Windows machine, remove any prior Biopython installations,
+17. If you have a Windows machine, remove any prior Biopython installations,
     and confirm the Windows wheel file(s) work.
 
 Tagging the release, and uploading
 ----------------------------------
 
-20. Back in the main repository, tag the release:
+18. Back in the main repository, tag the release:
 
     ``` bash
     $ cd  .../tmp1/biopython/
@@ -207,7 +194,7 @@ Tagging the release, and uploading
     $ git push origin master --tags
     ```
 
-21. Upload the new release tar-ball and zip to the website via GitHub Pages `DIST` repository.
+19. Upload the new release tar-ball and zip to the website via GitHub Pages `DIST` repository.
 
     ``` bash
     $ cp dist/biopython-1.78.* ~/repositories/DIST/
@@ -220,7 +207,7 @@ Tagging the release, and uploading
     $ git push origin gh-pages
     ```
 
-22. Upload to the python package index (except for beta/alpha level releases):
+20. Upload to the python package index (except for beta/alpha level releases):
 
     ``` bash
     $ cd  ~/repositories/biopython/
@@ -234,7 +221,7 @@ Tagging the release, and uploading
 
     - Check this is live at <https://pypi.python.org/pypi/biopython/>
 
-23. Update the website:
+21. Update the website:
 
     - If you haven't already, clone the ``biopython.github.io`` repository,
       (otherwise make sure your copy is up to date):
@@ -260,7 +247,7 @@ Tagging the release, and uploading
       proof-reading/final corrections.
     - Make sure the download links work.
 
-24. Announcement:
+22. Announcement:
 
     - post the announcement on the [www.open-bio.org](https://www.open-bio.org)
       blog (making sure to use the Biopython category which will update the
@@ -270,7 +257,7 @@ Tagging the release, and uploading
     - forward the email to Linux packagers e.g.
       debian-med@lists.debian.org
 
-25. Conda-Forge should automatically open a pull request to update the
+23. Conda-Forge should automatically open a pull request to update the
     package once it appears on PyPI. Check for a new pull request on
     [github.com/conda-forge/biopython-feedstock](https://github.com/conda-forge/biopython-feedstock)
     which once merged will upload the new release to [anaconda.org/conda-forge/biopython](https://anaconda.org/conda-forge/biopython)
@@ -278,7 +265,7 @@ Tagging the release, and uploading
 Post release version bump
 -------------------------
 
-26. Bump version numbers again
+24. Bump version numbers again
 
     - Update `Bio/__init__.py` version
     - Start entry in `NEWS.rst` for next version
