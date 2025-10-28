@@ -157,6 +157,15 @@ Recent releases of Biopython require NumPy (and not Numeric).
 Version 1.76 is the last release to support Python 2.7 and 3.5,
 all later releases require Python 3:
 
+-   [biopython-1.85.tar.gz](http://biopython.org/DIST/biopython-1.85.tar.gz)
+    19Mb -- Source Tarball
+-   [biopython-1.85.zip](http://biopython.org/DIST/biopython-1.85.zip)
+    21Mb -- Source Zip File
+-   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.85)
+-   [Documentation](https://biopython.org/docs/1.85/)
+
+<!-- -->
+
 -   [biopython-1.84.tar.gz](http://biopython.org/DIST/biopython-1.84.tar.gz)
     25Mb -- Source Tarball (28 June 2024)
 -   [biopython-1.84.zip](http://biopython.org/DIST/biopython-1.84.zip)
