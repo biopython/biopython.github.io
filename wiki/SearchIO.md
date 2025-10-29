@@ -22,8 +22,7 @@ background.
 module, with that caveat dropped in Biopython 1.72.
 
 There is a full chapter in the
-[Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
-([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)).
+[Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html).
 
 This wiki describes the important bits with some small examples. For a
 full reference, consult the [API
