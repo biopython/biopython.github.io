@@ -22,8 +22,8 @@ double helix around the word Biopython:
 As of Biopython release 1.50, we've included the logo on the front cover
 of the [Biopython Tutorial and
 Cookbook](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
-([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)), which had
-previously been rather plain.
+(final [PDF](https://github.com/biopython/DIST/blob/gh-pages/docs/tutorial/Tutorial-1.83.pdf)),
+which had previously been rather plain.
 
 This design was chosen from panel of entries to an open competition on
 the mailing lists back in [Summer
