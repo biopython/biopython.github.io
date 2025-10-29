@@ -12,8 +12,7 @@ quickly suck up valuable developer time. (We have day jobs too!) This is
 a short guide to the recommended way to contribute code to Biopython.
 
 See also the chapter about contributing in the
-[Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
-([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)).
+[Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html).
 
 If you get as far as making a pull request with changes, you should
 read [CONTRIBUTING.rst](https://github.com/biopython/biopython/blob/master/CONTRIBUTING.rst)
