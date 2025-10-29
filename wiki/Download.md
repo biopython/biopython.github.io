@@ -188,10 +188,8 @@ all later releases require Python 3:
     19Mb -- Source Tarball (22 December 2023)
 -   [biopython-1.82.zip](http://biopython.org/DIST/biopython-1.82.zip)
     20Mb -- Source Zip File
--   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1\
-.82)
--   [Tutorial-1.82.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.82.p\
-df) -- Documentation
+-   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.82)
+-   [Tutorial-1.82.pdf](http://biopython.org/DIST/docs/tutorial/Tutorial-1.82.pdf) -- Documentation
 
 <!-- -->
 
