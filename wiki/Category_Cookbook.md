@@ -8,9 +8,8 @@ tag: Cookbook
 The entries contained in the Cookbook category are designed to
 complement the general help given in the
 [Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
-([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)) with
-specific examples of problems that can be solved with the Biopython
-tools.
+with specific examples of problems that can be solved with the
+Biopython tools.
 
 This collection of examples is a new effort for Biopython, so is
 currently a little short. If you have suggestions for topics, please
