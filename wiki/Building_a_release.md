@@ -12,8 +12,8 @@ Setup required for a new release manager
 The instructions below require that you have access to a few servers and
 the code repository. When you start, be sure to have write access to:
 
-1. [OBF WordPress Blog](https://www.open-bio.org)
-2. [Biopython on PyPI](https://pypi.python.org/pypi/biopython)
+1. [Biopython on PyPI](https://pypi.python.org/pypi/biopython)
+2. A fork of for the OBF blog post.
 3. These repositories (e.g. via membership of the *Releases* team, or have someone ready to merge pull requests):
 
   - [Source code repository](https://github.com/biopython/biopython)
@@ -249,10 +249,9 @@ Tagging the release, and uploading
 
 22. Announcement:
 
-    - post the announcement on the [www.open-bio.org](https://www.open-bio.org)
-      blog (making sure to use the Biopython category which will update the
-      [news page](News "wikilink") via the news feed)
-    - send an email to biopython-announce@biopython.org
+    - submit a pull request for the OBF blog (like this [example for
+      Biopython 1.86](https://github.com/OBF/OBF.github.io/pull/125))
+    - send an email to biopython-announce@biopython.org and biopython@biopython.org
       (see [mailing lists](Mailing_lists "wikilink"))
     - forward the email to Linux packagers e.g.
       debian-med@lists.debian.org
