@@ -18,8 +18,7 @@ system will *only* return `SeqRecord` objects.
 In addition to the `SeqRecord` object's [API
 documentation](http://biopython.org/DIST/docs/api/Bio.SeqRecord.SeqRecord-class.html),
 there is a whole chapter in the
-[Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
-([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)), and the
+[Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html), and the
 [`SeqIO` page](SeqIO "wikilink") is also very relevant.
 
 Extracting information from a SeqRecord
