@@ -10,13 +10,11 @@ New to Biopython? Check out the [Getting
 Started](Getting_Started "wikilink") page, or follow one of the links
 below.
 
--   The **Biopython Tutorial and Cookbook** contains the bulk of
-    Biopython documentation. It provides information to get you started
+-   The [Biopython Tutorial and
+    Cookbook](https://biopython.org/docs/latest/Tutorial/) contains the bulk
+    of Biopython's documentation. It provides information to get you started
     with Biopython, in addition to specific documentation on a number of
-    modules
-
-    [HTML](https://biopython.org/docs/latest/Tutorial/),
-    [PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)
+    modules.
 
 -   API documentation for Biopython modules is generated directly from
     source code comments Sphinx autodoc:
