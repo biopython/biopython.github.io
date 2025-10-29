@@ -24,8 +24,7 @@ Documentation on how to access Genepop using `Bio.PopGen` can be found
 
 Documentation for interacting with **SIMCOAL2** and **fdist2** can be found on
 the `PopGen` Chapter in the
-[Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
-([PDF](http://biopython.org/DIST/docs/tutorial/Tutorial.pdf)).
+[Tutorial](http://biopython.org/DIST/docs/tutorial/Tutorial.html).
 
 Other software
 --------------
