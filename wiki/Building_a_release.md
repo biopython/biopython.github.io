@@ -13,7 +13,7 @@ The instructions below require that you have access to a few servers and
 the code repository. When you start, be sure to have write access to:
 
 1. [Biopython on PyPI](https://pypi.python.org/pypi/biopython)
-2. A fork of for the OBF blog post.
+2. A fork of https://github.com/OBF/OBF.github.io for the OBF blog post.
 3. These repositories (e.g. via membership of the *Releases* team, or have someone ready to merge pull requests):
 
   - [Source code repository](https://github.com/biopython/biopython)
