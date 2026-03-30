@@ -6,22 +6,22 @@ redirect_from:
  - /download/
 ---
 
-Current Release - 1.86 - 28 Oct 2025
-====================================
+Current Release - 1.87 - 30 March 2026
+======================================
 
 See also [What's
 new](https://github.com/biopython/biopython/blob/master/NEWS.rst).
 
 ### Files
 
-#### Biopython 1.86
+#### Biopython 1.87
 
--   [biopython-1.86.tar.gz](http://biopython.org/DIST/biopython-1.86.tar.gz)
-    20Mb -- Source Tarball
--   [biopython-1.86.zip](http://biopython.org/DIST/biopython-1.86.zip)
+-   [biopython-1.87.tar.gz](http://biopython.org/DIST/biopython-1.87.tar.gz)
+    19Mb -- Source Tarball
+-   [biopython-1.87.zip](http://biopython.org/DIST/biopython-1.87.zip)
     21Mb -- Source Zip File
--   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.86)
--   [Documentation](https://biopython.org/docs/1.86/)
+-   [Pre-compiled wheel files on PyPI](https://pypi.python.org/pypi/biopython/1.87)
+-   [Documentation](https://biopython.org/docs/1.87/)
 
 ### Installation Instructions
 
