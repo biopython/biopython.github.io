@@ -222,7 +222,7 @@ Tagging the release, and uploading
     ```
 
     - Update the website theme,  [downloads
-      page](Download "wikilink") and [main page](Main_Page "wikilink"):
+      page](Download "wikilink") and [main page](Biopython "wikilink"):
 
     ``` bash
     $ cd ~/repositories/biopython.github.io
