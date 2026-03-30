@@ -134,18 +134,8 @@ Checking the compiled documentation
 -----------------------------------
 
 14. Since Biopython 1.74, Sphinx has handled the API documentation via continuous
-    integration, but you still have to update the "latest" symlink.
-
-    ``` bash
-    $ cd ~/repositories/docs/
-    $ git fetch origin
-    $ git checkout gh-pages  # should only be this one branch
-    $ git rebase origin/gh-pages  # get any changes
-    $ rm latest
-    $ ln -s 1.78 latest
-    $ git commit latest -m "Update 'latest' symlink to point at 1.78"
-    $ git push origin gh-pages
-    ```
+    integration, and since Biopython 1.87 that includes updating the "latest" symlink.
+    Just check https://biopython.org/docs/latest/ is for the new release.
 
 Making wheels
 -------------
