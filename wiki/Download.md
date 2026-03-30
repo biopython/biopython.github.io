@@ -79,32 +79,7 @@ the wheel packages we provide on PyPI (as above), there are also
 
 ### Installation from Source
 
-Installation from source requires an appropriate C compiler, for example
-GCC on **Linux**, and MSVC on **Windows**. For **macOS**, if you want to
-compile Biopython from source you will need to have installed Apple's
-command line tools, which can de done with the terminal command:
-
-``` bash
-xcode-select --install
-```
-
-This will offer to install Apple's XCode development suite - you can, but
-it is not needed and takes a lot of disk space.
-
-You can then download and unzip a Biopython source code release, or get
-our code from GitHub. Then run:
-
-``` bash
-python setup.py build
-python setup.py test
-python setup.py install
-```
-
-or:
-
-``` bash
-pip install .
-```
+See https://github.com/biopython/biopython/blob/master/README.rst
 
 If you are still stuck, sign up to the [Biopython mailing
 list](Mailing_lists "wikilink") and ask for help there.
