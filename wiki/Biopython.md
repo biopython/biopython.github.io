@@ -42,5 +42,5 @@ the libraries and tools.
 |                                                                                                                                                | [ Cookbook (working examples)](wiki/Category%3ACookbook "wikilink")                                                                  | [Google Summer of Code](wiki/Google_Summer_of_Code "wikilink")                                                                     |
 |                                                                                                                                                | [ Discuss and ask questions](wiki/Mailing_lists "wikilink")                                                                          | [Report bugs](https://github.com/biopython/biopython/issues) |
 
-The latest release is [Biopython 1.87](wiki/Download "wikilink"), released on
-30 March 2026.
+The latest release is [Biopython 1.88](wiki/Download "wikilink"), released on
+6 August 2026.
