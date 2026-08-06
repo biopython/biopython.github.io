@@ -56,7 +56,7 @@ Final commit(s)
 
 4. make sure `CONTRIB.rst` still current
 
-5. make sure `setup.py` and `MANIFEST.in` are still up to date
+5. make sure `pyproject.toml` and `MANIFEST.in` are still up to date
 
    - Are there any new modules/files which should get installed?
 
